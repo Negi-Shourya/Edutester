@@ -3,6 +3,7 @@ import { ChevronLeft, ChevronRight, RotateCcw, Delete } from 'lucide-react';
 import type { Question, QuestionState } from '../types';
 import QuestionDiagram from './QuestionDiagram';
 import FormattedQuestionText from './FormattedQuestionText';
+import VectorText from './VectorText';
 
 interface NtaQuestionPanelProps {
   sections: string[];
@@ -21,7 +22,6 @@ interface NtaQuestionPanelProps {
   isLastQuestion: boolean;
   questionStates: QuestionState[];
   questions: Question[];
-  paperKey?: string;
 }
 
 export default function NtaQuestionPanel({
@@ -29,7 +29,6 @@ export default function NtaQuestionPanel({
   activeSection,
   onSelectSection,
   currentQuestion,
-  paperKey,
   currentQuestionState,
   onSelectOption,
   onChangeNumericAnswer,
@@ -131,9 +130,9 @@ export default function NtaQuestionPanel({
           )}
         </div>
         <div className="text-[11px] text-blue-100 flex items-center gap-3">
-          <span>Marks for correct answer: <strong className="text-green-300">+4</strong></span>
+          <span>Marks for correct answer: <strong className="text-green-300">+{currentQuestion.marks ?? 4}</strong></span>
           <span>|</span>
-          <span>Negative marks: <strong className="text-red-300">-1</strong></span>
+          <span>Negative marks: <strong className="text-red-300">{currentQuestion.negativeMarks ?? -1}</strong></span>
         </div>
       </div>
 
@@ -156,7 +155,7 @@ export default function NtaQuestionPanel({
         </div>
 
         {/* Inline Diagram / Figure if available for this question */}
-        <QuestionDiagram questionId={currentQuestion.id} paperKey={paperKey} />
+        <QuestionDiagram figureUrl={currentQuestion.figureUrl} />
 
         {/* Answer Selection Input View */}
         {currentQuestion.type === 'numerical' ? (
@@ -228,7 +227,7 @@ export default function NtaQuestionPanel({
                     />
                     <span className={`text-gray-800 ${fontSizeClass}`}>
                       <span className="font-bold text-[#1b365d] mr-1.5">({option.label})</span>
-                      {option.text}
+                      <VectorText text={option.text} />
                     </span>
                   </div>
                 );

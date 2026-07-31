@@ -1,5 +1,6 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { ExternalLink, Clock, Sunrise, Sunset } from 'lucide-react';
+import { getPapers } from '../data/questions';
 
 interface PaperEntry {
   date: string;
@@ -10,17 +11,14 @@ interface PaperEntry {
   link: string;
 }
 
-const apr2026Papers: PaperEntry[] = [
-  { date: '2 Apr 2026', day: 'Thursday', shift: 'Shift 1 (Morning)', time: '9:00 AM – 12:00 PM', paper: 'B.E./B.Tech. (Paper 1)', link: '/test?paper=02-apr-morning' },
-  { date: '2 Apr 2026', day: 'Thursday', shift: 'Shift 2 (Evening)', time: '3:00 PM – 6:00 PM', paper: 'B.E./B.Tech. (Paper 1)', link: '/test?paper=02-apr-evening' },
-  { date: '4 Apr 2026', day: 'Saturday', shift: 'Shift 1 (Morning)', time: '9:00 AM – 12:00 PM', paper: 'B.E./B.Tech. (Paper 1)', link: '/test?paper=04-apr-morning' },
-  { date: '4 Apr 2026', day: 'Saturday', shift: 'Shift 2 (Evening)', time: '3:00 PM – 6:00 PM', paper: 'B.E./B.Tech. (Paper 1)', link: '/test?paper=04-apr-evening' },
-  { date: '5 Apr 2026', day: 'Sunday', shift: 'Shift 1 (Morning)', time: '9:00 AM – 12:00 PM', paper: 'B.E./B.Tech. (Paper 1)', link: '/test?paper=05-apr-morning' },
-  { date: '5 Apr 2026', day: 'Sunday', shift: 'Shift 2 (Evening)', time: '3:00 PM – 6:00 PM', paper: 'B.E./B.Tech. (Paper 1)', link: '/test?paper=05-apr-evening' },
-  { date: '6 Apr 2026', day: 'Monday', shift: 'Shift 1 (Morning)', time: '9:00 AM – 12:00 PM', paper: 'B.E./B.Tech. (Paper 1)', link: '/test?paper=06-apr-morning' },
-  { date: '6 Apr 2026', day: 'Monday', shift: 'Shift 2 (Evening)', time: '3:00 PM – 6:00 PM', paper: 'B.E./B.Tech. (Paper 1)', link: '/test?paper=06-apr-evening' },
-  { date: '8 Apr 2026', day: 'Wednesday', shift: 'Shift 2 (Evening)', time: '3:00 PM – 6:00 PM', paper: 'B.E./B.Tech. (Paper 1)', link: '/test?paper=08-apr-evening' },
-];
+interface SessionGroup {
+  id: string;
+  label: string;
+  subtitle: string;
+  accent: string;
+  badge: string;
+  papers: PaperEntry[];
+}
 
 const jan2026Papers: PaperEntry[] = [
   { date: '21 Jan 2026', day: 'Wednesday', shift: 'Shift 1 (Morning)', time: '9:00 AM – 12:00 PM', paper: 'B.E./B.Tech. (Paper 1)', link: '/test' },
@@ -33,34 +31,6 @@ const jan2026Papers: PaperEntry[] = [
   { date: '24 Jan 2026', day: 'Saturday', shift: 'Shift 2 (Evening)', time: '3:00 PM – 6:00 PM', paper: 'B.E./B.Tech. (Paper 1)', link: '/test' },
   { date: '28 Jan 2026', day: 'Wednesday', shift: 'Shift 1 (Morning)', time: '9:00 AM – 12:00 PM', paper: 'B.E./B.Tech. (Paper 1)', link: '/test' },
   { date: '28 Jan 2026', day: 'Wednesday', shift: 'Shift 2 (Evening)', time: '3:00 PM – 6:00 PM', paper: 'B.E./B.Tech. (Paper 1)', link: '/test' },
-];
-
-interface SessionGroup {
-  id: string;
-  label: string;
-  subtitle: string;
-  accent: string;
-  badge: string;
-  papers: PaperEntry[];
-}
-
-const sessions: SessionGroup[] = [
-  {
-    id: 'apr-2026',
-    label: 'April 2026',
-    subtitle: 'Session 2',
-    accent: 'from-amber-50 to-orange-50',
-    badge: 'Session 2',
-    papers: apr2026Papers,
-  },
-  {
-    id: 'jan-2026',
-    label: 'January 2026',
-    subtitle: 'Session 1',
-    accent: 'from-sky-50 to-blue-50',
-    badge: 'Session 1',
-    papers: jan2026Papers,
-  },
 ];
 
 const comingSoon = [
@@ -79,7 +49,60 @@ function groupByDate(papers: PaperEntry[]) {
 }
 
 export default function PaperTests() {
-  const [expanded, setExpanded] = useState<string>(sessions[0].id);
+  const [expanded, setExpanded] = useState<string>('apr-2026');
+  const [papersLoading, setPapersLoading] = useState(true);
+  const [papersError, setPapersError] = useState<string | null>(null);
+  const [apr2026Papers, setApr2026Papers] = useState<PaperEntry[]>([]);
+
+  useEffect(() => {
+    let cancelled = false;
+    getPapers()
+      .then((papers) => {
+        if (cancelled) return;
+        const entries: PaperEntry[] = papers.map((p) => {
+          const date = new Date(`${p.examDate}T00:00:00`);
+          const isMorning = p.session === 'morning';
+          return {
+            date: date.toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' }),
+            day: date.toLocaleDateString('en-US', { weekday: 'long' }),
+            shift: isMorning ? 'Shift 1 (Morning)' : 'Shift 2 (Evening)',
+            time: isMorning ? '9:00 AM – 12:00 PM' : '3:00 PM – 6:00 PM',
+            paper: 'B.E./B.Tech. (Paper 1)',
+            link: `/test?paper=${p.key}`,
+          };
+        });
+        setApr2026Papers(entries);
+      })
+      .catch((err: unknown) => {
+        if (!cancelled) setPapersError(err instanceof Error ? err.message : 'Failed to load papers.');
+      })
+      .finally(() => {
+        if (!cancelled) setPapersLoading(false);
+      });
+
+    return () => {
+      cancelled = true;
+    };
+  }, []);
+
+  const sessions: SessionGroup[] = [
+    {
+      id: 'apr-2026',
+      label: 'April 2026',
+      subtitle: 'Session 2',
+      accent: 'from-amber-50 to-orange-50',
+      badge: 'Session 2',
+      papers: apr2026Papers,
+    },
+    {
+      id: 'jan-2026',
+      label: 'January 2026',
+      subtitle: 'Session 1',
+      accent: 'from-sky-50 to-blue-50',
+      badge: 'Session 1',
+      papers: jan2026Papers,
+    },
+  ];
 
   return (
     <div className="min-h-screen bg-stone-50">
@@ -126,9 +149,16 @@ export default function PaperTests() {
                     </div>
                   </div>
                   <div className="flex items-center gap-3">
-                    <span className="text-xs text-stone-400 bg-stone-50 px-2.5 py-1 rounded-full">
-                      {session.papers.length} shifts
-                    </span>
+                    {papersLoading && session.id === 'apr-2026' && (
+                      <span className="text-xs text-stone-400 bg-stone-50 px-2.5 py-1 rounded-full">
+                        Loading…
+                      </span>
+                    )}
+                    {!papersLoading && (
+                      <span className="text-xs text-stone-400 bg-stone-50 px-2.5 py-1 rounded-full">
+                        {session.papers.length} shifts
+                      </span>
+                    )}
                     <div className={`w-5 h-5 text-stone-400 transition-transform ${isOpen ? 'rotate-180' : ''}`}>
                       <svg viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5">
                         <path fillRule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clipRule="evenodd" />
@@ -140,6 +170,11 @@ export default function PaperTests() {
                 {/* Papers */}
                 {isOpen && (
                   <div className="px-6 py-4 space-y-3">
+                    {papersError && session.id === 'apr-2026' && (
+                      <div className="text-sm text-red-500 bg-red-50 border border-red-200 rounded-lg px-4 py-3">
+                        {papersError}
+                      </div>
+                    )}
                     {Object.entries(groups).map(([date, entries]) => (
                       <div key={date} className="border border-stone-100 rounded-xl overflow-hidden">
                         <div className="bg-stone-50/80 px-4 py-2.5 flex items-center justify-between">

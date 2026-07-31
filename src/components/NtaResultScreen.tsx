@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { CheckCircle2, XCircle, Award, BarChart2, RefreshCw, LayoutDashboard, ChevronDown, ChevronUp } from 'lucide-react';
 import type { Question, QuestionState } from '../types';
 import QuestionDiagram from './QuestionDiagram';
+import VectorText from './VectorText';
 
 interface NtaResultScreenProps {
   questions: Question[];
@@ -10,7 +11,6 @@ interface NtaResultScreenProps {
   sections: string[];
   examTitle: string;
   onRetake: () => void;
-  paperKey?: string;
 }
 
 export default function NtaResultScreen({
@@ -19,7 +19,6 @@ export default function NtaResultScreen({
   sections,
   examTitle,
   onRetake,
-  paperKey,
 }: NtaResultScreenProps) {
   const navigate = useNavigate();
   const [activeFilterSection, setActiveFilterSection] = useState<string>('ALL');
@@ -31,7 +30,7 @@ export default function NtaResultScreen({
   let totalUnattempted = 0;
   let totalScore = 0;
 
-  const maxPossibleScore = questions.length * 4;
+  const maxPossibleScore = questions.reduce((sum, q) => sum + (q.marks ?? 4), 0);
 
   const sectionResults = sections.map((sec) => {
     const secQuestions = questions.filter((q) => q.section === sec);
@@ -54,10 +53,10 @@ export default function NtaResultScreen({
       if (userAns !== '') {
         if (userAns.toLowerCase() === q.correctAnswer?.toLowerCase()) {
           secCorrect++;
-          secScore += 4;
+          secScore += q.marks ?? 4;
         } else {
           secIncorrect++;
-          secScore -= 1;
+          secScore += q.negativeMarks ?? -1;
         }
       } else {
         secUnattempted++;
@@ -76,7 +75,7 @@ export default function NtaResultScreen({
       incorrect: secIncorrect,
       unattempted: secUnattempted,
       score: secScore,
-      maxScore: secQuestions.length * 4,
+      maxScore: secQuestions.reduce((sum, q) => sum + (q.marks ?? 4), 0),
     };
   });
 
@@ -245,7 +244,7 @@ export default function NtaResultScreen({
                       </span>
                       {isCorrect ? (
                         <span className="bg-green-600 text-white font-bold text-[10px] px-2 py-0.5 rounded">
-                          CORRECT (+4)
+                          CORRECT (+{q.marks ?? 4})
                         </span>
                       ) : isUnattempted ? (
                         <span className="bg-gray-500 text-white font-bold text-[10px] px-2 py-0.5 rounded">
@@ -253,7 +252,7 @@ export default function NtaResultScreen({
                         </span>
                       ) : (
                         <span className="bg-red-600 text-white font-bold text-[10px] px-2 py-0.5 rounded">
-                          INCORRECT (-1)
+                          INCORRECT ({q.negativeMarks ?? -1})
                         </span>
                       )}
                     </div>
@@ -266,10 +265,10 @@ export default function NtaResultScreen({
                   {isExpanded && (
                     <div className="p-4 bg-white text-xs space-y-3">
                       <p className="font-semibold text-gray-900 leading-relaxed text-sm">
-                        {q.text}
+                        <VectorText text={q.text} />
                       </p>
 
-                      <QuestionDiagram questionId={q.id} paperKey={paperKey} />
+                      <QuestionDiagram figureUrl={q.figureUrl} />
 
                       {/* Options */}
                       {isMCQ && q.options && (
@@ -287,7 +286,7 @@ export default function NtaResultScreen({
 
                             return (
                               <div key={opt.label} className={`p-2 border rounded text-xs flex items-center justify-between ${style}`}>
-                                <span><strong className="mr-1">({opt.label})</strong> {opt.text}</span>
+                                <span><strong className="mr-1">({opt.label})</strong> <VectorText text={opt.text} /></span>
                                 {isCorrectChoice && <span className="text-green-700 text-[10px] font-bold">✓ Correct Answer</span>}
                                 {isUserChoice && !isCorrectChoice && <span className="text-red-700 text-[10px] font-bold">✗ Your Answer</span>}
                               </div>
@@ -306,7 +305,7 @@ export default function NtaResultScreen({
                       {q.solution && (
                         <div className="bg-amber-50 border-l-4 border-amber-500 p-3 rounded text-xs text-amber-950">
                           <strong className="block text-[#1b365d] mb-1 font-bold">Explanation &amp; Solution:</strong>
-                          <p className="leading-relaxed">{q.solution}</p>
+                          <p className="leading-relaxed"><VectorText text={q.solution} /></p>
                         </div>
                       )}
                     </div>

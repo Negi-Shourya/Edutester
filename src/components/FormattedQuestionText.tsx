@@ -1,3 +1,4 @@
+import VectorText from './VectorText';
 
 interface FormattedQuestionTextProps {
   text: string;
@@ -28,7 +29,7 @@ export default function FormattedQuestionText({ text, className = '' }: Formatte
   // Standard multi-line rendering
   return (
     <div className={`whitespace-pre-line text-gray-900 leading-relaxed ${className}`}>
-      {text}
+      <VectorText text={text} />
     </div>
   );
 }
@@ -128,10 +129,10 @@ function MatchQuestionRenderer({ text, className }: { text: string; className: s
               {matchRows.map((row, idx) => (
                 <tr key={idx} className={idx % 2 === 0 ? 'bg-white' : 'bg-gray-50/50'}>
                   <td className="py-2 px-4 border-r border-gray-200 font-medium text-gray-800">
-                    {row.leftLabel}
+                    <VectorText text={row.leftLabel} />
                   </td>
                   <td className="py-2 px-4 font-medium text-gray-800">
-                    {row.rightLabel}
+                    <VectorText text={row.rightLabel} />
                   </td>
                 </tr>
               ))}
@@ -147,7 +148,7 @@ function MatchQuestionRenderer({ text, className }: { text: string; className: s
   // Fallback: white-space pre-line rendering
   return (
     <div className={`whitespace-pre-line text-gray-900 leading-relaxed ${className}`}>
-      {text}
+      <VectorText text={text} />
     </div>
   );
 }
@@ -169,7 +170,7 @@ function StatementQuestionRenderer({ text, className }: { text: string; classNam
           return (
             <div key={index} className="p-2.5 bg-blue-50/60 border-l-4 border-[#337ab7] rounded-r text-xs sm:text-sm">
               <strong className="text-[#1b365d] block mb-0.5">Statement I:</strong>
-              <span>{part.trim()}</span>
+              <span><VectorText text={part.trim()} /></span>
             </div>
           );
         }
@@ -178,7 +179,7 @@ function StatementQuestionRenderer({ text, className }: { text: string; classNam
           return (
             <div key={index} className="p-2.5 bg-amber-50/60 border-l-4 border-amber-500 rounded-r text-xs sm:text-sm">
               <strong className="text-amber-900 block mb-0.5">Statement II:</strong>
-              <span>{part.trim()}</span>
+              <span><VectorText text={part.trim()} /></span>
             </div>
           );
         }
@@ -189,7 +190,7 @@ function StatementQuestionRenderer({ text, className }: { text: string; classNam
 
         return (
           <p key={index} className="whitespace-pre-line">
-            {trimmed}
+            <VectorText text={trimmed} />
           </p>
         );
       })}

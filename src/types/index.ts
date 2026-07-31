@@ -18,6 +18,7 @@ export interface Question {
   solution?: string;
   marks?: number;
   negativeMarks?: number;
+  figureUrl?: string[];
 }
 
 export type QuestionStatus =

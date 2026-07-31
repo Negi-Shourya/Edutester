@@ -1,7 +1,7 @@
 import { useState, useEffect, useCallback } from 'react';
 import { useSearchParams } from 'react-router-dom';
-import { getPaperQuestions } from '../data/mockQuestions';
-import type { QuestionState, QuestionStatus } from '../types';
+import { getPaperQuestions, type PaperQuestions } from '../data/questions';
+import type { Question, QuestionState, QuestionStatus } from '../types';
 
 import NtaHeader from '../components/NtaHeader';
 import NtaQuestionPanel from '../components/NtaQuestionPanel';
@@ -11,55 +11,18 @@ import NtaInstructionsModal from '../components/NtaInstructionsModal';
 import NtaSubmitModal from '../components/NtaSubmitModal';
 import NtaResultScreen from '../components/NtaResultScreen';
 
+const EMPTY_QUESTIONS: Question[] = [];
+
 export default function TestInterface() {
   const [searchParams] = useSearchParams();
   const paperKey = searchParams.get('paper') || '02-apr-morning';
-  const questions = getPaperQuestions(paperKey);
 
-  const examTitle =
-    paperKey === '02-apr-evening'
-      ? 'JEE (Main) 2026 (02 Apr Evening)'
-      : paperKey === '04-apr-morning'
-      ? 'JEE (Main) 2026 (04 Apr Morning)'
-      : paperKey === '04-apr-evening'
-      ? 'JEE (Main) 2026 (04 Apr Evening)'
-      : paperKey === '05-apr-morning'
-      ? 'JEE (Main) 2026 (05 Apr Morning)'
-      : paperKey === '05-apr-evening'
-      ? 'JEE (Main) 2026 (05 Apr Evening)'
-      : paperKey === '06-apr-morning'
-      ? 'JEE (Main) 2026 (06 Apr Morning)'
-      : paperKey === '06-apr-evening'
-      ? 'JEE (Main) 2026 (06 Apr Evening)'
-      : paperKey === '08-apr-evening'
-      ? 'JEE (Main) 2026 (08 Apr Evening)'
-      : 'JEE (Main) 2026 (02 Apr Morning)';
-
-  const fullExamTitle =
-    paperKey === '02-apr-evening'
-      ? 'JEE (Main) 2026 - 02 April Evening Shift'
-      : paperKey === '04-apr-morning'
-      ? 'JEE (Main) 2026 - 04 April Morning Shift'
-      : paperKey === '04-apr-evening'
-      ? 'JEE (Main) 2026 - 04 April Evening Shift'
-      : paperKey === '05-apr-morning'
-      ? 'JEE (Main) 2026 - 05 April Morning Shift'
-      : paperKey === '05-apr-evening'
-      ? 'JEE (Main) 2026 - 05 April Evening Shift'
-      : paperKey === '06-apr-morning'
-      ? 'JEE (Main) 2026 - 06 April Morning Shift'
-      : paperKey === '06-apr-evening'
-      ? 'JEE (Main) 2026 - 06 April Evening Shift'
-      : paperKey === '08-apr-evening'
-      ? 'JEE (Main) 2026 - 08 April Evening Shift'
-      : 'JEE (Main) 2026 - 02 April Morning Shift';
-
-  // Short-lived Toast Popup state (shows for 2.5 seconds then vanishes)
-  const [showExitHintToast, setShowExitHintToast] = useState<boolean>(true);
+  const [paperData, setPaperData] = useState<PaperQuestions | null>(null);
+  const [loadError, setLoadError] = useState<string | null>(null);
 
   // Test state
   const [activeSection, setActiveSection] = useState<string>('Physics');
-  const [currentQuestionId, setCurrentQuestionId] = useState<number>(1);
+  const [currentQuestionId, setCurrentQuestionId] = useState<number | null>(null);
   const [language, setLanguage] = useState<string>('English');
   const [isTestSubmitted, setIsTestSubmitted] = useState<boolean>(false);
 
@@ -68,26 +31,53 @@ export default function TestInterface() {
   const [showInstructions, setShowInstructions] = useState<boolean>(false);
   const [showSubmitModal, setShowSubmitModal] = useState<boolean>(false);
 
+  // Short-lived Toast Popup state (shows for 2.5 seconds then vanishes)
+  const [showExitHintToast, setShowExitHintToast] = useState<boolean>(true);
+
   // Timer: 3 Hours (180 minutes = 10800 seconds)
   const [timeLeft, setTimeLeft] = useState<number>(180 * 60);
 
-  // Question States initialized to 'not-visited' (Question 1 is immediately marked 'not-answered')
-  const [questionStates, setQuestionStates] = useState<QuestionState[]>(() =>
-    questions.map((q, idx) => ({
-      id: q.id,
-      status: idx === 0 ? 'not-answered' : 'not-visited',
-    }))
-  );
+  const questions = paperData?.questions ?? EMPTY_QUESTIONS;
 
-  // Re-initialize state if paperKey changes
+  // Load the paper from the database when the paper key changes
   useEffect(() => {
+    let cancelled = false;
+    setPaperData(null);
+    setQuestionStates([]);
+    setCurrentQuestionId(null);
+    setActiveSection('Physics');
+    setTimeLeft(180 * 60);
+    setIsTestSubmitted(false);
+    setLoadError(null);
+
+    getPaperQuestions(paperKey)
+      .then((data) => {
+        if (!cancelled) setPaperData(data);
+      })
+      .catch((err: unknown) => {
+        if (!cancelled) {
+          setLoadError(err instanceof Error ? err.message : 'Failed to load paper.');
+        }
+      });
+
+    return () => {
+      cancelled = true;
+    };
+  }, [paperKey]);
+
+  // Question States initialized to 'not-visited' (Question 1 is immediately marked 'not-answered')
+  const [questionStates, setQuestionStates] = useState<QuestionState[]>([]);
+
+  // Re-initialize state once questions arrive (or paper changes)
+  useEffect(() => {
+    if (questions.length === 0) return;
     setQuestionStates(
       questions.map((q, idx) => ({
         id: q.id,
         status: idx === 0 ? 'not-answered' : 'not-visited',
       }))
     );
-    setCurrentQuestionId(1);
+    setCurrentQuestionId(questions[0].id);
     setActiveSection('Physics');
     setTimeLeft(180 * 60);
     setIsTestSubmitted(false);
@@ -95,10 +85,9 @@ export default function TestInterface() {
 
   const sections = ['Physics', 'Chemistry', 'Mathematics'];
 
-  // Current active question
   const currentQuestion =
-    questions.find((q) => q.id === currentQuestionId) || questions[0];
-  const currentQuestionState = questionStates.find((qs) => qs.id === currentQuestion.id);
+    questions.find((q) => q.id === currentQuestionId) ?? questions[0];
+  const currentQuestionState = questionStates.find((qs) => qs.id === currentQuestion?.id);
 
   // Helper to force full screen mode
   const forceFullscreen = useCallback(() => {
@@ -170,10 +159,12 @@ export default function TestInterface() {
 
   // Answer selection handlers
   const handleSelectOption = (optionLabel: string) => {
+    if (!currentQuestion) return;
     updateQuestionState(currentQuestion.id, { selectedOption: optionLabel });
   };
 
   const handleChangeNumericAnswer = (value: string) => {
+    if (!currentQuestion) return;
     updateQuestionState(currentQuestion.id, { numericAnswer: value });
   };
 
@@ -250,10 +241,36 @@ export default function TestInterface() {
     );
     setTimeLeft(180 * 60);
     setIsTestSubmitted(false);
-    setCurrentQuestionId(1);
+    setCurrentQuestionId(questions[0]?.id ?? null);
     setActiveSection('Physics');
     forceFullscreen();
   };
+
+  if (loadError) {
+    return (
+      <div className="min-h-screen bg-[#091526] flex items-center justify-center">
+        <div className="bg-white/5 border border-red-400/40 text-red-300 rounded-lg px-8 py-6 max-w-md text-center">
+          <h2 className="font-bold text-lg mb-2">Failed to load the paper</h2>
+          <p className="text-sm text-red-200/80 mb-4">{loadError}</p>
+          <a href="/paper-tests" className="text-xs font-semibold underline text-blue-300">
+            Back to Paper-wise Tests
+          </a>
+        </div>
+      </div>
+    );
+  }
+
+  if (!paperData || questions.length === 0) {
+    return (
+      <div className="h-screen w-screen bg-[#091526] flex flex-col items-center justify-center gap-4 select-none">
+        <div className="w-10 h-10 border-4 border-blue-400 border-t-transparent rounded-full animate-spin" />
+        <p className="text-blue-200 text-sm font-medium">Loading question paper…</p>
+      </div>
+    );
+  }
+
+  const examTitle = paperData.paper.title;
+  const fullExamTitle = paperData.paper.fullTitle;
 
   // If exam submitted, show Post-Exam Results Screen
   if (isTestSubmitted) {
@@ -264,7 +281,6 @@ export default function TestInterface() {
         sections={sections}
         examTitle={fullExamTitle}
         onRetake={handleRetakeTest}
-        paperKey={paperKey}
       />
     );
   }
@@ -313,7 +329,6 @@ export default function TestInterface() {
           isLastQuestion={questions[questions.length - 1]?.id === currentQuestion.id}
           questionStates={questionStates}
           questions={questions}
-          paperKey={paperKey}
         />
 
         {/* Right Panel: NTA Palette */}
@@ -335,7 +350,6 @@ export default function TestInterface() {
         questions={questions}
         sections={sections}
         examTitle={fullExamTitle}
-        paperKey={paperKey}
       />
 
       <NtaInstructionsModal

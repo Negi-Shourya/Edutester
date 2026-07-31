@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { X, Printer } from 'lucide-react';
 import type { Question } from '../types';
 import QuestionDiagram from './QuestionDiagram';
+import VectorText from './VectorText';
 
 interface NtaQuestionPaperModalProps {
   isOpen: boolean;
@@ -9,7 +10,6 @@ interface NtaQuestionPaperModalProps {
   questions: Question[];
   sections: string[];
   examTitle: string;
-  paperKey?: string;
 }
 
 export default function NtaQuestionPaperModal({
@@ -18,7 +18,6 @@ export default function NtaQuestionPaperModal({
   questions,
   sections,
   examTitle,
-  paperKey,
 }: NtaQuestionPaperModalProps) {
   const [selectedSection, setSelectedSection] = useState<string>('ALL');
 
@@ -98,15 +97,15 @@ export default function NtaQuestionPaperModal({
                   {q.section} &bull; {q.subSection || 'Section A'} &bull; Question {q.number}
                 </span>
                 <span className="text-xs text-gray-500 font-semibold bg-gray-100 px-2 py-0.5 rounded">
-                  Type: {q.type === 'numerical' ? 'Numerical' : 'MCQ'} | Marks: +4, -1
+                  Type: {q.type === 'numerical' ? 'Numerical' : 'MCQ'} | Marks: +{q.marks ?? 4}, {q.negativeMarks ?? -1}
                 </span>
               </div>
 
               <p className="text-gray-900 font-medium text-sm leading-relaxed mb-3">
-                {q.text}
+                <VectorText text={q.text} />
               </p>
 
-              <QuestionDiagram questionId={q.id} paperKey={paperKey} />
+              <QuestionDiagram figureUrl={q.figureUrl} />
 
               {q.type === 'mcq' && q.options && (
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs">
@@ -116,7 +115,7 @@ export default function NtaQuestionPaperModal({
                       className="p-2 border border-gray-200 rounded bg-gray-50 text-gray-800"
                     >
                       <span className="font-bold text-[#1b365d] mr-1">({opt.label})</span>{' '}
-                      {opt.text}
+                      <VectorText text={opt.text} />
                     </div>
                   ))}
                 </div>
