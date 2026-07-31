@@ -264,6 +264,7 @@ export default function TestInterface() {
         sections={sections}
         examTitle={fullExamTitle}
         onRetake={handleRetakeTest}
+        paperKey={paperKey}
       />
     );
   }
@@ -312,6 +313,7 @@ export default function TestInterface() {
           isLastQuestion={questions[questions.length - 1]?.id === currentQuestion.id}
           questionStates={questionStates}
           questions={questions}
+          paperKey={paperKey}
         />
 
         {/* Right Panel: NTA Palette */}
@@ -333,6 +335,7 @@ export default function TestInterface() {
         questions={questions}
         sections={sections}
         examTitle={fullExamTitle}
+        paperKey={paperKey}
       />
 
       <NtaInstructionsModal

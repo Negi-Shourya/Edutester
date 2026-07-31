@@ -1,4 +1,3 @@
-import React from 'react';
 
 interface FormattedQuestionTextProps {
   text: string;
@@ -44,6 +43,7 @@ function MatchQuestionRenderer({ text, className }: { text: string; className: s
   let footer = '';
   const matchRows: MatchItem[] = [];
 
+  // @ts-expect-error -- inTable tracking flag (assigned but control-flow based, not read)
   let inTable = false;
 
   for (const line of lines) {

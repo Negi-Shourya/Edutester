@@ -1,11 +1,19 @@
 interface QuestionDiagramProps {
   questionId: number;
+  paperKey?: string;
 }
 
-export default function QuestionDiagram({ questionId }: QuestionDiagramProps) {
-  switch (questionId) {
+export default function QuestionDiagram({ questionId, paperKey }: QuestionDiagramProps) {
+  // Use a composite key of paperKey:questionId to avoid duplicate diagrams across papers
+  const diagramKey = paperKey ? `${paperKey}:${questionId}` : `02-apr-morning:${questionId}`;
+
+  switch (diagramKey) {
+    // =========================================================================
+    // APR 02 MORNING — 7 diagrams
+    // =========================================================================
+
     // Q32: Parallel Plate Capacitor with Dielectric (K=5)
-    case 32:
+    case '02-apr-morning:32':
       return (
         <div className="my-4 p-3 bg-gray-50 border border-gray-200 rounded max-w-xs flex flex-col items-center">
           <svg viewBox="0 0 240 160" className="w-56 h-36">
@@ -44,7 +52,7 @@ export default function QuestionDiagram({ questionId }: QuestionDiagramProps) {
       );
 
     // Q36: Perpendicular Dipoles A and B
-    case 36:
+    case '02-apr-morning:36':
       return (
         <div className="my-4 p-3 bg-gray-50 border border-gray-200 rounded max-w-md flex flex-col items-center">
           <svg viewBox="0 0 280 180" className="w-64 h-40">
@@ -96,7 +104,7 @@ export default function QuestionDiagram({ questionId }: QuestionDiagramProps) {
       );
 
     // Q37: Zener Diode Clipper Network
-    case 37:
+    case '02-apr-morning:37':
       return (
         <div className="my-4 p-3 bg-gray-50 border border-gray-200 rounded max-w-lg flex flex-col items-center space-y-3">
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 w-full text-center text-xs">
@@ -158,7 +166,7 @@ export default function QuestionDiagram({ questionId }: QuestionDiagramProps) {
       );
 
     // Q39: Curved Wires Magnetic Field (P vs Q)
-    case 39:
+    case '02-apr-morning:39':
       return (
         <div className="my-4 p-3 bg-gray-50 border border-gray-200 rounded max-w-md flex flex-col items-center">
           <div className="grid grid-cols-2 gap-4 w-full">
@@ -205,7 +213,7 @@ export default function QuestionDiagram({ questionId }: QuestionDiagramProps) {
       );
 
     // Q41: Lens Refraction Height of Image
-    case 41:
+    case '02-apr-morning:41':
       return (
         <div className="my-4 p-3 bg-gray-50 border border-gray-200 rounded max-w-sm flex flex-col items-center">
           <svg viewBox="0 0 260 140" className="w-60 h-32">
@@ -242,7 +250,7 @@ export default function QuestionDiagram({ questionId }: QuestionDiagramProps) {
       );
 
     // Q66: Electrophilic Attack Preferred Site
-    case 66:
+    case '02-apr-morning:66':
       return (
         <div className="my-4 p-3 bg-gray-50 border border-gray-200 rounded max-w-sm flex flex-col items-center">
           <svg viewBox="0 0 260 140" className="w-60 h-32">
@@ -271,7 +279,7 @@ export default function QuestionDiagram({ questionId }: QuestionDiagramProps) {
       );
 
     // Q68: Aromatic Molecules P, Q, R
-    case 68:
+    case '02-apr-morning:68':
       return (
         <div className="my-4 p-3 bg-gray-50 border border-gray-200 rounded max-w-md flex flex-col items-center">
           <div className="grid grid-cols-3 gap-3 w-full text-center">
@@ -312,8 +320,12 @@ export default function QuestionDiagram({ questionId }: QuestionDiagramProps) {
         </div>
       );
 
+    // =========================================================================
+    // APR 02 EVENING — 3 diagrams
+    // =========================================================================
+
     // Q28: Pulley system with 2 kg and 1 kg masses
-    case 28:
+    case '02-apr-evening:28':
       return (
         <div className="my-4 p-3 bg-gray-50 border border-gray-200 rounded max-w-xs flex flex-col items-center">
           <svg viewBox="0 0 200 160" className="w-52 h-36">
@@ -340,7 +352,7 @@ export default function QuestionDiagram({ questionId }: QuestionDiagramProps) {
       );
 
     // Q30: NOR gate logic circuit
-    case 30:
+    case '02-apr-evening:30':
       return (
         <div className="my-4 p-3 bg-gray-50 border border-gray-200 rounded max-w-sm flex flex-col items-center">
           <svg viewBox="0 0 280 120" className="w-64 h-28">
@@ -369,7 +381,7 @@ export default function QuestionDiagram({ questionId }: QuestionDiagramProps) {
       );
 
     // Q50: Rod and Parallel Axis Sphere
-    case 50:
+    case '02-apr-evening:50':
       return (
         <div className="my-4 p-3 bg-gray-50 border border-gray-200 rounded max-w-xs flex flex-col items-center">
           <svg viewBox="0 0 200 160" className="w-52 h-36">
@@ -395,8 +407,12 @@ export default function QuestionDiagram({ questionId }: QuestionDiagramProps) {
         </div>
       );
 
+    // =========================================================================
+    // APR 04 MORNING — 4 diagrams
+    // =========================================================================
+
     // Q32: Stopping potential graph for metals X1, X2, X3
-    case 32:
+    case '04-apr-morning:32':
       return (
         <div className="my-4 p-3 bg-gray-50 border border-gray-200 rounded max-w-xs flex flex-col items-center">
           <svg viewBox="0 0 220 160" className="w-56 h-40">
@@ -428,7 +444,7 @@ export default function QuestionDiagram({ questionId }: QuestionDiagramProps) {
       );
 
     // Q38: Logic circuit for 4-bit numbers A and B
-    case 38:
+    case '04-apr-morning:38':
       return (
         <div className="my-4 p-3 bg-gray-50 border border-gray-200 rounded max-w-xs flex flex-col items-center">
           <svg viewBox="0 0 220 100" className="w-52 h-24">
@@ -452,7 +468,7 @@ export default function QuestionDiagram({ questionId }: QuestionDiagramProps) {
       );
 
     // Q39: Rod along principal axis of concave mirror
-    case 39:
+    case '04-apr-morning:39':
       return (
         <div className="my-4 p-3 bg-gray-50 border border-gray-200 rounded max-w-sm flex flex-col items-center">
           <svg viewBox="0 0 260 120" className="w-60 h-28">
@@ -479,7 +495,7 @@ export default function QuestionDiagram({ questionId }: QuestionDiagramProps) {
       );
 
     // Q42: Circuit with capacitor, resistor and diodes
-    case 42:
+    case '04-apr-morning:42':
       return (
         <div className="my-4 p-3 bg-gray-50 border border-gray-200 rounded max-w-xs flex flex-col items-center">
           <svg viewBox="0 0 200 140" className="w-52 h-32">
@@ -516,8 +532,12 @@ export default function QuestionDiagram({ questionId }: QuestionDiagramProps) {
         </div>
       );
 
+    // =========================================================================
+    // APR 05 MORNING — 4 diagrams
+    // =========================================================================
+
     // Q29: Three masses pulley system (m1, m2, m3)
-    case 29:
+    case '05-apr-morning:29':
       return (
         <div className="my-4 p-3 bg-gray-50 border border-gray-200 rounded max-w-xs flex flex-col items-center">
           <svg viewBox="0 0 200 160" className="w-52 h-40">
@@ -552,7 +572,7 @@ export default function QuestionDiagram({ questionId }: QuestionDiagramProps) {
       );
 
     // Q30: Wedge Y (10kg, 37 deg) and Block X (2kg)
-    case 30:
+    case '05-apr-morning:30':
       return (
         <div className="my-4 p-3 bg-gray-50 border border-gray-200 rounded max-w-xs flex flex-col items-center">
           <svg viewBox="0 0 220 120" className="w-56 h-28">
@@ -578,7 +598,7 @@ export default function QuestionDiagram({ questionId }: QuestionDiagramProps) {
       );
 
     // Q34: Resistor bridge with 5V source
-    case 34:
+    case '05-apr-morning:34':
       return (
         <div className="my-4 p-3 bg-gray-50 border border-gray-200 rounded max-w-xs flex flex-col items-center">
           <svg viewBox="0 0 200 140" className="w-52 h-32">
@@ -600,7 +620,7 @@ export default function QuestionDiagram({ questionId }: QuestionDiagramProps) {
       );
 
     // Q45: Logic circuit with LED-1 and LED-2
-    case 45:
+    case '05-apr-morning:45':
       return (
         <div className="my-4 p-3 bg-gray-50 border border-gray-200 rounded max-w-xs flex flex-col items-center">
           <svg viewBox="0 0 220 120" className="w-56 h-28">
@@ -629,8 +649,41 @@ export default function QuestionDiagram({ questionId }: QuestionDiagramProps) {
         </div>
       );
 
+    // =========================================================================
+    // APR 05 EVENING — 1 diagram
+    // =========================================================================
+
+    // Q37: Steady state capacitor circuit
+    case '05-apr-evening:37':
+      return (
+        <div className="my-4 p-3 bg-gray-50 border border-gray-200 rounded max-w-xs flex flex-col items-center">
+          <svg viewBox="0 0 200 140" className="w-52 h-32">
+            <line x1="20" y1="30" x2="160" y2="30" stroke="#333" strokeWidth="1.5" />
+            <text x="90" y="22" fontSize="10" fontWeight="bold" fill="#1b365d">2 Ω</text>
+            
+            <line x1="20" y1="30" x2="20" y2="110" stroke="#333" strokeWidth="1.5" />
+            <line x1="20" y1="65" x2="12" y2="65" stroke="#1b365d" strokeWidth="2" />
+            <line x1="20" y1="75" x2="12" y2="75" stroke="#1b365d" strokeWidth="2" />
+            <text x="28" y="72" fontSize="9" fontWeight="bold" fill="#1b365d">2 μF</text>
+
+            <line x1="160" y1="30" x2="160" y2="110" stroke="#333" strokeWidth="1.5" />
+            <text x="165" y="70" fontSize="10" fontWeight="bold" fill="#1b365d">6 Ω</text>
+
+            <line x1="20" y1="110" x2="160" y2="110" stroke="#333" strokeWidth="1.5" />
+            <line x1="85" y1="110" x2="85" y2="100" stroke="#2563eb" strokeWidth="2" />
+            <line x1="95" y1="110" x2="95" y2="105" stroke="#2563eb" strokeWidth="1.5" />
+            <text x="85" y="125" fontSize="10" fontWeight="bold" fill="#2563eb">2 V</text>
+          </svg>
+          <span className="text-[11px] text-gray-500 font-semibold mt-1">Figure: Steady state RC circuit</span>
+        </div>
+      );
+
+    // =========================================================================
+    // APR 06 MORNING — 1 diagram
+    // =========================================================================
+
     // Q46: Resistor circuit with 6 ohm, 3 ohm, 4 ohm, 3V, 2V
-    case 46:
+    case '06-apr-morning:46':
       return (
         <div className="my-4 p-3 bg-gray-50 border border-gray-200 rounded max-w-xs flex flex-col items-center">
           <svg viewBox="0 0 220 140" className="w-56 h-32">
@@ -670,8 +723,12 @@ export default function QuestionDiagram({ questionId }: QuestionDiagramProps) {
         </div>
       );
 
-    // Q33 (06 Apr Evening): Extension vs Load W graph
-    case 33:
+    // =========================================================================
+    // APR 06 EVENING — 1 diagram
+    // =========================================================================
+
+    // Q33: Extension vs Load W graph
+    case '06-apr-evening:33':
       return (
         <div className="my-4 p-3 bg-gray-50 border border-gray-200 rounded max-w-xs flex flex-col items-center">
           <svg viewBox="0 0 200 150" className="w-52 h-36">
@@ -691,33 +748,12 @@ export default function QuestionDiagram({ questionId }: QuestionDiagramProps) {
         </div>
       );
 
-    // Q37 (06 Apr Evening): Steady state capacitor circuit
-    case 37:
-      return (
-        <div className="my-4 p-3 bg-gray-50 border border-gray-200 rounded max-w-xs flex flex-col items-center">
-          <svg viewBox="0 0 200 140" className="w-52 h-32">
-            <line x1="20" y1="30" x2="160" y2="30" stroke="#333" strokeWidth="1.5" />
-            <text x="90" y="22" fontSize="10" fontWeight="bold" fill="#1b365d">2 Ω</text>
-            
-            <line x1="20" y1="30" x2="20" y2="110" stroke="#333" strokeWidth="1.5" />
-            <line x1="20" y1="65" x2="12" y2="65" stroke="#1b365d" strokeWidth="2" />
-            <line x1="20" y1="75" x2="12" y2="75" stroke="#1b365d" strokeWidth="2" />
-            <text x="28" y="72" fontSize="9" fontWeight="bold" fill="#1b365d">2 μF</text>
+    // =========================================================================
+    // APR 08 EVENING — 1 diagram
+    // =========================================================================
 
-            <line x1="160" y1="30" x2="160" y2="110" stroke="#333" strokeWidth="1.5" />
-            <text x="165" y="70" fontSize="10" fontWeight="bold" fill="#1b365d">6 Ω</text>
-
-            <line x1="20" y1="110" x2="160" y2="110" stroke="#333" strokeWidth="1.5" />
-            <line x1="85" y1="110" x2="85" y2="100" stroke="#2563eb" strokeWidth="2" />
-            <line x1="95" y1="110" x2="95" y2="105" stroke="#2563eb" strokeWidth="1.5" />
-            <text x="85" y="125" fontSize="10" fontWeight="bold" fill="#2563eb">2 V</text>
-          </svg>
-          <span className="text-[11px] text-gray-500 font-semibold mt-1">Figure: Steady state RC circuit</span>
-        </div>
-      );
-
-    // Q49 (08 Apr Evening): Circuit with 100 uF capacitor and resistor bridge
-    case 49:
+    // Q49: Circuit with 100 uF capacitor and resistor bridge
+    case '08-apr-evening:49':
       return (
         <div className="my-4 p-3 bg-gray-50 border border-gray-200 rounded max-w-xs flex flex-col items-center">
           <svg viewBox="0 0 220 140" className="w-56 h-36">

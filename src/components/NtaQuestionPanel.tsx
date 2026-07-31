@@ -21,6 +21,7 @@ interface NtaQuestionPanelProps {
   isLastQuestion: boolean;
   questionStates: QuestionState[];
   questions: Question[];
+  paperKey?: string;
 }
 
 export default function NtaQuestionPanel({
@@ -28,6 +29,7 @@ export default function NtaQuestionPanel({
   activeSection,
   onSelectSection,
   currentQuestion,
+  paperKey,
   currentQuestionState,
   onSelectOption,
   onChangeNumericAnswer,
@@ -154,7 +156,7 @@ export default function NtaQuestionPanel({
         </div>
 
         {/* Inline Diagram / Figure if available for this question */}
-        <QuestionDiagram questionId={currentQuestion.id} />
+        <QuestionDiagram questionId={currentQuestion.id} paperKey={paperKey} />
 
         {/* Answer Selection Input View */}
         {currentQuestion.type === 'numerical' ? (

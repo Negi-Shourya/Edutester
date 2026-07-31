@@ -10,6 +10,7 @@ interface NtaResultScreenProps {
   sections: string[];
   examTitle: string;
   onRetake: () => void;
+  paperKey?: string;
 }
 
 export default function NtaResultScreen({
@@ -18,6 +19,7 @@ export default function NtaResultScreen({
   sections,
   examTitle,
   onRetake,
+  paperKey,
 }: NtaResultScreenProps) {
   const navigate = useNavigate();
   const [activeFilterSection, setActiveFilterSection] = useState<string>('ALL');
@@ -267,7 +269,7 @@ export default function NtaResultScreen({
                         {q.text}
                       </p>
 
-                      <QuestionDiagram questionId={q.id} />
+                      <QuestionDiagram questionId={q.id} paperKey={paperKey} />
 
                       {/* Options */}
                       {isMCQ && q.options && (

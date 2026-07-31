@@ -9,6 +9,7 @@ interface NtaQuestionPaperModalProps {
   questions: Question[];
   sections: string[];
   examTitle: string;
+  paperKey?: string;
 }
 
 export default function NtaQuestionPaperModal({
@@ -17,6 +18,7 @@ export default function NtaQuestionPaperModal({
   questions,
   sections,
   examTitle,
+  paperKey,
 }: NtaQuestionPaperModalProps) {
   const [selectedSection, setSelectedSection] = useState<string>('ALL');
 
@@ -104,7 +106,7 @@ export default function NtaQuestionPaperModal({
                 {q.text}
               </p>
 
-              <QuestionDiagram questionId={q.id} />
+              <QuestionDiagram questionId={q.id} paperKey={paperKey} />
 
               {q.type === 'mcq' && q.options && (
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs">
