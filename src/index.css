@@ -1,0 +1,94 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #4f46e5;
+  --color-primary-dark: #4338ca;
+  --color-primary-light: #6366f1;
+  --color-accent: #f59e0b;
+  --color-accent-dark: #d97706;
+  --color-success: #10b981;
+  --color-danger: #ef4444;
+  --color-warning: #f59e0b;
+  --color-not-visited: #e5e7eb;
+  --color-not-answered: #ef4444;
+  --color-answered: #10b981;
+  --color-marked: #8b5cf6;
+  --color-current: #3b82f6;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f4f6f9;
+}
+
+/* NTA Exact Button Shapes */
+.nta-shape-not-visited {
+  background-color: #ffffff;
+  border: 1px solid #b8b8b8;
+  color: #222222;
+  border-radius: 3px;
+}
+
+.nta-shape-not-answered {
+  background-color: #dc3545;
+  color: #ffffff;
+  clip-path: polygon(0% 0%, 75% 0%, 100% 25%, 100% 100%, 0% 100%);
+  border-radius: 2px;
+}
+
+.nta-shape-answered {
+  background-color: #28a745;
+  color: #ffffff;
+  clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 25%);
+  border-radius: 2px;
+}
+
+.nta-shape-marked {
+  background-color: #702090;
+  color: #ffffff;
+  border-radius: 50% !important;
+}
+
+.nta-shape-answered-marked {
+  background-color: #702090;
+  color: #ffffff;
+  border-radius: 50% !important;
+  position: relative;
+}
+
+.nta-shape-answered-marked::after {
+  content: "✓";
+  position: absolute;
+  bottom: -2px;
+  right: -2px;
+  width: 13px;
+  height: 13px;
+  background-color: #28a745;
+  color: #ffffff;
+  border-radius: 50%;
+  font-size: 9px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  border: 1px solid #ffffff;
+}
+
+/* Custom Scrollbar for NTA panels */
+.nta-scrollbar::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+.nta-scrollbar::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+.nta-scrollbar::-webkit-scrollbar-thumb {
+  background: #bbb;
+  border-radius: 3px;
+}
+.nta-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #888;
+}
