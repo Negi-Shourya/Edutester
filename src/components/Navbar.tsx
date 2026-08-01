@@ -52,7 +52,7 @@ export default function Navbar() {
             <div className="flex items-center gap-3 ml-4">
               {user ? (
                 <>
-                  <div className="flex items-center gap-2">
+                  <Link to="/profile" className="flex items-center gap-2">
                     {user.user_metadata?.avatar_url ? (
                       <img
                         src={user.user_metadata.avatar_url}
@@ -67,7 +67,7 @@ export default function Navbar() {
                     <span className="text-sm font-medium text-gray-700 max-w-[140px] truncate">
                       {user.user_metadata?.full_name ?? user.email}
                     </span>
-                  </div>
+                  </Link>
                   <button
                     onClick={handleSignOut}
                     className="flex items-center gap-1.5 text-sm font-medium text-gray-600 hover:text-primary transition-colors"
@@ -122,15 +122,24 @@ export default function Navbar() {
             ))}
             <div className="flex gap-2 pt-2 border-t border-gray-100">
               {user ? (
-                <button
-                  onClick={() => {
-                    setIsOpen(false);
-                    handleSignOut();
-                  }}
-                  className="flex-1 text-center px-3 py-2 text-sm font-medium text-gray-600 border border-gray-300 rounded-lg hover:bg-gray-50"
-                >
-                  Logout
-                </button>
+                <>
+                  <Link
+                    to="/profile"
+                    onClick={() => setIsOpen(false)}
+                    className="flex-1 text-center px-3 py-2 text-sm font-medium text-gray-600 border border-gray-300 rounded-lg hover:bg-gray-50"
+                  >
+                    Profile
+                  </Link>
+                  <button
+                    onClick={() => {
+                      setIsOpen(false);
+                      handleSignOut();
+                    }}
+                    className="flex-1 text-center px-3 py-2 text-sm font-medium text-gray-600 border border-gray-300 rounded-lg hover:bg-gray-50"
+                  >
+                    Logout
+                  </button>
+                </>
               ) : (
                 <>
                   <Link to="/login" onClick={() => setIsOpen(false)} className="flex-1 text-center px-3 py-2 text-sm font-medium text-gray-600 border border-gray-300 rounded-lg hover:bg-gray-50">

@@ -1,6 +1,5 @@
 import { supabase } from './supabase';
 
-const API_URL = import.meta.env.VITE_API_URL || '';
 const RAZORPAY_KEY_ID = import.meta.env.VITE_RAZORPAY_KEY_ID;
 
 if (!RAZORPAY_KEY_ID) {
@@ -43,22 +42,10 @@ function loadRazorpayScript(): Promise<void> {
   return scriptPromise;
 }
 
-async function authedFetch(path: string, body: unknown): Promise<{ ok: boolean; data: any }> {
-  const {
-    data: { session },
-  } = await supabase.auth.getSession();
-  if (!session) throw new Error('Please sign in to continue.');
-  const res = await fetch(`${API_URL}${path}`, {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-      Authorization: `Bearer ${session.access_token}`,
-    },
-    body: JSON.stringify(body),
-  });
-  const data = await res.json().catch(() => ({}));
-  if (!res.ok) throw new Error(data.error || 'Something went wrong.');
-  return { ok: res.ok, data };
+async function invokeEdgeFunction(name: string, body: Record<string, unknown>): Promise<any> {
+  const { data, error } = await supabase.functions.invoke(name, { body });
+  if (error) throw new Error(error.message || 'Something went wrong.');
+  return data;
 }
 
 export interface CheckoutResult {
@@ -68,7 +55,7 @@ export interface CheckoutResult {
 }
 
 export async function checkoutPlan(plan: CheckoutPlan): Promise<CheckoutResult> {
-  const { data: orderData } = await authedFetch('/api/payments/create-order', {
+  const orderData = await invokeEdgeFunction('razorpay-create-order', {
     planId: plan.id,
   });
   const {
@@ -91,7 +78,7 @@ export async function checkoutPlan(plan: CheckoutPlan): Promise<CheckoutResult> 
       prefill: { email: session?.user?.email ?? '' },
       handler: async (response: RazorpayResponse) => {
         try {
-          const { data } = await authedFetch('/api/payments/verify', {
+          const data = await invokeEdgeFunction('razorpay-verify', {
             orderId: response.razorpay_order_id,
             paymentId: response.razorpay_payment_id,
             signature: response.razorpay_signature,

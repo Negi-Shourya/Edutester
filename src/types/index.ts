@@ -68,3 +68,47 @@ export interface TestCardData {
   completed?: boolean;
   score?: number;
 }
+
+export interface AdminUser {
+  id: string;
+  email: string | null;
+  full_name: string | null;
+  created_at: string;
+  last_sign_in_at: string | null;
+}
+
+export interface AdminPurchase {
+  id: string;
+  user_id: string;
+  email: string | null;
+  plan_id: string;
+  plan_name: string;
+  amount: number; // paise
+  status: string;
+  razorpay_order_id: string | null;
+  razorpay_payment_id: string | null;
+  starts_at: string;
+  ends_at: string;
+  created_at: string;
+}
+
+export interface PageView {
+  id: string;
+  path: string;
+  user_id: string | null;
+  created_at: string;
+}
+
+export interface Subscription {
+  id: string;
+  user_id: string;
+  plan_id: string;
+  plan_name: string;
+  amount: number; // paise
+  status: 'active' | 'expired';
+  razorpay_order_id: string | null;
+  razorpay_payment_id: string | null;
+  starts_at: string;
+  ends_at: string;
+  created_at: string;
+}

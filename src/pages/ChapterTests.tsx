@@ -1,11 +1,15 @@
 import { useState } from 'react';
 import { Search, BookOpen } from 'lucide-react';
 import TestCard from '../components/TestCard';
+import PaywallModal from '../components/PaywallModal';
 import { chapterTests, subjects } from '../data/chapters';
+import { FREE_TRIAL_TEST_ID, useSubscriptionAccess } from '../lib/subscription';
 
 export default function ChapterTests() {
   const [subject, setSubject] = useState('All');
   const [search, setSearch] = useState('');
+  const [showPaywall, setShowPaywall] = useState(false);
+  const { hasAccess, loading } = useSubscriptionAccess();
 
   const filtered = chapterTests.filter((t) => {
     const matchSubject = subject === 'All' || t.subject === subject;
@@ -13,6 +17,10 @@ export default function ChapterTests() {
       t.chapter?.toLowerCase().includes(search.toLowerCase());
     return matchSubject && matchSearch;
   });
+
+  const isLocked = (testId: string) =>
+    !loading && !hasAccess && testId !== FREE_TRIAL_TEST_ID;
+  const isTrial = (testId: string) => !loading && !hasAccess && testId === FREE_TRIAL_TEST_ID;
 
   return (
     <div className="bg-gray-50 min-h-screen">
@@ -67,7 +75,13 @@ export default function ChapterTests() {
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
                   {subTests.map((test) => (
-                    <TestCard key={test.id} test={test} />
+                    <TestCard
+                      key={test.id}
+                      test={test}
+                      locked={isLocked(test.id)}
+                      trial={isTrial(test.id)}
+                      onLocked={() => setShowPaywall(true)}
+                    />
                   ))}
                 </div>
               </div>
@@ -76,8 +90,21 @@ export default function ChapterTests() {
         ) : (
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {filtered.map((test) => (
-              <TestCard key={test.id} test={test} />
+              <TestCard
+                key={test.id}
+                test={test}
+                locked={isLocked(test.id)}
+                trial={isTrial(test.id)}
+                onLocked={() => setShowPaywall(true)}
+              />
             ))}
+          </div>
+        )}
+
+        {!loading && !hasAccess && (
+          <div className="mt-6 p-4 rounded-xl bg-green-50 border border-green-200 text-sm text-green-700 flex items-center gap-2">
+            <span className="font-semibold">Free trial:</span>
+            Try the Kinematics test for free. Subscribe to unlock all chapter tests.
           </div>
         )}
 
@@ -89,6 +116,8 @@ export default function ChapterTests() {
             <p className="text-gray-500">No tests found. Try a different search or filter.</p>
           </div>
         )}
+
+        <PaywallModal open={showPaywall} onClose={() => setShowPaywall(false)} />
       </div>
     </div>
   );

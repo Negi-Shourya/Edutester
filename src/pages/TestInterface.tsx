@@ -1,7 +1,9 @@
 import { useState, useEffect, useCallback } from 'react';
-import { useSearchParams } from 'react-router-dom';
+import { useSearchParams, useNavigate } from 'react-router-dom';
 import { getPaperQuestions, type PaperQuestions } from '../data/questions';
 import type { Question, QuestionState, QuestionStatus } from '../types';
+import { FREE_TRIAL_PAPER_KEY, useSubscriptionAccess } from '../lib/subscription';
+import { Crown, Lock } from 'lucide-react';
 
 import NtaHeader from '../components/NtaHeader';
 import NtaQuestionPanel from '../components/NtaQuestionPanel';
@@ -15,7 +17,10 @@ const EMPTY_QUESTIONS: Question[] = [];
 
 export default function TestInterface() {
   const [searchParams] = useSearchParams();
-  const paperKey = searchParams.get('paper') || '02-apr-morning';
+  const navigate = useNavigate();
+  const paperKey = searchParams.get('paper') || FREE_TRIAL_PAPER_KEY;
+
+  const { hasAccess, loading: accessLoading } = useSubscriptionAccess();
 
   const [paperData, setPaperData] = useState<PaperQuestions | null>(null);
   const [loadError, setLoadError] = useState<string | null>(null);
@@ -245,6 +250,47 @@ export default function TestInterface() {
     setActiveSection('Physics');
     forceFullscreen();
   };
+
+  if (accessLoading) {
+    return (
+      <div className="h-screen w-screen bg-[#091526] flex flex-col items-center justify-center gap-4 select-none">
+        <div className="w-10 h-10 border-4 border-blue-400 border-t-transparent rounded-full animate-spin" />
+        <p className="text-blue-200 text-sm font-medium">Checking access…</p>
+      </div>
+    );
+  }
+
+  if (!hasAccess && paperKey !== FREE_TRIAL_PAPER_KEY) {
+    return (
+      <div className="min-h-screen bg-[#091526] flex items-center justify-center px-4">
+        <div className="bg-white/5 border border-white/10 rounded-2xl p-10 max-w-md w-full text-center">
+          <div className="w-14 h-14 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-2xl flex items-center justify-center mx-auto mb-5 shadow-lg">
+            <Lock className="w-7 h-7 text-white" />
+          </div>
+          <h2 className="text-xl font-bold text-white mb-2">This paper is locked</h2>
+          <p className="text-sm text-blue-200/70 mb-6 leading-relaxed">
+            An active subscription is required to attempt this paper. Subscribe
+            to unlock every full paper and chapter test.
+          </p>
+          <div className="flex flex-col gap-2">
+            <button
+              onClick={() => navigate('/pricing')}
+              className="w-full flex items-center justify-center gap-2 bg-gradient-to-r from-indigo-500 to-purple-600 text-white py-3 rounded-xl text-sm font-semibold hover:opacity-90 transition-opacity"
+            >
+              <Crown className="w-4 h-4" />
+              View Subscription Plans
+            </button>
+            <button
+              onClick={() => navigate('/paper-tests')}
+              className="w-full py-2.5 rounded-xl text-sm font-medium text-blue-200/60 hover:bg-white/5 transition-colors"
+            >
+              Back to Paper-wise Tests
+            </button>
+          </div>
+        </div>
+      </div>
+    );
+  }
 
   if (loadError) {
     return (

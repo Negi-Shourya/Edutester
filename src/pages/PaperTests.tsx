@@ -1,6 +1,9 @@
 import { useEffect, useState } from 'react';
-import { ExternalLink, Clock, Sunrise, Sunset } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
+import { ExternalLink, Clock, Sunrise, Sunset, Lock, Gift } from 'lucide-react';
 import { getPapers } from '../data/questions';
+import PaywallModal from '../components/PaywallModal';
+import { FREE_TRIAL_PAPER_KEY, useSubscriptionAccess } from '../lib/subscription';
 
 interface PaperEntry {
   date: string;
@@ -53,6 +56,27 @@ export default function PaperTests() {
   const [papersLoading, setPapersLoading] = useState(true);
   const [papersError, setPapersError] = useState<string | null>(null);
   const [apr2026Papers, setApr2026Papers] = useState<PaperEntry[]>([]);
+  const [showPaywall, setShowPaywall] = useState(false);
+  const { hasAccess, loading } = useSubscriptionAccess();
+  const navigate = useNavigate();
+
+  const paperKeyOf = (link: string) => {
+    if (link === '/test') return FREE_TRIAL_PAPER_KEY;
+    return new URLSearchParams(link.split('?')[1]).get('paper') ?? '';
+  };
+
+  const isLocked = (link: string) =>
+    !loading && !hasAccess && paperKeyOf(link) !== FREE_TRIAL_PAPER_KEY;
+  const isTrial = (link: string) =>
+    !loading && !hasAccess && paperKeyOf(link) === FREE_TRIAL_PAPER_KEY;
+
+  const handleAttempt = (entry: PaperEntry) => {
+    if (isLocked(entry.link)) {
+      setShowPaywall(true);
+      return;
+    }
+    navigate(entry.link);
+  };
 
   useEffect(() => {
     let cancelled = false;
@@ -187,6 +211,8 @@ export default function PaperTests() {
                         <div className="divide-y divide-stone-50">
                           {entries.map((entry, i) => {
                             const isMorning = entry.shift === 'Shift 1 (Morning)';
+                            const locked = isLocked(entry.link);
+                            const trial = isTrial(entry.link);
                             return (
                               <div key={i} className="flex items-center justify-between px-4 py-3 hover:bg-stone-50/50 transition-colors">
                                 <div className="flex items-center gap-4">
@@ -196,20 +222,41 @@ export default function PaperTests() {
                                     {isMorning ? <Sunrise className="w-4 h-4" /> : <Sunset className="w-4 h-4" />}
                                   </div>
                                   <div>
-                                    <div className="text-sm text-stone-700">{entry.shift}</div>
+                                    <div className="flex items-center gap-2">
+                                      <span className="text-sm text-stone-700">{entry.shift}</span>
+                                      {trial && (
+                                        <span className="text-[10px] font-semibold text-green-700 bg-green-100 px-2 py-0.5 rounded-full flex items-center gap-1">
+                                          <Gift className="w-2.5 h-2.5" />
+                                          Free Trial
+                                        </span>
+                                      )}
+                                    </div>
                                     <div className="flex items-center gap-2 mt-0.5">
                                       <Clock className="w-3 h-3 text-stone-300" />
                                       <span className="text-xs text-stone-400">{entry.time}</span>
                                     </div>
                                   </div>
                                 </div>
-                                <a
-                                  href={entry.link}
-                                  className="inline-flex items-center gap-1.5 text-sm font-medium text-emerald-600 hover:text-emerald-700 transition-colors px-3 py-1.5 rounded-lg hover:bg-emerald-50"
+                                <button
+                                  onClick={() => handleAttempt(entry)}
+                                  className={`inline-flex items-center gap-1.5 text-sm font-medium transition-colors px-3 py-1.5 rounded-lg ${
+                                    locked
+                                      ? 'text-stone-400 hover:text-stone-600 hover:bg-stone-100'
+                                      : 'text-emerald-600 hover:text-emerald-700 hover:bg-emerald-50'
+                                  }`}
                                 >
-                                  Attempt
-                                  <ExternalLink className="w-3.5 h-3.5" />
-                                </a>
+                                  {locked ? (
+                                    <>
+                                      <Lock className="w-3.5 h-3.5" />
+                                      Unlock
+                                    </>
+                                  ) : (
+                                    <>
+                                      Attempt
+                                      <ExternalLink className="w-3.5 h-3.5" />
+                                    </>
+                                  )}
+                                </button>
                               </div>
                             );
                           })}
@@ -242,6 +289,8 @@ export default function PaperTests() {
             Placeholder links &middot; Actual papers will be added as they become available.
           </p>
         </div>
+
+        <PaywallModal open={showPaywall} onClose={() => setShowPaywall(false)} />
       </div>
     </div>
   );
