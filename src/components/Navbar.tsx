@@ -1,21 +1,30 @@
 import { useState } from 'react';
-import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, GraduationCap, LogIn, UserPlus } from 'lucide-react';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { Menu, X, GraduationCap, LogIn, UserPlus, LogOut } from 'lucide-react';
+import { useAuth } from '../context/AuthContext';
 
 const navLinks = [
   { to: '/', label: 'Home' },
   { to: '/dashboard', label: 'Dashboard' },
   { to: '/chapter-tests', label: 'Chapter Tests' },
   { to: '/paper-tests', label: 'Paper Tests' },
+  { to: '/pricing', label: 'Pricing' },
 ];
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
+  const navigate = useNavigate();
+  const { user, signOut } = useAuth();
 
   if (location.pathname.startsWith('/test')) {
     return null;
   }
+
+  const handleSignOut = async () => {
+    await signOut();
+    navigate('/');
+  };
 
   return (
     <nav className="bg-white shadow-sm border-b border-gray-100 sticky top-0 z-50">
@@ -41,20 +50,50 @@ export default function Navbar() {
               </Link>
             ))}
             <div className="flex items-center gap-3 ml-4">
-              <Link
-                to="/login"
-                className="flex items-center gap-1.5 text-sm font-medium text-gray-600 hover:text-primary transition-colors"
-              >
-                <LogIn className="w-4 h-4" />
-                Login
-              </Link>
-              <Link
-                to="/signup"
-                className="flex items-center gap-1.5 text-sm font-medium bg-primary text-white px-4 py-2 rounded-lg hover:bg-primary-dark transition-colors"
-              >
-                <UserPlus className="w-4 h-4" />
-                Sign Up
-              </Link>
+              {user ? (
+                <>
+                  <div className="flex items-center gap-2">
+                    {user.user_metadata?.avatar_url ? (
+                      <img
+                        src={user.user_metadata.avatar_url}
+                        alt=""
+                        className="w-7 h-7 rounded-full"
+                      />
+                    ) : (
+                      <div className="w-7 h-7 rounded-full bg-primary/10 text-primary flex items-center justify-center text-xs font-bold">
+                        {(user.email ?? '?')[0].toUpperCase()}
+                      </div>
+                    )}
+                    <span className="text-sm font-medium text-gray-700 max-w-[140px] truncate">
+                      {user.user_metadata?.full_name ?? user.email}
+                    </span>
+                  </div>
+                  <button
+                    onClick={handleSignOut}
+                    className="flex items-center gap-1.5 text-sm font-medium text-gray-600 hover:text-primary transition-colors"
+                  >
+                    <LogOut className="w-4 h-4" />
+                    Logout
+                  </button>
+                </>
+              ) : (
+                <>
+                  <Link
+                    to="/login"
+                    className="flex items-center gap-1.5 text-sm font-medium text-gray-600 hover:text-primary transition-colors"
+                  >
+                    <LogIn className="w-4 h-4" />
+                    Login
+                  </Link>
+                  <Link
+                    to="/signup"
+                    className="flex items-center gap-1.5 text-sm font-medium bg-primary text-white px-4 py-2 rounded-lg hover:bg-primary-dark transition-colors"
+                  >
+                    <UserPlus className="w-4 h-4" />
+                    Sign Up
+                  </Link>
+                </>
+              )}
             </div>
           </div>
 
@@ -82,12 +121,26 @@ export default function Navbar() {
               </Link>
             ))}
             <div className="flex gap-2 pt-2 border-t border-gray-100">
-              <Link to="/login" onClick={() => setIsOpen(false)} className="flex-1 text-center px-3 py-2 text-sm font-medium text-gray-600 border border-gray-300 rounded-lg hover:bg-gray-50">
-                Login
-              </Link>
-              <Link to="/signup" onClick={() => setIsOpen(false)} className="flex-1 text-center px-3 py-2 text-sm font-medium bg-primary text-white rounded-lg hover:bg-primary-dark">
-                Sign Up
-              </Link>
+              {user ? (
+                <button
+                  onClick={() => {
+                    setIsOpen(false);
+                    handleSignOut();
+                  }}
+                  className="flex-1 text-center px-3 py-2 text-sm font-medium text-gray-600 border border-gray-300 rounded-lg hover:bg-gray-50"
+                >
+                  Logout
+                </button>
+              ) : (
+                <>
+                  <Link to="/login" onClick={() => setIsOpen(false)} className="flex-1 text-center px-3 py-2 text-sm font-medium text-gray-600 border border-gray-300 rounded-lg hover:bg-gray-50">
+                    Login
+                  </Link>
+                  <Link to="/signup" onClick={() => setIsOpen(false)} className="flex-1 text-center px-3 py-2 text-sm font-medium bg-primary text-white rounded-lg hover:bg-primary-dark">
+                    Sign Up
+                  </Link>
+                </>
+              )}
             </div>
           </div>
         </div>

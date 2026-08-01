@@ -1,11 +1,13 @@
-import { Check } from 'lucide-react';
+import { Check, Loader2 } from 'lucide-react';
 import type { PricingPlan } from '../types';
 
 interface Props {
   plan: PricingPlan;
+  onCheckout: (plan: PricingPlan) => void;
+  checkoutLoading?: boolean;
 }
 
-export default function PricingCard({ plan }: Props) {
+export default function PricingCard({ plan, onCheckout, checkoutLoading }: Props) {
   return (
     <div className={`relative bg-white rounded-2xl border-2 p-6 transition-all hover:shadow-xl ${
       plan.popular ? 'border-primary shadow-lg scale-105' : 'border-gray-100'
@@ -30,12 +32,17 @@ export default function PricingCard({ plan }: Props) {
           </li>
         ))}
       </ul>
-      <button className={`w-full py-2.5 rounded-xl text-sm font-semibold transition-colors ${
-        plan.popular
-          ? 'bg-primary text-white hover:bg-primary-dark'
-          : 'bg-gray-50 text-gray-900 hover:bg-gray-100 border border-gray-200'
-      }`}>
-        Get Started
+      <button
+        onClick={() => onCheckout(plan)}
+        disabled={checkoutLoading}
+        className={`w-full flex items-center justify-center gap-2 py-2.5 rounded-xl text-sm font-semibold transition-colors disabled:opacity-60 ${
+          plan.popular
+            ? 'bg-primary text-white hover:bg-primary-dark'
+            : 'bg-gray-50 text-gray-900 hover:bg-gray-100 border border-gray-200'
+        }`}
+      >
+        {checkoutLoading ? <Loader2 className="w-4 h-4 animate-spin" /> : null}
+        {checkoutLoading ? 'Processing...' : 'Get Started'}
       </button>
     </div>
   );

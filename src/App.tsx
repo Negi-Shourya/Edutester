@@ -6,26 +6,60 @@ import Dashboard from './pages/Dashboard'
 import ChapterTests from './pages/ChapterTests'
 import PaperTests from './pages/PaperTests'
 import TestInterface from './pages/TestInterface'
+import Pricing from './pages/Pricing'
 import Login from './pages/Login'
 import Signup from './pages/Signup'
+import ProtectedRoute from './components/ProtectedRoute'
+import { AuthProvider } from './context/AuthContext'
 
 function App() {
   return (
-    <div className="flex flex-col min-h-screen">
-      <Navbar />
-      <main className="flex-1">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/dashboard" element={<Dashboard />} />
-          <Route path="/chapter-tests" element={<ChapterTests />} />
-          <Route path="/paper-tests" element={<PaperTests />} />
-          <Route path="/test" element={<TestInterface />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/signup" element={<Signup />} />
-        </Routes>
-      </main>
-      <Footer />
-    </div>
+    <AuthProvider>
+      <div className="flex flex-col min-h-screen">
+        <Navbar />
+        <main className="flex-1">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/pricing" element={<Pricing />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/signup" element={<Signup />} />
+            <Route
+              path="/dashboard"
+              element={
+                <ProtectedRoute>
+                  <Dashboard />
+                </ProtectedRoute>
+              }
+            />
+            <Route
+              path="/chapter-tests"
+              element={
+                <ProtectedRoute>
+                  <ChapterTests />
+                </ProtectedRoute>
+              }
+            />
+            <Route
+              path="/paper-tests"
+              element={
+                <ProtectedRoute>
+                  <PaperTests />
+                </ProtectedRoute>
+              }
+            />
+            <Route
+              path="/test"
+              element={
+                <ProtectedRoute>
+                  <TestInterface />
+                </ProtectedRoute>
+              }
+            />
+          </Routes>
+        </main>
+        <Footer />
+      </div>
+    </AuthProvider>
   )
 }
 

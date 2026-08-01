@@ -1,6 +1,11 @@
-import { Check, Shield, CreditCard, RefreshCw } from 'lucide-react';
+import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { Check, Shield, CreditCard, RefreshCw, Loader2 } from 'lucide-react';
 import PricingCard from '../components/PricingCard';
 import { pricingPlans } from '../data/pricing';
+import { useAuth } from '../context/AuthContext';
+import { checkoutPlan } from '../lib/razorpay';
+import type { PricingPlan } from '../types';
 
 const guarantees = [
   { icon: Shield, text: 'Secure payments with industry-standard encryption' },
@@ -16,6 +21,32 @@ const faqs = [
 ];
 
 export default function Pricing() {
+  const { user } = useAuth();
+  const navigate = useNavigate();
+  const [checkoutPlanId, setCheckoutPlanId] = useState<string | null>(null);
+  const [error, setError] = useState<string | null>(null);
+  const [success, setSuccess] = useState<string | null>(null);
+
+  const handleCheckout = async (plan: PricingPlan) => {
+    setError(null);
+    setSuccess(null);
+    if (!user) {
+      navigate('/login', { state: { from: '/pricing' } });
+      return;
+    }
+    setCheckoutPlanId(plan.id);
+    try {
+      const result = await checkoutPlan({ id: plan.id, name: plan.duration });
+      setSuccess(
+        `Payment successful (ref ${result.paymentId}). Your ${plan.duration} subscription is now active.`
+      );
+    } catch (err) {
+      setError(err instanceof Error ? err.message : 'Payment failed. Please try again.');
+    } finally {
+      setCheckoutPlanId(null);
+    }
+  };
+
   return (
     <div>
       {/* Header */}
@@ -29,11 +60,34 @@ export default function Pricing() {
       {/* Plans */}
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          {success && (
+            <div className="max-w-2xl mx-auto mb-8 p-4 rounded-xl bg-green-50 border border-green-200 text-sm text-green-700">
+              {success}
+            </div>
+          )}
+          {error && (
+            <div className="max-w-2xl mx-auto mb-8 p-4 rounded-xl bg-red-50 border border-red-200 text-sm text-red-600">
+              {error}
+            </div>
+          )}
+
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
             {pricingPlans.map((plan) => (
-              <PricingCard key={plan.id} plan={plan} />
+              <PricingCard
+                key={plan.id}
+                plan={plan}
+                onCheckout={handleCheckout}
+                checkoutLoading={checkoutPlanId === plan.id}
+              />
             ))}
           </div>
+
+          {checkoutPlanId && (
+            <div className="flex items-center justify-center gap-2 mt-8 text-sm text-gray-500">
+              <Loader2 className="w-4 h-4 animate-spin" />
+              Opening secure checkout...
+            </div>
+          )}
 
           <div className="flex flex-wrap items-center justify-center gap-6 mt-10 text-sm text-gray-500">
             {guarantees.map((g, i) => (
