@@ -1,9 +1,10 @@
 import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { ExternalLink, Clock, Sunrise, Sunset, Lock, Gift } from 'lucide-react';
+import { ExternalLink, Clock, Sunrise, Sunset, Lock, Gift, CheckCircle } from 'lucide-react';
 import { getPapers } from '../data/questions';
 import PaywallModal from '../components/PaywallModal';
 import { FREE_TRIAL_PAPER_KEY, useSubscriptionAccess } from '../lib/subscription';
+import { useAttemptScore } from '../hooks/useAttemptScore';
 
 interface PaperEntry {
   date: string;
@@ -12,6 +13,80 @@ interface PaperEntry {
   time: string;
   paper: string;
   link: string;
+}
+
+function paperKeyOf(link: string): string {
+  if (link === '/test') return FREE_TRIAL_PAPER_KEY;
+  return new URLSearchParams(link.split('?')[1]).get('paper') ?? '';
+}
+
+function PaperEntryRow({
+  entry,
+  locked,
+  trial,
+  onAttempt,
+}: {
+  entry: PaperEntry;
+  locked: boolean;
+  trial: boolean;
+  onAttempt: (entry: PaperEntry) => void;
+}) {
+  const result = useAttemptScore(paperKeyOf(entry.link));
+  const isMorning = entry.shift === 'Shift 1 (Morning)';
+
+  return (
+    <div className="flex items-center justify-between px-4 py-3 hover:bg-stone-50/50 transition-colors">
+      <div className="flex items-center gap-4">
+        <div className={`w-8 h-8 rounded-lg flex items-center justify-center ${
+          isMorning ? 'bg-amber-50 text-amber-600' : 'bg-indigo-50 text-indigo-500'
+        }`}>
+          {isMorning ? <Sunrise className="w-4 h-4" /> : <Sunset className="w-4 h-4" />}
+        </div>
+        <div>
+          <div className="flex items-center gap-2">
+            <span className="text-sm text-stone-700">{entry.shift}</span>
+            {trial && (
+              <span className="text-[10px] font-semibold text-green-700 bg-green-100 px-2 py-0.5 rounded-full flex items-center gap-1">
+                <Gift className="w-2.5 h-2.5" />
+                Free Trial
+              </span>
+            )}
+          </div>
+          <div className="flex items-center gap-2 mt-0.5">
+            <Clock className="w-3 h-3 text-stone-300" />
+            <span className="text-xs text-stone-400">{entry.time}</span>
+          </div>
+          {result && (
+            <div className="flex items-center gap-1.5 mt-1 text-xs text-green-700">
+              <CheckCircle className="w-3 h-3" />
+              <span className="font-medium">Score: {result.totalScore}/{result.maxScore}</span>
+              <span className="text-stone-400">({result.accuracy}% accuracy)</span>
+            </div>
+          )}
+        </div>
+      </div>
+      <button
+        onClick={() => onAttempt(entry)}
+        className={`inline-flex items-center gap-1.5 text-sm font-medium transition-colors px-3 py-1.5 rounded-lg ${
+          locked
+            ? 'text-stone-400 hover:text-stone-600 hover:bg-stone-100'
+            : 'text-emerald-600 hover:text-emerald-700 hover:bg-emerald-50'
+        }`}
+      >
+        {locked ? (
+          <>
+            <Lock className="w-3.5 h-3.5" />
+            Unlock
+          </>
+        ) : (
+          <>
+            {result ? 'Retake' : 'Attempt'}
+            <ExternalLink className="w-3.5 h-3.5" />
+          </>
+        )}
+      </button>
+    </div>
+  );
 }
 
 interface SessionGroup {
@@ -59,11 +134,6 @@ export default function PaperTests() {
   const [showPaywall, setShowPaywall] = useState(false);
   const { hasAccess, loading } = useSubscriptionAccess();
   const navigate = useNavigate();
-
-  const paperKeyOf = (link: string) => {
-    if (link === '/test') return FREE_TRIAL_PAPER_KEY;
-    return new URLSearchParams(link.split('?')[1]).get('paper') ?? '';
-  };
 
   const isLocked = (link: string) =>
     !loading && !hasAccess && paperKeyOf(link) !== FREE_TRIAL_PAPER_KEY;
@@ -209,57 +279,15 @@ export default function PaperTests() {
                           <span className="text-xs text-stone-400">{entries.length} shift{entries.length > 1 ? 's' : ''}</span>
                         </div>
                         <div className="divide-y divide-stone-50">
-                          {entries.map((entry, i) => {
-                            const isMorning = entry.shift === 'Shift 1 (Morning)';
-                            const locked = isLocked(entry.link);
-                            const trial = isTrial(entry.link);
-                            return (
-                              <div key={i} className="flex items-center justify-between px-4 py-3 hover:bg-stone-50/50 transition-colors">
-                                <div className="flex items-center gap-4">
-                                  <div className={`w-8 h-8 rounded-lg flex items-center justify-center ${
-                                    isMorning ? 'bg-amber-50 text-amber-600' : 'bg-indigo-50 text-indigo-500'
-                                  }`}>
-                                    {isMorning ? <Sunrise className="w-4 h-4" /> : <Sunset className="w-4 h-4" />}
-                                  </div>
-                                  <div>
-                                    <div className="flex items-center gap-2">
-                                      <span className="text-sm text-stone-700">{entry.shift}</span>
-                                      {trial && (
-                                        <span className="text-[10px] font-semibold text-green-700 bg-green-100 px-2 py-0.5 rounded-full flex items-center gap-1">
-                                          <Gift className="w-2.5 h-2.5" />
-                                          Free Trial
-                                        </span>
-                                      )}
-                                    </div>
-                                    <div className="flex items-center gap-2 mt-0.5">
-                                      <Clock className="w-3 h-3 text-stone-300" />
-                                      <span className="text-xs text-stone-400">{entry.time}</span>
-                                    </div>
-                                  </div>
-                                </div>
-                                <button
-                                  onClick={() => handleAttempt(entry)}
-                                  className={`inline-flex items-center gap-1.5 text-sm font-medium transition-colors px-3 py-1.5 rounded-lg ${
-                                    locked
-                                      ? 'text-stone-400 hover:text-stone-600 hover:bg-stone-100'
-                                      : 'text-emerald-600 hover:text-emerald-700 hover:bg-emerald-50'
-                                  }`}
-                                >
-                                  {locked ? (
-                                    <>
-                                      <Lock className="w-3.5 h-3.5" />
-                                      Unlock
-                                    </>
-                                  ) : (
-                                    <>
-                                      Attempt
-                                      <ExternalLink className="w-3.5 h-3.5" />
-                                    </>
-                                  )}
-                                </button>
-                              </div>
-                            );
-                          })}
+                          {entries.map((entry, i) => (
+                            <PaperEntryRow
+                              key={i}
+                              entry={entry}
+                              locked={isLocked(entry.link)}
+                              trial={isTrial(entry.link)}
+                              onAttempt={handleAttempt}
+                            />
+                          ))}
                         </div>
                       </div>
                     ))}

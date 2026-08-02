@@ -1,8 +1,12 @@
-import { useState, useEffect, useCallback } from 'react';
+﻿import { useState, useEffect, useCallback, useRef } from 'react';
 import { useSearchParams, useNavigate } from 'react-router-dom';
 import { getPaperQuestions, type PaperQuestions } from '../data/questions';
 import type { Question, QuestionState, QuestionStatus } from '../types';
 import { FREE_TRIAL_PAPER_KEY, useSubscriptionAccess } from '../lib/subscription';
+import { loadAttempt, saveAttempt, clearAttempt } from '../lib/attemptStorage';
+import { saveAttemptResult } from '../lib/attemptsDb';
+import { computeAttemptResult } from '../lib/scoring';
+import { useAuth } from '../context/AuthContext';
 import { Crown, Lock } from 'lucide-react';
 
 import NtaHeader from '../components/NtaHeader';
@@ -14,13 +18,22 @@ import NtaSubmitModal from '../components/NtaSubmitModal';
 import NtaResultScreen from '../components/NtaResultScreen';
 
 const EMPTY_QUESTIONS: Question[] = [];
+const SECTIONS = ['Physics', 'Chemistry', 'Mathematics'];
 
 export default function TestInterface() {
   const [searchParams] = useSearchParams();
   const navigate = useNavigate();
   const paperKey = searchParams.get('paper') || FREE_TRIAL_PAPER_KEY;
 
+  const { user } = useAuth();
   const { hasAccess, loading: accessLoading } = useSubscriptionAccess();
+
+  const candidateName = (
+    (user?.user_metadata?.full_name as string | undefined) ??
+    user?.email ??
+    'CANDIDATE'
+  ).toUpperCase();
+  const candidateId = '123456';
 
   const [paperData, setPaperData] = useState<PaperQuestions | null>(null);
   const [loadError, setLoadError] = useState<string | null>(null);
@@ -30,6 +43,9 @@ export default function TestInterface() {
   const [currentQuestionId, setCurrentQuestionId] = useState<number | null>(null);
   const [language, setLanguage] = useState<string>('English');
   const [isTestSubmitted, setIsTestSubmitted] = useState<boolean>(false);
+  // True once this submitted attempt has been pushed to the DB (see the
+  // sync effect below). Persisted so a refresh doesn't create a duplicate row.
+  const [syncedToDb, setSyncedToDb] = useState<boolean>(false);
 
   // Modals state
   const [showQuestionPaper, setShowQuestionPaper] = useState<boolean>(false);
@@ -43,6 +59,10 @@ export default function TestInterface() {
   const [timeLeft, setTimeLeft] = useState<number>(180 * 60);
 
   const questions = paperData?.questions ?? EMPTY_QUESTIONS;
+  // Set to true once an attempt has been restored from localStorage (or
+  // freshly initialized), so the save effect never overwrites a saved
+  // attempt with pre-hydration state.
+  const hydratedRef = useRef(false);
 
   // Load the paper from the database when the paper key changes
   useEffect(() => {
@@ -73,22 +93,97 @@ export default function TestInterface() {
   // Question States initialized to 'not-visited' (Question 1 is immediately marked 'not-answered')
   const [questionStates, setQuestionStates] = useState<QuestionState[]>([]);
 
-  // Re-initialize state once questions arrive (or paper changes)
+  // Re-initialize state once questions arrive (or paper changes). If a
+  // saved attempt exists for this paper, resume it instead of starting fresh.
   useEffect(() => {
     if (questions.length === 0) return;
-    setQuestionStates(
-      questions.map((q, idx) => ({
-        id: q.id,
-        status: idx === 0 ? 'not-answered' : 'not-visited',
-      }))
-    );
-    setCurrentQuestionId(questions[0].id);
-    setActiveSection('Physics');
-    setTimeLeft(180 * 60);
-    setIsTestSubmitted(false);
+
+    const saved = loadAttempt(paperKey);
+
+    if (saved) {
+      const validIds = new Set(questions.map((q) => q.id));
+      const restoredStates = saved.questionStates.filter((qs) => validIds.has(qs.id));
+      const states = questions.map((q) => {
+        const existing = restoredStates.find((qs) => qs.id === q.id);
+        return existing ?? { id: q.id, status: 'not-visited' as const };
+      });
+      setQuestionStates(states);
+      setCurrentQuestionId(
+        saved.currentQuestionId !== null && validIds.has(saved.currentQuestionId)
+          ? saved.currentQuestionId
+          : questions[0].id
+      );
+      setActiveSection(
+        saved.activeSection && SECTIONS.includes(saved.activeSection)
+          ? saved.activeSection
+          : 'Physics'
+      );
+      setLanguage(saved.language === 'Hindi' ? 'Hindi' : 'English');
+      setTimeLeft(saved.timeLeft > 0 ? saved.timeLeft : 180 * 60);
+      setIsTestSubmitted(saved.isTestSubmitted);
+      setSyncedToDb(!!saved.syncedToDb);
+    } else {
+      setQuestionStates(
+        questions.map((q, idx) => ({
+          id: q.id,
+          status: idx === 0 ? 'not-answered' : 'not-visited',
+        }))
+      );
+      setCurrentQuestionId(questions[0].id);
+      setActiveSection('Physics');
+      setLanguage('English');
+      setTimeLeft(180 * 60);
+      setIsTestSubmitted(false);
+      setSyncedToDb(false);
+    }
+
+    hydratedRef.current = true;
   }, [paperKey, questions]);
 
-  const sections = ['Physics', 'Chemistry', 'Mathematics'];
+  // Persist the attempt locally after every change, so a closed tab/browser
+  // can be resumed from exactly where the user left off.
+  useEffect(() => {
+    if (!hydratedRef.current || questions.length === 0) return;
+    saveAttempt(paperKey, {
+      currentQuestionId: currentQuestionId ?? questions[0]?.id ?? null,
+      activeSection,
+      language,
+      timeLeft,
+      questionStates,
+      isTestSubmitted,
+      syncedToDb,
+    });
+  }, [
+    paperKey,
+    questions,
+    currentQuestionId,
+    activeSection,
+    language,
+    timeLeft,
+    questionStates,
+    isTestSubmitted,
+    syncedToDb,
+  ]);
+
+  // When the test is submitted, push the result to the DB once (the flag is
+  // persisted in the saved attempt, so a refresh or re-render can't create
+  // a duplicate row). Failures are silent — the attempt remains in
+  // localStorage and gets backfilled on the next Dashboard visit.
+  useEffect(() => {
+    if (!hydratedRef.current || questions.length === 0) return;
+    if (!isTestSubmitted || syncedToDb) return;
+
+    const result = computeAttemptResult(questions, questionStates);
+    saveAttemptResult({
+      paperKey,
+      testType: 'paper',
+      title: paperData?.paper.fullTitle ?? paperKey,
+      result,
+      timeSpent: Math.max(0, 180 * 60 - timeLeft),
+    }).then((ok) => {
+      if (ok) setSyncedToDb(true);
+    });
+  }, [isTestSubmitted, syncedToDb, paperKey, questions, questionStates, paperData, timeLeft]);
 
   const currentQuestion =
     questions.find((q) => q.id === currentQuestionId) ?? questions[0];
@@ -238,6 +333,8 @@ export default function TestInterface() {
   };
 
   const handleRetakeTest = () => {
+    clearAttempt(paperKey);
+    setSyncedToDb(false);
     setQuestionStates(
       questions.map((q, idx) => ({
         id: q.id,
@@ -255,7 +352,7 @@ export default function TestInterface() {
     return (
       <div className="h-screen w-screen bg-[#091526] flex flex-col items-center justify-center gap-4 select-none">
         <div className="w-10 h-10 border-4 border-blue-400 border-t-transparent rounded-full animate-spin" />
-        <p className="text-blue-200 text-sm font-medium">Checking access…</p>
+        <p className="text-blue-200 text-sm font-medium">Checking accessâ€¦</p>
       </div>
     );
   }
@@ -310,7 +407,7 @@ export default function TestInterface() {
     return (
       <div className="h-screen w-screen bg-[#091526] flex flex-col items-center justify-center gap-4 select-none">
         <div className="w-10 h-10 border-4 border-blue-400 border-t-transparent rounded-full animate-spin" />
-        <p className="text-blue-200 text-sm font-medium">Loading question paper…</p>
+        <p className="text-blue-200 text-sm font-medium">Loading question paperâ€¦</p>
       </div>
     );
   }
@@ -324,7 +421,7 @@ export default function TestInterface() {
       <NtaResultScreen
         questions={questions}
         questionStates={questionStates}
-        sections={sections}
+        sections={SECTIONS}
         examTitle={fullExamTitle}
         onRetake={handleRetakeTest}
       />
@@ -346,8 +443,8 @@ export default function TestInterface() {
       {/* 1. NTA Header Bar */}
       <NtaHeader
         examName={examTitle}
-        candidateName="ADITYA SHARMA"
-        candidateId="2406001234"
+        candidateName={candidateName}
+        candidateId={candidateId}
         timeLeft={timeLeft}
         onOpenQuestionPaper={() => setShowQuestionPaper(true)}
         onOpenInstructions={() => setShowInstructions(true)}
@@ -359,7 +456,7 @@ export default function TestInterface() {
       <div className="flex-1 flex overflow-hidden bg-white">
         {/* Left Panel: Question Workspace */}
         <NtaQuestionPanel
-          sections={sections}
+          sections={SECTIONS}
           activeSection={activeSection}
           onSelectSection={handleSelectSection}
           currentQuestion={currentQuestion}
@@ -385,7 +482,7 @@ export default function TestInterface() {
           activeSection={activeSection}
           onSelectQuestion={handleSelectQuestion}
           onSubmitTest={() => setShowSubmitModal(true)}
-          candidateName="ADITYA SHARMA"
+          candidateName={candidateName}
         />
       </div>
 
@@ -394,7 +491,7 @@ export default function TestInterface() {
         isOpen={showQuestionPaper}
         onClose={() => setShowQuestionPaper(false)}
         questions={questions}
-        sections={sections}
+        sections={SECTIONS}
         examTitle={fullExamTitle}
       />
 
@@ -412,9 +509,10 @@ export default function TestInterface() {
         }}
         questions={questions}
         questionStates={questionStates}
-        sections={sections}
+        sections={SECTIONS}
         examTitle={fullExamTitle}
       />
     </div>
   );
 }
+

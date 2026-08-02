@@ -1,34 +1,19 @@
-import { useState, type FormEvent } from 'react';
-import { Link, useLocation, useNavigate } from 'react-router-dom';
-import { GraduationCap, Eye, EyeOff, LogIn, Loader2 } from 'lucide-react';
+import { useState } from 'react';
+import { Link } from 'react-router-dom';
+import { GraduationCap, Loader2, Lock, Zap, ShieldCheck } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
 import GoogleIcon from '../components/GoogleIcon';
 
+const perks = [
+  { icon: Zap, text: 'Instant sign in — no password to remember' },
+  { icon: Lock, text: 'Secure & private with your Google account' },
+  { icon: ShieldCheck, text: 'One-tap access on every device' },
+];
+
 export default function Login() {
-  const { signIn, signInWithGoogle, rememberMe, setRememberMe } = useAuth();
-  const [showPassword, setShowPassword] = useState(false);
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+  const { signInWithGoogle } = useAuth();
   const [error, setError] = useState<string | null>(null);
-  const [loading, setLoading] = useState(false);
   const [googleLoading, setGoogleLoading] = useState(false);
-  const navigate = useNavigate();
-  const location = useLocation();
-
-  const from = (location.state as { from?: string } | null)?.from ?? '/';
-
-  const handleSubmit = async (e: FormEvent) => {
-    e.preventDefault();
-    setError(null);
-    setLoading(true);
-    const { error: authError } = await signIn(email, password);
-    setLoading(false);
-    if (authError) {
-      setError(authError);
-      return;
-    }
-    navigate(from, { replace: true });
-  };
 
   const handleGoogle = async () => {
     setError(null);
@@ -42,99 +27,70 @@ export default function Login() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50 flex items-center justify-center px-4 py-12">
-      <div className="bg-white rounded-2xl shadow-sm border border-gray-200 p-8 w-full max-w-md">
-        <div className="text-center mb-8">
-          <div className="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
-            <GraduationCap className="w-7 h-7 text-primary" />
-          </div>
-          <h1 className="text-2xl font-bold text-gray-900">Welcome back</h1>
-          <p className="text-gray-500 mt-1">Sign in to continue your preparation</p>
-        </div>
+    <div className="min-h-screen relative overflow-hidden bg-gradient-to-br from-indigo-50 via-white to-purple-50 flex items-center justify-center px-4 py-12">
+      <div className="absolute -top-24 -left-24 w-96 h-96 bg-primary/10 rounded-full blur-3xl" />
+      <div className="absolute -bottom-32 -right-24 w-96 h-96 bg-purple-200/40 rounded-full blur-3xl" />
+      <div className="absolute top-1/3 right-1/4 w-40 h-40 bg-amber-100/50 rounded-full blur-2xl" />
 
-        {error && (
-          <div className="mb-4 p-3 rounded-lg bg-red-50 border border-red-200 text-sm text-red-600">
-            {error}
-          </div>
-        )}
-
-        <button
-          type="button"
-          onClick={handleGoogle}
-          disabled={googleLoading}
-          className="w-full flex items-center justify-center gap-3 border border-gray-200 rounded-xl py-2.5 text-sm font-semibold text-gray-700 hover:bg-gray-50 transition-colors disabled:opacity-60"
-        >
-          {googleLoading ? (
-            <Loader2 className="w-4 h-4 animate-spin" />
-          ) : (
-            <GoogleIcon />
-          )}
-          Continue with Google
-        </button>
-
-        <div className="flex items-center gap-3 my-6">
-          <div className="flex-1 h-px bg-gray-200" />
-          <span className="text-xs text-gray-400 font-medium">OR</span>
-          <div className="flex-1 h-px bg-gray-200" />
-        </div>
-
-        <form onSubmit={handleSubmit} className="space-y-4">
-          <div>
-            <label className="block text-sm font-medium text-gray-700 mb-1">Email</label>
-            <input
-              type="email"
-              required
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              placeholder="you@example.com"
-              className="w-full px-4 py-2.5 border border-gray-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary"
-            />
-          </div>
-          <div>
-            <label className="block text-sm font-medium text-gray-700 mb-1">Password</label>
-            <div className="relative">
-              <input
-                type={showPassword ? 'text' : 'password'}
-                required
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-                placeholder="Enter your password"
-                className="w-full px-4 py-2.5 border border-gray-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary pr-10"
-              />
-              <button
-                type="button"
-                onClick={() => setShowPassword(!showPassword)}
-                className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 hover:text-gray-600"
-              >
-                {showPassword ? <EyeOff className="w-4 h-4" /> : <Eye className="w-4 h-4" />}
-              </button>
+      <div className="relative w-full max-w-md">
+        <div className="bg-white/80 backdrop-blur rounded-3xl shadow-xl shadow-primary/5 border border-white/60 p-8 sm:p-10">
+          <div className="text-center mb-8">
+            <div className="w-16 h-16 bg-gradient-to-br from-primary to-purple-600 rounded-2xl flex items-center justify-center mx-auto mb-5 shadow-lg shadow-primary/25">
+              <GraduationCap className="w-8 h-8 text-white" />
             </div>
+            <h1 className="text-2xl font-bold text-gray-900">Welcome back</h1>
+            <p className="text-gray-500 mt-1.5">Sign in to continue your exam preparation</p>
           </div>
-          <div className="flex items-center justify-between text-sm">
-            <label className="flex items-center gap-2 cursor-pointer">
-              <input
-                type="checkbox"
-                checked={rememberMe}
-                onChange={(e) => setRememberMe(e.target.checked)}
-                className="accent-primary"
-              />
-              <span className="text-gray-600">Remember me</span>
-            </label>
-            <a href="#" className="text-primary hover:underline">Forgot password?</a>
-          </div>
+
+          {error && (
+            <div className="mb-5 p-3.5 rounded-xl bg-red-50 border border-red-200 text-sm text-red-600">
+              {error}
+            </div>
+          )}
+
           <button
-            type="submit"
-            disabled={loading}
-            className="w-full flex items-center justify-center gap-2 bg-primary text-white py-2.5 rounded-xl text-sm font-semibold hover:bg-primary-dark transition-colors disabled:opacity-60"
+            type="button"
+            onClick={handleGoogle}
+            disabled={googleLoading}
+            className="w-full flex items-center justify-center gap-3 bg-white border-2 border-gray-200 rounded-2xl py-3.5 text-sm font-bold text-gray-800 hover:border-primary/50 hover:shadow-lg hover:shadow-primary/10 hover:-translate-y-0.5 transition-all duration-200 disabled:opacity-60 disabled:hover:translate-y-0"
           >
-            {loading ? <Loader2 className="w-4 h-4 animate-spin" /> : <LogIn className="w-4 h-4" />}
-            Sign In
+            {googleLoading ? (
+              <Loader2 className="w-5 h-5 animate-spin text-primary" />
+            ) : (
+              <GoogleIcon />
+            )}
+            {googleLoading ? 'Opening Google...' : 'Continue with Google'}
           </button>
-        </form>
+
+          <p className="text-center text-xs text-gray-400 mt-3">
+            One tap. No passwords to remember.
+          </p>
+
+          <div className="flex items-center gap-3 my-7">
+            <div className="flex-1 h-px bg-gray-200" />
+            <span className="text-[11px] uppercase tracking-wider text-gray-400 font-semibold">
+              Your benefits
+            </span>
+            <div className="flex-1 h-px bg-gray-200" />
+          </div>
+
+          <ul className="space-y-3">
+            {perks.map((perk) => (
+              <li key={perk.text} className="flex items-center gap-3 text-sm text-gray-600">
+                <span className="w-8 h-8 rounded-lg bg-primary/10 text-primary flex items-center justify-center shrink-0">
+                  <perk.icon className="w-4 h-4" />
+                </span>
+                {perk.text}
+              </li>
+            ))}
+          </ul>
+        </div>
 
         <p className="mt-6 text-center text-sm text-gray-500">
           Don't have an account?{' '}
-          <Link to="/signup" className="text-primary font-medium hover:underline">Sign up</Link>
+          <Link to="/signup" className="text-primary font-semibold hover:underline">
+            Create one
+          </Link>
         </p>
       </div>
     </div>

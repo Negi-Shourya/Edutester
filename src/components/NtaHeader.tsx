@@ -33,17 +33,17 @@ export default function NtaHeader({
     <header className="bg-[#1b365d] text-white shrink-0 select-none border-b border-[#0d2242] shadow-md">
       {/* Top Banner Bar */}
       <div className="flex items-center justify-between px-3 py-1.5 bg-[#0f2444] text-xs border-b border-[#1b3b6b]">
-        {/* NTA / Exam Logo & Title */}
+        {/* Exam Logo & Title */}
         <div className="flex items-center gap-2">
           <div className="w-7 h-7 bg-amber-400 rounded flex items-center justify-center font-black text-[#1b365d] text-xs shadow-sm">
-            NTA
+            E
           </div>
           <div>
             <h1 className="font-bold tracking-wide text-amber-300 text-xs sm:text-sm uppercase">
-              National Testing Agency (NTA)
+              Edu Tester Exam
             </h1>
             <p className="text-[10px] text-gray-300 leading-none">
-              JEE (Main) - 2024 Computer Based Test (CBT)
+              JEE (Main) Computer Based Test (CBT)
             </p>
           </div>
         </div>

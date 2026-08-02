@@ -1,22 +1,48 @@
-import { Check, Loader2 } from 'lucide-react';
+import { useState } from 'react';
+import { Check, Loader2, ShieldCheck, ArrowRight } from 'lucide-react';
 import type { PricingPlan } from '../types';
 
 interface Props {
   plan: PricingPlan;
   onCheckout: (plan: PricingPlan) => void;
   checkoutLoading?: boolean;
+  active?: boolean;
+  activeExpiry?: string | null;
+  nextPlan?: PricingPlan | null;
 }
 
-export default function PricingCard({ plan, onCheckout, checkoutLoading }: Props) {
+function formatExpiry(iso: string | null | undefined): string {
+  if (!iso) return 'N/A';
+  return new Date(iso).toLocaleDateString('en-IN', {
+    day: '2-digit',
+    month: 'short',
+    year: 'numeric',
+  });
+}
+
+export default function PricingCard({
+  plan,
+  onCheckout,
+  checkoutLoading,
+  active = false,
+  activeExpiry,
+  nextPlan,
+}: Props) {
+  const [showActiveInfo, setShowActiveInfo] = useState(false);
+
   return (
     <div className={`relative bg-white rounded-2xl border-2 p-6 transition-all hover:shadow-xl ${
-      plan.popular ? 'border-primary shadow-lg scale-105' : 'border-gray-100'
+      active ? 'border-green-400 shadow-md' : plan.popular ? 'border-primary shadow-lg scale-105' : 'border-gray-100'
     }`}>
-      {plan.popular && (
+      {active ? (
+        <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-green-600 text-white px-4 py-0.5 rounded-full text-xs font-semibold whitespace-nowrap">
+          Your Current Plan
+        </div>
+      ) : plan.popular ? (
         <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-primary text-white px-4 py-0.5 rounded-full text-xs font-semibold">
           Most Popular
         </div>
-      )}
+      ) : null}
       <div className="text-center mb-6">
         <h3 className="text-lg font-semibold text-gray-900">{plan.duration}</h3>
         <div className="mt-3">
@@ -33,17 +59,46 @@ export default function PricingCard({ plan, onCheckout, checkoutLoading }: Props
         ))}
       </ul>
       <button
-        onClick={() => onCheckout(plan)}
+        onClick={() => (active ? setShowActiveInfo((v) => !v) : onCheckout(plan))}
         disabled={checkoutLoading}
         className={`w-full flex items-center justify-center gap-2 py-2.5 rounded-xl text-sm font-semibold transition-colors disabled:opacity-60 ${
-          plan.popular
-            ? 'bg-primary text-white hover:bg-primary-dark'
-            : 'bg-gray-50 text-gray-900 hover:bg-gray-100 border border-gray-200'
+          active
+            ? 'bg-green-600 text-white hover:bg-green-700'
+            : plan.popular
+              ? 'bg-primary text-white hover:bg-primary-dark'
+              : 'bg-gray-50 text-gray-900 hover:bg-gray-100 border border-gray-200'
         }`}
       >
-        {checkoutLoading ? <Loader2 className="w-4 h-4 animate-spin" /> : null}
-        {checkoutLoading ? 'Processing...' : 'Get Started'}
+        {checkoutLoading ? <Loader2 className="w-4 h-4 animate-spin" /> : active ? <ShieldCheck className="w-4 h-4" /> : null}
+        {checkoutLoading
+          ? 'Processing...'
+          : active
+            ? `Active · until ${formatExpiry(activeExpiry)}`
+            : 'Get Started'}
       </button>
+
+      {active && showActiveInfo && (
+        <div className="mt-3 p-4 rounded-xl bg-green-50 border border-green-200 text-sm">
+          <p className="font-semibold text-green-800">This plan is already active.</p>
+          <p className="text-green-700 mt-1 text-xs leading-relaxed">
+            Your subscription runs until {formatExpiry(activeExpiry)}. You can upgrade anytime to
+            extend your access with better benefits.
+          </p>
+          {nextPlan ? (
+            <button
+              onClick={() => onCheckout(nextPlan)}
+              className="mt-3 w-full flex items-center justify-center gap-1.5 bg-green-600 text-white py-2.5 rounded-lg text-xs font-semibold hover:bg-green-700 transition-colors"
+            >
+              Upgrade to {nextPlan.duration}
+              <ArrowRight className="w-3.5 h-3.5" />
+            </button>
+          ) : (
+            <p className="mt-3 text-xs text-green-700 font-medium">
+              You're on our highest plan — nothing more to upgrade to!
+            </p>
+          )}
+        </div>
+      )}
     </div>
   );
 }

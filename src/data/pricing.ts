@@ -7,11 +7,10 @@ export const pricingPlans: PricingPlan[] = [
     price: 19,
     pricePerMonth: 19,
     features: [
-      'Access to all chapter-wise tests',
-      'Access to all paper-wise tests',
-      'NTA-like test interface',
-      'Detailed performance analysis',
-      'Chapter-wise progress tracking',
+      'Authentic NTA-like test interface',
+      'Previous year question papers',
+      'Full-length test series',
+      'Support for questions & issues',
     ],
   },
   {
@@ -23,9 +22,6 @@ export const pricingPlans: PricingPlan[] = [
     features: [
       'Everything in 1 Month plan',
       'Save ₹7 compared to monthly',
-      'Priority support',
-      'Advanced analytics',
-      'Mock test series access',
     ],
   },
   {
@@ -36,9 +32,6 @@ export const pricingPlans: PricingPlan[] = [
     features: [
       'Everything in 3 Months plan',
       'Save ₹56 compared to monthly',
-      'All past year papers',
-      'Custom test creation',
-      'Performance reports PDF',
     ],
   },
   {
@@ -49,10 +42,6 @@ export const pricingPlans: PricingPlan[] = [
     features: [
       'Everything in 6 Months plan',
       'Save ₹69 compared to monthly',
-      'Full syllabus coverage',
-      'AI-powered recommendations',
-      '1-on-1 doubt solving sessions',
-      'Access to all future updates',
     ],
   },
 ];

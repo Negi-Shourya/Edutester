@@ -48,7 +48,7 @@ export default function PaywallModal({ open, onClose, title }: Props) {
         </h2>
         <p className="text-sm text-gray-500 text-center mb-6 leading-relaxed">
           An active subscription is required to attempt this test. Subscribe to
-          unlock every test, full papers, and detailed analytics.
+          unlock every test and full paper.
         </p>
 
         <button

@@ -1,19 +1,20 @@
 import { Link } from 'react-router-dom';
-import { ArrowRight, BookOpen, BarChart3, Timer, Layers, Award, Sparkles } from 'lucide-react';
+import { ArrowRight, BookOpen, Timer, Layers, LifeBuoy, Sparkles } from 'lucide-react';
 import FeatureCard from '../components/FeatureCard';
+import { useAuth } from '../context/AuthContext';
 
 const features = [
-  { icon: BookOpen, title: 'Chapter-wise Tests', description: 'Master each topic with focused chapter-wise practice tests designed to strengthen your fundamentals.' },
-  { icon: Layers, title: 'Paper-wise Tests', description: 'Attempt full-length previous year question papers to simulate the actual exam experience.' },
-    { icon: Timer, title: 'NTA-like Interface', description: 'Experience the exact same test interface as the actual exam conducted by NTA.' },
-  { icon: BarChart3, title: 'Detailed Analytics', description: 'Get in-depth performance analysis with chapter-wise strengths, weaknesses, and improvement areas.' },
-  { icon: Award, title: 'Progress Tracking', description: 'Track your preparation journey with detailed progress reports and performance trends over time.' },
-  { icon: Sparkles, title: 'Affordable Pricing', description: 'Premium quality exam preparation at prices starting from just ₹19. No hidden charges.' },
+  { icon: Layers, title: 'NTA-like Interface', description: 'Experience the exact same test interface as the actual exam conducted by NTA.' },
+  { icon: BookOpen, title: 'Previous Year Papers', description: 'Practice full-length previous year question papers to simulate the real exam.' },
+  { icon: Timer, title: 'Test Series', description: 'Chapter-wise and paper-wise test series designed to build exam confidence.' },
+  { icon: LifeBuoy, title: 'Support', description: 'We address your questions and issues first — quick help whenever you need it.' },
 ];
 
 
 
 export default function Home() {
+  const { user } = useAuth();
+  const startTarget = user ? '/paper-tests' : '/signup';
   return (
     <div>
       {/* Hero */}
@@ -29,11 +30,12 @@ export default function Home() {
               <span className="bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">Real Exam</span>
             </h1>
             <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
-              Chapter-wise and paper-wise practice tests with authentic NTA-like interface. 
-              Start your exam preparation with the most affordable platform in India.
+              Practice on the authentic NTA test interface with previous year
+              question papers and full-length test series. Start your exam
+              preparation with the most affordable platform in India.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-              <Link to="/signup" className="flex items-center gap-2 bg-primary text-white px-8 py-3 rounded-xl text-sm font-semibold hover:bg-primary-dark transition-colors shadow-lg shadow-primary/25">
+              <Link to={startTarget} className="flex items-center gap-2 bg-primary text-white px-8 py-3 rounded-xl text-sm font-semibold hover:bg-primary-dark transition-colors shadow-lg shadow-primary/25">
                 Get Started Free
                 <ArrowRight className="w-4 h-4" />
               </Link>
@@ -52,7 +54,7 @@ export default function Home() {
             <h2 className="text-3xl font-bold text-gray-900 mb-4">Everything You Need to Crack Exams</h2>
             <p className="text-gray-500 max-w-2xl mx-auto">Comprehensive preparation tools designed to help you ace the JEE Main exam.</p>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-4xl mx-auto">
             {features.map((f) => (
               <FeatureCard key={f.title} icon={f.icon} title={f.title} description={f.description} />
             ))}
@@ -71,7 +73,7 @@ export default function Home() {
             {[
               { step: '01', title: 'Sign Up', desc: 'Create your account in seconds and choose a plan that fits your needs.' },
               { step: '02', title: 'Choose Test', desc: 'Browse chapter-wise or paper-wise tests and start practicing.' },
-              { step: '03', title: 'Practice & Improve', desc: 'Attempt tests, review analytics, and track your progress.' },
+              { step: '03', title: 'Practice & Improve', desc: 'Attempt tests on Edutester and track your progress.' },
             ].map((item) => (
               <div key={item.step} className="text-center">
                 <div className="w-14 h-14 bg-primary text-white rounded-2xl flex items-center justify-center text-xl font-bold mx-auto mb-4">
@@ -90,8 +92,8 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold text-white mb-4">Ready to Ace Your Exams?</h2>
           <p className="text-indigo-100 mb-8 max-w-xl mx-auto">Join thousands of students who are already preparing with EduTester. Start your journey today.</p>
-          <Link to="/signup" className="inline-flex items-center gap-2 bg-white text-primary px-8 py-3 rounded-xl text-sm font-semibold hover:bg-indigo-50 transition-colors">
-            Start Free Trial
+          <Link to="/paper-tests" className="inline-flex items-center gap-2 bg-white text-primary px-8 py-3 rounded-xl text-sm font-semibold hover:bg-indigo-50 transition-colors">
+            Start Testing
             <ArrowRight className="w-4 h-4" />
           </Link>
         </div>

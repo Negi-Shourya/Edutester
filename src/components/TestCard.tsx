@@ -7,6 +7,7 @@ interface Props {
   locked?: boolean;
   trial?: boolean;
   onLocked?: () => void;
+  attemptScore?: { score: number; maxScore: number } | null;
 }
 
 const difficultyColors = {
@@ -15,7 +16,7 @@ const difficultyColors = {
   Hard: 'bg-red-100 text-red-700',
 };
 
-export default function TestCard({ test, locked, trial, onLocked }: Props) {
+export default function TestCard({ test, locked, trial, onLocked, attemptScore }: Props) {
   const navigate = useNavigate();
 
   const handleStart = () => {
@@ -72,6 +73,17 @@ export default function TestCard({ test, locked, trial, onLocked }: Props) {
           <span className="text-success font-medium">Score: {test.score}/300</span>
         </div>
       )}
+      {attemptScore && !locked && (
+        <div className="flex items-center gap-2 mb-3 text-sm">
+          <CheckCircle className="w-4 h-4 text-success" />
+          <span className="text-success font-medium">
+            Score: {attemptScore.score}/{attemptScore.maxScore}
+          </span>
+          <span className="text-xs text-gray-400 font-normal">
+            ({Math.round((attemptScore.score / attemptScore.maxScore) * 100)}%)
+          </span>
+        </div>
+      )}
       {locked ? (
         <button
           onClick={handleStart}
@@ -90,7 +102,7 @@ export default function TestCard({ test, locked, trial, onLocked }: Props) {
           }`}
         >
           <Play className="w-4 h-4" />
-          {test.completed ? 'Retake Test' : trial ? 'Start Free Test' : 'Start Test'}
+          {attemptScore ? 'Retake Test' : test.completed ? 'Retake Test' : trial ? 'Start Free Test' : 'Start Test'}
         </button>
       )}
     </div>

@@ -1,31 +1,46 @@
-import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
-import { Check, Shield, CreditCard, RefreshCw, Loader2 } from 'lucide-react';
+import { useEffect, useState } from 'react';
+import { useLocation, useNavigate } from 'react-router-dom';
+import { Check, Shield, CreditCard, Loader2 } from 'lucide-react';
 import PricingCard from '../components/PricingCard';
 import { pricingPlans } from '../data/pricing';
 import { useAuth } from '../context/AuthContext';
+import { useSubscriptionAccess } from '../lib/subscription';
 import { checkoutPlan } from '../lib/razorpay';
 import type { PricingPlan } from '../types';
 
 const guarantees = [
   { icon: Shield, text: 'Secure payments with industry-standard encryption' },
-  { icon: RefreshCw, text: 'Cancel anytime, no questions asked' },
   { icon: CreditCard, text: 'All major payment methods accepted' },
 ];
 
 const faqs = [
-  { q: 'Can I switch plans later?', a: 'Yes, you can upgrade or downgrade your plan at any time. The price difference will be adjusted accordingly.' },
-  { q: 'Is there a free trial?', a: 'We offer a 3-day free trial with limited access to chapter-wise tests so you can experience the platform before subscribing.' },
-  { q: 'What payment methods are accepted?', a: 'We accept UPI, credit/debit cards, net banking, and popular wallets like Paytm and Google Pay.' },
-  { q: 'Can I get a refund?', a: 'Yes, we offer a 7-day money-back guarantee if you are not satisfied with our platform.' },
+  { q: 'Can I switch plans later?', a: 'Yes, you can upgrade at any time.' },
+  { q: 'Is there a free trial?', a: 'No, there isn\'t a free trial, but there are a few papers for free which you could solve.' },
+  { q: 'What payment methods are accepted?', a: 'All debit cards, credit cards, and UPI options are available.' },
+  { q: 'Can I get a refund?', a: 'No, you cannot get a refund once you have purchased a subscription.' },
+  { q: 'Where can I contact for help?', a: 'You can contact us at edutester4u@gmail.com, and we will get back to you within 48 hours.' },
 ];
 
 export default function Pricing() {
   const { user } = useAuth();
+  const location = useLocation();
   const navigate = useNavigate();
+  const { activeSubscription, loading: subscriptionLoading, refresh: refreshSubscription } =
+    useSubscriptionAccess();
   const [checkoutPlanId, setCheckoutPlanId] = useState<string | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [success, setSuccess] = useState<string | null>(null);
+
+  useEffect(() => {
+    if (location.hash === '#faq') {
+      const el = document.getElementById('faq');
+      if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }, [location.hash]);
+
+  const activePlanIndex = activeSubscription
+    ? pricingPlans.findIndex((p) => p.id === activeSubscription.plan_id)
+    : -1;
 
   const handleCheckout = async (plan: PricingPlan) => {
     setError(null);
@@ -37,6 +52,7 @@ export default function Pricing() {
     setCheckoutPlanId(plan.id);
     try {
       const result = await checkoutPlan({ id: plan.id, name: plan.duration });
+      await refreshSubscription();
       setSuccess(
         `Payment successful (ref ${result.paymentId}). Your ${plan.duration} subscription is now active.`
       );
@@ -72,12 +88,15 @@ export default function Pricing() {
           )}
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
-            {pricingPlans.map((plan) => (
+            {pricingPlans.map((plan, i) => (
               <PricingCard
                 key={plan.id}
                 plan={plan}
                 onCheckout={handleCheckout}
                 checkoutLoading={checkoutPlanId === plan.id}
+                active={!subscriptionLoading && activeSubscription?.plan_id === plan.id}
+                activeExpiry={activeSubscription?.ends_at}
+                nextPlan={i === activePlanIndex ? (pricingPlans[i + 1] ?? null) : undefined}
               />
             ))}
           </div>
@@ -116,31 +135,16 @@ export default function Pricing() {
               </thead>
               <tbody>
                 {[
-                  'Chapter-wise Tests',
-                  'Paper-wise Tests',
                   'NTA-like Interface',
-                  'Detailed Analytics',
-                  'Progress Tracking',
-                  'Priority Support',
-                  'Custom Test Creation',
-                  'AI Recommendations',
-                  'Doubt Solving',
+                  'Previous Year Question Papers',
+                  'Test Series',
+                  'Support for Questions & Issues',
                 ].map((feature) => (
                   <tr key={feature} className="border-b border-gray-100">
                     <td className="py-3 px-4 text-gray-700">{feature}</td>
-                    {pricingPlans.map((p, i) => (
+                    {pricingPlans.map((p) => (
                       <td key={p.id} className="text-center py-3 px-4">
-                        {i >= 0 && (['Chapter-wise Tests', 'Paper-wise Tests', 'NTA-like Interface', 'Detailed Analytics', 'Progress Tracking'].includes(feature)) ? (
-                          <Check className="w-4 h-4 text-success mx-auto" />
-                        ) : i >= 1 && feature === 'Priority Support' ? (
-                          <Check className="w-4 h-4 text-success mx-auto" />
-                        ) : i >= 2 && ['Custom Test Creation'].includes(feature) ? (
-                          <Check className="w-4 h-4 text-success mx-auto" />
-                        ) : i >= 3 && ['AI Recommendations', 'Doubt Solving'].includes(feature) ? (
-                          <Check className="w-4 h-4 text-success mx-auto" />
-                        ) : (
-                          <span className="text-gray-300">&mdash;</span>
-                        )}
+                        <Check className="w-4 h-4 text-success mx-auto" />
                       </td>
                     ))}
                   </tr>
@@ -152,7 +156,7 @@ export default function Pricing() {
       </section>
 
       {/* FAQ */}
-      <section className="py-16">
+      <section id="faq" className="py-16 scroll-mt-20">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-2xl font-bold text-gray-900 text-center mb-8">Frequently Asked Questions</h2>
           <div className="space-y-4">
@@ -162,7 +166,19 @@ export default function Pricing() {
                   {faq.q}
                   <span className="text-primary group-open:rotate-45 transition-transform text-xl leading-none">+</span>
                 </summary>
-                <p className="mt-3 text-sm text-gray-500 leading-relaxed">{faq.a}</p>
+                <p className="mt-3 text-sm text-gray-500 leading-relaxed">
+                  {faq.a.includes('edutester4u@gmail.com') ? (
+                    <>
+                      You can contact us at{' '}
+                      <a href="mailto:edutester4u@gmail.com" className="text-primary hover:underline font-medium">
+                        edutester4u@gmail.com
+                      </a>
+                      , and we will get back to you within 48 hours.
+                    </>
+                  ) : (
+                    faq.a
+                  )}
+                </p>
               </details>
             ))}
           </div>

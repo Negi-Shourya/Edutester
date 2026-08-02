@@ -3,13 +3,21 @@ import { Search, BookOpen } from 'lucide-react';
 import TestCard from '../components/TestCard';
 import PaywallModal from '../components/PaywallModal';
 import { chapterTests, subjects } from '../data/chapters';
-import { FREE_TRIAL_TEST_ID, useSubscriptionAccess } from '../lib/subscription';
+import { FREE_TRIAL_TEST_ID, FREE_TRIAL_PAPER_KEY, useSubscriptionAccess } from '../lib/subscription';
+import { useAttemptScore } from '../hooks/useAttemptScore';
 
 export default function ChapterTests() {
   const [subject, setSubject] = useState('All');
   const [search, setSearch] = useState('');
   const [showPaywall, setShowPaywall] = useState(false);
   const { hasAccess, loading } = useSubscriptionAccess();
+
+  // Chapter tests currently open the trial paper, so the user's submitted
+  // score for that paper is what we can show here.
+  const attemptScore = useAttemptScore(FREE_TRIAL_PAPER_KEY);
+  const cardAttemptScore = attemptScore
+    ? { score: attemptScore.totalScore, maxScore: attemptScore.maxScore }
+    : null;
 
   const filtered = chapterTests.filter((t) => {
     const matchSubject = subject === 'All' || t.subject === subject;
@@ -81,6 +89,7 @@ export default function ChapterTests() {
                       locked={isLocked(test.id)}
                       trial={isTrial(test.id)}
                       onLocked={() => setShowPaywall(true)}
+                      attemptScore={isLocked(test.id) ? null : cardAttemptScore}
                     />
                   ))}
                 </div>
@@ -96,6 +105,7 @@ export default function ChapterTests() {
                 locked={isLocked(test.id)}
                 trial={isTrial(test.id)}
                 onLocked={() => setShowPaywall(true)}
+                attemptScore={isLocked(test.id) ? null : cardAttemptScore}
               />
             ))}
           </div>

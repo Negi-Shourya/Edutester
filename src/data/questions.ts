@@ -68,6 +68,16 @@ export interface PaperQuestions {
   questions: Question[];
 }
 
+// NTA section order for JEE (Main) Paper 1: Physics, then Chemistry, then
+// Mathematics. Questions are stored by insertion position (which is not
+// guaranteed to match this order), so we sort here.
+const SECTION_ORDER = ['Physics', 'Chemistry', 'Mathematics'];
+
+const sectionIndex = (section: string) => {
+  const idx = SECTION_ORDER.indexOf(section);
+  return idx === -1 ? SECTION_ORDER.length : idx;
+};
+
 const paperCache = new Map<string, Promise<PaperQuestions>>();
 
 export function getPaperQuestions(paperKey: string): Promise<PaperQuestions> {
@@ -102,9 +112,14 @@ async function loadPaperQuestions(paperKey: string): Promise<PaperQuestions> {
       fullTitle: row.full_title,
       examDate: row.exam_date,
       session: row.session,
-    },    questions: [...row.questions]
-      .sort((a, b) => a.position - b.position)
-      .map(mapQuestion),
+    },
+    questions: [...row.questions]
+      .map(mapQuestion)
+      .sort((a, b) => {
+        const secDiff = sectionIndex(a.section) - sectionIndex(b.section);
+        if (secDiff !== 0) return secDiff;
+        return a.number - b.number;
+      }),
   };
 }
 

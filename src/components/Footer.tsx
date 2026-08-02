@@ -1,5 +1,5 @@
 import { Link, useLocation } from 'react-router-dom';
-import { GraduationCap, Mail, Phone, MapPin } from 'lucide-react';
+import { GraduationCap, Mail } from 'lucide-react';
 
 export default function Footer() {
   const location = useLocation();
@@ -34,9 +34,18 @@ export default function Footer() {
           <div>
             <h3 className="text-white font-semibold mb-4">Resources</h3>
             <ul className="space-y-2 text-sm">
-              <li><a href="#" className="hover:text-white transition-colors">JEE Main Syllabus</a></li>
+              <li>
+                <a
+                  href="https://cdnbbsr.s3waas.gov.in/s3f8e59f4b2fe7c5705bf878bbd494ccdf/uploads/2025/10/202510311323551056.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-white transition-colors"
+                >
+                  JEE Main Syllabus
+                </a>
+              </li>
               <li><a href="#" className="hover:text-white transition-colors">Preparation Tips</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">FAQ</a></li>
+              <li><Link to="/pricing#faq" className="hover:text-white transition-colors">FAQ</Link></li>
             </ul>
           </div>
 
@@ -45,15 +54,9 @@ export default function Footer() {
             <ul className="space-y-3 text-sm">
               <li className="flex items-center gap-2">
                 <Mail className="w-4 h-4 text-primary-light" />
-                support@edutester.in
-              </li>
-              <li className="flex items-center gap-2">
-                <Phone className="w-4 h-4 text-primary-light" />
-                +91 98765 43210
-              </li>
-              <li className="flex items-center gap-2">
-                <MapPin className="w-4 h-4 text-primary-light" />
-                Bengaluru, India
+                <a href="mailto:edutester4u@gmail.com" className="hover:text-white transition-colors">
+                  edutester4u@gmail.com
+                </a>
               </li>
             </ul>
           </div>
