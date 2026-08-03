@@ -17,7 +17,7 @@ const statusColors: Record<string, string> = {
   'not-visited': 'bg-gray-100 border-gray-200',
   'not-answered': 'bg-red-100 border-red-200',
   'answered': 'bg-green-100 border-green-200',
-  'marked': 'bg-purple-100 border-purple-200',
+  'marked': 'bg-saffron/10 border-saffron/30',
 };
 
 export default function QuestionPalette({ questions, currentQuestion, onSelect }: Props) {

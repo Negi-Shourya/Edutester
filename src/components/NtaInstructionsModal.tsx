@@ -1,27 +1,38 @@
+import { useState } from 'react';
 import { X } from 'lucide-react';
 
 interface NtaInstructionsModalProps {
   isOpen: boolean;
-  onClose: () => void;
+  onClose?: () => void;
+  startMode?: boolean;
+  onStart?: () => void;
 }
 
-export default function NtaInstructionsModal({ isOpen, onClose }: NtaInstructionsModalProps) {
+export default function NtaInstructionsModal({
+  isOpen,
+  onClose,
+  startMode,
+  onStart,
+}: NtaInstructionsModalProps) {
+  const [consentChecked, setConsentChecked] = useState(false);
   if (!isOpen) return null;
 
   return (
     <div className="fixed inset-0 bg-black/70 z-50 flex items-center justify-center p-3 sm:p-6 animate-in fade-in duration-200">
       <div className="bg-white rounded border-2 border-[#1b365d] w-full max-w-3xl max-h-[90vh] flex flex-col shadow-2xl overflow-hidden">
         {/* Header */}
-        <div className="bg-[#1b365d] text-white px-4 py-2.5 flex items-center justify-between border-b border-[#0f2444]">
-          <h2 className="font-bold text-sm text-amber-300 uppercase tracking-wide">
+        <div className="bg-[#1b365d] text-white px-4 py-2.5 flex items-center justify-between gap-3 border-b border-[#0f2444]">
+          <h2 className="font-bold text-xs sm:text-sm text-amber-300 uppercase tracking-wide truncate">
             General Instructions - Computer Based Test (CBT)
           </h2>
-          <button
-            onClick={onClose}
-            className="text-white/80 hover:text-white p-1 rounded hover:bg-white/10 transition-colors"
-          >
-            <X className="w-5 h-5" />
-          </button>
+          {!startMode && (
+            <button
+              onClick={onClose}
+              className="text-white/80 hover:text-white p-1 rounded hover:bg-white/10 transition-colors"
+            >
+              <X className="w-5 h-5" />
+            </button>
+          )}
         </div>
 
         {/* Content Body */}
@@ -85,13 +96,34 @@ export default function NtaInstructionsModal({ isOpen, onClose }: NtaInstruction
         </div>
 
         {/* Footer */}
-        <div className="bg-[#e9ecef] border-t border-[#ccc] px-4 py-2.5 text-right">
-          <button
-            onClick={onClose}
-            className="bg-[#337ab7] hover:bg-[#286090] text-white px-5 py-1.5 rounded text-xs font-bold uppercase cursor-pointer"
-          >
-            I Have Read &amp; Understood Instructions
-          </button>
+        <div className="bg-[#e9ecef] border-t border-[#ccc] px-4 py-2.5 flex items-center justify-end gap-3">
+          {startMode ? (
+            <>
+              <label className="flex items-center gap-2 text-[11px] sm:text-xs font-semibold text-gray-700 cursor-pointer select-none">
+                <input
+                  type="checkbox"
+                  checked={consentChecked}
+                  onChange={(e) => setConsentChecked(e.target.checked)}
+                  className="w-4 h-4 accent-[#337ab7] cursor-pointer"
+                />
+                I have read and understood all the instructions
+              </label>
+              <button
+                onClick={onStart}
+                disabled={!consentChecked}
+                className="bg-[#28a745] hover:bg-[#218838] disabled:opacity-40 disabled:cursor-not-allowed text-white px-6 py-2 rounded text-xs font-bold uppercase cursor-pointer"
+              >
+                Start Test
+              </button>
+            </>
+          ) : (
+            <button
+              onClick={onClose}
+              className="bg-[#337ab7] hover:bg-[#286090] text-white px-5 py-1.5 rounded text-xs font-bold uppercase cursor-pointer"
+            >
+              I Have Read &amp; Understood Instructions
+            </button>
+          )}
         </div>
       </div>
     </div>

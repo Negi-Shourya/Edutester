@@ -3,7 +3,9 @@ import { Routes, Route, useLocation } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import ScrollToTop from './components/ScrollToTop'
-import Home from './pages/Home'
+import RootGate from './components/RootGate'
+import LandingPage from './pages/LandingPage'
+import Contact from './pages/Contact'
 import Dashboard from './pages/Dashboard'
 import ChapterTests from './pages/ChapterTests'
 import PaperTests from './pages/PaperTests'
@@ -31,7 +33,9 @@ function App() {
         <Navbar />
         <main className="flex-1">
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="/" element={<RootGate />} />
+            <Route path="/landing" element={<LandingPage />} />
+            <Route path="/contact" element={<Contact />} />
             <Route path="/pricing" element={<Pricing />} />
             <Route path="/login" element={<Login />} />
             <Route path="/signup" element={<Signup />} />

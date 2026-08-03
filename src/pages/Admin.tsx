@@ -13,8 +13,8 @@ import {
   Eye,
   Loader2,
 } from 'lucide-react';
-import { useAuth } from '../context/AuthContext';
-import { isAdminEmail, formatINR, formatDateTime } from '../lib/admin';
+import { useAuth } from '../context/auth-context';
+import { isAdmin, formatINR, formatDateTime } from '../lib/admin';
 import { supabase } from '../lib/supabase';
 import type { AdminPurchase, AdminUser, PageView } from '../types';
 
@@ -156,7 +156,7 @@ export default function Admin() {
     );
   }
 
-  if (!isAdminEmail(user?.email)) {
+  if (!isAdmin(user)) {
     return (
       <div className="min-h-[70vh] bg-gray-50 flex items-center justify-center px-4">
         <div className="bg-white rounded-2xl shadow-sm border border-gray-200 p-10 max-w-md text-center">
@@ -165,8 +165,8 @@ export default function Admin() {
           </div>
           <h1 className="text-xl font-bold text-gray-900 mb-2">Access denied</h1>
           <p className="text-sm text-gray-500 mb-6">
-            This area is restricted to authorized administrators only. Your account
-            ({user?.email}) is not on the admin list.
+            This area is restricted to authorized administrators only. Your
+            account ({user?.email}) does not have administrator access.
           </p>
           <Link
             to="/"
@@ -183,10 +183,10 @@ export default function Admin() {
     ? [
         { icon: Users, label: 'Total Users', value: counts.totalUsers.toLocaleString('en-IN'), color: 'from-blue-500 to-blue-600' },
         { icon: UserCheck, label: 'Logged-In Clients', value: counts.loggedIn.toLocaleString('en-IN'), color: 'from-green-500 to-green-600' },
-        { icon: Activity, label: 'Active (7 days)', value: counts.active7d.toLocaleString('en-IN'), color: 'from-purple-500 to-purple-600' },
+        { icon: Activity, label: 'Active (7 days)', value: counts.active7d.toLocaleString('en-IN'), color: 'from-saffron to-saffron-dark' },
         { icon: ShoppingCart, label: 'Total Purchases', value: counts.totalPurchases.toLocaleString('en-IN'), color: 'from-orange-500 to-orange-600' },
         { icon: IndianRupee, label: 'Revenue', value: formatINR(counts.revenue), color: 'from-emerald-500 to-emerald-600' },
-        { icon: BadgeCheck, label: 'Active Subscriptions', value: counts.activeSubs.toLocaleString('en-IN'), color: 'from-indigo-500 to-indigo-600' },
+        { icon: BadgeCheck, label: 'Active Subscriptions', value: counts.activeSubs.toLocaleString('en-IN'), color: 'from-primary to-primary-dark' },
         { icon: BarChart3, label: 'Total Page Views', value: counts.totalViews.toLocaleString('en-IN'), color: 'from-cyan-500 to-cyan-600' },
         { icon: Eye, label: 'Views Today', value: counts.viewsToday.toLocaleString('en-IN'), color: 'from-rose-500 to-rose-600' },
       ]
@@ -375,7 +375,7 @@ export default function Admin() {
                     { label: 'Total Page Views', value: counts?.totalViews.toLocaleString('en-IN') ?? '—', color: 'from-cyan-500 to-cyan-600', icon: BarChart3 },
                     { label: 'Views Today', value: counts?.viewsToday.toLocaleString('en-IN') ?? '—', color: 'from-rose-500 to-rose-600', icon: Eye },
                     { label: 'Views (7 days)', value: views7d.length.toLocaleString('en-IN'), color: 'from-blue-500 to-blue-600', icon: Activity },
-                    { label: 'Logged-in Visitors (7d)', value: uniqueVisitors7d.toLocaleString('en-IN'), color: 'from-purple-500 to-purple-600', icon: UserCheck },
+                    { label: 'Logged-in Visitors (7d)', value: uniqueVisitors7d.toLocaleString('en-IN'), color: 'from-saffron to-saffron-dark', icon: UserCheck },
                   ].map((s) => (
                     <div key={s.label} className="bg-white rounded-xl border border-gray-200 p-4">
                       <div className="flex items-start justify-between mb-3">
@@ -398,7 +398,7 @@ export default function Admin() {
                           <div key={i} className="flex-1 flex flex-col items-center gap-2 h-full justify-end">
                             <span className="text-xs font-semibold text-gray-700">{d.count}</span>
                             <div
-                              className="w-full max-w-12 rounded-t-lg bg-gradient-to-t from-primary to-purple-500"
+                              className="w-full max-w-12 rounded-t-lg bg-gradient-to-t from-primary to-primary-light"
                               style={{ height: `${Math.max((d.count / maxDaily) * 100, 2)}%` }}
                             />
                             <span className="text-xs text-gray-400">{d.label}</span>

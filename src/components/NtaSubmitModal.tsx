@@ -62,9 +62,9 @@ export default function NtaSubmitModal({
 
   return (
     <div className="fixed inset-0 bg-black/70 z-50 flex items-center justify-center p-3 sm:p-6 animate-in fade-in duration-200">
-      <div className="bg-white rounded border-2 border-[#1b365d] w-full max-w-3xl flex flex-col shadow-2xl overflow-hidden select-none">
+      <div className="bg-white rounded border-2 border-[#1b365d] w-full max-w-3xl flex flex-col shadow-2xl overflow-hidden select-none max-h-[90dvh]">
         {/* Header */}
-        <div className="bg-[#1b365d] text-white px-4 py-2.5 flex items-center justify-between border-b border-[#0f2444]">
+        <div className="bg-[#1b365d] text-white px-4 py-2.5 flex items-center justify-between border-b border-[#0f2444] shrink-0">
           <div className="flex items-center gap-2">
             <AlertCircle className="w-5 h-5 text-amber-300" />
             <h2 className="font-bold text-sm text-amber-300 uppercase tracking-wide">
@@ -74,17 +74,17 @@ export default function NtaSubmitModal({
         </div>
 
         {/* Content Body */}
-        <div className="p-6 text-xs text-gray-800 space-y-4">
+        <div className="p-4 sm:p-6 text-xs text-gray-800 space-y-4 overflow-y-auto nta-scrollbar min-h-0 flex-1">
           <p className="text-sm font-bold text-[#1b365d] text-center">
             Below is the summary of your exam status across all sections:
           </p>
 
           {/* NTA Summary Table */}
-          <div className="border border-[#ccc] rounded overflow-hidden shadow-xs">
-            <table className="w-full text-left border-collapse text-xs">
+          <div className="border border-[#ccc] rounded overflow-hidden shadow-xs overflow-x-auto">
+            <table className="w-full text-left border-collapse text-xs min-w-[640px]">
               <thead>
                 <tr className="bg-[#337ab7] text-white font-bold border-b border-[#285f91]">
-                  <th className="p-2 border.r border-blue-400">Section Name</th>
+                  <th className="p-2 border-r border-blue-400">Section Name</th>
                   <th className="p-2 text-center border-r border-blue-400">No. of Questions</th>
                   <th className="p-2 text-center border-r border-blue-400 bg-green-700">Answered</th>
                   <th className="p-2 text-center border-r border-blue-400 bg-red-700">Not Answered</th>
@@ -131,7 +131,7 @@ export default function NtaSubmitModal({
         </div>
 
         {/* Footer Actions */}
-        <div className="bg-[#e9ecef] border-t border-[#ccc] px-4 py-3 flex items-center justify-center gap-4">
+        <div className="bg-[#e9ecef] border-t border-[#ccc] px-4 py-3 flex items-center justify-center gap-4 shrink-0">
           <button
             onClick={onConfirmSubmit}
             className="bg-[#28a745] hover:bg-[#218838] active:bg-[#1e7e34] text-white px-8 py-2 rounded text-xs font-bold uppercase shadow-sm border border-[#1e7e34] cursor-pointer transition-all active:scale-95"

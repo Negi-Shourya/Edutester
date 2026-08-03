@@ -34,7 +34,7 @@ export default function ChapterTests() {
     <div className="bg-gray-50 min-h-screen">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div className="mb-8">
-          <h1 className="text-2xl font-bold text-gray-900">Chapter-wise Tests</h1>
+          <h1 className="text-3xl font-bold text-gray-900 tracking-tight font-display animate-fade-up">Chapter-wise Tests</h1>
           <p className="text-gray-500 mt-1">Master each topic with focused practice tests</p>
         </div>
 
@@ -51,12 +51,12 @@ export default function ChapterTests() {
                 className="w-full pl-10 pr-4 py-2 border border-gray-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary"
               />
             </div>
-            <div className="flex gap-2">
+            <div className="flex gap-2 flex-wrap">
               {['All', ...subjects].map((s) => (
                 <button
                   key={s}
                   onClick={() => setSubject(s)}
-                  className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
+                  className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors touch-target-40 ${
                     subject === s
                       ? 'bg-primary text-white'
                       : 'bg-gray-50 text-gray-600 hover:bg-gray-100'

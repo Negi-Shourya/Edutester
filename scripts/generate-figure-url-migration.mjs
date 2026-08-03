@@ -35,7 +35,6 @@ for (const folder of readdirSync(ROOT)) {
 
 const lines = [
   "-- Add figure_url to questions and populate from the question-images storage bucket.",
-  "-- Old SVG diagrams (question_diagrams) are removed for questions that now use images.",
   "do $$ begin",
   "  if not exists (select 1 from information_schema.columns",
   "                 where table_schema = 'public' and table_name = 'questions' and column_name = 'figure_url') then",
@@ -61,10 +60,6 @@ for (const [key, files] of [...byPaper.entries()].sort()) {
     lines.push("");
   }
 }
-
-lines.push("-- Remove old SVG diagrams for questions that now have storage images.");
-lines.push("delete from public.question_diagrams");
-lines.push("where question_id in (select id from public.questions where jsonb_array_length(figure_url) > 0);");
 
 writeFileSync(OUT, lines.join("\n"));
 console.log(`Wrote ${OUT}`);

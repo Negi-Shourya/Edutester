@@ -32,12 +32,12 @@ export default function NtaQuestionPaperModal({
     <div className="fixed inset-0 bg-black/70 z-50 flex items-center justify-center p-3 sm:p-6 animate-in fade-in duration-200">
       <div className="bg-white rounded border-2 border-[#1b365d] w-full max-w-4xl max-h-[90vh] flex flex-col shadow-2xl overflow-hidden">
         {/* Header */}
-        <div className="bg-[#1b365d] text-white px-4 py-2.5 flex items-center justify-between border-b border-[#0f2444]">
-          <div className="flex items-center gap-2">
-            <div className="w-6 h-6 bg-amber-400 text-[#1b365d] font-black rounded flex items-center justify-center text-xs">
+        <div className="bg-[#1b365d] text-white px-3 sm:px-4 py-2.5 flex items-center justify-between gap-2 border-b border-[#0f2444]">
+          <div className="flex items-center gap-2 min-w-0">
+            <div className="w-6 h-6 bg-amber-400 text-[#1b365d] font-black rounded flex items-center justify-center text-xs shrink-0">
               QP
             </div>
-            <h2 className="font-bold text-sm text-amber-300 uppercase tracking-wide">
+            <h2 className="font-bold text-xs sm:text-sm text-amber-300 uppercase tracking-wide truncate">
               {examTitle} - Complete Question Paper
             </h2>
           </div>
@@ -58,23 +58,23 @@ export default function NtaQuestionPaperModal({
         </div>
 
         {/* Section Tabs */}
-        <div className="bg-[#e9ecef] border-b border-[#ccc] px-4 py-2 flex items-center gap-2">
-          <span className="text-xs font-bold text-gray-700 mr-2">Filter Section:</span>
+        <div className="bg-[#e9ecef] border-b border-[#ccc] px-4 py-2 flex items-center gap-2 overflow-x-auto nta-scrollbar shrink-0">
+          <span className="text-xs font-bold text-gray-700 mr-1 shrink-0">Filter:</span>
           <button
             onClick={() => setSelectedSection('ALL')}
-            className={`px-3 py-1 text-xs font-bold rounded cursor-pointer ${
+            className={`px-3 py-1 text-xs font-bold rounded cursor-pointer shrink-0 ${
               selectedSection === 'ALL'
                 ? 'bg-[#337ab7] text-white'
                 : 'bg-white text-gray-700 border border-gray-300'
             }`}
           >
-            All Sections ({questions.length})
+            All ({questions.length})
           </button>
           {sections.map((s) => (
             <button
               key={s}
               onClick={() => setSelectedSection(s)}
-              className={`px-3 py-1 text-xs font-bold rounded cursor-pointer ${
+              className={`px-3 py-1 text-xs font-bold rounded cursor-pointer shrink-0 ${
                 selectedSection === s
                   ? 'bg-[#337ab7] text-white'
                   : 'bg-white text-gray-700 border border-gray-300'

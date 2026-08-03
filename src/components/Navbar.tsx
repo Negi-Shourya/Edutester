@@ -1,21 +1,15 @@
 import { useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { Menu, X, GraduationCap, LogIn, UserPlus, LogOut } from 'lucide-react';
-import { useAuth } from '../context/AuthContext';
-
-const navLinks = [
-  { to: '/', label: 'Home' },
-  { to: '/dashboard', label: 'Dashboard' },
-  { to: '/chapter-tests', label: 'Chapter Tests' },
-  { to: '/paper-tests', label: 'Paper Tests' },
-  { to: '/pricing', label: 'Pricing' },
-];
+import { useAuth } from '../context/auth-context';
+import { useSubscriptionAccess } from '../lib/subscription';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
   const navigate = useNavigate();
   const { user, signOut } = useAuth();
+  const { hasAccess, loading: subscriptionLoading } = useSubscriptionAccess();
 
   if (location.pathname.startsWith('/test')) {
     return null;
@@ -26,13 +20,34 @@ export default function Navbar() {
     navigate('/');
   };
 
+  const homeTo = user ? '/dashboard' : '/';
+  // Guests only see the public site (about us, pricing, contact). The
+  // dashboard and test links are for signed-in users — guards bounce guests
+  // to /login if they try to open those pages directly.
+  const navLinks = user
+    ? [
+        { to: '/dashboard', label: 'Dashboard' },
+        { to: '/chapter-tests', label: 'Chapter Tests' },
+        { to: '/paper-tests', label: 'Paper Tests' },
+        // Paying users don't need to see the pricing page.
+        ...(subscriptionLoading || !hasAccess ? [{ to: '/pricing', label: 'Pricing' }] : []),
+        { to: '/contact', label: 'Contact Us' },
+      ]
+    : [
+        { to: '/landing', label: 'About Us' },
+        { to: '/pricing', label: 'Pricing' },
+        { to: '/contact', label: 'Contact Us' },
+      ];
+
   return (
     <nav className="bg-white shadow-sm border-b border-gray-100 sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
-          <Link to="/" className="flex items-center gap-2">
-            <GraduationCap className="w-8 h-8 text-primary" />
-            <span className="text-xl font-bold text-gray-900">EduTester</span>
+          <Link to={homeTo} className="flex items-center gap-2">
+            <div className="w-8 h-8 rounded-lg bg-primary flex items-center justify-center">
+              <GraduationCap className="w-5 h-5 text-white" />
+            </div>
+            <span className="text-xl font-bold text-gray-900 font-display tracking-tight">EduTester</span>
           </Link>
 
           <div className="hidden md:flex items-center gap-6">
@@ -40,13 +55,18 @@ export default function Navbar() {
               <Link
                 key={link.to}
                 to={link.to}
-                className={`text-sm font-medium transition-colors ${
+                className={`relative text-sm font-medium transition-colors group ${
                   location.pathname === link.to
                     ? 'text-primary'
                     : 'text-gray-600 hover:text-primary'
                 }`}
               >
                 {link.label}
+                <span
+                  className={`absolute -bottom-1 left-0 h-0.5 rounded-full bg-saffron transition-all duration-300 ${
+                    location.pathname === link.to ? 'w-full' : 'w-0 group-hover:w-full'
+                  }`}
+                />
               </Link>
             ))}
             <div className="flex items-center gap-3 ml-4">
@@ -87,7 +107,7 @@ export default function Navbar() {
                   </Link>
                   <Link
                     to="/signup"
-                    className="flex items-center gap-1.5 text-sm font-medium bg-primary text-white px-4 py-2 rounded-lg hover:bg-primary-dark transition-colors"
+                    className="flex items-center gap-1.5 text-sm font-medium bg-saffron text-white px-4 py-2 rounded-lg hover:bg-saffron-dark transition-colors"
                   >
                     <UserPlus className="w-4 h-4" />
                     Sign Up
@@ -113,7 +133,7 @@ export default function Navbar() {
                 onClick={() => setIsOpen(false)}
                 className={`block px-3 py-2 rounded-lg text-sm font-medium ${
                   location.pathname === link.to
-                    ? 'text-primary bg-indigo-50'
+                    ? 'text-primary bg-primary/10'
                     : 'text-gray-600 hover:bg-gray-50'
                 }`}
               >

@@ -1,7 +1,7 @@
 import { supabase } from './supabase';
-import { computeAttemptResult, type AttemptResult } from './scoring';
+import type { AttemptResult } from './scoring';
+import type { QuestionState } from '../types';
 import { loadAttempt, saveAttempt } from './attemptStorage';
-import { getPaperQuestions } from '../data/questions';
 
 export interface AttemptRow {
   id: string;
@@ -29,54 +29,86 @@ export interface AttemptRow {
   created_at: string;
 }
 
-export interface NewAttemptInput {
+export interface QuestionKey {
+  correctAnswer: string;
+  solution: string | null;
+}
+
+// Payload returned by the score-attempt edge function: the server-computed
+// result plus the answer keys + solutions for the submitted paper only.
+export interface SubmitAttemptPayload {
+  attemptId: string;
+  result: AttemptResult;
+  keys: Record<string, QuestionKey>;
+}
+
+export interface SubmitAttemptInput {
   paperKey: string;
   testType: 'paper' | 'chapter';
   title: string;
-  result: AttemptResult;
   timeSpent: number;
+  questionStates: QuestionState[];
 }
 
-// Inserts a submitted attempt into the DB (RLS restricts to the owner).
-// Returns true on success. Failures are non-fatal — the attempt stays in
-// localStorage and can be backfilled later.
-export async function saveAttemptResult(input: NewAttemptInput): Promise<boolean> {
+export interface SubmitAttemptResult {
+  ok: boolean;
+  payload?: SubmitAttemptPayload;
+  error?: string;
+  notSubscribed?: boolean;
+}
+
+// Sends the attempt to the score-attempt edge function, which verifies
+// server-side that the user may take this paper, scores it against the
+// private answer keys, records the attempt row (idempotent within a short
+// window) and returns the result. The answer key is never available to the
+// client before this point.
+export async function submitAttempt(input: SubmitAttemptInput): Promise<SubmitAttemptResult> {
   const {
     data: { user },
   } = await supabase.auth.getUser();
-  if (!user) {
-    console.warn('Attempt not saved: no authenticated user.');
-    return false;
+  if (!user) return { ok: false, error: 'Not signed in.' };
+
+  const answers = input.questionStates.map((qs) => ({
+    id: qs.id,
+    answer: qs.selectedOption ?? qs.numericAnswer ?? null,
+  }));
+
+  const { data, error } = await supabase.functions.invoke('score-attempt', {
+    body: {
+      paperKey: input.paperKey,
+      testType: input.testType,
+      title: input.title,
+      timeSpent: Math.max(0, input.timeSpent),
+      answers,
+    },
+  });
+
+  if (error) {
+    // FunctionsHttpError carries the response body in error.context.
+    const context = (error as { context?: Response | unknown }).context;
+    let errorMessage = 'Scoring failed. Please retry.';
+    let code: string | undefined;
+    if (context instanceof Response) {
+      try {
+        const parsed = (await context.json()) as { error?: string; code?: string };
+        errorMessage = parsed.error ?? errorMessage;
+        code = parsed.code;
+      } catch {
+        // keep the default message
+      }
+    }
+    return { ok: false, error: errorMessage, notSubscribed: code === 'NO_SUBSCRIPTION' };
   }
 
-  const { data, error } = await supabase.from('attempts').insert({
-    user_id: user.id,
-    paper_key: input.paperKey,
-    test_type: input.testType,
-    title: input.title,
-    total_score: input.result.totalScore,
-    max_score: input.result.maxScore,
-    correct: input.result.totalCorrect,
-    incorrect: input.result.totalIncorrect,
-    unattempted: input.result.totalUnattempted,
-    accuracy: input.result.accuracy,
-    time_spent: input.timeSpent,
-    section_breakdown: input.result.sectionBreakdown.map((s) => ({
-      section: s.section,
-      score: s.score,
-      max_score: s.maxScore,
-      correct: s.correct,
-      incorrect: s.incorrect,
-      unattempted: s.unattempted,
-      accuracy: s.accuracy,
-    })),
-    question_outcomes: input.result.questionOutcomes,
-  });
-  if (error) {
-    console.warn('Failed to save attempt to DB:', error.message);
-    return false;
+  const payload = data as (SubmitAttemptPayload & { error?: string; code?: string }) | null;
+  if (!payload?.result || payload.error) {
+    return {
+      ok: false,
+      error: payload?.error ?? 'Scoring failed. Please retry.',
+      notSubscribed: payload?.code === 'NO_SUBSCRIPTION',
+    };
   }
-  return !!data;
+  return { ok: true, payload };
 }
 
 // Loads the user's attempts, newest first.
@@ -96,8 +128,26 @@ export async function getAttempts(limit = 100): Promise<AttemptRow[]> {
 // One-time migration: any attempt already submitted before the DB sync
 // feature existed is pushed to the DB and marked synced. Idempotent per
 // paper (uses the attempt's syncedToDb flag), so it is safe to run on every
-// Dashboard mount.
+// Dashboard mount. Scoring happens via the score-attempt edge function
+// (server-side), which also stores the result payload for the result screen.
 export async function backfillLocalAttempts(): Promise<void> {
+  // Serialize concurrent invocations (e.g. StrictMode's double effect run on
+  // Dashboard mount) so two backfills can't check-and-insert the same row.
+  if (inFlightBackfill) {
+    await inFlightBackfill;
+    return;
+  }
+  inFlightBackfill = runBackfill();
+  try {
+    await inFlightBackfill;
+  } finally {
+    inFlightBackfill = null;
+  }
+}
+
+let inFlightBackfill: Promise<void> | null = null;
+
+async function runBackfill(): Promise<void> {
   const keys: string[] = [];
   for (let i = 0; i < localStorage.length; i++) {
     const key = localStorage.key(i);
@@ -109,30 +159,24 @@ export async function backfillLocalAttempts(): Promise<void> {
     const attempt = loadAttempt(paperKey);
     if (!attempt || !attempt.isTestSubmitted || attempt.syncedToDb) continue;
 
-    try {
-      const data = await getPaperQuestions(paperKey);
-      const result = computeAttemptResult(data.questions, attempt.questionStates);
-      const ok = await saveAttemptResult({
-        paperKey,
-        testType: 'paper',
-        title: data.paper.fullTitle,
-        result,
-        timeSpent: Math.max(0, 180 * 60 - attempt.timeLeft),
+    const res = await submitAttempt({
+      paperKey,
+      testType: 'paper',
+      title: paperKey,
+      timeSpent: Math.max(0, 180 * 60 - attempt.timeLeft),
+      questionStates: attempt.questionStates,
+    });
+    if (res.ok && res.payload) {
+      saveAttempt(paperKey, {
+        currentQuestionId: attempt.currentQuestionId,
+        activeSection: attempt.activeSection,
+        language: attempt.language,
+        timeLeft: attempt.timeLeft,
+        questionStates: attempt.questionStates,
+        isTestSubmitted: true,
+        syncedToDb: true,
+        resultPayload: res.payload,
       });
-      if (ok) {
-        attempt.syncedToDb = true;
-        saveAttempt(paperKey, {
-          currentQuestionId: attempt.currentQuestionId,
-          activeSection: attempt.activeSection,
-          language: attempt.language,
-          timeLeft: attempt.timeLeft,
-          questionStates: attempt.questionStates,
-          isTestSubmitted: true,
-          syncedToDb: true,
-        });
-      }
-    } catch {
-      // Question data unavailable — skip; will retry on next visit.
     }
   }
 }

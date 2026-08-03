@@ -38,7 +38,7 @@ function PaperEntryRow({
     <div className="flex items-center justify-between px-4 py-3 hover:bg-stone-50/50 transition-colors">
       <div className="flex items-center gap-4">
         <div className={`w-8 h-8 rounded-lg flex items-center justify-center ${
-          isMorning ? 'bg-amber-50 text-amber-600' : 'bg-indigo-50 text-indigo-500'
+          isMorning ? 'bg-amber-50 text-amber-600' : 'bg-primary/10 text-primary'
         }`}>
           {isMorning ? <Sunrise className="w-4 h-4" /> : <Sunset className="w-4 h-4" />}
         </div>
@@ -208,7 +208,7 @@ export default function PaperTests() {
             <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
             JEE Main 2026 papers now available
           </div>
-          <h1 className="text-3xl sm:text-4xl font-light text-stone-800 tracking-tight">
+          <h1 className="text-3xl sm:text-4xl font-bold text-stone-800 tracking-tight font-display animate-fade-up">
             Paper-wise Tests
           </h1>
           <p className="text-stone-400 mt-2 max-w-md mx-auto">

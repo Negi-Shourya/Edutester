@@ -4,10 +4,9 @@ import { getPaperQuestions, type PaperQuestions } from '../data/questions';
 import type { Question, QuestionState, QuestionStatus } from '../types';
 import { FREE_TRIAL_PAPER_KEY, useSubscriptionAccess } from '../lib/subscription';
 import { loadAttempt, saveAttempt, clearAttempt } from '../lib/attemptStorage';
-import { saveAttemptResult } from '../lib/attemptsDb';
-import { computeAttemptResult } from '../lib/scoring';
-import { useAuth } from '../context/AuthContext';
-import { Crown, Lock } from 'lucide-react';
+import { submitAttempt, type SubmitAttemptPayload } from '../lib/attemptsDb';
+import { useAuth } from '../context/auth-context';
+import { Crown, Lock, LayoutDashboard, RotateCcw, X } from 'lucide-react';
 
 import NtaHeader from '../components/NtaHeader';
 import NtaQuestionPanel from '../components/NtaQuestionPanel';
@@ -43,9 +42,21 @@ export default function TestInterface() {
   const [currentQuestionId, setCurrentQuestionId] = useState<number | null>(null);
   const [language, setLanguage] = useState<string>('English');
   const [isTestSubmitted, setIsTestSubmitted] = useState<boolean>(false);
+  // False until the user reads the instructions, ticks the consent checkbox
+  // and clicks Start — the timer only runs and the attempt only saves once
+  // the test has actually started. A resumed saved attempt starts directly.
+  const [testStarted, setTestStarted] = useState<boolean>(false);
   // True once this submitted attempt has been pushed to the DB (see the
   // sync effect below). Persisted so a refresh doesn't create a duplicate row.
   const [syncedToDb, setSyncedToDb] = useState<boolean>(false);
+  // Server-computed result (score + solutions) from the score-attempt edge
+  // function. Persisted so a refresh after submission re-renders the result
+  // screen without another network call.
+  const [resultPayload, setResultPayload] = useState<SubmitAttemptPayload | null>(null);
+  const [submitError, setSubmitError] = useState<string | null>(null);
+  // Bumped when the user taps Retry on the scoring-error screen; the submit
+  // effect depends on it so a retry re-runs the call.
+  const [submitRetry, setSubmitRetry] = useState<number>(0);
 
   // Modals state
   const [showQuestionPaper, setShowQuestionPaper] = useState<boolean>(false);
@@ -55,6 +66,69 @@ export default function TestInterface() {
   // Short-lived Toast Popup state (shows for 2.5 seconds then vanishes)
   const [showExitHintToast, setShowExitHintToast] = useState<boolean>(true);
 
+  // Mobile UX: whether the question palette drawer is open, and whether the
+  // user has dismissed the rotate-suggestion banner.
+  const [paletteOpen, setPaletteOpen] = useState<boolean>(false);
+
+  // Track orientation/ephemeral "is this a phone?" via matchMedia. On phones
+  // the palette hides from the layout and opens as a drawer instead — but in
+  // landscape there is usually enough width, so we keep the inline palette.
+  // Track "is this a phone?" + orientation. Width alone is unreliable in
+  // landscape (a phone in landscape can easily exceed 767px CSS width, e.g.
+  // Redmi Turbo 5), so we also detect coarse pointers (touchscreens) and use
+  // the actual viewport height/width ratio for orientation.
+  const [isCompact, setIsCompact] = useState<boolean>(() => {
+    return (
+      window.matchMedia('(max-width: 767px)').matches ||
+      window.matchMedia('(pointer: coarse)').matches
+    );
+  });
+  const [isPortrait, setIsPortrait] = useState<boolean>(
+    () => window.innerHeight > window.innerWidth
+  );
+  // Phone landscape (short viewport, e.g. a rotated phone): the palette
+  // becomes a slide-in drawer so the question pane keeps full width.
+  const [isShortLandscape, setIsShortLandscape] = useState<boolean>(
+    () => window.innerWidth > window.innerHeight && window.innerHeight <= 500
+  );
+  // The rotate hint should only ever appear once per paper, even across
+  // refreshes — remember the dismissal for this specific paper key.
+  const [dismissedRotateHint, setDismissedRotateHint] = useState<boolean>(() => {
+    try {
+      return sessionStorage.getItem(`rotate-hint-dismissed-${paperKey}`) === '1';
+    } catch {
+      return false;
+    }
+  });
+  // Landscape (phone or desktop) always shows the palette inline so the user
+  // can navigate questions and see answered/not-answered status at a glance.
+  // Only portrait phones hide it behind a button-triggered drawer. A phone in
+  // short landscape (height ≤ 500px) also gets the drawer — the inline sidebar
+  // eats too much horizontal width and makes question text unreadable.
+  const paletteAsDrawer = isCompact && (isPortrait || isShortLandscape);
+  const paletteInline = !paletteAsDrawer;
+  const compactLandscape = isCompact && !isPortrait;
+
+  useEffect(() => {
+    const mqCompact = window.matchMedia('(max-width: 767px)');
+    const mqCoarse = window.matchMedia('(pointer: coarse)');
+    const updateViewport = () => {
+      setIsCompact(mqCompact.matches || mqCoarse.matches);
+      setIsPortrait(window.innerHeight > window.innerWidth);
+      setIsShortLandscape(window.innerWidth > window.innerHeight && window.innerHeight <= 500);
+    };
+    mqCompact.addEventListener('change', updateViewport);
+    mqCoarse.addEventListener('change', updateViewport);
+    window.addEventListener('resize', updateViewport);
+    window.addEventListener('orientationchange', updateViewport);
+    return () => {
+      mqCompact.removeEventListener('change', updateViewport);
+      mqCoarse.removeEventListener('change', updateViewport);
+      window.removeEventListener('resize', updateViewport);
+      window.removeEventListener('orientationchange', updateViewport);
+    };
+  }, []);
+
   // Timer: 3 Hours (180 minutes = 10800 seconds)
   const [timeLeft, setTimeLeft] = useState<number>(180 * 60);
 
@@ -63,6 +137,10 @@ export default function TestInterface() {
   // freshly initialized), so the save effect never overwrites a saved
   // attempt with pre-hydration state.
   const hydratedRef = useRef(false);
+  // Guards the one-time submission: set synchronously when the call starts so
+  // a re-render (or StrictMode's double effect invocation) can't start a
+  // second submit before resultPayload state flips.
+  const submitRef = useRef(false);
 
   // Load the paper from the database when the paper key changes
   useEffect(() => {
@@ -74,6 +152,10 @@ export default function TestInterface() {
     setTimeLeft(180 * 60);
     setIsTestSubmitted(false);
     setLoadError(null);
+    setResultPayload(null);
+    setSubmitError(null);
+    setSubmitRetry(0);
+    submitRef.current = false;
 
     getPaperQuestions(paperKey)
       .then((data) => {
@@ -122,6 +204,11 @@ export default function TestInterface() {
       setTimeLeft(saved.timeLeft > 0 ? saved.timeLeft : 180 * 60);
       setIsTestSubmitted(saved.isTestSubmitted);
       setSyncedToDb(!!saved.syncedToDb);
+      setResultPayload(saved.resultPayload ?? null);
+      setSubmitError(null);
+      // A resumed attempt skips the instruction gate — the test was
+      // already started before.
+      setTestStarted(true);
     } else {
       setQuestionStates(
         questions.map((q, idx) => ({
@@ -135,15 +222,23 @@ export default function TestInterface() {
       setTimeLeft(180 * 60);
       setIsTestSubmitted(false);
       setSyncedToDb(false);
+      setResultPayload(null);
+      setSubmitError(null);
+      // Fresh paper: wait for the user to read the instructions and
+      // start the test explicitly.
+      setTestStarted(false);
     }
 
     hydratedRef.current = true;
   }, [paperKey, questions]);
 
   // Persist the attempt locally after every change, so a closed tab/browser
-  // can be resumed from exactly where the user left off.
+  // can be resumed from exactly where the user left off. Only save once the
+  // test has actually started — otherwise a fresh load would be saved as a
+  // resume point that skips the instruction gate.
   useEffect(() => {
     if (!hydratedRef.current || questions.length === 0) return;
+    if (!testStarted) return;
     saveAttempt(paperKey, {
       currentQuestionId: currentQuestionId ?? questions[0]?.id ?? null,
       activeSection,
@@ -152,10 +247,12 @@ export default function TestInterface() {
       questionStates,
       isTestSubmitted,
       syncedToDb,
+      resultPayload,
     });
   }, [
     paperKey,
     questions,
+    testStarted,
     currentQuestionId,
     activeSection,
     language,
@@ -163,30 +260,47 @@ export default function TestInterface() {
     questionStates,
     isTestSubmitted,
     syncedToDb,
+    resultPayload,
   ]);
 
-  // When the test is submitted, push the result to the DB once (the flag is
-  // persisted in the saved attempt, so a refresh or re-render can't create
-  // a duplicate row). Failures are silent — the attempt remains in
-  // localStorage and gets backfilled on the next Dashboard visit.
+  // When the test is submitted, the result comes from the score-attempt
+  // edge function: it verifies access server-side, scores the attempt
+  // against the private answer keys, records the attempt row and returns the
+  // score + solutions for this paper. The payload is persisted with the
+  // attempt (resultPayload above), so a refresh or re-render can't lose the
+  // result or create a duplicate row. Failures surface on the result screen
+  // with a Retry action; unsynced attempts are backfilled on the next
+  // Dashboard visit.
   useEffect(() => {
     if (!hydratedRef.current || questions.length === 0) return;
-    if (!isTestSubmitted || syncedToDb) return;
+    if (!isTestSubmitted || resultPayload) return;
+    if (submitRef.current) return;
+    submitRef.current = true;
 
-    const result = computeAttemptResult(questions, questionStates);
-    saveAttemptResult({
+    submitAttempt({
       paperKey,
       testType: 'paper',
       title: paperData?.paper.fullTitle ?? paperKey,
-      result,
       timeSpent: Math.max(0, 180 * 60 - timeLeft),
-    }).then((ok) => {
-      if (ok) setSyncedToDb(true);
+      questionStates,
+    }).then((res) => {
+      if (res.ok && res.payload) {
+        setResultPayload(res.payload);
+        setSyncedToDb(true);
+        setSubmitError(null);
+      } else {
+        setSubmitError(res.error ?? 'Could not score the attempt. Please retry.');
+      }
     });
-  }, [isTestSubmitted, syncedToDb, paperKey, questions, questionStates, paperData, timeLeft]);
+  }, [isTestSubmitted, resultPayload, submitRetry, paperKey, questions, questionStates, paperData, timeLeft]);
 
+  // Resolve the current question. If currentQuestionId is stale/null, prefer
+  // the first question of the ACTIVE section so the panel never shows a
+  // Physics question while the Chemistry tab is highlighted.
   const currentQuestion =
-    questions.find((q) => q.id === currentQuestionId) ?? questions[0];
+    questions.find((q) => q.id === currentQuestionId) ??
+    questions.find((q) => q.section === activeSection) ??
+    questions[0];
   const currentQuestionState = questionStates.find((qs) => qs.id === currentQuestion?.id);
 
   // Helper to force full screen mode
@@ -209,16 +323,16 @@ export default function TestInterface() {
     return () => clearTimeout(timer);
   }, []);
 
-  // Timer countdown
+  // Timer countdown — only runs once the test has started
   useEffect(() => {
-    if (isTestSubmitted) return;
+    if (!testStarted || isTestSubmitted) return;
     if (timeLeft <= 0) {
       setIsTestSubmitted(true);
       return;
     }
     const interval = setInterval(() => setTimeLeft((t) => t - 1), 1000);
     return () => clearInterval(interval);
-  }, [timeLeft, isTestSubmitted]);
+  }, [timeLeft, isTestSubmitted, testStarted]);
 
   // Helper to update state of a single question
   const updateQuestionState = useCallback(
@@ -335,6 +449,10 @@ export default function TestInterface() {
   const handleRetakeTest = () => {
     clearAttempt(paperKey);
     setSyncedToDb(false);
+    setResultPayload(null);
+    setSubmitError(null);
+    setSubmitRetry(0);
+    submitRef.current = false;
     setQuestionStates(
       questions.map((q, idx) => ({
         id: q.id,
@@ -343,14 +461,14 @@ export default function TestInterface() {
     );
     setTimeLeft(180 * 60);
     setIsTestSubmitted(false);
+    setTestStarted(false);
     setCurrentQuestionId(questions[0]?.id ?? null);
     setActiveSection('Physics');
-    forceFullscreen();
   };
 
   if (accessLoading) {
     return (
-      <div className="h-screen w-screen bg-[#091526] flex flex-col items-center justify-center gap-4 select-none">
+      <div className="h-screen h-[100dvh] w-screen bg-[#091526] flex flex-col items-center justify-center gap-4 select-none">
         <div className="w-10 h-10 border-4 border-blue-400 border-t-transparent rounded-full animate-spin" />
         <p className="text-blue-200 text-sm font-medium">Checking accessâ€¦</p>
       </div>
@@ -405,7 +523,7 @@ export default function TestInterface() {
 
   if (!paperData || questions.length === 0) {
     return (
-      <div className="h-screen w-screen bg-[#091526] flex flex-col items-center justify-center gap-4 select-none">
+      <div className="h-screen h-[100dvh] w-screen bg-[#091526] flex flex-col items-center justify-center gap-4 select-none">
         <div className="w-10 h-10 border-4 border-blue-400 border-t-transparent rounded-full animate-spin" />
         <p className="text-blue-200 text-sm font-medium">Loading question paperâ€¦</p>
       </div>
@@ -415,32 +533,113 @@ export default function TestInterface() {
   const examTitle = paperData.paper.title;
   const fullExamTitle = paperData.paper.fullTitle;
 
-  // If exam submitted, show Post-Exam Results Screen
+  // If exam submitted, show Post-Exam Results Screen once the server has
+  // scored the attempt. While the score is being computed, show a brief
+  // processing state; if scoring failed, offer a Retry.
   if (isTestSubmitted) {
+    if (resultPayload) {
+      return (
+        <NtaResultScreen
+          questions={questions}
+          questionStates={questionStates}
+          sections={SECTIONS}
+          examTitle={fullExamTitle}
+          onRetake={handleRetakeTest}
+          result={resultPayload.result}
+          keys={resultPayload.keys}
+        />
+      );
+    }
+
+    if (submitError) {
+      return (
+        <div className="h-screen h-[100dvh] w-screen bg-[#091526] flex flex-col items-center justify-center gap-4 px-6 select-none">
+          <div className="w-14 h-14 bg-red-500/15 border border-red-400/40 rounded-2xl flex items-center justify-center">
+            <X className="w-7 h-7 text-red-400" />
+          </div>
+          <h2 className="text-white font-bold text-lg">Could not score the attempt</h2>
+          <p className="text-blue-200/70 text-sm max-w-sm text-center leading-relaxed">{submitError}</p>
+          <div className="flex flex-col sm:flex-row gap-3 mt-2">
+            <button
+              onClick={() => {
+                setSubmitError(null);
+                submitRef.current = false;
+                setSubmitRetry((n) => n + 1);
+              }}
+              className="flex items-center justify-center gap-2 bg-gradient-to-r from-indigo-500 to-purple-600 text-white px-6 py-3 rounded-xl text-sm font-semibold hover:opacity-90 transition-opacity"
+            >
+              <RotateCcw className="w-4 h-4" />
+              Retry
+            </button>
+            <button
+              onClick={() => navigate('/dashboard')}
+              className="flex items-center justify-center gap-2 px-6 py-3 rounded-xl text-sm font-medium text-blue-200/70 hover:bg-white/5 transition-colors"
+            >
+              <LayoutDashboard className="w-4 h-4" />
+              Go to Dashboard
+            </button>
+          </div>
+        </div>
+      );
+    }
+
     return (
-      <NtaResultScreen
-        questions={questions}
-        questionStates={questionStates}
-        sections={SECTIONS}
-        examTitle={fullExamTitle}
-        onRetake={handleRetakeTest}
-      />
+      <div className="h-screen h-[100dvh] w-screen bg-[#091526] flex flex-col items-center justify-center gap-4 select-none">
+        <div className="w-10 h-10 border-4 border-blue-400 border-t-transparent rounded-full animate-spin" />
+        <p className="text-blue-200 text-sm font-medium">Scoring your attempt&hellip;</p>
+      </div>
     );
   }
 
   return (
     <div
       onClick={forceFullscreen}
-      className="h-screen w-screen overflow-hidden bg-[#091526] flex flex-col font-sans select-none relative"
+      className="nta-test-root h-screen h-[100dvh] w-screen overflow-hidden bg-[#091526] flex flex-col font-sans select-none relative"
     >
-      {/* Short-lived Exit Hint Pop-up Toast */}
-      {showExitHintToast && (
+      {/* Orientation / rotate suggestion: only on a portrait phone, and only
+          until the user starts the test-oriented flow or dismisses it. */}
+      {isCompact && isPortrait && !dismissedRotateHint && !isTestSubmitted && (
+        <div className="fixed bottom-4 left-1/2 -translate-x-1/2 z-40 w-[calc(100%-2rem)] max-w-md bg-[#1b365d]/95 text-white px-4 py-3 rounded-xl shadow-2xl border border-amber-400/60 animate-in fade-in slide-in-from-bottom-4 duration-300">
+          <div className="flex items-start gap-3">
+            <div className="w-9 h-9 rounded-lg bg-amber-400/15 border border-amber-400/40 flex items-center justify-center shrink-0">
+              <RotateCcw className="w-4.5 h-4.5 text-amber-300" />
+            </div>
+            <div className="flex-1 min-w-0">
+              <p className="text-xs font-bold text-amber-200 uppercase tracking-wide">
+                Best experience in landscape
+              </p>
+              <p className="text-[11px] text-blue-100/90 leading-snug mt-0.5">
+                Rotate your phone for the full question paper, answer palette,
+                and timer like the real NTA CBT screen.
+              </p>
+            </div>
+            <button
+              onClick={() => {
+                setDismissedRotateHint(true);
+                try {
+                  sessionStorage.setItem(`rotate-hint-dismissed-${paperKey}`, '1');
+                } catch {
+                  // ignore storage failures
+                }
+              }}
+              className="text-white/70 hover:text-white p-1 rounded hover:bg-white/10 shrink-0"
+              aria-label="Dismiss rotate hint"
+            >
+              <X className="w-4 h-4" />
+            </button>
+          </div>
+        </div>
+      )}
+
+      {/* Short-lived Exit Hint Pop-up Toast (desktop only) */}
+      {showExitHintToast && !isCompact && (
         <div className="fixed top-6 left-1/2 -translate-x-1/2 z-50 bg-[#1b365d]/95 text-amber-300 px-5 py-2.5 rounded-lg shadow-2xl flex items-center gap-2 text-xs font-semibold border border-amber-400/60 animate-in fade-in zoom-in duration-300">
           <span>To exit full screen mode, press the Escape key.</span>
         </div>
       )}
 
-      {/* 1. NTA Header Bar */}
+      {/* 1. NTA Header Bar — always visible: shows candidate name + countdown
+          timer even in compact landscape */}
       <NtaHeader
         examName={examTitle}
         candidateName={candidateName}
@@ -450,10 +649,11 @@ export default function TestInterface() {
         onOpenInstructions={() => setShowInstructions(true)}
         language={language}
         onLanguageChange={setLanguage}
+        compact={compactLandscape}
       />
 
       {/* 2. Main Test Area (Split Panel: Question Panel + Question Palette) */}
-      <div className="flex-1 flex overflow-hidden bg-white">
+      <div className="nta-test-row flex-1 flex overflow-hidden bg-white">
         {/* Left Panel: Question Workspace */}
         <NtaQuestionPanel
           sections={SECTIONS}
@@ -472,19 +672,68 @@ export default function TestInterface() {
           isLastQuestion={questions[questions.length - 1]?.id === currentQuestion.id}
           questionStates={questionStates}
           questions={questions}
+          onOpenPalette={isCompact ? () => setPaletteOpen(true) : undefined}
+          onSubmitTest={() => setShowSubmitModal(true)}
+          compactLandscape={compactLandscape}
+          isPortrait={isPortrait}
         />
 
-        {/* Right Panel: NTA Palette */}
-        <NtaQuestionPalette
-          questions={questions}
-          questionStates={questionStates}
-          currentQuestionId={currentQuestion.id}
-          activeSection={activeSection}
-          onSelectQuestion={handleSelectQuestion}
-          onSubmitTest={() => setShowSubmitModal(true)}
-          candidateName={candidateName}
-        />
+        {/* Right Panel: NTA Palette — visually hidden on portrait phones and
+            short landscape phones (rendered as a drawer instead); still
+            rendered inline on tablet/desktop landscape */}
+        {paletteInline && (
+          <NtaQuestionPalette
+            questions={questions}
+            questionStates={questionStates}
+            currentQuestionId={currentQuestion.id}
+            activeSection={activeSection}
+            sections={SECTIONS}
+            onSelectQuestion={handleSelectQuestion}
+            onSubmitTest={() => setShowSubmitModal(true)}
+            candidateName={candidateName}
+            wide={!isCompact}
+          />
+        )}
       </div>
+
+      {/* Mobile Palette Drawer — covers 75% of the screen so the palette's
+          legend, grids and submit all show in detail. Backdrop is only
+          rendered while the drawer is open; tapping it closes the drawer.
+          Transparent in portrait so screen brightness is unchanged. */}
+      {!paletteInline && (
+        <>
+          {paletteOpen && (
+            <div
+              className="nta-palette-backdrop fixed inset-0 z-40 bg-transparent"
+              onClick={() => setPaletteOpen(false)}
+            />
+          )}
+          <div
+            onClick={(e) => e.stopPropagation()}
+            className={`nta-palette-drawer fixed right-0 top-0 bottom-0 w-[75vw] max-w-[480px] shadow-2xl transition-transform duration-300 z-50 ${
+              paletteOpen ? 'translate-x-0 palette-open' : 'translate-x-full'
+            }`}
+          >
+            <NtaQuestionPalette
+              questions={questions}
+              questionStates={questionStates}
+              currentQuestionId={currentQuestion.id}
+              activeSection={activeSection}
+              sections={SECTIONS}
+              onSelectQuestion={(id) => {
+                handleSelectQuestion(id);
+                setPaletteOpen(false);
+              }}
+              onSubmitTest={() => {
+                setPaletteOpen(false);
+                setShowSubmitModal(true);
+              }}
+              candidateName={candidateName}
+              isMobile
+            />
+          </div>
+        </>
+      )}
 
       {/* 3. Overlay Modals */}
       <NtaQuestionPaperModal
@@ -499,6 +748,20 @@ export default function TestInterface() {
         isOpen={showInstructions}
         onClose={() => setShowInstructions(false)}
       />
+
+      {/* Instruction gate — shown before a fresh paper or a retake. The
+          test (and its timer) only start after the user ticks the consent
+          checkbox and clicks Start Test. */}
+      {!testStarted && (
+        <NtaInstructionsModal
+          isOpen
+          startMode
+          onStart={() => {
+            setTestStarted(true);
+            forceFullscreen();
+          }}
+        />
+      )}
 
       <NtaSubmitModal
         isOpen={showSubmitModal}

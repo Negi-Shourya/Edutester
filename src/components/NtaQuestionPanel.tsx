@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { ChevronLeft, ChevronRight, RotateCcw, Delete } from 'lucide-react';
+import { ChevronLeft, ChevronRight, RotateCcw, Delete, LayoutGrid } from 'lucide-react';
 import type { Question, QuestionState } from '../types';
 import QuestionDiagram from './QuestionDiagram';
 import FormattedQuestionText from './FormattedQuestionText';
@@ -22,6 +22,10 @@ interface NtaQuestionPanelProps {
   isLastQuestion: boolean;
   questionStates: QuestionState[];
   questions: Question[];
+  onOpenPalette?: () => void;
+  onSubmitTest?: () => void;
+  compactLandscape?: boolean;
+  isPortrait?: boolean;
 }
 
 export default function NtaQuestionPanel({
@@ -41,6 +45,10 @@ export default function NtaQuestionPanel({
   isLastQuestion,
   questionStates,
   questions,
+  onOpenPalette,
+  onSubmitTest,
+  compactLandscape = false,
+  isPortrait = false,
 }: NtaQuestionPanelProps) {
   const [fontSizeClass, setFontSizeClass] = useState<'text-sm' | 'text-base' | 'text-lg'>('text-sm');
 
@@ -61,83 +69,173 @@ export default function NtaQuestionPanel({
     }
   };
 
-  return (
-    <div className="flex-1 flex flex-col h-full overflow-hidden bg-white select-none">
-      {/* 1. Section Selection Tabs Bar */}
-      <div className="bg-[#e9ecef] border-b border-[#ccc] px-3 pt-2 flex items-center justify-between shrink-0">
-        <div className="flex items-end gap-1 overflow-x-auto nta-scrollbar">
-          {sections.map((section) => {
-            const isSelected = activeSection === section;
-            const sectionQs = questions.filter((q) => q.section === section);
-            const answeredCount = sectionQs.filter((q) => {
-              const st = questionStates.find((qs) => qs.id === q.id)?.status;
-              return st === 'answered' || st === 'answered-marked';
-            }).length;
+  const bottomControls = (
+    <div className={`nta-bottom-controls ${compactLandscape ? 'flex flex-row items-center gap-1' : 'flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-2'}`}>
+      {/* Action Buttons Group */}
+      <div className={compactLandscape ? 'flex flex-nowrap items-stretch gap-1' : 'grid grid-cols-2 sm:flex sm:flex-wrap items-stretch gap-2'}>
+        {/* Save & Next (Green) */}
+        <button
+          onClick={onSaveNext}
+          className={compactLandscape ? 'touch-target-32 bg-[#28a745] hover:bg-[#218838] active:bg-[#1e7e34] text-white px-1.5 py-1 rounded text-[9px] font-bold border border-[#1e7e34] shadow-xs cursor-pointer transition-all active:scale-95 uppercase whitespace-nowrap' : 'touch-target bg-[#28a745] hover:bg-[#218838] active:bg-[#1e7e34] text-white px-3 sm:px-4 py-2 rounded text-[11px] sm:text-xs font-bold border border-[#1e7e34] shadow-sm cursor-pointer transition-all active:scale-95 uppercase tracking-wide'}
+        >
+          Save &amp; Next
+        </button>
 
-            return (
-              <button
-                key={section}
-                onClick={() => onSelectSection(section)}
-                className={`px-4 py-2 text-xs font-bold rounded-t border-t border-x transition-all uppercase cursor-pointer ${
-                  isSelected
-                    ? 'bg-[#337ab7] text-white border-[#2e6da4] shadow-sm'
-                    : 'bg-[#f8f9fa] text-[#333] border-[#ccc] hover:bg-white'
-                }`}
-              >
-                {section}{' '}
-                <span className={`text-[10px] font-normal px-1.5 py-0.5 rounded-full ml-1 ${
-                  isSelected ? 'bg-white/20 text-white' : 'bg-gray-200 text-gray-700'
-                }`}>
-                  {answeredCount}/{sectionQs.length}
-                </span>
-              </button>
-            );
-          })}
-        </div>
+        {/* Clear Response (White) */}
+        <button
+          onClick={onClearResponse}
+          className={compactLandscape ? 'touch-target-32 bg-white hover:bg-gray-100 active:bg-gray-200 text-[#333] px-1.5 py-1 rounded text-[9px] font-bold border border-[#ccc] shadow-xs cursor-pointer transition-all active:scale-95 uppercase whitespace-nowrap' : 'touch-target bg-white hover:bg-gray-100 active:bg-gray-200 text-[#333] px-3 sm:px-4 py-2 rounded text-[11px] sm:text-xs font-bold border border-[#ccc] shadow-sm cursor-pointer transition-all active:scale-95 uppercase tracking-wide'}
+        >
+          Clear
+        </button>
 
-        {/* Font Size Adjusters */}
-        <div className="hidden sm:flex items-center gap-1 text-[11px] text-gray-600 mb-1">
-          <span className="font-semibold text-gray-700 mr-1">Zoom:</span>
-          <button
-            onClick={() => setFontSizeClass('text-sm')}
-            className={`px-2 py-0.5 border rounded cursor-pointer ${fontSizeClass === 'text-sm' ? 'bg-[#337ab7] text-white font-bold' : 'bg-white text-gray-700'}`}
-          >
-            A
-          </button>
-          <button
-            onClick={() => setFontSizeClass('text-base')}
-            className={`px-2 py-0.5 border rounded cursor-pointer ${fontSizeClass === 'text-base' ? 'bg-[#337ab7] text-white font-bold' : 'bg-white text-gray-700'}`}
-          >
-            A+
-          </button>
-          <button
-            onClick={() => setFontSizeClass('text-lg')}
-            className={`px-2 py-0.5 border rounded cursor-pointer ${fontSizeClass === 'text-lg' ? 'bg-[#337ab7] text-white font-bold' : 'bg-white text-gray-700'}`}
-          >
-            A++
-          </button>
-        </div>
+        {/* Save & Mark for Review (Orange) */}
+        <button
+          onClick={onSaveMarkReview}
+          className={compactLandscape ? 'touch-target-32 bg-[#ff9800] hover:bg-[#e68a00] active:bg-[#cc7a00] text-white px-1.5 py-1 rounded text-[9px] font-bold border border-[#b36b00] shadow-xs cursor-pointer transition-all active:scale-95 uppercase whitespace-nowrap' : 'touch-target bg-[#ff9800] hover:bg-[#e68a00] active:bg-[#cc7a00] text-white px-3 sm:px-4 py-2 rounded text-[11px] sm:text-xs font-bold border border-[#b36b00] shadow-sm cursor-pointer transition-all active:scale-95 uppercase tracking-wide'}
+        >
+          Save &amp; Review
+        </button>
+
+        {/* Review & Next (Blue) */}
+        <button
+          onClick={onMarkReviewNext}
+          className={compactLandscape ? 'touch-target-32 bg-[#337ab7] hover:bg-[#286090] active:bg-[#204d74] text-white px-1.5 py-1 rounded text-[9px] font-bold border border-[#204d74] shadow-xs cursor-pointer transition-all active:scale-95 uppercase whitespace-nowrap' : 'touch-target bg-[#337ab7] hover:bg-[#286090] active:bg-[#204d74] text-white px-3 sm:px-4 py-2 rounded text-[11px] sm:text-xs font-bold border border-[#204d74] shadow-sm cursor-pointer transition-all active:scale-95 uppercase tracking-wide'}
+        >
+          Review &amp; Next
+        </button>
       </div>
 
-      {/* 2. Question Info Bar */}
-      <div className="bg-[#428bca] text-white px-3 py-1.5 text-xs font-semibold flex items-center justify-between border-b border-[#357ebd] shrink-0">
-        <div className="flex items-center gap-2">
-          <span>Question Type : <span className="font-bold text-amber-200">{currentQuestion.type === 'numerical' ? 'Numerical Value Question' : 'Multiple Choice Question'}</span></span>
-          {currentQuestion.subSection && (
-            <span className="bg-[#1b365d] text-white text-[10px] px-2 py-0.5 rounded font-bold">
+      {/* Navigation Buttons */}
+      <div className={compactLandscape ? 'flex flex-nowrap items-stretch gap-1 ml-auto' : 'flex items-center gap-1 sm:ml-auto justify-end'}>
+        {onSubmitTest && (
+          <button
+            onClick={onSubmitTest}
+            className="touch-target-32 bg-[#dc3545] hover:bg-[#c82333] text-white px-2 py-1 rounded text-[9px] font-bold border border-[#bd2130] shadow-xs flex items-center gap-1 cursor-pointer active:scale-95 transition-all whitespace-nowrap"
+          >
+            Submit
+          </button>
+        )}
+        <button
+          onClick={() => onNavigate(-1)}
+          disabled={isFirstQuestion}
+          className="touch-target-32 bg-white hover:bg-gray-100 disabled:opacity-40 text-gray-700 px-1.5 py-1 rounded text-[9px] font-bold border border-gray-300 shadow-xs flex items-center gap-0.5 cursor-pointer disabled:cursor-not-allowed whitespace-nowrap"
+        >
+          <ChevronLeft className="w-3 h-3" /> &lt;&lt; Back
+        </button>
+        <button
+          onClick={() => onNavigate(1)}
+          disabled={isLastQuestion}
+          className="touch-target-32 bg-white hover:bg-gray-100 disabled:opacity-40 text-gray-700 px-1.5 py-1 rounded text-[9px] font-bold border border-gray-300 shadow-xs flex items-center gap-0.5 cursor-pointer disabled:cursor-not-allowed whitespace-nowrap"
+        >
+          Next &gt;&gt; <ChevronRight className="w-3 h-3" />
+        </button>
+      </div>
+    </div>
+  );
+
+  return (
+    <div className="nta-question-pane flex-1 flex flex-col h-full overflow-hidden bg-white select-none">
+      {/* 1. Section Selection Tabs Bar — always visible so users can switch
+          Physics / Chemistry / Mathematics even in compact landscape */}
+      <div className="nta-section-tabs bg-[#e9ecef] border-b border-[#ccc] px-3 pt-2 flex items-center justify-between shrink-0">
+          <div className="flex items-end gap-1 overflow-x-auto nta-scrollbar">
+            {sections.map((section) => {
+              const isSelected = activeSection === section;
+              const sectionQs = questions.filter((q) => q.section === section);
+              const answeredCount = sectionQs.filter((q) => {
+                const st = questionStates.find((qs) => qs.id === q.id)?.status;
+                return st === 'answered' || st === 'answered-marked';
+              }).length;
+
+              return (
+                <button
+                  key={section}
+                  onClick={() => onSelectSection(section)}
+                  className={`px-4 py-2 text-xs font-bold rounded-t border-t border-x transition-all uppercase cursor-pointer ${
+                    isSelected
+                      ? 'bg-[#337ab7] text-white border-[#2e6da4] shadow-sm'
+                      : 'bg-[#f8f9fa] text-[#333] border-[#ccc] hover:bg-white'
+                  }`}
+                >
+                  {section}{' '}
+                  <span className={`text-[10px] font-normal px-1.5 py-0.5 rounded-full ml-1 ${
+                    isSelected ? 'bg-white/20 text-white' : 'bg-gray-200 text-gray-700'
+                  }`}>
+                    {answeredCount}/{sectionQs.length}
+                  </span>
+                </button>
+              );
+            })}
+          </div>
+
+          {/* Font Size Adjusters — hidden on phone landscape; the palette
+              button takes its place in the top-right corner */}
+          {compactLandscape ? (
+            onOpenPalette && (
+              <button
+                onClick={onOpenPalette}
+                onMouseDown={(e) => e.stopPropagation()}
+                className="touch-target-32 bg-[#1b365d] hover:bg-[#0f2444] text-amber-300 px-2 py-1 rounded text-[10px] font-bold border border-[#0d2242] shadow-xs flex items-center gap-1 cursor-pointer active:scale-95 transition-all shrink-0 mb-1"
+              >
+                <LayoutGrid className="w-3.5 h-3.5" />
+                Palette
+              </button>
+            )
+          ) : (
+            <div className="hidden sm:flex items-center gap-1 text-[11px] text-gray-600 mb-1">
+              <span className="font-semibold text-gray-700 mr-1">Zoom:</span>
+              <button
+                onClick={() => setFontSizeClass('text-sm')}
+                className={`px-2 py-0.5 border rounded cursor-pointer ${fontSizeClass === 'text-sm' ? 'bg-[#337ab7] text-white font-bold' : 'bg-white text-gray-700'}`}
+              >
+                A
+              </button>
+              <button
+                onClick={() => setFontSizeClass('text-base')}
+                className={`px-2 py-0.5 border rounded cursor-pointer ${fontSizeClass === 'text-base' ? 'bg-[#337ab7] text-white font-bold' : 'bg-white text-gray-700'}`}
+              >
+                A+
+              </button>
+              <button
+                onClick={() => setFontSizeClass('text-lg')}
+                className={`px-2 py-0.5 border rounded cursor-pointer ${fontSizeClass === 'text-lg' ? 'bg-[#337ab7] text-white font-bold' : 'bg-white text-gray-700'}`}
+              >
+                A++
+              </button>
+            </div>
+          )}
+        </div>
+
+      {/* 2. Question Info Bar (hidden in compact landscape) */}
+      <div className={compactLandscape ? 'hidden' : 'bg-[#428bca] text-white px-3 py-1.5 text-[11px] sm:text-xs font-semibold flex flex-wrap items-center justify-between gap-1 border-b border-[#357ebd] shrink-0'}>
+        <div className="flex items-center gap-2 min-w-0 mr-auto">
+          <span className="truncate">Question Type : <span className="font-bold text-amber-200">{currentQuestion.type === 'numerical' ? 'Numerical Value Question' : 'Multiple Choice Question'}</span></span>
+          {!isPortrait && currentQuestion.subSection && (
+            <span className="bg-[#1b365d] text-white text-[10px] px-2 py-0.5 rounded font-bold shrink-0">
               {currentQuestion.subSection}
             </span>
           )}
         </div>
-        <div className="text-[11px] text-blue-100 flex items-center gap-3">
-          <span>Marks for correct answer: <strong className="text-green-300">+{currentQuestion.marks ?? 4}</strong></span>
-          <span>|</span>
-          <span>Negative marks: <strong className="text-red-300">{currentQuestion.negativeMarks ?? -1}</strong></span>
+        <div className="text-[10px] sm:text-[11px] text-blue-100 flex items-center gap-2 shrink-0">
+          <span>Marks: <strong className="text-green-300">+{currentQuestion.marks ?? 4}</strong></span>
+          <span className="text-blue-200/60">|</span>
+          <span>Negative: <strong className="text-red-300">{currentQuestion.negativeMarks ?? -1}</strong></span>
         </div>
+        {onOpenPalette && (
+          <button
+            onClick={onOpenPalette}
+            onMouseDown={(e) => e.stopPropagation()}
+            className="md:hidden touch-target-40 bg-[#1b365d] hover:bg-[#0f2444] text-amber-300 px-2.5 py-1 rounded text-[11px] font-bold border border-[#0d2242] shadow-xs flex items-center gap-1.5 cursor-pointer active:scale-95 transition-all shrink-0"
+          >
+            <LayoutGrid className="w-3.5 h-3.5" />
+            Palette
+          </button>
+        )}
       </div>
 
-      {/* 3. Main Question View Area */}
-      <div className="flex-1 overflow-y-auto p-4 bg-white nta-scrollbar">
+      {/* 3. Main Question View Area (scrollable) */}
+      <div className="nta-question-scroll flex-1 overflow-y-auto bg-white nta-scrollbar p-4">
         {/* Question Header */}
         <div className="border-b border-gray-200 pb-2 mb-4 flex items-center justify-between">
           <div className="font-bold text-[#1b365d] text-sm">
@@ -180,7 +278,7 @@ export default function NtaQuestionPanel({
                   <button
                     key={key}
                     onClick={() => handleKeypadPress(key)}
-                    className="py-2.5 bg-[#f8f9fa] hover:bg-[#e2e6ea] active:bg-[#dae0e5] text-gray-800 font-bold border border-gray-300 rounded text-sm transition-all cursor-pointer"
+                    className="touch-target-40 py-2.5 bg-[#f8f9fa] hover:bg-[#e2e6ea] active:bg-[#dae0e5] text-gray-800 font-bold border border-gray-300 rounded text-sm transition-all cursor-pointer"
                   >
                     {key}
                   </button>
@@ -189,13 +287,13 @@ export default function NtaQuestionPanel({
               <div className="grid grid-cols-2 gap-2 mt-2">
                 <button
                   onClick={() => handleKeypadPress('BACKSPACE')}
-                  className="py-2 bg-amber-50 hover:bg-amber-100 text-amber-800 font-bold border border-amber-300 rounded text-xs flex items-center justify-center gap-1 cursor-pointer"
+                  className="touch-target-40 py-2 bg-amber-50 hover:bg-amber-100 text-amber-800 font-bold border border-amber-300 rounded text-xs flex items-center justify-center gap-1 cursor-pointer"
                 >
                   <Delete className="w-3.5 h-3.5" /> Backspace
                 </button>
                 <button
                   onClick={() => handleKeypadPress('CLEAR')}
-                  className="py-2 bg-red-50 hover:bg-red-100 text-red-700 font-bold border border-red-300 rounded text-xs flex items-center justify-center gap-1 cursor-pointer"
+                  className="touch-target-40 py-2 bg-red-50 hover:bg-red-100 text-red-700 font-bold border border-red-300 rounded text-xs flex items-center justify-center gap-1 cursor-pointer"
                 >
                   <RotateCcw className="w-3.5 h-3.5" /> Clear All
                 </button>
@@ -212,7 +310,7 @@ export default function NtaQuestionPanel({
                   <div
                     key={option.label}
                     onClick={() => onSelectOption(option.label)}
-                    className={`flex items-start gap-3 p-3 rounded border transition-all cursor-pointer ${
+                    className={`nta-option-row flex items-start gap-3 p-3 rounded border transition-all cursor-pointer ${
                       isSelected
                         ? 'border-[#337ab7] bg-[#ebf3fb] ring-1 ring-[#337ab7] shadow-xs'
                         : 'border-gray-300 hover:border-gray-400 hover:bg-gray-50'
@@ -239,65 +337,18 @@ export default function NtaQuestionPanel({
             )}
           </div>
         )}
+
+        {/* Bottom controls inside the scroll in compact landscape so they
+            appear only when the user scrolls past the question */}
+        {compactLandscape && bottomControls}
       </div>
 
-      {/* 4. Bottom Control Bar (Exact NTA 4 Buttons + Navigation) */}
-      <div className="bg-[#e9ecef] border-t border-[#ccc] px-4 py-2.5 shrink-0">
-        <div className="flex flex-wrap items-center justify-between gap-2">
-          {/* Action Buttons Group */}
-          <div className="flex flex-wrap items-center gap-2">
-            {/* Save & Next (Green) */}
-            <button
-              onClick={onSaveNext}
-              className="bg-[#28a745] hover:bg-[#218838] active:bg-[#1e7e34] text-white px-4 py-2 rounded text-xs font-bold border border-[#1e7e34] shadow-sm cursor-pointer transition-all active:scale-95 uppercase tracking-wide"
-            >
-              Save & Next
-            </button>
-
-            {/* Clear Response (White) */}
-            <button
-              onClick={onClearResponse}
-              className="bg-white hover:bg-gray-100 active:bg-gray-200 text-[#333] px-4 py-2 rounded text-xs font-bold border border-[#ccc] shadow-sm cursor-pointer transition-all active:scale-95 uppercase tracking-wide"
-            >
-              Clear Response
-            </button>
-
-            {/* Save & Mark for Review (Orange) */}
-            <button
-              onClick={onSaveMarkReview}
-              className="bg-[#ff9800] hover:bg-[#e68a00] active:bg-[#cc7a00] text-white px-4 py-2 rounded text-xs font-bold border border-[#b36b00] shadow-sm cursor-pointer transition-all active:scale-95 uppercase tracking-wide"
-            >
-              Save & Mark for Review
-            </button>
-
-            {/* Mark for Review & Next (Blue) */}
-            <button
-              onClick={onMarkReviewNext}
-              className="bg-[#337ab7] hover:bg-[#286090] active:bg-[#204d74] text-white px-4 py-2 rounded text-xs font-bold border border-[#204d74] shadow-sm cursor-pointer transition-all active:scale-95 uppercase tracking-wide"
-            >
-              Mark for Review & Next
-            </button>
-          </div>
-
-          {/* Navigation Buttons */}
-          <div className="flex items-center gap-1 ml-auto">
-            <button
-              onClick={() => onNavigate(-1)}
-              disabled={isFirstQuestion}
-              className="bg-white hover:bg-gray-100 disabled:opacity-40 text-gray-700 px-3 py-2 rounded text-xs font-bold border border-gray-300 shadow-xs flex items-center gap-1 cursor-pointer disabled:cursor-not-allowed"
-            >
-              <ChevronLeft className="w-4 h-4" /> &lt;&lt; Back
-            </button>
-            <button
-              onClick={() => onNavigate(1)}
-              disabled={isLastQuestion}
-              className="bg-white hover:bg-gray-100 disabled:opacity-40 text-gray-700 px-3 py-2 rounded text-xs font-bold border border-gray-300 shadow-xs flex items-center gap-1 cursor-pointer disabled:cursor-not-allowed"
-            >
-              Next &gt;&gt; <ChevronRight className="w-4 h-4" />
-            </button>
-          </div>
+      {/* 4. Bottom Control Bar — fixed footer on desktop/portrait */}
+      {!compactLandscape && (
+        <div className="bg-[#e9ecef] border-t border-[#ccc] px-3 sm:px-4 py-2.5 shrink-0 safe-area-pad">
+          {bottomControls}
         </div>
-      </div>
+      )}
     </div>
   );
 }

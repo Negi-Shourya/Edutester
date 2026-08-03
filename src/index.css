@@ -1,9 +1,21 @@
 @import "tailwindcss";
 
+/* ===================================================================
+   EduTester — "The Exam Hall" design system
+   Deep exam-blue ink + saffron accent, Space Grotesk display type,
+   IBM Plex Mono for timers/scores. The NTA question palette (green /
+   red / purple / gray pentagons) is the signature motif across the
+   marketing and app chrome. The test-taking interface itself stays an
+   untouched NTA CBT clone — these tokens do not restyle it.
+   =================================================================== */
 @theme {
-  --color-primary: #4f46e5;
-  --color-primary-dark: #4338ca;
-  --color-primary-light: #6366f1;
+  --color-primary: #1e3a8a;
+  --color-primary-dark: #15275f;
+  --color-primary-light: #1d4ed8;
+  --color-saffron: #f97316;
+  --color-saffron-dark: #ea580c;
+  --color-paper: #f8fafc;
+  --color-ink: #111827;
   --color-accent: #f59e0b;
   --color-accent-dark: #d97706;
   --color-success: #10b981;
@@ -14,17 +26,163 @@
   --color-answered: #10b981;
   --color-marked: #8b5cf6;
   --color-current: #3b82f6;
+
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-display: 'Space Grotesk', 'Inter', sans-serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, monospace;
 }
 
 body {
   margin: 0;
-  font-family: 'Inter', Arial, sans-serif;
+  font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #f4f6f9;
+  background-color: var(--color-paper);
+  /* iOS Safari zooms input fonts when the page is landscape; stop that
+     so the NTA test interface keeps its layout on a rotated phone. */
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
 
-/* NTA Exact Button Shapes */
+/* Headings use the display face for a technical, engineered character.
+   Scoped to the app chrome — the NTA test interface overrides its own
+   headings with inline classes and stays untouched. */
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+}
+
+/* Hall-ticket voice for numbers: timers, scores, question indices */
+.font-hall {
+  font-family: var(--font-mono);
+}
+
+/* ===================================================================
+   MOTION — one orchestrated vocabulary, reduced-motion safe
+   =================================================================== */
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(18px); }
+  to { opacity: 1; transform: none; }
+}
+
+@keyframes float-soft {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.55; transform: scale(0.85); }
+}
+
+@keyframes shimmer {
+  from { background-position: 200% 0; }
+  to { background-position: -200% 0; }
+}
+
+/* Scroll-triggered reveal: hidden until the Reveal component adds .is-in */
+.reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.6s cubic-bezier(0.22, 1, 0.36, 1),
+              transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.reveal.is-in {
+  opacity: 1;
+  transform: none;
+}
+
+.animate-float {
+  animation: float-soft 6s ease-in-out infinite;
+}
+.animate-pulse-dot {
+  animation: pulse-dot 2.4s ease-in-out infinite;
+}
+.animate-fade-up {
+  animation: fade-up 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+/* Saffron sweep used on primary CTAs */
+.cta-shimmer {
+  background-image: linear-gradient(
+    110deg,
+    var(--color-primary) 30%,
+    var(--color-primary-light) 50%,
+    var(--color-primary) 70%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 6s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal,
+  .animate-float,
+  .animate-fade-up,
+  .cta-shimmer,
+  .animate-pulse-dot {
+    animation: none !important;
+    transition: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
+
+html {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Respect iPhone notch / rounded corners in full-screen landscape test mode */
+.safe-area-pad {
+  padding-left: env(safe-area-inset-left);
+  padding-right: env(safe-area-inset-right);
+  padding-top: env(safe-area-inset-top);
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+/* Test root always fits the VISIBLE viewport exactly. Tailwind's
+   h-screen (100vh) would otherwise win over h-[100dvh] (it comes later
+   in the stylesheet at equal specificity), and on a phone with a visible
+   URL bar 100vh is taller than the visible area — leaving a white strip
+   at the bottom. This unlayered rule overrides both utilities. */
+.nta-test-root {
+  height: 100vh;
+}
+@supports (height: 100dvh) {
+  .nta-test-root {
+    height: 100dvh;
+  }
+}
+
+/* Comfortable tap targets on touch devices without changing desktop layout */
+@media (pointer: coarse) {
+  .touch-target {
+    min-height: 44px;
+  }
+  .touch-target-40 {
+    min-height: 40px;
+  }
+  .touch-target-32 {
+    min-height: 32px;
+  }
+}
+
+/* Prevent horizontal page bounce that makes the phone view feel "scattered" */
+body.noscroll-x,
+.noscroll-x {
+  overflow-x: hidden;
+}
+
+/* Hide scrollbars on small-screen horizontal strips that should feel native */
+.nta-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+@media (min-width: 640px) {
+  .nta-scrollbar::-webkit-scrollbar {
+    display: block;
+  }
+}
+
+/* NTA Button Shapes — answered/not-answered keep their slanted-edge
+   pentagon; marked ones are rectangular (not oval) */
 .nta-shape-not-visited {
   background-color: #ffffff;
   border: 1px solid #b8b8b8;
@@ -49,13 +207,15 @@ body {
 .nta-shape-marked {
   background-color: #702090;
   color: #ffffff;
-  border-radius: 50% !important;
+  clip-path: polygon(0% 0%, 75% 0%, 100% 25%, 100% 100%, 0% 100%);
+  border-radius: 2px;
 }
 
 .nta-shape-answered-marked {
   background-color: #702090;
   color: #ffffff;
-  border-radius: 50% !important;
+  clip-path: polygon(0% 0%, 75% 0%, 100% 25%, 100% 100%, 0% 100%);
+  border-radius: 2px;
   position: relative;
 }
 
@@ -114,4 +274,198 @@ body {
 }
 .vec-letter {
   line-height: 1.2;
+}
+
+/* ===================================================================
+   PHONE LANDSCAPE LAYOUT (NTA CBT clone)
+   Two-column desktop-style layout on a rotated phone:
+   [ sticky top bar: name/roll/timer ]
+   [ subject tabs strip |        |        ]
+   [ (left pane)        | palette |       ]
+   [ sticky bottom      |  pane   |       ]
+   [ action bar (left)  |         |       ]
+   Scoped to touch devices so desktop landscape stays untouched.
+   =================================================================== */
+@media (orientation: landscape) and (pointer: coarse) {
+  /* 7. Dynamic viewport height — 100vh fallback, 100dvh primary */
+  .nta-test-root {
+    height: 100vh;
+    height: 100dvh;
+    overflow: hidden;
+  }
+
+  /* 4. Top bar: full width, spans both panes, sticky at the very top */
+  .nta-header {
+    position: sticky;
+    top: 0;
+    z-index: 30;
+    flex: 0 0 auto;
+    min-height: 48px;
+    max-height: 56px;
+    display: flex;
+    align-items: center;
+  }
+  .nta-header > div {
+    width: 100%;
+  }
+
+  /* 1. Two-pane row container — panes side by side, never stacked */
+  .nta-test-row {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    flex: 1 1 auto;
+    min-height: 0;
+  }
+
+  /* 2. LEFT pane: question area — fills remaining width, scrolls on its own */
+  .nta-question-pane {
+    flex: 1 1 auto;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  .nta-question-scroll {
+    flex: 1 1 auto;
+    min-height: 0;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* 6. Subject tabs: horizontal scrollable strip under the top bar,
+        full width of the LEFT pane only */
+  .nta-section-tabs {
+    flex: 0 0 auto;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* 3. RIGHT pane: palette — fixed width, full height, own scroll */
+  .nta-palette-pane {
+    flex: 0 0 auto;
+    width: clamp(280px, 30vw, 320px);
+    height: 100%;
+    overflow: hidden;
+  }
+  .nta-palette-pane > .overflow-y-auto,
+  .nta-palette-pane .flex-1.overflow-y-auto {
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* 5. Bottom action buttons: flow inside the question scroll area so they
+        appear only after the user scrolls down — never pinned on screen */
+  .nta-bottom-controls {
+    background-color: #e9ecef;
+    border-top: 1px solid #ccc;
+    padding-top: 6px;
+    padding-bottom: 6px;
+  }
+
+  /* 8. Touch-target & font minimums for landscape */
+  .nta-option-row {
+    min-height: 40px;
+    align-items: center;
+  }
+  .nta-question-pane button,
+  .nta-palette-pane button,
+  .nta-section-tabs button {
+    min-width: 36px;
+    min-height: 36px;
+  }
+  /* Bottom action buttons stay compact (single row, smaller tap target) */
+  .nta-bottom-controls button {
+    min-width: 0;
+    min-height: 28px;
+  }
+  /* font-size via clamp(), never vw units */
+  .nta-option-row {
+    font-size: clamp(13px, 1.5vmin, 16px);
+  }
+}
+
+/* ===================================================================
+   PHONE LANDSCAPE PALETTE DRAWER (short viewport, e.g. rotated phone)
+   The question palette becomes a slide-in overlay drawer in landscape so
+   the question pane keeps the full viewport width. Only applies to short
+   landscape screens (height ≤ 500px) — tablets/desktop are untouched.
+   =================================================================== */
+@media (orientation: landscape) and (max-height: 500px) {
+  /* Palette drawer: fixed to the right edge, full height, slides in.
+     Uses the `translate` property — the same one Tailwind v4's
+     translate-x-* utilities set — so this unlayered rule overrides them
+     cleanly with no double-offset (a `transform` + `translate: none`
+     combo would lose its neutralizer when the CSS minifier drops the
+     initial-value declaration). */
+  .nta-palette-drawer {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 75%;
+    max-width: none;
+    translate: 100%;
+    transition: translate 0.25s ease;
+    z-index: 50;
+  }
+  /* 100dvh override guarded by @supports so the 100vh fallback above
+     survives minification (the minifier dedupes adjacent same-property
+     declarations into just the last one). */
+  @supports (height: 100dvh) {
+    .nta-palette-drawer {
+      height: 100dvh;
+    }
+  }
+  /* Open state — slides the drawer into view */
+  .nta-palette-drawer.palette-open {
+    translate: 0;
+  }
+  /* Backdrop: only rendered (by React) while the drawer is open; taps
+     close the drawer */
+  .nta-palette-backdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 40;
+  }
+  /* The palette pane must fill the drawer exactly — no fixed sidebar
+     width inside the drawer */
+  .nta-palette-drawer .nta-palette-pane {
+    width: 100% !important;
+    max-width: none !important;
+    flex: 1 1 auto;
+    height: 100%;
+  }
+}
+
+/* ===================================================================
+   PHONE PORTRAIT FOOTER (touch devices only — desktop untouched)
+   Smaller action buttons + Submit/Back/Next spread across the full
+   footer width instead of being pushed to the right.
+   =================================================================== */
+@media (orientation: portrait) and (pointer: coarse) {
+  .nta-bottom-controls button {
+    min-height: 32px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    font-size: 10px;
+  }
+  .nta-bottom-controls button svg {
+    width: 12px;
+    height: 12px;
+  }
+  /* Submit / Back / Next row: fill the entire footer width */
+  .nta-bottom-controls > div:last-child {
+    width: 100%;
+    justify-content: stretch;
+  }
+  .nta-bottom-controls > div:last-child button {
+    flex: 1 1 0%;
+    min-width: 0;
+    justify-content: center;
+    white-space: nowrap;
+  }
 }

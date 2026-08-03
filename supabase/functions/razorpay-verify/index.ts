@@ -43,6 +43,18 @@ function json(body: unknown, status = 200): Response {
   });
 }
 
+// Adds whole calendar months without the setMonth() overflow bug
+// (e.g. Jan 31 + 1 month must land on Feb 28/29, not March 3).
+function addMonths(date: Date, months: number): Date {
+  const result = new Date(date);
+  const day = result.getDate();
+  result.setDate(1);
+  result.setMonth(result.getMonth() + months);
+  const lastDay = new Date(result.getFullYear(), result.getMonth() + 1, 0).getDate();
+  result.setDate(Math.min(day, lastDay));
+  return result;
+}
+
 // Bearer <supabase JWT> -> the authenticated user or null.
 async function getUser(req: Request) {
   const auth = req.headers.get('authorization') ?? '';
@@ -95,8 +107,28 @@ Deno.serve(async (req) => {
   }
 
   const now = new Date();
-  const endsAt = new Date(now);
-  endsAt.setMonth(endsAt.getMonth() + plan.months);
+
+  // Find the latest active expiry so the new purchase stacks on top of it
+  // (buying any plan — bigger or smaller — adds its time to what remains).
+  const { data: activeSubs, error: fetchError } = await supabaseAdmin
+    .from('subscriptions')
+    .select('*')
+    .eq('user_id', user.id)
+    .eq('status', 'active')
+    .gt('ends_at', now.toISOString())
+    .order('ends_at', { ascending: false })
+    .limit(1);
+
+  if (fetchError) {
+    console.error('subscription fetch failed', fetchError);
+    return json({ error: 'Failed to look up existing subscription' }, 502);
+  }
+
+  const activeSub = activeSubs?.[0];
+
+  // Stack on top of the remaining time (max of now vs current expiry).
+  const base = activeSub && new Date(activeSub.ends_at) > now ? new Date(activeSub.ends_at) : now;
+  const endsAt = addMonths(base, plan.months);
 
   const { data, error } = await supabaseAdmin
     .from('subscriptions')
@@ -108,15 +140,15 @@ Deno.serve(async (req) => {
       status: 'active',
       razorpay_order_id: orderId,
       razorpay_payment_id: paymentId,
-      starts_at: now.toISOString(),
+      starts_at: base.toISOString(),
       ends_at: endsAt.toISOString(),
     })
     .select()
     .single();
 
   if (error) {
-    console.error('subscription insert failed', error);
+    console.error('subscription upsert failed', error);
     return json({ error: 'Failed to record subscription' }, 502);
   }
-  return json({ ok: true, subscription: data });
+  return json({ ok: true, subscription: data, upgraded: !!activeSub });
 });

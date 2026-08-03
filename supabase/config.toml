@@ -1,5 +1,19 @@
 project_id = "edutester"
 
+[auth]
+enabled = true
+# Base URL used as the allow-list for OAuth/PKCE redirects. Keep in sync with
+# the Supabase dashboard (Auth -> URL Configuration). "localhost:5173" is the
+# Vite dev server; the ** wildcard covers phone access over the LAN IP.
+site_url = "http://localhost:5173"
+additional_redirect_urls = [
+    "http://localhost:5173/**",
+    # Phone/device access on the same Wi-Fi. Adjust to your LAN subnet
+    # (find it via: ipconfig getifaddr en0). Apply either by editing the
+    # dashboard directly or via: supabase link && supabase config push
+    "http://10.134.61.*:5173/**",
+]
+
 [auth.external.google]
 enabled = true
 client_id = "env(SUPABASE_AUTH_EXTERNAL_GOOGLE_CLIENT_ID)"
@@ -9,4 +23,7 @@ secret = "env(SUPABASE_AUTH_EXTERNAL_GOOGLE_SECRET)"
 verify_jwt = true
 
 [functions.razorpay-verify]
+verify_jwt = true
+
+[functions.score-attempt]
 verify_jwt = true

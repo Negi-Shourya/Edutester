@@ -2,6 +2,8 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { CheckCircle2, XCircle, Award, BarChart2, RefreshCw, LayoutDashboard, ChevronDown, ChevronUp } from 'lucide-react';
 import type { Question, QuestionState } from '../types';
+import type { AttemptResult } from '../lib/scoring';
+import type { QuestionKey } from '../lib/attemptsDb';
 import QuestionDiagram from './QuestionDiagram';
 import VectorText from './VectorText';
 
@@ -11,6 +13,10 @@ interface NtaResultScreenProps {
   sections: string[];
   examTitle: string;
   onRetake: () => void;
+  // Server-computed result from the score-attempt edge function.
+  result: AttemptResult;
+  // Answer keys + solutions for this paper only, returned with the result.
+  keys: Record<string, QuestionKey>;
 }
 
 export default function NtaResultScreen({
@@ -19,68 +25,33 @@ export default function NtaResultScreen({
   sections,
   examTitle,
   onRetake,
+  result,
+  keys,
 }: NtaResultScreenProps) {
   const navigate = useNavigate();
   const [activeFilterSection, setActiveFilterSection] = useState<string>('ALL');
   const [expandedSolutions, setExpandedSolutions] = useState<Record<number, boolean>>({});
 
-  // Compute evaluation statistics
-  let totalCorrect = 0;
-  let totalIncorrect = 0;
-  let totalUnattempted = 0;
-  let totalScore = 0;
-
-  const maxPossibleScore = questions.reduce((sum, q) => sum + (q.marks ?? 4), 0);
+  // Evaluation statistics come from the server-side scoring.
+  const totalCorrect = result.totalCorrect;
+  const totalIncorrect = result.totalIncorrect;
+  const totalScore = result.totalScore;
+  const maxPossibleScore = result.maxScore;
+  const accuracy = result.accuracy;
 
   const sectionResults = sections.map((sec) => {
+    const breakdown = result.sectionBreakdown.find((s) => s.section === sec);
     const secQuestions = questions.filter((q) => q.section === sec);
-    let secCorrect = 0;
-    let secIncorrect = 0;
-    let secUnattempted = 0;
-    let secScore = 0;
-
-    secQuestions.forEach((q) => {
-      const qState = questionStates.find((qs) => qs.id === q.id);
-      const isMCQ = q.type === 'mcq' || !q.type;
-
-      let userAns = '';
-      if (isMCQ) {
-        userAns = qState?.selectedOption || '';
-      } else {
-        userAns = qState?.numericAnswer?.trim() || '';
-      }
-
-      if (userAns !== '') {
-        if (userAns.toLowerCase() === q.correctAnswer?.toLowerCase()) {
-          secCorrect++;
-          secScore += q.marks ?? 4;
-        } else {
-          secIncorrect++;
-          secScore += q.negativeMarks ?? -1;
-        }
-      } else {
-        secUnattempted++;
-      }
-    });
-
-    totalCorrect += secCorrect;
-    totalIncorrect += secIncorrect;
-    totalUnattempted += secUnattempted;
-    totalScore += secScore;
-
     return {
       section: sec,
       total: secQuestions.length,
-      correct: secCorrect,
-      incorrect: secIncorrect,
-      unattempted: secUnattempted,
-      score: secScore,
-      maxScore: secQuestions.reduce((sum, q) => sum + (q.marks ?? 4), 0),
+      correct: breakdown?.correct ?? 0,
+      incorrect: breakdown?.incorrect ?? 0,
+      unattempted: breakdown?.unattempted ?? 0,
+      score: breakdown?.score ?? 0,
+      maxScore: breakdown?.maxScore ?? secQuestions.reduce((sum, q) => sum + (q.marks ?? 4), 0),
     };
   });
-
-  const attemptedCount = totalCorrect + totalIncorrect;
-  const accuracy = attemptedCount > 0 ? Math.round((totalCorrect / attemptedCount) * 100) : 0;
 
   const filteredQuestions =
     activeFilterSection === 'ALL'
@@ -94,33 +65,33 @@ export default function NtaResultScreen({
   return (
     <div className="min-h-screen bg-[#f4f6f9] text-gray-800 flex flex-col select-none">
       {/* Header */}
-      <header className="bg-[#1b365d] text-white px-6 py-4 shadow-md flex flex-wrap items-center justify-between gap-4">
-        <div>
+      <header className="bg-[#1b365d] text-white px-4 sm:px-6 py-3 sm:py-4 shadow-md flex flex-wrap items-center justify-between gap-3">
+        <div className="min-w-0">
           <div className="flex items-center gap-2">
-            <span className="bg-amber-400 text-[#1b365d] text-xs font-black px-2 py-0.5 rounded">NTA</span>
-            <h1 className="text-lg font-bold text-amber-300">Exam Results &amp; Solution Analysis</h1>
+            <span className="bg-amber-400 text-[#1b365d] text-xs font-black px-2 py-0.5 rounded shrink-0">NTA</span>
+            <h1 className="text-sm sm:text-lg font-bold text-amber-300 truncate">Exam Results &amp; Solution Analysis</h1>
           </div>
-          <p className="text-xs text-blue-200 mt-0.5">{examTitle} &bull; Official NTA Format Scorecard</p>
+          <p className="text-[10px] sm:text-xs text-blue-200 mt-0.5 truncate">{examTitle} &bull; Official NTA Format Scorecard</p>
         </div>
 
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-2 sm:gap-3 shrink-0">
           <button
             onClick={onRetake}
-            className="flex items-center gap-1.5 bg-[#337ab7] hover:bg-[#286090] text-white px-4 py-2 rounded text-xs font-bold transition-all shadow-sm cursor-pointer"
+            className="flex items-center gap-1.5 bg-[#337ab7] hover:bg-[#286090] text-white px-3 sm:px-4 py-2 rounded text-[11px] sm:text-xs font-bold transition-all shadow-sm cursor-pointer"
           >
-            <RefreshCw className="w-3.5 h-3.5" /> Retake Test
+            <RefreshCw className="w-3.5 h-3.5" /> Retake
           </button>
           <button
             onClick={() => navigate('/dashboard')}
-            className="flex items-center gap-1.5 bg-[#28a745] hover:bg-[#218838] text-white px-4 py-2 rounded text-xs font-bold transition-all shadow-sm cursor-pointer"
+            className="flex items-center gap-1.5 bg-[#28a745] hover:bg-[#218838] text-white px-3 sm:px-4 py-2 rounded text-[11px] sm:text-xs font-bold transition-all shadow-sm cursor-pointer"
           >
-            <LayoutDashboard className="w-3.5 h-3.5" /> Go to Dashboard
+            <LayoutDashboard className="w-3.5 h-3.5" /> Dashboard
           </button>
         </div>
       </header>
 
       {/* Main Container */}
-      <div className="max-w-6xl w-full mx-auto p-4 sm:p-6 space-y-6 flex-1">
+      <div className="max-w-6xl w-full mx-auto p-3 sm:p-6 space-y-6 flex-1">
         {/* Scorecard Hero Cards */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
           {/* Total Score */}
@@ -216,10 +187,12 @@ export default function NtaResultScreen({
           <div className="p-4 space-y-4">
             {filteredQuestions.map((q) => {
               const qState = questionStates.find((qs) => qs.id === q.id);
+              const key = keys[String(q.id)];
+              const outcome = result.questionOutcomes[String(q.id)];
               const isMCQ = q.type === 'mcq' || !q.type;
               const userAns = isMCQ ? qState?.selectedOption || '' : qState?.numericAnswer?.trim() || '';
-              const isCorrect = userAns !== '' && userAns.toLowerCase() === q.correctAnswer?.toLowerCase();
-              const isUnattempted = userAns === '';
+              const isCorrect = outcome === 'correct';
+              const isUnattempted = outcome === 'unattempted';
               const isExpanded = expandedSolutions[q.id] ?? true;
 
               return (
@@ -275,7 +248,7 @@ export default function NtaResultScreen({
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 my-2">
                           {q.options.map((opt) => {
                             const isUserChoice = userAns === opt.label;
-                            const isCorrectChoice = q.correctAnswer === opt.label;
+                            const isCorrectChoice = key?.correctAnswer === opt.label;
                             let style = 'bg-gray-50 border-gray-200 text-gray-700';
 
                             if (isCorrectChoice) {
@@ -298,14 +271,14 @@ export default function NtaResultScreen({
                       {/* Answer Summary */}
                       <div className="flex flex-wrap items-center gap-4 bg-gray-50 p-2.5 rounded border border-gray-200 text-xs">
                         <div>Your Answer: <strong className={isCorrect ? 'text-green-700' : isUnattempted ? 'text-gray-500' : 'text-red-600'}>{userAns || 'None'}</strong></div>
-                        <div>Correct Answer: <strong className="text-green-700">{q.correctAnswer}</strong></div>
+                        <div>Correct Answer: <strong className="text-green-700">{key?.correctAnswer ?? '—'}</strong></div>
                       </div>
 
                       {/* Solution */}
-                      {q.solution && (
+                      {key?.solution && (
                         <div className="bg-amber-50 border-l-4 border-amber-500 p-3 rounded text-xs text-amber-950">
                           <strong className="block text-[#1b365d] mb-1 font-bold">Explanation &amp; Solution:</strong>
-                          <p className="leading-relaxed"><VectorText text={q.solution} /></p>
+                          <p className="leading-relaxed"><VectorText text={key.solution} /></p>
                         </div>
                       )}
                     </div>

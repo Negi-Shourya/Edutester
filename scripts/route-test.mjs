@@ -96,10 +96,19 @@ res = await call('GET', api('/rest/v1/papers'), { headers: { apikey: ANON_KEY } 
 add('API', 'GET /rest/v1/papers (anon)', res.status, summarize(res.body), 200);
 
 // Public read on other content tables
-for (const t of ['sections', 'questions', 'question_options', 'question_diagrams', 'subsections']) {
+for (const t of ['sections', 'questions', 'question_options', 'subsections']) {
   res = await call('GET', api(`/rest/v1/${t}?limit=1`), { headers: { apikey: ANON_KEY } });
   add('API', `GET /rest/v1/${t} (anon)`, res.status, summarize(res.body), 200);
 }
+
+// Answer keys must NOT be readable through the Data API (RLS on, no grants):
+// anon and authenticated users get an error, never answer data.
+res = await call('GET', api('/rest/v1/question_keys?limit=1'), { headers: { apikey: ANON_KEY } });
+add('API', 'GET /rest/v1/question_keys (anon)', res.status, summarize(res.body), 401);
+
+// question_diagrams (stored HTML figures) is dropped entirely.
+res = await call('GET', api('/rest/v1/question_diagrams?limit=1'), { headers: { apikey: ANON_KEY } });
+add('API', 'GET /rest/v1/question_diagrams (anon)', res.status, summarize(res.body), 404);
 
 // Anon write attempt on a public-read-only table
 res = await call('POST', api('/rest/v1/papers'), {
@@ -109,7 +118,7 @@ res = await call('POST', api('/rest/v1/papers'), {
 add('API', 'POST /rest/v1/papers (anon write)', res.status, summarize(res.body), 401);
 
 // Edge functions without a JWT
-for (const fn of ['razorpay-create-order', 'razorpay-verify']) {
+for (const fn of ['razorpay-create-order', 'razorpay-verify', 'score-attempt']) {
   res = await call('POST', api(`/functions/v1/${fn}`), {
     headers: { ...jsonHeaders },
     body: { planId: '1month' },
@@ -171,6 +180,12 @@ if (testUserId) {
       body: { path: '/route-test-probe' },
     });
     add('API', 'POST /rest/v1/page_views (signed-in user)', res.status, 'visitor tracking insert', 201);
+
+    res = await call('POST', api('/rest/v1/page_views'), {
+      headers: { apikey: ANON_KEY, ...jsonHeaders },
+      body: { path: '/route-test-probe-anon' },
+    });
+    add('API', 'POST /rest/v1/page_views (anon)', res.status, 'anon flood attempt must be rejected', 401);
 
     res = await call('POST', api('/functions/v1/razorpay-create-order'), {
       headers: { apikey: ANON_KEY, Authorization: `Bearer ${userToken}`, ...jsonHeaders },

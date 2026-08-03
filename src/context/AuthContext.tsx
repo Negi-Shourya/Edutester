@@ -1,34 +1,10 @@
-import {
-  createContext,
-  useContext,
-  useEffect,
-  useState,
-  type ReactNode,
-} from 'react';
-import type { Session, User } from '@supabase/supabase-js';
+import { useEffect, useState, type ReactNode } from 'react';
 import { supabase, setRememberMe as setRememberFlag, isRememberMe } from '../lib/supabase';
-
-interface AuthResult {
-  error: string | null;
-}
-
-interface AuthContextValue {
-  user: User | null;
-  session: Session | null;
-  loading: boolean;
-  rememberMe: boolean;
-  setRememberMe: (remember: boolean) => void;
-  signInWithGoogle: () => Promise<void>;
-  signUp: (email: string, password: string, fullName: string, target: string) => Promise<AuthResult>;
-  signIn: (email: string, password: string) => Promise<AuthResult>;
-  signOut: () => Promise<void>;
-}
-
-const AuthContext = createContext<AuthContextValue | null>(null);
+import { AuthContext, type AuthContextValue, type AuthResult } from './auth-context';
 
 export function AuthProvider({ children }: { children: ReactNode }) {
-  const [user, setUser] = useState<User | null>(null);
-  const [session, setSession] = useState<Session | null>(null);
+  const [user, setUser] = useState<AuthContextValue['user']>(null);
+  const [session, setSession] = useState<AuthContextValue['session']>(null);
   const [loading, setLoading] = useState(true);
   const [rememberMe, setRemember] = useState(isRememberMe());
 
@@ -108,10 +84,4 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       {children}
     </AuthContext.Provider>
   );
-}
-
-export function useAuth(): AuthContextValue {
-  const ctx = useContext(AuthContext);
-  if (!ctx) throw new Error('useAuth must be used within AuthProvider');
-  return ctx;
 }

@@ -1,34 +1,17 @@
 import { useEffect, useState } from 'react';
-import { computeAttemptResult, type AttemptResult } from '../lib/scoring';
+import type { AttemptResult } from '../lib/scoring';
 import { loadAttempt } from '../lib/attemptStorage';
-import { getPaperQuestions } from '../data/questions';
 
-// Returns the score of the user's submitted attempt for a paper, if one
-// exists locally. Recomputes from the saved answer states using live
-// question data, so it always matches the result screen's marking.
+// Returns the server-computed score of the user's submitted attempt for a
+// paper, if one exists locally. Scores come from the score-attempt edge
+// function (stored on the saved attempt at submission time), so the result
+// always matches the result screen's marking.
 export function useAttemptScore(paperKey: string): AttemptResult | null {
   const [result, setResult] = useState<AttemptResult | null>(null);
 
   useEffect(() => {
-    let cancelled = false;
-    setResult(null);
-
     const attempt = loadAttempt(paperKey);
-    if (!attempt || !attempt.isTestSubmitted) return;
-
-    getPaperQuestions(paperKey)
-      .then((data) => {
-        if (!cancelled) {
-          setResult(computeAttemptResult(data.questions, attempt.questionStates));
-        }
-      })
-      .catch(() => {
-        // Question data unavailable — score cannot be computed.
-      });
-
-    return () => {
-      cancelled = true;
-    };
+    setResult(attempt?.isTestSubmitted ? (attempt.resultPayload?.result ?? null) : null);
   }, [paperKey]);
 
   return result;

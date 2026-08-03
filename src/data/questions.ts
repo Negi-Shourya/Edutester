@@ -14,8 +14,6 @@ interface QuestionRow {
   number: number;
   type: 'mcq' | 'numerical';
   text: string;
-  correct_answer: string | null;
-  solution: string | null;
   marks: number | null;
   negative_marks: number | null;
   position: number;
@@ -34,8 +32,10 @@ interface PaperRow {
   questions: QuestionRow[];
 }
 
+// Answer keys and solutions live in the private `question_keys` table and
+// are only returned by the score-attempt edge function after a submission.
 const questionSelect = `
-  id, number, type, text, correct_answer, solution, marks, negative_marks, position,
+  id, number, type, text, marks, negative_marks, position,
   sections ( name ),
   subsections ( name ),
   question_options ( position, label, text ),
@@ -55,8 +55,6 @@ function mapQuestion(row: QuestionRow): Question {
     type: row.type,
     text: row.text,
     options,
-    correctAnswer: row.correct_answer ?? undefined,
-    solution: row.solution ?? undefined,
     marks: row.marks ?? 4,
     negativeMarks: row.negative_marks ?? -1,
     figureUrl: row.figure_url ?? undefined,

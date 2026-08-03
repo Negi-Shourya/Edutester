@@ -23,7 +23,7 @@ export default function QuestionCard({ question, selectedOption, onSelect }: Pro
             key={option.label}
             className={`flex items-start gap-3 p-3 rounded-lg border cursor-pointer transition-all ${
               selectedOption === option.label
-                ? 'border-primary bg-indigo-50'
+                ? 'border-primary bg-primary/10'
                 : 'border-gray-200 hover:border-gray-300 hover:bg-gray-50'
             }`}
           >

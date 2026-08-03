@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react';
-import { useLocation, useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate, Navigate } from 'react-router-dom';
 import { Check, Shield, CreditCard, Loader2 } from 'lucide-react';
 import PricingCard from '../components/PricingCard';
 import { pricingPlans } from '../data/pricing';
-import { useAuth } from '../context/AuthContext';
+import { useAuth } from '../context/auth-context';
 import { useSubscriptionAccess } from '../lib/subscription';
 import { checkoutPlan } from '../lib/razorpay';
 import type { PricingPlan } from '../types';
@@ -42,6 +42,11 @@ export default function Pricing() {
     ? pricingPlans.findIndex((p) => p.id === activeSubscription.plan_id)
     : -1;
 
+  // Months of the user's current active plan (0 if none).
+  const currentPlanMonths = activeSubscription
+    ? pricingPlans.find((p) => p.id === activeSubscription.plan_id)?.months ?? 0
+    : 0;
+
   const handleCheckout = async (plan: PricingPlan) => {
     setError(null);
     setSuccess(null);
@@ -49,12 +54,27 @@ export default function Pricing() {
       navigate('/login', { state: { from: '/pricing' } });
       return;
     }
+    // Block buying a plan that is LESS than the active plan — that would be
+    // a downgrade. Buying the same plan (renewal) or a higher plan (upgrade)
+    // is allowed: both add the purchased time on top of the current expiry.
+    if (activeSubscription && plan.months < currentPlanMonths) {
+      setError(
+        `You already have the ${activeSubscription.plan_name} plan active until ${new Date(
+          activeSubscription.ends_at
+        ).toLocaleDateString('en-IN', { day: '2-digit', month: 'short', year: 'numeric' })}. ` +
+          `Please choose a plan with a longer duration to upgrade.`
+      );
+      return;
+    }
+    const isUpgrade = !!activeSubscription;
     setCheckoutPlanId(plan.id);
     try {
       const result = await checkoutPlan({ id: plan.id, name: plan.duration });
       await refreshSubscription();
       setSuccess(
-        `Payment successful (ref ${result.paymentId}). Your ${plan.duration} subscription is now active.`
+        isUpgrade
+          ? `Payment successful (ref ${result.paymentId}). Your plan has been upgraded to ${plan.duration} — your existing time was added on top of it.`
+          : `Payment successful (ref ${result.paymentId}). Your ${plan.duration} subscription is now active.`
       );
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Payment failed. Please try again.');
@@ -63,12 +83,21 @@ export default function Pricing() {
     }
   };
 
+  // Users with an active subscription manage their plan from the Profile
+  // page — the pricing page is for buyers only.
+  if (!subscriptionLoading && activeSubscription) {
+    return <Navigate to="/profile" replace />;
+  }
+
   return (
     <div>
       {/* Header */}
-      <section className="bg-gradient-to-br from-indigo-50 via-white to-purple-50 py-16">
+      <section className="bg-gradient-to-br from-paper via-white to-primary/5 py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">Choose Your Plan</h1>
+          <div className="inline-flex items-center gap-2 text-saffron text-sm font-semibold uppercase tracking-wider mb-3 font-mono">
+            <Shield className="w-4 h-4" /> Pricing
+          </div>
+          <h1 className="text-4xl font-bold text-gray-900 mb-4 tracking-tight font-display animate-fade-up">Choose Your Plan</h1>
           <p className="text-gray-500 max-w-xl mx-auto">Invest in your exam preparation with our affordable subscription plans. No hidden charges, cancel anytime.</p>
         </div>
       </section>
@@ -96,6 +125,9 @@ export default function Pricing() {
                 checkoutLoading={checkoutPlanId === plan.id}
                 active={!subscriptionLoading && activeSubscription?.plan_id === plan.id}
                 activeExpiry={activeSubscription?.ends_at}
+                lowerThanCurrent={
+                  !!activeSubscription && plan.months < currentPlanMonths
+                }
                 nextPlan={i === activePlanIndex ? (pricingPlans[i + 1] ?? null) : undefined}
               />
             ))}
@@ -120,9 +152,9 @@ export default function Pricing() {
       </section>
 
       {/* Feature Comparison */}
-      <section className="bg-gray-50 py-16">
+      <section className="bg-paper py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl font-bold text-gray-900 text-center mb-8">Compare Plans</h2>
+          <h2 className="text-2xl font-bold text-gray-900 text-center mb-8 font-display">Compare Plans</h2>
           <div className="max-w-3xl mx-auto overflow-x-auto">
             <table className="w-full text-sm">
               <thead>
@@ -158,7 +190,7 @@ export default function Pricing() {
       {/* FAQ */}
       <section id="faq" className="py-16 scroll-mt-20">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl font-bold text-gray-900 text-center mb-8">Frequently Asked Questions</h2>
+          <h2 className="text-2xl font-bold text-gray-900 text-center mb-8 font-display">Frequently Asked Questions</h2>
           <div className="space-y-4">
             {faqs.map((faq, i) => (
               <details key={i} className="bg-white border border-gray-200 rounded-xl p-4 group">

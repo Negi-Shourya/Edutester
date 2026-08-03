@@ -44,9 +44,6 @@ function MatchQuestionRenderer({ text, className }: { text: string; className: s
   let footer = '';
   const matchRows: MatchItem[] = [];
 
-  // @ts-expect-error -- inTable tracking flag (assigned but control-flow based, not read)
-  let inTable = false;
-
   for (const line of lines) {
     if (line.toLowerCase().startsWith('match')) {
       title = line;
@@ -61,12 +58,10 @@ function MatchQuestionRenderer({ text, className }: { text: string; className: s
     // Header line detection
     if (/^list\s*-\s*i/i.test(line) || /^list\s*1/i.test(line)) {
       col1Header = line;
-      inTable = true;
       continue;
     }
     if (/^list\s*-\s*ii/i.test(line) || /^list\s*2/i.test(line)) {
       col2Header = line;
-      inTable = true;
       continue;
     }
 

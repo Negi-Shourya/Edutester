@@ -8,6 +8,7 @@ interface Props {
   checkoutLoading?: boolean;
   active?: boolean;
   activeExpiry?: string | null;
+  lowerThanCurrent?: boolean;
   nextPlan?: PricingPlan | null;
 }
 
@@ -26,6 +27,7 @@ export default function PricingCard({
   checkoutLoading,
   active = false,
   activeExpiry,
+  lowerThanCurrent = false,
   nextPlan,
 }: Props) {
   const [showActiveInfo, setShowActiveInfo] = useState(false);
@@ -37,6 +39,10 @@ export default function PricingCard({
       {active ? (
         <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-green-600 text-white px-4 py-0.5 rounded-full text-xs font-semibold whitespace-nowrap">
           Your Current Plan
+        </div>
+      ) : lowerThanCurrent ? (
+        <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-gray-400 text-white px-4 py-0.5 rounded-full text-xs font-semibold whitespace-nowrap">
+          Lower than your plan
         </div>
       ) : plan.popular ? (
         <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-primary text-white px-4 py-0.5 rounded-full text-xs font-semibold">
@@ -59,14 +65,16 @@ export default function PricingCard({
         ))}
       </ul>
       <button
-        onClick={() => (active ? setShowActiveInfo((v) => !v) : onCheckout(plan))}
+        onClick={() => (active || lowerThanCurrent ? setShowActiveInfo((v) => !v) : onCheckout(plan))}
         disabled={checkoutLoading}
         className={`w-full flex items-center justify-center gap-2 py-2.5 rounded-xl text-sm font-semibold transition-colors disabled:opacity-60 ${
           active
             ? 'bg-green-600 text-white hover:bg-green-700'
-            : plan.popular
-              ? 'bg-primary text-white hover:bg-primary-dark'
-              : 'bg-gray-50 text-gray-900 hover:bg-gray-100 border border-gray-200'
+            : lowerThanCurrent
+              ? 'bg-gray-100 text-gray-500 hover:bg-gray-200 border border-gray-200'
+              : plan.popular
+                ? 'bg-primary text-white hover:bg-primary-dark active:scale-[0.98]'
+                : 'bg-gray-50 text-gray-900 hover:bg-gray-100 border border-gray-200'
         }`}
       >
         {checkoutLoading ? <Loader2 className="w-4 h-4 animate-spin" /> : active ? <ShieldCheck className="w-4 h-4" /> : null}
@@ -74,28 +82,42 @@ export default function PricingCard({
           ? 'Processing...'
           : active
             ? `Active · until ${formatExpiry(activeExpiry)}`
-            : 'Get Started'}
+            : lowerThanCurrent
+              ? 'You are on a better plan'
+              : 'Get Started'}
       </button>
 
-      {active && showActiveInfo && (
-        <div className="mt-3 p-4 rounded-xl bg-green-50 border border-green-200 text-sm">
-          <p className="font-semibold text-green-800">This plan is already active.</p>
-          <p className="text-green-700 mt-1 text-xs leading-relaxed">
-            Your subscription runs until {formatExpiry(activeExpiry)}. You can upgrade anytime to
-            extend your access with better benefits.
-          </p>
-          {nextPlan ? (
-            <button
-              onClick={() => onCheckout(nextPlan)}
-              className="mt-3 w-full flex items-center justify-center gap-1.5 bg-green-600 text-white py-2.5 rounded-lg text-xs font-semibold hover:bg-green-700 transition-colors"
-            >
-              Upgrade to {nextPlan.duration}
-              <ArrowRight className="w-3.5 h-3.5" />
-            </button>
+      {(active || lowerThanCurrent) && showActiveInfo && (
+        <div className={`mt-3 p-4 rounded-xl border text-sm ${lowerThanCurrent ? 'bg-gray-50 border-gray-200' : 'bg-green-50 border-green-200'}`}>
+          {lowerThanCurrent ? (
+            <>
+              <p className="font-semibold text-gray-700">This plan is lower than your current plan.</p>
+              <p className="text-gray-600 mt-1 text-xs leading-relaxed">
+                Your current plan is already active until {formatExpiry(activeExpiry)}. To extend your
+                access, please choose a plan with a longer duration than your current one.
+              </p>
+            </>
           ) : (
-            <p className="mt-3 text-xs text-green-700 font-medium">
-              You're on our highest plan — nothing more to upgrade to!
-            </p>
+            <>
+              <p className="font-semibold text-green-800">This plan is already active.</p>
+              <p className="text-green-700 mt-1 text-xs leading-relaxed">
+                Your subscription runs until {formatExpiry(activeExpiry)}. You can upgrade anytime to
+                extend your access with better benefits.
+              </p>
+              {nextPlan ? (
+                <button
+                  onClick={() => onCheckout(nextPlan)}
+                  className="mt-3 w-full flex items-center justify-center gap-1.5 bg-green-600 text-white py-2.5 rounded-lg text-xs font-semibold hover:bg-green-700 transition-colors"
+                >
+                  Upgrade to {nextPlan.duration}
+                  <ArrowRight className="w-3.5 h-3.5" />
+                </button>
+              ) : (
+                <p className="mt-3 text-xs text-green-700 font-medium">
+                  You're on our highest plan — nothing more to upgrade to!
+                </p>
+              )}
+            </>
           )}
         </div>
       )}

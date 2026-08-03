@@ -6,6 +6,7 @@ export const pricingPlans: PricingPlan[] = [
     duration: '1 Month',
     price: 19,
     pricePerMonth: 19,
+    months: 1,
     features: [
       'Authentic NTA-like test interface',
       'Previous year question papers',
@@ -18,6 +19,7 @@ export const pricingPlans: PricingPlan[] = [
     duration: '3 Months',
     price: 50,
     pricePerMonth: 16.67,
+    months: 3,
     popular: true,
     features: [
       'Everything in 1 Month plan',
@@ -29,6 +31,7 @@ export const pricingPlans: PricingPlan[] = [
     duration: '6 Months',
     price: 94,
     pricePerMonth: 15.67,
+    months: 6,
     features: [
       'Everything in 3 Months plan',
       'Save ₹56 compared to monthly',
@@ -39,6 +42,7 @@ export const pricingPlans: PricingPlan[] = [
     duration: '1 Year',
     price: 159,
     pricePerMonth: 13.25,
+    months: 12,
     features: [
       'Everything in 6 Months plan',
       'Save ₹69 compared to monthly',

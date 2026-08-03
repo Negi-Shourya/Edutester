@@ -14,8 +14,8 @@ export interface Question {
   type?: QuestionType;
   text: string;
   options: QuestionOption[];
-  correctAnswer?: string;
-  solution?: string;
+  // Correct answers and solutions are NOT shipped with the question data —
+  // they come from the score-attempt edge function after submission.
   marks?: number;
   negativeMarks?: number;
   figureUrl?: string[];
@@ -52,6 +52,7 @@ export interface PricingPlan {
   duration: string;
   price: number;
   pricePerMonth: number;
+  months: number;
   popular?: boolean;
   features: string[];
 }

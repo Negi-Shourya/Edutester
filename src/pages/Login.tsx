@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, Navigate } from 'react-router-dom';
 import { GraduationCap, Loader2, Lock, Zap, ShieldCheck } from 'lucide-react';
-import { useAuth } from '../context/AuthContext';
+import { useAuth } from '../context/auth-context';
 import GoogleIcon from '../components/GoogleIcon';
 
 const perks = [
@@ -11,9 +11,13 @@ const perks = [
 ];
 
 export default function Login() {
-  const { signInWithGoogle } = useAuth();
+  const { user, loading, signInWithGoogle } = useAuth();
   const [error, setError] = useState<string | null>(null);
   const [googleLoading, setGoogleLoading] = useState(false);
+
+  if (!loading && user) {
+    return <Navigate to="/dashboard" replace />;
+  }
 
   const handleGoogle = async () => {
     setError(null);
@@ -27,15 +31,15 @@ export default function Login() {
   };
 
   return (
-    <div className="min-h-screen relative overflow-hidden bg-gradient-to-br from-indigo-50 via-white to-purple-50 flex items-center justify-center px-4 py-12">
+    <div className="min-h-screen relative overflow-hidden bg-gradient-to-br from-paper via-white to-primary/5 flex items-center justify-center px-4 py-12">
       <div className="absolute -top-24 -left-24 w-96 h-96 bg-primary/10 rounded-full blur-3xl" />
-      <div className="absolute -bottom-32 -right-24 w-96 h-96 bg-purple-200/40 rounded-full blur-3xl" />
+      <div className="absolute -bottom-32 -right-24 w-96 h-96 bg-primary/10 rounded-full blur-3xl" />
       <div className="absolute top-1/3 right-1/4 w-40 h-40 bg-amber-100/50 rounded-full blur-2xl" />
 
       <div className="relative w-full max-w-md">
         <div className="bg-white/80 backdrop-blur rounded-3xl shadow-xl shadow-primary/5 border border-white/60 p-8 sm:p-10">
           <div className="text-center mb-8">
-            <div className="w-16 h-16 bg-gradient-to-br from-primary to-purple-600 rounded-2xl flex items-center justify-center mx-auto mb-5 shadow-lg shadow-primary/25">
+            <div className="w-16 h-16 bg-gradient-to-br from-primary to-primary-dark rounded-2xl flex items-center justify-center mx-auto mb-5 shadow-lg shadow-primary/25">
               <GraduationCap className="w-8 h-8 text-white" />
             </div>
             <h1 className="text-2xl font-bold text-gray-900">Welcome back</h1>

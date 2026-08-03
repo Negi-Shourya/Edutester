@@ -1,11 +1,9 @@
-export const ADMIN_EMAILS = [
-  'negishourya1980@gmail.com',
-  'sumitx0608@gmail.com',
-];
-
-export function isAdminEmail(email: string | null | undefined): boolean {
-  if (!email) return false;
-  return ADMIN_EMAILS.includes(email.toLowerCase());
+// Admin identity lives in the database: auth.users.app_metadata.role =
+// 'admin' (set server-side, users cannot edit it). The server re-checks the
+// same flag inside every admin_* function, so this client-side check only
+// decides whether to show the admin UI.
+export function isAdmin(user: { app_metadata?: Record<string, unknown> } | null | undefined): boolean {
+  return user?.app_metadata?.role === 'admin';
 }
 
 export function formatINR(paise: number): string {

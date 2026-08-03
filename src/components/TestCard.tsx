@@ -98,7 +98,7 @@ export default function TestCard({ test, locked, trial, onLocked, attemptScore }
           className={`w-full flex items-center justify-center gap-2 py-2 rounded-lg text-sm font-medium transition-colors ${
             trial
               ? 'text-white bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700'
-              : 'text-primary bg-indigo-50 hover:bg-indigo-100'
+              : 'text-primary bg-primary/10 hover:bg-primary/20'
           }`}
         >
           <Play className="w-4 h-4" />

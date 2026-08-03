@@ -1,6 +1,7 @@
 // One-time migration tool: extracts questions from src/data/papers/*.ts and
-// figures from src/components/QuestionDiagram.tsx, then emits seed-data.sql
-// (deterministic ids, batched multi-row inserts) loadable with psql -f.
+// emits seed-data.sql (deterministic ids, batched multi-row inserts) loadable
+// with psql -f. Answer keys + solutions go into the private question_keys
+// table (correct_answer/solution must NOT be exposed on questions).
 //
 //   node scripts/extract-questions.mjs > /tmp/seed-data.sql
 //
@@ -10,10 +11,6 @@
 //   subsections  section.id * 10 + subPosition
 //   questions    paper.id * 1000 + data id       (1..75 per paper)
 //   options      question.id * 10 + position
-//   diagrams     question.id                     (1:1 with questions)
-
-import { readFileSync } from 'node:fs';
-import { resolve } from 'node:path';
 
 const papers = [
   { key: '02-apr-morning', title: 'JEE (Main) 2026 (02 Apr Morning)', fullTitle: 'JEE (Main) 2026 - 02 April Morning Shift', date: '2026-04-02', session: 'morning' },
@@ -63,8 +60,8 @@ const rows = {
   sections: [],
   subsections: [],
   questions: [],
+  question_keys: [],
   question_options: [],
-  question_diagrams: [],
 };
 
 const push = (table, tuple) => rows[table].push(`(${tuple.join(', ')})`);
@@ -125,7 +122,11 @@ for (const paperId of papers.keys()) {
     const correctAnswer = q.correctAnswer ? sql(q.correctAnswer) : 'null';
     const solution = q.solution ? escapeLiteral(q.solution) : 'null';
 
-    push('questions', [qid, pid, sectionId, sectionId * 10 + subPos, q.number, sql(type), escapeLiteral(q.text), correctAnswer, solution, 4, -1, q.id]);
+    push('questions', [qid, pid, sectionId, sectionId * 10 + subPos, q.number, sql(type), escapeLiteral(q.text), 4, -1, q.id]);
+
+    if (correctAnswer !== 'null' || solution !== 'null') {
+      push('question_keys', [qid, correctAnswer, solution]);
+    }
 
     (q.options || []).forEach((opt, oi) => {
       push('question_options', [qid * 10 + oi + 1, qid, oi + 1, sql(opt.label), escapeLiteral(opt.text)]);
@@ -136,69 +137,21 @@ for (const paperId of papers.keys()) {
 }
 
 // ---------------------------------------------------------------------------
-// Diagrams: extract JSX from QuestionDiagram.tsx and convert to HTML string.
-// ---------------------------------------------------------------------------
-const diagramSrc = readFileSync(resolve('src/components/QuestionDiagram.tsx'), 'utf8');
-
-const ATTR_MAP = {
-  className: 'class',
-  textAnchor: 'text-anchor',
-  strokeWidth: 'stroke-width',
-  strokeDasharray: 'stroke-dasharray',
-  markerEnd: 'marker-end',
-  fontSize: 'font-size',
-  fontWeight: 'font-weight',
-  markerWidth: 'marker-width',
-  markerHeight: 'marker-height',
-  fillOpacity: 'fill-opacity',
-  strokeLinecap: 'stroke-linecap',
-  strokeLinejoin: 'stroke-linejoin',
-};
-
-function jsxToHtml(jsx) {
-  return jsx
-    // strip JSX comments {/**/}
-    .replace(/\{\/\*[\s\S]*?\*\/\}/g, '')
-    // map known camelCase attributes
-    .replace(/\b(className|textAnchor|strokeWidth|strokeDasharray|markerEnd|fontSize|fontWeight|markerWidth|markerHeight|fillOpacity|strokeLinecap|strokeLinejoin)\s*=/g, (m) => {
-      const name = m.trim().replace(/\s*=$/, '');
-      return `${ATTR_MAP[name]}=`;
-    })
-    .trim();
-}
-
-const caseRe = /case\s+'([\w-]+):(\d+)':\s*return\s*\(([\s\S]*?)\n\s*\);(\n|$)/g;
-
-let diagramCount = 0;
-let match;
-while ((match = caseRe.exec(diagramSrc)) !== null) {
-  const [, paperKey, qidStr] = match;
-  const questionLocalId = Number(qidStr);
-  const paperIndex = papers.findIndex((p) => p.key === paperKey);
-  if (paperIndex === -1) throw new Error(`Unknown paper key in diagram: ${paperKey}`);
-  const questionId = (paperIndex + 1) * 1000 + questionLocalId;
-  const figureHtml = jsxToHtml(match[3]);
-  if (!figureHtml.includes('<svg')) throw new Error(`No <svg> found for ${paperKey}:${questionLocalId}`);
-  push('question_diagrams', [questionId, questionId, sql(paperKey), escapeLiteral(figureHtml)]);
-  diagramCount++;
-}
-
-// ---------------------------------------------------------------------------
 // Emit batched inserts (200 rows per statement)
 // ---------------------------------------------------------------------------
 const columns = {
   papers: ['id', 'key', 'title', 'full_title', 'exam_date', 'session', 'year', 'duration_minutes', 'question_count'],
   sections: ['id', 'paper_id', 'name', 'position'],
   subsections: ['id', 'section_id', 'name', 'position'],
-  questions: ['id', 'paper_id', 'section_id', 'subsection_id', 'number', 'type', 'text', 'correct_answer', 'solution', 'marks', 'negative_marks', 'position'],
+  questions: ['id', 'paper_id', 'section_id', 'subsection_id', 'number', 'type', 'text', 'marks', 'negative_marks', 'position'],
   question_options: ['id', 'question_id', 'position', 'label', 'text'],
-  question_diagrams: ['id', 'question_id', 'paper_key', 'figure_html'],
+  question_keys: ['question_id', 'correct_answer', 'solution'],
 };
 
 const BATCH = 200;
 
 console.log('-- Generated by scripts/extract-questions.mjs');
-console.log(`-- ${papers.length} papers, ${totalQuestions} questions, ${totalOptions} options, ${diagramCount} diagrams`);
+console.log(`-- ${papers.length} papers, ${totalQuestions} questions, ${totalOptions} options`);
 console.log('begin;');
 for (const [table, tuples] of Object.entries(rows)) {
   if (tuples.length === 0) continue;
