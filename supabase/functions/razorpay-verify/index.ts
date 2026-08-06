@@ -1,6 +1,7 @@
 import { createClient } from 'npm:@supabase/supabase-js@2.111.0';
 import Razorpay from 'npm:razorpay@2.9.4';
 import { createHmac } from 'node:crypto';
+import { checkRateLimit } from '../_shared/rate_limit.ts';
 
 // Plan catalogue is defined HERE (server-side), never trusted from the client.
 // Price is in paise (INR).
@@ -29,6 +30,10 @@ const razorpay = new Razorpay({
   key_id: RAZORPAY_KEY_ID,
   key_secret: RAZORPAY_KEY_SECRET,
 });
+
+// Per-user rate limit: at most 30 verifications per rolling hour. A real
+// checkout verifies once, so this only stops scripted replay attempts.
+const RATE_LIMIT = { route: 'razorpay-verify', limit: 30, windowMs: 60 * 60 * 1000 };
 
 const corsHeaders = {
   'Access-Control-Allow-Origin': '*',
@@ -71,6 +76,14 @@ Deno.serve(async (req) => {
 
   const user = await getUser(req);
   if (!user) return json({ error: 'Unauthorized' }, 401);
+
+  const rate = await checkRateLimit(supabaseAdmin, user.id, RATE_LIMIT);
+  if (!rate.allowed) {
+    return new Response(
+      JSON.stringify({ error: 'Verification limit reached. Please try again later.', code: 'RATE_LIMITED' }),
+      { status: 429, headers: { ...corsHeaders, 'Content-Type': 'application/json', 'Retry-After': String(rate.retryAfterSeconds) } }
+    );
+  }
 
   const body = await req.json().catch(() => ({}));
   const { orderId, paymentId, signature } = body as {

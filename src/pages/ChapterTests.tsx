@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Search, BookOpen } from 'lucide-react';
 import TestCard from '../components/TestCard';
 import PaywallModal from '../components/PaywallModal';
+import StaggerReveal, { StaggerItem } from '../components/StaggerReveal';
 import { chapterTests, subjects } from '../data/chapters';
 import { FREE_TRIAL_TEST_ID, FREE_TRIAL_PAPER_KEY, useSubscriptionAccess } from '../lib/subscription';
 import { useAttemptScore } from '../hooks/useAttemptScore';
@@ -81,34 +82,36 @@ export default function ChapterTests() {
                   <h2 className="text-lg font-semibold text-gray-900">{sub}</h2>
                   <span className="text-xs text-gray-400">({subTests.length} tests)</span>
                 </div>
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                <StaggerReveal className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
                   {subTests.map((test) => (
+                    <StaggerItem key={test.id}>
                     <TestCard
-                      key={test.id}
                       test={test}
                       locked={isLocked(test.id)}
                       trial={isTrial(test.id)}
                       onLocked={() => setShowPaywall(true)}
                       attemptScore={isLocked(test.id) ? null : cardAttemptScore}
                     />
+                    </StaggerItem>
                   ))}
-                </div>
+                </StaggerReveal>
               </div>
             );
           })
         ) : (
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          <StaggerReveal className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {filtered.map((test) => (
+              <StaggerItem key={test.id}>
               <TestCard
-                key={test.id}
                 test={test}
                 locked={isLocked(test.id)}
                 trial={isTrial(test.id)}
                 onLocked={() => setShowPaywall(true)}
                 attemptScore={isLocked(test.id) ? null : cardAttemptScore}
               />
+              </StaggerItem>
             ))}
-          </div>
+          </StaggerReveal>
         )}
 
         {!loading && !hasAccess && (

@@ -1,4 +1,5 @@
 import { useNavigate } from 'react-router-dom';
+import { motion } from 'motion/react';
 import { Clock, FileText, BarChart3, Play, CheckCircle, Lock, Gift } from 'lucide-react';
 import type { TestCardData } from '../types';
 
@@ -28,7 +29,12 @@ export default function TestCard({ test, locked, trial, onLocked, attemptScore }
   };
 
   return (
-    <div className="bg-white rounded-xl border border-gray-200 p-5 hover:shadow-lg hover:border-primary/20 transition-all group">
+    <motion.div
+      className="bg-white rounded-xl border border-gray-200 p-5 hover:shadow-lg hover:border-primary/20 transition-[box-shadow,border-color] group"
+      whileHover={{ y: -6 }}
+      whileTap={{ scale: 0.99 }}
+      transition={{ type: 'spring', stiffness: 300, damping: 20 }}
+    >
       <div className="flex items-start justify-between mb-3">
         <div>
           <h3 className="font-semibold text-gray-900 group-hover:text-primary transition-colors">
@@ -85,16 +91,18 @@ export default function TestCard({ test, locked, trial, onLocked, attemptScore }
         </div>
       )}
       {locked ? (
-        <button
+        <motion.button
           onClick={handleStart}
+          whileTap={{ scale: 0.97 }}
           className="w-full flex items-center justify-center gap-2 py-2 rounded-lg text-sm font-medium text-gray-500 bg-gray-100 hover:bg-gray-200 transition-colors"
         >
           <Lock className="w-4 h-4" />
           Upgrade to Unlock
-        </button>
+        </motion.button>
       ) : (
-        <button
+        <motion.button
           onClick={handleStart}
+          whileTap={{ scale: 0.97 }}
           className={`w-full flex items-center justify-center gap-2 py-2 rounded-lg text-sm font-medium transition-colors ${
             trial
               ? 'text-white bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700'
@@ -103,8 +111,8 @@ export default function TestCard({ test, locked, trial, onLocked, attemptScore }
         >
           <Play className="w-4 h-4" />
           {attemptScore ? 'Retake Test' : test.completed ? 'Retake Test' : trial ? 'Start Free Test' : 'Start Test'}
-        </button>
+        </motion.button>
       )}
-    </div>
+    </motion.div>
   );
 }

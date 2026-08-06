@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { motion } from 'motion/react';
 import { Menu, X, GraduationCap, LogIn, UserPlus, LogOut } from 'lucide-react';
 import { useAuth } from '../context/auth-context';
 import { useSubscriptionAccess } from '../lib/subscription';
@@ -16,8 +17,13 @@ export default function Navbar() {
   }
 
   const handleSignOut = async () => {
-    await signOut();
-    navigate('/');
+    try {
+      await signOut();
+    } finally {
+      // Always land on the public About Us page — even if ProtectedRoute
+      // races to redirect to /login mid-signout.
+      navigate('/landing', { replace: true });
+    }
   };
 
   const homeTo = user ? '/dashboard' : '/';
@@ -62,11 +68,15 @@ export default function Navbar() {
                 }`}
               >
                 {link.label}
-                <span
-                  className={`absolute -bottom-1 left-0 h-0.5 rounded-full bg-saffron transition-all duration-300 ${
-                    location.pathname === link.to ? 'w-full' : 'w-0 group-hover:w-full'
-                  }`}
-                />
+                {location.pathname === link.to ? (
+                  <motion.span
+                    layoutId="nav-active-pill"
+                    className="absolute -bottom-1 left-0 right-0 h-0.5 rounded-full bg-saffron"
+                    transition={{ type: 'spring', stiffness: 420, damping: 34 }}
+                  />
+                ) : (
+                  <span className="absolute -bottom-1 left-0 h-0.5 rounded-full bg-saffron/50 w-0 group-hover:w-full transition-all duration-300" />
+                )}
               </Link>
             ))}
             <div className="flex items-center gap-3 ml-4">

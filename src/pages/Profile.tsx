@@ -9,6 +9,8 @@ import { supabase } from '../lib/supabase';
 import { formatINR } from '../lib/admin';
 import { pricingPlans } from '../data/pricing';
 import { checkoutPlan } from '../lib/razorpay';
+import { getExam, setExam, type ExamType } from '../lib/exam';
+import { GraduationCap } from 'lucide-react';
 import type { PricingPlan, Subscription } from '../types';
 
 function formatDate(iso: string | null | undefined): string {
@@ -39,6 +41,7 @@ function remainingLabel(endsAt: string): string {
 
 export default function Profile() {
   const { user } = useAuth();
+  const [exam, setExamState] = useState<ExamType>(getExam());
   const [subscriptions, setSubscriptions] = useState<Subscription[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -178,6 +181,39 @@ export default function Profile() {
               </div>
             </div>
 
+            {/* Exam track */}
+            <div className="bg-white rounded-2xl border border-gray-200 p-6">
+              <h3 className="font-semibold text-gray-900 flex items-center gap-2 mb-1">
+                <GraduationCap className="w-4 h-4 text-primary" />
+                Exam track
+              </h3>
+              <p className="text-xs text-gray-500 mb-4">
+                Switch between JEE Main and NEET content.
+              </p>
+              <div className="grid grid-cols-2 gap-2">
+                <button
+                  onClick={() => { setExam('jee'); setExamState('jee'); }}
+                  className={`rounded-xl border-2 px-3 py-2.5 text-sm font-semibold transition-all ${
+                    exam === 'jee'
+                      ? 'border-primary bg-primary/5 text-primary'
+                      : 'border-gray-200 text-gray-500 hover:border-gray-300'
+                  }`}
+                >
+                  JEE Main
+                </button>
+                <button
+                  onClick={() => { setExam('neet'); setExamState('neet'); }}
+                  className={`rounded-xl border-2 px-3 py-2.5 text-sm font-semibold transition-all ${
+                    exam === 'neet'
+                      ? 'border-green-600 bg-green-50 text-green-700'
+                      : 'border-gray-200 text-gray-500 hover:border-gray-300'
+                  }`}
+                >
+                  NEET
+                </button>
+              </div>
+            </div>
+
             {!hasActive && (
               <div className="bg-gradient-to-br from-primary/5 to-saffron/5 border border-primary/10 rounded-2xl p-6">
                 <div className="flex items-center gap-2 mb-2">
@@ -228,15 +264,14 @@ export default function Profile() {
               </div>
             )}
 
-            {hasActive && (
+            {!hasActive && (
               <div className="bg-white rounded-2xl border border-gray-200 p-6">
                 <h2 className="font-semibold text-gray-900 flex items-center gap-2 mb-1">
                   <Sparkles className="w-5 h-5 text-primary" />
-                  Buy or Renew a Plan
+                  Choose a Plan
                 </h2>
                 <p className="text-sm text-gray-500 mb-5">
-                  Every purchase adds its time on top of your current expiry — so you can buy
-                  any plan, any time, without losing anything.
+                  Unlock every test and paper. Pick the plan that fits you.
                 </p>
 
                 {checkoutSuccess && (
@@ -252,28 +287,21 @@ export default function Profile() {
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
                   {pricingPlans.map((plan) => {
-                    const isCurrent = plan.id === bestPlan.id;
                     const loading = checkoutPlanId === plan.id;
                     return (
                       <div
                         key={plan.id}
                         className={`relative rounded-xl border-2 p-5 flex flex-col transition-all ${
-                          isCurrent
-                            ? 'border-green-400 bg-green-50/50'
-                            : plan.popular
-                              ? 'border-primary shadow-md'
-                              : 'border-gray-100 hover:border-primary/30'
+                          plan.popular
+                            ? 'border-primary shadow-md'
+                            : 'border-gray-100 hover:border-primary/30'
                         }`}
                       >
-                        {isCurrent ? (
-                          <span className="absolute -top-3 left-1/2 -translate-x-1/2 bg-green-600 text-white px-3 py-0.5 rounded-full text-[11px] font-semibold whitespace-nowrap">
-                            Current
-                          </span>
-                        ) : plan.popular ? (
+                        {plan.popular && (
                           <span className="absolute -top-3 left-1/2 -translate-x-1/2 bg-primary text-white px-3 py-0.5 rounded-full text-[11px] font-semibold whitespace-nowrap">
                             Most Popular
                           </span>
-                        ) : null}
+                        )}
 
                         <div className="text-center mb-4">
                           <h3 className="font-semibold text-gray-900">{plan.duration}</h3>
@@ -285,29 +313,17 @@ export default function Profile() {
                           </p>
                         </div>
 
-                        <p className="text-[11px] text-gray-500 text-center mb-3">
-                          {isCurrent
-                            ? `Renewing adds ${plan.duration} to your current expiry.`
-                            : `Buying adds ${plan.duration} to your current expiry.`}
-                        </p>
-
                         <button
                           onClick={() => handleCheckout(plan)}
                           disabled={checkoutPlanId !== null}
                           className={`mt-auto w-full flex items-center justify-center gap-2 py-2.5 rounded-xl text-sm font-semibold transition-colors disabled:opacity-60 disabled:cursor-not-allowed ${
-                            isCurrent
-                              ? 'bg-green-600 text-white hover:bg-green-700'
-                              : plan.popular
-                                ? 'bg-primary text-white hover:bg-primary-dark'
-                                : 'bg-gray-50 text-gray-900 hover:bg-gray-100 border border-gray-200'
+                            plan.popular
+                              ? 'bg-primary text-white hover:bg-primary-dark'
+                              : 'bg-gray-50 text-gray-900 hover:bg-gray-100 border border-gray-200'
                           }`}
                         >
                           {loading && <Loader2 className="w-4 h-4 animate-spin" />}
-                          {loading
-                            ? 'Processing...'
-                            : isCurrent
-                              ? `Renew ${plan.duration}`
-                              : `Buy ${plan.duration}`}
+                          {loading ? 'Processing...' : `Buy ${plan.duration}`}
                         </button>
                       </div>
                     );

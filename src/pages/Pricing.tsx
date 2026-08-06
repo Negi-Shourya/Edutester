@@ -1,7 +1,9 @@
 import { useEffect, useState } from 'react';
 import { useLocation, useNavigate, Navigate } from 'react-router-dom';
+import { AnimatePresence, motion } from 'motion/react';
 import { Check, Shield, CreditCard, Loader2 } from 'lucide-react';
 import PricingCard from '../components/PricingCard';
+import StaggerReveal, { StaggerItem } from '../components/StaggerReveal';
 import { pricingPlans } from '../data/pricing';
 import { useAuth } from '../context/auth-context';
 import { useSubscriptionAccess } from '../lib/subscription';
@@ -30,6 +32,7 @@ export default function Pricing() {
   const [checkoutPlanId, setCheckoutPlanId] = useState<string | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [success, setSuccess] = useState<string | null>(null);
+  const [openFaq, setOpenFaq] = useState(-1);
 
   useEffect(() => {
     if (location.hash === '#faq') {
@@ -116,10 +119,10 @@ export default function Pricing() {
             </div>
           )}
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
+          <StaggerReveal className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
             {pricingPlans.map((plan, i) => (
+              <StaggerItem key={plan.id}>
               <PricingCard
-                key={plan.id}
                 plan={plan}
                 onCheckout={handleCheckout}
                 checkoutLoading={checkoutPlanId === plan.id}
@@ -130,8 +133,9 @@ export default function Pricing() {
                 }
                 nextPlan={i === activePlanIndex ? (pricingPlans[i + 1] ?? null) : undefined}
               />
+              </StaggerItem>
             ))}
-          </div>
+          </StaggerReveal>
 
           {checkoutPlanId && (
             <div className="flex items-center justify-center gap-2 mt-8 text-sm text-gray-500">
@@ -192,27 +196,57 @@ export default function Pricing() {
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-2xl font-bold text-gray-900 text-center mb-8 font-display">Frequently Asked Questions</h2>
           <div className="space-y-4">
-            {faqs.map((faq, i) => (
-              <details key={i} className="bg-white border border-gray-200 rounded-xl p-4 group">
-                <summary className="font-medium text-gray-900 cursor-pointer list-none flex items-center justify-between">
-                  {faq.q}
-                  <span className="text-primary group-open:rotate-45 transition-transform text-xl leading-none">+</span>
-                </summary>
-                <p className="mt-3 text-sm text-gray-500 leading-relaxed">
-                  {faq.a.includes('edutester4u@gmail.com') ? (
-                    <>
-                      You can contact us at{' '}
-                      <a href="mailto:edutester4u@gmail.com" className="text-primary hover:underline font-medium">
-                        edutester4u@gmail.com
-                      </a>
-                      , and we will get back to you within 48 hours.
-                    </>
-                  ) : (
-                    faq.a
-                  )}
-                </p>
-              </details>
-            ))}
+            {faqs.map((faq, i) => {
+              const open = openFaq === i;
+              return (
+                <motion.div
+                  key={i}
+                  className="bg-white border border-gray-200 rounded-xl overflow-hidden"
+                  animate={{ borderColor: open ? '#F59E0B' : '#E5E7EB' }}
+                  transition={{ duration: 0.25 }}
+                >
+                  <button
+                    onClick={() => setOpenFaq(open ? -1 : i)}
+                    className="w-full flex items-center justify-between gap-4 px-4 py-4 text-left group"
+                  >
+                    <span className="font-medium text-gray-900">{faq.q}</span>
+                    <motion.span
+                      className="text-primary text-xl leading-none shrink-0"
+                      animate={{ rotate: open ? 45 : 0 }}
+                      transition={{ type: 'spring', stiffness: 300, damping: 22 }}
+                    >
+                      +
+                    </motion.span>
+                  </button>
+                  <AnimatePresence initial={false}>
+                    {open && (
+                      <motion.div
+                        key="answer"
+                        className="overflow-hidden"
+                        initial={{ height: 0, opacity: 0 }}
+                        animate={{ height: 'auto', opacity: 1 }}
+                        exit={{ height: 0, opacity: 0 }}
+                        transition={{ duration: 0.3, ease: [0.22, 1, 0.36, 1] }}
+                      >
+                        <p className="px-4 pb-4 text-sm text-gray-500 leading-relaxed">
+                          {faq.a.includes('edutester4u@gmail.com') ? (
+                            <>
+                              You can contact us at{' '}
+                              <a href="mailto:edutester4u@gmail.com" className="text-primary hover:underline font-medium">
+                                edutester4u@gmail.com
+                              </a>
+                              , and we will get back to you within 48 hours.
+                            </>
+                          ) : (
+                            faq.a
+                          )}
+                        </p>
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+                </motion.div>
+              );
+            })}
           </div>
         </div>
       </section>

@@ -1,4 +1,4 @@
-﻿import { useState, useEffect, useCallback, useRef } from 'react';
+﻿import { useState, useEffect, useCallback, useRef, useMemo } from 'react';
 import { useSearchParams, useNavigate } from 'react-router-dom';
 import { getPaperQuestions, type PaperQuestions } from '../data/questions';
 import type { Question, QuestionState, QuestionStatus } from '../types';
@@ -17,7 +17,6 @@ import NtaSubmitModal from '../components/NtaSubmitModal';
 import NtaResultScreen from '../components/NtaResultScreen';
 
 const EMPTY_QUESTIONS: Question[] = [];
-const SECTIONS = ['Physics', 'Chemistry', 'Mathematics'];
 
 export default function TestInterface() {
   const [searchParams] = useSearchParams();
@@ -133,6 +132,16 @@ export default function TestInterface() {
   const [timeLeft, setTimeLeft] = useState<number>(180 * 60);
 
   const questions = paperData?.questions ?? EMPTY_QUESTIONS;
+  // Exam-aware duration (JEE 3h, NEET 3h–3h20m) and section order, derived
+  // from the loaded paper instead of hardcoded JEE assumptions.
+  const durationSeconds = (paperData?.paper.durationMinutes ?? 180) * 60;
+  const sections = useMemo(() => {
+    const seen: string[] = [];
+    for (const q of questions) {
+      if (!seen.includes(q.section)) seen.push(q.section);
+    }
+    return seen;
+  }, [questions]);
   // Set to true once an attempt has been restored from localStorage (or
   // freshly initialized), so the save effect never overwrites a saved
   // attempt with pre-hydration state.
@@ -159,7 +168,10 @@ export default function TestInterface() {
 
     getPaperQuestions(paperKey)
       .then((data) => {
-        if (!cancelled) setPaperData(data);
+        if (!cancelled) {
+          setPaperData(data);
+          setTimeLeft((data.paper.durationMinutes ?? 180) * 60);
+        }
       })
       .catch((err: unknown) => {
         if (!cancelled) {
@@ -196,12 +208,12 @@ export default function TestInterface() {
           : questions[0].id
       );
       setActiveSection(
-        saved.activeSection && SECTIONS.includes(saved.activeSection)
+        saved.activeSection && sections.includes(saved.activeSection)
           ? saved.activeSection
           : 'Physics'
       );
       setLanguage(saved.language === 'Hindi' ? 'Hindi' : 'English');
-      setTimeLeft(saved.timeLeft > 0 ? saved.timeLeft : 180 * 60);
+      setTimeLeft(saved.timeLeft > 0 ? saved.timeLeft : durationSeconds);
       setIsTestSubmitted(saved.isTestSubmitted);
       setSyncedToDb(!!saved.syncedToDb);
       setResultPayload(saved.resultPayload ?? null);
@@ -219,7 +231,7 @@ export default function TestInterface() {
       setCurrentQuestionId(questions[0].id);
       setActiveSection('Physics');
       setLanguage('English');
-      setTimeLeft(180 * 60);
+      setTimeLeft(durationSeconds);
       setIsTestSubmitted(false);
       setSyncedToDb(false);
       setResultPayload(null);
@@ -281,7 +293,7 @@ export default function TestInterface() {
       paperKey,
       testType: 'paper',
       title: paperData?.paper.fullTitle ?? paperKey,
-      timeSpent: Math.max(0, 180 * 60 - timeLeft),
+      timeSpent: Math.max(0, durationSeconds - timeLeft),
       questionStates,
     }).then((res) => {
       if (res.ok && res.payload) {
@@ -459,7 +471,7 @@ export default function TestInterface() {
         status: idx === 0 ? 'not-answered' : 'not-visited',
       }))
     );
-    setTimeLeft(180 * 60);
+    setTimeLeft(durationSeconds);
     setIsTestSubmitted(false);
     setTestStarted(false);
     setCurrentQuestionId(questions[0]?.id ?? null);
@@ -542,7 +554,7 @@ export default function TestInterface() {
         <NtaResultScreen
           questions={questions}
           questionStates={questionStates}
-          sections={SECTIONS}
+          sections={sections}
           examTitle={fullExamTitle}
           onRetake={handleRetakeTest}
           result={resultPayload.result}
@@ -656,7 +668,7 @@ export default function TestInterface() {
       <div className="nta-test-row flex-1 flex overflow-hidden bg-white">
         {/* Left Panel: Question Workspace */}
         <NtaQuestionPanel
-          sections={SECTIONS}
+          sections={sections}
           activeSection={activeSection}
           onSelectSection={handleSelectSection}
           currentQuestion={currentQuestion}
@@ -687,7 +699,7 @@ export default function TestInterface() {
             questionStates={questionStates}
             currentQuestionId={currentQuestion.id}
             activeSection={activeSection}
-            sections={SECTIONS}
+            sections={sections}
             onSelectQuestion={handleSelectQuestion}
             onSubmitTest={() => setShowSubmitModal(true)}
             candidateName={candidateName}
@@ -719,7 +731,7 @@ export default function TestInterface() {
               questionStates={questionStates}
               currentQuestionId={currentQuestion.id}
               activeSection={activeSection}
-              sections={SECTIONS}
+              sections={sections}
               onSelectQuestion={(id) => {
                 handleSelectQuestion(id);
                 setPaletteOpen(false);
@@ -740,13 +752,14 @@ export default function TestInterface() {
         isOpen={showQuestionPaper}
         onClose={() => setShowQuestionPaper(false)}
         questions={questions}
-        sections={SECTIONS}
+        sections={sections}
         examTitle={fullExamTitle}
       />
 
       <NtaInstructionsModal
         isOpen={showInstructions}
         onClose={() => setShowInstructions(false)}
+        durationMinutes={paperData?.paper.durationMinutes ?? 180}
       />
 
       {/* Instruction gate — shown before a fresh paper or a retake. The
@@ -756,6 +769,7 @@ export default function TestInterface() {
         <NtaInstructionsModal
           isOpen
           startMode
+          durationMinutes={paperData?.paper.durationMinutes ?? 180}
           onStart={() => {
             setTestStarted(true);
             forceFullscreen();
@@ -772,7 +786,7 @@ export default function TestInterface() {
         }}
         questions={questions}
         questionStates={questionStates}
-        sections={SECTIONS}
+        sections={sections}
         examTitle={fullExamTitle}
       />
     </div>

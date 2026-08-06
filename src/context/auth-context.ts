@@ -9,6 +9,9 @@ export interface AuthContextValue {
   user: User | null;
   session: Session | null;
   loading: boolean;
+  /** Last auth failure (OAuth callback / session recovery) — shown on the
+   *  login & signup pages instead of failing silently. */
+  authError: string | null;
   rememberMe: boolean;
   setRememberMe: (remember: boolean) => void;
   signInWithGoogle: () => Promise<void>;

@@ -6,12 +6,26 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   const [user, setUser] = useState<AuthContextValue['user']>(null);
   const [session, setSession] = useState<AuthContextValue['session']>(null);
   const [loading, setLoading] = useState(true);
+  const [authError, setAuthError] = useState<AuthContextValue['authError']>(null);
   const [rememberMe, setRemember] = useState(isRememberMe());
+
+  // GoTrue reports OAuth failures back in the URL fragment (e.g.
+  // #error=...&error_description=...). Surface them instead of failing
+  // silently, then scrub the URL so a refresh doesn't loop the error.
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.hash.slice(1));
+    const urlError = params.get('error') ?? params.get('error_description');
+    if (urlError) {
+      setAuthError(urlError);
+      window.history.replaceState(null, '', window.location.pathname);
+    }
+  }, []);
 
   useEffect(() => {
     supabase.auth
       .getSession()
-      .then(({ data }) => {
+      .then(({ data, error }) => {
+        if (error) setAuthError(error.message);
         setSession(data.session);
         setUser(data.session?.user ?? null);
       })
@@ -20,6 +34,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     const {
       data: { subscription },
     } = supabase.auth.onAuthStateChange((_event, nextSession) => {
+      if (nextSession) setAuthError(null);
       setSession(nextSession);
       setUser(nextSession?.user ?? null);
       setLoading(false);
@@ -57,9 +72,16 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   };
 
   const signOut = async () => {
-    await supabase.auth.signOut();
+    // Clear local auth state first so nothing redirects into protected
+    // pages while the (possibly slow) server-side signout is in flight.
     setUser(null);
     setSession(null);
+    try {
+      await supabase.auth.signOut();
+    } catch {
+      // The session is already gone locally; a network failure here must
+      // not leave the user stranded on a protected page.
+    }
   };
 
   const updateRememberMe = (remember: boolean) => {
@@ -73,6 +95,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
         user,
         session,
         loading,
+        authError,
         rememberMe,
         setRememberMe: updateRememberMe,
         signInWithGoogle,

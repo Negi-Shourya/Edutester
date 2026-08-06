@@ -325,7 +325,17 @@ export default function NtaQuestionPanel({
                     />
                     <span className={`text-gray-800 ${fontSizeClass}`}>
                       <span className="font-bold text-[#1b365d] mr-1.5">({option.label})</span>
-                      <VectorText text={option.text} />
+                      {option.text ? (
+                        <VectorText text={option.text} />
+                      ) : (
+                        option.figureUrl && (
+                          <img
+                            src={option.figureUrl}
+                            alt={`Option ${option.label}`}
+                            className="max-w-full h-auto rounded-sm"
+                          />
+                        )
+                      )}
                     </span>
                   </div>
                 );

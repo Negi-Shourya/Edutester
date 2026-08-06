@@ -1,7 +1,9 @@
 import { useEffect } from 'react'
 import { Routes, Route, useLocation } from 'react-router-dom'
+import { MotionConfig } from 'motion/react'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
+import PageTransition from './components/PageTransition'
 import ScrollToTop from './components/ScrollToTop'
 import RootGate from './components/RootGate'
 import LandingPage from './pages/LandingPage'
@@ -28,11 +30,13 @@ function App() {
 
   return (
     <AuthProvider>
+      <MotionConfig reducedMotion="user">
       <div className="flex flex-col min-h-screen">
         <ScrollToTop />
         <Navbar />
         <main className="flex-1">
-          <Routes>
+          <PageTransition>
+          <Routes location={location}>
             <Route path="/" element={<RootGate />} />
             <Route path="/landing" element={<LandingPage />} />
             <Route path="/contact" element={<Contact />} />
@@ -88,9 +92,11 @@ function App() {
               }
             />
           </Routes>
+          </PageTransition>
         </main>
         <Footer />
       </div>
+      </MotionConfig>
     </AuthProvider>
   )
 }

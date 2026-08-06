@@ -6,6 +6,7 @@ interface NtaInstructionsModalProps {
   onClose?: () => void;
   startMode?: boolean;
   onStart?: () => void;
+  durationMinutes?: number;
 }
 
 export default function NtaInstructionsModal({
@@ -13,6 +14,7 @@ export default function NtaInstructionsModal({
   onClose,
   startMode,
   onStart,
+  durationMinutes = 180,
 }: NtaInstructionsModalProps) {
   const [consentChecked, setConsentChecked] = useState(false);
   if (!isOpen) return null;
@@ -43,7 +45,7 @@ export default function NtaInstructionsModal({
 
           <h3 className="font-bold text-sm text-[#1b365d] border-b pb-1">1. General Instructions:</h3>
           <ol className="list-decimal pl-5 space-y-1.5 text-gray-700">
-            <li>Total duration of examination is 180 minutes (3 Hours).</li>
+            <li>Total duration of examination is {durationMinutes} minutes ({Math.floor(durationMinutes / 60)} Hours{durationMinutes % 60 ? ` ${durationMinutes % 60} Minutes` : ''}).</li>
             <li>The clock will be set at the server. The countdown timer in the top right corner of screen will display the remaining time available for you to complete the examination.</li>
             <li>When the timer reaches zero, the examination will end by itself. You will not be required to end or submit your examination.</li>
             <li>The Question Palette displayed on the right side of screen will show the status of each question using one of the following symbols:</li>

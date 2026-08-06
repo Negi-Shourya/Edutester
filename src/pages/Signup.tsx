@@ -3,6 +3,7 @@ import { Link, Navigate } from 'react-router-dom';
 import { GraduationCap, Loader2, Lock, Zap, ShieldCheck } from 'lucide-react';
 import { useAuth } from '../context/auth-context';
 import GoogleIcon from '../components/GoogleIcon';
+import { setExam, type ExamType } from '../lib/exam';
 
 const perks = [
   { icon: Zap, text: 'Instant sign up with your existing Google account' },
@@ -11,9 +12,10 @@ const perks = [
 ];
 
 export default function Signup() {
-  const { user, loading, signInWithGoogle } = useAuth();
+  const { user, loading, signInWithGoogle, authError } = useAuth();
   const [error, setError] = useState<string | null>(null);
   const [googleLoading, setGoogleLoading] = useState(false);
+  const [track, setTrack] = useState<ExamType>('jee');
 
   if (!loading && user) {
     return <Navigate to="/dashboard" replace />;
@@ -54,13 +56,49 @@ export default function Signup() {
             </div>
           )}
 
+          {authError && !error && (
+            <div className="mb-5 p-3.5 rounded-xl bg-red-50 border border-red-200 text-sm text-red-600">
+              Sign up failed: {authError}
+            </div>
+          )}
+
+          {/* Exam track */}
+          <div className="mb-6">
+            <p className="text-sm font-semibold text-gray-700 mb-2.5">I'm preparing for</p>
+            <div className="grid grid-cols-2 gap-3">
+              <button
+                type="button"
+                onClick={() => { setTrack('jee'); setExam('jee'); }}
+                className={`rounded-2xl border-2 px-4 py-3.5 text-left transition-all ${
+                  track === 'jee'
+                    ? 'border-primary bg-primary/5 shadow-sm'
+                    : 'border-gray-200 hover:border-gray-300'
+                }`}
+              >
+                <span className="block text-sm font-bold text-gray-900">JEE Main</span>
+                <span className="block text-xs text-gray-500 mt-0.5">B.E./B.Tech entrance</span>
+              </button>
+              <button
+                type="button"
+                onClick={() => { setTrack('neet'); setExam('neet'); }}
+                className={`rounded-2xl border-2 px-4 py-3.5 text-left transition-all ${
+                  track === 'neet'
+                    ? 'border-green-600 bg-green-50 shadow-sm'
+                    : 'border-gray-200 hover:border-gray-300'
+                }`}
+              >
+                <span className="block text-sm font-bold text-gray-900">NEET (UG)</span>
+                <span className="block text-xs text-gray-500 mt-0.5">Medical entrance</span>
+              </button>
+            </div>
+          </div>
+
           <button
             type="button"
             onClick={handleGoogle}
             disabled={googleLoading}
             className="w-full flex items-center justify-center gap-3 bg-white border-2 border-gray-200 rounded-2xl py-3.5 text-sm font-bold text-gray-800 hover:border-primary/50 hover:shadow-lg hover:shadow-primary/10 hover:-translate-y-0.5 transition-all duration-200 disabled:opacity-60 disabled:hover:translate-y-0"
-          >
-            {googleLoading ? (
+          >            {googleLoading ? (
               <Loader2 className="w-5 h-5 animate-spin text-primary" />
             ) : (
               <GoogleIcon />

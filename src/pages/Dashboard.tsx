@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
+import { AnimatePresence, animate, motion, useMotionValue, useTransform } from 'motion/react';
 import {
   BookOpen, FileText, TrendingUp, TrendingDown, Minus, Clock, BarChart3, Target,
   ArrowRight, Play, AlertCircle, LineChart, Award, ChevronRight, ChevronDown,
@@ -9,6 +10,8 @@ import { useAuth } from '../context/auth-context';
 import { getAttempts, backfillLocalAttempts, type AttemptRow } from '../lib/attemptsDb';
 import { findInProgressAttempt, type SavedAttempt } from '../lib/attemptStorage';
 import { useSubscriptionAccess } from '../lib/subscription';
+import { getExam, setExam, type ExamType } from '../lib/exam';
+import { GraduationCap } from 'lucide-react';
 import {
   loadQuestionMeta, analyzeTest, analyzeOverall, type TestAnalysis, type SubjectOverall,
   type Recommendation,
@@ -18,6 +21,9 @@ const SECTION_COLORS: Record<string, string> = {
   Physics: 'bg-blue-500',
   Chemistry: 'bg-emerald-500',
   Mathematics: 'bg-saffron',
+  Biology: 'bg-green-500',
+  Botany: 'bg-lime-500',
+  Zoology: 'bg-teal-500',
 };
 
 const TREND_ICONS: Record<SubjectOverall['trend'], { icon: React.ReactNode; cls: string }> = {
@@ -74,6 +80,7 @@ function pctClass(pct: number): string {
 export default function Dashboard() {
   const { user } = useAuth();
   const { hasAccess: hasSubscription, loading: subscriptionLoading } = useSubscriptionAccess();
+  const [exam, setExamState] = useState<ExamType>(getExam());
   const [attempts, setAttempts] = useState<AttemptRow[] | null>(null);
   const [analyses, setAnalyses] = useState<TestAnalysis[] | null>(null);
   const [expanded, setExpanded] = useState<string | null>(null);
@@ -145,13 +152,35 @@ export default function Dashboard() {
               Your test history, performance & growth — at a glance
             </p>
           </div>
-          <Link
-            to="/paper-tests"
-            className="flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-xl text-sm font-semibold hover:bg-primary-dark transition-all shadow-lg shadow-primary/25 hover:shadow-primary/40 hover:-translate-y-0.5 active:scale-[0.98]"
-          >
-            <Play className="w-4 h-4 fill-current" />
-            Take a Test
-          </Link>
+          <div className="flex items-center gap-3">
+            {/* Exam track switch */}
+            <div className="inline-flex bg-white border border-gray-200 rounded-full p-1 shadow-sm">
+              <button
+                onClick={() => { setExam('jee'); setExamState('jee'); }}
+                className={`px-4 py-1.5 rounded-full text-xs font-semibold transition-colors ${
+                  exam === 'jee' ? 'bg-primary text-white' : 'text-gray-500 hover:text-gray-700'
+                }`}
+              >
+                JEE
+              </button>
+              <button
+                onClick={() => { setExam('neet'); setExamState('neet'); }}
+                className={`inline-flex items-center gap-1 px-4 py-1.5 rounded-full text-xs font-semibold transition-colors ${
+                  exam === 'neet' ? 'bg-green-600 text-white' : 'text-gray-500 hover:text-gray-700'
+                }`}
+              >
+                <GraduationCap className="w-3.5 h-3.5" />
+                NEET
+              </button>
+            </div>
+            <Link
+              to="/paper-tests"
+              className="flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-xl text-sm font-semibold hover:bg-primary-dark transition-all shadow-lg shadow-primary/25 hover:shadow-primary/40 hover:-translate-y-0.5 active:scale-[0.98]"
+            >
+              <Play className="w-4 h-4 fill-current" />
+              Take a Test
+            </Link>
+          </div>
         </div>
 
         {inProgress && !inProgress.isTestSubmitted && (
@@ -275,14 +304,20 @@ export default function Dashboard() {
                     <span className="text-xs text-gray-400">last {Math.min(rows.length, 10)} tests</span>
                   </div>
                   <div className="flex items-end gap-2 sm:gap-3 h-40">
-                    {rows.slice(0, 10).reverse().map((row) => {
+                    {rows.slice(0, 10).reverse().map((row, i) => {
                       const pct = row.max_score > 0 ? (row.total_score / row.max_score) * 100 : 0;
                       return (
                         <div key={row.id} className="flex-1 flex flex-col items-center gap-1.5 min-w-0" title={`${row.title}\n${row.total_score}/${row.max_score} (${Math.round(pct)}%)`}>
                           <span className={`text-[10px] font-semibold ${pctClass(pct)}`}>
                             {Math.round(pct)}%
                           </span>
-                          <div className="w-full max-w-10 rounded-t-lg bg-gradient-to-t from-primary to-primary-light transition-all" style={{ height: `${Math.max(pct, 3)}%` }} />
+                          <motion.div
+                            className="w-full max-w-10 rounded-t-lg bg-gradient-to-t from-primary to-primary-light"
+                            style={{ height: `${Math.max(pct, 3)}%`, transformOrigin: 'bottom' }}
+                            initial={{ scaleY: 0 }}
+                            animate={{ scaleY: 1 }}
+                            transition={{ delay: 0.1 + i * 0.06, duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
+                          />
                           <span className="text-[10px] text-gray-400 truncate w-full text-center">
                             {formatDate(row.created_at)}
                           </span>
@@ -372,23 +407,47 @@ export default function Dashboard() {
                     Quick Actions
                   </h2>
                   <div className="grid grid-cols-2 gap-3">
-                    <Link to="/chapter-tests" className="flex flex-col items-center gap-2 p-4 bg-primary/10 rounded-xl hover:bg-primary/20 hover:-translate-y-0.5 transition-all group">
-                      <BookOpen className="w-6 h-6 text-primary group-hover:scale-110 transition-transform" />
-                      <span className="text-xs font-medium text-gray-700">Chapter</span>
-                    </Link>
-                    <Link to="/paper-tests" className="flex flex-col items-center gap-2 p-4 bg-saffron/10 rounded-xl hover:bg-saffron/20 hover:-translate-y-0.5 transition-all group">
-                      <FileText className="w-6 h-6 text-saffron group-hover:scale-110 transition-transform" />
-                      <span className="text-xs font-medium text-gray-700">Full Paper</span>
-                    </Link>
-                    <Link to="/profile" className="flex flex-col items-center gap-2 p-4 bg-green-50 rounded-xl hover:bg-green-100 hover:-translate-y-0.5 transition-all group">
-                      <Award className="w-6 h-6 text-green-600 group-hover:scale-110 transition-transform" />
-                      <span className="text-xs font-medium text-gray-700">My Plan</span>
-                    </Link>
-                    {!subscriptionLoading && !hasSubscription && (
-                      <Link to="/pricing" className="flex flex-col items-center gap-2 p-4 bg-orange-50 rounded-xl hover:bg-orange-100 hover:-translate-y-0.5 transition-all group">
-                        <ArrowRight className="w-6 h-6 text-orange-500 group-hover:scale-110 transition-transform" />
-                        <span className="text-xs font-medium text-gray-700">Upgrade</span>
+                    <motion.div
+                      whileHover={{ y: -4 }}
+                      whileTap={{ scale: 0.97 }}
+                      transition={{ type: 'spring', stiffness: 320, damping: 20 }}
+                    >
+                      <Link to="/chapter-tests" className="flex flex-col items-center gap-2 p-4 bg-primary/10 rounded-xl hover:bg-primary/20 transition-colors group">
+                        <BookOpen className="w-6 h-6 text-primary group-hover:scale-110 transition-transform" />
+                        <span className="text-xs font-medium text-gray-700">Chapter</span>
                       </Link>
+                    </motion.div>
+                    <motion.div
+                      whileHover={{ y: -4 }}
+                      whileTap={{ scale: 0.97 }}
+                      transition={{ type: 'spring', stiffness: 320, damping: 20 }}
+                    >
+                      <Link to="/paper-tests" className="flex flex-col items-center gap-2 p-4 bg-saffron/10 rounded-xl hover:bg-saffron/20 transition-colors group">
+                        <FileText className="w-6 h-6 text-saffron group-hover:scale-110 transition-transform" />
+                        <span className="text-xs font-medium text-gray-700">Full Paper</span>
+                      </Link>
+                    </motion.div>
+                    <motion.div
+                      whileHover={{ y: -4 }}
+                      whileTap={{ scale: 0.97 }}
+                      transition={{ type: 'spring', stiffness: 320, damping: 20 }}
+                    >
+                      <Link to="/profile" className="flex flex-col items-center gap-2 p-4 bg-green-50 rounded-xl hover:bg-green-100 transition-colors group">
+                        <Award className="w-6 h-6 text-green-600 group-hover:scale-110 transition-transform" />
+                        <span className="text-xs font-medium text-gray-700">My Plan</span>
+                      </Link>
+                    </motion.div>
+                    {!subscriptionLoading && !hasSubscription && (
+                      <motion.div
+                        whileHover={{ y: -4 }}
+                        whileTap={{ scale: 0.97 }}
+                        transition={{ type: 'spring', stiffness: 320, damping: 20 }}
+                      >
+                        <Link to="/pricing" className="flex flex-col items-center gap-2 p-4 bg-orange-50 rounded-xl hover:bg-orange-100 transition-colors group">
+                          <ArrowRight className="w-6 h-6 text-orange-500 group-hover:scale-110 transition-transform" />
+                          <span className="text-xs font-medium text-gray-700">Upgrade</span>
+                        </Link>
+                      </motion.div>
                     )}
                   </div>
                 </div>
@@ -422,17 +481,47 @@ function StatCard({ icon, color, value, label, sub }: {
   sub: string;
 }) {
   return (
-    <div className="bg-white rounded-xl border border-gray-200 p-4 hover:shadow-md hover:-translate-y-0.5 transition-all group">
+    <motion.div
+      className="bg-white rounded-xl border border-gray-200 p-4 hover:shadow-md transition-shadow group"
+      whileHover={{ y: -5 }}
+      transition={{ type: 'spring', stiffness: 300, damping: 20 }}
+    >
       <div className="flex items-start justify-between mb-3">
-        <div className={`w-10 h-10 rounded-xl bg-gradient-to-br ${color} flex items-center justify-center shadow-sm group-hover:scale-110 group-hover:-rotate-3 transition-transform`}>
+        <motion.div
+          className={`w-10 h-10 rounded-xl bg-gradient-to-br ${color} flex items-center justify-center shadow-sm`}
+          whileHover={{ scale: 1.12, rotate: -6 }}
+          transition={{ type: 'spring', stiffness: 320, damping: 14 }}
+        >
           {icon}
-        </div>
+        </motion.div>
       </div>
-      <div className="text-2xl font-bold text-gray-900 font-mono">{value}</div>
+      <div className="text-2xl font-bold text-gray-900 font-mono">
+        <CountUp value={value} />
+      </div>
       <div className="text-xs text-gray-500 mt-0.5">{label}</div>
       <div className="text-[11px] text-gray-400 mt-0.5">{sub}</div>
-    </div>
+    </motion.div>
   );
+}
+
+// Animates numeric values ("58%", "12") counting up on mount; falls back
+// to static text for non-numeric values like "3h 12m".
+function CountUp({ value }: { value: string }) {
+  const match = /^(\d+(?:\.\d+)?)(%?)$/.exec(value);
+  const target = match ? parseFloat(match[1]) : null;
+  const suffix = match?.[2] ?? '';
+
+  const mv = useMotionValue(0);
+  const text = useTransform(mv, (v) => `${Math.round(v)}${suffix}`);
+
+  useEffect(() => {
+    if (target === null) return;
+    const controls = animate(mv, target, { duration: 0.9, ease: [0.16, 1, 0.3, 1] });
+    return () => controls.stop();
+  }, [target, mv]);
+
+  if (target === null) return <>{value}</>;
+  return <motion.span>{text}</motion.span>;
 }
 
 function SubjectRow({ sub }: { sub: SubjectOverall }) {
@@ -535,8 +624,16 @@ function TestHistoryCard({ analysis, expanded, onToggle }: {
         </div>
       </button>
 
-      {expanded && (
-        <div className="border-t border-gray-100 bg-gray-50/60 p-4 space-y-4">
+      <AnimatePresence initial={false}>
+        {expanded && (
+          <motion.div
+            key="details"
+            className="border-t border-gray-100 bg-gray-50/60 p-4 space-y-4 overflow-hidden"
+            initial={{ height: 0, opacity: 0 }}
+            animate={{ height: 'auto', opacity: 1 }}
+            exit={{ height: 0, opacity: 0 }}
+            transition={{ duration: 0.3, ease: [0.22, 1, 0.36, 1] }}
+          >
           {/* Section breakdown */}
           <div>
             <h4 className="text-xs font-semibold text-gray-700 uppercase tracking-wide mb-2.5">
@@ -597,8 +694,9 @@ function TestHistoryCard({ analysis, expanded, onToggle }: {
           >
             Practice the weak topics <ChevronRight className="w-3 h-3" />
           </Link>
-        </div>
-      )}
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
 }

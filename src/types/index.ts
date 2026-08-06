@@ -4,6 +4,7 @@ export type SubSectionType = 'Section A' | 'Section B';
 export interface QuestionOption {
   label: string; // 'A', 'B', 'C', 'D' or '1', '2', '3', '4'
   text: string;
+  figureUrl?: string; // NEET options rendered as images
 }
 
 export interface Question {

@@ -3,6 +3,7 @@ import { ArrowRight, BookOpen, Timer, Layers, LifeBuoy, Sparkles, GraduationCap,
 import FeatureCard from '../components/FeatureCard';
 import ExamScreenPreview from '../components/ExamScreenPreview';
 import Reveal from '../components/Reveal';
+import StaggerReveal, { StaggerItem, SpringTile } from '../components/StaggerReveal';
 import { useSubscriptionAccess } from '../lib/subscription';
 
 const features = [
@@ -86,13 +87,13 @@ export default function LandingPage() {
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 tracking-tight font-display">Everything You Need to Crack JEE</h2>
             <p className="text-gray-500 max-w-2xl mx-auto mt-3">Comprehensive preparation tools designed to help you ace the JEE Main exam.</p>
           </Reveal>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-4xl mx-auto">
-            {features.map((f, i) => (
-              <Reveal key={f.title} delay={i * 90}>
+          <StaggerReveal className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-4xl mx-auto">
+            {features.map((f) => (
+              <StaggerItem key={f.title}>
                 <FeatureCard icon={f.icon} title={f.title} description={f.description} />
-              </Reveal>
+              </StaggerItem>
             ))}
-          </div>
+          </StaggerReveal>
         </div>
       </section>
 
@@ -106,23 +107,23 @@ export default function LandingPage() {
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 tracking-tight font-display">How It Works</h2>
             <p className="text-gray-500 mt-3">Three steps from sign-up to your first practice session.</p>
           </Reveal>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <StaggerReveal className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               { step: '01', title: 'Create Your Account', desc: 'Sign up in seconds — no waiting, no verification maze.' },
               { step: '02', title: 'Pick a Test', desc: 'Browse chapter-wise or paper-wise tests and dive in.' },
               { step: '03', title: 'Practice & Improve', desc: 'Attempt tests on the NTA interface and track your progress.' },
-            ].map((item, i) => (
-              <Reveal key={item.step} delay={i * 120}>
+            ].map((item) => (
+              <StaggerItem key={item.step}>
                 <div className="text-center group">
-                  <div className="w-14 h-14 bg-primary text-white rounded-xl flex items-center justify-center font-mono text-lg font-semibold mx-auto mb-4 shadow-lg shadow-primary/20 group-hover:scale-110 group-hover:rotate-3 transition-transform">
-                    {item.step}
+                  <div className="w-14 h-14 bg-primary text-white rounded-xl flex items-center justify-center font-mono text-lg font-semibold mx-auto mb-4 shadow-lg shadow-primary/20">
+                    <SpringTile>{item.step}</SpringTile>
                   </div>
                   <h3 className="font-semibold text-gray-900 mb-2 font-display">{item.title}</h3>
                   <p className="text-sm text-gray-500">{item.desc}</p>
                 </div>
-              </Reveal>
+              </StaggerItem>
             ))}
-          </div>
+          </StaggerReveal>
         </div>
       </section>
 

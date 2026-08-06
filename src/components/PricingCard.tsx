@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { AnimatePresence, motion } from 'motion/react';
 import { Check, Loader2, ShieldCheck, ArrowRight } from 'lucide-react';
 import type { PricingPlan } from '../types';
 
@@ -33,9 +34,14 @@ export default function PricingCard({
   const [showActiveInfo, setShowActiveInfo] = useState(false);
 
   return (
-    <div className={`relative bg-white rounded-2xl border-2 p-6 transition-all hover:shadow-xl ${
-      active ? 'border-green-400 shadow-md' : plan.popular ? 'border-primary shadow-lg scale-105' : 'border-gray-100'
-    }`}>
+    <motion.div
+      className={`relative bg-white rounded-2xl border-2 p-6 transition-[box-shadow] hover:shadow-xl ${
+        active ? 'border-green-400 shadow-md' : plan.popular ? 'border-primary shadow-lg scale-105' : 'border-gray-100'
+      }`}
+      whileHover={{ y: -8, scale: plan.popular ? 1.06 : 1.005 }}
+      whileTap={{ scale: plan.popular ? 1.03 : 0.995 }}
+      transition={{ type: 'spring', stiffness: 300, damping: 22 }}
+    >
       {active ? (
         <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-green-600 text-white px-4 py-0.5 rounded-full text-xs font-semibold whitespace-nowrap">
           Your Current Plan
@@ -64,9 +70,10 @@ export default function PricingCard({
           </li>
         ))}
       </ul>
-      <button
+      <motion.button
         onClick={() => (active || lowerThanCurrent ? setShowActiveInfo((v) => !v) : onCheckout(plan))}
         disabled={checkoutLoading}
+        whileTap={{ scale: 0.97 }}
         className={`w-full flex items-center justify-center gap-2 py-2.5 rounded-xl text-sm font-semibold transition-colors disabled:opacity-60 ${
           active
             ? 'bg-green-600 text-white hover:bg-green-700'
@@ -85,10 +92,20 @@ export default function PricingCard({
             : lowerThanCurrent
               ? 'You are on a better plan'
               : 'Get Started'}
-      </button>
+      </motion.button>
 
-      {(active || lowerThanCurrent) && showActiveInfo && (
-        <div className={`mt-3 p-4 rounded-xl border text-sm ${lowerThanCurrent ? 'bg-gray-50 border-gray-200' : 'bg-green-50 border-green-200'}`}>
+      <AnimatePresence initial={false}>
+        {(active || lowerThanCurrent) && showActiveInfo && (
+          <motion.div
+            key="active-info"
+            className={`mt-3 p-4 rounded-xl border text-sm overflow-hidden ${
+              lowerThanCurrent ? 'bg-gray-50 border-gray-200' : 'bg-green-50 border-green-200'
+            }`}
+            initial={{ height: 0, opacity: 0 }}
+            animate={{ height: 'auto', opacity: 1 }}
+            exit={{ height: 0, opacity: 0 }}
+            transition={{ duration: 0.3, ease: [0.22, 1, 0.36, 1] }}
+          >
           {lowerThanCurrent ? (
             <>
               <p className="font-semibold text-gray-700">This plan is lower than your current plan.</p>
@@ -119,8 +136,9 @@ export default function PricingCard({
               )}
             </>
           )}
-        </div>
-      )}
-    </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </motion.div>
   );
 }

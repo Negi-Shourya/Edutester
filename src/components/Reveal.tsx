@@ -1,8 +1,11 @@
-import { useEffect, useRef, useState, type ReactNode } from 'react';
+import { motion } from 'motion/react';
+import type { ReactNode } from 'react';
 
-// Adds the .is-in class (and thus the fade-up transition) once the element
-// scrolls into view. Reduced-motion users get no movement — the CSS handles
-// that, this only flips visibility.
+const ease = [0.22, 1, 0.36, 1] as const;
+
+// Fades content up once it scrolls into view. Uses motion's whileInView so
+// it stays a single prop away from staggered variants; MotionConfig's
+// reducedMotion="user" snaps it instantly for reduced-motion users.
 export default function Reveal({
   children,
   delay = 0,
@@ -12,38 +15,15 @@ export default function Reveal({
   delay?: number;
   className?: string;
 }) {
-  const ref = useRef<HTMLDivElement>(null);
-  const [inView, setInView] = useState(false);
-
-  useEffect(() => {
-    const el = ref.current;
-    if (!el) return;
-    if (typeof IntersectionObserver === 'undefined') {
-      setInView(true);
-      return;
-    }
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setInView(true);
-            observer.disconnect();
-          }
-        });
-      },
-      { threshold: 0.12 }
-    );
-    observer.observe(el);
-    return () => observer.disconnect();
-  }, []);
-
   return (
-    <div
-      ref={ref}
-      className={`reveal ${inView ? 'is-in' : ''} ${className}`}
-      style={delay ? { transitionDelay: `${delay}ms` } : undefined}
+    <motion.div
+      className={className}
+      initial={{ opacity: 0, y: 18 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.12 }}
+      transition={{ duration: 0.6, ease, delay: delay / 1000 }}
     >
       {children}
-    </div>
+    </motion.div>
   );
 }

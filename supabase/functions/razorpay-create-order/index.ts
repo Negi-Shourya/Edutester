@@ -1,5 +1,6 @@
 import { createClient } from 'npm:@supabase/supabase-js@2.111.0';
 import Razorpay from 'npm:razorpay@2.9.4';
+import { checkRateLimit } from '../_shared/rate_limit.ts';
 
 // Plan catalogue is defined HERE (server-side), never trusted from the client.
 // Price is in paise (INR).
@@ -15,11 +16,19 @@ const PLANS = {
 // are set as secrets (supabase secrets set NAME=value).
 const SUPABASE_URL = Deno.env.get('SUPABASE_URL') ?? '';
 const SUPABASE_ANON_KEY = Deno.env.get('SUPABASE_ANON_KEY') ?? '';
+const SUPABASE_SERVICE_ROLE_KEY = Deno.env.get('SUPABASE_SERVICE_ROLE_KEY') ?? '';
 const RAZORPAY_KEY_ID = Deno.env.get('RAZORPAY_KEY_ID') ?? '';
 const RAZORPAY_KEY_SECRET = Deno.env.get('RAZORPAY_KEY_SECRET') ?? '';
 
 // Anon client: used ONLY to verify the caller's JWT.
 const supabaseAnon = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+// Service-role client: writes the rate-limit log. Never exposed to the browser.
+const supabaseAdmin = createClient(SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY);
+
+// Per-user rate limit: at most 30 order creations per rolling hour. A real
+// checkout flow creates 1-2 orders, so this caps abuse without blocking
+// legitimate retries.
+const RATE_LIMIT = { route: 'razorpay-create-order', limit: 30, windowMs: 60 * 60 * 1000 };
 
 const razorpay = new Razorpay({
   key_id: RAZORPAY_KEY_ID,
@@ -55,6 +64,14 @@ Deno.serve(async (req) => {
 
   const user = await getUser(req);
   if (!user) return json({ error: 'Unauthorized' }, 401);
+
+  const rate = await checkRateLimit(supabaseAdmin, user.id, RATE_LIMIT);
+  if (!rate.allowed) {
+    return new Response(
+      JSON.stringify({ error: 'Order creation limit reached. Please try again later.', code: 'RATE_LIMITED' }),
+      { status: 429, headers: { ...corsHeaders, 'Content-Type': 'application/json', 'Retry-After': String(rate.retryAfterSeconds) } }
+    );
+  }
 
   const body = await req.json().catch(() => ({}));
   const plan = PLANS[body.planId as keyof typeof PLANS];

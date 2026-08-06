@@ -14,9 +14,6 @@ const SUPABASE_URL = Deno.env.get('SUPABASE_URL') ?? '';
 const SUPABASE_ANON_KEY = Deno.env.get('SUPABASE_ANON_KEY') ?? '';
 const SUPABASE_SERVICE_ROLE_KEY = Deno.env.get('SUPABASE_SERVICE_ROLE_KEY') ?? '';
 
-// The single paper attemptable by signed-in users without a subscription.
-const FREE_TRIAL_PAPER_KEY = '02-apr-morning';
-
 // Mirrors the client's old dedupe window: a submit that re-runs (StrictMode
 // double effect, refresh, backfill) within this window is treated as the
 // same attempt, not a retake, so no duplicate row is created.
@@ -76,7 +73,9 @@ interface ScoredQuestion {
 // Scoring mirrors the client's former computeAttemptResult exactly:
 // +marks for a correct answer, negative marks for a wrong answer, 0 for
 // unattempted; MCQ answers compared case-insensitively, numerical answers
-// trimmed.
+// trimmed. Multi-answer keys are comma-separated labels ("B,C"). An EMPTY
+// key means the question was awarded to all candidates by the official key
+// (bonus / answer withheld): anyone who attempted it gets full marks.
 function scoreQuestion(q: any, answer: string | null): { outcome: ScoredQuestion['outcome']; score: number } {
   const isMCQ = q.type === 'mcq' || !q.type;
   const userAns = isMCQ ? (answer ?? '') : (answer ?? '').trim();
@@ -84,11 +83,10 @@ function scoreQuestion(q: any, answer: string | null): { outcome: ScoredQuestion
   const negativeMarks = Number(q.negative_marks ?? -1);
 
   if (userAns === '') return { outcome: 'unattempted', score: 0 };
-  const correct = q._key?.correctAnswer;
-  // No recorded key (or a null answer) mirrors the old client behaviour:
-  // a submitted answer to such a question scores as incorrect.
-  if (!correct) return { outcome: 'incorrect', score: negativeMarks };
-  if (userAns.toLowerCase() === correct.toLowerCase()) {
+  const correct = q._key?.correctAnswer ?? '';
+  if (correct === '') return { outcome: 'correct', score: marks };
+  const accepted = correct.split(',').map((c: string) => c.trim().toLowerCase());
+  if (accepted.includes(userAns.toLowerCase())) {
     return { outcome: 'correct', score: marks };
   }
   return { outcome: 'incorrect', score: negativeMarks };
@@ -117,24 +115,8 @@ Deno.serve(async (req) => {
   }
 
   // Server-side access gate: the trial paper is free for any signed-in user;
-  // every other paper requires an active subscription.
-  if (paperKey !== FREE_TRIAL_PAPER_KEY) {
-    const now = new Date().toISOString();
-    const { data: subs, error: subError } = await supabaseAdmin
-      .from('subscriptions')
-      .select('id')
-      .eq('user_id', user.id)
-      .eq('status', 'active')
-      .gt('ends_at', now)
-      .limit(1);
-    if (subError) {
-      console.error('subscription check failed', subError);
-      return json({ error: 'Failed to verify subscription' }, 502);
-    }
-    if (!subs || subs.length === 0) {
-      return json({ error: 'An active subscription is required for this paper', code: 'NO_SUBSCRIPTION' }, 403);
-    }
-  }
+  // every other paper requires an active subscription. The trial flag lives
+  // on the paper row (papers.is_trial) so it works for JEE and NEET alike.
 
   // Rate limit: every call is logged in scoring_calls (service-role only,
   // no public access) and capped per user per rolling hour.
@@ -164,7 +146,7 @@ Deno.serve(async (req) => {
   const { data: paper, error: paperError } = await supabaseAdmin
     .from('papers')
     .select(
-      `key, title, full_title, questions (
+      `key, title, full_title, is_trial, questions (
         id, number, type, marks, negative_marks,
         sections ( name ),
         question_options ( position, label, text )
@@ -175,6 +157,24 @@ Deno.serve(async (req) => {
 
   if (paperError || !paper) {
     return json({ error: 'Paper not found' }, 404);
+  }
+
+  if (!paper.is_trial) {
+    const now = new Date().toISOString();
+    const { data: subs, error: subError } = await supabaseAdmin
+      .from('subscriptions')
+      .select('id')
+      .eq('user_id', user.id)
+      .eq('status', 'active')
+      .gt('ends_at', now)
+      .limit(1);
+    if (subError) {
+      console.error('subscription check failed', subError);
+      return json({ error: 'Failed to verify subscription' }, 502);
+    }
+    if (!subs || subs.length === 0) {
+      return json({ error: 'An active subscription is required for this paper', code: 'NO_SUBSCRIPTION' }, 403);
+    }
   }
 
   const questions = paper.questions ?? [];
@@ -202,7 +202,8 @@ Deno.serve(async (req) => {
   const maxScore = questions.reduce((sum: number, q: any) => sum + Number(q.marks ?? 4), 0);
   const questionOutcomes: Record<string, 'correct' | 'incorrect' | 'unattempted'> = {};
 
-  for (const q of questions) {
+  for (const raw of questions) {
+    const q = raw as any;
     q._key = keys.get(q.id) ?? { correctAnswer: '', solution: null };
     const { outcome, score } = scoreQuestion(q, answerById.get(q.id) ?? null);
 
