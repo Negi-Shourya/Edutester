@@ -253,28 +253,22 @@ body.noscroll-x,
   background: #888;
 }
 
-/* Vector notation arrows (rendered from \vec{...} markup in the DB) */
-.vec {
-  position: relative;
-  display: inline-block;
-  padding-top: 0.32em;
+/* KaTeX inline math — blends with surrounding text at matching size */
+.katex-inline .katex {
+  font-size: 1.05em;          /* match surrounding text size */
+  font-weight: inherit;
 }
-.vec-arrow {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 1.05em;
-  height: 0.55em;
-  pointer-events: none;
+.katex-inline .katex .mord,
+.katex-inline .katex .mbin,
+.katex-inline .katex .mrel,
+.katex-inline .katex .mop {
+  font-weight: inherit;       /* don't override parent bold/normal */
 }
-.vec-arrow svg {
-  width: 100%;
-  height: 100%;
-  display: block;
+/* Fractions: tighten vertical spacing so inline fracs don't push line‐height */
+.katex-inline .katex .mfrac .frac-line {
+  border-bottom-width: 0.06em;
 }
-.vec-letter {
-  line-height: 1.2;
-}
+
 
 /* ===================================================================
    PHONE LANDSCAPE LAYOUT (NTA CBT clone)

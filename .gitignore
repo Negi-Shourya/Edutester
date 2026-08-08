@@ -30,3 +30,7 @@ dist-ssr
 
 # Supabase CLI link state (no secrets, but machine-local)
 supabase/.temp/
+
+# Python build artifacts
+__pycache__/
+*.pyc
