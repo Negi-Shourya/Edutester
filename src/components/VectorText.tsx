@@ -25,9 +25,10 @@ type Segment =
   | { kind: 'math'; value: string };
 
 // ── Regex to find math markup in our custom notation ──
-// Matches: \vec{…}, \frac{…}{…}, _{…}, ^{…}, _X, ^X, unicode sub/sup chars
+// Matches: \vec{…}, \frac{…}{…}, other \commands (\times, \cdot, \sqrt, Greek…),
+// _{…}, ^{…}, _X, ^X, unicode sub/sup chars
 const MATH_TOKEN_RE =
-  /\\vec\{(?:[^{}]|\{[^{}]*\})*\}|\\frac\{(?:[^{}]|\{[^{}]*\})*\}\{(?:[^{}]|\{[^{}]*\})*\}|_\{[^{}]*\}|\^\{[^{}]*\}|_[A-Za-z0-9]|\^[A-Za-z0-9+\-]+|[\u00B9\u00B2\u00B3\u2070\u2071\u2074-\u207F\u2080-\u209C]+/g;
+  /\\vec\{(?:[^{}]|\{[^{}]*\})*\}|\\frac\{(?:[^{}]|\{[^{}]*\})*\}\{(?:[^{}]|\{[^{}]*\})*\}|\\[a-zA-Z]+\{?(?:[^{}]|\{[^{}]*\})*\}?|_\{[^{}]*\}|\^\{[^{}]*\}|_[A-Za-z0-9]|\^[A-Za-z0-9+\-]+|[\u00B9\u00B2\u00B3\u2070\u2071\u2074-\u207F\u2080-\u209C]+/g;
 
 // Unicode superscript → LaTeX
 const SUPER_MAP: Record<string, string> = {
@@ -59,6 +60,9 @@ function tokenToLatex(raw: string): string {
 
   // \frac{n}{d} → \frac{n}{d} (already valid LaTeX)
   if (raw.startsWith('\\frac{')) return raw;
+
+  // Other LaTeX commands (\times, \cdot, \sqrt{x}, \Delta, \pi, …) pass through
+  if (raw.startsWith('\\')) return raw;
 
   // _{content} → _{content} (already valid LaTeX)
   if (raw.startsWith('_{')) return raw;

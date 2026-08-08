@@ -60,6 +60,8 @@ def clean_char(c):
         return GLYPH_MAP.get(c, "")
     if c == "\u2113":
         return "l"
+    if c == "\u00ba":
+        return "\u00b0"
     return c
 
 
@@ -85,6 +87,46 @@ def is_skip_line(text):
     if "DATE:" in up:
         return True
     return False
+
+
+# =====================================================================
+# Math polishing — turn plain-text maths into LaTeX markup so the
+# front-end KaTeX renderer (VectorText) displays it beautifully.
+# =====================================================================
+
+# 'x' used as a multiplication sign between numbers → \times
+MUL_X_RE = re.compile(r"([\d\}]\s*)x(\s*[\d\{])", re.IGNORECASE)
+# unicode × between numbers → \times
+MUL_TIMES_RE = re.compile(r"([\d\}]\s*)[\u00D7](\s*[\d\{])")
+
+# numeric fraction a/b → \frac{a}{b} (also letter/number like c/100, π/2)
+FRAC_RE = re.compile(
+    r"(?<![{}])((?:[A-Za-z\u0370-\u03FF]|\d+(?:\.\d+)?)(?:[eE][+-]?\d+)?)"
+    r"\s*/\s*((?:\d+(?:\.\d+)?)(?:[eE][+-]?\d+)?)(?![{}])"
+)
+# unit exponent like ms^{-1} or V m^{-1} already handled by line_markup2.
+
+# Collapse runs of spaces created by the join of scripts with surrounding text
+SPACE_RE = re.compile(r"\s{2,}")
+
+
+def polish_math(t):
+    """Normalize extracted text into clean LaTeX math markup."""
+    if not t:
+        return t
+    # Avoid rewriting inside an existing math token (…^{…} / _{…} / \frac{…}…)
+    if "{" in t or "}" in t:
+        # Still fix multiplication when braces only wrap exponents:
+        # "27 x 10^{4}" → "27 \times 10^{4}"
+        t = MUL_X_RE.sub(r"\1 \\times \2", t)
+        t = MUL_TIMES_RE.sub(r"\1 \\times \2", t)
+        return SPACE_RE.sub(" ", t)
+    t = MUL_X_RE.sub(r"\1 \\times \2", t)
+    t = MUL_TIMES_RE.sub(r"\1 \\times \2", t)
+    t = FRAC_RE.sub(r"\\frac{\1}{\2}", t)
+    # Fix spacing artifacts: "9 \times10^{4}" → "9 \times 10^{4}"
+    t = re.sub(r"\\times(?=\S)", "\\times ", t)
+    return SPACE_RE.sub(" ", t)
 
 
 class LChar:
@@ -384,8 +426,8 @@ def collect_raster_placements(doc, furniture):
     return out
 
 
-def render_clip(page, rect, out_fn):
-    pm = page.get_pixmap(matrix=fitz.Matrix(2, 2), clip=fitz.Rect(rect))
+def render_clip(page, rect, out_fn, scale=3.0):
+    pm = page.get_pixmap(matrix=fitz.Matrix(scale, scale), clip=fitz.Rect(rect))
     pm.save(out_fn)
 
 
@@ -581,7 +623,7 @@ def render_question_block(doc, pno, q, col, split_x, q_top, q_bottom, img_dir):
     rect = fitz.Rect(x0, q_top - 3, x1, q_bottom - 3)
     fname = "Q%d_block.png" % q["number"]
     try:
-        render_clip(doc[pno], rect, os.path.join(img_dir, fname))
+        render_clip(doc[pno], rect, os.path.join(img_dir, fname), scale=3.0)
     except Exception:
         return None
     q["text"] = ""
@@ -616,7 +658,16 @@ def render_option_cells_and_blocks(doc, questions, lines_per_page, splits,
         idx = next(i for i, (_, n) in enumerate(marker_grid[pno][col])
                    if n == q["number"])
         q_top = tops[idx]
-        q_bottom = tops[idx + 1] if idx + 1 < len(tops) else 838.0
+        if idx + 1 < len(tops):
+            q_bottom = tops[idx + 1]
+        else:
+            # Last question on the column: crop to the last option marker
+            # (+ a small pad) instead of the raw page bottom, so tall
+            # screenshots don't include empty space below the question.
+            last4 = [m for m in word_markers[pno][col]
+                     if m[0] == 4 and m[2] >= q_top]
+            q_bottom = (max(m[2] for m in last4) + 28) if last4 else 838.0
+            q_bottom = min(q_bottom, 838.0)
         garbled = [oi for oi, o in enumerate(q["options"], start=1)
                    if o["text"] and is_garbled_text(o["text"])]
         own_marks = [m for m in word_markers[pno][col]
@@ -929,6 +980,17 @@ def main():
     render_option_cells_and_blocks(doc, valid, lines_per_page, splits,
                                    marker_grid, img_dir)
     doc.close()
+
+    # ---- polish text into clean LaTeX math markup ----
+    for q in valid:
+        q["text"] = polish_math(q["text"])
+        for opt in q["options"]:
+            opt["text"] = polish_math(opt["text"])
+        for sol in q.get("solution", []):
+            if isinstance(sol, dict):
+                sol["text"] = polish_math(sol.get("text", ""))
+            else:
+                q["solution"] = [polish_math(s) for s in q["solution"]]
 
     out = {
         "key": "neet-2025",

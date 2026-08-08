@@ -69,23 +69,23 @@
   {
    "section": "PHYSICS",
    "number": 3,
-   "text": "An electron (mass 9 × 10^{–31} kg and charge 1.6 ×10^{–19} C) moving with speed c/100 (c = speed of light) is injected into a magnetic field B of magnitude 9 × 10^{–4} T perpendicular to its direction of motion. We wish to apply an uniform electric E together with the magnetic field so that the electron does not deflect from its path. Then (speed of light c = 3 × 10^{8} ms^{–1})",
+   "text": "An electron (mass 9 \\times 10^{–31} kg and charge 1.6 \\times 10^{–19} C) moving with speed c/100 (c = speed of light) is injected into a magnetic field B of magnitude 9 \\times 10^{–4} T perpendicular to its direction of motion. We wish to apply an uniform electric E together with the magnetic field so that the electron does not deflect from its path. Then (speed of light c = 3 \\times 10^{8} ms^{–1})",
    "options": [
     {
      "label": "1",
-     "text": "E is perpendicular to B and its magnitude is 27 × 10^{4} V m^{–1}"
+     "text": "E is perpendicular to B and its magnitude is 27 \\times 10^{4} V m^{–1}"
     },
     {
      "label": "2",
-     "text": "E is perpendicular to B and its magnitude is 27 × 10^{2} V m^{–1}"
+     "text": "E is perpendicular to B and its magnitude is 27 \\times 10^{2} V m^{–1}"
     },
     {
      "label": "3",
-     "text": "E is parallel to B and its magnitude is 27 × 10^{2} V m^{–1}"
+     "text": "E is parallel to B and its magnitude is 27 \\times 10^{2} V m^{–1}"
     },
     {
      "label": "4",
-     "text": "E is parallel to B and its magnitude is 27 × 10^{4} V m^{–1}"
+     "text": "E is parallel to B and its magnitude is 27 \\times 10^{4} V m^{–1}"
     }
    ],
    "answers": [],
@@ -96,7 +96,7 @@
   {
    "section": "PHYSICS",
    "number": 4,
-   "text": "There are two inclined surfaces of equal length (L) and same angle of inclination 45º with the horizontal. One of them is rough and the other is perfectly smooth A given body takes 2 times as much time to slide down on rough surface than on the smooth surface. The coefficient of kinetic friction (μk) between the object and the rough surface is close to",
+   "text": "There are two inclined surfaces of equal length (L) and same angle of inclination 45° with the horizontal. One of them is rough and the other is perfectly smooth A given body takes 2 times as much time to slide down on rough surface than on the smooth surface. The coefficient of kinetic friction (μk) between the object and the rough surface is close to",
    "options": [
     {
      "label": "1",
@@ -244,23 +244,23 @@
   {
    "section": "PHYSICS",
    "number": 9,
-   "text": "The electric field in a plane electromagnetic wave is given by Ez = 60 cos (5x + 1.5 ×10^{9} t)V/m. Then expression for the corresponding magnetic field is (here subscripts denote the direction of the field):",
+   "text": "The electric field in a plane electromagnetic wave is given by Ez = 60 cos (5x + 1.5 \\times 10^{9} t)V/m. Then expression for the corresponding magnetic field is (here subscripts denote the direction of the field):",
    "options": [
     {
      "label": "1",
-     "text": "By = 2 × 10^{–7} cos (5x + 1.5 × 10^{9}t)T"
+     "text": "By = 2 \\times 10^{–7} cos (5x + 1.5 \\times 10^{9}t)T"
     },
     {
      "label": "2",
-     "text": "Bx = 2 × 10^{–7} cos (5x + 1.5 × 10^{9}t)T"
+     "text": "Bx = 2 \\times 10^{–7} cos (5x + 1.5 \\times 10^{9}t)T"
     },
     {
      "label": "3",
-     "text": "Bz = 60cos (5x + 1.5 × 10^{9}t)T"
+     "text": "Bz = 60cos (5x + 1.5 \\times 10^{9}t)T"
     },
     {
      "label": "4",
-     "text": "By = 60sin (5x + 1.5 × 10^{9}t)T"
+     "text": "By = 60sin (5x + 1.5 \\times 10^{9}t)T"
     }
    ],
    "answers": [],
@@ -379,7 +379,7 @@
   {
    "section": "PHYSICS",
    "number": 14,
-   "text": "An oxygen cylinder of volume 30 litre has 18.20 moles of oxygen. After some oxygen is withdrawn from the cylinder, its gauge pressure drops to 11 atmospheric pressure at temperature 27ºC. The mass of the oxygen withdrawn from the cylinder is nearly equal to : \\frac{100−1−1}{12} [Given, R = J mol K , and molecular mass of O2 = 32, 1 atm pressure = 1.01 ×10^{5} N/m^{2}]",
+   "text": "An oxygen cylinder of volume 30 litre has 18.20 moles of oxygen. After some oxygen is withdrawn from the cylinder, its gauge pressure drops to 11 atmospheric pressure at temperature 27°C. The mass of the oxygen withdrawn from the cylinder is nearly equal to : \\frac{100−1−1}{12} [Given, R = J mol K , and molecular mass of O2 = 32, 1 atm pressure = 1.01 \\times 10^{5} N/m^{2}]",
    "options": [
     {
      "label": "1",
@@ -988,7 +988,7 @@
   {
    "section": "PHYSICS",
    "number": 35,
-   "text": "An electric dipole with dipole moment 5 × 10^{–6} Cm is aligned with the direction of a uniform electric field of magnitude 4 × 10^{5} N/C. The dipole is then rotated through an angle of 60° with respect to the electric field. The change in the potential energy of the dipole is:",
+   "text": "An electric dipole with dipole moment 5 \\times 10^{–6} Cm is aligned with the direction of a uniform electric field of magnitude 4 \\times 10^{5} N/C. The dipole is then rotated through an angle of 60° with respect to the electric field. The change in the potential energy of the dipole is:",
    "options": [
     {
      "label": "1",
@@ -1603,7 +1603,7 @@
   {
    "section": "CHEMISTRY",
    "number": 56,
-   "text": "If the half-life (t1/2) for a first order reaction is 1 minute, then the time required for 99.9% completion of the reaction is closet to:",
+   "text": "If the half-life (t\\frac{1}{2}) for a first order reaction is 1 minute, then the time required for 99.9% completion of the reaction is closet to:",
    "options": [
     {
      "label": "1",
@@ -2102,7 +2102,7 @@
     },
     {
      "label": "2",
-     "text": "2.077×10^{5}"
+     "text": "2.077 \\times 10^{5}"
     },
     {
      "label": "3",
@@ -3449,7 +3449,7 @@
   {
    "section": "BIOLOGY",
    "number": 122,
-   "text": "Match List-I with List-II. Choose the option with all correct matches.\nList-I | -\nA.ChlorophyllaI.Yellow-green  |  \nB.ChlorophyllbII.Yellow  |  \nC.XanthophyllsIII.Blue-green  |  \nD.CarotenoidsIV.Yellowto  |  \nYellow-orange  |",
+   "text": "Match List-I with List-II. Choose the option with all correct matches.\nList-I | -\nA.ChlorophyllaI.Yellow-green | B.ChlorophyllbII.Yellow | C.XanthophyllsIII.Blue-green | D.CarotenoidsIV.Yellowto | Yellow-orange |",
    "options": [
     {
      "label": "1",
@@ -3870,7 +3870,7 @@
   {
    "section": "BIOLOGY",
    "number": 137,
-   "text": "Match List I with List II. Choose the option with all correct matches.\nA.AdenosineI.Nitrogenbase  |  ListIListII\nB.AdenylicacidII.Nucleotide  |  \nC.AdenineIII.Nucleoside  |  \nD.AlanineIV.Aminoacid  |",
+   "text": "Match List I with List II. Choose the option with all correct matches.\nA.AdenosineI.Nitrogenbase | ListIListII\nB.AdenylicacidII.Nucleotide | C.AdenineIII.Nucleoside | D.AlanineIV.Aminoacid |",
    "options": [
     {
      "label": "1",
@@ -3978,7 +3978,7 @@
   {
    "section": "BIOLOGY",
    "number": 141,
-   "text": "Match List I with List II. Choose the option with all correct matches.\nA.ScutellumI.Persistentnucellus  |  ListIListII\nB.Non-albuminousII.Cotyledonof  |  \nseedMonocotseed  |  \nC.EpiblastIII.Groundnut  |  \nD.PerispermIV.Rudimentary  |  \ncotyledon  |",
+   "text": "Match List I with List II. Choose the option with all correct matches.\nA.ScutellumI.Persistentnucellus | ListIListII\nB.Non-albuminousII.Cotyledonof | seedMonocotseed | C.EpiblastIII.Groundnut | D.PerispermIV.Rudimentary | cotyledon |",
    "options": [
     {
      "label": "1",
@@ -4279,15 +4279,15 @@
    "options": [
     {
      "label": "1",
-     "text": "1/4"
+     "text": "\\frac{1}{4}"
     },
     {
      "label": "2",
-     "text": "1/2"
+     "text": "\\frac{1}{2}"
     },
     {
      "label": "3",
-     "text": "1/8"
+     "text": "\\frac{1}{8}"
     },
     {
      "label": "4",
@@ -4545,7 +4545,7 @@
   {
    "section": "BIOLOGY",
    "number": 162,
-   "text": "Match List-I with List-II. Choose the option with all correct matches.\nList-I | -\nA.PteridophyteI.Salvia  |  \nB.BryophyteII.Ginkgo  |  \nC.AngiospermIII.Polytrichum  |  \nD.GymnospermIV.Salvinia  |",
+   "text": "Match List-I with List-II. Choose the option with all correct matches.\nList-I | -\nA.PteridophyteI.Salvia | B.BryophyteII.Ginkgo | C.AngiospermIII.Polytrichum | D.GymnospermIV.Salvinia |",
    "options": [
     {
      "label": "1",
@@ -4599,7 +4599,7 @@
   {
    "section": "BIOLOGY",
    "number": 164,
-   "text": "Match List-I with List-II. Choose the option with all correct matches.\nList-I | -\nA.TheEvilI.Cryopreservation  |  \nQuartet  |  \nB.ExsituII.Alienspecies  |  \nconservationinvasion  |  \nC.LantanaIII.Causesof  |  \ncamarabiodiversitylosses  |  \nD.DodoIV.Extinction  |",
+   "text": "Match List-I with List-II. Choose the option with all correct matches.\nList-I | -\nA.TheEvilI.Cryopreservation | Quartet | B.ExsituII.Alienspecies | conservationinvasion | C.LantanaIII.Causesof | camarabiodiversitylosses | D.DodoIV.Extinction |",
    "options": [
     {
      "label": "1",

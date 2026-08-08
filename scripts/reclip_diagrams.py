@@ -177,7 +177,7 @@ def drawing_clusters(page, min_area=FIGURE_MIN_AREA, min_edge=FIGURE_MIN_EDGE):
     return result
 
 
-def render_clip(page, rect, out_fn, scale=2.5):
+def render_clip(page, rect, out_fn, scale=3.0):
     """Render a page region to an image file at given scale."""
     # Pad the rect slightly
     padded = fitz.Rect(rect.x0 - 4, rect.y0 - 4, rect.x1 + 4, rect.y1 + 4)
@@ -334,7 +334,7 @@ def main():
             suffix = "" if fig_count == 1 else f"_{fig_count}"
             fname = f"Q{qnum}_fig{suffix}.png"
             out_path = os.path.join(IMG_DIR, fname)
-            render_clip(clip_page, cl, out_path, scale=2.5)
+            render_clip(clip_page, cl, out_path)
             q["images"].append(fname)
             clipped += 1
             print(f"  Q{qnum}: clipped figure -> {fname} ({int(cl.width)}x{int(cl.height)})")
