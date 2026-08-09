@@ -50,18 +50,19 @@ function MatchQuestionRenderer({ text, className }: { text: string; className: s
       continue;
     }
 
-    if (/^choose the correct/i.test(line) || /^options:/i.test(line)) {
+    if (/^choose the correct/i.test(line) || /^choose the option/i.test(line) || /^options:/i.test(line)) {
       footer = line;
       continue;
     }
 
-    // Header line detection
-    if (/^list\s*-\s*i/i.test(line) || /^list\s*1/i.test(line)) {
-      col1Header = line;
+    // Header line detection — check List-II first and anchor with \b so the
+    // List-I pattern cannot swallow a "List-II" line.
+    if (/^list\s*-\s*ii\b/i.test(line) || /^list\s*2/i.test(line)) {
+      col2Header = line;
       continue;
     }
-    if (/^list\s*-\s*ii/i.test(line) || /^list\s*2/i.test(line)) {
-      col2Header = line;
+    if (/^list\s*-\s*i\b/i.test(line) || /^list\s*1/i.test(line)) {
+      col1Header = line;
       continue;
     }
 

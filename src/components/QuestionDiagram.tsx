@@ -12,7 +12,7 @@ export default function QuestionDiagram({ figureUrl }: QuestionDiagramProps) {
           key={url}
           src={url}
           alt="Question figure"
-          className="max-h-64 max-w-full rounded border border-gray-300 bg-white"
+          className="max-h-96 max-w-full w-auto rounded border border-gray-300 bg-white object-contain"
           loading="lazy"
         />
       ))}

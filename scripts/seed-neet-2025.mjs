@@ -258,6 +258,7 @@ async function seed() {
 
   // Insert options
   const optionRows = [];
+  const keyRows = [];
   for (const [idx, q] of data.questions.entries()) {
     const question = byPosition.get(idx + 1);
     if (!question) {
@@ -273,6 +274,12 @@ async function seed() {
         figure_url: opt.figure || opt.image ? `${PUB_BASE}/neet-2025/${opt.figure ?? opt.image}` : null,
       });
     }
+    const sol = Array.isArray(q.solution) ? q.solution.join("\n") : q.solution;
+    keyRows.push({
+      question_id: question.id,
+      correct_answer: (q.answers ?? []).map((a) => LABEL_TO_LETTER[a]).join(","),
+      solution: sol?.trim() ? sol.trim() : null,
+    });
   }
 
   for (const chunk of chunked(optionRows)) {
@@ -280,6 +287,12 @@ async function seed() {
     if (optError) throw new Error(`options insert failed: ${optError.message}`);
   }
   console.log(`  Options: ${optionRows.length} inserted`);
+
+  for (const chunk of chunked(keyRows)) {
+    const { error: keyError } = await supabase.from("question_keys").insert(chunk);
+    if (keyError) throw new Error(`keys insert failed: ${keyError.message}`);
+  }
+  console.log(`  Keys: ${keyRows.length} inserted`);
 
   console.log(`\n✅ NEET 2025 seeded successfully!`);
   console.log(`  Paper ID: ${paperId}`);

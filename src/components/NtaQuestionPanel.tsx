@@ -332,7 +332,7 @@ export default function NtaQuestionPanel({
                           <img
                             src={option.figureUrl}
                             alt={`Option ${option.label}`}
-                            className="max-w-full h-auto rounded-sm"
+                            className="max-h-64 max-w-full h-auto object-contain rounded-sm"
                           />
                         )
                       )}
