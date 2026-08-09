@@ -1,5 +1,6 @@
-import { useEffect, useMemo, useState } from 'react';
+import { useCallback, useEffect, useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
+import { AnimatePresence, motion } from 'motion/react';
 import {
   Shield,
   ShieldAlert,
@@ -12,13 +13,16 @@ import {
   BarChart3,
   Eye,
   Loader2,
+  Ban,
+  AlertTriangle,
+  X,
 } from 'lucide-react';
 import { useAuth } from '../context/auth-context';
 import { isAdmin, formatINR, formatDateTime } from '../lib/admin';
 import { supabase } from '../lib/supabase';
-import type { AdminPurchase, AdminUser, PageView } from '../types';
+import type { AdminCancellation, AdminPurchase, AdminUser, PageView } from '../types';
 
-type Tab = 'overview' | 'users' | 'purchases' | 'visitors';
+type Tab = 'overview' | 'users' | 'purchases' | 'cancellations' | 'visitors';
 
 interface Counts {
   totalUsers: number;
@@ -35,6 +39,7 @@ const tabs: { id: Tab; label: string; icon: typeof Users }[] = [
   { id: 'overview', label: 'Overview', icon: Shield },
   { id: 'users', label: 'Users & Logins', icon: Users },
   { id: 'purchases', label: 'Purchases', icon: ShoppingCart },
+  { id: 'cancellations', label: 'Cancellations', icon: Ban },
   { id: 'visitors', label: 'Visitors', icon: BarChart3 },
 ];
 
@@ -52,51 +57,61 @@ export default function Admin() {
   const [counts, setCounts] = useState<Counts | null>(null);
   const [users, setUsers] = useState<AdminUser[]>([]);
   const [purchases, setPurchases] = useState<AdminPurchase[]>([]);
+  const [cancellations, setCancellations] = useState<AdminCancellation[]>([]);
   const [views7d, setViews7d] = useState<PageView[]>([]);
+  const [cancelTarget, setCancelTarget] = useState<AdminPurchase | null>(null);
+  const [cancelLoading, setCancelLoading] = useState(false);
+  const [cancelError, setCancelError] = useState<string | null>(null);
+
+  const fetchAll = useCallback(async () => {
+    const dayStart = new Date();
+    dayStart.setHours(0, 0, 0, 0);
+    const weekAgo = new Date();
+    weekAgo.setDate(weekAgo.getDate() - 6);
+    weekAgo.setHours(0, 0, 0, 0);
+
+    const [usersRes, purchasesRes, viewsRes, statsRes, cancelsRes, viewCounts] = await Promise.all([
+      supabase.rpc('admin_get_users'),
+      supabase.rpc('admin_get_purchases'),
+      supabase.from('page_views').select('*').gte('created_at', weekAgo.toISOString()).order('created_at', { ascending: false }).limit(5000),
+      supabase.rpc('admin_stats'),
+      supabase.rpc('admin_get_cancellations'),
+      Promise.all([
+        headCount(supabase.from('page_views').select('*')),
+        headCount(supabase.from('page_views').select('*').gte('created_at', dayStart.toISOString())),
+      ]),
+    ]);
+
+    if (usersRes.error) throw usersRes.error;
+    if (purchasesRes.error) throw purchasesRes.error;
+    if (viewsRes.error) throw viewsRes.error;
+    if (statsRes.error) throw statsRes.error;
+    if (cancelsRes.error) throw cancelsRes.error;
+
+    const [totalViews, viewsToday] = viewCounts;
+    const stats = (statsRes.data ?? {}) as Record<string, number>;
+
+    setUsers((usersRes.data ?? []) as AdminUser[]);
+    setPurchases((purchasesRes.data ?? []) as AdminPurchase[]);
+    setCancellations((cancelsRes.data ?? []) as AdminCancellation[]);
+    setViews7d((viewsRes.data ?? []) as PageView[]);
+    setCounts({
+      totalUsers: stats.total_users ?? 0,
+      loggedIn: stats.logged_in ?? 0,
+      active7d: stats.active_7d ?? 0,
+      totalPurchases: stats.total_purchases ?? 0,
+      revenue: stats.revenue ?? 0,
+      activeSubs: stats.active_subs ?? 0,
+      totalViews,
+      viewsToday,
+    });
+  }, []);
 
   useEffect(() => {
     let cancelled = false;
     (async () => {
       try {
-        const dayStart = new Date();
-        dayStart.setHours(0, 0, 0, 0);
-        const weekAgo = new Date();
-        weekAgo.setDate(weekAgo.getDate() - 6);
-        weekAgo.setHours(0, 0, 0, 0);
-
-        const [usersRes, purchasesRes, viewsRes, statsRes, viewCounts] = await Promise.all([
-          supabase.rpc('admin_get_users'),
-          supabase.rpc('admin_get_purchases'),
-          supabase.from('page_views').select('*').gte('created_at', weekAgo.toISOString()).order('created_at', { ascending: false }).limit(5000),
-          supabase.rpc('admin_stats'),
-          Promise.all([
-            headCount(supabase.from('page_views').select('*')),
-            headCount(supabase.from('page_views').select('*').gte('created_at', dayStart.toISOString())),
-          ]),
-        ]);
-
-        if (cancelled) return;
-        if (usersRes.error) throw usersRes.error;
-        if (purchasesRes.error) throw purchasesRes.error;
-        if (viewsRes.error) throw viewsRes.error;
-        if (statsRes.error) throw statsRes.error;
-
-        const [totalViews, viewsToday] = viewCounts;
-        const stats = (statsRes.data ?? {}) as Record<string, number>;
-
-        setUsers((usersRes.data ?? []) as AdminUser[]);
-        setPurchases((purchasesRes.data ?? []) as AdminPurchase[]);
-        setViews7d((viewsRes.data ?? []) as PageView[]);
-        setCounts({
-          totalUsers: stats.total_users ?? 0,
-          loggedIn: stats.logged_in ?? 0,
-          active7d: stats.active_7d ?? 0,
-          totalPurchases: stats.total_purchases ?? 0,
-          revenue: stats.revenue ?? 0,
-          activeSubs: stats.active_subs ?? 0,
-          totalViews,
-          viewsToday,
-        });
+        await fetchAll();
       } catch (e) {
         if (!cancelled) setError(e instanceof Error ? e.message : 'Failed to load admin data.');
       } finally {
@@ -106,7 +121,28 @@ export default function Admin() {
     return () => {
       cancelled = true;
     };
-  }, []);
+  }, [fetchAll]);
+
+  const handleCancelSubscription = async () => {
+    if (!cancelTarget) return;
+    setCancelLoading(true);
+    setCancelError(null);
+    const { data, error } = await supabase.rpc('admin_cancel_subscription', {
+      p_subscription_id: cancelTarget.id,
+    });
+    if (error || !data?.ok) {
+      setCancelError(error?.message ?? data?.error ?? 'Failed to cancel subscription.');
+      setCancelLoading(false);
+      return;
+    }
+    setCancelTarget(null);
+    setCancelLoading(false);
+    try {
+      await fetchAll();
+    } catch (e) {
+      setError(e instanceof Error ? e.message : 'Failed to refresh admin data.');
+    }
+  };
 
   const dailyViews = useMemo(() => {
     const buckets: { label: string; count: number }[] = [];
@@ -340,27 +376,92 @@ export default function Admin() {
                       <th className="py-3 pr-4 font-medium">Amount</th>
                       <th className="py-3 pr-4 font-medium">Status</th>
                       <th className="py-3 pr-4 font-medium">Order ID</th>
-                      <th className="py-3 font-medium">Purchased</th>
+                      <th className="py-3 pr-4 font-medium">Purchased</th>
+                      <th className="py-3 font-medium">Actions</th>
                     </tr>
                   </thead>
                   <tbody>
-                    {purchases.map((p) => (
-                      <tr key={p.id} className="border-b border-gray-100 last:border-0">
-                        <td className="py-3 pr-4 font-medium text-gray-900">{p.email ?? 'Unknown'}</td>
-                        <td className="py-3 pr-4 text-gray-600">{p.plan_name}</td>
-                        <td className="py-3 pr-4 font-semibold text-gray-900">{formatINR(p.amount)}</td>
-                        <td className="py-3 pr-4">
-                          <span className={`text-xs font-medium px-2 py-1 rounded-md ${p.status === 'active' ? 'bg-green-50 text-green-600' : 'bg-gray-100 text-gray-500'}`}>
-                            {p.status}
-                          </span>
-                        </td>
-                        <td className="py-3 pr-4 text-gray-500 font-mono text-xs">{p.razorpay_order_id ?? '—'}</td>
-                        <td className="py-3 text-gray-600">{formatDateTime(p.created_at)}</td>
-                      </tr>
-                    ))}
+                    {purchases.map((p) => {
+                      const active = p.status === 'active' && new Date(p.ends_at) > new Date();
+                      return (
+                        <tr key={p.id} className="border-b border-gray-100 last:border-0">
+                          <td className="py-3 pr-4 font-medium text-gray-900">{p.email ?? 'Unknown'}</td>
+                          <td className="py-3 pr-4 text-gray-600">{p.plan_name}</td>
+                          <td className="py-3 pr-4 font-semibold text-gray-900">{formatINR(p.amount)}</td>
+                          <td className="py-3 pr-4">
+                            <span
+                              className={`text-xs font-medium px-2 py-1 rounded-md ${
+                                p.status === 'active'
+                                  ? 'bg-green-50 text-green-600'
+                                  : p.status === 'cancelled'
+                                    ? 'bg-red-50 text-red-600'
+                                    : 'bg-gray-100 text-gray-500'
+                              }`}
+                            >
+                              {p.status}
+                            </span>
+                          </td>
+                          <td className="py-3 pr-4 text-gray-500 font-mono text-xs">{p.razorpay_order_id ?? '—'}</td>
+                          <td className="py-3 pr-4 text-gray-600">{formatDateTime(p.created_at)}</td>
+                          <td className="py-3">
+                            {active ? (
+                              <button
+                                type="button"
+                                onClick={() => {
+                                  setCancelError(null);
+                                  setCancelTarget(p);
+                                }}
+                                className="inline-flex items-center gap-1.5 text-xs font-medium px-2.5 py-1.5 rounded-lg bg-red-50 text-red-600 hover:bg-red-100 transition-colors"
+                              >
+                                <Ban className="w-3.5 h-3.5" />
+                                Cancel
+                              </button>
+                            ) : (
+                              <span className="text-xs text-gray-300">—</span>
+                            )}
+                          </td>
+                        </tr>
+                      );
+                    })}
                     {purchases.length === 0 && (
                       <tr>
-                        <td colSpan={6} className="py-6 text-center text-gray-500">No purchases yet.</td>
+                        <td colSpan={7} className="py-6 text-center text-gray-500">No purchases yet.</td>
+                      </tr>
+                    )}
+                  </tbody>
+                </table>
+              </div>
+            )}
+
+            {tab === 'cancellations' && (
+              <div className="bg-white rounded-xl border border-gray-200 p-5 overflow-x-auto">
+                <h2 className="font-semibold text-gray-900 mb-1">Cancelled Subscriptions</h2>
+                <p className="text-xs text-gray-500 mb-4">
+                  Log of subscriptions cancelled from the admin panel. The student loses access immediately on cancellation.
+                </p>
+                <table className="w-full text-sm">
+                  <thead>
+                    <tr className="border-b border-gray-200 text-left text-xs text-gray-500">
+                      <th className="py-3 pr-4 font-medium">User</th>
+                      <th className="py-3 pr-4 font-medium">Plan</th>
+                      <th className="py-3 pr-4 font-medium">Amount</th>
+                      <th className="py-3 pr-4 font-medium">Cancelled By</th>
+                      <th className="py-3 font-medium">Cancelled At</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {cancellations.map((c) => (
+                      <tr key={c.id} className="border-b border-gray-100 last:border-0">
+                        <td className="py-3 pr-4 font-medium text-gray-900">{c.email ?? 'Unknown'}</td>
+                        <td className="py-3 pr-4 text-gray-600">{c.plan_name}</td>
+                        <td className="py-3 pr-4 font-semibold text-gray-900">{formatINR(c.amount)}</td>
+                        <td className="py-3 pr-4 text-gray-600">{c.cancelled_by}</td>
+                        <td className="py-3 text-gray-600">{formatDateTime(c.cancelled_at)}</td>
+                      </tr>
+                    ))}
+                    {cancellations.length === 0 && (
+                      <tr>
+                        <td colSpan={5} className="py-6 text-center text-gray-500">No cancellations yet.</td>
                       </tr>
                     )}
                   </tbody>
@@ -461,6 +562,78 @@ export default function Admin() {
           </>
         )}
       </div>
+
+      <AnimatePresence>
+        {cancelTarget && (
+          <motion.div
+            className="fixed inset-0 z-[60] bg-black/50 backdrop-blur-sm flex items-center justify-center px-4"
+            onClick={() => { if (!cancelLoading) setCancelTarget(null); }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.2 }}
+          >
+            <motion.div
+              className="bg-white rounded-2xl shadow-2xl max-w-md w-full p-8 relative"
+              onClick={(e) => e.stopPropagation()}
+              initial={{ opacity: 0, scale: 0.92, y: 16 }}
+              animate={{ opacity: 1, scale: 1, y: 0 }}
+              exit={{ opacity: 0, scale: 0.95, y: -8 }}
+              transition={{ type: 'spring', stiffness: 380, damping: 28 }}
+            >
+              <button
+                onClick={() => setCancelTarget(null)}
+                disabled={cancelLoading}
+                className="absolute right-4 top-4 text-gray-400 hover:text-gray-600 transition-colors"
+                aria-label="Close"
+              >
+                <X className="w-5 h-5" />
+              </button>
+
+              <div className="w-14 h-14 bg-red-50 rounded-2xl flex items-center justify-center mx-auto mb-5">
+                <AlertTriangle className="w-7 h-7 text-red-500" />
+              </div>
+
+              <h2 className="text-xl font-bold text-gray-900 text-center mb-2">Cancel subscription?</h2>
+              <p className="text-sm text-gray-500 text-center mb-6 leading-relaxed">
+                Do you really want to cancel the <strong className="text-gray-700">{cancelTarget.plan_name}</strong>{' '}
+                subscription for <strong className="text-gray-700">{cancelTarget.email ?? 'this student'}</strong>?
+                The student will immediately lose access to paid tests.
+              </p>
+
+              {cancelError && (
+                <div className="mb-4 p-3 rounded-xl bg-red-50 border border-red-200 text-sm text-red-600">
+                  {cancelError}
+                </div>
+              )}
+
+              <div className="flex gap-3">
+                <button
+                  type="button"
+                  onClick={() => setCancelTarget(null)}
+                  disabled={cancelLoading}
+                  className="flex-1 py-2.5 rounded-xl border-2 border-gray-200 text-sm font-semibold text-gray-700 hover:border-gray-300 transition-colors disabled:opacity-60"
+                >
+                  Keep subscription
+                </button>
+                <button
+                  type="button"
+                  onClick={handleCancelSubscription}
+                  disabled={cancelLoading}
+                  className="flex-1 py-2.5 rounded-xl bg-red-600 text-sm font-semibold text-white hover:bg-red-700 transition-colors disabled:opacity-60 inline-flex items-center justify-center gap-2"
+                >
+                  {cancelLoading ? (
+                    <Loader2 className="w-4 h-4 animate-spin" />
+                  ) : (
+                    <Ban className="w-4 h-4" />
+                  )}
+                  Yes, cancel it
+                </button>
+              </div>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
 }

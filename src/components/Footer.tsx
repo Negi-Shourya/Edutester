@@ -58,6 +58,16 @@ export default function Footer() {
                   JEE Main Syllabus
                 </a>
               </li>
+              <li>
+                <a
+                  href="https://nta.ac.in/Download/Notice/Notice_20260108180635.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-white transition-colors"
+                >
+                  NEET (UG) Syllabus
+                </a>
+              </li>
               <li><a href="#" className="hover:text-white transition-colors">Preparation Tips</a></li>
               {showPricing && <li><Link to="/pricing#faq" className="hover:text-white transition-colors">FAQ</Link></li>}
             </ul>

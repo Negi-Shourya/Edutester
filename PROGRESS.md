@@ -53,12 +53,38 @@
   subject-wise score/accuracy bars, score trend chart, full test history with
   per-subject chips, and focus areas from weakest subjects
 
+## Phase 6 — NEET Section ✅
+
+- NEET 2025 paper added (200 Qs, 4 sections: Physics/Chemistry/Botany/Zoology), NTA-style
+  interface, from the official PDF (`neet/2025 Neet.pdf`)
+- Extraction pipeline in `scripts/`: PDF → text + figures → DB seed → patch answers/images;
+  figures curated and uploaded to Supabase Storage (`figure_url` per question/option)
+- Math markup in DB rendered via KaTeX (`VectorText`): `\vec{}`, `\frac{n}{d}`, `\sqrt{}`,
+  `_{…}`/`^{…}`, `\theta` etc.; unicode sub/sup chars and Greek pass through as text
+- Match-the-following (List-I/II table) and Statement I/II questions rendered by
+  `FormattedQuestionText`
+- Debugged mojibake from PDF extraction (last pass, 18 questions): Q5, Q11, Q14, Q20, Q29,
+  Q40, Q44, Q51, Q55, Q59, Q68, Q69, Q73, Q86, Q87, Q88, Q152, Q179
+  - Fixed sub/superscripts (F_A/F_B, K_{a1}, O_{2}…), Greek letters (π, θ, ⇌, ∆H), degree
+    signs (°), stacked fractions (`\frac{100}{12}`), mangled stems (Q20, Q59), match-list
+    formatting (Q69), watermark junk (`■■ PW Web/App - http…`), option minus signs (Q55)
+  - Verified against the PDF (incl. vector drawings for Q44's √ signs) and web sources
+    (Q14 fraction, Q40 diode biasing); answer keys untouched (e.g. Q14→C, Q40→B, Q59→D)
+  - Full-paper char scan: 34 distinct non-ASCII chars, all legitimate — zero mojibake left
+- Kept fix scripts: `fix-neet-2025-subscripts.mjs`, `fix-neet-2025-q46-q148.mjs`,
+  `fix-neet-2025-q90-q92.mjs`, `fix-neet-2025-match-questions.mjs`,
+  `patch-neet-2025-answers.mjs`, `patch-neet-2025-images.mjs`,
+  `cleanup-neet-2025-uncurated-images.mjs`
+- Commits (pushed to origin/main): `8372ad6` added neet section → `0464a8d` neet 2025
+  questions + katex rendering → `45ef184` redid neet 2025 (katex markup, clean screenshots,
+  reseed) → `5cd90b5` debugged the Neet section
+
 ## Content & Rendering
 
-- 675 questions across 8 papers in Supabase (physics/chem/maths sections)
+- 875 questions across 9 papers in Supabase (physics/chem/maths/botany/zoology sections)
 - NTA-style rendering: vector arrows (`\vec{}`), sub/superscript markup
   (`_{...}`, `_X`, `^{...}`, `^X`) and unicode sub/sup chars → real
-  `<sub>`/`<sup>` elements (font-safe)
+  `<sub>`/`<sup>` elements (font-safe); fractions/commands via KaTeX
 
 ## Marketing/Copy (latest polish)
 
@@ -83,4 +109,6 @@
       subscription starts alongside the existing one)
 - [ ] Chapter-level weak-area analysis (requires chapter metadata on questions)
 - [ ] Auto-generate PDF performance reports (optional)
-- [ ] Add more papers as they become available
+- [ ] Scan the older papers in the DB for the same PDF-extraction mojibake
+      (reuse the neet-2025 char-scan approach) and fix them
+- [ ] Add more papers as they become available (e.g. JEE Main 2025)

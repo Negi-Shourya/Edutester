@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link, Navigate } from 'react-router-dom';
-import { GraduationCap, Loader2, Lock, Zap, ShieldCheck } from 'lucide-react';
+import { GraduationCap, Loader2, Lock, Zap, ShieldCheck, AlertCircle } from 'lucide-react';
 import { useAuth } from '../context/auth-context';
 import GoogleIcon from '../components/GoogleIcon';
 import { setExam, type ExamType } from '../lib/exam';
@@ -11,17 +11,32 @@ const perks = [
   { icon: ShieldCheck, text: 'Your details stay private and secure' },
 ];
 
+const termsSummary = [
+  'Your account data is used only to run the service — practice tests, scores and progress.',
+  'We do not sell, rent or share your personal data with third parties.',
+  'Test attempts and results are stored so your dashboard can show your progress.',
+  'You can delete your account at any time and your data is removed.',
+];
+
 export default function Signup() {
   const { user, loading, signInWithGoogle, authError } = useAuth();
   const [error, setError] = useState<string | null>(null);
   const [googleLoading, setGoogleLoading] = useState(false);
   const [track, setTrack] = useState<ExamType>('jee');
+  const [acceptedTerms, setAcceptedTerms] = useState(false);
+  const [termsError, setTermsError] = useState(false);
+  const [showTerms, setShowTerms] = useState(false);
 
   if (!loading && user) {
     return <Navigate to="/dashboard" replace />;
   }
 
   const handleGoogle = async () => {
+    if (!acceptedTerms) {
+      setTermsError(true);
+      return;
+    }
+    setTermsError(false);
     setError(null);
     setGoogleLoading(true);
     try {
@@ -93,12 +108,61 @@ export default function Signup() {
             </div>
           </div>
 
+          {/* Terms & conditions */}
+          <div className="mb-5">
+            <label className="flex items-start gap-3 cursor-pointer select-none">
+              <input
+                type="checkbox"
+                checked={acceptedTerms}
+                onChange={(e) => {
+                  setAcceptedTerms(e.target.checked);
+                  if (e.target.checked) setTermsError(false);
+                }}
+                className="mt-0.5 w-4 h-4 accent-primary rounded"
+              />
+              <span className="text-xs text-gray-600 leading-relaxed">
+                I have read and agree to the{' '}
+                <button
+                  type="button"
+                  onClick={() => setShowTerms((s) => !s)}
+                  className="text-primary font-semibold hover:underline"
+                >
+                  Terms &amp; Conditions
+                </button>
+              </span>
+            </label>
+
+            {showTerms && (
+              <div className="mt-3 text-xs text-gray-500 rounded-xl bg-gray-50 border border-gray-200 p-3.5">
+                <p className="font-semibold text-gray-700 mb-1.5">Terms &amp; Conditions summary</p>
+                <ul className="list-disc pl-4 space-y-1.5">
+                  {termsSummary.map((point) => (
+                    <li key={point}>{point}</li>
+                  ))}
+                </ul>
+              </div>
+            )}
+
+            {termsError && (
+              <p className="mt-2 text-xs text-red-600 font-medium flex items-start gap-1.5">
+                <AlertCircle className="w-3.5 h-3.5 mt-0.5 shrink-0" />
+                Please read and accept the Terms &amp; Conditions before signing up.
+              </p>
+            )}
+          </div>
+
           <button
             type="button"
             onClick={handleGoogle}
             disabled={googleLoading}
-            className="w-full flex items-center justify-center gap-3 bg-white border-2 border-gray-200 rounded-2xl py-3.5 text-sm font-bold text-gray-800 hover:border-primary/50 hover:shadow-lg hover:shadow-primary/10 hover:-translate-y-0.5 transition-all duration-200 disabled:opacity-60 disabled:hover:translate-y-0"
-          >            {googleLoading ? (
+            aria-disabled={!acceptedTerms}
+            className={`w-full flex items-center justify-center gap-3 bg-white border-2 border-gray-200 rounded-2xl py-3.5 text-sm font-bold text-gray-800 transition-all duration-200 ${
+              acceptedTerms
+                ? 'hover:border-primary/50 hover:shadow-lg hover:shadow-primary/10 hover:-translate-y-0.5'
+                : 'opacity-60 cursor-not-allowed'
+            }`}
+          >
+            {googleLoading ? (
               <Loader2 className="w-5 h-5 animate-spin text-primary" />
             ) : (
               <GoogleIcon />

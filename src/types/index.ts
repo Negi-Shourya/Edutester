@@ -94,6 +94,18 @@ export interface AdminPurchase {
   created_at: string;
 }
 
+export interface AdminCancellation {
+  id: string;
+  subscription_id: string;
+  user_id: string;
+  email: string | null;
+  plan_id: string;
+  plan_name: string;
+  amount: number; // paise
+  cancelled_at: string;
+  cancelled_by: string;
+}
+
 export interface PageView {
   id: string;
   path: string;
@@ -107,7 +119,7 @@ export interface Subscription {
   plan_id: string;
   plan_name: string;
   amount: number; // paise
-  status: 'active' | 'expired';
+  status: 'active' | 'expired' | 'cancelled';
   razorpay_order_id: string | null;
   razorpay_payment_id: string | null;
   starts_at: string;
