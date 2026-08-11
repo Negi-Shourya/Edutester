@@ -1,0 +1,50 @@
+total questions: 180
+non-ascii / non-math chars found: [('–', 56), ('’', 7), ('√', 6), ('Ω', 3), ('Λ', 3), ('‘', 3), ('∆', 2), ('⇌', 2), ('⚥', 2), ('■', 2), ('“', 1), ('”', 1), ('—', 1)]
+
+degree sign as FFFD? 0
+questions w/ U+FFFD: []
+
+questions with \frac: 5
+questions with ^{}: 22
+questions with _{}: 4
+
+suspicious x10 patterns: 0
+
+questions with no text: [50, 57, 90, 92, 111, 119, 125]
+questions not having 4 options: []
+
+questions with images: 34
+  Q1: ['Q1_block.png']
+  Q6: ['Q6_fig.png']
+  Q7: ['Q7_block.png']
+  Q8: ['Q8_fig.png']
+  Q15: ['Q15_block.png']
+  Q16: ['Q16_fig.png']
+  Q19: ['Q19_fig.png']
+  Q24: ['Q24_block.png']
+  Q28: ['Q28_block.png']
+  Q30: ['Q30_block.png']
+  Q33: ['Q33_block.png', 'Q33_block2.png']
+  Q36: ['Q36_fig.png']
+  Q37: ['Q37_block.png']
+  Q39: ['Q39_fig.png']
+  Q40: ['Q40_fig.png', 'Q40_fig_2.png']
+  Q43: ['Q43_block.png']
+  Q44: ['Q44_block.png']
+  Q45: ['Q45_block.png']
+  Q50: ['Q50_block.png']
+  Q57: ['Q57_block.png']
+  Q59: ['Q59_fig.png', 'Q59_fig_2.png']
+  Q63: ['Q63_block.png']
+  Q65: ['Q65_fig.png', 'Q65_fig_2.png', 'Q65_fig_3.png', 'Q65_fig_4.png']
+  Q68: ['Q68_fig.png']
+  Q71: ['Q71_fig.png']
+  Q90: ['Q90_block.png']
+  Q92: ['Q92_block.png']
+  Q111: ['Q111_block.png']
+  Q119: ['Q119_block.png']
+  Q125: ['Q125_block.png']
+  Q126: ['Q126_fig.png', 'Q126_fig_2.png']
+  Q132: ['Q132_block.png', 'Q132_block2.png']
+  Q179: ['Q179_fig.png']
+  Q180: ['Q180_block.png']

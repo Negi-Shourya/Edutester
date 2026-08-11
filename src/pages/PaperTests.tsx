@@ -7,6 +7,7 @@ import PaywallModal from '../components/PaywallModal';
 import StaggerReveal, { StaggerItem } from '../components/StaggerReveal';
 import { useSubscriptionAccess } from '../lib/subscription';
 import { useAttemptScore } from '../hooks/useAttemptScore';
+import { getAttempts, type AttemptRow } from '../lib/attemptsDb';
 import { getExam, setExam, type ExamType } from '../lib/exam';
 
 interface PaperEntry {
@@ -36,14 +37,16 @@ function PaperEntryRow({
   entry,
   locked,
   trial,
+  dbScore,
   onAttempt,
 }: {
   entry: PaperEntry;
   locked: boolean;
   trial: boolean;
+  dbScore: { totalScore: number; maxScore: number; accuracy: number } | null;
   onAttempt: (entry: PaperEntry) => void;
 }) {
-  const result = useAttemptScore(paperKeyOf(entry.link));
+  const result = useAttemptScore(paperKeyOf(entry.link)) ?? dbScore;
   const isMorning = entry.shift === 'Shift 1 (Morning)';
   const isNeet = entry.variant === 'neet';
 
@@ -134,6 +137,9 @@ const comingSoon = [
   { year: 2023, label: '2023' },
 ];
 
+const seededYears = (papers: PaperSummary[]) =>
+  new Set(papers.map((p) => new Date(`${p.examDate}T00:00:00`).getFullYear()));
+
 function groupByDate(papers: PaperEntry[]) {
   const groups: Record<string, PaperEntry[]> = {};
   for (const p of papers) {
@@ -149,6 +155,7 @@ export default function PaperTests() {
   const [papersLoading, setPapersLoading] = useState(true);
   const [papersError, setPapersError] = useState<string | null>(null);
   const [dbPapers, setDbPapers] = useState<PaperSummary[]>([]);
+  const [dbAttempts, setDbAttempts] = useState<AttemptRow[]>([]);
   const [showPaywall, setShowPaywall] = useState(false);
   const { hasAccess, loading } = useSubscriptionAccess();
   const navigate = useNavigate();
@@ -226,6 +233,32 @@ export default function PaperTests() {
       cancelled = true;
     };
   }, []);
+
+  useEffect(() => {
+    let cancelled = false;
+    getAttempts()
+      .then((rows) => {
+        if (!cancelled) setDbAttempts(rows.filter((r) => r.test_type === 'paper'));
+      })
+      .catch(() => {
+        // fall back to localStorage only
+      });
+    return () => {
+      cancelled = true;
+    };
+  }, []);
+
+  const dbAttemptByPaper = useMemo(
+    () => new Map(dbAttempts.map((a) => [a.paper_key, a])),
+    [dbAttempts]
+  );
+
+  const dbScoreFor = (entry: PaperEntry): { totalScore: number; maxScore: number; accuracy: number } | null => {
+    const attempt = dbAttemptByPaper.get(paperKeyOf(entry.link));
+    return attempt
+      ? { totalScore: attempt.total_score, maxScore: attempt.max_score, accuracy: attempt.accuracy }
+      : null;
+  };
 
   const apr2026Entries: PaperEntry[] = useMemo(
     () =>
@@ -348,6 +381,7 @@ export default function PaperTests() {
                         entry={entry}
                         locked={isLocked(entry)}
                         trial={isTrial(entry)}
+                        dbScore={dbScoreFor(entry)}
                         onAttempt={handleAttempt}
                       />
                     </div>
@@ -439,6 +473,7 @@ export default function PaperTests() {
                                   entry={entry}
                                   locked={isLocked(entry)}
                                   trial={isTrial(entry)}
+                                  dbScore={dbScoreFor(entry)}
                                   onAttempt={handleAttempt}
                                 />
                               ))}
@@ -456,7 +491,9 @@ export default function PaperTests() {
             <div className="mt-8">
               <h3 className="text-sm font-medium text-stone-400 mb-3 text-center">Previous Years</h3>
               <StaggerReveal className="grid grid-cols-3 gap-3">
-                {comingSoon.map((y) => (
+                {comingSoon
+                  .filter((y) => !seededYears(dbPapers).has(y.year))
+                  .map((y) => (
                   <StaggerItem key={y.year}>
                     <div className="bg-white rounded-xl border border-stone-100 p-5 text-center shadow-sm">
                       <div className="text-xl font-light text-stone-300 mb-1">{y.year}</div>

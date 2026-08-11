@@ -78,6 +78,31 @@
 - Commits (pushed to origin/main): `8372ad6` added neet section → `0464a8d` neet 2025
   questions + katex rendering → `45ef184` redid neet 2025 (katex markup, clean screenshots,
   reseed) → `5cd90b5` debugged the Neet section
+- NEET 2024 (T3): curated all 50 chemistry questions (Q51–100) — fixed blank stems/options,
+  sub/superscripts (H₂O, MnO₄⁻, CO₃²⁻…), mojibake (`scripts/patch-neet-2024-questions.mjs`)
+- NEET 2024: merged Botany + Zoology into a single Biology section (100 Qs)
+  (`scripts/merge-neet-2024-biology-sections.mjs`); cleaned Q101 option D, Q151 option D
+  (scrape junk), Q198 statement II (stray ■■■)
+
+## Phase 7 — Results screen perf + submission latency (shared by ALL papers)
+
+- `NtaResultScreen`: question-wise answer key with infinite scroll — 10 fully-expanded
+  cards at a time, an IntersectionObserver sentinel loads the next 10 as the user reaches
+  the 10th (no button, DOM stays small); subject dropdown + separate All/Attempted/
+  Unattempted pill filters with counts; detailed solutions removed (answer key only);
+  memoized `SolutionCard`, O(1) `Map<id, QuestionState>` lookups — "All Subjects" kept
+- `score-attempt` edge fn: paper load + log insert + housekeeping run in parallel
+  (one round trip), unused `question_options` payload dropped from the select,
+  `x-warmup` keep-warm ping (returns 204 before auth) — needs
+  `supabase functions deploy score-attempt` to take effect
+- Client: `submitAttempt` uses local `getSession()` instead of a network
+  `getUser()`; TestInterface pings the edge fn every 2 min during an exam
+  (cold-start insurance); applies to every existing/future paper (JEE + NEET)
+- `PaperTests` Retake/Attempt label: now falls back to the user's attempts
+  rows in the DB (`getAttempts`, authoritative) when the localStorage
+  result payload is missing — a scored submission always has a DB row, so
+  "Retake" + score survive tab switches (NEET ↔ JEE) and refreshes even if
+  the local payload was never persisted
 
 ## Content & Rendering
 

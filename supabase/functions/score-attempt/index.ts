@@ -35,7 +35,7 @@ const supabaseAdmin = createClient(SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY);
 
 const corsHeaders = {
   'Access-Control-Allow-Origin': '*',
-  'Access-Control-Allow-Headers': 'authorization, x-client-info, apikey, content-type',
+  'Access-Control-Allow-Headers': 'authorization, x-client-info, apikey, content-type, x-warmup',
   'Access-Control-Allow-Methods': 'POST, OPTIONS',
 };
 
@@ -96,6 +96,11 @@ Deno.serve(async (req) => {
   if (req.method === 'OPTIONS') return new Response(null, { headers: corsHeaders });
   if (req.method !== 'POST') return json({ error: 'Method not allowed' }, 405);
 
+  // Keep-warm ping (sent periodically while an exam runs): returns
+  // immediately without auth, rate limiting or any DB work, so a real
+  // submission never pays the cold-start penalty.
+  if (req.headers.get('x-warmup') === '1') return json({ ok: true }, 204);
+
   const user = await getUser(req);
   if (!user) return json({ error: 'Unauthorized' }, 401);
 
@@ -119,7 +124,9 @@ Deno.serve(async (req) => {
   // on the paper row (papers.is_trial) so it works for JEE and NEET alike.
 
   // Rate limit: every call is logged in scoring_calls (service-role only,
-  // no public access) and capped per user per rolling hour.
+  // no public access) and capped per user per rolling hour. Housekeeping,
+  // the log insert and the paper load are independent, so they run in
+  // parallel to keep submission latency to ~1 round trip.
   const rateSince = new Date(Date.now() - SCORE_CALL_WINDOW_MS).toISOString();
   const { count } = await supabaseAdmin
     .from('scoring_calls')
@@ -130,32 +137,36 @@ Deno.serve(async (req) => {
     return json({ error: 'Submission limit reached. Please try again later.', code: 'RATE_LIMITED' }, 429);
   }
 
-  // Best-effort housekeeping keeps the log small; failures are ignored.
-  await supabaseAdmin
-    .from('scoring_calls')
-    .delete()
-    .lt('created_at', new Date(Date.now() - SCORE_LOG_RETENTION_MS).toISOString());
+  await Promise.all([
+    // Best-effort housekeeping keeps the log small; failures are ignored.
+    supabaseAdmin
+      .from('scoring_calls')
+      .delete()
+      .lt('created_at', new Date(Date.now() - SCORE_LOG_RETENTION_MS).toISOString())
+      .then(() => null)
+      .catch(() => null),
+    supabaseAdmin.from('scoring_calls').insert({ user_id: user.id }),
+    // Load the paper + its questions (no answer columns). question_options
+    // are intentionally NOT fetched — scoring only needs type/marks/keys.
+    supabaseAdmin
+      .from('papers')
+      .select(
+        `key, title, full_title, is_trial, questions (
+          id, number, type, marks, negative_marks,
+          sections ( name )
+        )`
+      )
+      .eq('key', paperKey)
+      .single(),
+  ]).then(([logResult, , paperResult]) => ({ logResult, paperResult }));
 
-  const { error: logError } = await supabaseAdmin.from('scoring_calls').insert({ user_id: user.id });
-  if (logError) {
-    console.error('scoring log insert failed', logError);
+  if (logResult.error) {
+    console.error('scoring log insert failed', logResult.error);
     return json({ error: 'Failed to record submission' }, 502);
   }
 
-  // Load the paper + its questions (no answer columns) and the private keys.
-  const { data: paper, error: paperError } = await supabaseAdmin
-    .from('papers')
-    .select(
-      `key, title, full_title, is_trial, questions (
-        id, number, type, marks, negative_marks,
-        sections ( name ),
-        question_options ( position, label, text )
-      )`
-    )
-    .eq('key', paperKey)
-    .single();
-
-  if (paperError || !paper) {
+  const paper = paperResult.data as (typeof paperResult.data & { questions: any[] }) | null;
+  if (paperResult.error || !paper) {
     return json({ error: 'Paper not found' }, 404);
   }
 

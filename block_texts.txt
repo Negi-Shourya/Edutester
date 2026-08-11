@@ -1,0 +1,683 @@
+=== Q1 (page 2, col L) ===
+1. 
+Consider a water tank shown in the figure. It has one 
+wall at x = L and can be taken to be very wide in the 
+z direction. When filled with a liquid of surface 
+tension S and density , the liquid surface makes 
+angle o(o << 1) with the x-axis at x = L. If y(x) is 
+the height of the surface then the equation for y(x) 
+is: 
+ 
+ 
+(take (x) = sin (x) = tan (x) = 
+,
+dy
+g
+dx
+ is the 
+acceleration due to gravity) 
+ 
+(1) 
+2
+2
+
+=
+d y
+g x
+S
+dx
+ 
+(2) 
+2
+2
+
+=
+d y
+g y
+S
+dx
+ 
+ 
+(3) 
+2
+2
+
+=
+d y
+g
+S
+dx
+ 
+(4) 
+
+=
+dy
+g x
+dx
+S
+=== Q7 (page 2, col R) ===
+7. 
+A bob of heavy mass m is suspended by a light string 
+of length l. The bob is given a horizontal velocity v0 
+as shown in figure. If the string gets slack at some 
+point P making an angle  from the horizontal, the 
+ratio of the speed v of the bob at point P to its initial 
+speed v0 is:  
+ 
+ 
+(1) (
+)
+12
+sin
+ 
+(2) 
+12
+1
+2
+3 sin
+
+
+
+
++
+
+
+
+ 
+ 
+(3) 
+12
+cos
+2
+3 sin
+
+
+
+
+
++
+
+
+
+ (4) 
+12
+sin
+2
+3 sin
+
+
+
+
+
++
+
+
+
+=== Q15 (page 3, col R) ===
+15. 
+In some appropriate units, time (t) and position (x) 
+relation of a moving particle is given by t = x2 + x. 
+The acceleration of the particle is 
+ 
+(1) 
+3
+2
+(
+2)
+−
++
+x
+ 
+ 
+(2) 
+3
+2
+(2
+1)
+−
++
+x
+ 
+ 
+(3) 
+3
+2
+(
+1)
++
++
+x
+ 
+ 
+(4) 
+2
+2
+1
++
++
+x
+=== Q24 (page 5, col L) ===
+24. 
+A balloon is made of a material of surface tension S 
+and its inflation outlet (from where gas is filled in 
+it) has small area A. It is filled with a gas of density 
+ρ and takes a spherical shape of radius R. When the 
+gas is allowed to flow freely out of it, its radius r 
+changes from R to 0 (zero) in time T. If the speed 
+v(r) of gas coming out of the balloon depends on r 
+as ra and T
+S A
+R
+
+
+
+
+
+
+ 
+(1) 
+1
+1
+3
+,
+,
+1,
+1,
+2
+2
+2
+a =
+=
+= −
+= +
+=
+ 
+(2) 
+1
+1
+1
+5
+,
+,
+1,
+,
+2
+2
+2
+2
+a = −
+= −
+= −
+= −
+=
+ 
+(3) 
+1
+1
+1
+7
+,
+,
+1,
+,
+2
+2
+2
+2
+a = −
+= −
+= −=
+=
+  
+(4) 
+1
+1
+1
+1
+7
+,
+,
+,
+,
+2
+2
+2
+2
+2
+a =
+=
+= −
+=
+=
+  
+[5]
+=== Q28 (page 5, col R) ===
+28. 
+Two identical charged conducting spheres A and B 
+have their centres separated by a certain distance. 
+Charge on each sphere is q and the force of 
+repulsion between them is F. A third identical 
+uncharged conducting sphere is brought in contact 
+with sphere A first and then with B and finally 
+removed from both. New force of repulsion between 
+spheres A and B (Radii of A and B are negligible 
+compared to the distance of separation so that for 
+calculating force between them they can be 
+considered as point charges) is best given as: 
+ 
+ 
+(1) 3
+5
+F 
+(2) 2
+3
+F  
+ 
+(3) 
+2
+F 
+(4) 3
+8
+F
+=== Q30 (page 6, col L) ===
+30. 
+A particle of mass m is moving around the origin 
+with a constant force F  pulling it towards the origin. 
+If Bohr model is used to describe its motion, the 
+radius r of the nth orbit and the particle's speed v in 
+the orbit depend on n as 
+(1) 
+1/3
+1/3
+;
+r
+n
+v
+n
+
+
+ 
+(2) 
+1/3
+2/3
+;
+r
+n
+v
+n
+
+
+ 
+(3) 
+2/3
+1/3
+; v
+r
+n
+n
+
+
+ 
+(4) 
+4/3
+1/3
+; 
+r
+n
+v
+n−
+
+
+=== Q33 (page 6, col L) ===
+33. 
+A wire of resistance R is cut into 8 equal pieces. 
+From these pieces two equivalent resistances are 
+made by adding four of these together in parallel. 
+Then these two sets are added in series. The net 
+effective resistance of  the combination is: 
+[6]
+=== Q37 (page 6, col R) ===
+37. 
+A photon and an electron (mass m) have the same 
+energy E. The ratio (
+)
+photon
+electron
+λ
+/λ
+ of their de 
+Broglie wavelengths is (c is the speed of light) 
+ 
+(1) 
+/ 2
+E
+m 
+(2) 
+2
+c
+mE 
+ 
+(3) 
+2m
+c
+E 
+(4) 1
+/ 2
+E
+m
+c
+=== Q43 (page 7, col R) ===
+43. 
+The intensity of transmitted light when a polaroid 
+sheet, placed between two crossed polarization at  
+22.5° from the polarization axis of one of the 
+polaroid, is (I0 is the intensity or polarised light after 
+passing through the first polaroid): 
+ 
+(1) 
+0
+2
+I 
+(2) 
+0
+4
+I 
+ 
+(3) 
+0
+8
+I 
+(4) 
+0
+16
+I
+=== Q44 (page 7, col R) ===
+44. 
+Two identical point masses P and Q, suspended 
+from two separate massless springs of spring 
+constants k1 and k2 respectively, oscillate vertically. 
+If their maximum speeds are the same, the ratio 
+(AQ/AP) of the amplitude AQ of mass Q to the 
+amplitude AP of mass P is: 
+ 
+(1) 
+2
+1
+k
+k 
+(2) 
+1
+2
+k
+k 
+ 
+(3) 
+2
+1
+k
+k 
+(4) 
+1
+2
+k
+k
+=== Q45 (page 7, col R) ===
+45. 
+A pipe open at both ends has a fundamental 
+frequency f in air. The pipe is now dipped vertically 
+in a water drum to half of its length. The 
+fundamental frequency of the air column is now 
+equal to: 
+ 
+(1) 
+2
+f 
+(2) f 
+ 
+(3) 3
+2
+f 
+(4) 2f
+=== Q50 (page 8, col L) ===
+of N and Cl are not the same. 
+ 
+C. Ar, K+, Cl–, Ca2+ and S2– are all isoelectronic 
+species. 
+ 
+D. The correct order of the first ionization 
+enthalpies of Na, Mg, Al, and Si 
+ 
+ 
+is Si > A > Mg > Na. 
+ 
+E. 
+The atomic radius of Cs is greater than that of 
+Li and Rb. 
+ 
+Choose the correct answer from the options given 
+below: 
+ 
+(1) A, B and E only 
+ 
+(2) C and E only 
+ 
+(3) C and D only 
+ 
+(4) A, C and E only
+=== Q57 (page 9, col R) ===
+57. 
+The correct order of the wavelength of light 
+absorbed by the following complexes is, 
+ 
+ A. [Co(NH3)6]3+ 
+B. [Co(CN)6]3– 
+ 
+C. [Cu(H2O)4]2+ 
+D. [Ti(H2O)6]3+ 
+ 
+Choose the correct answer from the options given 
+below: 
+ 
+(1) B < D < A < C 
+(2) B < A < D < C 
+ 
+(3) C < D < A < B 
+(4) C < A < D < B
+=== Q63 (page 10, col L) ===
+63. 
+Out of the following complex compounds, which of 
+the compound will be having the minimum 
+conductance is solution? 
+ 
+(1) [
+]
+3 3
+3
+Co(NH ) Cl
+ 
+ 
+(2) [
+]
+3 4
+2
+Co(NH ) Cl
+ 
+ 
+(3) [
+]
+3 6
+3
+Co(NH )
+Cl 
+ 
+(4) [
+]
+3 5
+Co(NH ) Cl Cl
+=== Q90 (page 13, col R) ===
+90. 
+Which one of the following reactions does NOT 
+belong to “Lassaigne’s test”? 
+ 
+(1) Na
+C
+N
+NaCN
+∆
++
++
+→
+  
+ 
+(2) 
+2
+2Na
+S
+Na S
+∆
++
+→
+  
+ 
+(3) Na
+X
+NaX
+∆
++
+→+
+  
+ 
+(4) 
+2
+2CuO
+C
+2Cu
+CO
+∆
++
+→
++
+=== Q92 (page 14, col L) ===
+92. 
+Polymerase chain reaction (PCR) amplifies DNA 
+following the equation.  
+ 
+(1) N2 
+(2) 2n 
+ 
+(3) 2n + 1 
+(4) 2N2
+=== Q111 (page 16, col R) ===
+111. Given below are the stages in the life cycle of 
+pteridophytes. Arrange the following stages in the 
+correct sequence.  
+ 
+A.  Prothallus stage  
+ 
+B.  Meiosis in spore mother cells  
+ 
+C.  Fertilisation  
+ 
+D.  Formation of archegonia and antheridia in 
+gametophyte.  
+ 
+E.  Transfer of antherozoids to the archegonia in 
+presence of water. 
+ 
+Choose the correct answer from the options given  
+ 
+below: 
+ 
+(1) B, A, D, E, C 
+ 
+(2) B, A, E, C, D 
+ 
+(3) D, E, C, A, B 
+ 
+(4) E, D, C, B, A
+=== Q119 (page 17, col L) ===
+most appropriate answer from the options given 
+below:  
+ 
+(1)  Both statement I and statement II are correct  
+ 
+(2)  Both statement I and statement II are incorrect  
+ 
+(3)  Statement I is correct but statement II is 
+incorrect  
+ 
+(4)  Statement I is incorrect but statement II is 
+correct
+=== Q125 (page 18, col L) ===
+125. Which of the following diagrams is correct with 
+regard to the proximal (P) and distal (D) tubule of 
+the Nephron. 
+ 
+(1) 
+ 
+[18]
+=== Q132 (page 19, col L) ===
+132. Each of the following characteristics represent a 
+Kingdom proposed by Whittaker. Arrange the 
+following in increasing order of complexity of body 
+organization.  
+ 
+A. Multicellular heterotrophs with cell wall made 
+ 
+of chitin.  
+ 
+B. Heterotrophs with tissue/organ/organ system  
+ 
+level of body organization.  
+ 
+C. Prokaryotes 
+with 
+cell 
+wall 
+made 
+of 
+ 
+polysaccharides and amino acids.  
+ 
+D. Eukaryotic autotrophs with tissue/organ level 
+ 
+of body organization. 
+ 
+E. 
+Eukaryotes with cellular body organization.  
+[19]
+=== Q180 (page 25, col L) ===
+179. The blue and white selectable markers have been 
+developed which differentiate recombinant colonies 
+from non-recombinant colonies on the basis of their 
+ability to produce colour in the presence of a 
+chromogenic substrate. 
+ 
+Given below are two statements about this method: 
+ 
+Statement I: The blue coloured colonies have DNA 
+insert in the plasmid and they are identified as 
+recombinant colonies. 
+ 
+Statement II: The colonies without blue colour 
+have DNA insert in the plasmid and are identified as 
+recombinant colonies. 
+ 
+In the light of the above statements, choose the most 
+appropriate answer from the options given below: 
+ 
+(1) Both Statement I and Statement II are correct 
+ 
+(2) Both Statement I and Statement II are incorrect 
+ 
+(3) Statement I is correct but Statement II is 
+incorrect 
+ 
+(4) Statement I is incorrect but Statement II is 
+correct 
+■■■
+ 
+ 
+PW Web/App - http
+Library- https:/mart
+[25]

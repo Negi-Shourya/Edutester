@@ -11,6 +11,9 @@ interface NtaHeaderProps {
   language: string;
   onLanguageChange: (lang: string) => void;
   compact?: boolean;
+  // 'jee' shows "JEE (Main) Computer Based Test", 'neet' shows
+  // "NEET (UG) Computer Based Test" in the top banner.
+  examType?: 'jee' | 'neet';
 }
 
 export default function NtaHeader({
@@ -23,6 +26,7 @@ export default function NtaHeader({
   language,
   onLanguageChange,
   compact = false,
+  examType = 'jee',
 }: NtaHeaderProps) {
   const [showProfileModal, setShowProfileModal] = useState(false);
 
@@ -85,7 +89,7 @@ export default function NtaHeader({
               Edu Tester Exam
             </h1>
             <p className="text-[9px] sm:text-[10px] text-gray-300 leading-none truncate">
-              JEE (Main) Computer Based Test (CBT)
+              {examType === 'neet' ? 'NEET (UG) Computer Based Test (CBT)' : 'JEE (Main) Computer Based Test (CBT)'}
             </p>
           </div>
         </div>

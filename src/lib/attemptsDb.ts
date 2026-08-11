@@ -63,10 +63,12 @@ export interface SubmitAttemptResult {
 // window) and returns the result. The answer key is never available to the
 // client before this point.
 export async function submitAttempt(input: SubmitAttemptInput): Promise<SubmitAttemptResult> {
+  // Local check only — the edge function re-verifies the JWT from this
+  // request, so no extra network round trip is needed here.
   const {
-    data: { user },
-  } = await supabase.auth.getUser();
-  if (!user) return { ok: false, error: 'Not signed in.' };
+    data: { session },
+  } = await supabase.auth.getSession();
+  if (!session?.user) return { ok: false, error: 'Not signed in.' };
 
   const answers = input.questionStates.map((qs) => ({
     id: qs.id,

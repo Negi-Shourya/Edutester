@@ -1,24 +1,14 @@
 import { useState } from 'react';
-import { Search, BookOpen } from 'lucide-react';
+import { AnimatePresence, motion } from 'motion/react';
+import { Search, BookOpen, Lock, X } from 'lucide-react';
 import TestCard from '../components/TestCard';
-import PaywallModal from '../components/PaywallModal';
 import StaggerReveal, { StaggerItem } from '../components/StaggerReveal';
 import { chapterTests, subjects } from '../data/chapters';
-import { FREE_TRIAL_TEST_ID, FREE_TRIAL_PAPER_KEY, useSubscriptionAccess } from '../lib/subscription';
-import { useAttemptScore } from '../hooks/useAttemptScore';
 
 export default function ChapterTests() {
   const [subject, setSubject] = useState('All');
   const [search, setSearch] = useState('');
-  const [showPaywall, setShowPaywall] = useState(false);
-  const { hasAccess, loading } = useSubscriptionAccess();
-
-  // Chapter tests currently open the trial paper, so the user's submitted
-  // score for that paper is what we can show here.
-  const attemptScore = useAttemptScore(FREE_TRIAL_PAPER_KEY);
-  const cardAttemptScore = attemptScore
-    ? { score: attemptScore.totalScore, maxScore: attemptScore.maxScore }
-    : null;
+  const [showComingSoon, setShowComingSoon] = useState(false);
 
   const filtered = chapterTests.filter((t) => {
     const matchSubject = subject === 'All' || t.subject === subject;
@@ -26,10 +16,6 @@ export default function ChapterTests() {
       t.chapter?.toLowerCase().includes(search.toLowerCase());
     return matchSubject && matchSearch;
   });
-
-  const isLocked = (testId: string) =>
-    !loading && !hasAccess && testId !== FREE_TRIAL_TEST_ID;
-  const isTrial = (testId: string) => !loading && !hasAccess && testId === FREE_TRIAL_TEST_ID;
 
   return (
     <div className="bg-gray-50 min-h-screen">
@@ -70,6 +56,14 @@ export default function ChapterTests() {
           </div>
         </div>
 
+        {/* Coming soon notice */}
+        <div className="mb-6 p-4 rounded-xl bg-amber-50 border border-amber-200 text-sm text-amber-800 flex items-center gap-2">
+          <Lock className="w-4 h-4 shrink-0" />
+          <span>
+            <span className="font-semibold">Coming soon:</span> A team is working on it. It will be coming soon.
+          </span>
+        </div>
+
         {/* Subjects Grid */}
         {subject === 'All' ? (
           subjects.map((sub) => {
@@ -85,13 +79,7 @@ export default function ChapterTests() {
                 <StaggerReveal className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
                   {subTests.map((test) => (
                     <StaggerItem key={test.id}>
-                    <TestCard
-                      test={test}
-                      locked={isLocked(test.id)}
-                      trial={isTrial(test.id)}
-                      onLocked={() => setShowPaywall(true)}
-                      attemptScore={isLocked(test.id) ? null : cardAttemptScore}
-                    />
+                      <TestCard test={test} comingSoon onComingSoon={() => setShowComingSoon(true)} />
                     </StaggerItem>
                   ))}
                 </StaggerReveal>
@@ -102,23 +90,10 @@ export default function ChapterTests() {
           <StaggerReveal className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {filtered.map((test) => (
               <StaggerItem key={test.id}>
-              <TestCard
-                test={test}
-                locked={isLocked(test.id)}
-                trial={isTrial(test.id)}
-                onLocked={() => setShowPaywall(true)}
-                attemptScore={isLocked(test.id) ? null : cardAttemptScore}
-              />
+                <TestCard test={test} comingSoon onComingSoon={() => setShowComingSoon(true)} />
               </StaggerItem>
             ))}
           </StaggerReveal>
-        )}
-
-        {!loading && !hasAccess && (
-          <div className="mt-6 p-4 rounded-xl bg-green-50 border border-green-200 text-sm text-green-700 flex items-center gap-2">
-            <span className="font-semibold">Free trial:</span>
-            Try the Kinematics test for free. Subscribe to unlock all chapter tests.
-          </div>
         )}
 
         {filtered.length === 0 && (
@@ -129,9 +104,54 @@ export default function ChapterTests() {
             <p className="text-gray-500">No tests found. Try a different search or filter.</p>
           </div>
         )}
-
-        <PaywallModal open={showPaywall} onClose={() => setShowPaywall(false)} />
       </div>
+
+      {/* Coming Soon Modal */}
+      <AnimatePresence>
+        {showComingSoon && (
+          <motion.div
+            className="fixed inset-0 z-[60] bg-black/50 backdrop-blur-sm flex items-center justify-center px-4"
+            onClick={() => setShowComingSoon(false)}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.2 }}
+          >
+            <motion.div
+              className="bg-white rounded-2xl shadow-2xl max-w-md w-full p-8 relative"
+              onClick={(e) => e.stopPropagation()}
+              initial={{ opacity: 0, scale: 0.92, y: 16 }}
+              animate={{ opacity: 1, scale: 1, y: 0 }}
+              exit={{ opacity: 0, scale: 0.95, y: -8 }}
+              transition={{ type: 'spring', stiffness: 380, damping: 28 }}
+            >
+              <button
+                onClick={() => setShowComingSoon(false)}
+                className="absolute right-4 top-4 text-gray-400 hover:text-gray-600 transition-colors"
+                aria-label="Close"
+              >
+                <X className="w-5 h-5" />
+              </button>
+
+              <div className="w-14 h-14 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-2xl flex items-center justify-center mx-auto mb-5 shadow-lg shadow-primary/25">
+                <Lock className="w-7 h-7 text-white" />
+              </div>
+
+              <h2 className="text-xl font-bold text-gray-900 text-center mb-2">Coming Soon</h2>
+              <p className="text-sm text-gray-500 text-center mb-6 leading-relaxed">
+                A team is working on it. It will be coming soon.
+              </p>
+
+              <button
+                onClick={() => setShowComingSoon(false)}
+                className="w-full py-2.5 rounded-xl text-sm font-medium text-gray-500 hover:bg-gray-50 transition-colors"
+              >
+                Not now
+              </button>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
 }

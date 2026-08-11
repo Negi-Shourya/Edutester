@@ -5,6 +5,7 @@ import type { Question, QuestionState, QuestionStatus } from '../types';
 import { FREE_TRIAL_PAPER_KEY, useSubscriptionAccess } from '../lib/subscription';
 import { loadAttempt, saveAttempt, clearAttempt } from '../lib/attemptStorage';
 import { submitAttempt, type SubmitAttemptPayload } from '../lib/attemptsDb';
+import { supabase } from '../lib/supabase';
 import { useAuth } from '../context/auth-context';
 import { Crown, Lock, LayoutDashboard, RotateCcw, X } from 'lucide-react';
 
@@ -274,6 +275,21 @@ export default function TestInterface() {
     syncedToDb,
     resultPayload,
   ]);
+
+  // Keep the score-attempt edge function warm while the exam runs, so the
+  // submission at the end doesn't pay a cold-start penalty. A cheap no-op
+  // ping every 2 minutes; failures are ignored (submission retries anyway).
+  useEffect(() => {
+    if (!testStarted || isTestSubmitted) return;
+    const warm = () => {
+      supabase.functions
+        .invoke('score-attempt', { headers: { 'x-warmup': '1' }, body: {} })
+        .catch(() => {});
+    };
+    warm();
+    const id = setInterval(warm, 2 * 60 * 1000);
+    return () => clearInterval(id);
+  }, [testStarted, isTestSubmitted]);
 
   // When the test is submitted, the result comes from the score-attempt
   // edge function: it verifies access server-side, scores the attempt
@@ -654,6 +670,7 @@ export default function TestInterface() {
           timer even in compact landscape */}
       <NtaHeader
         examName={examTitle}
+        examType={paperKey.startsWith('neet') ? 'neet' : 'jee'}
         candidateName={candidateName}
         candidateId={candidateId}
         timeLeft={timeLeft}

@@ -7,7 +7,9 @@ interface Props {
   test: TestCardData;
   locked?: boolean;
   trial?: boolean;
+  comingSoon?: boolean;
   onLocked?: () => void;
+  onComingSoon?: () => void;
   attemptScore?: { score: number; maxScore: number } | null;
 }
 
@@ -17,10 +19,14 @@ const difficultyColors = {
   Hard: 'bg-red-100 text-red-700',
 };
 
-export default function TestCard({ test, locked, trial, onLocked, attemptScore }: Props) {
+export default function TestCard({ test, locked, trial, comingSoon, onLocked, onComingSoon, attemptScore }: Props) {
   const navigate = useNavigate();
 
   const handleStart = () => {
+    if (comingSoon) {
+      onComingSoon?.();
+      return;
+    }
     if (locked) {
       onLocked?.();
       return;
@@ -79,7 +85,7 @@ export default function TestCard({ test, locked, trial, onLocked, attemptScore }
           <span className="text-success font-medium">Score: {test.score}/300</span>
         </div>
       )}
-      {attemptScore && !locked && (
+      {attemptScore && !locked && !comingSoon && (
         <div className="flex items-center gap-2 mb-3 text-sm">
           <CheckCircle className="w-4 h-4 text-success" />
           <span className="text-success font-medium">
@@ -90,7 +96,16 @@ export default function TestCard({ test, locked, trial, onLocked, attemptScore }
           </span>
         </div>
       )}
-      {locked ? (
+      {comingSoon ? (
+        <motion.button
+          onClick={handleStart}
+          whileTap={{ scale: 0.97 }}
+          className="w-full flex items-center justify-center gap-2 py-2 rounded-lg text-sm font-medium text-gray-500 bg-gray-100 hover:bg-gray-200 transition-colors"
+        >
+          <Lock className="w-4 h-4" />
+          Coming Soon
+        </motion.button>
+      ) : locked ? (
         <motion.button
           onClick={handleStart}
           whileTap={{ scale: 0.97 }}
