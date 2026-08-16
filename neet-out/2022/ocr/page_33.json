@@ -1,0 +1,666 @@
+[
+ {
+  "x0": 287.0,
+  "y0": 160.0,
+  "x1": 351.0,
+  "y1": 189.0,
+  "text": "172.",
+  "score": 0.799
+ },
+ {
+  "x0": 372.0,
+  "y0": 161.0,
+  "x1": 1469.0,
+  "y1": 191.0,
+  "text": "Which of the following statements with respect to Endoplasmic Reticulum is incorrect?",
+  "score": 0.934
+ },
+ {
+  "x0": 1060.0,
+  "y0": 211.0,
+  "x1": 1106.0,
+  "y1": 248.0,
+  "text": "(2)",
+  "score": 0.75
+ },
+ {
+  "x0": 375.0,
+  "y0": 214.0,
+  "x1": 421.0,
+  "y1": 246.0,
+  "text": "(1)",
+  "score": 0.746
+ },
+ {
+  "x0": 426.0,
+  "y0": 212.0,
+  "x1": 898.0,
+  "y1": 243.0,
+  "text": "RER has ribosomes attached to ER",
+  "score": 0.946
+ },
+ {
+  "x0": 1125.0,
+  "y0": 212.0,
+  "x1": 1484.0,
+  "y1": 243.0,
+  "text": "SER is devoid of ribosomes",
+  "score": 0.88
+ },
+ {
+  "x0": 373.0,
+  "y0": 264.0,
+  "x1": 912.0,
+  "y1": 300.0,
+  "text": "(3) In prokaryotes only RER are present",
+  "score": 0.911
+ },
+ {
+  "x0": 1059.0,
+  "y0": 263.0,
+  "x1": 1106.0,
+  "y1": 300.0,
+  "text": "(4)",
+  "score": 0.726
+ },
+ {
+  "x0": 1125.0,
+  "y0": 264.0,
+  "x1": 1581.0,
+  "y1": 295.0,
+  "text": "SER are the sites for lipid synthesis",
+  "score": 0.884
+ },
+ {
+  "x0": 372.0,
+  "y0": 315.0,
+  "x1": 527.0,
+  "y1": 352.0,
+  "text": "Answer (3)",
+  "score": 0.878
+ },
+ {
+  "x0": 287.0,
+  "y0": 379.0,
+  "x1": 351.0,
+  "y1": 407.0,
+  "text": "173.",
+  "score": 0.767
+ },
+ {
+  "x0": 372.0,
+  "y0": 380.0,
+  "x1": 1473.0,
+  "y1": 411.0,
+  "text": "Which of the following is present between the adjacent bones of the vertebral column?",
+  "score": 0.932
+ },
+ {
+  "x0": 375.0,
+  "y0": 432.0,
+  "x1": 419.0,
+  "y1": 465.0,
+  "text": "(1)",
+  "score": 0.687
+ },
+ {
+  "x0": 1061.0,
+  "y0": 431.0,
+  "x1": 1109.0,
+  "y1": 468.0,
+  "text": "(2)",
+  "score": 0.749
+ },
+ {
+  "x0": 435.0,
+  "y0": 434.0,
+  "x1": 667.0,
+  "y1": 461.0,
+  "text": "Intercalateddiscs",
+  "score": 0.934
+ },
+ {
+  "x0": 1124.0,
+  "y0": 432.0,
+  "x1": 1245.0,
+  "y1": 466.0,
+  "text": "Cartilage",
+  "score": 0.793
+ },
+ {
+  "x0": 373.0,
+  "y0": 483.0,
+  "x1": 621.0,
+  "y1": 519.0,
+  "text": "(3) Areolar tissue",
+  "score": 0.873
+ },
+ {
+  "x0": 1061.0,
+  "y0": 483.0,
+  "x1": 1111.0,
+  "y1": 518.0,
+  "text": "(4)",
+  "score": 0.718
+ },
+ {
+  "x0": 1124.0,
+  "y0": 486.0,
+  "x1": 1326.0,
+  "y1": 513.0,
+  "text": "Smoothmuscle",
+  "score": 0.849
+ },
+ {
+  "x0": 372.0,
+  "y0": 531.0,
+  "x1": 526.0,
+  "y1": 571.0,
+  "text": "Answer (2)",
+  "score": 0.85
+ },
+ {
+  "x0": 287.0,
+  "y0": 598.0,
+  "x1": 351.0,
+  "y1": 626.0,
+  "text": "174.",
+  "score": 0.787
+ },
+ {
+  "x0": 370.0,
+  "y0": 600.0,
+  "x1": 816.0,
+  "y1": 629.0,
+  "text": "Tegmina in cockroach, arises from",
+  "score": 0.881
+ },
+ {
+  "x0": 371.0,
+  "y0": 647.0,
+  "x1": 574.0,
+  "y1": 687.0,
+  "text": "(1)  Prothorax",
+  "score": 0.804
+ },
+ {
+  "x0": 1062.0,
+  "y0": 651.0,
+  "x1": 1102.0,
+  "y1": 683.0,
+  "text": "(2)",
+  "score": 0.75
+ },
+ {
+  "x0": 1126.0,
+  "y0": 651.0,
+  "x1": 1282.0,
+  "y1": 681.0,
+  "text": "Mesothorax",
+  "score": 0.814
+ },
+ {
+  "x0": 374.0,
+  "y0": 702.0,
+  "x1": 425.0,
+  "y1": 736.0,
+  "text": "(3)",
+  "score": 0.749
+ },
+ {
+  "x0": 421.0,
+  "y0": 703.0,
+  "x1": 588.0,
+  "y1": 733.0,
+  "text": "Metathorax",
+  "score": 0.899
+ },
+ {
+  "x0": 1062.0,
+  "y0": 702.0,
+  "x1": 1102.0,
+  "y1": 736.0,
+  "text": "(4)",
+  "score": 0.747
+ },
+ {
+  "x0": 1127.0,
+  "y0": 703.0,
+  "x1": 1469.0,
+  "y1": 732.0,
+  "text": "Prothorax and Mesothorax",
+  "score": 0.869
+ },
+ {
+  "x0": 371.0,
+  "y0": 752.0,
+  "x1": 526.0,
+  "y1": 788.0,
+  "text": "Answer (2)",
+  "score": 0.87
+ },
+ {
+  "x0": 287.0,
+  "y0": 816.0,
+  "x1": 353.0,
+  "y1": 845.0,
+  "text": "175.",
+  "score": 0.799
+ },
+ {
+  "x0": 373.0,
+  "y0": 817.0,
+  "x1": 795.0,
+  "y1": 848.0,
+  "text": "Given below are two statements:",
+  "score": 0.89
+ },
+ {
+  "x0": 375.0,
+  "y0": 870.0,
+  "x1": 551.0,
+  "y1": 900.0,
+  "text": "Statement I :",
+  "score": 0.838
+ },
+ {
+  "x0": 374.0,
+  "y0": 921.0,
+  "x1": 1308.0,
+  "y1": 953.0,
+  "text": "The release of sperms into the seminiferous tubules is called spermiation",
+  "score": 0.892
+ },
+ {
+  "x0": 375.0,
+  "y0": 975.0,
+  "x1": 559.0,
+  "y1": 1002.0,
+  "text": "Statement Il :",
+  "score": 0.832
+ },
+ {
+  "x0": 374.0,
+  "y0": 1025.0,
+  "x1": 1334.0,
+  "y1": 1057.0,
+  "text": "Spermiogenesis is the process of formation of sperms from spermatogonia.",
+  "score": 0.9
+ },
+ {
+  "x0": 374.0,
+  "y0": 1077.0,
+  "x1": 1715.0,
+  "y1": 1106.0,
+  "text": "In the light of the above statements, choose the most appropriate answer from the options given below :",
+  "score": 0.901
+ },
+ {
+  "x0": 373.0,
+  "y0": 1127.0,
+  "x1": 418.0,
+  "y1": 1164.0,
+  "text": "(1)",
+  "score": 0.746
+ },
+ {
+  "x0": 440.0,
+  "y0": 1131.0,
+  "x1": 1039.0,
+  "y1": 1157.0,
+  "text": "BothStatementIandStatementllarecorrect",
+  "score": 0.913
+ },
+ {
+  "x0": 374.0,
+  "y0": 1180.0,
+  "x1": 414.0,
+  "y1": 1214.0,
+  "text": "(2)",
+  "score": 0.741
+ },
+ {
+  "x0": 441.0,
+  "y0": 1181.0,
+  "x1": 1061.0,
+  "y1": 1209.0,
+  "text": "Both StatementI and Statement Il are incorrect",
+  "score": 0.875
+ },
+ {
+  "x0": 373.0,
+  "y0": 1231.0,
+  "x1": 416.0,
+  "y1": 1268.0,
+  "text": "(3)",
+  "score": 0.749
+ },
+ {
+  "x0": 441.0,
+  "y0": 1235.0,
+  "x1": 1089.0,
+  "y1": 1261.0,
+  "text": "StatementIis correctbutStatementllis incorrect",
+  "score": 0.88
+ },
+ {
+  "x0": 373.0,
+  "y0": 1283.0,
+  "x1": 416.0,
+  "y1": 1320.0,
+  "text": "(4)",
+  "score": 0.749
+ },
+ {
+  "x0": 440.0,
+  "y0": 1284.0,
+  "x1": 1090.0,
+  "y1": 1313.0,
+  "text": "Statement Iis incorrect but Statement Il is correct",
+  "score": 0.871
+ },
+ {
+  "x0": 372.0,
+  "y0": 1333.0,
+  "x1": 526.0,
+  "y1": 1371.0,
+  "text": "Answer (3)",
+  "score": 0.883
+ },
+ {
+  "x0": 289.0,
+  "y0": 1398.0,
+  "x1": 370.0,
+  "y1": 1426.0,
+  "text": "176.",
+  "score": 0.712
+ },
+ {
+  "x0": 362.0,
+  "y0": 1398.0,
+  "x1": 1737.0,
+  "y1": 1432.0,
+  "text": " If '8' Drosophila in a laboratory population of ‘80' died during a week, the death rate in the population is",
+  "score": 0.913
+ },
+ {
+  "x0": 477.0,
+  "y0": 1443.0,
+  "x1": 941.0,
+  "y1": 1471.0,
+  "text": "individuals per Drosophila per week.",
+  "score": 0.901
+ },
+ {
+  "x0": 436.0,
+  "y0": 1491.0,
+  "x1": 486.0,
+  "y1": 1525.0,
+  "text": "0.1",
+  "score": 0.742
+ },
+ {
+  "x0": 372.0,
+  "y0": 1493.0,
+  "x1": 418.0,
+  "y1": 1529.0,
+  "text": "(1)",
+  "score": 0.689
+ },
+ {
+  "x0": 1059.0,
+  "y0": 1493.0,
+  "x1": 1105.0,
+  "y1": 1529.0,
+  "text": "(2)",
+  "score": 0.672
+ },
+ {
+  "x0": 1123.0,
+  "y0": 1492.0,
+  "x1": 1165.0,
+  "y1": 1525.0,
+  "text": "10",
+  "score": 0.666
+ },
+ {
+  "x0": 435.0,
+  "y0": 1542.0,
+  "x1": 487.0,
+  "y1": 1581.0,
+  "text": "1.0",
+  "score": 0.721
+ },
+ {
+  "x0": 373.0,
+  "y0": 1546.0,
+  "x1": 417.0,
+  "y1": 1582.0,
+  "text": "(3)",
+  "score": 0.749
+ },
+ {
+  "x0": 1059.0,
+  "y0": 1545.0,
+  "x1": 1103.0,
+  "y1": 1583.0,
+  "text": "(4)",
+  "score": 0.75
+ },
+ {
+  "x0": 1123.0,
+  "y0": 1548.0,
+  "x1": 1187.0,
+  "y1": 1580.0,
+  "text": "zero",
+  "score": 0.749
+ },
+ {
+  "x0": 372.0,
+  "y0": 1596.0,
+  "x1": 526.0,
+  "y1": 1635.0,
+  "text": "Answer (1)",
+  "score": 0.851
+ },
+ {
+  "x0": 287.0,
+  "y0": 1661.0,
+  "x1": 369.0,
+  "y1": 1694.0,
+  "text": "177.",
+  "score": 0.597
+ },
+ {
+  "x0": 370.0,
+  "y0": 1667.0,
+  "x1": 1738.0,
+  "y1": 1696.0,
+  "text": "Natural selection where more individuals acquire specific character value other than the mean character",
+  "score": 0.943
+ },
+ {
+  "x0": 375.0,
+  "y0": 1710.0,
+  "x1": 562.0,
+  "y1": 1737.0,
+  "text": "value, leads to",
+  "score": 0.891
+ },
+ {
+  "x0": 373.0,
+  "y0": 1761.0,
+  "x1": 420.0,
+  "y1": 1796.0,
+  "text": "(1)",
+  "score": 0.661
+ },
+ {
+  "x0": 437.0,
+  "y0": 1760.0,
+  "x1": 675.0,
+  "y1": 1794.0,
+  "text": "Stabilising change",
+  "score": 0.923
+ },
+ {
+  "x0": 1063.0,
+  "y0": 1761.0,
+  "x1": 1105.0,
+  "y1": 1794.0,
+  "text": "(2)",
+  "score": 0.626
+ },
+ {
+  "x0": 1126.0,
+  "y0": 1763.0,
+  "x1": 1366.0,
+  "y1": 1793.0,
+  "text": "Directional change",
+  "score": 0.881
+ },
+ {
+  "x0": 432.0,
+  "y0": 1814.0,
+  "x1": 672.0,
+  "y1": 1849.0,
+  "text": "Disruptive change",
+  "score": 0.876
+ },
+ {
+  "x0": 373.0,
+  "y0": 1812.0,
+  "x1": 422.0,
+  "y1": 1850.0,
+  "text": "(3)",
+  "score": 0.738
+ },
+ {
+  "x0": 1062.0,
+  "y0": 1815.0,
+  "x1": 1106.0,
+  "y1": 1847.0,
+  "text": "(4)",
+  "score": 0.75
+ },
+ {
+  "x0": 1121.0,
+  "y0": 1813.0,
+  "x1": 1339.0,
+  "y1": 1848.0,
+  "text": "Random change",
+  "score": 0.923
+ },
+ {
+  "x0": 373.0,
+  "y0": 1868.0,
+  "x1": 526.0,
+  "y1": 1901.0,
+  "text": "Answer (2)",
+  "score": 0.849
+ },
+ {
+  "x0": 287.0,
+  "y0": 1930.0,
+  "x1": 347.0,
+  "y1": 1959.0,
+  "text": "178.",
+  "score": 0.796
+ },
+ {
+  "x0": 371.0,
+  "y0": 1931.0,
+  "x1": 1417.0,
+  "y1": 1965.0,
+  "text": "Which of the following is not the function of conducting part of respiratory system?",
+  "score": 0.94
+ },
+ {
+  "x0": 373.0,
+  "y0": 1985.0,
+  "x1": 417.0,
+  "y1": 2022.0,
+  "text": "(1)",
+  "score": 0.745
+ },
+ {
+  "x0": 438.0,
+  "y0": 1988.0,
+  "x1": 962.0,
+  "y1": 2017.0,
+  "text": "It clears inhaled air from foreign particles",
+  "score": 0.88
+ },
+ {
+  "x0": 374.0,
+  "y0": 2039.0,
+  "x1": 415.0,
+  "y1": 2073.0,
+  "text": "(2)",
+  "score": 0.718
+ },
+ {
+  "x0": 441.0,
+  "y0": 2042.0,
+  "x1": 746.0,
+  "y1": 2068.0,
+  "text": "Inhaled air is humidified",
+  "score": 0.914
+ },
+ {
+  "x0": 372.0,
+  "y0": 2093.0,
+  "x1": 416.0,
+  "y1": 2130.0,
+  "text": "(3)",
+  "score": 0.749
+ },
+ {
+  "x0": 438.0,
+  "y0": 2095.0,
+  "x1": 1179.0,
+  "y1": 2124.0,
+  "text": "Temperature of inhaled airis broughtto body temperature",
+  "score": 0.905
+ },
+ {
+  "x0": 375.0,
+  "y0": 2147.0,
+  "x1": 416.0,
+  "y1": 2180.0,
+  "text": "(4)",
+  "score": 0.746
+ },
+ {
+  "x0": 437.0,
+  "y0": 2147.0,
+  "x1": 1003.0,
+  "y1": 2176.0,
+  "text": "Provides surface for diffusion of O2 and CO2",
+  "score": 0.897
+ },
+ {
+  "x0": 373.0,
+  "y0": 2200.0,
+  "x1": 526.0,
+  "y1": 2234.0,
+  "text": "Answer (4)",
+  "score": 0.843
+ },
+ {
+  "x0": 1589.0,
+  "y0": 2311.0,
+  "x1": 1909.0,
+  "y1": 2369.0,
+  "text": "collegedunia",
+  "score": 0.88
+ },
+ {
+  "x0": 1591.0,
+  "y0": 2376.0,
+  "x1": 1913.0,
+  "y1": 2396.0,
+  "text": "India'slargestStudentReviewPlatform",
+  "score": 0.938
+ }
+]

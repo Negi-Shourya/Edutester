@@ -14,7 +14,7 @@ export default function FormattedQuestionText({ text, className = '' }: Formatte
   if (!text) return null;
 
   // Check if text is a "Match the following" or "Match List" type question
-  const isMatchQuestion = /Match\s+(List|the|LIST)/i.test(text) || (text.includes('List-I') && text.includes('List-II'));
+  const isMatchQuestion = /Match\s+(List|the|Column|LIST)/i.test(text) || (text.includes('List-I') && text.includes('List-II')) || text.includes('| Column-I');
 
   if (isMatchQuestion) {
     return <MatchQuestionRenderer text={text} className={className} />;
@@ -55,13 +55,28 @@ function MatchQuestionRenderer({ text, className }: { text: string; className: s
       continue;
     }
 
+    // Markdown table detection
+    const matchMd = line.match(/^\|\s*(.*?)\s*\|\s*(.*?)\s*\|$/);
+    if (matchMd) {
+      const left = matchMd[1].trim();
+      const right = matchMd[2].trim();
+      if (/^-+$/.test(left) || /^-+$/.test(right)) continue;
+      if (/^(List|Column)/i.test(left)) {
+        col1Header = left;
+        col2Header = right;
+        continue;
+      }
+      matchRows.push({ leftLabel: left, rightLabel: right });
+      continue;
+    }
+
     // Header line detection — check List-II first and anchor with \b so the
     // List-I pattern cannot swallow a "List-II" line.
-    if (/^list\s*-\s*ii\b/i.test(line) || /^list\s*2/i.test(line)) {
+    if (/^list\s*-\s*ii\b/i.test(line) || /^list\s*2/i.test(line) || /^column\s*-\s*ii\b/i.test(line)) {
       col2Header = line;
       continue;
     }
-    if (/^list\s*-\s*i\b/i.test(line) || /^list\s*1/i.test(line)) {
+    if (/^list\s*-\s*i\b/i.test(line) || /^list\s*1/i.test(line) || /^column\s*-\s*i\b/i.test(line)) {
       col1Header = line;
       continue;
     }

@@ -139,6 +139,11 @@ async function seedYear(year) {
     console.log(`${key}: already seeded, skipping (use --force to re-seed)`);
     return;
   }
+  console.log(`Seeding ${key} (${title})`);
+  // Upload images BEFORE removing the existing paper so a failure mid-run
+  // can never leave the paper deleted (images are upserted, so re-running
+  // the seed simply re-uploads them).
+  if (!(await uploadImages(year, data.questions))) return;
   if (existing) {
     const { error: delError } = await supabase.from("papers").delete().eq("id", existing.id);
     if (delError) {
@@ -147,9 +152,6 @@ async function seedYear(year) {
     }
     console.log(`${key}: existing paper removed for re-seed`);
   }
-
-  console.log(`Seeding ${key} (${title})`);
-  if (!(await uploadImages(year, data.questions))) return;
 
   const optFigs = new Set();
   for (const q of data.questions) for (const o of q.options ?? []) if (o.figure) optFigs.add(o.figure);

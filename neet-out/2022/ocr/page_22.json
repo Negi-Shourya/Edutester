@@ -1,0 +1,762 @@
+[
+ {
+  "x0": 287.0,
+  "y0": 158.0,
+  "x1": 348.0,
+  "y1": 191.0,
+  "text": "108.",
+  "score": 0.721
+ },
+ {
+  "x0": 377.0,
+  "y0": 156.0,
+  "x1": 677.0,
+  "y1": 184.0,
+  "text": "Match List-I with List-Il",
+  "score": 0.871
+ },
+ {
+  "x0": 480.0,
+  "y0": 205.0,
+  "x1": 561.0,
+  "y1": 236.0,
+  "text": "List-I",
+  "score": 0.75
+ },
+ {
+  "x0": 815.0,
+  "y0": 205.0,
+  "x1": 900.0,
+  "y1": 235.0,
+  "text": "List-ll",
+  "score": 0.751
+ },
+ {
+  "x0": 389.0,
+  "y0": 255.0,
+  "x1": 432.0,
+  "y1": 292.0,
+  "text": "(a)",
+  "score": 0.749
+ },
+ {
+  "x0": 483.0,
+  "y0": 257.0,
+  "x1": 638.0,
+  "y1": 288.0,
+  "text": "Manganese",
+  "score": 0.792
+ },
+ {
+  "x0": 818.0,
+  "y0": 257.0,
+  "x1": 1206.0,
+  "y1": 286.0,
+  "text": "Activates the enzyme catalase",
+  "score": 0.902
+ },
+ {
+  "x0": 391.0,
+  "y0": 306.0,
+  "x1": 431.0,
+  "y1": 341.0,
+  "text": "(b)",
+  "score": 0.749
+ },
+ {
+  "x0": 482.0,
+  "y0": 305.0,
+  "x1": 636.0,
+  "y1": 341.0,
+  "text": "Magnesium",
+  "score": 0.89
+ },
+ {
+  "x0": 743.0,
+  "y0": 306.0,
+  "x1": 781.0,
+  "y1": 341.0,
+  "text": "()",
+  "score": 0.66
+ },
+ {
+  "x0": 819.0,
+  "y0": 310.0,
+  "x1": 1221.0,
+  "y1": 336.0,
+  "text": "Reguired for pollengermination",
+  "score": 0.881
+ },
+ {
+  "x0": 482.0,
+  "y0": 356.0,
+  "x1": 566.0,
+  "y1": 388.0,
+  "text": "Boron",
+  "score": 0.833
+ },
+ {
+  "x0": 390.0,
+  "y0": 357.0,
+  "x1": 430.0,
+  "y1": 391.0,
+  "text": "(c)",
+  "score": 0.71
+ },
+ {
+  "x0": 742.0,
+  "y0": 355.0,
+  "x1": 787.0,
+  "y1": 391.0,
+  "text": "()",
+  "score": 0.655
+ },
+ {
+  "x0": 819.0,
+  "y0": 360.0,
+  "x1": 1232.0,
+  "y1": 386.0,
+  "text": "Activates enzymes of respiration",
+  "score": 0.896
+ },
+ {
+  "x0": 388.0,
+  "y0": 406.0,
+  "x1": 432.0,
+  "y1": 442.0,
+  "text": "(d)",
+  "score": 0.749
+ },
+ {
+  "x0": 480.0,
+  "y0": 406.0,
+  "x1": 542.0,
+  "y1": 439.0,
+  "text": "Iron",
+  "score": 0.788
+ },
+ {
+  "x0": 741.0,
+  "y0": 406.0,
+  "x1": 790.0,
+  "y1": 442.0,
+  "text": "(iv)",
+  "score": 0.787
+ },
+ {
+  "x0": 818.0,
+  "y0": 409.0,
+  "x1": 1477.0,
+  "y1": 438.0,
+  "text": "Functions in splitting of water during photosynthesis",
+  "score": 0.924
+ },
+ {
+  "x0": 376.0,
+  "y0": 457.0,
+  "x1": 1130.0,
+  "y1": 488.0,
+  "text": "Choose the correct answer from the options given below :",
+  "score": 0.932
+ },
+ {
+  "x0": 374.0,
+  "y0": 498.0,
+  "x1": 804.0,
+  "y1": 537.0,
+  "text": "(1)(a)-(i), (b)-(iv), (c)-(i), (d)-(i)",
+  "score": 0.887
+ },
+ {
+  "x0": 1060.0,
+  "y0": 498.0,
+  "x1": 1493.0,
+  "y1": 537.0,
+  "text": "(2) (a)-(iv), (b)-(), (c)-(), (d)-(i)",
+  "score": 0.868
+ },
+ {
+  "x0": 377.0,
+  "y0": 544.0,
+  "x1": 796.0,
+  "y1": 577.0,
+  "text": "(3)(a)-(iv), (b)-(i), (c)-(), (d)-(ili",
+  "score": 0.917
+ },
+ {
+  "x0": 1060.0,
+  "y0": 541.0,
+  "x1": 1494.0,
+  "y1": 580.0,
+  "text": "(4)(a)-(ii), (b)-(), (c)-(ii), (d)-(iv)",
+  "score": 0.906
+ },
+ {
+  "x0": 376.0,
+  "y0": 586.0,
+  "x1": 527.0,
+  "y1": 620.0,
+  "text": "Answer (2)",
+  "score": 0.822
+ },
+ {
+  "x0": 288.0,
+  "y0": 636.0,
+  "x1": 349.0,
+  "y1": 665.0,
+  "text": "109.",
+  "score": 0.692
+ },
+ {
+  "x0": 372.0,
+  "y0": 634.0,
+  "x1": 1236.0,
+  "y1": 668.0,
+  "text": "Which one of the following never occurs during mitotic cell division?",
+  "score": 0.917
+ },
+ {
+  "x0": 374.0,
+  "y0": 676.0,
+  "x1": 418.0,
+  "y1": 712.0,
+  "text": "(1)",
+  "score": 0.749
+ },
+ {
+  "x0": 441.0,
+  "y0": 678.0,
+  "x1": 1129.0,
+  "y1": 707.0,
+  "text": "Spindle fibres attach to kinetochores of chromosomes",
+  "score": 0.927
+ },
+ {
+  "x0": 375.0,
+  "y0": 716.0,
+  "x1": 415.0,
+  "y1": 751.0,
+  "text": "(2)",
+  "score": 0.75
+ },
+ {
+  "x0": 439.0,
+  "y0": 717.0,
+  "x1": 1043.0,
+  "y1": 748.0,
+  "text": "Movement of centrioles towards opposite poles",
+  "score": 0.931
+ },
+ {
+  "x0": 375.0,
+  "y0": 757.0,
+  "x1": 415.0,
+  "y1": 791.0,
+  "text": "(3)",
+  "score": 0.75
+ },
+ {
+  "x0": 440.0,
+  "y0": 757.0,
+  "x1": 920.0,
+  "y1": 789.0,
+  "text": "Pairing of homologous chromosomes",
+  "score": 0.883
+ },
+ {
+  "x0": 374.0,
+  "y0": 794.0,
+  "x1": 417.0,
+  "y1": 832.0,
+  "text": "(4)",
+  "score": 0.75
+ },
+ {
+  "x0": 438.0,
+  "y0": 798.0,
+  "x1": 994.0,
+  "y1": 827.0,
+  "text": "Coiling and condensation of the chromatids",
+  "score": 0.886
+ },
+ {
+  "x0": 374.0,
+  "y0": 833.0,
+  "x1": 528.0,
+  "y1": 871.0,
+  "text": "Answer (3)",
+  "score": 0.863
+ },
+ {
+  "x0": 289.0,
+  "y0": 883.0,
+  "x1": 353.0,
+  "y1": 912.0,
+  "text": "110.",
+  "score": 0.673
+ },
+ {
+  "x0": 372.0,
+  "y0": 882.0,
+  "x1": 807.0,
+  "y1": 913.0,
+  "text": "Given below are two statements :",
+  "score": 0.913
+ },
+ {
+  "x0": 376.0,
+  "y0": 925.0,
+  "x1": 552.0,
+  "y1": 951.0,
+  "text": "Statement l :",
+  "score": 0.776
+ },
+ {
+  "x0": 375.0,
+  "y0": 964.0,
+  "x1": 1629.0,
+  "y1": 997.0,
+  "text": "The primary CO, acceptor in C plants is phosphoenolpyruvate and is found in the mesophyll cells.",
+  "score": 0.92
+ },
+ {
+  "x0": 377.0,
+  "y0": 1014.0,
+  "x1": 563.0,
+  "y1": 1040.0,
+  "text": "Statement Il :",
+  "score": 0.83
+ },
+ {
+  "x0": 382.0,
+  "y0": 1051.0,
+  "x1": 1739.0,
+  "y1": 1085.0,
+  "text": "Mesophyll cells of C, plants lack RuBisCo enzyme. In the light of the above statements, choose the correct",
+  "score": 0.926
+ },
+ {
+  "x0": 374.0,
+  "y0": 1094.0,
+  "x1": 854.0,
+  "y1": 1125.0,
+  "text": "answer from the options given below:",
+  "score": 0.926
+ },
+ {
+  "x0": 375.0,
+  "y0": 1134.0,
+  "x1": 415.0,
+  "y1": 1167.0,
+  "text": "(1)",
+  "score": 0.748
+ },
+ {
+  "x0": 442.0,
+  "y0": 1136.0,
+  "x1": 1042.0,
+  "y1": 1162.0,
+  "text": "Both Statement I and Statement Il are correct",
+  "score": 0.908
+ },
+ {
+  "x0": 375.0,
+  "y0": 1174.0,
+  "x1": 414.0,
+  "y1": 1207.0,
+  "text": "(2)",
+  "score": 0.703
+ },
+ {
+  "x0": 441.0,
+  "y0": 1175.0,
+  "x1": 1063.0,
+  "y1": 1203.0,
+  "text": "Both Statement I and Statement Il are incorrect",
+  "score": 0.885
+ },
+ {
+  "x0": 375.0,
+  "y0": 1214.0,
+  "x1": 414.0,
+  "y1": 1248.0,
+  "text": "(3)",
+  "score": 0.749
+ },
+ {
+  "x0": 442.0,
+  "y0": 1214.0,
+  "x1": 1091.0,
+  "y1": 1244.0,
+  "text": "Statement Iis correct but Statement ll is incorrect",
+  "score": 0.904
+ },
+ {
+  "x0": 375.0,
+  "y0": 1254.0,
+  "x1": 415.0,
+  "y1": 1286.0,
+  "text": "(4)",
+  "score": 0.75
+ },
+ {
+  "x0": 442.0,
+  "y0": 1256.0,
+  "x1": 1092.0,
+  "y1": 1282.0,
+  "text": "Statement Iis incorrect but Statement ll is correct",
+  "score": 0.89
+ },
+ {
+  "x0": 374.0,
+  "y0": 1292.0,
+  "x1": 528.0,
+  "y1": 1328.0,
+  "text": "Answer (1)",
+  "score": 0.865
+ },
+ {
+  "x0": 289.0,
+  "y0": 1340.0,
+  "x1": 355.0,
+  "y1": 1368.0,
+  "text": "111.",
+  "score": 0.744
+ },
+ {
+  "x0": 369.0,
+  "y0": 1340.0,
+  "x1": 1735.0,
+  "y1": 1373.0,
+  "text": "Which one of the following is not true regarding the release of energy during ATP synthesis through",
+  "score": 0.933
+ },
+ {
+  "x0": 376.0,
+  "y0": 1375.0,
+  "x1": 723.0,
+  "y1": 1404.0,
+  "text": "chemiosmosis? It involves:",
+  "score": 0.893
+ },
+ {
+  "x0": 375.0,
+  "y0": 1414.0,
+  "x1": 417.0,
+  "y1": 1447.0,
+  "text": "(1)",
+  "score": 0.745
+ },
+ {
+  "x0": 438.0,
+  "y0": 1414.0,
+  "x1": 823.0,
+  "y1": 1443.0,
+  "text": "Breakdown of proton gradient",
+  "score": 0.88
+ },
+ {
+  "x0": 374.0,
+  "y0": 1451.0,
+  "x1": 415.0,
+  "y1": 1488.0,
+  "text": "(2)",
+  "score": 0.75
+ },
+ {
+  "x0": 442.0,
+  "y0": 1454.0,
+  "x1": 843.0,
+  "y1": 1482.0,
+  "text": "Breakdown of electron gradient",
+  "score": 0.911
+ },
+ {
+  "x0": 375.0,
+  "y0": 1493.0,
+  "x1": 414.0,
+  "y1": 1527.0,
+  "text": "(3)",
+  "score": 0.75
+ },
+ {
+  "x0": 442.0,
+  "y0": 1494.0,
+  "x1": 1177.0,
+  "y1": 1523.0,
+  "text": "Movement of protons across the membrane to the stroma",
+  "score": 0.93
+ },
+ {
+  "x0": 375.0,
+  "y0": 1533.0,
+  "x1": 414.0,
+  "y1": 1567.0,
+  "text": "(4)",
+  "score": 0.749
+ },
+ {
+  "x0": 441.0,
+  "y0": 1534.0,
+  "x1": 1314.0,
+  "y1": 1564.0,
+  "text": "Reduction of NADP to NADPH, on the stroma side of the membrane",
+  "score": 0.934
+ },
+ {
+  "x0": 375.0,
+  "y0": 1581.0,
+  "x1": 527.0,
+  "y1": 1615.0,
+  "text": "Answer (2)",
+  "score": 0.854
+ },
+ {
+  "x0": 289.0,
+  "y0": 1627.0,
+  "x1": 351.0,
+  "y1": 1656.0,
+  "text": "112.",
+  "score": 0.775
+ },
+ {
+  "x0": 373.0,
+  "y0": 1628.0,
+  "x1": 1715.0,
+  "y1": 1659.0,
+  "text": "Habitat loss and fragmentation, over exploitation, alien species invasion and co-extinction are causes for:",
+  "score": 0.919
+ },
+ {
+  "x0": 374.0,
+  "y0": 1668.0,
+  "x1": 713.0,
+  "y1": 1704.0,
+  "text": "(1)  Population explosion",
+  "score": 0.868
+ },
+ {
+  "x0": 1061.0,
+  "y0": 1668.0,
+  "x1": 1133.0,
+  "y1": 1704.0,
+  "text": "(2) ",
+  "score": 0.691
+ },
+ {
+  "x0": 1114.0,
+  "y0": 1668.0,
+  "x1": 1284.0,
+  "y1": 1701.0,
+  "text": "Competition",
+  "score": 0.82
+ },
+ {
+  "x0": 376.0,
+  "y0": 1709.0,
+  "x1": 651.0,
+  "y1": 1742.0,
+  "text": "(3) Biodiversity loss",
+  "score": 0.855
+ },
+ {
+  "x0": 1059.0,
+  "y0": 1705.0,
+  "x1": 1230.0,
+  "y1": 1746.0,
+  "text": "(4)  Natality",
+  "score": 0.851
+ },
+ {
+  "x0": 374.0,
+  "y0": 1744.0,
+  "x1": 527.0,
+  "y1": 1783.0,
+  "text": "Answer (3)",
+  "score": 0.89
+ },
+ {
+  "x0": 288.0,
+  "y0": 1792.0,
+  "x1": 351.0,
+  "y1": 1825.0,
+  "text": "113.",
+  "score": 0.753
+ },
+ {
+  "x0": 373.0,
+  "y0": 1794.0,
+  "x1": 1729.0,
+  "y1": 1825.0,
+  "text": "What is the net gain of ATP when each molecule of glucose is converted to two molecules of pyruvic acid?",
+  "score": 0.918
+ },
+ {
+  "x0": 374.0,
+  "y0": 1834.0,
+  "x1": 422.0,
+  "y1": 1869.0,
+  "text": "(1)",
+  "score": 0.734
+ },
+ {
+  "x0": 432.0,
+  "y0": 1834.0,
+  "x1": 507.0,
+  "y1": 1866.0,
+  "text": " Four",
+  "score": 0.779
+ },
+ {
+  "x0": 1061.0,
+  "y0": 1834.0,
+  "x1": 1109.0,
+  "y1": 1869.0,
+  "text": "(2)",
+  "score": 0.745
+ },
+ {
+  "x0": 1125.0,
+  "y0": 1835.0,
+  "x1": 1174.0,
+  "y1": 1866.0,
+  "text": "Six",
+  "score": 0.749
+ },
+ {
+  "x0": 373.0,
+  "y0": 1870.0,
+  "x1": 502.0,
+  "y1": 1910.0,
+  "text": "(3)Two",
+  "score": 0.845
+ },
+ {
+  "x0": 1062.0,
+  "y0": 1874.0,
+  "x1": 1115.0,
+  "y1": 1909.0,
+  "text": "(4)",
+  "score": 0.749
+ },
+ {
+  "x0": 1115.0,
+  "y0": 1873.0,
+  "x1": 1201.0,
+  "y1": 1908.0,
+  "text": " Eight",
+  "score": 0.795
+ },
+ {
+  "x0": 375.0,
+  "y0": 1913.0,
+  "x1": 527.0,
+  "y1": 1947.0,
+  "text": "Answer (3)",
+  "score": 0.903
+ },
+ {
+  "x0": 289.0,
+  "y0": 1960.0,
+  "x1": 349.0,
+  "y1": 1989.0,
+  "text": "114.",
+  "score": 0.777
+ },
+ {
+  "x0": 373.0,
+  "y0": 1959.0,
+  "x1": 1663.0,
+  "y1": 1991.0,
+  "text": "\"Girdling Experiment\" was performed by Plant Physiologists to identify the plant tissue through which:",
+  "score": 0.924
+ },
+ {
+  "x0": 376.0,
+  "y0": 2000.0,
+  "x1": 429.0,
+  "y1": 2034.0,
+  "text": "(1)",
+  "score": 0.747
+ },
+ {
+  "x0": 437.0,
+  "y0": 2003.0,
+  "x1": 698.0,
+  "y1": 2030.0,
+  "text": "wateris transported",
+  "score": 0.893
+ },
+ {
+  "x0": 1062.0,
+  "y0": 2000.0,
+  "x1": 1110.0,
+  "y1": 2035.0,
+  "text": "(2)",
+  "score": 0.749
+ },
+ {
+  "x0": 1124.0,
+  "y0": 2003.0,
+  "x1": 1369.0,
+  "y1": 2030.0,
+  "text": "food is transported",
+  "score": 0.935
+ },
+ {
+  "x0": 376.0,
+  "y0": 2040.0,
+  "x1": 923.0,
+  "y1": 2073.0,
+  "text": "(3)  for both water and food transportation",
+  "score": 0.901
+ },
+ {
+  "x0": 1061.0,
+  "y0": 2039.0,
+  "x1": 1114.0,
+  "y1": 2074.0,
+  "text": "(4)",
+  "score": 0.714
+ },
+ {
+  "x0": 1126.0,
+  "y0": 2042.0,
+  "x1": 1390.0,
+  "y1": 2069.0,
+  "text": "osmosisis observed",
+  "score": 0.835
+ },
+ {
+  "x0": 373.0,
+  "y0": 2078.0,
+  "x1": 527.0,
+  "y1": 2113.0,
+  "text": "Answer (2)",
+  "score": 0.869
+ },
+ {
+  "x0": 976.0,
+  "y0": 2137.0,
+  "x1": 1049.0,
+  "y1": 2166.0,
+  "text": "- 23 -",
+  "score": 0.789
+ },
+ {
+  "x0": 1589.0,
+  "y0": 2311.0,
+  "x1": 1909.0,
+  "y1": 2369.0,
+  "text": "collegedunia",
+  "score": 0.918
+ },
+ {
+  "x0": 1591.0,
+  "y0": 2376.0,
+  "x1": 1913.0,
+  "y1": 2396.0,
+  "text": "India'slargestStudentReviewPlatform",
+  "score": 0.931
+ }
+]

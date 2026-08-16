@@ -1,0 +1,586 @@
+[
+ {
+  "x0": 289.0,
+  "y0": 160.0,
+  "x1": 355.0,
+  "y1": 189.0,
+  "text": "135.",
+  "score": 0.697
+ },
+ {
+  "x0": 373.0,
+  "y0": 161.0,
+  "x1": 805.0,
+  "y1": 189.0,
+  "text": "Given below are two statements :",
+  "score": 0.939
+ },
+ {
+  "x0": 376.0,
+  "y0": 205.0,
+  "x1": 551.0,
+  "y1": 231.0,
+  "text": "Statementl :",
+  "score": 0.826
+ },
+ {
+  "x0": 374.0,
+  "y0": 244.0,
+  "x1": 1646.0,
+  "y1": 278.0,
+  "text": "Mendel studied seven pairs of contrasting traits in pea plants and proposed the Laws of Inheritance.",
+  "score": 0.94
+ },
+ {
+  "x0": 374.0,
+  "y0": 288.0,
+  "x1": 562.0,
+  "y1": 320.0,
+  "text": "Statement II :",
+  "score": 0.84
+ },
+ {
+  "x0": 376.0,
+  "y0": 409.0,
+  "x1": 1570.0,
+  "y1": 440.0,
+  "text": "In the light of the above statements, choose the correct answer from the options given below :",
+  "score": 0.927
+ },
+ {
+  "x0": 375.0,
+  "y0": 452.0,
+  "x1": 416.0,
+  "y1": 486.0,
+  "text": "(1)",
+  "score": 0.741
+ },
+ {
+  "x0": 440.0,
+  "y0": 453.0,
+  "x1": 1040.0,
+  "y1": 481.0,
+  "text": "Both Statement I and Statement Il are correct",
+  "score": 0.847
+ },
+ {
+  "x0": 375.0,
+  "y0": 494.0,
+  "x1": 415.0,
+  "y1": 529.0,
+  "text": "(2)",
+  "score": 0.75
+ },
+ {
+  "x0": 442.0,
+  "y0": 498.0,
+  "x1": 1062.0,
+  "y1": 524.0,
+  "text": "Both Statement I and Statement Il are incorrect",
+  "score": 0.898
+ },
+ {
+  "x0": 375.0,
+  "y0": 538.0,
+  "x1": 415.0,
+  "y1": 572.0,
+  "text": "(3)",
+  "score": 0.748
+ },
+ {
+  "x0": 443.0,
+  "y0": 541.0,
+  "x1": 1091.0,
+  "y1": 567.0,
+  "text": "Statement Iis correct but Statement ll is incorrect",
+  "score": 0.875
+ },
+ {
+  "x0": 375.0,
+  "y0": 582.0,
+  "x1": 415.0,
+  "y1": 615.0,
+  "text": "(4)",
+  "score": 0.72
+ },
+ {
+  "x0": 442.0,
+  "y0": 584.0,
+  "x1": 1092.0,
+  "y1": 610.0,
+  "text": "Statement Iis incorrect but Statement ll is correct",
+  "score": 0.875
+ },
+ {
+  "x0": 373.0,
+  "y0": 621.0,
+  "x1": 527.0,
+  "y1": 658.0,
+  "text": "Answer (1)",
+  "score": 0.853
+ },
+ {
+  "x0": 960.0,
+  "y0": 678.0,
+  "x1": 1152.0,
+  "y1": 711.0,
+  "text": "SECTION-B",
+  "score": 0.833
+ },
+ {
+  "x0": 287.0,
+  "y0": 738.0,
+  "x1": 350.0,
+  "y1": 771.0,
+  "text": "136.",
+  "score": 0.736
+ },
+ {
+  "x0": 373.0,
+  "y0": 739.0,
+  "x1": 1159.0,
+  "y1": 770.0,
+  "text": "Transposons can be used during which one of the following ?",
+  "score": 0.914
+ },
+ {
+  "x0": 373.0,
+  "y0": 777.0,
+  "x1": 806.0,
+  "y1": 816.0,
+  "text": "(1) Polymerase Chain Reaction",
+  "score": 0.921
+ },
+ {
+  "x0": 1061.0,
+  "y0": 778.0,
+  "x1": 1326.0,
+  "y1": 815.0,
+  "text": "(2)  Gene Silencing",
+  "score": 0.867
+ },
+ {
+  "x0": 375.0,
+  "y0": 817.0,
+  "x1": 655.0,
+  "y1": 853.0,
+  "text": "(3) Autoradiography",
+  "score": 0.9
+ },
+ {
+  "x0": 1059.0,
+  "y0": 816.0,
+  "x1": 1358.0,
+  "y1": 856.0,
+  "text": "(4)  Gene sequencing",
+  "score": 0.903
+ },
+ {
+  "x0": 375.0,
+  "y0": 858.0,
+  "x1": 528.0,
+  "y1": 892.0,
+  "text": "Answer (2)",
+  "score": 0.888
+ },
+ {
+  "x0": 289.0,
+  "y0": 904.0,
+  "x1": 353.0,
+  "y1": 933.0,
+  "text": "137.",
+  "score": 0.713
+ },
+ {
+  "x0": 368.0,
+  "y0": 901.0,
+  "x1": 1737.0,
+  "y1": 936.0,
+  "text": "While explaining interspecific interaction of population, (+) sign is assigned for beneficial interaction, (-) sign",
+  "score": 0.926
+ },
+ {
+  "x0": 374.0,
+  "y0": 938.0,
+  "x1": 1737.0,
+  "y1": 967.0,
+  "text": "is assigned for detrimental interaction and (O) for neutral interaction. Which of the following interactions can",
+  "score": 0.939
+ },
+ {
+  "x0": 373.0,
+  "y0": 969.0,
+  "x1": 1521.0,
+  "y1": 1003.0,
+  "text": "be assigned (+) for one specifies and (-) for another specifies involved in the interaction ?",
+  "score": 0.92
+ },
+ {
+  "x0": 373.0,
+  "y0": 1008.0,
+  "x1": 571.0,
+  "y1": 1044.0,
+  "text": "(1) Predation",
+  "score": 0.82
+ },
+ {
+  "x0": 1060.0,
+  "y0": 1006.0,
+  "x1": 1277.0,
+  "y1": 1045.0,
+  "text": "(2)  Amensalim",
+  "score": 0.843
+ },
+ {
+  "x0": 374.0,
+  "y0": 1047.0,
+  "x1": 645.0,
+  "y1": 1083.0,
+  "text": "(3)Commensalism",
+  "score": 0.934
+ },
+ {
+  "x0": 1061.0,
+  "y0": 1047.0,
+  "x1": 1286.0,
+  "y1": 1084.0,
+  "text": "(4)   Competition",
+  "score": 0.845
+ },
+ {
+  "x0": 374.0,
+  "y0": 1086.0,
+  "x1": 526.0,
+  "y1": 1122.0,
+  "text": "Answer (1)",
+  "score": 0.903
+ },
+ {
+  "x0": 287.0,
+  "y0": 1131.0,
+  "x1": 350.0,
+  "y1": 1163.0,
+  "text": "138.",
+  "score": 0.614
+ },
+ {
+  "x0": 373.0,
+  "y0": 1133.0,
+  "x1": 1279.0,
+  "y1": 1163.0,
+  "text": "Which part of the fruit, labelled in the given figure makes it a false fruit?",
+  "score": 0.931
+ },
+ {
+  "x0": 435.0,
+  "y0": 1452.0,
+  "x1": 633.0,
+  "y1": 1485.0,
+  "text": "A → Mesocarp",
+  "score": 0.852
+ },
+ {
+  "x0": 376.0,
+  "y0": 1453.0,
+  "x1": 417.0,
+  "y1": 1485.0,
+  "text": "(1)",
+  "score": 0.653
+ },
+ {
+  "x0": 1064.0,
+  "y0": 1453.0,
+  "x1": 1104.0,
+  "y1": 1485.0,
+  "text": "(2) ",
+  "score": 0.707
+ },
+ {
+  "x0": 1126.0,
+  "y0": 1452.0,
+  "x1": 1315.0,
+  "y1": 1486.0,
+  "text": "B → Endocarp",
+  "score": 0.812
+ },
+ {
+  "x0": 375.0,
+  "y0": 1493.0,
+  "x1": 638.0,
+  "y1": 1529.0,
+  "text": "(3) C→ Thalamus",
+  "score": 0.797
+ },
+ {
+  "x0": 1063.0,
+  "y0": 1495.0,
+  "x1": 1105.0,
+  "y1": 1528.0,
+  "text": "(4)",
+  "score": 0.75
+ },
+ {
+  "x0": 1126.0,
+  "y0": 1494.0,
+  "x1": 1264.0,
+  "y1": 1524.0,
+  "text": "D Seed",
+  "score": 0.81
+ },
+ {
+  "x0": 374.0,
+  "y0": 1532.0,
+  "x1": 527.0,
+  "y1": 1568.0,
+  "text": "Answer (3)",
+  "score": 0.852
+ },
+ {
+  "x0": 287.0,
+  "y0": 1577.0,
+  "x1": 350.0,
+  "y1": 1609.0,
+  "text": "139.",
+  "score": 0.603
+ },
+ {
+  "x0": 376.0,
+  "y0": 1580.0,
+  "x1": 1029.0,
+  "y1": 1609.0,
+  "text": "Match the plant with the kind of life cycle it exhibits:",
+  "score": 0.931
+ },
+ {
+  "x0": 481.0,
+  "y0": 1625.0,
+  "x1": 561.0,
+  "y1": 1657.0,
+  "text": "List-1",
+  "score": 0.754
+ },
+ {
+  "x0": 814.0,
+  "y0": 1625.0,
+  "x1": 900.0,
+  "y1": 1656.0,
+  "text": "List-Il",
+  "score": 0.781
+ },
+ {
+  "x0": 390.0,
+  "y0": 1673.0,
+  "x1": 431.0,
+  "y1": 1707.0,
+  "text": "(a)",
+  "score": 0.748
+ },
+ {
+  "x0": 484.0,
+  "y0": 1673.0,
+  "x1": 613.0,
+  "y1": 1707.0,
+  "text": "Spirogyra",
+  "score": 0.891
+ },
+ {
+  "x0": 817.0,
+  "y0": 1673.0,
+  "x1": 1555.0,
+  "y1": 1704.0,
+  "text": "Dominant diploid sporophyte vascular plant, with highly",
+  "score": 0.928
+ },
+ {
+  "x0": 818.0,
+  "y0": 1708.0,
+  "x1": 1295.0,
+  "y1": 1736.0,
+  "text": "reduced male orfemale gametophyte",
+  "score": 0.868
+ },
+ {
+  "x0": 389.0,
+  "y0": 1750.0,
+  "x1": 431.0,
+  "y1": 1788.0,
+  "text": "(b)",
+  "score": 0.748
+ },
+ {
+  "x0": 480.0,
+  "y0": 1748.0,
+  "x1": 549.0,
+  "y1": 1785.0,
+  "text": "Fern",
+  "score": 0.799
+ },
+ {
+  "x0": 742.0,
+  "y0": 1751.0,
+  "x1": 780.0,
+  "y1": 1787.0,
+  "text": "(1)",
+  "score": 0.646
+ },
+ {
+  "x0": 818.0,
+  "y0": 1753.0,
+  "x1": 1350.0,
+  "y1": 1785.0,
+  "text": "Dominant haploid free-living gametophyte",
+  "score": 0.941
+ },
+ {
+  "x0": 389.0,
+  "y0": 1798.0,
+  "x1": 430.0,
+  "y1": 1836.0,
+  "text": "(c)",
+  "score": 0.734
+ },
+ {
+  "x0": 483.0,
+  "y0": 1796.0,
+  "x1": 587.0,
+  "y1": 1831.0,
+  "text": "Funaria",
+  "score": 0.863
+ },
+ {
+  "x0": 741.0,
+  "y0": 1798.0,
+  "x1": 787.0,
+  "y1": 1834.0,
+  "text": "()",
+  "score": 0.657
+ },
+ {
+  "x0": 818.0,
+  "y0": 1801.0,
+  "x1": 1556.0,
+  "y1": 1831.0,
+  "text": "Dominant diploid sporophyte alternating with reduced",
+  "score": 0.923
+ },
+ {
+  "x0": 817.0,
+  "y0": 1833.0,
+  "x1": 1204.0,
+  "y1": 1866.0,
+  "text": "gametophyte called prothallus",
+  "score": 0.905
+ },
+ {
+  "x0": 389.0,
+  "y0": 1877.0,
+  "x1": 432.0,
+  "y1": 1914.0,
+  "text": "(d)",
+  "score": 0.746
+ },
+ {
+  "x0": 484.0,
+  "y0": 1877.0,
+  "x1": 571.0,
+  "y1": 1912.0,
+  "text": "Cycas",
+  "score": 0.805
+ },
+ {
+  "x0": 741.0,
+  "y0": 1877.0,
+  "x1": 789.0,
+  "y1": 1913.0,
+  "text": "(iv)",
+  "score": 0.792
+ },
+ {
+  "x0": 817.0,
+  "y0": 1878.0,
+  "x1": 1556.0,
+  "y1": 1911.0,
+  "text": "Dominant haploid leafy gametophyte alternating with",
+  "score": 0.896
+ },
+ {
+  "x0": 818.0,
+  "y0": 1914.0,
+  "x1": 1373.0,
+  "y1": 1944.0,
+  "text": "partially dependent multicellular sporophyte",
+  "score": 0.934
+ },
+ {
+  "x0": 375.0,
+  "y0": 1956.0,
+  "x1": 1131.0,
+  "y1": 1990.0,
+  "text": "Choose the correct answer from the options given below :",
+  "score": 0.932
+ },
+ {
+  "x0": 376.0,
+  "y0": 1998.0,
+  "x1": 804.0,
+  "y1": 2031.0,
+  "text": "(1)(a)-(iv), (b)-(0), (c)-(i), (d)-()",
+  "score": 0.886
+ },
+ {
+  "x0": 1060.0,
+  "y0": 1995.0,
+  "x1": 1494.0,
+  "y1": 2034.0,
+  "text": "(2) (a)-(i), (b)-(ii), (c)-(iv), (d)-(0)",
+  "score": 0.895
+ },
+ {
+  "x0": 378.0,
+  "y0": 2039.0,
+  "x1": 803.0,
+  "y1": 2069.0,
+  "text": "(3)(a)-(ii), (b)-(iv), (c)-(0), (d)-(ii)",
+  "score": 0.886
+ },
+ {
+  "x0": 1060.0,
+  "y0": 2035.0,
+  "x1": 1493.0,
+  "y1": 2074.0,
+  "text": "(4) (a)-(i), (b)-(iv), (c)-(i), (d)-(i)",
+  "score": 0.89
+ },
+ {
+  "x0": 374.0,
+  "y0": 2075.0,
+  "x1": 527.0,
+  "y1": 2110.0,
+  "text": "Answer (2)",
+  "score": 0.789
+ },
+ {
+  "x0": 976.0,
+  "y0": 2137.0,
+  "x1": 1049.0,
+  "y1": 2166.0,
+  "text": "- 27 -",
+  "score": 0.782
+ },
+ {
+  "x0": 1590.0,
+  "y0": 2313.0,
+  "x1": 1908.0,
+  "y1": 2366.0,
+  "text": "collegedunia",
+  "score": 0.887
+ },
+ {
+  "x0": 1591.0,
+  "y0": 2375.0,
+  "x1": 1913.0,
+  "y1": 2395.0,
+  "text": "India'slargestStudentReviewPlatform",
+  "score": 0.927
+ }
+]

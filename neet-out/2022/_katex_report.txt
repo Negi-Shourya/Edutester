@@ -1,0 +1,5 @@
+Total changes: 1
+
+--- Q89 stem ---
+OLD: A 10.0 L flask contains 64 g of oxygen at 27ºC. (Assume O_{2} gas is behaving ideally). The pressure inside the flask in bar is (Given R = 0.0831 L bar K^{–1} mol^{–1})
+NEW: A 10.0 L flask contains 64 g of oxygen at 27°C. (Assume O_{2} gas is behaving ideally). The pressure inside the flask in bar is (Given R = 0.0831 L bar K^{–1} mol^{–1})

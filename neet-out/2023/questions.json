@@ -1,0 +1,5965 @@
+{
+ "key": "neet-2023",
+ "title": "NEET (UG) 2023",
+ "fullTitle": "NEET (UG) 2023 - National Eligibility cum Entrance Test",
+ "examDate": "2023-05-07",
+ "durationMinutes": 200,
+ "questionCount": 180,
+ "questions": [
+  {
+   "subject": "phy",
+   "booklet": 3,
+   "number": 1,
+   "text": "A vehicle travels half the distance with speed v and the remaining distance with speed 2v. Its average speed is:",
+   "options": [
+    {
+     "label": "1",
+     "text": "\\frac{v}{3}"
+    },
+    {
+     "label": "2",
+     "text": "",
+     "image": "Q3_opt2.png"
+    },
+    {
+     "label": "3",
+     "text": "\\frac{4v}{3}"
+    },
+    {
+     "label": "4",
+     "text": "",
+     "image": "Q3_opt4.png"
+    }
+   ],
+   "answers": [
+    4
+   ],
+   "page": 19,
+   "top_y": 519.0604858398438,
+   "col": "L",
+   "images": [],
+   "section": "PHYSICS"
+  },
+  {
+   "subject": "phy",
+   "booklet": 4,
+   "number": 2,
+   "text": "A football player is moving southward and suddenly turns eastward with the same speed to avoid an opponent. The force that acts on the player while turning is:",
+   "options": [
+    {
+     "label": "1",
+     "text": "along south-west"
+    },
+    {
+     "label": "2",
+     "text": "along eastward"
+    },
+    {
+     "label": "3",
+     "text": "along northward"
+    },
+    {
+     "label": "4",
+     "text": "along north-east"
+    }
+   ],
+   "answers": [
+    4
+   ],
+   "page": 19,
+   "top_y": 635.240478515625,
+   "col": "L",
+   "images": [],
+   "section": "PHYSICS"
+  },
+  {
+   "subject": "phy",
+   "booklet": 5,
+   "number": 3,
+   "text": "A bullet is fired from a gun at the speed of 280 m/s in the direction 30° above the horizontal. The maximum height attained by the bullet is (g = 9.8 ms^{–2}, sin 30° = 0.5)",
+   "options": [
+    {
+     "label": "1",
+     "text": "3000 m"
+    },
+    {
+     "label": "2",
+     "text": "2800 m"
+    },
+    {
+     "label": "3",
+     "text": "2000 m"
+    },
+    {
+     "label": "4",
+     "text": "1000 m"
+    }
+   ],
+   "answers": [
+    4
+   ],
+   "page": 19,
+   "top_y": 710.0805053710938,
+   "col": "L",
+   "images": [],
+   "section": "PHYSICS"
+  },
+  {
+   "subject": "phy",
+   "booklet": 6,
+   "number": 4,
+   "text": "The potential energy of a long spring when stretched by 2 cm is U. If the spring is stretched by 8 cm, potential energy stored in it will be:",
+   "options": [
+    {
+     "label": "1",
+     "text": "16U"
+    },
+    {
+     "label": "2",
+     "text": "2U"
+    },
+    {
+     "label": "3",
+     "text": "4U"
+    },
+    {
+     "label": "4",
+     "text": "8U"
+    }
+   ],
+   "answers": [
+    1
+   ],
+   "page": 19,
+   "top_y": 323.780517578125,
+   "col": "R",
+   "images": [],
+   "section": "PHYSICS"
+  },
+  {
+   "subject": "phy",
+   "booklet": 7,
+   "number": 5,
+   "text": "The angular acceleration of a body, moving along the circumference of a circle, is:",
+   "options": [
+    {
+     "label": "1",
+     "text": "along the axis of rotation"
+    },
+    {
+     "label": "2",
+     "text": "along the radius, away from centre"
+    },
+    {
+     "label": "3",
+     "text": "along the radius towards the centre"
+    },
+    {
+     "label": "4",
+     "text": "along the tangent to its position"
+    }
+   ],
+   "answers": [
+    1
+   ],
+   "page": 19,
+   "top_y": 450.96051025390625,
+   "col": "R",
+   "images": [],
+   "section": "PHYSICS"
+  },
+  {
+   "subject": "phy",
+   "booklet": 8,
+   "number": 6,
+   "text": "The ratio of radius of gyration of a solid sphere of mass M and radius R about its own axis to the radius of gyration of the thin hollow sphere of same mass and radius about its axis is:",
+   "options": [
+    {
+     "label": "1",
+     "text": "5 : 2"
+    },
+    {
+     "label": "2",
+     "text": "3 : 5"
+    },
+    {
+     "label": "3",
+     "text": "5 : 3"
+    },
+    {
+     "label": "4",
+     "text": "2 : 5"
+    }
+   ],
+   "answers": [],
+   "page": 19,
+   "top_y": 549.260498046875,
+   "col": "R",
+   "images": [],
+   "section": "PHYSICS"
+  },
+  {
+   "subject": "phy",
+   "booklet": 9,
+   "number": 7,
+   "text": "Two bodies of mass m and 9m are placed at a distance R. The gravitational potential on the line joining the bodies where the gravitational field equals zero, will be (G = gravitational constant): \\frac{20Gm}{R} \\frac{8Gm}{R}",
+   "options": [
+    {
+     "label": "1",
+     "text": "−"
+    },
+    {
+     "label": "2",
+     "text": "− \\frac{12Gm}{R} \\frac{16Gm}{R}"
+    },
+    {
+     "label": "3",
+     "text": "−"
+    },
+    {
+     "label": "4",
+     "text": "−"
+    }
+   ],
+   "answers": [
+    4
+   ],
+   "page": 19,
+   "top_y": 670.1505126953125,
+   "col": "R",
+   "images": [],
+   "section": "PHYSICS"
+  },
+  {
+   "subject": "phy",
+   "booklet": 10,
+   "number": 8,
+   "text": "Let a wire be suspended from the ceiling (rigid support) and stretched by a weight W attached at its free end. The longitudinal stress at any point of cross-sectional area A of the wire is:",
+   "options": [
+    {
+     "label": "1",
+     "text": "Zero"
+    },
+    {
+     "label": "2",
+     "text": "\\frac{2W}{A}"
+    },
+    {
+     "label": "3",
+     "text": "\\frac{W}{2A}"
+    },
+    {
+     "label": "4",
+     "text": "",
+     "image": "Q10_opt4.png"
+    }
+   ],
+   "answers": [
+    3
+   ],
+   "page": 20,
+   "top_y": 98.15411376953125,
+   "col": "L",
+   "images": [],
+   "section": "PHYSICS"
+  },
+  {
+   "subject": "phy",
+   "booklet": 11,
+   "number": 9,
+   "text": "The amount of energy required to form a bubble of radius 2 cm from a soap solution is nearly: (surface tension of soap solution = 0.03 N m^{–1})",
+   "options": [
+    {
+     "label": "1",
+     "text": "50.1 \\times 10^{–4} J"
+    },
+    {
+     "label": "2",
+     "text": "30.1 \\times 10^{–4} J"
+    },
+    {
+     "label": "3",
+     "text": "5.06 \\times 10^{–4} J"
+    },
+    {
+     "label": "4",
+     "text": "3.01 \\times 10^{–4} J"
+    }
+   ],
+   "answers": [
+    4
+   ],
+   "page": 20,
+   "top_y": 241.86407470703125,
+   "col": "L",
+   "images": [],
+   "section": "PHYSICS"
+  },
+  {
+   "subject": "phy",
+   "booklet": 12,
+   "number": 10,
+   "text": "The venturi-meter works on:",
+   "options": [
+    {
+     "label": "1",
+     "text": "The principle of perpendicular axes"
+    },
+    {
+     "label": "2",
+     "text": "Huygen’s principle"
+    },
+    {
+     "label": "3",
+     "text": "Bernoulli’s principle"
+    },
+    {
+     "label": "4",
+     "text": "The principle of parallel axes"
+    }
+   ],
+   "answers": [
+    3
+   ],
+   "page": 20,
+   "top_y": 316.2039794921875,
+   "col": "L",
+   "images": [],
+   "section": "PHYSICS"
+  },
+  {
+   "subject": "phy",
+   "booklet": 14,
+   "number": 11,
+   "text": "The temperature of a gas is –50 °C. To what temperature the gas should be heated so that the rms speed is increased by 3 times?",
+   "options": [
+    {
+     "label": "1",
+     "text": "223 K"
+    },
+    {
+     "label": "2",
+     "text": "669 °C"
+    },
+    {
+     "label": "3",
+     "text": "3295 °C"
+    },
+    {
+     "label": "4",
+     "text": "3097 K"
+    }
+   ],
+   "answers": [
+    3
+   ],
+   "page": 20,
+   "top_y": 511.2040100097656,
+   "col": "L",
+   "images": [],
+   "section": "PHYSICS"
+  },
+  {
+   "subject": "phy",
+   "booklet": 15,
+   "number": 12,
+   "text": "The ratio of frequencies of fundamental harmonic produced by an open pipe to that of a closed pipe having the same length is",
+   "options": [
+    {
+     "label": "1",
+     "text": "3 : 1"
+    },
+    {
+     "label": "2",
+     "text": "1 : 2"
+    },
+    {
+     "label": "3",
+     "text": "2 : 1"
+    },
+    {
+     "label": "4",
+     "text": "1 : 3"
+    }
+   ],
+   "answers": [
+    3
+   ],
+   "page": 20,
+   "top_y": 613.0540161132812,
+   "col": "L",
+   "images": [],
+   "section": "PHYSICS"
+  },
+  {
+   "subject": "phy",
+   "booklet": 16,
+   "number": 13,
+   "text": "An electric dipole is placed at an angle of 30° with an electric field of intensity 2 \\times 10^{5} NC^{–1}. It experiences a torque equal to 4 Nm. Calculate the magnitude of charge on the dipole, if the dipole length is 2 cm.",
+   "options": [
+    {
+     "label": "1",
+     "text": "2 mC"
+    },
+    {
+     "label": "2",
+     "text": "8 mC"
+    },
+    {
+     "label": "3",
+     "text": "6 mC"
+    },
+    {
+     "label": "4",
+     "text": "4 mC ρ ρ"
+    }
+   ],
+   "answers": [
+    1
+   ],
+   "page": 20,
+   "top_y": 714.9041137695312,
+   "col": "L",
+   "images": [],
+   "section": "PHYSICS"
+  },
+  {
+   "subject": "phy",
+   "booklet": 17,
+   "number": 14,
+   "text": "If ∫ E ⋅ dS = 0 over a surface, then:",
+   "options": [
+    {
+     "label": "1",
+     "text": "the electric field inside the surface is necessarily uniform."
+    },
+    {
+     "label": "2",
+     "text": "the number of flux lines entering the surface must be equal to the number of flux lines leaving it."
+    },
+    {
+     "label": "3",
+     "text": "the magnitude of electric field on the surface is constant."
+    },
+    {
+     "label": "4",
+     "text": "all the charges must necessarily be inside the surface."
+    }
+   ],
+   "answers": [
+    2
+   ],
+   "page": 20,
+   "top_y": 85.771484375,
+   "col": "R",
+   "images": [],
+   "section": "PHYSICS"
+  },
+  {
+   "subject": "phy",
+   "booklet": 18,
+   "number": 15,
+   "text": "The equivalent capacitance of the system shown in the following circuit is: 3µF B A 3µF 3µF",
+   "options": [
+    {
+     "label": "1",
+     "text": "9 µF"
+    },
+    {
+     "label": "2",
+     "text": "2 µF"
+    },
+    {
+     "label": "3",
+     "text": "3 µF"
+    },
+    {
+     "label": "4",
+     "text": "6 µF"
+    }
+   ],
+   "answers": [
+    2
+   ],
+   "page": 20,
+   "top_y": 201.37152099609375,
+   "col": "R",
+   "images": [
+    "Q18.png"
+   ],
+   "section": "PHYSICS"
+  },
+  {
+   "subject": "phy",
+   "booklet": 19,
+   "number": 16,
+   "text": "The magnitude and direction of the current in the following circuit is 2 10V 5V 1 A B E D C",
+   "options": [
+    {
+     "label": "1",
+     "text": "1.5 A from B A through E"
+    },
+    {
+     "label": "2",
+     "text": "0.2 A from B to A through E"
+    },
+    {
+     "label": "3",
+     "text": "0.5 A from A to B through E"
+    },
+    {
+     "label": "4",
+     "text": "A from A to B through E"
+    }
+   ],
+   "answers": [
+    3
+   ],
+   "page": 20,
+   "top_y": 362.21148681640625,
+   "col": "R",
+   "images": [
+    "Q19.png"
+   ],
+   "section": "PHYSICS"
+  },
+  {
+   "subject": "phy",
+   "booklet": 20,
+   "number": 17,
+   "text": "If the galvanometer G does not show any deflection in the circuit shown, the value of R is given by: + + R 40V – – 2V",
+   "options": [
+    {
+     "label": "1",
+     "text": "400 Ω"
+    },
+    {
+     "label": "2",
+     "text": "200 Ω"
+    },
+    {
+     "label": "3",
+     "text": "50 Ω"
+    },
+    {
+     "label": "4",
+     "text": "100 Ω"
+    }
+   ],
+   "answers": [
+    4
+   ],
+   "page": 20,
+   "top_y": 537.801513671875,
+   "col": "R",
+   "images": [
+    "Q20.png"
+   ],
+   "section": "PHYSICS"
+  },
+  {
+   "subject": "phy",
+   "booklet": 22,
+   "number": 18,
+   "text": "The net magnetic flux through any closed surface is:",
+   "options": [
+    {
+     "label": "1",
+     "text": "Negative"
+    },
+    {
+     "label": "2",
+     "text": "Zero"
+    },
+    {
+     "label": "3",
+     "text": "Positive"
+    },
+    {
+     "label": "4",
+     "text": "Infinity"
+    }
+   ],
+   "answers": [
+    2
+   ],
+   "page": 20,
+   "top_y": 753.9815063476562,
+   "col": "R",
+   "images": [],
+   "section": "PHYSICS"
+  },
+  {
+   "subject": "phy",
+   "booklet": 23,
+   "number": 19,
+   "text": "The magnetic energy stored in an inductor of inductance 4 μH carrying a current of 2 A is:",
+   "options": [
+    {
+     "label": "1",
+     "text": "8 µJ"
+    },
+    {
+     "label": "2",
+     "text": "4 µJ"
+    },
+    {
+     "label": "3",
+     "text": "4 mJ"
+    },
+    {
+     "label": "4",
+     "text": "8 mJ"
+    }
+   ],
+   "answers": [
+    1
+   ],
+   "page": 21,
+   "top_y": 101.3541259765625,
+   "col": "L",
+   "images": [],
+   "section": "PHYSICS"
+  },
+  {
+   "subject": "phy",
+   "booklet": 24,
+   "number": 20,
+   "text": "In a series LCR circuit, the inductance L is 10 mH, capacitance C is 1µF and resistance R is 100Ω. The frequency at which resonance",
+   "options": [
+    {
+     "label": "1",
+     "text": "1.59 kHz"
+    },
+    {
+     "label": "2",
+     "text": "15.9 rad/s",
+     "image": "Q24_opt2.png"
+    },
+    {
+     "label": "3",
+     "text": "15.9 kHz"
+    },
+    {
+     "label": "4",
+     "text": "1.59 rad/s",
+     "image": "Q24_opt4.png"
+    }
+   ],
+   "answers": [
+    1
+   ],
+   "page": 21,
+   "top_y": 183.61407470703125,
+   "col": "L",
+   "images": [],
+   "section": "PHYSICS"
+  },
+  {
+   "subject": "phy",
+   "booklet": 25,
+   "number": 21,
+   "text": "A 12 V, 60 W lamp is connected to the secondary of a step down transformer, whose primary is connected to ac mains of 220 V. Assuming the transformer to be ideal, what is the current in the primary winding?",
+   "options": [
+    {
+     "label": "1",
+     "text": "0.37 A"
+    },
+    {
+     "label": "2",
+     "text": "0.27 A"
+    },
+    {
+     "label": "3",
+     "text": "2.7 A"
+    },
+    {
+     "label": "4",
+     "text": "3.7 A"
+    }
+   ],
+   "answers": [
+    2
+   ],
+   "page": 21,
+   "top_y": 251.4539794921875,
+   "col": "L",
+   "images": [],
+   "section": "PHYSICS"
+  },
+  {
+   "subject": "phy",
+   "booklet": 26,
+   "number": 22,
+   "text": "An ac source is connected to a capacitor C. Due to decrease in its operating frequency:",
+   "options": [
+    {
+     "label": "1",
+     "text": "capacitive reactance remains constant"
+    },
+    {
+     "label": "2",
+     "text": "capacitive reactance decreases."
+    },
+    {
+     "label": "3",
+     "text": "displacement current increases."
+    },
+    {
+     "label": "4",
+     "text": "displacement current decreases."
+    }
+   ],
+   "answers": [
+    4
+   ],
+   "page": 21,
+   "top_y": 356.5140075683594,
+   "col": "L",
+   "images": [],
+   "section": "PHYSICS"
+  },
+  {
+   "subject": "phy",
+   "booklet": 27,
+   "number": 23,
+   "text": "In a plane electromagnetic wave travelling in free space, the electric field component oscillates sinusoidally at a frequency of 2.0 \\times 10^{10} Hz and amplitude 48 Vm^{–1}. Then the amplitude of oscillating magnetic field is: (Speed of light in free space = 3 \\times 108 ms^{–1})",
+   "options": [
+    {
+     "label": "1",
+     "text": "1.6 \\times 10^{–6} T"
+    },
+    {
+     "label": "2",
+     "text": "1.6 \\times 10^{–9} T"
+    },
+    {
+     "label": "3",
+     "text": "1.6 \\times 10^{–8} T"
+    },
+    {
+     "label": "4",
+     "text": "1.6 \\times 10^{–7} T"
+    }
+   ],
+   "answers": [
+    4
+   ],
+   "page": 21,
+   "top_y": 439.7539978027344,
+   "col": "L",
+   "images": [],
+   "section": "PHYSICS"
+  },
+  {
+   "subject": "phy",
+   "booklet": 28,
+   "number": 24,
+   "text": "",
+   "options": [
+    {
+     "label": "1",
+     "text": ""
+    },
+    {
+     "label": "2",
+     "text": "",
+     "image": null
+    },
+    {
+     "label": "3",
+     "text": "",
+     "image": null
+    },
+    {
+     "label": "4",
+     "text": "",
+     "image": null
+    }
+   ],
+   "answers": [
+    1
+   ],
+   "page": 21,
+   "top_y": 558.214111328125,
+   "col": "L",
+   "images": [],
+   "section": "PHYSICS"
+  },
+  {
+   "subject": "phy",
+   "booklet": 29,
+   "number": 25,
+   "text": "For Young’s double slit experiment, two statements are given below: Statement I: If screen is moved away from the plane of slits, angular separation of the fringes remains constant. Statement II: If the monochromatic source is replaced by another monochromatic source of larger wavelength, the angular separation of fringes decreases. In the light of the above statements, choose the correct answer from the options given below:",
+   "options": [
+    {
+     "label": "1",
+     "text": "Statement I is false but Statement II is true"
+    },
+    {
+     "label": "2",
+     "text": "Both Statement I and Statement II is true"
+    },
+    {
+     "label": "3",
+     "text": "Both Statement I and Statement II are true"
+    },
+    {
+     "label": "4",
+     "text": "Statement I is true but Statement II are false"
+    }
+   ],
+   "answers": [
+    4
+   ],
+   "page": 21,
+   "top_y": 686.97412109375,
+   "col": "L",
+   "images": [],
+   "section": "PHYSICS"
+  },
+  {
+   "subject": "phy",
+   "booklet": 30,
+   "number": 26,
+   "text": "The minimum wavelength of X-rays produced by an electron accelerated through a potential difference of V volts is proportional to:",
+   "options": [
+    {
+     "label": "1",
+     "text": "V^{2}"
+    },
+    {
+     "label": "2",
+     "text": "V"
+    },
+    {
+     "label": "3",
+     "text": "\\frac{1}{V}"
+    },
+    {
+     "label": "4",
+     "text": "",
+     "image": "Q30_opt4.png"
+    }
+   ],
+   "answers": [
+    3
+   ],
+   "page": 21,
+   "top_y": 165.7376708984375,
+   "col": "R",
+   "images": [],
+   "section": "PHYSICS"
+  },
+  {
+   "subject": "phy",
+   "booklet": 31,
+   "number": 27,
+   "text": "The work functions of Caesium (Cs), Potassium (K) and Sodium (Na) are 2.14 eV, 2.30 eV and 2.75 eV respectively. If incident electromagnetic radiation has an incident energy of 2.20 eV, which of these photosensitive surfaces may emit photoelectrons?",
+   "options": [
+    {
+     "label": "1",
+     "text": "Na only"
+    },
+    {
+     "label": "2",
+     "text": "Cs only"
+    },
+    {
+     "label": "3",
+     "text": "Both Na and K"
+    },
+    {
+     "label": "4",
+     "text": "K only"
+    }
+   ],
+   "answers": [
+    2
+   ],
+   "page": 21,
+   "top_y": 261.82769775390625,
+   "col": "R",
+   "images": [],
+   "section": "PHYSICS"
+  },
+  {
+   "subject": "phy",
+   "booklet": 32,
+   "number": 28,
+   "text": "In hydrogen spectrum, the shortest wavelength in the Balmer series is λ. The shortest wavelength in the Bracket series is :",
+   "options": [
+    {
+     "label": "1",
+     "text": "16 λ"
+    },
+    {
+     "label": "2",
+     "text": "2 λ"
+    },
+    {
+     "label": "3",
+     "text": "4 λ"
+    },
+    {
+     "label": "4",
+     "text": "9 λ"
+    }
+   ],
+   "answers": [
+    3
+   ],
+   "page": 21,
+   "top_y": 383.2676086425781,
+   "col": "R",
+   "images": [],
+   "section": "PHYSICS"
+  },
+  {
+   "subject": "phy",
+   "booklet": 34,
+   "number": 29,
+   "text": "A full wave rectifier circuit consists of two p-n junction diodes, a centre-tapped transformer, capacitor and a load resistance. Which of these components remove the ac ripple from the rectified output",
+   "options": [
+    {
+     "label": "1",
+     "text": "Load resistance"
+    },
+    {
+     "label": "2",
+     "text": "A centre-tapped transformer"
+    },
+    {
+     "label": "3",
+     "text": "p-n junction diodes"
+    },
+    {
+     "label": "4",
+     "text": "Capacitor"
+    }
+   ],
+   "answers": [
+    4
+   ],
+   "page": 21,
+   "top_y": 568.547607421875,
+   "col": "R",
+   "images": [],
+   "section": "PHYSICS"
+  },
+  {
+   "subject": "phy",
+   "booklet": 35,
+   "number": 30,
+   "text": "Given below are two statements: Statement I: Photovoltaic devices can convert optical radiation into electricity. Statement II: Zener diode is designed to operate under reverse bias in breakdown region. In the light of the above statements, choose the most appropriate answer from the options given below:",
+   "options": [
+    {
+     "label": "1",
+     "text": "Statement I is incorrect but Statement II is correct."
+    },
+    {
+     "label": "2",
+     "text": "Both Statement I and Statement II are correct."
+    },
+    {
+     "label": "3",
+     "text": "Both Statement I and Statement II are incorrect."
+    },
+    {
+     "label": "4",
+     "text": "Statement I is correct but Statement II is incorrect."
+    }
+   ],
+   "answers": [
+    2
+   ],
+   "page": 21,
+   "top_y": 651.3875732421875,
+   "col": "R",
+   "images": [],
+   "section": "PHYSICS"
+  },
+  {
+   "subject": "phy",
+   "booklet": 36,
+   "number": 31,
+   "text": "A horizontal bridge is built across a river. A student standing on the bridge throws a small ball vertically upwards with a velocity 4 ms^{–1}. The ball strikes the water surface after 4 s. The height of bridge above water surface is (Take g = 10 ms^{–2}):",
+   "options": [
+    {
+     "label": "1",
+     "text": "68 m"
+    },
+    {
+     "label": "2",
+     "text": "56 m"
+    },
+    {
+     "label": "3",
+     "text": "60 m"
+    },
+    {
+     "label": "4",
+     "text": "64 m"
+    }
+   ],
+   "answers": [
+    4
+   ],
+   "page": 22,
+   "top_y": 153.33831787109375,
+   "col": "L",
+   "images": [],
+   "section": "PHYSICS"
+  },
+  {
+   "subject": "phy",
+   "booklet": 37,
+   "number": 32,
+   "text": "Calculate the maximum acceleration of a moving car so that a body lying on the floor of the car remains stationary. The coefficient of static friction between the body and the floor is 0.15 (g = 10 ms^{–2}).",
+   "options": [
+    {
+     "label": "1",
+     "text": "50 ms^{–2}"
+    },
+    {
+     "label": "2",
+     "text": "1.2 ms^{–2}"
+    },
+    {
+     "label": "3",
+     "text": "150 ms^{–2}"
+    },
+    {
+     "label": "4",
+     "text": "1.5 ms^{–2}"
+    }
+   ],
+   "answers": [
+    4
+   ],
+   "page": 22,
+   "top_y": 271.45831298828125,
+   "col": "L",
+   "images": [],
+   "section": "PHYSICS"
+  },
+  {
+   "subject": "phy",
+   "booklet": 38,
+   "number": 33,
+   "text": "A bullet from a gun is fired on a rectangular wooden block with velocity u. When bullet travels 24 cm through the block along its length horizontally, velocity of bullet become . Then it further penetrates into the block in the same direction before coming to rest exactly at the other end of the block. The total length of the block is:",
+   "options": [
+    {
+     "label": "1",
+     "text": "30 cm"
+    },
+    {
+     "label": "2",
+     "text": "27 cm"
+    },
+    {
+     "label": "3",
+     "text": "24 cm"
+    },
+    {
+     "label": "4",
+     "text": "28 cm"
+    }
+   ],
+   "answers": [
+    2
+   ],
+   "page": 22,
+   "top_y": 377.9783020019531,
+   "col": "L",
+   "images": [],
+   "section": "PHYSICS"
+  },
+  {
+   "subject": "phy",
+   "booklet": 39,
+   "number": 34,
+   "text": "A satellite is orbiting just above the surface of the earth with period T. If d is the density of the earth and G is the universal \\frac{3π}{Gd} constant of gravitation, the quantity represents:",
+   "options": [
+    {
+     "label": "1",
+     "text": "T"
+    },
+    {
+     "label": "2",
+     "text": "T"
+    },
+    {
+     "label": "3",
+     "text": "T^{2}"
+    },
+    {
+     "label": "4",
+     "text": "T^{3}"
+    }
+   ],
+   "answers": [
+    3
+   ],
+   "page": 22,
+   "top_y": 523.3482666015625,
+   "col": "L",
+   "images": [],
+   "section": "PHYSICS"
+  },
+  {
+   "subject": "phy",
+   "booklet": 40,
+   "number": 35,
+   "text": "",
+   "options": [
+    {
+     "label": "1",
+     "text": "",
+     "image": null
+    },
+    {
+     "label": "2",
+     "text": "",
+     "image": null
+    },
+    {
+     "label": "3",
+     "text": "",
+     "image": null
+    },
+    {
+     "label": "4",
+     "text": "",
+     "image": null
+    }
+   ],
+   "answers": [
+    1
+   ],
+   "page": 22,
+   "top_y": 629.018310546875,
+   "col": "L",
+   "images": [
+    "Q40.png"
+   ],
+   "section": "PHYSICS"
+  },
+  {
+   "subject": "phy",
+   "booklet": 41,
+   "number": 36,
+   "text": "",
+   "options": [
+    {
+     "label": "1",
+     "text": ""
+    },
+    {
+     "label": "2",
+     "text": "",
+     "image": null
+    },
+    {
+     "label": "3",
+     "text": ""
+    },
+    {
+     "label": "4",
+     "text": "",
+     "image": null
+    }
+   ],
+   "answers": [
+    2
+   ],
+   "page": 22,
+   "top_y": 154.23828125,
+   "col": "R",
+   "images": [],
+   "section": "PHYSICS"
+  },
+  {
+   "subject": "phy",
+   "booklet": 42,
+   "number": 37,
+   "text": "The resistance of platinum wire at 0^{o}C is 2Ω and 6.8Ω at 80^{o}C. The temperature coefficient of resistance of the wire is:",
+   "options": [
+    {
+     "label": "1",
+     "text": "3 \\times 10^{–1o}C^{–1}"
+    },
+    {
+     "label": "2",
+     "text": "3 \\times 10^{–4o}C^{–1}"
+    },
+    {
+     "label": "3",
+     "text": "3 \\times 10^{–3o}C^{–1}"
+    },
+    {
+     "label": "4",
+     "text": "3 \\times 10^{–2o}C^{–1}"
+    }
+   ],
+   "answers": [
+    4
+   ],
+   "page": 22,
+   "top_y": 372.20330810546875,
+   "col": "R",
+   "images": [],
+   "section": "PHYSICS"
+  },
+  {
+   "subject": "phy",
+   "booklet": 43,
+   "number": 38,
+   "text": "10 resistors, each of resistance R are connected in series to a battery of emf E and negligible internal resistance. Then those are connected in parallel to the same battery, the current is increased n times. The value of n is:",
+   "options": [
+    {
+     "label": "1",
+     "text": "1000"
+    },
+    {
+     "label": "2",
+     "text": "10"
+    },
+    {
+     "label": "3",
+     "text": "100"
+    },
+    {
+     "label": "4",
+     "text": "1"
+    }
+   ],
+   "answers": [
+    3
+   ],
+   "page": 22,
+   "top_y": 445.5433044433594,
+   "col": "R",
+   "images": [],
+   "section": "PHYSICS"
+  },
+  {
+   "subject": "phy",
+   "booklet": 44,
+   "number": 39,
+   "text": "A very long conducting wire is bent in a semi-circular shape from A to B as shown in figure. The magnetic field at point P for steady current configuration is given by: A B",
+   "options": [
+    {
+     "label": "1",
+     "text": "µ4R^{0}i 1− π2 pointed into the page \\frac{µ0i}{4R}"
+    },
+    {
+     "label": "2",
+     "text": "pointed into the page \\frac{µ0i}{4R}"
+    },
+    {
+     "label": "3",
+     "text": "pointed away from the page"
+    },
+    {
+     "label": "4",
+     "text": "µ4R^{0}i 1− π2 pointed away from page"
+    }
+   ],
+   "answers": [
+    4
+   ],
+   "page": 22,
+   "top_y": 558.63330078125,
+   "col": "R",
+   "images": [
+    "Q44.png"
+   ],
+   "section": "PHYSICS"
+  },
+  {
+   "subject": "phy",
+   "booklet": 45,
+   "number": 40,
+   "text": "A wire carrying a current I along the positive x-axis has ρ length L. It is kept in a magnetic field B = (2ˆi + 3ˆj − 4kˆ ) T. The magnitude of the magnetic force acting on the wire is:",
+   "options": [
+    {
+     "label": "1",
+     "text": "3 IL"
+    },
+    {
+     "label": "2",
+     "text": "3 IL"
+    },
+    {
+     "label": "3",
+     "text": "5 IL"
+    },
+    {
+     "label": "4",
+     "text": "5 IL"
+    }
+   ],
+   "answers": [
+    4
+   ],
+   "page": 23,
+   "top_y": 79.64752197265625,
+   "col": "L",
+   "images": [],
+   "section": "PHYSICS"
+  },
+  {
+   "subject": "phy",
+   "booklet": 46,
+   "number": 41,
+   "text": "",
+   "options": [
+    {
+     "label": "1",
+     "text": ""
+    },
+    {
+     "label": "2",
+     "text": "",
+     "image": null
+    },
+    {
+     "label": "3",
+     "text": ""
+    },
+    {
+     "label": "4",
+     "text": "",
+     "image": null
+    }
+   ],
+   "answers": [
+    4
+   ],
+   "page": 23,
+   "top_y": 206.48748779296875,
+   "col": "L",
+   "images": [
+    "Q46.png"
+   ],
+   "section": "PHYSICS"
+  },
+  {
+   "subject": "phy",
+   "booklet": 47,
+   "number": 42,
+   "text": "In the figure shown here, what is the equivalent focal length of the combination of lenses (Assume that all layers are thin)? _{1} =1.5 R_{1}= R_{1}= 20cm R1 R_{2} _{2} =1.6",
+   "options": [
+    {
+     "label": "1",
+     "text": "–50 cm"
+    },
+    {
+     "label": "2",
+     "text": "40 cm"
+    },
+    {
+     "label": "3",
+     "text": "–40 cm"
+    },
+    {
+     "label": "4",
+     "text": "–100 cm"
+    }
+   ],
+   "answers": [
+    4
+   ],
+   "page": 23,
+   "top_y": 399.48748779296875,
+   "col": "L",
+   "images": [
+    "Q47.png"
+   ],
+   "section": "PHYSICS"
+  },
+  {
+   "subject": "phy",
+   "booklet": 48,
+   "number": 43,
+   "text": "Two thin lenses are of same focal lengths (f), but one is convex and the other one is concave. When they are placed in contact with each other, the equivalent focal length of the combination will be:",
+   "options": [
+    {
+     "label": "1",
+     "text": "Infinite"
+    },
+    {
+     "label": "2",
+     "text": "Zero"
+    },
+    {
+     "label": "3",
+     "text": "",
+     "image": "Q48_opt3.png"
+    },
+    {
+     "label": "4",
+     "text": "",
+     "image": "Q48_opt4.png"
+    }
+   ],
+   "answers": [
+    1
+   ],
+   "page": 23,
+   "top_y": 79.6376953125,
+   "col": "R",
+   "images": [],
+   "section": "PHYSICS"
+  },
+  {
+   "subject": "phy",
+   "booklet": 49,
+   "number": 44,
+   "text": "The radius of inner most orbit of hydrogen atom is 5.3 \\times 10^{−11} m. What is the radius of third allowed orbit of hydrogen atom?",
+   "options": [
+    {
+     "label": "1",
+     "text": "4.77Å"
+    },
+    {
+     "label": "2",
+     "text": "0.53Å"
+    },
+    {
+     "label": "3",
+     "text": "1.06Å"
+    },
+    {
+     "label": "4",
+     "text": "1.59Å"
+    }
+   ],
+   "answers": [
+    1
+   ],
+   "page": 23,
+   "top_y": 208.6278076171875,
+   "col": "R",
+   "images": [],
+   "section": "PHYSICS"
+  },
+  {
+   "subject": "phy",
+   "booklet": 50,
+   "number": 45,
+   "text": "",
+   "options": [
+    {
+     "label": "1",
+     "text": "",
+     "image": null
+    },
+    {
+     "label": "2",
+     "text": "",
+     "image": null
+    },
+    {
+     "label": "3",
+     "text": "",
+     "image": null
+    },
+    {
+     "label": "4",
+     "text": "",
+     "image": null
+    }
+   ],
+   "answers": [
+    3
+   ],
+   "page": 23,
+   "top_y": 307.36767578125,
+   "col": "R",
+   "images": [
+    "Q50.png"
+   ],
+   "section": "PHYSICS"
+  },
+  {
+   "subject": "chem",
+   "booklet": 1,
+   "number": 46,
+   "text": "The right option for the mass of CO_{2} produced by heating 20 g of 20% pure limestone is (Atomic mass of Ca = 40) CaCO_{3}^{1200K}→ CaO + CO_{2}",
+   "options": [
+    {
+     "label": "1",
+     "text": "1.32 g"
+    },
+    {
+     "label": "2",
+     "text": "1.12 g"
+    },
+    {
+     "label": "3",
+     "text": "1.76 g"
+    },
+    {
+     "label": "4",
+     "text": "2.64 g"
+    }
+   ],
+   "answers": [
+    3
+   ],
+   "page": 29,
+   "top_y": 321.8804931640625,
+   "col": "L",
+   "images": [],
+   "section": "CHEMISTRY"
+  },
+  {
+   "subject": "chem",
+   "booklet": 2,
+   "number": 47,
+   "text": "Select the correct statements from the following: A. Atoms of all elements are composed of two fundamental particles. B. The mass of the electron is 9.10939 \\times 10^{–31} kg. C. All the isotopes of a given element show same chemical properties. D. Protons and electrons are collectively known as nucleons. E. Dalton’s atomic theory, regarded the atom as an ultimate particle of matter.",
+   "options": [
+    {
+     "label": "1",
+     "text": "B, C and E only"
+    },
+    {
+     "label": "2",
+     "text": "A, B and C only"
+    },
+    {
+     "label": "3",
+     "text": "C, D and E only"
+    },
+    {
+     "label": "4",
+     "text": "A and E only"
+    }
+   ],
+   "answers": [
+    1
+   ],
+   "page": 29,
+   "top_y": 435.8404846191406,
+   "col": "L",
+   "images": [],
+   "section": "CHEMISTRY"
+  },
+  {
+   "subject": "chem",
+   "booklet": 3,
+   "number": 48,
+   "text": "The relation between n_{m},(n_{m} = the number of permissible values of magnetic quantum number (m)) for a given value of azimuthal quantum number (l), is",
+   "options": [
+    {
+     "label": "1",
+     "text": "n_{m} = l + 2",
+     "image": "Q53_opt1.png"
+    },
+    {
+     "label": "2",
+     "text": "λ = nm −1",
+     "image": "Q53_opt2.png"
+    },
+    {
+     "label": "3",
+     "text": "l = 2n_{m} + 1"
+    },
+    {
+     "label": "4",
+     "text": "n_{m} = 2l^{2} + 1"
+    }
+   ],
+   "answers": [
+    2
+   ],
+   "page": 29,
+   "top_y": 608.48046875,
+   "col": "L",
+   "images": [],
+   "section": "CHEMISTRY"
+  },
+  {
+   "subject": "chem",
+   "booklet": 4,
+   "number": 49,
+   "text": "The element expected to form largest ion to achieve the nearest noble gas configuration is:",
+   "options": [
+    {
+     "label": "1",
+     "text": "Na"
+    },
+    {
+     "label": "2",
+     "text": "O"
+    },
+    {
+     "label": "3",
+     "text": "F"
+    },
+    {
+     "label": "4",
+     "text": "N"
+    }
+   ],
+   "answers": [
+    4
+   ],
+   "page": 29,
+   "top_y": 739.760498046875,
+   "col": "L",
+   "images": [],
+   "section": "CHEMISTRY"
+  },
+  {
+   "subject": "chem",
+   "booklet": 5,
+   "number": 50,
+   "text": "Amongst the following, the total number of species NOT having eight electrons around central atom in its outer most shell, is: NH_{3}, AlCl_{3}, BeCl_{2}, CCl_{4}, PCl_{5}",
+   "options": [
+    {
+     "label": "1",
+     "text": "1"
+    },
+    {
+     "label": "2",
+     "text": "3"
+    },
+    {
+     "label": "3",
+     "text": "2"
+    },
+    {
+     "label": "4",
+     "text": "4"
+    }
+   ],
+   "answers": [
+    2
+   ],
+   "page": 29,
+   "top_y": 322.8804931640625,
+   "col": "R",
+   "images": [],
+   "section": "CHEMISTRY"
+  },
+  {
+   "subject": "chem",
+   "booklet": 6,
+   "number": 51,
+   "text": "The correct order of energies of molecular orbitals of N_{2} molecule is:",
+   "options": [
+    {
+     "label": "1",
+     "text": "σ1s < σ^{*}1s < σ2s < σ^{*} 2s < (π2p_{x} = π2p_{y} ) < (π^{*} 2p_{x} = π^{*} 2p_{y} ) < σ2p_{z} < σ^{*} 2p_{z}"
+    },
+    {
+     "label": "2",
+     "text": "σ1s < σ^{*}1s < σ2s < σ^{*} 2s < (π2p_{x} = π2p_{y} ) < σ2p_{z} < (π^{*} 2p_{x} = π^{*} 2p_{y} ) < σ^{*} 2p_{z}"
+    },
+    {
+     "label": "3",
+     "text": "σ1s < σ^{*}1s < σ2s < σ^{*} 2s < σ2p_{z} < (π2p_{x} = π2p_{y} ) < (π^{*} 2p_{x} = π^{*} 2p_{y} ) < σ^{*} 2p_{z}"
+    },
+    {
+     "label": "4",
+     "text": "σ1s < σ^{*}1s < σ2s < σ^{*} 2s < σ2p_{z} < σ^{*} 2p_{z} < (π2p_{x} = π2p_{y} ) < (π^{*} 2p_{x} = π^{*} 2p_{y} )"
+    }
+   ],
+   "answers": [
+    2
+   ],
+   "page": 29,
+   "top_y": 402.720458984375,
+   "col": "R",
+   "images": [],
+   "section": "CHEMISTRY"
+  },
+  {
+   "subject": "chem",
+   "booklet": 7,
+   "number": 52,
+   "text": "Intermolecular forces are forces of attraction and repulsion between interacting particles that will include: A. dipole-dipole forces. B. dipole - induced dipole forces, C. hydrogen bonding. D. covalent bonding. E. dispersion forces. Choose the most appropriate answer from the options given below:",
+   "options": [
+    {
+     "label": "1",
+     "text": "A, C, D, E are correct."
+    },
+    {
+     "label": "2",
+     "text": "B, C, D, E are correct."
+    },
+    {
+     "label": "3",
+     "text": "A, B, C, D are correct."
+    },
+    {
+     "label": "4",
+     "text": "A, B, C, E are correct."
+    }
+   ],
+   "answers": [
+    4
+   ],
+   "page": 29,
+   "top_y": 600.5604858398438,
+   "col": "R",
+   "images": [],
+   "section": "CHEMISTRY"
+  },
+  {
+   "subject": "chem",
+   "booklet": 8,
+   "number": 53,
+   "text": "Which amongst the following options is correct graphical representation of Boyle's Law? T_{3}>T_{2}>T_{1} V1 V_{2} V_{3} T_{1}",
+   "options": [
+    {
+     "label": "1",
+     "text": "P"
+    },
+    {
+     "label": "2",
+     "text": "P T_{2} v_{1} < v_{2} < v_{3} T_{3} T T_{3} >T_{2} >T T3 T2 T1 T_{3}"
+    },
+    {
+     "label": "3",
+     "text": "P"
+    },
+    {
+     "label": "4",
+     "text": "P T_{2} T3 > T2 > T1 T_{1} 1/V 1/V"
+    }
+   ],
+   "answers": [
+    3
+   ],
+   "page": 30,
+   "top_y": 100.80621337890625,
+   "col": "L",
+   "images": [
+    "Q58.png",
+    "Q58_2.png",
+    "Q58_3.png",
+    "Q58_4.png"
+   ],
+   "section": "CHEMISTRY"
+  },
+  {
+   "subject": "chem",
+   "booklet": 10,
+   "number": 54,
+   "text": "Which one of the following statements is correct?",
+   "options": [
+    {
+     "label": "1",
+     "text": "Mg plays roles in neuromuscular function and interneuronal transmission."
+    },
+    {
+     "label": "2",
+     "text": "The daily requirement of Mg and Ca in the human body is estimated to be 0.2 – 0.3 g."
+    },
+    {
+     "label": "3",
+     "text": "All enzymes that utilise ATP in phosphate transfer require Ca as the cofactor."
+    },
+    {
+     "label": "4",
+     "text": "The bone in human body is an inert and unchanging substance."
+    }
+   ],
+   "answers": [
+    2
+   ],
+   "page": 30,
+   "top_y": 501.66619873046875,
+   "col": "L",
+   "images": [],
+   "section": "CHEMISTRY"
+  },
+  {
+   "subject": "chem",
+   "booklet": 11,
+   "number": 55,
+   "text": "Given below are two statements: one is labelled as Assertion A and the other is labelled as Reason R: Assertion A: Metallic sodium dissolves in liquid ammonia giving a deep blue solution, which is paramagnetic. Reason R: The deep blue solution is due to the formation of amide. In the light of the above statements, choose the correct answer from the options given below:",
+   "options": [
+    {
+     "label": "1",
+     "text": "A is false but R is true."
+    },
+    {
+     "label": "2",
+     "text": "Both A and R are true and R is the correct explanation of A."
+    },
+    {
+     "label": "3",
+     "text": "Both A and R are true but R is NOT the correct explanation of A."
+    },
+    {
+     "label": "4",
+     "text": "A is true but R is false."
+    }
+   ],
+   "answers": [
+    4
+   ],
+   "page": 30,
+   "top_y": 618.2061767578125,
+   "col": "L",
+   "images": [],
+   "section": "CHEMISTRY"
+  },
+  {
+   "subject": "chem",
+   "booklet": 12,
+   "number": 56,
+   "text": "Taking stability as the factor, which one of the following represents correct relationship?",
+   "options": [
+    {
+     "label": "1",
+     "text": "TlI > TlI_{3}",
+     "image": "Q62_opt1.png"
+    },
+    {
+     "label": "2",
+     "text": "TlCl_{3} > TlCl"
+    },
+    {
+     "label": "3",
+     "text": "InI_{3} > InI",
+     "image": "Q62_opt3.png"
+    },
+    {
+     "label": "4",
+     "text": "AlCl > AlCl_{3}"
+    }
+   ],
+   "answers": [
+    1
+   ],
+   "page": 30,
+   "top_y": 101.106201171875,
+   "col": "R",
+   "images": [],
+   "section": "CHEMISTRY"
+  },
+  {
+   "subject": "chem",
+   "booklet": 13,
+   "number": 57,
+   "text": "",
+   "options": [
+    {
+     "label": "1",
+     "text": "",
+     "image": null
+    },
+    {
+     "label": "2",
+     "text": "",
+     "image": null
+    },
+    {
+     "label": "3",
+     "text": "",
+     "image": null
+    },
+    {
+     "label": "4",
+     "text": "",
+     "image": null
+    }
+   ],
+   "answers": [
+    4
+   ],
+   "page": 30,
+   "top_y": 158.34619140625,
+   "col": "R",
+   "images": [],
+   "section": "CHEMISTRY"
+  },
+  {
+   "subject": "chem",
+   "booklet": 14,
+   "number": 58,
+   "text": "In Lassaigne's extract of an organic compound, both nitrogen and sulphur are present, which gives blood red colour with Fe^{3+} due to the formation of",
+   "options": [
+    {
+     "label": "1",
+     "text": "[Fe(SCN)]^{2+}"
+    },
+    {
+     "label": "2",
+     "text": "Fe_{4}[Fe(CN)_{6}]_{3}.xH_{2}O"
+    },
+    {
+     "label": "3",
+     "text": "NaSCN"
+    },
+    {
+     "label": "4",
+     "text": "[Fe(CN)_{5}NOS]^{4-}"
+    }
+   ],
+   "answers": [
+    1
+   ],
+   "page": 30,
+   "top_y": 342.3462829589844,
+   "col": "R",
+   "images": [],
+   "section": "CHEMISTRY"
+  },
+  {
+   "subject": "chem",
+   "booklet": 15,
+   "number": 59,
+   "text": "The number of σ bonds, π bonds and lone pair of electrons in pyridine, respectively are",
+   "options": [
+    {
+     "label": "1",
+     "text": "12, 2, 1"
+    },
+    {
+     "label": "2",
+     "text": "11, 2, 0"
+    },
+    {
+     "label": "3",
+     "text": "12, 3, 0"
+    },
+    {
+     "label": "4",
+     "text": "11, 3, 1"
+    }
+   ],
+   "answers": [
+    4
+   ],
+   "page": 30,
+   "top_y": 413.1863098144531,
+   "col": "R",
+   "images": [],
+   "section": "CHEMISTRY"
+  },
+  {
+   "subject": "chem",
+   "booklet": 16,
+   "number": 60,
+   "text": "Weight (g) of two moles of the organic compound, which is obtained by heating sodium ethanoate with sodium hydroxide in presence of calcium oxide is:",
+   "options": [
+    {
+     "label": "1",
+     "text": "18"
+    },
+    {
+     "label": "2",
+     "text": "16"
+    },
+    {
+     "label": "3",
+     "text": "32"
+    },
+    {
+     "label": "4",
+     "text": "30"
+    }
+   ],
+   "answers": [
+    3
+   ],
+   "page": 30,
+   "top_y": 498.50628662109375,
+   "col": "R",
+   "images": [],
+   "section": "CHEMISTRY"
+  },
+  {
+   "subject": "chem",
+   "booklet": 17,
+   "number": 61,
+   "text": "A compound is formed by two elements A and B. The element B forms cubic close packed structure and atoms of A occupy 1/3 of tetrahedral voids. If the formula of the compound is A_{x}B_{y}, then the value of x + y is in option",
+   "options": [
+    {
+     "label": "1",
+     "text": "2"
+    },
+    {
+     "label": "2",
+     "text": "5"
+    },
+    {
+     "label": "3",
+     "text": "4"
+    },
+    {
+     "label": "4",
+     "text": "3"
+    }
+   ],
+   "answers": [
+    2
+   ],
+   "page": 30,
+   "top_y": 592.42626953125,
+   "col": "R",
+   "images": [],
+   "section": "CHEMISTRY"
+  },
+  {
+   "subject": "chem",
+   "booklet": 18,
+   "number": 62,
+   "text": "Given below are two statements: one is labelled as Assertion A and the other is labelled as Reason R: Assertion A: Helium is used to dilute oxygen in diving apparatus. Reasons R: Helium has high solubility in O_{2} In the light of the above statements, choose the correct answer from the options given below:",
+   "options": [
+    {
+     "label": "1",
+     "text": "A is false but R is true."
+    },
+    {
+     "label": "2",
+     "text": "Both A and R are true and R is the correct explanation of A."
+    },
+    {
+     "label": "3",
+     "text": "Both A and R are true and R is NOT the correct explanation of A."
+    },
+    {
+     "label": "4",
+     "text": "A is true but R is false."
+    }
+   ],
+   "answers": [
+    4
+   ],
+   "page": 30,
+   "top_y": 700.9462890625,
+   "col": "R",
+   "images": [],
+   "section": "CHEMISTRY"
+  },
+  {
+   "subject": "chem",
+   "booklet": 19,
+   "number": 63,
+   "text": "The conductivity of centimolar solution of KCl at 25^{o}C is 0.0210 ohm^{–1} cm^{–1} and the resistance of the cell containing the solution at 25 °C is 60 ohm. The value of cell constant is:",
+   "options": [
+    {
+     "label": "1",
+     "text": "3.34 cm^{–1}"
+    },
+    {
+     "label": "2",
+     "text": "1.34 cm^{–1}"
+    },
+    {
+     "label": "3",
+     "text": "3.28 cm^{–1}"
+    },
+    {
+     "label": "4",
+     "text": "1.26 cm^{–1}"
+    }
+   ],
+   "answers": [
+    4
+   ],
+   "page": 31,
+   "top_y": 189.2576904296875,
+   "col": "L",
+   "images": [],
+   "section": "CHEMISTRY"
+  },
+  {
+   "subject": "chem",
+   "booklet": 20,
+   "number": 64,
+   "text": "Given below are two statements : one is labelled as Assertion A and the other is labelled as Reason R: Assertion A: In equation Δ_{r}G = –nFE_{cell}, value of Δ_{r}G depends on n. Reasons R: E_{cell} is an intensive property and Δ_{r}G is an extensive property. In the light of the above statements, choose the correct answer from the options given below:",
+   "options": [
+    {
+     "label": "1",
+     "text": "A is false but R is true."
+    },
+    {
+     "label": "2",
+     "text": "Both A and R are true and R is the correct explanation of A."
+    },
+    {
+     "label": "3",
+     "text": "Both A and R are true but R is NOT the correct explanation of A."
+    },
+    {
+     "label": "4",
+     "text": "A is true but R is false"
+    }
+   ],
+   "answers": [
+    2
+   ],
+   "page": 31,
+   "top_y": 276.4976806640625,
+   "col": "L",
+   "images": [],
+   "section": "CHEMISTRY"
+  },
+  {
+   "subject": "chem",
+   "booklet": 21,
+   "number": 65,
+   "text": "For a certain reaction, the rate = k[A]^{2}[B]. When the initial concentration of A is tripled keeping concentration of B constant, the initial rate would",
+   "options": [
+    {
+     "label": "1",
+     "text": "increase by a factor of three."
+    },
+    {
+     "label": "2",
+     "text": "decrease by a factor of nine."
+    },
+    {
+     "label": "3",
+     "text": "increase by a factor of six."
+    },
+    {
+     "label": "4",
+     "text": "increase by a factor of nine"
+    }
+   ],
+   "answers": [
+    4
+   ],
+   "page": 31,
+   "top_y": 503.0577087402344,
+   "col": "L",
+   "images": [],
+   "section": "CHEMISTRY"
+  },
+  {
+   "subject": "chem",
+   "booklet": 22,
+   "number": 66,
+   "text": "Given below are two statements: one is labelled as Assertion A and the other is labelled as Reason R: Assertion A: A reaction can have zero activation energy. Reason R: The minimum extra amount of energy absorbed by reactant molecules so that their energy becomes equal to threshold value, is called activation energy. In the light of the above statements, choose the correct answer from the options given below:",
+   "options": [
+    {
+     "label": "1",
+     "text": "A is false but R is true."
+    },
+    {
+     "label": "2",
+     "text": "Both A and R are true and R is the correct explanation of A."
+    },
+    {
+     "label": "3",
+     "text": "Both A and R are true and R is NOT the correct explanation of A."
+    },
+    {
+     "label": "4",
+     "text": "A is true but R is false."
+    }
+   ],
+   "answers": [
+    3
+   ],
+   "page": 31,
+   "top_y": 604.6976318359375,
+   "col": "L",
+   "images": [],
+   "section": "CHEMISTRY"
+  },
+  {
+   "subject": "chem",
+   "booklet": 24,
+   "number": 67,
+   "text": "Amongst the given options, which of the following molecules/ ion acts as a Lewis acid?",
+   "options": [
+    {
+     "label": "1",
+     "text": "OH^{–}"
+    },
+    {
+     "label": "2",
+     "text": "NH_{3}"
+    },
+    {
+     "label": "3",
+     "text": "H_{2}O"
+    },
+    {
+     "label": "4",
+     "text": "BF_{3}"
+    }
+   ],
+   "answers": [
+    4
+   ],
+   "page": 31,
+   "top_y": 224.77410888671875,
+   "col": "R",
+   "images": [],
+   "section": "CHEMISTRY"
+  },
+  {
+   "subject": "chem",
+   "booklet": 25,
+   "number": 68,
+   "text": "The stability of Cu^{2+} is more than Cu^{+} salts in aqueous solutions due to:",
+   "options": [
+    {
+     "label": "1",
+     "text": "second ionisation enthalpy"
+    },
+    {
+     "label": "2",
+     "text": "first ionisation enthalpy"
+    },
+    {
+     "label": "3",
+     "text": "enthalpy of atomisation"
+    },
+    {
+     "label": "4",
+     "text": "hydration energy"
+    }
+   ],
+   "answers": [
+    4
+   ],
+   "page": 31,
+   "top_y": 312.0941162109375,
+   "col": "R",
+   "images": [],
+   "section": "CHEMISTRY"
+  },
+  {
+   "subject": "chem",
+   "booklet": 26,
+   "number": 69,
+   "text": "Homoleptic complex from the following complexes is:",
+   "options": [
+    {
+     "label": "1",
+     "text": "Triamminetriaquachromium (III) chloride"
+    },
+    {
+     "label": "2",
+     "text": "Potassium trioxalatoaluminate (III)"
+    },
+    {
+     "label": "3",
+     "text": "Diamminechloridonitrito – N- platinum(II)"
+    },
+    {
+     "label": "4",
+     "text": "Pentaamminecarbonatocobalt (III) chloride"
+    }
+   ],
+   "answers": [
+    2
+   ],
+   "page": 31,
+   "top_y": 424.6141052246094,
+   "col": "R",
+   "images": [],
+   "section": "CHEMISTRY"
+  },
+  {
+   "subject": "chem",
+   "booklet": 27,
+   "number": 70,
+   "text": "Consider the following reaction and identify the product (P). HBr CH_{3}—CH—CH—CH_{3} Product (P) CH_{3} OH 3–Methylbutan –2–o1 CH_{3} Br",
+   "options": [
+    {
+     "label": "1",
+     "text": "CH_{3}—C—CH_{2}Br"
+    },
+    {
+     "label": "2",
+     "text": "CH_{3}—C—CH_{2}—CH_{3} CH_{3} CH_{3}"
+    },
+    {
+     "label": "3",
+     "text": "CH_{3}CH = CH—CH_{3}"
+    },
+    {
+     "label": "4",
+     "text": "CH_{3}—CH—CH—CH_{3} CH_{3} Br"
+    }
+   ],
+   "answers": [
+    2
+   ],
+   "page": 31,
+   "top_y": 527.1340942382812,
+   "col": "R",
+   "images": [],
+   "section": "CHEMISTRY"
+  },
+  {
+   "subject": "chem",
+   "booklet": 28,
+   "number": 71,
+   "text": "The given compound is an example of _______.",
+   "options": [
+    {
+     "label": "1",
+     "text": "vinylic halide"
+    },
+    {
+     "label": "2",
+     "text": "benzylic halide"
+    },
+    {
+     "label": "3",
+     "text": "aryl halide"
+    },
+    {
+     "label": "4",
+     "text": "allylic halide"
+    }
+   ],
+   "answers": [
+    4
+   ],
+   "page": 31,
+   "top_y": 683.174072265625,
+   "col": "R",
+   "images": [
+    "Q78.png"
+   ],
+   "section": "CHEMISTRY"
+  },
+  {
+   "subject": "chem",
+   "booklet": 29,
+   "number": 72,
+   "text": "Identify product (A) in the following reaction: Zn–Hg Conc.HCl (A) + 2H2O CH_{3} CH_{3}",
+   "options": [
+    {
+     "label": "1",
+     "text": "",
+     "image": "Q79_opt1.png"
+    },
+    {
+     "label": "2",
+     "text": "OH"
+    },
+    {
+     "label": "3",
+     "text": "OH OH CH_{2} CH_{2}OH"
+    },
+    {
+     "label": "4",
+     "text": "",
+     "image": "Q79_opt4.png"
+    }
+   ],
+   "answers": [
+    2
+   ],
+   "page": 32,
+   "top_y": 101.5540771484375,
+   "col": "L",
+   "images": [
+    "Q79.png",
+    "Q79_2.png",
+    "Q79_3.png",
+    "Q79_4.png",
+    "Q79_5.png"
+   ],
+   "section": "CHEMISTRY"
+  },
+  {
+   "subject": "chem",
+   "booklet": 30,
+   "number": 73,
+   "text": "Complete the following reaction : [C] is _______",
+   "options": [
+    {
+     "label": "1",
+     "text": "",
+     "image": "Q80_opt1.png"
+    },
+    {
+     "label": "2",
+     "text": "COOH OH"
+    },
+    {
+     "label": "3",
+     "text": "",
+     "image": "Q80_opt3.png"
+    },
+    {
+     "label": "4",
+     "text": "COOH CHO"
+    }
+   ],
+   "answers": [
+    1
+   ],
+   "page": 32,
+   "top_y": 411.2341003417969,
+   "col": "L",
+   "images": [
+    "Q80.png",
+    "Q80_2.png",
+    "Q80_3.png",
+    "Q80_4.png",
+    "Q80_5.png",
+    "Q80_6.png"
+   ],
+   "section": "CHEMISTRY"
+  },
+  {
+   "subject": "chem",
+   "booklet": 31,
+   "number": 74,
+   "text": "Which of the following reactions will NOT give primary amine as the product?",
+   "options": [
+    {
+     "label": "1",
+     "text": "CH_{3}CONH_{2}^{(}_{(}^{i}_{i}^{)}_{i)}^{L}_{H}^{iA}_{3O}^{lH}_{⊕}^{4} → Product"
+    },
+    {
+     "label": "2",
+     "text": "CH_{3}CONH_{2}^{Br2/KOH}→ Product"
+    },
+    {
+     "label": "3",
+     "text": "CH_{3}CN^{(}_{(}^{i}_{i}^{)}_{i)}^{L}_{H}^{iA}_{3O}^{lH}_{⊕}^{4} → Product"
+    },
+    {
+     "label": "4",
+     "text": "CH_{3}NC^{(}_{(}^{i}_{i}^{)}_{i)}^{L}_{H}^{iA}_{3O}^{lH}_{⊕}^{4} → Product"
+    }
+   ],
+   "answers": [
+    4
+   ],
+   "page": 32,
+   "top_y": 599.424072265625,
+   "col": "L",
+   "images": [],
+   "section": "CHEMISTRY"
+  },
+  {
+   "subject": "chem",
+   "booklet": 32,
+   "number": 75,
+   "text": "Identify the product in the following reaction: + – N2Cl (i) Cu2Br2/ HBr (ii) Mg/ dry ether Product (iii) H2O OH OH",
+   "options": [
+    {
+     "label": "1",
+     "text": "",
+     "image": "Q82_opt1.png"
+    },
+    {
+     "label": "2",
+     "text": "Br MgBr"
+    },
+    {
+     "label": "3",
+     "text": "",
+     "image": "Q82_opt3.png"
+    },
+    {
+     "label": "4",
+     "text": "",
+     "image": "Q82_opt4.png"
+    }
+   ],
+   "answers": [
+    3
+   ],
+   "page": 32,
+   "top_y": 78.7376708984375,
+   "col": "R",
+   "images": [
+    "Q82.png",
+    "Q82_2.png",
+    "Q82_3.png",
+    "Q82_4.png",
+    "Q82_5.png"
+   ],
+   "section": "CHEMISTRY"
+  },
+  {
+   "subject": "chem",
+   "booklet": 33,
+   "number": 76,
+   "text": "Given below are two statements: Statement I: A unit formed by the attachment of a base to 1' position of sugar is known as nucleoside Statement II: When nucleoside is linked to phosphorous acid at 5'-position of sugar moiety, we get nucleotide. In the light of the above statements, choose the correct answer from the options given below:",
+   "options": [
+    {
+     "label": "1",
+     "text": "Statement I is false but Statement II is true."
+    },
+    {
+     "label": "2",
+     "text": "Both Statement I and Statement II are true."
+    },
+    {
+     "label": "3",
+     "text": "Both Statement I and Statement II are false."
+    },
+    {
+     "label": "4",
+     "text": "Statement I is true but Statement II is false."
+    }
+   ],
+   "answers": [
+    4
+   ],
+   "page": 32,
+   "top_y": 329.07769775390625,
+   "col": "R",
+   "images": [],
+   "section": "CHEMISTRY"
+  },
+  {
+   "subject": "chem",
+   "booklet": 36,
+   "number": 77,
+   "text": "Which amongst the following options is the correct relation between change in enthalpy and change in internal Energy?",
+   "options": [
+    {
+     "label": "1",
+     "text": "ΔH + ΔU = ΔnR",
+     "image": "Q86_opt1.png"
+    },
+    {
+     "label": "2",
+     "text": "ΔH = ΔU – Δn_{g}RT",
+     "image": "Q86_opt2.png"
+    },
+    {
+     "label": "3",
+     "text": "ΔH = ΔU + Δn_{g}RT",
+     "image": "Q86_opt3.png"
+    },
+    {
+     "label": "4",
+     "text": "ΔH − ΔU = −ΔnRT"
+    }
+   ],
+   "answers": [
+    3
+   ],
+   "page": 33,
+   "top_y": 152.85791015625,
+   "col": "L",
+   "images": [],
+   "section": "CHEMISTRY"
+  },
+  {
+   "subject": "chem",
+   "booklet": 37,
+   "number": 78,
+   "text": "The equilibrium concentrations of the species in the reaction A + B ⇌ C + D are 2, 3, 10 and 6 mol L^{–1} respectively at 300 K. ∆G^{0} for the reaction is (R = 2 cal/mol K)",
+   "options": [
+    {
+     "label": "1",
+     "text": "–13.73 cal"
+    },
+    {
+     "label": "2",
+     "text": "1372.60 cal"
+    },
+    {
+     "label": "3",
+     "text": "–137.26 cal"
+    },
+    {
+     "label": "4",
+     "text": "–1381.80 cal"
+    }
+   ],
+   "answers": [
+    4
+   ],
+   "page": 33,
+   "top_y": 238.77581787109375,
+   "col": "L",
+   "images": [],
+   "section": "CHEMISTRY"
+  },
+  {
+   "subject": "chem",
+   "booklet": 38,
+   "number": 79,
+   "text": "On balancing the given redox reaction, aCr_{2}O_{7}^{(2–)} + bSO_{3}^{(2–)} (aq) + cH^{+} (aq) → 2aCr^{3+} (aq) + bSO_{4}^{2–} (aq) + c/2 H_{2}O (l) the coefficients a, b and c are found to be, respectively:",
+   "options": [
+    {
+     "label": "1",
+     "text": "8, 1, 3"
+    },
+    {
+     "label": "2",
+     "text": "1, 3, 8"
+    },
+    {
+     "label": "3",
+     "text": "3, 8, 1"
+    },
+    {
+     "label": "4",
+     "text": "1, 8, 3"
+    }
+   ],
+   "answers": [
+    2
+   ],
+   "page": 33,
+   "top_y": 351.1327819824219,
+   "col": "L",
+   "images": [],
+   "section": "CHEMISTRY"
+  },
+  {
+   "subject": "chem",
+   "booklet": 39,
+   "number": 80,
+   "text": "Consider the following compounds/species : (VII) The number of compounds/species which obey Huckel's rule is _______.",
+   "options": [
+    {
+     "label": "1",
+     "text": "5"
+    },
+    {
+     "label": "2",
+     "text": "4"
+    },
+    {
+     "label": "3",
+     "text": "6"
+    },
+    {
+     "label": "4",
+     "text": "2"
+    }
+   ],
+   "answers": [
+    2
+   ],
+   "page": 33,
+   "top_y": 469.48968505859375,
+   "col": "L",
+   "images": [
+    "Q89.png",
+    "Q89_2.png",
+    "Q89_3.png",
+    "Q89_4.png",
+    "Q89_5.png"
+   ],
+   "section": "CHEMISTRY"
+  },
+  {
+   "subject": "chem",
+   "booklet": 40,
+   "number": 81,
+   "text": "Given below are two statements: Statement I: The nutrient deficient water bodies lead to eutrophication. Statement II: Eutrophication leads to decrease in the level of oxygen in water bodies. In the light of the above statements, choose the correct answer from the options given below:",
+   "options": [
+    {
+     "label": "1",
+     "text": "Statement I is incorrect but statement II is true"
+    },
+    {
+     "label": "2",
+     "text": "Both statement I and Statement II are true."
+    },
+    {
+     "label": "3",
+     "text": "Both statement I and statement II are false."
+    },
+    {
+     "label": "4",
+     "text": "Statement I is correct but statement II is false"
+    }
+   ],
+   "answers": [
+    1
+   ],
+   "page": 33,
+   "top_y": 731.2857666015625,
+   "col": "L",
+   "images": [],
+   "section": "CHEMISTRY"
+  },
+  {
+   "subject": "chem",
+   "booklet": 41,
+   "number": 82,
+   "text": "What fraction of one edge centred octahedral void lies in one unit cell of fcc?",
+   "options": [
+    {
+     "label": "1",
+     "text": "\\frac{1}{12}"
+    },
+    {
+     "label": "2",
+     "text": "",
+     "image": "Q91_opt2.png"
+    },
+    {
+     "label": "3",
+     "text": "",
+     "image": "Q91_opt3.png"
+    },
+    {
+     "label": "4",
+     "text": "",
+     "image": "Q91_opt4.png"
+    }
+   ],
+   "answers": [
+    4
+   ],
+   "page": 33,
+   "top_y": 247.12249755859375,
+   "col": "R",
+   "images": [],
+   "section": "CHEMISTRY"
+  },
+  {
+   "subject": "chem",
+   "booklet": 42,
+   "number": 83,
+   "text": "Pumic stone is an example of:",
+   "options": [
+    {
+     "label": "1",
+     "text": "foam"
+    },
+    {
+     "label": "2",
+     "text": "sol"
+    },
+    {
+     "label": "3",
+     "text": "gel"
+    },
+    {
+     "label": "4",
+     "text": "solid sol"
+    }
+   ],
+   "answers": [
+    4
+   ],
+   "page": 33,
+   "top_y": 369.0199890136719,
+   "col": "R",
+   "images": [],
+   "section": "CHEMISTRY"
+  },
+  {
+   "subject": "chem",
+   "booklet": 44,
+   "number": 84,
+   "text": "",
+   "options": [
+    {
+     "label": "1",
+     "text": "",
+     "image": null
+    },
+    {
+     "label": "2",
+     "text": "",
+     "image": null
+    },
+    {
+     "label": "3",
+     "text": "",
+     "image": null
+    },
+    {
+     "label": "4",
+     "text": "",
+     "image": null
+    }
+   ],
+   "answers": [
+    3
+   ],
+   "page": 33,
+   "top_y": 592.32958984375,
+   "col": "R",
+   "images": [],
+   "section": "CHEMISTRY"
+  },
+  {
+   "subject": "chem",
+   "booklet": 45,
+   "number": 85,
+   "text": "Which of the following statements are INCORRECT? A. All the transition metals except scandium form MO oxides which are ionic. B. The highest oxidation number corresponding to the group number in transition metal oxides is attained in Sc_{2}O_{3} to Mn_{2}O_{7}. C. Basic character increases from V_{2}O_{3} to V_{2}O_{4} to V_{2}O_{5}. D. V_{2}O_{4} dissolves in acids to give VO_{4}^{3–} salts. E. CrO is basic but Cr_{2}O_{3} is amphoteric.",
+   "options": [
+    {
+     "label": "1",
+     "text": "B and C only"
+    },
+    {
+     "label": "2",
+     "text": "A and E only"
+    },
+    {
+     "label": "3",
+     "text": "B and D only"
+    },
+    {
+     "label": "4",
+     "text": "C and D only"
+    }
+   ],
+   "answers": [
+    4
+   ],
+   "page": 34,
+   "top_y": 103.15411376953125,
+   "col": "L",
+   "images": [],
+   "section": "CHEMISTRY"
+  },
+  {
+   "subject": "chem",
+   "booklet": 46,
+   "number": 86,
+   "text": "Which complex compound is most stable?",
+   "options": [
+    {
+     "label": "1",
+     "text": "[Co(NH_{3})_{6}]_{2} (SO_{4})_{3}"
+    },
+    {
+     "label": "2",
+     "text": "[Co(NH_{3})_{4} (H_{2}O)Br] (NO_{3})_{2}"
+    },
+    {
+     "label": "3",
+     "text": "[Co(NH_{3})_{3} (NO_{3})_{3}]"
+    },
+    {
+     "label": "4",
+     "text": "[CoCl_{2}(en)_{2}]NO_{3}"
+    }
+   ],
+   "answers": [
+    4
+   ],
+   "page": 34,
+   "top_y": 315.5540771484375,
+   "col": "L",
+   "images": [],
+   "section": "CHEMISTRY"
+  },
+  {
+   "subject": "chem",
+   "booklet": 47,
+   "number": 87,
+   "text": "",
+   "options": [
+    {
+     "label": "1",
+     "text": "",
+     "image": null
+    },
+    {
+     "label": "2",
+     "text": "",
+     "image": null
+    },
+    {
+     "label": "3",
+     "text": "",
+     "image": null
+    },
+    {
+     "label": "4",
+     "text": "",
+     "image": null
+    }
+   ],
+   "answers": [
+    4
+   ],
+   "page": 34,
+   "top_y": 426.55419921875,
+   "col": "L",
+   "images": [
+    "Q97.png",
+    "Q97_2.png",
+    "Q97_3.png",
+    "Q97_4.png",
+    "Q97_5.png",
+    "Q97_6.png",
+    "Q97_7.png",
+    "Q97_8.png",
+    "Q97_9.png",
+    "Q97_10.png"
+   ],
+   "section": "CHEMISTRY"
+  },
+  {
+   "subject": "chem",
+   "booklet": 48,
+   "number": 88,
+   "text": "Which amongst the following will be most readily dehydrated under acidic conditions ? NO_{2} NO_{2} OH",
+   "options": [
+    {
+     "label": "1",
+     "text": "",
+     "image": "Q98_opt1.png"
+    },
+    {
+     "label": "2",
+     "text": "H CH3 OH NO_{2} OH OH"
+    },
+    {
+     "label": "3",
+     "text": "",
+     "image": "Q98_opt3.png"
+    },
+    {
+     "label": "4",
+     "text": "OH H_{3}C H OH",
+     "image": "Q98_opt4.png"
+    }
+   ],
+   "answers": [
+    3
+   ],
+   "page": 34,
+   "top_y": 79.6376953125,
+   "col": "R",
+   "images": [
+    "Q98.png",
+    "Q98_2.png"
+   ],
+   "section": "CHEMISTRY"
+  },
+  {
+   "subject": "chem",
+   "booklet": 49,
+   "number": 89,
+   "text": "Identify the major product obtained in the following reaction: OH OH",
+   "options": [
+    {
+     "label": "1",
+     "text": "",
+     "image": "Q99_opt1.png"
+    },
+    {
+     "label": "2",
+     "text": "OH – COO"
+    },
+    {
+     "label": "3",
+     "text": "",
+     "image": "Q99_opt3.png"
+    },
+    {
+     "label": "4",
+     "text": "– COO"
+    }
+   ],
+   "answers": [
+    4
+   ],
+   "page": 34,
+   "top_y": 264.4976806640625,
+   "col": "R",
+   "images": [
+    "Q99.png",
+    "Q99_2.png",
+    "Q99_3.png",
+    "Q99_4.png",
+    "Q99_5.png"
+   ],
+   "section": "CHEMISTRY"
+  },
+  {
+   "subject": "chem",
+   "booklet": 50,
+   "number": 90,
+   "text": "Identify the final product [D] obtained in the following sequence of reactions,",
+   "options": [
+    {
+     "label": "1",
+     "text": "HC ° C^{–}Na^{+}",
+     "image": "Q100_opt1.png"
+    },
+    {
+     "label": "2",
+     "text": "",
+     "image": "Q100_opt2.png"
+    },
+    {
+     "label": "3",
+     "text": "",
+     "image": "Q100_opt3.png"
+    },
+    {
+     "label": "4",
+     "text": "C_{4}H_{10}"
+    }
+   ],
+   "answers": [
+    2
+   ],
+   "page": 34,
+   "top_y": 482.1377868652344,
+   "col": "R",
+   "images": [
+    "Q100.png",
+    "Q100_2.png",
+    "Q100_3.png",
+    "Q100_4.png"
+   ],
+   "section": "CHEMISTRY"
+  },
+  {
+   "subject": "bio",
+   "booklet": 1,
+   "number": 91,
+   "text": "Given below are two statements: One is labelled as Assertion A and the other is labelled as Reason R: Assertion A: The first stage of gametophyte in the life cycle of moss is protonema stage. Reason R: Protonema develops directly from spores produced in capsule. In the light of the above statements, choose the most appropriate answer from the options given below:",
+   "options": [
+    {
+     "label": "1",
+     "text": "A is not correct but R is correct."
+    },
+    {
+     "label": "2",
+     "text": "Both A and R are correct and R is the correct explanation of A."
+    },
+    {
+     "label": "3",
+     "text": "Both A and R are correct but R is NOT the correct explanation of A."
+    },
+    {
+     "label": "4",
+     "text": "A is correct but R is not correct."
+    }
+   ],
+   "answers": [
+    2
+   ],
+   "page": 1,
+   "top_y": 318.45001220703125,
+   "col": "L",
+   "images": [],
+   "section": "BIOLOGY"
+  },
+  {
+   "subject": "bio",
+   "booklet": 2,
+   "number": 92,
+   "text": "Identify the pair of heterosporous pteridophytes among the following:",
+   "options": [
+    {
+     "label": "1",
+     "text": "Equisetum and Salvinia"
+    },
+    {
+     "label": "2",
+     "text": "Lycopodium and Selaginella"
+    },
+    {
+     "label": "3",
+     "text": "Selaginella and Salvinia"
+    },
+    {
+     "label": "4",
+     "text": "Psilolum and Salvinia"
+    }
+   ],
+   "answers": [
+    3
+   ],
+   "page": 1,
+   "top_y": 515.0599365234375,
+   "col": "L",
+   "images": [],
+   "section": "BIOLOGY"
+  },
+  {
+   "subject": "bio",
+   "booklet": 3,
+   "number": 93,
+   "text": "Family Fabaceae differs from Solanaceae and Liliaceae. With respect to the stamens, pick out the characteristics specific to family Fabaceae but not found in Solanaceae or Liliaceae.",
+   "options": [
+    {
+     "label": "1",
+     "text": "Epiphyllous and Dithecous anthers"
+    },
+    {
+     "label": "2",
+     "text": "Diadelphous and Dithecous anthers"
+    },
+    {
+     "label": "3",
+     "text": "Polyadelphous and epipetalous stamens"
+    },
+    {
+     "label": "4",
+     "text": "Monoadelphous and Monothecous anthers"
+    }
+   ],
+   "answers": [
+    2
+   ],
+   "page": 1,
+   "top_y": 598.4699096679688,
+   "col": "L",
+   "images": [],
+   "section": "BIOLOGY"
+  },
+  {
+   "subject": "bio",
+   "booklet": 4,
+   "number": 94,
+   "text": "Axile placentation is observed in",
+   "options": [
+    {
+     "label": "1",
+     "text": "China rose, Petunia and Lemon"
+    },
+    {
+     "label": "2",
+     "text": "Mustard, Cucumber and Primorose"
+    },
+    {
+     "label": "3",
+     "text": "China rose, Beans and Lupin"
+    },
+    {
+     "label": "4",
+     "text": "Tomato, Dianthus and Pea"
+    }
+   ],
+   "answers": [
+    1
+   ],
+   "page": 1,
+   "top_y": 694.5598754882812,
+   "col": "L",
+   "images": [],
+   "section": "BIOLOGY"
+  },
+  {
+   "subject": "bio",
+   "booklet": 5,
+   "number": 95,
+   "text": "Given below are two statements: Statement I: Endarch and exarch are the terms often used for describing the position of secondary xylem in the plant body. Statement II: Exarch condition is the most common feature of the root system. In the light of the above statements, choose the correct answer from the options given below:",
+   "options": [
+    {
+     "label": "1",
+     "text": "Statement I is incorrect but Statement II is true."
+    },
+    {
+     "label": "2",
+     "text": "Both Statement I and Statement II are true."
+    },
+    {
+     "label": "3",
+     "text": "Both Statement I and Statement II are false."
+    },
+    {
+     "label": "4",
+     "text": "Statement I is correct but Statement II is false."
+    }
+   ],
+   "answers": [
+    1
+   ],
+   "page": 1,
+   "top_y": 318.45001220703125,
+   "col": "R",
+   "images": [],
+   "section": "BIOLOGY"
+  },
+  {
+   "subject": "bio",
+   "booklet": 6,
+   "number": 96,
+   "text": "Given below are two statements: One is labelled as Assertion A and the other is labelled as Reason R: Assertion A: Late wood has fewer xylary elements with narrow vessels. Reason R: Cambium is less active in winters. In the light of the above statements, choose the correct answer from the options given below:",
+   "options": [
+    {
+     "label": "1",
+     "text": "A is false but R is true."
+    },
+    {
+     "label": "2",
+     "text": "Both A and R are true and R is the correct explanation of A."
+    },
+    {
+     "label": "3",
+     "text": "Both A and R are true but R is NOT the correct explanation of A."
+    },
+    {
+     "label": "4",
+     "text": "A is true but R is false."
+    }
+   ],
+   "answers": [
+    2
+   ],
+   "page": 1,
+   "top_y": 482.80999755859375,
+   "col": "R",
+   "images": [],
+   "section": "BIOLOGY"
+  },
+  {
+   "subject": "bio",
+   "booklet": 7,
+   "number": 97,
+   "text": "Cellulose does not form blue colour with lodine because",
+   "options": [
+    {
+     "label": "1",
+     "text": "It breakes down when iodine reacts with it."
+    },
+    {
+     "label": "2",
+     "text": "It is a disaccharide."
+    },
+    {
+     "label": "3",
+     "text": "It is a helical molecule."
+    },
+    {
+     "label": "4",
+     "text": "It does not contain complex helices and hence cannot hold iodine molecules."
+    }
+   ],
+   "answers": [
+    4
+   ],
+   "page": 1,
+   "top_y": 684.989990234375,
+   "col": "R",
+   "images": [],
+   "section": "BIOLOGY"
+  },
+  {
+   "subject": "bio",
+   "booklet": 8,
+   "number": 98,
+   "text": "Among eukaryotes, replication of DNA takes place in",
+   "options": [
+    {
+     "label": "1",
+     "text": "G_{2} phase"
+    },
+    {
+     "label": "2",
+     "text": "M phase"
+    },
+    {
+     "label": "3",
+     "text": "S phase"
+    },
+    {
+     "label": "4",
+     "text": "G_{1} phase"
+    }
+   ],
+   "answers": [
+    3
+   ],
+   "page": 2,
+   "top_y": 72.54998779296875,
+   "col": "L",
+   "images": [],
+   "section": "BIOLOGY"
+  },
+  {
+   "subject": "bio",
+   "booklet": 9,
+   "number": 99,
+   "text": "Which of the following stages of meiosis involves division of centromere?",
+   "options": [
+    {
+     "label": "1",
+     "text": "Telophase"
+    },
+    {
+     "label": "2",
+     "text": "Metaphase I"
+    },
+    {
+     "label": "3",
+     "text": "Metaphase II"
+    },
+    {
+     "label": "4",
+     "text": "Anaphase II"
+    }
+   ],
+   "answers": [
+    4
+   ],
+   "page": 2,
+   "top_y": 119.3900146484375,
+   "col": "L",
+   "images": [],
+   "section": "BIOLOGY"
+  },
+  {
+   "subject": "bio",
+   "booklet": 10,
+   "number": 100,
+   "text": "The process of appearance of recombination nodules occurs at which sub stage of prophase I in meiosis?",
+   "options": [
+    {
+     "label": "1",
+     "text": "Diakinesis"
+    },
+    {
+     "label": "2",
+     "text": "Pachytene"
+    },
+    {
+     "label": "3",
+     "text": "Zygotene"
+    },
+    {
+     "label": "4",
+     "text": "Diplotenes"
+    }
+   ],
+   "answers": [
+    2
+   ],
+   "page": 2,
+   "top_y": 180.72998046875,
+   "col": "L",
+   "images": [],
+   "section": "BIOLOGY"
+  },
+  {
+   "subject": "bio",
+   "booklet": 11,
+   "number": 101,
+   "text": "Movement and accumulation of ions across a membrane against their concentration gradient can be explained by",
+   "options": [
+    {
+     "label": "1",
+     "text": "Active Transport"
+    },
+    {
+     "label": "2",
+     "text": "Osmosis"
+    },
+    {
+     "label": "3",
+     "text": "Facilitated Diffusion"
+    },
+    {
+     "label": "4",
+     "text": "Passive Transport"
+    }
+   ],
+   "answers": [
+    1
+   ],
+   "page": 2,
+   "top_y": 273.1400146484375,
+   "col": "L",
+   "images": [],
+   "section": "BIOLOGY"
+  },
+  {
+   "subject": "bio",
+   "booklet": 14,
+   "number": 102,
+   "text": "How many ATP and NADPH, are required for the synthesis of one molecule of Glucose during Calvin cycle?",
+   "options": [
+    {
+     "label": "1",
+     "text": "18 ATP and 16 NADPH_{2}"
+    },
+    {
+     "label": "2",
+     "text": "12 ATP and 12 NADPH_{2}"
+    },
+    {
+     "label": "3",
+     "text": "18 ATP and 12 NADPH_{2}"
+    },
+    {
+     "label": "4",
+     "text": "12 ATP and 16 NADPH_{2}"
+    }
+   ],
+   "answers": [
+    3
+   ],
+   "page": 2,
+   "top_y": 634.820068359375,
+   "col": "L",
+   "images": [],
+   "section": "BIOLOGY"
+  },
+  {
+   "subject": "bio",
+   "booklet": 15,
+   "number": 103,
+   "text": "The reaction centre in PS II has an absorption maxima at",
+   "options": [
+    {
+     "label": "1",
+     "text": "780 nm"
+    },
+    {
+     "label": "2",
+     "text": "680 nm"
+    },
+    {
+     "label": "3",
+     "text": "700 nm"
+    },
+    {
+     "label": "4",
+     "text": "660 nm"
+    }
+   ],
+   "answers": [
+    2
+   ],
+   "page": 2,
+   "top_y": 726.6600341796875,
+   "col": "L",
+   "images": [],
+   "section": "BIOLOGY"
+  },
+  {
+   "subject": "bio",
+   "booklet": 16,
+   "number": 104,
+   "text": "Given below are two statements: One is labelled as Assertion A and the other is labelled as Reason R: Assertion A: ATP is used at two steps in glycolysis. Reason R: First ATP is used in converting glucose into glucose-6-phosphate and second ATP is used in conversion of fructose-6- phosphate into fructose-1-6-diphosphate. In the light of the above statements, choose the correct answer from the options given below is true,",
+   "options": [
+    {
+     "label": "1",
+     "text": "A is false but R is true."
+    },
+    {
+     "label": "2",
+     "text": "Both A and R are true and R is the correct explanation of A"
+    },
+    {
+     "label": "3",
+     "text": "Both A and R are true but R is NOT the correct explanation of A."
+    },
+    {
+     "label": "4",
+     "text": "A is true but R is false."
+    }
+   ],
+   "answers": [
+    2
+   ],
+   "page": 2,
+   "top_y": 72.54998779296875,
+   "col": "R",
+   "images": [],
+   "section": "BIOLOGY"
+  },
+  {
+   "subject": "bio",
+   "booklet": 17,
+   "number": 105,
+   "text": "Spraying of which of the following phytohormone on juvenile conifers helps in hastening the maturity period, that leads to early seed production?",
+   "options": [
+    {
+     "label": "1",
+     "text": "Abscisic Acid"
+    },
+    {
+     "label": "2",
+     "text": "Indole-3-butyric Acid"
+    },
+    {
+     "label": "3",
+     "text": "Gibberellic Acid"
+    },
+    {
+     "label": "4",
+     "text": "Zeatin"
+    }
+   ],
+   "answers": [
+    3
+   ],
+   "page": 2,
+   "top_y": 311.7300109863281,
+   "col": "R",
+   "images": [],
+   "section": "BIOLOGY"
+  },
+  {
+   "subject": "bio",
+   "booklet": 19,
+   "number": 106,
+   "text": "Which hormone promotes intemode/petiole elongation in deep water rice?",
+   "options": [
+    {
+     "label": "1",
+     "text": "2, 4-D"
+    },
+    {
+     "label": "2",
+     "text": "GA_{3}"
+    },
+    {
+     "label": "3",
+     "text": "Kinetin"
+    },
+    {
+     "label": "4",
+     "text": "Ethylene"
+    }
+   ],
+   "answers": [
+    4
+   ],
+   "page": 2,
+   "top_y": 463.4100036621094,
+   "col": "R",
+   "images": [],
+   "section": "BIOLOGY"
+  },
+  {
+   "subject": "bio",
+   "booklet": 20,
+   "number": 107,
+   "text": "Large, colourful, fragrant flowers with nectar are seen in:",
+   "options": [
+    {
+     "label": "1",
+     "text": "wind pollinated plants"
+    },
+    {
+     "label": "2",
+     "text": "insect pollinated plants"
+    },
+    {
+     "label": "3",
+     "text": "bird pollinated plants"
+    },
+    {
+     "label": "4",
+     "text": "bat pollinated plants"
+    }
+   ],
+   "answers": [
+    2
+   ],
+   "page": 2,
+   "top_y": 555.0700073242188,
+   "col": "R",
+   "images": [],
+   "section": "BIOLOGY"
+  },
+  {
+   "subject": "bio",
+   "booklet": 21,
+   "number": 108,
+   "text": "In angiosperm, the haploid, diploid and triploid structures of a fertilized embryo sac sequentially are:",
+   "options": [
+    {
+     "label": "1",
+     "text": "Synergids, antipodals and Polar nuclei"
+    },
+    {
+     "label": "2",
+     "text": "Synergids, Primary endosperm nucleus and zygote"
+    },
+    {
+     "label": "3",
+     "text": "Antipodals, synergids, and primary endosperm nucleus"
+    },
+    {
+     "label": "4",
+     "text": "Synergids, Zygote and Primary endosperm nucleus"
+    }
+   ],
+   "answers": [
+    4
+   ],
+   "page": 2,
+   "top_y": 604.9100341796875,
+   "col": "R",
+   "images": [],
+   "section": "BIOLOGY"
+  },
+  {
+   "subject": "bio",
+   "booklet": 22,
+   "number": 109,
+   "text": "What is the function of tassels in the corn cob?",
+   "options": [
+    {
+     "label": "1",
+     "text": "To protect seeds"
+    },
+    {
+     "label": "2",
+     "text": "To attract insects"
+    },
+    {
+     "label": "3",
+     "text": "To trap pollen grains"
+    },
+    {
+     "label": "4",
+     "text": "To disperse pollen grains"
+    }
+   ],
+   "answers": [
+    3
+   ],
+   "page": 2,
+   "top_y": 697.75,
+   "col": "R",
+   "images": [],
+   "section": "BIOLOGY"
+  },
+  {
+   "subject": "bio",
+   "booklet": 23,
+   "number": 110,
+   "text": "The phenomenon of pleiotropism refers to",
+   "options": [
+    {
+     "label": "1",
+     "text": "more than two genes affecting a single character."
+    },
+    {
+     "label": "2",
+     "text": "presence of several alleles of a single gene controlling a single crossover."
+    },
+    {
+     "label": "3",
+     "text": "presence of two alleles, each of the two genes controlling a single trait."
+    },
+    {
+     "label": "4",
+     "text": "a single gene affecting multiple phenotypic expression."
+    }
+   ],
+   "answers": [
+    4
+   ],
+   "page": 3,
+   "top_y": 72.45001220703125,
+   "col": "L",
+   "images": [],
+   "section": "BIOLOGY"
+  },
+  {
+   "subject": "bio",
+   "booklet": 24,
+   "number": 111,
+   "text": "Frequency of recombination between gene pairs on same chromosome as a measure of the distance between genes to map their position on chromosome, was used for the first time by",
+   "options": [
+    {
+     "label": "1",
+     "text": "Henking"
+    },
+    {
+     "label": "2",
+     "text": "Thomas Hunt Morgan"
+    },
+    {
+     "label": "3",
+     "text": "Sutton and Boveri"
+    },
+    {
+     "label": "4",
+     "text": "Alfred Sturtevant"
+    }
+   ],
+   "answers": [
+    4
+   ],
+   "page": 3,
+   "top_y": 171.2899169921875,
+   "col": "L",
+   "images": [],
+   "section": "BIOLOGY"
+  },
+  {
+   "subject": "bio",
+   "booklet": 25,
+   "number": 112,
+   "text": "What is the role of RNA polymerase III in the process of transcription in Eukaryotes?",
+   "options": [
+    {
+     "label": "1",
+     "text": "Transcription of only snRNAS"
+    },
+    {
+     "label": "2",
+     "text": "Transcription of rRNAs (28S, 18S and 5.8S)"
+    },
+    {
+     "label": "3",
+     "text": "Transcription of tRNA, 5 srRNA and snRNA"
+    },
+    {
+     "label": "4",
+     "text": "Transcription of precursor of mRNA"
+    }
+   ],
+   "answers": [
+    3
+   ],
+   "page": 3,
+   "top_y": 281.95001220703125,
+   "col": "L",
+   "images": [],
+   "section": "BIOLOGY"
+  },
+  {
+   "subject": "bio",
+   "booklet": 26,
+   "number": 113,
+   "text": "Expressed Sequence Tags (ESTs) refers to",
+   "options": [
+    {
+     "label": "1",
+     "text": "Certain important expressed genes."
+    },
+    {
+     "label": "2",
+     "text": "All genes that are expressed as RNA."
+    },
+    {
+     "label": "3",
+     "text": "All genes that are expressed as proteins."
+    },
+    {
+     "label": "4",
+     "text": "All genes whether expressed or unexpressed."
+    }
+   ],
+   "answers": [
+    2
+   ],
+   "page": 3,
+   "top_y": 368.7898864746094,
+   "col": "L",
+   "images": [],
+   "section": "BIOLOGY"
+  },
+  {
+   "subject": "bio",
+   "booklet": 27,
+   "number": 114,
+   "text": "Unequivocal proof that DNA is the genetic material was first proposed by",
+   "options": [
+    {
+     "label": "1",
+     "text": "Wilkins and Franklin"
+    },
+    {
+     "label": "2",
+     "text": "Fedrick, Griffith"
+    },
+    {
+     "label": "3",
+     "text": "Alfred Hershey and Martha Chase"
+    },
+    {
+     "label": "4",
+     "text": "Avery, Macleoid and McCarthy"
+    }
+   ],
+   "answers": [
+    3
+   ],
+   "page": 3,
+   "top_y": 443.6299133300781,
+   "col": "L",
+   "images": [],
+   "section": "BIOLOGY"
+  },
+  {
+   "subject": "bio",
+   "booklet": 28,
+   "number": 115,
+   "text": "Upon exposure to UV radiation, DNA stained with ethidium bromide will show",
+   "options": [
+    {
+     "label": "1",
+     "text": "Bright orange colour"
+    },
+    {
+     "label": "2",
+     "text": "Bright red colour"
+    },
+    {
+     "label": "3",
+     "text": "Bright blue colour"
+    },
+    {
+     "label": "4",
+     "text": "Bright yellow colour"
+    }
+   ],
+   "answers": [
+    1
+   ],
+   "page": 3,
+   "top_y": 558.2899780273438,
+   "col": "L",
+   "images": [],
+   "section": "BIOLOGY"
+  },
+  {
+   "subject": "bio",
+   "booklet": 29,
+   "number": 116,
+   "text": "In gene gun method used to introduce alien DNA into host cells, microparticles of ______ metal are used.",
+   "options": [
+    {
+     "label": "1",
+     "text": "Silver"
+    },
+    {
+     "label": "2",
+     "text": "Copper"
+    },
+    {
+     "label": "3",
+     "text": "Zinc"
+    },
+    {
+     "label": "4",
+     "text": "Tungsten or gold"
+    }
+   ],
+   "answers": [
+    4
+   ],
+   "page": 3,
+   "top_y": 617.1298828125,
+   "col": "L",
+   "images": [],
+   "section": "BIOLOGY"
+  },
+  {
+   "subject": "bio",
+   "booklet": 30,
+   "number": 117,
+   "text": "During the purification process for recombinant DNA technology, addition of chilled ethanol precipitates out",
+   "options": [
+    {
+     "label": "1",
+     "text": "Polysaccharides"
+    },
+    {
+     "label": "2",
+     "text": "RNA"
+    },
+    {
+     "label": "3",
+     "text": "DNA"
+    },
+    {
+     "label": "4",
+     "text": "Histones"
+    }
+   ],
+   "answers": [
+    3
+   ],
+   "page": 3,
+   "top_y": 675.969970703125,
+   "col": "L",
+   "images": [],
+   "section": "BIOLOGY"
+  },
+  {
+   "subject": "bio",
+   "booklet": 31,
+   "number": 118,
+   "text": "Identify the correct statements: A. Detrivores perform fragmentation B. The humus is further degraded by some microbes during mineralization. C. Water soluble inorganic nutrients go down into the soil and get precipitated by a process called leaching. D. The detritus food chain begins with living organisms. E. Earthworms break down detritus into smaller particles by a process called catabolism.",
+   "options": [
+    {
+     "label": "1",
+     "text": "D, E, A only"
+    },
+    {
+     "label": "2",
+     "text": "A, B, C only"
+    },
+    {
+     "label": "3",
+     "text": "B, C, D only"
+    },
+    {
+     "label": "4",
+     "text": "C, D, E only"
+    }
+   ],
+   "answers": [
+    2
+   ],
+   "page": 3,
+   "top_y": 73.45001220703125,
+   "col": "R",
+   "images": [],
+   "section": "BIOLOGY"
+  },
+  {
+   "subject": "bio",
+   "booklet": 32,
+   "number": 119,
+   "text": "In the equation GPP – R = NPP GPP is Gross Primary Productivity NPP is Net Primary Productivity. R here is",
+   "options": [
+    {
+     "label": "1",
+     "text": "Reproductive allocation"
+    },
+    {
+     "label": "2",
+     "text": "Photosynthetically active radiation"
+    },
+    {
+     "label": "3",
+     "text": "Respiratory quotient"
+    },
+    {
+     "label": "4",
+     "text": "Respiratory loss"
+    }
+   ],
+   "answers": [
+    4
+   ],
+   "page": 3,
+   "top_y": 286.1299133300781,
+   "col": "R",
+   "images": [],
+   "section": "BIOLOGY"
+  },
+  {
+   "subject": "bio",
+   "booklet": 33,
+   "number": 120,
+   "text": "The historic Convention on Biological Diversity, ‘The Earth Summit’ was held in Rio de Janeiro in the year:",
+   "options": [
+    {
+     "label": "1",
+     "text": "2002"
+    },
+    {
+     "label": "2",
+     "text": "1992"
+    },
+    {
+     "label": "3",
+     "text": "1985"
+    },
+    {
+     "label": "4",
+     "text": "1986"
+    }
+   ],
+   "answers": [
+    2
+   ],
+   "page": 3,
+   "top_y": 455.8099060058594,
+   "col": "R",
+   "images": [],
+   "section": "BIOLOGY"
+  },
+  {
+   "subject": "bio",
+   "booklet": 34,
+   "number": 121,
+   "text": "Among ‘The Evil Quartet’, which one is considered the most important cause driving extinction of species?",
+   "options": [
+    {
+     "label": "1",
+     "text": "Co-extinctions"
+    },
+    {
+     "label": "2",
+     "text": "Habitat loss and fragmentation"
+    },
+    {
+     "label": "3",
+     "text": "Over exploitation for economic gain"
+    },
+    {
+     "label": "4",
+     "text": "Alien species invasions"
+    }
+   ],
+   "answers": [
+    2
+   ],
+   "page": 3,
+   "top_y": 519.6500244140625,
+   "col": "R",
+   "images": [],
+   "section": "BIOLOGY"
+  },
+  {
+   "subject": "bio",
+   "booklet": 35,
+   "number": 122,
+   "text": "The thickness of ozone in a column of air in the atmosphere is measured in terms of:",
+   "options": [
+    {
+     "label": "1",
+     "text": "Kilobase"
+    },
+    {
+     "label": "2",
+     "text": "Dobson units"
+    },
+    {
+     "label": "3",
+     "text": "Decameter"
+    },
+    {
+     "label": "4",
+     "text": "Decibels"
+    }
+   ],
+   "answers": [
+    2
+   ],
+   "page": 3,
+   "top_y": 642.5599365234375,
+   "col": "R",
+   "images": [],
+   "section": "BIOLOGY"
+  },
+  {
+   "subject": "bio",
+   "booklet": 36,
+   "number": 123,
+   "text": "Given below are two statements: One is labelled as Assertion A and the other is labelled as Reason R: Assertion A: In gymnosperms the pollen grains are released from the microsporangium and carried by air currents. Reason R: Air currents carry the pollen grains to the mouth of the archegonia where the male gametes are discharged and pollen tube is not formed. In the light of the above statements, choose the correct answer from the options given below:",
+   "options": [
+    {
+     "label": "1",
+     "text": "A is false but R is true."
+    },
+    {
+     "label": "2",
+     "text": "Both A and R are true and R is the correct explanation of A."
+    },
+    {
+     "label": "3",
+     "text": "Both A and R are true but R is NOT the correct explanation of A."
+    },
+    {
+     "label": "4",
+     "text": "A is true but R is false."
+    }
+   ],
+   "answers": [
+    4
+   ],
+   "page": 4,
+   "top_y": 170.684326171875,
+   "col": "L",
+   "images": [],
+   "section": "BIOLOGY"
+  },
+  {
+   "subject": "bio",
+   "booklet": 37,
+   "number": 124,
+   "text": "Given below are two statements: One is labelled as Assertion A and the other is labeled as Reason R: Assertion A: A flower is defined as modified shoot wherein the shoot apical meristem changes to floral meristem. Reason R: Internode of the shoot gets condensed to produce different floral appendages laterally at successive nodes instead of leaves. In the light of the above statements, choose the correct answer from the options given below:",
+   "options": [
+    {
+     "label": "1",
+     "text": "A is false but R is true."
+    },
+    {
+     "label": "2",
+     "text": "Both A and R are true and R is the correct explanation of A."
+    },
+    {
+     "label": "3",
+     "text": "Both A and R are true but R is NOT the correct explanation of A."
+    },
+    {
+     "label": "4",
+     "text": "A is true but R is false."
+    }
+   ],
+   "answers": [
+    2
+   ],
+   "page": 4,
+   "top_y": 405.1142883300781,
+   "col": "L",
+   "images": [],
+   "section": "BIOLOGY"
+  },
+  {
+   "subject": "bio",
+   "booklet": 38,
+   "number": 125,
+   "text": "Identify the correct statements: A. Lenticels are the lens-shaped openings permitting the exchange of gases. B. Bark formed early in the season is called hard bark. C. Bark is a technical term that refers to all tissues exterior to vascular cambium. D. Bark refers to periderm and secondary phloem. E. Phellogen is single-layered in thickness. Choose the correct answer from the options given below:",
+   "options": [
+    {
+     "label": "1",
+     "text": "B and C only"
+    },
+    {
+     "label": "2",
+     "text": "B. C and E only"
+    },
+    {
+     "label": "3",
+     "text": "A and D only"
+    },
+    {
+     "label": "4",
+     "text": "A, B and D only"
+    }
+   ],
+   "answers": [
+    3
+   ],
+   "page": 4,
+   "top_y": 612.9743041992188,
+   "col": "L",
+   "images": [],
+   "section": "BIOLOGY"
+  },
+  {
+   "subject": "bio",
+   "booklet": 39,
+   "number": 126,
+   "text": "Melonate inhibits the growth of pathogenic bacteria by inhibiting the activity of",
+   "options": [
+    {
+     "label": "1",
+     "text": "Dinitrogenase"
+    },
+    {
+     "label": "2",
+     "text": "succinic dehydrogenase"
+    },
+    {
+     "label": "3",
+     "text": "Amylase"
+    },
+    {
+     "label": "4",
+     "text": "Lipase"
+    }
+   ],
+   "answers": [
+    2
+   ],
+   "page": 4,
+   "top_y": 170.434326171875,
+   "col": "R",
+   "images": [],
+   "section": "BIOLOGY"
+  },
+  {
+   "subject": "bio",
+   "booklet": 40,
+   "number": 127,
+   "text": "",
+   "options": [
+    {
+     "label": "1",
+     "text": "",
+     "image": null
+    },
+    {
+     "label": "2",
+     "text": "",
+     "image": null
+    },
+    {
+     "label": "3",
+     "text": "",
+     "image": null
+    },
+    {
+     "label": "4",
+     "text": "",
+     "image": null
+    }
+   ],
+   "answers": [
+    4
+   ],
+   "page": 4,
+   "top_y": 285.09429931640625,
+   "col": "R",
+   "images": [],
+   "section": "BIOLOGY"
+  },
+  {
+   "subject": "bio",
+   "booklet": 41,
+   "number": 128,
+   "text": "",
+   "options": [
+    {
+     "label": "1",
+     "text": "",
+     "image": null
+    },
+    {
+     "label": "2",
+     "text": "",
+     "image": null
+    },
+    {
+     "label": "3",
+     "text": "",
+     "image": null
+    },
+    {
+     "label": "4",
+     "text": "",
+     "image": null
+    }
+   ],
+   "answers": [
+    2
+   ],
+   "page": 4,
+   "top_y": 537.0842895507812,
+   "col": "R",
+   "images": [],
+   "section": "BIOLOGY"
+  },
+  {
+   "subject": "bio",
+   "booklet": 43,
+   "number": 129,
+   "text": "Which of the following combinations is required for chemiosmosis?",
+   "options": [
+    {
+     "label": "1",
+     "text": "proton pump, electron gradient, NADP synthase"
+    },
+    {
+     "label": "2",
+     "text": "membrane, proton pump, proton gradient. ATP synthase"
+    },
+    {
+     "label": "3",
+     "text": "membrane, proton pump, proton gradient, NADP synthase"
+    },
+    {
+     "label": "4",
+     "text": "proton pump, electron gradient, ATP synthase"
+    }
+   ],
+   "answers": [
+    2
+   ],
+   "page": 5,
+   "top_y": 260.89691162109375,
+   "col": "L",
+   "images": [],
+   "section": "BIOLOGY"
+  },
+  {
+   "subject": "bio",
+   "booklet": 44,
+   "number": 130,
+   "text": "",
+   "options": [
+    {
+     "label": "1",
+     "text": "",
+     "image": null
+    },
+    {
+     "label": "2",
+     "text": "",
+     "image": null
+    },
+    {
+     "label": "3",
+     "text": "",
+     "image": null
+    },
+    {
+     "label": "4",
+     "text": "",
+     "image": null
+    }
+   ],
+   "answers": [
+    1
+   ],
+   "page": 5,
+   "top_y": 375.556884765625,
+   "col": "L",
+   "images": [],
+   "section": "BIOLOGY"
+  },
+  {
+   "subject": "bio",
+   "booklet": 45,
+   "number": 131,
+   "text": "Which of the following statements are correct about Klinefelter’s Syndrome? A. This disorder was first described by Langdon Down (1866). B. Such an individual has overall masculine development. However, the feminine development is also expressed. C. The affected individual is short stature. D. Physical, psychomotor and mental development is retarded. E. Such individuals are sterile.",
+   "options": [
+    {
+     "label": "1",
+     "text": "A and E only"
+    },
+    {
+     "label": "2",
+     "text": "A and B only"
+    },
+    {
+     "label": "3",
+     "text": "C and D only"
+    },
+    {
+     "label": "4",
+     "text": "B and E only"
+    }
+   ],
+   "answers": [
+    4
+   ],
+   "page": 5,
+   "top_y": 552.3342895507812,
+   "col": "L",
+   "images": [],
+   "section": "BIOLOGY"
+  },
+  {
+   "subject": "bio",
+   "booklet": 46,
+   "number": 132,
+   "text": "How many different proteins does the ribosome consist of?",
+   "options": [
+    {
+     "label": "1",
+     "text": "20"
+    },
+    {
+     "label": "2",
+     "text": "80"
+    },
+    {
+     "label": "3",
+     "text": "60"
+    },
+    {
+     "label": "4",
+     "text": "40"
+    }
+   ],
+   "answers": [
+    2
+   ],
+   "page": 5,
+   "top_y": 721.4943237304688,
+   "col": "L",
+   "images": [],
+   "section": "BIOLOGY"
+  },
+  {
+   "subject": "bio",
+   "booklet": 47,
+   "number": 133,
+   "text": "Main steps in the formation of Recombinant DNA are given below. Arrange these steps in a correct sequence A. Insertion of recombinant DNA into the host cell. B. Cutting of DNA at specific location by restriction enzyme. C. Isolation of desired DNA fragment. D. Amplification of gene of interest using PCR.",
+   "options": [
+    {
+     "label": "1",
+     "text": "B, D, A, C"
+    },
+    {
+     "label": "2",
+     "text": "B, C, D, A"
+    },
+    {
+     "label": "3",
+     "text": "C, A, B, D"
+    },
+    {
+     "label": "4",
+     "text": "C, B, D, A"
+    }
+   ],
+   "answers": [
+    2
+   ],
+   "page": 5,
+   "top_y": 71.54998779296875,
+   "col": "R",
+   "images": [],
+   "section": "BIOLOGY"
+  },
+  {
+   "subject": "bio",
+   "booklet": 48,
+   "number": 134,
+   "text": "Given below are two statements: Statement I: Gause’s ‘Competitive Exclusive Principle’ states that two closely related species competing for the same related species competing for the same resources cannot co-exist indefinitely and competitively inferior one will be eliminated eventually. Statement II: In general, carnivores are more adversely affected by competition than herbivores. In the light of the above statements, choose the correct answer from the options given below:",
+   "options": [
+    {
+     "label": "1",
+     "text": "Statement I is incorrect but Statement II is true"
+    },
+    {
+     "label": "2",
+     "text": "Both Statement I and Statement II are true"
+    },
+    {
+     "label": "3",
+     "text": "Both Statement I and Statement II are false"
+    },
+    {
+     "label": "4",
+     "text": "Statement I is correct but Statement II is false."
+    }
+   ],
+   "answers": [
+    4
+   ],
+   "page": 5,
+   "top_y": 223.7100830078125,
+   "col": "R",
+   "images": [],
+   "section": "BIOLOGY"
+  },
+  {
+   "subject": "bio",
+   "booklet": 49,
+   "number": 135,
+   "text": "",
+   "options": [
+    {
+     "label": "1",
+     "text": "",
+     "image": null
+    },
+    {
+     "label": "2",
+     "text": "",
+     "image": null
+    },
+    {
+     "label": "3",
+     "text": "",
+     "image": null
+    },
+    {
+     "label": "4",
+     "text": "",
+     "image": null
+    }
+   ],
+   "answers": [
+    3
+   ],
+   "page": 5,
+   "top_y": 425.57000732421875,
+   "col": "R",
+   "images": [],
+   "section": "BIOLOGY"
+  },
+  {
+   "subject": "bio",
+   "booklet": 50,
+   "number": 136,
+   "text": "Which of the following answers are NOT correct?",
+   "options": [
+    {
+     "label": "1",
+     "text": "The amount of some toxic substances of industrial waste water increases in the organisms at successive trophic levels."
+    },
+    {
+     "label": "2",
+     "text": "The micro-organisms involved in biodegradation of organic matter in a sewage polluted water body consume a lot of oxygen causing the death of aquatic organisms."
+    },
+    {
+     "label": "3",
+     "text": "Algal blooms caused by excess of organic matter in water improve water quality and promote fisheries."
+    },
+    {
+     "label": "4",
+     "text": "Water hyacinth grows abundantly in eutrophic water bodies and leads to an imbalance in the ecosystem dynamics of the water body."
+    }
+   ],
+   "answers": [
+    3
+   ],
+   "page": 5,
+   "top_y": 608.684326171875,
+   "col": "R",
+   "images": [],
+   "section": "BIOLOGY"
+  },
+  {
+   "subject": "bio",
+   "booklet": 51,
+   "number": 137,
+   "text": "Radial symmetry is NOT found in adults of phylum",
+   "options": [
+    {
+     "label": "1",
+     "text": "Echinodermata"
+    },
+    {
+     "label": "2",
+     "text": "Ctenophora"
+    },
+    {
+     "label": "3",
+     "text": "Hemichordata"
+    },
+    {
+     "label": "4",
+     "text": "Coelenterata"
+    }
+   ],
+   "answers": [
+    3
+   ],
+   "page": 6,
+   "top_y": 167.826416015625,
+   "col": "L",
+   "images": [],
+   "section": "BIOLOGY"
+  },
+  {
+   "subject": "bio",
+   "booklet": 52,
+   "number": 138,
+   "text": "",
+   "options": [
+    {
+     "label": "1",
+     "text": "",
+     "image": null
+    },
+    {
+     "label": "2",
+     "text": "",
+     "image": null
+    },
+    {
+     "label": "3",
+     "text": "",
+     "image": null
+    },
+    {
+     "label": "4",
+     "text": "",
+     "image": null
+    }
+   ],
+   "answers": [
+    4
+   ],
+   "page": 6,
+   "top_y": 214.6663818359375,
+   "col": "L",
+   "images": [],
+   "section": "BIOLOGY"
+  },
+  {
+   "subject": "bio",
+   "booklet": 53,
+   "number": 139,
+   "text": "Given below are two statements: Statement I: Ligaments are dense irregular tissue Statement II: Cartilage is dense regular tissue. In the light of above statements choose the correct answer from the option given below:",
+   "options": [
+    {
+     "label": "1",
+     "text": "Statement I is false but Statement III is true."
+    },
+    {
+     "label": "2",
+     "text": "Both Statement I and II are true"
+    },
+    {
+     "label": "3",
+     "text": "Both Statement I and II are false"
+    },
+    {
+     "label": "4",
+     "text": "Statement I is true but Statement II is false"
+    }
+   ],
+   "answers": [
+    3
+   ],
+   "page": 6,
+   "top_y": 402.32708740234375,
+   "col": "L",
+   "images": [],
+   "section": "BIOLOGY"
+  },
+  {
+   "subject": "bio",
+   "booklet": 54,
+   "number": 140,
+   "text": "Which of the following are NOT considered as the part of endomembrane system? A. Mitochondria B. Endoplasmic Reticulum C. Chloroplasts E. Peroxisomes D. Golgi complex Choose the most appropriate answer from the options given below:",
+   "options": [
+    {
+     "label": "1",
+     "text": "A, D and E only"
+    },
+    {
+     "label": "2",
+     "text": "B and D only"
+    },
+    {
+     "label": "3",
+     "text": "A, C and E only"
+    },
+    {
+     "label": "4",
+     "text": "A and D only"
+    }
+   ],
+   "answers": [
+    3
+   ],
+   "page": 6,
+   "top_y": 576.007080078125,
+   "col": "L",
+   "images": [],
+   "section": "BIOLOGY"
+  },
+  {
+   "subject": "bio",
+   "booklet": 55,
+   "number": 141,
+   "text": "Which of the following functions is carried out by cytoskeleton in a cell?",
+   "options": [
+    {
+     "label": "1",
+     "text": "Transportation"
+    },
+    {
+     "label": "2",
+     "text": "Nuclear division"
+    },
+    {
+     "label": "3",
+     "text": "Protein synthesis"
+    },
+    {
+     "label": "4",
+     "text": "Motility"
+    }
+   ],
+   "answers": [
+    4
+   ],
+   "page": 6,
+   "top_y": 709.4371337890625,
+   "col": "L",
+   "images": [],
+   "section": "BIOLOGY"
+  },
+  {
+   "subject": "bio",
+   "booklet": 56,
+   "number": 142,
+   "text": "Given below are two statements: Statement I: Low temperature preserves the enzyme in a temporarily inactive state whereas high temperature destroys enzymatic activity because proteins are denatured by heat. Statement II: When the inhibitor closely resembles the substrate in its molecular structure and inhibits the activity of the enzyme, it is known as competitive inhibitor. In the light of the above statements, choose the correct answer from the options given below:",
+   "options": [
+    {
+     "label": "1",
+     "text": "Statement I is false but statement II is true."
+    },
+    {
+     "label": "2",
+     "text": "Both Statement I and Statement II are true."
+    },
+    {
+     "label": "3",
+     "text": "Both Statement I and Statement II are false."
+    },
+    {
+     "label": "4",
+     "text": "Statement I is true but Statement II is false."
+    }
+   ],
+   "answers": [
+    2
+   ],
+   "page": 6,
+   "top_y": 169.22637939453125,
+   "col": "R",
+   "images": [],
+   "section": "BIOLOGY"
+  },
+  {
+   "subject": "bio",
+   "booklet": 57,
+   "number": 143,
+   "text": "Given below are two statements: Statement I: A protein is imagined as a line, the left end represented by first amino acid (C-terminal) and the right end represented by last amino acid (N-terminal) Statement II: Adult human haemoglobin, consists of 4 subunits (two subunits of a type and two subunits of b type.) In the light of the above statements, choose the correct answer from the options given below:",
+   "options": [
+    {
+     "label": "1",
+     "text": "Statement I is false but Statement II is true."
+    },
+    {
+     "label": "2",
+     "text": "Both Statement I and Statement II are true."
+    },
+    {
+     "label": "3",
+     "text": "Both Statement I and Statement II are false."
+    },
+    {
+     "label": "4",
+     "text": "Statement I is true but Statement II is false."
+    }
+   ],
+   "answers": [
+    1
+   ],
+   "page": 6,
+   "top_y": 356.8363952636719,
+   "col": "R",
+   "images": [],
+   "section": "BIOLOGY"
+  },
+  {
+   "subject": "bio",
+   "booklet": 60,
+   "number": 144,
+   "text": "",
+   "options": [
+    {
+     "label": "1",
+     "text": "",
+     "image": null
+    },
+    {
+     "label": "2",
+     "text": "",
+     "image": null
+    },
+    {
+     "label": "3",
+     "text": "",
+     "image": null
+    },
+    {
+     "label": "4",
+     "text": "",
+     "image": null
+    }
+   ],
+   "answers": [
+    1
+   ],
+   "page": 7,
+   "top_y": 162.3936767578125,
+   "col": "L",
+   "images": [],
+   "section": "BIOLOGY"
+  },
+  {
+   "subject": "bio",
+   "booklet": 61,
+   "number": 145,
+   "text": "",
+   "options": [
+    {
+     "label": "1",
+     "text": "",
+     "image": null
+    },
+    {
+     "label": "2",
+     "text": "",
+     "image": null
+    },
+    {
+     "label": "3",
+     "text": "",
+     "image": null
+    },
+    {
+     "label": "4",
+     "text": "",
+     "image": null
+    }
+   ],
+   "answers": [
+    2
+   ],
+   "page": 7,
+   "top_y": 236.8035888671875,
+   "col": "L",
+   "images": [],
+   "section": "BIOLOGY"
+  },
+  {
+   "subject": "bio",
+   "booklet": 62,
+   "number": 146,
+   "text": "Given below are statements: one is labelled as Assertion A and the other is labelled as Reason R. Assertion A: Nephrons are of two types: Cortical & Juxta medullary, based on their relative position in cortex and medulla. Reason R: Juxta medullary nephrons have short loop of Henle whereas, cortical nephrons have longer loop of Henle. In the light of the above statements, choose the correct answer from the options given below:",
+   "options": [
+    {
+     "label": "1",
+     "text": "A is false but R is true."
+    },
+    {
+     "label": "2",
+     "text": "Both A and R are true and R is the correct explanation of A."
+    },
+    {
+     "label": "3",
+     "text": "Both A and R are true but R is NOT the correct explanation of A."
+    },
+    {
+     "label": "4",
+     "text": "A is true but R is false."
+    }
+   ],
+   "answers": [
+    4
+   ],
+   "page": 7,
+   "top_y": 414.1875915527344,
+   "col": "L",
+   "images": [],
+   "section": "BIOLOGY"
+  },
+  {
+   "subject": "bio",
+   "booklet": 63,
+   "number": 147,
+   "text": "",
+   "options": [
+    {
+     "label": "1",
+     "text": "",
+     "image": null
+    },
+    {
+     "label": "2",
+     "text": "",
+     "image": null
+    },
+    {
+     "label": "3",
+     "text": "",
+     "image": null
+    },
+    {
+     "label": "4",
+     "text": "",
+     "image": null
+    }
+   ],
+   "answers": [
+    3
+   ],
+   "page": 7,
+   "top_y": 658.8676147460938,
+   "col": "L",
+   "images": [],
+   "section": "BIOLOGY"
+  },
+  {
+   "subject": "bio",
+   "booklet": 66,
+   "number": 148,
+   "text": "Given below are two statements: Statement I: Vas deferens receives a duct from seminal vesicle and opens into urethra as the ejaculatory duct. Statement II: The cavity of the cervix is called cervical canal which along with vagina forms birth canal. In the light of the above statements, choose the correct answer from the options given below:",
+   "options": [
+    {
+     "label": "1",
+     "text": "Statement I incorrect but Statement II is true."
+    },
+    {
+     "label": "2",
+     "text": "Both Statement I and Statement II are true."
+    },
+    {
+     "label": "3",
+     "text": "Both Statement I and Statement II are false."
+    },
+    {
+     "label": "4",
+     "text": "Statement I is correct but Statement II is false."
+    }
+   ],
+   "answers": [
+    2
+   ],
+   "page": 7,
+   "top_y": 594.6851806640625,
+   "col": "R",
+   "images": [],
+   "section": "BIOLOGY"
+  },
+  {
+   "subject": "bio",
+   "booklet": 67,
+   "number": 149,
+   "text": "Given below are two statements: one is labelled as Assertion A and the other is labelled as Reason R. Assertion A: Endometrium is necessary for implantation of blastocyst. Reason R: In the absence of fertilization, the corpus luteum degenerates that causes disintegration of endometrium. In the light of the above statements, choose the correct answer from the options given below:",
+   "options": [
+    {
+     "label": "1",
+     "text": "A is false but R is true."
+    },
+    {
+     "label": "2",
+     "text": "Both A and R are true and R is the correct explanation of A."
+    },
+    {
+     "label": "3",
+     "text": "Both A and R are true but R is NOT the correct explanation of A."
+    },
+    {
+     "label": "4",
+     "text": "A is true but R is false."
+    }
+   ],
+   "answers": [
+    3
+   ],
+   "page": 8,
+   "top_y": 49.23358154296875,
+   "col": "L",
+   "images": [],
+   "section": "BIOLOGY"
+  },
+  {
+   "subject": "bio",
+   "booklet": 68,
+   "number": 150,
+   "text": "Which of the following statements are correct regarding female reproductive cycle? A. In non-primate mammals cyclical changes during reproduction are called oestrus cycle. B. First menstrual cycle begins at puberty and is called menopause. C. Lack of menstruation may be indicative of pregnancy. D. Cyclic menstruation extends between menarche and menopause. Choose the most appropriate answer from the options given below:",
+   "options": [
+    {
+     "label": "1",
+     "text": "A, C and D only"
+    },
+    {
+     "label": "2",
+     "text": "A and D only"
+    },
+    {
+     "label": "3",
+     "text": "A and B only"
+    },
+    {
+     "label": "4",
+     "text": "A, B and C only"
+    }
+   ],
+   "answers": [
+    1
+   ],
+   "page": 8,
+   "top_y": 250.3436279296875,
+   "col": "L",
+   "images": [],
+   "section": "BIOLOGY"
+  },
+  {
+   "subject": "bio",
+   "booklet": 69,
+   "number": 151,
+   "text": "Which one of the following common sexually transmitted diseases is completely curable when detected early and treated properly?",
+   "options": [
+    {
+     "label": "1",
+     "text": "HIV Infection"
+    },
+    {
+     "label": "2",
+     "text": "Genital herpes"
+    },
+    {
+     "label": "3",
+     "text": "Gonorrhoea"
+    },
+    {
+     "label": "4",
+     "text": "Hepatitis-B"
+    }
+   ],
+   "answers": [
+    3
+   ],
+   "page": 8,
+   "top_y": 470.3435974121094,
+   "col": "L",
+   "images": [],
+   "section": "BIOLOGY"
+  },
+  {
+   "subject": "bio",
+   "booklet": 70,
+   "number": 152,
+   "text": "Given below are two statements: one is labelled as Assertion A and the other is labelled as Reason R. Assertion A: Amniocentesis for sex determination is one of the strategies of Reproductive and Child Health Care Programme. Reason R: Ban on amniocentesis checks increasing menace of female foeticide. In the light of the above statements. Choose the correct answer from the options given below:",
+   "options": [
+    {
+     "label": "1",
+     "text": "A is false but R is true."
+    },
+    {
+     "label": "2",
+     "text": "Both A and R are true and R is the correct explanation of A."
+    },
+    {
+     "label": "3",
+     "text": "Both A and R are true and R is NOT the correct explanation of A."
+    },
+    {
+     "label": "4",
+     "text": "A is true but R is false."
+    }
+   ],
+   "answers": [
+    1
+   ],
+   "page": 8,
+   "top_y": 544.93359375,
+   "col": "L",
+   "images": [],
+   "section": "BIOLOGY"
+  },
+  {
+   "subject": "bio",
+   "booklet": 71,
+   "number": 153,
+   "text": "",
+   "options": [
+    {
+     "label": "1",
+     "text": "",
+     "image": null
+    },
+    {
+     "label": "2",
+     "text": "",
+     "image": null
+    },
+    {
+     "label": "3",
+     "text": "",
+     "image": null
+    },
+    {
+     "label": "4",
+     "text": "",
+     "image": null
+    }
+   ],
+   "answers": [
+    3
+   ],
+   "page": 8,
+   "top_y": 49.23358154296875,
+   "col": "R",
+   "images": [],
+   "section": "BIOLOGY"
+  },
+  {
+   "subject": "bio",
+   "booklet": 72,
+   "number": 154,
+   "text": "",
+   "options": [
+    {
+     "label": "1",
+     "text": "",
+     "image": null
+    },
+    {
+     "label": "2",
+     "text": "",
+     "image": null
+    },
+    {
+     "label": "3",
+     "text": "",
+     "image": null
+    },
+    {
+     "label": "4",
+     "text": "",
+     "image": null
+    }
+   ],
+   "answers": [
+    3
+   ],
+   "page": 8,
+   "top_y": 263.64422607421875,
+   "col": "R",
+   "images": [],
+   "section": "BIOLOGY"
+  },
+  {
+   "subject": "bio",
+   "booklet": 73,
+   "number": 155,
+   "text": "Broad palm with single palm crease is visible in a person suffering from-",
+   "options": [
+    {
+     "label": "1",
+     "text": "Thalassemia"
+    },
+    {
+     "label": "2",
+     "text": "Down’s syndrome"
+    },
+    {
+     "label": "3",
+     "text": "Turner’s syndrome"
+    },
+    {
+     "label": "4",
+     "text": "Klinefelter’s syndrome"
+    }
+   ],
+   "answers": [
+    2
+   ],
+   "page": 8,
+   "top_y": 354.26849365234375,
+   "col": "R",
+   "images": [],
+   "section": "BIOLOGY"
+  },
+  {
+   "subject": "bio",
+   "booklet": 74,
+   "number": 156,
+   "text": "Given below are two statements: Statement I: RNA mutates at a faster rate. Statement II: Viruses having RNA genome and shorter life span mutate and evolve faster. In the light of the above statements, choose the correct answer from the options given below.",
+   "options": [
+    {
+     "label": "1",
+     "text": "Statement I false but Statement II is true."
+    },
+    {
+     "label": "2",
+     "text": "Both Statement I and Statement II are true."
+    },
+    {
+     "label": "3",
+     "text": "Both Statement I and Statement II are false."
+    },
+    {
+     "label": "4",
+     "text": "Statement I is true but Statement II is false."
+    }
+   ],
+   "answers": [
+    2
+   ],
+   "page": 8,
+   "top_y": 437.1784973144531,
+   "col": "R",
+   "images": [],
+   "section": "BIOLOGY"
+  },
+  {
+   "subject": "bio",
+   "booklet": 75,
+   "number": 157,
+   "text": "",
+   "options": [
+    {
+     "label": "1",
+     "text": "",
+     "image": null
+    },
+    {
+     "label": "2",
+     "text": "",
+     "image": null
+    },
+    {
+     "label": "3",
+     "text": "",
+     "image": null
+    },
+    {
+     "label": "4",
+     "text": "",
+     "image": null
+    }
+   ],
+   "answers": [
+    3
+   ],
+   "page": 8,
+   "top_y": 585.7885131835938,
+   "col": "R",
+   "images": [],
+   "section": "BIOLOGY"
+  },
+  {
+   "subject": "bio",
+   "booklet": 76,
+   "number": 158,
+   "text": "Given below are two statements: Statement I: In prokaryotes, the positively charged DNA is held with some negatively charged proteins in a region called nucleoid. Statement II: In eukaryotes, the negatively charged DNA is wrapped around the positively charged histone octamer to form nucleosome. In the light of the above statements, choose the correct answer from the options given below:",
+   "options": [
+    {
+     "label": "1",
+     "text": "Statement I is incorrect but Statement II is true."
+    },
+    {
+     "label": "2",
+     "text": "Both Statement I and Statement II are true."
+    },
+    {
+     "label": "3",
+     "text": "Both Statement I and Statement II are false."
+    },
+    {
+     "label": "4",
+     "text": "Statement I is correct but Statement II is false."
+    }
+   ],
+   "answers": [
+    1
+   ],
+   "page": 9,
+   "top_y": 49.23358154296875,
+   "col": "L",
+   "images": [],
+   "section": "BIOLOGY"
+  },
+  {
+   "subject": "bio",
+   "booklet": 77,
+   "number": 159,
+   "text": "Select the correct group/set of Australian Marsupials exhibiting adaptive radiation.",
+   "options": [
+    {
+     "label": "1",
+     "text": "Lemur, Anteater, Wolf"
+    },
+    {
+     "label": "2",
+     "text": "Tasmanian wolf, Bobcat, Marsupial mole"
+    },
+    {
+     "label": "3",
+     "text": "Numbat, Spotted cuscus, Flying phalanger"
+    },
+    {
+     "label": "4",
+     "text": "Mole, Flying squirrel, Tasmanian tiger cat"
+    }
+   ],
+   "answers": [
+    3
+   ],
+   "page": 9,
+   "top_y": 264.91357421875,
+   "col": "L",
+   "images": [],
+   "section": "BIOLOGY"
+  },
+  {
+   "subject": "bio",
+   "booklet": 78,
+   "number": 160,
+   "text": "",
+   "options": [
+    {
+     "label": "1",
+     "text": "",
+     "image": null
+    },
+    {
+     "label": "2",
+     "text": "",
+     "image": null
+    },
+    {
+     "label": "3",
+     "text": "",
+     "image": null
+    },
+    {
+     "label": "4",
+     "text": "",
+     "image": null
+    }
+   ],
+   "answers": [
+    2
+   ],
+   "page": 9,
+   "top_y": 378.0736083984375,
+   "col": "L",
+   "images": [],
+   "section": "BIOLOGY"
+  },
+  {
+   "subject": "bio",
+   "booklet": 79,
+   "number": 161,
+   "text": "",
+   "options": [
+    {
+     "label": "1",
+     "text": "",
+     "image": null
+    },
+    {
+     "label": "2",
+     "text": "",
+     "image": null
+    },
+    {
+     "label": "3",
+     "text": "",
+     "image": null
+    },
+    {
+     "label": "4",
+     "text": "",
+     "image": null
+    }
+   ],
+   "answers": [
+    2
+   ],
+   "page": 9,
+   "top_y": 540.66357421875,
+   "col": "L",
+   "images": [],
+   "section": "BIOLOGY"
+  },
+  {
+   "subject": "bio",
+   "booklet": 80,
+   "number": 162,
+   "text": "In which blood corpuscles, the HIV undergoes replication and produces progeny viruses?",
+   "options": [
+    {
+     "label": "1",
+     "text": "Eosinophils"
+    },
+    {
+     "label": "2",
+     "text": "T_{H} cells"
+    },
+    {
+     "label": "3",
+     "text": "B-lymphocytes"
+    },
+    {
+     "label": "4",
+     "text": "Basophils"
+    }
+   ],
+   "answers": [
+    2
+   ],
+   "page": 9,
+   "top_y": 710.9506225585938,
+   "col": "L",
+   "images": [],
+   "section": "BIOLOGY"
+  },
+  {
+   "subject": "bio",
+   "booklet": 81,
+   "number": 163,
+   "text": "Which of the following is not a cloning vector?",
+   "options": [
+    {
+     "label": "1",
+     "text": "Probe"
+    },
+    {
+     "label": "2",
+     "text": "BAC"
+    },
+    {
+     "label": "3",
+     "text": "YAC"
+    },
+    {
+     "label": "4",
+     "text": "pBR322"
+    }
+   ],
+   "answers": [
+    1
+   ],
+   "page": 9,
+   "top_y": 71.54998779296875,
+   "col": "R",
+   "images": [],
+   "section": "BIOLOGY"
+  },
+  {
+   "subject": "bio",
+   "booklet": 82,
+   "number": 164,
+   "text": "Which one of the following techniques does not serve the purpose of early diagnosis of a disease for its early treatment?",
+   "options": [
+    {
+     "label": "1",
+     "text": "Enzyme Linked Immuno-Sorbent Assay (ELISA) technique"
+    },
+    {
+     "label": "2",
+     "text": "Recombinant DNA Technology"
+    },
+    {
+     "label": "3",
+     "text": "Serum and Urine analysis"
+    },
+    {
+     "label": "4",
+     "text": "Polymerase Chain Reaction (PCR) technique"
+    }
+   ],
+   "answers": [
+    3
+   ],
+   "page": 9,
+   "top_y": 141.71002197265625,
+   "col": "R",
+   "images": [],
+   "section": "BIOLOGY"
+  },
+  {
+   "subject": "bio",
+   "booklet": 83,
+   "number": 165,
+   "text": "",
+   "options": [
+    {
+     "label": "1",
+     "text": "",
+     "image": null
+    },
+    {
+     "label": "2",
+     "text": "",
+     "image": null
+    },
+    {
+     "label": "3",
+     "text": "",
+     "image": null
+    },
+    {
+     "label": "4",
+     "text": "",
+     "image": null
+    }
+   ],
+   "answers": [
+    2
+   ],
+   "page": 9,
+   "top_y": 268.369873046875,
+   "col": "R",
+   "images": [],
+   "section": "BIOLOGY"
+  },
+  {
+   "subject": "bio",
+   "booklet": 84,
+   "number": 166,
+   "text": "Which of the following statements is correct?",
+   "options": [
+    {
+     "label": "1",
+     "text": "Algal Bloom decreases fish mortality."
+    },
+    {
+     "label": "2",
+     "text": "Eutrophication refers to increase in domestic sewage and waste water in lakes."
+    },
+    {
+     "label": "3",
+     "text": "Biomagnification refers to increase in concentration of the toxicant at successive trophic levels."
+    },
+    {
+     "label": "4",
+     "text": "Presence of large amount of nutrients in water restricts ‘Algal Bloom’."
+    }
+   ],
+   "answers": [
+    3
+   ],
+   "page": 9,
+   "top_y": 493.716796875,
+   "col": "R",
+   "images": [],
+   "section": "BIOLOGY"
+  },
+  {
+   "subject": "bio",
+   "booklet": 86,
+   "number": 167,
+   "text": "The unique mammalian characteristics are:",
+   "options": [
+    {
+     "label": "1",
+     "text": "pinna, monocondylic skull and mammary glands"
+    },
+    {
+     "label": "2",
+     "text": "hairs, tympanic membrane and mammary glands"
+    },
+    {
+     "label": "3",
+     "text": "hairs, pinna and mammary glands"
+    },
+    {
+     "label": "4",
+     "text": "hairs, pinna and indirect development"
+    }
+   ],
+   "answers": [
+    3
+   ],
+   "page": 10,
+   "top_y": 165.0537109375,
+   "col": "L",
+   "images": [],
+   "section": "BIOLOGY"
+  },
+  {
+   "subject": "bio",
+   "booklet": 87,
+   "number": 168,
+   "text": "Select the correct statements with reference to chordates. A. Presence of a mid-dorsal, solid and double nerve cord. B. Presence of closed circulatory system. C. Presence of paired pharyngeal gills D. Presence of dorsal heart E. Triploblastic pseudocoelomate animals.",
+   "options": [
+    {
+     "label": "1",
+     "text": "C, D and E only"
+    },
+    {
+     "label": "2",
+     "text": "A, C and D only"
+    },
+    {
+     "label": "3",
+     "text": "B and C only"
+    },
+    {
+     "label": "4",
+     "text": "B, D and E only"
+    }
+   ],
+   "answers": [
+    3
+   ],
+   "page": 10,
+   "top_y": 240.10906982421875,
+   "col": "L",
+   "images": [],
+   "section": "BIOLOGY"
+  },
+  {
+   "subject": "bio",
+   "booklet": 89,
+   "number": 169,
+   "text": "",
+   "options": [
+    {
+     "label": "1",
+     "text": "",
+     "image": null
+    },
+    {
+     "label": "2",
+     "text": "",
+     "image": null
+    },
+    {
+     "label": "3",
+     "text": "",
+     "image": null
+    },
+    {
+     "label": "4",
+     "text": "",
+     "image": null
+    }
+   ],
+   "answers": [
+    4
+   ],
+   "page": 10,
+   "top_y": 491.1383056640625,
+   "col": "L",
+   "images": [],
+   "section": "BIOLOGY"
+  },
+  {
+   "subject": "bio",
+   "booklet": 90,
+   "number": 170,
+   "text": "In cockroach, excretion is brought about by- A. Phallic gland B. Urecose gland C. Ncphrocytes D. Fat body E. Collatcrial glands",
+   "options": [
+    {
+     "label": "1",
+     "text": "B and D only"
+    },
+    {
+     "label": "2",
+     "text": "A and E only"
+    },
+    {
+     "label": "3",
+     "text": "A, B and E only"
+    },
+    {
+     "label": "4",
+     "text": "B, C and D only"
+    }
+   ],
+   "answers": [
+    4
+   ],
+   "page": 10,
+   "top_y": 665.0615234375,
+   "col": "L",
+   "images": [],
+   "section": "BIOLOGY"
+  },
+  {
+   "subject": "bio",
+   "booklet": 91,
+   "number": 171,
+   "text": "Given below are two statements: Statement I: During G_{o} phase of cell cycle the cell is metabolically inactive Statement II: The centrosome undergoes duplication during S phase of interphase. In the light of the above statements, choose the most appropriate answer from the option below:",
+   "options": [
+    {
+     "label": "1",
+     "text": "Statement I is incorrect but Statement II is correct"
+    },
+    {
+     "label": "2",
+     "text": "Both Statement I and Statement II are correct"
+    },
+    {
+     "label": "3",
+     "text": "Both Statement I and Statement II are incorrect."
+    },
+    {
+     "label": "4",
+     "text": "Statement I is correct but Statement II is incorrect."
+    }
+   ],
+   "answers": [
+    1
+   ],
+   "page": 10,
+   "top_y": 165.59747314453125,
+   "col": "R",
+   "images": [],
+   "section": "BIOLOGY"
+  },
+  {
+   "subject": "bio",
+   "booklet": 92,
+   "number": 172,
+   "text": "Select the correct statements. A. Tetrad formation is seen during leptotene B. During Anaphase, the centromere split and chromatids separate. C. Terminalization takes place during Pachytene. D. Nucleolus, Golgi complex and ER are reformed during Telophase. E. Crossing over takes place between sister chromatids of homologous",
+   "options": [
+    {
+     "label": "1",
+     "text": "B and E only"
+    },
+    {
+     "label": "2",
+     "text": "A and C only"
+    },
+    {
+     "label": "3",
+     "text": "B and D only"
+    },
+    {
+     "label": "4",
+     "text": "A, C and E only"
+    }
+   ],
+   "answers": [
+    3
+   ],
+   "page": 10,
+   "top_y": 334.0635070800781,
+   "col": "R",
+   "images": [],
+   "section": "BIOLOGY"
+  },
+  {
+   "subject": "bio",
+   "booklet": 93,
+   "number": 173,
+   "text": "Which of the following statements are correct? A. Basophils are most aboundant cell of the total WBCs B. Basophils secrete histamine, serotonin and heparin C. Basophils are involved in inflammatory response D. Basophils have kidney shaped nucleus E. Basophil are agranulocyte",
+   "options": [
+    {
+     "label": "1",
+     "text": "A and B only"
+    },
+    {
+     "label": "2",
+     "text": "D and E only"
+    },
+    {
+     "label": "3",
+     "text": "C and E only"
+    },
+    {
+     "label": "4",
+     "text": "B and C only"
+    }
+   ],
+   "answers": [
+    4
+   ],
+   "page": 10,
+   "top_y": 535.4432983398438,
+   "col": "R",
+   "images": [],
+   "section": "BIOLOGY"
+  },
+  {
+   "subject": "bio",
+   "booklet": 94,
+   "number": 174,
+   "text": "Which of the following statements are correct? A. An excessive loss of body fluid from the body switches off osmoreceptors. B. ADH facilitates water reabsorption to prevent diuresis. C. ANF causes vasodilation. D. ADH causes increase in blood pressure. E. ADH is responsible for decrease in GFR.",
+   "options": [
+    {
+     "label": "1",
+     "text": "C, D and E only"
+    },
+    {
+     "label": "2",
+     "text": "A and B only"
+    },
+    {
+     "label": "3",
+     "text": "B, C and D only"
+    },
+    {
+     "label": "4",
+     "text": "A, B and E only"
+    }
+   ],
+   "answers": [
+    3
+   ],
+   "page": 10,
+   "top_y": 699.8123779296875,
+   "col": "R",
+   "images": [],
+   "section": "BIOLOGY"
+  },
+  {
+   "subject": "bio",
+   "booklet": 95,
+   "number": 175,
+   "text": "Which of the following statements are correct regarding skeletal muscle? A. Muscle bundles are held together by collagenous connective tissue layer called fascicle. B. Sarcoplasmic reticulum of muscle fibre is a store house of calcium ions. C. Striated appearance of skeletal muscle fibre is due to distribution pattern of actin and myosin proteins. D. M line is considered as functional unit of contraction called sarcomere. Choose the most appropriate answer from the options given below:",
+   "options": [
+    {
+     "label": "1",
+     "text": "C and D only"
+    },
+    {
+     "label": "2",
+     "text": "A, B and C only"
+    },
+    {
+     "label": "3",
+     "text": "B and C only"
+    },
+    {
+     "label": "4",
+     "text": "A, C and D only"
+    }
+   ],
+   "answers": [
+    3
+   ],
+   "page": 11,
+   "top_y": 165.62371826171875,
+   "col": "L",
+   "images": [],
+   "section": "BIOLOGY"
+  },
+  {
+   "subject": "bio",
+   "booklet": 96,
+   "number": 176,
+   "text": "The parts of human brain that helps in regulation of sexual behaviour, expression of excitement, pleasure, rage, fear etc. are.",
+   "options": [
+    {
+     "label": "1",
+     "text": "Corpus callosum and thalamus"
+    },
+    {
+     "label": "2",
+     "text": "Limbic system & hypothalamus"
+    },
+    {
+     "label": "3",
+     "text": "Corpora quadrigemina & hippocampus"
+    },
+    {
+     "label": "4",
+     "text": "Brain stem & epithalamus"
+    }
+   ],
+   "answers": [
+    2
+   ],
+   "page": 11,
+   "top_y": 390.7835998535156,
+   "col": "L",
+   "images": [],
+   "section": "BIOLOGY"
+  },
+  {
+   "subject": "bio",
+   "booklet": 97,
+   "number": 177,
+   "text": "Which of the following are NOT under the control of thyroid hormone? A. Maintenance of water and electrolyte balance B. Regulation of basal metabolic rate C. Normal rhythm of sleep-wake cycle D. Development of immune system E. Support the process of R.B.Cs formation Choose the correct answer from the options given below:",
+   "options": [
+    {
+     "label": "1",
+     "text": "D and E only"
+    },
+    {
+     "label": "2",
+     "text": "A and D only"
+    },
+    {
+     "label": "3",
+     "text": "B and C only"
+    },
+    {
+     "label": "4",
+     "text": "C and D only"
+    }
+   ],
+   "answers": [
+    4
+   ],
+   "page": 11,
+   "top_y": 524.673583984375,
+   "col": "L",
+   "images": [],
+   "section": "BIOLOGY"
+  },
+  {
+   "subject": "bio",
+   "booklet": 98,
+   "number": 178,
+   "text": "Which one of the following is the sequence on corresponding coding strand, if the sequence on mRNA formed is as follow 5’AUCGAUCGAUCGAUCGAUCGAUCG AUCG 3?",
+   "options": [
+    {
+     "label": "1",
+     "text": "3’ ATCGATCGATCGTCGATCG ATCGATCG 5’"
+    },
+    {
+     "label": "2",
+     "text": "5’ UAGCUAGCUAGCUAGCUA GCUAGC UAGC 3’"
+    },
+    {
+     "label": "3",
+     "text": "3’ UAGCUAGCUAGCUAGCUA GCUAGCUAGC 5’"
+    },
+    {
+     "label": "4",
+     "text": "5’ ATCGATCGATCGATCGATCG ATCGATCG 3’"
+    }
+   ],
+   "answers": [
+    4
+   ],
+   "page": 11,
+   "top_y": 71.54998779296875,
+   "col": "R",
+   "images": [],
+   "section": "BIOLOGY"
+  },
+  {
+   "subject": "bio",
+   "booklet": 99,
+   "number": 179,
+   "text": "Which one of the following NOT an advantage of inbreeding?",
+   "options": [
+    {
+     "label": "1",
+     "text": "It decreases the productivity of inbred population, after continuous inbreeding."
+    },
+    {
+     "label": "2",
+     "text": "It decreases homozygosity."
+    },
+    {
+     "label": "3",
+     "text": "It exposes harmful recessive genes that are eliminated by selection."
+    },
+    {
+     "label": "4",
+     "text": "Elimination of less desirable genes and accumulation of superior genes takes place due to it"
+    }
+   ],
+   "answers": [
+    1
+   ],
+   "page": 11,
+   "top_y": 297.04998779296875,
+   "col": "R",
+   "images": [],
+   "section": "BIOLOGY"
+  },
+  {
+   "subject": "bio",
+   "booklet": 100,
+   "number": 180,
+   "text": "",
+   "options": [
+    {
+     "label": "1",
+     "text": "",
+     "image": null
+    },
+    {
+     "label": "2",
+     "text": "",
+     "image": null
+    },
+    {
+     "label": "3",
+     "text": "",
+     "image": null
+    },
+    {
+     "label": "4",
+     "text": "",
+     "image": null
+    }
+   ],
+   "answers": [
+    2
+   ],
+   "page": 11,
+   "top_y": 434.4599914550781,
+   "col": "R",
+   "images": [],
+   "section": "BIOLOGY"
+  }
+ ]
+}

@@ -1,0 +1,586 @@
+[
+ {
+  "x0": 286.0,
+  "y0": 156.0,
+  "x1": 350.0,
+  "y1": 188.0,
+  "text": "146.",
+  "score": 0.799
+ },
+ {
+  "x0": 376.0,
+  "y0": 154.0,
+  "x1": 1556.0,
+  "y1": 183.0,
+  "text": "What is the role of large bundle sheath cells found around the vascular bundles in C4 plants?",
+  "score": 0.928
+ },
+ {
+  "x0": 374.0,
+  "y0": 197.0,
+  "x1": 417.0,
+  "y1": 233.0,
+  "text": "(1)",
+  "score": 0.742
+ },
+ {
+  "x0": 440.0,
+  "y0": 197.0,
+  "x1": 1052.0,
+  "y1": 229.0,
+  "text": "To provide the site for photorespiratory pathway",
+  "score": 0.942
+ },
+ {
+  "x0": 375.0,
+  "y0": 241.0,
+  "x1": 415.0,
+  "y1": 276.0,
+  "text": "(2)",
+  "score": 0.75
+ },
+ {
+  "x0": 440.0,
+  "y0": 241.0,
+  "x1": 1335.0,
+  "y1": 272.0,
+  "text": "To increase the number of chloroplast for the operation of Calvin cycle",
+  "score": 0.919
+ },
+ {
+  "x0": 374.0,
+  "y0": 285.0,
+  "x1": 416.0,
+  "y1": 323.0,
+  "text": "(3)",
+  "score": 0.75
+ },
+ {
+  "x0": 441.0,
+  "y0": 289.0,
+  "x1": 1051.0,
+  "y1": 318.0,
+  "text": "To enable the plant to tolerate high temperature",
+  "score": 0.901
+ },
+ {
+  "x0": 375.0,
+  "y0": 333.0,
+  "x1": 415.0,
+  "y1": 366.0,
+  "text": "(4)",
+  "score": 0.729
+ },
+ {
+  "x0": 440.0,
+  "y0": 332.0,
+  "x1": 1120.0,
+  "y1": 364.0,
+  "text": "To protect the vascular tissue from high light intensity",
+  "score": 0.949
+ },
+ {
+  "x0": 374.0,
+  "y0": 374.0,
+  "x1": 527.0,
+  "y1": 411.0,
+  "text": "Answer (2)",
+  "score": 0.858
+ },
+ {
+  "x0": 288.0,
+  "y0": 428.0,
+  "x1": 354.0,
+  "y1": 460.0,
+  "text": "147.",
+  "score": 0.775
+ },
+ {
+  "x0": 372.0,
+  "y0": 424.0,
+  "x1": 1736.0,
+  "y1": 458.0,
+  "text": "If a geneticist uses the blind approach for sequencing the whole genome of an organism, followed by",
+  "score": 0.934
+ },
+ {
+  "x0": 376.0,
+  "y0": 469.0,
+  "x1": 1544.0,
+  "y1": 498.0,
+  "text": "assignment of function to different segments, the methodology adopted by him is called as :",
+  "score": 0.93
+ },
+ {
+  "x0": 376.0,
+  "y0": 513.0,
+  "x1": 417.0,
+  "y1": 546.0,
+  "text": "(1)",
+  "score": 0.74
+ },
+ {
+  "x0": 441.0,
+  "y0": 515.0,
+  "x1": 714.0,
+  "y1": 542.0,
+  "text": "Sequence annotation",
+  "score": 0.907
+ },
+ {
+  "x0": 375.0,
+  "y0": 557.0,
+  "x1": 415.0,
+  "y1": 592.0,
+  "text": "(2)",
+  "score": 0.749
+ },
+ {
+  "x0": 440.0,
+  "y0": 558.0,
+  "x1": 632.0,
+  "y1": 590.0,
+  "text": "Gene mapping",
+  "score": 0.875
+ },
+ {
+  "x0": 375.0,
+  "y0": 602.0,
+  "x1": 414.0,
+  "y1": 636.0,
+  "text": "(3)",
+  "score": 0.745
+ },
+ {
+  "x0": 441.0,
+  "y0": 600.0,
+  "x1": 774.0,
+  "y1": 635.0,
+  "text": "Expressed sequence tags",
+  "score": 0.875
+ },
+ {
+  "x0": 375.0,
+  "y0": 647.0,
+  "x1": 416.0,
+  "y1": 679.0,
+  "text": "(4)",
+  "score": 0.75
+ },
+ {
+  "x0": 439.0,
+  "y0": 648.0,
+  "x1": 625.0,
+  "y1": 675.0,
+  "text": "Bioinformatics",
+  "score": 0.901
+ },
+ {
+  "x0": 374.0,
+  "y0": 688.0,
+  "x1": 527.0,
+  "y1": 725.0,
+  "text": "Answer (1)",
+  "score": 0.892
+ },
+ {
+  "x0": 288.0,
+  "y0": 744.0,
+  "x1": 353.0,
+  "y1": 772.0,
+  "text": "148.",
+  "score": 0.772
+ },
+ {
+  "x0": 373.0,
+  "y0": 739.0,
+  "x1": 1734.0,
+  "y1": 770.0,
+  "text": "Given below are two statements : one is labelled as Assertion (A) and the other is labelled as Reason (R).",
+  "score": 0.88
+ },
+ {
+  "x0": 377.0,
+  "y0": 786.0,
+  "x1": 1736.0,
+  "y1": 815.0,
+  "text": "Assertion (A) : Mendel's law of Independent assortment does not hold good for the genes that are located",
+  "score": 0.899
+ },
+ {
+  "x0": 376.0,
+  "y0": 829.0,
+  "x1": 815.0,
+  "y1": 858.0,
+  "text": "closely on the same chromosome.",
+  "score": 0.907
+ },
+ {
+  "x0": 376.0,
+  "y0": 872.0,
+  "x1": 1115.0,
+  "y1": 904.0,
+  "text": "Reason (R) : Closely located genes assort independently.",
+  "score": 0.864
+ },
+ {
+  "x0": 376.0,
+  "y0": 919.0,
+  "x1": 1574.0,
+  "y1": 948.0,
+  "text": "In the light of the above statements, choose the correct answer from the options given below:",
+  "score": 0.919
+ },
+ {
+  "x0": 375.0,
+  "y0": 962.0,
+  "x1": 416.0,
+  "y1": 996.0,
+  "text": "(1)",
+  "score": 0.74
+ },
+ {
+  "x0": 438.0,
+  "y0": 961.0,
+  "x1": 1307.0,
+  "y1": 995.0,
+  "text": "Both (A) and (R) are correct and (R) is the correct explanation of (A)",
+  "score": 0.916
+ },
+ {
+  "x0": 375.0,
+  "y0": 1006.0,
+  "x1": 414.0,
+  "y1": 1040.0,
+  "text": "(2)",
+  "score": 0.748
+ },
+ {
+  "x0": 375.0,
+  "y0": 1051.0,
+  "x1": 414.0,
+  "y1": 1086.0,
+  "text": "(3)",
+  "score": 0.749
+ },
+ {
+  "x0": 442.0,
+  "y0": 1053.0,
+  "x1": 877.0,
+  "y1": 1083.0,
+  "text": "(A) is correct but (R) is not correct",
+  "score": 0.917
+ },
+ {
+  "x0": 375.0,
+  "y0": 1097.0,
+  "x1": 417.0,
+  "y1": 1129.0,
+  "text": "(4)",
+  "score": 0.75
+ },
+ {
+  "x0": 441.0,
+  "y0": 1098.0,
+  "x1": 877.0,
+  "y1": 1127.0,
+  "text": "(A) is not correct but (R) is correct",
+  "score": 0.912
+ },
+ {
+  "x0": 374.0,
+  "y0": 1139.0,
+  "x1": 527.0,
+  "y1": 1174.0,
+  "text": "Answer (3)",
+  "score": 0.787
+ },
+ {
+  "x0": 288.0,
+  "y0": 1193.0,
+  "x1": 351.0,
+  "y1": 1222.0,
+  "text": "149.",
+  "score": 0.711
+ },
+ {
+  "x0": 372.0,
+  "y0": 1191.0,
+  "x1": 1740.0,
+  "y1": 1223.0,
+  "text": "The anatomy of springwood shows some peculiar features. ldentify the correct set of statements about",
+  "score": 0.927
+ },
+ {
+  "x0": 375.0,
+  "y0": 1233.0,
+  "x1": 533.0,
+  "y1": 1265.0,
+  "text": "springwood.",
+  "score": 0.8
+ },
+ {
+  "x0": 375.0,
+  "y0": 1280.0,
+  "x1": 416.0,
+  "y1": 1314.0,
+  "text": "(a)",
+  "score": 0.748
+ },
+ {
+  "x0": 439.0,
+  "y0": 1279.0,
+  "x1": 858.0,
+  "y1": 1310.0,
+  "text": "It is also called as the earlywood",
+  "score": 0.905
+ },
+ {
+  "x0": 374.0,
+  "y0": 1326.0,
+  "x1": 415.0,
+  "y1": 1360.0,
+  "text": "(b)",
+  "score": 0.717
+ },
+ {
+  "x0": 374.0,
+  "y0": 1372.0,
+  "x1": 414.0,
+  "y1": 1407.0,
+  "text": "(c)",
+  "score": 0.737
+ },
+ {
+  "x0": 443.0,
+  "y0": 1375.0,
+  "x1": 691.0,
+  "y1": 1402.0,
+  "text": "It is lighter in colour",
+  "score": 0.907
+ },
+ {
+  "x0": 373.0,
+  "y0": 1417.0,
+  "x1": 416.0,
+  "y1": 1454.0,
+  "text": "(d)",
+  "score": 0.704
+ },
+ {
+  "x0": 442.0,
+  "y0": 1419.0,
+  "x1": 1645.0,
+  "y1": 1451.0,
+  "text": "The springwood along with autumnwood shows alternate concentric rings forming annual rings",
+  "score": 0.926
+ },
+ {
+  "x0": 376.0,
+  "y0": 1465.0,
+  "x1": 415.0,
+  "y1": 1497.0,
+  "text": "(e)",
+  "score": 0.635
+ },
+ {
+  "x0": 440.0,
+  "y0": 1464.0,
+  "x1": 690.0,
+  "y1": 1496.0,
+  "text": "It has lower density",
+  "score": 0.846
+ },
+ {
+  "x0": 375.0,
+  "y0": 1510.0,
+  "x1": 1114.0,
+  "y1": 1542.0,
+  "text": "Choose the correct answer from the options given below :",
+  "score": 0.919
+ },
+ {
+  "x0": 375.0,
+  "y0": 1557.0,
+  "x1": 415.0,
+  "y1": 1590.0,
+  "text": "(1)",
+  "score": 0.723
+ },
+ {
+  "x0": 440.0,
+  "y0": 1556.0,
+  "x1": 747.0,
+  "y1": 1591.0,
+  "text": "(a), (b), (d) and (e) Only",
+  "score": 0.88
+ },
+ {
+  "x0": 375.0,
+  "y0": 1603.0,
+  "x1": 415.0,
+  "y1": 1638.0,
+  "text": "(2)",
+  "score": 0.75
+ },
+ {
+  "x0": 440.0,
+  "y0": 1604.0,
+  "x1": 746.0,
+  "y1": 1637.0,
+  "text": "(a), (c), (d) and (e) Only",
+  "score": 0.864
+ },
+ {
+  "x0": 376.0,
+  "y0": 1651.0,
+  "x1": 417.0,
+  "y1": 1684.0,
+  "text": "(3)",
+  "score": 0.745
+ },
+ {
+  "x0": 438.0,
+  "y0": 1649.0,
+  "x1": 696.0,
+  "y1": 1684.0,
+  "text": "(a), (b) and (d) Only",
+  "score": 0.855
+ },
+ {
+  "x0": 375.0,
+  "y0": 1704.0,
+  "x1": 695.0,
+  "y1": 1739.0,
+  "text": "(4) (c), (d) and (e) Only",
+  "score": 0.902
+ },
+ {
+  "x0": 374.0,
+  "y0": 1758.0,
+  "x1": 527.0,
+  "y1": 1795.0,
+  "text": "Answer (2)",
+  "score": 0.87
+ },
+ {
+  "x0": 287.0,
+  "y0": 1812.0,
+  "x1": 358.0,
+  "y1": 1844.0,
+  "text": "150.",
+  "score": 0.676
+ },
+ {
+  "x0": 370.0,
+  "y0": 1810.0,
+  "x1": 1736.0,
+  "y1": 1839.0,
+  "text": "The entire fleet of buses in Delhi were converted to CNG from diesel. In reference to this, which one of the",
+  "score": 0.91
+ },
+ {
+  "x0": 375.0,
+  "y0": 1850.0,
+  "x1": 753.0,
+  "y1": 1879.0,
+  "text": "following statements is false?",
+  "score": 0.908
+ },
+ {
+  "x0": 372.0,
+  "y0": 1889.0,
+  "x1": 419.0,
+  "y1": 1927.0,
+  "text": "(1)",
+  "score": 0.711
+ },
+ {
+  "x0": 440.0,
+  "y0": 1892.0,
+  "x1": 937.0,
+  "y1": 1921.0,
+  "text": "CNG burns more efficiently than diesel",
+  "score": 0.916
+ },
+ {
+  "x0": 375.0,
+  "y0": 1933.0,
+  "x1": 415.0,
+  "y1": 1968.0,
+  "text": "(2)",
+  "score": 0.749
+ },
+ {
+  "x0": 441.0,
+  "y0": 1935.0,
+  "x1": 1474.0,
+  "y1": 1964.0,
+  "text": "The same diesel engine is used in CNG buses making the cost of conversion low",
+  "score": 0.923
+ },
+ {
+  "x0": 375.0,
+  "y0": 1974.0,
+  "x1": 415.0,
+  "y1": 2008.0,
+  "text": "(3)",
+  "score": 0.748
+ },
+ {
+  "x0": 441.0,
+  "y0": 1978.0,
+  "x1": 748.0,
+  "y1": 2004.0,
+  "text": "It is cheaper than diesel",
+  "score": 0.881
+ },
+ {
+  "x0": 376.0,
+  "y0": 2016.0,
+  "x1": 415.0,
+  "y1": 2048.0,
+  "text": "(4)",
+  "score": 0.74
+ },
+ {
+  "x0": 438.0,
+  "y0": 2017.0,
+  "x1": 881.0,
+  "y1": 2046.0,
+  "text": "It cannot be adulterated like diesel",
+  "score": 0.895
+ },
+ {
+  "x0": 374.0,
+  "y0": 2053.0,
+  "x1": 527.0,
+  "y1": 2090.0,
+  "text": "Answer (2)",
+  "score": 0.844
+ },
+ {
+  "x0": 976.0,
+  "y0": 2137.0,
+  "x1": 1050.0,
+  "y1": 2166.0,
+  "text": "- 29 -",
+  "score": 0.784
+ },
+ {
+  "x0": 1590.0,
+  "y0": 2313.0,
+  "x1": 1908.0,
+  "y1": 2366.0,
+  "text": "collegedunia",
+  "score": 0.881
+ },
+ {
+  "x0": 1591.0,
+  "y0": 2376.0,
+  "x1": 1913.0,
+  "y1": 2396.0,
+  "text": "India'slargestStudentReviewPlatform",
+  "score": 0.937
+ }
+]

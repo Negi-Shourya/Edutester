@@ -1,0 +1,1468 @@
+===== Q1 [PHYSICS] =====
+TEXT: Match List-I with List-II
+List-I (Electromagnetic waves)
+List-II (Wavelength)
+A. AM radio waves  i. 10–10 m
+B. Microwaves  ii. 102 m
+C. Infrared radiations  iii. 10–2 m
+D. X-rays  iv. 10–4 m
+Choose the correct answer from the options given below
+  OPT 1: (a) - (iv), (b) - (iii), (c) - (ii), (d) - (i)
+  OPT 2: (a) - (iii), (b) - (ii), (c) - (i), (d) - (iv)
+  OPT 3: (a) - (iii), (b) - (iv), (c) - (ii), (d) - (i)
+  OPT 4: (a) - (ii), (b) - (iii), (c) - (iv), (d) - (i)
+
+===== Q2 [PHYSICS] =====
+TEXT: An ideal gas undergoes four different processes from the same initial state as shown in the figure below. Those processes are adiabatic, isothermal, isobaric and isochoric. The curve which represents the adiabatic process among 1, 2, 3 and 4 is
+  OPT 1: 1
+  OPT 2: 2
+  OPT 3: 3
+  OPT 4: 4
+
+===== Q3 [PHYSICS] =====
+TEXT: The angular speed of a fly wheel moving with uniform angular acceleration changes from 1200 rpm to 3120 rpm in 16 seconds. The angular acceleration in rad/s2 is
+  OPT 1: 2π
+  OPT 2: 4π
+  OPT 3: 12π
+  OPT 4: 104π
+
+===== Q4 [PHYSICS] =====
+TEXT: In the given circuits (a), (b) and (c), the potential drop across the two p-n junctions are equal in
+  OPT 1: Circuit (a) only
+  OPT 2: Circuit (b) only
+  OPT 3: Circuit (c) only
+  OPT 4: Both circuits (a) and (c)
+  IMGS: ["Q4_fig1.png","Q4_fig2.png","Q4_fig3.png"]
+
+===== Q5 [PHYSICS] =====
+TEXT: A biconvex lens has radii of curvature, 20 cm each. If the refractive index of the material of the lens is 1.5, the power of the lens is
+  OPT 1: +2 D
+  OPT 2: +20 D
+  OPT 3: +5 D
+  OPT 4: Infinity
+
+===== Q6 [PHYSICS] =====
+TEXT: The graph which shows the variation of the de Broglie wavelength (λ) of a particle and its associated momentum (p) is
+  OPT 1:  [FIG:Q6_opt1.png]
+  OPT 2:  [FIG:Q6_opt2.png]
+  OPT 3:  [FIG:Q6_opt3.png]
+  OPT 4:  [FIG:Q6_opt4.png]
+
+===== Q7 [PHYSICS] =====
+TEXT: As the temperature increases, the electrical resistance
+  OPT 1: Increases for both conductors and semiconductors
+  OPT 2: Decreases for both conductors and semiconductors
+  OPT 3: Increases for conductors but decreases for semiconductors
+  OPT 4: Decreases for conductors but increases for semiconductors
+
+===== Q8 [PHYSICS] =====
+TEXT: A spherical ball is dropped in a long column of a highly viscous liquid. The curve in the graph shown, which represents the speed of the ball (v) as a function of time (t) is
+  OPT 1: A
+  OPT 2: B
+  OPT 3: C
+  OPT 4: D
+
+===== Q9 [PHYSICS] =====
+TEXT: The dimensions [MLT–2A–2] belong to the
+  OPT 1: Magnetic flux
+  OPT 2: Self inductance
+  OPT 3: Magnetic permeability
+  OPT 4: Electric permittivity
+
+===== Q10 [PHYSICS] =====
+TEXT: In half wave rectification, if the input frequency is 60 Hz, then the output frequency would be
+  OPT 1: Zero
+  OPT 2: 30 Hz
+  OPT 3: 60 Hz
+  OPT 4: 120 Hz
+
+===== Q11 [PHYSICS] =====
+TEXT: If the initial tension on a stretched string is doubled, then the ratio of the initial and final speeds of a transverse wave along the string is
+  OPT 1: 1 : 1
+  OPT 2: √2 : 1
+  OPT 3: 1 : √2
+  OPT 4: 1 : 2
+
+===== Q12 [PHYSICS] =====
+TEXT: A shell of mass m is at rest initially. It explodes into three fragments having mass in the ratio 2 : 2 : 1. If the fragments having equal mass fly off along mutually perpendicular directions with speed v, the speed of the third (lighter) fragment is
+  OPT 1: v
+  OPT 2: 2v
+  OPT 3: 2√2v
+  OPT 4: 3√2v
+
+===== Q13 [PHYSICS] =====
+TEXT: Two objects of mass 10 kg and 20 kg respectively are connected to the two ends of a rigid rod of length 10 m with negligible mass. The distance of the center of mass of the system from the 10 kg mass is
+  OPT 1: 10 m 3
+  OPT 2: 20 m 3
+  OPT 3: 10 m
+  OPT 4: 5 m
+
+===== Q14 [PHYSICS] =====
+TEXT: If a soap bubble expands, the pressure inside the bubble
+  OPT 1: Decreases
+  OPT 2: Increases
+  OPT 3: Remains the same
+  OPT 4: Is equal to the atmospheric pressure
+
+===== Q15 [PHYSICS] =====
+TEXT: An electric lift with a maximum load of 2000 kg (lift + passengers) is moving up with a constant speed of 1.5 ms–1. The frictional force opposing the motion is 3000 N. The minimum power delivered by the motor to the lift in watts is : (g = 10 m s–2)
+  OPT 1: 23000
+  OPT 2: 20000
+  OPT 3: 34500
+  OPT 4: 23500
+
+===== Q16 [PHYSICS] =====
+TEXT: The angle between the electric lines of force and the equipotential surface is
+  OPT 1: 90°
+  OPT 2: 45°
+  OPT 3: 0°
+  OPT 4: 180°
+
+===== Q17 [PHYSICS] =====
+TEXT: When two monochromatic lights of frequency, ν and 2 ν are incident on a photoelectric metal, their stopping potential becomes 2 s V and Vs respectively. The threshold frequency for this metal is
+  OPT 1: 2ν
+  OPT 2: 3ν
+  OPT 3: 2 3 ν
+  OPT 4: 3 2 ν
+
+===== Q18 [PHYSICS] =====
+TEXT: A long solenoid of radius 1 mm has 100 turns per mm. If 1 A current flows in the solenoid, the magnetic field strength at the centre of the solenoid is
+  OPT 1: 6.28 × 10–2 T
+  OPT 2: 12.56 × 10–2 T
+  OPT 3: 12.56 × 10–4 T
+  OPT 4: 6.28 × 10–4 T
+
+===== Q19 [PHYSICS] =====
+TEXT: In the given nuclear reaction, the element X is 22 11Na + → + + ν X e
+  OPT 1: 23 11Na
+  OPT 2: 23 10Ne
+  OPT 3: 22 10Ne
+  OPT 4: 22 12Mg
+  IMGS: ["Q19_fig1.png"]
+
+===== Q20 [PHYSICS] =====
+TEXT: Given below are two statements Statement I : Biot-Savart’s law gives us the expression for the magnetic field strength of an infinitesimal current element (Idl) of a current carrying conductor only. Statement II : Biot-Savart’s law is analogous to Coulomb’s inverse square law of charge q, with the former being related to the field produced by a scalar source, Idl while the latter being produced by a vector source, q. In light of above statements choose the most appropriate answer from the options given below
+  OPT 1: Both Statement I and Statement II are correct
+  OPT 2: Both Statement I and Statement II are incorrect
+  OPT 3: Statement I is correct and Statement II is incorrect
+  OPT 4: Statement I is incorrect and Statement II is correct
+
+===== Q21 [PHYSICS] =====
+TEXT: The ratio of the radius of gyration of a thin uniform disc about an axis passing through its centre and normal to its plane to the radius of gyration of the disc about its diameter is
+  OPT 1: 2 : 1
+  OPT 2: √2 : 1
+  OPT 3: 4 : 1
+  OPT 4: 1 : √2
+
+===== Q22 [PHYSICS] =====
+TEXT: The peak voltage of the ac source is equal to
+  OPT 1: The value of voltage supplied to the circuit
+  OPT 2: The rms value of the ac source
+  OPT 3: √2 times the rms value of the ac source
+  OPT 4: 1/√2 times the rms value of the ac source
+
+===== Q23 [PHYSICS] =====
+TEXT: The energy that will be ideally radiated by a 100 kW transmitter in 1 hour is
+  OPT 1: 36 × 107 J
+  OPT 2: 36 × 104 J
+  OPT 3: 36 × 105 J
+  OPT 4: 1 × 105 J
+
+===== Q24 [PHYSICS] =====
+TEXT: In a Young’s double slit experiment, a student observes 8 fringes in a certain segment of screen when a monochromatic light of 600 nm wavelength is used. If the wavelength of light is changed to 400 nm, then the number of fringes he would observe in the same region of the screen is
+  OPT 1: 6
+  OPT 2: 8
+  OPT 3: 9
+  OPT 4: 12
+  IMGS: ["Q24_fig1.png"]
+
+===== Q25 [PHYSICS] =====
+TEXT: A square loop of side 1 m and resistance 1 Ω is placed in a magnetic field of 0.5 T. If the plane of loop is perpendicular to the direction of magnetic field, the magnetic flux through the loop is
+  OPT 1: 2 weber
+  OPT 2: 0.5 weber
+  OPT 3: 1 weber
+  OPT 4: Zero weber
+
+===== Q26 [PHYSICS] =====
+TEXT: Two resistors of resistance, 100 Ω and 200 Ω are connected in parallel in an electrical circuit. The ratio of the thermal energy developed in 100 Ω to that in 200 Ω in a given time is
+  OPT 1: 1 : 2
+  OPT 2: 2 : 1
+  OPT 3: 1 : 4
+  OPT 4: 4 : 1
+
+===== Q27 [PHYSICS] =====
+TEXT: The ratio of the distances travelled by a freely falling body in the 1st, 2nd, 3rd and 4th second
+  OPT 1: 1 : 2 : 3 : 4
+  OPT 2: 1 : 4 : 9 : 16
+  OPT 3: 1 : 3 : 5 : 7
+  OPT 4: 1 : 1 : 1 : 1
+
+===== Q28 [PHYSICS] =====
+TEXT: A body of mass 60 g experiences a gravitational force of 3.0 N, when placed at a particular point. The magnitude of the gravitational field intensity at that point is
+  OPT 1: 0.05 N/kg
+  OPT 2: 50 N/kg
+  OPT 3: 20 N/kg
+  OPT 4: 180 N/kg
+
+===== Q29 [PHYSICS] =====
+TEXT: A light ray falls on a glass surface of refractive index 3 , at an angle 60°. The angle between the refracted and reflected rays would be
+  OPT 1: 30°
+  OPT 2: 60°
+  OPT 3: 90°
+  OPT 4: 120°
+
+===== Q30 [PHYSICS] =====
+TEXT: When light propagates through a material medium of relative permittivity εr and relative permeability µr, the velocity of light, v is given by (c-velocity of light in vacuum)
+  OPT 1:  [FIG:Q30_opt1.png]
+  OPT 2:  [FIG:Q30_opt2.png]
+  OPT 3:  [FIG:Q30_opt3.png]
+  OPT 4:  [FIG:Q30_opt4.png]
+
+===== Q31 [PHYSICS] =====
+TEXT: Two hollow conducting spheres of radii R1 and R2 (R1 >> R2) have equal charges. The potential would be
+  OPT 1: More on bigger sphere
+  OPT 2: More on smaller sphere
+  OPT 3: Equal on both the spheres
+  OPT 4: Dependent on the material property of the sphere
+
+===== Q32 [PHYSICS] =====
+TEXT: A copper wire of length 10 m and radius 2 10 m − π has electrical resistance of 10 Ω. The current density in the wire for an electric field strength of 10 (V/m) is
+  OPT 1: 104 A/m2
+  OPT 2: 106 A/m2
+  OPT 3: 10–5 A/m2
+  OPT 4: 105 A/m2
+
+===== Q33 [PHYSICS] =====
+TEXT: The displacement-time graphs of two moving particles make angles of 30° and 45° with the x-axis as shown in the figure. The ratio of their respective velocity is
+  OPT 1: √3 : 1
+  OPT 2: 1 : 1
+  OPT 3: 1 : 2
+  OPT 4: 1 : √3
+
+===== Q34 [PHYSICS] =====
+TEXT: Plane angle and solid angle have
+  OPT 1: Units but no dimensions
+  OPT 2: Dimensions but no units
+  OPT 3: No units and no dimensions
+  OPT 4: Both units and dimensions
+
+===== Q35 [PHYSICS] =====
+TEXT: Let T1 and T2 be the energy of an electron in the first and second excited states of hydrogen atom, respectively. According to the Bohr’s model of an atom, the ratio T1 : T2 is
+  OPT 1: 1 : 4
+  OPT 2: 4 : 1
+  OPT 3: 4 : 9
+  OPT 4: 9 : 4
+
+===== Q36 [PHYSICS] =====
+TEXT: Match List-I with List-II List-I
+List-II (a)
+B. Gravitational potential energy  ii. [M–1L3T–2]
+C. Gravitational potential  iii. [LT–2]
+D. Gravitational intensity  iv. [ML2T–2]
+Choose the correct answer from the options given below
+  OPT 1: (a) - (ii), (b) - (i), (c) - (iv), (d) - (iii)
+  OPT 2: (a) - (ii), (b) - (iv), (c) - (i), (d) - (iii)
+  OPT 3: (a) - (ii), (b) - (iv), (c) - (iii), (d) - (i)
+  OPT 4: (a) - (iv), (b) - (ii), (c) - (i), (d) - (iii)
+
+===== Q37 [PHYSICS] =====
+TEXT: Two pendulums of length 121 cm and 100 cm start vibrating in phase. At some instant, the two are at their mean position in the same phase. The minimum number of vibrations of the shorter pendulum after which the two are again in phase at the mean position is:
+  OPT 1: 11
+  OPT 2: 9
+  OPT 3: 10
+  OPT 4: 8
+
+===== Q38 [PHYSICS] =====
+TEXT: The area of a rectangular field (in m2) of length 55.3 m and breadth 25 m after rounding off the value for correct significant digits is
+  OPT 1: 138 × 101
+  OPT 2: 1382
+  OPT 3: 1382.5
+  OPT 4: 14 × 102
+
+===== Q39 [PHYSICS] =====
+TEXT: A ball is projected with a velocity, 10 ms–1, at an angle of 60° with the vertical direction. Its speed at the highest point of its trajectory will be
+  OPT 1: Zero
+  OPT 2: 1 5 3 ms−
+  OPT 3: 5 ms–1
+  OPT 4: 10 ms–1
+
+===== Q40 [PHYSICS] =====
+TEXT: The truth table for the given logic circuit is
+  OPT 1:  [FIG:Q40_opt1.png]
+  OPT 2:  [FIG:Q40_opt2.png]
+  OPT 3:  [FIG:Q40_opt3.png]
+  OPT 4:  [FIG:Q40_opt4.png]
+
+===== Q41 [PHYSICS] =====
+TEXT: From Ampere’s circuital law for a long straight wire of circular cross-section carrying a steady current, the variation of magnetic field in the inside and outside region of the wire is
+  OPT 1: Uniform and remains constant for both the regions.
+  OPT 2: A linearly increasing function of distance r upto the boundary of the wire and then decreasing one with 1 r dependence for the outside region.
+  OPT 3: A linearly increasing function of distance upto the boundary of the wire and then linearly decreasing for the outside region.
+  OPT 4: A linearly decreasing function of distance upto the boundary of the wire and then a linearly increasing one for the outside region.
+
+===== Q42 [PHYSICS] =====
+TEXT: A series LCR circuit with inductance 10 H, capacitance 10 F µ , resistance 50 Ω is connected to an ac source of voltage, V = 200sin(100t) volt. If the resonant frequency of the LCR circuit is 0 ν and the frequency of the ac source is ν , then
+  OPT 1:  [FIG:Q42_opt1.png]
+  OPT 2:  [FIG:Q42_opt2.png]
+  OPT 3:  [FIG:Q42_opt3.png]
+  OPT 4:  [FIG:Q42_opt4.png]
+  IMGS: ["Q42_fig1.png"]
+
+===== Q43 [PHYSICS] =====
+TEXT: Two point charges –q and +q are placed at a distance of L, as shown in the figure. The magnitude of electric field intensity at a distance R(R >> L) varies as:
+  OPT 1:  [FIG:Q43_opt1.png]
+  OPT 2:  [FIG:Q43_opt2.png]
+  OPT 3:  [FIG:Q43_opt3.png]
+  OPT 4:  [FIG:Q43_opt4.png]
+  IMGS: ["Q43_fig1.png"]
+
+===== Q44 [PHYSICS] =====
+TEXT: Given below are two statements : One is labelled as Assertion (A) and the other is labelled as Reason (R). Assertion (A): The stretching of a spring is determined by the shear modulus of the material of the spring. Reason (R): A coil spring of copper has more tensile strength than a steel spring of same dimensions. In the light of the above statements, choose the most appropriate answer from the options given below
+  OPT 1: Both (A) and (R) are true and (R) is the correct explanation of (A)
+  OPT 2: Both (A) and (R) are true and (R) is not the correct explanation of (A)
+  OPT 3: (A) is true but (R) is false
+  OPT 4: (A) is false but (R) is true
+
+===== Q45 [PHYSICS] =====
+TEXT: A big circular coil of 1000 turns and average radius 10 m is rotating about its horizontal diameter at 2 rad s–1. If the vertical component of earth’s magnetic field at that place is 2 × 10–5 T and electrical resistance of the coil is 12.56 Ω, then the maximum induced current in the coil will be
+  OPT 1: 0.25 A
+  OPT 2: 1.5 A
+  OPT 3: 1 A
+  OPT 4: 2 A
+
+===== Q46 [PHYSICS] =====
+TEXT: The volume occupied by the molecules contained in 4.5 kg water at STP, if the intermolecular forces vanish away is
+  OPT 1: 5.6 × 106 m3
+  OPT 2: 5.6 × 103 m3
+  OPT 3: 5.6 × 10–3 m3
+  OPT 4: 5.6 m3
+
+===== Q47 [PHYSICS] =====
+TEXT: A capacitor of capacitance C = 900 pF is charged fully by 100 V battery B as shown in figure (a). Then it is disconnected from the battery and connected to another uncharged capacitor of capacitance C = 900 pF as shown in figure (b). The electrostatic energy stored by the system (b) is
+  OPT 1: 4.5 × 10–6 J
+  OPT 2: 3.25 × 10–6 J
+  OPT 3: 2.25 × 10–6 J
+  OPT 4: 1.5 × 10–6 J
+  IMGS: ["Q47_fig1.png","Q47_fig2.png"]
+
+===== Q48 [PHYSICS] =====
+TEXT: A wheatstone bridge is used to determine the value of unknown resistance X by adjusting the variable resistance Y as shown in the figure. For the most precise measurement of X, the resistances P and Q
+  OPT 1: Should be approximately equal to 2X
+  OPT 2: Should be approximately equal and are small
+  OPT 3: Should be very large and unequal
+  OPT 4: Do not play any significant role
+  IMGS: ["Q48_fig1.png"]
+
+===== Q49 [PHYSICS] =====
+TEXT: Two transparent media A and B are separated by a plane boundary. The speed of light in those media are 1.5 × 108 m/s and 2.0 × 108 m/s, respectively. The critical angle for a ray of light for these two media is
+  OPT 1: tan–1 (0.500)
+  OPT 2: tan–1 (0.750)
+  OPT 3: sin–1 (0.500)
+  OPT 4: sin–1 (0.750)
+
+===== Q50 [PHYSICS] =====
+TEXT: A nucleus of mass number 189 splits into two nuclei having mass number 125 and 64. The ratio of radius of two daughter nuclei respectively is
+  OPT 1: 1 : 1
+  OPT 2: 5 : 4
+  OPT 3: 4 : 5
+  OPT 4: 25 : 16
+
+===== Q51 [CHEMISTRY] =====
+TEXT: Which of the following p-V curve represents maximum work done?
+  OPT 1:  [FIG:Q51_opt1.png]
+  OPT 2:  [FIG:Q51_opt2.png]
+  OPT 3:  [FIG:Q51_opt3.png]
+  OPT 4:  [FIG:Q51_opt4.png]
+
+===== Q52 [CHEMISTRY] =====
+TEXT: Given below are two statements: one is labelled as Assertion (A) and the other is labelled as Reason (R). Assertion (A): ICI is more reactive than I2. Reason (R): I-CI bond is weaker than I-I bond. In the light of the above statements, choose the most appropriate answer from the options given below:
+  OPT 1: Both (A) and (R) are correct and (R) is the correct explanation of (A).
+  OPT 2: Both (A) and (R) are correct but (R) is not the correct explanation of (A).
+  OPT 3: (A) is correct but (R) is not correct
+  OPT 4: (A) is not correct but (R) is correct
+
+===== Q53 [CHEMISTRY] =====
+TEXT: Which compound amongst the following is not an aromatic compound?
+  OPT 1:  [FIG:Q53_opt1.png]
+  OPT 2:  [FIG:Q53_opt2.png]
+  OPT 3:  [FIG:Q53_opt3.png]
+  OPT 4:  [FIG:Q53_opt4.png]
+
+===== Q54 [CHEMISTRY] =====
+TEXT: The IUPAC name of an element with atomic number 119 is
+  OPT 1: ununennium
+  OPT 2: unnilennium
+  OPT 3: unununnium
+  OPT 4: ununoctium
+
+===== Q55 [CHEMISTRY] =====
+TEXT: Match List-I with List-II. List-I
+List-II (Drug class)
+A. Antacids  i. Salvarsan
+B. Antihistamines  ii. Morphine
+C. Analgesics  iii. Cimetidine
+D. Antimicrobials  iv. Seldane
+Choose the correct answer from the options given below :
+  OPT 1: (a) - (iii), (b) – (ii), (c) – (iv), (d) – (i)
+  OPT 2: (a) - (iii), (b) – (iv), (c) – (ii), (d) – (i)
+  OPT 3: (a) - (i), (b) – (iv), (c) – (ii), (d) – (iii)
+  OPT 4: (a) - (iv), (b) – (iii), (c) – (i), (d) – (ii)
+
+===== Q56 [CHEMISTRY] =====
+TEXT: Match List-I with List-II. List – I List – II (Hydrides) (Nature) (a) MgH2 (i) Electron precise (b) GeH4 (ii) Electron deficient (c) B2H6 (iii) Electron rich (d) HF (iv) Ionic
+  OPT 1: (a) – (iv), (b) – (i), (c) – (ii), (d) – (iii)
+  OPT 2: (a) – (iii), (b) – (i), (c) – (ii), (d) – (iv)
+  OPT 3: (a) – (i), (b) – (ii), (c) – (iv), (d) – (iii)
+  OPT 4: (a) – (ii), (b) – (iii), (c) – (iv), (d) – (i)
+
+===== Q57 [CHEMISTRY] =====
+TEXT: The incorrect statement regarding enzymes is
+  OPT 1: Enzymes are biocatalysts.
+  OPT 2: Like chemical catalysts enzymes reduce the activation energy of bio processes.
+  OPT 3: Enzymes are polysaccharides.
+  OPT 4: Enzymes are very specific for a particular reaction and substrate.
+
+===== Q58 [CHEMISTRY] =====
+TEXT: The IUPAC name of the complex- [Ag(H2O)2][Ag(CN)2] is:
+  OPT 1: dicyanidosilver(II) diaquaargentate(II)
+  OPT 2: diaquasilver(II) dicyanidoargentate(II)
+  OPT 3: dicyanidosilver(I) diaquaargentate(I)
+  OPT 4: diaquasilver(I) dicyanidoargentate(I)
+
+===== Q59 [CHEMISTRY] =====
+TEXT: Gadolinium has a low value of third ionisation enthalpy because of
+  OPT 1: small size
+  OPT 2: high exchange enthalpy
+  OPT 3: high electronegativity
+  OPT 4: high basic character
+
+===== Q60 [CHEMISTRY] =====
+TEXT: Amongst the following which one will have maximum ‘lone pair - lone pair’ electron repulsions?
+  OPT 1: CIF3
+  OPT 2: IF5
+  OPT 3: SF4
+  OPT 4: XeF2
+
+===== Q61 [CHEMISTRY] =====
+TEXT: Which of the following statement is not correct about diborane?
+  OPT 1: There are two 3-centre-2-electron bonds.
+  OPT 2: The four terminal B-H bonds are two centre two electron bonds.
+  OPT 3: The four terminal Hydrogen atoms and the two Boron atoms lie in one plane.
+  OPT 4: Both the Boron atoms are sp2 hybridised.
+
+===== Q62 [CHEMISTRY] =====
+TEXT: Given below are two statements : Statement I : The boiling points of aldehydes and ketones are higher than hydrocarbons of comparable molecular masses because of weak molecular association in aldehydes and ketones due to dipole - dipole interactions. Statement II : The boiling points of aldehydes and ketones are lower than the alcohols of similar molecular masses due to the absence of H-bonding. In the light of the above statements, choose the most appropriate answer from the given below
+  OPT 1: Both Statement I and Statement II are correct
+  OPT 2: Both Statement I and Statement II are incorrect
+  OPT 3: Statement I is correct but Statement II is incorrect
+  OPT 4: Statement I is incorrect but Statement II is correct
+
+===== Q63 [CHEMISTRY] =====
+TEXT: Given below are two statements: one is labelled as Assertion (A) and the other is labelled as Reason (R). Assertion (A): In a particular point defect, an ionic solid is electrically neutral, even if few of its cations are missing from its unit cells. Reason (R): In an ionic solid, Frenkel defect arises due to dislocation of cation from its lattice site to interstitial site, maintaining overall electrical neutrality. In the light of the above statements, choose the most appropriate answer from the options given below:
+  OPT 1: Both (A) and (R) are correct and (R) is the correct explanation of (A)
+  OPT 2: Both (A) and (R) are correct but (R) is not the correct explanation of (A)
+  OPT 3: (A) is correct but (R) is not correct
+  OPT 4: (A) is not correct but (R) is correct
+  IMGS: ["Q63_fig1.png"]
+
+===== Q64 [CHEMISTRY] =====
+TEXT: Given below are two statements Statement I The boiling points of the following hydrides of group 16 elements increases in the order – H2O < H2S < H2Se < H2Te Statement II The boiling points of these hydrides increase with increase in molar mass. In the light of the above statements, choose the most appropriate answer from the options given below :
+  OPT 1: Both Statement I and Statement II are correct
+  OPT 2: Both Statement I and Statement II are incorrect
+  OPT 3: Statement I is correct but Statement II is incorrect
+  OPT 4: Statement I is incorrect but Statement II is correct
+
+===== Q65 [CHEMISTRY] =====
+TEXT: The given graph is a representation of kinetics of a reaction. The y and x axes for zero and first order reactions, respectively are
+  OPT 1: zero order (y = concentration and x = time), first order (y = t½ and x = concentration)
+  OPT 2: zero order (y = concentration and x = time), first order (y = rate constant and x = concentration)
+  OPT 3: zero order (y = rate and x = concentration), first order (y = t½ and x = concentration)
+  OPT 4: zero order (y = rate and x = concentration), first order (y = rate and x = t½)
+  IMGS: ["Q65_fig1.png"]
+
+===== Q66 [CHEMISTRY] =====
+TEXT: The incorrect statement regarding chirality is
+  OPT 1: SN1 reaction yields 1 : 1 mixture of both enantiomers
+  OPT 2: The product obtained by SN2 reaction of haloalkane having chirality at the reactive site shows inversion of configuration
+  OPT 3: Enantiomers are superimposable mirror images on each other
+  OPT 4: A racemic mixture shows zero optical rotation
+
+===== Q67 [CHEMISTRY] =====
+TEXT: Which of the following sequence of reactions is suitable to synthesize chlorobenzene?
+  OPT 1:  [FIG:Q67_opt1.png]
+  OPT 2:  [FIG:Q67_opt2.png]
+  OPT 3:  [FIG:Q67_opt3.png]
+  OPT 4:  [FIG:Q67_opt4.png]
+
+===== Q68 [CHEMISTRY] =====
+TEXT: Identify the incorrect statement from the following.
+  OPT 1: All the five 5d orbitals are different in size when compared to the respective 4d orbitals.
+  OPT 2: All the five 4d orbitals have shapes similar to the respective 3d orbitals.
+  OPT 3: In an atom, all the five 3d orbitals are equal in energy in free state.
+  OPT 4: The shapes of dxy, dyz and dzx orbitals are similar to each other; and − 2 2 x y d and 2 z d are similar to each other.
+
+===== Q69 [CHEMISTRY] =====
+TEXT: The Kjeldahl’s method for the estimation of nitrogen can be used to estimate the amount of nitrogen in which one of the following compounds?
+  OPT 1:  [FIG:Q69_opt1.png]
+  OPT 2:  [FIG:Q69_opt2.png]
+  OPT 3:  [FIG:Q69_opt3.png]
+  OPT 4:  [FIG:Q69_opt4.png]
+
+===== Q70 [CHEMISTRY] =====
+TEXT: Choose the correct statement:
+  OPT 1: Diamond and graphite have two dimensional network.
+  OPT 2: Diamond is covalent and graphite is ionic.
+  OPT 3: Diamond is sp3 hybridised and graphite is sp2 hybridized.
+  OPT 4: Both diamond and graphite are used as dry lubricants.
+
+===== Q71 [CHEMISTRY] =====
+TEXT: Identify the incorrect statement from the following
+  OPT 1: Alkali metals react with water to form their hydroxides.
+  OPT 2: The oxidation number of K in KO2 is +4.
+  OPT 3: Ionisation enthalpy of alkali metals decreases from top to bottom in the group.
+  OPT 4: Lithium is the strongest reducing agent among the alkali metals.
+
+===== Q72 [CHEMISTRY] =====
+TEXT: Which one is not correct mathematical equation for Dalton’s Law of partial pressure? Here p = total pressure of gaseous mixture
+  OPT 1:  [FIG:Q72_opt1.png]
+  OPT 2:  [FIG:Q72_opt2.png]
+  OPT 3:  [FIG:Q72_opt3.png]
+  OPT 4:  [FIG:Q72_opt4.png]
+
+===== Q73 [CHEMISTRY] =====
+TEXT: Given below are two statements Statement I: The acidic strength of monosubstituted nitrophenol is higher than phenol because of electron withdrawing nitro group. Statement II: o-nitrophenol, m-nitrophenol and p-nitrophenol will have same acidic strength as they have one nitro group attached to the phenolic ring. In the light of the above statements, choose the most appropriate answer from the options given below:
+  OPT 1: Both Statement I and Statement II are correct.
+  OPT 2: Both Statement I and Statement II are incorrect.
+  OPT 3: Statement I is correct but Statement II is incorrect.
+  OPT 4: Statement I is incorrect but Statement II is correct.
+
+===== Q74 [CHEMISTRY] =====
+TEXT: At 298 K, the standard electrode potentials of Cu2+ / Cu, Zn2+ / Zn, Fe2+ / Fe and Ag+ / Ag are 0.34 V, –0.76 V, –0.44 V and 0.80 V, respectively. On the basis of standard electrode potential, predict which of the following reaction cannot occur?
+  OPT 1: CuSO4(aq) + Zn(s) → ZnSO4(aq) + Cu(s)
+  OPT 2: CuSO4(aq) + Fe(s) → FeSO4(aq) + Cu(s)
+  OPT 3: FeSO4(aq) + Zn(s) → ZnSO4(aq) + Fe(s)
+  OPT 4: 2CuSO4(aq) + 2Ag(s) → 2Cu(s) + Ag2SO4(aq)
+  IMGS: ["Q74_fig1.png"]
+
+===== Q75 [CHEMISTRY] =====
+TEXT: Given below are two statements Statement I: In the coagulation of a negative sol, the flocculating power of the three given ions is in the order Al3+ > Ba2+ > Na+ Statement II: In the coagulation of a positive sol, the flocculating power of the three given salts is in the order NaCl > Na2SO4 > Na3PO4 In the light of the above statements, choose the most appropriate answer from the options given below
+  OPT 1: Both Statement I and Statement II are correct.
+  OPT 2: Both Statement I and Statement II are incorrect.
+  OPT 3: Statement I is correct but Statement II is incorrect.
+  OPT 4: Statement I is incorrect but Statement II is correct.
+
+===== Q76 [CHEMISTRY] =====
+TEXT: Match List-I with List-II List-I List-II (a) Li (i) absorbent for carbon dioxide (b) Na (ii) electrochemical cells (c) KOH (iii) coolant in fast breeder reactors (d) Cs (iv) photoelectric cell
+  OPT 1: (a) - (iv), (b) – (i), (c) – (iii), (d) – (ii)
+  OPT 2: (a) - (iii), (b) – (iv), (c) – (ii), (d) – (i)
+  OPT 3: (a) - (i), (b) – (iii), (c) – (iv), (d) – (ii)
+  OPT 4: (a) - (ii), (b) – (iii), (c) – (i), (d) – (iv)
+
+===== Q77 [CHEMISTRY] =====
+TEXT: Given below are two statements Statement I: Primary aliphatic amines react with HNO2 to give unstable diazonium salts. Statement II: Primary aromatic amines react with HNO2 to form diazonium salts which are stable even above 300 K. In the light of the above statements, choose the most appropriate answer from the options given below
+  OPT 1: Both Statement I and Statement II are correct.
+  OPT 2: Both Statement I and Statement II are incorrect.
+  OPT 3: Statement I is correct but Statement II is incorrect.
+  OPT 4: Statement I is incorrect but Statement II is correct.
+
+===== Q78 [CHEMISTRY] =====
+TEXT: Which statement regarding polymers is not correct?
+  OPT 1: Elastomers have polymer chains held together by weak intermolecular forces
+  OPT 2: Fibers possess high tensile strength
+  OPT 3: Thermoplastic polymers are capable of repeatedly softening and hardening on heating and cooling respectively
+  OPT 4: Thermosetting polymers are reusable
+
+===== Q79 [CHEMISTRY] =====
+TEXT: In one molal solution that contains 0.5 mole of a solute, there is
+  OPT 1: 500 mL of solvent
+  OPT 2: 500 g of solvent
+  OPT 3: 100 mL of solvent
+  OPT 4: 1000 g of solvent
+
+===== Q80 [CHEMISTRY] =====
+TEXT: + 3 H O dry 2 ether RMgX+CO Y RCOOH ⎯⎯⎯→ ⎯⎯⎯→ What is Y in the above reaction?
+  OPT 1: RCOO–Mg+X
+  OPT 2: R3CO–Mg+X
+  OPT 3: RCOO–X+
+  OPT 4: (RCOO)2Mg
+
+===== Q81 [CHEMISTRY] =====
+TEXT: Given below are half cell reactions: − + − + + + → + 2 4 2 MnO 8H 5e Mn 4H O + −= − 2 4 º Mn /MnO E 1.510 V + − + + → 2 2 1O 2H 2e H O 2 = + 2 2 º O /H O E 1.223 V Will the permanganate ion, – 4 MnO liberate O2 from water in the presence of an acid?
+  OPT 1: Yes, because  = + cell E 0.287 V
+  OPT 2: No, because  = cell E – 0.287 V
+  OPT 3: Yes, because  = + cell E 2.733 V
+  OPT 4: No, because  = − cell E 2.733 V
+
+===== Q82 [CHEMISTRY] =====
+TEXT: What mass of 95% pure CaCO3 will be required to neutralise 50 mL of 0.5 M HCl solution according to the following reaction? CaCO3(s) + 2HCl(aq) → CaCl2(aq) + CO2(g) + 2H2O(l) [Calculate upto second place of decimal point]
+  OPT 1: 1.25 g
+  OPT 2: 1.32 g
+  OPT 3: 3.65 g
+  OPT 4: 9.50 g
+
+===== Q83 [CHEMISTRY] =====
+TEXT: The pH of the solution containing 50 mL each of 0.10 M sodium acetate and 0.01 M acetic acid is [Given pKa of CH3COOH = 4.57]
+  OPT 1: 5.57
+  OPT 2: 3.57
+  OPT 3: 4.57
+  OPT 4: 2.57
+
+===== Q84 [CHEMISTRY] =====
+TEXT: Match List-I with List-II. List – I List – II (Products formed) (Reaction of carbonyl compound with) (a) Cyanohydrin (i) NH2OH (b) Acetal (ii) RNH2 (c) Schiff's base (iii) alcohol (d) Oxime (iv) HCN Choose the correct answer from the options given below
+  OPT 1: (a) – (iii), (b) – (iv), (c) – (ii), (d) – (i)
+  OPT 2: (a) – (ii), (b) – (iii), (c) – (iv), (d) – (i)
+  OPT 3: (a) – (i), (b) – (iii), (c) – (ii), (d) – (iv)
+  OPT 4: (a) – (iv), (b) – (iii), (c) – (ii), (d) – (i)
+
+===== Q85 [CHEMISTRY] =====
+TEXT: Which amongst the following is incorrect statement?
+  OPT 1: The bond orders of 2 2 2 O , O , O + − and 2 2 O − are 2.5, 2, 1.5 and 1, respectively
+  OPT 2: C2 molecule has four electrons in its two degenerate  molecular orbitals
+  OPT 3: 2 H + ion has one electron
+  OPT 4: 2 O+ ion is diamagnetic
+
+===== Q86 [CHEMISTRY] =====
+TEXT: Given below are two statements: Statement I: In Lucas test, primary, secondary and tertiary alcohols are distinguished on the basis of their reactivity with conc. HCl + ZnCl2, known as Lucas Reagent. Statement II: Primary alcohols are most reactive and immediately produce turbidity at room temperature on reaction with Lucas Reagent. In the light of the above statements, choose the most appropriate answer from the options given below:
+  OPT 1: Both Statement I and Statement II are correct
+  OPT 2: Both Statement I and Statement II are incorrect
+  OPT 3: Statement I is correct but Statement II is incorrect
+  OPT 4: Statement I is incorrect but Statement II is correct
+
+===== Q87 [CHEMISTRY] =====
+TEXT: If radius of second Bohr orbit of the He+ ion is 105.8 pm, what is the radius of third Bohr orbit of Li2+ ion?
+  OPT 1: 158.7 pm
+  OPT 2: 15.87 pm
+  OPT 3: 1.587 pm
+  OPT 4: 158.7 Å
+
+===== Q88 [CHEMISTRY] =====
+TEXT: For a first order reaction A → Products, initial concentration of A is 0.1 M, which becomes 0.001 M after 5 minutes. Rate constant for the reaction in min–1 is
+  OPT 1: 1.3818
+  OPT 2: 0.9212
+  OPT 3: 0.4606
+  OPT 4: 0.2303
+
+===== Q89 [CHEMISTRY] =====
+TEXT: A 10.0 L flask contains 64 g of oxygen at 27ºC. (Assume O2 gas is behaving ideally). The pressure inside the flask in bar is (Given R = 0.0831 L bar K–1 mol–1)
+  OPT 1: 2.5
+  OPT 2: 498.6
+  OPT 3: 49.8
+  OPT 4: 4.9
+
+===== Q90 [CHEMISTRY] =====
+TEXT: The correct IUPAC name of the following compound is
+  OPT 1: 1-bromo-5-chloro-4-methylhexan-3-ol
+  OPT 2: 6-bromo-2-chloro-4-methylhexan-4-ol
+  OPT 3: 1-bromo-4-methyl-5-chlorohexan-3-ol
+  OPT 4: 6-bromo-4-methyl-2-chlorohexan-4-ol
+  IMGS: ["Q90_fig1.png","Q90_fig2.png"]
+
+===== Q91 [CHEMISTRY] =====
+TEXT: The pollution due to oxides of sulphur gets enhanced due to the presence of: (a) particulate matter (b) ozone (c) hydrocarbons (d) hydrogen peroxide Choose the most appropriate answer from the options given below:
+  OPT 1: (a), (d) only
+  OPT 2: (a), (b), (d) only
+  OPT 3: (b), (c), (d) only
+  OPT 4: (a), (c), (d) only
+
+===== Q92 [CHEMISTRY] =====
+TEXT: Copper crystallises in fcc unit cell with cell edge length of 3.608 × 10–8 cm. The density of copper is 8.92 g cm–3. Calculate the atomic mass of copper.
+  OPT 1: 63.1 u
+  OPT 2: 31.55 u
+  OPT 3: 60 u
+  OPT 4: 65 u
+
+===== Q93 [CHEMISTRY] =====
+TEXT: Find the emf of the cell in which the following reaction takes place at 298 K ( ) ( ) ( ) ( ) 2 Ni s 2Ag 0.001M Ni 0.001M 2Ag s + + + → + cell 2.303 RT Given that E 10.5 V, 0.059 at 298 K F = =
+  OPT 1: 1.0385 V
+  OPT 2: 1.385 V
+  OPT 3: 0.9615 V
+  OPT 4: 1.05 V
+
+===== Q94 [CHEMISTRY] =====
+TEXT: The product formed from the following reaction sequence is
+  OPT 1:  [FIG:Q94_opt1.png]
+  OPT 2:  [FIG:Q94_opt2.png]
+  OPT 3:  [FIG:Q94_opt3.png]
+  OPT 4:  [FIG:Q94_opt4.png]
+  IMGS: ["Q94_fig1.png"]
+
+===== Q95 [CHEMISTRY] =====
+TEXT: The order of energy absorbed which is responsible for the color of complexes (A) [Ni(H2O)2(en)2]2+ (B) [Ni(H2O)4(en)]2+ and (C) [Ni(en)3]2+ is
+  OPT 1: (C) > (A) > (B)
+  OPT 2: (B) > (A) > (C)
+  OPT 3: (A) > (B) > (C)
+  OPT 4: (C) > (B) > (A)
+
+===== Q96 [CHEMISTRY] =====
+TEXT: Match List-I with List-II. List-I
+List-II (Ores)
+A. Haematite  i. Fe3O4
+B. Magnetite  ii. ZnCO3
+C. Calamine  iii. Fe2O3
+D. Kaolinite
+Choose the correct answer from the options given below:
+  OPT 1: (a)-(i), (b)-(iii), (c)-(ii), (d)-(iv)
+  OPT 2: (a)-(iii), (b)-(i), (c)-(ii), (d)-(iv)
+  OPT 3: (a)-(iii), (b)-(i), (c)-(iv), (d)-(ii)
+  OPT 4: (a)-(i), (b)-(ii), (c)-(iii), (d)-(iv)
+
+===== Q97 [CHEMISTRY] =====
+TEXT: In the neutral or faintly alkaline medium, KMnO4 oxidises iodide into iodate. The change in oxidation state of manganese in this reaction is from
+  OPT 1: +7 to +4
+  OPT 2: +6 to +4
+  OPT 3: +7 to +3
+  OPT 4: +6 to +5
+
+===== Q98 [CHEMISTRY] =====
+TEXT: Compound X on reaction with O3 followed by Zn/H2O gives formaldehyde and 2-methyl propanal as products. The compound X is
+  OPT 1: 3-Methylbut-1-ene
+  OPT 2: 2-Methylbut-1-ene
+  OPT 3: 2-Methylbut-2-ene
+  OPT 4: Pent-2-ene
+
+===== Q99 [CHEMISTRY] =====
+TEXT: 2 3 3O (g) 2O (g) for the above reaction at 298 K, KC is found to be 3.0 × 10–59. If the concentration of O2 at equilibrium is 0.040 M then concentration of O3 in M is
+  OPT 1:  [FIG:Q99_opt1.png]
+  OPT 2:  [FIG:Q99_opt2.png]
+  OPT 3:  [FIG:Q99_opt3.png]
+  OPT 4:  [FIG:Q99_opt4.png]
+
+===== Q100 [CHEMISTRY] =====
+TEXT: Which one of the following is not formed when acetone reacts with 2-pentanone in the presence of dilute NaOH followed by heating?
+  OPT 1:  [FIG:Q100_opt1.png]
+  OPT 2:  [FIG:Q100_opt2.png]
+  OPT 3:  [FIG:Q100_opt3.png]
+  OPT 4:  [FIG:Q100_opt4.png]
+
+===== Q101 [BOTANY] =====
+TEXT: Which of the following is not a method of ex situ conservation?
+  OPT 1: In vitro fertilization
+  OPT 2: National Parks
+  OPT 3: Micropropagation
+  OPT 4: Cryopreservation
+
+===== Q102 [BOTANY] =====
+TEXT: Identify the correct set of statements : (a) The leaflets are modified into pointed hard thorns in Citrus and Bougainvillea (b) Axillary buds form slender and spirally coiled tendrils in cucumber and pumpkin (c) Stem is flattened and fleshy in Opuntia and modified to perform the function of leaves (d) Rhizophora shows vertically upward growing roots that help to get oxygen for respiration (e) Subaerially growing stems in grasses and strawberry help in vegetative propagation Choose the correct answer from the options given below :
+  OPT 1: (b) and (c) Only
+  OPT 2: (a) and (d) Only
+  OPT 3: (b), (c), (d) and (e) Only
+  OPT 4: (a), (b), (d) and (e) Only
+
+===== Q103 [BOTANY] =====
+TEXT: Given below are two statements: Statement I: Decomposition is a process in which the detritus is degraded into simpler substances by microbes. Statement II: Decomposition is faster if the detritus is rich in lignin and chitin. In the light of the above statements, choose the correct answer from the options given below:
+  OPT 1: Both Statement I and Statement II are correct
+  OPT 2: Both Statement I and Statement II are incorrect
+  OPT 3: Statement I is correct but Statement II is incorrect
+  OPT 4: Statement I is incorrect but Statement II is correct
+
+===== Q104 [BOTANY] =====
+TEXT: Hydrocolloid carrageen is obtained from:
+  OPT 1: Chlorophyceae and Phaeophyceae
+  OPT 2: Phaeophyceae and Rhodophyceae
+  OPT 3: Rhodophyceae only
+  OPT 4: Phaeophyceae only
+
+===== Q105 [BOTANY] =====
+TEXT: Which one of the following plants shows vexillary aestivation and diadelphous stamens?
+  OPT 1: Colchicum autumnale
+  OPT 2: Pisum sativum
+  OPT 3: Allium cepa
+  OPT 4: Solanum nigrum
+
+===== Q106 [BOTANY] =====
+TEXT: Which of the following is incorrectly matched?
+  OPT 1: Ectocarpus – Fucoxanthin
+  OPT 2: Ulothrix – Mannitol
+  OPT 3: Porphyra – Floridian Starch
+  OPT 4: Volvox – Starch
+
+===== Q107 [BOTANY] =====
+TEXT: The process of translation of mRNA to proteins begins as soon as :
+  OPT 1: The small subunit of ribosome encounters mRNA
+  OPT 2: The larger subunit of ribosome encounters mRNA
+  OPT 3: Both the subunits join together to bind with mRNA
+  OPT 4: The tRNA is activated and the larger subunit of ribosome encounters mRNA
+
+===== Q108 [BOTANY] =====
+TEXT: Match List-I with List-II List-I
+List-II (a)
+B. Magnesium  ii. Required for pollen germination
+C. Boron  iii. Activates enzymes of respiration
+D. Iron  iv. Functions in splitting of water during photosynthesis
+Choose the correct answer from the options given below :
+  OPT 1: (a)-(iii), (b)-(iv), (c)-(i), (d)-(ii)
+  OPT 2: (a)-(iv), (b)-(i), (c)-(ii), (d)-(iii)
+  OPT 3: (a)-(iv), (b)-(iii), (c)-(ii), (d)-(i)
+  OPT 4: (a)-(iii), (b)-(i), (c)-(ii), (d)-(iv)
+
+===== Q109 [BOTANY] =====
+TEXT: Which one of the following never occurs during mitotic cell division?
+  OPT 1: Spindle fibres attach to kinetochores of chromosomes
+  OPT 2: Movement of centrioles towards opposite poles SECTION-B
+  OPT 3: Pairing of homologous chromosomes
+  OPT 4: Coiling and condensation of the chromatids
+
+===== Q110 [BOTANY] =====
+TEXT: Given below are two statements : Statement I : The primary CO2 acceptor in C4 plants is phosphoenolpyruvate and is found in the mesophyll cells. Statement II : Mesophyll cells of C4 plants lack RuBisCo enzyme. In the light of the above statements, choose the correct answer from the options given below:
+  OPT 1: Both Statement I and Statement II are correct
+  OPT 2: Both Statement I and Statement II are incorrect
+  OPT 3: Statement I is correct but Statement II is incorrect
+  OPT 4: Statement I is incorrect but Statement II is correct
+
+===== Q111 [BOTANY] =====
+TEXT: Which one of the following is not true regarding the release of energy during ATP synthesis through chemiosmosis? It involves:
+  OPT 1: Breakdown of proton gradient
+  OPT 2: Breakdown of electron gradient
+  OPT 3: Movement of protons across the membrane to the stroma
+  OPT 4: Reduction of NADP to NADPH2 on the stroma side of the membrane
+
+===== Q112 [BOTANY] =====
+TEXT: Habitat loss and fragmentation, over exploitation, alien species invasion and co-extinction are causes for:
+  OPT 1: Population explosion
+  OPT 2: Competition
+  OPT 3: Biodiversity loss
+  OPT 4: Natality
+
+===== Q113 [BOTANY] =====
+TEXT: What is the net gain of ATP when each molecule of glucose is converted to two molecules of pyruvic acid?
+  OPT 1: Four
+  OPT 2: Six
+  OPT 3: Two
+  OPT 4: Eight
+
+===== Q114 [BOTANY] =====
+TEXT: “Girdling Experiment” was performed by Plant Physiologists to identify the plant tissue through which:
+  OPT 1: water is transported
+  OPT 2: food is transported
+  OPT 3: for both water and food transportation
+  OPT 4: osmosis is observed
+
+===== Q115 [BOTANY] =====
+TEXT: Which of the following is not observed during apoplastic pathway ?
+  OPT 1: Movement of water occurs through intercellular spaces and wall of the cells
+  OPT 2: The movement does not involve crossing of cell membrane
+  OPT 3: The movement is aided by cytoplasmic streaming
+  OPT 4: Apoplast is continuous and does not provide any barrier to water movement
+
+===== Q116 [BOTANY] =====
+TEXT: Which one of the following plants does not show plasticity?
+  OPT 1: Cotton
+  OPT 2: Coriander
+  OPT 3: Buttercup
+  OPT 4: Maize
+
+===== Q117 [BOTANY] =====
+TEXT: DNA polymorphism forms the basis of :
+  OPT 1: Genetic mapping
+  OPT 2: DNA finger printing
+  OPT 3: Both genetic mapping and DNA finger printing
+  OPT 4: Translation
+
+===== Q118 [BOTANY] =====
+TEXT: XO type of sex determination can be found in :
+  OPT 1: Drosophila
+  OPT 2: Birds
+  OPT 3: Grasshoppers
+  OPT 4: Monkeys
+
+===== Q119 [BOTANY] =====
+TEXT: Given below are two statements : one is labelled as Assertion (A) and the other is labelled as Reason (R). Assertion (A) : Polymerase chain reaction is used in DNA amplification. Reason (R) : The ampicillin resistant gene is used as a selectable marker to check transformation In the light of the above statements, choose the correct answer from the options given below :
+  OPT 1: Both (A) and (R) are correct and (R) is the correct explanation of (A)
+  OPT 2: Both (A) and (R) are correct but (R) is not the correct explanation of (A)
+  OPT 3: (A) is correct but (R) is not correct
+  OPT 4: (A) is not correct but (R) is correct
+
+===== Q120 [BOTANY] =====
+TEXT: The gaseous plant growth regulator is used in plants to :
+  OPT 1: speed up the malting process
+  OPT 2: promote root growth and roothair formation to increase the absorption surface
+  OPT 3: help overcome apical dominance
+  OPT 4: kill dicotyledonous weeds in the fields
+
+===== Q121 [BOTANY] =====
+TEXT: The device which can remove particulate matter present in the exhaust from a thermal power plant is :
+  OPT 1: STP
+  OPT 2: Incinerator
+  OPT 3: Electrostatic Precipitator
+  OPT 4: Catalytic Convertor
+
+===== Q122 [BOTANY] =====
+TEXT: Given below are two statements : Statement I : Cleistogamous flowers are invariably autogamous Statement II : Cleistogamy is disadvantageous as there is no chance for cross pollination In the light of the above statements, choose the correct answer from the options given below :
+  OPT 1: Both Statement I and Statement II are correct
+  OPT 2: Both Statement I and Statement II are incorrect
+  OPT 3: Statement I is correct but Statement II is incorrect
+  OPT 4: Statement I is incorrect but Statement II is correct
+
+===== Q123 [BOTANY] =====
+TEXT: Exoskeleton of arthropods is composed of :
+  OPT 1: Cutin
+  OPT 2: Cellulose
+  OPT 3: Chitin
+  OPT 4: Glucosamine
+
+===== Q124 [BOTANY] =====
+TEXT: Read the following statements and choose the set of correct statements : (a) Euchromatin is loosely packed chromatin (b) Heterochromatin is transcriptionally active (c) Histone octomer is wrapped by negatively charged DNA in nucleosome (d) Histones are rich in lysine and arginine (e) A typical nucleosome contains 400 bp of DNA helix Choose the correct answer from the options given below :
+  OPT 1: (b), (d), (e) Only
+  OPT 2: (a), (c), (d) Only
+  OPT 3: (b), (e) Only
+  OPT 4: (a), (c), (e) Only
+
+===== Q125 [BOTANY] =====
+TEXT: Which one of the following statements cannot be connected to Predation?
+  OPT 1: It helps in maintaining species diversity in a community
+  OPT 2: It might lead to extinction of a species
+  OPT 3: Both the interacting species are negatively impacted
+  OPT 4: It is necessitated by nature to maintain the ecological balance
+
+===== Q126 [BOTANY] =====
+TEXT: The flowers are Zygomorphic in: (a) Mustard (b) Gulmohar (c) Cassia (d) Datura (e) Chilly Choose the correct answer from the options given below:
+  OPT 1: (a), (b), (c) Only
+  OPT 2: (b), (c) Only
+  OPT 3: (d), (e) Only
+  OPT 4: (c), (d), (e) Only
+
+===== Q127 [BOTANY] =====
+TEXT: Which one of the following produces nitrogen fixing nodules on the roots of Alnus?
+  OPT 1: Rhizobium
+  OPT 2: Frankia
+  OPT 3: Rhodospirillum
+  OPT 4: Beijerinckia
+
+===== Q128 [BOTANY] =====
+TEXT: Read the following statements about the vascular bundles : (a) In roots, xylem and phloem in a vascular bundle are arranged in an alternate manner along the different radii. (b) Conjoint closed vascular bundles do not possess cambium (c) In open vascular bundles, cambium is present in between xylem and phloem (d) The vascular bundles of dicotyledonous stem possess endarch protoxylem (e) In monocotyledonous root, usually there are more than six xylem bundles present Choose the correct answer from the options given below :
+  OPT 1: (a), (b) and (d) Only
+  OPT 2: (b), (c), (d) and (e) Only Answer (NA) No option is correct
+  OPT 3: (a), (b), (c) and (d) Only
+  OPT 4: (a), (c), (d) and (e) Only
+
+===== Q129 [BOTANY] =====
+TEXT: Identify the incorrect statement related to Pollination :
+  OPT 1: Pollination by water is quite rare in flowering plants
+  OPT 2: Pollination by wind is more common amongst abiotic pollination
+  OPT 3: Flowers produce foul odours to attract flies and beetles to get pollinated
+  OPT 4: Moths and butterflies are the most dominant pollinating agents among insects
+
+===== Q130 [BOTANY] =====
+TEXT: Which one of the following statement is not true regarding gel electrophoresis technique?
+  OPT 1: The process of extraction of separated DNA strands from gel is called elution.
+  OPT 2: The separated DNA fragments are stained by using ethidium bromide.
+  OPT 3: The presence of chromogenic substrate gives blue coloured DNA bands on the gel.
+  OPT 4: Bright orange coloured bands of DNA can be observed in the gel when exposed to UV light.
+
+===== Q131 [BOTANY] =====
+TEXT: Production of Cucumber has increased manifold in recent years. Application of which of the following phytohormones has resulted in this increased yield as the hormone is known to produce female flowers in the plants :
+  OPT 1: ABA
+  OPT 2: Gibberellin
+  OPT 3: Ethylene
+  OPT 4: Cytokinin
+
+===== Q132 [BOTANY] =====
+TEXT: What amount of energy is released from glucose during lactic acid fermentation?
+  OPT 1: Approximately 15%
+  OPT 2: More than 18%
+  OPT 3: About 10%
+  OPT 4: Less than 7%
+
+===== Q133 [BOTANY] =====
+TEXT: In old trees the greater part of secondary xylem is dark brown and resistant to insect attack due to : (a) secretion of secondary metabolities and their deposition in the lumen of vessels. (b) deposition of organic compounds like tannins and resins in the central layers of stem. (c) deposition of suberin and aromatic substances in the outer layer of stem. (d) deposition of tannins, gum, resin and aromatic substances in the peripheral layers of stem. (e) presence of parenchyma cells, functionally active xylem elements and essential oils. Choose the correct answer from the options given below:
+  OPT 1: (a) and (b) Only
+  OPT 2: (c) and (d) Only
+  OPT 3: (d) and (e) Only
+  OPT 4: (b) and (d) Only
+
+===== Q134 [BOTANY] =====
+TEXT: The appearance of recombination nodules on homologous chromosomes during meiosis characterizes :
+  OPT 1: Synaptonemal complex
+  OPT 2: Bivalent
+  OPT 3: Sites at which crossing over occurs
+  OPT 4: Terminalization
+
+===== Q135 [BOTANY] =====
+TEXT: Given below are two statements : Statement I : Mendel studied seven pairs of contrasting traits in pea plants and proposed the Laws of Inheritance. Statement II : Seven characters examined by Mendel in his experiment on pea plants were seed shape and colour, flower colour, pod shape and colour, flower position and stem height. In the light of the above statements, choose the correct answer from the options given below :
+  OPT 1: Both Statement I and Statement II are correct
+  OPT 2: Both Statement I and Statement II are incorrect
+  OPT 3: Statement I is correct but Statement II is incorrect
+  OPT 4: Statement I is incorrect but Statement II is correct
+  IMGS: ["Q135_fig1.png"]
+
+===== Q136 [BOTANY] =====
+TEXT: Transposons can be used during which one of the following ?
+  OPT 1: Polymerase Chain Reaction
+  OPT 2: Gene Silencing
+  OPT 3: Autoradiography
+  OPT 4: Gene sequencing
+
+===== Q137 [BOTANY] =====
+TEXT: While explaining interspecific interaction of population, (+) sign is assigned for beneficial interaction, (–) sign is assigned for detrimental interaction and (0) for neutral interaction. Which of the following interactions can be assigned (+) for one specifies and (–) for another specifies involved in the interaction ?
+  OPT 1: Predation
+  OPT 2: Amensalim
+  OPT 3: Commensalism
+  OPT 4: Competition
+
+===== Q138 [BOTANY] =====
+TEXT: Which part of the fruit, labelled in the given figure makes it a false fruit?
+  OPT 1: A → Mesocarp
+  OPT 2: B → Endocarp
+  OPT 3: C → Thalamus
+  OPT 4: D → Seed
+  IMGS: ["Q138_fig1.png"]
+
+===== Q139 [BOTANY] =====
+TEXT: Match the plant with the kind of life cycle it exhibits: List-I List-II (a) Spirogyra (i) Dominant diploid sporophyte vascular plant, with highly reduced male or female gametophyte (b) Fern (ii) Dominant haploid free-living gametophyte (c) Funaria (iii) Dominant diploid sporophyte alternating with reduced gametophyte called prothallus (d) Cycas (iv) Dominant haploid leafy gametophyte alternating with partially dependent multicellular sporophyte Choose the correct answer from the options given below :
+  OPT 1: (a)-(iv), (b)-(i), (c)-(ii), (d)-(iii)
+  OPT 2: (a)-(ii), (b)-(iii), (c)-(iv), (d)-(i)
+  OPT 3: (a)-(iii), (b)-(iv), (c)-(i), (d)-(ii)
+  OPT 4: (a)-(ii), (b)-(iv), (c)-(i), (d)-(iii)
+
+===== Q140 [BOTANY] =====
+TEXT: Match List-I with List-II. List-I
+List-II (a)
+B. Acrocentric chromosome  ii. Centromere at the terminal end
+C. Submetacentric  iii. Centromere in the middle forming two equal arms of chromosomes
+D. Telocentric chromosome  iv. Centromere slightly away from the middle forming one shorter arm and one longer arm
+Choose the correct answer from the options given below :
+  OPT 1: (a)-(iii), (b)-(i), (c)-(iv), (d)-(ii)
+  OPT 2: (a)-(i), (b)-(ii), (c)-(iii), (d)-(iv)
+  OPT 3: (a)-(ii), (b)-(iii), (c)-(iv), (d)-(i)
+  OPT 4: (a)-(i), (b)-(iii), (c)-(ii), (d)-(iv)
+
+===== Q141 [BOTANY] =====
+TEXT: Addition of more solutes in a given solution will :
+  OPT 1: raise its water potential
+  OPT 2: lower its water potential
+  OPT 3: make its water potential zero
+  OPT 4: not affect the water potential at all
+
+===== Q142 [BOTANY] =====
+TEXT: Which of the following occurs due to the presence of autosome linked dominant trait ?
+  OPT 1: Sickle cell anaemia
+  OPT 2: Myotonic dystrophy
+  OPT 3: Haemophilia
+  OPT 4: Thalessemia
+
+===== Q143 [BOTANY] =====
+TEXT: Which one of the following will accelerate phosphorus cycle?
+  OPT 1: Burning of fossil fuels
+  OPT 2: Volcanic activity
+  OPT 3: Weathering of rocks
+  OPT 4: Rain fall and storms
+
+===== Q144 [BOTANY] =====
+TEXT: In the following palindromic base sequences of DNA, which one can be cut easily by particular restriction enzyme?
+  OPT 1: 5GATACT3; 3CTATGA5
+  OPT 2: 5GAATTC3; 3CTTAAG5
+  OPT 3: 5CTCAGT3; 3GAGTCA5
+  OPT 4: 5GTATTC3; 3CATAAG5
+
+===== Q145 [BOTANY] =====
+TEXT: Read the following statements on lipids and find out correct set of statements: (a) Lecithin found in the plasma membrane is a glycolipid (b) Saturated fatty acids possess one or more c = c bonds (c) Gingely oil has lower melting point, hence remains as oil in winter (d) Lipids are generally insoluble in water but soluble in some organic solvents (e) When fatty acid is esterified with glycerol, monoglycerides are formed Choose the correct answer from the option given below:
+  OPT 1: (a), (b) and (c) only
+  OPT 2: (a), (d) and (e) only
+  OPT 3: (c), (d) and (e) only
+  OPT 4: (a), (b) and (d) only
+
+===== Q146 [BOTANY] =====
+TEXT: What is the role of large bundle sheath cells found around the vascular bundles in C4 plants?
+  OPT 1: To provide the site for photorespiratory pathway
+  OPT 2: To increase the number of chloroplast for the operation of Calvin cycle
+  OPT 3: To enable the plant to tolerate high temperature
+  OPT 4: To protect the vascular tissue from high light intensity
+
+===== Q147 [BOTANY] =====
+TEXT: If a geneticist uses the blind approach for sequencing the whole genome of an organism, followed by assignment of function to different segments, the methodology adopted by him is called as :
+  OPT 1: Sequence annotation
+  OPT 2: Gene mapping
+  OPT 3: Expressed sequence tags
+  OPT 4: Bioinformatics
+
+===== Q148 [BOTANY] =====
+TEXT: Given below are two statements : one is labelled as Assertion (A) and the other is labelled as Reason (R). Assertion (A) : Mendel’s law of Independent assortment does not hold good for the genes that are located closely on the same chromosome. Reason (R) : Closely located genes assort independently. In the light of the above statements, choose the correct answer from the options given below:
+  OPT 1: Both (A) and (R) are correct and (R) is the correct explanation of (A)
+  OPT 2: Both (A) and (R) are correct but (R) is not the correct explanation of (A)
+  OPT 3: (A) is correct but (R) is not correct
+  OPT 4: (A) is not correct but (R) is correct
+
+===== Q149 [BOTANY] =====
+TEXT: The anatomy of springwood shows some peculiar features. Identify the correct set of statements about springwood. (a) It is also called as the earlywood (b) In spring season cambium produces xylem elements with narrow vessels (c) It is lighter in colour (d) The springwood along with autumnwood shows alternate concentric rings forming annual rings (e) It has lower density Choose the correct answer from the options given below :
+  OPT 1: (a), (b), (d) and (e) Only
+  OPT 2: (a), (c), (d) and (e) Only
+  OPT 3: (a), (b) and (d) Only
+  OPT 4: (c), (d) and (e) Only
+
+===== Q150 [BOTANY] =====
+TEXT: The entire fleet of buses in Delhi were converted to CNG from diesel. In reference to this, which one of the following statements is false?
+  OPT 1: CNG burns more efficiently than diesel
+  OPT 2: The same diesel engine is used in CNG buses making the cost of conversion low
+  OPT 3: It is cheaper than diesel
+  OPT 4: It cannot be adulterated like diesel
+
+===== Q151 [ZOOLOGY] =====
+TEXT: In-situ conservation refers to:
+  OPT 1: Protect and conserve the whole ecosystem
+  OPT 2: Conserve only high-risk species
+  OPT 3: Conserve only endangered species
+  OPT 4: Conserve only extinct species
+
+===== Q152 [ZOOLOGY] =====
+TEXT: In which of the following animals, digestive tract has additional chambers like crop and gizzard?
+  OPT 1: Corvus, Columba, Chameleon
+  OPT 2: Bufo, Balaenoptera, Bangarus
+  OPT 3: Catla, Columba, Crocodilus
+  OPT 4: Pavo, Psittacula, Corvus
+
+===== Q153 [ZOOLOGY] =====
+TEXT: If the length of a DNA molecule is 1.1 metres, what will be the approximate number of base pairs?
+  OPT 1: 3.3 × 109 bp
+  OPT 2: 6.6 × 106 bp
+  OPT 3: 3.3 × 106 bp
+  OPT 4: 6.6 × 109 bp
+
+===== Q154 [ZOOLOGY] =====
+TEXT: Given below are two statements : Statement I : Fatty acids and glycerols cannot be absorbed into the blood. Statement II : Specialized lymphatic capillaries called lacteals carry chylomicrons into lymphatic vessels and ultimately into the blood. In the light of the above statements, choose the most appropriate answer from the options given below:
+  OPT 1: Both Statement I and Statement II are correct
+  OPT 2: Both Statement I and Statement II are incorrect
+  OPT 3: Statement I is correct but Statement II is incorrect
+  OPT 4: Statement I is incorrect but Statement II is correct
+
+===== Q155 [ZOOLOGY] =====
+TEXT: Given below are two statements: Statement I: Autoimmune disorder is a condition where body defense mechanism recognizes its own cells as foreign bodies. Statement II: Rheumatoid arthritis is a condition where body does not attack self cells. In the light of the above statements, choose the most appropriate answer from the options given below:
+  OPT 1: Both Statement I and Statement II are correct
+  OPT 2: Both Statement I and Statement II are incorrect
+  OPT 3: Statement I is correct but Statement II is incorrect
+  OPT 4: Statement I is incorrect but Statement II is correct
+
+===== Q156 [ZOOLOGY] =====
+TEXT: Which of the following statements are true for spermatogenesis but do not hold true for Oogenesis? (a) It results in the formation of haploid gametes (b) Differentiation of gamete occurs after the completion of meiosis (c) Meiosis occurs continuously in a mitotically dividing stem cell population (d) It is controlled by the Luteinising hormone (LH) and Follicle Stimulating Hormone (FSH) secreted by the anterior pituitary (e) It is initiated at puberty Choose the most appropriate answer from the options given below:
+  OPT 1: (c) and (e) only
+  OPT 2: (b) and (c) only
+  OPT 3: (b), (d) and (e) only
+  OPT 4: (b), (c) and (e) only
+  IMGS: ["Q156_fig1.png"]
+
+===== Q157 [ZOOLOGY] =====
+TEXT: Given below are two statements : one is labelled as Assertion (A) and the other is labelled as Reason (R). Assertion (A): Osteoporosis is characterised by decreased bone mass and increased chance of fractures. Reason (R): Common cause of osteoporosis is increased levels of estrogen. In the light of the above statements, choose the most appropriate answer from the options given below.
+  OPT 1: Both (A) and (R) are correct and (R) is the correct explanation of (A)
+  OPT 2: Both (A) and (R) are correct but (R) is not the correct explanation of (A)
+  OPT 3: (A) is correct but (R) is not correct
+  OPT 4: (A) is not correct but (R) is correct
+
+===== Q158 [ZOOLOGY] =====
+TEXT: Given below are two statements: Statement I: Restriction endonucleases recognise specific sequence to cut DNA known as palindromic nucleotide sequence. Statement II: Restriction endonucleases cut the DNA strand a little away from the centre of the palindromic site. In the light of the above statements, choose the most appropriate answer from the options given below:
+  OPT 1: Both Statement I and Statement II are correct
+  OPT 2: Both Statement I and Statement II are incorrect
+  OPT 3: Statement I is correct but Statement II is incorrect
+  OPT 4: Statement I is incorrect but Statement II is correct
+
+===== Q159 [ZOOLOGY] =====
+TEXT: Lippe’s loop is a type of contraceptive used as:
+  OPT 1: Cervical barrier
+  OPT 2: Vault barrier
+  OPT 3: Non-Medicated IUD
+  OPT 4: Copper releasing IUD
+
+===== Q160 [ZOOLOGY] =====
+TEXT: Under normal physiological conditions in human being every 100 ml of oxygenated blood can deliver ________ ml of O2 to the tissues.
+  OPT 1: 2 ml
+  OPT 2: 5 ml
+  OPT 3: 4 ml
+  OPT 4: 10 ml
+
+===== Q161 [ZOOLOGY] =====
+TEXT: Given below are two statements : one is labelled as Assertion (A) and the other is labelled as Reason (R). Assertion (A) : All vertebrates are chordates but all chordates are not vertebrates. Reason (R) : Notochord is replaced by vertebral column in the adult vertebrates. In the light of the above statements, choose the most appropriate answer from the option given below :
+  OPT 1: Both (A) and (R) are correct and (R) is the correct explanation of (A)
+  OPT 2: Both (A) and (R) are correct but (R) is not the correct explanation of (A)
+  OPT 3: (A) is correct but (R) is not correct
+  OPT 4: (A) is not correct but (R) is correct
+
+===== Q162 [ZOOLOGY] =====
+TEXT: Which of the following is not a connective tissue?
+  OPT 1: Blood
+  OPT 2: Adipose tissue
+  OPT 3: Cartilage
+  OPT 4: Neuroglia
+
+===== Q163 [ZOOLOGY] =====
+TEXT: Nitrogenous waste is excreted in the form of pellet or paste by :
+  OPT 1: Ornithorhynchus
+  OPT 2: Salamandra
+  OPT 3: Hippocampus
+  OPT 4: Pavo
+
+===== Q164 [ZOOLOGY] =====
+TEXT: Regarding Meiosis, which of the statements is incorrect?
+  OPT 1: There are two stages in Meiosis, Meiosis-I and II
+  OPT 2: DNA replication occurs in S phase of Meiosis-II
+  OPT 3: Pairing of homologous chromosomes and recombination occurs in Meiosis-I
+  OPT 4: Four haploid cells are formed at the end of Meiosis-II
+
+===== Q165 [ZOOLOGY] =====
+TEXT: In an E. Coli strain i gene gets mutated and its product can not bind the inducer molecule. If growth medium is provided with lactose, what will be the outcome?
+  OPT 1: Only z gene will get transcribed
+  OPT 2: z, y, a genes will be transcribed
+  OPT 3: z, y, a genes will not be translated
+  OPT 4: RNA polymerase will bind the promoter region
+
+===== Q166 [ZOOLOGY] =====
+TEXT: Which of the following is a correct match for disease and its symptoms?
+  OPT 1: Arthritis – Inflammed joints
+  OPT 2: Tetany – High Ca2+ level causing rapid spasms.
+  OPT 3: Myasthenia gravis – Genetic disorder resulting in weakening and paralysis of skeletal muscle
+  OPT 4: Muscular dystrophy – An auto immune disorder causing progressive degeneration of skeletal muscle
+
+===== Q167 [ZOOLOGY] =====
+TEXT: Identify the microorganism which is responsible for the production of an immunosuppressive molecule cyclosporin A :
+  OPT 1: Trichoderma polysporum
+  OPT 2: Clostridium butylicum
+  OPT 3: Aspergillus niger
+  OPT 4: Streptococcus cerevisiae
+
+===== Q168 [ZOOLOGY] =====
+TEXT: Given below are two statements : Statement I : Mycoplasma can pass through less than 1 micron filter size. Statement II : Mycoplasma are bacteria with cell wall. In the light of the above statements, choose the most appropriate answer from the options given below
+  OPT 1: Both Statement I and Statement II are correct
+  OPT 2: Both Statement I and Statement II are incorrect SECTION-B
+  OPT 3: Statement I is correct but Statement II is incorrect
+  OPT 4: Statement I is incorrect but Statement II is correct
+
+===== Q169 [ZOOLOGY] =====
+TEXT: Which of the following functions is not performed by secretions from salivary glands?
+  OPT 1: Control bacterial population in mouth
+  OPT 2: Digestion of complex carbohydrates
+  OPT 3: Lubrication of oral cavity
+  OPT 4: Digestion of disaccharides
+
+===== Q170 [ZOOLOGY] =====
+TEXT: Given below are two statements : Statement I : The coagulum is formed of network of threads called thrombins. Statement II : Spleen is the graveyard of erythrocytes. In the light of the above statements, choose the most appropriate answer from the options given below :
+  OPT 1: Both Statement I and Statement II are correct
+  OPT 2: Both Statement I and Statement II are incorrect
+  OPT 3: Statement I is correct but Statement II is incorrect
+  OPT 4: Statement I is incorrect but Statement II is correct
+
+===== Q171 [ZOOLOGY] =====
+TEXT: A dehydration reaction links two glucose molecules to product maltose. If the formula for glucose is C6H12O6 then what is the formula for maltose?
+  OPT 1: C12H20O10
+  OPT 2: C12H24O12
+  OPT 3: C12H22O11
+  OPT 4: C12H24O11
+
+===== Q172 [ZOOLOGY] =====
+TEXT: Which of the following statements with respect to Endoplasmic Reticulum is incorrect?
+  OPT 1: RER has ribosomes attached to ER
+  OPT 2: SER is devoid of ribosomes
+  OPT 3: In prokaryotes only RER are present
+  OPT 4: SER are the sites for lipid synthesis
+
+===== Q173 [ZOOLOGY] =====
+TEXT: Which of the following is present between the adjacent bones of the vertebral column?
+  OPT 1: Intercalated discs
+  OPT 2: Cartilage
+  OPT 3: Areolar tissue
+  OPT 4: Smooth muscle
+
+===== Q174 [ZOOLOGY] =====
+TEXT: Tegmina in cockroach, arises from
+  OPT 1: Prothorax
+  OPT 2: Mesothorax
+  OPT 3: Metathorax
+  OPT 4: Prothorax and Mesothorax
+
+===== Q175 [ZOOLOGY] =====
+TEXT: Given below are two statements: Statement I : The release of sperms into the seminiferous tubules is called spermiation. Statement II : Spermiogenesis is the process of formation of sperms from spermatogonia. In the light of the above statements, choose the most appropriate answer from the options given below :
+  OPT 1: Both Statement I and Statement II are correct
+  OPT 2: Both Statement I and Statement II are incorrect
+  OPT 3: Statement I is correct but Statement II is incorrect
+  OPT 4: Statement I is incorrect but Statement II is correct
+
+===== Q176 [ZOOLOGY] =====
+TEXT: If ‘8’ Drosophila in a laboratory population of ‘80’ died during a week, the death rate in the population is ______ individuals per Drosophila per week.
+  OPT 1: 1.0
+  OPT 2: 10
+  OPT 3: 0.1
+  OPT 4: zero
+
+===== Q177 [ZOOLOGY] =====
+TEXT: Natural selection where more individuals acquire specific character value other than the mean character value, leads to
+  OPT 1: Stabilising change
+  OPT 2: Directional change
+  OPT 3: Disruptive change
+  OPT 4: Random change
+
+===== Q178 [ZOOLOGY] =====
+TEXT: Which of the following is not the function of conducting part of respiratory system?
+  OPT 1: It clears inhaled air from foreign particles
+  OPT 2: Inhaled air is humidified
+  OPT 3: Temperature of inhaled air is brought to body temperature
+  OPT 4: Provides surface for diffusion of O2 and CO2
+
+===== Q179 [ZOOLOGY] =====
+TEXT: Breeding crops with higher levels of vitamins and minerals or higher proteins and healthier fats is called :
+  OPT 1: Bio-magnification
+  OPT 2: Bio-remediation
+  OPT 3: Bio-fortification
+  OPT 4: Bio-accumulation
+
+===== Q180 [ZOOLOGY] =====
+TEXT: In the taxonomic categories which hierarchical arrangement in ascending order is correct in case of animals?
+  OPT 1: Kingdom, Order, Class, Phylum, Family, Genus, Species
+  OPT 2: Kingdom, Order, Phylum, Class, Family, Genus, Species
+  OPT 3: Kingdom, Phylum, Class, Order, Family, Genus, Species
+  OPT 4: Kingdom, Class, Phylum, Family, Order, Genus, Species
+
+===== Q181 [ZOOLOGY] =====
+TEXT: At which stage of life the oogenesis process is initiated?
+  OPT 1: Puberty
+  OPT 2: Embryonic development stage
+  OPT 3: Birth
+  OPT 4: Adult
+
+===== Q182 [ZOOLOGY] =====
+TEXT: Identify the asexual reproductive structure associated with Penicillium :
+  OPT 1: Zoospores
+  OPT 2: Conidia
+  OPT 3: Gemmules
+  OPT 4: Buds
+
+===== Q183 [ZOOLOGY] =====
+TEXT: In gene therapy of Adenosine Deaminase (ADA) deficiency, the patient requires periodic infusion of genetically engineered lymphocytes because :
+  OPT 1: Retroviral vector is introduced into these lymphocytes.
+  OPT 2: Gene isolated from marrow cells producing ADA is introduced into cells at embryonic stages
+  OPT 3: Lymphocytes from patient's blood are grown in culture, outside the body.
+  OPT 4: Genetically engineered lymphocytes are not immortal cells.
+
+===== Q184 [ZOOLOGY] =====
+TEXT: Select the incorrect statement with reference to mitosis:
+  OPT 1: All the chromosomes lie at the equator at metaphase
+  OPT 2: Spindle fibres attach to centromere of chromosomes
+  OPT 3: Chromosomes decondense at telophase
+  OPT 4: Splitting of centromere occurs at anaphase
+
+===== Q185 [ZOOLOGY] =====
+TEXT: Detritivores breakdown detritus into smaller particles. This process is called:
+  OPT 1: Catabolism
+  OPT 2: Fragmentation
+  OPT 3: Humification
+  OPT 4: Decomposition
+
+===== Q186 [ZOOLOGY] =====
+TEXT: If a colour blind female marries a man whose mother was also colour blind, what are the chances of her progeny having colour blindness?
+  OPT 1: 25%
+  OPT 2: 50%
+  OPT 3: 75%
+  OPT 4: 100%
+
+===== Q187 [ZOOLOGY] =====
+TEXT: Select the incorrect statement with respect to acquired immunity.
+  OPT 1: Primary response is produced when our body encounters a pathogen for the first time.
+  OPT 2: Anamnestic response is elicited on subsequent encounters with the same pathogen.
+  OPT 3: Anamnestic response is due to memory of first encounter.
+  OPT 4: Acquired immunity is non-specific type of defense present at the time of birth.
+
+===== Q188 [ZOOLOGY] =====
+TEXT: Statements related to human Insulin are given below. Which statement(s) is/are correct about genetically engineered Insulin? (a) Pro-hormone insulin contain extra stretch of C-peptide (b) A-peptide and B-peptide chains of insulin were produced separately in E.coli, extracted and combined by creating disulphide bond between them. (c) Insulin used for treating Diabetes was extracted from Cattles and Pigs. (d) Pro-hormone Insulin needs to be processed for converting into a mature and functional hormone. (e) Some patients develop allergic reactions to the foreign insulin. Choose the most appropriate answer from the options given below:
+  OPT 1: (a), (b) and (d) only
+  OPT 2: (b) only
+  OPT 3: (c) and (d) only
+  OPT 4: (c), (d) and (e) only
+
+===== Q189 [ZOOLOGY] =====
+TEXT: Which one of the following statements is correct?
+  OPT 1: The atrio-ventricular node (AVN) generates an action potential to stimulate atrial contraction
+  OPT 2: The tricuspid and the bicuspid valves open due to the pressure exerted by the simultaneous contraction of the atria
+  OPT 3: Blood moves freely from atrium to the ventricle during joint diastole.
+  OPT 4: Increased ventricular pressure causes closing of the semilunar valves.
+
+===== Q190 [ZOOLOGY] =====
+TEXT: Match List-I with List-II
+List-I (Biological Molecules)
+List-II (Biological functions)
+A. Glycogen  i. Hormone
+B. Globulin  ii. Biocatalyst
+C. Steroids  iii. Antibody
+D. Thrombin  iv. Storage product
+Choose the correct answer from the options given below:
+  OPT 1: (a) - (iii), (b) - (ii), (c) - (iv), (d) - (i)
+  OPT 2: (a) - (iv), (b) - (iii), (c) - (i), (d) - (ii)
+  OPT 3: (a) - (ii), (b) - (iv), (c) - (iii), (d) - (i)
+  OPT 4: (a) - (iv), (b) - (ii), (c) - (i), (d) - (iii)
+
+===== Q191 [ZOOLOGY] =====
+TEXT: Ten E.coli cells with 15N - dsDNA are incubated in medium containing 14N nucleotide. After 60 minutes, how many E.coli cells will have DNA totally free from 15N?
+  OPT 1: 20 cells
+  OPT 2: 40 cells
+  OPT 3: 60 cells
+  OPT 4: 80 cells
+
+===== Q192 [ZOOLOGY] =====
+TEXT: The recombination frequency between the genes a & c is 5%, b & c is 15%, b & d is 9%, a & b is 20%, c & d is 24% and a & d is 29%. What will be the sequence of these genes on a linear chromosome?
+  OPT 1: a, b, c, d
+  OPT 2: a, c, b, d
+  OPT 3: a, d, b, c
+  OPT 4: d, b, a, c
+
+===== Q193 [ZOOLOGY] =====
+TEXT: Which of the following are not the effects of Parathyroid hormone? (a) Stimulates the process of bone resorption (b) Decreases Ca2+ level in blood (c) Reabsorption of Ca2+ by renal tubules (d) Decreases the absorption of Ca2+ from digested food (e) Increases metabolism of carbohydrates Choose the most appropriate answer from the options given below:
+  OPT 1: (a) and (c) only
+  OPT 2: (b), (d) and (e) only
+  OPT 3: (a) and (e) only
+  OPT 4: (b) and (c) only
+
+===== Q194 [ZOOLOGY] =====
+TEXT: Which of the following is not a desirable feature of a cloning vector?
+  OPT 1: Presence of origin of replication
+  OPT 2: Presence of a marker gene
+  OPT 3: Presence of single restriction enzyme site
+  OPT 4: Presence of two or more recognition sites
+
+===== Q195 [ZOOLOGY] =====
+TEXT: Which of the following statements is not true?
+  OPT 1: Analogous structures are a result of convergent evolution
+  OPT 2: Sweet potato and potato is an example of analogy
+  OPT 3: Homology indicates common ancestry
+  OPT 4: Flippers of penguins and dolphins are a pair of homologous organs
+
+===== Q196 [ZOOLOGY] =====
+TEXT: Select the incorrect statement regarding synapses :
+  OPT 1: The membranes of presynaptic and postsynaptic neurons are in close proximity in an electrical synapse.
+  OPT 2: Electrical current can flow directly from one neuron into the other across the electrical synapse.
+  OPT 3: Chemical synapses use neurotransmitters
+  OPT 4: Impulse transmission across a chemical synapse is always faster than that across an electrical synapse.
+
+===== Q197 [ZOOLOGY] =====
+TEXT: Match List-I with List-II List-I
+List-II (a)
+B. Goblet Cell  ii. Loose Connective Tissue
+C. Tendons  iii. Glandular Tissue
+D. Adipose Tissue  iv. Ciliated Epithelium
+Choose the correct answer from the options given below:
+  OPT 1: (a) - (iv), (b) - (iii), (c) - (i), (d) - (ii)
+  OPT 2: (a) - (i), (b) - (ii), (c) - (iii), (d) - (iv)
+  OPT 3: (a) - (ii), (b) - (i), (c) - (iv), (d) - (iii)
+  OPT 4: (a) - (iii), (b) - (iv), (c) - (ii), (d) - (i)
+
+===== Q198 [ZOOLOGY] =====
+TEXT: Match List-I with List-II with respect to methods of Contraception and their respective actions. List-I
+List-II (a)
+B. Contraceptive Pills  ii. Increase phagocytosis of sperm within Uterus
+C. Intra Uterine Devices  iii. Absence of Menstrual cycle and ovulation following parturition
+D. Lactational Amenorrhea  iv. They cover the cervix blocking the entry of sperms
+Choose the correct answer from the options given below:
+  OPT 1: (a) - (iv), (b) - (i), (c) - (iii), (d) - (ii)
+  OPT 2: (a) - (iv), (b) - (i), (c) - (ii), (d) - (iii)
+  OPT 3: (a) - (ii), (b) - (iv), (c) - (i), (d) - (iii)
+  OPT 4: (a) - (iii), (b) - (ii), (c) - (i), (d) - (iv)
+  IMGS: ["Q198_fig1.png","Q198_fig2.png","Q198_fig3.png","Q198_fig4.png","Q198_fig5.png"]
+
+===== Q199 [ZOOLOGY] =====
+TEXT: Which of the following is a correct statement?
+  OPT 1: Cyanobacteria are a group of autotrophic organisms classified under kingdom Monera.
+  OPT 2: Bacteria are exclusively heterotrophic organisms.
+  OPT 3: Slime moulds are saprophytic organisms classified under Kingdom Monera.
+  OPT 4: Mycoplasma have DNA, ribosome and cell wall.
+
+===== Q200 [ZOOLOGY] =====
+TEXT: Given below are two statements: Statements I : In a scrubber the exhaust from the thermal plant is passed through the electric wires to charge the dust particles. Statement II : Particulate matter (PM 2.5) cannot be removed by scrubber but can be removed by an electrostatic precipitator. In the light of the above statements, choose the most appropriate answer from the options given below :
+  OPT 1: Both Statement I and Statement II are correct
+  OPT 2: Both Statement I and Statement II are incorrect
+  OPT 3: Statement I is correct but Statement II is incorrect
+  OPT 4: Statement I is incorrect but Statement II is correct
+  IMGS: ["Q200_fig1.png"]
+

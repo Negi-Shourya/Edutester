@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { motion } from 'motion/react';
-import { Menu, X, GraduationCap, LogIn, UserPlus, LogOut } from 'lucide-react';
+import { Menu, X, LogIn, UserPlus, LogOut } from 'lucide-react';
 import { useAuth } from '../context/auth-context';
 import { useSubscriptionAccess } from '../lib/subscription';
 
@@ -50,10 +50,8 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <Link to={homeTo} className="flex items-center gap-2">
-            <div className="w-8 h-8 rounded-lg bg-primary flex items-center justify-center">
-              <GraduationCap className="w-5 h-5 text-white" />
-            </div>
-            <span className="text-xl font-bold text-gray-900 font-display tracking-tight">EduTester</span>
+            <img src="/logo.png" alt="EduTester" className="w-8 h-8 object-contain" />
+            <img src="/EduTester_Text.png" alt="EduTester" className="h-6 w-auto object-contain" />
           </Link>
 
           <div className="hidden md:flex items-center gap-6">

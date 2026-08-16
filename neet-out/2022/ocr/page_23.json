@@ -1,0 +1,682 @@
+[
+ {
+  "x0": 286.0,
+  "y0": 159.0,
+  "x1": 350.0,
+  "y1": 191.0,
+  "text": "115.",
+  "score": 0.73
+ },
+ {
+  "x0": 372.0,
+  "y0": 159.0,
+  "x1": 1231.0,
+  "y1": 193.0,
+  "text": "Which of the following is not observed during apoplastic pathway ?",
+  "score": 0.957
+ },
+ {
+  "x0": 375.0,
+  "y0": 206.0,
+  "x1": 415.0,
+  "y1": 240.0,
+  "text": "(1)",
+  "score": 0.736
+ },
+ {
+  "x0": 440.0,
+  "y0": 208.0,
+  "x1": 1397.0,
+  "y1": 236.0,
+  "text": "Movement of water occurs through intercellular spaces and wall of the cells",
+  "score": 0.919
+ },
+ {
+  "x0": 375.0,
+  "y0": 251.0,
+  "x1": 415.0,
+  "y1": 286.0,
+  "text": "(2)",
+  "score": 0.75
+ },
+ {
+  "x0": 441.0,
+  "y0": 252.0,
+  "x1": 1194.0,
+  "y1": 283.0,
+  "text": "The movement does not involve crossing of cell membrane",
+  "score": 0.928
+ },
+ {
+  "x0": 373.0,
+  "y0": 297.0,
+  "x1": 416.0,
+  "y1": 335.0,
+  "text": "(3)",
+  "score": 0.75
+ },
+ {
+  "x0": 441.0,
+  "y0": 299.0,
+  "x1": 1072.0,
+  "y1": 331.0,
+  "text": "The movement is aided by cytoplasmic streaming",
+  "score": 0.905
+ },
+ {
+  "x0": 375.0,
+  "y0": 346.0,
+  "x1": 415.0,
+  "y1": 379.0,
+  "text": "(4)",
+  "score": 0.729
+ },
+ {
+  "x0": 438.0,
+  "y0": 343.0,
+  "x1": 1408.0,
+  "y1": 378.0,
+  "text": "Apoplast is continuous and does not provide any barrier to water movement",
+  "score": 0.93
+ },
+ {
+  "x0": 374.0,
+  "y0": 388.0,
+  "x1": 527.0,
+  "y1": 426.0,
+  "text": "Answer (3)",
+  "score": 0.846
+ },
+ {
+  "x0": 287.0,
+  "y0": 446.0,
+  "x1": 350.0,
+  "y1": 479.0,
+  "text": "116.",
+  "score": 0.705
+ },
+ {
+  "x0": 375.0,
+  "y0": 444.0,
+  "x1": 1129.0,
+  "y1": 475.0,
+  "text": "Which one of the following plants does not show plasticity?",
+  "score": 0.92
+ },
+ {
+  "x0": 374.0,
+  "y0": 486.0,
+  "x1": 421.0,
+  "y1": 522.0,
+  "text": "(1)",
+  "score": 0.746
+ },
+ {
+  "x0": 437.0,
+  "y0": 487.0,
+  "x1": 531.0,
+  "y1": 518.0,
+  "text": "Cotton",
+  "score": 0.804
+ },
+ {
+  "x0": 1062.0,
+  "y0": 486.0,
+  "x1": 1109.0,
+  "y1": 522.0,
+  "text": "(2)",
+  "score": 0.75
+ },
+ {
+  "x0": 1125.0,
+  "y0": 488.0,
+  "x1": 1256.0,
+  "y1": 518.0,
+  "text": "Coriander",
+  "score": 0.789
+ },
+ {
+  "x0": 374.0,
+  "y0": 537.0,
+  "x1": 418.0,
+  "y1": 573.0,
+  "text": "(3)",
+  "score": 0.749
+ },
+ {
+  "x0": 434.0,
+  "y0": 536.0,
+  "x1": 568.0,
+  "y1": 572.0,
+  "text": "Buttercup",
+  "score": 0.855
+ },
+ {
+  "x0": 1062.0,
+  "y0": 537.0,
+  "x1": 1114.0,
+  "y1": 571.0,
+  "text": "(4)",
+  "score": 0.749
+ },
+ {
+  "x0": 1121.0,
+  "y0": 537.0,
+  "x1": 1208.0,
+  "y1": 568.0,
+  "text": "Maize",
+  "score": 0.726
+ },
+ {
+  "x0": 375.0,
+  "y0": 587.0,
+  "x1": 527.0,
+  "y1": 621.0,
+  "text": "Answer (4)",
+  "score": 0.887
+ },
+ {
+  "x0": 288.0,
+  "y0": 638.0,
+  "x1": 352.0,
+  "y1": 670.0,
+  "text": "117.",
+  "score": 0.769
+ },
+ {
+  "x0": 376.0,
+  "y0": 640.0,
+  "x1": 878.0,
+  "y1": 670.0,
+  "text": "DNA polymorphism forms the basis of :",
+  "score": 0.906
+ },
+ {
+  "x0": 374.0,
+  "y0": 685.0,
+  "x1": 421.0,
+  "y1": 721.0,
+  "text": "(1)",
+  "score": 0.745
+ },
+ {
+  "x0": 439.0,
+  "y0": 686.0,
+  "x1": 661.0,
+  "y1": 719.0,
+  "text": "Genetic mapping",
+  "score": 0.861
+ },
+ {
+  "x0": 1062.0,
+  "y0": 687.0,
+  "x1": 1103.0,
+  "y1": 719.0,
+  "text": "(2)",
+  "score": 0.75
+ },
+ {
+  "x0": 1128.0,
+  "y0": 686.0,
+  "x1": 1371.0,
+  "y1": 718.0,
+  "text": "DNA finger printing",
+  "score": 0.866
+ },
+ {
+  "x0": 373.0,
+  "y0": 730.0,
+  "x1": 1034.0,
+  "y1": 770.0,
+  "text": "(3)  Both genetic mapping and DNA finger printing",
+  "score": 0.907
+ },
+ {
+  "x0": 1057.0,
+  "y0": 730.0,
+  "x1": 1104.0,
+  "y1": 768.0,
+  "text": "(4)",
+  "score": 0.714
+ },
+ {
+  "x0": 1127.0,
+  "y0": 735.0,
+  "x1": 1272.0,
+  "y1": 762.0,
+  "text": "Translation",
+  "score": 0.914
+ },
+ {
+  "x0": 375.0,
+  "y0": 779.0,
+  "x1": 527.0,
+  "y1": 813.0,
+  "text": "Answer (3)",
+  "score": 0.885
+ },
+ {
+  "x0": 288.0,
+  "y0": 837.0,
+  "x1": 351.0,
+  "y1": 866.0,
+  "text": "118.",
+  "score": 0.718
+ },
+ {
+  "x0": 374.0,
+  "y0": 836.0,
+  "x1": 970.0,
+  "y1": 866.0,
+  "text": "XO type of sex determination can be found in :",
+  "score": 0.903
+ },
+ {
+  "x0": 374.0,
+  "y0": 882.0,
+  "x1": 422.0,
+  "y1": 917.0,
+  "text": "(1)",
+  "score": 0.722
+ },
+ {
+  "x0": 425.0,
+  "y0": 882.0,
+  "x1": 585.0,
+  "y1": 915.0,
+  "text": "Drosophita",
+  "score": 0.832
+ },
+ {
+  "x0": 1061.0,
+  "y0": 881.0,
+  "x1": 1105.0,
+  "y1": 917.0,
+  "text": "(2)",
+  "score": 0.75
+ },
+ {
+  "x0": 1125.0,
+  "y0": 882.0,
+  "x1": 1199.0,
+  "y1": 914.0,
+  "text": "Birds",
+  "score": 0.779
+ },
+ {
+  "x0": 374.0,
+  "y0": 928.0,
+  "x1": 627.0,
+  "y1": 965.0,
+  "text": "(3)Grasshoppers",
+  "score": 0.935
+ },
+ {
+  "x0": 1058.0,
+  "y0": 925.0,
+  "x1": 1108.0,
+  "y1": 965.0,
+  "text": "(4)",
+  "score": 0.736
+ },
+ {
+  "x0": 1122.0,
+  "y0": 929.0,
+  "x1": 1246.0,
+  "y1": 963.0,
+  "text": "Monkeys",
+  "score": 0.857
+ },
+ {
+  "x0": 374.0,
+  "y0": 973.0,
+  "x1": 527.0,
+  "y1": 1009.0,
+  "text": "Answer (3)",
+  "score": 0.854
+ },
+ {
+  "x0": 374.0,
+  "y0": 1022.0,
+  "x1": 1735.0,
+  "y1": 1052.0,
+  "text": "Sol. Grasshopper is an example of XO type of sex determination in which the males have only one",
+  "score": 0.909
+ },
+ {
+  "x0": 439.0,
+  "y0": 1058.0,
+  "x1": 1584.0,
+  "y1": 1089.0,
+  "text": "X-chromosome besides the autosomes, whereas females have a pair of X-chromosomes.",
+  "score": 0.936
+ },
+ {
+  "x0": 289.0,
+  "y0": 1115.0,
+  "x1": 364.0,
+  "y1": 1143.0,
+  "text": "119.",
+  "score": 0.73
+ },
+ {
+  "x0": 362.0,
+  "y0": 1114.0,
+  "x1": 1034.0,
+  "y1": 1144.0,
+  "text": " Given below are two statements : one is labelled as",
+  "score": 0.951
+ },
+ {
+  "x0": 376.0,
+  "y0": 1162.0,
+  "x1": 1075.0,
+  "y1": 1192.0,
+  "text": "Assertion (A) and the other is labelled as Reason (R).",
+  "score": 0.906
+ },
+ {
+  "x0": 377.0,
+  "y0": 1209.0,
+  "x1": 578.0,
+  "y1": 1239.0,
+  "text": "Assertion (A) :",
+  "score": 0.815
+ },
+ {
+  "x0": 377.0,
+  "y0": 1255.0,
+  "x1": 1089.0,
+  "y1": 1285.0,
+  "text": "Polymerase chain reaction is used in DNA amplification.",
+  "score": 0.9
+ },
+ {
+  "x0": 375.0,
+  "y0": 1299.0,
+  "x1": 552.0,
+  "y1": 1334.0,
+  "text": "Reason (R) :",
+  "score": 0.892
+ },
+ {
+  "x0": 377.0,
+  "y0": 1348.0,
+  "x1": 1445.0,
+  "y1": 1378.0,
+  "text": "The ampicillin resistant gene is used as a selectable marker to check transformation",
+  "score": 0.911
+ },
+ {
+  "x0": 376.0,
+  "y0": 1394.0,
+  "x1": 1579.0,
+  "y1": 1425.0,
+  "text": "In the light of the above statements, choose the correct answer from the options given below :",
+  "score": 0.93
+ },
+ {
+  "x0": 373.0,
+  "y0": 1440.0,
+  "x1": 417.0,
+  "y1": 1476.0,
+  "text": "(1)",
+  "score": 0.696
+ },
+ {
+  "x0": 440.0,
+  "y0": 1443.0,
+  "x1": 1311.0,
+  "y1": 1472.0,
+  "text": "Both (A) and (R) are correct and (R) is the correct explanation of (A)",
+  "score": 0.935
+ },
+ {
+  "x0": 375.0,
+  "y0": 1486.0,
+  "x1": 415.0,
+  "y1": 1521.0,
+  "text": "(2)",
+  "score": 0.749
+ },
+ {
+  "x0": 440.0,
+  "y0": 1487.0,
+  "x1": 1351.0,
+  "y1": 1518.0,
+  "text": "Both (A) and (R) are correct but (R) is not the correct explanation of (A)",
+  "score": 0.932
+ },
+ {
+  "x0": 375.0,
+  "y0": 1533.0,
+  "x1": 415.0,
+  "y1": 1567.0,
+  "text": "(3)",
+  "score": 0.748
+ },
+ {
+  "x0": 442.0,
+  "y0": 1535.0,
+  "x1": 879.0,
+  "y1": 1564.0,
+  "text": "(A) is correct but (R) is not correct",
+  "score": 0.92
+ },
+ {
+  "x0": 377.0,
+  "y0": 1582.0,
+  "x1": 417.0,
+  "y1": 1612.0,
+  "text": "(4)",
+  "score": 0.75
+ },
+ {
+  "x0": 440.0,
+  "y0": 1582.0,
+  "x1": 879.0,
+  "y1": 1611.0,
+  "text": "(A) is not correct but (R) is correct",
+  "score": 0.922
+ },
+ {
+  "x0": 374.0,
+  "y0": 1623.0,
+  "x1": 527.0,
+  "y1": 1660.0,
+  "text": "Answer (2)",
+  "score": 0.887
+ },
+ {
+  "x0": 287.0,
+  "y0": 1681.0,
+  "x1": 351.0,
+  "y1": 1713.0,
+  "text": "120.",
+  "score": 0.694
+ },
+ {
+  "x0": 372.0,
+  "y0": 1678.0,
+  "x1": 1096.0,
+  "y1": 1713.0,
+  "text": "The gaseous plant growth regulator is used in plants to :",
+  "score": 0.952
+ },
+ {
+  "x0": 375.0,
+  "y0": 1721.0,
+  "x1": 415.0,
+  "y1": 1755.0,
+  "text": "(1)",
+  "score": 0.743
+ },
+ {
+  "x0": 440.0,
+  "y0": 1722.0,
+  "x1": 821.0,
+  "y1": 1753.0,
+  "text": "speed up the malting process",
+  "score": 0.926
+ },
+ {
+  "x0": 375.0,
+  "y0": 1763.0,
+  "x1": 415.0,
+  "y1": 1798.0,
+  "text": "(2)",
+  "score": 0.749
+ },
+ {
+  "x0": 375.0,
+  "y0": 1805.0,
+  "x1": 415.0,
+  "y1": 1840.0,
+  "text": "(3)",
+  "score": 0.75
+ },
+ {
+  "x0": 441.0,
+  "y0": 1807.0,
+  "x1": 865.0,
+  "y1": 1836.0,
+  "text": "help overcome apical dominance",
+  "score": 0.884
+ },
+ {
+  "x0": 375.0,
+  "y0": 1848.0,
+  "x1": 415.0,
+  "y1": 1879.0,
+  "text": "(4)",
+  "score": 0.749
+ },
+ {
+  "x0": 438.0,
+  "y0": 1848.0,
+  "x1": 920.0,
+  "y1": 1876.0,
+  "text": "kill dicotyledonous weeds in the fields",
+  "score": 0.892
+ },
+ {
+  "x0": 375.0,
+  "y0": 1887.0,
+  "x1": 527.0,
+  "y1": 1921.0,
+  "text": "Answer (2)",
+  "score": 0.882
+ },
+ {
+  "x0": 287.0,
+  "y0": 1938.0,
+  "x1": 354.0,
+  "y1": 1970.0,
+  "text": "121.",
+  "score": 0.622
+ },
+ {
+  "x0": 372.0,
+  "y0": 1939.0,
+  "x1": 1676.0,
+  "y1": 1970.0,
+  "text": "The device which can remove particulate matter present in the exhaust from a thermal power plant is :",
+  "score": 0.935
+ },
+ {
+  "x0": 374.0,
+  "y0": 1985.0,
+  "x1": 420.0,
+  "y1": 2022.0,
+  "text": "(1)",
+  "score": 0.746
+ },
+ {
+  "x0": 438.0,
+  "y0": 1984.0,
+  "x1": 503.0,
+  "y1": 2017.0,
+  "text": "STP",
+  "score": 0.668
+ },
+ {
+  "x0": 1062.0,
+  "y0": 1985.0,
+  "x1": 1106.0,
+  "y1": 2021.0,
+  "text": "(2)",
+  "score": 0.749
+ },
+ {
+  "x0": 1126.0,
+  "y0": 1987.0,
+  "x1": 1268.0,
+  "y1": 2017.0,
+  "text": "Incinerator",
+  "score": 0.835
+ },
+ {
+  "x0": 376.0,
+  "y0": 2032.0,
+  "x1": 417.0,
+  "y1": 2066.0,
+  "text": "(3)",
+  "score": 0.749
+ },
+ {
+  "x0": 1061.0,
+  "y0": 2032.0,
+  "x1": 1106.0,
+  "y1": 2068.0,
+  "text": "(4)",
+  "score": 0.749
+ },
+ {
+  "x0": 439.0,
+  "y0": 2033.0,
+  "x1": 754.0,
+  "y1": 2064.0,
+  "text": "Electrostatic Precipitator",
+  "score": 0.868
+ },
+ {
+  "x0": 1126.0,
+  "y0": 2032.0,
+  "x1": 1375.0,
+  "y1": 2064.0,
+  "text": "Catalytic Convertor",
+  "score": 0.904
+ },
+ {
+  "x0": 374.0,
+  "y0": 2076.0,
+  "x1": 527.0,
+  "y1": 2112.0,
+  "text": "Answer (3)",
+  "score": 0.851
+ },
+ {
+  "x0": 976.0,
+  "y0": 2136.0,
+  "x1": 1049.0,
+  "y1": 2165.0,
+  "text": "- 24 -",
+  "score": 0.784
+ },
+ {
+  "x0": 1589.0,
+  "y0": 2311.0,
+  "x1": 1909.0,
+  "y1": 2369.0,
+  "text": "collegedunia",
+  "score": 0.881
+ },
+ {
+  "x0": 1591.0,
+  "y0": 2376.0,
+  "x1": 1913.0,
+  "y1": 2396.0,
+  "text": "India'slargestStudentReviewPlatform",
+  "score": 0.931
+ }
+]

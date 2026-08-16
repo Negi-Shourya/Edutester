@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link, Navigate } from 'react-router-dom';
-import { GraduationCap, Loader2, Lock, Zap, ShieldCheck, AlertCircle } from 'lucide-react';
+import { Loader2, Lock, Zap, ShieldCheck, AlertCircle } from 'lucide-react';
 import { useAuth } from '../context/auth-context';
 import GoogleIcon from '../components/GoogleIcon';
 import { setExam, type ExamType } from '../lib/exam';
@@ -56,9 +56,7 @@ export default function Signup() {
       <div className="relative w-full max-w-md">
         <div className="bg-white/80 backdrop-blur rounded-3xl shadow-xl shadow-primary/5 border border-white/60 p-8 sm:p-10">
           <div className="text-center mb-8">
-            <div className="w-16 h-16 bg-gradient-to-br from-primary to-primary-dark rounded-2xl flex items-center justify-center mx-auto mb-5 shadow-lg shadow-primary/25">
-              <GraduationCap className="w-8 h-8 text-white" />
-            </div>
+            <img src="/logo.png" alt="EduTester" className="w-16 h-16 object-contain mx-auto mb-5" />
             <h1 className="text-2xl font-bold text-gray-900">Create your account</h1>
             <p className="text-gray-500 mt-1.5">
               Start practicing on Edutester in seconds

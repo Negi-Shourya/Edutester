@@ -115,7 +115,17 @@ export default function NtaQuestionPaperModal({
                       className="p-2 border border-gray-200 rounded bg-gray-50 text-gray-800"
                     >
                       <span className="font-bold text-[#1b365d] mr-1">({opt.label})</span>{' '}
-                      <VectorText text={opt.text} />
+                      {opt.text ? (
+                        <VectorText text={opt.text} />
+                      ) : (
+                        opt.figureUrl && (
+                          <img
+                            src={opt.figureUrl}
+                            alt={`Option ${opt.label}`}
+                            className="max-h-64 max-w-full h-auto object-contain rounded-sm"
+                          />
+                        )
+                      )}
                     </div>
                   ))}
                 </div>

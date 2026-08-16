@@ -1,0 +1,1435 @@
+[
+  {
+    "section": "PHYSICS",
+    "number": 1,
+    "text": "Consider the following statements (A) and (B) and identify the correct answer. (A) A zener diode is connected in reverse bias, when used as a voltage regulator. (B) The potential barrier of p-n junction lies between 0.1 V to 0.3 V.",
+    "options": [
+      {
+        "label": "1",
+        "text": "(A) and (B) both are correct."
+      },
+      {
+        "label": "2",
+        "text": "(A) and (B) both are incorrect."
+      },
+      {
+        "label": "3",
+        "text": "(A) is correct and (B) is incorrect."
+      },
+      {
+        "label": "4",
+        "text": "(A) is incorrect but (B) is correct."
+      }
+    ],
+    "answers": [
+      "3"
+    ],
+    "solution": "",
+    "page": 2,
+    "images": []
+  },
+  {
+    "section": "PHYSICS",
+    "number": 2,
+    "text": "A capacitor of capacitance \u2018C\u2019, is connected across an ac source of voltage V, given by V=V_{0} sin\u03c9t The displacement current between the plates of the capacitor, would then be given by :",
+    "options": [
+      {
+        "label": "1",
+        "text": "Id=V_{0} \u03c9Ccos\u03c9t"
+      },
+      {
+        "label": "2",
+        "text": "Id=V_{0} cos \u03c9t \u03c9C"
+      },
+      {
+        "label": "3",
+        "text": "Id=V_{0} sin \u03c9t \u03c9C"
+      },
+      {
+        "label": "4",
+        "text": "Id=V_{0} \u03c9Csin\u03c9t"
+      }
+    ],
+    "answers": [
+      "1"
+    ],
+    "solution": "",
+    "page": 2,
+    "images": []
+  },
+  {
+    "section": "PHYSICS",
+    "number": 3,
+    "text": "A body is executing simple harmonic motion with frequency \u2018n\u2019, the frequency of its potential energy is :",
+    "options": [
+      {
+        "label": "1",
+        "text": "n"
+      },
+      {
+        "label": "2",
+        "text": "2n"
+      },
+      {
+        "label": "3",
+        "text": "3n"
+      },
+      {
+        "label": "4",
+        "text": "4n"
+      }
+    ],
+    "answers": [
+      "2"
+    ],
+    "solution": "",
+    "page": 2,
+    "images": []
+  },
+  {
+    "section": "PHYSICS",
+    "number": 4,
+    "text": "The equivalent capacitance of the combination shown in the figure is :",
+    "options": [
+      {
+        "label": "1",
+        "text": "3C"
+      },
+      {
+        "label": "2",
+        "text": "2C"
+      },
+      {
+        "label": "3",
+        "text": "\\frac{C}{2}"
+      },
+      {
+        "label": "4",
+        "text": "3\\frac{C}{2}"
+      }
+    ],
+    "answers": [
+      "2"
+    ],
+    "solution": "",
+    "page": 2,
+    "images": []
+  },
+  {
+    "section": "PHYSICS",
+    "number": 5,
+    "text": "Find the value of the angle of emergence from the prism. Refractive index of the glass is 3 .",
+    "options": [
+      {
+        "label": "1",
+        "text": "608"
+      },
+      {
+        "label": "2",
+        "text": "308"
+      },
+      {
+        "label": "3",
+        "text": "458"
+      },
+      {
+        "label": "4",
+        "text": "908"
+      }
+    ],
+    "answers": [
+      "1"
+    ],
+    "solution": "",
+    "page": 2,
+    "images": []
+  },
+  {
+    "section": "PHYSICS",
+    "number": 6,
+    "text": "A dipole is placed in an electric field as shown. In which direction will it move ?",
+    "options": [
+      {
+        "label": "1",
+        "text": "towards the left as its potential energy will increase."
+      },
+      {
+        "label": "2",
+        "text": "towards the right as its potential energy will decrease."
+      },
+      {
+        "label": "3",
+        "text": "towards the left as its potential energy will decrease."
+      },
+      {
+        "label": "4",
+        "text": "towards the right as its potential energy will increase."
+      }
+    ],
+    "answers": [
+      "2"
+    ],
+    "solution": "",
+    "page": 2,
+    "images": []
+  },
+  {
+    "section": "PHYSICS",
+    "number": 7,
+    "text": "Match Column - I and Column - II and choose the correct match from the given choices. \n| Column-I | Column-II |\n|---|---|\n| (A) Root mean square | (P)  1 nmv 2 speed of gas molecules 3 RT |\n| (B) Pressure exerted | (Q)  M by ideal gas |\n| (C) Average kinetic energy | (R)  RT of a molecule |\n| (D) Total internal energy | (S)  k BT of 1 mole of a diatomic gas |\n(1)\n| (A) - | (R) , |\n| (B) - | (P) , |\n| (C) - | (S) , |\n| (D) - | (Q) |\n(2)\n| (A) - | (Q) , |\n| (B) - | (R) , |\n| (C) - | (S) , |\n| (D) - | (P) |\n(3)\n| (A) - | (Q) , |\n| (B) - | (P) , |\n| (C) - | (S) , |\n| (D) - | (R) |\n(4)\n| (A) - | (R) , |\n| (B) - | (Q) , |\n| (C) - | (P) , |\n| (D) - | (S)  |",
+    "options": [],
+    "answers": [
+      "3"
+    ],
+    "solution": "",
+    "page": 2,
+    "images": []
+  },
+  {
+    "section": "PHYSICS",
+    "number": 8,
+    "text": "A convex lens \u2018A\u2019 of focal length 20 cm and a concave lens \u2018B\u2019 of focal length 5 cm are kept along the same axis with a distance \u2018d\u2019 between them. If a parallel beam of light falling on \u2018A\u2019 leaves \u2018B\u2019 as a parallel beam, then the distance \u2018d\u2019 in cm will be :",
+    "options": [
+      {
+        "label": "1",
+        "text": "25"
+      },
+      {
+        "label": "2",
+        "text": "15"
+      },
+      {
+        "label": "3",
+        "text": "50"
+      },
+      {
+        "label": "4",
+        "text": "30"
+      }
+    ],
+    "answers": [
+      "2"
+    ],
+    "solution": "",
+    "page": 3,
+    "images": []
+  },
+  {
+    "section": "PHYSICS",
+    "number": 9,
+    "text": "If force [ F ], acceleration [ A ] and time [ T ] are chosen as the fundamental physical quantities. Find the dimensions of energy.",
+    "options": [
+      {
+        "label": "1",
+        "text": "[ F ] [ A ] [ T ]"
+      },
+      {
+        "label": "2",
+        "text": "[ F ] [ A ] [ T_{2} ]"
+      },
+      {
+        "label": "3",
+        "text": "[ F ] [ A ] [ T\u22121 ]"
+      },
+      {
+        "label": "4",
+        "text": "[ F ] [ A\u22121 ] [ T ]"
+      }
+    ],
+    "answers": [
+      "2"
+    ],
+    "solution": "",
+    "page": 3,
+    "images": []
+  },
+  {
+    "section": "PHYSICS",
+    "number": 10,
+    "text": "A cup of coffee cools from 908C to 808C in t minutes, when the room temperature is 208C. The time taken by a similar cup of coffee to cool from 808C to 608C at a room temperature same at 208C is :",
+    "options": [
+      {
+        "label": "1",
+        "text": "t"
+      },
+      {
+        "label": "2",
+        "text": "t"
+      },
+      {
+        "label": "3",
+        "text": "t"
+      },
+      {
+        "label": "4",
+        "text": "t"
+      }
+    ],
+    "answers": [
+      "2"
+    ],
+    "solution": "",
+    "page": 3,
+    "images": []
+  },
+  {
+    "section": "PHYSICS",
+    "number": 11,
+    "text": "A particle is released from height S from the surface of the Earth. At a certain height its kinetic energy is three times its potential energy. The height from the surface of earth and the speed of the particle at that instant are respectively : S 3gS",
+    "options": [
+      {
+        "label": "1",
+        "text": ", S 3gS"
+      },
+      {
+        "label": "2",
+        "text": ", S 3gS"
+      },
+      {
+        "label": "3",
+        "text": ", S 3gS"
+      },
+      {
+        "label": "4",
+        "text": ","
+      }
+    ],
+    "answers": [
+      "4"
+    ],
+    "solution": "",
+    "page": 3,
+    "images": []
+  },
+  {
+    "section": "PHYSICS",
+    "number": 12,
+    "text": "The velocity of a small ball of mass M and density d, when dropped in a container filled with glycerine becomes constant after some time. If the density d of glycerine is , then the viscous force acting on the ball will be : Mg",
+    "options": [
+      {
+        "label": "1",
+        "text": ""
+      },
+      {
+        "label": "2",
+        "text": "Mg"
+      },
+      {
+        "label": "3",
+        "text": "Mg"
+      },
+      {
+        "label": "4",
+        "text": "2 Mg"
+      }
+    ],
+    "answers": [
+      "1"
+    ],
+    "solution": "",
+    "page": 3,
+    "images": []
+  },
+  {
+    "section": "PHYSICS",
+    "number": 13,
+    "text": "For a plane electromagnetic wave propagating in x-direction, which one of the following combination gives the correct possible directions for electric field (E) and magnetic field (B) respectively ? \u2227 \u2227 \u2227 \u2227",
+    "options": [
+      {
+        "label": "1",
+        "text": "j+k, j+k \u2227 \u2227 \u2227 \u2227"
+      },
+      {
+        "label": "2",
+        "text": "\u2212 j+k, \u2212 j\u2212k \u2227 \u2227 \u2227 \u2227"
+      },
+      {
+        "label": "3",
+        "text": "j+k, \u2212 j\u2212k \u2227 \u2227 \u2227 \u2227"
+      },
+      {
+        "label": "4",
+        "text": "\u2212 j+k, \u2212 j+k"
+      }
+    ],
+    "answers": [
+      "2"
+    ],
+    "solution": "",
+    "page": 3,
+    "images": []
+  },
+  {
+    "section": "PHYSICS",
+    "number": 14,
+    "text": "Column - I gives certain physical terms associated with flow of current through a metallic conductor. Column - II gives some mathematical relations involving electrical quantities. Match Column - I and Column - II with appropriate relations. \n| Column-I | Column-II |\n|---|---|\n m\n| (A) Drift Velocity | (P)  ne_{2} \u03c1 |\n| (B) Electrical Resistivity | (Q)  nevd eE |\n| (C) Relaxation Period | (R)  \u03c4 m E |\n| (D) Current Density | (S)  J |",
+    "options": [
+      {
+        "label": "1",
+        "text": "(A)-(R), (B)-(S), (C)-(P), (D)-(Q)"
+      },
+      {
+        "label": "2",
+        "text": "(A)-(R), (B)-(S), (C)-(Q), (D)-(P)"
+      },
+      {
+        "label": "3",
+        "text": "(A)-(R), (B)-(P), (C)-(S), (D)-(Q)"
+      },
+      {
+        "label": "4",
+        "text": "(A)-(R), (B)-(Q), (C)-(S), (D)-(P)"
+      }
+    ],
+    "answers": [
+      "1"
+    ],
+    "solution": "",
+    "page": 3,
+    "images": []
+  },
+  {
+    "section": "PHYSICS",
+    "number": 15,
+    "text": "A spring is stretched by 5 cm by a force 10 N. The time period of the oscillations when a mass of 2 kg is suspended by it is :",
+    "options": [
+      {
+        "label": "1",
+        "text": "0.0628 s"
+      },
+      {
+        "label": "2",
+        "text": "6.28 s"
+      },
+      {
+        "label": "3",
+        "text": "3.14 s"
+      },
+      {
+        "label": "4",
+        "text": "0.628 s"
+      }
+    ],
+    "answers": [
+      "4"
+    ],
+    "solution": "",
+    "page": 3,
+    "images": []
+  },
+  {
+    "section": "PHYSICS",
+    "number": 16,
+    "text": "A parallel plate capacitor has a uniform electric \u2192 field \u2018 E \u2019 in the space between the plates. If the distance between the plates is \u2018d\u2019 and the area of each plate is \u2018A\u2019, the energy stored in the capacitor is : (\\varepsilon_{0}=permittivity of free space) 1 2",
+    "options": [
+      {
+        "label": "1",
+        "text": "2 \u03b5 0E"
+      },
+      {
+        "label": "2",
+        "text": "\\varepsilon_{0}EAd 1 2"
+      },
+      {
+        "label": "3",
+        "text": "2 \\varepsilon_{0} E Ad E Ad"
+      },
+      {
+        "label": "4",
+        "text": "\\varepsilon_{0}"
+      }
+    ],
+    "answers": [
+      "3"
+    ],
+    "solution": "",
+    "page": 4,
+    "images": []
+  },
+  {
+    "section": "PHYSICS",
+    "number": 17,
+    "text": "An infinitely long straight conductor carries a current of 5 A as shown. An electron is moving with a speed of 10^{5} m/s parallel to the conductor. The perpendicular distance between the electron and the conductor is 20 cm at an instant. Calculate the magnitude of the force experienced by the electron at that instant.",
+    "options": [
+      {
+        "label": "1",
+        "text": "4 \\times 10\u221220 N"
+      },
+      {
+        "label": "2",
+        "text": "8\u03c0\u00d710\u221220 N"
+      },
+      {
+        "label": "3",
+        "text": "4\u03c0\u00d710\u221220 N"
+      },
+      {
+        "label": "4",
+        "text": "8 \\times 10\u221220 N"
+      }
+    ],
+    "answers": [
+      "4"
+    ],
+    "solution": "",
+    "page": 4,
+    "images": []
+  },
+  {
+    "section": "PHYSICS",
+    "number": 18,
+    "text": "A lens of large focal length and large aperture is best suited as an objective of an astronomical telescope since :",
+    "options": [
+      {
+        "label": "1",
+        "text": "a large aperture contributes to the quality and visibility of the images."
+      },
+      {
+        "label": "2",
+        "text": "a large area of the objective ensures better light gathering power."
+      },
+      {
+        "label": "3",
+        "text": "a large aperture provides a better resolution."
+      },
+      {
+        "label": "4",
+        "text": "all of the above. A"
+      }
+    ],
+    "answers": [
+      "4"
+    ],
+    "solution": "",
+    "page": 4,
+    "images": []
+  },
+  {
+    "section": "PHYSICS",
+    "number": 19,
+    "text": "A radioactive nucleus ZX undergoes spontaneous decay in the sequence AZ X \u2192 Z \u22121B \u2192 Z \u22123C \u2192 Z \u22122D , where Z is the atomic number of element X. The possible decay particles in the sequence are :",
+    "options": [
+      {
+        "label": "1",
+        "text": "\u03b1, \u03b2\u2212, \u03b2+"
+      },
+      {
+        "label": "2",
+        "text": "\u03b1, \u03b2+, \u03b2\u2212"
+      },
+      {
+        "label": "3",
+        "text": "\u03b2+, \u03b1, \u03b2\u2212"
+      },
+      {
+        "label": "4",
+        "text": "\u03b2\u2212, \u03b1, \u03b2+"
+      }
+    ],
+    "answers": [
+      "3"
+    ],
+    "solution": "",
+    "page": 4,
+    "images": []
+  },
+  {
+    "section": "PHYSICS",
+    "number": 20,
+    "text": "An inductor of inductance L, a capacitor of capacitance C and a resistor of resistance \u2018R\u2019 are connected in series to an ac source of potential difference \u2018V\u2019 volts as shown in figure. Potential difference across L, C and R is 40 V, 10 V and 40 V, respectively. The amplitude of current flowing through LCR series circuit is 10 2 A. The impedance of the circuit is :",
+    "options": [
+      {
+        "label": "1",
+        "text": "4 2 \u2126"
+      },
+      {
+        "label": "2",
+        "text": "5 2 \u2126"
+      },
+      {
+        "label": "3",
+        "text": "4 \u2126"
+      },
+      {
+        "label": "4",
+        "text": "5 \u2126"
+      }
+    ],
+    "answers": [
+      "4"
+    ],
+    "solution": "",
+    "page": 4,
+    "images": []
+  },
+  {
+    "section": "PHYSICS",
+    "number": 21,
+    "text": "The escape velocity from the Earth\u2019s surface is v. The escape velocity from the surface of another planet having a radius, four times that of Earth and same mass density is :",
+    "options": [
+      {
+        "label": "1",
+        "text": "v"
+      },
+      {
+        "label": "2",
+        "text": "2 v"
+      },
+      {
+        "label": "3",
+        "text": "3 v"
+      },
+      {
+        "label": "4",
+        "text": "4 v"
+      }
+    ],
+    "answers": [
+      "4"
+    ],
+    "solution": "",
+    "page": 4,
+    "images": []
+  },
+  {
+    "section": "PHYSICS",
+    "number": 22,
+    "text": "A screw gauge gives the following readings when used to measure the diameter of a wire Main scale reading : 0 mm Circular scale reading : 52 divisions Given that 1 mm on main scale corresponds to 10^{0} divisions on the circular scale. The diameter of the wire from the above data is :",
+    "options": [
+      {
+        "label": "1",
+        "text": "0.52 cm"
+      },
+      {
+        "label": "2",
+        "text": "0.026 cm"
+      },
+      {
+        "label": "3",
+        "text": "0.26 cm"
+      },
+      {
+        "label": "4",
+        "text": "0.052 cm"
+      }
+    ],
+    "answers": [
+      "4"
+    ],
+    "solution": "",
+    "page": 4,
+    "images": []
+  },
+  {
+    "section": "PHYSICS",
+    "number": 23,
+    "text": "Water falls from a height of 60 m at the rate of 15 kg/s to operate a turbine. The losses due to frictional force are 10% of the input energy. How much power is generated by the turbine ? (g=10 m/s_{2})",
+    "options": [
+      {
+        "label": "1",
+        "text": "10.2 kW"
+      },
+      {
+        "label": "2",
+        "text": "8.1 kW"
+      },
+      {
+        "label": "3",
+        "text": "12.3 kW"
+      },
+      {
+        "label": "4",
+        "text": "7.0 kW"
+      }
+    ],
+    "answers": [
+      "2"
+    ],
+    "solution": "",
+    "page": 4,
+    "images": []
+  },
+  {
+    "section": "PHYSICS",
+    "number": 24,
+    "text": "A small block slides down on a smooth inclined plane, starting from rest at time t=0. Let Sn be the distance travelled by the block in the interval Sn t=n\u22121 to t=n. Then, the ratio is : Sn +1 2n\u22121",
+    "options": [
+      {
+        "label": "1",
+        "text": "2n 2n\u22121"
+      },
+      {
+        "label": "2",
+        "text": "2n+1 2n+1"
+      },
+      {
+        "label": "3",
+        "text": "2n\u22121 2n"
+      },
+      {
+        "label": "4",
+        "text": "2n\u22121"
+      }
+    ],
+    "answers": [
+      "2"
+    ],
+    "solution": "",
+    "page": 5,
+    "images": []
+  },
+  {
+    "section": "PHYSICS",
+    "number": 25,
+    "text": "Polar molecules are the molecules :",
+    "options": [
+      {
+        "label": "1",
+        "text": "having zero dipole moment."
+      },
+      {
+        "label": "2",
+        "text": "acquire a dipole moment only in the presence of electric field due to displacement of charges."
+      },
+      {
+        "label": "3",
+        "text": "acquire a dipole moment only when magnetic field is absent."
+      },
+      {
+        "label": "4",
+        "text": "having a permanent electric dipole moment."
+      }
+    ],
+    "answers": [
+      "4"
+    ],
+    "solution": "",
+    "page": 5,
+    "images": []
+  },
+  {
+    "section": "PHYSICS",
+    "number": 26,
+    "text": "A thick current carrying cable of radius \u2018R\u2019 carries current \u2018I\u2019 uniformly distributed across its cross-section. The variation of magnetic field B(r) due to the cable with the distance \u2018r\u2019 from the axis of the cable is represented by :",
+    "options": [
+      {
+        "label": "1",
+        "text": ""
+      },
+      {
+        "label": "2",
+        "text": ""
+      },
+      {
+        "label": "3",
+        "text": ""
+      },
+      {
+        "label": "4",
+        "text": ""
+      }
+    ],
+    "answers": [
+      "3"
+    ],
+    "solution": "",
+    "page": 5,
+    "images": []
+  },
+  {
+    "section": "PHYSICS",
+    "number": 27,
+    "text": "In a potentiometer circuit a cell of EMF 1.5 V gives balance point at 36 cm length of wire. If another cell of EMF 2.5 V replaces the first cell, then at what length of the wire, the balance point occurs ?",
+    "options": [
+      {
+        "label": "1",
+        "text": "60 cm"
+      },
+      {
+        "label": "2",
+        "text": "21.6 cm"
+      },
+      {
+        "label": "3",
+        "text": "64 cm"
+      },
+      {
+        "label": "4",
+        "text": "62 cm"
+      }
+    ],
+    "answers": [
+      "1"
+    ],
+    "solution": "",
+    "page": 5,
+    "images": []
+  },
+  {
+    "section": "PHYSICS",
+    "number": 28,
+    "text": "Two charged spherical conductors of radius R_{1} and R_{2} are connected by a wire. Then the ratio of surface charge densities of the spheres (\u03c3_{1}/\u03c3_{2}) is : R_{1}",
+    "options": [
+      {
+        "label": "1",
+        "text": "R_{2} R_{2}"
+      },
+      {
+        "label": "2",
+        "text": "R_{1} R_{1}"
+      },
+      {
+        "label": "3",
+        "text": "R_{2} R_{1}"
+      },
+      {
+        "label": "4",
+        "text": "R_{2}2"
+      }
+    ],
+    "answers": [
+      "2"
+    ],
+    "solution": "",
+    "page": 5,
+    "images": []
+  },
+  {
+    "section": "PHYSICS",
+    "number": 29,
+    "text": "An electromagnetic wave of wavelength \u2018\u03bb\u2019 is incident on a photosensitive surface of negligible work function. If \u2018m\u2019 mass is of photoelectron emitted from the surface has de-Broglie wavelength \u03bbd, then : 2m 2",
+    "options": [
+      {
+        "label": "1",
+        "text": "\u03bb= \u03bbd hc"
+      },
+      {
+        "label": "2",
+        "text": "\u03bbd = 2mc \u03bb_{2} h 2mc 2"
+      },
+      {
+        "label": "3",
+        "text": "\u03bb= \u03bbd h 2h 2"
+      },
+      {
+        "label": "4",
+        "text": "\u03bb= \u03bbd mc"
+      }
+    ],
+    "answers": [
+      "3"
+    ],
+    "solution": "",
+    "page": 5,
+    "images": []
+  },
+  {
+    "section": "PHYSICS",
+    "number": 30,
+    "text": "The electron concentration in an n-type semiconductor is the same as hole concentration in a p-type semiconductor. An external field (electric) is applied across each of them. Compare the currents in them.",
+    "options": [
+      {
+        "label": "1",
+        "text": "current in n-type=current in p-type."
+      },
+      {
+        "label": "2",
+        "text": "current in p-type > current in n-type."
+      },
+      {
+        "label": "3",
+        "text": "current in n-type > current in p-type."
+      },
+      {
+        "label": "4",
+        "text": "No current will flow in p-type, current will only flow in n-type."
+      }
+    ],
+    "answers": [
+      "3"
+    ],
+    "solution": "",
+    "page": 5,
+    "images": []
+  },
+  {
+    "section": "PHYSICS",
+    "number": 31,
+    "text": "The number of photons per second on an average emitted by the source of monochromatic light of wavelength 600 nm, when it delivers the power of 3.3 \\times 10\u22123 watt will be : (h=6.6 \\times 10\u221234 Js)",
+    "options": [
+      {
+        "label": "1",
+        "text": "10^{18}"
+      },
+      {
+        "label": "2",
+        "text": "10^{17}"
+      },
+      {
+        "label": "3",
+        "text": "10^{16}"
+      },
+      {
+        "label": "4",
+        "text": "10^{15}"
+      }
+    ],
+    "answers": [
+      "3"
+    ],
+    "solution": "",
+    "page": 6,
+    "images": []
+  },
+  {
+    "section": "PHYSICS",
+    "number": 32,
+    "text": "If E and G respectively denote energy and E gravitational constant, then has the dimensions G of :",
+    "options": [
+      {
+        "label": "1",
+        "text": "[ M_{2} ] [ L\u22121 ] [ T_{0} ]"
+      },
+      {
+        "label": "2",
+        "text": "[ M ] [ L\u22121 ] [ T\u22121 ]"
+      },
+      {
+        "label": "3",
+        "text": "[ M ] [ L_{0} ] [ T_{0} ]"
+      },
+      {
+        "label": "4",
+        "text": "[ M_{2} ] [ L\u22122 ] [ T\u22121 ]"
+      }
+    ],
+    "answers": [
+      "1"
+    ],
+    "solution": "",
+    "page": 6,
+    "images": []
+  },
+  {
+    "section": "PHYSICS",
+    "number": 33,
+    "text": "The effective resistance of a parallel connection that consists of four wires of equal length, equal area of cross-section and same material is 0.25 \u2126. What will be the effective resistance if they are connected in series ?",
+    "options": [
+      {
+        "label": "1",
+        "text": "0.25 \u2126"
+      },
+      {
+        "label": "2",
+        "text": "0.5 \u2126"
+      },
+      {
+        "label": "3",
+        "text": "1 \u2126"
+      },
+      {
+        "label": "4",
+        "text": "4 \u2126"
+      }
+    ],
+    "answers": [
+      "4"
+    ],
+    "solution": "",
+    "page": 6,
+    "images": []
+  },
+  {
+    "section": "PHYSICS",
+    "number": 34,
+    "text": "The half-life of a radioactive nuclide is 10^{0} hours. The fraction of original activity that will remain after 150 hours would be :",
+    "options": [
+      {
+        "label": "1",
+        "text": "\\frac{1}{2}"
+      },
+      {
+        "label": "2",
+        "text": "2 2"
+      },
+      {
+        "label": "3",
+        "text": ""
+      },
+      {
+        "label": "4",
+        "text": "3 2"
+      }
+    ],
+    "answers": [
+      "2"
+    ],
+    "solution": "",
+    "page": 6,
+    "images": []
+  },
+  {
+    "section": "PHYSICS",
+    "number": 35,
+    "text": "A nucleus with mass number 240 breaks into two fragments each of mass number 120, the binding energy per nucleon of unfragmented nuclei is 7.6 MeV while that of fragments is 8.5 MeV. The total gain in the Binding Energy in the process is :",
+    "options": [
+      {
+        "label": "1",
+        "text": "0.9 MeV"
+      },
+      {
+        "label": "2",
+        "text": "9.4 MeV"
+      },
+      {
+        "label": "3",
+        "text": "804 MeV"
+      },
+      {
+        "label": "4",
+        "text": "216 MeV Section - B (Physics)"
+      }
+    ],
+    "answers": [
+      "4"
+    ],
+    "solution": "",
+    "page": 6,
+    "images": []
+  },
+  {
+    "section": "PHYSICS",
+    "number": 36,
+    "text": "Two conducting circular loops of radii R_{1} and R_{2} are placed in the same plane with their centres coinciding. If R_{1}> > R_{2} , the mutual inductance M between them will be directly proportional to : R_{1}",
+    "options": [
+      {
+        "label": "1",
+        "text": "R_{2} R_{2}"
+      },
+      {
+        "label": "2",
+        "text": "R_{1} R_{1}"
+      },
+      {
+        "label": "3",
+        "text": "R_{2} R_{2}"
+      },
+      {
+        "label": "4",
+        "text": "R_{1}"
+      }
+    ],
+    "answers": [
+      "4"
+    ],
+    "solution": "",
+    "page": 6,
+    "images": []
+  },
+  {
+    "section": "PHYSICS",
+    "number": 37,
+    "text": "In the product \u2192 \u2192 \u2192 F=q ( v \u00d7B ) \u2192 \u2227 \u2227 \u2227 =q v \u00d7( B i+B j+B_{0} k) \u2192 \u2227 \u2227 \u2227 For q=1 and v =2 i +4 j+6 k and \u2192 \u2227 \u2227 \u2227 F=4 i\u221220 j+12 k \u2192 What will be the complete expression for B ? \u2227 \u2227 \u2227",
+    "options": [
+      {
+        "label": "1",
+        "text": "\u22128 i\u22128 j\u22126 k \u2227 \u2227 \u2227"
+      },
+      {
+        "label": "2",
+        "text": "\u22126 i\u22126 j\u22128 k \u2227 \u2227 \u2227"
+      },
+      {
+        "label": "3",
+        "text": "8 i +8 j\u22126 k \u2227 \u2227 \u2227"
+      },
+      {
+        "label": "4",
+        "text": "6 i+6 j\u22128 k"
+      }
+    ],
+    "answers": [
+      "2"
+    ],
+    "solution": "",
+    "page": 6,
+    "images": []
+  },
+  {
+    "section": "PHYSICS",
+    "number": 38,
+    "text": "For the given circuit, the input digital signals are applied at the terminals A, B and C. What would be the output at the terminal y ?",
+    "options": [
+      {
+        "label": "1",
+        "text": ""
+      },
+      {
+        "label": "2",
+        "text": ""
+      },
+      {
+        "label": "3",
+        "text": ""
+      },
+      {
+        "label": "4",
+        "text": ""
+      }
+    ],
+    "answers": [
+      "3"
+    ],
+    "solution": "",
+    "page": 7,
+    "images": []
+  },
+  {
+    "section": "PHYSICS",
+    "number": 39,
+    "text": "A series LCR circuit containing 5.0 H inductor, 80 \u00b5F capacitor and 40 \u2126 resistor is connected to 230 V variable frequency ac source. The angular frequencies of the source at which power transferred to the circuit is half the power at the resonant angular frequency are likely to be :",
+    "options": [
+      {
+        "label": "1",
+        "text": "25 rad/s and 75 rad/s"
+      },
+      {
+        "label": "2",
+        "text": "50 rad/s and 25 rad/s"
+      },
+      {
+        "label": "3",
+        "text": "46 rad/s and 54 rad/s"
+      },
+      {
+        "label": "4",
+        "text": "42 rad/s and 58 rad/s"
+      }
+    ],
+    "answers": [
+      "3"
+    ],
+    "solution": "",
+    "page": 7,
+    "images": []
+  },
+  {
+    "section": "PHYSICS",
+    "number": 40,
+    "text": "A uniform rod of length 200 cm and mass 500 g is balanced on a wedge placed at 40 cm mark. A mass of 2 kg is suspended from the rod at 20 cm and another unknown mass \u2018m\u2019 is suspended from the rod at 160 cm mark as shown in the figure. Find the value of \u2018m\u2019 such that the rod is in equilibrium. (g=10 m/s_{2})",
+    "options": [
+      {
+        "label": "1",
+        "text": "kg"
+      },
+      {
+        "label": "2",
+        "text": "kg"
+      },
+      {
+        "label": "3",
+        "text": "kg"
+      },
+      {
+        "label": "4",
+        "text": "kg"
+      }
+    ],
+    "answers": [
+      "4"
+    ],
+    "solution": "",
+    "page": 7,
+    "images": []
+  },
+  {
+    "section": "PHYSICS",
+    "number": 41,
+    "text": "A point object is placed at a distance of 60 cm from a convex lens of focal length 30 cm. If a plane mirror were put perpendicular to the principal axis of the lens and at a distance of 40 cm from it, the final image would be formed at a distance of :",
+    "options": [
+      {
+        "label": "1",
+        "text": "20 cm from the lens, it would be a real image."
+      },
+      {
+        "label": "2",
+        "text": "30 cm from the lens, it would be a real image."
+      },
+      {
+        "label": "3",
+        "text": "30 cm from the plane mirror, it would be a virtual image."
+      },
+      {
+        "label": "4",
+        "text": "20 cm from the plane mirror, it would be a virtual image."
+      }
+    ],
+    "answers": [
+      "4"
+    ],
+    "solution": "",
+    "page": 7,
+    "images": []
+  },
+  {
+    "section": "PHYSICS",
+    "number": 42,
+    "text": "A car starts from rest and accelerates at 5 m/s_{2}. At t=4 s, a ball is dropped out of a window by a person sitting in the car. What is the velocity and acceleration of the ball at t=6 s ? (Take g=10 m/s_{2})",
+    "options": [
+      {
+        "label": "1",
+        "text": "20 m/s, 5 m/s_{2}"
+      },
+      {
+        "label": "2",
+        "text": "20 m/s, 0"
+      },
+      {
+        "label": "3",
+        "text": "20 2 m/s, 0"
+      },
+      {
+        "label": "4",
+        "text": "20 2 m/s, 10 m/s_{2}"
+      }
+    ],
+    "answers": [
+      "4"
+    ],
+    "solution": "",
+    "page": 7,
+    "images": []
+  },
+  {
+    "section": "PHYSICS",
+    "number": 43,
+    "text": "Twenty seven drops of same size are charged at 220 V each. They combine to form a bigger drop. Calculate the potential of the bigger drop.",
+    "options": [
+      {
+        "label": "1",
+        "text": "660 V"
+      },
+      {
+        "label": "2",
+        "text": "1320 V"
+      },
+      {
+        "label": "3",
+        "text": "1520 V"
+      },
+      {
+        "label": "4",
+        "text": "1980 V"
+      }
+    ],
+    "answers": [
+      "4"
+    ],
+    "solution": "",
+    "page": 8,
+    "images": []
+  },
+  {
+    "section": "PHYSICS",
+    "number": 44,
+    "text": "A uniform conducting wire of length 12a and resistance \u2018R\u2019 is wound up as a current carrying coil in the shape of, (i) an equilateral triangle of side \u2018a\u2019. (ii) a square of side \u2018a\u2019. The magnetic dipole moments of the coil in each case respectively are :",
+    "options": [
+      {
+        "label": "1",
+        "text": "3 Ia_{2} and 3 Ia_{2}"
+      },
+      {
+        "label": "2",
+        "text": "3 Ia_{2} and Ia_{2}"
+      },
+      {
+        "label": "3",
+        "text": "3 Ia_{2} and 4 Ia_{2}"
+      },
+      {
+        "label": "4",
+        "text": "4 Ia_{2} and 3 Ia_{2}"
+      }
+    ],
+    "answers": [
+      "1"
+    ],
+    "solution": "",
+    "page": 8,
+    "images": []
+  },
+  {
+    "section": "PHYSICS",
+    "number": 45,
+    "text": "A ball of mass 0.15 kg is dropped from a height 10 m, strikes the ground and rebounds to the same height. The magnitude of impulse imparted to the ball is (g=10 m/s_{2}) nearly :",
+    "options": [
+      {
+        "label": "1",
+        "text": "0 kg m/s"
+      },
+      {
+        "label": "2",
+        "text": "4.2 kg m/s"
+      },
+      {
+        "label": "3",
+        "text": "2.1 kg m/s"
+      },
+      {
+        "label": "4",
+        "text": "1.4 kg m/s"
+      }
+    ],
+    "answers": [
+      "2"
+    ],
+    "solution": "",
+    "page": 8,
+    "images": []
+  },
+  {
+    "section": "PHYSICS",
+    "number": 46,
+    "text": "A step down transformer connected to an ac mains supply of 220 V is made to operate at 11 V, 44 W lamp. Ignoring power losses in the transformer, what is the current in the primary circuit ?",
+    "options": [
+      {
+        "label": "1",
+        "text": "0.2 A"
+      },
+      {
+        "label": "2",
+        "text": "0.4 A"
+      },
+      {
+        "label": "3",
+        "text": "2 A"
+      },
+      {
+        "label": "4",
+        "text": "4 A"
+      }
+    ],
+    "answers": [
+      "1"
+    ],
+    "solution": "",
+    "page": 8,
+    "images": []
+  },
+  {
+    "section": "PHYSICS",
+    "number": 47,
+    "text": "A particle moving in a circle of radius R with a uniform speed takes a time T to complete one revolution. If this particle were projected with the same speed at an angle \u2018\u03b8\u2019 to the horizontal, the maximum height attained by it equals 4R. The angle of projection, \u03b8, is then given by :",
+    "options": [
+      {
+        "label": "1",
+        "text": "\u03b8=cos\u22121 \u03c0gT_{2} R_{2} 2"
+      },
+      {
+        "label": "2",
+        "text": "\u03b8=cos\u22121 \u03c0gT_{2} R_{2} 2"
+      },
+      {
+        "label": "3",
+        "text": "\u03b8=sin\u22121 \u03c0gT_{2} R_{2} 2"
+      },
+      {
+        "label": "4",
+        "text": "\u03b8=sin\u22121 2\u03c0g_{2}TR_{2} 2"
+      }
+    ],
+    "answers": [
+      "4"
+    ],
+    "solution": "",
+    "page": 8,
+    "images": []
+  },
+  {
+    "section": "PHYSICS",
+    "number": 48,
+    "text": "A particle of mass \u2018m\u2019 is projected with a velocity v=kVe(k < 1) from the surface of the earth. (Ve=escape velocity) The maximum height above the surface reached by the particle is : k",
+    "options": [
+      {
+        "label": "1",
+        "text": "R 1\u2212k k"
+      },
+      {
+        "label": "2",
+        "text": "R 1+k R k"
+      },
+      {
+        "label": "3",
+        "text": "1+k Rk_{2}"
+      },
+      {
+        "label": "4",
+        "text": "1\u2212k_{2}"
+      }
+    ],
+    "answers": [
+      "4"
+    ],
+    "solution": "",
+    "page": 8,
+    "images": []
+  },
+  {
+    "section": "PHYSICS",
+    "number": 49,
+    "text": "Three resistors having resistances r_{1}, r_{2} and r_{3} are connected as shown in the given circuit. The i_{3} ratio of currents in terms of resistances used i_{1} in the circuit is : r_{1}",
+    "options": [
+      {
+        "label": "1",
+        "text": "r_{2}+r_{3} r_{2}"
+      },
+      {
+        "label": "2",
+        "text": "r_{2}+r_{3} r_{1}"
+      },
+      {
+        "label": "3",
+        "text": "r_{1}+r_{2} r_{2}"
+      },
+      {
+        "label": "4",
+        "text": "r_{1}+r_{3}"
+      }
+    ],
+    "answers": [
+      "2"
+    ],
+    "solution": "",
+    "page": 9,
+    "images": []
+  },
+  {
+    "section": "PHYSICS",
+    "number": 50,
+    "text": "From a circular ring of mass \u2018M\u2019 and radius \u2018R\u2019 an arc corresponding to a 908 sector is removed. The moment of inertia of the remaining part of the ring about an axis passing through the centre of the ring and perpendicular to the plane of the ring is \u2018K\u2019 times \u2018MR_{2}\u2019. Then the value of \u2018K\u2019 is :",
+    "options": [
+      {
+        "label": "1",
+        "text": ""
+      },
+      {
+        "label": "2",
+        "text": ""
+      },
+      {
+        "label": "3",
+        "text": ""
+      },
+      {
+        "label": "4",
+        "text": "Section - A (Chemistry)"
+      }
+    ],
+    "answers": [
+      "1"
+    ],
+    "solution": "",
+    "page": 9,
+    "images": []
+  }
+]

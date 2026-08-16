@@ -1,0 +1,147 @@
+[
+  {
+    "section": "PHYSICS",
+    "number": 7,
+    "text": "Match Column - I and Column - II and choose the correct match from the given choices. \n| Column-I | Column-II |\n|---|---|\n| (A) Root mean square | (P) \\frac{1}{2} n m v^{2} speed of gas molecules 3 RT |\n| (B) Pressure exerted | (Q) M by ideal gas |\n| (C) Average kinetic energy | (R) RT of a molecule |\n| (D) Total internal energy | (S) k BT of 1 mole of a diatomic gas |",
+    "options": [
+      {
+        "label": "1",
+        "text": "(A) - (R), (B) - (P), (C) - (S), (D) - (Q)"
+      },
+      {
+        "label": "2",
+        "text": "(A) - (Q), (B) - (R), (C) - (S), (D) - (P)"
+      },
+      {
+        "label": "3",
+        "text": "(A) - (Q), (B) - (P), (C) - (S), (D) - (R)"
+      },
+      {
+        "label": "4",
+        "text": "(A) - (R), (B) - (Q), (C) - (P), (D) - (S)"
+      }
+    ],
+    "answers": [
+      "3"
+    ],
+    "solution": "",
+    "page": 2,
+    "images": []
+  },
+  {
+    "section": "PHYSICS",
+    "number": 14,
+    "text": "Column - I gives certain physical terms associated with flow of current through a metallic conductor. Column - II gives some mathematical relations involving electrical quantities. Match Column - I and Column - II with appropriate relations. \n| Column-I | Column-II |\n|---|---|\n m\n| (A) Drift Velocity | (P) ne_{2} \u03c1 |\n| (B) Electrical Resistivity | (Q) nevd eE |\n| (C) Relaxation Period | (R) \u03c4 m E |\n| (D) Current Density | (S) J |",
+    "options": [
+      {
+        "label": "1",
+        "text": "(A)-(R), (B)-(S), (C)-(P), (D)-(Q)"
+      },
+      {
+        "label": "2",
+        "text": "(A)-(R), (B)-(S), (C)-(Q), (D)-(P)"
+      },
+      {
+        "label": "3",
+        "text": "(A)-(R), (B)-(P), (C)-(S), (D)-(Q)"
+      },
+      {
+        "label": "4",
+        "text": "(A)-(R), (B)-(Q), (C)-(S), (D)-(P)"
+      }
+    ],
+    "answers": [
+      "1"
+    ],
+    "solution": "",
+    "page": 3,
+    "images": []
+  },
+  {
+    "section": "CHEMISTRY",
+    "number": 77,
+    "text": "Match List - I with List - II. \n| List-I | List-II |\n|---|---|\n| (a) PCl_{5} | (i)  Square pyramidal |\n| (b) SF_{6} | (ii)  Trigonal planar |\n| (c) BrF_{5} | (iii)  Octahedral |\n| (d) BF_{3} | (iv)  Trigonal bipyramidal Choose the correct answer from the options given below. |",
+    "options": [
+      {
+        "label": "1",
+        "text": "(a)-(iv), (b)-(iii), (c)-(i), (d)-(ii)"
+      },
+      {
+        "label": "2",
+        "text": "(a)-(ii), (b)-(iii), (c)-(iv), (d)-(i)"
+      },
+      {
+        "label": "3",
+        "text": "(a)-(iii), (b)-(i), (c)-(iv), (d)-(ii)"
+      },
+      {
+        "label": "4",
+        "text": "(a)-(iv), (b)-(iii), (c)-(ii), (d)-(i)"
+      }
+    ],
+    "answers": [
+      "1"
+    ],
+    "solution": "",
+    "page": 12,
+    "images": []
+  },
+  {
+    "section": "CHEMISTRY",
+    "number": 86,
+    "text": "Match List - I with List - II. \n| List-I | List-II |\n|---|---|\n| (a) 2SO_{2}(g)+O_{2}(g) \u2192 | (i)  Acid rain 2SO_{3}(g) |\n| (b) HOCl(g) h\u03bd \u2192 | (ii)  Smog i i OH+Cl |\n| (c) CaCO_{3}+H_{2}SO_{4}\u2192 | (iii)  Ozone CaSO_{4}+H_{2}O+CO_{2} depletion |\n| (d) NO_{2}(g) h\u03bd \u2192 | (iv)  Tropospheric NO(g)+O(g) pollution Choose the correct answer from the options given below. |",
+    "options": [
+      {
+        "label": "1",
+        "text": "(a)-(i), (b)-(ii), (c)-(iii), (d)-(iv)"
+      },
+      {
+        "label": "2",
+        "text": "(a)-(ii), (b)-(iii), (c)-(iv), (d)-(i)"
+      },
+      {
+        "label": "3",
+        "text": "(a)-(iv), (b)-(iii), (c)-(i), (d)-(ii)"
+      },
+      {
+        "label": "4",
+        "text": "(a)-(iii), (b)-(ii), (c)-(iv), (d)-(i)"
+      }
+    ],
+    "answers": [
+      "3"
+    ],
+    "solution": "",
+    "page": 13,
+    "images": []
+  },
+  {
+    "section": "CHEMISTRY",
+    "number": 89,
+    "text": "Match List - I with List - II. \n| List-I | List-II |\n|---|---|\n| (a) [Fe(CN)6]3\u2212 | (i)  5.92 BM |\n| (b) [Fe(H_{2}O)6]3+ | (ii)  0 BM |\n| (c) [Fe(CN)6]4\u2212 | (iii)  4.90 BM |\n| (d) [Fe(H_{2}O)6]2+ | (iv)  1.73 BM Choose the correct answer from the options given below. |",
+    "options": [
+      {
+        "label": "1",
+        "text": "(a)-(iv), (b)-(ii), (c)-(i), (d)-(iii)"
+      },
+      {
+        "label": "2",
+        "text": "(a)-(ii), (b)-(iv), (c)-(iii), (d)-(i)"
+      },
+      {
+        "label": "3",
+        "text": "(a)-(i), (b)-(iii), (c)-(iv), (d)-(ii)"
+      },
+      {
+        "label": "4",
+        "text": "(a)-(iv), (b)-(i), (c)-(ii), (d)-(iii)"
+      }
+    ],
+    "answers": [
+      "4"
+    ],
+    "solution": "",
+    "page": 14,
+    "images": []
+  }
+]

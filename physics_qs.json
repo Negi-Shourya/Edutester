@@ -1,0 +1,275 @@
+[
+  {
+    "section": "PHYSICS",
+    "number": 1,
+    "text": "Consider the following statements (A) and (B) and identify the correct answer. (A) A zener diode is connected in reverse bias, when used as a voltage regulator. (B) The potential barrier of p-n junction lies between 0.1 V to 0.3 V.",
+    "options": [
+      {
+        "label": "1",
+        "text": "(A) and (B) both are correct."
+      },
+      {
+        "label": "2",
+        "text": "(A) and (B) both are incorrect."
+      },
+      {
+        "label": "3",
+        "text": "(A) is correct and (B) is incorrect."
+      },
+      {
+        "label": "4",
+        "text": "(A) is incorrect but (B) is correct."
+      }
+    ],
+    "answers": [
+      "3"
+    ],
+    "solution": "",
+    "page": 2,
+    "images": []
+  },
+  {
+    "section": "PHYSICS",
+    "number": 2,
+    "text": "A capacitor of capacitance \u2018C\u2019, is connected across an ac source of voltage V, given by V=V_{0} sin\u03c9t The displacement current between the plates of the capacitor, would then be given by :",
+    "options": [
+      {
+        "label": "1",
+        "text": "Id=V_{0} \u03c9Ccos\u03c9t"
+      },
+      {
+        "label": "2",
+        "text": "Id=V_{0} cos \u03c9t \u03c9C"
+      },
+      {
+        "label": "3",
+        "text": "Id=V_{0} sin \u03c9t \u03c9C"
+      },
+      {
+        "label": "4",
+        "text": "Id=V_{0} \u03c9Csin\u03c9t"
+      }
+    ],
+    "answers": [
+      "1"
+    ],
+    "solution": "",
+    "page": 2,
+    "images": []
+  },
+  {
+    "section": "PHYSICS",
+    "number": 3,
+    "text": "A body is executing simple harmonic motion with frequency \u2018n\u2019, the frequency of its potential energy is :",
+    "options": [
+      {
+        "label": "1",
+        "text": "n"
+      },
+      {
+        "label": "2",
+        "text": "2n"
+      },
+      {
+        "label": "3",
+        "text": "3n"
+      },
+      {
+        "label": "4",
+        "text": "4n"
+      }
+    ],
+    "answers": [
+      "2"
+    ],
+    "solution": "",
+    "page": 2,
+    "images": []
+  },
+  {
+    "section": "PHYSICS",
+    "number": 4,
+    "text": "The equivalent capacitance of the combination shown in the figure is :",
+    "options": [
+      {
+        "label": "1",
+        "text": "3C"
+      },
+      {
+        "label": "2",
+        "text": "2C"
+      },
+      {
+        "label": "3",
+        "text": "\\frac{C}{2}"
+      },
+      {
+        "label": "4",
+        "text": "3\\frac{C}{2}"
+      }
+    ],
+    "answers": [
+      "2"
+    ],
+    "solution": "",
+    "page": 2,
+    "images": []
+  },
+  {
+    "section": "PHYSICS",
+    "number": 5,
+    "text": "Find the value of the angle of emergence from the prism. Refractive index of the glass is 3 .",
+    "options": [
+      {
+        "label": "1",
+        "text": "608"
+      },
+      {
+        "label": "2",
+        "text": "308"
+      },
+      {
+        "label": "3",
+        "text": "458"
+      },
+      {
+        "label": "4",
+        "text": "908"
+      }
+    ],
+    "answers": [
+      "1"
+    ],
+    "solution": "",
+    "page": 2,
+    "images": []
+  },
+  {
+    "section": "PHYSICS",
+    "number": 6,
+    "text": "A dipole is placed in an electric field as shown. In which direction will it move ?",
+    "options": [
+      {
+        "label": "1",
+        "text": "towards the left as its potential energy will increase."
+      },
+      {
+        "label": "2",
+        "text": "towards the right as its potential energy will decrease."
+      },
+      {
+        "label": "3",
+        "text": "towards the left as its potential energy will decrease."
+      },
+      {
+        "label": "4",
+        "text": "towards the right as its potential energy will increase."
+      }
+    ],
+    "answers": [
+      "2"
+    ],
+    "solution": "",
+    "page": 2,
+    "images": []
+  },
+  {
+    "section": "PHYSICS",
+    "number": 7,
+    "text": "Match Column - I and Column - II and choose the correct match from the given choices. \n| Column-I | Column-II |\n|---|---|\n| (A) Root mean square | (P)  1 nmv 2 speed of gas molecules 3 RT |\n| (B) Pressure exerted | (Q)  M by ideal gas |\n| (C) Average kinetic energy | (R)  RT of a molecule |\n| (D) Total internal energy | (S)  k BT of 1 mole of a diatomic gas |\n(1)\n| (A) - | (R) , |\n| (B) - | (P) , |\n| (C) - | (S) , |\n| (D) - | (Q) |\n(2)\n| (A) - | (Q) , |\n| (B) - | (R) , |\n| (C) - | (S) , |\n| (D) - | (P) |\n(3)\n| (A) - | (Q) , |\n| (B) - | (P) , |\n| (C) - | (S) , |\n| (D) - | (R) |\n(4)\n| (A) - | (R) , |\n| (B) - | (Q) , |\n| (C) - | (P) , |\n| (D) - | (S)  |",
+    "options": [],
+    "answers": [
+      "3"
+    ],
+    "solution": "",
+    "page": 2,
+    "images": []
+  },
+  {
+    "section": "PHYSICS",
+    "number": 8,
+    "text": "A convex lens \u2018A\u2019 of focal length 20 cm and a concave lens \u2018B\u2019 of focal length 5 cm are kept along the same axis with a distance \u2018d\u2019 between them. If a parallel beam of light falling on \u2018A\u2019 leaves \u2018B\u2019 as a parallel beam, then the distance \u2018d\u2019 in cm will be :",
+    "options": [
+      {
+        "label": "1",
+        "text": "25"
+      },
+      {
+        "label": "2",
+        "text": "15"
+      },
+      {
+        "label": "3",
+        "text": "50"
+      },
+      {
+        "label": "4",
+        "text": "30"
+      }
+    ],
+    "answers": [
+      "2"
+    ],
+    "solution": "",
+    "page": 3,
+    "images": []
+  },
+  {
+    "section": "PHYSICS",
+    "number": 9,
+    "text": "If force [ F ], acceleration [ A ] and time [ T ] are chosen as the fundamental physical quantities. Find the dimensions of energy.",
+    "options": [
+      {
+        "label": "1",
+        "text": "[ F ] [ A ] [ T ]"
+      },
+      {
+        "label": "2",
+        "text": "[ F ] [ A ] [ T_{2} ]"
+      },
+      {
+        "label": "3",
+        "text": "[ F ] [ A ] [ T\u22121 ]"
+      },
+      {
+        "label": "4",
+        "text": "[ F ] [ A\u22121 ] [ T ]"
+      }
+    ],
+    "answers": [
+      "2"
+    ],
+    "solution": "",
+    "page": 3,
+    "images": []
+  },
+  {
+    "section": "PHYSICS",
+    "number": 10,
+    "text": "A cup of coffee cools from 908C to 808C in t minutes, when the room temperature is 208C. The time taken by a similar cup of coffee to cool from 808C to 608C at a room temperature same at 208C is :",
+    "options": [
+      {
+        "label": "1",
+        "text": "t"
+      },
+      {
+        "label": "2",
+        "text": "t"
+      },
+      {
+        "label": "3",
+        "text": "t"
+      },
+      {
+        "label": "4",
+        "text": "t"
+      }
+    ],
+    "answers": [
+      "2"
+    ],
+    "solution": "",
+    "page": 3,
+    "images": []
+  }
+]

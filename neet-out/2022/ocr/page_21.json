@@ -1,0 +1,698 @@
+[
+ {
+  "x0": 922.0,
+  "y0": 181.0,
+  "x1": 1104.0,
+  "y1": 220.0,
+  "text": "BOTANY",
+  "score": 0.822
+ },
+ {
+  "x0": 962.0,
+  "y0": 286.0,
+  "x1": 1151.0,
+  "y1": 316.0,
+  "text": "SECTION-A",
+  "score": 0.895
+ },
+ {
+  "x0": 289.0,
+  "y0": 338.0,
+  "x1": 357.0,
+  "y1": 367.0,
+  "text": "101.",
+  "score": 0.727
+ },
+ {
+  "x0": 372.0,
+  "y0": 337.0,
+  "x1": 1179.0,
+  "y1": 370.0,
+  "text": "Which of the following is not a method of ex situ conservation?",
+  "score": 0.946
+ },
+ {
+  "x0": 372.0,
+  "y0": 377.0,
+  "x1": 679.0,
+  "y1": 417.0,
+  "text": "(1)  In vitro fertilization",
+  "score": 0.872
+ },
+ {
+  "x0": 1062.0,
+  "y0": 379.0,
+  "x1": 1106.0,
+  "y1": 415.0,
+  "text": "(2)",
+  "score": 0.75
+ },
+ {
+  "x0": 1124.0,
+  "y0": 382.0,
+  "x1": 1317.0,
+  "y1": 409.0,
+  "text": "National Parks",
+  "score": 0.889
+ },
+ {
+  "x0": 373.0,
+  "y0": 418.0,
+  "x1": 668.0,
+  "y1": 458.0,
+  "text": "(3)  Micropropagation",
+  "score": 0.893
+ },
+ {
+  "x0": 1061.0,
+  "y0": 421.0,
+  "x1": 1106.0,
+  "y1": 457.0,
+  "text": "(4)",
+  "score": 0.749
+ },
+ {
+  "x0": 1124.0,
+  "y0": 421.0,
+  "x1": 1349.0,
+  "y1": 454.0,
+  "text": "Cryopreservation",
+  "score": 0.88
+ },
+ {
+  "x0": 374.0,
+  "y0": 459.0,
+  "x1": 528.0,
+  "y1": 497.0,
+  "text": "Answer (2)",
+  "score": 0.863
+ },
+ {
+  "x0": 289.0,
+  "y0": 512.0,
+  "x1": 349.0,
+  "y1": 542.0,
+  "text": "102.",
+  "score": 0.745
+ },
+ {
+  "x0": 374.0,
+  "y0": 513.0,
+  "x1": 871.0,
+  "y1": 545.0,
+  "text": "Identify the correct set of statements :",
+  "score": 0.841
+ },
+ {
+  "x0": 375.0,
+  "y0": 555.0,
+  "x1": 415.0,
+  "y1": 589.0,
+  "text": "(a)",
+  "score": 0.749
+ },
+ {
+  "x0": 442.0,
+  "y0": 556.0,
+  "x1": 1419.0,
+  "y1": 585.0,
+  "text": "The leaflets are modified into pointed hard thorns in Citrus and Bougainvillea",
+  "score": 0.905
+ },
+ {
+  "x0": 375.0,
+  "y0": 597.0,
+  "x1": 414.0,
+  "y1": 631.0,
+  "text": "(b)",
+  "score": 0.742
+ },
+ {
+  "x0": 441.0,
+  "y0": 597.0,
+  "x1": 1447.0,
+  "y1": 626.0,
+  "text": "Axillary buds form slender and spirally coiled tendrils in cucumber and pumpkin",
+  "score": 0.901
+ },
+ {
+  "x0": 372.0,
+  "y0": 636.0,
+  "x1": 415.0,
+  "y1": 673.0,
+  "text": "(c)",
+  "score": 0.72
+ },
+ {
+  "x0": 441.0,
+  "y0": 639.0,
+  "x1": 1528.0,
+  "y1": 668.0,
+  "text": "Stem is flattened and fleshy in Opuntia and modified to perform the function of leaves",
+  "score": 0.894
+ },
+ {
+  "x0": 375.0,
+  "y0": 680.0,
+  "x1": 414.0,
+  "y1": 714.0,
+  "text": "(d)",
+  "score": 0.632
+ },
+ {
+  "x0": 441.0,
+  "y0": 678.0,
+  "x1": 1567.0,
+  "y1": 712.0,
+  "text": "Rhizophora shows vertically upward growing roots that help to get oxygen for respiration",
+  "score": 0.942
+ },
+ {
+  "x0": 377.0,
+  "y0": 723.0,
+  "x1": 413.0,
+  "y1": 753.0,
+  "text": "(e)",
+  "score": 0.649
+ },
+ {
+  "x0": 441.0,
+  "y0": 722.0,
+  "x1": 1507.0,
+  "y1": 752.0,
+  "text": "Subaerially growing stems in grasses and strawberry help in vegetative propagation",
+  "score": 0.942
+ },
+ {
+  "x0": 375.0,
+  "y0": 763.0,
+  "x1": 1131.0,
+  "y1": 794.0,
+  "text": "Choose the correct answer from the options given below :",
+  "score": 0.909
+ },
+ {
+  "x0": 374.0,
+  "y0": 804.0,
+  "x1": 645.0,
+  "y1": 840.0,
+  "text": "(1) (b) and (c) Only",
+  "score": 0.89
+ },
+ {
+  "x0": 1061.0,
+  "y0": 804.0,
+  "x1": 1333.0,
+  "y1": 841.0,
+  "text": "(2)  (a) and (d) Only",
+  "score": 0.894
+ },
+ {
+  "x0": 377.0,
+  "y0": 846.0,
+  "x1": 746.0,
+  "y1": 881.0,
+  "text": "(3)  (b), (c), (d) and (e) Only",
+  "score": 0.922
+ },
+ {
+  "x0": 1059.0,
+  "y0": 844.0,
+  "x1": 1436.0,
+  "y1": 884.0,
+  "text": "(4) (a), (b), (d) and (e) Only",
+  "score": 0.915
+ },
+ {
+  "x0": 374.0,
+  "y0": 884.0,
+  "x1": 528.0,
+  "y1": 922.0,
+  "text": "Answer (3)",
+  "score": 0.861
+ },
+ {
+  "x0": 288.0,
+  "y0": 936.0,
+  "x1": 354.0,
+  "y1": 968.0,
+  "text": "103.",
+  "score": 0.77
+ },
+ {
+  "x0": 374.0,
+  "y0": 938.0,
+  "x1": 796.0,
+  "y1": 966.0,
+  "text": "Given below are two statements:",
+  "score": 0.931
+ },
+ {
+  "x0": 375.0,
+  "y0": 979.0,
+  "x1": 1734.0,
+  "y1": 1011.0,
+  "text": "Statement l: Decomposition is a process in which the detritus is degraded into simpler substances by",
+  "score": 0.94
+ },
+ {
+  "x0": 376.0,
+  "y0": 1014.0,
+  "x1": 504.0,
+  "y1": 1043.0,
+  "text": "microbes.",
+  "score": 0.815
+ },
+ {
+  "x0": 376.0,
+  "y0": 1054.0,
+  "x1": 1354.0,
+  "y1": 1083.0,
+  "text": "Statement Il: Decomposition is faster if the detritus is rich in lignin and chitin.",
+  "score": 0.931
+ },
+ {
+  "x0": 375.0,
+  "y0": 1095.0,
+  "x1": 1574.0,
+  "y1": 1126.0,
+  "text": "In the light of the above statements, choose the correct answer from the options given below:",
+  "score": 0.923
+ },
+ {
+  "x0": 375.0,
+  "y0": 1137.0,
+  "x1": 415.0,
+  "y1": 1171.0,
+  "text": "(1)",
+  "score": 0.748
+ },
+ {
+  "x0": 441.0,
+  "y0": 1139.0,
+  "x1": 1041.0,
+  "y1": 1165.0,
+  "text": "Both Statement I and Statement Il are correct",
+  "score": 0.883
+ },
+ {
+  "x0": 375.0,
+  "y0": 1179.0,
+  "x1": 414.0,
+  "y1": 1214.0,
+  "text": "(2)",
+  "score": 0.749
+ },
+ {
+  "x0": 442.0,
+  "y0": 1181.0,
+  "x1": 1062.0,
+  "y1": 1207.0,
+  "text": "Both Statement I and Statement Il are incorrect",
+  "score": 0.879
+ },
+ {
+  "x0": 375.0,
+  "y0": 1220.0,
+  "x1": 414.0,
+  "y1": 1255.0,
+  "text": "(3)",
+  "score": 0.749
+ },
+ {
+  "x0": 443.0,
+  "y0": 1223.0,
+  "x1": 1091.0,
+  "y1": 1249.0,
+  "text": "StatementIis correct but Statement ll is incorrect",
+  "score": 0.878
+ },
+ {
+  "x0": 377.0,
+  "y0": 1264.0,
+  "x1": 413.0,
+  "y1": 1294.0,
+  "text": "(4)",
+  "score": 0.75
+ },
+ {
+  "x0": 442.0,
+  "y0": 1265.0,
+  "x1": 1092.0,
+  "y1": 1291.0,
+  "text": "StatementIis incorrectbut Statement ll is correct",
+  "score": 0.891
+ },
+ {
+  "x0": 375.0,
+  "y0": 1304.0,
+  "x1": 527.0,
+  "y1": 1338.0,
+  "text": "Answer (3)",
+  "score": 0.886
+ },
+ {
+  "x0": 288.0,
+  "y0": 1352.0,
+  "x1": 350.0,
+  "y1": 1385.0,
+  "text": "104.",
+  "score": 0.785
+ },
+ {
+  "x0": 376.0,
+  "y0": 1354.0,
+  "x1": 894.0,
+  "y1": 1384.0,
+  "text": "Hydrocolloid carrageen is obtained from:",
+  "score": 0.927
+ },
+ {
+  "x0": 374.0,
+  "y0": 1394.0,
+  "x1": 448.0,
+  "y1": 1431.0,
+  "text": "(1) ",
+  "score": 0.704
+ },
+ {
+  "x0": 435.0,
+  "y0": 1396.0,
+  "x1": 892.0,
+  "y1": 1428.0,
+  "text": "Chlorophyceae and Phaeophyceae",
+  "score": 0.922
+ },
+ {
+  "x0": 1062.0,
+  "y0": 1394.0,
+  "x1": 1105.0,
+  "y1": 1431.0,
+  "text": "(2)",
+  "score": 0.749
+ },
+ {
+  "x0": 1127.0,
+  "y0": 1396.0,
+  "x1": 1579.0,
+  "y1": 1428.0,
+  "text": "Phaeophyceae and Rhodophyceae",
+  "score": 0.921
+ },
+ {
+  "x0": 375.0,
+  "y0": 1436.0,
+  "x1": 700.0,
+  "y1": 1472.0,
+  "text": "(3)Rhodophyceae only",
+  "score": 0.92
+ },
+ {
+  "x0": 1063.0,
+  "y0": 1438.0,
+  "x1": 1105.0,
+  "y1": 1470.0,
+  "text": "(4) ",
+  "score": 0.644
+ },
+ {
+  "x0": 1124.0,
+  "y0": 1435.0,
+  "x1": 1380.0,
+  "y1": 1471.0,
+  "text": "Phaeophyceae only",
+  "score": 0.912
+ },
+ {
+  "x0": 376.0,
+  "y0": 1479.0,
+  "x1": 527.0,
+  "y1": 1510.0,
+  "text": "Answer (3)",
+  "score": 0.898
+ },
+ {
+  "x0": 288.0,
+  "y0": 1527.0,
+  "x1": 350.0,
+  "y1": 1556.0,
+  "text": "105.",
+  "score": 0.709
+ },
+ {
+  "x0": 372.0,
+  "y0": 1525.0,
+  "x1": 1498.0,
+  "y1": 1559.0,
+  "text": "Which one of the following plants shows vexillary aestivation and diadelphous stamens?",
+  "score": 0.935
+ },
+ {
+  "x0": 371.0,
+  "y0": 1564.0,
+  "x1": 726.0,
+  "y1": 1607.0,
+  "text": "(1) Colchicum autumnale",
+  "score": 0.917
+ },
+ {
+  "x0": 1062.0,
+  "y0": 1569.0,
+  "x1": 1113.0,
+  "y1": 1603.0,
+  "text": "(2) ",
+  "score": 0.708
+ },
+ {
+  "x0": 1124.0,
+  "y0": 1569.0,
+  "x1": 1320.0,
+  "y1": 1601.0,
+  "text": "Pisum sativum",
+  "score": 0.869
+ },
+ {
+  "x0": 375.0,
+  "y0": 1609.0,
+  "x1": 598.0,
+  "y1": 1646.0,
+  "text": "(3) Allium cepa",
+  "score": 0.877
+ },
+ {
+  "x0": 1061.0,
+  "y0": 1610.0,
+  "x1": 1106.0,
+  "y1": 1646.0,
+  "text": "(4)",
+  "score": 0.749
+ },
+ {
+  "x0": 1128.0,
+  "y0": 1614.0,
+  "x1": 1341.0,
+  "y1": 1641.0,
+  "text": "Solanum nigrum",
+  "score": 0.866
+ },
+ {
+  "x0": 374.0,
+  "y0": 1651.0,
+  "x1": 527.0,
+  "y1": 1687.0,
+  "text": "Answer (2)",
+  "score": 0.859
+ },
+ {
+  "x0": 288.0,
+  "y0": 1702.0,
+  "x1": 350.0,
+  "y1": 1731.0,
+  "text": "106.",
+  "score": 0.711
+ },
+ {
+  "x0": 372.0,
+  "y0": 1701.0,
+  "x1": 975.0,
+  "y1": 1732.0,
+  "text": "Which of the following is incorrectly matched?",
+  "score": 0.921
+ },
+ {
+  "x0": 376.0,
+  "y0": 1744.0,
+  "x1": 419.0,
+  "y1": 1777.0,
+  "text": "(1)",
+  "score": 0.739
+ },
+ {
+  "x0": 440.0,
+  "y0": 1745.0,
+  "x1": 777.0,
+  "y1": 1774.0,
+  "text": "Ectocarpus- Fucoxanthin",
+  "score": 0.936
+ },
+ {
+  "x0": 1063.0,
+  "y0": 1743.0,
+  "x1": 1103.0,
+  "y1": 1778.0,
+  "text": "(2)",
+  "score": 0.749
+ },
+ {
+  "x0": 1131.0,
+  "y0": 1745.0,
+  "x1": 1368.0,
+  "y1": 1772.0,
+  "text": "Uiothrix-Mannitol",
+  "score": 0.885
+ },
+ {
+  "x0": 374.0,
+  "y0": 1783.0,
+  "x1": 796.0,
+  "y1": 1822.0,
+  "text": "(3) Porphyra-Floridian Starch",
+  "score": 0.869
+ },
+ {
+  "x0": 1062.0,
+  "y0": 1785.0,
+  "x1": 1103.0,
+  "y1": 1819.0,
+  "text": "(4)",
+  "score": 0.726
+ },
+ {
+  "x0": 1129.0,
+  "y0": 1785.0,
+  "x1": 1331.0,
+  "y1": 1815.0,
+  "text": "Vo/vox - Starch",
+  "score": 0.834
+ },
+ {
+  "x0": 374.0,
+  "y0": 1822.0,
+  "x1": 528.0,
+  "y1": 1860.0,
+  "text": "Answer (2)",
+  "score": 0.857
+ },
+ {
+  "x0": 289.0,
+  "y0": 1876.0,
+  "x1": 353.0,
+  "y1": 1905.0,
+  "text": "107.",
+  "score": 0.692
+ },
+ {
+  "x0": 371.0,
+  "y0": 1875.0,
+  "x1": 1234.0,
+  "y1": 1907.0,
+  "text": "The process of translation of mRNA to proteins begins as soon as :",
+  "score": 0.929
+ },
+ {
+  "x0": 375.0,
+  "y0": 1917.0,
+  "x1": 415.0,
+  "y1": 1952.0,
+  "text": "(1)",
+  "score": 0.744
+ },
+ {
+  "x0": 441.0,
+  "y0": 1916.0,
+  "x1": 1071.0,
+  "y1": 1947.0,
+  "text": "The small subunit of ribosome encounters mRNA",
+  "score": 0.932
+ },
+ {
+  "x0": 375.0,
+  "y0": 1958.0,
+  "x1": 415.0,
+  "y1": 1993.0,
+  "text": "(2)",
+  "score": 0.75
+ },
+ {
+  "x0": 442.0,
+  "y0": 1960.0,
+  "x1": 1077.0,
+  "y1": 1990.0,
+  "text": "The larger subunit of ribosome encounters mRNA",
+  "score": 0.935
+ },
+ {
+  "x0": 375.0,
+  "y0": 2001.0,
+  "x1": 414.0,
+  "y1": 2036.0,
+  "text": "(3)",
+  "score": 0.749
+ },
+ {
+  "x0": 441.0,
+  "y0": 2002.0,
+  "x1": 1080.0,
+  "y1": 2032.0,
+  "text": "Both the subunits join together to bind with mRNA",
+  "score": 0.932
+ },
+ {
+  "x0": 375.0,
+  "y0": 2042.0,
+  "x1": 415.0,
+  "y1": 2076.0,
+  "text": "(4)",
+  "score": 0.75
+ },
+ {
+  "x0": 441.0,
+  "y0": 2042.0,
+  "x1": 1408.0,
+  "y1": 2073.0,
+  "text": "The tRNA is activated and the larger subunit of ribosome encounters mRNA",
+  "score": 0.915
+ },
+ {
+  "x0": 374.0,
+  "y0": 2079.0,
+  "x1": 527.0,
+  "y1": 2120.0,
+  "text": "Answer (1)",
+  "score": 0.847
+ },
+ {
+  "x0": 976.0,
+  "y0": 2137.0,
+  "x1": 1050.0,
+  "y1": 2166.0,
+  "text": "- 22 -",
+  "score": 0.788
+ },
+ {
+  "x0": 1589.0,
+  "y0": 2311.0,
+  "x1": 1909.0,
+  "y1": 2369.0,
+  "text": "collegedunia",
+  "score": 0.885
+ },
+ {
+  "x0": 1591.0,
+  "y0": 2376.0,
+  "x1": 1913.0,
+  "y1": 2396.0,
+  "text": "India'slargestStudentReviewPlatform",
+  "score": 0.931
+ }
+]

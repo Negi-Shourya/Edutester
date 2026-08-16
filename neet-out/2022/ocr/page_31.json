@@ -1,0 +1,626 @@
+[
+ {
+  "x0": 286.0,
+  "y0": 158.0,
+  "x1": 354.0,
+  "y1": 190.0,
+  "text": "160.",
+  "score": 0.695
+ },
+ {
+  "x0": 373.0,
+  "y0": 156.0,
+  "x1": 1740.0,
+  "y1": 188.0,
+  "text": "Under normal physiological conditions in human being every 1o0 ml of oxygenated blood can deliver",
+  "score": 0.922
+ },
+ {
+  "x0": 511.0,
+  "y0": 199.0,
+  "x1": 800.0,
+  "y1": 224.0,
+  "text": "ml of O2 to the tissues.",
+  "score": 0.865
+ },
+ {
+  "x0": 373.0,
+  "y0": 239.0,
+  "x1": 420.0,
+  "y1": 275.0,
+  "text": "(1)",
+  "score": 0.743
+ },
+ {
+  "x0": 432.0,
+  "y0": 239.0,
+  "x1": 501.0,
+  "y1": 272.0,
+  "text": "2 ml",
+  "score": 0.723
+ },
+ {
+  "x0": 1060.0,
+  "y0": 239.0,
+  "x1": 1107.0,
+  "y1": 276.0,
+  "text": "(2)",
+  "score": 0.749
+ },
+ {
+  "x0": 1123.0,
+  "y0": 239.0,
+  "x1": 1187.0,
+  "y1": 273.0,
+  "text": "5 ml",
+  "score": 0.72
+ },
+ {
+  "x0": 432.0,
+  "y0": 285.0,
+  "x1": 500.0,
+  "y1": 318.0,
+  "text": "4 ml",
+  "score": 0.71
+ },
+ {
+  "x0": 1059.0,
+  "y0": 285.0,
+  "x1": 1105.0,
+  "y1": 322.0,
+  "text": "(4)",
+  "score": 0.706
+ },
+ {
+  "x0": 375.0,
+  "y0": 287.0,
+  "x1": 419.0,
+  "y1": 320.0,
+  "text": "(3)",
+  "score": 0.699
+ },
+ {
+  "x0": 1122.0,
+  "y0": 285.0,
+  "x1": 1201.0,
+  "y1": 317.0,
+  "text": "10 ml",
+  "score": 0.781
+ },
+ {
+  "x0": 373.0,
+  "y0": 334.0,
+  "x1": 525.0,
+  "y1": 365.0,
+  "text": "Answer (2)",
+  "score": 0.879
+ },
+ {
+  "x0": 289.0,
+  "y0": 389.0,
+  "x1": 354.0,
+  "y1": 418.0,
+  "text": "161.",
+  "score": 0.781
+ },
+ {
+  "x0": 372.0,
+  "y0": 384.0,
+  "x1": 1720.0,
+  "y1": 416.0,
+  "text": "Given below are two statements : one is labelled as Assertion (A) and the other is labelled as Reason (R).",
+  "score": 0.944
+ },
+ {
+  "x0": 374.0,
+  "y0": 433.0,
+  "x1": 1428.0,
+  "y1": 462.0,
+  "text": "Assertion (A) : All vertebrates are chordates but all chordates are not vertebrates.",
+  "score": 0.9
+ },
+ {
+  "x0": 376.0,
+  "y0": 479.0,
+  "x1": 1400.0,
+  "y1": 508.0,
+  "text": "Reason (R) : Notochord is replaced by vertebral column in the adult vertebrates.",
+  "score": 0.935
+ },
+ {
+  "x0": 374.0,
+  "y0": 525.0,
+  "x1": 1703.0,
+  "y1": 554.0,
+  "text": "In the light of the above statements, choose the most appropriate answer from the option given below :",
+  "score": 0.905
+ },
+ {
+  "x0": 374.0,
+  "y0": 570.0,
+  "x1": 415.0,
+  "y1": 604.0,
+  "text": "(1)",
+  "score": 0.729
+ },
+ {
+  "x0": 438.0,
+  "y0": 569.0,
+  "x1": 1312.0,
+  "y1": 603.0,
+  "text": "Both (A) and (R) are correct and (R) is the correct explanation of (A)",
+  "score": 0.921
+ },
+ {
+  "x0": 374.0,
+  "y0": 616.0,
+  "x1": 415.0,
+  "y1": 649.0,
+  "text": "(2)",
+  "score": 0.7
+ },
+ {
+  "x0": 440.0,
+  "y0": 614.0,
+  "x1": 1350.0,
+  "y1": 648.0,
+  "text": "Both (A) and (R) are correct but (R) is not the correct explanation of (A)",
+  "score": 0.944
+ },
+ {
+  "x0": 374.0,
+  "y0": 662.0,
+  "x1": 414.0,
+  "y1": 695.0,
+  "text": "(3)",
+  "score": 0.75
+ },
+ {
+  "x0": 441.0,
+  "y0": 663.0,
+  "x1": 878.0,
+  "y1": 693.0,
+  "text": "(A) is correct but (R) is not correct",
+  "score": 0.916
+ },
+ {
+  "x0": 376.0,
+  "y0": 709.0,
+  "x1": 421.0,
+  "y1": 740.0,
+  "text": "(4)",
+  "score": 0.749
+ },
+ {
+  "x0": 427.0,
+  "y0": 709.0,
+  "x1": 878.0,
+  "y1": 739.0,
+  "text": "(A) is not correct but (R) is correct",
+  "score": 0.931
+ },
+ {
+  "x0": 372.0,
+  "y0": 753.0,
+  "x1": 525.0,
+  "y1": 787.0,
+  "text": "Answer (1)",
+  "score": 0.879
+ },
+ {
+  "x0": 287.0,
+  "y0": 808.0,
+  "x1": 350.0,
+  "y1": 840.0,
+  "text": "162.",
+  "score": 0.745
+ },
+ {
+  "x0": 372.0,
+  "y0": 806.0,
+  "x1": 1007.0,
+  "y1": 836.0,
+  "text": "Which of the following is not a connective tissue?",
+  "score": 0.911
+ },
+ {
+  "x0": 371.0,
+  "y0": 848.0,
+  "x1": 523.0,
+  "y1": 889.0,
+  "text": "(1) Blood",
+  "score": 0.863
+ },
+ {
+  "x0": 1059.0,
+  "y0": 849.0,
+  "x1": 1319.0,
+  "y1": 889.0,
+  "text": "(2) Adipose tissue",
+  "score": 0.925
+ },
+ {
+  "x0": 372.0,
+  "y0": 895.0,
+  "x1": 561.0,
+  "y1": 935.0,
+  "text": "(3) Cartilage",
+  "score": 0.855
+ },
+ {
+  "x0": 1058.0,
+  "y0": 891.0,
+  "x1": 1255.0,
+  "y1": 935.0,
+  "text": "(4)  Neuroglia",
+  "score": 0.892
+ },
+ {
+  "x0": 372.0,
+  "y0": 943.0,
+  "x1": 526.0,
+  "y1": 977.0,
+  "text": "Answer (4)",
+  "score": 0.843
+ },
+ {
+  "x0": 287.0,
+  "y0": 999.0,
+  "x1": 350.0,
+  "y1": 1031.0,
+  "text": "163.",
+  "score": 0.739
+ },
+ {
+  "x0": 371.0,
+  "y0": 995.0,
+  "x1": 1184.0,
+  "y1": 1029.0,
+  "text": "Nitrogenous waste is excreted in the form of pellet or paste by :",
+  "score": 0.921
+ },
+ {
+  "x0": 373.0,
+  "y0": 1051.0,
+  "x1": 425.0,
+  "y1": 1086.0,
+  "text": "(1)",
+  "score": 0.688
+ },
+ {
+  "x0": 423.0,
+  "y0": 1051.0,
+  "x1": 654.0,
+  "y1": 1081.0,
+  "text": "Ornithorhynchus",
+  "score": 0.921
+ },
+ {
+  "x0": 1060.0,
+  "y0": 1049.0,
+  "x1": 1105.0,
+  "y1": 1086.0,
+  "text": "(2)",
+  "score": 0.749
+ },
+ {
+  "x0": 1127.0,
+  "y0": 1051.0,
+  "x1": 1285.0,
+  "y1": 1081.0,
+  "text": "Salamandra",
+  "score": 0.855
+ },
+ {
+  "x0": 370.0,
+  "y0": 1103.0,
+  "x1": 624.0,
+  "y1": 1146.0,
+  "text": "(3) Hippocampus",
+  "score": 0.902
+ },
+ {
+  "x0": 1060.0,
+  "y0": 1105.0,
+  "x1": 1105.0,
+  "y1": 1142.0,
+  "text": "(4)",
+  "score": 0.748
+ },
+ {
+  "x0": 1123.0,
+  "y0": 1104.0,
+  "x1": 1199.0,
+  "y1": 1140.0,
+  "text": "Pavo",
+  "score": 0.719
+ },
+ {
+  "x0": 372.0,
+  "y0": 1161.0,
+  "x1": 525.0,
+  "y1": 1197.0,
+  "text": "Answer (4)",
+  "score": 0.855
+ },
+ {
+  "x0": 286.0,
+  "y0": 1228.0,
+  "x1": 350.0,
+  "y1": 1260.0,
+  "text": "164.",
+  "score": 0.71
+ },
+ {
+  "x0": 373.0,
+  "y0": 1225.0,
+  "x1": 1108.0,
+  "y1": 1256.0,
+  "text": "Regarding Meiosis, which of the statements is incorrect?",
+  "score": 0.933
+ },
+ {
+  "x0": 372.0,
+  "y0": 1280.0,
+  "x1": 419.0,
+  "y1": 1317.0,
+  "text": "(1)",
+  "score": 0.745
+ },
+ {
+  "x0": 437.0,
+  "y0": 1281.0,
+  "x1": 1060.0,
+  "y1": 1312.0,
+  "text": "There are two stages in Meiosis, Meiosis-l and Il",
+  "score": 0.917
+ },
+ {
+  "x0": 374.0,
+  "y0": 1338.0,
+  "x1": 415.0,
+  "y1": 1372.0,
+  "text": "(2)",
+  "score": 0.73
+ },
+ {
+  "x0": 440.0,
+  "y0": 1339.0,
+  "x1": 1043.0,
+  "y1": 1368.0,
+  "text": "DNA replication occurs in S phase of Meiosis-ll",
+  "score": 0.92
+ },
+ {
+  "x0": 373.0,
+  "y0": 1392.0,
+  "x1": 416.0,
+  "y1": 1429.0,
+  "text": "(3)",
+  "score": 0.749
+ },
+ {
+  "x0": 437.0,
+  "y0": 1394.0,
+  "x1": 1409.0,
+  "y1": 1425.0,
+  "text": "Pairing of homologous chromosomes and recombination occurs in Meiosis-l",
+  "score": 0.941
+ },
+ {
+  "x0": 375.0,
+  "y0": 1450.0,
+  "x1": 419.0,
+  "y1": 1481.0,
+  "text": "(4)",
+  "score": 0.749
+ },
+ {
+  "x0": 426.0,
+  "y0": 1448.0,
+  "x1": 1115.0,
+  "y1": 1480.0,
+  "text": "Four haploid cells are formed at the end of Meiosis-ll",
+  "score": 0.907
+ },
+ {
+  "x0": 371.0,
+  "y0": 1501.0,
+  "x1": 526.0,
+  "y1": 1540.0,
+  "text": "Answer (2)",
+  "score": 0.855
+ },
+ {
+  "x0": 288.0,
+  "y0": 1571.0,
+  "x1": 353.0,
+  "y1": 1600.0,
+  "text": "165.",
+  "score": 0.669
+ },
+ {
+  "x0": 369.0,
+  "y0": 1566.0,
+  "x1": 1737.0,
+  "y1": 1598.0,
+  "text": "In an E. Coli strain i gene gets mutated and its product can not bind the inducer molecule. If growth medium",
+  "score": 0.927
+ },
+ {
+  "x0": 373.0,
+  "y0": 1616.0,
+  "x1": 1023.0,
+  "y1": 1647.0,
+  "text": "is provided with lactose, what will be the outcome?",
+  "score": 0.939
+ },
+ {
+  "x0": 374.0,
+  "y0": 1673.0,
+  "x1": 417.0,
+  "y1": 1706.0,
+  "text": "(1)",
+  "score": 0.744
+ },
+ {
+  "x0": 438.0,
+  "y0": 1674.0,
+  "x1": 842.0,
+  "y1": 1704.0,
+  "text": "Only z gene will get transcribed",
+  "score": 0.906
+ },
+ {
+  "x0": 372.0,
+  "y0": 1726.0,
+  "x1": 417.0,
+  "y1": 1764.0,
+  "text": "(2)",
+  "score": 0.75
+ },
+ {
+  "x0": 437.0,
+  "y0": 1728.0,
+  "x1": 843.0,
+  "y1": 1762.0,
+  "text": "Z, y, a genes will be transcribed",
+  "score": 0.888
+ },
+ {
+  "x0": 373.0,
+  "y0": 1783.0,
+  "x1": 416.0,
+  "y1": 1820.0,
+  "text": "(3)",
+  "score": 0.749
+ },
+ {
+  "x0": 437.0,
+  "y0": 1784.0,
+  "x1": 877.0,
+  "y1": 1818.0,
+  "text": "z, y, a genes will not be translated",
+  "score": 0.882
+ },
+ {
+  "x0": 374.0,
+  "y0": 1841.0,
+  "x1": 415.0,
+  "y1": 1874.0,
+  "text": "(4)",
+  "score": 0.665
+ },
+ {
+  "x0": 438.0,
+  "y0": 1843.0,
+  "x1": 1030.0,
+  "y1": 1871.0,
+  "text": "RNA polymerase will bind the promoter region",
+  "score": 0.898
+ },
+ {
+  "x0": 374.0,
+  "y0": 1897.0,
+  "x1": 525.0,
+  "y1": 1928.0,
+  "text": "Answer (3)",
+  "score": 0.761
+ },
+ {
+  "x0": 287.0,
+  "y0": 1961.0,
+  "x1": 347.0,
+  "y1": 1991.0,
+  "text": "166.",
+  "score": 0.555
+ },
+ {
+  "x0": 372.0,
+  "y0": 1958.0,
+  "x1": 1286.0,
+  "y1": 1988.0,
+  "text": "Which of the following is a correct match for disease and its symptoms?",
+  "score": 0.912
+ },
+ {
+  "x0": 374.0,
+  "y0": 2008.0,
+  "x1": 417.0,
+  "y1": 2040.0,
+  "text": "(1)",
+  "score": 0.705
+ },
+ {
+  "x0": 433.0,
+  "y0": 2007.0,
+  "x1": 779.0,
+  "y1": 2038.0,
+  "text": "Arthritis - Inflammed joints",
+  "score": 0.919
+ },
+ {
+  "x0": 373.0,
+  "y0": 2056.0,
+  "x1": 416.0,
+  "y1": 2093.0,
+  "text": "(2)",
+  "score": 0.75
+ },
+ {
+  "x0": 434.0,
+  "y0": 2056.0,
+  "x1": 1048.0,
+  "y1": 2089.0,
+  "text": "Tetany - High Ca?+ level causing rapid spasms.",
+  "score": 0.901
+ },
+ {
+  "x0": 375.0,
+  "y0": 2107.0,
+  "x1": 415.0,
+  "y1": 2141.0,
+  "text": "(3)",
+  "score": 0.749
+ },
+ {
+  "x0": 436.0,
+  "y0": 2107.0,
+  "x1": 1622.0,
+  "y1": 2139.0,
+  "text": "Myasthenia gravis - Genetic disorder resulting in weakening and paralysis of skeletal muscle",
+  "score": 0.931
+ },
+ {
+  "x0": 375.0,
+  "y0": 2157.0,
+  "x1": 420.0,
+  "y1": 2188.0,
+  "text": "(4)",
+  "score": 0.749
+ },
+ {
+  "x0": 371.0,
+  "y0": 2203.0,
+  "x1": 526.0,
+  "y1": 2240.0,
+  "text": "Answer (1)",
+  "score": 0.834
+ },
+ {
+  "x0": 1590.0,
+  "y0": 2313.0,
+  "x1": 1908.0,
+  "y1": 2366.0,
+  "text": "collegedunia",
+  "score": 0.845
+ },
+ {
+  "x0": 1591.0,
+  "y0": 2376.0,
+  "x1": 1913.0,
+  "y1": 2396.0,
+  "text": "India'slargestStudentReviewPlatform",
+  "score": 0.94
+ }
+]

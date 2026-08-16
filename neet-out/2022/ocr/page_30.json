@@ -1,0 +1,546 @@
+[
+ {
+  "x0": 286.0,
+  "y0": 159.0,
+  "x1": 351.0,
+  "y1": 191.0,
+  "text": "156.",
+  "score": 0.663
+ },
+ {
+  "x0": 372.0,
+  "y0": 161.0,
+  "x1": 1640.0,
+  "y1": 192.0,
+  "text": "Which of the following statements are true for spermatogenesis but do not hold true for Oogenesis?",
+  "score": 0.918
+ },
+ {
+  "x0": 374.0,
+  "y0": 212.0,
+  "x1": 415.0,
+  "y1": 245.0,
+  "text": "(a)",
+  "score": 0.749
+ },
+ {
+  "x0": 437.0,
+  "y0": 212.0,
+  "x1": 1009.0,
+  "y1": 243.0,
+  "text": "It results in the formation of haploid gametes",
+  "score": 0.909
+ },
+ {
+  "x0": 372.0,
+  "y0": 263.0,
+  "x1": 417.0,
+  "y1": 299.0,
+  "text": "(b)",
+  "score": 0.716
+ },
+ {
+  "x0": 438.0,
+  "y0": 264.0,
+  "x1": 1247.0,
+  "y1": 294.0,
+  "text": "Differentiation of gamete occurs after the completion of meiosis",
+  "score": 0.923
+ },
+ {
+  "x0": 373.0,
+  "y0": 314.0,
+  "x1": 413.0,
+  "y1": 349.0,
+  "text": "(c)",
+  "score": 0.723
+ },
+ {
+  "x0": 439.0,
+  "y0": 315.0,
+  "x1": 1357.0,
+  "y1": 346.0,
+  "text": "Meiosis occurs continuously in a mitotically dividing stem cell population",
+  "score": 0.937
+ },
+ {
+  "x0": 373.0,
+  "y0": 365.0,
+  "x1": 417.0,
+  "y1": 401.0,
+  "text": "(d)",
+  "score": 0.747
+ },
+ {
+  "x0": 437.0,
+  "y0": 405.0,
+  "x1": 646.0,
+  "y1": 439.0,
+  "text": "anterior pituitary",
+  "score": 0.916
+ },
+ {
+  "x0": 376.0,
+  "y0": 461.0,
+  "x1": 421.0,
+  "y1": 488.0,
+  "text": "(e)",
+  "score": 0.709
+ },
+ {
+  "x0": 413.0,
+  "y0": 456.0,
+  "x1": 727.0,
+  "y1": 489.0,
+  "text": "It is initiated at puberty",
+  "score": 0.927
+ },
+ {
+  "x0": 375.0,
+  "y0": 561.0,
+  "x1": 417.0,
+  "y1": 593.0,
+  "text": "(1)",
+  "score": 0.747
+ },
+ {
+  "x0": 437.0,
+  "y0": 561.0,
+  "x1": 637.0,
+  "y1": 594.0,
+  "text": "(c) and (e) only",
+  "score": 0.919
+ },
+ {
+  "x0": 375.0,
+  "y0": 611.0,
+  "x1": 415.0,
+  "y1": 644.0,
+  "text": "(2)",
+  "score": 0.748
+ },
+ {
+  "x0": 437.0,
+  "y0": 609.0,
+  "x1": 637.0,
+  "y1": 645.0,
+  "text": "(b) and (c) only",
+  "score": 0.862
+ },
+ {
+  "x0": 375.0,
+  "y0": 663.0,
+  "x1": 416.0,
+  "y1": 696.0,
+  "text": "(3)",
+  "score": 0.749
+ },
+ {
+  "x0": 438.0,
+  "y0": 664.0,
+  "x1": 688.0,
+  "y1": 694.0,
+  "text": "(b), (d) and (e) only",
+  "score": 0.904
+ },
+ {
+  "x0": 377.0,
+  "y0": 716.0,
+  "x1": 418.0,
+  "y1": 744.0,
+  "text": "(4)",
+  "score": 0.749
+ },
+ {
+  "x0": 438.0,
+  "y0": 715.0,
+  "x1": 686.0,
+  "y1": 745.0,
+  "text": "(b), (c) and (e) only",
+  "score": 0.855
+ },
+ {
+  "x0": 372.0,
+  "y0": 761.0,
+  "x1": 527.0,
+  "y1": 797.0,
+  "text": "Answer (4)",
+  "score": 0.836
+ },
+ {
+  "x0": 288.0,
+  "y0": 822.0,
+  "x1": 379.0,
+  "y1": 853.0,
+  "text": "157.",
+  "score": 0.753
+ },
+ {
+  "x0": 362.0,
+  "y0": 825.0,
+  "x1": 1733.0,
+  "y1": 859.0,
+  "text": "Given below are two statements : one is labelled as Assertion (A) and the other is labelled as Reason (R)",
+  "score": 0.942
+ },
+ {
+  "x0": 373.0,
+  "y0": 881.0,
+  "x1": 567.0,
+  "y1": 914.0,
+  "text": "Assertion (A):",
+  "score": 0.831
+ },
+ {
+  "x0": 376.0,
+  "y0": 936.0,
+  "x1": 1534.0,
+  "y1": 965.0,
+  "text": "Osteoporosis is characterised by decreased bone mass and increased chance of fractures.",
+  "score": 0.928
+ },
+ {
+  "x0": 373.0,
+  "y0": 987.0,
+  "x1": 540.0,
+  "y1": 1020.0,
+  "text": "Reason (R):",
+  "score": 0.871
+ },
+ {
+  "x0": 374.0,
+  "y0": 1040.0,
+  "x1": 1183.0,
+  "y1": 1071.0,
+  "text": "Common cause of osteoporosis is increased levels of estrogen.",
+  "score": 0.921
+ },
+ {
+  "x0": 373.0,
+  "y0": 1094.0,
+  "x1": 1705.0,
+  "y1": 1125.0,
+  "text": "In the light of the above statements, choose the most appropriate answer from the options given below",
+  "score": 0.913
+ },
+ {
+  "x0": 374.0,
+  "y0": 1148.0,
+  "x1": 415.0,
+  "y1": 1182.0,
+  "text": "(1)",
+  "score": 0.734
+ },
+ {
+  "x0": 440.0,
+  "y0": 1149.0,
+  "x1": 1310.0,
+  "y1": 1179.0,
+  "text": "Both (A) and (R) are correct and (R) is the correct explanation of (A)",
+  "score": 0.92
+ },
+ {
+  "x0": 374.0,
+  "y0": 1201.0,
+  "x1": 415.0,
+  "y1": 1235.0,
+  "text": "(2)",
+  "score": 0.746
+ },
+ {
+  "x0": 440.0,
+  "y0": 1203.0,
+  "x1": 1350.0,
+  "y1": 1233.0,
+  "text": "Both (A) and (R) are correct but (R) is not the correct explanation of (A)",
+  "score": 0.919
+ },
+ {
+  "x0": 374.0,
+  "y0": 1256.0,
+  "x1": 416.0,
+  "y1": 1289.0,
+  "text": "(3)",
+  "score": 0.75
+ },
+ {
+  "x0": 437.0,
+  "y0": 1255.0,
+  "x1": 879.0,
+  "y1": 1287.0,
+  "text": "(A) is correct but (R) is not correct",
+  "score": 0.915
+ },
+ {
+  "x0": 376.0,
+  "y0": 1310.0,
+  "x1": 421.0,
+  "y1": 1341.0,
+  "text": "(4)",
+  "score": 0.749
+ },
+ {
+  "x0": 434.0,
+  "y0": 1311.0,
+  "x1": 877.0,
+  "y1": 1340.0,
+  "text": "(A) is not correct but (R) is correct",
+  "score": 0.903
+ },
+ {
+  "x0": 372.0,
+  "y0": 1357.0,
+  "x1": 526.0,
+  "y1": 1397.0,
+  "text": "Answer (3)",
+  "score": 0.906
+ },
+ {
+  "x0": 286.0,
+  "y0": 1420.0,
+  "x1": 355.0,
+  "y1": 1452.0,
+  "text": "158.",
+  "score": 0.738
+ },
+ {
+  "x0": 373.0,
+  "y0": 1423.0,
+  "x1": 794.0,
+  "y1": 1451.0,
+  "text": "Given below are two statements:",
+  "score": 0.902
+ },
+ {
+  "x0": 374.0,
+  "y0": 1472.0,
+  "x1": 542.0,
+  "y1": 1505.0,
+  "text": "Statement I:",
+  "score": 0.88
+ },
+ {
+  "x0": 373.0,
+  "y0": 1524.0,
+  "x1": 1738.0,
+  "y1": 1556.0,
+  "text": "Restriction endonucleases recognise specific sequence to cut DNA known as palindromic nucleotide",
+  "score": 0.915
+ },
+ {
+  "x0": 374.0,
+  "y0": 1569.0,
+  "x1": 510.0,
+  "y1": 1596.0,
+  "text": "sequence.",
+  "score": 0.851
+ },
+ {
+  "x0": 374.0,
+  "y0": 1616.0,
+  "x1": 550.0,
+  "y1": 1646.0,
+  "text": "Statement Il:",
+  "score": 0.841
+ },
+ {
+  "x0": 374.0,
+  "y0": 1668.0,
+  "x1": 1620.0,
+  "y1": 1697.0,
+  "text": "Restriction endonucleases cut the DNA strand a little away from the centre of the palindromic site.",
+  "score": 0.931
+ },
+ {
+  "x0": 373.0,
+  "y0": 1718.0,
+  "x1": 1706.0,
+  "y1": 1749.0,
+  "text": "In the light of the above statements, choose the mast appropriate answer from the options given below",
+  "score": 0.917
+ },
+ {
+  "x0": 372.0,
+  "y0": 1769.0,
+  "x1": 417.0,
+  "y1": 1806.0,
+  "text": "(1)",
+  "score": 0.737
+ },
+ {
+  "x0": 439.0,
+  "y0": 1772.0,
+  "x1": 1039.0,
+  "y1": 1798.0,
+  "text": "Both Statement I and Statement Il are correct",
+  "score": 0.852
+ },
+ {
+  "x0": 373.0,
+  "y0": 1819.0,
+  "x1": 416.0,
+  "y1": 1856.0,
+  "text": "(2)",
+  "score": 0.75
+ },
+ {
+  "x0": 441.0,
+  "y0": 1823.0,
+  "x1": 1061.0,
+  "y1": 1849.0,
+  "text": "BothStatementI and Statement Il are incorrect",
+  "score": 0.881
+ },
+ {
+  "x0": 372.0,
+  "y0": 1869.0,
+  "x1": 416.0,
+  "y1": 1907.0,
+  "text": "(3)",
+  "score": 0.749
+ },
+ {
+  "x0": 441.0,
+  "y0": 1872.0,
+  "x1": 1090.0,
+  "y1": 1901.0,
+  "text": "Statement Iis correct but Statement Il is incorrect",
+  "score": 0.886
+ },
+ {
+  "x0": 373.0,
+  "y0": 1923.0,
+  "x1": 416.0,
+  "y1": 1956.0,
+  "text": "(4)",
+  "score": 0.75
+ },
+ {
+  "x0": 441.0,
+  "y0": 1925.0,
+  "x1": 1089.0,
+  "y1": 1951.0,
+  "text": "Statement Iis incorrect but Statement Il is correct",
+  "score": 0.9
+ },
+ {
+  "x0": 370.0,
+  "y0": 1969.0,
+  "x1": 527.0,
+  "y1": 2009.0,
+  "text": "Answer (1)",
+  "score": 0.882
+ },
+ {
+  "x0": 287.0,
+  "y0": 2032.0,
+  "x1": 354.0,
+  "y1": 2064.0,
+  "text": "159.",
+  "score": 0.748
+ },
+ {
+  "x0": 370.0,
+  "y0": 2036.0,
+  "x1": 972.0,
+  "y1": 2065.0,
+  "text": "Lippe's loop is a type of contraceptive used as:",
+  "score": 0.937
+ },
+ {
+  "x0": 373.0,
+  "y0": 2085.0,
+  "x1": 429.0,
+  "y1": 2120.0,
+  "text": "(1)",
+  "score": 0.632
+ },
+ {
+  "x0": 1062.0,
+  "y0": 2087.0,
+  "x1": 1106.0,
+  "y1": 2118.0,
+  "text": "(2)",
+  "score": 0.749
+ },
+ {
+  "x0": 433.0,
+  "y0": 2088.0,
+  "x1": 639.0,
+  "y1": 2115.0,
+  "text": "Cervical barrier",
+  "score": 0.906
+ },
+ {
+  "x0": 1120.0,
+  "y0": 2085.0,
+  "x1": 1287.0,
+  "y1": 2117.0,
+  "text": "Vault barrier",
+  "score": 0.84
+ },
+ {
+  "x0": 374.0,
+  "y0": 2136.0,
+  "x1": 425.0,
+  "y1": 2170.0,
+  "text": "(3)",
+  "score": 0.632
+ },
+ {
+  "x0": 1062.0,
+  "y0": 2136.0,
+  "x1": 1114.0,
+  "y1": 2170.0,
+  "text": "(4)",
+  "score": 0.739
+ },
+ {
+  "x0": 428.0,
+  "y0": 2138.0,
+  "x1": 694.0,
+  "y1": 2165.0,
+  "text": "Non-MedicatedIUD",
+  "score": 0.89
+ },
+ {
+  "x0": 1122.0,
+  "y0": 2136.0,
+  "x1": 1404.0,
+  "y1": 2169.0,
+  "text": "CopperreleasingIUD",
+  "score": 0.891
+ },
+ {
+  "x0": 372.0,
+  "y0": 2187.0,
+  "x1": 526.0,
+  "y1": 2221.0,
+  "text": "Answer (3)",
+  "score": 0.869
+ },
+ {
+  "x0": 951.0,
+  "y0": 2245.0,
+  "x1": 1026.0,
+  "y1": 2280.0,
+  "text": "- 31 -",
+  "score": 0.805
+ },
+ {
+  "x0": 1590.0,
+  "y0": 2313.0,
+  "x1": 1908.0,
+  "y1": 2366.0,
+  "text": "collegedunia",
+  "score": 0.881
+ },
+ {
+  "x0": 1591.0,
+  "y0": 2376.0,
+  "x1": 1913.0,
+  "y1": 2396.0,
+  "text": "India'slargestStudentReviewPlatform",
+  "score": 0.938
+ }
+]

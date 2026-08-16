@@ -1,5 +1,5 @@
 import { Link, useLocation } from 'react-router-dom';
-import { GraduationCap, Mail } from 'lucide-react';
+import { Mail } from 'lucide-react';
 import { useAuth } from '../context/auth-context';
 import { useSubscriptionAccess } from '../lib/subscription';
 
@@ -19,10 +19,8 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-8 rounded-lg bg-white/10 flex items-center justify-center">
-                <GraduationCap className="w-5 h-5 text-saffron" />
-              </div>
-              <span className="text-lg font-bold text-white font-display tracking-tight">EduTester</span>
+              <img src="/logo.png" alt="EduTester" className="w-8 h-8 object-contain" />
+              <img src="/EduTester_Text_white.png" alt="EduTester" className="h-5 w-auto object-contain" />
             </div>
             <p className="text-sm text-gray-400">
               India's most affordable test preparation platform. Practice chapter-wise and paper-wise tests with NTA-like interface.
