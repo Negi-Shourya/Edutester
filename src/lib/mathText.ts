@@ -19,8 +19,19 @@ export type Segment =
   | { kind: 'text'; value: string }
   | { kind: 'math'; value: string };
 
-// Balanced {…} group (supports one level of nested {…}, e.g. {\frac{a}{b}})
-const GROUP_SRC = String.raw`\{(?:[^{}]|\{[^{}]*\})*\}`;
+// Balanced {…} group with nested braces up to a fixed depth, e.g.
+// {R_{1}} (script-group inside), {\frac{R_{1}}{R_{2}}} (\frac inside),
+// {\sqrt{\frac{a}{b}}}. JS regex can't recurse, so expand the depth
+// explicitly. Depth 5 covers every real occurrence in the content.
+const GROUP_DEPTH = 5;
+function buildGroupSrc(depth: number): string {
+  let inner = String.raw`[^{}]*`;
+  for (let i = 1; i < depth; i++) {
+    inner = String.raw`(?:[^{}]|` + String.raw`\{` + inner + String.raw`\})*`;
+  }
+  return String.raw`\{` + inner + String.raw`\}`;
+}
+const GROUP_SRC = buildGroupSrc(GROUP_DEPTH);
 // A ^{…}/_{…} group — also tolerates empty {} pairs inside (e.g. ^{\alpha{}})
 const SCRIPT_GROUP_SRC = String.raw`[_\^]\{(?:[^{}]|\{\})*\}`;
 
@@ -37,7 +48,7 @@ const SMALLMATRIX_SRC = String.raw`\\left\[\\begin\{smallmatrix\}[\s\S]*?\\end\{
 const MATH_TOKEN_RE = new RegExp(
   [
     SMALLMATRIX_SRC,
-    String.raw`\\[a-zA-Z]+`,
+    String.raw`\\[a-zA-Z]+(?:\[[^\[\]]*\])?`,
     GROUP_SRC,
     SCRIPT_GROUP_SRC,
     String.raw`_[A-Za-z0-9]|\^[A-Za-z0-9+\-]+`,
