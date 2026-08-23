@@ -43,16 +43,20 @@ src/
 
 ### Data (Supabase)
 - Paper rows: `key = 'neet-2025'` (NTA-style test interface, 200 questions),
-  `'neet-2024'`, `'neet-2023'` (single Biology section)
+  `'neet-2024'`, `'neet-2023'` (single Biology section), `'neet-2022'`,
+  `'neet-2021'`, `'neet-2020'`
 - Tables: `papers`, `questions`, `question_options`, `question_keys`, `question_images`
 - Question text/options stored as text with LaTeX-style math markup (see Rendering)
 - Figures stored in Supabase Storage, referenced by `figure_url` on questions/options
-- Answer keys patched and verified against the official NEET answer keys
-- Total content: 1395 questions across 13 papers (9 JEE Main 2026 × 75 = 675;
-  NEET 2025, 2024, 2023, 2022 × 180 each = 720). The older NEET papers were
-  trimmed from 200 to 180 questions (5 Physics + 5 Chemistry + 10 Biology per
-  paper, mostly questions on the NMC rationalized-syllabus deleted topics) to
-  match NEET 2025's layout — see `scripts/remove-neet-deleted-syllabus.mjs`
+- Answer keys patched and verified against the official NEET answer keys — except
+  NEET 2020, whose key comes from the Aakash booklet and is deliberately **not**
+  cross-checked against the official key (explicit user instruction)
+- Total content: 1755 questions across 15 papers (9 JEE Main 2026 × 75 = 675;
+  NEET 2025, 2024, 2023, 2022, 2021, 2020 × 180 each = 1080). The older NEET
+  papers were trimmed from 200 to 180 questions (5 Physics + 5 Chemistry + 10
+  Biology per paper, mostly questions on the NMC rationalized-syllabus deleted
+  topics) to match NEET 2025's layout — see
+  `scripts/remove-neet-deleted-syllabus.mjs`
 
 ### Source & extraction pipeline (`scripts/`)
 - Official PDF: `neet/2025 Neet.pdf` (watermarked, ~12 MB), `neet/2024 Neet.pdf`,
@@ -63,6 +67,22 @@ src/
   remapped to 1-200: phy 1-50, chem 51-100, bio 101-200; answers pulled from the
   solution page ranges only — no solutions stored; physics Q8 was dropped by NTA,
   stored with an empty key so the scoring engine awards full marks), `seed-neet-2023.mjs`
+- 2020: `neet/Ques&Ans_NEET2020.pdf` (Aakash "Questions & Answers" booklet, Test
+  Booklet Code G3, 21 pages) → `extract_neet_2020.py` → `neet-out/2020/questions.json`
+  + `neet-out/2020/images/` → `seed-neet-2020.mjs` (`--force` to re-seed).
+  Single self-contained extractor — no patch scripts; re-run it and re-seed instead.
+  - Watermark: the Aakash grey is painted in **two colour spaces** — DeviceRGB
+    `0.901961 0.905882 0.909804 rg/RG` on pages 11-15 and DeviceCMYK
+    `0 0 0 .102 k/K` on the rest. `clean_doc()` rewrites both to white in the
+    content streams (120 operators) *before* any figure is clipped, and `scrub()`
+    whitens residual pixels ≥212 in each rendered clip (form XObjects / soft masks)
+  - Booklet order is Biology 1-90, Physics 91-135, Chemistry 136-180; `site_number()`
+    remaps to the site's Physics 1-45, Chemistry 46-90, Biology 91-180. The seeder
+    sorts by site number, which is what fixes the section order
+  - Answers come from the booklet's own `Answer (n)` lines; no official-key check
+  - Debug: `_dump2020.py <page0based> [ymin ymax] [--col=L|R] [--draw]` (char/drawing
+    dump), `extract_neet_2020.py --debug <page…>` (rebuilt lines per column),
+    `_render-check-2020.mts` (parses every stem/option through KaTeX — 900 fields)
 - Fix/cleanup: `fix_neet_2025.py`, `cleanup_neet_2025(_v2).py`, `final_cleanup.py`,
   `fix_match_list_questions.py`, `fix-neet-2025-{match-questions,q46-q148,q90-q92,subscripts}.mjs`,
   `patch-neet-2025-{answers,images}.mjs`, `cleanup-neet-2025-uncurated-images.mjs`,
@@ -100,7 +120,14 @@ src/
 - Shared across ALL papers (JEE + NEET): stems/options/solutions in NtaQuestionPanel,
   NtaQuestionPaperModal, NtaResultScreen all render through VectorText/FormattedQuestionText
 - `FormattedQuestionText.tsx`: match-the-following questions (newline rows `A. x -> I. y` or
-  `A. x  I. y` → List-I/II table) and Statement I/II questions
+  `A. x  I. y`, or a markdown `| left | right |` table → List-I/II table) and
+  Statement I/II questions. A markdown table is treated as a match table whatever
+  its columns are called (NEET 2020 Q62 heads them "Name" / "IUPAC Official Name"),
+  the first row is the header unless it is labelled like a data row, a bare
+  `(a) (b) (c) (d)` strip is dropped as decoration, and a line matching no pattern
+  is kept as the title (before the rows) or appended to the footer (after them) —
+  it used to be silently discarded, which deleted question text such as
+  "Identify the incorrect match."
 - `QuestionDiagram.tsx` + `NtaQuestionPanel.tsx`: show `figure_url` images
 
 ### Known quirks from PDF extraction
@@ -113,6 +140,19 @@ src/
   it's wrong
 - Watermark junk to strip: `■■ PW Web/App - http...`
 - Unicode subscripts (θ₀, v₀, T₁, NH₃) are legitimate content — leave as-is
+- A stacked fraction's numerator must be bounded by measurement, not a fixed
+  window: a 19pt reach reaches the *previous text line*, and NEET 2020 page 13
+  lost the "a" and "s" of "phase" and the "oin"/"t" of "point" into `\frac{}`
+  numerators. `classify_bars()` now walks outwards from each bar and stops at the
+  first gap too wide to be a script, unless a nested bar or radical bridges it
+- An option that is part markup, part picture renders as neither — the site shows
+  an option's figure only when its text is empty (`NtaQuestionPanel.tsx`). The 2020
+  extractor grows the clip over the markup and blanks the text so the whole answer
+  arrives as one image (graph/structure/truth-table options: Q21, 43, 69, 85, 89, 90)
+- Stem figures always render *below* the whole stem (`QuestionDiagram` comes after
+  `FormattedQuestionText`), so a sentence cannot continue across one. `join_stem()`
+  breaks the line where >18pt of clear white space says a picture was lifted out of
+  the flow (NEET 2020 Q22, otherwise "…is given below The values of resistance…")
 
 ## Commands
 - `npm run dev` — dev server

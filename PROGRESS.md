@@ -151,6 +151,60 @@
     `_dump-neet-2023-bio-keys.mjs`, `_dump_neet_2023_pages.py` (any page
     range — e.g. `python scripts/_dump_neet_2023_pages.py 1 11` for the
     bio pages).
+- **NEET 2020 (done)**: extracted from the Aakash "Questions & Answers" booklet
+  (`neet/Ques&Ans_NEET2020.pdf`, Test Booklet Code G3, 21 pages, 13/09/2020) with
+  `scripts/extract_neet_2020.py` → `neet-out/2020/` → `scripts/seed-neet-2020.mjs`.
+  180 questions, sections Physics 1-45 / Chemistry 46-90 / Biology 91-180,
+  720 options, 180 keys, `is_trial: false` (locked, like 2021/2022)
+  - **Watermark removed before any image was clipped** (user requirement): the
+    Aakash grey is painted in two colour spaces — DeviceRGB
+    `0.901961 0.905882 0.909804 rg/RG` (pages 11-15) and DeviceCMYK `0 0 0 .102 k/K`
+    (the rest). `clean_doc()` repaints 120 operators white in the content streams,
+    and `scrub()` whitens leftover pixels ≥212 in each clip (form XObjects / soft
+    masks). Audited after extraction: ≤0.6% of pixels per image fall in the
+    200-250 grey band and they are all antialiasing on black line art — no
+    watermark fill survives
+  - **Answer key taken verbatim from the booklet's `Answer (n)` lines and NOT
+    cross-checked against the official NTA key** (explicit user instruction).
+    180/180 keyed, distribution A 45 / B 51 / C 37 / D 47
+  - KaTeX markup for maths: stacked fractions rebuilt from the drawn bars
+    (`\frac{}{}`), radicals (`\sqrt{}`), Symbol-font Greek (`\pi`, `\rho`,
+    `\varepsilon`, `\Delta`, `\Omega`), `\ominus`, `\rightleftharpoons`,
+    `\hat{}`, and `_{…}`/`^{…}` from glyph geometry. All 900 fields
+    (180 stems + 720 options) parse clean through KaTeX
+    (`scripts/_render-check-2020.mts`)
+  - Booklet order is Biology 1-90, Physics 91-135, Chemistry 136-180; remapped to
+    the site's Physics/Chemistry/Biology numbering and sorted by site number in
+    the seeder
+  - 28 images: 4 stem figures (Q3, 21, 22, 85) and 24 option figures
+    (Q21, 43, 69, 85, 89, 90 × 4). An option that is half markup, half picture is
+    clipped whole and its text blanked, because the site renders an option's
+    figure only when its text is empty
+  - 18 match questions emitted as markdown `| left | right |` tables with wrapped
+    cells joined, column headers kept from the booklet (Q62 "Name"/"IUPAC Official
+    Name", Q71 "Oxide"/"Nature") and the trailing "Select the correct option…"
+    line kept as a footer; the `(a) (b) (c) (d)` strip above the answer options is
+    dropped as decoration, and the option strings are reshaped from "(iii) (ii) (i)
+    (iv)" to "(a) - (iii), (b) - (ii), (c) - (i), (d) - (iv)"
+  - `FormattedQuestionText.tsx` fixes (shared by ALL papers, so re-checked against
+    the existing match questions): markdown tables recognised as match tables
+    whatever the columns are called, optional hyphen in the List/Column header
+    regexes, bare marker strips skipped, and — the important one — a line matching
+    no pattern is now kept as the title or footer instead of being silently
+    dropped, which had been deleting text like Q62's "Identify the incorrect match."
+  - Text-extraction bugs found and fixed in the extractor (not patched in the DB):
+    a fraction's numerator reach is now measured per bar instead of a fixed 19pt
+    window, which had pulled the "a"/"s" out of "phase" (Q18) and "oin"/"t" out of
+    "point" (Q17) into `\frac{}` numerators; a LaTeX command's trailing space is
+    dropped before a closing bracket (`(\rho )` → `(\rho)`, Q43); and the stem
+    breaks its line where >18pt of white space says a figure was lifted out of the
+    flow (Q22, previously "…is given below The values of resistance…")
+  - Verified in the DB: paper id 58, `pos === number`, labels A-D everywhere, no
+    blank stems or options, 0 options carrying both text and a figure, 28 storage
+    objects under `question-images/neet-2020/`, keys identical to the extracted
+    JSON. Rendering verified through the real `FormattedQuestionText` /
+    `VectorText` / `QuestionDiagram` components for all 180 questions: 0 KaTeX
+    errors, 0 blank options, no leftover markup, all 28 images load
 
 ## Phase 7 — Results screen perf + submission latency (shared by ALL papers)
 
@@ -183,12 +237,12 @@
   - 75/75 answer keys + solutions present per paper
   - Rendering path confirmed: every paper flows through `VectorText`/`FormattedQuestionText`
     (NtaQuestionPanel, NtaQuestionPaperModal, NtaResultScreen) — no bypass
-- 1395 questions across 13 papers in Supabase (9 JEE Main 2026 × 75 = 675;
-  NEET 2025 / 2024 / 2023 / 2022 × 180 = 720; physics/chem/maths/botany/zoology
-  sections; 2022 split into Botany+Zoology, 2023/2024/2025 biology merged into
-  a single section). NEET 2022/2023/2024 were trimmed 200 → 180 (5 Physics + 5
-  Chemistry + 10 Biology per paper, preferring NMC deleted-syllabus topics) via
-  `scripts/remove-neet-deleted-syllabus.mjs`
+- 1755 questions across 15 papers in Supabase (9 JEE Main 2026 × 75 = 675;
+  NEET 2025 / 2024 / 2023 / 2022 / 2021 / 2020 × 180 = 1080; physics/chem/maths/
+  botany/zoology sections; 2021 and 2022 split into Botany+Zoology, 2020/2023/2024/
+  2025 biology as a single section). NEET 2022/2023/2024 were trimmed 200 → 180 (5
+  Physics + 5 Chemistry + 10 Biology per paper, preferring NMC deleted-syllabus
+  topics) via `scripts/remove-neet-deleted-syllabus.mjs`
 - NTA-style rendering: vector arrows (`\vec{}`), sub/superscript markup
   (`_{...}`, `_X`, `^{...}`, `^X`) and unicode sub/sup chars → real
   `<sub>`/`<sup>` elements (font-safe); fractions/commands via KaTeX
@@ -219,5 +273,6 @@
 - [ ] Scan the NEET papers in the DB for PDF-extraction mojibake and fix them
       (JEE Main 2026 audited and clean — see Content & Rendering; NEET 2023
       all sections fixed (Physics, Chemistry, Biology); NEET 2024/2025
-      already debugged)
+      already debugged; NEET 2020 extracted clean and KaTeX-checked end to end;
+      NEET 2021/2022 not yet audited)
 - [ ] Add more papers as they become available (e.g. JEE Main 2025)

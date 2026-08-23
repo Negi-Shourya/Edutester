@@ -10,11 +10,20 @@ interface MatchItem {
   rightLabel: string; // e.g., "IV. 1 Radial node + No nodal plane"
 }
 
+// A data row's left cell opens with its label: "A.", "(a)", "(I)", "(iv)".
+const ROW_LABEL_RE = /^\(?(?:[A-Da-d]|[IiVv]{1,4})\)?[.)]?(?:\s|$)/;
+
 export default function FormattedQuestionText({ text, className = '' }: FormattedQuestionTextProps) {
   if (!text) return null;
 
   // Check if text is a "Match the following" or "Match List" type question
-  const isMatchQuestion = /Match\s+(List|the|Column|LIST)/i.test(text) || (text.includes('List-I') && text.includes('List-II')) || text.includes('| Column-I');
+  const isMatchQuestion =
+    /Match\s+(List|the|Column|LIST)/i.test(text) ||
+    (text.includes('List-I') && text.includes('List-II')) ||
+    text.includes('| Column-I') ||
+    // A markdown two-column table is a match table whatever its columns are
+    // called (NEET 2020 Q152 heads them "Name" / "IUPAC Official Name").
+    /^\s*\|.*\|.*\|\s*$/m.test(text);
 
   if (isMatchQuestion) {
     return <MatchQuestionRenderer text={text} className={className} />;
@@ -43,15 +52,21 @@ function MatchQuestionRenderer({ text, className }: { text: string; className: s
   let col2Header = 'List - II';
   let footer = '';
   const matchRows: MatchItem[] = [];
+  // A line that fits none of the patterns below used to be dropped on the
+  // floor, which silently deleted question text ("Identify the incorrect
+  // match." — losing "incorrect" inverts the answer).  Keep it: before the
+  // rows it is the title, after them it belongs with the footer.
+  let titleFromText = false;
 
   for (const line of lines) {
     if (line.toLowerCase().startsWith('match')) {
       title = line;
+      titleFromText = true;
       continue;
     }
 
     if (/^choose the correct/i.test(line) || /^choose the option/i.test(line) || /^options:/i.test(line)) {
-      footer = line;
+      footer = footer ? `${footer} ${line}` : line;
       continue;
     }
 
@@ -61,7 +76,10 @@ function MatchQuestionRenderer({ text, className }: { text: string; className: s
       const left = matchMd[1].trim();
       const right = matchMd[2].trim();
       if (/^-+$/.test(left) || /^-+$/.test(right)) continue;
-      if (/^(List|Column)/i.test(left)) {
+      // The first row is the header unless it is labelled like a data row
+      // ("A.", "(a)", "(I)") — so "| Name | IUPAC Official Name |" is picked
+      // up as headers even though it says neither List nor Column.
+      if (/^(List|Column)/i.test(left) || (matchRows.length === 0 && !ROW_LABEL_RE.test(left))) {
         col1Header = left;
         col2Header = right;
         continue;
@@ -71,15 +89,20 @@ function MatchQuestionRenderer({ text, className }: { text: string; className: s
     }
 
     // Header line detection — check List-II first and anchor with \b so the
-    // List-I pattern cannot swallow a "List-II" line.
-    if (/^list\s*-\s*ii\b/i.test(line) || /^list\s*2/i.test(line) || /^column\s*-\s*ii\b/i.test(line)) {
+    // List-I pattern cannot swallow a "List-II" line.  The hyphen is optional:
+    // NEET 2024 writes "List I (Compound)" / "List II (Shape/geometry)".
+    if (/^list\s*-?\s*ii\b/i.test(line) || /^list\s*2/i.test(line) || /^column\s*-?\s*ii\b/i.test(line)) {
       col2Header = line;
       continue;
     }
-    if (/^list\s*-\s*i\b/i.test(line) || /^list\s*1/i.test(line) || /^column\s*-\s*i\b/i.test(line)) {
+    if (/^list\s*-?\s*i\b/i.test(line) || /^list\s*1/i.test(line) || /^column\s*-?\s*i\b/i.test(line)) {
       col1Header = line;
       continue;
     }
+
+    // A bare strip of markers — "(a) (b) (c) (d)" above the answer options —
+    // is decoration, not content.
+    if (/^(?:\([A-Za-z]{1,4}\)[\s,-]*){2,}$/.test(line)) continue;
 
     // Match row pattern 1: "A. Scurvy -> III. Ascorbic Acid" or "A. 2s -> IV. 1 Radial node"
     const matchArrow = line.match(/^([A-D]\.\s*.*?)\s*(?:->|→|:)\s*(.*)$/i);
@@ -119,6 +142,15 @@ function MatchQuestionRenderer({ text, className }: { text: string; className: s
           });
         }
       }
+      continue;
+    }
+
+    // Nothing matched — keep the text rather than dropping it.
+    if (matchRows.length === 0 && !titleFromText) {
+      title = line;
+      titleFromText = true;
+    } else {
+      footer = footer ? `${footer} ${line}` : line;
     }
   }
 
