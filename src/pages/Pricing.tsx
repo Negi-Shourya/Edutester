@@ -1,14 +1,18 @@
 import { useEffect, useState } from 'react';
-import { useLocation, useNavigate, Navigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import { AnimatePresence, motion } from 'motion/react';
-import { Check, Shield, CreditCard, Loader2 } from 'lucide-react';
+import { Check, Shield, CreditCard, Loader2, Tag, X } from 'lucide-react';
 import PricingCard from '../components/PricingCard';
 import StaggerReveal, { StaggerItem } from '../components/StaggerReveal';
 import { pricingPlans } from '../data/pricing';
 import { useAuth } from '../context/auth-context';
 import { useSubscriptionAccess } from '../lib/subscription';
 import { checkoutPlan } from '../lib/razorpay';
+import { applyCoupon, type CouponApplied } from '../lib/coupon';
 import type { PricingPlan } from '../types';
+
+// The launch code students are told about on this page.
+const PROMO_CODE = 'First50';
 
 const guarantees = [
   { icon: Shield, text: 'Secure payments with industry-standard encryption' },
@@ -33,6 +37,49 @@ export default function Pricing() {
   const [error, setError] = useState<string | null>(null);
   const [success, setSuccess] = useState<string | null>(null);
   const [openFaq, setOpenFaq] = useState(-1);
+
+  // Coupon state. `coupon` holds the applied code and the discount to show;
+  // whether it is honoured, and by how much, is decided server-side at
+  // checkout — this is display only.
+  const [couponInput, setCouponInput] = useState('');
+  const [coupon, setCoupon] = useState<CouponApplied | null>(null);
+  const [couponError, setCouponError] = useState<string | null>(null);
+  const [couponChecking, setCouponChecking] = useState(false);
+
+  const handleApplyCoupon = async () => {
+    const code = couponInput.trim();
+    if (!code) return;
+    if (!user) {
+      navigate('/login', { state: { from: '/pricing' } });
+      return;
+    }
+    setCouponError(null);
+    setCouponChecking(true);
+    try {
+      // Validated against a plan so the server can quote a real total. The
+      // discount is a percentage, so the quote holds for whichever plan the
+      // student then picks.
+      const result = await applyCoupon(code, pricingPlans[0].id);
+      if (result.valid) {
+        setCoupon(result);
+        setCouponError(null);
+      } else {
+        setCoupon(null);
+        setCouponError(result.message);
+      }
+    } catch (err) {
+      setCoupon(null);
+      setCouponError(err instanceof Error ? err.message : 'Could not check that coupon.');
+    } finally {
+      setCouponChecking(false);
+    }
+  };
+
+  const clearCoupon = () => {
+    setCoupon(null);
+    setCouponInput('');
+    setCouponError(null);
+  };
 
   useEffect(() => {
     if (location.hash === '#faq') {
@@ -72,25 +119,35 @@ export default function Pricing() {
     const isUpgrade = !!activeSubscription;
     setCheckoutPlanId(plan.id);
     try {
-      const result = await checkoutPlan({ id: plan.id, name: plan.duration });
+      const result = await checkoutPlan({ id: plan.id, name: plan.duration }, coupon?.code);
       await refreshSubscription();
+      const opening = `Payment successful (ref ${result.paymentId}).`;
       setSuccess(
         isUpgrade
-          ? `Payment successful (ref ${result.paymentId}). Your plan has been upgraded to ${plan.duration} — your existing time was added on top of it.`
-          : `Payment successful (ref ${result.paymentId}). Your ${plan.duration} subscription is now active.`
+          ? `${opening} Your plan has been upgraded to ${plan.duration} — your existing time was added on top of it.`
+          : `${opening} Your ${plan.duration} subscription is now active.`
       );
     } catch (err) {
-      setError(err instanceof Error ? err.message : 'Payment failed. Please try again.');
+      const message = err instanceof Error ? err.message : 'Payment failed. Please try again.';
+      // The promo can run out between applying the code and paying, so the
+      // banner has to fall back to the sold-out state rather than leaving a
+      // discount on screen that no longer exists.
+      if (message.includes('late !!!')) {
+        setCoupon(null);
+        setCouponError(message);
+      }
+      setError(message);
     } finally {
       setCheckoutPlanId(null);
     }
   };
 
-  // Users with an active subscription manage their plan from the Profile
-  // page — the pricing page is for buyers only.
-  if (!subscriptionLoading && activeSubscription) {
-    return <Navigate to="/profile" replace />;
-  }
+  // Subscribers see this page too. PricingCard badges the plan they are on,
+  // disables anything shorter, and offers the next tier up — so the upgrade
+  // flow lives here. It used to redirect active subscribers to /profile on the
+  // theory that they manage their plan there, but Profile's plan grid is hidden
+  // once a subscription exists, so between the two pages there was no way to
+  // upgrade or renew at all.
 
   return (
     <div>
@@ -119,6 +176,71 @@ export default function Pricing() {
             </div>
           )}
 
+          {/* Launch promo + coupon entry. Shown to existing subscribers too:
+              the promo is one use per person rather than new-customers-only, so
+              someone renewing or upgrading still has their single use to spend. */}
+          <div className="max-w-md mx-auto mb-10">
+            {coupon ? (
+              <div className="flex items-center justify-between gap-3 p-4 rounded-xl bg-green-50 border border-green-200">
+                <div className="flex items-center gap-2.5 min-w-0">
+                  <Tag className="w-4 h-4 text-green-600 shrink-0" />
+                  <div className="min-w-0">
+                    <p className="text-sm font-semibold text-green-800 truncate">
+                      {coupon.code} applied
+                    </p>
+                    <p className="text-xs text-green-700">
+                      {coupon.discountPercent}% off — applied at checkout
+                    </p>
+                  </div>
+                </div>
+                <button
+                  onClick={clearCoupon}
+                  aria-label="Remove coupon"
+                  className="p-1.5 rounded-lg text-green-700 hover:bg-green-100 transition-colors shrink-0"
+                >
+                  <X className="w-4 h-4" />
+                </button>
+              </div>
+            ) : (
+              <div className="p-4 rounded-xl bg-white border border-stone-200 shadow-sm">
+                <p className="text-sm text-gray-600 mb-3">
+                  <span className="font-semibold text-gray-900">10% off</span> for the first 50
+                  subscribers — use code{' '}
+                  <span className="font-mono font-semibold text-primary">{PROMO_CODE}</span>
+                </p>
+                <div className="flex gap-2">
+                  <input
+                    value={couponInput}
+                    onChange={(e) => setCouponInput(e.target.value)}
+                    onKeyDown={(e) => {
+                      if (e.key === 'Enter') void handleApplyCoupon();
+                    }}
+                    placeholder="Enter coupon code"
+                    aria-label="Coupon code"
+                    autoComplete="off"
+                    spellCheck={false}
+                    className="flex-1 min-w-0 px-3 py-2.5 rounded-lg border border-stone-200 text-sm uppercase placeholder:normal-case placeholder:text-stone-400 focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary"
+                  />
+                  <button
+                    onClick={() => void handleApplyCoupon()}
+                    disabled={couponChecking || !couponInput.trim()}
+                    className="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 rounded-lg bg-primary text-white text-sm font-semibold hover:opacity-90 disabled:opacity-40 disabled:cursor-not-allowed transition-opacity shrink-0"
+                  >
+                    {couponChecking ? (
+                      <Loader2 className="w-4 h-4 animate-spin" />
+                    ) : (
+                      <Tag className="w-4 h-4" />
+                    )}
+                    Apply Coupon
+                  </button>
+                </div>
+                {couponError && (
+                  <p className="mt-2.5 text-sm text-red-600 font-medium">{couponError}</p>
+                )}
+              </div>
+            )}
+          </div>
+
           <StaggerReveal className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
             {pricingPlans.map((plan, i) => (
               <StaggerItem key={plan.id}>
@@ -132,6 +254,7 @@ export default function Pricing() {
                   !!activeSubscription && plan.months < currentPlanMonths
                 }
                 nextPlan={i === activePlanIndex ? (pricingPlans[i + 1] ?? null) : undefined}
+                discountPercent={coupon?.discountPercent ?? 0}
               />
               </StaggerItem>
             ))}

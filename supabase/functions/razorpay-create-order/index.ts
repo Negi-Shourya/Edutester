@@ -1,15 +1,14 @@
 import { createClient } from 'npm:@supabase/supabase-js@2.111.0';
 import Razorpay from 'npm:razorpay@2.9.4';
 import { checkRateLimit } from '../_shared/rate_limit.ts';
-
-// Plan catalogue is defined HERE (server-side), never trusted from the client.
-// Price is in paise (INR).
-const PLANS = {
-  '1month': { name: '1 Month', pricePaise: 1900, months: 1 },
-  '3months': { name: '3 Months', pricePaise: 5000, months: 3 },
-  '6months': { name: '6 Months', pricePaise: 9400, months: 6 },
-  '1year': { name: '1 Year', pricePaise: 15900, months: 12 },
-} as const;
+import { getPlan } from '../_shared/plans.ts';
+import {
+  countSubscribers,
+  discountedPaise,
+  getCoupon,
+  normalizeCode,
+  userHasUsedCoupon,
+} from '../_shared/coupons.ts';
 
 // SUPABASE_URL, SUPABASE_ANON_KEY and SUPABASE_SERVICE_ROLE_KEY are injected
 // automatically by the edge runtime. RAZORPAY_KEY_ID / RAZORPAY_KEY_SECRET
@@ -74,15 +73,46 @@ Deno.serve(async (req) => {
   }
 
   const body = await req.json().catch(() => ({}));
-  const plan = PLANS[body.planId as keyof typeof PLANS];
+  const plan = getPlan(body.planId);
   if (!plan) return json({ error: 'Unknown plan' }, 400);
+  const planId = body.planId as string;
+
+  // The discount is resolved here, from the code alone, so the amount charged
+  // cannot be steered by the browser: the client sends a code, never a price.
+  const code = normalizeCode(body.couponCode);
+  const coupon = code ? getCoupon(code) : null;
+  let percentOff = 0;
+
+  if (coupon) {
+    try {
+      if (await userHasUsedCoupon(supabaseAdmin, code!, user.id)) {
+        return json(
+          { error: 'You have already used this coupon.', code: 'COUPON_ALREADY_USED' },
+          400
+        );
+      }
+      if ((await countSubscribers(supabaseAdmin)) >= coupon.maxSubscribers) {
+        return json({ error: 'Sorry, you are late !!!', code: 'COUPON_EXHAUSTED' }, 409);
+      }
+      percentOff = coupon.percent;
+    } catch (err) {
+      console.error('coupon check failed', err);
+      return json({ error: 'Could not apply that coupon right now.' }, 502);
+    }
+  }
+
+  // Both branches of discountedPaise stay above Razorpay's ₹1 floor, so there
+  // is exactly one way to buy a plan — through checkout.
+  const amountPaise = discountedPaise(plan.pricePaise, percentOff);
 
   try {
     const order = await razorpay.orders.create({
-      amount: plan.pricePaise,
+      amount: amountPaise,
       currency: 'INR',
       receipt: `sub_${user.id.slice(0, 8)}_${Date.now()}`,
-      notes: { userId: user.id, planId: body.planId },
+      // razorpay-verify re-derives the expected amount from these notes, so the
+      // coupon has to travel with the order rather than with the client.
+      notes: { userId: user.id, planId, couponCode: code ?? '' },
     });
     return json({
       orderId: order.id,

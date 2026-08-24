@@ -11,6 +11,9 @@ interface Props {
   activeExpiry?: string | null;
   lowerThanCurrent?: boolean;
   nextPlan?: PricingPlan | null;
+  /** Percentage off to display when a coupon is applied. Display only — the
+   *  amount actually charged is decided server-side at checkout. */
+  discountPercent?: number;
 }
 
 function formatExpiry(iso: string | null | undefined): string {
@@ -30,8 +33,22 @@ export default function PricingCard({
   activeExpiry,
   lowerThanCurrent = false,
   nextPlan,
+  discountPercent = 0,
 }: Props) {
   const [showActiveInfo, setShowActiveInfo] = useState(false);
+  // Computed in paise and rounded the same way the server does, so the card
+  // quotes exactly what checkout will charge. Trailing paise are shown in full
+  // (₹17.10, not ₹17.1) and dropped entirely when the total is whole rupees.
+  const discountedPaise =
+    discountPercent > 0
+      ? Math.round((plan.price * 100 * (100 - discountPercent)) / 100)
+      : null;
+  const discounted =
+    discountedPaise === null
+      ? null
+      : discountedPaise % 100 === 0
+        ? String(discountedPaise / 100)
+        : (discountedPaise / 100).toFixed(2);
 
   return (
     <motion.div
@@ -58,7 +75,17 @@ export default function PricingCard({
       <div className="text-center mb-6">
         <h3 className="text-lg font-semibold text-gray-900">{plan.duration}</h3>
         <div className="mt-3">
-          <span className="text-4xl font-bold text-gray-900">₹{plan.price}</span>
+          {discounted !== null ? (
+            <>
+              <span className="text-lg text-gray-400 line-through mr-2">₹{plan.price}</span>
+              <span className="text-4xl font-bold text-gray-900">₹{discounted}</span>
+              <span className="block mt-1 text-xs font-semibold text-green-700">
+                {discountPercent}% off applied
+              </span>
+            </>
+          ) : (
+            <span className="text-4xl font-bold text-gray-900">₹{plan.price}</span>
+          )}
         </div>
         <p className="text-sm text-gray-500 mt-1">₹{plan.pricePerMonth.toFixed(2)}/month</p>
       </div>

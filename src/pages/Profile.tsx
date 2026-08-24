@@ -99,10 +99,22 @@ export default function Profile() {
     .map((s) => pricingPlans.find((p) => p.id === s.plan_id))
     .filter((p): p is PricingPlan => !!p)
     .sort((a, b) => b.months - a.months)[0] ?? null;
+  const currentPlanMonths = bestPlan?.months ?? 0;
 
   const handleCheckout = async (plan: PricingPlan) => {
     setCheckoutError(null);
     setCheckoutSuccess(null);
+    // Buying a shorter plan than the active one is a downgrade, and since every
+    // purchase stacks its months onto the existing expiry it would silently
+    // charge for less time than the plan implies. Renewing the same plan or
+    // moving up is fine — both just extend the end date.
+    if (hasActive && plan.months < currentPlanMonths) {
+      setCheckoutError(
+        `Your ${bestPlan?.duration} plan is active until ${formatDate(activeUntil)}. ` +
+          `Pick a plan at least that long to upgrade.`
+      );
+      return;
+    }
     setCheckoutPlanId(plan.id);
     try {
       const result = await checkoutPlan({ id: plan.id, name: plan.duration });
@@ -264,14 +276,18 @@ export default function Profile() {
               </div>
             )}
 
-            {!hasActive && (
-              <div className="bg-white rounded-2xl border border-gray-200 p-6">
+            {/* Plan picker. Shown to subscribers too, as the upgrade/renew
+                control — hiding it once a subscription existed left no way to
+                change plans from here. */}
+            <div className="bg-white rounded-2xl border border-gray-200 p-6">
                 <h2 className="font-semibold text-gray-900 flex items-center gap-2 mb-1">
                   <Sparkles className="w-5 h-5 text-primary" />
-                  Choose a Plan
+                  {hasActive ? 'Upgrade Your Plan' : 'Choose a Plan'}
                 </h2>
                 <p className="text-sm text-gray-500 mb-5">
-                  Unlock every test and paper. Pick the plan that fits you.
+                  {hasActive
+                    ? 'Move up to a longer plan whenever you like — the time you have left is added on top of it.'
+                    : 'Unlock every test and paper. Pick the plan that fits you.'}
                 </p>
 
                 {checkoutSuccess && (
@@ -288,20 +304,33 @@ export default function Profile() {
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
                   {pricingPlans.map((plan) => {
                     const loading = checkoutPlanId === plan.id;
+                    // Shorter than what is already running = a downgrade, so it
+                    // is offered but disabled rather than hidden: seeing why it
+                    // is unavailable beats a gap in the grid.
+                    const isLower = hasActive && plan.months < currentPlanMonths;
+                    const isCurrent = hasActive && bestPlan?.id === plan.id;
                     return (
                       <div
                         key={plan.id}
                         className={`relative rounded-xl border-2 p-5 flex flex-col transition-all ${
-                          plan.popular
-                            ? 'border-primary shadow-md'
-                            : 'border-gray-100 hover:border-primary/30'
+                          isCurrent
+                            ? 'border-green-400 shadow-md'
+                            : isLower
+                              ? 'border-gray-100 opacity-70'
+                              : plan.popular
+                                ? 'border-primary shadow-md'
+                                : 'border-gray-100 hover:border-primary/30'
                         }`}
                       >
-                        {plan.popular && (
+                        {isCurrent ? (
+                          <span className="absolute -top-3 left-1/2 -translate-x-1/2 bg-green-600 text-white px-3 py-0.5 rounded-full text-[11px] font-semibold whitespace-nowrap">
+                            Current Plan
+                          </span>
+                        ) : plan.popular && !isLower ? (
                           <span className="absolute -top-3 left-1/2 -translate-x-1/2 bg-primary text-white px-3 py-0.5 rounded-full text-[11px] font-semibold whitespace-nowrap">
                             Most Popular
                           </span>
-                        )}
+                        ) : null}
 
                         <div className="text-center mb-4">
                           <h3 className="font-semibold text-gray-900">{plan.duration}</h3>
@@ -315,22 +344,33 @@ export default function Profile() {
 
                         <button
                           onClick={() => handleCheckout(plan)}
-                          disabled={checkoutPlanId !== null}
+                          disabled={checkoutPlanId !== null || isLower}
                           className={`mt-auto w-full flex items-center justify-center gap-2 py-2.5 rounded-xl text-sm font-semibold transition-colors disabled:opacity-60 disabled:cursor-not-allowed ${
-                            plan.popular
-                              ? 'bg-primary text-white hover:bg-primary-dark'
-                              : 'bg-gray-50 text-gray-900 hover:bg-gray-100 border border-gray-200'
+                            isCurrent
+                              ? 'bg-green-600 text-white hover:bg-green-700'
+                              : isLower
+                                ? 'bg-gray-50 text-gray-400 border border-gray-200'
+                                : plan.popular
+                                  ? 'bg-primary text-white hover:bg-primary-dark'
+                                  : 'bg-gray-50 text-gray-900 hover:bg-gray-100 border border-gray-200'
                           }`}
                         >
                           {loading && <Loader2 className="w-4 h-4 animate-spin" />}
-                          {loading ? 'Processing...' : `Buy ${plan.duration}`}
+                          {loading
+                            ? 'Processing...'
+                            : isLower
+                              ? 'Shorter than your plan'
+                              : isCurrent
+                                ? `Extend ${plan.duration}`
+                                : hasActive
+                                  ? `Upgrade to ${plan.duration}`
+                                  : `Buy ${plan.duration}`}
                         </button>
                       </div>
                     );
                   })}
                 </div>
               </div>
-            )}
 
             <div className="bg-white rounded-2xl border border-gray-200 p-6">
               <div className="flex items-center justify-between mb-5">

@@ -2,15 +2,8 @@ import { createClient } from 'npm:@supabase/supabase-js@2.111.0';
 import Razorpay from 'npm:razorpay@2.9.4';
 import { createHmac } from 'node:crypto';
 import { checkRateLimit } from '../_shared/rate_limit.ts';
-
-// Plan catalogue is defined HERE (server-side), never trusted from the client.
-// Price is in paise (INR).
-const PLANS = {
-  '1month': { name: '1 Month', pricePaise: 1900, months: 1 },
-  '3months': { name: '3 Months', pricePaise: 5000, months: 3 },
-  '6months': { name: '6 Months', pricePaise: 9400, months: 6 },
-  '1year': { name: '1 Year', pricePaise: 15900, months: 12 },
-} as const;
+import { addMonths, getPlan } from '../_shared/plans.ts';
+import { discountedPaise, getCoupon, normalizeCode } from '../_shared/coupons.ts';
 
 // SUPABASE_URL, SUPABASE_ANON_KEY and SUPABASE_SERVICE_ROLE_KEY are injected
 // automatically by the edge runtime. RAZORPAY_KEY_ID / RAZORPAY_KEY_SECRET
@@ -48,17 +41,8 @@ function json(body: unknown, status = 200): Response {
   });
 }
 
-// Adds whole calendar months without the setMonth() overflow bug
-// (e.g. Jan 31 + 1 month must land on Feb 28/29, not March 3).
-function addMonths(date: Date, months: number): Date {
-  const result = new Date(date);
-  const day = result.getDate();
-  result.setDate(1);
-  result.setMonth(result.getMonth() + months);
-  const lastDay = new Date(result.getFullYear(), result.getMonth() + 1, 0).getDate();
-  result.setDate(Math.min(day, lastDay));
-  return result;
-}
+// Adds whole calendar months without the setMonth() overflow bug — see
+// _shared/plans.ts.
 
 // Bearer <supabase JWT> -> the authenticated user or null.
 async function getUser(req: Request) {
@@ -114,8 +98,23 @@ Deno.serve(async (req) => {
   if (notes.userId && notes.userId !== user.id) {
     return json({ error: 'Order does not belong to this user' }, 400);
   }
-  const plan = PLANS[notes.planId as keyof typeof PLANS];
-  if (!plan || plan.pricePaise !== Number(order.amount)) {
+  const plan = getPlan(notes.planId);
+  if (!plan) {
+    return json({ error: 'Order does not match any plan' }, 400);
+  }
+  // The coupon rides along in the order notes, which only create-order can set,
+  // so the expected total is re-derived from the server's own record of the
+  // order rather than from anything the browser sent. A discounted order whose
+  // amount doesn't match what that coupon should have produced is rejected.
+  //
+  // Deliberately no promo-cap check here. create-order is where the cap is
+  // enforced; if the 50th slot went while this order was open, the customer has
+  // already been charged, and refusing to record their subscription would take
+  // the money without giving them anything.
+  const couponCode = normalizeCode(notes.couponCode);
+  const coupon = couponCode ? getCoupon(couponCode) : null;
+  const expectedPaise = discountedPaise(plan.pricePaise, coupon?.percent ?? 0);
+  if (expectedPaise !== Number(order.amount)) {
     return json({ error: 'Order amount does not match any plan' }, 400);
   }
 

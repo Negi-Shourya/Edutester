@@ -25,5 +25,8 @@ verify_jwt = true
 [functions.razorpay-verify]
 verify_jwt = true
 
+[functions.coupon-apply]
+verify_jwt = true
+
 [functions.score-attempt]
 verify_jwt = true

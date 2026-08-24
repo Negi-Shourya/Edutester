@@ -188,7 +188,7 @@ async function seed() {
       duration_minutes: durationMinutes,
       question_count: questionCount,
       exam_type: "neet",
-      is_trial: true, // Make this a free trial paper
+      is_trial: true, // The one free NEET paper (newest year).
     })
     .select("id")
     .single();

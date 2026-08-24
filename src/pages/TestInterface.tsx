@@ -2,10 +2,11 @@
 import { useSearchParams, useNavigate } from 'react-router-dom';
 import { getPaperQuestions, type PaperQuestions } from '../data/questions';
 import type { Question, QuestionState, QuestionStatus } from '../types';
-import { FREE_TRIAL_PAPER_KEY, useSubscriptionAccess } from '../lib/subscription';
+import { DEFAULT_PAPER_KEY, useSubscriptionAccess } from '../lib/subscription';
 import { loadAttempt, saveAttempt, clearAttempt } from '../lib/attemptStorage';
 import { submitAttempt, type SubmitAttemptPayload } from '../lib/attemptsDb';
 import { supabase } from '../lib/supabase';
+import { examOfPaperKey } from '../lib/exam';
 import { useAuth } from '../context/auth-context';
 import { Crown, Lock, LayoutDashboard, RotateCcw, X } from 'lucide-react';
 
@@ -25,7 +26,7 @@ const WARM_LEAD_SECONDS = 120;
 export default function TestInterface() {
   const [searchParams] = useSearchParams();
   const navigate = useNavigate();
-  const paperKey = searchParams.get('paper') || FREE_TRIAL_PAPER_KEY;
+  const paperKey = searchParams.get('paper') || DEFAULT_PAPER_KEY;
 
   const { user } = useAuth();
   // Saved attempts are stored per account, so every read and write is scoped to
@@ -514,7 +515,15 @@ export default function TestInterface() {
     );
   }
 
-  if (!hasAccess && paperKey !== FREE_TRIAL_PAPER_KEY) {
+  // Gate on the paper's own `is_trial` flag — the same rule score-attempt
+  // enforces server-side. This used to compare against a single hardcoded JEE
+  // key, so any other trial paper (all the flagged NEET ones) was advertised as
+  // free on the list page and then locked here.
+  //
+  // Waits for the paper to load: until then `is_trial` is unknown, and
+  // defaulting either way is wrong — false flashes a paywall at a free paper,
+  // true flashes the exam at a locked one. The loading branch below covers it.
+  if (paperData && !hasAccess && !paperData.paper.isTrial) {
     return (
       <div className="min-h-screen bg-[#091526] flex items-center justify-center px-4">
         <div className="bg-white/5 border border-white/10 rounded-2xl p-10 max-w-md w-full text-center">
@@ -681,7 +690,7 @@ export default function TestInterface() {
           timer even in compact landscape */}
       <NtaHeader
         examName={examTitle}
-        examType={paperKey.startsWith('neet') ? 'neet' : 'jee'}
+        examType={examOfPaperKey(paperKey)}
         candidateName={candidateName}
         candidateId={candidateId}
         timeLeft={timeLeft}

@@ -195,7 +195,7 @@ async function seed() {
       duration_minutes: durationMinutes,
       question_count: questionCount,
       exam_type: "neet",
-      is_trial: true, // Free trial paper like the other NEET papers
+      is_trial: false, // Locked. Only the newest NEET paper is the free trial.
     })
     .select("id")
     .single();

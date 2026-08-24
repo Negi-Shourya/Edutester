@@ -3,9 +3,13 @@ import { supabase } from './supabase';
 import { useAuth } from '../context/auth-context';
 import type { Subscription } from '../types';
 
-// The single test available for free to signed-in users without a subscription.
+// Free access is decided by `papers.is_trial`, not by these constants — the
+// paper list, TestInterface and the score-attempt function all read that flag,
+// so changing which papers are free is a database update plus a re-run of
+// scripts/build-paper-json.mjs. This key is only the paper TestInterface falls
+// back to when the URL carries no `?paper=`.
 export const FREE_TRIAL_TEST_ID = 'ch-phy-1';
-export const FREE_TRIAL_PAPER_KEY = '02-apr-morning';
+export const DEFAULT_PAPER_KEY = '02-apr-morning';
 
 export function useSubscriptionAccess() {
   const { user } = useAuth();

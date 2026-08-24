@@ -10,7 +10,7 @@ import { useAuth } from '../context/auth-context';
 import { getAttempts, backfillLocalAttempts, type AttemptRow } from '../lib/attemptsDb';
 import { findInProgressAttempt, type SavedAttempt } from '../lib/attemptStorage';
 import { useSubscriptionAccess } from '../lib/subscription';
-import { getExam, setExam, type ExamType } from '../lib/exam';
+import { getExam, setExam, examOfPaperKey, type ExamType } from '../lib/exam';
 import { GraduationCap } from 'lucide-react';
 import {
   loadQuestionMeta, analyzeTest, analyzeOverall, type TestAnalysis, type SubjectOverall,
@@ -65,8 +65,12 @@ function formatDateTime(iso: string): string {
 }
 
 function formatDuration(totalSeconds: number): string {
-  const h = Math.floor(totalSeconds / 3600);
-  const m = Math.round((totalSeconds % 3600) / 60);
+  // Round to whole minutes first, then split into h/m. Rounding the seconds
+  // remainder on its own overflows the minute field: 1h 59m 59s came out as
+  // "1h 60m", and 59m 59s as "60m".
+  const totalMinutes = Math.round(totalSeconds / 60);
+  const h = Math.floor(totalMinutes / 60);
+  const m = totalMinutes % 60;
   if (h <= 0) return `${m}m`;
   return `${h}h ${m}m`;
 }
@@ -88,6 +92,12 @@ export default function Dashboard() {
 
   useEffect(() => {
     let cancelled = false;
+    // Clear the previous account's data on sign-in/sign-out before refetching.
+    // Without this, switching accounts leaves account A's stats, history and
+    // trend on screen until account B's rows resolve — the same cross-account
+    // leak that PaperTests resets `dbAttempts` to avoid.
+    setAttempts(null);
+    setAnalyses(null);
     (async () => {
       const userId = user?.id ?? '';
       setInProgress(findInProgressAttempt(userId));
@@ -107,8 +117,27 @@ export default function Dashboard() {
     // scoped to one account, so stale values must not survive a switch.
   }, [user?.id]);
 
+  // The JEE/NEET switch used to only restyle its own buttons, so the dashboard
+  // mixed both tracks together: a NEET student saw JEE papers in their history,
+  // and "weak areas" blended two syllabi — Mathematics ranked next to Biology.
+  // Attempt rows have no exam_type column, so the track comes from the paper key.
+  const trackAttempts = useMemo(
+    () => attempts?.filter((r) => examOfPaperKey(r.paper_key) === exam) ?? null,
+    [attempts, exam]
+  );
+  const trackAnalyses = useMemo(
+    () => analyses?.filter((a) => examOfPaperKey(a.row.paper_key) === exam) ?? null,
+    [analyses, exam]
+  );
+  // Attempts on the other track, so the empty state can point there instead of
+  // claiming no tests exist at all.
+  const otherTrackCount = useMemo(
+    () => (attempts ?? []).filter((r) => examOfPaperKey(r.paper_key) !== exam).length,
+    [attempts, exam]
+  );
+
   const stats = useMemo(() => {
-    const rows = attempts ?? [];
+    const rows = trackAttempts ?? [];
     const n = rows.length;
     const avgAccuracy = n > 0 ? Math.round(rows.reduce((s, r) => s + r.accuracy, 0) / n) : 0;
     const avgScorePct =
@@ -131,15 +160,17 @@ export default function Dashboard() {
     const timePracticed = rows.reduce((s, r) => s + r.time_spent, 0);
     const questionsSolved = rows.reduce((s, r) => s + r.correct + r.incorrect, 0);
     return { n, avgAccuracy, avgScorePct, bestPct, timePracticed, questionsSolved };
-  }, [attempts]);
+  }, [trackAttempts]);
 
   const overall = useMemo(
-    () => (attempts && analyses ? analyzeOverall(attempts, analyses) : null),
-    [attempts, analyses]
+    () => (trackAttempts && trackAnalyses ? analyzeOverall(trackAttempts, trackAnalyses) : null),
+    [trackAttempts, trackAnalyses]
   );
 
+  // `loading` tracks the raw fetch (still null until rows arrive); the
+  // track-filtered views are derived synchronously from it.
   const loading = attempts === null || analyses === null;
-  const rows = attempts ?? [];
+  const rows = trackAttempts ?? [];
   const firstName = (user?.user_metadata?.full_name as string | undefined)?.split(' ')[0] ?? 'there';
 
   return (
@@ -226,10 +257,23 @@ export default function Dashboard() {
             <div className="w-14 h-14 bg-gradient-to-br from-primary to-primary-dark rounded-2xl flex items-center justify-center mx-auto mb-5 shadow-lg">
               <Target className="w-7 h-7 text-white" />
             </div>
-            <h2 className="text-xl font-bold text-gray-900 mb-2">No tests taken yet</h2>
+            <h2 className="text-xl font-bold text-gray-900 mb-2">
+              No {exam.toUpperCase()} tests taken yet
+            </h2>
             <p className="text-sm text-gray-500 mb-6 leading-relaxed">
-              Attempt your first full paper or chapter test and your results,
-              per-test learning, weak areas, and what to work on next will show up here.
+              {otherTrackCount > 0 ? (
+                <>
+                  Your {exam === 'jee' ? 'NEET' : 'JEE'} history is under the{' '}
+                  {exam === 'jee' ? 'NEET' : 'JEE'} track — switch above to see it.
+                  Attempt a {exam.toUpperCase()} paper and its results, weak areas,
+                  and what to work on next will show up here.
+                </>
+              ) : (
+                <>
+                  Attempt your first full paper or chapter test and your results,
+                  per-test learning, weak areas, and what to work on next will show up here.
+                </>
+              )}
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
               <Link
@@ -340,7 +384,7 @@ export default function Dashboard() {
                     <span className="text-xs text-gray-400">{rows.length} total</span>
                   </div>
                   <div className="space-y-3">
-                    {analyses!.map((a) => (
+                    {trackAnalyses!.map((a) => (
                       <TestHistoryCard
                         key={a.row.id}
                         analysis={a}

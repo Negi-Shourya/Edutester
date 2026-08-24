@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react';
 import { AlertCircle } from 'lucide-react';
 import type { Question, QuestionState } from '../types';
 
@@ -20,6 +21,14 @@ export default function NtaSubmitModal({
   sections,
   examTitle,
 }: NtaSubmitModalProps) {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  useEffect(() => {
+    if (isOpen) {
+      setIsSubmitting(false);
+    }
+  }, [isOpen]);
+
   if (!isOpen) return null;
 
   // Compute breakdown per section
@@ -133,10 +142,19 @@ export default function NtaSubmitModal({
         {/* Footer Actions */}
         <div className="bg-[#e9ecef] border-t border-[#ccc] px-4 py-3 flex items-center justify-center gap-4 shrink-0">
           <button
-            onClick={onConfirmSubmit}
-            className="bg-[#28a745] hover:bg-[#218838] active:bg-[#1e7e34] text-white px-8 py-2 rounded text-xs font-bold uppercase shadow-sm border border-[#1e7e34] cursor-pointer transition-all active:scale-95"
+            onClick={() => {
+              if (isSubmitting) return;
+              setIsSubmitting(true);
+              onConfirmSubmit();
+            }}
+            disabled={isSubmitting}
+            className={`px-8 py-2 rounded text-xs font-bold uppercase shadow-sm border transition-all ${
+              isSubmitting 
+                ? 'bg-[#1e7e34] text-white border-[#1e7e34] opacity-80 cursor-not-allowed' 
+                : 'bg-[#28a745] hover:bg-[#218838] active:bg-[#1e7e34] text-white border-[#1e7e34] cursor-pointer active:scale-95'
+            }`}
           >
-            Yes (Submit)
+            {isSubmitting ? 'Submitting...' : 'Yes (Submit)'}
           </button>
           <button
             onClick={onClose}

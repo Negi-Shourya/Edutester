@@ -18,7 +18,6 @@ interface PaperEntry {
   paper: string;
   link: string;
   variant: 'jee' | 'neet';
-  trialKey?: string | null;
   minutes?: number;
 }
 
@@ -189,22 +188,34 @@ export default function PaperTests() {
         paper: p.fullTitle,
         link: `/test?paper=${p.key}`,
         variant: 'neet',
-        trialKey: p.isTrial ? p.key : null,
         minutes: p.durationMinutes,
       });
     }
     return [...byYear.entries()].sort(([a], [b]) => b - a);
   }, [neetPapers]);
 
+  // Free papers are exactly the rows flagged `is_trial` in the database — the
+  // same rule score-attempt applies server-side. Looked up by resolved paper
+  // key rather than per entry, so the January placeholders (which all link to
+  // bare `/test`) inherit the trial status of the paper they actually open.
+  //
+  // The old version also hardcoded JEE 02-apr-morning by name. That row already
+  // carries the flag, so the clause was redundant, and it masked the real bug:
+  // TestInterface gated on that one key and ignored `is_trial` entirely, so a
+  // flagged NEET paper was badged "Free Trial" here, opened, then hit a paywall.
+  const trialKeys = useMemo(
+    () => new Set(dbPapers.filter((p) => p.isTrial).map((p) => p.key)),
+    [dbPapers]
+  );
+  const isFree = (entry: PaperEntry) => trialKeys.has(paperKeyOf(entry.link));
+
   const isLocked = (entry: PaperEntry) => {
     if (loading || hasAccess) return false;
-    if (entry.trialKey) return false;
-    return !(entry.variant === 'jee' && paperKeyOf(entry.link) === '02-apr-morning');
+    return !isFree(entry);
   };
   const isTrial = (entry: PaperEntry) => {
     if (loading || hasAccess) return false;
-    if (entry.trialKey) return true;
-    return entry.variant === 'jee' && paperKeyOf(entry.link) === '02-apr-morning';
+    return isFree(entry);
   };
 
   const handleAttempt = (entry: PaperEntry) => {
@@ -281,7 +292,6 @@ export default function PaperTests() {
           paper: 'B.E./B.Tech. (Paper 1)',
           link: `/test?paper=${p.key}`,
           variant: 'jee',
-          trialKey: p.isTrial ? p.key : null,
         };
       }),
     [jeePapers]

@@ -54,10 +54,15 @@ export interface CheckoutResult {
   subscription: Record<string, unknown>;
 }
 
-export async function checkoutPlan(plan: CheckoutPlan): Promise<CheckoutResult> {
+export async function checkoutPlan(
+  plan: CheckoutPlan,
+  couponCode?: string | null
+): Promise<CheckoutResult> {
   const orderData = await invokeEdgeFunction('razorpay-create-order', {
     planId: plan.id,
+    couponCode: couponCode ?? undefined,
   });
+
   const {
     data: { session },
   } = await supabase.auth.getSession();
