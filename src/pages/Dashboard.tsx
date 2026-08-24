@@ -89,8 +89,9 @@ export default function Dashboard() {
   useEffect(() => {
     let cancelled = false;
     (async () => {
-      setInProgress(findInProgressAttempt());
-      await backfillLocalAttempts();
+      const userId = user?.id ?? '';
+      setInProgress(findInProgressAttempt(userId));
+      await backfillLocalAttempts(userId);
       if (cancelled) return;
       const rows = await getAttempts();
       if (cancelled) return;
@@ -102,7 +103,9 @@ export default function Dashboard() {
     return () => {
       cancelled = true;
     };
-  }, []);
+    // Re-runs on sign-in/sign-out: both the resume offer and the backfill are
+    // scoped to one account, so stale values must not survive a switch.
+  }, [user?.id]);
 
   const stats = useMemo(() => {
     const rows = attempts ?? [];

@@ -28,6 +28,11 @@ export default function TestInterface() {
   const paperKey = searchParams.get('paper') || FREE_TRIAL_PAPER_KEY;
 
   const { user } = useAuth();
+  // Saved attempts are stored per account, so every read and write is scoped to
+  // this id. Empty while auth resolves: attemptStorage treats that as "no owner
+  // known" and neither reads nor writes, and the effects below re-run once the
+  // id arrives.
+  const userId = user?.id ?? '';
   const { hasAccess, loading: accessLoading } = useSubscriptionAccess();
 
   const candidateName = (
@@ -196,7 +201,7 @@ export default function TestInterface() {
   useEffect(() => {
     if (questions.length === 0) return;
 
-    const saved = loadAttempt(paperKey);
+    const saved = loadAttempt(userId, paperKey);
 
     if (saved) {
       const validIds = new Set(questions.map((q) => q.id));
@@ -246,7 +251,7 @@ export default function TestInterface() {
     }
 
     hydratedRef.current = true;
-  }, [paperKey, questions]);
+  }, [userId, paperKey, questions]);
 
   // Persist the attempt locally after every change, so a closed tab/browser
   // can be resumed from exactly where the user left off. Only save once the
@@ -255,7 +260,7 @@ export default function TestInterface() {
   useEffect(() => {
     if (!hydratedRef.current || questions.length === 0) return;
     if (!testStarted) return;
-    saveAttempt(paperKey, {
+    saveAttempt(userId, paperKey, {
       currentQuestionId: currentQuestionId ?? questions[0]?.id ?? null,
       activeSection,
       language,
@@ -266,6 +271,7 @@ export default function TestInterface() {
       resultPayload,
     });
   }, [
+    userId,
     paperKey,
     questions,
     testStarted,
@@ -480,7 +486,7 @@ export default function TestInterface() {
   };
 
   const handleRetakeTest = () => {
-    clearAttempt(paperKey);
+    clearAttempt(userId, paperKey);
     setSyncedToDb(false);
     setResultPayload(null);
     setSubmitError(null);

@@ -6,7 +6,7 @@ import { getPapers, type PaperSummary } from '../data/questions';
 import PaywallModal from '../components/PaywallModal';
 import StaggerReveal, { StaggerItem } from '../components/StaggerReveal';
 import { useSubscriptionAccess } from '../lib/subscription';
-import { useAttemptScore } from '../hooks/useAttemptScore';
+import { useAuth } from '../context/auth-context';
 import { getAttempts, type AttemptRow } from '../lib/attemptsDb';
 import { getExam, setExam, type ExamType } from '../lib/exam';
 
@@ -46,7 +46,11 @@ function PaperEntryRow({
   dbScore: { totalScore: number; maxScore: number; accuracy: number } | null;
   onAttempt: (entry: PaperEntry) => void;
 }) {
-  const result = useAttemptScore(paperKeyOf(entry.link)) ?? dbScore;
+  // The database is the only source of marks here. This used to prefer a score
+  // read out of localStorage, which is shared by every account on the browser —
+  // so signing into a second account showed the first account's marks against
+  // papers it had never attempted.
+  const result = dbScore;
   const isMorning = entry.shift === 'Shift 1 (Morning)';
   const isNeet = entry.variant === 'neet';
 
@@ -158,6 +162,7 @@ export default function PaperTests() {
   const [dbAttempts, setDbAttempts] = useState<AttemptRow[]>([]);
   const [showPaywall, setShowPaywall] = useState(false);
   const { hasAccess, loading } = useSubscriptionAccess();
+  const { user } = useAuth();
   const navigate = useNavigate();
 
   const jeePapers = useMemo(
@@ -236,17 +241,20 @@ export default function PaperTests() {
 
   useEffect(() => {
     let cancelled = false;
+    setDbAttempts([]);
     getAttempts()
       .then((rows) => {
         if (!cancelled) setDbAttempts(rows.filter((r) => r.test_type === 'paper'));
       })
       .catch(() => {
-        // fall back to localStorage only
+        // Marks stay hidden rather than falling back to browser storage.
       });
     return () => {
       cancelled = true;
     };
-  }, []);
+    // Re-fetches on sign-in/sign-out so one account's marks are never left on
+    // screen for the next.
+  }, [user?.id]);
 
   const dbAttemptByPaper = useMemo(
     () => new Map(dbAttempts.map((a) => [a.paper_key, a])),

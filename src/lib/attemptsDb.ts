@@ -1,7 +1,7 @@
 import { supabase } from './supabase';
 import type { AttemptResult } from './scoring';
 import type { QuestionState } from '../types';
-import { loadAttempt, saveAttempt } from './attemptStorage';
+import { listSavedPaperKeys, loadAttempt, saveAttempt } from './attemptStorage';
 
 export interface AttemptRow {
   id: string;
@@ -132,14 +132,20 @@ export async function getAttempts(limit = 100): Promise<AttemptRow[]> {
 // paper (uses the attempt's syncedToDb flag), so it is safe to run on every
 // Dashboard mount. Scoring happens via the score-attempt edge function
 // (server-side), which also stores the result payload for the result screen.
-export async function backfillLocalAttempts(): Promise<void> {
+//
+// Takes the signed-in user's id because the attempt it uploads is attributed to
+// whoever's token is on the request. It used to scan every attempt in
+// localStorage, so a second account signing in on the same browser would
+// re-submit the first account's answers as its own.
+export async function backfillLocalAttempts(userId: string): Promise<void> {
+  if (!userId) return;
   // Serialize concurrent invocations (e.g. StrictMode's double effect run on
   // Dashboard mount) so two backfills can't check-and-insert the same row.
   if (inFlightBackfill) {
     await inFlightBackfill;
     return;
   }
-  inFlightBackfill = runBackfill();
+  inFlightBackfill = runBackfill(userId);
   try {
     await inFlightBackfill;
   } finally {
@@ -149,16 +155,9 @@ export async function backfillLocalAttempts(): Promise<void> {
 
 let inFlightBackfill: Promise<void> | null = null;
 
-async function runBackfill(): Promise<void> {
-  const keys: string[] = [];
-  for (let i = 0; i < localStorage.length; i++) {
-    const key = localStorage.key(i);
-    if (key?.startsWith('edutester_attempt_')) keys.push(key);
-  }
-
-  for (const storageKey of keys) {
-    const paperKey = storageKey.replace('edutester_attempt_', '');
-    const attempt = loadAttempt(paperKey);
+async function runBackfill(userId: string): Promise<void> {
+  for (const paperKey of listSavedPaperKeys(userId)) {
+    const attempt = loadAttempt(userId, paperKey);
     if (!attempt || !attempt.isTestSubmitted || attempt.syncedToDb) continue;
 
     const res = await submitAttempt({
@@ -169,7 +168,7 @@ async function runBackfill(): Promise<void> {
       questionStates: attempt.questionStates,
     });
     if (res.ok && res.payload) {
-      saveAttempt(paperKey, {
+      saveAttempt(userId, paperKey, {
         currentQuestionId: attempt.currentQuestionId,
         activeSection: attempt.activeSection,
         language: attempt.language,
