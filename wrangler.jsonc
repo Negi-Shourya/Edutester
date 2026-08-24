@@ -1,0 +1,42 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "edutester",
+  "compatibility_date": "2026-08-24",
+
+  // This is a static Vite SPA — there is no Worker script. `assets` alone
+  // serves the built site straight off Cloudflare's edge, which is exactly
+  // what the paper JSON in public/papers/ wants (see the static-paper commit:
+  // 833 ms from the database down to 18 ms from a file).
+  //
+  // not_found_handling is required because the app routes on the client
+  // (/dashboard, /test?paper=..., /pricing are React Router routes, not files).
+  // Without it, a refresh on any route but "/" returns a 404 from the edge.
+  //
+  // Note the trade-off: "single-page-application" serves index.html with a 200
+  // for EVERY unmatched path, including a missing /papers/<key>.json. Verified
+  // that this is safe — fetchStaticPaper() in src/data/questions.ts calls
+  // res.json() inside a try/catch, so HTML-instead-of-JSON throws and it falls
+  // through to the database rather than rendering an empty exam.
+  "assets": {
+    "directory": "./dist",
+    "not_found_handling": "single-page-application"
+  },
+
+  // NOTE ON ENVIRONMENT VARIABLES — deliberately none here.
+  //
+  // Vite substitutes import.meta.env.VITE_* at BUILD time, so the three
+  // VITE_ vars are already compiled into dist/assets/*.js before Cloudflare
+  // ever sees it. They are public by design (RLS is the real access control),
+  // and adding them as Worker vars would change nothing at runtime: no
+  // server-side code here reads `env`.
+  //
+  // SUPABASE_SERVICE_ROLE_KEY and RAZORPAY_KEY_SECRET must NOT be added here.
+  // They belong to the Supabase Edge Functions, which run on Supabase and read
+  // their secrets from Supabase's own store (`supabase secrets set`). Nothing
+  // in this deployment can use them, and the service-role key bypasses RLS
+  // entirely — putting it in a build environment risks it being inlined into a
+  // public bundle.
+  "observability": {
+    "enabled": true
+  }
+}
