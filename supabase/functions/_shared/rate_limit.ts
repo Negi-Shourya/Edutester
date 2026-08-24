@@ -46,13 +46,11 @@ export async function checkRateLimit(
     return { allowed: false, retryAfterSeconds };
   }
 
-  // Best-effort housekeeping keeps the log small; failures are ignored.
-  await admin
-    .from('function_calls')
-    .delete()
-    .eq('route', rule.route)
-    .lt('created_at', new Date(Date.now() - 24 * 60 * 60 * 1000).toISOString());
-
+  // Expired rows used to be deleted here, on every allowed call. A nightly
+  // pg_cron job owns that now (migration
+  // 20260824000000_rate_limit_log_housekeeping): every window above is computed
+  // from `since`, so nothing depends on old rows disappearing promptly, and the
+  // request path no longer pays for a scan + delete to do housekeeping.
   const { error } = await admin.from('function_calls').insert({ user_id: userId, route: rule.route });
   if (error) console.error('rate-limit log insert failed', error);
 

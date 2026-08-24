@@ -19,6 +19,9 @@ import NtaResultScreen from '../components/NtaResultScreen';
 
 const EMPTY_QUESTIONS: Question[] = [];
 
+// How long before the clock runs out to warm the scoring function.
+const WARM_LEAD_SECONDS = 120;
+
 export default function TestInterface() {
   const [searchParams] = useSearchParams();
   const navigate = useNavigate();
@@ -276,20 +279,22 @@ export default function TestInterface() {
     resultPayload,
   ]);
 
-  // Keep the score-attempt edge function warm while the exam runs, so the
-  // submission at the end doesn't pay a cold-start penalty. A cheap no-op
-  // ping every 2 minutes; failures are ignored (submission retries anyway).
+  // Warm the score-attempt edge function shortly before it is needed, so the
+  // submission doesn't pay a cold-start penalty. This used to ping every two
+  // minutes for the whole exam — ~90 invocations per student to protect one
+  // call, which is most of a month's function quota once a few thousand
+  // students sit a paper. Submission is only ever imminent on two edges: the
+  // student opens the submit dialog, or the clock is nearly out. Warm on
+  // those instead; failures are ignored (submission retries anyway).
+  const submitImminent =
+    testStarted && !isTestSubmitted && (showSubmitModal || timeLeft <= WARM_LEAD_SECONDS);
+
   useEffect(() => {
-    if (!testStarted || isTestSubmitted) return;
-    const warm = () => {
-      supabase.functions
-        .invoke('score-attempt', { headers: { 'x-warmup': '1' }, body: {} })
-        .catch(() => {});
-    };
-    warm();
-    const id = setInterval(warm, 2 * 60 * 1000);
-    return () => clearInterval(id);
-  }, [testStarted, isTestSubmitted]);
+    if (!submitImminent) return;
+    supabase.functions
+      .invoke('score-attempt', { headers: { 'x-warmup': '1' }, body: {} })
+      .catch(() => {});
+  }, [submitImminent]);
 
   // When the test is submitted, the result comes from the score-attempt
   // edge function: it verifies access server-side, scores the attempt

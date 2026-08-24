@@ -25,8 +25,6 @@ const DEDUPE_WINDOW_MS = 10 * 60 * 1000;
 // retry, so 10/hour is generous while capping key-download spam.
 const SCORE_CALL_LIMIT = 10;
 const SCORE_CALL_WINDOW_MS = 60 * 60 * 1000;
-// The scoring_calls log is pruned beyond this age on every call.
-const SCORE_LOG_RETENTION_MS = 24 * 60 * 60 * 1000;
 
 // Anon client: used ONLY to verify the caller's JWT.
 const supabaseAnon = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
@@ -70,20 +68,124 @@ interface ScoredQuestion {
   marks: number;
 }
 
+// The paper row + only the question metadata scoring needs.
+interface ScoringPaper {
+  key: string;
+  title: string | null;
+  full_title: string | null;
+  is_trial: boolean;
+  questions: {
+    id: number;
+    number: number;
+    type: string | null;
+    marks: number | null;
+    negative_marks: number | null;
+    sections: { name: string } | null;
+  }[];
+}
+
+interface AnswerKey {
+  correctAnswer: string;
+  solution: string | null;
+}
+
+// Papers and their answer keys are immutable once seeded, and one warm isolate
+// serves many submissions, so both are held for the isolate's lifetime. This
+// takes the common path from 4 database round trips to 2 — and the two it drops
+// are the expensive ones (a nested papers→questions→sections join and a
+// 180-row key fetch) at exactly the moment a whole hall submits at once.
+//
+// Only immutable data is cached. The rate-limit count, the subscription check
+// and the dedupe lookup stay live on every call: caching those would let an
+// expired subscription keep working until the isolate recycled.
+//
+// Growth is bounded by the paper catalogue, not by traffic — a few dozen keys
+// holding ~30 KB each — so there is nothing to evict.
+//
+// OPERATIONAL NOTE: because this survives between requests, correcting an
+// answer key in the database is no longer picked up immediately. Warm isolates
+// keep serving the old key until they recycle. After any change to `papers`,
+// `questions` or `question_keys`, redeploy this function
+// (`supabase functions deploy score-attempt`) to drop every cache.
+const paperCache = new Map<string, ScoringPaper>();
+const answerKeyCache = new Map<string, Map<number, AnswerKey>>();
+
+async function loadScoringPaper(paperKey: string): Promise<ScoringPaper | null> {
+  const cached = paperCache.get(paperKey);
+  if (cached) return cached;
+
+  // No answer columns here. question_options are intentionally not fetched
+  // either — scoring only needs type/marks plus the keys.
+  const { data, error } = await supabaseAdmin
+    .from('papers')
+    .select(
+      `key, title, full_title, is_trial, questions (
+        id, number, type, marks, negative_marks,
+        sections ( name )
+      )`
+    )
+    .eq('key', paperKey)
+    .single();
+
+  if (error || !data) return null;
+
+  const paper = data as unknown as ScoringPaper;
+  paperCache.set(paperKey, paper);
+  return paper;
+}
+
+// Returns null when the lookup failed, which the caller must NOT read as "this
+// paper has no keys" — that would score every answer wrong and then cache the
+// wrong result for the isolate's lifetime.
+async function loadAnswerKeys(
+  paperKey: string,
+  questionIds: number[]
+): Promise<Map<number, AnswerKey> | null> {
+  const cached = answerKeyCache.get(paperKey);
+  if (cached) return cached;
+
+  const { data, error } = await supabaseAdmin
+    .from('question_keys')
+    .select('question_id, correct_answer, solution')
+    .in('question_id', questionIds);
+
+  if (error || !data || data.length === 0) {
+    console.error('answer key load failed', { paperKey, error, rows: data?.length ?? 0 });
+    return null;
+  }
+
+  const keys = new Map<number, AnswerKey>(
+    data.map((k: { question_id: number; correct_answer: string; solution: string | null }) => [
+      k.question_id,
+      { correctAnswer: k.correct_answer, solution: k.solution },
+    ])
+  );
+  answerKeyCache.set(paperKey, keys);
+  return keys;
+}
+
 // Scoring mirrors the client's former computeAttemptResult exactly:
 // +marks for a correct answer, negative marks for a wrong answer, 0 for
 // unattempted; MCQ answers compared case-insensitively, numerical answers
 // trimmed. Multi-answer keys are comma-separated labels ("B,C"). An EMPTY
 // key means the question was awarded to all candidates by the official key
-// (bonus / answer withheld): anyone who attempted it gets full marks.
-function scoreQuestion(q: any, answer: string | null): { outcome: ScoredQuestion['outcome']; score: number } {
+// (bonus / answer withheld): anyone who attempted it gets full marks. A
+// question with no key row at all is treated the same way.
+//
+// The key is passed in rather than hung off the question, because question
+// objects come from a module-scope cache and are shared between requests.
+function scoreQuestion(
+  q: { type: string | null; marks: number | null; negative_marks: number | null },
+  answer: string | null,
+  key: AnswerKey | undefined
+): { outcome: ScoredQuestion['outcome']; score: number } {
   const isMCQ = q.type === 'mcq' || !q.type;
   const userAns = isMCQ ? (answer ?? '') : (answer ?? '').trim();
   const marks = Number(q.marks ?? 4);
   const negativeMarks = Number(q.negative_marks ?? -1);
 
   if (userAns === '') return { outcome: 'unattempted', score: 0 };
-  const correct = q._key?.correctAnswer ?? '';
+  const correct = key?.correctAnswer ?? '';
   if (correct === '') return { outcome: 'correct', score: marks };
   const accepted = correct.split(',').map((c: string) => c.trim().toLowerCase());
   if (accepted.includes(userAns.toLowerCase())) {
@@ -96,9 +198,10 @@ Deno.serve(async (req) => {
   if (req.method === 'OPTIONS') return new Response(null, { headers: corsHeaders });
   if (req.method !== 'POST') return json({ error: 'Method not allowed' }, 405);
 
-  // Keep-warm ping (sent periodically while an exam runs): returns
-  // immediately without auth, rate limiting or any DB work, so a real
-  // submission never pays the cold-start penalty.
+  // Keep-warm ping, sent by the client only when a submission is imminent
+  // (submit dialog open, or the clock nearly out). Returns immediately without
+  // auth, rate limiting or any DB work, so the real submission that follows
+  // doesn't pay the cold-start penalty.
   if (req.headers.get('x-warmup') === '1') return json({ ok: true }, 204);
 
   const user = await getUser(req);
@@ -123,10 +226,10 @@ Deno.serve(async (req) => {
   // every other paper requires an active subscription. The trial flag lives
   // on the paper row (papers.is_trial) so it works for JEE and NEET alike.
 
-  // Rate limit: every call is logged in scoring_calls (service-role only,
-  // no public access) and capped per user per rolling hour. Housekeeping,
-  // the log insert and the paper load are independent, so they run in
-  // parallel to keep submission latency to ~1 round trip.
+  // Rate limit: every call is logged in scoring_calls (service-role only, no
+  // public access) and capped per user per rolling hour. Pruning the log used
+  // to happen here too; a nightly pg_cron job owns it now, so the request path
+  // no longer scans the table on every submission.
   const rateSince = new Date(Date.now() - SCORE_CALL_WINDOW_MS).toISOString();
   const { count } = await supabaseAdmin
     .from('scoring_calls')
@@ -137,36 +240,18 @@ Deno.serve(async (req) => {
     return json({ error: 'Submission limit reached. Please try again later.', code: 'RATE_LIMITED' }, 429);
   }
 
-  await Promise.all([
-    // Best-effort housekeeping keeps the log small; failures are ignored.
-    supabaseAdmin
-      .from('scoring_calls')
-      .delete()
-      .lt('created_at', new Date(Date.now() - SCORE_LOG_RETENTION_MS).toISOString())
-      .then(() => null)
-      .catch(() => null),
+  // The log insert and the paper load are independent, so they overlap.
+  const [logResult, paper] = await Promise.all([
     supabaseAdmin.from('scoring_calls').insert({ user_id: user.id }),
-    // Load the paper + its questions (no answer columns). question_options
-    // are intentionally NOT fetched — scoring only needs type/marks/keys.
-    supabaseAdmin
-      .from('papers')
-      .select(
-        `key, title, full_title, is_trial, questions (
-          id, number, type, marks, negative_marks,
-          sections ( name )
-        )`
-      )
-      .eq('key', paperKey)
-      .single(),
-  ]).then(([logResult, , paperResult]) => ({ logResult, paperResult }));
+    loadScoringPaper(paperKey),
+  ]);
 
   if (logResult.error) {
     console.error('scoring log insert failed', logResult.error);
     return json({ error: 'Failed to record submission' }, 502);
   }
 
-  const paper = paperResult.data as (typeof paperResult.data & { questions: any[] }) | null;
-  if (paperResult.error || !paper) {
+  if (!paper) {
     return json({ error: 'Paper not found' }, 404);
   }
 
@@ -189,19 +274,16 @@ Deno.serve(async (req) => {
   }
 
   const questions = paper.questions ?? [];
-  const questionIds = questions.map((q: { id: number }) => q.id);
+  const questionIds = questions.map((q) => q.id);
 
-  const { data: keyRows } = await supabaseAdmin
-    .from('question_keys')
-    .select('question_id, correct_answer, solution')
-    .in('question_id', questionIds);
-
-  const keys = new Map(
-    (keyRows ?? []).map((k: { question_id: number; correct_answer: string; solution: string | null }) => [
-      k.question_id,
-      { correctAnswer: k.correct_answer, solution: k.solution },
-    ])
-  );
+  // A failed key load must not fall through to an empty map: scoreQuestion
+  // reads a blank correct_answer as "awarded to all candidates", so an empty
+  // map would silently give every student full marks and write that to
+  // attempts. Fail the request instead.
+  const keys = await loadAnswerKeys(paperKey, questionIds);
+  if (!keys) {
+    return json({ error: 'Failed to load answer keys' }, 502);
+  }
 
   const answerById = new Map<number, string | null>(answers.map((a) => [a.id, a.answer ?? null]));
 
@@ -210,13 +292,11 @@ Deno.serve(async (req) => {
   let totalIncorrect = 0;
   let totalUnattempted = 0;
   let totalScore = 0;
-  const maxScore = questions.reduce((sum: number, q: any) => sum + Number(q.marks ?? 4), 0);
+  const maxScore = questions.reduce((sum, q) => sum + Number(q.marks ?? 4), 0);
   const questionOutcomes: Record<string, 'correct' | 'incorrect' | 'unattempted'> = {};
 
-  for (const raw of questions) {
-    const q = raw as any;
-    q._key = keys.get(q.id) ?? { correctAnswer: '', solution: null };
-    const { outcome, score } = scoreQuestion(q, answerById.get(q.id) ?? null);
+  for (const q of questions) {
+    const { outcome, score } = scoreQuestion(q, answerById.get(q.id) ?? null, keys.get(q.id));
 
     if (outcome === 'correct') totalCorrect++;
     else if (outcome === 'incorrect') totalIncorrect++;

@@ -88,6 +88,10 @@ const sectionIndex = (section: string, examType: ExamType) => {
 
 const paperCache = new Map<string, Promise<PaperQuestions>>();
 
+// Loaded when a paper cannot be found at all, so a bad link lands on a working
+// test rather than an error screen.
+const TRIAL_PAPER_KEY = '02-apr-morning';
+
 export function getPaperQuestions(paperKey: string): Promise<PaperQuestions> {
   const cached = paperCache.get(paperKey);
   if (cached) return cached;
@@ -97,23 +101,7 @@ export function getPaperQuestions(paperKey: string): Promise<PaperQuestions> {
   return request;
 }
 
-async function loadPaperQuestions(paperKey: string): Promise<PaperQuestions> {
-  const { data, error } = await supabase
-    .from('papers')
-    .select(
-      `id, key, title, full_title, exam_date, session, exam_type, is_trial, duration_minutes, questions(${questionSelect})`
-    )
-    .eq('key', paperKey)
-    .single();
-
-  if (error || !data) {
-    if (paperKey !== '02-apr-morning') {
-      return getPaperQuestions('02-apr-morning');
-    }
-    throw new Error(`Failed to load paper "${paperKey}" from the database: ${error?.message ?? 'not found'}`);
-  }
-
-  const row = data as unknown as PaperRow;
+function mapPaper(row: PaperRow): PaperQuestions {
   const examType = row.exam_type === 'neet' ? 'neet' : 'jee';
 
   return {
@@ -135,6 +123,59 @@ async function loadPaperQuestions(paperKey: string): Promise<PaperQuestions> {
         return a.number - b.number;
       }),
   };
+}
+
+// Paper content is immutable once seeded, so it is also published as a static
+// file under public/papers/ by scripts/build-paper-json.mjs. Reading that costs
+// the CDN one cached file and the database nothing. The nested
+// papers → questions → question_options join it replaces measured ~530 ms of
+// Supabase server time per test start — the most expensive thing the site does,
+// and it arrives in a burst when a batch of students begin together.
+//
+// Returns null for anything unexpected so the database query still runs: a
+// missing, stale or truncated file costs latency, never a broken exam. Because
+// the file is served with the host's own cache headers, a regenerated paper can
+// take a few minutes to reach browsers that already have a copy.
+async function fetchStaticPaper(paperKey: string): Promise<PaperRow | null> {
+  // Paper keys come from the URL, and this one is interpolated into a path.
+  // Anything that is not a plain key is not something the build script could
+  // have written, so don't ask for it.
+  if (!/^[a-z0-9-]+$/i.test(paperKey)) return null;
+
+  try {
+    const res = await fetch(`${import.meta.env.BASE_URL}papers/${paperKey}.json`);
+    if (!res.ok) return null;
+
+    const row = (await res.json()) as PaperRow;
+    // A half-written or wrong-shaped file must not become an empty exam.
+    if (!row?.key || !Array.isArray(row.questions) || row.questions.length === 0) return null;
+    return row;
+  } catch {
+    // Offline, blocked, or not valid JSON — fall through to the database.
+    return null;
+  }
+}
+
+async function loadPaperQuestions(paperKey: string): Promise<PaperQuestions> {
+  const published = await fetchStaticPaper(paperKey);
+  if (published) return mapPaper(published);
+
+  const { data, error } = await supabase
+    .from('papers')
+    .select(
+      `id, key, title, full_title, exam_date, session, exam_type, is_trial, duration_minutes, questions(${questionSelect})`
+    )
+    .eq('key', paperKey)
+    .single();
+
+  if (error || !data) {
+    if (paperKey !== TRIAL_PAPER_KEY) {
+      return getPaperQuestions(TRIAL_PAPER_KEY);
+    }
+    throw new Error(`Failed to load paper "${paperKey}" from the database: ${error?.message ?? 'not found'}`);
+  }
+
+  return mapPaper(data as unknown as PaperRow);
 }
 
 const papersCache = new Map<string, Promise<PaperSummary[]>>();
