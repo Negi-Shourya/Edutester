@@ -1,0 +1,93 @@
+[
+  {
+    "section": "CHEMISTRY",
+    "number": 75,
+    "page": 11,
+    "text": "Match the species in List I with their geometry in List II\n| List I | List II |\n|---|---|\n| A. PCl_{5} | I. Tetrahedral |\n| B. BrF_{5} | II. Square Planar |\n| C. BF_{4}^{-} | III. Trigonal bipyramidal |\n| D. [Ni(CN)_{4}]^{2-} | IV. Square pyramidal |\nChoose the correct answer from the options given below:",
+    "options": [
+      { "label": "1", "text": "A-IV, B-III, C-I, D-II" },
+      { "label": "2", "text": "A-III, B-IV, C-I, D-II" },
+      { "label": "3", "text": "A-III, B-I, C-II, D-IV" },
+      { "label": "4", "text": "A-III, B-II, C-I, D-IV" }
+    ],
+    "images": []
+  },
+  {
+    "section": "CHEMISTRY",
+    "number": 76,
+    "page": 11,
+    "text": "Given below are two statements:\nStatement I: trans-But-2-ene upon treatment with Br_{2} in CCl_{4} gives the following product\nStatement II: cis-But-2-ene upon treatment with alkaline KMnO_{4} gives the following product.\nIn the light of the above statements, choose the most appropriate answer from the options given below.",
+    "options": [
+      { "label": "1", "text": "Both Statement I and Statement II are correct" },
+      { "label": "2", "text": "Both Statement I and Statement II are incorrect" },
+      { "label": "3", "text": "Statement I is correct but Statement II is incorrect" },
+      { "label": "4", "text": "Statement I is incorrect but Statement II is correct" }
+    ],
+    "images": ["q76_fig1.png", "q76_fig2.png"]
+  },
+  {
+    "section": "CHEMISTRY",
+    "number": 77,
+    "page": 11,
+    "text": "Consider the following reaction sequences and choose the correct option.",
+    "options": [
+      { "label": "1", "text": "K and L are geometrical isomers" },
+      { "label": "2", "text": "K and L are enantiomers" },
+      { "label": "3", "text": "M and N are geometrical isomers" },
+      { "label": "4", "text": "M and N are stereoisomers" }
+    ],
+    "images": ["q77_fig1.png"]
+  },
+  {
+    "section": "CHEMISTRY",
+    "number": 78,
+    "page": 11,
+    "text": "The complex which has facial and meridional isomers is\n(Given : py = pyridine and en = H_{2}N-CH_{2}-CH_{2}-NH_{2})",
+    "options": [
+      { "label": "1", "text": "[Cr(py)_{3}(Cl)_{3}]" },
+      { "label": "2", "text": "[Cr(H_{2}O)_{6}]^{3+}" },
+      { "label": "3", "text": "[Co(NH_{3})_{4}(H_{2}O)_{2}]^{3+}" },
+      { "label": "4", "text": "[Ni(en)_{2}(H_{2}O)_{2}]^{2+}" }
+    ],
+    "images": []
+  },
+  {
+    "section": "CHEMISTRY",
+    "number": 79,
+    "page": 11,
+    "text": "Identify the reactions which give aniline as the major product.\nChoose the correct answer from the options given below.",
+    "options": [
+      { "label": "1", "text": "A and B only" },
+      { "label": "2", "text": "B and D only" },
+      { "label": "3", "text": "A and C only" },
+      { "label": "4", "text": "C and D only" }
+    ],
+    "images": ["q79_fig1.png"]
+  },
+  {
+    "section": "CHEMISTRY",
+    "number": 80,
+    "page": 11,
+    "text": "Match the vitamins in List-I with their sources in List-II\n| List-I | List-II |\n|---|---|\n| A. vitamin A | I. meat |\n| B. vitamin B_{12} | II. sunflower oil |\n| C. vitamin E | III. green leafy vegetables |\n| D. vitamin K | IV. carrots |\nChoose the correct answer from the options given below.",
+    "options": [
+      { "label": "1", "text": "A-II, B-III, C-IV, D-I" },
+      { "label": "2", "text": "A-IV, B-I, C-II, D-III" },
+      { "label": "3", "text": "A-IV, B-II, C-I, D-III" },
+      { "label": "4", "text": "A-III, B-I, C-IV, D-II" }
+    ],
+    "images": []
+  },
+  {
+    "section": "CHEMISTRY",
+    "number": 81,
+    "page": 11,
+    "text": "The correct decreasing order of oxidation state of the underlined atom in each molecule is",
+    "options": [
+      { "label": "1", "text": "\\underline{P}_{4}O_{10} > \\underline{S}O_{3} > H_{2}\\underline{O}" },
+      { "label": "2", "text": "\\underline{N}_{2}O_{5} > \\underline{Al}_{2}O_{3} > H_{2}\\underline{S}" },
+      { "label": "3", "text": "\\underline{Pb}O_{2} > \\underline{N}_{2}O_{3} > \\underline{S}O_{3}" },
+      { "label": "4", "text": "\\underline{P}_{4}O_{6} > \\underline{Cl}_{2}O_{7} > \\underline{Al}H_{3}" }
+    ],
+    "images": []
+  }
+]

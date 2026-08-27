@@ -1,0 +1,145 @@
+[
+  {
+    "section": "PHYSICS",
+    "number": 21,
+    "page": 4,
+    "text": "For a travelling harmonic wave y(x, t) = 2.0 cos 2\\pi(10t - 0.0080x + 0.35), where x and y are in cm and t in s. The phase difference between oscillatory motion of two points separated by a distance of 0.5 m is:",
+    "options": [
+      { "label": "1", "text": "0.08 \\pi rad" },
+      { "label": "2", "text": "0.8 \\pi rad" },
+      { "label": "3", "text": "8 \\pi rad" },
+      { "label": "4", "text": "0.008 \\pi rad" }
+    ],
+    "images": []
+  },
+  {
+    "section": "PHYSICS",
+    "number": 22,
+    "page": 4,
+    "text": "The magnitude and direction of the acceleration produced in a body of mass 5 kg when two mutually perpendicular forces 8 N and 6 N act on it, are respectively :",
+    "options": [
+      { "label": "1", "text": "20 m s^{-2} \\tan^{-1}(4/3) with 8 N force" },
+      { "label": "2", "text": "2 m s^{-2} : \\tan^{-1}(3/4) with 6 N force" },
+      { "label": "3", "text": "2 m s^{-2} ; \\tan^{-1}(4/3) with 8 N force" },
+      { "label": "4", "text": "2 m s^{-2} ; \\tan^{-1}(3/4) with 8 N force" }
+    ],
+    "images": []
+  },
+  {
+    "section": "PHYSICS",
+    "number": 23,
+    "page": 4,
+    "text": "Consider two uncharged capacitors of equal capacitance 200 pF. One of them is charged by a 100 V supply and disconnected. Now this capacitor is connected to the uncharged capacitor. The amount of electrostatic energy lost in the process is:",
+    "options": [
+      { "label": "1", "text": "0.5 \\times 10^{-6} J" },
+      { "label": "2", "text": "1.0 J" },
+      { "label": "3", "text": "1.0 \\times 10^{-6} J" },
+      { "label": "4", "text": "0.5 J" }
+    ],
+    "images": []
+  },
+  {
+    "section": "PHYSICS",
+    "number": 24,
+    "page": 4,
+    "text": "The power of a crane, which lifts a mass of 1000 kg to a height of 20 m in 10 s is : (g = 9.8 m/s^{2})",
+    "options": [
+      { "label": "1", "text": "19.6 W" },
+      { "label": "2", "text": "39.2 W" },
+      { "label": "3", "text": "19.6 kW" },
+      { "label": "4", "text": "39.2 kW" }
+    ],
+    "images": []
+  },
+  {
+    "section": "PHYSICS",
+    "number": 25,
+    "page": 4,
+    "text": "In a vernier callipers, 20 VSD coincide with 16 MSD (each division of length 1 mm). The least count of the vernier callipers is:",
+    "options": [
+      { "label": "1", "text": "0.2 cm" },
+      { "label": "2", "text": "0.01 cm" },
+      { "label": "3", "text": "0.02 cm" },
+      { "label": "4", "text": "0.1 cm" }
+    ],
+    "images": []
+  },
+  {
+    "section": "PHYSICS",
+    "number": 26,
+    "page": 4,
+    "text": "When a ruler falls vertically, 5 different persons catch it with different reaction times.\n(g = 9.8 ms^{-2})\nA. Person A has reaction time of 0.20 s.\nB. Person B has reaction time of 0.22 s.\nC. Person C has reaction time of 0.18 s.\nD. Person D has reaction time of 0.19 s.\nE. Person E has reaction time of 0.21 s.\nWhat is the correct order of the distance travelled by the ruler for each person ?",
+    "options": [
+      { "label": "1", "text": "B > E > A > C > D" },
+      { "label": "2", "text": "C > D > A > B > E" },
+      { "label": "3", "text": "B > E > A > D > C" },
+      { "label": "4", "text": "C > D > A > E > B" }
+    ],
+    "images": []
+  },
+  {
+    "section": "PHYSICS",
+    "number": 27,
+    "page": 4,
+    "text": "A uniform metallic wire having resistance 4 \\Omega is bent to form a square loop (ABCD) (see figure). A resistance of 2 \\Omega is connected between points B and D and a battery of 2 V is connected across points A and C as shown in the figure. Now the value of current (I) is:",
+    "options": [
+      { "label": "1", "text": "2 A" },
+      { "label": "2", "text": "8 A" },
+      { "label": "3", "text": "4.5 A" },
+      { "label": "4", "text": "4 A" }
+    ],
+    "images": ["q27_fig1.png"]
+  },
+  {
+    "section": "PHYSICS",
+    "number": 28,
+    "page": 4,
+    "text": "A room heater is rated 400 W, 220 V. If the supply voltage drops to 200 V, what will be the power consumed (approximately) ?",
+    "options": [
+      { "label": "1", "text": "200 W" },
+      { "label": "2", "text": "400 W" },
+      { "label": "3", "text": "331 W" },
+      { "label": "4", "text": "121 W" }
+    ],
+    "images": []
+  },
+  {
+    "section": "PHYSICS",
+    "number": 29,
+    "page": 4,
+    "text": "A 100-turn closely wound circular coil of radius 5 cm has a magnetic field of 3.14 \\times 10^{-3} T at its centre. The current flowing through the coil, and the magnitude of the magnetic moment of this coil are, respectively: (Take \\mu_{0} = 4\\pi \\times 10^{-7} T m/A)",
+    "options": [
+      { "label": "1", "text": "2 A, 10 A m^{2}" },
+      { "label": "2", "text": "2.5 A, 20 A m^{2}" },
+      { "label": "3", "text": "2 A, 4 A m^{2}" },
+      { "label": "4", "text": "2.5 A, 2 A m^{2}" }
+    ],
+    "images": []
+  },
+  {
+    "section": "PHYSICS",
+    "number": 30,
+    "page": 4,
+    "text": "A rectangular wire loop of sides 8 cm and 3 cm with a small cut, is moving out of a region of uniform magnetic field of magnitude 0.3 T directed normal to the plane of the loop. The emf developed across the cut, if the velocity of the loop is 2 cm s^{-1}, in a direction normal to the shorter side of the loop, will be :",
+    "options": [
+      { "label": "1", "text": "4.8 \\times 10^{-4} volt" },
+      { "label": "2", "text": "1.2 \\times 10^{-4} volt" },
+      { "label": "3", "text": "1.3 \\times 10^{-4} volt" },
+      { "label": "4", "text": "1.8 \\times 10^{-4} volt" }
+    ],
+    "images": []
+  },
+  {
+    "section": "PHYSICS",
+    "number": 31,
+    "page": 4,
+    "text": "Four statements are given (A is mass number) :\nA. The volume of a nucleus is proportional to A^{1/3}.\nB. The volume of a nucleus is proportional to A.\nC. The difference in mass of an atom and its nucleus is called the mass defect.\nD. The difference in mass of a nucleus and its constituents is called the mass defect.\nChoose the correct answer from the options given below :",
+    "options": [
+      { "label": "1", "text": "A and C are true, but B and D are false" },
+      { "label": "2", "text": "B and C are true, but A and D are false" },
+      { "label": "3", "text": "A and D are true, but B and C are false" },
+      { "label": "4", "text": "B and D are true, but A and C are false" }
+    ],
+    "images": []
+  }
+]

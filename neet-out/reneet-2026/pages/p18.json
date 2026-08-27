@@ -1,0 +1,145 @@
+[
+  {
+    "section": "BIOLOGY",
+    "number": 148,
+    "page": 18,
+    "text": "Match List-I with List-II.\n| List-I | List-II |\n|---|---|\n| A. Excess growth hormone | I. Reabsorption of water and electrolytes in kidney |\n| B. Luteinizing hormone | II. Contraction of uterus during child birth |\n| C. Vasopressin | III. Acromegaly |\n| D. Oxytocin | IV. Ovulation |\nChoose the correct answer from the options given below:",
+    "options": [
+      { "label": "1", "text": "A-III, B-IV, C-II, D-I" },
+      { "label": "2", "text": "A-III, B-IV, C-I, D-II" },
+      { "label": "3", "text": "A-II, B-IV, C-I, D-III" },
+      { "label": "4", "text": "A-IV, B-III, C-I, D-II" }
+    ],
+    "images": []
+  },
+  {
+    "section": "BIOLOGY",
+    "number": 149,
+    "page": 18,
+    "text": "The opening between the right atrium and the right ventricle is guarded by ______.",
+    "options": [
+      { "label": "1", "text": "bicuspid valve" },
+      { "label": "2", "text": "tricuspid valve" },
+      { "label": "3", "text": "semilunar valve" },
+      { "label": "4", "text": "sino-atrial node" }
+    ],
+    "images": []
+  },
+  {
+    "section": "BIOLOGY",
+    "number": 150,
+    "page": 18,
+    "text": "Sponges exchange O_{2} with CO_{2} by ______.",
+    "options": [
+      { "label": "1", "text": "simple diffusion over their entire body surfaces" },
+      { "label": "2", "text": "moist cuticle" },
+      { "label": "3", "text": "tracheal tubes" },
+      { "label": "4", "text": "gills" }
+    ],
+    "images": []
+  },
+  {
+    "section": "BIOLOGY",
+    "number": 151,
+    "page": 18,
+    "text": "How many theca are present in each lobe of a typical bilobed angiosperm anther?",
+    "options": [
+      { "label": "1", "text": "2" },
+      { "label": "2", "text": "6" },
+      { "label": "3", "text": "8" },
+      { "label": "4", "text": "12" }
+    ],
+    "images": []
+  },
+  {
+    "section": "BIOLOGY",
+    "number": 152,
+    "page": 18,
+    "text": "Muscle contraction is initiated by a signal sent by the central nervous system by the release of ______.",
+    "options": [
+      { "label": "1", "text": "acetyl choline" },
+      { "label": "2", "text": "acetyl coenzyme A" },
+      { "label": "3", "text": "cyclic guanine monophosphate" },
+      { "label": "4", "text": "cyclic adenine monophosphate" }
+    ],
+    "images": []
+  },
+  {
+    "section": "BIOLOGY",
+    "number": 153,
+    "page": 18,
+    "text": "Which of the following statements about lac-operon is correct?",
+    "options": [
+      { "label": "1", "text": "Gene i is constitutively expressed" },
+      { "label": "2", "text": "Lactose activates repressor to bind to the operator" },
+      { "label": "3", "text": "Genes i, z, y and a share single common promoter" },
+      { "label": "4", "text": "Galactose can act as an inducer of lac operon" }
+    ],
+    "images": []
+  },
+  {
+    "section": "BIOLOGY",
+    "number": 154,
+    "page": 18,
+    "text": "Which of the following in female gametophyte of an angiosperm helps in guiding the pollen tube for fertilizing the eggs?",
+    "options": [
+      { "label": "1", "text": "Antipodals" },
+      { "label": "2", "text": "Synergids" },
+      { "label": "3", "text": "Central cells" },
+      { "label": "4", "text": "Polar nucleus" }
+    ],
+    "images": []
+  },
+  {
+    "section": "BIOLOGY",
+    "number": 155,
+    "page": 18,
+    "text": "Which of the following plant produces non-albuminous seeds?",
+    "options": [
+      { "label": "1", "text": "Wheat" },
+      { "label": "2", "text": "Maize" },
+      { "label": "3", "text": "Barley" },
+      { "label": "4", "text": "Pea" }
+    ],
+    "images": []
+  },
+  {
+    "section": "BIOLOGY",
+    "number": 156,
+    "page": 18,
+    "text": "If the diploid chromosome number of typical angiosperm is 36, what would be the chromosome number in its endosperm?",
+    "options": [
+      { "label": "1", "text": "18" },
+      { "label": "2", "text": "36" },
+      { "label": "3", "text": "54" },
+      { "label": "4", "text": "72" }
+    ],
+    "images": []
+  },
+  {
+    "section": "BIOLOGY",
+    "number": 157,
+    "page": 18,
+    "text": "Which of the following statements about the reabsorption process in Henle's loop are correct?\n(a) The descending limb of Henle's loop is permeable to water but almost impermeable to electrolytes.\n(b) Urine gets concentrated in Henle's loop.\n(c) Reabsorption of Na^{+} and water takes place in Henle's loop.\n(d) Active or passive transport of electrolytes occurs in the ascending limb of Henle's loop.\nChoose the correct answer from the options given below:",
+    "options": [
+      { "label": "1", "text": "(a) and (b) only" },
+      { "label": "2", "text": "(b), (c) and (d) only" },
+      { "label": "3", "text": "(a), (b) and (c) only" },
+      { "label": "4", "text": "(a), (b) and (d) only" }
+    ],
+    "images": []
+  },
+  {
+    "section": "BIOLOGY",
+    "number": 158,
+    "page": 18,
+    "text": "Which of the following is the correct order of arrangement of vertebrate column from the head to toe?",
+    "options": [
+      { "label": "1", "text": "Cervical vertebra, thoracic vertebra, sacrum, lumbar vertebra" },
+      { "label": "2", "text": "Sacrum, lumbar vertebra, thoracic vertebra, cervical vertebra" },
+      { "label": "3", "text": "Cervical vertebra, lumbar vertebra, thoracic vertebra, sacrum" },
+      { "label": "4", "text": "Cervical vertebra, thoracic vertebra, lumbar vertebra, sacrum" }
+    ],
+    "images": []
+  }
+]

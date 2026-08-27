@@ -1,0 +1,80 @@
+[
+  {
+    "section": "PHYSICS",
+    "number": 40,
+    "page": 6,
+    "text": "Two statements are given below :\nA. When the forward bias voltage across a p-n junction diode increases above a certain threshold voltage, the diode current increases significantly.\nB. This current is called reverse saturation current.\nChoose the correct answer from the options given below :",
+    "options": [
+      { "label": "1", "text": "Both Statements A and B are false" },
+      { "label": "2", "text": "Statement A is true, but Statement B is false" },
+      { "label": "3", "text": "Both Statements A and B are true" },
+      { "label": "4", "text": "Statement A is false, but Statement B is true" }
+    ],
+    "images": []
+  },
+  {
+    "section": "PHYSICS",
+    "number": 41,
+    "page": 6,
+    "text": "Which of the following statements are correct ?\nA. Inside a conductor, the electrostatic field is zero.\nB. Electric field at the surface of a charged conductor does not depend on its surface charge density.\nC. The interior of a charged conductor can have no excess charge in the static situation.\nD. At the surface of a charged conductor, the electrostatic field must be normal to the surface at every point.\nE. The electrostatic potential is zero everywhere inside a charged conductor.\nChoose the correct answer from the options given below :",
+    "options": [
+      { "label": "1", "text": "A, B and D only" },
+      { "label": "2", "text": "A, C and E only" },
+      { "label": "3", "text": "A, C and D only" },
+      { "label": "4", "text": "C, D and E only" }
+    ],
+    "images": []
+  },
+  {
+    "section": "PHYSICS",
+    "number": 42,
+    "page": 6,
+    "text": "For a metal of work function 6.6 eV, which of the following wavelengths of incident radiation does not give rise to the photoelectric effect ?\n(Take Planck's constant as 6.6 \\times 10^{-34} J s)",
+    "options": [
+      { "label": "1", "text": "100 nm" },
+      { "label": "2", "text": "150 nm" },
+      { "label": "3", "text": "200 nm" },
+      { "label": "4", "text": "50 nm" }
+    ],
+    "images": []
+  },
+  {
+    "section": "PHYSICS",
+    "number": 43,
+    "page": 6,
+    "text": "In a concave lens, a ray of light emanating from the object parallel to the principal axis of the lens, after refraction:",
+    "options": [
+      { "label": "1", "text": "passes through 2F, which is the radius of curvature of the lens." },
+      { "label": "2", "text": "appears to diverge from the first principal focus." },
+      { "label": "3", "text": "emerges parallel to the principal axis." },
+      { "label": "4", "text": "passes through the second principal focus." }
+    ],
+    "images": []
+  },
+  {
+    "section": "PHYSICS",
+    "number": 44,
+    "page": 6,
+    "text": "A submarine is designed to withstand an absolute pressure of 100 atm. How deep can it go below the water surface ?\n(Consider the density of water = 1000 kg m^{-3}, 1 atm = 1 \\times 10^{5} Pa and gravitational acceleration g = 10 m/s^{2})",
+    "options": [
+      { "label": "1", "text": "990 m" },
+      { "label": "2", "text": "9900 m" },
+      { "label": "3", "text": "99 m" },
+      { "label": "4", "text": "9000 m" }
+    ],
+    "images": []
+  },
+  {
+    "section": "PHYSICS",
+    "number": 45,
+    "page": 6,
+    "text": "Match List I with List II :\n| List I (Electromagnetic wave) | List II (Production) |\n|---|---|\n| A. Microwave | I. Electrons in atoms emit light when they move from a higher energy level to a lower energy level |\n| B. Visible light | II. Radioactive decay of nucleus |\n| C. Gamma rays | III. Vibration of atoms and molecules |\n| D. Infra-red rays | IV. Klystron valve or magnetron valve |\nChoose the correct answer from the options given below :",
+    "options": [
+      { "label": "1", "text": "A-III, B-I, C-II, D-IV" },
+      { "label": "2", "text": "A-III, B-IV, C-I, D-II" },
+      { "label": "3", "text": "A-IV, B-I, C-II, D-III" },
+      { "label": "4", "text": "A-IV, B-III, C-II, D-I" }
+    ],
+    "images": []
+  }
+]

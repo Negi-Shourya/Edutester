@@ -1,0 +1,67 @@
+[
+  {
+    "section": "BIOLOGY",
+    "number": 176,
+    "page": 23,
+    "text": "Select the correct statements regarding cell membrane in eukaryotic cell.\nA. Membrane of human RBCs has approximately 52% protein.\nB. Major phospholipids are arranged in a bilayer.\nC. Extensions of the plasma membrane into the cell form mesosomes.\nD. Tails towards the inner part of lipids are hydrophobic and thus protected from aqueous medium.\nE. Glycocalyx is present on the outer surface of the plasma membrane.\nChoose the correct answer from the options given below:",
+    "options": [
+      { "label": "1", "text": "C, D and E only" },
+      { "label": "2", "text": "B, C and E only" },
+      { "label": "3", "text": "A, B and D only" },
+      { "label": "4", "text": "A, C and E only" }
+    ],
+    "images": []
+  },
+  {
+    "section": "BIOLOGY",
+    "number": 177,
+    "page": 23,
+    "text": "Match List-I with List-II related to muscular/skeletal system:\n| List-I | List-II |\n|---|---|\n| (A) Tetany | (I) Inflammation of joints |\n| (B) Arthritis | (II) Autoimmune disorder affecting neuromuscular junction |\n| (C) Myasthenia gravis | (III) Wild contraction in muscle due to low Ca^{++} in body fluid |\n| (D) Muscular dystrophy | (IV) Progressive degeneration of skeletal muscle |\nChoose the correct answer from the options given below:",
+    "options": [
+      { "label": "1", "text": "A-III, B-I, C-II, D-IV" },
+      { "label": "2", "text": "A-I, B-II, C-III, D-IV" },
+      { "label": "3", "text": "A-IV, B-III, C-II, D-I" },
+      { "label": "4", "text": "A-III, B-II, C-I, D-IV" }
+    ],
+    "images": []
+  },
+  {
+    "section": "BIOLOGY",
+    "number": 178,
+    "page": 23,
+    "text": "Evolution of human appears parallel to the progressive development of brain and language skills. As such, the evolution of individual species in the sequence of their appearance is:",
+    "options": [
+      { "label": "1", "text": "Ramapithecus \\rightarrow Homo habilis \\rightarrow Homo erectus \\rightarrow Neanderthal \\rightarrow Homo sapiens" },
+      { "label": "2", "text": "Homo sapiens \\rightarrow Ramapithecus \\rightarrow Homo habilis \\rightarrow Neanderthal \\rightarrow Homo erectus" },
+      { "label": "3", "text": "Homo habilis \\rightarrow Homo erectus \\rightarrow Ramapithecus \\rightarrow Neanderthal \\rightarrow Homo sapiens" },
+      { "label": "4", "text": "Neanderthal \\rightarrow Ramapithecus \\rightarrow Homo habilis \\rightarrow Homo erectus \\rightarrow Homo sapiens" }
+    ],
+    "images": []
+  },
+  {
+    "section": "BIOLOGY",
+    "number": 179,
+    "page": 23,
+    "text": "The flightless bird with forelimbs modified as paddle-like structures suited for swimming is known as :",
+    "options": [
+      { "label": "1", "text": "Struthio" },
+      { "label": "2", "text": "Neophron" },
+      { "label": "3", "text": "Aptenodytes" },
+      { "label": "4", "text": "Psittacula" }
+    ],
+    "images": []
+  },
+  {
+    "section": "BIOLOGY",
+    "number": 180,
+    "page": 23,
+    "text": "Choose the correct statements regarding population interactions between two species.\nA. In both parasitism and commensalism, only one species benefits and the other species is harmed.\nB. Both species benefit in mutualism.\nC. Both species benefit in commensalism.\nD. In parasitism, only one species benefits and the other species is harmed.\nE. In amensalism, one species is harmed and the other is unaffected.\nChoose the correct answer from the options given below:",
+    "options": [
+      { "label": "1", "text": "B and E only" },
+      { "label": "2", "text": "A and B only" },
+      { "label": "3", "text": "B, D and E only" },
+      { "label": "4", "text": "A and D only" }
+    ],
+    "images": []
+  }
+]

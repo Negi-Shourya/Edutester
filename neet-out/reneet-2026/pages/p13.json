@@ -1,0 +1,184 @@
+[
+  {
+    "section": "BIOLOGY",
+    "number": 91,
+    "page": 13,
+    "text": "The number of vertebrae in a human is ______.",
+    "options": [
+      { "label": "1", "text": "7" },
+      { "label": "2", "text": "12" },
+      { "label": "3", "text": "26" },
+      { "label": "4", "text": "206" }
+    ],
+    "images": []
+  },
+  {
+    "section": "BIOLOGY",
+    "number": 92,
+    "page": 13,
+    "text": "Symbiotic association between fungi and algae are called ______.",
+    "options": [
+      { "label": "1", "text": "lichens" },
+      { "label": "2", "text": "sponges" },
+      { "label": "3", "text": "mycorrhiza" },
+      { "label": "4", "text": "chrysophytes" }
+    ],
+    "images": []
+  },
+  {
+    "section": "BIOLOGY",
+    "number": 93,
+    "page": 13,
+    "text": "Cell theory was formulated by ______.",
+    "options": [
+      { "label": "1", "text": "Schleiden and Schwann" },
+      { "label": "2", "text": "Robert Brown" },
+      { "label": "3", "text": "Singer and Nicolson" },
+      { "label": "4", "text": "Antonie Von Leeuwenhoek" }
+    ],
+    "images": []
+  },
+  {
+    "section": "BIOLOGY",
+    "number": 94,
+    "page": 13,
+    "text": "Which of the following are characteristics of prokaryotic cells ?\n(a) Ribosomes are made of 50S and 30S subunits\n(b) They can have plasmids\n(c) They contain mesosome\n(d) They have peroxisomes\nChoose the correct answer from the options given below :",
+    "options": [
+      { "label": "1", "text": "(b) and (c) only" },
+      { "label": "2", "text": "(a) and (c) only" },
+      { "label": "3", "text": "(a), (c) and (d) only" },
+      { "label": "4", "text": "(a), (b) and (c) only" }
+    ],
+    "images": []
+  },
+  {
+    "section": "BIOLOGY",
+    "number": 95,
+    "page": 13,
+    "text": "Which of the following is not a part of human central neural system?",
+    "options": [
+      { "label": "1", "text": "Arachnoid" },
+      { "label": "2", "text": "Dura mater" },
+      { "label": "3", "text": "Pia mater" },
+      { "label": "4", "text": "Pericardium" }
+    ],
+    "images": []
+  },
+  {
+    "section": "BIOLOGY",
+    "number": 96,
+    "page": 13,
+    "text": "Mitochondrial inner membrane encloses ______.",
+    "options": [
+      { "label": "1", "text": "matrix" },
+      { "label": "2", "text": "cytosol" },
+      { "label": "3", "text": "mucus" },
+      { "label": "4", "text": "aqueous humor" }
+    ],
+    "images": []
+  },
+  {
+    "section": "BIOLOGY",
+    "number": 97,
+    "page": 13,
+    "text": "Match List-I with List-II.\n| List-I | List-II |\n|---|---|\n| A. Cristae | I. Flat membrane sacs in stroma of chloroplast |\n| B. Cisternae | II. Infoldings in mitochondria |\n| C. Thylakoids | III. Cell membrane |\n| D. Phospholipid | IV. Disc shaped sacs in the Golgi apparatus |\nChoose the correct answer from the options given below.",
+    "options": [
+      { "label": "1", "text": "A-III, B-IV, C-I, D-II" },
+      { "label": "2", "text": "A-II, B-IV, C-I, D-III" },
+      { "label": "3", "text": "A-II, B-IV, C-III, D-I" },
+      { "label": "4", "text": "A-IV, B-III, C-I, D-II" }
+    ],
+    "images": []
+  },
+  {
+    "section": "BIOLOGY",
+    "number": 98,
+    "page": 13,
+    "text": "The plastid that stores xanthophyll is known as",
+    "options": [
+      { "label": "1", "text": "chloroplast" },
+      { "label": "2", "text": "chromoplast" },
+      { "label": "3", "text": "aleuroplast" },
+      { "label": "4", "text": "amyloplast" }
+    ],
+    "images": []
+  },
+  {
+    "section": "BIOLOGY",
+    "number": 99,
+    "page": 13,
+    "text": "Which of the following statements related to pituitary gland are correct?\n(a) It is divided anatomically into adenohypophysis and neurohypophysis\n(b) It secretes follicle stimulating hormone\n(c) It secretes melanocyte stimulating hormone\n(d) It does not secrete prolactin\nChoose the correct answer from the options given below:",
+    "options": [
+      { "label": "1", "text": "(a) and (b) only" },
+      { "label": "2", "text": "(a), (b) and (c) only" },
+      { "label": "3", "text": "(c) and (d) only" },
+      { "label": "4", "text": "(b) and (c) only" }
+    ],
+    "images": []
+  },
+  {
+    "section": "BIOLOGY",
+    "number": 100,
+    "page": 13,
+    "text": "Photorespiration reaction catalyzed by RuBisCo is shown below:\nRuBP + O_{2} → 3-Phosphoglycerate + X\nIdentify \"X\" from the given options:",
+    "options": [
+      { "label": "1", "text": "Phosphoenolpyruvate" },
+      { "label": "2", "text": "2-phosphoglycolate" },
+      { "label": "3", "text": "Oxaloacetate" },
+      { "label": "4", "text": "Malate" }
+    ],
+    "images": []
+  },
+  {
+    "section": "BIOLOGY",
+    "number": 101,
+    "page": 13,
+    "text": "Mad cow disease is caused by ______.",
+    "options": [
+      { "label": "1", "text": "prions" },
+      { "label": "2", "text": "viroids" },
+      { "label": "3", "text": "Aspergillus sp." },
+      { "label": "4", "text": "Mycoplasma sp." }
+    ],
+    "images": []
+  },
+  {
+    "section": "BIOLOGY",
+    "number": 102,
+    "page": 13,
+    "text": "Which pigment has absorption peak at 700 nm in the photosynthetic reaction centre PS I (P700)?",
+    "options": [
+      { "label": "1", "text": "Chlorophyll b" },
+      { "label": "2", "text": "Chlorophyll a" },
+      { "label": "3", "text": "Xanthophylls" },
+      { "label": "4", "text": "Carotenoids" }
+    ],
+    "images": []
+  },
+  {
+    "section": "BIOLOGY",
+    "number": 103,
+    "page": 13,
+    "text": "In water, frogs respire using ______.",
+    "options": [
+      { "label": "1", "text": "skin" },
+      { "label": "2", "text": "buccal cavity" },
+      { "label": "3", "text": "lungs" },
+      { "label": "4", "text": "trachea" }
+    ],
+    "images": []
+  },
+  {
+    "section": "BIOLOGY",
+    "number": 104,
+    "page": 13,
+    "text": "Which of the following represents the correct sequence of arrangement of bones in the lower limb of humans?",
+    "options": [
+      { "label": "1", "text": "Femur-tibia-patella-tarsal" },
+      { "label": "2", "text": "Patella-femur-tibia-tarsal" },
+      { "label": "3", "text": "Femur-patella-tibia-tarsal" },
+      { "label": "4", "text": "Femur-tarsal-patella-tibia" }
+    ],
+    "images": []
+  }
+]

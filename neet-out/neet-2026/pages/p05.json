@@ -1,0 +1,106 @@
+[
+  {
+    "section": "PHYSICS",
+    "number": 32,
+    "page": 5,
+    "text": "An unknown nucleus has a nuclear density of 2.29 \\times 10^{17} kg/m^{3} and mass of 19.926 \\times 10^{-27} kg. Its mass number A is approximately :\n(Take R_{0} = 1.2 \\times 10^{-15} m, 4\\pi = 12.56)",
+    "options": [
+      { "label": "1", "text": "12" },
+      { "label": "2", "text": "20" },
+      { "label": "3", "text": "16" },
+      { "label": "4", "text": "19" }
+    ],
+    "images": []
+  },
+  {
+    "section": "PHYSICS",
+    "number": 33,
+    "page": 5,
+    "text": "Savitha, a XI standard student, while conducting an experiment to determine the effective length of a simple pendulum L, notes down the data of time taken to complete 30 oscillations as 60 s and hence calculates the length of the simple pendulum as :\n(Take \\pi^{2} = 9.8, and g = 9.8 m/s^{2})",
+    "options": [
+      { "label": "1", "text": "0.75 m" },
+      { "label": "2", "text": "1.5 m" },
+      { "label": "3", "text": "2 m" },
+      { "label": "4", "text": "1 m" }
+    ],
+    "images": []
+  },
+  {
+    "section": "PHYSICS",
+    "number": 34,
+    "page": 5,
+    "text": "An electric heater supplies heat to a system at a rate of 100 W. If the system performs work at a rate of 75 J/s, then the rate at which internal energy increases will be :",
+    "options": [
+      { "label": "1", "text": "75 W" },
+      { "label": "2", "text": "100 W" },
+      { "label": "3", "text": "125 W" },
+      { "label": "4", "text": "25 W" }
+    ],
+    "images": []
+  },
+  {
+    "section": "PHYSICS",
+    "number": 35,
+    "page": 5,
+    "text": "A thin wire of length 'L' and linear mass density 'm' is bent into a circular ring (in x - y plane) with centre 'C' as shown in figure. The moment of inertia of the ring about an axis yy' will be:",
+    "options": [
+      { "label": "1", "text": "\\frac{3 mL^{3}}{8\\pi}" },
+      { "label": "2", "text": "\\frac{3 mL^{3}}{8\\pi^{2}}" },
+      { "label": "3", "text": "\\frac{3 mL^{2}}{8\\pi}" },
+      { "label": "4", "text": "\\frac{3 mL^{2}}{8\\pi^{2}}" }
+    ],
+    "images": ["q35_fig1.png"]
+  },
+  {
+    "section": "PHYSICS",
+    "number": 36,
+    "page": 5,
+    "text": "A galvanometer of resistance 100 \\Omega gives full scale deflection for a current of 1 mA. It is converted into an ammeter of range 0 - 10 A. The shunt required is:",
+    "options": [
+      { "label": "1", "text": "0.01 \\Omega" },
+      { "label": "2", "text": "0.10 \\Omega" },
+      { "label": "3", "text": "1.0 \\Omega" },
+      { "label": "4", "text": "0.001 \\Omega" }
+    ],
+    "images": []
+  },
+  {
+    "section": "PHYSICS",
+    "number": 37,
+    "page": 5,
+    "text": "In a metre bridge experiment (see figure), the positions of the cell, E, and galvanometer, G, are interchanged. We shall observe in the galvanometer:",
+    "options": [
+      { "label": "1", "text": "Only the left-sided deflection" },
+      { "label": "2", "text": "There will be no deflection irrespective of the position of the jockey" },
+      { "label": "3", "text": "Only the right-sided deflection" },
+      { "label": "4", "text": "Both right-sided and left-sided deflection and at balance point, no-deflection" }
+    ],
+    "images": ["q37_fig1.png"]
+  },
+  {
+    "section": "PHYSICS",
+    "number": 38,
+    "page": 5,
+    "text": "The peak value of an alternating current is 5 A and frequency is 60 Hz. How long will the current, starting from zero, take to reach the peak value ?",
+    "options": [
+      { "label": "1", "text": "\\frac{1}{120} s" },
+      { "label": "2", "text": "\\frac{1}{60} s" },
+      { "label": "3", "text": "\\frac{1}{30} s" },
+      { "label": "4", "text": "\\frac{1}{240} s" }
+    ],
+    "images": []
+  },
+  {
+    "section": "PHYSICS",
+    "number": 39,
+    "page": 5,
+    "text": "The figure given below shows a long straight solid wire of circular cross-section of radius 'a' carrying steady current I. The current I is uniformly distributed across its cross-section. The plot which correctly represents the variation of magnetic field (B) with distance (r) from the axis of the conductor in the region is:",
+    "options": [
+      { "label": "1", "text": "", "figure": "q39_opt1.png" },
+      { "label": "2", "text": "", "figure": "q39_opt2.png" },
+      { "label": "3", "text": "", "figure": "q39_opt3.png" },
+      { "label": "4", "text": "", "figure": "q39_opt4.png" }
+    ],
+    "images": ["q39_fig1.png"]
+  }
+]

@@ -1,0 +1,119 @@
+[
+  {
+    "section": "CHEMISTRY",
+    "number": 71,
+    "page": 10,
+    "text": "Identify the correct statements :\nA. The molality of 2.5 g of ethanoic acid (Molar mass : 60 g mol^{-1}) in 75 g of benzene solution is 0.556 m.\nB. The molarity of a solution containing 5 g of NaOH (molar mass : 40 g mol^{-1}) in 450 mL of solution is 0.278 M at 298 K.\nC. Aquatic species are more comfortable in cold water.\nD. The solubility of gas increases with decrease in pressure.\nE. For a binary mixture of A and B, the number of moles of A and B are n_{A} and n_{B} respectively. The mole fraction of B will be x_{B} = \\frac{n_{A}}{n_{A} + n_{B}}.\nChoose the correct answer from the options given below :",
+    "options": [
+      { "label": "1", "text": "A, B and C only" },
+      { "label": "2", "text": "A and B only" },
+      { "label": "3", "text": "A and C only" },
+      { "label": "4", "text": "A, D and E only" }
+    ],
+    "images": []
+  },
+  {
+    "section": "CHEMISTRY",
+    "number": 72,
+    "page": 10,
+    "text": "During Lassaigne's test, the elements present in an organic compound are converted from :",
+    "options": [
+      { "label": "1", "text": "ionic form to ionic form" },
+      { "label": "2", "text": "covalent form to ionic form" },
+      { "label": "3", "text": "covalent form to covalent form" },
+      { "label": "4", "text": "ionic form to covalent form" }
+    ],
+    "images": []
+  },
+  {
+    "section": "CHEMISTRY",
+    "number": 73,
+    "page": 10,
+    "text": "A solution of copper sulphate is electrolysed for 10 minutes with a current of 1.5 amperes. The mass of copper deposited at cathode is :\n(Given : Molar mass of Cu = 63 g mol^{-1} ; 1 F = 96487 C mol^{-1})",
+    "options": [
+      { "label": "1", "text": "1.7018 g" },
+      { "label": "2", "text": "0.2938 g" },
+      { "label": "3", "text": "2.4036 g" },
+      { "label": "4", "text": "0.5876 g" }
+    ],
+    "images": []
+  },
+  {
+    "section": "CHEMISTRY",
+    "number": 74,
+    "page": 10,
+    "text": "At a certain temperature, T (K), during a process, 500 J is absorbed by the system and work of 200 J is done by the system. Then change in internal energy of the system is :",
+    "options": [
+      { "label": "1", "text": "400 J" },
+      { "label": "2", "text": "300 J" },
+      { "label": "3", "text": "700 J" },
+      { "label": "4", "text": "500 J" }
+    ],
+    "images": []
+  },
+  {
+    "section": "CHEMISTRY",
+    "number": 75,
+    "page": 10,
+    "text": "For a certain reaction R \\rightarrow Product, the plot of concentration [R] vs time has a negative slope as shown. The order of reaction is:",
+    "options": [
+      { "label": "1", "text": "0" },
+      { "label": "2", "text": "1" },
+      { "label": "3", "text": "2" },
+      { "label": "4", "text": "2.5" }
+    ],
+    "images": ["q75_fig1.png"]
+  },
+  {
+    "section": "CHEMISTRY",
+    "number": 76,
+    "page": 10,
+    "text": "Identify the correct statement about ClF_{3} from the following options:",
+    "options": [
+      { "label": "1", "text": "It has T-shaped geometry with two lone pairs on Cl atom." },
+      { "label": "2", "text": "It has T-shaped geometry with three lone pairs on Cl atom." },
+      { "label": "3", "text": "It has a trigonal pyramidal geometry with two lone pairs on Cl atom." },
+      { "label": "4", "text": "It has a planar trigonal geometry with two lone pairs on Cl atom." }
+    ],
+    "images": []
+  },
+  {
+    "section": "CHEMISTRY",
+    "number": 77,
+    "page": 10,
+    "text": "In a test tube containing a salt, a few drops of dilute H_{2}SO_{4} was added, which gave colourless vapours having the smell of vinegar. The vapours turned the blue litmus paper red.\nIdentify the correct anion from the following:",
+    "options": [
+      { "label": "1", "text": "Sulphide, S^{2-}" },
+      { "label": "2", "text": "Sulphate, SO_{4}^{2-}" },
+      { "label": "3", "text": "Acetate, CH_{3}COO^{-}" },
+      { "label": "4", "text": "Carbonate, CO_{3}^{2-}" }
+    ],
+    "images": []
+  },
+  {
+    "section": "CHEMISTRY",
+    "number": 78,
+    "page": 10,
+    "text": "At 298 K, a certain buffer solution contains equal concentrations of X^{-} and HX, K_{b} for X^{-} is 10^{-10}. What is the pH of this buffer solution ?",
+    "options": [
+      { "label": "1", "text": "2" },
+      { "label": "2", "text": "4" },
+      { "label": "3", "text": "6" },
+      { "label": "4", "text": "10" }
+    ],
+    "images": []
+  },
+  {
+    "section": "CHEMISTRY",
+    "number": 79,
+    "page": 10,
+    "text": "Calculate emf of the half cell given below:\nPt(s) | H_{2}(g, 2 atm) | HCl(aq, 0.02 M)\nE^{\\circ}_{H_{2}/H^{+}} = 0 V\n(Given : \\frac{2.303 RT}{F} = 0.059, log 2 = 0.3010)",
+    "options": [
+      { "label": "1", "text": "-0.109 V" },
+      { "label": "2", "text": "0.035 V" },
+      { "label": "3", "text": "-0.035 V" },
+      { "label": "4", "text": "0.109 V" }
+    ],
+    "images": []
+  }
+]

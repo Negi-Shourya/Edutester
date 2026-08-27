@@ -1,0 +1,106 @@
+[
+  {
+    "section": "BIOLOGY",
+    "number": 151,
+    "page": 20,
+    "text": "Match List-I with List-II.\n| List-I (Drug) | List-II (Effect) |\n|---|---|\n| (A) Nicotine | (I) Causes sense of euphoria and increased energy |\n| (B) Morphine | (II) Stimulates adrenal gland to release catecholamines into blood circulation |\n| (C) Heroin | (III) Effective sedative and painkiller |\n| (D) Cocaine | (IV) A depressant; slows down body function |\nChoose the correct answer from the options given below:",
+    "options": [
+      { "label": "1", "text": "A-III, B-II, C-IV, D-I" },
+      { "label": "2", "text": "A-II, B-III, C-I, D-IV" },
+      { "label": "3", "text": "A-II, B-III, C-IV, D-I" },
+      { "label": "4", "text": "A-III, B-II, C-I, D-IV" }
+    ],
+    "images": []
+  },
+  {
+    "section": "BIOLOGY",
+    "number": 152,
+    "page": 20,
+    "text": "The human protein named \\alpha-1 antitrypsin, obtained from transgenic animals, is used for the treatment of________.",
+    "options": [
+      { "label": "1", "text": "Emphysema" },
+      { "label": "2", "text": "Alzheimer's disease" },
+      { "label": "3", "text": "Rheumatoid arthritis" },
+      { "label": "4", "text": "Cystic fibrosis" }
+    ],
+    "images": []
+  },
+  {
+    "section": "BIOLOGY",
+    "number": 153,
+    "page": 20,
+    "text": "Select the set of fishes which belong to the class Osteichthyes:",
+    "options": [
+      { "label": "1", "text": "Devil fish, Cuttlefish and Hagfish" },
+      { "label": "2", "text": "Saw fish, Fighting fish and Dog fish" },
+      { "label": "3", "text": "Starfish, Hagfish and Cuttlefish" },
+      { "label": "4", "text": "Flying fish, Angel fish and Fighting fish" }
+    ],
+    "images": []
+  },
+  {
+    "section": "BIOLOGY",
+    "number": 154,
+    "page": 20,
+    "text": "Select the incorrect statements from the following:\nA. Digestive system in Platyhelminthes is incomplete.\nB. Bilateral symmetry is a characteristic feature of adult Echinoderms.\nC. Pseudocoelom is possessed by Aschelminthes.\nD. Notochord is persistent throughout life in the class Chondrichthyes.\nE. Members of class Reptilia maintain a constant body temperature.\nChoose the answer from the options given below:",
+    "options": [
+      { "label": "1", "text": "A and C only" },
+      { "label": "2", "text": "B and E only" },
+      { "label": "3", "text": "C and D only" },
+      { "label": "4", "text": "B and D only" }
+    ],
+    "images": []
+  },
+  {
+    "section": "BIOLOGY",
+    "number": 155,
+    "page": 20,
+    "text": "Non-membrane bound cell organelles found in both prokaryotic and eukaryotic cells are __________.",
+    "options": [
+      { "label": "1", "text": "Ribosomes" },
+      { "label": "2", "text": "Lysosomes" },
+      { "label": "3", "text": "Centrosomes" },
+      { "label": "4", "text": "Mitochondria" }
+    ],
+    "images": []
+  },
+  {
+    "section": "BIOLOGY",
+    "number": 156,
+    "page": 20,
+    "text": "Which of the following equations depicts Verhulst-Pearl logistic population growth?",
+    "options": [
+      { "label": "1", "text": "dN/dt = rN (K + N / K)" },
+      { "label": "2", "text": "dN/dt = rN (K - N / K)" },
+      { "label": "3", "text": "dN/dt = rN (K - N / N)" },
+      { "label": "4", "text": "dN/dt = rN (K / K - N)" }
+    ],
+    "images": []
+  },
+  {
+    "section": "BIOLOGY",
+    "number": 157,
+    "page": 20,
+    "text": "Select the incorrect statements with reference to Rh grouping.\nA. Erythroblastosis foetalis is a condition observed having foetus with Rh^{-ve} blood and mother with Rh^{+ve} blood.\nB. Rh antigen is observed on RBCs in the majority of human beings.\nC. Before blood transfusion, Rh group should also be matched.\nD. Rh incompatibility is observed when a pregnant mother is Rh^{-ve} and the foetus is Rh^{+ve}.\nE. Erythroblastosis foetalis can be avoided by administering anti-Rh antibodies to the mother immediately after the delivery of the second child.\nChoose the answer from the options given below:",
+    "options": [
+      { "label": "1", "text": "C and D only" },
+      { "label": "2", "text": "A and B only" },
+      { "label": "3", "text": "A and E only" },
+      { "label": "4", "text": "B and C only" }
+    ],
+    "images": []
+  },
+  {
+    "section": "BIOLOGY",
+    "number": 158,
+    "page": 20,
+    "text": "Match List-I with List-II.\n| List-I (Bioactive molecules) | List-II (Importance) |\n|---|---|\n| (A) Streptokinase | (I) Immunosuppressive agent |\n| (B) Statins | (II) Removal of clots from the blood vessels |\n| (C) Lipases | (III) Blood cholesterol-lowering agent |\n| (D) Cyclosporin A | (IV) Detergent formulations |\nChoose the correct answer from the options given below:",
+    "options": [
+      { "label": "1", "text": "A-II, B-III, C-I, D-IV" },
+      { "label": "2", "text": "A-IV, B-III, C-II, D-I" },
+      { "label": "3", "text": "A-III, B-II, C-IV, D-I" },
+      { "label": "4", "text": "A-II, B-III, C-IV, D-I" }
+    ],
+    "images": []
+  }
+]

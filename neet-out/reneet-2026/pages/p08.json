@@ -1,0 +1,145 @@
+[
+  {
+    "section": "CHEMISTRY",
+    "number": 46,
+    "page": 8,
+    "text": "For the following reaction sequence, choose the correct option.",
+    "options": [
+      { "label": "1", "text": "If P is the sodium salt of a carboxylic acid, Q is a primary alcohol." },
+      { "label": "2", "text": "P and Q are aromatic compounds." },
+      { "label": "3", "text": "If P gives a carboxylic acid on acidification, Q gives a poisonous gas on exposure to air and light." },
+      { "label": "4", "text": "Both P and Q are carbonyl compounds." }
+    ],
+    "images": ["q46_fig1.png"]
+  },
+  {
+    "section": "CHEMISTRY",
+    "number": 47,
+    "page": 8,
+    "text": "Given below are two statements:\nStatement I: [Fe(ox)_{3}]^{3-} is chiral.\nStatement II: trans-[Cr(H_{2}O)_{2}(ox)_{2}]^{-} is chiral.\n(Given : oxH_{2} = HOOC-COOH)\nIn light of the above statements, choose the most appropriate answer from the options given below:",
+    "options": [
+      { "label": "1", "text": "Both Statement-I and Statement-II are correct." },
+      { "label": "2", "text": "Both Statement-I and Statement-II are incorrect." },
+      { "label": "3", "text": "Statement-I is correct but Statement-II is incorrect." },
+      { "label": "4", "text": "Statement-I is incorrect but Statement-II is correct." }
+    ],
+    "images": []
+  },
+  {
+    "section": "CHEMISTRY",
+    "number": 48,
+    "page": 8,
+    "text": "The following carbocation is stabilized by the interaction of the empty p orbital with",
+    "options": [
+      { "label": "1", "text": "filled \\sigma and filled \\pi orbitals" },
+      { "label": "2", "text": "empty \\sigma and empty \\pi* orbitals" },
+      { "label": "3", "text": "empty \\sigma* and filled \\pi orbitals" },
+      { "label": "4", "text": "empty \\sigma* and empty \\pi* orbitals" }
+    ],
+    "images": ["q48_fig1.png"]
+  },
+  {
+    "section": "CHEMISTRY",
+    "number": 49,
+    "page": 8,
+    "text": "In potash alum, the ratio of K^{+} and SO_{4}^{2-} ions is",
+    "options": [
+      { "label": "1", "text": "1:2" },
+      { "label": "2", "text": "2:1" },
+      { "label": "3", "text": "2:3" },
+      { "label": "4", "text": "3:2" }
+    ],
+    "images": []
+  },
+  {
+    "section": "CHEMISTRY",
+    "number": 50,
+    "page": 8,
+    "text": "The correct statement about peptides and proteins is",
+    "options": [
+      { "label": "1", "text": "Tertiary structure of proteins has two or more polypeptide subunits." },
+      { "label": "2", "text": "Only the proteins having a quaternary structure are biologically active." },
+      { "label": "3", "text": "In \\beta-pleated sheet structures, peptide chains are held together by intermolecular hydrogen bonds." },
+      { "label": "4", "text": "In \\alpha-helices, the polypeptide chain is twisted into a left-handed screw (helix) through intramolecular hydrogen bonds." }
+    ],
+    "images": []
+  },
+  {
+    "section": "CHEMISTRY",
+    "number": 51,
+    "page": 8,
+    "text": "The numbers 17.0145 and 21.0235 were rounded to three figures after the decimal point. The resulting numbers, respectively, are",
+    "options": [
+      { "label": "1", "text": "17.014 and 21.023" },
+      { "label": "2", "text": "17.015 and 21.023" },
+      { "label": "3", "text": "17.014 and 21.024" },
+      { "label": "4", "text": "17.015 and 21.024" }
+    ],
+    "images": []
+  },
+  {
+    "section": "CHEMISTRY",
+    "number": 52,
+    "page": 8,
+    "text": "The correct order of solubility of the given salts in water at 298 K is\n| Salt | K_{sp} at 298 K |\n|---|---|\n| AgBr | 5.0×10^{-13} |\n| Zn(OH)_{2} | 1.0×10^{-15} |\n| Hg_{2}Cl_{2} | 1.3×10^{-18} |",
+    "options": [
+      { "label": "1", "text": "Hg_{2}Cl_{2} > Zn(OH)_{2} > AgBr" },
+      { "label": "2", "text": "AgBr > Zn(OH)_{2} > Hg_{2}Cl_{2}" },
+      { "label": "3", "text": "Hg_{2}Cl_{2} > AgBr > Zn(OH)_{2}" },
+      { "label": "4", "text": "Zn(OH)_{2} > AgBr > Hg_{2}Cl_{2}" }
+    ],
+    "images": []
+  },
+  {
+    "section": "CHEMISTRY",
+    "number": 53,
+    "page": 8,
+    "text": "Among the following options, the correct trend in the electron gain enthalpy is",
+    "options": [
+      { "label": "1", "text": "F > Cl > Br > I" },
+      { "label": "2", "text": "Br > Cl > F > I" },
+      { "label": "3", "text": "Cl > F > Br > I" },
+      { "label": "4", "text": "I > Br > Cl > F" }
+    ],
+    "images": []
+  },
+  {
+    "section": "CHEMISTRY",
+    "number": 54,
+    "page": 8,
+    "text": "Assertion A:\nFor an ideal solution formed by mixing liquids P and Q, \\Delta_{mix}H = 0 and \\Delta_{mix}V = 0\nReason R:\nNo interactions occur between P and Q\nIn the light of the above statements, choose the most appropriate answer from the options given below.",
+    "options": [
+      { "label": "1", "text": "Both A and R are correct and R is the correct explanation of A" },
+      { "label": "2", "text": "Both A and R are correct but R is NOT the correct explanation of A" },
+      { "label": "3", "text": "A is correct but R is not correct" },
+      { "label": "4", "text": "A is not correct but R is correct" }
+    ],
+    "images": []
+  },
+  {
+    "section": "CHEMISTRY",
+    "number": 55,
+    "page": 8,
+    "text": "The amino acid that gives a red-blood colour on treating its sodium fusion extract with sodium nitroprusside is",
+    "options": [
+      { "label": "1", "text": "leucine" },
+      { "label": "2", "text": "threonine" },
+      { "label": "3", "text": "methionine" },
+      { "label": "4", "text": "serine" }
+    ],
+    "images": []
+  },
+  {
+    "section": "CHEMISTRY",
+    "number": 56,
+    "page": 8,
+    "text": "The standard electrode potential (E°) for the half-cell reaction Fe^{3+} + e^{-} \\to Fe^{2+} at 298 K is\n(Given: E° (Fe^{3+} / Fe) = -0.04 V and E° (Fe^{2+} / Fe) = -0.44 V at 298 K)",
+    "options": [
+      { "label": "1", "text": "+0.40 V" },
+      { "label": "2", "text": "+0.76 V" },
+      { "label": "3", "text": "-0.48 V" },
+      { "label": "4", "text": "+0.92 V" }
+    ],
+    "images": []
+  }
+]

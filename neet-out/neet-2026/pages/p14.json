@@ -1,0 +1,80 @@
+[
+  {
+    "section": "BIOLOGY",
+    "number": 105,
+    "page": 14,
+    "text": "Match List-I with List-II:\n| List-I | List-II |\n|---|---|\n| (A) Decomposition | (I) Accumulation of dark coloured amorphous colloidal substance |\n| (B) Detritus | (II) Release of inorganic nutrients by the activity of microbes in soil |\n| (C) Mineralisation | (III) Breaking down of complex organic matter into inorganic substances |\n| (D) Humification | (IV) Dead remains of plants and animals including fecal matter |\nChoose the correct answer from the options given below:",
+    "options": [
+      { "label": "1", "text": "A-IV, B-III, C-I, D-II" },
+      { "label": "2", "text": "A-III, B-IV, C-II, D-I" },
+      { "label": "3", "text": "A-I, B-II, C-III, D-IV" },
+      { "label": "4", "text": "A-III, B-II, C-I, D-IV" }
+    ],
+    "images": []
+  },
+  {
+    "section": "BIOLOGY",
+    "number": 106,
+    "page": 14,
+    "text": "Which one of the following is the site for active ribosomal RNA synthesis?",
+    "options": [
+      { "label": "1", "text": "Centrosome" },
+      { "label": "2", "text": "Chromatin" },
+      { "label": "3", "text": "Nucleolus" },
+      { "label": "4", "text": "Kinetochore" }
+    ],
+    "images": []
+  },
+  {
+    "section": "BIOLOGY",
+    "number": 107,
+    "page": 14,
+    "text": "2(C_{51}H_{98}O_{6}) + 145O_{2} \\rightarrow 102CO_{2} + 98H_{2}O + energy\nThe Respiratory Quotient (RQ) of a biomolecule used for respiration, as per the above equation, would be:",
+    "options": [
+      { "label": "1", "text": "Between 0.5 and 0.95" },
+      { "label": "2", "text": "Less than 0.5" },
+      { "label": "3", "text": "1.0" },
+      { "label": "4", "text": "Between 1.25 and 2" }
+    ],
+    "images": []
+  },
+  {
+    "section": "BIOLOGY",
+    "number": 108,
+    "page": 14,
+    "text": "Match List-I with List-II:\n| List-I | List-II |\n|---|---|\n| A. Incomplete dominance | I. Human skin colour |\n| B. Co-dominance | II. Inheritance of flower colour in Antirrhinum sp. |\n| C. Pleiotropy | III. Phenylketonuria disease in humans |\n| D. Polygenic inheritance | IV. ABO blood groups |\nChoose the correct answer from the options given below:",
+    "options": [
+      { "label": "1", "text": "A-II, B-IV, C-III, D-I" },
+      { "label": "2", "text": "A-I, B-III, C-II, D-IV" },
+      { "label": "3", "text": "A-I, B-IV, C-III, D-II" },
+      { "label": "4", "text": "A-II, B-I, C-III, D-IV" }
+    ],
+    "images": []
+  },
+  {
+    "section": "BIOLOGY",
+    "number": 109,
+    "page": 14,
+    "text": "Arrange the following steps of DNA fingerprinting in a correct sequence.\nA. Isolation of DNA and its digestion by restriction endonucleases.\nB. Hybridisation using a labelled VNTR probe.\nC. Transferring of separated DNA fragments to synthetic membranes.\nD. Detection of hybridised DNA fragments by autoradiography.\nE. Separation of DNA fragments by electrophoresis.\nChoose the correct answer from the options given below:",
+    "options": [
+      { "label": "1", "text": "A, B, D, C, E" },
+      { "label": "2", "text": "A, D, B, E, C" },
+      { "label": "3", "text": "A, E, C, B, D" },
+      { "label": "4", "text": "A, E, B, C, D" }
+    ],
+    "images": []
+  },
+  {
+    "section": "BIOLOGY",
+    "number": 110,
+    "page": 14,
+    "text": "Which of the following statements are correct with reference to packaging of DNA helix?\nA. Histones are organized to form a unit of eight molecules called histone octamer.\nB. Histones are negatively charged basic proteins.\nC. Histones are rich in the basic amino acid residues - lysine and arginine.\nD. The positively charged DNA is wrapped around the histone octamer to form nucleosome.\nE. The packaging of chromatin at higher levels requires an additional set of proteins called non-histone chromosomal proteins.\nChoose the correct answer from the options given below:",
+    "options": [
+      { "label": "1", "text": "A, C and E only" },
+      { "label": "2", "text": "B, D and E only" },
+      { "label": "3", "text": "C, D and E only" },
+      { "label": "4", "text": "A, B and D only" }
+    ],
+    "images": []
+  }
+]

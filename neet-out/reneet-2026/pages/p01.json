@@ -1,0 +1,106 @@
+[
+  {
+    "section": "PHYSICS",
+    "number": 1,
+    "page": 1,
+    "text": "A particle of mass M moves along a horizontal x axis from x = 0 to x = L. The coefficient of kinetic friction varies as a function of x as \\mu_{k}(x) = \\mu_{0} - \\alpha x, where \\mu_{0}, \\alpha are constants of appropriate dimensions, so that \\mu_{k}(L) = 0. The total work done by the frictional force during the motion is n\\mu_{0}MgL, where g is the acceleration due to gravity. The value of n is:",
+    "options": [
+      { "label": "1", "text": "3" },
+      { "label": "2", "text": "1" },
+      { "label": "3", "text": "\\frac{1}{3}" },
+      { "label": "4", "text": "\\frac{1}{2}" }
+    ],
+    "images": []
+  },
+  {
+    "section": "PHYSICS",
+    "number": 2,
+    "page": 1,
+    "text": "The mean free path of molecules in an ideal gas A is half that of another ideal gas B. The diameter of the spherical molecules of gas A is twice the diameter of the molecules of B. If number densities of the gases A and B are n_{A} and n_{B}, respectively, then the correct option is :",
+    "options": [
+      { "label": "1", "text": "n_{A} = n_{B}" },
+      { "label": "2", "text": "n_{A} = 2n_{B}" },
+      { "label": "3", "text": "n_{A} = \\frac{1}{4} n_{B}" },
+      { "label": "4", "text": "n_{A} = \\frac{1}{2} n_{B}" }
+    ],
+    "images": []
+  },
+  {
+    "section": "PHYSICS",
+    "number": 3,
+    "page": 1,
+    "text": "Two identical inductors are connected in two different configurations P and Q, where a time varying current I(t) is flowing, as shown in the figure. The induced emf between points a and b for configuration P is E_{P} and that for configuration Q is E_{Q}. The ratio E_{P} / E_{Q} is :\n[Neglect the effect of mutual inductance.]",
+    "options": [
+      { "label": "1", "text": "1/4" },
+      { "label": "2", "text": "1/2" },
+      { "label": "3", "text": "1" },
+      { "label": "4", "text": "2" }
+    ],
+    "images": ["q3_fig1.png"]
+  },
+  {
+    "section": "PHYSICS",
+    "number": 4,
+    "page": 1,
+    "text": "For sound waves, if the number of nodes for the 5^{th} harmonic of an open-ended pipe is n and that for the 9^{th} harmonic of the same pipe with one of its ends closed is m, the ratio \\frac{n}{m} is :",
+    "options": [
+      { "label": "1", "text": "\\frac{5}{9}" },
+      { "label": "2", "text": "\\frac{9}{5}" },
+      { "label": "3", "text": "1" },
+      { "label": "4", "text": "\\frac{3}{5}" }
+    ],
+    "images": []
+  },
+  {
+    "section": "PHYSICS",
+    "number": 5,
+    "page": 1,
+    "text": "Consider a long solenoid of length l and radius r. If n is the number of turns per unit length and \\mu_{0} is the permeability of free space, the inductance of the solenoid is :",
+    "options": [
+      { "label": "1", "text": "\\mu_{0}\\pi n^{2}r^{2}l" },
+      { "label": "2", "text": "\\mu_{0}n^{2}r^{2}l" },
+      { "label": "3", "text": "(\\mu_{0}/2\\pi)n^{2}r^{2}l" },
+      { "label": "4", "text": "2\\mu_{0}\\pi n^{2}r^{2}l" }
+    ],
+    "images": []
+  },
+  {
+    "section": "PHYSICS",
+    "number": 6,
+    "page": 1,
+    "text": "Consider a particle moving along a straight line, whose position as a function of time is given by s(t) = \\alpha t^{2} - \\beta t + \\gamma, where \\alpha = 1 ms^{-2}, \\beta = 6 ms^{-1} and \\gamma = 5 m. The average speed of the particle, in ms^{-1}, from t = 0 to t = 6 s is:",
+    "options": [
+      { "label": "1", "text": "12" },
+      { "label": "2", "text": "6" },
+      { "label": "3", "text": "3" },
+      { "label": "4", "text": "0" }
+    ],
+    "images": []
+  },
+  {
+    "section": "PHYSICS",
+    "number": 7,
+    "page": 1,
+    "text": "Consider the following nuclear reaction :\n^{238}U \\to ^{234}Th + ^{4}He\nTake masses of ^{238}U, ^{234}Th and ^{4}He as 238.050 u, 234.043 u and 4.003 u, respectively. The Q value for the reaction, in keV, is :\n[Given : 1 u = 931.5 MeV c^{-2}]",
+    "options": [
+      { "label": "1", "text": "3726" },
+      { "label": "2", "text": "3730" },
+      { "label": "3", "text": "3736" },
+      { "label": "4", "text": "3740" }
+    ],
+    "images": []
+  },
+  {
+    "section": "PHYSICS",
+    "number": 8,
+    "page": 1,
+    "text": "A beam of light falls on a metal surface such that photo-electrons are generated. If power of the light source starts to decrease linearly with time t, then variation of the photocurrent I and magnitude of the stopping potential |V| with time is best represented by :",
+    "options": [
+      { "label": "1", "text": "", "figure": "q8_opt1.png" },
+      { "label": "2", "text": "", "figure": "q8_opt2.png" },
+      { "label": "3", "text": "", "figure": "q8_opt3.png" },
+      { "label": "4", "text": "", "figure": "q8_opt4.png" }
+    ],
+    "images": []
+  }
+]

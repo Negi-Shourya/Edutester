@@ -1,0 +1,93 @@
+[
+  {
+    "section": "PHYSICS",
+    "number": 7,
+    "page": 2,
+    "text": "A flask contains argon and chlorine in the ratio of 2 : 1 by mass. The temperature of the mixture is 27°C. The ratio of root mean square speed of the molecules of the two gases (\\frac{v^{Ar}_{rms}}{v^{Cl}_{rms}}) is :\n(Atomic mass of argon = 40.0 u and molecular mass of chlorine = 70.0 u)",
+    "options": [
+      { "label": "1", "text": "\\frac{\\sqrt{7}}{2}" },
+      { "label": "2", "text": "\\frac{7}{4}" },
+      { "label": "3", "text": "\\frac{7}{2}" },
+      { "label": "4", "text": "\\frac{2}{\\sqrt{7}}" }
+    ],
+    "images": []
+  },
+  {
+    "section": "PHYSICS",
+    "number": 8,
+    "page": 2,
+    "text": "A ray of monochromatic light is passing through an equilateral prism (ABC) as shown in the figure. The refracted ray (QR) is parallel to its base (BC) and the angle of incidence (i) is 50°. Then the angle of deviation (\\delta) is:",
+    "options": [
+      { "label": "1", "text": "45°" },
+      { "label": "2", "text": "35°" },
+      { "label": "3", "text": "40°" },
+      { "label": "4", "text": "55°" }
+    ],
+    "images": ["q8_fig1.png"]
+  },
+  {
+    "section": "PHYSICS",
+    "number": 9,
+    "page": 2,
+    "text": "Match List-I with List-II.\n| List-I | List-II |\n|---|---|\n| (A) E = h\\nu | (I) de Broglie wavelength |\n| (B) Diffraction and Interference | (II) Particle nature of light |\n| (C) \\lambda = \\frac{h}{p} | (III) Wave nature of light |\n| (D) Compton effect | (IV) Energy of photon |\nChoose the correct answer from the options given below:",
+    "options": [
+      { "label": "1", "text": "A-IV, B-I, C-II, D-III" },
+      { "label": "2", "text": "A-IV, B-III, C-II, D-I" },
+      { "label": "3", "text": "A-I, B-IV, C-III, D-II" },
+      { "label": "4", "text": "A-IV, B-III, C-I, D-II" }
+    ],
+    "images": []
+  },
+  {
+    "section": "PHYSICS",
+    "number": 10,
+    "page": 2,
+    "text": "In the first excited state of hydrogen atom, the energy of its electron is –3.4 eV. The radial distance of the electron from the hydrogen nucleus in this case is approximately :\n(Take 1 eV = 1.6 \\times 10^{-19} J, e = 1.6 \\times 10^{-19} C and \\frac{1}{4\\pi\\epsilon_{0}} = 9 \\times 10^{9} N m^{2}/C^{2})",
+    "options": [
+      { "label": "1", "text": "2.1 \\times 10^{-9} m" },
+      { "label": "2", "text": "2.1 \\times 10^{-8} m" },
+      { "label": "3", "text": "2.1 \\times 10^{-10} m" },
+      { "label": "4", "text": "2.1 \\times 10^{-11} m" }
+    ],
+    "images": []
+  },
+  {
+    "section": "PHYSICS",
+    "number": 11,
+    "page": 2,
+    "text": "A box of mass 15 kg is kept on the floor of a stationary trolley. The coefficient of static friction between the box and the trolley is 0.12. Keeping the box in stationary state over the trolley, the maximum acceleration with which the trolley can be moved horizontally in m s^{-2} is :\n(g = 10 m/s^{2})",
+    "options": [
+      { "label": "1", "text": "2.1" },
+      { "label": "2", "text": "1.8" },
+      { "label": "3", "text": "1.5" },
+      { "label": "4", "text": "1.2" }
+    ],
+    "images": []
+  },
+  {
+    "section": "PHYSICS",
+    "number": 12,
+    "page": 2,
+    "text": "Five capacitors of capacitances C_{1} = C_{2} = C_{3} = C_{4} = 10 \\mu F and C_{5} = 2.5 \\mu F are connected as shown, along with a battery of 50 V.\nThe equivalent capacitance and the charges on each capacitor respectively are:",
+    "options": [
+      { "label": "1", "text": "5 \\mu F, 125 \\mu C on C_{1} to C_{4} and 25 \\mu C on C_{5}" },
+      { "label": "2", "text": "5 \\mu F, 125 \\mu C on all capacitors" },
+      { "label": "3", "text": "5 \\mu F, 250 \\mu C on all capacitors" },
+      { "label": "4", "text": "4 \\mu F, 250 \\mu C on C_{1} to C_{4} and 125 \\mu C on C_{5}" }
+    ],
+    "images": ["q12_fig1.png"]
+  },
+  {
+    "section": "PHYSICS",
+    "number": 13,
+    "page": 2,
+    "text": "The amount of work done to raise a mass 'm' from the surface of the Earth to a height equal to the radius of the Earth 'R', will be:",
+    "options": [
+      { "label": "1", "text": "2 mg R" },
+      { "label": "2", "text": "mg\\frac{R}{4}" },
+      { "label": "3", "text": "mg R" },
+      { "label": "4", "text": "mg\\frac{R}{2}" }
+    ],
+    "images": []
+  }
+]

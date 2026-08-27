@@ -1,0 +1,80 @@
+[
+  {
+    "section": "PHYSICS",
+    "number": 1,
+    "page": 1,
+    "text": "The speed of light in vacuum is taken as unity. If light takes 6 min 40 s to reach the Earth from the Sun, the distance between the Sun and the Earth in new unit is:",
+    "options": [
+      { "label": "1", "text": "3 \\times 10^{8}" },
+      { "label": "2", "text": "500" },
+      { "label": "3", "text": "3 \\times 10^{10}" },
+      { "label": "4", "text": "400" }
+    ],
+    "images": []
+  },
+  {
+    "section": "PHYSICS",
+    "number": 2,
+    "page": 1,
+    "text": "Match List-I with List-II.\n| List-I | List-II |\n|---|---|\n| (A) Young's Modulus | (I) \\frac{\\Delta d}{\\Delta L}(\\frac{L}{d}) |\n| (B) Compressibility | (II) \\frac{FL}{A(\\Delta L)} |\n| (C) Bulk Modulus | (III) -\\frac{1}{\\Delta P}(\\frac{\\Delta V}{V}) |\n| (D) Poisson's Ratio | (IV) -P(\\frac{V}{\\Delta V}) |\nChoose the correct answer from the options given below:",
+    "options": [
+      { "label": "1", "text": "A-IV, B-I, C-II, D-III" },
+      { "label": "2", "text": "A-III, B-II, C-I, D-IV" },
+      { "label": "3", "text": "A-I, B-IV, C-III, D-II" },
+      { "label": "4", "text": "A-II, B-III, C-IV, D-I" }
+    ],
+    "images": []
+  },
+  {
+    "section": "PHYSICS",
+    "number": 3,
+    "page": 1,
+    "text": "The current I in the circuit shown below is:\n(All diodes are ideal and identical)",
+    "options": [
+      { "label": "1", "text": "\\frac{5}{3} A" },
+      { "label": "2", "text": "\\frac{5}{9} A" },
+      { "label": "3", "text": "\\frac{1}{3} A" },
+      { "label": "4", "text": "\\frac{15}{2} A" }
+    ],
+    "images": ["q3_fig1.png"]
+  },
+  {
+    "section": "PHYSICS",
+    "number": 4,
+    "page": 1,
+    "text": "The angular speed of a flywheel is increased from 600 rpm to 1200 rpm in 10 s. The number of revolutions completed by the flywheel during this time is :",
+    "options": [
+      { "label": "1", "text": "900" },
+      { "label": "2", "text": "600" },
+      { "label": "3", "text": "150" },
+      { "label": "4", "text": "300" }
+    ],
+    "images": []
+  },
+  {
+    "section": "PHYSICS",
+    "number": 5,
+    "page": 1,
+    "text": "For a simple pendulum, having time period T, the variation of kinetic energy (K.E.) with time (t) is represented by:",
+    "options": [
+      { "label": "1", "text": "", "figure": "q5_opt1.png" },
+      { "label": "2", "text": "", "figure": "q5_opt2.png" },
+      { "label": "3", "text": "", "figure": "q5_opt3.png" },
+      { "label": "4", "text": "", "figure": "q5_opt4.png" }
+    ],
+    "images": []
+  },
+  {
+    "section": "PHYSICS",
+    "number": 6,
+    "page": 1,
+    "text": "A resistor is connected to a battery of 12 V emf and internal resistance 2 \\Omega. If the current in the circuit is 0.6 A, the terminal voltage of the battery is:",
+    "options": [
+      { "label": "1", "text": "10 V" },
+      { "label": "2", "text": "1.2 V" },
+      { "label": "3", "text": "12 V" },
+      { "label": "4", "text": "10.8 V" }
+    ],
+    "images": []
+  }
+]

@@ -1,0 +1,119 @@
+[
+  {
+    "section": "CHEMISTRY",
+    "number": 62,
+    "page": 9,
+    "text": "Identify the incorrect statement from the following :",
+    "options": [
+      { "label": "1", "text": "Nitrogen can form d\\pi-p\\pi bond with oxygen." },
+      { "label": "2", "text": "P(C_{2}H_{5})_{3} and As(C_{6}H_{5})_{3} form d\\pi-d\\pi bond with transition metals." },
+      { "label": "3", "text": "Phosphorus, arsenic and antimony show catenation property." },
+      { "label": "4", "text": "Nitrogen can form p\\pi-p\\pi multiple bonds with itself." }
+    ],
+    "images": []
+  },
+  {
+    "section": "CHEMISTRY",
+    "number": 63,
+    "page": 9,
+    "text": "Which one of the following is an ambidentate ligand?",
+    "options": [
+      { "label": "1", "text": "Ethane-1,2-diamine" },
+      { "label": "2", "text": "Ethylenediaminetetraacetate ion" },
+      { "label": "3", "text": "Thiocyanate" },
+      { "label": "4", "text": "Oxalate" }
+    ],
+    "images": []
+  },
+  {
+    "section": "CHEMISTRY",
+    "number": 64,
+    "page": 9,
+    "text": "The correct order of increasing metallic character of Na, Be, P, Mg and Si is :",
+    "options": [
+      { "label": "1", "text": "P < Si < Be < Mg < Na" },
+      { "label": "2", "text": "P < Si < Na < Mg < Be" },
+      { "label": "3", "text": "P < Mg < Be < Si < Na" },
+      { "label": "4", "text": "Be < Si < P < Mg < Na" }
+    ],
+    "images": []
+  },
+  {
+    "section": "CHEMISTRY",
+    "number": 65,
+    "page": 9,
+    "text": "Match List-I with List-II.\nChoose the correct answer from the options given below:",
+    "options": [
+      { "label": "1", "text": "A-II, B-III, C-I, D-IV" },
+      { "label": "2", "text": "A-II, B-III, C-IV, D-I" },
+      { "label": "3", "text": "A-II, B-IV, C-III, D-I" },
+      { "label": "4", "text": "A-I, B-III, C-IV, D-II" }
+    ],
+    "images": ["q65_fig1.png"]
+  },
+  {
+    "section": "CHEMISTRY",
+    "number": 66,
+    "page": 9,
+    "text": "Although +3 oxidation state is most common in lanthanoids, cerium still shows +4 oxidation state because:",
+    "options": [
+      { "label": "1", "text": "After losing one more electron, it acquires 4f^{14} electronic configuration." },
+      { "label": "2", "text": "Its nearest gas is Radon." },
+      { "label": "3", "text": "Its atomic number is 61." },
+      { "label": "4", "text": "After losing one more electron, it acquires 4f^{0} electronic configuration." }
+    ],
+    "images": []
+  },
+  {
+    "section": "CHEMISTRY",
+    "number": 67,
+    "page": 9,
+    "text": "In the following reaction sequence, X and Z, respectively are:",
+    "options": [
+      { "label": "1", "text": "", "figure": "q67_opt1.png" },
+      { "label": "2", "text": "X = POCl_{3}; Z = CH_{3}CH_{2}CH_{2}-Br" },
+      { "label": "3", "text": "", "figure": "q67_opt3.png" },
+      { "label": "4", "text": "X = H_{3}PO_{3}; Z = CH_{3}CH_{2}CH_{2}-Br" }
+    ],
+    "images": ["q67_fig1.png"]
+  },
+  {
+    "section": "CHEMISTRY",
+    "number": 68,
+    "page": 9,
+    "text": "Match List I with List II:\n| List-I (Complex/ion) | List-II (Shape/geometry) |\n|---|---|\n| A. [Pt(Cl_{2})NH_{3})_{2}] | I. Octahedral |\n| B. [Co(NH_{3})_{6}]Cl_{3} | II. Trigonal bipyramidal |\n| C. [NiCl_{4}]^{2-} | III. Square planar |\n| D. [Fe(CO)_{5}] | IV. Tetrahedral |\nChoose the correct answer from the options given below:",
+    "options": [
+      { "label": "1", "text": "A-III, B-IV, C-I, D-II" },
+      { "label": "2", "text": "A-III, B-I, C-IV, D-II" },
+      { "label": "3", "text": "A-IV, B-I, C-III, D-II" },
+      { "label": "4", "text": "A-I, B-III, C-IV, D-II" }
+    ],
+    "images": []
+  },
+  {
+    "section": "CHEMISTRY",
+    "number": 69,
+    "page": 9,
+    "text": "The functional group that can be identified through phthalein dye test is :",
+    "options": [
+      { "label": "1", "text": "Aldehyde" },
+      { "label": "2", "text": "Phenolic" },
+      { "label": "3", "text": "Carboxylic acid" },
+      { "label": "4", "text": "Alcohol" }
+    ],
+    "images": []
+  },
+  {
+    "section": "CHEMISTRY",
+    "number": 70,
+    "page": 9,
+    "text": "Two products X and Y are formed in the following reaction sequence.\nThe suitable method that can be used for the separation of products X and Y is:",
+    "options": [
+      { "label": "1", "text": "Fractional distillation" },
+      { "label": "2", "text": "Sublimation" },
+      { "label": "3", "text": "Differential extraction" },
+      { "label": "4", "text": "Continuous extraction" }
+    ],
+    "images": ["q70_fig1.png"]
+  }
+]

@@ -1,0 +1,119 @@
+[
+  {
+    "section": "CHEMISTRY",
+    "number": 82,
+    "page": 12,
+    "text": "The compound that CANNOT be obtained from the aldol condensation reaction shown below, is",
+    "options": [
+      { "label": "1", "text": "", "figure": "q82_opt1.png" },
+      { "label": "2", "text": "", "figure": "q82_opt2.png" },
+      { "label": "3", "text": "", "figure": "q82_opt3.png" },
+      { "label": "4", "text": "", "figure": "q82_opt4.png" }
+    ],
+    "images": ["q82_fig1.png"]
+  },
+  {
+    "section": "CHEMISTRY",
+    "number": 83,
+    "page": 12,
+    "text": "Among the following, the compound having conjugated double bonds is",
+    "options": [
+      { "label": "1", "text": "hepta-1,3-diene" },
+      { "label": "2", "text": "hepta-1,4-diene" },
+      { "label": "3", "text": "hepta-1,5-diene" },
+      { "label": "4", "text": "hepta-1,6-diene" }
+    ],
+    "images": []
+  },
+  {
+    "section": "CHEMISTRY",
+    "number": 84,
+    "page": 12,
+    "text": "Given below are two statements:\nStatement I: Oxidation of p-nitrotoluene with acidic KMnO_{4} gives an acid that is stronger than benzoic acid.\nStatement II: Reduction of p-nitrotoluene with Sn/HCl followed by neutralization gives an amine that is more basic than aniline.\nIn light of the above statements, choose the most appropriate answer from the options given below.",
+    "options": [
+      { "label": "1", "text": "Both Statement I and Statement II are correct." },
+      { "label": "2", "text": "Both Statement I and Statement II are incorrect." },
+      { "label": "3", "text": "Statement I is correct but Statement II is incorrect." },
+      { "label": "4", "text": "Statement I is incorrect but Statement II is correct." }
+    ],
+    "images": []
+  },
+  {
+    "section": "CHEMISTRY",
+    "number": 85,
+    "page": 12,
+    "text": "The green paramagnetic species formed by heating KMnO_{4} at 513 K is",
+    "options": [
+      { "label": "1", "text": "K_{2}MnO_{4}" },
+      { "label": "2", "text": "Mn_{3}O_{4}" },
+      { "label": "3", "text": "MnO" },
+      { "label": "4", "text": "KO_{2}" }
+    ],
+    "images": []
+  },
+  {
+    "section": "CHEMISTRY",
+    "number": 86,
+    "page": 12,
+    "text": "Consider the following reaction, and choose the correct option.",
+    "options": [
+      { "label": "1", "text": "On treating compound P with saturated NaHCO_{3} solution, brisk effervescence is observed." },
+      { "label": "2", "text": "Compound P can be prepared by treating benzene with anhydrous AlCl_{3} and CH_{3}COCl." },
+      { "label": "3", "text": "On treatment with bromine water, compound P gives a white precipitate." },
+      { "label": "4", "text": "Compound P is obtained by the hydrogenation of benzoyl chloride with Pd on BaSO_{4}." }
+    ],
+    "images": ["q86_fig1.png"]
+  },
+  {
+    "section": "CHEMISTRY",
+    "number": 87,
+    "page": 12,
+    "text": "A 1:3 electrolyte in an aqueous solution is",
+    "options": [
+      { "label": "1", "text": "[CoCl_{2}(NH_{3})_{4}]Cl" },
+      { "label": "2", "text": "[CoCl(NH_{3})_{5}]Cl_{2}" },
+      { "label": "3", "text": "[Co(NH_{3})_{6}]Cl_{3}" },
+      { "label": "4", "text": "[Co(NH_{3})_{3}(NO_{2})_{3}]" }
+    ],
+    "images": []
+  },
+  {
+    "section": "CHEMISTRY",
+    "number": 88,
+    "page": 12,
+    "text": "Consider the following schematic plots of orbital wavefunction (Ψ_{r}) against distance (r) from the nucleus.\nThe figure representing two radial nodes in the orbital is",
+    "options": [
+      { "label": "1", "text": "A" },
+      { "label": "2", "text": "B" },
+      { "label": "3", "text": "C" },
+      { "label": "4", "text": "D" }
+    ],
+    "images": ["q88_fig1.png"]
+  },
+  {
+    "section": "CHEMISTRY",
+    "number": 89,
+    "page": 12,
+    "text": "Arrange the following compounds in the increasing order of polarity.\nA. CH_{3}CH_{2}OCH_{2}CH_{3}\nB. CH_{3}CH_{2}OH\nC. CH_{3}COCH_{3}\nD. CH_{3}COOH\nChoose the correct answer from the options given below.",
+    "options": [
+      { "label": "1", "text": "A < B < C < D" },
+      { "label": "2", "text": "C < A < D < B" },
+      { "label": "3", "text": "C < A < B < D" },
+      { "label": "4", "text": "A < C < B < D" }
+    ],
+    "images": []
+  },
+  {
+    "section": "CHEMISTRY",
+    "number": 90,
+    "page": 12,
+    "text": "The highest occupied molecular orbital for Ne_{2} is:",
+    "options": [
+      { "label": "1", "text": "\\pi_{2p}" },
+      { "label": "2", "text": "\\sigma_{2p}" },
+      { "label": "3", "text": "\\pi^{*}_{2p}" },
+      { "label": "4", "text": "\\sigma^{*}_{2p}" }
+    ],
+    "images": []
+  }
+]

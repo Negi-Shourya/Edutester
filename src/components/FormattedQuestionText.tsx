@@ -51,6 +51,11 @@ function MatchQuestionRenderer({ text, className }: { text: string; className: s
   let col1Header = 'List - I';
   let col2Header = 'List - II';
   let footer = '';
+  // Only the *first* markdown row may be taken as the header.  Without this,
+  // every leading row whose left cell isn't an A–D/I–V label was treated as
+  // "the header" and overwrote the previous one, so tables keyed by name
+  // (Re-NEET 2026 Q52: AgBr / Zn(OH)2 / Hg2Cl2) lost all their rows.
+  let headerSeen = false;
   const matchRows: MatchItem[] = [];
   // A line that fits none of the patterns below used to be dropped on the
   // floor, which silently deleted question text ("Identify the incorrect
@@ -79,7 +84,8 @@ function MatchQuestionRenderer({ text, className }: { text: string; className: s
       // The first row is the header unless it is labelled like a data row
       // ("A.", "(a)", "(I)") — so "| Name | IUPAC Official Name |" is picked
       // up as headers even though it says neither List nor Column.
-      if (/^(List|Column)/i.test(left) || (matchRows.length === 0 && !ROW_LABEL_RE.test(left))) {
+      if (/^(List|Column)/i.test(left) || (!headerSeen && matchRows.length === 0 && !ROW_LABEL_RE.test(left))) {
+        headerSeen = true;
         col1Header = left;
         col2Header = right;
         continue;
@@ -164,8 +170,17 @@ function MatchQuestionRenderer({ text, className }: { text: string; className: s
           <table className="w-full text-left border-collapse text-xs sm:text-sm">
             <thead>
               <tr className="bg-[#f0f4f8] border-b border-gray-300 text-[#1b365d]">
-                <th className="py-2.5 px-4 font-bold border-r border-gray-300 w-1/2">{col1Header}</th>
-                <th className="py-2.5 px-4 font-bold w-1/2">{col2Header}</th>
+                {/* Headers go through VectorText for the same reason the cells
+                    do: Re-NEET 2026 Q52 heads its column "K_{sp} at 298 K",
+                    which rendered as literal markup here.  Plain headers
+                    ("List - I", "Name") are unaffected — the tokenizer leaves
+                    text with no math in it alone. */}
+                <th className="py-2.5 px-4 font-bold border-r border-gray-300 w-1/2">
+                  <VectorText text={col1Header} />
+                </th>
+                <th className="py-2.5 px-4 font-bold w-1/2">
+                  <VectorText text={col2Header} />
+                </th>
               </tr>
             </thead>
             <tbody className="divide-y divide-gray-200 bg-white">

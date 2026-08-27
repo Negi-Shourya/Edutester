@@ -1,0 +1,54 @@
+[
+  {
+    "section": "BIOLOGY",
+    "number": 177,
+    "page": 21,
+    "text": "Which of the following is used as an effective sedative and painkiller for treating post-surgery patients?",
+    "options": [
+      { "label": "1", "text": "Interferon" },
+      { "label": "2", "text": "Antibiotics" },
+      { "label": "3", "text": "Morphine" },
+      { "label": "4", "text": "Anti-retroviral drugs" }
+    ],
+    "images": []
+  },
+  {
+    "section": "BIOLOGY",
+    "number": 178,
+    "page": 21,
+    "text": "Which of the following statements are correct?\n(a) Energy flow from producers to consumers is unidirectional\n(b) Energy pyramid can never be inverted\n(c) Transfer of energy follows the 1% law\nChoose the correct answer from the options given below:",
+    "options": [
+      { "label": "1", "text": "(a), (b) and (c)" },
+      { "label": "2", "text": "(a) and (b) only" },
+      { "label": "3", "text": "(a) and (c) only" },
+      { "label": "4", "text": "(b) and (c) only" }
+    ],
+    "images": []
+  },
+  {
+    "section": "BIOLOGY",
+    "number": 179,
+    "page": 21,
+    "text": "Which of the following statements is correct about Plasmodium?",
+    "options": [
+      { "label": "1", "text": "Reproduces sexually in liver cells" },
+      { "label": "2", "text": "Reproduces sexually in RBCs" },
+      { "label": "3", "text": "Gametocytes develop in mosquito gut" },
+      { "label": "4", "text": "Fertilization takes place in mosquito gut" }
+    ],
+    "images": []
+  },
+  {
+    "section": "BIOLOGY",
+    "number": 180,
+    "page": 21,
+    "text": "Match List-I with List-II.\n| List-I | List-II |\n|---|---|\n| A. Transformation | I. Restriction enzyme |\n| B. Cloning site | II. Transfer DNA to host bacteria |\n| C. Selection | III. Replication |\n| D. Ori | IV. Antibiotic |\nChoose the correct answer from the options given below:",
+    "options": [
+      { "label": "1", "text": "A-II, B-I, C-IV, D-III" },
+      { "label": "2", "text": "A-I, B-II, C-IV, D-III" },
+      { "label": "3", "text": "A-III, B-IV, C-II, D-I" },
+      { "label": "4", "text": "A-IV, B-I, C-III, D-II" }
+    ],
+    "images": []
+  }
+]

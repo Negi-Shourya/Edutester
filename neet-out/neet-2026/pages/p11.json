@@ -1,0 +1,145 @@
+[
+  {
+    "section": "CHEMISTRY",
+    "number": 80,
+    "page": 11,
+    "text": "The calculated 'spin-only' magnetic moment of Ti^{2+}(3d^{2}) is:",
+    "options": [
+      { "label": "1", "text": "5.92 BM" },
+      { "label": "2", "text": "3.87 BM" },
+      { "label": "3", "text": "2.84 BM" },
+      { "label": "4", "text": "4.90 BM" }
+    ],
+    "images": []
+  },
+  {
+    "section": "CHEMISTRY",
+    "number": 81,
+    "page": 11,
+    "text": "Identify the incorrect statement from the following:",
+    "options": [
+      { "label": "1", "text": "Carbon has the ability to form p\\pi-p\\pi multiple bond with itself." },
+      { "label": "2", "text": "ECl_{3} (E = B and Al) is a monomer when E = B and a dimer when E = Al." },
+      { "label": "3", "text": "The order of catenation property of Group 14 elements is C >> Si > Ge \\approx Sn." },
+      { "label": "4", "text": "Oxygen exhibits only -2 oxidation state." }
+    ],
+    "images": []
+  },
+  {
+    "section": "CHEMISTRY",
+    "number": 82,
+    "page": 11,
+    "text": "The correct formal charges on oxygen atoms numbered 2, 1 and 3 respectively are :",
+    "options": [
+      { "label": "1", "text": "-1, 0, +1" },
+      { "label": "2", "text": "0, +1, -1" },
+      { "label": "3", "text": "0, 0, 0" },
+      { "label": "4", "text": "+1, 0, -1" }
+    ],
+    "images": ["q82_fig1.png"]
+  },
+  {
+    "section": "CHEMISTRY",
+    "number": 83,
+    "page": 11,
+    "text": "Phenolphthalein is used as an indicator for the titration of sodium hydroxide solution against a standard solution of oxalic acid. The colour change that is observed at an alkaline pH close to the equivalence point during this titration is :",
+    "options": [
+      { "label": "1", "text": "pinkish red to yellow" },
+      { "label": "2", "text": "yellow to pinkish red" },
+      { "label": "3", "text": "pink to colourless" },
+      { "label": "4", "text": "colourless to pink" }
+    ],
+    "images": []
+  },
+  {
+    "section": "CHEMISTRY",
+    "number": 84,
+    "page": 11,
+    "text": "When 1 dm^{3} of CO_{2} gas is passed over hot coke, the volume of gaseous mixture after complete reaction at STP becomes 1.4 dm^{3}. The composition of the gaseous mixture at STP is:",
+    "options": [
+      { "label": "1", "text": "0.8 dm^{3} of CO, 0.8 dm^{3} of CO_{2}" },
+      { "label": "2", "text": "0.8 dm^{3} of CO, 0.6 dm^{3} of CO_{2}" },
+      { "label": "3", "text": "0.6 dm^{3} of CO, 0.8 dm^{3} of CO_{2}" },
+      { "label": "4", "text": "0.6 dm^{3} of CO, 0.4 dm^{3} of CO_{2}" }
+    ],
+    "images": []
+  },
+  {
+    "section": "CHEMISTRY",
+    "number": 85,
+    "page": 11,
+    "text": "The major product Z formed in the following sequence of reaction is:\nC_{2}H_{6} \\xrightarrow{Cl_{2}} X \\xrightarrow{NH_{3}} Y \\xrightarrow{NaNO_{2}} Z\n(Step 1: Cl_{2}/UV light, X is the monochlorinated product; Step 3: (i) NaNO_{2}, HCl (ii) H_{2}O)",
+    "options": [
+      { "label": "1", "text": "C_{2}H_{5}NO_{2}" },
+      { "label": "2", "text": "C_{2}H_{5}-N=N-OH" },
+      { "label": "3", "text": "C_{2}H_{5}OH" },
+      { "label": "4", "text": "C_{2}H_{5}NH_{2}" }
+    ],
+    "images": []
+  },
+  {
+    "section": "CHEMISTRY",
+    "number": 86,
+    "page": 11,
+    "text": "Given below is an expression for the rate constant of a first order reaction occurring at a certain temperature, T (K).\nln k = 14.34 - \\frac{1.25 \\times 10^{4}}{T}\nThe energy of activation in kcal mol^{-1} for the reaction is:\n(Given: k in s^{-1}, R = 1.987 cal mol^{-1} K^{-1})",
+    "options": [
+      { "label": "1", "text": "24.84" },
+      { "label": "2", "text": "14.34" },
+      { "label": "3", "text": "18.63" },
+      { "label": "4", "text": "12.42" }
+    ],
+    "images": []
+  },
+  {
+    "section": "CHEMISTRY",
+    "number": 87,
+    "page": 11,
+    "text": "Given below are certain reactions. Identify the reaction for which K_{p} \\neq K_{c}.",
+    "options": [
+      { "label": "1", "text": "H_{2}O (g) + CO (g) \\rightleftharpoons H_{2} (g) + CO_{2} (g)" },
+      { "label": "2", "text": "N_{2} (g) + 3H_{2} (g) \\rightleftharpoons 2NH_{3} (g)" },
+      { "label": "3", "text": "H_{2} (g) + I_{2} (g) \\rightleftharpoons 2HI (g)" },
+      { "label": "4", "text": "N_{2} (g) + O_{2} (g) \\rightleftharpoons 2NO (g)" }
+    ],
+    "images": []
+  },
+  {
+    "section": "CHEMISTRY",
+    "number": 88,
+    "page": 11,
+    "text": "Identify the incorrect statement from the following:",
+    "options": [
+      { "label": "1", "text": "The largest and the smallest species among Mg, Mg^{2+}, Al and Al^{3+} are Al and Mg^{2+}, respectively." },
+      { "label": "2", "text": "The IUPAC name of the element with atomic number 107 is Unnilseptium." },
+      { "label": "3", "text": "The similarity in behaviour of Li with Mg is referred to as 'diagonal relationship'." },
+      { "label": "4", "text": "The oxidation state and covalency of Al in [AlCl(H_{2}O)_{5}]^{2+} are 3 and 6 respectively." }
+    ],
+    "images": []
+  },
+  {
+    "section": "CHEMISTRY",
+    "number": 89,
+    "page": 11,
+    "text": "Mixture of chloroform and acetone forms a solution with negative deviation from Raoult's law due to :",
+    "options": [
+      { "label": "1", "text": "increase in escaping tendency of molecules of each component." },
+      { "label": "2", "text": "formation of hydrogen bonding between acetone and chloroform." },
+      { "label": "3", "text": "stronger intermolecular forces between chloroform molecules than those between chloroform and acetone molecules." },
+      { "label": "4", "text": "repulsive forces." }
+    ],
+    "images": []
+  },
+  {
+    "section": "CHEMISTRY",
+    "number": 90,
+    "page": 11,
+    "text": "The number of chlorine atoms present in the organic products X and Y of the following reactions, respectively, are:",
+    "options": [
+      { "label": "1", "text": "3 and 3" },
+      { "label": "2", "text": "6 and 3" },
+      { "label": "3", "text": "6 and 6" },
+      { "label": "4", "text": "3 and 6" }
+    ],
+    "images": ["q90_fig1.png"]
+  }
+]

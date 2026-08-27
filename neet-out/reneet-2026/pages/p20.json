@@ -1,0 +1,106 @@
+[
+  {
+    "section": "BIOLOGY",
+    "number": 169,
+    "page": 20,
+    "text": "For a person with blood group 'O', which of the following is not a possible combination of parents' blood group genotypes?",
+    "options": [
+      { "label": "1", "text": "Father : I^{A}i and Mother : I^{B}i" },
+      { "label": "2", "text": "Father : I^{A}i and Mother : I^{A}i" },
+      { "label": "3", "text": "Father : I^{B}i and Mother : I^{B}i" },
+      { "label": "4", "text": "Father : I^{A}I^{B} and Mother : I^{A}i" }
+    ],
+    "images": []
+  },
+  {
+    "section": "BIOLOGY",
+    "number": 170,
+    "page": 20,
+    "text": "Given below are two statements : one is labelled as Assertion A and the other is labelled as Reason R.\nAssertion A: Forelimbs of human and bats are homologous.\nReason R: Forelimbs of humans and bats have similar anatomical structure.\nIn the light of the above statements, choose the most appropriate answer from the options given below:",
+    "options": [
+      { "label": "1", "text": "Both A and R are correct and R is the correct explanation of A" },
+      { "label": "2", "text": "Both A and R are true, but R is not the correct explanation of A" },
+      { "label": "3", "text": "A is true but R is false" },
+      { "label": "4", "text": "A is false but R is true" }
+    ],
+    "images": []
+  },
+  {
+    "section": "BIOLOGY",
+    "number": 171,
+    "page": 20,
+    "text": "Colostrum, secreted by mother during initial days of lactation, is abundant in",
+    "options": [
+      { "label": "1", "text": "IgG" },
+      { "label": "2", "text": "IgM" },
+      { "label": "3", "text": "IgA" },
+      { "label": "4", "text": "IgD" }
+    ],
+    "images": []
+  },
+  {
+    "section": "BIOLOGY",
+    "number": 172,
+    "page": 20,
+    "text": "Given below are two statements: one is labelled as Assertion A and the other is labelled as Reason R.\nAssertion A: Abingdon tortoise in Galapagos islands became extinct within a decade after goats were introduced.\nReason R: Goats were more efficient at browsing than Abingdon tortoise.\nIn the light of the above statements, choose the most appropriate answer from the options given below:",
+    "options": [
+      { "label": "1", "text": "Both A and R are correct and R is the correct explanation of A" },
+      { "label": "2", "text": "Both A and R are correct but R is not the correct explanation of A" },
+      { "label": "3", "text": "A is correct but R is not correct" },
+      { "label": "4", "text": "A is not correct but R is correct" }
+    ],
+    "images": []
+  },
+  {
+    "section": "BIOLOGY",
+    "number": 173,
+    "page": 20,
+    "text": "The covering of ovum at ovulation is",
+    "options": [
+      { "label": "1", "text": "endometrium" },
+      { "label": "2", "text": "zona radiata" },
+      { "label": "3", "text": "zona pellucida" },
+      { "label": "4", "text": "chorion" }
+    ],
+    "images": []
+  },
+  {
+    "section": "BIOLOGY",
+    "number": 174,
+    "page": 20,
+    "text": "Match List-I with List-II.\n| List-I | List-II |\n|---|---|\n| A. Both species are harmed | I. Predation |\n| B. One species is harmed and the other is benefited | II. Mutualism |\n| C. Both species are benefited | III. Competition |\n| D. One is benefited while the other has no effect | IV. Commensalism |\nChoose the correct answer from the options given below:",
+    "options": [
+      { "label": "1", "text": "A-III, B-IV, C-II, D-I" },
+      { "label": "2", "text": "A-I, B-II, C-III, D-IV" },
+      { "label": "3", "text": "A-II, B-I, C-IV, D-III" },
+      { "label": "4", "text": "A-III, B-I, C-II, D-IV" }
+    ],
+    "images": []
+  },
+  {
+    "section": "BIOLOGY",
+    "number": 175,
+    "page": 20,
+    "text": "Given below are two statements : one is labelled as Assertion A and the other is labelled as Reason R.\nAssertion A: In an experiment, Mendel observed that the F1 progeny plants are all tall and none are dwarf.\nReason R: Stem height is a contrasting trait, with tall being dominant and dwarf being recessive.\nIn the light of the above statements, choose the most appropriate answer from the options given below :",
+    "options": [
+      { "label": "1", "text": "Both A and R are correct and R is the correct explanation of A" },
+      { "label": "2", "text": "Both A and R are correct but R is not the correct explanation of A" },
+      { "label": "3", "text": "A is correct but R is not correct" },
+      { "label": "4", "text": "A is not correct but R is correct" }
+    ],
+    "images": []
+  },
+  {
+    "section": "BIOLOGY",
+    "number": 176,
+    "page": 20,
+    "text": "Given below are two statements: one is labelled as Assertion A and the other is labelled as Reason R.\nAssertion A: In recombinant DNA technology, lysozyme is used for disrupting bacterial cells while cellulase is for plant cells.\nReason R: Isolation of genetic material needs disruption of cells.\nIn the light of the above statements, choose the most appropriate answer from the options given below:",
+    "options": [
+      { "label": "1", "text": "Both A and R are correct and R is the correct explanation of A" },
+      { "label": "2", "text": "Both A and R are correct but R is not the correct explanation of A" },
+      { "label": "3", "text": "A is correct but R is not correct" },
+      { "label": "4", "text": "A is not correct but R is correct" }
+    ],
+    "images": []
+  }
+]

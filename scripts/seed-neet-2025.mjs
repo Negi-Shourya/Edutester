@@ -188,7 +188,7 @@ async function seed() {
       duration_minutes: durationMinutes,
       question_count: questionCount,
       exam_type: "neet",
-      is_trial: true, // The one free NEET paper (newest year).
+      is_trial: false, // Locked. NEET 2026 is now the free NEET trial paper.
     })
     .select("id")
     .single();

@@ -1,0 +1,106 @@
+[
+  {
+    "section": "BIOLOGY",
+    "number": 91,
+    "page": 12,
+    "text": "In angiosperms, root hairs arise from which one of the following regions of the root?",
+    "options": [
+      { "label": "1", "text": "The root cap zone" },
+      { "label": "2", "text": "The region of meristematic activity" },
+      { "label": "3", "text": "The region of elongation" },
+      { "label": "4", "text": "The region of maturation" }
+    ],
+    "images": []
+  },
+  {
+    "section": "BIOLOGY",
+    "number": 92,
+    "page": 12,
+    "text": "In which one of the following, the ovules are not enclosed by an ovary wall and remain exposed?",
+    "options": [
+      { "label": "1", "text": "Funaria" },
+      { "label": "2", "text": "Pinus" },
+      { "label": "3", "text": "Selaginella" },
+      { "label": "4", "text": "Wolffia" }
+    ],
+    "images": []
+  },
+  {
+    "section": "BIOLOGY",
+    "number": 93,
+    "page": 12,
+    "text": "In the lac operon, the z gene codes for:",
+    "options": [
+      { "label": "1", "text": "permease" },
+      { "label": "2", "text": "transacetylase" },
+      { "label": "3", "text": "beta-galactosidase" },
+      { "label": "4", "text": "the repressor of lac operon" }
+    ],
+    "images": []
+  },
+  {
+    "section": "BIOLOGY",
+    "number": 94,
+    "page": 12,
+    "text": "Exploring molecular, genetic and species-level diversity for products of economic importance is called:",
+    "options": [
+      { "label": "1", "text": "Biofortification" },
+      { "label": "2", "text": "Bioremediation" },
+      { "label": "3", "text": "Bioprospecting" },
+      { "label": "4", "text": "Biomagnification" }
+    ],
+    "images": []
+  },
+  {
+    "section": "BIOLOGY",
+    "number": 95,
+    "page": 12,
+    "text": "Match List-I with List-II:\n| List-I | List-II |\n|---|---|\n| A. Genetically modified organism | I. Agrobacterium tumefaciens |\n| B. Thermostable DNA polymerase | II. Bt cotton |\n| C. Ti plasmid | III. Thermus aquaticus |\n| D. pBR322 | IV. Escherichia coli |\nChoose the correct answer from the options given below:",
+    "options": [
+      { "label": "1", "text": "A-II, B-III, C-I, D-IV" },
+      { "label": "2", "text": "A-II, B-I, C-IV, D-III" },
+      { "label": "3", "text": "A-I, B-IV, C-III, D-II" },
+      { "label": "4", "text": "A-I, B-II, C-IV, D-III" }
+    ],
+    "images": []
+  },
+  {
+    "section": "BIOLOGY",
+    "number": 96,
+    "page": 12,
+    "text": "Match List-I with List-II:\n| List-I | List-II |\n|---|---|\n| (A) Productivity | (I) Gross primary productivity minus respiration losses |\n| (B) Net primary productivity | (II) Rate of formation of new organic matter by consumers |\n| (C) Gross primary productivity | (III) Rate of biomass production |\n| (D) Secondary productivity | (IV) Rate of production of organic matter during photosynthesis |\nChoose the correct answer from the options given below:",
+    "options": [
+      { "label": "1", "text": "A-III, B-I, C-IV, D-II" },
+      { "label": "2", "text": "A-I, B-II, C-III, D-IV" },
+      { "label": "3", "text": "A-I, B-III, C-IV, D-II" },
+      { "label": "4", "text": "A-III, B-I, C-II, D-IV" }
+    ],
+    "images": []
+  },
+  {
+    "section": "BIOLOGY",
+    "number": 97,
+    "page": 12,
+    "text": "Since the origin and diversification of life on Earth, there have been five episodes of mass extinction of species. How is the sixth, which is in progress, different from the previous episodes?",
+    "options": [
+      { "label": "1", "text": "The present net species extinction rate is zero." },
+      { "label": "2", "text": "The current species extinction rates are nearly 10 times faster than that in previous episodes." },
+      { "label": "3", "text": "The present species extinction rates are 100 to 1000 times faster than in the pre-human times." },
+      { "label": "4", "text": "The current species extinction rates are far lower than those in previous episodes." }
+    ],
+    "images": []
+  },
+  {
+    "section": "BIOLOGY",
+    "number": 98,
+    "page": 12,
+    "text": "Alpha-helix is found in which level of protein structure?",
+    "options": [
+      { "label": "1", "text": "Secondary structure" },
+      { "label": "2", "text": "Tertiary structure" },
+      { "label": "3", "text": "Primary structure" },
+      { "label": "4", "text": "Quaternary structure" }
+    ],
+    "images": []
+  }
+]

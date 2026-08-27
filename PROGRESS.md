@@ -205,6 +205,18 @@
     JSON. Rendering verified through the real `FormattedQuestionText` /
     `VectorText` / `QuestionDiagram` components for all 180 questions: 0 KaTeX
     errors, 0 blank options, no leftover markup, all 28 images load
+- **NEET 2026 (done)**: extracted from Test Booklet Code 11 (23 pages, 180 questions,
+  Physics 1-45 / Chemistry 46-90 / Biology 91-180) via `neet-out/neet-2026/pages/` (p01-p23.json)
+  and `scripts/_assemble-neet-2026.mjs` → seeded to Supabase as **paper id 60**
+  (`key = neet-2026`) via `scripts/seed-neet-2026.mjs`.
+  - 180 questions, 720 options, 180 answer keys (from Code 11 key), `durationMinutes: 180`,
+    `is_trial: true` (Free Trial paper for NEET track).
+  - 45 figures (22 stem images + 23 option images) uploaded to Supabase Storage under
+    `question-images/neet-2026/`.
+  - Math and match questions formatted with KaTeX/pipe-table standards; verified 0 KaTeX parse
+    errors across all 900 fields via `scripts/_render-check-neet-2026.mts`.
+  - Static JSON generated at `public/papers/neet-2026.json` (132 KB) via `scripts/build-paper-json.mjs`.
+
 
 ## Phase 7 — Results screen perf + submission latency (shared by ALL papers)
 

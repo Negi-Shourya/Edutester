@@ -1,0 +1,132 @@
+[
+  {
+    "section": "BIOLOGY",
+    "number": 159,
+    "page": 19,
+    "text": "Which of the following is not evidence for evolution?",
+    "options": [
+      { "label": "1", "text": "Convergent evolution of traits like wings of birds and butterflies" },
+      { "label": "2", "text": "Paleontological evidence from fossil records" },
+      { "label": "3", "text": "Embryological support for evolution as proposed by Ernst Heckel" },
+      { "label": "4", "text": "Divergent evolution of anatomical structures such as forelimbs" }
+    ],
+    "images": []
+  },
+  {
+    "section": "BIOLOGY",
+    "number": 160,
+    "page": 19,
+    "text": "Given below are two statements:\nStatement I: Modern Homo sapiens arose in Australia and moved across continents.\nStatement II: Homo sapiens arose around 75000 to 10000 years ago.\nIn the light of the above statements, choose the most appropriate answer from the options given below:",
+    "options": [
+      { "label": "1", "text": "Both Statement I and Statement II are correct" },
+      { "label": "2", "text": "Both Statement I and Statement II are incorrect" },
+      { "label": "3", "text": "Statement I is correct but Statement II is incorrect" },
+      { "label": "4", "text": "Statement I is incorrect but Statement II is incorrect" }
+    ],
+    "images": []
+  },
+  {
+    "section": "BIOLOGY",
+    "number": 161,
+    "page": 19,
+    "text": "Consider a population of 10 million cells. Given the per-capita birth rate of 0.002 (per unit time) and the per-capita death rate of 0.002 (per unit time), the expected number of cells after 10 generations is",
+    "options": [
+      { "label": "1", "text": "1 million" },
+      { "label": "2", "text": "5 million" },
+      { "label": "3", "text": "10 million" },
+      { "label": "4", "text": "100 million" }
+    ],
+    "images": []
+  },
+  {
+    "section": "BIOLOGY",
+    "number": 162,
+    "page": 19,
+    "text": "During PCR, primers bind to the DNA strands in the ______ step.",
+    "options": [
+      { "label": "1", "text": "denaturation" },
+      { "label": "2", "text": "extension" },
+      { "label": "3", "text": "annealing" },
+      { "label": "4", "text": "ligation" }
+    ],
+    "images": []
+  },
+  {
+    "section": "BIOLOGY",
+    "number": 163,
+    "page": 19,
+    "text": "Given below are two statements: one is labelled as Assertion A and the other is labelled as Reason R.\nAssertion A: In recombinant DNA technology, lysozyme is used for disrupting bacterial cells while cellulase is for plant cells.\nReason R: Isolation of genetic material needs disruption of cells.\nIn the light of the above statements, choose the most appropriate answer from the options given below:",
+    "options": [
+      { "label": "1", "text": "Both A and R are correct and R is the correct explanation of A" },
+      { "label": "2", "text": "Both A and R are correct but R is not the correct explanation of A" },
+      { "label": "3", "text": "A is correct but R is not correct" },
+      { "label": "4", "text": "A is not correct but R is correct" }
+    ],
+    "images": []
+  },
+  {
+    "section": "BIOLOGY",
+    "number": 164,
+    "page": 19,
+    "text": "Adaptive radiation in placental mammals and Australian Marsupials leading to similarity between distant species is an example of",
+    "options": [
+      { "label": "1", "text": "divergent evolution" },
+      { "label": "2", "text": "convergent evolution" },
+      { "label": "3", "text": "founder effect" },
+      { "label": "4", "text": "genetic drift" }
+    ],
+    "images": []
+  },
+  {
+    "section": "BIOLOGY",
+    "number": 165,
+    "page": 19,
+    "text": "Which of the following are secondary lymphoid organs?\n(a) Bone marrow\n(b) Tonsils\n(c) Spleen\n(d) Thymus\nChoose the correct answer from the options given below:",
+    "options": [
+      { "label": "1", "text": "(a) and (b) only" },
+      { "label": "2", "text": "(b) and (c) only" },
+      { "label": "3", "text": "(b) and (d) only" },
+      { "label": "4", "text": "(a) and (d) only" }
+    ],
+    "images": []
+  },
+  {
+    "section": "BIOLOGY",
+    "number": 166,
+    "page": 19,
+    "text": "Which of the following hormone is not secreted by human placenta?",
+    "options": [
+      { "label": "1", "text": "hCG" },
+      { "label": "2", "text": "Estrogen" },
+      { "label": "3", "text": "Progesterone" },
+      { "label": "4", "text": "LH" }
+    ],
+    "images": []
+  },
+  {
+    "section": "BIOLOGY",
+    "number": 167,
+    "page": 19,
+    "text": "Which of the following enzymes synthesizes precursor mRNA?",
+    "options": [
+      { "label": "1", "text": "RNA polymerase I" },
+      { "label": "2", "text": "RNA polymerase II" },
+      { "label": "3", "text": "RNA polymerase III" },
+      { "label": "4", "text": "DNA polymerase" }
+    ],
+    "images": []
+  },
+  {
+    "section": "BIOLOGY",
+    "number": 168,
+    "page": 19,
+    "text": "Given below are two statements:\nStatement I: Plasmids are autonomously replicating DNA.\nStatement II: Plasmids are extrachromosomal DNA.\nIn the light of the above statements, choose the most appropriate answer from the options given below:",
+    "options": [
+      { "label": "1", "text": "Both Statement I and Statement II are correct" },
+      { "label": "2", "text": "Both Statement I and Statement II are incorrect" },
+      { "label": "3", "text": "Statement I is correct but Statement II is incorrect" },
+      { "label": "4", "text": "Statement I is incorrect but Statement II is correct" }
+    ],
+    "images": []
+  }
+]

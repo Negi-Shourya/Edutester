@@ -1,0 +1,106 @@
+[
+  {
+    "section": "BIOLOGY",
+    "number": 159,
+    "page": 21,
+    "text": "Match List I with List II:\n| List I | List II |\n|---|---|\n| A. Molluscs | I. Pulmonary respiration only |\n| B. Reptiles | II. Branchial respiration |\n| C. Adult amphibians | III. Cellular respiration |\n| D. Amoeba | IV. Pulmonary and Cutaneous respiration |\nChoose the correct answer from the options given below:",
+    "options": [
+      { "label": "1", "text": "A-II, B-I, C-IV, D-III" },
+      { "label": "2", "text": "A-I, B-II, C-IV, D-III" },
+      { "label": "3", "text": "A-II, B-I, C-III, D-IV" },
+      { "label": "4", "text": "A-III, B-II, C-I, D-IV" }
+    ],
+    "images": []
+  },
+  {
+    "section": "BIOLOGY",
+    "number": 160,
+    "page": 21,
+    "text": "The sixth mutant codon of beta globin gene causing polymerization of Haemoglobin and change in RBC shape is _______.",
+    "options": [
+      { "label": "1", "text": "GUG" },
+      { "label": "2", "text": "AUG" },
+      { "label": "3", "text": "GAG" },
+      { "label": "4", "text": "CAG" }
+    ],
+    "images": []
+  },
+  {
+    "section": "BIOLOGY",
+    "number": 161,
+    "page": 21,
+    "text": "Choose the correct statements regarding muscle contraction.\nA. A motor neuron carries a signal sent by the Central Nervous System (CNS) to the sarcolemma of the muscle fibre.\nB. The neural signal generates an action potential which causes the release of Ca^{++} into sarcoplasm.\nC. Increase in Ca^{++} inactivates the actin for breaking cross bridges.\nD. Actin binds to the myosin head to form a cross bridge.\nE. Shortening of sarcomere takes place, by pulling actin filaments towards the centre of 'A' band.\nChoose the correct answer from the options given below:",
+    "options": [
+      { "label": "1", "text": "C and D only" },
+      { "label": "2", "text": "A and B only" },
+      { "label": "3", "text": "C and E only" },
+      { "label": "4", "text": "A, B, D and E only" }
+    ],
+    "images": []
+  },
+  {
+    "section": "BIOLOGY",
+    "number": 162,
+    "page": 21,
+    "text": "Which of the following statements are correct with reference to human endoskeleton ?\nA. Human skull is monocondylic.\nB. The joint between any two adjoining vertebrae is a cartilaginous joint.\nC. In human beings, the number of cervical vertebrae is seven.\nD. All ribs except the last 2 pairs are bicephalic.\nE. The occipital bone of skull is articulated with atlas vertebra.\nChoose the correct answer from the options given below:",
+    "options": [
+      { "label": "1", "text": "B and E only" },
+      { "label": "2", "text": "B, C and E only" },
+      { "label": "3", "text": "C, D and E only" },
+      { "label": "4", "text": "A, B and D only" }
+    ],
+    "images": []
+  },
+  {
+    "section": "BIOLOGY",
+    "number": 163,
+    "page": 21,
+    "text": "Spermatogonia undergo a series of cell divisions to produce sperms. Select the correct statements from the following :\nA. Spermatogonia always undergo meiotic cell division.\nB. Primary spermatocytes divide mitotically to produce secondary spermatocytes.\nC. Secondary spermatocytes, through their second meiotic division, produce haploid spermatids.\nD. Spermatids produce spermatozoa through mitosis.\nE. Spermatids transform into spermatozoa by spermiogenesis.\nChoose the correct answer from the options given below :",
+    "options": [
+      { "label": "1", "text": "A and E only" },
+      { "label": "2", "text": "C and E only" },
+      { "label": "3", "text": "A, C and E only" },
+      { "label": "4", "text": "B, C and D only" }
+    ],
+    "images": []
+  },
+  {
+    "section": "BIOLOGY",
+    "number": 164,
+    "page": 21,
+    "text": "The JGA (Juxta Glomerular Apparatus) is a special sensitive region formed by cellular modifications in ______ related to the same nephron.",
+    "options": [
+      { "label": "1", "text": "Distal convoluted tubule and efferent renal arteriole" },
+      { "label": "2", "text": "Proximal convoluted tubule and efferent renal arteriole" },
+      { "label": "3", "text": "Proximal convoluted tubule and afferent renal arteriole" },
+      { "label": "4", "text": "Distal convoluted tubule and afferent renal arteriole" }
+    ],
+    "images": []
+  },
+  {
+    "section": "BIOLOGY",
+    "number": 165,
+    "page": 21,
+    "text": "Which one of the following is an appropriate example of 'sexual deceit'?",
+    "options": [
+      { "label": "1", "text": "Female wasp and fig" },
+      { "label": "2", "text": "Ophrys and bumblebee" },
+      { "label": "3", "text": "Sea anemone and clown fish" },
+      { "label": "4", "text": "Cuckoo and crow" }
+    ],
+    "images": []
+  },
+  {
+    "section": "BIOLOGY",
+    "number": 166,
+    "page": 21,
+    "text": "Choose the correct statements regarding frog's anatomy:\nA. Hepatic portal system is the special venous connection between liver and intestine.\nB. There are twelve pairs of cranial nerves arising from the brain.\nC. The ureters and oviducts open separately into the cloaca in female frogs.\nD. Hind-brain consists of cerebellum, medulla oblongata and optic lobes.\nE. Sinus venosus joins the right atrium of heart.\nChoose the correct answer from the options given below:",
+    "options": [
+      { "label": "1", "text": "A, B and C only" },
+      { "label": "2", "text": "B and D only" },
+      { "label": "3", "text": "B and C only" },
+      { "label": "4", "text": "A, C and E only" }
+    ],
+    "images": []
+  }
+]

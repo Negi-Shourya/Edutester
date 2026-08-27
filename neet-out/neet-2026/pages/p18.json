@@ -1,0 +1,106 @@
+[
+  {
+    "section": "BIOLOGY",
+    "number": 136,
+    "page": 18,
+    "text": "Match List I with List II:\n| List I | List II |\n|---|---|\n| A. Cortisol | I. Stimulates the formation of alveoli in mammary glands |\n| B. Aldosterone | II. Produces anti-inflammatory reactions |\n| C. Cholecystokinin | III. Stimulates reabsorption of Na^{+} and water from renal tubule |\n| D. Progesterone | IV. Stimulates secretion of pancreatic enzymes and bile juice |\nChoose the correct answer from the options given below:",
+    "options": [
+      { "label": "1", "text": "A-III, B-II, C-IV, D-I" },
+      { "label": "2", "text": "A-IV, B-II, C-I, D-III" },
+      { "label": "3", "text": "A-II, B-III, C-IV, D-I" },
+      { "label": "4", "text": "A-II, B-III, C-I, D-IV" }
+    ],
+    "images": []
+  },
+  {
+    "section": "BIOLOGY",
+    "number": 137,
+    "page": 18,
+    "text": "Arrange the following events occurring in Renin-Angiotensin mechanism in the correct order :\nA. Increase in blood pressure and Glomerular filtration rate.\nB. Reabsorption of Na^{+} and water from distal parts of tubule due to Aldosterone.\nC. Fall in Glomerular filtration rate.\nD. Vasoconstriction by Angiotensin II and release of Aldosterone.\nE. Renin converts Angiotensinogen into Angiotensin I, followed by Angiotensin II.\nChoose the correct answer from the options given below :",
+    "options": [
+      { "label": "1", "text": "A, C, E, B, D" },
+      { "label": "2", "text": "C, A, B, D, E" },
+      { "label": "3", "text": "A, D, B, E, C" },
+      { "label": "4", "text": "C, E, D, B, A" }
+    ],
+    "images": []
+  },
+  {
+    "section": "BIOLOGY",
+    "number": 138,
+    "page": 18,
+    "text": "In humans, respiration occurs in the following steps. Arrange these steps in the correct order.\nA. Diffusion of O_{2} and CO_{2} between blood and tissues\nB. Diffusion of O_{2} and CO_{2} across alveolar membrane\nC. Pulmonary ventilation by which atmospheric air is drawn in and CO_{2} rich alveolar air is released out\nD. Cellular respiration\nE. Transport of gases by the blood.\nChoose the correct answer from the options given below:",
+    "options": [
+      { "label": "1", "text": "A, B, C, D, E" },
+      { "label": "2", "text": "E, A, C, D, B" },
+      { "label": "3", "text": "C, B, E, A, D" },
+      { "label": "4", "text": "C, A, B, E, D" }
+    ],
+    "images": []
+  },
+  {
+    "section": "BIOLOGY",
+    "number": 139,
+    "page": 18,
+    "text": "The following are the stages of life cycle of Plasmodium. Arrange the stages in the proper order.\nA. The parasites reproduce asexually in RBCs, bursting the cells.\nB. The parasites reproduce asexually in liver cells, bursting the cells and releasing into blood.\nC. Gametocytes develop in RBCs.\nD. Sporozoites reach the liver through the blood.\nE. Female mosquito injects sporozoites into humans during bite.\nChoose the correct answer from the options given below:",
+    "options": [
+      { "label": "1", "text": "E, D, B, A, C" },
+      { "label": "2", "text": "A, B, C, D, E" },
+      { "label": "3", "text": "C, A, B, D, E" },
+      { "label": "4", "text": "E, C, D, B, A" }
+    ],
+    "images": []
+  },
+  {
+    "section": "BIOLOGY",
+    "number": 140,
+    "page": 18,
+    "text": "Insertion of a foreign DNA at BamHI site in an E. coli cloning vector pBR322 results in the loss of antibiotic resistance towards:",
+    "options": [
+      { "label": "1", "text": "Ampicillin and tetracycline" },
+      { "label": "2", "text": "Ampicillin" },
+      { "label": "3", "text": "Tetracycline" },
+      { "label": "4", "text": "Gentamycin" }
+    ],
+    "images": []
+  },
+  {
+    "section": "BIOLOGY",
+    "number": 141,
+    "page": 18,
+    "text": "The following reaction depicts the activity of a particular class of enzymes:\nIdentify the enzyme class 'E' from the following options:",
+    "options": [
+      { "label": "1", "text": "Transferases" },
+      { "label": "2", "text": "Isomerases" },
+      { "label": "3", "text": "Lyases" },
+      { "label": "4", "text": "Ligases" }
+    ],
+    "images": ["q141_fig1.png"]
+  },
+  {
+    "section": "BIOLOGY",
+    "number": 142,
+    "page": 18,
+    "text": "The specific receptors for neurotransmitters in a synapse are present on ______.",
+    "options": [
+      { "label": "1", "text": "Schwann cell" },
+      { "label": "2", "text": "Pre-synaptic membrane" },
+      { "label": "3", "text": "Myelin sheath" },
+      { "label": "4", "text": "Post-synaptic membrane" }
+    ],
+    "images": []
+  },
+  {
+    "section": "BIOLOGY",
+    "number": 143,
+    "page": 18,
+    "text": "What is the probability of having children with 'O' blood group, where both mother and father are heterozygous for 'A' and 'B' blood group, respectively ?",
+    "options": [
+      { "label": "1", "text": "25%" },
+      { "label": "2", "text": "0%" },
+      { "label": "3", "text": "75%" },
+      { "label": "4", "text": "50%" }
+    ],
+    "images": []
+  }
+]

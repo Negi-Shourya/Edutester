@@ -1,0 +1,93 @@
+[
+  {
+    "section": "BIOLOGY",
+    "number": 144,
+    "page": 19,
+    "text": "Match List I with List II.\n| List I (Respiratory Volume) | List II (Capacity in mL) |\n|---|---|\n| A. ERV (Expiratory Reserve Volume) | I. 2500 - 3000 mL |\n| B. RV (Residual Volume) | II. 500 mL |\n| C. IRV (Inspiratory Reserve Volume) | III. 1000 - 1100 mL |\n| D. TV (Tidal Volume) | IV. 1100 - 1200 mL |\nChoose the correct answer from the options given below :",
+    "options": [
+      { "label": "1", "text": "A-III, B-IV, C-I, D-II" },
+      { "label": "2", "text": "A-III, B-I, C-IV, D-II" },
+      { "label": "3", "text": "A-I, B-III, C-II, D-IV" },
+      { "label": "4", "text": "A-I, B-II, C-III, D-IV" }
+    ],
+    "images": []
+  },
+  {
+    "section": "BIOLOGY",
+    "number": 145,
+    "page": 19,
+    "text": "Which of the following is not an example of convergent evolution?",
+    "options": [
+      { "label": "1", "text": "Flippers of penguins and dolphins" },
+      { "label": "2", "text": "Eyes of octopuses and mammals" },
+      { "label": "3", "text": "Fore limbs of whales and bats" },
+      { "label": "4", "text": "Wings of butterflies and birds" }
+    ],
+    "images": []
+  },
+  {
+    "section": "BIOLOGY",
+    "number": 146,
+    "page": 19,
+    "text": "Male frogs can be distinguished from female frogs due to the presence of:\nA. Bulging eyes\nB. Vocal sacs\nC. Webbed digits in feet\nD. Copulatory pad on first digit of fore limbs\nE. Olive green-coloured skin with dark irregular spots\nChoose the correct answer from the options given below:",
+    "options": [
+      { "label": "1", "text": "B and C only" },
+      { "label": "2", "text": "C and E only" },
+      { "label": "3", "text": "A and B only" },
+      { "label": "4", "text": "B and D only" }
+    ],
+    "images": []
+  },
+  {
+    "section": "BIOLOGY",
+    "number": 147,
+    "page": 19,
+    "text": "A group of researchers procured some fish-like animals and upon investigation the following characters were observed :\nA. Endoskeleton was made of cartilage.\nB. Ectoparasitic; as they were found attached on fish skin with their circular sucking mouth.\nC. Paired fins and scales were absent, but 7 pairs of gill slits were present.\nWhich of the following species of animals did they consider to fit best with these characters?",
+    "options": [
+      { "label": "1", "text": "Scoliodon sp." },
+      { "label": "2", "text": "Petromyzon sp." },
+      { "label": "3", "text": "Exocoetus sp." },
+      { "label": "4", "text": "Branchiostoma sp." }
+    ],
+    "images": []
+  },
+  {
+    "section": "BIOLOGY",
+    "number": 148,
+    "page": 19,
+    "text": "Match List I with List II with respect to chronology of evolution of life forms:\n| List I | List II |\n|---|---|\n| A. About 65 mya | I. Jawless fish probably evolved |\n| B. About 500 mya | II. The dinosaurs suddenly disappeared from the earth |\n| C. About 350 mya | III. Seaweeds and few plants probably existed |\n| D. About 320 mya | IV. Invertebrates were formed and became active |\nChoose the correct answer from the options given below:",
+    "options": [
+      { "label": "1", "text": "A-III, B-IV, C-I, D-II" },
+      { "label": "2", "text": "A-I, B-II, C-III, D-IV" },
+      { "label": "3", "text": "A-II, B-IV, C-III, D-I" },
+      { "label": "4", "text": "A-II, B-IV, C-I, D-III" }
+    ],
+    "images": []
+  },
+  {
+    "section": "BIOLOGY",
+    "number": 149,
+    "page": 19,
+    "text": "Match List I with List II.\n| List I | List II |\n|---|---|\n| A. Progestasert | I. Barrier made of rubber used by females |\n| B. Multiload 375 | II. Oral contraceptive |\n| C. Diaphragm | III. Hormone releasing IUD |\n| D. Saheli | IV. Copper releasing IUD |\nChoose the correct answer from the options given below :",
+    "options": [
+      { "label": "1", "text": "A-III, B-IV, C-I, D-II" },
+      { "label": "2", "text": "A-IV, B-II, C-I, D-III" },
+      { "label": "3", "text": "A-IV, B-III, C-I, D-II" },
+      { "label": "4", "text": "A-III, B-IV, C-II, D-I" }
+    ],
+    "images": []
+  },
+  {
+    "section": "BIOLOGY",
+    "number": 150,
+    "page": 19,
+    "text": "The WBC count of a person's blood sample is 8000/cu.mm. How many eosinophils and lymphocytes would be in the same blood sample approximately?",
+    "options": [
+      { "label": "1", "text": "300-500/cu.mm and 1200-1500/cu.mm, respectively" },
+      { "label": "2", "text": "160-240/cu.mm and 1600-2000/cu.mm, respectively" },
+      { "label": "3", "text": "300-500/cu.mm and 500-700/cu.mm, respectively" },
+      { "label": "4", "text": "100-120/cu.mm and 160-200/cu.mm, respectively" }
+    ],
+    "images": []
+  }
+]

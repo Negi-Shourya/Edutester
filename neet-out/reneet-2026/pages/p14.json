@@ -1,0 +1,119 @@
+[
+  {
+    "section": "BIOLOGY",
+    "number": 105,
+    "page": 14,
+    "text": "Phyllotaxy is the pattern of arrangement of ______.",
+    "options": [
+      { "label": "1", "text": "leaves" },
+      { "label": "2", "text": "flowers" },
+      { "label": "3", "text": "fruits" },
+      { "label": "4", "text": "sepals" }
+    ],
+    "images": []
+  },
+  {
+    "section": "BIOLOGY",
+    "number": 106,
+    "page": 14,
+    "text": "Match List-I with List-II.\n| List-I | List-II |\n|---|---|\n| A. Starch | I. Fights infection |\n| B. Antibody | II. Energy storage |\n| C. Concanavalin A | III. Glucose transport |\n| D. Glut-4 | IV. Lectin |\nChoose the correct answer from the options given below:",
+    "options": [
+      { "label": "1", "text": "A-I, B-II, C-III, D-IV" },
+      { "label": "2", "text": "A-II, B-I, C-IV, D-III" },
+      { "label": "3", "text": "A-II, B-I, C-III, D-IV" },
+      { "label": "4", "text": "A-I, B-II, C-IV, D-III" }
+    ],
+    "images": []
+  },
+  {
+    "section": "BIOLOGY",
+    "number": 107,
+    "page": 14,
+    "text": "Given below are two statements :\nStatement I: When any plane passing through the central axis of the body divides the organism into two identical halves, it is called radial symmetry.\nStatement II: In phylum Echinodermata, both adults and larvae are radially symmetrical.\nIn the light of the above statements, choose the most appropriate answer from the options given below :",
+    "options": [
+      { "label": "1", "text": "Both Statement I and Statement II are correct" },
+      { "label": "2", "text": "Both Statement I and Statement II are incorrect" },
+      { "label": "3", "text": "Statement I is correct but Statement II is incorrect" },
+      { "label": "4", "text": "Statement I is incorrect but Statement II is correct" }
+    ],
+    "images": []
+  },
+  {
+    "section": "BIOLOGY",
+    "number": 108,
+    "page": 14,
+    "text": "Endomembrane system includes ______.",
+    "options": [
+      { "label": "1", "text": "endoplasmic reticulum, Golgi complex, lysosomes and vacuole" },
+      { "label": "2", "text": "endoplasmic reticulum, chloroplast, peroxisomes and vacuole" },
+      { "label": "3", "text": "mitochondria, chloroplast, peroxisomes and vacuole" },
+      { "label": "4", "text": "Golgi complex, chloroplast, peroxisomes and vacuole" }
+    ],
+    "images": []
+  },
+  {
+    "section": "BIOLOGY",
+    "number": 109,
+    "page": 14,
+    "text": "How many molecules of pyruvic acid are produced at the end of glycolysis from 206 molecules of glucose?",
+    "options": [
+      { "label": "1", "text": "206" },
+      { "label": "2", "text": "309" },
+      { "label": "3", "text": "103" },
+      { "label": "4", "text": "412" }
+    ],
+    "images": []
+  },
+  {
+    "section": "BIOLOGY",
+    "number": 110,
+    "page": 14,
+    "text": "Which of the following plant growth regulators is used as herbicide ?",
+    "options": [
+      { "label": "1", "text": "2,4-D" },
+      { "label": "2", "text": "Kinetin" },
+      { "label": "3", "text": "Abscisic acid" },
+      { "label": "4", "text": "Gibberellin" }
+    ],
+    "images": []
+  },
+  {
+    "section": "BIOLOGY",
+    "number": 111,
+    "page": 14,
+    "text": "Given below are two statements:\nStatement I: In gymnosperms, the male and female gametophytes remain within the sporangia.\nStatement II: In gymnosperms, seeds are not covered.\nIn the light of the above statements, choose the most appropriate answer from the options given below:",
+    "options": [
+      { "label": "1", "text": "Both Statement I and Statement II are correct." },
+      { "label": "2", "text": "Both Statement I and Statement II are incorrect." },
+      { "label": "3", "text": "Statement I is correct but Statement II is incorrect." },
+      { "label": "4", "text": "Statement I is incorrect but Statement II is correct." }
+    ],
+    "images": []
+  },
+  {
+    "section": "BIOLOGY",
+    "number": 112,
+    "page": 14,
+    "text": "Match List-I with List-II.\n| List-I | List-II |\n|---|---|\n| A. Spherical | I. Vibrio |\n| B. Rod | II. Cocci |\n| C. Comma | III. Spirilla |\n| D. Spirillum | IV. Bacilli |\nChoose the correct answer from the options given below:",
+    "options": [
+      { "label": "1", "text": "A-I, B-III, C-II, D-IV" },
+      { "label": "2", "text": "A-III, B-II, C-I, D-IV" },
+      { "label": "3", "text": "A-II, B-I, C-IV, D-III" },
+      { "label": "4", "text": "A-II, B-IV, C-I, D-III" }
+    ],
+    "images": []
+  },
+  {
+    "section": "BIOLOGY",
+    "number": 113,
+    "page": 14,
+    "text": "Which of the following are characteristic features of Solanaceae family?\n(a) Flowers are bisexual and actinomorphic\n(b) Calyx have five sepals and are united\n(c) Androecium have five stamens and are epipetalous\n(d) Ovary is inferior\nChoose the correct answer from the options given below:",
+    "options": [
+      { "label": "1", "text": "(a), (b) and (c) only" },
+      { "label": "2", "text": "(d) only" },
+      { "label": "3", "text": "(a) and (b) only" },
+      { "label": "4", "text": "(b), (c) and (d) only" }
+    ],
+    "images": []
+  }
+]

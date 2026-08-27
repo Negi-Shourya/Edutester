@@ -38,6 +38,8 @@ supabase/.temp/
 # Throwaway probe/diff scripts. They read .env at runtime, so keeping them out
 # of git also keeps an accidental `git add -A` from committing scratch work.
 .tmp2020/
+.tmp2026/
+scratch/
 
 # Python build artifacts
 __pycache__/

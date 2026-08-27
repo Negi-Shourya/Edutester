@@ -1,0 +1,185 @@
+[
+  {
+    "section": "PHYSICS",
+    "number": 14,
+    "page": 3,
+    "text": "Each side of a metallic cube of mass 5.580 kg is measured to be 9.0 cm. Keeping the significant figures in view, the density of the material of the cube can be best expressed as X \\times 10^{3} kg m^{-3}, where the value of X is:",
+    "options": [
+      {
+        "label": "1",
+        "text": "7.654"
+      },
+      {
+        "label": "2",
+        "text": "7.6"
+      },
+      {
+        "label": "3",
+        "text": "7.65"
+      },
+      {
+        "label": "4",
+        "text": "7.7"
+      }
+    ],
+    "images": []
+  },
+  {
+    "section": "PHYSICS",
+    "number": 15,
+    "page": 3,
+    "text": "The following plots show variation of velocity (v) with time (t), of a ball thrown vertically upward, and falling back. Which of the following plots is/are correct?\nA.\nB.\nC.\nD.\nE.",
+    "options": [
+      {
+        "label": "1",
+        "text": "C only"
+      },
+      {
+        "label": "2",
+        "text": "D only"
+      },
+      {
+        "label": "3",
+        "text": "B only"
+      },
+      {
+        "label": "4",
+        "text": "A and E only"
+      }
+    ],
+    "images": [
+      "q15_fig1.png"
+    ]
+  },
+  {
+    "section": "PHYSICS",
+    "number": 16,
+    "page": 3,
+    "text": "The sum of kinetic energy and potential energy of a simple pendulum bob is 0.02 joule. The speed of the simple pendulum bob at equilibrium position is approximately :\n(Consider mass of the bob = 20 g)",
+    "options": [
+      {
+        "label": "1",
+        "text": "0.2 m/s"
+      },
+      {
+        "label": "2",
+        "text": "1.41 m/s"
+      },
+      {
+        "label": "3",
+        "text": "14.1 m/s"
+      },
+      {
+        "label": "4",
+        "text": "2.0 m/s"
+      }
+    ],
+    "images": []
+  },
+  {
+    "section": "PHYSICS",
+    "number": 17,
+    "page": 3,
+    "text": "In Young's double slit experiment, using monochromatic light of wavelength \\lambda, the intensity of light at a point on the screen where the path difference is \\lambda is K units. The intensity of light at a point where the path difference is \\frac{\\lambda}{3} will be :",
+    "options": [
+      {
+        "label": "1",
+        "text": "\\frac{K}{4}"
+      },
+      {
+        "label": "2",
+        "text": "K"
+      },
+      {
+        "label": "3",
+        "text": "2 K"
+      },
+      {
+        "label": "4",
+        "text": "\\frac{K}{2}"
+      }
+    ],
+    "images": []
+  },
+  {
+    "section": "PHYSICS",
+    "number": 18,
+    "page": 3,
+    "text": "In the circuit shown below, the voltage appearing across the diode D will be of the form:",
+    "options": [
+      {
+        "label": "1",
+        "text": "",
+        "figure": "q18_opt1.png"
+      },
+      {
+        "label": "2",
+        "text": "",
+        "figure": "q18_opt2.png"
+      },
+      {
+        "label": "3",
+        "text": "",
+        "figure": "q18_opt3.png"
+      },
+      {
+        "label": "4",
+        "text": "",
+        "figure": "q18_opt4.png"
+      }
+    ],
+    "images": [
+      "q18_fig1.png"
+    ]
+  },
+  {
+    "section": "PHYSICS",
+    "number": 19,
+    "page": 3,
+    "text": "An ac circuit contains a resistance of 1 k\\Omega, a capacitor of 0.1 \\mu F and an inductor of 1 mH connected in series. The resonance frequency of the circuit is approximately:",
+    "options": [
+      {
+        "label": "1",
+        "text": "13.5 kHz"
+      },
+      {
+        "label": "2",
+        "text": "10.1 kHz"
+      },
+      {
+        "label": "3",
+        "text": "20.7 kHz"
+      },
+      {
+        "label": "4",
+        "text": "15.9 kHz"
+      }
+    ],
+    "images": []
+  },
+  {
+    "section": "PHYSICS",
+    "number": 20,
+    "page": 3,
+    "text": "In interference and diffraction, the light energy is redistributed. If it reduces in one region, producing a dark fringe, it increases in another region, producing a bright fringe.\nA. As there is no gain or loss of energy, these phenomena are consistent with the principle of conservation of energy.\nB. Diffraction and interference are characteristics exhibited only by light waves.\nChoose the correct answer from the options given below",
+    "options": [
+      {
+        "label": "1",
+        "text": "A is true and B is also true"
+      },
+      {
+        "label": "2",
+        "text": "A is false, but B is true"
+      },
+      {
+        "label": "3",
+        "text": "A is true, but B is false"
+      },
+      {
+        "label": "4",
+        "text": "Both A and B are false"
+      }
+    ],
+    "images": []
+  }
+]

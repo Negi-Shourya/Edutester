@@ -1,0 +1,158 @@
+[
+  {
+    "section": "BIOLOGY",
+    "number": 136,
+    "page": 17,
+    "text": "Which of the following is used as a clot buster?",
+    "options": [
+      { "label": "1", "text": "Streptokinase" },
+      { "label": "2", "text": "Penicillin" },
+      { "label": "3", "text": "Cyclosporin A" },
+      { "label": "4", "text": "Statins" }
+    ],
+    "images": []
+  },
+  {
+    "section": "BIOLOGY",
+    "number": 137,
+    "page": 17,
+    "text": "The inactive form of Bt toxin is converted to the active form in the insect gut ______.",
+    "options": [
+      { "label": "1", "text": "due to alkaline pH" },
+      { "label": "2", "text": "due to acidic pH" },
+      { "label": "3", "text": "by proteases" },
+      { "label": "4", "text": "by nucleases" }
+    ],
+    "images": []
+  },
+  {
+    "section": "BIOLOGY",
+    "number": 138,
+    "page": 17,
+    "text": "Given below are two statements:\nStatement I: Down's syndrome is caused by the absence of one of the X-chromosomes.\nStatement II: Turner's syndrome is caused by the presence of an additional copy of the chromosomes.\nIn the light of the above statements, choose the correct answer from the options given below:",
+    "options": [
+      { "label": "1", "text": "Both Statement I and Statement II are correct" },
+      { "label": "2", "text": "Both Statement I and Statement II are incorrect" },
+      { "label": "3", "text": "Statement I is correct but Statement II is incorrect" },
+      { "label": "4", "text": "Statement I is incorrect but Statement II is correct" }
+    ],
+    "images": []
+  },
+  {
+    "section": "BIOLOGY",
+    "number": 139,
+    "page": 17,
+    "text": "Which of the following disease is not sexually transmitted?",
+    "options": [
+      { "label": "1", "text": "Syphilis" },
+      { "label": "2", "text": "Tuberculosis" },
+      { "label": "3", "text": "Gonorrhoea" },
+      { "label": "4", "text": "Genital warts" }
+    ],
+    "images": []
+  },
+  {
+    "section": "BIOLOGY",
+    "number": 140,
+    "page": 17,
+    "text": "Sperm motility is due to ______.",
+    "options": [
+      { "label": "1", "text": "flagellar movement" },
+      { "label": "2", "text": "ciliary movement" },
+      { "label": "3", "text": "amoeboid movement" },
+      { "label": "4", "text": "muscular movement" }
+    ],
+    "images": []
+  },
+  {
+    "section": "BIOLOGY",
+    "number": 141,
+    "page": 17,
+    "text": "Natural selection can lead to\n(a) stabilisation\n(b) genetic drift\n(c) directional change\n(d) disruption\nChoose the correct answer from the options given below:",
+    "options": [
+      { "label": "1", "text": "(a) only" },
+      { "label": "2", "text": "(a), (c) and (d) only" },
+      { "label": "3", "text": "(a), (b), (c) and (d)" },
+      { "label": "4", "text": "(a) and (c) only" }
+    ],
+    "images": []
+  },
+  {
+    "section": "BIOLOGY",
+    "number": 142,
+    "page": 17,
+    "text": "The method of directly injecting a sperm into ovum in assisted reproductive technology is called:",
+    "options": [
+      { "label": "1", "text": "Gamete intra fallopian transfer (GIFT)" },
+      { "label": "2", "text": "Zygote intra fallopian transfer (ZIFT)" },
+      { "label": "3", "text": "Intra cytoplasmic sperm injection (ICSI)" },
+      { "label": "4", "text": "Embryo transfer (ET)" }
+    ],
+    "images": []
+  },
+  {
+    "section": "BIOLOGY",
+    "number": 143,
+    "page": 17,
+    "text": "Which of the following structure is not a part of the male reproductive system?",
+    "options": [
+      { "label": "1", "text": "Rete testis" },
+      { "label": "2", "text": "Epididymis" },
+      { "label": "3", "text": "Vasa efferentia" },
+      { "label": "4", "text": "Infundibulum" }
+    ],
+    "images": []
+  },
+  {
+    "section": "BIOLOGY",
+    "number": 144,
+    "page": 17,
+    "text": "Arrange the following in descending order of number of species in the Amazonian rain forest.\n(a) Plants\n(b) Birds\n(c) Fishes\n(d) Invertebrates\n(e) Mammals\nChoose the correct answer from the options given below:",
+    "options": [
+      { "label": "1", "text": "(c) > (b) > (d) > (e) > (a)" },
+      { "label": "2", "text": "(d) > (a) > (c) > (b) > (e)" },
+      { "label": "3", "text": "(e) > (b) > (a) > (c) > (d)" },
+      { "label": "4", "text": "(b) > (a) > (d) > (c) > (e)" }
+    ],
+    "images": []
+  },
+  {
+    "section": "BIOLOGY",
+    "number": 145,
+    "page": 17,
+    "text": "Given below are two statements:\nStatement I: Ovulation is caused by LH surge leading to rupture of Graafian follicles.\nStatement II: Graafian follicle remaining after ovulation transform into corpus luteum and secretes large amount of estrogen.\nIn the light of the above statements, choose the most appropriate answer from the options given below:",
+    "options": [
+      { "label": "1", "text": "Both Statement I and Statement II are correct" },
+      { "label": "2", "text": "Both Statement I and Statement II are incorrect" },
+      { "label": "3", "text": "Statement I is correct but Statement II is incorrect" },
+      { "label": "4", "text": "Statement I is incorrect but Statement II is correct" }
+    ],
+    "images": []
+  },
+  {
+    "section": "BIOLOGY",
+    "number": 146,
+    "page": 17,
+    "text": "Which of the following are primary consumers in a food chain?",
+    "options": [
+      { "label": "1", "text": "Parasites" },
+      { "label": "2", "text": "Predators" },
+      { "label": "3", "text": "Herbivores" },
+      { "label": "4", "text": "Carnivores" }
+    ],
+    "images": []
+  },
+  {
+    "section": "BIOLOGY",
+    "number": 147,
+    "page": 17,
+    "text": "A population of diploid organisms is at Hardy-Weinberg equilibrium. If the frequency of allele A is 0.1, the frequency of AA is",
+    "options": [
+      { "label": "1", "text": "0.01" },
+      { "label": "2", "text": "0.02" },
+      { "label": "3", "text": "0.10" },
+      { "label": "4", "text": "0.99" }
+    ],
+    "images": []
+  }
+]

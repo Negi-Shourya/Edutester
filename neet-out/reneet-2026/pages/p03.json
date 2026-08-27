@@ -1,0 +1,106 @@
+[
+  {
+    "section": "PHYSICS",
+    "number": 14,
+    "page": 3,
+    "text": "In a solar system, the time-period of revolution of a planet tracing a circular orbit of radius R is proportional to:",
+    "options": [
+      { "label": "1", "text": "R^{1/2}" },
+      { "label": "2", "text": "R^{3/2}" },
+      { "label": "3", "text": "R^{2}" },
+      { "label": "4", "text": "R^{3}" }
+    ],
+    "images": []
+  },
+  {
+    "section": "PHYSICS",
+    "number": 15,
+    "page": 3,
+    "text": "Two infinitely long parallel conducting wires A and B carry currents I and 2I, respectively, in the same direction. The wire A has uniform mass per unit length \\lambda and lies on an insulated floor. The wire B is kept fixed at a height h above the floor. The minimum magnitude of h so that the wire A does not rise from the floor is :\n[ g is the acceleration due to gravity and \\mu_{0} is the permeability of free space.]",
+    "options": [
+      { "label": "1", "text": "\\frac{\\mu_{0}I^{2}}{2\\pi\\lambda g}" },
+      { "label": "2", "text": "\\frac{\\mu_{0}I^{2}}{\\pi\\lambda g}" },
+      { "label": "3", "text": "\\frac{2\\mu_{0}I^{2}}{\\pi\\lambda g}" },
+      { "label": "4", "text": "\\frac{4\\mu_{0}I^{2}}{\\pi\\lambda g}" }
+    ],
+    "images": []
+  },
+  {
+    "section": "PHYSICS",
+    "number": 16,
+    "page": 3,
+    "text": "An ideal Zener diode with breakdown voltage of -3 V is reverse biased with a negative input voltage V_{i} = -5 V. The magnitude of voltage difference between points B and A is :",
+    "options": [
+      { "label": "1", "text": "3 V" },
+      { "label": "2", "text": "2 V" },
+      { "label": "3", "text": "1 V" },
+      { "label": "4", "text": "0 V" }
+    ],
+    "images": ["q16_fig1.png"]
+  },
+  {
+    "section": "PHYSICS",
+    "number": 17,
+    "page": 3,
+    "text": "In an adiabatic expansion, the temperature of one mole of an ideal monatomic gas (\\gamma = 5/3) decreases from 60K to 50K. The work done by the gas in the process is :\n(Take the universal gas constant as R = 8.3 J mol^{-1} K^{-1})",
+    "options": [
+      { "label": "1", "text": "41.5 J" },
+      { "label": "2", "text": "83 J" },
+      { "label": "3", "text": "124.5 J" },
+      { "label": "4", "text": "166 J" }
+    ],
+    "images": []
+  },
+  {
+    "section": "PHYSICS",
+    "number": 18,
+    "page": 3,
+    "text": "A ray of light with wavelength \\lambda is incident on three different photo-electric cells namely 1, 2 and 3. The threshold wavelength of these photo-electric cells are \\lambda_{1}, \\lambda_{2} and \\lambda_{3}, respectively and the magnitude of stopping potentials of these cells are V_{1}, V_{2} and V_{3}, respectively. The relation between \\lambda and threshold wavelengths are \\lambda_{1} < \\lambda, \\lambda_{2} > \\lambda and \\lambda_{3} >> \\lambda. The correct option is:",
+    "options": [
+      { "label": "1", "text": "V_{1} = 0, V_{2} < V_{3}" },
+      { "label": "2", "text": "V_{1} = 0, V_{2} > V_{3}" },
+      { "label": "3", "text": "V_{1} > V_{2}, V_{3} = 0" },
+      { "label": "4", "text": "V_{1} < V_{2}, V_{3} = 0" }
+    ],
+    "images": []
+  },
+  {
+    "section": "PHYSICS",
+    "number": 19,
+    "page": 3,
+    "text": "A photon and an electron, each of 20 eV energy, move in free space. The ratio of linear momentum of electron p_{e} to that of photon p_{Ph}, \\frac{p_{e}}{p_{Ph}} is :\n(Take speed of light = 3 × 10^{8} ms^{-1}, charge of electron = -1.6×10^{-19} C and mass of electron \\frac{1}{4\\pi\\epsilon_{0}} = 9×10^{-31} kg )",
+    "options": [
+      { "label": "1", "text": "\\frac{2}{450}" },
+      { "label": "2", "text": "\\frac{1}{250}" },
+      { "label": "3", "text": "225" },
+      { "label": "4", "text": "275" }
+    ],
+    "images": []
+  },
+  {
+    "section": "PHYSICS",
+    "number": 20,
+    "page": 3,
+    "text": "Which of the following measurements require 'index correction' ?",
+    "options": [
+      { "label": "1", "text": "Measurement of resistance of a wire using meter bridge" },
+      { "label": "2", "text": "Measurement of gravitational acceleration using simple pendulum" },
+      { "label": "3", "text": "Measurement of focal length of lenses using optical bench" },
+      { "label": "4", "text": "Measurement of speed of sound using resonance tube" }
+    ],
+    "images": []
+  },
+  {
+    "section": "PHYSICS",
+    "number": 21,
+    "page": 3,
+    "text": "A unit positive point charge is taken slowly through an infinitesimally thin tube that is inside a charged dielectric sphere of radius R, having uniform positive charge density \\rho, as shown in the figure. The initial and final positions of the charge are marked by A and B at distances 2R and 3R respectively, from the centre of the sphere. In this process, the magnitude of the total work done on the point charge is \\frac{\\rho R^{2}}{n\\epsilon_{0}}. The value of n is :\n(\\epsilon_{0} is the permittivity of vacuum)",
+    "options": [
+      { "label": "1", "text": "2" },
+      { "label": "2", "text": "6" },
+      { "label": "3", "text": "9" },
+      { "label": "4", "text": "18" }
+    ],
+    "images": ["q21_fig1.png"]
+  }
+]

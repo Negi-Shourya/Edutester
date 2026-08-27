@@ -1,0 +1,106 @@
+[
+  {
+    "section": "BIOLOGY",
+    "number": 128,
+    "page": 17,
+    "text": "Match List I with List II :\n| List-I (Process) | List-II (Location) |\n|---|---|\n| A. Glycolysis | I. Inner mitochondrial membrane |\n| B. ETS | II. Mitochondrial matrix |\n| C. Accumulation of protons | III. Cytoplasm |\n| D. Krebs' cycle | IV. Intermembrane space |\nChoose the correct answer from the options given below:",
+    "options": [
+      { "label": "1", "text": "A-IV, B-II, C-I, D-III" },
+      { "label": "2", "text": "A-II, B-III, C-IV, D-I" },
+      { "label": "3", "text": "A-III, B-I, C-IV, D-II" },
+      { "label": "4", "text": "A-I, B-IV, C-III, D-II" }
+    ],
+    "images": []
+  },
+  {
+    "section": "BIOLOGY",
+    "number": 129,
+    "page": 17,
+    "text": "Which one of the following is a triploid cell?",
+    "options": [
+      { "label": "1", "text": "Synergid" },
+      { "label": "2", "text": "Central cell" },
+      { "label": "3", "text": "Zygote" },
+      { "label": "4", "text": "Primary endosperm cell" }
+    ],
+    "images": []
+  },
+  {
+    "section": "BIOLOGY",
+    "number": 130,
+    "page": 17,
+    "text": "Which one of the following types of pollination brings genetically different types of pollen grains to the stigma ?",
+    "options": [
+      { "label": "1", "text": "Autogamy" },
+      { "label": "2", "text": "Xenogamy" },
+      { "label": "3", "text": "Geitonogamy" },
+      { "label": "4", "text": "Cleistogamy" }
+    ],
+    "images": []
+  },
+  {
+    "section": "BIOLOGY",
+    "number": 131,
+    "page": 17,
+    "text": "Match List-I with List-II:\n| List-I (Placentation) | List-II (Example) |\n|---|---|\n| (A) Marginal | (I) Mustard |\n| (B) Axile | (II) Pea |\n| (C) Parietal | (III) Marigold |\n| (D) Basal | (IV) Lemon |\nChoose the correct answer from the options given below:",
+    "options": [
+      { "label": "1", "text": "A-II, B-IV, C-I, D-III" },
+      { "label": "2", "text": "A-I, B-III, C-II, D-IV" },
+      { "label": "3", "text": "A-III, B-I, C-IV, D-II" },
+      { "label": "4", "text": "A-IV, B-II, C-I, D-III" }
+    ],
+    "images": []
+  },
+  {
+    "section": "BIOLOGY",
+    "number": 132,
+    "page": 17,
+    "text": "The main criteria used for Five Kingdom Classification proposed by R.H. Whittaker (1969) included:\nA. Cell structure\nB. Body organization\nC. Presence of flagellum\nD. Reproduction\nE. Phylogenetic relationships\nChoose the correct answer from the options given below:",
+    "options": [
+      { "label": "1", "text": "A, B, C, D and E" },
+      { "label": "2", "text": "B, C and D only" },
+      { "label": "3", "text": "A, B, D and E only" },
+      { "label": "4", "text": "A, B and E only" }
+    ],
+    "images": []
+  },
+  {
+    "section": "BIOLOGY",
+    "number": 133,
+    "page": 17,
+    "text": "Match List I with List II:\n| List-I | List-II |\n|---|---|\n| A. Trypsin | I. Intercellular ground substance |\n| B. Morphine | II. Lectin |\n| C. Concanavalin A | III. Enzyme |\n| D. Collagen | IV. Alkaloid |\nChoose the correct answer from the options given below:",
+    "options": [
+      { "label": "1", "text": "A-III, B-IV, C-II, D-I" },
+      { "label": "2", "text": "A-I, B-II, C-III, D-IV" },
+      { "label": "3", "text": "A-IV, B-III, C-II, D-I" },
+      { "label": "4", "text": "A-III, B-II, C-IV, D-I" }
+    ],
+    "images": []
+  },
+  {
+    "section": "BIOLOGY",
+    "number": 134,
+    "page": 17,
+    "text": "Which of the following statements are correct with respect to DNA separation, isolation and visualization?\nA. The cutting of DNA is done by molecular scissors.\nB. The DNA fragments separate according to their size in an agarose gel, upon electrophoresis.\nC. The separated DNA fragments can be seen without staining when exposed to UV light.\nD. The separated DNA fragments, when stained with ethidium bromide, can be seen in visible light.\nChoose the correct answer from the options given below :",
+    "options": [
+      { "label": "1", "text": "B and D only" },
+      { "label": "2", "text": "A and B only" },
+      { "label": "3", "text": "B and C only" },
+      { "label": "4", "text": "A and D only" }
+    ],
+    "images": []
+  },
+  {
+    "section": "BIOLOGY",
+    "number": 135,
+    "page": 17,
+    "text": "Which one of the following disorders is caused by the substitution of Glutamic acid (Glu) by Valine (Val) at the sixth position of the beta globin chain of the haemoglobin molecule ?",
+    "options": [
+      { "label": "1", "text": "Thalassemia" },
+      { "label": "2", "text": "Sickle-cell anaemia" },
+      { "label": "3", "text": "Phenylketonuria" },
+      { "label": "4", "text": "Haemophilia" }
+    ],
+    "images": []
+  }
+]

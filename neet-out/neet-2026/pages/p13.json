@@ -1,0 +1,80 @@
+[
+  {
+    "section": "BIOLOGY",
+    "number": 99,
+    "page": 13,
+    "text": "The main function of bulliform cells in grasses is :",
+    "options": [
+      { "label": "1", "text": "to make the leaf impermeable to fungal spores." },
+      { "label": "2", "text": "to transport water." },
+      { "label": "3", "text": "to perform photosynthesis." },
+      { "label": "4", "text": "to minimize water loss during water stress." }
+    ],
+    "images": []
+  },
+  {
+    "section": "BIOLOGY",
+    "number": 100,
+    "page": 13,
+    "text": "Identify the correct sequence of steps in each cycle of Polymerase Chain Reaction:",
+    "options": [
+      { "label": "1", "text": "Extension \\rightarrow Annealing \\rightarrow Denaturation" },
+      { "label": "2", "text": "Annealing \\rightarrow Denaturation \\rightarrow Extension" },
+      { "label": "3", "text": "Denaturation \\rightarrow Extension \\rightarrow Annealing" },
+      { "label": "4", "text": "Denaturation \\rightarrow Annealing \\rightarrow Extension" }
+    ],
+    "images": []
+  },
+  {
+    "section": "BIOLOGY",
+    "number": 101,
+    "page": 13,
+    "text": "Match List-I with List-II:\n| List-I (Phase of cell cycle) | List-II (Activity) |\n|---|---|\n| (A) G_{1} phase | (I) Actual cell division occurs |\n| (B) S phase | (II) Cell is metabolically active and continuously grows but does not replicate its DNA |\n| (C) G_{2} phase | (III) Synthesis of DNA occurs and the amount of DNA per cell doubles |\n| (D) M phase | (IV) Proteins are synthesized while cell growth continues |\nChoose the correct answer from the options given below:",
+    "options": [
+      { "label": "1", "text": "A-IV, B-I, C-II, D-III" },
+      { "label": "2", "text": "A-I, B-II, C-III, D-IV" },
+      { "label": "3", "text": "A-III, B-IV, C-I, D-II" },
+      { "label": "4", "text": "A-II, B-III, C-IV, D-I" }
+    ],
+    "images": []
+  },
+  {
+    "section": "BIOLOGY",
+    "number": 102,
+    "page": 13,
+    "text": "Which of the following statements are correct?\nA. The Amazon rainforest being cut and cleared for cultivation of soyabeans is an example of habitat loss.\nB. Steller's sea cow and passenger pigeon became extinct due to over-exploitation by humans.\nC. The Nile perch introduced into Lake Victoria in East Africa helped in population growth of cichlid fish in the lake.\nD. Water hyacinth is an invasive species.\nE. When a species becomes extinct, the plant and animal species associated with it are not affected.\nChoose the correct answer from the options given below:",
+    "options": [
+      { "label": "1", "text": "A, B and E only" },
+      { "label": "2", "text": "A, B and D only" },
+      { "label": "3", "text": "C, D and E only" },
+      { "label": "4", "text": "B, C and D only" }
+    ],
+    "images": []
+  },
+  {
+    "section": "BIOLOGY",
+    "number": 103,
+    "page": 13,
+    "text": "Which of the following statements are correct with reference to a transcription unit?\nA. A transcription unit in DNA is defined primarily by three regions: promoter, structural gene and terminator.\nB. The promoter is said to be located towards the 5'-end of the structural gene.\nC. The promoter is a DNA sequence that provides binding site for RNA polymerase.\nD. The promoter defines the template and coding strands.\nE. The terminator is located towards the 3'-end of the coding strand and it defines the end of the process of transcription.\nChoose the correct answer from the options given below:",
+    "options": [
+      { "label": "1", "text": "A, B, C and D only" },
+      { "label": "2", "text": "A, C, D and E only" },
+      { "label": "3", "text": "B, C, D and E only" },
+      { "label": "4", "text": "A, B, C, D and E" }
+    ],
+    "images": []
+  },
+  {
+    "section": "BIOLOGY",
+    "number": 104,
+    "page": 13,
+    "text": "Which one of the following statements is not true about the universal rules of binomial nomenclature?",
+    "options": [
+      { "label": "1", "text": "Biological names are generally in Latin." },
+      { "label": "2", "text": "Both the words in a biological name, when handwritten, are separately underlined and printed in italics." },
+      { "label": "3", "text": "The specific epithet in the biological name starts with a small letter." },
+      { "label": "4", "text": "The first word in the biological name represents the specific epithet, while the second component denotes the genus." }
+    ],
+    "images": []
+  }
+]

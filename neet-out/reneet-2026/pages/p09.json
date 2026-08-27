@@ -1,0 +1,132 @@
+[
+  {
+    "section": "CHEMISTRY",
+    "number": 57,
+    "page": 9,
+    "text": "In an acidic medium, 10 mL of 0.25 M oxalic acid is titrated with KMnO_{4} solution. If the volume of KMnO_{4} solution required to reach end point is 10 mL, the strength of the KMnO_{4} solution is",
+    "options": [
+      { "label": "1", "text": "0.10 M" },
+      { "label": "2", "text": "0.20 M" },
+      { "label": "3", "text": "0.25 M" },
+      { "label": "4", "text": "0.15 M" }
+    ],
+    "images": []
+  },
+  {
+    "section": "CHEMISTRY",
+    "number": 58,
+    "page": 9,
+    "text": "According to crystal field theory, the correct order of ligands with respect to their decreasing order of field strength is",
+    "options": [
+      { "label": "1", "text": "CO > NH_{3} > H_{2}O > Cl^{-}" },
+      { "label": "2", "text": "CO > H_{2}O > NH_{3} > Cl^{-}" },
+      { "label": "3", "text": "Cl^{-} > H_{2}O > NH_{3} > CO" },
+      { "label": "4", "text": "Cl^{-} > NH_{3} > H_{2}O > CO" }
+    ],
+    "images": []
+  },
+  {
+    "section": "CHEMISTRY",
+    "number": 59,
+    "page": 9,
+    "text": "Two moles of an ideal gas undergo free expansion from 10 L to 100 L at 300 K. The values of \\Delta S_{system} and \\Delta S_{surroundings} are\n(R is universal gas constant)",
+    "options": [
+      { "label": "1", "text": "\\Delta S_{system} = 0; \\Delta S_{surroundings} = 0" },
+      { "label": "2", "text": "\\Delta S_{system} = 4.606 R; \\Delta S_{surroundings} = -4.606 R" },
+      { "label": "3", "text": "\\Delta S_{system} = 0; \\Delta S_{surroundings} = 4.606 R" },
+      { "label": "4", "text": "\\Delta S_{system} = 4.606 R; \\Delta S_{surroundings} = 0" }
+    ],
+    "images": []
+  },
+  {
+    "section": "CHEMISTRY",
+    "number": 60,
+    "page": 9,
+    "text": "2A \\xrightarrow{k} B is a zero-order reaction, where k = 1.0 mol L^{-1} min^{-1}. If the initial concentration of A is 2 M, then the time taken to complete 75% of the reaction will be",
+    "options": [
+      { "label": "1", "text": "1.5 min" },
+      { "label": "2", "text": "0.75 min" },
+      { "label": "3", "text": "1.0 min" },
+      { "label": "4", "text": "2.0 min" }
+    ],
+    "images": []
+  },
+  {
+    "section": "CHEMISTRY",
+    "number": 61,
+    "page": 9,
+    "text": "Given below are two statements : One is labelled as Assertion A and the other is labelled as Reason R.\nAssertion A : Generally, 3d transition metals have high melting points.\nReason R : Involvement of 3d-electrons in addition to 4s-electrons in the interatomic metallic bonding.\nIn light of the above statements, choose the most appropriate answer from the options given below:",
+    "options": [
+      { "label": "1", "text": "Both A and R are correct and R is the correct explanation of A." },
+      { "label": "2", "text": "Both A and R are correct and R is NOT the correct explanation of A." },
+      { "label": "3", "text": "A is correct but R is not correct." },
+      { "label": "4", "text": "A is not correct but R is correct." }
+    ],
+    "images": []
+  },
+  {
+    "section": "CHEMISTRY",
+    "number": 62,
+    "page": 9,
+    "text": "For a salt XY, which is a strong electrolyte, the plot of \\Lambda_{m} versus \\sqrt{c} has a slope of -90.0 S cm^{2} mol^{-3/2} L^{1/2} at 298 K. At 0.01 M concentration of XY, the value of \\Lambda_{m} is 145.0 S cm^{2} mol^{-1}. The limiting molar conductivity of Y^{-} ion (\\lambda^{o}_{Y^{-}}, in S cm^{2} mol^{-1}) at 298 K will be\n(Given : \\lambda^{o}_{X^{+}} = 74.0 S cm^{2} mol^{-1})",
+    "options": [
+      { "label": "1", "text": "80.0" },
+      { "label": "2", "text": "100.0" },
+      { "label": "3", "text": "90.0" },
+      { "label": "4", "text": "76.0" }
+    ],
+    "images": []
+  },
+  {
+    "section": "CHEMISTRY",
+    "number": 63,
+    "page": 9,
+    "text": "The amount of carbon dioxide evolved upon complete combustion of 116 g of n-butane is\n(Given: atomic mass in amu H=1, C=12 and O = 16)",
+    "options": [
+      { "label": "1", "text": "352 g" },
+      { "label": "2", "text": "322 g" },
+      { "label": "3", "text": "176 g" },
+      { "label": "4", "text": "362 g" }
+    ],
+    "images": []
+  },
+  {
+    "section": "CHEMISTRY",
+    "number": 64,
+    "page": 9,
+    "text": "For an elementary chemical reaction, the Arrhenius plot is given below.\nIf the energy of activation is 6.64 kJ mol^{-1} and R = 8.3 J K^{-1} mol^{-1}, the temperature at which the rate constant becomes e^{2} min^{-1}, is:",
+    "options": [
+      { "label": "1", "text": "125 K" },
+      { "label": "2", "text": "150 K" },
+      { "label": "3", "text": "200 K" },
+      { "label": "4", "text": "250 K" }
+    ],
+    "images": ["q64_fig1.png"]
+  },
+  {
+    "section": "CHEMISTRY",
+    "number": 65,
+    "page": 9,
+    "text": "Given below are two statements:\nStatement I : Heating NaCl with concentrated H_{2}SO_{4} and MnO_{2} results in oxidation of Mn.\nStatement II: Heating NaI with concentrated H_{2}SO_{4} and MnO_{2} results in reduction of Mn.\nIn light of the above statements, choose the most appropriate answer from the options given below:",
+    "options": [
+      { "label": "1", "text": "Both Statement-I and Statement-II are correct." },
+      { "label": "2", "text": "Both Statement-I and Statement-II are incorrect." },
+      { "label": "3", "text": "Statement-I is correct but Statement-II is incorrect." },
+      { "label": "4", "text": "Statement-I is incorrect but Statement-II is correct." }
+    ],
+    "images": []
+  },
+  {
+    "section": "CHEMISTRY",
+    "number": 66,
+    "page": 9,
+    "text": "Among the species given below, the spin-only magnetic moment is highest for (Given : Atomic number of Ti = 22, Mn = 25, Fe = 26 and Co = 27)",
+    "options": [
+      { "label": "1", "text": "[Mn(CN)_{6}]^{3-}" },
+      { "label": "2", "text": "[Fe(CN)_{6}]^{3-}" },
+      { "label": "3", "text": "[Co(NH_{3})_{6}]^{3+}" },
+      { "label": "4", "text": "[Ti(H_{2}O)_{6}]^{3+}" }
+    ],
+    "images": []
+  }
+]

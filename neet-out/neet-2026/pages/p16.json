@@ -1,0 +1,106 @@
+[
+  {
+    "section": "BIOLOGY",
+    "number": 120,
+    "page": 16,
+    "text": "Which of the following statements are not true regarding restriction endonucleases?\nA. They are called molecular scissors.\nB. These are the enzymes responsible for restricting the growth of bacteriophages in E. coli.\nC. They cut the DNA only at the centre of the palindromic sites.\nD. They remove nucleotides only from the ends of DNA fragments.\nE. They recognise specific palindromic base-pair sequences.\nChoose the answer from the options given below:",
+    "options": [
+      { "label": "1", "text": "A and B only" },
+      { "label": "2", "text": "A and E only" },
+      { "label": "3", "text": "D and E only" },
+      { "label": "4", "text": "C and D only" }
+    ],
+    "images": []
+  },
+  {
+    "section": "BIOLOGY",
+    "number": 121,
+    "page": 16,
+    "text": "In racemose inflorescence,",
+    "options": [
+      { "label": "1", "text": "the main axis terminates in a flower" },
+      { "label": "2", "text": "flowers are solitary" },
+      { "label": "3", "text": "the growth is limited" },
+      { "label": "4", "text": "flowers are borne in an acropetal succession" }
+    ],
+    "images": []
+  },
+  {
+    "section": "BIOLOGY",
+    "number": 122,
+    "page": 16,
+    "text": "Arrange the following in the correct developmental sequence related to microsporogenesis :\nA. Microspore tetrads\nB. Sporogenous tissue\nC. Pollen grains\nD. Pollen mother cells\nChoose the correct answer from the options given below:",
+    "options": [
+      { "label": "1", "text": "D, A, C, B" },
+      { "label": "2", "text": "B, D, A, C" },
+      { "label": "3", "text": "B, D, C, A" },
+      { "label": "4", "text": "A, D, C, B" }
+    ],
+    "images": []
+  },
+  {
+    "section": "BIOLOGY",
+    "number": 123,
+    "page": 16,
+    "text": "Identify the correct statements about biomolecules.\nA. Lipids are generally water soluble.\nB. Proteins are polypeptides.\nC. Polysaccharides are long chains of sugars.\nD. Adenine and guanine are substituted pyrimidines.\nE. Almost all enzymes are proteins.\nChoose the correct answer from the options given below:",
+    "options": [
+      { "label": "1", "text": "B, D and E only" },
+      { "label": "2", "text": "B, C and E only" },
+      { "label": "3", "text": "A, B and C only" },
+      { "label": "4", "text": "C, D and E only" }
+    ],
+    "images": []
+  },
+  {
+    "section": "BIOLOGY",
+    "number": 124,
+    "page": 16,
+    "text": "Which of the following statements are true with reference to the sex-determination in honeybees ?\nA. An offspring formed from the union of a sperm and an egg, develops as a female (queen or worker).\nB. An unfertilized egg develops as a male by parthenogenesis.\nC. A male has half the number of chromosomes than that of a female.\nD. Males produce sperms by meiosis.\nE. Honeybees have a haplodiploid sex-determination system.\nChoose the correct answer from the options given below:",
+    "options": [
+      { "label": "1", "text": "A, B, C and E only" },
+      { "label": "2", "text": "B, C, D and E only" },
+      { "label": "3", "text": "A, B, C and D only" },
+      { "label": "4", "text": "A, B, D and E only" }
+    ],
+    "images": []
+  },
+  {
+    "section": "BIOLOGY",
+    "number": 125,
+    "page": 16,
+    "text": "Heterophyllous development in response to environment is an example of which of the following phenomena ?",
+    "options": [
+      { "label": "1", "text": "Redifferentiation" },
+      { "label": "2", "text": "Elasticity" },
+      { "label": "3", "text": "Dedifferentiation" },
+      { "label": "4", "text": "Plasticity" }
+    ],
+    "images": []
+  },
+  {
+    "section": "BIOLOGY",
+    "number": 126,
+    "page": 16,
+    "text": "Which of the following statements are correct regarding amino acids ?\nA. They are substituted methanes.\nB. Serine is an aromatic amino acid.\nC. Valine is a neutral amino acid.\nD. Lysine is an acidic amino acid.\nChoose the correct answer from the options given below:",
+    "options": [
+      { "label": "1", "text": "C and D only" },
+      { "label": "2", "text": "B and C only" },
+      { "label": "3", "text": "A and C only" },
+      { "label": "4", "text": "A and B only" }
+    ],
+    "images": []
+  },
+  {
+    "section": "BIOLOGY",
+    "number": 127,
+    "page": 16,
+    "text": "\"The Evil Quartet\" of biodiversity loss includes which of the following?",
+    "options": [
+      { "label": "1", "text": "Over-exploitation; Alien species invasions; Air pollution; Co-extinctions" },
+      { "label": "2", "text": "Habitat loss and fragmentation; Air pollution; Water pollution; Co-extinctions" },
+      { "label": "3", "text": "Habitat loss and fragmentation; over-exploitation; Alien species invasions; Co-extinctions" },
+      { "label": "4", "text": "Over-exploitation; Alien species invasions; Soil pollution; Co-extinctions" }
+    ],
+    "images": []
+  }
+]

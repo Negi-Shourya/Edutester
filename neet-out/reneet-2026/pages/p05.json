@@ -1,0 +1,80 @@
+[
+  {
+    "section": "PHYSICS",
+    "number": 27,
+    "page": 5,
+    "text": "A solid sphere A of radius R and mass M is attached at a point to a smaller solid sphere B of radius r < R and mass m < M. Assume that the line joining their centres lies along the horizontal. The moment of inertia of the system calculated about a vertical axis passing through the centre of A is I_{A} and that calculated about a vertical axis passing through the centre of B is I_{B}. The difference I_{A} - I_{B} is:",
+    "options": [
+      { "label": "1", "text": "(M - m)(R + r)^{2}" },
+      { "label": "2", "text": "(m - M)(R + r)^{2}" },
+      { "label": "3", "text": "(m - M)(R - r)^{2}" },
+      { "label": "4", "text": "0" }
+    ],
+    "images": ["q27_fig1.png"]
+  },
+  {
+    "section": "PHYSICS",
+    "number": 28,
+    "page": 5,
+    "text": "Consider a spring-mass simple harmonic oscillator in one dimension. The mass of the particle is m kg and the spring constant is k Nm^{-1}. At a given instant, the extension of the spring is x meter and the speed of the particle is v ms^{-1}. On the x - v plane, if the graph of v as a function of x is a circle, then the correct option is:",
+    "options": [
+      { "label": "1", "text": "k = \\frac{1}{m}" },
+      { "label": "2", "text": "k = m" },
+      { "label": "3", "text": "k = m^{2}" },
+      { "label": "4", "text": "k = \\sqrt{m}" }
+    ],
+    "images": []
+  },
+  {
+    "section": "PHYSICS",
+    "number": 29,
+    "page": 5,
+    "text": "The lens combination as shown in the figure, consists of two lenses, L_{1} and L_{2}, of the focal lengths + 10 cm and - 10 cm, respectively. The position of the image formed is :",
+    "options": [
+      { "label": "1", "text": "20 cm to the left of the concave lens" },
+      { "label": "2", "text": "60 cm to the left of the concave lens" },
+      { "label": "3", "text": "30 cm to the right of the concave lens" },
+      { "label": "4", "text": "60 cm to the right of the concave lens" }
+    ],
+    "images": ["q29_fig1.png"]
+  },
+  {
+    "section": "PHYSICS",
+    "number": 30,
+    "page": 5,
+    "text": "An ac voltage V = 220 sin(2×10^{3}t) Volt is applied to a series LCR circuit. Then the current amplitude in this circuit is :\n(Given : L = 10 mH, C = 25\\mu F, R = 100 \\Omega)",
+    "options": [
+      { "label": "1", "text": "2.2 A" },
+      { "label": "2", "text": "5.5 A" },
+      { "label": "3", "text": "11.0 A" },
+      { "label": "4", "text": "22.0 A" }
+    ],
+    "images": []
+  },
+  {
+    "section": "PHYSICS",
+    "number": 31,
+    "page": 5,
+    "text": "A thin horizontal disc is rotating about a vertical axis passing through its fixed centre O. Its angular momentum is L_{A} and L_{B} computed about points A and B, respectively, with OB = 2×OA. The value of \\frac{L_{A}}{L_{B}} is :",
+    "options": [
+      { "label": "1", "text": "\\frac{1}{4}" },
+      { "label": "2", "text": "\\frac{1}{2}" },
+      { "label": "3", "text": "1" },
+      { "label": "4", "text": "2" }
+    ],
+    "images": ["q31_fig1.png"]
+  },
+  {
+    "section": "PHYSICS",
+    "number": 32,
+    "page": 5,
+    "text": "A conducting loop of finite resistance lies on the x - y plane. There is a constant magnetic field in the z direction. The area of the loop varies with time t, as A = A_{0}(1 + sin t) in appropriate units. The figure that correctly indicates the qualitative behaviour of the power P dissipated in the loop as a function of time is :",
+    "options": [
+      { "label": "1", "text": "", "figure": "q32_opt1.png" },
+      { "label": "2", "text": "", "figure": "q32_opt2.png" },
+      { "label": "3", "text": "", "figure": "q32_opt3.png" },
+      { "label": "4", "text": "", "figure": "q32_opt4.png" }
+    ],
+    "images": []
+  }
+]

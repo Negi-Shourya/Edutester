@@ -20,10 +20,12 @@ export function setExam(exam: ExamType): void {
   }
 }
 
-// Which track a paper belongs to. NEET keys are prefixed `neet-` (neet-2020 …
-// neet-2025); JEE keys are date-based (02-apr-morning). Attempt rows store only
-// the paper key, with no exam_type column, so splitting a student's history by
-// track has to go through the key.
+// Which track a paper belongs to. NEET keys carry `neet` in them (neet-2020 …
+// neet-2025, plus the re-exam `reneet-2026`); JEE keys are date-based
+// (02-apr-morning). Attempt rows store only the paper key, with no exam_type
+// column, so splitting a student's history by track has to go through the key.
+// A prefix test used to be enough, but `reneet-2026` fell through it and the
+// paper was shown as a JEE test.
 export function examOfPaperKey(paperKey: string): ExamType {
-  return paperKey.startsWith('neet') ? 'neet' : 'jee';
+  return paperKey.includes('neet') ? 'neet' : 'jee';
 }

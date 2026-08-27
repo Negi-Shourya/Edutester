@@ -393,7 +393,7 @@ export default function PaperTests() {
                           <span className="text-sm font-medium text-stone-700">{entry.date}</span>
                           <span className="text-xs text-stone-400 bg-white px-2 py-0.5 rounded-full">{entry.day}</span>
                         </div>
-                        <span className="text-xs text-stone-400">{formatDuration(entries[0].minutes ?? 180)}</span>
+                        <span className="text-xs text-stone-400">{formatDuration(entry.minutes ?? 180)}</span>
                       </div>
                       <PaperEntryRow
                         entry={entry}

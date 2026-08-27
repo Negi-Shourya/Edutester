@@ -1,0 +1,93 @@
+[
+  {
+    "section": "CHEMISTRY",
+    "number": 46,
+    "page": 7,
+    "text": "Select the reagents that reduce nitriles to primary amines:\nA. (i) LiAlH_{4} : (ii) H_{2}O\nB. Sn + HCl\nC. H_{2}/Ni\nD. Na(Hg)/C_{2}H_{5}OH\nE. Br_{2}/aq. NaOH\nChoose the correct answer from the options given below:",
+    "options": [
+      { "label": "1", "text": "B, D and E only" },
+      { "label": "2", "text": "A, C and D only" },
+      { "label": "3", "text": "A, D and E only" },
+      { "label": "4", "text": "A, B and C only" }
+    ],
+    "images": []
+  },
+  {
+    "section": "CHEMISTRY",
+    "number": 47,
+    "page": 7,
+    "text": "Match List-I with List-II.\n| List-I (Transition metal/compound/complex) | List-II (Catalytic Role) |\n|---|---|\n| (A) V_{2}O_{5} | (I) Preparation of ammonia from N_{2}/H_{2} mixture |\n| (B) Fe | (II) Polymerisation of alkynes |\n| (C) PdCl_{2} | (III) Preparation of H_{2}SO_{4} from SO_{2} |\n| (D) Ni complex | (IV) Oxidation of ethyne to ethanal |\nChoose the correct answer from the options given below:",
+    "options": [
+      { "label": "1", "text": "A-III, B-IV, C-I, D-II" },
+      { "label": "2", "text": "A-IV, B-I, C-III, D-II" },
+      { "label": "3", "text": "A-II, B-I, C-IV, D-III" },
+      { "label": "4", "text": "A-III, B-I, C-IV, D-II" }
+    ],
+    "images": []
+  },
+  {
+    "section": "CHEMISTRY",
+    "number": 48,
+    "page": 7,
+    "text": "Consider the following reaction:\n2A (g) + B (g) \\rightarrow 2D (g)\n\\Delta U^{\\ominus} = -10 kJ mol^{-1} and \\Delta S^{\\ominus} = -44 J K^{-1} at 298 K.\nIdentify the correct option with \\Delta G^{\\ominus} for the reaction and spontaneity of the reaction at 298 K.\n(Given: R = 8.31 J mol^{-1} K^{-1})",
+    "options": [
+      { "label": "1", "text": "-1.635 kJ mol^{-1}, spontaneous" },
+      { "label": "2", "text": "-0.63568 kJ mol^{-1}, spontaneous" },
+      { "label": "3", "text": "+0.63568 kJ mol^{-1}, non-spontaneous" },
+      { "label": "4", "text": "+1.635 kJ mol^{-1} non-spontaneous" }
+    ],
+    "images": []
+  },
+  {
+    "section": "CHEMISTRY",
+    "number": 49,
+    "page": 7,
+    "text": "Match List-I with List-II.\n| List-I (Quantum Numbers 'n', 'l') | List-II (Orbital) |\n|---|---|\n| (A) n = 2, l = 1 | (I) 3d |\n| (B) n = 4, l = 0 | (II) 2p |\n| (C) n = 5, l = 3 | (III) 4s |\n| (D) n = 3, l = 2 | (IV) 5f |\nChoose the correct answer from the options given below:",
+    "options": [
+      { "label": "1", "text": "A-IV, B-II, C-III, D-I" },
+      { "label": "2", "text": "A-II, B-III, C-I, D-IV" },
+      { "label": "3", "text": "A-II, B-III, C-IV, D-I" },
+      { "label": "4", "text": "A-I, B-II, C-III, D-IV" }
+    ],
+    "images": []
+  },
+  {
+    "section": "CHEMISTRY",
+    "number": 50,
+    "page": 7,
+    "text": "In a qualitative analysis Bi^{3+} is detected by appearance of precipitate of BiO(OH)(s). Calculate pH when the following equilibrium exists at 298 K:\nBiO(OH)(s) \\rightleftharpoons BiO^{+}(aq) + OH^{-}(aq), K = 4 \\times 10^{-10}\n(Given: log 2 = 0.3010)",
+    "options": [
+      { "label": "1", "text": "8.714" },
+      { "label": "2", "text": "4.699" },
+      { "label": "3", "text": "5.286" },
+      { "label": "4", "text": "9.301" }
+    ],
+    "images": []
+  },
+  {
+    "section": "CHEMISTRY",
+    "number": 51,
+    "page": 7,
+    "text": "The correct statement with regard to the secondary structure of DNA/RNA is :",
+    "options": [
+      { "label": "1", "text": "RNA possesses a double strand helix structure and contains uracil as one of the four bases." },
+      { "label": "2", "text": "DNA possesses a double strand helix structure and contains thymine as one of the four bases." },
+      { "label": "3", "text": "RNA possesses a single strand helix structure and contains thymine as one of the four bases." },
+      { "label": "4", "text": "DNA possesses a single strand helix structure and contains uracil as one of the four bases." }
+    ],
+    "images": []
+  },
+  {
+    "section": "CHEMISTRY",
+    "number": 52,
+    "page": 7,
+    "text": "The pair of molecules that are metamers among the following is :",
+    "options": [
+      { "label": "1", "text": "CH_{3}CH_{2}CH_{2}OH and CH_{3} - CH(OH) - CH_{3}" },
+      { "label": "2", "text": "CH_{3}CH_{2}CH_{2}CH_{2}CH_{3} and (CH_{3})_{2}CHCH_{2}CH_{3}" },
+      { "label": "3", "text": "", "figure": "q52_opt3.png" },
+      { "label": "4", "text": "CH_{3}OCH_{2}CH_{2}CH_{3} and CH_{3}CH_{2}OCH_{2}CH_{3}" }
+    ],
+    "images": []
+  }
+]

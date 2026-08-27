@@ -1,0 +1,158 @@
+[
+  {
+    "section": "BIOLOGY",
+    "number": 124,
+    "page": 16,
+    "text": "Which one of the following statements is incorrect?",
+    "options": [
+      { "label": "1", "text": "α-cells of pancreas secrete glucagon" },
+      { "label": "2", "text": "α-cells of pancreas secrete insulin" },
+      { "label": "3", "text": "Glucagon stimulates glycogenolysis" },
+      { "label": "4", "text": "β-cells of pancreas secrete insulin" }
+    ],
+    "images": []
+  },
+  {
+    "section": "BIOLOGY",
+    "number": 125,
+    "page": 16,
+    "text": "Genus represents ______.",
+    "options": [
+      { "label": "1", "text": "an individual plant or animal" },
+      { "label": "2", "text": "a population of plants and animals" },
+      { "label": "3", "text": "a group of closely related species" },
+      { "label": "4", "text": "a group of closely related families" }
+    ],
+    "images": []
+  },
+  {
+    "section": "BIOLOGY",
+    "number": 126,
+    "page": 16,
+    "text": "Which of the following is not a prokaryote?",
+    "options": [
+      { "label": "1", "text": "Bacteria" },
+      { "label": "2", "text": "Blue green algae" },
+      { "label": "3", "text": "Mycoplasma" },
+      { "label": "4", "text": "Fungi" }
+    ],
+    "images": []
+  },
+  {
+    "section": "BIOLOGY",
+    "number": 127,
+    "page": 16,
+    "text": "Which of the following plant growth regulators promotes internode elongation prior to flowering in cabbage?",
+    "options": [
+      { "label": "1", "text": "Abscisic acid" },
+      { "label": "2", "text": "Gibberellin" },
+      { "label": "3", "text": "Indole butyric acid" },
+      { "label": "4", "text": "Ethephon" }
+    ],
+    "images": []
+  },
+  {
+    "section": "BIOLOGY",
+    "number": 128,
+    "page": 16,
+    "text": "The correct sequence of adult cell cycle phases is ______.",
+    "options": [
+      { "label": "1", "text": "G1-G2-S-M" },
+      { "label": "2", "text": "G1-M-G2-S" },
+      { "label": "3", "text": "G1-S-G2-M" },
+      { "label": "4", "text": "S-M-G2-G1" }
+    ],
+    "images": []
+  },
+  {
+    "section": "BIOLOGY",
+    "number": 129,
+    "page": 16,
+    "text": "Match List-I with List-II.\n| List-I | List-II |\n|---|---|\n| A. Fusion of protoplasms between gametes | I. Meiosis |\n| B. Fusion of two nuclei | II. Plasmogamy |\n| C. Generation of haploid spores | III. Karyogamy |\nChoose the correct answer from the options given below :",
+    "options": [
+      { "label": "1", "text": "A-II, B-III, C-I" },
+      { "label": "2", "text": "A-II, B-I, C-III" },
+      { "label": "3", "text": "A-III, B-II, C-I" },
+      { "label": "4", "text": "A-I, B-III, C-II" }
+    ],
+    "images": []
+  },
+  {
+    "section": "BIOLOGY",
+    "number": 130,
+    "page": 16,
+    "text": "Given below are two statements:\nStatement I: The class name Reptilia refers to creeping or crawling mode of locomotion.\nStatement II: All organisms belonging to Reptilia have three chambered heart.\nIn the light of the above statements, choose the most appropriate answer from the options given below:",
+    "options": [
+      { "label": "1", "text": "Both Statement I and Statement II are correct." },
+      { "label": "2", "text": "Both Statement I and Statement II are incorrect." },
+      { "label": "3", "text": "Statement I is correct but Statement II is incorrect." },
+      { "label": "4", "text": "Statement I is incorrect but Statement II is correct." }
+    ],
+    "images": []
+  },
+  {
+    "section": "BIOLOGY",
+    "number": 131,
+    "page": 16,
+    "text": "Given below are two statements :\nStatement I: Chromosomes are fully condensed at the end of prophase I.\nStatement II: Meiosis I resembles mitosis.\nIn the light of the above statements, choose the most appropriate answer from the options given below :",
+    "options": [
+      { "label": "1", "text": "Both Statement I and Statement II are true" },
+      { "label": "2", "text": "Both Statement I and Statement II are false" },
+      { "label": "3", "text": "Statement I is correct, but Statement II is false" },
+      { "label": "4", "text": "Statement I is incorrect, but Statement II is true" }
+    ],
+    "images": []
+  },
+  {
+    "section": "BIOLOGY",
+    "number": 132,
+    "page": 16,
+    "text": "Which of the following is not a characteristic of chordates?",
+    "options": [
+      { "label": "1", "text": "Presence of notochord" },
+      { "label": "2", "text": "Central nervous system is dorsal" },
+      { "label": "3", "text": "Absence of gills" },
+      { "label": "4", "text": "Presence of post anal part (tail)" }
+    ],
+    "images": []
+  },
+  {
+    "section": "BIOLOGY",
+    "number": 133,
+    "page": 16,
+    "text": "Length of the stem at time 0 is 20 cm. The arithmetic growth rate is 30 cm per day. What is the length of the stem at the end of the 7th day?",
+    "options": [
+      { "label": "1", "text": "50 cm" },
+      { "label": "2", "text": "170 cm" },
+      { "label": "3", "text": "230 cm" },
+      { "label": "4", "text": "460 cm" }
+    ],
+    "images": []
+  },
+  {
+    "section": "BIOLOGY",
+    "number": 134,
+    "page": 16,
+    "text": "Arrange the following elements in descending order of their contribution to percentage weight of the human body.\n(a) Oxygen\n(b) Carbon\n(c) Hydrogen\n(d) Nitrogen\nChoose the correct answer from the options given below:",
+    "options": [
+      { "label": "1", "text": "(a), (b), (c), (d)" },
+      { "label": "2", "text": "(c), (a), (b), (d)" },
+      { "label": "3", "text": "(b), (c), (d), (a)" },
+      { "label": "4", "text": "(b), (a), (c), (d)" }
+    ],
+    "images": []
+  },
+  {
+    "section": "BIOLOGY",
+    "number": 135,
+    "page": 16,
+    "text": "In frogs, the number of pairs of cranial nerves arising from the brain are ______.",
+    "options": [
+      { "label": "1", "text": "6" },
+      { "label": "2", "text": "9" },
+      { "label": "3", "text": "10" },
+      { "label": "4", "text": "12" }
+    ],
+    "images": []
+  }
+]

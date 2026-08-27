@@ -1,0 +1,119 @@
+[
+  {
+    "section": "CHEMISTRY",
+    "number": 53,
+    "page": 8,
+    "text": "Match List I with List II:\n| List I (Complex) | List II (Type of isomerism) |\n|---|---|\n| A. [Pt(NH_{3})_{2}Cl_{2}] | I. Optical |\n| B. [Co(en)_{3}]^{3+} | II. Solvate |\n| C. [Co(NH_{3})_{5}]NO_{2}]Cl_{2} | III. Geometrical |\n| D. [Cr(H_{2}O)_{6}]Cl_{3} | IV. Linkage |\nChoose the correct answer from the options given below:",
+    "options": [
+      { "label": "1", "text": "A-III, B-I, C-II, D-IV" },
+      { "label": "2", "text": "A-I, B-III, C-II, D-IV" },
+      { "label": "3", "text": "A-II, B-IV, C-III, D-I" },
+      { "label": "4", "text": "A-III, B-I, C-IV, D-II" }
+    ],
+    "images": []
+  },
+  {
+    "section": "CHEMISTRY",
+    "number": 54,
+    "page": 8,
+    "text": "Match the List-I with List-II.\n| List-I (Order of reaction) | List-II (Unit of rate constant) |\n|---|---|\n| (A) Zero order | (I) mol^{-1}L s^{-1} |\n| (B) First order | (II) mol^{-2}L^{2} s^{-1} |\n| (C) Second order | (III) s^{-1} |\n| (D) Third order | (IV) mol L^{-1} s^{-1} |\nChoose the correct answer from the options given below;",
+    "options": [
+      { "label": "1", "text": "A-IV, B-II, C-I, D-III" },
+      { "label": "2", "text": "A-IV, B-III, C-I, D-II" },
+      { "label": "3", "text": "A-IV, B-III, C-II, D-I" },
+      { "label": "4", "text": "A-I, B-II, C-III, D-IV" }
+    ],
+    "images": []
+  },
+  {
+    "section": "CHEMISTRY",
+    "number": 55,
+    "page": 8,
+    "text": "The correct IUPAC name of the following compound is :",
+    "options": [
+      { "label": "1", "text": "3-ethyl-5-methylheptane" },
+      { "label": "2", "text": "2,4-diethylhexane" },
+      { "label": "3", "text": "3-methyl-5-ethylheptane" },
+      { "label": "4", "text": "3,5-diethylhexane" }
+    ],
+    "images": ["q55_fig1.png"]
+  },
+  {
+    "section": "CHEMISTRY",
+    "number": 56,
+    "page": 8,
+    "text": "A bulb is rated at 150 watt, converting 8% energy into light. If energy of one photon is 4.42 \\times 10^{-19} J, how many photons are emitted by the bulb per second?",
+    "options": [
+      { "label": "1", "text": "2.71 \\times 10^{19}" },
+      { "label": "2", "text": "4.06 \\times 10^{19}" },
+      { "label": "3", "text": "27.2 \\times 10^{19}" },
+      { "label": "4", "text": "1.35 \\times 10^{19}" }
+    ],
+    "images": []
+  },
+  {
+    "section": "CHEMISTRY",
+    "number": 57,
+    "page": 8,
+    "text": "Methane reacts with steam at 1273 K in the presence of nickel catalyst to form :",
+    "options": [
+      { "label": "1", "text": "CO and H_{2}O" },
+      { "label": "2", "text": "CO and H_{2}" },
+      { "label": "3", "text": "CO_{2} and H_{2}" },
+      { "label": "4", "text": "CO_{2} and H_{2}O" }
+    ],
+    "images": []
+  },
+  {
+    "section": "CHEMISTRY",
+    "number": 58,
+    "page": 8,
+    "text": "Compound P (C_{8}H_{8}O) gives a red orange precipitate with 2,4-DNP reagent and it does not reduce Fehling's reagent. On drastic oxidation with chromic acid, P gives an aromatic product Q that produces effervescence on treating with aq. NaHCO_{3}. Compounds P and Q, respectively are:",
+    "options": [
+      { "label": "1", "text": "", "figure": "q58_opt1.png" },
+      { "label": "2", "text": "", "figure": "q58_opt2.png" },
+      { "label": "3", "text": "", "figure": "q58_opt3.png" },
+      { "label": "4", "text": "", "figure": "q58_opt4.png" }
+    ],
+    "images": []
+  },
+  {
+    "section": "CHEMISTRY",
+    "number": 59,
+    "page": 8,
+    "text": "Match List I with List II :\n| List-I | List-II |\n|---|---|\n| A. C_{2}H_{4} | I. 3 \\sigma bonds, 2 \\pi bonds |\n| B. C_{2}H_{2} | II. 3 \\sigma bonds, one lone pair |\n| C. CH_{4} | III. 4 \\sigma bonds |\n| D. NH_{3} | IV. 5 \\sigma bonds, 1 \\pi bond |\nChoose the correct answer from the options given below :",
+    "options": [
+      { "label": "1", "text": "A-III, B-IV, C-II, D-I" },
+      { "label": "2", "text": "A-IV, B-I, C-III, D-II" },
+      { "label": "3", "text": "A-I, B-II, C-IV, D-III" },
+      { "label": "4", "text": "A-II, B-III, C-I, D-IV" }
+    ],
+    "images": []
+  },
+  {
+    "section": "CHEMISTRY",
+    "number": 60,
+    "page": 8,
+    "text": "The following two reactions give the same foul smelling product Z.\nX and Z, respectively, are :",
+    "options": [
+      { "label": "1", "text": "X = AgCN; Z = C_{2}H_{5}NC" },
+      { "label": "2", "text": "X = KCN; Z = C_{2}H_{5}CN" },
+      { "label": "3", "text": "X = AgCN; Z = C_{2}H_{5}CN" },
+      { "label": "4", "text": "X = KCN; Z = C_{2}H_{5}NC" }
+    ],
+    "images": ["q60_fig1.png"]
+  },
+  {
+    "section": "CHEMISTRY",
+    "number": 61,
+    "page": 8,
+    "text": "The number of hydrogen atoms present in 5.4 g of urea is :\n(Given : Molar mass of urea : 60 g mol^{-1}, N_{A} : 6.022 \\times 10^{23} particles mol^{-1})",
+    "options": [
+      { "label": "1", "text": "1.084 \\times 10^{23}" },
+      { "label": "2", "text": "1.084 \\times 10^{22}" },
+      { "label": "3", "text": "2.168 \\times 10^{22}" },
+      { "label": "4", "text": "2.168 \\times 10^{23}" }
+    ],
+    "images": []
+  }
+]

@@ -1,0 +1,106 @@
+[
+  {
+    "section": "CHEMISTRY",
+    "number": 67,
+    "page": 10,
+    "text": "The lanthanide ion having four unpaired electrons is\n(Given: Atomic numbers of Ce = 58, Nd = 60, Tb = 65 and Ho = 67)",
+    "options": [
+      { "label": "1", "text": "Nd^{3+}" },
+      { "label": "2", "text": "Ce^{3+}" },
+      { "label": "3", "text": "Tb^{3+}" },
+      { "label": "4", "text": "Ho^{3+}" }
+    ],
+    "images": []
+  },
+  {
+    "section": "CHEMISTRY",
+    "number": 68,
+    "page": 10,
+    "text": "The formula of tetraammineaquachloridocobalt(III) chloride is",
+    "options": [
+      { "label": "1", "text": "[Co(NH_{3})_{4}Cl_{2}]×H_{2}O" },
+      { "label": "2", "text": "[Co(NH_{3})_{4}]Cl_{3}×H_{2}O" },
+      { "label": "3", "text": "[Co(NH_{3})_{4}(H_{2}O)Cl]Cl" },
+      { "label": "4", "text": "[Co(NH_{3})_{4}(H_{2}O)Cl]Cl_{2}" }
+    ],
+    "images": []
+  },
+  {
+    "section": "CHEMISTRY",
+    "number": 69,
+    "page": 10,
+    "text": "Consider the reversible processes for 1.0 mol of an ideal gas as shown in the figure.\nw_{1}, w_{2}, w_{3} and w_{4} represent work done (in calories) in the processes 1, 2, 3 and 4, respectively; \\Delta U_{2} and \\Delta U_{4} are changes in the internal energy for the processes 2 and 4, respectively.\n[use R = 2 cal K^{-1} mol^{-1}]\nThe correct option is",
+    "options": [
+      { "label": "1", "text": "w_{1} + w_{3} = -2T_{1}\\ln \\frac{V_{2}}{V_{1}} - 2T_{2}\\ln \\frac{V_{4}}{V_{3}}" },
+      { "label": "2", "text": "w_{2} + w_{4} = \\Delta U_{2} - \\Delta U_{4}" },
+      { "label": "3", "text": "w_{1} + w_{2} = 2T_{1}\\ln \\frac{V_{2}}{V_{1}}" },
+      { "label": "4", "text": "w_{1} + w_{2} + w_{3} + w_{4} = 0" }
+    ],
+    "images": ["q69_fig1.png"]
+  },
+  {
+    "section": "CHEMISTRY",
+    "number": 70,
+    "page": 10,
+    "text": "Given below are two statements : One is labelled as Assertion A and the other is labelled as Reason R.\nAssertion A : The first ionization enthalpy of O is lower than that of N and F.\nReason R : The loss of an electron from O leads to stable half-filled p orbital.\nIn light of the above statements, choose the most appropriate answer from the options given below:",
+    "options": [
+      { "label": "1", "text": "Both A and R are correct and R is the correct explanation of A." },
+      { "label": "2", "text": "Both A and R are correct and R is NOT the correct explanation of A." },
+      { "label": "3", "text": "A is correct but R is not correct." },
+      { "label": "4", "text": "A is not correct but R is correct." }
+    ],
+    "images": []
+  },
+  {
+    "section": "CHEMISTRY",
+    "number": 71,
+    "page": 10,
+    "text": "Consider the following statements about the solutions formed by mixing two liquids.\nA. An ideal solution thus formed obeys Raoult's law throughout the composition range.\nB. Mixture of chloroform and acetone shows negative deviation from Raoult's law.\nC. Mixture of aniline and phenol shows positive deviation from Raoult's law.",
+    "options": [
+      { "label": "1", "text": "A and B only" },
+      { "label": "2", "text": "B and C only" },
+      { "label": "3", "text": "A only" },
+      { "label": "4", "text": "A and C only" }
+    ],
+    "images": []
+  },
+  {
+    "section": "CHEMISTRY",
+    "number": 72,
+    "page": 10,
+    "text": "One of the products formed in the following reaction is",
+    "options": [
+      { "label": "1", "text": "", "figure": "q72_opt1.png" },
+      { "label": "2", "text": "", "figure": "q72_opt2.png" },
+      { "label": "3", "text": "", "figure": "q72_opt3.png" },
+      { "label": "4", "text": "", "figure": "q72_opt4.png" }
+    ],
+    "images": ["q72_fig1.png"]
+  },
+  {
+    "section": "CHEMISTRY",
+    "number": 73,
+    "page": 10,
+    "text": "The correct statement is",
+    "options": [
+      { "label": "1", "text": "Boron has a maximum covalency of four." },
+      { "label": "2", "text": "Beryllium has three valence orbitals." },
+      { "label": "3", "text": "Magnesium has a maximum covalency of four." },
+      { "label": "4", "text": "Aluminium has five valence orbitals." }
+    ],
+    "images": []
+  },
+  {
+    "section": "CHEMISTRY",
+    "number": 74,
+    "page": 10,
+    "text": "A protein undergoes reversible thermal denaturation from its initial state N to denatured state D according to N \\rightleftharpoons D. At 60°C, the concentrations of both N and D are equal at equilibrium, and the standard enthalpy change of denaturation of 666 kJ mol^{-1}. The standard entropy change (\\Delta S° in kJ K^{-1} mol^{-1}) of the protein upon denaturation at 60° C is closest to:",
+    "options": [
+      { "label": "1", "text": "2.0" },
+      { "label": "2", "text": "2000.0" },
+      { "label": "3", "text": "333.0" },
+      { "label": "4", "text": "11.1" }
+    ],
+    "images": []
+  }
+]

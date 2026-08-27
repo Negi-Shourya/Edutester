@@ -1,0 +1,119 @@
+[
+  {
+    "section": "BIOLOGY",
+    "number": 111,
+    "page": 15,
+    "text": "Find the incorrect statement(s) about photosynthesis from the following:\nA. The water splitting complex is associated with PS I.\nB. C_{4} plants use the C_{3} pathway of CO_{2} fixation as the main biosynthetic pathway.\nC. In C_{4} plants, photorespiration does not occur.\nD. C_{3} plants exhibit 'Kranz' anatomy.\nE. ATP synthesis in chloroplast occurs through chemiosmosis.\nChoose the answer from the options given below :",
+    "options": [
+      { "label": "1", "text": "B and C only" },
+      { "label": "2", "text": "B only" },
+      { "label": "3", "text": "B and E only" },
+      { "label": "4", "text": "A and D only" }
+    ],
+    "images": []
+  },
+  {
+    "section": "BIOLOGY",
+    "number": 112,
+    "page": 15,
+    "text": "Arrange the following steps of somatic hybridisation in a correct sequence.\nA. Digestion of cell walls.\nB. Isolation of naked protoplasts.\nC. Fusion of protoplasts to get hybrid protoplast.\nD. Isolation of single cells from two different varieties of plants.\nE. Growing of hybrid protoplast to form a new plant.\nChoose the correct answer from the options given below:",
+    "options": [
+      { "label": "1", "text": "D, A, B, C, E" },
+      { "label": "2", "text": "E, B, A, D, C" },
+      { "label": "3", "text": "D, B, A, E, C" },
+      { "label": "4", "text": "E, A, B, C, D" }
+    ],
+    "images": []
+  },
+  {
+    "section": "BIOLOGY",
+    "number": 113,
+    "page": 15,
+    "text": "Match List I with List II:\n| List-I | List-II |\n|---|---|\n| A. Conjunctive tissue | I. Specialised cells in the vicinity of guard cells |\n| B. Casparian strips | II. Endodermal cells rich in starch |\n| C. Subsidiary cells | III. Tissue between xylem and phloem |\n| D. Starch sheath | IV. Endodermal cells with suberin deposition |\nChoose the correct answer from the options given below:",
+    "options": [
+      { "label": "1", "text": "A-IV, B-III, C-I, D-II" },
+      { "label": "2", "text": "A-III, B-IV, C-II, D-I" },
+      { "label": "3", "text": "A-III, B-IV, C-I, D-II" },
+      { "label": "4", "text": "A-IV, B-III, C-II, D-I" }
+    ],
+    "images": []
+  },
+  {
+    "section": "BIOLOGY",
+    "number": 114,
+    "page": 15,
+    "text": "Which one of the following is not a characteristic of plant cells in the phase of elongation?",
+    "options": [
+      { "label": "1", "text": "New cell wall deposition" },
+      { "label": "2", "text": "Cell enlargement" },
+      { "label": "3", "text": "Increased vacuolation" },
+      { "label": "4", "text": "Large conspicuous nuclei" }
+    ],
+    "images": []
+  },
+  {
+    "section": "BIOLOGY",
+    "number": 115,
+    "page": 15,
+    "text": "Match List I with List II :\n| List I (Growth Regulator) | List II (Function/Effect) |\n|---|---|\n| A. 2,4-D | I. Brewing industry |\n| B. GA_{3} | II. Stimulation of stomatal closure |\n| C. Kinetin | III. Herbicide |\n| D. ABA | IV. Nutrient mobilisation |\nChoose the correct answer from the options given below:",
+    "options": [
+      { "label": "1", "text": "A-III, B-I, C-IV, D-II" },
+      { "label": "2", "text": "A-IV, B-III, C-II, D-I" },
+      { "label": "3", "text": "A-I, B-IV, C-III, D-II" },
+      { "label": "4", "text": "A-I, B-II, C-IV, D-III" }
+    ],
+    "images": []
+  },
+  {
+    "section": "BIOLOGY",
+    "number": 116,
+    "page": 15,
+    "text": "The enzyme required for carboxylation in the Calvin cycle is:",
+    "options": [
+      { "label": "1", "text": "Hexokinase" },
+      { "label": "2", "text": "PEP carboxylase" },
+      { "label": "3", "text": "RuBP carboxylase - oxygenase" },
+      { "label": "4", "text": "Carboxypeptidase" }
+    ],
+    "images": []
+  },
+  {
+    "section": "BIOLOGY",
+    "number": 117,
+    "page": 15,
+    "text": "How many ATP and NADPH molecules are required to make one molecule of glucose through the Calvin pathway?",
+    "options": [
+      { "label": "1", "text": "18 ATP and 12 NADPH" },
+      { "label": "2", "text": "12 ATP and 18 NADPH" },
+      { "label": "3", "text": "24 ATP and 18 NADPH" },
+      { "label": "4", "text": "6 ATP and 12 NADPH" }
+    ],
+    "images": []
+  },
+  {
+    "section": "BIOLOGY",
+    "number": 118,
+    "page": 15,
+    "text": "Which of the following floral formula is the correct floral formula of Solanaceae family ?",
+    "options": [
+      { "label": "1", "text": "", "figure": "q118_opt1.png" },
+      { "label": "2", "text": "", "figure": "q118_opt2.png" },
+      { "label": "3", "text": "", "figure": "q118_opt3.png" },
+      { "label": "4", "text": "", "figure": "q118_opt4.png" }
+    ],
+    "images": []
+  },
+  {
+    "section": "BIOLOGY",
+    "number": 119,
+    "page": 15,
+    "text": "Which of the following is an in situ conservation method?",
+    "options": [
+      { "label": "1", "text": "Sacred Groves" },
+      { "label": "2", "text": "Wildlife Safari Parks" },
+      { "label": "3", "text": "Botanical Gardens" },
+      { "label": "4", "text": "Seed Banks" }
+    ],
+    "images": []
+  }
+]
