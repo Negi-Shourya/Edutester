@@ -96,19 +96,16 @@ const SolutionCard = memo(function SolutionCard({ q, qState, keyInfo, outcome }:
 
               return (
                 <div key={opt.label} className={`p-2 border rounded text-xs flex items-center justify-between ${style}`}>
-                  <span className="inline-flex items-center gap-1.5">
+                  <span className="inline-flex items-center gap-1.5 flex-wrap">
                     <strong className="mr-1">({opt.label})</strong>
-                    {opt.text ? (
-                      <VectorText text={opt.text} />
-                    ) : (
-                      opt.figureUrl && (
-                        <img
-                          src={opt.figureUrl}
-                          alt={`Option ${opt.label}`}
-                          className="max-h-64 max-w-full h-auto object-contain rounded-sm"
-                        />
-                      )
+                    {opt.figureUrl && (
+                      <img
+                        src={opt.figureUrl}
+                        alt={`Option ${opt.label}`}
+                        className="max-h-64 max-w-full h-auto object-contain rounded-sm"
+                      />
                     )}
+                    {opt.text && <VectorText text={opt.text} />}
                   </span>
                   {isCorrectChoice && <span className="text-green-700 text-[10px] font-bold">✓ Correct Answer</span>}
                   {isUserChoice && !isCorrectChoice && <span className="text-red-700 text-[10px] font-bold">✗ Your Answer</span>}

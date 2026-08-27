@@ -323,19 +323,16 @@ export default function NtaQuestionPanel({
                       readOnly
                       className="mt-0.5 accent-[#337ab7] w-4 h-4 cursor-pointer pointer-events-none"
                     />
-                    <span className={`text-gray-800 ${fontSizeClass}`}>
+                    <span className={`text-gray-800 ${fontSizeClass} inline-flex items-center gap-1.5 flex-wrap`}>
                       <span className="font-bold text-[#1b365d] mr-1.5">({option.label})</span>
-                      {option.text ? (
-                        <VectorText text={option.text} />
-                      ) : (
-                        option.figureUrl && (
-                          <img
-                            src={option.figureUrl}
-                            alt={`Option ${option.label}`}
-                            className="max-h-64 max-w-full h-auto object-contain rounded-sm"
-                          />
-                        )
+                      {option.figureUrl && (
+                        <img
+                          src={option.figureUrl}
+                          alt={`Option ${option.label}`}
+                          className="max-h-64 max-w-full h-auto object-contain rounded-sm"
+                        />
                       )}
+                      {option.text && <VectorText text={option.text} />}
                     </span>
                   </div>
                 );
