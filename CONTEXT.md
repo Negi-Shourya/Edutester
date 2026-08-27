@@ -44,15 +44,15 @@ src/
 ### Data (Supabase)
 - Paper rows: `key = 'neet-2025'` (NTA-style test interface, 200 questions),
   `'neet-2024'`, `'neet-2023'` (single Biology section), `'neet-2022'`,
-  `'neet-2021'`, `'neet-2020'`
+  `'neet-2021'`, `'neet-2020'`, `'neet-2019'`
 - Tables: `papers`, `questions`, `question_options`, `question_keys`, `question_images`
 - Question text/options stored as text with LaTeX-style math markup (see Rendering)
 - Figures stored in Supabase Storage, referenced by `figure_url` on questions/options
 - Answer keys patched and verified against the official NEET answer keys — except
   NEET 2020, whose key comes from the Aakash booklet and is deliberately **not**
   cross-checked against the official key (explicit user instruction)
-- Total content: 1755 questions across 15 papers (9 JEE Main 2026 × 75 = 675;
-  NEET 2025, 2024, 2023, 2022, 2021, 2020 × 180 each = 1080). The older NEET
+- Total content: 1935 questions across 16 papers (9 JEE Main 2026 × 75 = 675;
+  NEET 2025, 2024, 2023, 2022, 2021, 2020, 2019 × 180 each = 1260). The older NEET
   papers were trimmed from 200 to 180 questions (5 Physics + 5 Chemistry + 10
   Biology per paper, mostly questions on the NMC rationalized-syllabus deleted
   topics) to match NEET 2025's layout — see

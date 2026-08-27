@@ -32,8 +32,8 @@ function buildGroupSrc(depth: number): string {
   return String.raw`\{` + inner + String.raw`\}`;
 }
 const GROUP_SRC = buildGroupSrc(GROUP_DEPTH);
-// A ^{…}/_{…} group — also tolerates empty {} pairs inside (e.g. ^{\alpha{}})
-const SCRIPT_GROUP_SRC = String.raw`[_\^]\{(?:[^{}]|\{\})*\}`;
+// A ^{…}/_{…} group — supports arbitrary nested {…} groups (e.g. _{\text{Cu}}, ^{\circ})
+const SCRIPT_GROUP_SRC = String.raw`[_\^]` + GROUP_SRC;
 
 // A whole smallmatrix environment must stay ONE math segment — the
 // tokenizer below would otherwise split its content into text pieces.
@@ -49,9 +49,9 @@ const MATH_TOKEN_RE = new RegExp(
   [
     SMALLMATRIX_SRC,
     String.raw`\\[a-zA-Z]+(?:\[[^\[\]]*\])?`,
-    GROUP_SRC,
     SCRIPT_GROUP_SRC,
-    String.raw`_[A-Za-z0-9]|\^[A-Za-z0-9+\-]+`,
+    GROUP_SRC,
+    String.raw`_(?:\\[a-zA-Z]+|[A-Za-z0-9])|\^(?:\\[a-zA-Z]+|[A-Za-z0-9+\-]+)`,
     String.raw`[\u00B9\u00B2\u00B3\u2070\u2071\u2074-\u207F\u2080-\u209C\u02B0-\u02E5\u1D40\u1D43-\u1D9C]+`,
   ].join('|'),
   'g'
@@ -373,6 +373,42 @@ export function tokenizeMath(text: string): Segment[] {
 
   if (lastIndex < processed.length) {
     segments.push({ kind: 'text', value: processed.slice(lastIndex) });
+  }
+
+  // Balance enclosing parentheses/brackets for formulas like (CH3)2NH or [Fe(CN)6]
+  for (let i = 0; i < segments.length; i++) {
+    if (segments[i].kind === 'math') {
+      const seg = segments[i];
+      let openParen = (seg.value.match(/(?<!\\)\(/g) || []).length;
+      let closeParen = (seg.value.match(/(?<!\\)\)/g) || []).length;
+      if (closeParen > openParen && i > 0 && segments[i - 1].kind === 'text') {
+        const prev = segments[i - 1];
+        while (closeParen > openParen && prev.value.endsWith('(')) {
+          prev.value = prev.value.slice(0, -1);
+          seg.value = '(' + seg.value;
+          openParen++;
+        }
+        if (prev.value === '') {
+          segments.splice(i - 1, 1);
+          i--;
+        }
+      }
+
+      let openBracket = (seg.value.match(/(?<!\\)\[/g) || []).length;
+      let closeBracket = (seg.value.match(/(?<!\\)\]/g) || []).length;
+      if (closeBracket > openBracket && i > 0 && segments[i - 1].kind === 'text') {
+        const prev = segments[i - 1];
+        while (closeBracket > openBracket && prev.value.endsWith('[')) {
+          prev.value = prev.value.slice(0, -1);
+          seg.value = '[' + seg.value;
+          openBracket++;
+        }
+        if (prev.value === '') {
+          segments.splice(i - 1, 1);
+          i--;
+        }
+      }
+    }
   }
 
   return segments;

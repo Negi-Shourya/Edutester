@@ -216,6 +216,12 @@
   - Math and match questions formatted with KaTeX/pipe-table standards; verified 0 KaTeX parse
     errors across all 900 fields via `scripts/_render-check-neet-2026.mts`.
   - Static JSON generated at `public/papers/neet-2026.json` (132 KB) via `scripts/build-paper-json.mjs`.
+- **NEET 2019 (done)**: extracted from the official PDF (`neet/Neet 2019.pdf`, 19 pages, 180 questions) with `scripts/extract_neet_2019.py` → `neet-out/2019/` → seeded to Supabase as **paper id 65** (`key = neet-2019`) via `scripts/seed-neet-2019.mjs`.
+  - 180 questions, 720 options, 180 answer keys, `durationMinutes: 180`, `is_trial: false`.
+  - Section remapping: Physics (1-45), Chemistry (46-90), Biology (91-180).
+  - 28 figures (8 stem images + 20 option images) uploaded to Supabase Storage under `question-images/neet-2019/`.
+  - 10 match questions formatted as standard markdown tables; math formatted with KaTeX standard syntax; verified 0 KaTeX parse errors across all 900 fields via `scripts/_render-check-2019.mts`.
+  - Static JSON generated at `public/papers/neet-2019.json` (115 KB) via `scripts/build-paper-json.mjs`.
 
 
 ## Phase 7 — Results screen perf + submission latency (shared by ALL papers)
