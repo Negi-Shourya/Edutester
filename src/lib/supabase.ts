@@ -1,13 +1,10 @@
 import { createClient } from '@supabase/supabase-js';
 
-const supabaseUrl = (import.meta.env.VITE_SUPABASE_URL as string) || '';
-const supabaseKey = (import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY as string) || '';
-
-if (!supabaseUrl || !supabaseKey) {
-  console.warn(
-    'Missing Supabase env vars. Set VITE_SUPABASE_URL and VITE_SUPABASE_PUBLISHABLE_KEY in your environment.'
-  );
-}
+const supabaseUrl =
+  (import.meta.env.VITE_SUPABASE_URL as string) || 'https://gvsgromfsqvywawauzfi.supabase.co';
+const supabaseKey =
+  (import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY as string) ||
+  'sb_publishable_E4i5onSWlO_NBqE8nsHXig_K25O1Lqv';
 
 const REMEMBER_KEY = 'edutester_remember';
 
