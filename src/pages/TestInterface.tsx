@@ -1,6 +1,6 @@
-﻿import { useState, useEffect, useCallback, useRef, useMemo } from 'react';
+import { useState, useEffect, useCallback, useRef, useMemo } from 'react';
 import { useSearchParams, useNavigate } from 'react-router-dom';
-import { getPaperQuestions, type PaperQuestions } from '../data/questions';
+import { getPaperQuestions, getChapterQuestions, type PaperQuestions } from '../data/questions';
 import type { Question, QuestionState, QuestionStatus } from '../types';
 import { DEFAULT_PAPER_KEY, useSubscriptionAccess } from '../lib/subscription';
 import { loadAttempt, saveAttempt, clearAttempt } from '../lib/attemptStorage';
@@ -26,7 +26,11 @@ const WARM_LEAD_SECONDS = 120;
 export default function TestInterface() {
   const [searchParams] = useSearchParams();
   const navigate = useNavigate();
-  const paperKey = searchParams.get('paper') || DEFAULT_PAPER_KEY;
+  const chapterParam = searchParams.get('chapter');
+  const paperParam = searchParams.get('paper');
+  const isChapter = Boolean(chapterParam);
+  const paperKey = chapterParam || paperParam || DEFAULT_PAPER_KEY;
+  const testType: 'paper' | 'chapter' = isChapter ? 'chapter' : 'paper';
 
   const { user } = useAuth();
   // Saved attempts are stored per account, so every read and write is scoped to
@@ -176,23 +180,30 @@ export default function TestInterface() {
     setSubmitRetry(0);
     submitRef.current = false;
 
-    getPaperQuestions(paperKey)
+    const loadPromise = isChapter
+      ? getChapterQuestions(paperKey)
+      : getPaperQuestions(paperKey);
+
+    loadPromise
       .then((data) => {
         if (!cancelled) {
           setPaperData(data);
-          setTimeLeft((data.paper.durationMinutes ?? 180) * 60);
+          setTimeLeft((data.paper.durationMinutes ?? (isChapter ? 50 : 180)) * 60);
+          if (data.questions.length > 0) {
+            setActiveSection(data.questions[0].section);
+          }
         }
       })
       .catch((err: unknown) => {
         if (!cancelled) {
-          setLoadError(err instanceof Error ? err.message : 'Failed to load paper.');
+          setLoadError(err instanceof Error ? err.message : 'Failed to load test.');
         }
       });
 
     return () => {
       cancelled = true;
     };
-  }, [paperKey]);
+  }, [paperKey, isChapter]);
 
   // Question States initialized to 'not-visited' (Question 1 is immediately marked 'not-answered')
   const [questionStates, setQuestionStates] = useState<QuestionState[]>([]);
@@ -220,7 +231,7 @@ export default function TestInterface() {
       setActiveSection(
         saved.activeSection && sections.includes(saved.activeSection)
           ? saved.activeSection
-          : 'Physics'
+          : (questions[0]?.section ?? 'Physics')
       );
       setLanguage(saved.language === 'Hindi' ? 'Hindi' : 'English');
       setTimeLeft(saved.timeLeft > 0 ? saved.timeLeft : durationSeconds);
@@ -239,7 +250,7 @@ export default function TestInterface() {
         }))
       );
       setCurrentQuestionId(questions[0].id);
-      setActiveSection('Physics');
+      setActiveSection(questions[0]?.section ?? 'Physics');
       setLanguage('English');
       setTimeLeft(durationSeconds);
       setIsTestSubmitted(false);
@@ -319,7 +330,7 @@ export default function TestInterface() {
 
     submitAttempt({
       paperKey,
-      testType: 'paper',
+      testType,
       title: paperData?.paper.fullTitle ?? paperKey,
       timeSpent: Math.max(0, durationSeconds - timeLeft),
       questionStates,
@@ -332,7 +343,7 @@ export default function TestInterface() {
         setSubmitError(res.error ?? 'Could not score the attempt. Please retry.');
       }
     });
-  }, [isTestSubmitted, resultPayload, submitRetry, paperKey, questions, questionStates, paperData, timeLeft]);
+  }, [isTestSubmitted, resultPayload, submitRetry, paperKey, testType, questions, questionStates, paperData, timeLeft]);
 
   // Resolve the current question. If currentQuestionId is stale/null, prefer
   // the first question of the ACTIVE section so the panel never shows a

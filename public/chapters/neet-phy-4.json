@@ -1,0 +1,1066 @@
+{
+  "key": "neet-phy-4",
+  "title": "Work, Energy & Power (NEET)",
+  "full_title": "NEET (UG) Chapter Test - Work, Energy & Power",
+  "subject": "Physics",
+  "chapter": "Work, Energy & Power",
+  "exam_type": "neet",
+  "is_trial": false,
+  "duration_minutes": 40,
+  "difficulty": "Medium",
+  "question_count": 25,
+  "questions": [
+    {
+      "id": 23377,
+      "number": 1,
+      "type": "mcq",
+      "text": "A spherical black body with a radius of 12 cm radiates 450 watt power at 500 K. If the radius were halved and the temperature doubled, the power radiated in watt would be :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 1,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "1800",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "225",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "450",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "1000",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 17565,
+      "number": 2,
+      "type": "mcq",
+      "text": "A dipole is placed in an electric field as shown. In which direction will it move ?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 2,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "towards the left as its potential energy will increase.",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "towards the right as its potential energy will decrease.",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "towards the left as its potential energy will decrease.",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "towards the right as its potential energy will increase.",
+          "figure_url": null
+        }
+      ],
+      "figure_url": [
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/neet-2021/q6.png"
+      ]
+    },
+    {
+      "id": 14379,
+      "number": 3,
+      "type": "mcq",
+      "text": "The potential energy of a long spring when stretched by 2 cm is U. If the spring is stretched by 8 cm, potential energy stored in it will be:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 3,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "16U",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "2U",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "4U",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "8U",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 14219,
+      "number": 4,
+      "type": "mcq",
+      "text": "Two heaters A and B have power rating of 1 kW and 2kW, respectively. Those two are first connected in series and then in parallel to a fixed power source. The ratio of power outputs for these two cases is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 4,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "1 : 2",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "2 : 3",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "1 : 1",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "2 : 9",
+          "figure_url": null
+        }
+      ],
+      "figure_url": null
+    },
+    {
+      "id": 14203,
+      "number": 5,
+      "type": "mcq",
+      "text": "Two bodies A and B of same mass undergo completely inelastic one dimensional collision. The body A moves with velocity v_{1} while body B is at rest before collision. The velocity of the system after collision is v_{2}. The ratio v_{1} : v_{2} is;",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 5,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "4 : 1",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "1 : 4",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "1 : 2",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "2 : 1",
+          "figure_url": null
+        }
+      ],
+      "figure_url": null
+    },
+    {
+      "id": 19035,
+      "number": 6,
+      "type": "mcq",
+      "text": "The sum of kinetic energy and potential energy of a simple pendulum bob is 0.02 joule. The speed of the simple pendulum bob at equilibrium position is approximately :\n(Consider mass of the bob = 20 g)",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 6,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "0.2 m/s",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "1.41 m/s",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "14.1 m/s",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "2.0 m/s",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 18147,
+      "number": 7,
+      "type": "mcq",
+      "text": "Consider a spring-mass simple harmonic oscillator in one dimension. The mass of the particle is m kg and the spring constant is k Nm^{-1}. At a given instant, the extension of the spring is x meter and the speed of the particle is v ms^{-1}. On the x - v plane, if the graph of v as a function of x is a circle, then the correct option is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 7,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "k = \\frac{1}{m}",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "k = m",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "k = m^{2}",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "k = \\sqrt{m}",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 23972,
+      "number": 8,
+      "type": "mcq",
+      "text": "A refrigerator works between 4^\\circ\\text{C} and 30^\\circ\\text{C}. It is required to remove 600 calories of heat every second in order to keep the temperature of the refrigerated space constant. The power required is : (Take 1 cal = 4.2 Joules)",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 8,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "23.65 W",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "236.5 W",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "2365 W",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "2.365 W",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 22120,
+      "number": 9,
+      "type": "mcq",
+      "text": "A solid sphere is in rolling motion. In rolling motion a body possesses translational kinetic energy (K_t) as well as rotational kinetic energy (K_r) simultaneously. The ratio K_t : (K_t + K_r) for the sphere is :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 9,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "10 : 7",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "5 : 7",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "7 : 10",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "2 : 5",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 22122,
+      "number": 10,
+      "type": "mcq",
+      "text": "The power radiated by a black body is P and it radiates maximum energy at wavelength, \\lambda_0. If the temperature of the black body is now changed so that it radiates maximum energy at wavelength \\frac{3}{4} \\lambda_0, the power radiated by it becomes nP. The value of n is :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 10,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "\\frac{81}{256}",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "\\frac{3}{4}",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "\\frac{4}{3}",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "\\frac{256}{81}",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 20285,
+      "number": 11,
+      "type": "mcq",
+      "text": "Body A of mass 4m moving with speed u collides with another body B of mass 2m, at rest. The collision is head on and elastic in nature. After the collision the fraction of energy lost by the colliding body A is :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 11,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "\\frac{1}{9}",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "\\frac{8}{9}",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "\\frac{4}{9}",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "\\frac{5}{9}",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 17570,
+      "number": 12,
+      "type": "mcq",
+      "text": "A particle is released from height S from the surface of the Earth. At a certain height its kinetic energy is three times its potential energy. The height from the surface of earth and the speed of the particle at that instant are respectively :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 12,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "\\frac{S}{4}, \\frac{3gS}{2}",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "\\frac{S}{2}, \\frac{\\sqrt{3gS}}{2}",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "\\frac{S}{4}, \\frac{\\sqrt{3gS}}{2}",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "\\frac{S}{4}, \\sqrt{\\frac{3gS}{2}}",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 17590,
+      "number": 13,
+      "type": "mcq",
+      "text": "The number of photons per second on an average emitted by the source of monochromatic light of wavelength 600 nm, when it delivers the power of 3.3 \\times 10^{-3} watt will be : (h=6.6 \\times 10^{-34} Js)",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 13,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "10^{18}",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "10^{17}",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "10^{16}",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "10^{15}",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 17598,
+      "number": 14,
+      "type": "mcq",
+      "text": "A series LCR circuit containing 5.0 H inductor, 80 µF capacitor and 40 Ω resistor is connected to 230 V variable frequency ac source. The angular frequencies of the source at which power transferred to the circuit is half the power at the resonant angular frequency are likely to be :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 14,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "25 rad/s and 75 rad/s",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "50 rad/s and 25 rad/s",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "46 rad/s and 54 rad/s",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "42 rad/s and 58 rad/s",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 15188,
+      "number": 15,
+      "type": "mcq",
+      "text": "An electric lift with a maximum load of 2000 kg (lift + passengers) is moving up with a constant speed of 1.5 ms^{–1}. The frictional force opposing the motion is 3000 N. The minimum power delivered by the motor to the lift in watts is : (g = 10 m s^{–2})",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 15,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "23000",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "20000",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "34500",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "23500",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 14006,
+      "number": 16,
+      "type": "mcq",
+      "text": "In a certain camera, a combination of four similar thin convex lenses are arranged axially in contact. Then the power of the combination and the total magnification in comparison to the power (p) and magnification (m) for each lens will be, respectively–",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 16,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "4p and 4m",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "p^{4} and 4m",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "4p and m^{4}",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "p^{4} and m^{4}",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 14016,
+      "number": 17,
+      "type": "mcq",
+      "text": "In an oscillating spring mass system, a spring is connected to a box filled with sand. As the box oscillates, sand leaks slowly out of the box vertically so that the average frequency ω(t) and average amplitude A(t) of the system change with time t. Which one of the following options schematically depicts these changes correctly?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 17,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "",
+          "figure_url": "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/neet-2025-images/Question%2023%20option%20a.png"
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "",
+          "figure_url": "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/neet-2025-images/Question%2023%20option%20b.png"
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "",
+          "figure_url": "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/neet-2025-images/Question%2023%20option%20c.png"
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "",
+          "figure_url": "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/neet-2025-images/Question%2023%20option%20d.png"
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 14037,
+      "number": 18,
+      "type": "mcq",
+      "text": "Two identical point masses P and Q, suspended from two separate massless springs of spring constants k_{1} and k_{2} respectively, oscillate vertically. If their maximum speeds are the same, the ratio (A_{Q}/A_{P}) of the amplitude A_{Q} of mass Q to the amplitude A_{P} of mass P is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 18,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "k_2/k_1",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "k_1/k_2",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "\\sqrt{k_2/k_1}",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "\\sqrt{k_1/k_2}",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 23946,
+      "number": 19,
+      "type": "mcq",
+      "text": "A body of mass 1 kg begins to move under the action of a time dependent force \\vec{F} = (2t\\hat{i} + 3t^{2}\\hat{j}) \\text{ N}, where \\hat{i} and \\hat{j} are unit vectors along x and y axis. What power will be developed by the force at the time t ?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 19,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "(2t^{2} + 4t^{4}) \\text{ W}",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "(2t^{3} + 3t^{4}) \\text{ W}",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "(2t^{3} + 3t^{5}) \\text{ W}",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "(2t + 3t^{3}) \\text{ W}",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 23956,
+      "number": 20,
+      "type": "mcq",
+      "text": "A npn transistor is connected to common emitter configuration in a given amplifier. A load resistance of 800 \\Omega is connected in the collector circuit and the voltage drop across it is 0.8 V. If the current amplification factor is 0.96 and the input resistance of the circuit is 192 \\Omega, the voltage gain and the power gain of the amplifier will respectively be :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 20,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "3.69, 3.84",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "4, 4",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "4, 3.69",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "4, 3.84",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 23969,
+      "number": 21,
+      "type": "mcq",
+      "text": "An inductor 20 mH, a capacitor 50 \\mu\\text{F} and a resistor 40 \\Omega are connected in series across a source of emf V = 10 \\sin(340t). The power loss in A.C. circuit is :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 21,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "0.67 W",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "0.76 W",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "0.89 W",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "0.51 W",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 23973,
+      "number": 22,
+      "type": "mcq",
+      "text": "A particle of mass 10 g moves along a circle of radius 6.4 cm with a constant tangential acceleration. What is the magnitude of this acceleration if the kinetic energy of the particle becomes equal to 8 \\times 10^{-4} \\text{ J} by the end of the second revolution after the beginning of the motion ?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 22,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "0.15 \\text{ m/s}^{2}",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "0.18 \\text{ m/s}^{2}",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "0.2 \\text{ m/s}^{2}",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "0.1 \\text{ m/s}^{2}",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 23341,
+      "number": 23,
+      "type": "mcq",
+      "text": "Consider a drop of rain water having mass 1g falling from a height of 1 km. It hits the ground with a speed of 50 m/s. Take 'g' constant with a value 10 m/s2. The work done by the (i) gravitational force and the (ii) resistive force of air is",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 23,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "(i) 10 J (ii) – 8.75 J",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "(i) –10 J (ii) –8.25 J",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "(i) 1.25 J (ii) –8.25 J",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "(i) 100 J (ii) 8.75 J",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 23342,
+      "number": 24,
+      "type": "mcq",
+      "text": "A 250 turn rectangular coil of length 2.1 cm and width 1.25 cm carries a current of 85 \\mu\\text{A} and is subjected to a magnetic field of strength 0.85 T. Work done for rotating the coil by 180^\\circ against the torque is :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 24,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "1.15 \\mu\\text{J}",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "9.1 \\mu\\text{J}",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "4.55 \\mu\\text{J}",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "2.3 \\mu\\text{J}",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 23346,
+      "number": 25,
+      "type": "mcq",
+      "text": "The ratio of resolving powers of an optical microscope for two wavelengths \\lambda_{1} = 4000 \\text{ \\AA} and \\lambda_{2} = 6000 \\text{ \\AA} is :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 25,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "16 : 81",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "8 : 27",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "9 : 4",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "3 : 2",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    }
+  ]
+}

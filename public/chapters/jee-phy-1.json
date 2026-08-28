@@ -1,0 +1,943 @@
+{
+  "key": "jee-phy-1",
+  "title": "Kinematics (JEE Main)",
+  "full_title": "JEE Main Chapter Test - Kinematics",
+  "subject": "Physics",
+  "chapter": "Kinematics",
+  "exam_type": "jee",
+  "is_trial": true,
+  "duration_minutes": 50,
+  "difficulty": "Easy",
+  "question_count": 25,
+  "questions": [
+    {
+      "id": 1028,
+      "number": 1,
+      "type": "mcq",
+      "text": "The velocity of a particle is given as \\vec{v} = -x î + 2y ĵ - z k̂ m/s. The magnitude of acceleration at point (1, 2, 4) is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 1,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "√6",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "9",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "√33",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "0",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 4032,
+      "number": 2,
+      "type": "mcq",
+      "text": "Water spray gun hose area 30 cm², 10 perforations of area 15 mm² each. Water speed in hose 50 cm/s. Speed from each perforation is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 2,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "100 m/s",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "10 m/s",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "1000 m/s",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "15 × 10² m/s",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 4047,
+      "number": 3,
+      "type": "numerical",
+      "text": "Gun on ground fires bullets in all directions with same speed. Farthest reach is 6.4 m. Speed of bullets is _______ m/s (g = 10 m/s²):",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 3,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section B"
+      },
+      "question_options": [],
+      "figure_url": []
+    },
+    {
+      "id": 3031,
+      "number": 4,
+      "type": "mcq",
+      "text": "Two projectiles projected with same initial velocity at 15° and 30° to horizontal. Ratio of ranges is 1 : x. Value of x is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 4,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "√2",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "√3",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "2√3",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "1 / √2",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 5047,
+      "number": 5,
+      "type": "numerical",
+      "text": "Ball dropped from 18 m. Height where velocity magnitude equals acceleration due to gravity is _______ m (g = 10 m/s²):",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 5,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section B"
+      },
+      "question_options": [],
+      "figure_url": []
+    },
+    {
+      "id": 8029,
+      "number": 6,
+      "type": "mcq",
+      "text": "Body of mass 1 kg moves along straight line with v = 2x². Work done during displacement from x = 0 to 5 m is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 6,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "0 J",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "250 J",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "1250 J",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "1000 J",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 9034,
+      "number": 7,
+      "type": "mcq",
+      "text": "Spherical drop radius R terminal velocity v₁. Broken into 64 droplets with terminal velocity v₂. Ratio v₁ / v₂ is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 7,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "4",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "0.25",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "32",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "16",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 2027,
+      "number": 8,
+      "type": "mcq",
+      "text": "A 0.5 kg mass is in contact against the inner wall of a cylindrical drum of radius 4 m rotating about its vertical axis. The minimum rotational speed of drum to remain stuck is 5 rad/s. Coefficient of friction is (g = 10 m/s²):",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 8,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "0.1",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "0.5",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "0.7",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "0.3",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 2031,
+      "number": 9,
+      "type": "mcq",
+      "text": "If a body of mass 1 kg falls on earth from infinity, it attains velocity v and KE k on reaching earth surface. Values of v and k are (R = 6400 km, g = 9.8 m/s²):",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 9,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "11.2 km/s; 6.27 × 10⁷ J",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "11.2 km/s; 12.54 × 10⁷ J",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "8.8 km/s; 6.27 × 10⁷ J",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "8.8 km/s; 12.54 × 10⁷ J",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 2045,
+      "number": 10,
+      "type": "mcq",
+      "text": "Equation of motion x = a sin(50t + π/3). Times t₁ (rest) and t₂ (zero acceleration) respectively are:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 10,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "π/300 s, π/75 s",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "π/75 s, π/300 s",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "π/300 s, π/25 s",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "π/50 s, π/100 s",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 2029,
+      "number": 11,
+      "type": "mcq",
+      "text": "A particle of charge 10⁻⁹ C moving in xy-plane in fields \\vec{E} = 0.4 ĵ N/C and \\vec{B} = 4×10⁻³ k̂ T experiences \\vec{F} = (4î + 2ĵ)×10⁻¹⁰ N. Velocity of particle is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 11,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "50 î + 100 ĵ",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "100 î + 50 ĵ",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "-50 î + 100 ĵ",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "50 î - 100 ĵ",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 1031,
+      "number": 12,
+      "type": "mcq",
+      "text": "A particle is rotating in a circular path described as θ = 5t⁴/40 - t³/3. The angular acceleration of the particle after 10 seconds is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 12,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "150 rad/s²",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "120 rad/s²",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "130 rad/s²",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "170 rad/s²",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 1035,
+      "number": 13,
+      "type": "mcq",
+      "text": "The equation of a plane progressive wave is given by y = 5 cos π(200t - x/150) where x and y are in cm and t in s. Wave velocity is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 13,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "120 m/s",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "150 m/s",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "200 m/s",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "300 m/s",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 1043,
+      "number": 14,
+      "type": "mcq",
+      "text": "An EM wave travelling in x-direction is described by E_y = 300 sin ω(t - x/c). If an electron is restricted to move in y-direction with speed 1.5 × 10⁶ m/s, the ratio of maximum electric to magnetic forces acting on the electron is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 14,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "200",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "150",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "400",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "300",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 1047,
+      "number": 15,
+      "type": "numerical",
+      "text": "A vessel contains 0.15 m³ gas at 8 bar and 140°C with c_p = 3R and c_v = 2R. Expanded adiabatically till pressure falls to 1 bar. Work done during this process is _______ kJ:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 15,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section B"
+      },
+      "question_options": [],
+      "figure_url": []
+    },
+    {
+      "id": 1048,
+      "number": 16,
+      "type": "numerical",
+      "text": "1 μC charge moving with velocity \\vec{v} = (î - 2ĵ + 3k̂) m/s in magnetic field \\vec{B} = (2î + 3ĵ - 5k̂) T. Force magnitude is √α × 10⁻⁶ N. The value of α is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 16,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section B"
+      },
+      "question_options": [],
+      "figure_url": []
+    },
+    {
+      "id": 4029,
+      "number": 17,
+      "type": "mcq",
+      "text": "Projectile coordinates x = 24t, y = 43.6t - 4.9t². Angle (in degrees) with horizontal at t = 2 s is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 17,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "60°",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "45°",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "30°",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "75°",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 4030,
+      "number": 18,
+      "type": "mcq",
+      "text": "Height in terms of earth radius R at which acceleration due to gravity becomes g/9 is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 18,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "√3 R",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "2√2 R",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "2 R",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "(4/9) R",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 4027,
+      "number": 19,
+      "type": "mcq",
+      "text": "Two cars A and B move in same direction at 100 km/h and 80 km/h. Car A ahead. Person in B throws stone at speed v so it hits A at 5 m/s (18 km/h). Value of v is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 19,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "18 km/h",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "28 km/h",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "38 km/h",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "48 km/h",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 4033,
+      "number": 20,
+      "type": "mcq",
+      "text": "Assertion A: If average KE of H₂ and O₂ molecules in different containers are same, temperatures are same.\nReason R: RMS speed of H₂ and O₂ molecules are same at same temperature.",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 20,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Both A and R are true and R is correct explanation",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Both A and R are true but R is NOT correct explanation",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "A is true but R is false",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "A is false but R is true",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 3040,
+      "number": 21,
+      "type": "mcq",
+      "text": "Parallel plate capacitor connected to battery. Plates pulled apart at uniform speed v. Rate of change of electrostatic energy is proportional to x^α. Value of α is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 21,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "-2",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "1",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "-1",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "2",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 3048,
+      "number": 22,
+      "type": "numerical",
+      "text": "Velocity of particle in SHM along x-axis is v² = 50 - x². Time period is x/7 s. Value of x is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 22,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section B"
+      },
+      "question_options": [],
+      "figure_url": []
+    },
+    {
+      "id": 6029,
+      "number": 23,
+      "type": "mcq",
+      "text": "v-t plot for 40 s: v goes 0 to +5 in 10s, +5 to -5 in 20s, -5 to 0 in 10s. Total distance and average velocity are:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 23,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "25 m and zero",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "50 m and zero",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "100 m and zero",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "100 m and 2.5 m/s",
+          "figure_url": null
+        }
+      ],
+      "figure_url": [
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/2026-04-05-evening/2026-04-05_evening_Q29.jpeg"
+      ]
+    },
+    {
+      "id": 6031,
+      "number": 24,
+      "type": "mcq",
+      "text": "Object of uniform density rolls up curved path with initial velocity v₀. Max height h = 7 v₀² / (10g). Object is a:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 24,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "solid cylinder",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "ring",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "disc",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "solid sphere",
+          "figure_url": null
+        }
+      ],
+      "figure_url": [
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/2026-04-05-evening/2026-04-05_evening_Q31.jpeg"
+      ]
+    },
+    {
+      "id": 6026,
+      "number": 25,
+      "type": "mcq",
+      "text": "Match List-I with List-II:\nwhere h (Planck's constant), G (gravitational constant) and c (speed of light in vacuum) as fundamental units.\nA. Meter (L)  I. √(hc/G)\nB. Second (S)  II. √(Gh/c⁵)\nC. Kilogram (M)  III. √(K²L²c³/Gh)\nD. Kelvin (K)  IV. √(Gh/c³)",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 25,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "A-II, B-IV, C-I, D-III",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "A-IV, B-II, C-I, D-III",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "A-IV, B-I, C-II, D-III",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "A-III, B-I, C-II, D-IV",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    }
+  ]
+}

@@ -1,0 +1,1074 @@
+{
+  "key": "neet-phy-7",
+  "title": "Electrostatics & Potential (NEET)",
+  "full_title": "NEET (UG) Chapter Test - Electrostatics & Potential",
+  "subject": "Physics",
+  "chapter": "Electrostatics",
+  "exam_type": "neet",
+  "is_trial": false,
+  "duration_minutes": 45,
+  "difficulty": "Hard",
+  "question_count": 25,
+  "questions": [
+    {
+      "id": 19060,
+      "number": 1,
+      "type": "mcq",
+      "text": "Which of the following statements are correct ?\nA. Inside a conductor, the electrostatic field is zero.\nB. Electric field at the surface of a charged conductor does not depend on its surface charge density.\nC. The interior of a charged conductor can have no excess charge in the static situation.\nD. At the surface of a charged conductor, the electrostatic field must be normal to the surface at every point.\nE. The electrostatic potential is zero everywhere inside a charged conductor.\nChoose the correct answer from the options given below :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 1,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "A, B and D only",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "A, C and E only",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "A, C and D only",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "C, D and E only",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 14028,
+      "number": 2,
+      "type": "mcq",
+      "text": "An electric dipole with dipole moment 5 \\times 10^{–6} Cm is aligned with the direction of a uniform electric field of magnitude 4 \\times 10^{5} N/C. The dipole is then rotated through an angle of 60° with respect to the electric field. The change in the potential energy of the dipole is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 2,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "0.8 J",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "1.0 J",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "1.2 J",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "1.5 J",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 19031,
+      "number": 3,
+      "type": "mcq",
+      "text": "Five capacitors of capacitances C_{1} = C_{2} = C_{3} = C_{4} = 10 \\mu F and C_{5} = 2.5 \\mu F are connected as shown, along with a battery of 50 V.\nThe equivalent capacitance and the charges on each capacitor respectively are:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 3,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "5 \\mu F, 125 \\mu C on C_{1} to C_{4} and 25 \\mu C on C_{5}",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "5 \\mu F, 125 \\mu C on all capacitors",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "5 \\mu F, 250 \\mu C on all capacitors",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "4 \\mu F, 250 \\mu C on C_{1} to C_{4} and 125 \\mu C on C_{5}",
+          "figure_url": null
+        }
+      ],
+      "figure_url": [
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/neet-2026/q12_fig1.png"
+      ]
+    },
+    {
+      "id": 19042,
+      "number": 4,
+      "type": "mcq",
+      "text": "Consider two uncharged capacitors of equal capacitance 200 pF. One of them is charged by a 100 V supply and disconnected. Now this capacitor is connected to the uncharged capacitor. The amount of electrostatic energy lost in the process is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 4,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "0.5 \\times 10^{-6} J",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "1.0 J",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "1.0 \\times 10^{-6} J",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "0.5 J",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 17976,
+      "number": 5,
+      "type": "mcq",
+      "text": "A short electric dipole has a dipole moment of 16 × 10^{–9} C m. The electric potential due to the dipole at a point at a distance of 0.6 m from the centre of the dipole, situated on a line making an angle of 60° with the dipole axis is : (\\frac{1}{4\\pi \\varepsilon_{0}} = 9 ×10^{9} N m^{2} /C^{2})",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 5,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "200 V",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "400 V",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "zero",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "50 V",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 17565,
+      "number": 6,
+      "type": "mcq",
+      "text": "A dipole is placed in an electric field as shown. In which direction will it move ?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 6,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "towards the left as its potential energy will increase.",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "towards the right as its potential energy will decrease.",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "towards the left as its potential energy will decrease.",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "towards the right as its potential energy will increase.",
+          "figure_url": null
+        }
+      ],
+      "figure_url": [
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/neet-2021/q6.png"
+      ]
+    },
+    {
+      "id": 17584,
+      "number": 7,
+      "type": "mcq",
+      "text": "Polar molecules are the molecules :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 7,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "having zero dipole moment.",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "acquire a dipole moment only in the presence of electric field due to displacement of charges.",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "acquire a dipole moment only when magnetic field is absent.",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "having a permanent electric dipole moment.",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 15220,
+      "number": 8,
+      "type": "mcq",
+      "text": "A capacitor of capacitance C = 900 pF is charged fully by 100 V battery B as shown in figure (a). Then it is disconnected from the battery and connected to another uncharged capacitor of capacitance C = 900 pF as shown in figure (b). The electrostatic energy stored by the system (b) is",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 8,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "4.5 × 10^{–6} J",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "3.25 × 10^{–6} J",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "2.25 × 10^{–6} J",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "1.5 × 10^{–6} J",
+          "figure_url": null
+        }
+      ],
+      "figure_url": [
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/neet-2022/q47.png"
+      ]
+    },
+    {
+      "id": 14213,
+      "number": 9,
+      "type": "mcq",
+      "text": "If the plates of a parallel plate capacitor connected to a battery are moved close to each other, then A. the charge stored in it, increase. B. the energy stored in it, decreases. C. its capacitance increases. D. the ratio of charge to its potential remains the same. E. the product of charge and voltage increases. Choose the most appropriate answer from the options given below:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 9,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "B, D and E only",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "A, B and C only",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "A, B and E only",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "A, C and E only",
+          "figure_url": null
+        }
+      ],
+      "figure_url": null
+    },
+    {
+      "id": 18140,
+      "number": 10,
+      "type": "mcq",
+      "text": "A unit positive point charge is taken slowly through an infinitesimally thin tube that is inside a charged dielectric sphere of radius R, having uniform positive charge density \\rho, as shown in the figure. The initial and final positions of the charge are marked by A and B at distances 2R and 3R respectively, from the centre of the sphere. In this process, the magnitude of the total work done on the point charge is \\frac{\\rho R^{2}}{n\\epsilon_{0}}. The value of n is :\n(\\epsilon_{0} is the permittivity of vacuum)",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 10,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "2",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "6",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "9",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "18",
+          "figure_url": null
+        }
+      ],
+      "figure_url": [
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/reneet-2026/q21_fig1.png"
+      ]
+    },
+    {
+      "id": 20314,
+      "number": 11,
+      "type": "mcq",
+      "text": "A parallel plate capacitor of capacitance 20\\mu\\text{F} is being charged by a voltage source whose potential is changing at the rate of 3 V/s. The conduction current through the connecting wires, and the displacement current through the plates of the capacitor, would be, respectively :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 11,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "zero, 60 mA",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "60 mA, 60 mA",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "60 mA, zero",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "zero, zero",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 14390,
+      "number": 12,
+      "type": "mcq",
+      "text": "If ∫ E ⋅ dS = 0 over a surface, then:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 12,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "the electric field inside the surface is necessarily uniform.",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "the number of flux lines entering the surface must be equal to the number of flux lines leaving it.",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "the magnitude of electric field on the surface is constant.",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "all the charges must necessarily be inside the surface.",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 14389,
+      "number": 13,
+      "type": "mcq",
+      "text": "An electric dipole is placed at an angle of 30° with an electric field of intensity 2 \\times 10^{5} NC^{–1}. It experiences a torque equal to 4 Nm. Calculate the magnitude of charge on the dipole, if the dipole length is 2 cm.",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 13,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "2 mC",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "8 mC",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "6 mC",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "4 mC",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 18153,
+      "number": 14,
+      "type": "mcq",
+      "text": "Consider a fixed uniformly charged insulating sphere with radius R and total charge +Q. A point charge -q (q << Q) with mass m is released from rest at a distance of 3R from the centre of the charged sphere. When the point charge reaches the surface of the sphere, its speed is :\n(\\epsilon_{0} is the permittivity of vacuum, neglect gravitational forces)",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 14,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "\\sqrt{\\frac{3Qq}{4\\pi\\epsilon_{0}mR}}",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "\\sqrt{\\frac{2Qq}{3\\pi\\epsilon_{0}mR}}",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "\\sqrt{\\frac{Qq}{3\\pi\\epsilon_{0}mR}}",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "\\sqrt{\\frac{Qq}{4\\pi\\epsilon_{0}mR}}",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 23935,
+      "number": 15,
+      "type": "mcq",
+      "text": "Out of the following options which one can be used to produce a propagating electromagnetic wave ?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 15,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "A stationary charge",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "A chargeless particle",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "An accelerating charge",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "A charge moving at constant velocity",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 23354,
+      "number": 16,
+      "type": "mcq",
+      "text": "A capacitor is charged by a battery. The battery is removed and another identical uncharged capacitor is connected in parallel. The total electrostatic energy of resulting system :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 16,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "increases by a factor of 2",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "increases by a factor of 4",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "decreases by a factor of 2",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "remains the same",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 20311,
+      "number": 17,
+      "type": "mcq",
+      "text": "Two parallel infinite line charges with linear charge densities +\\lambda\\text{ C/m} and -\\lambda\\text{ C/m} are placed at a distance of 2R in free space. What is the electric field mid-way between the two line charges?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 17,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "zero",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "\\frac{\\lambda}{2\\pi\\varepsilon_0 R}\\text{ N/C}",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "\\frac{\\lambda}{\\pi\\varepsilon_0 R}\\text{ N/C}",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "\\frac{2\\lambda}{\\pi\\varepsilon_0 R}\\text{ N/C}",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 20320,
+      "number": 18,
+      "type": "mcq",
+      "text": "Two point charges A and B, having charges +Q and -Q respectively, are placed at certain distance apart and force acting between them is F. If 25% charge of A is transferred to B, then force between the charges becomes :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 18,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "F",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "\\frac{9F}{16}",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "\\frac{16F}{9}",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "\\frac{4F}{3}",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 17962,
+      "number": 19,
+      "type": "mcq",
+      "text": "The capacitance of a parallel plate capacitor with air as medium is 6 \\mu F. With the introduction of a dielectric medium, the capacitance becomes 30 \\mu F. The permittivity of the medium is : (\\varepsilon_{0} = 8.85 × 10^{–12} C^{2} N^{–1} m^{–2})",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 19,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "1.77 × 10^{–12} C^{2} N^{–1} m^{–2}",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "0.44 × 10^{–10} C^{2} N^{–1} m^{–2}",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "5.00 C^{2} N^{–1} m^{–2}",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "0.44 × 10^{–13} C^{2} N^{–1} m^{–2}",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 17579,
+      "number": 20,
+      "type": "mcq",
+      "text": "An inductor of inductance L, a capacitor of capacitance C and a resistor of resistance ‘R’ are connected in series to an ac source of potential difference ‘V’ volts as shown in figure. Potential difference across L, C and R is 40 V, 10 V and 40 V, respectively. The amplitude of current flowing through LCR series circuit is 10\\sqrt{2} A. The impedance of the circuit is :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 20,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "4\\sqrt{2} Ω",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "\\frac{5}{\\sqrt{2}} Ω",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "4 Ω",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "5 Ω",
+          "figure_url": null
+        }
+      ],
+      "figure_url": [
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/neet-2021/q20.png"
+      ]
+    },
+    {
+      "id": 14189,
+      "number": 21,
+      "type": "mcq",
+      "text": "Given below are two statements: one is labelled as Assertion A and the other is labelled as Reason R.\nAssertion A: The potential (V) at any axial point, at 2 m distance (r) from the centre of the dipole of dipole moment vector \\vec{P} of magnitude, 4 \\times 10^{-6} C m, is ±9 \\times 10^{3} V.\n(Take \\frac{1}{4πε₀} = 9 \\times 10^{9} SI units)\nReason R: V = ± \\frac{2P}{4πε₀ r^{2}}, where r is the distance of any axial point, situated at 2 m from the centre of the dipole.\nIn the light of the above statements, choose the correct answer from the options given below:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 21,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "A is true but R is false.",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "A is false but R is true.",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Both A and R are true and R is the correct explanation of A.",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Both A and R are true and R is NOT the correct explanation of A.",
+          "figure_url": null
+        }
+      ],
+      "figure_url": null
+    },
+    {
+      "id": 14013,
+      "number": 22,
+      "type": "mcq",
+      "text": "The plates of a parallel plate capacitor are separated by d. Two slabs of different dielectric constant K_{1} and K_{2} with thickness \\frac{3}{8}d and \\frac{d}{2}, respectively are inserted in the capacitor. Due to this, the capacitance becomes two times larger than when there is nothing between the plates. If K_{1} = 1.25 K_{2}, the value of K_{1} is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 22,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "2.66",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "2.33",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "1.60",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "1.33",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 14021,
+      "number": 23,
+      "type": "mcq",
+      "text": "Two identical charged conducting spheres A and B have their centres separated by a certain distance. Charge on each sphere is q and the force of repulsion between them is F. A third identical uncharged conducting sphere is brought in contact with sphere A first and then with B and finally removed from both. New force of repulsion between spheres A and B (Radii of A and B are negligible compared to the distance of separation so that for calculating force between them they can be considered as point charges) is best given as:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 23,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "3F/5",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "2F/3",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "F/2",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "3F/8",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 17561,
+      "number": 24,
+      "type": "mcq",
+      "text": "A capacitor of capacitance ‘C’, is connected across an ac source of voltage V, given by V=V_{0}\\sin\\omega t The displacement current between the plates of the capacitor, would then be given by :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 24,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "I_{d} = V_{0}\\omega C \\cos\\omega t",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "I_{d} = \\frac{V_{0}\\cos\\omega t}{\\omega C}",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "I_{d} = \\frac{V_{0}\\sin\\omega t}{\\omega C}",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "I_{d} = V_{0}\\omega C \\sin\\omega t",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 17575,
+      "number": 25,
+      "type": "mcq",
+      "text": "A parallel plate capacitor has a uniform electric field \\vec{E} in the space between the plates. If the distance between the plates is ‘d’ and the area of each plate is ‘A’, the energy stored in the capacitor is : (\\varepsilon_{0}=permittivity of free space)",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 25,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "\\frac{1}{2}\\varepsilon_{0}E^{2}",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "\\varepsilon_{0}EAd",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "\\frac{1}{2}\\varepsilon_{0}E^{2}Ad",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "\\frac{E^{2}Ad}{\\varepsilon_{0}}",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    }
+  ]
+}

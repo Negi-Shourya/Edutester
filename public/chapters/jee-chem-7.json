@@ -1,0 +1,629 @@
+{
+  "key": "jee-chem-7",
+  "title": "Coordination Compounds (JEE Main)",
+  "full_title": "JEE Main Chapter Test - Coordination Compounds",
+  "subject": "Chemistry",
+  "chapter": "Coordination Compounds",
+  "exam_type": "jee",
+  "is_trial": false,
+  "duration_minutes": 60,
+  "difficulty": "Hard",
+  "question_count": 15,
+  "questions": [
+    {
+      "id": 2061,
+      "number": 1,
+      "type": "mcq",
+      "text": "Which of the following complexes show coordination isomerism?\nA. [Ag(NH₃)₂][Ag(CN)₂]\nB. [Co(NH₃)₆][Cr(CN)₆]\nC. [Co(NH₃)₆][Co(CN)₆]\nD. [Fe(NH₃)₆][Co(CN)₆]\nE. [Co(NH₃)₆][Fe(CN)₆]",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 1,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "B, C and D Only",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "B, D and E Only",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "A, C and D Only",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "C, D and E Only",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 3062,
+      "number": 2,
+      "type": "mcq",
+      "text": "Match List-I (Complex ion) with List-II (Calculated spin only magnetic moment (BM)):\nA. [Cr(H₂O)₆]²⁺  I. 3.87\nB. [Co(H₂O)₆]²⁺  II. 5.92\nC. [Cu(H₂O)₆]²⁺  III. 4.90\nD. [Mn(H₂O)₆]²⁺  IV. 1.73",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 2,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "A-I, B-III, C-IV, D-II",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "A-II, B-I, C-III, D-IV",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "A-IV, B-II, C-I, D-III",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "A-III, B-I, C-IV, D-II",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 5062,
+      "number": 3,
+      "type": "mcq",
+      "text": "Statement I: Each e⁻ in e_g destabilizes by +0.6 Δ₀ and in t₂_g stabilizes by -0.4 Δ₀.\nStatement II: Degeneracy of d-orbitals destroyed by ligands in complex.",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 3,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Both Statement I and Statement II are correct",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Both Statement I and Statement II are incorrect",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Statement I is correct but Statement II is incorrect",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Statement I is incorrect but Statement II is correct",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 6061,
+      "number": 4,
+      "type": "mcq",
+      "text": "Correct statements:\nA. [Fe(C₂O₄)₃]³⁻ most stable among oxalate/thiocyanate complexes\nB. [Cu(NH₃)₄]²⁺ > [Cu(en)₂]²⁺\nC. Hybridization of Fe in K₄[Fe(CN)₆] is d²sp³\nD. [Fe(NO₂)₃Cl₃]³⁻ exhibits linkage isomerism\nE. NO₂⁻ and SCN⁻ NOT ambidentate",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 4,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "A, B, C, D and E",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "B, C and D only",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "A, C and D only",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "A, C and E only",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 7060,
+      "number": 5,
+      "type": "mcq",
+      "text": "Correct statements:\nA. Basic vanadium oxide used in H₂SO₄ manufacture\nB. Spin-only magnetic moment in Ziegler-Natta catalyst halide is 2.84 BM\nC. p-block metal in Ziegler-Natta is in +3 OS\nD. Outer d-electrons in Wacker process metal halide is 8",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 5,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "A and B Only",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "A, C and D Only",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "C and D Only",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "B, C and D Only",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 7061,
+      "number": 6,
+      "type": "mcq",
+      "text": "Match List-I (Electronic configuration of tetrahedral metal ion) with List-II (Crystal Field Stabilization Energy (Δₜ)):\nA. d²  I. −0.6\nB. d⁴  II. −0.8\nC. d⁶  III. −1.2\nD. d⁸  IV. −0.4",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 6,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "A-III, B-IV, C-II, D-I",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "A-III, B-I, C-IV, D-II",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "A-III, B-IV, C-I, D-II",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "A-II, B-I, C-IV, D-III",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 2067,
+      "number": 7,
+      "type": "mcq",
+      "text": "Molecule X hydrolysed under mild acidic condition produces Y and Z. Correct statements:\nA. Y and Z have same molar mass\nB. Y and Z distinguished by NaHCO₃\nC. Y and Z react with HCN at same rate\nD. Y and Z undergo addition with 2,4-DNP",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 7,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "A, B and C Only",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "B and C Only",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "C and D Only",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "A and D Only",
+          "figure_url": null
+        }
+      ],
+      "figure_url": [
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/2026-04-02-evening/2026-04-02_evening_Q67.jpeg"
+      ]
+    },
+    {
+      "id": 2068,
+      "number": 8,
+      "type": "mcq",
+      "text": "Reaction sequence starting from 1-ethyl-4-nitrobenzene: (i) Br₂/AlBr₃ → A; (ii) Sn/HCl → B; (iii) NaNO₂/HCl → C; (iv) C₂H₅OH → D; (v) KMnO₄/KOH, H₃O⁺ → E. Compounds A and E are:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 8,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "A = 2-nitro-4-ethylbromobenzene, E = 3-bromobenzoic acid",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "A = 4-ethyl-3-nitrobromobenzene, E = 2-bromo-4-ethylbenzoic acid",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "A = 4-ethyl-2-nitrobromobenzene, E = 4-bromobenzoic acid",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "A = 2-bromo-4-ethylnitrobenzene, E = 3-bromo-4-ethylbenzoic acid",
+          "figure_url": null
+        }
+      ],
+      "figure_url": [
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/2026-04-02-evening/2026-04-02_evening_Q68.jpeg",
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/2026-04-02-evening/2026-04-02_evening_Q68_2.jpeg",
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/2026-04-02-evening/2026-04-02_evening_Q68_3.jpeg",
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/2026-04-02-evening/2026-04-02_evening_Q68_4.jpeg",
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/2026-04-02-evening/2026-04-02_evening_Q68_5.jpeg"
+      ]
+    },
+    {
+      "id": 2075,
+      "number": 9,
+      "type": "numerical",
+      "text": "Reaction sequence starting from 4-methyl-nitrobenzene gives product P. 1.0 g of P subjected to Carius analysis with AgNO₃ produces AgBr precipitate mass in g (nearest integer):",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 9,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section B"
+      },
+      "question_options": [],
+      "figure_url": [
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/2026-04-02-evening/2026-04-02_evening_Q75.jpeg"
+      ]
+    },
+    {
+      "id": 2051,
+      "number": 10,
+      "type": "mcq",
+      "text": "The ratio of mass percentage (w/w) of C : H in a hydrocarbon is 12 : 1. It has two carbon atoms. The weight in g of CO₂ formed when 3.38 g of this hydrocarbon is burnt is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 10,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "5.68 g",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "11.44 g",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "22.74 g",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "17.05 g",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 2052,
+      "number": 11,
+      "type": "mcq",
+      "text": "First and second ionization constants of weak dibasic acid H₂A are 8.1 × 10⁻⁸ and 1.0 × 10⁻¹³ respectively. 0.1 mol H₂A dissolved in 1 L of 0.1 M HCl. Concentration of HA⁻ in resultant solution is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 11,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "0.1 M",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "9.53 × 10⁻⁶ M",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "8.1 × 10⁻⁸ M",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "1.0 × 10⁻¹³ M",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 2053,
+      "number": 12,
+      "type": "mcq",
+      "text": "SF₄ is isostructural with:\nA. BrF₄⁻\nB. CH₄\nC. IF₄⁺\nD. XeF₄\nE. XeO₂F₂",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 12,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "C Only",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "C and E Only",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "A and D Only",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "B and E Only",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 2054,
+      "number": 13,
+      "type": "mcq",
+      "text": "Gas A undergoes change X to Y: q = 10 J, w = 18 J. Gas brought back to X by process where 6 J heat evolved. In reverse process Y to X, work done is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 13,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "18 J of work done by gas A",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "2 J of work done by gas A",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "12 J of work done on gas A",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "14 J of work done on gas A by surrounding",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 2055,
+      "number": 14,
+      "type": "mcq",
+      "text": "Solution A: 1 g protein (50000 g/mol) in 0.5 L water at 300 K (pressure x). Solution B: 2 g protein in 1 L (pressure y). Mixture pressure z. Values of x, y, z respectively are:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 14,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "9.96×10⁻⁴; 9.96×10⁻⁴; 9.96×10⁻⁴ bar",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "9.96×10⁻⁴; 9.96×10⁻⁴; 19.92×10⁻⁴ bar",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "4.98×10⁻⁴; 4.98×10⁻⁴; 9.96×10⁻⁴ bar",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "4.98×10⁻⁴; 4.98×10⁻⁴; 4.98×10⁻⁴ bar",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 2056,
+      "number": 15,
+      "type": "mcq",
+      "text": "20 mL 0.2 M weak acid HX (K_a = 5×10⁻⁴, pK_a = 3.3) titrated against 0.2 M NaOH. pH at (a) start and (b) when 10 mL NaOH added:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 15,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "0.7 and 2.0",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "2.0 and 3.3",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "1.1 and 2.2",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "3.0 and 2.2",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    }
+  ]
+}

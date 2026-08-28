@@ -9,9 +9,10 @@ export const pricingPlans: PricingPlan[] = [
     months: 1,
     features: [
       'Authentic NTA-like test interface',
-      'Previous year question papers',
-      'Full-length test series',
-      'Support for questions & issues',
+      'All 54 Chapter-wise tests (Physics, Chem, Math, Bio)',
+      'Previous year question papers (JEE & NEET)',
+      'Instant scoring & detailed step-by-step solutions',
+      'Dashboard analytics & weakness tracker',
     ],
   },
   {
@@ -23,6 +24,8 @@ export const pricingPlans: PricingPlan[] = [
     popular: true,
     features: [
       'Everything in 1 Month plan',
+      'Unlimited attempts on all 54 chapter tests',
+      'Full-length papers & test series access',
       'Save ₹7 compared to monthly',
     ],
   },
@@ -34,6 +37,8 @@ export const pricingPlans: PricingPlan[] = [
     months: 6,
     features: [
       'Everything in 3 Months plan',
+      'Complete JEE & NEET chapter question banks',
+      'Priority solution updates & test releases',
       'Save ₹56 compared to monthly',
     ],
   },
@@ -45,7 +50,8 @@ export const pricingPlans: PricingPlan[] = [
     months: 12,
     features: [
       'Everything in 6 Months plan',
-      'Save ₹69 compared to monthly',
+      'Full yearly access to all papers & chapters',
+      'Maximum savings (₹69 off monthly)',
     ],
   },
 ];

@@ -1,5 +1,5 @@
 import type { AttemptRow } from './attemptsDb';
-import { getPaperQuestions } from '../data/questions';
+import { getPaperQuestions, getChapterQuestions } from '../data/questions';
 
 export interface QuestionMeta {
   id: number;
@@ -66,6 +66,8 @@ export interface OverallAnalysis {
   recommendations: Recommendation[];
 }
 
+const questionMetaCache = new Map<string, QuestionMeta[]>();
+
 // Loads question metadata (section, type, marks) for every paper the user
 // attempted. Used to turn per-question outcomes into real insights.
 export async function loadQuestionMeta(
@@ -73,25 +75,44 @@ export async function loadQuestionMeta(
 ): Promise<Map<string, QuestionMeta[]>> {
   const keys = [...new Set(attempts.map((a) => a.paper_key))];
   const meta = new Map<string, QuestionMeta[]>();
-  await Promise.all(
-    keys.map(async (key) => {
-      try {
-        const { questions } = await getPaperQuestions(key);
-        meta.set(
-          key,
-          questions.map((q) => ({
+
+  const keysToFetch = keys.filter((key) => {
+    const cached = questionMetaCache.get(key);
+    if (cached) {
+      meta.set(key, cached);
+      return false;
+    }
+    return true;
+  });
+
+  if (keysToFetch.length > 0) {
+    await Promise.all(
+      keysToFetch.map(async (key) => {
+        try {
+          const isChapter =
+            attempts.find((a) => a.paper_key === key)?.test_type === 'chapter' ||
+            key.startsWith('jee-') ||
+            key.startsWith('neet-') ||
+            key.startsWith('ch-');
+          const { questions } = isChapter
+            ? await getChapterQuestions(key)
+            : await getPaperQuestions(key);
+          const metaList: QuestionMeta[] = questions.map((q) => ({
             id: q.id,
             section: q.section,
             type: q.type === 'numerical' ? 'numerical' : 'mcq',
             marks: q.marks ?? 4,
             negativeMarks: Math.abs(q.negativeMarks ?? -1),
-          }))
-        );
-      } catch {
-        // Question bank unavailable — analysis falls back to aggregates.
-      }
-    })
-  );
+          }));
+          questionMetaCache.set(key, metaList);
+          meta.set(key, metaList);
+        } catch {
+          // Question bank unavailable — analysis falls back to aggregates.
+        }
+      })
+    );
+  }
+
   return meta;
 }
 

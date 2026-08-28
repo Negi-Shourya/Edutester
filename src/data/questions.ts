@@ -178,6 +178,40 @@ async function loadPaperQuestions(paperKey: string): Promise<PaperQuestions> {
   return mapPaper(data as unknown as PaperRow);
 }
 
+async function fetchStaticChapter(chapterKey: string): Promise<PaperRow | null> {
+  if (!/^[a-z0-9-]+$/i.test(chapterKey)) return null;
+
+  try {
+    const res = await fetch(`${import.meta.env.BASE_URL}chapters/${chapterKey}.json`);
+    if (!res.ok) return null;
+
+    const row = (await res.json()) as PaperRow;
+    if (!row?.key || !Array.isArray(row.questions) || row.questions.length === 0) return null;
+    return row;
+  } catch {
+    return null;
+  }
+}
+
+const chapterCache = new Map<string, Promise<PaperQuestions>>();
+
+export function getChapterQuestions(chapterKey: string): Promise<PaperQuestions> {
+  const cached = chapterCache.get(chapterKey);
+  if (cached) return cached;
+
+  const request = loadChapterQuestions(chapterKey);
+  chapterCache.set(chapterKey, request);
+  return request;
+}
+
+async function loadChapterQuestions(chapterKey: string): Promise<PaperQuestions> {
+  const published = await fetchStaticChapter(chapterKey);
+  if (published) return mapPaper(published);
+
+  // Fallback to trial paper if chapter test file is missing
+  return getPaperQuestions(TRIAL_PAPER_KEY);
+}
+
 const papersCache = new Map<string, Promise<PaperSummary[]>>();
 
 export function getPapers(): Promise<PaperSummary[]> {

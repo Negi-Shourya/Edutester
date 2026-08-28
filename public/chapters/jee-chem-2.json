@@ -1,0 +1,792 @@
+{
+  "key": "jee-chem-2",
+  "title": "Atomic Structure (JEE Main)",
+  "full_title": "JEE Main Chapter Test - Atomic Structure",
+  "subject": "Chemistry",
+  "chapter": "Atomic Structure",
+  "exam_type": "jee",
+  "is_trial": true,
+  "duration_minutes": 50,
+  "difficulty": "Medium",
+  "question_count": 19,
+  "questions": [
+    {
+      "id": 7053,
+      "number": 1,
+      "type": "mcq",
+      "text": "Match List-I (Orbital) with List-II (Radial nodes and nodal plane):\nA. 2s  I. 1 Radial node + two nodal planes\nB. 3s  II. 1 Radial node + one nodal plane\nC. 3p  III. 2 Radial nodes + No nodal plane\nD. 4d  IV. 1 Radial node + No nodal plane",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 1,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "A-IV, B-I, C-III, D-II",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "A-IV, B-II, C-III, D-I",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "A-III, B-I, C-IV, D-II",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "A-IV, B-III, C-II, D-I",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 6071,
+      "number": 2,
+      "type": "numerical",
+      "text": "Total number of unpaired electrons in d³, d⁴(low spin), d⁵(high spin), d⁶(high spin) and d⁷(low spin) octahedral complexes is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 2,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section B"
+      },
+      "question_options": [],
+      "figure_url": []
+    },
+    {
+      "id": 6052,
+      "number": 3,
+      "type": "mcq",
+      "text": "True statements:\nA. If two orbitals have same (n+l), lower n has lower energy\nB. Subshell orbital energies increase with Z\nC. Size 2p_x < 3p_x\nD. None of 5f, 6s, 4d, 5p, 5d have 2 radial nodes",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 3,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "A, B and C only",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "A and C only",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "C and D only",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "A only",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 5061,
+      "number": 4,
+      "type": "mcq",
+      "text": "Correct statements about metal carbonyls:\nA. Possess both σ and π character\nB. Synergic bonding weakens M-C bond\nC. M-C σ bond formed by donation of lone pair from C into vacant metal orbital\nD. M-C π bond formed by donation from filled metal d-orbital to vacant π* of CO",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 4,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "A and B Only",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "A, C and D Only",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "B and C Only",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "A and D Only",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 7052,
+      "number": 5,
+      "type": "mcq",
+      "text": "If shortest wavelength of H atom in Lyman series is x, then longest wavelength in Balmer series of He⁺ is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 5,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "9x / 5",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "36x / 5",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "x / 4",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "5x / 9",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 4053,
+      "number": 6,
+      "type": "mcq",
+      "text": "Which pictorial diagram correctly represents π* (π-antibonding) molecular orbital if internuclear axis is z-direction?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 6,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Diagram (1)",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Diagram (2)",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Diagram (3)",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Diagram (4)",
+          "figure_url": null
+        }
+      ],
+      "figure_url": [
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/2026-04-04-evening/2026-04-04_evening_Q53.jpeg",
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/2026-04-04-evening/2026-04-04_evening_Q53_2.jpeg",
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/2026-04-04-evening/2026-04-04_evening_Q53_3.jpeg",
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/2026-04-04-evening/2026-04-04_evening_Q53_4.jpeg"
+      ]
+    },
+    {
+      "id": 4059,
+      "number": 7,
+      "type": "mcq",
+      "text": "Pairs of elements with same number of electrons in 4f orbital:\nA. (Eu, Gd)\nB. (Dy, Ho)\nC. (Yb, Hf)\nD. (Lu, Tm)",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 7,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "B and C Only",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "A and B Only",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "A and D Only",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "A and C Only",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 3052,
+      "number": 8,
+      "type": "mcq",
+      "text": "Ratio of wave number of first line of Balmer series of H spectrum to first line of Brackett series is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 8,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "5 : 1",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "5 : 0.81",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "5 : 1.75",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "5 : 27",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 3053,
+      "number": 9,
+      "type": "mcq",
+      "text": "Which set of 4 quantum numbers represents 19th electron in Chromium (Z = 24) in accordance with Aufbau principle?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 9,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "n = 3, l = 2, m = +2, s = +1/2",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "n = 3, l = 2, m = -2, s = +1/2",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "n = 4, l = 1, m = 0, s = +1/2",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "n = 4, l = 0, m = 0, s = +1/2",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 3062,
+      "number": 10,
+      "type": "mcq",
+      "text": "Match List-I (Complex ion) with List-II (Calculated spin only magnetic moment (BM)):\nA. [Cr(H₂O)₆]²⁺  I. 3.87\nB. [Co(H₂O)₆]²⁺  II. 5.92\nC. [Cu(H₂O)₆]²⁺  III. 4.90\nD. [Mn(H₂O)₆]²⁺  IV. 1.73",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 10,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "A-I, B-III, C-IV, D-II",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "A-II, B-I, C-III, D-IV",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "A-IV, B-II, C-I, D-III",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "A-III, B-I, C-IV, D-II",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 5052,
+      "number": 11,
+      "type": "mcq",
+      "text": "Arrange following atomic orbitals in order of increasing energy:\nA. n = 3, l = 2\nB. n = 4, l = 0\nC. n = 6, l = 1\nD. n = 5, l = 1\nE. n = 2, l = 1",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 11,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "C < D < B < A < E",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "B < A < E < C < D",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "E < C < D < B < A",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "E < B < A < D < C",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 5053,
+      "number": 12,
+      "type": "mcq",
+      "text": "Correct statements:\nA. Heisenberg principle applicable to electrons\nB. Size of 2p_x < 3p_x\nC. Energy of 2s of H = 2s of Li\nD. Cr configuration is [Ar]3d⁵4s¹",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 12,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "A, B and C Only",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "A, B and D Only",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "B, C and D Only",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "A, C and D Only",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 5059,
+      "number": 13,
+      "type": "mcq",
+      "text": "Correct statements for Nitrogen:\nA. Disproportionates from +1 to +4 in acid\nB. Can form dπ-pπ multiple bonds with itself\nC. N-N single bond stronger than P-P\nD. Highest density in group\nE. Max covalency 4 due to 4 valence orbitals",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 13,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "B, C and D Only",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "C, D and E Only",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "A, C and E Only",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "A and E Only",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 5062,
+      "number": 14,
+      "type": "mcq",
+      "text": "Statement I: Each e⁻ in e_g destabilizes by +0.6 Δ₀ and in t₂_g stabilizes by -0.4 Δ₀.\nStatement II: Degeneracy of d-orbitals destroyed by ligands in complex.",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 14,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Both Statement I and Statement II are correct",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Both Statement I and Statement II are incorrect",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Statement I is correct but Statement II is incorrect",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Statement I is incorrect but Statement II is correct",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 8052,
+      "number": 15,
+      "type": "mcq",
+      "text": "Bohr radius of hydrogen-like species is 70.53 pm. Species and stationary state n are:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 15,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Li²⁺, 3",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "He⁺, 3",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "He⁺, 2",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Li²⁺, 2",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 7060,
+      "number": 16,
+      "type": "mcq",
+      "text": "Correct statements:\nA. Basic vanadium oxide used in H₂SO₄ manufacture\nB. Spin-only magnetic moment in Ziegler-Natta catalyst halide is 2.84 BM\nC. p-block metal in Ziegler-Natta is in +3 OS\nD. Outer d-electrons in Wacker process metal halide is 8",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 16,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "A and B Only",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "A, C and D Only",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "C and D Only",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "B, C and D Only",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 7061,
+      "number": 17,
+      "type": "mcq",
+      "text": "Match List-I (Electronic configuration of tetrahedral metal ion) with List-II (Crystal Field Stabilization Energy (Δₜ)):\nA. d²  I. −0.6\nB. d⁴  II. −0.8\nC. d⁶  III. −1.2\nD. d⁸  IV. −0.4",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 17,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "A-III, B-IV, C-II, D-I",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "A-III, B-I, C-IV, D-II",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "A-III, B-IV, C-I, D-II",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "A-II, B-I, C-IV, D-III",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 7062,
+      "number": 18,
+      "type": "mcq",
+      "text": "True statements about energy of d-orbitals in tetrahedral complex:\nA. d_{xy} = d_{xz} > d_{x²-y²}\nB. d_{xy} = d_{yz} > d_{z²}\nC. d_{x²-y²} > d_{z²} > d_{xz}\nD. d_{x²-y²} = d_{z²} < d_{xz}",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 18,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "A, B and D only",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "A and B only",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "B and D only",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "B, C and D only",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 9058,
+      "number": 19,
+      "type": "mcq",
+      "text": "Match List-I (Electronic configuration of neutral atom (where n = 2)) with List-II (1ˢᵗ Ionization Energy (kJ mol⁻¹)):\nA. ns²  I. 2080\nB. ns²np¹  II. 899\nC. ns²np³  III. 800\nD. ns²np⁶  IV. 1402",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 19,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "A-II, B-III, C-IV, D-I",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "A-IV, B-III, C-II, D-I",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "A-III, B-II, C-IV, D-I",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "A-III, B-II, C-I, D-IV",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    }
+  ]
+}

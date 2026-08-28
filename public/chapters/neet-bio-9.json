@@ -1,0 +1,1068 @@
+{
+  "key": "neet-bio-9",
+  "title": "Biotechnology: Principles & Applications (NEET)",
+  "full_title": "NEET (UG) Chapter Test - Biotechnology: Principles & Applications",
+  "subject": "Biology",
+  "chapter": "Biotechnology",
+  "exam_type": "neet",
+  "is_trial": false,
+  "duration_minutes": 35,
+  "difficulty": "Medium",
+  "question_count": 25,
+  "questions": [
+    {
+      "id": 15361,
+      "number": 1,
+      "type": "mcq",
+      "text": "Statements related to human Insulin are given below. Which statement(s) is/are correct about genetically engineered Insulin? (a) Pro-hormone insulin contain extra stretch of C-peptide (b) A-peptide and B-peptide chains of insulin were produced separately in E.coli, extracted and combined by creating disulphide bond between them. (c) Insulin used for treating Diabetes was extracted from Cattles and Pigs. (d) Pro-hormone Insulin needs to be processed for converting into a mature and functional hormone. (e) Some patients develop allergic reactions to the foreign insulin. Choose the most appropriate answer from the options given below:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 1,
+      "sections": {
+        "name": "Zoology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "(a), (b) and (d) only",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "(b) only",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "(c) and (d) only",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "(c), (d) and (e) only",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 14172,
+      "number": 2,
+      "type": "mcq",
+      "text": "The blue and white selectable markers have been developed which differentiate recombinant colonies from non-recombinant colonies on the basis of their ability to produce colour in the presence of a chromogenic substrate. Given below are two statements about this method: Statement I: The blue coloured colonies have DNA insert in the plasmid and they are identified as recombinant colonies. Statement II: The colonies without blue colour have DNA insert in the plasmid and are identified as recombinant colonies. In the light of the above statements, choose the most appropriate answer from the options given below:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 2,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Both Statement I and Statement II are correct",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Both Statement I and Statement II are incorrect",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Statement I is correct but Statement II is incorrect",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Statement I is incorrect but Statement II is correct",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 18058,
+      "number": 3,
+      "type": "mcq",
+      "text": "Which of the following statements is not correct?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 3,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "The proinsulin has an extra peptide called C-peptide.",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "The functional insulin has A and B chains linked together by hydrogen bonds.",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Genetically engineered insulin is produced in E.Coli.",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "In man insulin is synthesised as a proinsulin",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 17726,
+      "number": 4,
+      "type": "mcq",
+      "text": "With regard to insulin choose correct options. (a) C-peptide is not present in mature insulin. (b) The insulin produced by rDNA technology has C-peptide. (c) The pro-insulin has C-peptide. (d) A-peptide and B-peptide of insulin are interconnected by disulphide bridges. Choose the correct answer from the options given below.",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 4,
+      "sections": {
+        "name": "Zoology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "(b) and (d) only",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "(b) and (c) only",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "(a), (c) and (d) only",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "(a) and (d) only",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 14356,
+      "number": 5,
+      "type": "mcq",
+      "text": "The \"Ti plasmid\" of Agrobacterium tumefaciens stands for",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 5,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Tumor inducing plasmid",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Temperature independent plasmid",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Tumour inhibiting plasmid",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Tumor independent plasmid",
+          "figure_url": null
+        }
+      ],
+      "figure_url": null
+    },
+    {
+      "id": 17701,
+      "number": 6,
+      "type": "mcq",
+      "text": "Plasmid pBR322 has PstI restriction enzyme site within gene ampR that confers ampicillin resistance. If this enzyme is used for inserting a gene for β-galactoside production and the recombinant plasmid is inserted in an E.coli strain",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 6,
+      "sections": {
+        "name": "Botany"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "it will not be able to confer ampicillin resistance to the host cell.",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "the transformed cells will have the ability to resist ampicillin as well as produce β-galactoside.",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "it will lead to lysis of host cell.",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "it will be able to produce a novel protein with dual ability.",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 14520,
+      "number": 7,
+      "type": "mcq",
+      "text": "Main steps in the formation of Recombinant DNA are given below. Arrange these steps in a correct sequence A. Insertion of recombinant DNA into the host cell. B. Cutting of DNA at specific location by restriction enzyme. C. Isolation of desired DNA fragment. D. Amplification of gene of interest using PCR.",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 7,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "B, D, A, C",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "B, C, D, A",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "C, A, B, D",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "C, B, D, A",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 14343,
+      "number": 8,
+      "type": "mcq",
+      "text": "The following diagram showing restriction sites in E.coli cloning vector pBR322. Find the role of 'X' and 'Y' genes:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 8,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "The gene 'X' is for protein involved in replication of Plasmid and 'Y' for resistance to antibiotics.",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Gene 'X' is responsible for recognition sites and 'Y' is responsible for antibiotic resistance.",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "The gene 'X' is respoinsible for resistance to antibiotics and 'Y' for protein involved in the replication of Plasmid.",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "The gene 'X' is responsible for controlling the copy number of the linked DNA and 'Y' for protein involved in the replication of Plasmid.",
+          "figure_url": null
+        }
+      ],
+      "figure_url": [
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/neet-2024/Question 170.png"
+      ]
+    },
+    {
+      "id": 18100,
+      "number": 9,
+      "type": "mcq",
+      "text": "Match the following columns and select the correct option.\n| Column-I | Column-II |\n|---|---|\n| (a) Bt cotton | (i) Gene therapy |\n| (b) Adenosine deaminase deficiency | (ii) Cellular defence |\n| (c) RNAi | (iii) Detection of HIV infection |\n| (d) PCR | (iv) Bacillus thuringiensis |",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 9,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "(a) - (iii), (b) - (ii), (c) - (i), (d) - (iv)",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "(a) - (ii), (b) - (iii), (c) - (iv), (d) - (i)",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "(a) - (i), (b) - (ii), (c) - (iii), (d) - (iv)",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "(a) - (iv), (b) - (i), (c) - (ii), (d) - (iii)",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 23434,
+      "number": 10,
+      "type": "mcq",
+      "text": "A gene whose expression helps to identify transformed cell is known as",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 10,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Structural gene",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Selectable marker",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Vector",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Plasmid",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 22177,
+      "number": 11,
+      "type": "mcq",
+      "text": "Which of the following is commonly used as a vector for introducing a DNA fragment in human lymphocytes ?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 11,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "\\lambda phage",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Ti plasmid",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Retrovirus",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "pBR 322",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 20401,
+      "number": 12,
+      "type": "mcq",
+      "text": "Which of the following features of genetic code does allow bacteria to produce human insulin by recombinant DNA technology?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 12,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Genetic code is not ambiguous",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Genetic code is redundant",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Genetic code is nearly universal",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Genetic code is specific",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 18117,
+      "number": 13,
+      "type": "mcq",
+      "text": "Select the correct statement.",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 13,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Glucagon is associated with hypoglycemia.",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Insulin acts on pancreatic cells and adipocytes.",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Insulin is associated with hyperglycemia.",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Glucocorticoids stimulate gluconeogenesis.",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 18084,
+      "number": 14,
+      "type": "mcq",
+      "text": "Identify the wrong statement with regard to Restriction Enzymes.",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 14,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "They cut the strand of DNA at palindromic sites.",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "They are useful in genetic engineering.",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Sticky ends can be joined by using DNA ligases.",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Each restriction enzyme functions by inspecting the length of a DNA sequence.",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 18102,
+      "number": 15,
+      "type": "mcq",
+      "text": "Match the organism with its use in biotechnology.\n| List-I | List-II |\n|---|---|\n| (a) Bacillus thuringiensis | (i) Cloning vector |\n| (b) Thermus aquaticus | (ii) Construction of first rDNA molecule |\n| (c) Agrobacterium tumefaciens | (iii) DNA polymerase |\n| (d) Salmonella typhimurium | (iv) Cry proteins |\nSelect the correct option from the following:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 15,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "(a) - (iv), (b) - (iii), (c) - (i), (d) - (ii)",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "(a) - (iii), (b) - (ii), (c) - (iv), (d) - (i)",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "(a) - (iii), (b) - (iv), (c) - (i), (d) - (ii)",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "(a) - (ii), (b) - (iv), (c) - (iii), (d) - (i)",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 17734,
+      "number": 16,
+      "type": "mcq",
+      "text": "During the process of gene amplification using PCR, if very high temperature is not maintained in the beginning, then which of the following steps of PCR will be affected first ?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 16,
+      "sections": {
+        "name": "Zoology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Annealing",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Extension",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Denaturation",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Ligation",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 15356,
+      "number": 17,
+      "type": "mcq",
+      "text": "In gene therapy of Adenosine Deaminase (ADA) deficiency, the patient requires periodic infusion of genetically engineered lymphocytes because :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 17,
+      "sections": {
+        "name": "Zoology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Retroviral vector is introduced into these lymphocytes.",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Gene isolated from marrow cells producing ADA is introduced into cells at embryonic stages",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Lymphocytes from patient's blood are grown in culture, outside the body.",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Genetically engineered lymphocytes are not immortal cells.",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 15367,
+      "number": 18,
+      "type": "mcq",
+      "text": "Which of the following is not a desirable feature of a cloning vector?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 18,
+      "sections": {
+        "name": "Zoology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Presence of origin of replication",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Presence of a marker gene",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Presence of single restriction enzyme site",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Presence of two or more recognition sites",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 14555,
+      "number": 19,
+      "type": "mcq",
+      "text": "Which one of the following techniques does not serve the purpose of early diagnosis of a disease for its early treatment?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 19,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Enzyme Linked Immuno-Sorbent Assay (ELISA) technique",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Recombinant DNA Technology",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Serum and Urine analysis",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Polymerase Chain Reaction (PCR) technique",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 14108,
+      "number": 20,
+      "type": "mcq",
+      "text": "In the above represented plasmid an alien piece of DNA is inserted at EcoRI site. Which of the following strategies will be chosen to select the recombinant colonies?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 20,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Using ampicillin & tetracyclin containing medium plate.",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Blue color colonies will be selected.",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "White color colonies will be selected.",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Blue color colonies grown on ampicillin plates can be selected.",
+          "figure_url": null
+        }
+      ],
+      "figure_url": [
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/neet-2025-images/Question%20115.png"
+      ]
+    },
+    {
+      "id": 14129,
+      "number": 21,
+      "type": "mcq",
+      "text": "Given below are two statements: Statement I: The DNA fragments extracted from gel electrophoresis can be used in construction of recombinant DNA. Statement II: Smaller size DNA fragments are observed near anode while larger fragments are found near the wells in an agarose gel. In the light of the above statements, choose the most appropriate answer from the options given below:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 21,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Both statement I and statement II are correct",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Both statement I and statement II are incorrect",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Statement I is correct but statement II is incorrect",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Statement I is incorrect but statement II is correct",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 19114,
+      "number": 22,
+      "type": "mcq",
+      "text": "Match List-I with List-II:\n| List-I | List-II |\n|---|---|\n| A. Genetically modified organism | I. Agrobacterium tumefaciens |\n| B. Thermostable DNA polymerase | II. Bt cotton |\n| C. Ti plasmid | III. Thermus aquaticus |\n| D. pBR322 | IV. Escherichia coli |\nChoose the correct answer from the options given below:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 22,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "A-II, B-III, C-I, D-IV",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "A-II, B-I, C-IV, D-III",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "A-I, B-IV, C-III, D-II",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "A-I, B-II, C-IV, D-III",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 18243,
+      "number": 23,
+      "type": "mcq",
+      "text": "Which one of the following statements is incorrect?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 23,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "α-cells of pancreas secrete glucagon",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "α-cells of pancreas secrete insulin",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Glucagon stimulates glycogenolysis",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "β-cells of pancreas secrete insulin",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 18287,
+      "number": 24,
+      "type": "mcq",
+      "text": "Given below are two statements:\nStatement I: Plasmids are autonomously replicating DNA.\nStatement II: Plasmids are extrachromosomal DNA.\nIn the light of the above statements, choose the most appropriate answer from the options given below:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 24,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Both Statement I and Statement II are correct",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Both Statement I and Statement II are incorrect",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Statement I is correct but Statement II is incorrect",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Statement I is incorrect but Statement II is correct",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 24057,
+      "number": 25,
+      "type": "mcq",
+      "text": "Which of the following pairs of hormones are not antagonistic (having opposite effects) to each other ?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 25,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Insulin Glucagon",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Aldosterone Atrial Natriuretic Factor",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Relaxin Inhibin",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Parathormone Calcitonin",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    }
+  ]
+}

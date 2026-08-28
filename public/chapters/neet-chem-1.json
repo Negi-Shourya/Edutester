@@ -1,0 +1,1064 @@
+{
+  "key": "neet-chem-1",
+  "title": "Basic Concepts of Chemistry (NEET)",
+  "full_title": "NEET (UG) Chapter Test - Basic Concepts of Chemistry",
+  "subject": "Chemistry",
+  "chapter": "Mole Concept & Stoichiometry",
+  "exam_type": "neet",
+  "is_trial": true,
+  "duration_minutes": 35,
+  "difficulty": "Easy",
+  "question_count": 25,
+  "questions": [
+    {
+      "id": 15235,
+      "number": 1,
+      "type": "mcq",
+      "text": "Given below are two statements : Statement I : The boiling points of aldehydes and ketones are higher than hydrocarbons of comparable molecular masses because of weak molecular association in aldehydes and ketones due to dipole - dipole interactions. Statement II : The boiling points of aldehydes and ketones are lower than the alcohols of similar molecular masses due to the absence of H-bonding. In the light of the above statements, choose the most appropriate answer from the given below",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 1,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Both Statement I and Statement II are correct",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Both Statement I and Statement II are incorrect",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Statement I is correct but Statement II is incorrect",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Statement I is incorrect but Statement II is correct",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 22146,
+      "number": 2,
+      "type": "mcq",
+      "text": "Carboxylic acids have higher boiling points than aldehydes, ketones and even alcohols of comparable molecular mass. It is due to their :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 2,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "more extensive association of carboxylic acid via van der Waals force of attraction",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "formation of carboxylate ion",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "formation of intramolecular H-bonding",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "formation of intermolecular H-bonding",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 22165,
+      "number": 3,
+      "type": "mcq",
+      "text": "The correction factor 'a' to the ideal gas equation corresponds to :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 3,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "electric field present between the gas molecules",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "volume of the gas molecules",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "density of the gas molecules",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "forces of attraction between the gas molecules",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 19090,
+      "number": 4,
+      "type": "mcq",
+      "text": "Identify the correct statements :\nA. The molality of 2.5 g of ethanoic acid (Molar mass : 60 g mol^{-1}) in 75 g of benzene solution is 0.556 m.\nB. The molarity of a solution containing 5 g of NaOH (molar mass : 40 g mol^{-1}) in 450 mL of solution is 0.278 M at 298 K.\nC. Aquatic species are more comfortable in cold water.\nD. The solubility of gas increases with decrease in pressure.\nE. For a binary mixture of A and B, the number of moles of A and B are n_{A} and n_{B} respectively. The mole fraction of B will be x_{B} = \\frac{n_{A}}{n_{A} + n_{B}}.\nChoose the correct answer from the options given below :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 4,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "A, B and C only",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "A and B only",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "A and C only",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "A, D and E only",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 19108,
+      "number": 5,
+      "type": "mcq",
+      "text": "Mixture of chloroform and acetone forms a solution with negative deviation from Raoult's law due to :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 5,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "increase in escaping tendency of molecules of each component.",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "formation of hydrogen bonding between acetone and chloroform.",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "stronger intermolecular forces between chloroform molecules than those between chloroform and acetone molecules.",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "repulsive forces.",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 23406,
+      "number": 6,
+      "type": "mcq",
+      "text": "Which of the following is dependent on temperature ?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 6,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Weight percentage",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Molality",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Molarity",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Mole fraction",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 20328,
+      "number": 7,
+      "type": "mcq",
+      "text": "The number of moles of hydrogen molecules required to produce 20 moles of ammonia through Haber's process is :-",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 7,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "10",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "20",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "30",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "40",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 14248,
+      "number": 8,
+      "type": "mcq",
+      "text": "Given below are two statements: Statement I : The boiling point of three isomeric pentanes follows the order. n-pentane > isopentane > neopentane Statement II : When branching increases, the molecule attains a shape of sphere. This results in smaller surface area for contact, due to which the intermolecular forces between the spherical molecules are weak, thereby lowering the boiling point. In the light of the above statements, choose the most appropriate answer from the options given below:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 8,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Statement I is correct but Statement II is incorrect.",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Statement I is incorrect but Statement II is correct.",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Both Statement I and Statement II are correct.",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Both Statement I and Statement II are incorrect.",
+          "figure_url": null
+        }
+      ],
+      "figure_url": null
+    },
+    {
+      "id": 20331,
+      "number": 9,
+      "type": "mcq",
+      "text": "Which of the following diatomic molecular species has only \\pi bonds according to Molecular Orbital Theory ?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 9,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "\\text{Be}_2",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "\\text{O}_2",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "\\text{N}_2",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "\\text{C}_2",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 15258,
+      "number": 10,
+      "type": "mcq",
+      "text": "Which amongst the following is incorrect statement?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 10,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "The bond orders of O_{2}^{+}, O_{2}, O_{2}^{–} and O_{2}^{2–} are 2.5, 2, 1.5 and 1, respectively",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "C_{2} molecule has four electrons in its two degenerate π molecular orbitals",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "H_{2}^{+} ion has one electron",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "O_{2}^{+} ion is diamagnetic",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 14429,
+      "number": 11,
+      "type": "mcq",
+      "text": "The correct order of energies of molecular orbitals of N_{2} molecule is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 11,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "σ1s < σ^{*}1s < σ2s < σ^{*} 2s < (π2p_{x} = π2p_{y} ) < (π^{*} 2p_{x} = π^{*} 2p_{y} ) < σ2p_{z} < σ^{*} 2p_{z}",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "σ1s < σ^{*}1s < σ2s < σ^{*} 2s < (π2p_{x} = π2p_{y} ) < σ2p_{z} < (π^{*} 2p_{x} = π^{*} 2p_{y} ) < σ^{*} 2p_{z}",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "σ1s < σ^{*}1s < σ2s < σ^{*} 2s < σ2p_{z} < (π2p_{x} = π2p_{y} ) < (π^{*} 2p_{x} = π^{*} 2p_{y} ) < σ^{*} 2p_{z}",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "σ1s < σ^{*}1s < σ2s < σ^{*} 2s < σ2p_{z} < σ^{*} 2p_{z} < (π2p_{x} = π2p_{y} ) < (π^{*} 2p_{x} = π^{*} 2p_{y} )",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 14238,
+      "number": 12,
+      "type": "mcq",
+      "text": "Given below are two statements:\nStatement I : The boiling point of hydrides of Group 16 elements follow the order H_{2}O > H_{2}Te > H_{2}Se > H_{2}S.\nStatement II : On the basis of molecular mass, H_{2}O is expected to have lower boiling point than the other members of the group but due to the presence of extensive H-bonding in H_{2}O, it has higher boiling point.\nIn the light of the above statements, choose the correct answer from the options given below:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 12,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Statement I is true but Statement II is false.",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Statement I is false but Statement II is true.",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Both Statement I and Statement II are true.",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Both Statement I and Statement II are false.",
+          "figure_url": null
+        }
+      ],
+      "figure_url": null
+    },
+    {
+      "id": 14232,
+      "number": 13,
+      "type": "mcq",
+      "text": "Activation energy of any chemical reaction can be calculated if one knows the value of",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 13,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "orientation of reactant molecules during collision.",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "rate constant at two different temperatures.",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "rate constant at standard temperature.",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "probability of collision.",
+          "figure_url": null
+        }
+      ],
+      "figure_url": null
+    },
+    {
+      "id": 14243,
+      "number": 14,
+      "type": "mcq",
+      "text": "Match List I with List II.\nList I (Molecule)\nList II (Number and types of bonds between two carbon atoms)\nA. ethane  I. one σ-bond and two π-bonds\nB. ethene  II. two π-bonds\nC. carbon molecule, C_{2}  III. one σ-bond\nD. ethyne  IV. one σ-bond and one π-bond\nChoose the correct answer from the options given below:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 14,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "A-III, B-IV, C-II, D-I",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "A-III, B-IV, C-I, D-II",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "A-I, B-IV, C-II, D-III",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "A-IV, B-III, C-II, D-I",
+          "figure_url": null
+        }
+      ],
+      "figure_url": null
+    },
+    {
+      "id": 14074,
+      "number": 15,
+      "type": "mcq",
+      "text": "5 moles of liquid X and 10 moles of liquid Y make a solution having a vapour pressure of 70 torr. The vapour pressures of pure X and Y are 63 torr and 78 torr respectively. Which of the following is true regarding the described solution?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 15,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "The solution shows positive deviation.",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "The solution shows negative deviation.",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "The solution is ideal.",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "The solution has volume greater than the sum of individual volumes.",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 18169,
+      "number": 16,
+      "type": "mcq",
+      "text": "The correct statement about peptides and proteins is",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 16,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Tertiary structure of proteins has two or more polypeptide subunits.",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Only the proteins having a quaternary structure are biologically active.",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "In \\beta-pleated sheet structures, peptide chains are held together by intermolecular hydrogen bonds.",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "In \\alpha-helices, the polypeptide chain is twisted into a left-handed screw (helix) through intramolecular hydrogen bonds.",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 23988,
+      "number": 17,
+      "type": "mcq",
+      "text": "In a protein molecule various amino acids are linked together by :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 17,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "dicarboxylic bond",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "peptide bond",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "peptide bond",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "\\beta\\text{-glycosidic bond}",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 23993,
+      "number": 18,
+      "type": "mcq",
+      "text": "Consider the molecules \\text{CH}_{4}, \\text{NH}_{3} \\text{ and } \\text{H}_{2}\\text{O}. Which of the given statements is false ?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 18,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "The \\text{H}-\\text{C}-\\text{H} bond angle in \\text{CH}_{4}, the \\text{H}-\\text{N}-\\text{H} bond angle in \\text{NH}_{3}, and the \\text{H}-\\text{O}-\\text{H} bond angle in \\text{H}_{2}\\text{O} are all greater than 90^\\circ",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "The \\text{H}-\\text{O}-\\text{H} bond angle in \\text{H}_{2}\\text{O} is larger than the \\text{H}-\\text{C}-\\text{H} bond angle in \\text{CH}_{4}",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "The \\text{H}-\\text{O}-\\text{H} bond angle in \\text{H}_{2}\\text{O} is smaller than the \\text{H}-\\text{N}-\\text{H} bond angle in \\text{NH}_{3}",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "The \\text{H}-\\text{C}-\\text{H} bond angle in \\text{CH}_{4} is larger than the \\text{H}-\\text{N}-\\text{H} bond angle in \\text{NH}_{3}",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 24001,
+      "number": 19,
+      "type": "mcq",
+      "text": "Which one of the following orders is correct for the bond dissociation enthalpy of halogen molecules ?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 19,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "\\text{Cl}_{2} > \\text{Br}_{2} > \\text{F}_{2} > \\text{I}_{2}",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "\\text{Br}_{2} > \\text{I}_{2} > \\text{F}_{2} > \\text{Cl}_{2}",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "\\text{F}_{2} > \\text{Cl}_{2} > \\text{Br}_{2} > \\text{I}_{2}",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "\\text{I}_{2} > \\text{Br}_{2} > \\text{Cl}_{2} > \\text{F}_{2}",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 24002,
+      "number": 20,
+      "type": "mcq",
+      "text": "Equal moles of hydrogen and oxygen gases are placed in a container with a pin-hole through which both can escape. What fraction of the oxygen escapes in the time required for one-half of the hydrogen to escape ?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 20,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "1/4",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "3/8",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "1/2",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "1/8",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 23427,
+      "number": 21,
+      "type": "mcq",
+      "text": "If molality of the dilute solution is doubled, the value of molal depression constant (K_{f}) will be :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 21,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "unchanged",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "doubled",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "halved",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "tripled",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 22142,
+      "number": 22,
+      "type": "mcq",
+      "text": "Which of the following molecules represents the order of hybridisation \\text{sp}^2, \\text{sp}^2, \\text{sp}, \\text{sp} from left to right atoms ?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 22,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "\\text{CH}_2 = \\text{CH} - \\text{CH} = \\text{CH}_2",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "\\text{CH}_2 = \\text{CH} - \\text{C} \\equiv \\text{CH}",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "\\text{HC} \\equiv \\text{C} - \\text{C} \\equiv \\text{CH}",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "\\text{CH}_3 - \\text{CH} = \\text{CH} - \\text{CH}_3",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 22157,
+      "number": 23,
+      "type": "mcq",
+      "text": "In which case is the number of molecules of water maximum ?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 23,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "0.00224 L of water vapours at 1 atm and 273 K",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "0.18 g of water",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "18 mL of water",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "10^{-3}\\text{ mol of water}",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 20335,
+      "number": 24,
+      "type": "mcq",
+      "text": "The freezing point depression constant (K_f) of benzene is 5.12\\text{ K kg mol}^{-1}. The freezing point depression for the solution of molality 0.078 m containing a non-electrolyte solute in benzene is (rounded off upto two decimal places) :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 24,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "0.20 K",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "0.80 K",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "0.40 K",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "0.60 K",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 20348,
+      "number": 25,
+      "type": "mcq",
+      "text": "Identify the incorrect statement related to \\text{PCl}_5 from the following :-",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 25,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Three equatorial P-Cl bonds make an angle of 120° with each other",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Two axial P-Cl bonds make an angle of 180° with each other",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Axial P-Cl bonds are longer than equatorial P-Cl bonds",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "\\text{PCl}_5\\text{ molecule is non-reactive}",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    }
+  ]
+}

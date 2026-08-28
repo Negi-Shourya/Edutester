@@ -1,0 +1,1064 @@
+{
+  "key": "neet-bio-4",
+  "title": "Plant Physiology (NEET)",
+  "full_title": "NEET (UG) Chapter Test - Plant Physiology",
+  "subject": "Biology",
+  "chapter": "Photosynthesis & Respiration in Plants",
+  "exam_type": "neet",
+  "is_trial": false,
+  "duration_minutes": 45,
+  "difficulty": "Hard",
+  "question_count": 25,
+  "questions": [
+    {
+      "id": 20440,
+      "number": 1,
+      "type": "mcq",
+      "text": "It takes very long time for pineapple plants to produce flowers. Which combination of hormones can be applied to artificially induce flowering in pineapple plants throughout the year to increase yield?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 1,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Auxin and Ethylene",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Gibberellin and Cytokinin",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Gibberellin and Abscisic acid",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Cytokinin and Abscisic acid",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 18233,
+      "number": 2,
+      "type": "mcq",
+      "text": "Select the correct sequence of experiments that led to a gradual understanding of photosynthesis in green plants.",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 2,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Absorption spectra of chlorophyll a and b → production of glucose → release of oxygen → role of air",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Role of air → release of oxygen → production of glucose → absorption spectra of chlorophyll a and b",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Release of oxygen → production of glucose → absorption spectra of chlorophyll a and b → role of air",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Production of glucose → role of air → release of oxygen → absorption spectra of chlorophyll a and b",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 23436,
+      "number": 3,
+      "type": "mcq",
+      "text": "With reference to factors affecting the rate of photosynthesis, which of the following statements is not correct ?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 3,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Tomato is a greenhouse crop which can be grown in CO2-enriched atmosphere for higher yield",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Light saturation for CO2 fixation occurs at 10% of full sunlight",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Increasing atmospheric CO2 concentration up to 0.05% can enhance CO2 fixation rate",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "C3 plants respond to higher temperatures with enhanced photosynthesis while C4 plants have much lower temperature optimum",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 23476,
+      "number": 4,
+      "type": "mcq",
+      "text": "Phosphoenol pyruvate (PEP) is the primary CO2 acceptor in :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 4,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "C3 and C4 plants",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "C3 plants",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "C4 plants",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "C2 plants",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 18083,
+      "number": 5,
+      "type": "mcq",
+      "text": "Name the plant growth regulator which upon spraying on sugarcane crop, increases the length of stem, thus increasing the yield of sugarcane crop.",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 5,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Gibberellin",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Ethylene",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Abscisic acid",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Cytokinin",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 14312,
+      "number": 6,
+      "type": "mcq",
+      "text": "Spraying sugarcane crop with which of the following plant growth regulators, increases the length of stem, thus, increasing the yield?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 6,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Cytokinin",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Abscisic acid",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Auxin",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Gibberellin",
+          "figure_url": null
+        }
+      ],
+      "figure_url": null
+    },
+    {
+      "id": 14315,
+      "number": 7,
+      "type": "mcq",
+      "text": "Given below are two statements: Statement I : In C3 Plants, some O2 binds RuBisCO, hence CO2 fixation is decreased. Statement II: In C4 plants, mesophyll cells show very little photorespiration while bundle sheath cells do not show photorespiration. In the light of the above statements, choose the correct answer from the options given below:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 7,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Statement I is true but Statement II is false.",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Statement I is false but Statement II is true.",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Both Statement I and Statement II are true.",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Both Statement I and Statement II are false",
+          "figure_url": null
+        }
+      ],
+      "figure_url": null
+    },
+    {
+      "id": 14101,
+      "number": 8,
+      "type": "mcq",
+      "text": "Which one of the following phytohormones promotes nutrient mobilization which helps in the delay of leaf senescence in plants?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 8,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Ethylene",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Abscisic acid",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Gibberellin",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Cytokinin",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 19178,
+      "number": 9,
+      "type": "mcq",
+      "text": "Match List I with List II:\n| List I | List II |\n|---|---|\n| A. Molluscs | I. Pulmonary respiration only |\n| B. Reptiles | II. Branchial respiration |\n| C. Adult amphibians | III. Cellular respiration |\n| D. Amoeba | IV. Pulmonary and Cutaneous respiration |\nChoose the correct answer from the options given below:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 9,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "A-II, B-I, C-IV, D-III",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "A-I, B-II, C-IV, D-III",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "A-II, B-I, C-III, D-IV",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "A-III, B-II, C-I, D-IV",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 24034,
+      "number": 10,
+      "type": "mcq",
+      "text": "A plant in your garden avoids photorespiratory losses, has improved water use efficiency, shows high rates of photosynthesis at high temperatures and has improved efficiency of nitrogen utilization. In which of the following physiological groups would you assign this plant ? ;",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 10,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "C4",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "CAM",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Nitrogen fixer",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "C3",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 23433,
+      "number": 11,
+      "type": "mcq",
+      "text": "Fruit and leaf drop at early stages can be prevented by the application of",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 11,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Gibberellic acid",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Cytokinins",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Ethylene",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Auxins",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 15304,
+      "number": 12,
+      "type": "mcq",
+      "text": "Production of Cucumber has increased manifold in recent years. Application of which of the following phytohormones has resulted in this increased yield as the hormone is known to produce female flowers in the plants :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 12,
+      "sections": {
+        "name": "Botany"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "ABA",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Gibberellin",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Ethylene",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Cytokinin",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 22175,
+      "number": 13,
+      "type": "mcq",
+      "text": "What is the role of NAD in cellular respiration ?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 13,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "It is a nucleotide source for ATP synthesis.",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "It functions as an electron carrier.",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "It functions as an enzyme.",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "It is the final electron acceptor for anaerobic respiration.",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 22249,
+      "number": 14,
+      "type": "mcq",
+      "text": "Which of these statements is incorrect ?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 14,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Glycolysis operates as long as it is supplied with NAD that can pick up hydrogen atoms.",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Glycolysis occurs in cytosol.",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Enzymes of TCA cycle are present in mitochondrial matrix.",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Oxidative phosphorylation takes place in outer mitochondrial membrane.",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 17704,
+      "number": 15,
+      "type": "mcq",
+      "text": "Which of the following statements is incorrect ?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 15,
+      "sections": {
+        "name": "Botany"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "During aerobic respiration, role of oxygen is limited to the terminal stage.",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "In ETC (Electron Transport Chain), one molecule of NADH+H+ gives rise to 2 ATP molecules, and one FADH_{2} gives rise to 3 ATP molecules.",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "ATP is synthesized through complex V.",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Oxidation-reduction reactions produce proton gradient in respiration.",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 15275,
+      "number": 16,
+      "type": "mcq",
+      "text": "Identify the correct set of statements : (a) The leaflets are modified into pointed hard thorns in Citrus and Bougainvillea (b) Axillary buds form slender and spirally coiled tendrils in cucumber and pumpkin (c) Stem is flattened and fleshy in Opuntia and modified to perform the function of leaves (d) Rhizophora shows vertically upward growing roots that help to get oxygen for respiration (e) Subaerially growing stems in grasses and strawberry help in vegetative propagation Choose the correct answer from the options given below :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 16,
+      "sections": {
+        "name": "Botany"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "(b) and (c) Only",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "(a) and (d) Only",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "(b), (c), (d) and (e) Only",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "(a), (b), (d) and (e) Only",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 15317,
+      "number": 17,
+      "type": "mcq",
+      "text": "In the following palindromic base sequences of DNA, which one can be cut easily by particular restriction enzyme?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 17,
+      "sections": {
+        "name": "Botany"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "5GATACT3; 3CTATGA5",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "5GAATTC3; 3CTTAAG5",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "5CTCAGT3; 3GAGTCA5",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "5GTATTC3; 3CATAAG5",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 14279,
+      "number": 18,
+      "type": "mcq",
+      "text": "Which of the following are required for the dark reaction of photosynthesis? A. Light B. Chlorophyll C. CO2 D. ATP E. NADPH Choose the correct answer from the options given below:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 18,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "C, D and E only",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "D and E only",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "A, B and C only",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "B, C and D only",
+          "figure_url": null
+        }
+      ],
+      "figure_url": null
+    },
+    {
+      "id": 14300,
+      "number": 19,
+      "type": "mcq",
+      "text": "Auxin is used by gardeners to prepare weed free lawns. But no damage is caused to grass as auxin;",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 19,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "does not affect mature monocotyledonous plants.",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "can help in cell division in grasses, to produce growth.",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "promotes apical dominance.",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "promotes abscission of mature leaves only.",
+          "figure_url": null
+        }
+      ],
+      "figure_url": null
+    },
+    {
+      "id": 14159,
+      "number": 20,
+      "type": "mcq",
+      "text": "Role of the water vascular system in Echinoderms is: A. Respiration and Locomotion B. Excretion and Locomotion C. Capture and transport of food D. Digestion and Respiration E. Digestion and Excretion Choose the correct answer from the options given below:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 20,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "A and B Only",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "A and C Only",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "B and C Only",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "B, D and E Only",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 14166,
+      "number": 21,
+      "type": "mcq",
+      "text": "Read the following statements on plant growth and development. A. Parthenocarpy can be induced by auxins. B. Plant growth regulators can be involved in promotion as well as inhibition of growth. C. Dedifferentiation is a pre-requisite for re- differentiation. D. Abscisic acid is a plant growth promoter. E. Apical dominance promotes the growth of lateral buds. Choose the option with all correct statements.",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 21,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "A, B, C only",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "A, C, E only",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "A, D, E only",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "B, D, E only",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 14115,
+      "number": 22,
+      "type": "mcq",
+      "text": "Match List-I with List-II.\nList-I\nList-II\nA. Chlorophyll a -> I. Yellow-green\nB. Chlorophyll b -> II. Yellow\nC. Xanthophylls -> III. Blue-green\nD. Carotenoids -> IV. Yellow to Yellow-orange\nChoose the option with all correct matches.",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 22,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "A-III, B-IV, C-II, D-I",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "A-III, B-I, C-II, D-IV",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "A-I, B-II, C-IV, D-III",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "A-I, B-IV, C-III, D-II",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 19115,
+      "number": 23,
+      "type": "mcq",
+      "text": "Match List-I with List-II:\n| List-I | List-II |\n|---|---|\n| (A) Productivity | (I) Gross primary productivity minus respiration losses |\n| (B) Net primary productivity | (II) Rate of formation of new organic matter by consumers |\n| (C) Gross primary productivity | (III) Rate of biomass production |\n| (D) Secondary productivity | (IV) Rate of production of organic matter during photosynthesis |\nChoose the correct answer from the options given below:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 23,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "A-III, B-I, C-IV, D-II",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "A-I, B-II, C-III, D-IV",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "A-I, B-III, C-IV, D-II",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "A-III, B-I, C-II, D-IV",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 19130,
+      "number": 24,
+      "type": "mcq",
+      "text": "Find the incorrect statement(s) about photosynthesis from the following:\nA. The water splitting complex is associated with PS I.\nB. C_{4} plants use the C_{3} pathway of CO_{2} fixation as the main biosynthetic pathway.\nC. In C_{4} plants, photorespiration does not occur.\nD. C_{3} plants exhibit 'Kranz' anatomy.\nE. ATP synthesis in chloroplast occurs through chemiosmosis.\nChoose the answer from the options given below :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 24,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "B and C only",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "B only",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "B and E only",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "A and D only",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 19147,
+      "number": 25,
+      "type": "mcq",
+      "text": "Match List I with List II :\n| List-I (Process) | List-II (Location) |\n|---|---|\n| A. Glycolysis | I. Inner mitochondrial membrane |\n| B. ETS | II. Mitochondrial matrix |\n| C. Accumulation of protons | III. Cytoplasm |\n| D. Krebs' cycle | IV. Intermembrane space |\nChoose the correct answer from the options given below:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 25,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "A-IV, B-II, C-I, D-III",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "A-II, B-III, C-IV, D-I",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "A-III, B-I, C-IV, D-II",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "A-I, B-IV, C-III, D-II",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    }
+  ]
+}

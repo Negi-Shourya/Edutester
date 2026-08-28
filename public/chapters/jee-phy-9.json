@@ -1,0 +1,581 @@
+{
+  "key": "jee-phy-9",
+  "title": "Electromagnetic Induction & AC (JEE Main)",
+  "full_title": "JEE Main Chapter Test - Electromagnetic Induction & AC",
+  "subject": "Physics",
+  "chapter": "EMI & AC",
+  "exam_type": "jee",
+  "is_trial": false,
+  "duration_minutes": 60,
+  "difficulty": "Hard",
+  "question_count": 15,
+  "questions": [
+    {
+      "id": 3050,
+      "number": 1,
+      "type": "numerical",
+      "text": "Inductor 10 mH, capacitor 0.1 μF, resistor 100 Ω connected across AC supply 220 V, 70 Hz. Power factor is 0.5. Difference |X_L - X_C| is √3 α Ω. Value of α is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 1,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section B"
+      },
+      "question_options": [],
+      "figure_url": []
+    },
+    {
+      "id": 7043,
+      "number": 2,
+      "type": "mcq",
+      "text": "Inductor 10 mH, resistance 100 Ω connected to battery 1.0 V. Ratio of instantaneous voltages across inductor at 2 mA and 4 mA is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 2,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "4 / 3",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "3 / 4",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "5 / 3",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "3 / 5",
+          "figure_url": null
+        }
+      ],
+      "figure_url": [
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/2026-04-06-morning/2026-04-06_morning_Q43.png"
+      ]
+    },
+    {
+      "id": 7045,
+      "number": 3,
+      "type": "mcq",
+      "text": "LCR series driven with E_rms = 90 V, f = 30 Hz, R = 80 Ω, X_L = 20 Ω, X_C = 80 Ω. Power factor is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 3,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "0.8",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "0.64",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "0.9",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "0.5",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 2042,
+      "number": 4,
+      "type": "mcq",
+      "text": "LCR series circuit with C = 100 μF. Phase diff 30° when S₁ closed, 60° when S₂ closed. Value of (3L₁ - L₂) is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 4,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "9 / 2 H",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "2 / 9 H",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "1 / 3 H",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "3 H",
+          "figure_url": null
+        }
+      ],
+      "figure_url": [
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/2026-04-02-evening/2026-04-02_evening_Q42.jpeg"
+      ]
+    },
+    {
+      "id": 2043,
+      "number": 5,
+      "type": "mcq",
+      "text": "Mutual inductance between a circular loop radius R inside a coplanar square loop side L (L >> R) is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 5,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "2√2 μ₀ L² / R",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "√2 μ₀ L² / R",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "√2 μ₀ R² / L",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "2√2 μ₀ R² / L",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 6048,
+      "number": 6,
+      "type": "numerical",
+      "text": "Series LCR circuit R = 20 Ω, L = 1.6 H, C = 40 μF. Inductive reactance at resonant frequency is _______ Ω:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 6,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section B"
+      },
+      "question_options": [],
+      "figure_url": []
+    },
+    {
+      "id": 8039,
+      "number": 7,
+      "type": "mcq",
+      "text": "Square loop 2 cm side in B = 0.4 sin(300t) T at 60° to field. Max induced EMF is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 7,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "12 mV",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "18 mV",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "21 mV",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "24 mV",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 9040,
+      "number": 8,
+      "type": "mcq",
+      "text": "30 cm solenoid 10 turns/cm, A = 5 cm². Current 2 A to 4 A in 3.14 s. Induced EMF is α × 10⁻⁵ V. α is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 8,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "60",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "12",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "120",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "34",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 2030,
+      "number": 9,
+      "type": "mcq",
+      "text": "If X and Y are inputs to the logic circuit shown in figure, the circuit acts as:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 9,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "OR gate",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "AND gate",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "NAND gate",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "NOR gate",
+          "figure_url": null
+        }
+      ],
+      "figure_url": [
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/2026-04-02-evening/2026-04-02_evening_Q30.jpeg"
+      ]
+    },
+    {
+      "id": 2038,
+      "number": 10,
+      "type": "mcq",
+      "text": "Two resistors 200 Ω and 400 Ω in series with 100 V battery. Bulb rated 200 V, 100 W connected across 400 Ω. Potential drop across bulb is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 10,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "25 V",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "50 V",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "66.6 V",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "100 V",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 2028,
+      "number": 11,
+      "type": "mcq",
+      "text": "Two blocks of masses 2 kg and 1 kg are tied to ends of a string over a light frictionless pulley. Held at rest at same level and released. Distance traversed by COM in 2 s is (g = 10 m/s²):",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 11,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "3.33 m",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "3.12 m",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "2.22 m",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "1.42 m",
+          "figure_url": null
+        }
+      ],
+      "figure_url": [
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/2026-04-02-evening/2026-04-02_evening_Q28.jpeg"
+      ]
+    },
+    {
+      "id": 2041,
+      "number": 12,
+      "type": "mcq",
+      "text": "Equilateral prism of refractive index 1.6 has one face painted with transparent material of refractive index n₂. Minimum n₂ for total internal reflection is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 12,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "3√3 / 1.6",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "√3",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "3.2 / √3",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "4√3 / 5",
+          "figure_url": null
+        }
+      ],
+      "figure_url": [
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/2026-04-02-evening/2026-04-02_evening_Q41.jpeg"
+      ]
+    },
+    {
+      "id": 2050,
+      "number": 13,
+      "type": "numerical",
+      "text": "Moment of inertia of rod (mass 40 kg, length 3 m) about axis AB equals that of solid sphere (mass 10 kg, radius R) about parallel axis separated by 3 m. R is √(α/2). Value of α is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 13,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section B"
+      },
+      "question_options": [],
+      "figure_url": [
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/2026-04-02-evening/2026-04-02_evening_Q50.jpeg"
+      ]
+    },
+    {
+      "id": 2026,
+      "number": 14,
+      "type": "mcq",
+      "text": "Dimensions of universal gravitational constant G in terms of Planck's constant h, distance L, mass M and time T are:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 14,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "[h T L M⁻²]",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "[h T⁻¹ L M⁻²]",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "[h T L² M⁻²]",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "[h⁻¹ T⁻¹ L M⁻²]",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 2027,
+      "number": 15,
+      "type": "mcq",
+      "text": "A 0.5 kg mass is in contact against the inner wall of a cylindrical drum of radius 4 m rotating about its vertical axis. The minimum rotational speed of drum to remain stuck is 5 rad/s. Coefficient of friction is (g = 10 m/s²):",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 15,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "0.1",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "0.5",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "0.7",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "0.3",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    }
+  ]
+}

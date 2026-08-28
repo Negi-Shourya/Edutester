@@ -21,7 +21,10 @@ const guarantees = [
 
 const faqs = [
   { q: 'Can I switch plans later?', a: 'Yes, you can upgrade at any time.' },
-  { q: 'Is there a free trial?', a: 'No, there isn\'t a free trial, but there are a few papers for free which you could solve.' },
+  {
+    q: 'Is there a free trial?',
+    a: 'Yes! You can practice 2 free trial chapter tests for each subject (Physics, Chemistry, Maths, Biology) plus free trial full papers before subscribing.',
+  },
   { q: 'What payment methods are accepted?', a: 'All debit cards, credit cards, and UPI options are available.' },
   { q: 'Can I get a refund?', a: 'No, you cannot get a refund once you have purchased a subscription.' },
   { q: 'Where can I contact for help?', a: 'You can contact us at edutester4u@gmail.com, and we will get back to you within 48 hours.' },
@@ -295,8 +298,10 @@ export default function Pricing() {
               <tbody>
                 {[
                   'NTA-like Interface',
-                  'Previous Year Question Papers',
-                  'Test Series',
+                  '54+ Chapter-wise Tests (JEE & NEET)',
+                  'Full Past Year Question Papers',
+                  'Instant Scoring & Step-by-Step Solutions',
+                  'Performance Analytics & Weakness Tracker',
                   'Support for Questions & Issues',
                 ].map((feature) => (
                   <tr key={feature} className="border-b border-gray-100">

@@ -1,0 +1,877 @@
+{
+  "key": "jee-phy-6",
+  "title": "Electrostatics (JEE Main)",
+  "full_title": "JEE Main Chapter Test - Electrostatics",
+  "subject": "Physics",
+  "chapter": "Electrostatics",
+  "exam_type": "jee",
+  "is_trial": false,
+  "duration_minutes": 60,
+  "difficulty": "Hard",
+  "question_count": 22,
+  "questions": [
+    {
+      "id": 1032,
+      "number": 1,
+      "type": "mcq",
+      "text": "A parallel plate air capacitor has a capacitance C. When it is half filled with a dielectric constant K = 5, the percentage increase in the capacitance is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 1,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "33.34%",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "66.67%",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "200%",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "400%",
+          "figure_url": null
+        }
+      ],
+      "figure_url": [
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/2026-04-02-morning/2026-04-02_morning_Q32.png"
+      ]
+    },
+    {
+      "id": 2040,
+      "number": 2,
+      "type": "mcq",
+      "text": "Point charges 8 μC at x = 2 cm and -2 μC at x = 4 cm. Ratio of electric flux through concentric spheres r = 3 cm and r = 5 cm is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 2,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "4 : 1",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "3 : 4",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "4 : 3",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "4 : 5",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 1036,
+      "number": 3,
+      "type": "mcq",
+      "text": "Two short electric dipoles A and B having dipole moments p₁ and p₂ are placed perpendicular. Resultant electric field at point x makes 60° with line Ox. Ratio p₂/p₁ is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 3,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "√3 / 2",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "2√3",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "1 / √3",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "√3",
+          "figure_url": null
+        }
+      ],
+      "figure_url": [
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/2026-04-02-morning/2026-04-02_morning_Q36.png"
+      ]
+    },
+    {
+      "id": 2037,
+      "number": 4,
+      "type": "mcq",
+      "text": "An EM wave travels along x-direction. \\vec{B} = 2×10⁻⁷ ĵ T is associated with wave. Corresponding electric field \\vec{E} is (in V/m):",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 4,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "60 k̂",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "-60 k̂",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "30 k̂",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "-600 k̂",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 1026,
+      "number": 5,
+      "type": "mcq",
+      "text": "The dimensional formula of (1/2)ε₀E² (ε₀ = permittivity of vacuum, E = electric field) is Mᵃ Lᵇ Tᶜ. The value of 2a - b + c is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 5,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "0",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "1",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "-1",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "2",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 1034,
+      "number": 6,
+      "type": "mcq",
+      "text": "Two charged conducting spheres S₁ and S₂ of radii 8 cm and 18 cm are connected by a wire. After equilibrium is established, the ratio of electric fields E_{S₁} / E_{S₂} is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 6,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "3 / 2",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "2 / 3",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "4 / 9",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "9 / 4",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 4037,
+      "number": 7,
+      "type": "mcq",
+      "text": "Capacitance between terminals A and B in circuit (C₁=C₂=C₃=1 μF, C₄=2 μF) is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 7,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "2 μF",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "7/2 μF",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "7/3 μF",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "5/2 μF",
+          "figure_url": null
+        }
+      ],
+      "figure_url": [
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/2026-04-04-evening/2026-04-04_evening_Q37.jpeg"
+      ]
+    },
+    {
+      "id": 4040,
+      "number": 8,
+      "type": "mcq",
+      "text": "EM wave magnetic field \\vec{B} = B₀ sin(2πνt - 2πx/λ) ĵ. Associated electric field vector is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 8,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "-v λ B₀ sin(2πνt - 2πx/λ) k̂",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "-v λ B₀ sin(2πνt - 2πx/λ) î",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "v λ B₀ sin(2πνt - 2πx/λ) k̂",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "v λ B₀ sin(2πνt - 2πx/λ) î",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 4038,
+      "number": 9,
+      "type": "mcq",
+      "text": "Assertion A: Conductor does not store net charge inside.\nReason R: Inside capacitor free charge carriers experience force and drift.",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 9,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Both A and R are true and R is correct explanation",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Both A and R are true but R is NOT correct explanation",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "A is true but R is false",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "A is false but R is true",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 3042,
+      "number": 10,
+      "type": "mcq",
+      "text": "Circuit with capacitor 20 μF, resistor 100 Ω, diodes (forward resistance 10 Ω). Time constant is α × 10⁻³ s. Value of α is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 10,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "2.2",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "2.0",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "2.1",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "2.4",
+          "figure_url": null
+        }
+      ],
+      "figure_url": [
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/2026-04-04-morning/2026-04-04_morning_Q42.png"
+      ]
+    },
+    {
+      "id": 3045,
+      "number": 11,
+      "type": "mcq",
+      "text": "Unpolarized light incident at Brewster angle on air-dielectric interface. Reflected wave expression is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 11,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "(E_x î + E_y ĵ) sin(kx - kz - ωt)",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "(E_x î + E_z k̂) sin(kx + ky - ωt)",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "(E_x ĵ + E_y k̂) sin(ky + kz - ωt)",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "(E_x î + E_y ĵ + E_z k̂) sin(kx + ky - kz - ωt)",
+          "figure_url": null
+        }
+      ],
+      "figure_url": [
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/2026-04-04-morning/2026-04-04_morning_Q45.png"
+      ]
+    },
+    {
+      "id": 3040,
+      "number": 12,
+      "type": "mcq",
+      "text": "Parallel plate capacitor connected to battery. Plates pulled apart at uniform speed v. Rate of change of electrostatic energy is proportional to x^α. Value of α is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 12,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "-2",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "1",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "-1",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "2",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 3050,
+      "number": 13,
+      "type": "numerical",
+      "text": "Inductor 10 mH, capacitor 0.1 μF, resistor 100 Ω connected across AC supply 220 V, 70 Hz. Power factor is 0.5. Difference |X_L - X_C| is √3 α Ω. Value of α is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 13,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section B"
+      },
+      "question_options": [],
+      "figure_url": []
+    },
+    {
+      "id": 6037,
+      "number": 14,
+      "type": "mcq",
+      "text": "Under steady state condition, potential difference across 2 μF capacitor in circuit is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 14,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "0.5 V",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "1.5 V",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "0 V",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "2 V",
+          "figure_url": null
+        }
+      ],
+      "figure_url": [
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/2026-04-05-evening/2026-04-05_evening_Q37.jpeg"
+      ]
+    },
+    {
+      "id": 5035,
+      "number": 15,
+      "type": "mcq",
+      "text": "Electron in electric field \\vec{E} = -2E₀ î (E₀ > 0) with initial \\vec{v} = v₀ î. If λ₀ = h / (4 m v₀), de Broglie wavelength at time t is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 15,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "4 λ₀ / [1 - E₀ e t / (2 m v₀)]",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "4 λ₀ / [1 + E₀ e t / (2 m v₀)]",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "4 λ₀ / [1 + 2 E₀ e t / (m v₀)]",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "4 λ₀ / [1 - 2 E₀ e t / (m v₀)]",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 5027,
+      "number": 16,
+      "type": "mcq",
+      "text": "L, C and R represent inductance, capacitance and resistance. The dimensional formula M L² T⁻⁴ A⁻² corresponds to:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 16,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "R / √(LC)",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "R / LC",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "C / √(LR)",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "(1/R) √(L/C)",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 5037,
+      "number": 17,
+      "type": "mcq",
+      "text": "Displacement current of 4.0 A in parallel plates of 6 μF capacitor. Rate of change of potential difference is α × 10⁶ V/s. Value of α is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 17,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "0.58",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "0.67",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "0.82",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "0.75",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 8037,
+      "number": 18,
+      "type": "mcq",
+      "text": "Potential V = 5(x² - y²). Electric field at (2, 3) m is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 18,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "-20î + 30ĵ V/m",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "20î - 30ĵ V/m",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "20î + 45ĵ V/m",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "-4î + 6ĵ V/m",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 7038,
+      "number": 19,
+      "type": "mcq",
+      "text": "Thin half ring radius 35 cm uniformly charged Q. Electric field at centre is 100 V/m. Value of Q is (ε₀ = 8.85×10⁻¹² C²/Nm²):",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 19,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "2.14 nC",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "2.44 nC",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "3.25 nC",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "0.7 nC",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 9049,
+      "number": 20,
+      "type": "numerical",
+      "text": "Stored charge in 100 μF capacitor in steady state circuit (12 V source, resistor bridge) is _______ μC:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 20,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section B"
+      },
+      "question_options": [],
+      "figure_url": [
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/2026-04-08-evening/2026-04-08_evening_Q49.jpeg"
+      ]
+    },
+    {
+      "id": 9046,
+      "number": 21,
+      "type": "numerical",
+      "text": "Parallel plate capacitor plate separation 0.885 mm, C = 1 μF with insulator (ρ = 10¹³ Ωm, R = 17.7 × 10¹⁴ Ω). Relative permittivity is α × 10⁷. α is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 21,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section B"
+      },
+      "question_options": [],
+      "figure_url": []
+    },
+    {
+      "id": 9027,
+      "number": 22,
+      "type": "mcq",
+      "text": "Equation H = x^p ε^q E^r / t^s (H=magnetic field, E=electric field, ε=permittivity, x=distance, t=time). Values of p, q, r, s are:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 22,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "1, 1, 1, 1",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "-1, 1, 2, 1",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "1, -1, -2, 1",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "-1, -2, -2, 1",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    }
+  ]
+}

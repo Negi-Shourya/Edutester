@@ -1,0 +1,1076 @@
+{
+  "key": "neet-phy-6",
+  "title": "Thermodynamics & Heat Transfer (NEET)",
+  "full_title": "NEET (UG) Chapter Test - Thermodynamics & Heat Transfer",
+  "subject": "Physics",
+  "chapter": "Thermal Physics",
+  "exam_type": "neet",
+  "is_trial": false,
+  "duration_minutes": 45,
+  "difficulty": "Medium",
+  "question_count": 25,
+  "questions": [
+    {
+      "id": 23957,
+      "number": 1,
+      "type": "mcq",
+      "text": "A gas is compressed isothermally to half its initial volume. The same gas is compressed separately through an adiabatic process until its volume is again reduced to half. Then :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 1,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Compressing the gas through adiabatic process will require more work to be done.",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Compressing the gas isothermally or adiabatically will require the same amount of work.",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Which of the case (whether compression through isothermal or through adiabatic process) requires more work will depend upon the atomicity of the gas.",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Compressing the gas through isothermal process will require more work to be done.",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 14012,
+      "number": 2,
+      "type": "mcq",
+      "text": "Three identical heat conducting rods are connected in series as shown in the figure. The rods on the sides have thermal conductivity 2K while that in the middle has thermal conductivity K. The left end of the combination is maintained at temperature 3T and the right end at T. The rods are thermally insulated from outside. In steady state, temperature at the left junction is T₁ and that at the right junction is T₂. The ratio T₁/T₂ is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 2,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "3/2",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "4/3",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "5/3",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "5/4",
+          "figure_url": null
+        }
+      ],
+      "figure_url": [
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/neet-2025-images/Question%2019.png"
+      ]
+    },
+    {
+      "id": 17950,
+      "number": 3,
+      "type": "mcq",
+      "text": "Two cylinders A and B of equal capacity are connected to each other via a stop cock. A contains an ideal gas at standard temperature and pressure. B is completely evacuated. The entire system is thermally insulated. The stop cock is suddenly opened. The process is :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 3,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "adiabatic",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "isochoric",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "isobaric",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "isothermal",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 23964,
+      "number": 4,
+      "type": "mcq",
+      "text": "A piece of ice falls from a height h so that it melts completely. Only one-quarter of the heat produced is absorbed by the ice and all energy of ice gets converted into heat during its fall. The value of h is : [Latent heat of ice is 3.4 \\times 10^{5} \\text{ J/kg} and g = 10 \\text{ N/kg}]",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 4,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "544 km",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "136 km",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "68 km",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "34 km",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 23357,
+      "number": 5,
+      "type": "mcq",
+      "text": "A Carnot engine having an efficiency of \\frac{1}{10} as heat engine, is used as a refrigerator. If the work done on the system is 10 J, the amount of energy absorbed from the reservoir at lower temperature is :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 5,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "100 J",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "1 J",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "90 J",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "99 J",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 20280,
+      "number": 6,
+      "type": "mcq",
+      "text": "In which of the following processes, heat is neither absorbed nor released by a system ?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 6,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "isothermal",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "adiabatic",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "isobaric",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "isochoric",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 15175,
+      "number": 7,
+      "type": "mcq",
+      "text": "An ideal gas undergoes four different processes from the same initial state as shown in the figure below. Those processes are adiabatic, isothermal, isobaric and isochoric. The curve which represents the adiabatic process among 1, 2, 3 and 4 is",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 7,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "1",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "2",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "3",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "4",
+          "figure_url": null
+        }
+      ],
+      "figure_url": [
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/neet-2022/q2.png"
+      ]
+    },
+    {
+      "id": 18155,
+      "number": 8,
+      "type": "mcq",
+      "text": "Consider two circuits, (A) and (B), each having two resistors. One of them has a positive temperature coefficient of resistance, +\\alpha, while the other one has a negative temperature coefficient of resistance, -\\alpha, as shown in the figure. The currents through these circuits are denoted by I_{A} and I_{B}. At the initial temperature, the resistance of the two resistors is R_{0}. As the temperature is increased, the correct option that describes the variation of current in these circuits is :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 8,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "I_{A} remains constant while I_{B} increases",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "I_{A} decreases while I_{B} increases",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "I_{A} increases while I_{B} decreases",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "both I_{A} and I_{B} remain constant",
+          "figure_url": null
+        }
+      ],
+      "figure_url": [
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/reneet-2026/q36_fig1.png"
+      ]
+    },
+    {
+      "id": 23972,
+      "number": 9,
+      "type": "mcq",
+      "text": "A refrigerator works between 4^\\circ\\text{C} and 30^\\circ\\text{C}. It is required to remove 600 calories of heat every second in order to keep the temperature of the refrigerated space constant. The power required is : (Take 1 cal = 4.2 Joules)",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 9,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "23.65 W",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "236.5 W",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "2365 W",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "2.365 W",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 23340,
+      "number": 10,
+      "type": "mcq",
+      "text": "Thermodynamic processes are indicated in the following diagram :\n\nMatch the following :\n\n| Column-1 | Column-2 |\n| :--- | :--- |\n| P. Process I | a. Adiabatic |\n| Q. Process II | b. Isobaric |\n| R. Process III | c. Isochoric |\n| S. Process IV | d. Isothermal |",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 10,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "P \\rightarrow d, Q \\rightarrow b, R \\rightarrow a, S \\rightarrow c",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "P \\rightarrow a, Q \\rightarrow c, R \\rightarrow d, S \\rightarrow b",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "P \\rightarrow c, Q \\rightarrow a, R \\rightarrow d, S \\rightarrow b",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "P \\rightarrow c, Q \\rightarrow d, R \\rightarrow b, S \\rightarrow a",
+          "figure_url": null
+        }
+      ],
+      "figure_url": [
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/neet-2017/Q1.png?v=1787866923092"
+      ]
+    },
+    {
+      "id": 14387,
+      "number": 11,
+      "type": "mcq",
+      "text": "The temperature of a gas is –50 °C. To what temperature the gas should be heated so that the rms speed is increased by 3 times?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 11,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "223 K",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "669 °C",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "3295 °C",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "3097 K",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 23933,
+      "number": 12,
+      "type": "mcq",
+      "text": "When a metallic surface is illuminated with radiation of wavelength \\lambda, the stopping potential is V. If the same surface is illuminated with radiation of wavelength 2\\lambda, the stopping potential is \\frac{V}{4}. The threshold wavelength for the metallic surface is :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 12,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "5\\lambda",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "\\frac{5}{2}\\lambda",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "3\\lambda",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "4\\lambda",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 23950,
+      "number": 13,
+      "type": "mcq",
+      "text": "A black body is at a temperature of 5760 K. The energy of radiation emitted by the body at wavelength 250 nm is U_{1}, at wavelength 500 nm is U_{2} and that at 1000 nm is U_{3}. Wien's constant, b = 2.88 \\times 10^{6} \\text{ nm}\\cdot\\text{K}. Which of the following is correct ?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 13,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "U_{3} = 0",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "U_{1} > U_{2}",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "U_{2} > U_{1}",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "U_{1} = 0",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 23373,
+      "number": 14,
+      "type": "mcq",
+      "text": "Two rods A and B of different materials are welded together as shown in figure. Their thermal conductivities are K_{1} and K_{2}. The thermal conductivity of the composite rod will be :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 14,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "2(K_{1} + K_{2})",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "\\frac{K_{1} + K_{2}}{2}",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "\\frac{3(K_{1} + K_{2})}{2}",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "K_{1} + K_{2}",
+          "figure_url": null
+        }
+      ],
+      "figure_url": [
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/neet-2017/Q34.png?v=1787866923092"
+      ]
+    },
+    {
+      "id": 23381,
+      "number": 15,
+      "type": "mcq",
+      "text": "The de-Broglie wavelength of a neutron in thermal equilibrium with heavy water at a temperature T (Kelvin) and mass m, is :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 15,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "\\frac{h}{\\sqrt{3mkT}}",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "\\frac{h}{\\sqrt{2mkT}}",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "\\frac{h}{\\sqrt{mkT}}",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "\\frac{h}{2\\sqrt{mkT}}",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 22080,
+      "number": 16,
+      "type": "mcq",
+      "text": "The volume (V) of a monatomic gas varies with its temperature (T), as shown in the graph. The ratio of work done by the gas, to the heat absorbed by it, when it undergoes a change from state A to state B, is :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 16,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "\\frac{1}{3}",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "\\frac{2}{3}",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "\\frac{2}{5}",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "\\frac{2}{7}",
+          "figure_url": null
+        }
+      ],
+      "figure_url": [
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/neet-2018/Q1.png?v=1787857487838"
+      ]
+    },
+    {
+      "id": 22095,
+      "number": 17,
+      "type": "mcq",
+      "text": "In a p-n junction diode, change in temperature due to heating :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 17,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "does not affect resistance of p-n junction",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "affects only forward resistance",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "affects only reverse resistance",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "affects the overall V - I characteristics of p-n junction",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 22121,
+      "number": 18,
+      "type": "mcq",
+      "text": "A small sphere of radius 'r' falls from rest in a viscous liquid. As a result, heat is produced due to viscous force. The rate of production of heat when the sphere attains its terminal velocity, is proportional to :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 18,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "r^5",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "r^2",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "r^3",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "r^4",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 17945,
+      "number": 19,
+      "type": "mcq",
+      "text": "The average thermal energy for a mono-atomic gas is : (k_{B} is Boltzmann constant and T, absolute temperature)",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 19,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "\\frac{3}{2} k_{B}T",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "\\frac{5}{2} k_{B}T",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "\\frac{7}{2} k_{B}T",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "\\frac{1}{2} k_{B}T",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 17981,
+      "number": 20,
+      "type": "mcq",
+      "text": "The quantities of heat required to raise the temperature of two solid copper spheres of radii r_{1} and r_{2} (r_{1} = 1.5 r_{2}) through 1 K are in the ratio :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 20,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "\\frac{9}{4}",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "\\frac{3}{2}",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "\\frac{5}{3}",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "\\frac{27}{8}",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 17569,
+      "number": 21,
+      "type": "mcq",
+      "text": "A cup of coffee cools from 90°C to 80°C in t minutes, when the room temperature is 20°C. The time taken by a similar cup of coffee to cool from 80°C to 60°C at a room temperature same at 20°C is :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 21,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "\\frac{13}{10} t",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "\\frac{13}{5} t",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "\\frac{10}{13} t",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "\\frac{5}{13} t",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 14215,
+      "number": 22,
+      "type": "mcq",
+      "text": "A metallic bar of Young's modulus, 0.5 \\times 10^{11} N m^{-2} and coefficient of linear thermal expansion 10^{-5} °C^{-1}, length 1 m and area of cross-section 10^{-3} m^{2} is heated from 0°C to 100°C without expansion or bending. The compressive force developed in it is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 22,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "100 \\times 10^{3} N",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "2 \\times 10^{3} N",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "52 \\times 10^{3} N",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "50 \\times 10^{3} N",
+          "figure_url": null
+        }
+      ],
+      "figure_url": null
+    },
+    {
+      "id": 19053,
+      "number": 23,
+      "type": "mcq",
+      "text": "An electric heater supplies heat to a system at a rate of 100 W. If the system performs work at a rate of 75 J/s, then the rate at which internal energy increases will be :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 23,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "75 W",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "100 W",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "125 W",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "25 W",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 18136,
+      "number": 24,
+      "type": "mcq",
+      "text": "In an adiabatic expansion, the temperature of one mole of an ideal monatomic gas (\\gamma = 5/3) decreases from 60K to 50K. The work done by the gas in the process is :\n(Take the universal gas constant as R = 8.3 J mol^{-1} K^{-1})",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 24,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "41.5 J",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "83 J",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "124.5 J",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "166 J",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 18143,
+      "number": 25,
+      "type": "mcq",
+      "text": "The temperature of a metallic sphere of radius R is increased by a small amount \\Delta T . If the linear coefficient of thermal expansion of the metal is \\alpha , the approximate increase in the volume of the sphere is :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 25,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "2\\pi R^{3}\\alpha\\Delta T",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "3\\pi R^{3}\\alpha\\Delta T",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "4\\pi R^{3}\\alpha\\Delta T",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "6\\pi R^{3}\\alpha\\Delta T",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    }
+  ]
+}

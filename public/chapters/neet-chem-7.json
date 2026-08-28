@@ -1,0 +1,1064 @@
+{
+  "key": "neet-chem-7",
+  "title": "Biomolecules & Polymers (NEET)",
+  "full_title": "NEET (UG) Chapter Test - Biomolecules & Polymers",
+  "subject": "Chemistry",
+  "chapter": "Biomolecules",
+  "exam_type": "neet",
+  "is_trial": false,
+  "duration_minutes": 35,
+  "difficulty": "Easy",
+  "question_count": 25,
+  "questions": [
+    {
+      "id": 24012,
+      "number": 1,
+      "type": "mcq",
+      "text": "The correct statement regarding RNA and DNA respectively is :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 1,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "The sugar component in RNA is ribose and the sugar component in DNA is 2'-deoxyribose",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "The sugar component in RNA is arabinose and the sugar component in DNA is ribose",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "The sugar component in RNA is 2'-deoxyribose and the sugar component in DNA is arabinose",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "The sugar component in RNA is arabinose and the sugar component in DNA is 2'-deoxyribose",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 18014,
+      "number": 2,
+      "type": "mcq",
+      "text": "Sucrose on hydrolysis gives",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 2,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "\\alpha -D-Glucose + \\beta -D-Glucose",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "\\alpha -D-Glucose + \\beta -D-Fructose",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "\\alpha -D-Fructose + \\beta -D-Fructose",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "\\beta -D-Glucose + \\alpha -D-Fructose",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 19070,
+      "number": 3,
+      "type": "mcq",
+      "text": "The correct statement with regard to the secondary structure of DNA/RNA is :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 3,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "RNA possesses a double strand helix structure and contains uracil as one of the four bases.",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "DNA possesses a double strand helix structure and contains thymine as one of the four bases.",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "RNA possesses a single strand helix structure and contains thymine as one of the four bases.",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "DNA possesses a single strand helix structure and contains uracil as one of the four bases.",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 15230,
+      "number": 4,
+      "type": "mcq",
+      "text": "The incorrect statement regarding enzymes is",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 4,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Enzymes are biocatalysts.",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Like chemical catalysts enzymes reduce the activation energy of bio processes.",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Enzymes are polysaccharides.",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Enzymes are very specific for a particular reaction and substrate.",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 14062,
+      "number": 5,
+      "type": "mcq",
+      "text": "Match the List-I with List-II.\nList-I (Name of Vitamin)\nList-II (Deficiency disease)\nA. Vitamin B_{12} -> I. Cheilosis\nB. Vitamin D -> II. Convulsions\nC. Vitamin B_{2} -> III. Rickets\nD. Vitamin B_{6} -> IV. Pernicious anaemia\nChoose the correct answer from the options given below.",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 5,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "A-I, B-III, C-II, D-IV",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "A-IV, B-III, C-I, D-II",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "A-II, B-III, C-I, D-IV",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "A-IV, B-III, C-II, D-I",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 18193,
+      "number": 6,
+      "type": "mcq",
+      "text": "A protein undergoes reversible thermal denaturation from its initial state N to denatured state D according to N \\rightleftharpoons D. At 60°C, the concentrations of both N and D are equal at equilibrium, and the standard enthalpy change of denaturation of 666 kJ mol^{-1}. The standard entropy change (\\Delta S° in kJ K^{-1} mol^{-1}) of the protein upon denaturation at 60° C is closest to:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 6,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "2.0",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "2000.0",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "333.0",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "11.1",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 18199,
+      "number": 7,
+      "type": "mcq",
+      "text": "Match the vitamins in List-I with their sources in List-II\n| List-I | List-II |\n|---|---|\n| A. vitamin A | I. meat |\n| B. vitamin B_{12} | II. sunflower oil |\n| C. vitamin E | III. green leafy vegetables |\n| D. vitamin K | IV. carrots |\nChoose the correct answer from the options given below.",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 7,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "A-II, B-III, C-IV, D-I",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "A-IV, B-I, C-II, D-III",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "A-IV, B-II, C-I, D-III",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "A-III, B-I, C-IV, D-II",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 23988,
+      "number": 8,
+      "type": "mcq",
+      "text": "In a protein molecule various amino acids are linked together by :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 8,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "dicarboxylic bond",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "peptide bond",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "peptide bond",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "\\beta\\text{-glycosidic bond}",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 17643,
+      "number": 9,
+      "type": "mcq",
+      "text": "The RBC deficiency is deficiency disease of :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 9,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Vitamin B_{12}",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Vitamin B_{6}",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Vitamin B_{1}",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Vitamin B_{2}",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 18169,
+      "number": 10,
+      "type": "mcq",
+      "text": "The correct statement about peptides and proteins is",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 10,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Tertiary structure of proteins has two or more polypeptide subunits.",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Only the proteins having a quaternary structure are biologically active.",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "In \\beta-pleated sheet structures, peptide chains are held together by intermolecular hydrogen bonds.",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "In \\alpha-helices, the polypeptide chain is twisted into a left-handed screw (helix) through intramolecular hydrogen bonds.",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 23386,
+      "number": 11,
+      "type": "mcq",
+      "text": "Which of the following statements is not correct ?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 11,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Denaturation makes the proteins more active.",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Insulin maintains sugar level in the blood of a human body.",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Ovalbumin is a simple food reserve in egg-white.",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Blood proteins thrombin and fibrinogen are involved in blood clotting.",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 23423,
+      "number": 12,
+      "type": "mcq",
+      "text": "Which one of the following statements is not correct ?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 12,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Coenzymes increase the catalytic activity of enzyme",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Catalyst does not initiate any reaction",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "The value of equilibrium constant is changed in the presence of a catalyst in the reaction at equilibrium",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Enzymes catalyse mainly bio-chemical reaction",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 23417,
+      "number": 13,
+      "type": "mcq",
+      "text": "A gas is allowed to expand in a well insulated container against a constant external pressure of 2.5 atm from an initial volume of 2.50 L to a final volume of 4.50 L. The change in internal energy \\Delta U of the gas in joules will be :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 13,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "+505 J",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "1136.25 J",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "-500 J",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "-505 J",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 17997,
+      "number": 14,
+      "type": "mcq",
+      "text": "The following metal ion activates many enzymes, participates in the oxidation of glucose to produce ATP and with Na, is responsible for the transmission of nerve signals.",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 14,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Copper",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Calcium",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Potassium",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Iron",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 18022,
+      "number": 15,
+      "type": "mcq",
+      "text": "Hydrolysis of sucrose is given by the following reaction. Sucrose + H_{2}O \\rightleftharpoons Glucose + Fructose If the equilibrium constant (K_{C}) is 2 × 10^{13} at 300 K, the value of \\Delta_{r}G^{\\ominus} at the same temperature will be :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 15,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "8.314 J mol^{–1}K^{–1} × 300 K × ln(2 × 10^{13})",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "8.314 J mol^{–1}K^{–1} × 300 K × ln(3 × 10^{13})",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "–8.314 J mol^{–1}K^{–1} × 300 K × ln(4 × 10^{13})",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "–8.314 J mol^{–1}K^{–1} × 300 K × ln(2 × 10^{13})",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 14075,
+      "number": 16,
+      "type": "mcq",
+      "text": "Sugar ‘X’ A. is found in honey. B. is a keto sugar. C. exists in α and β – anomeric forms. D. is laevorotatory. ‘X’ is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 16,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "D-Glucose",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "D-Fructose",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Maltose",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Sucrose",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 23975,
+      "number": 17,
+      "type": "mcq",
+      "text": "The addition of a catalyst during a chemical reaction alters which of the following quantities ?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 17,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Internal energy",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Enthalpy",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Activation energy",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Entropy",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 23996,
+      "number": 18,
+      "type": "mcq",
+      "text": "Natural rubber has :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 18,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "All trans-configuration",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Alternate cis- and trans-configuration",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Random cis- and trans-configuration",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "All cis-configuration",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 24013,
+      "number": 19,
+      "type": "mcq",
+      "text": "Which one given below is a non-reducing sugar ?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 19,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Lactose",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Glucose",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Sucrose",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Maltose",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 22135,
+      "number": 20,
+      "type": "mcq",
+      "text": "The difference between amylose and amylopectin is :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 20,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "\\text{Amylopectin has } 1 \\rightarrow 4\\text{ }\\alpha\\text{-linkage and } 1 \\rightarrow 6\\text{ }\\beta\\text{-linkage}",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "\\text{Amylose has } 1 \\rightarrow 4\\text{ }\\alpha\\text{-linkage and } 1 \\rightarrow 6\\text{ }\\beta\\text{-linkage}",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "\\text{Amylopectin has } 1 \\rightarrow 4\\text{ }\\alpha\\text{-linkage and } 1 \\rightarrow 6\\text{ }\\alpha\\text{-linkage}",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Amylose is made up of glucose and galactose",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 20325,
+      "number": 21,
+      "type": "mcq",
+      "text": "Under isothermal condition, a gas at 300 K expands from 0.1 L to 0.25 L against a constant external pressure of 2 bar. The work done by the gas is :- [Given that 1 L bar = 100 J]",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 21,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "-30 J",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "5 kJ",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "25 J",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "30 J",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 20355,
+      "number": 22,
+      "type": "mcq",
+      "text": "Enzymes that utilize ATP in phosphate transfer require an alkaline earth metal (M) as the cofactor. M is :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 22,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Be",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Mg",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Ca",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Sr",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 20363,
+      "number": 23,
+      "type": "mcq",
+      "text": "The non-essential amino acid among the following is :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 23,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "valine",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "leucine",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "alanine",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "lysine",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 18012,
+      "number": 24,
+      "type": "mcq",
+      "text": "Which of the following is a basic amino acid ?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 24,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Alanine",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Tyrosine",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Lysine",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Serine",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 17625,
+      "number": 25,
+      "type": "mcq",
+      "text": "The maximum temperature that can be achieved in blast furnace is :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 25,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "upto 1200 K",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "upto 2200 K",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "upto 1900 K",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "upto 5000 K",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    }
+  ]
+}

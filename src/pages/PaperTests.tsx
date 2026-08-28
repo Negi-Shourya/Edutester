@@ -524,13 +524,6 @@ export default function PaperTests() {
           </div>
         )}
 
-        {/* Footer note */}
-        <div className="mt-8 text-center">
-          <p className="text-xs text-stone-300">
-            Placeholder links &middot; Actual papers will be added as they become available.
-          </p>
-        </div>
-
         <PaywallModal open={showPaywall} onClose={() => setShowPaywall(false)} />
       </div>
     </div>

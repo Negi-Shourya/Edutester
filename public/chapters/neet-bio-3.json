@@ -1,0 +1,1066 @@
+{
+  "key": "neet-bio-3",
+  "title": "Structural Organisation in Plants & Animals (NEET)",
+  "full_title": "NEET (UG) Chapter Test - Structural Organisation in Plants & Animals",
+  "subject": "Biology",
+  "chapter": "Morphology & Anatomy",
+  "exam_type": "neet",
+  "is_trial": false,
+  "duration_minutes": 35,
+  "difficulty": "Medium",
+  "question_count": 25,
+  "questions": [
+    {
+      "id": 15301,
+      "number": 1,
+      "type": "mcq",
+      "text": "Read the following statements about the vascular bundles : (a) In roots, xylem and phloem in a vascular bundle are arranged in an alternate manner along the different radii. (b) Conjoint closed vascular bundles do not possess cambium (c) In open vascular bundles, cambium is present in between xylem and phloem (d) The vascular bundles of dicotyledonous stem possess endarch protoxylem (e) In monocotyledonous root, usually there are more than six xylem bundles present Choose the correct answer from the options given below :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 1,
+      "sections": {
+        "name": "Botany"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "(a), (b) and (d) Only",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "(b), (c), (d) and (e) Only",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "(a), (b), (c) and (d) Only",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "(a), (c), (d) and (e) Only",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 14292,
+      "number": 2,
+      "type": "mcq",
+      "text": "A pink flowered Snapdragon plant was crossed with a red flowered Snapdragon plant. What type of phenotype/s is/are expected in the progeny?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 2,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Only pink flowered plants",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Red, Pink as well as white flowered plants",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Only red flowered plants",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Red flowered as well as pink flowered plants",
+          "figure_url": null
+        }
+      ],
+      "figure_url": null
+    },
+    {
+      "id": 22204,
+      "number": 3,
+      "type": "mcq",
+      "text": "Secondary xylem and phloem in dicot stem are produced by",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 3,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Phellogen",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Vascular cambium",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Apical meristems",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Axillary meristems",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 18049,
+      "number": 4,
+      "type": "mcq",
+      "text": "The roots that originate from the base of the stem are",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 4,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Primary roots",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Prop roots",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Lateral roots",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Fibrous roots",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 18071,
+      "number": 5,
+      "type": "mcq",
+      "text": "The transverse section of a plant shows following anatomical features : (a) Large number of scattered vascular bundles surrounded by bundle sheath (b) Large conspicuous parenchymatous ground tissue (c) Vascular bundles conjoint and closed (d) Phloem parenchyma absent Identify the category of plant and its part :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 5,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Monocotyledonous root",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Dicotyledonous stem",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Dicotyledonous root",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Monocotyledonous stem",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 18079,
+      "number": 6,
+      "type": "mcq",
+      "text": "If the head of cockroach is removed, it may live for few days because",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 6,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "the cockroach does not have nervous system.",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "the head holds a small proportion of a nervous system while the rest is situated along the ventral part of its body.",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "the head holds a 1/3^{rd} of a nervous system while the rest is situated along the dorsal part of its body.",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "the supra-oesophageal ganglia of the cockroach are situated in ventral part of abdomen.",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 17663,
+      "number": 7,
+      "type": "mcq",
+      "text": "Match List - I with List - II. \n| List-I | List-II |\n|---|---|\n| (a) Cells with active cell division capacity | (i) Vascular tissues |\n| (b) Tissue having all cells similar in structure and function | (ii) Meristematic tissue |\n| (c) Tissue having different types of cells | (iii) Sclereids |\n| (d) Dead cells with highly thickened walls and narrow lumen | (iv) Simple tissue |\nChoose the correct answer from the options given below.",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 7,
+      "sections": {
+        "name": "Botany"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "(ii) (iv) (i) (iii)",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "(iv) (iii) (ii) (i)",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "(i) (ii) (iii) (iv)",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "(iii) (ii) (iv) (i)",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 15370,
+      "number": 8,
+      "type": "mcq",
+      "text": "Match List-I with List-II\nList-I\nList-II\nA. Bronchioles  I. Dense Regular Connective Tissue\nB. Goblet Cell  II. Loose Connective Tissue\nC. Tendons  III. Glandular Tissue\nD. Adipose Tissue  IV. Ciliated Epithelium\nChoose the correct answer from the options given below:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 8,
+      "sections": {
+        "name": "Zoology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "(a) - (iv), (b) - (iii), (c) - (i), (d) - (ii)",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "(a) - (i), (b) - (ii), (c) - (iii), (d) - (iv)",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "(a) - (ii), (b) - (i), (c) - (iv), (d) - (iii)",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "(a) - (iii), (b) - (iv), (c) - (ii), (d) - (i)",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 23514,
+      "number": 9,
+      "type": "mcq",
+      "text": "Which ecosystem has the maximum biomass ?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 9,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Lake ecosystem",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Forest ecosystem",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Grassland ecosystem",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Pond ecosystem",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 20415,
+      "number": 10,
+      "type": "mcq",
+      "text": "In Antirrhinum (Snapdragon), a red flower was crossed with a white flower and in \\text{F}_1\\text{ generation}, pink flowers were obtained. When pink flowers were selfed, the \\text{F}_2\\text{ generation} showed white, red and pink flowers. Choose the incorrect statement from the following :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 10,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "This experiment does not follow the Principle of Dominance",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Pink colour in \\text{F}_1\\text{ is due to incomplete dominance.}",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Ratio of \\text{F}_2\\text{ is }\\frac{1}{4}\\text{ (Red) } : \\frac{2}{4}\\text{ (Pink) } : \\frac{1}{4}\\text{ (White)}",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Law of Segregation does not apply in this experiment.",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 15306,
+      "number": 11,
+      "type": "mcq",
+      "text": "In old trees the greater part of secondary xylem is dark brown and resistant to insect attack due to : (a) secretion of secondary metabolities and their deposition in the lumen of vessels. (b) deposition of organic compounds like tannins and resins in the central layers of stem. (c) deposition of suberin and aromatic substances in the outer layer of stem. (d) deposition of tannins, gum, resin and aromatic substances in the peripheral layers of stem. (e) presence of parenchyma cells, functionally active xylem elements and essential oils. Choose the correct answer from the options given below:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 11,
+      "sections": {
+        "name": "Botany"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "(a) and (b) Only",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "(c) and (d) Only",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "(d) and (e) Only",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "(b) and (d) Only",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 14311,
+      "number": 12,
+      "type": "mcq",
+      "text": "Identify the correct description about the given figure:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 12,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Cleistogamous flowers showing autogamy.",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Compact inflorescence showing complete autogamy.",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Wind pollinated plant inflorescence showing flowers with well exposed stamens.",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Water pollinated flowers showing stamens with mucilaginous covering.",
+          "figure_url": null
+        }
+      ],
+      "figure_url": [
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/neet-2024/Question 138.png"
+      ]
+    },
+    {
+      "id": 24056,
+      "number": 13,
+      "type": "mcq",
+      "text": "Which type of tissue correctly matches with its locations ?\n\n| | Tissue | Location |\n| :--- | :--- | :--- |\n| (1) | Areolar tissue | Tendons |\n| (2) | Transitional epithelium | Tip of nose |\n| (3) | Cuboidal epithelium | Lining of stomach |\n| (4) | Smooth muscle | Wall of intestine |",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 13,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Areolar tissue - Tendons",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Transitional epithelium - Tip of nose",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Cuboidal epithelium - Lining of stomach",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Smooth muscle - Wall of intestine",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 14562,
+      "number": 14,
+      "type": "mcq",
+      "text": "Match List-I with List-II:\nList-I\nList-II\nA. Mast cells  I. Ciliated epithelium\nB. Inner surface of bronchiole  II. Areolar connective tissue\nC. Blood  III. Cuboidal epithelium\nD. Tubular parts of nephron  IV. specialised connective tissue\nChoose the correct answer from the options given below:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 14,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "A-III, B-IV, C-II, D-I",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "A-I, B-II, C-IV, D-III",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "A-II, B-III, C-I, D-IV",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "A-II, B-I, C-IV, D-III",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 19110,
+      "number": 15,
+      "type": "mcq",
+      "text": "In angiosperms, root hairs arise from which one of the following regions of the root?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 15,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "The root cap zone",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "The region of meristematic activity",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "The region of elongation",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "The region of maturation",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 19132,
+      "number": 16,
+      "type": "mcq",
+      "text": "Match List I with List II:\n| List-I | List-II |\n|---|---|\n| A. Conjunctive tissue | I. Specialised cells in the vicinity of guard cells |\n| B. Casparian strips | II. Endodermal cells rich in starch |\n| C. Subsidiary cells | III. Tissue between xylem and phloem |\n| D. Starch sheath | IV. Endodermal cells with suberin deposition |\nChoose the correct answer from the options given below:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 16,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "A-IV, B-III, C-I, D-II",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "A-III, B-IV, C-II, D-I",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "A-III, B-IV, C-I, D-II",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "A-IV, B-III, C-II, D-I",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 19140,
+      "number": 17,
+      "type": "mcq",
+      "text": "In racemose inflorescence,",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 17,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "the main axis terminates in a flower",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "flowers are solitary",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "the growth is limited",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "flowers are borne in an acropetal succession",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 19185,
+      "number": 18,
+      "type": "mcq",
+      "text": "Choose the correct statements regarding frog's anatomy:\nA. Hepatic portal system is the special venous connection between liver and intestine.\nB. There are twelve pairs of cranial nerves arising from the brain.\nC. The ureters and oviducts open separately into the cloaca in female frogs.\nD. Hind-brain consists of cerebellum, medulla oblongata and optic lobes.\nE. Sinus venosus joins the right atrium of heart.\nChoose the correct answer from the options given below:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 18,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "A, B and C only",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "B and D only",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "B and C only",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "A, C and E only",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 24053,
+      "number": 19,
+      "type": "mcq",
+      "text": "Which part of the tobacco plant is infected by Meloidogyne incognita ?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 19,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Leaf",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Stem",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Root",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Flower",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 23431,
+      "number": 20,
+      "type": "mcq",
+      "text": "The vascular cambium normally gives rise to :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 20,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Periderm",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Phelloderm",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Primary phloem",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Secondary xylem",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 23450,
+      "number": 21,
+      "type": "mcq",
+      "text": "Root hairs develop from the region of :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 21,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Meristematic activity",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Maturation",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Elongation",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Root cap",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 23506,
+      "number": 22,
+      "type": "mcq",
+      "text": "Frog’s heart when taken out of the body continues to beat for sometime. Select the best option from the following statements. (a) Frog is a poikilotherm (b) Frog does not have any coronary circulation (c) Heart is “myogenic” in nature (d) Heart is autoexcitable Options :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 22,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "(c) and (d)",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Only (c)",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Only (d)",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "(a) and (b)",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 22208,
+      "number": 23,
+      "type": "mcq",
+      "text": "Sweet potato is a modified",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 23,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Tap root",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Adventitious root",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Stem",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Rhizome",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 20447,
+      "number": 24,
+      "type": "mcq",
+      "text": "Which of the statements given below is not true about formation of Annual Rings in trees?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 24,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Annual ring is a combination of spring wood and autumn wood produced in a year.",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Differential activity of cambium causes light and dark bands of tissue - early and late wood respectively",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Activity of cambium depends upon variation in climate.",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Annual rings are not prominent in trees of temperate region.",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 18086,
+      "number": 25,
+      "type": "mcq",
+      "text": "Goblet cells of alimentary canal are modified from",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 25,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Columnar epithelial cells",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Chondrocytes",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Compound epithelial cells",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Squamous epithelial cells",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    }
+  ]
+}

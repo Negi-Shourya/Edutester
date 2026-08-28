@@ -1,0 +1,1066 @@
+{
+  "key": "neet-bio-7",
+  "title": "Principles of Inheritance & Variation (NEET)",
+  "full_title": "NEET (UG) Chapter Test - Principles of Inheritance & Variation",
+  "subject": "Biology",
+  "chapter": "Genetics I",
+  "exam_type": "neet",
+  "is_trial": false,
+  "duration_minutes": 45,
+  "difficulty": "Hard",
+  "question_count": 25,
+  "questions": [
+    {
+      "id": 20387,
+      "number": 1,
+      "type": "mcq",
+      "text": "A gene locus has two alleles A, a. If the frequency of dominant allele A is 0.4 then what will be the frequency of homozygous dominant, heterozygous and homozygous recessive individuals in the population ?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 1,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "0.36 (AA); 0.48(Aa); 0.16 (aa)",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "0.16 (AA); 0.24 (Aa); 0.36 (aa)",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "0.16 (AA); 0.48 (Aa); 0.36 (aa)",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "0.16 (AA); 0.36 (Aa); 0.48 (aa)",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 14303,
+      "number": 2,
+      "type": "mcq",
+      "text": "Which one of the following can be explained on the basis of Mendel's Law of Dominance? A. Out of one pair of factors one is dominant and the other is recessive. B. Alleles do not show any expression and both the characters appear as such in F2 generation. C. Factors occur in pair in normal diploid plants. D. The discrete unit controlling a particular character is called factor. E. The expression of only one of the parental characters is found in a monohybrid cross. Choose the correct answer from the options given below:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 2,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "B, C and D only",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "A, B, C, D and E",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "A, B and C only",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "A, C, D and E only",
+          "figure_url": null
+        }
+      ],
+      "figure_url": null
+    },
+    {
+      "id": 15312,
+      "number": 3,
+      "type": "mcq",
+      "text": "Match the plant with the kind of life cycle it exhibits:\nList-I\nList-II\nA. Spirogyra  I. Dominant diploid sporophyte vascular plant, with highly reduced male or female gametophyte\nB. Fern  II. Dominant haploid free-living gametophyte\nC. Funaria  III. Dominant diploid sporophyte alternating with reduced gametophyte called prothallus\nD. Cycas  IV. Dominant haploid leafy gametophyte alternating with partially dependent multicellular sporophyte\nChoose the correct answer from the options given below :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 3,
+      "sections": {
+        "name": "Botany"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "(a)-(iv), (b)-(i), (c)-(ii), (d)-(iii)",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "(a)-(ii), (b)-(iii), (c)-(iv), (d)-(i)",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "(a)-(iii), (b)-(iv), (c)-(i), (d)-(ii)",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "(a)-(ii), (b)-(iv), (c)-(i), (d)-(iii)",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 14123,
+      "number": 4,
+      "type": "mcq",
+      "text": "What is the pattern of inheritance for polygenic trait?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 4,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Mendelian inheritance pattern",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Non-mendelian inheritance pattern",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Autosomal dominant pattern",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "X-linked recessive inheritance pattern",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 24051,
+      "number": 5,
+      "type": "mcq",
+      "text": "Which of the following most appropriately describes haemophilia ?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 5,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "X-linked recessive gene disorder",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Chromosomal disorder",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Dominant gene disorder",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Recessive gene disorder",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 24109,
+      "number": 6,
+      "type": "mcq",
+      "text": "Pick out the correct statements :\n\n(a) Haemophilia is a sex-linked recessive disease.\n(b) Down's syndrome is due to aneuploidy.\n(c) Phenylketonuria is an autosomal recessive gene disorder.\n(d) Sickle cell anaemia is an X-linked recessive gene disorder.",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 6,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "(a) and (d) are correct.",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "(b) and (d) are correct.",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "(a), (b) and (c) are correct.",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "(a), (c) and (d) are correct.",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 22181,
+      "number": 7,
+      "type": "mcq",
+      "text": "Select the correct match :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 7,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "T.H. Morgan - Transduction",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "F \\times Recessive parent - Dihybrid cross 2",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Ribozyme - Nucleic acid",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "G. Mendel - Transformation",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 18043,
+      "number": 8,
+      "type": "mcq",
+      "text": "Identify the wrong statement with reference to the gene ‘I’ that controls ABO blood groups.",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 8,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "A person will have only two of the three alleles.",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "When I^{A} and I^{B} are present together, they express same type of sugar.",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Allele ‘i’ does not produce any sugar.",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "The gene (I) has three alleles.",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 18294,
+      "number": 9,
+      "type": "mcq",
+      "text": "Given below are two statements : one is labelled as Assertion A and the other is labelled as Reason R.\nAssertion A: In an experiment, Mendel observed that the F1 progeny plants are all tall and none are dwarf.\nReason R: Stem height is a contrasting trait, with tall being dominant and dwarf being recessive.\nIn the light of the above statements, choose the most appropriate answer from the options given below :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 9,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Both A and R are correct and R is the correct explanation of A",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Both A and R are correct but R is not the correct explanation of A",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "A is correct but R is not correct",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "A is not correct but R is correct",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 24044,
+      "number": 10,
+      "type": "mcq",
+      "text": "In context of Amniocentesis, which of the following  statement is incorrect ?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 10,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "It is used for prenatal sex determination",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "It can be used for detection of Down syndrome",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "It can be used for detection of Cleft palate.",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "It is usually done when a woman is between 14-16 weeks pregnant",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 24029,
+      "number": 11,
+      "type": "mcq",
+      "text": "Match the terms in Column-I with their description in Column-II and choose the correct option : Column-I Column-II (a) Dominance (i) Many genes govern a single character (b) Codominance (ii) In a heterozygous organism only one allele expresses itself (c) Pleiotropy (iii) In a heterozygous organism both alleles express themselves fully (d) Polygenic inheritance (iv) A single gene influences many characters Code : (a) (b) (c) (d)",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 11,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "ii iii iv i",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "iv i ii iii",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "iv iii I ii",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "ii i iv iii <<<PAGE_21>>> 21",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 23515,
+      "number": 12,
+      "type": "mcq",
+      "text": "A disease caused by an autosomal primary non-disjunction is :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 12,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Sickle Cell Anemia",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Down's Syndrome",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Klinefelter's Syndrome",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Turner's Syndrome",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 22183,
+      "number": 13,
+      "type": "mcq",
+      "text": "Which of the following pairs is wrongly matched ?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 13,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "XO type sex : Grasshopper determination",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "ABO blood grouping : Co-dominance",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Starch synthesis in pea : Multiple alleles",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "T.H. Morgan : Linkage",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 20393,
+      "number": 14,
+      "type": "mcq",
+      "text": "What is the genetic disorder in which an individual has an overall masculine development, gynaecomastia, and is sterile ?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 14,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Turner's syndrome",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Klinefelter's syndrome",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Edward syndrome",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Down's syndrome",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 18067,
+      "number": 15,
+      "type": "mcq",
+      "text": "Select the correct match",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 15,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Phenylketonuria – Autosomal dominant trait",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Sickle cell anaemia – Autosomal recessive trait, chromosome-11",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Thalassemia – X linked",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Haemophilia – Y linked",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 15308,
+      "number": 16,
+      "type": "mcq",
+      "text": "Given below are two statements : Statement I : Mendel studied seven pairs of contrasting traits in pea plants and proposed the Laws of Inheritance. Statement II : Seven characters examined by Mendel in his experiment on pea plants were seed shape and colour, flower colour, pod shape and colour, flower position and stem height. In the light of the above statements, choose the correct answer from the options given below :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 16,
+      "sections": {
+        "name": "Botany"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Both Statement I and Statement II are correct",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Both Statement I and Statement II are incorrect",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Statement I is correct but Statement II is incorrect",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Statement I is incorrect but Statement II is correct",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 14496,
+      "number": 17,
+      "type": "mcq",
+      "text": "The phenomenon of pleiotropism refers to",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 17,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "more than two genes affecting a single character.",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "presence of several alleles of a single gene controlling a single crossover.",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "presence of two alleles, each of the two genes controlling a single trait.",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "a single gene affecting multiple phenotypic expression.",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 14546,
+      "number": 18,
+      "type": "mcq",
+      "text": "Broad palm with single palm crease is visible in a person suffering from-",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 18,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Thalassemia",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Down’s syndrome",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Turner’s syndrome",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Klinefelter’s syndrome",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 14293,
+      "number": 19,
+      "type": "mcq",
+      "text": "Match List I with List II:\nList I\nList II\nA. Two or more alternative forms of a gene  I. Back cross\nB. Cross of F1 progeny with homozygous recessive parent  II. Ploidy\nC. Cross of F1 progeny with any of the parents  III. Allele\nD. Number of chromosome sets in plant  IV. Test cross\nChoose the correct answer from the options given below:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 19,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "A-III, B-IV, C-I, D-II",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "A-IV, B-III, C-II, D-I",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "A-I, B-II, C-III, D-IV",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "A-II, B-I, C-III, D-IV",
+          "figure_url": null
+        }
+      ],
+      "figure_url": null
+    },
+    {
+      "id": 14145,
+      "number": 20,
+      "type": "mcq",
+      "text": "With the help of given pedigree, find out the probability for the birth of a child having no disease and being a carrier (has the disease mutation in one allele of the gene) in F_{3} generation.",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 20,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "\\frac{1}{4}",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "\\frac{1}{2}",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "\\frac{1}{8}",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Zero",
+          "figure_url": null
+        }
+      ],
+      "figure_url": [
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/neet-2025-images/Question%20152.png"
+      ]
+    },
+    {
+      "id": 24100,
+      "number": 21,
+      "type": "mcq",
+      "text": "Which of the following is not required for any of the techniques of DNA fingerprinting available at present?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 21,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Zinc finger analysis",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Restriction enzymes",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "DNA – DNA hybridization",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Polymerase chain reaction Students may it in CP exercise sheet : Genetics Page No.53",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 24027,
+      "number": 22,
+      "type": "mcq",
+      "text": "In a testcross involving F1 dihybrid flies, more parental-type offspring were produced than the recombinant-type- offspring. This indicates -",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 22,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Chromosomes failed to separate during meiosis",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "The two genes are linked and present on the same chromosome",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Both of the characters are controlled by more than one gene",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "The two genes are located on two different chromosomes",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 23490,
+      "number": 23,
+      "type": "mcq",
+      "text": "Which one from those given below is the period for Mendel’s hybridization experiments ?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 23,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "1870 – 1877",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "1856 – 1863",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "1840 – 1850",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "1857 – 1869",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 23502,
+      "number": 24,
+      "type": "mcq",
+      "text": "Among the following characters, which one was not considered by Mendel in his experiments on pea ?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 24,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Pod-Inflated or Constricted",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Stem-Tall or Dwarf",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Trichomes-Glandular or non-glandular",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Seed-Green or Yellow",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 22184,
+      "number": 25,
+      "type": "mcq",
+      "text": "Select the correct statement :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 25,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Spliceosomes take part in translation.",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Punnett square was developed by a British scientist.",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Franklin Stahl coined the term ''linkage''.",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Transduction was discovered by S. Altman.",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    }
+  ]
+}

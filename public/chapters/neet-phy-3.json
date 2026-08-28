@@ -1,0 +1,1070 @@
+{
+  "key": "neet-phy-3",
+  "title": "Laws of Motion (NEET)",
+  "full_title": "NEET (UG) Chapter Test - Laws of Motion",
+  "subject": "Physics",
+  "chapter": "Laws of Motion",
+  "exam_type": "neet",
+  "is_trial": false,
+  "duration_minutes": 45,
+  "difficulty": "Medium",
+  "question_count": 25,
+  "questions": [
+    {
+      "id": 22112,
+      "number": 1,
+      "type": "mcq",
+      "text": "Which one of the following statements is incorrect ?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 1,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Frictional force opposes the relative motion.",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Limiting value of static friction is directly proportional to normal reaction.",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Rolling friction is smaller than sliding friction.",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Coefficient of sliding friction has dimensions of length.",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 19041,
+      "number": 2,
+      "type": "mcq",
+      "text": "The magnitude and direction of the acceleration produced in a body of mass 5 kg when two mutually perpendicular forces 8 N and 6 N act on it, are respectively :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 2,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "20 m s^{-2} \\tan^{-1}(4/3) with 8 N force",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "2 m s^{-2} : \\tan^{-1}(3/4) with 6 N force",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "2 m s^{-2} ; \\tan^{-1}(4/3) with 8 N force",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "2 m s^{-2} ; \\tan^{-1}(3/4) with 8 N force",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 18120,
+      "number": 3,
+      "type": "mcq",
+      "text": "A particle of mass M moves along a horizontal x axis from x = 0 to x = L. The coefficient of kinetic friction varies as a function of x as \\mu_{k}(x) = \\mu_{0} - \\alpha x, where \\mu_{0}, \\alpha are constants of appropriate dimensions, so that \\mu_{k}(L) = 0. The total work done by the frictional force during the motion is n\\mu_{0}MgL, where g is the acceleration due to gravity. The value of n is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 3,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "3",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "1",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "\\frac{1}{3}",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "\\frac{1}{2}",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 23384,
+      "number": 4,
+      "type": "mcq",
+      "text": "A spring of force constant k is cut into lengths of ratio 1 : 2 : 3. They are connected in series and the new force constant is k'. Then they are connected in parallel and force constant is k''. Then k' : k'' is :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 4,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "1 : 14",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "1 : 6",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "1 : 9",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "1 : 11",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 20305,
+      "number": 5,
+      "type": "mcq",
+      "text": "A force F = 20 + 10y acts on a particle in y-direction where F is in newton and y in meter. Work done by this force to move the particle from y = 0 to y = 1 m is :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 5,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "30 J",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "5 J",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "25 J",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "20 J",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 14182,
+      "number": 6,
+      "type": "mcq",
+      "text": "A horizontal force 10 N is applied to a block A as shown in figure. The mass of blocks A and B are 2 kg and 3 kg, respectively. The blocks slide over a frictionless surface. The force exerted by block A on block B is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 6,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "6 N",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "10 N",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "zero",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "4 N",
+          "figure_url": null
+        }
+      ],
+      "figure_url": [
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/neet-2024/Question 9.png"
+      ]
+    },
+    {
+      "id": 14021,
+      "number": 7,
+      "type": "mcq",
+      "text": "Two identical charged conducting spheres A and B have their centres separated by a certain distance. Charge on each sphere is q and the force of repulsion between them is F. A third identical uncharged conducting sphere is brought in contact with sphere A first and then with B and finally removed from both. New force of repulsion between spheres A and B (Radii of A and B are negligible compared to the distance of separation so that for calculating force between them they can be considered as point charges) is best given as:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 7,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "3F/5",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "2F/3",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "F/2",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "3F/8",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 23946,
+      "number": 8,
+      "type": "mcq",
+      "text": "A body of mass 1 kg begins to move under the action of a time dependent force \\vec{F} = (2t\\hat{i} + 3t^{2}\\hat{j}) \\text{ N}, where \\hat{i} and \\hat{j} are unit vectors along x and y axis. What power will be developed by the force at the time t ?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 8,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "(2t^{2} + 4t^{4}) \\text{ W}",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "(2t^{3} + 3t^{4}) \\text{ W}",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "(2t^{3} + 3t^{5}) \\text{ W}",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "(2t + 3t^{3}) \\text{ W}",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 23968,
+      "number": 9,
+      "type": "mcq",
+      "text": "A uniform rope of length L and mass m_{1} hangs vertically from a rigid support. A block of mass m_{2} is attached to the free end of the rope. A transverse pulse of wavelength \\lambda_{1} is produced at the lower end of the rope. The wavelength of the pulse when it reaches the top of the rope is \\lambda_{2}. The ratio \\lambda_{2}/\\lambda_{1} is :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 9,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "\\sqrt{\\frac{m_{1} + m_{2}}{m_{2}}}",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "\\sqrt{\\frac{m_{2}}{m_{1}}}",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "\\sqrt{\\frac{m_{1} + m_{2}}{m_{1}}}",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "\\sqrt{\\frac{m_{1}}{m_{2}}}",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 23341,
+      "number": 10,
+      "type": "mcq",
+      "text": "Consider a drop of rain water having mass 1g falling from a height of 1 km. It hits the ground with a speed of 50 m/s. Take 'g' constant with a value 10 m/s2. The work done by the (i) gravitational force and the (ii) resistive force of air is",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 10,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "(i) 10 J (ii) – 8.75 J",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "(i) –10 J (ii) –8.25 J",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "(i) 1.25 J (ii) –8.25 J",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "(i) 100 J (ii) 8.75 J",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 23359,
+      "number": 11,
+      "type": "mcq",
+      "text": "Suppose the charge of a proton and an electron differ slightly. One of them is -e, the other is (e + \\Delta e). If the net of electrostatic force and gravitational force between two hydrogen atoms placed at a distance d (much greater than atomic size) apart is zero, then \\Delta e is of the order of (Given mass of hydrogen m_{h} = 1.67 \\times 10^{-27} \\text{ kg}) :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 11,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "10^{-37} \\text{ C}",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "10^{-39} \\text{ C}",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "10^{-40} \\text{ C}",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "10^{-20} \\text{ C}",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 23363,
+      "number": 12,
+      "type": "mcq",
+      "text": "One end of string of length l is connected to a particle of mass 'm' and the other end is connected to a small peg on a smooth horizontal table. If the particle moves in circle with speed 'v' the net force on the particle (directed towards center) will be (T represents the tension in the string) :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 12,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Zero",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "T",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "T + \\frac{mv^{2}}{l}",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "T - \\frac{mv^{2}}{l}",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 22113,
+      "number": 13,
+      "type": "mcq",
+      "text": "A toy car with charge q moves on a frictionless horizontal plane surface under the influence of a uniform electric field \\vec{E}. Due to the force q\\vec{E}, its velocity increases from 0 to 6 m/s in one second duration. At that instant the direction of the field is reversed. The car continues to move for two more seconds under the influence of this field. The average velocity and the average speed of the toy car between 0 to 3 seconds are respectively :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 13,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "1 m/s, 3.5 m/s",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "1 m/s, 3 m/s",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "2 m/s, 4 m/s",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "1.5 m/s, 3 m/s",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 22123,
+      "number": 14,
+      "type": "mcq",
+      "text": "Two wires are made of the same material and have the same volume. The first wire has cross-sectional area A and the second wire has cross-sectional area 3A. If the length of the first wire is increased by \\Delta l on applying a force F, how much force is needed to stretch the second wire by the same amount ?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 14,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "4 F",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "6 F",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "9 F",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "F",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 20320,
+      "number": 15,
+      "type": "mcq",
+      "text": "Two point charges A and B, having charges +Q and -Q respectively, are placed at certain distance apart and force acting between them is F. If 25% charge of A is transferred to B, then force between the charges becomes :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 15,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "F",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "\\frac{9F}{16}",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "\\frac{16F}{9}",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "\\frac{4F}{3}",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 20322,
+      "number": 16,
+      "type": "mcq",
+      "text": "A particle moving with velocity \\vec{V} is acted by three forces shown by the vector triangle PQR. The velocity of the particle will :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 16,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "increase",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "decrease",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "remain constant",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "change according to the smallest force QR",
+          "figure_url": null
+        }
+      ],
+      "figure_url": [
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/neet-2019/Q43.png?v=1787848063045"
+      ]
+    },
+    {
+      "id": 17942,
+      "number": 17,
+      "type": "mcq",
+      "text": "Two bodies of mass 4 kg and 6 kg are tied to the ends of a massless string. The string passes over a pulley which is frictionless (see figure). The acceleration of the system in terms of acceleration due to gravity (g) is :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 17,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "g/2",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "g/5",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "g/10",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "g",
+          "figure_url": null
+        }
+      ],
+      "figure_url": [
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/neet-2020/q3_fig1.png"
+      ]
+    },
+    {
+      "id": 17571,
+      "number": 18,
+      "type": "mcq",
+      "text": "The velocity of a small ball of mass M and density d, when dropped in a container filled with glycerine becomes constant after some time. If the density of glycerine is \\frac{d}{2}, then the viscous force acting on the ball will be :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 18,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "\\frac{Mg}{2}",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Mg",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "\\frac{3}{2} Mg",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "2 Mg",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 17582,
+      "number": 19,
+      "type": "mcq",
+      "text": "Water falls from a height of 60 m at the rate of 15 kg/s to operate a turbine. The losses due to frictional force are 10% of the input energy. How much power is generated by the turbine ? (g=10 m/s^{2})",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 19,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "10.2 kW",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "8.1 kW",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "12.3 kW",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "7.0 kW",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 15188,
+      "number": 20,
+      "type": "mcq",
+      "text": "An electric lift with a maximum load of 2000 kg (lift + passengers) is moving up with a constant speed of 1.5 ms^{–1}. The frictional force opposing the motion is 3000 N. The minimum power delivered by the motor to the lift in watts is : (g = 10 m s^{–2})",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 20,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "23000",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "20000",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "34500",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "23500",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 14222,
+      "number": 21,
+      "type": "mcq",
+      "text": "The minimum energy required to launch a satellite of mass m from the surface of earth of mass M and radius R in a circular orbit at an altitude of 2R from the surface of the earth is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 21,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "\\frac{GmM}{2R}",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "\\frac{GmM}{3R}",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "\\frac{5GmM}{6R}",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "\\frac{2GmM}{3R}",
+          "figure_url": null
+        }
+      ],
+      "figure_url": null
+    },
+    {
+      "id": 14193,
+      "number": 22,
+      "type": "mcq",
+      "text": "If c is the velocity of light in free space, the correct statements about photon among the following are : A. The energy of a photon is E = hv. B. The velocity of a photon is c. hv C. The momentum of a photon, p = . c D. In a photon-electron collision, both total energy and total momentum are conserved. E. Photon possesses positive charge. Choose the correct answer from the options given below:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 22,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "A, C and D only",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "A, B, D and E only",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "A and B only",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "A, B, C and D only",
+          "figure_url": null
+        }
+      ],
+      "figure_url": null
+    },
+    {
+      "id": 14201,
+      "number": 23,
+      "type": "mcq",
+      "text": "A thin flat circular disc of radius 4.5 cm is placed gently over the surface of water. If surface tension of water is 0.07 Nm^{–1}, then the excess force required to take it away from the surface is;",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 23,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "1.98 mN",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "99 N",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "19.8 mN",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "198 N",
+          "figure_url": null
+        }
+      ],
+      "figure_url": null
+    },
+    {
+      "id": 14207,
+      "number": 24,
+      "type": "mcq",
+      "text": "A bob is whirled in a horizontal plane by means of a string with an initial speed of ω rpm. The tension in the string is T. If speed becomes 2 ω white keeping the same radius, the tension in the string becomes; T",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 24,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "4",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "2T",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "T",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "4T",
+          "figure_url": null
+        }
+      ],
+      "figure_url": null
+    },
+    {
+      "id": 14015,
+      "number": 25,
+      "type": "mcq",
+      "text": "A uniform rod of mass 20 kg and length 5 m leans against a smooth vertical wall making an angle of 60° with it. The other end rests on a rough horizontal floor. The friction force that the floor exerts on the rod is: (take g = 10 m/s^{2})",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 25,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "100 N",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "100 3 N",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "200 N",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "200 3 N",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    }
+  ]
+}

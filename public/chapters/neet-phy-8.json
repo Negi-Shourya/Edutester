@@ -1,0 +1,1078 @@
+{
+  "key": "neet-phy-8",
+  "title": "Current Electricity (NEET)",
+  "full_title": "NEET (UG) Chapter Test - Current Electricity",
+  "subject": "Physics",
+  "chapter": "Current Electricity",
+  "exam_type": "neet",
+  "is_trial": false,
+  "duration_minutes": 45,
+  "difficulty": "Medium",
+  "question_count": 25,
+  "questions": [
+    {
+      "id": 17589,
+      "number": 1,
+      "type": "mcq",
+      "text": "The electron concentration in an n-type semiconductor is the same as hole concentration in a p-type semiconductor. An external field (electric) is applied across each of them. Compare the currents in them.",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 1,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "current in n-type=current in p-type.",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "current in p-type > current in n-type.",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "current in n-type > current in p-type.",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "No current will flow in p-type, current will only flow in n-type.",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 22085,
+      "number": 2,
+      "type": "mcq",
+      "text": "A set of 'n' equal resistors, of value 'R' each, are connected in series to a battery of emf 'E' and internal resistance 'R'. The current drawn is I. Now, the 'n' resistors are connected in parallel to the same battery. Then the current drawn from battery becomes 10 I. The value of 'n' is :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 2,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "20",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "11",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "10",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "9",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 18155,
+      "number": 3,
+      "type": "mcq",
+      "text": "Consider two circuits, (A) and (B), each having two resistors. One of them has a positive temperature coefficient of resistance, +\\alpha, while the other one has a negative temperature coefficient of resistance, -\\alpha, as shown in the figure. The currents through these circuits are denoted by I_{A} and I_{B}. At the initial temperature, the resistance of the two resistors is R_{0}. As the temperature is increased, the correct option that describes the variation of current in these circuits is :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 3,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "I_{A} remains constant while I_{B} increases",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "I_{A} decreases while I_{B} increases",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "I_{A} increases while I_{B} decreases",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "both I_{A} and I_{B} remain constant",
+          "figure_url": null
+        }
+      ],
+      "figure_url": [
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/reneet-2026/q36_fig1.png"
+      ]
+    },
+    {
+      "id": 14416,
+      "number": 4,
+      "type": "mcq",
+      "text": "10 resistors, each of resistance R are connected in series to a battery of emf E and negligible internal resistance. Then those are connected in parallel to the same battery, the current is increased n times. The value of n is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 4,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "1000",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "10",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "100",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "1",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 14210,
+      "number": 5,
+      "type": "mcq",
+      "text": "A parallel plate capacitor is charged by connecting it to a battery through a resistor. If I is the current in the circuit, then in the gap between the plates;",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 5,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "displacement current of magnitude equal to I flows m a direction opposite to that of I.",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "displacement current of magnitude greater than I flows but can be in any direction.",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "there is no current.",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "displacement current of magnitude equal to I flows in the same direction as I.",
+          "figure_url": null
+        }
+      ],
+      "figure_url": null
+    },
+    {
+      "id": 23368,
+      "number": 6,
+      "type": "mcq",
+      "text": "A potentiometer is an accurate and versatile device to make electrical measurements of E.M.F. because the method involves :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 6,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "a combination of cells, galvanometer and resistances",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "cells",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "potential gradients",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "a condition of no current flow through the galvanometer",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 19025,
+      "number": 7,
+      "type": "mcq",
+      "text": "A resistor is connected to a battery of 12 V emf and internal resistance 2 \\Omega. If the current in the circuit is 0.6 A, the terminal voltage of the battery is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 7,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "10 V",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "1.2 V",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "12 V",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "10.8 V",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 23372,
+      "number": 8,
+      "type": "mcq",
+      "text": "Figure shows a circuit that contains three identical resistors with resistance R = 9.0\\ \\Omega each, two identical inductors with inductance L = 2.0\\text{ mH} each, and an ideal battery with emf \\varepsilon = 18\\text{ V}. The current 'I' through the battery just after the switch closed is :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 8,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "0 ampere",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "2 mA",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "0.2 A",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "2 A",
+          "figure_url": null
+        }
+      ],
+      "figure_url": [
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/neet-2017/Q33.png?v=1787866923092"
+      ]
+    },
+    {
+      "id": 22108,
+      "number": 9,
+      "type": "mcq",
+      "text": "Current sensitivity of a moving coil galvanometer is 5 div/mA and its voltage sensitivity (angular deflection per unit voltage applied) is 20 div/V. The resistance of the galvanometer is :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 9,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "250\\text{ }\\Omega",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "25\\text{ }\\Omega",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "40\\text{ }\\Omega",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "500\\text{ }\\Omega",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 17969,
+      "number": 10,
+      "type": "mcq",
+      "text": "A resistance wire connected in the left gap of a metre bridge balances a 10 \\Omega resistance in the right gap at a point which divides the bridge wire in the ratio 3 : 2. If the length of the resistance wire is 1.5 m, then the length of 1 \\Omega of the resistance wire is :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 10,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "1.0 × 10^{–1} m",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "1.5 × 10^{–1} m",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "1.5 × 10^{–2} m",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "1.0 × 10^{–2} m",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 17608,
+      "number": 11,
+      "type": "mcq",
+      "text": "Three resistors having resistances r_{1}, r_{2} and r_{3} are connected as shown in the given circuit. The ratio \\frac{i_{3}}{i_{1}} of currents in terms of resistances used in the circuit is :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 11,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "\\frac{r_{1}}{r_{2}+r_{3}}",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "\\frac{r_{2}}{r_{2}+r_{3}}",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "\\frac{r_{1}}{r_{1}+r_{2}}",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "\\frac{r_{2}}{r_{1}+r_{3}}",
+          "figure_url": null
+        }
+      ],
+      "figure_url": [
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/neet-2021/q49.png"
+      ]
+    },
+    {
+      "id": 15221,
+      "number": 12,
+      "type": "mcq",
+      "text": "A wheatstone bridge is used to determine the value of unknown resistance X by adjusting the variable resistance Y as shown in the figure. For the most precise measurement of X, the resistances P and Q",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 12,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Should be approximately equal to 2X",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Should be approximately equal and are small",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Should be very large and unequal",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Do not play any significant role",
+          "figure_url": null
+        }
+      ],
+      "figure_url": [
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/neet-2022/q48.png"
+      ]
+    },
+    {
+      "id": 14191,
+      "number": 13,
+      "type": "mcq",
+      "text": "The terminal voltage of the battery, whose emf is 10 V and internal resistance 1 Ω, when connected through an external resistance of 4 Ω as shown in the figure is :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 13,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "8 V",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "10 V",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "4 V",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "6 V",
+          "figure_url": null
+        }
+      ],
+      "figure_url": [
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/neet-2024/Question 18.png"
+      ]
+    },
+    {
+      "id": 19055,
+      "number": 14,
+      "type": "mcq",
+      "text": "A galvanometer of resistance 100 \\Omega gives full scale deflection for a current of 1 mA. It is converted into an ammeter of range 0 - 10 A. The shunt required is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 14,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "0.01 \\Omega",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "0.10 \\Omega",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "1.0 \\Omega",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "0.001 \\Omega",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 23956,
+      "number": 15,
+      "type": "mcq",
+      "text": "A npn transistor is connected to common emitter configuration in a given amplifier. A load resistance of 800 \\Omega is connected in the collector circuit and the voltage drop across it is 0.8 V. If the current amplification factor is 0.96 and the input resistance of the circuit is 192 \\Omega, the voltage gain and the power gain of the amplifier will respectively be :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 15,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "3.69, 3.84",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "4, 4",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "4, 3.69",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "4, 3.84",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 23967,
+      "number": 16,
+      "type": "mcq",
+      "text": "A small signal voltage V(t) = V_{0} \\sin\\omega t is applied across an ideal capacitor C :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 16,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Over a full cycle the capacitor C does not consume any energy from the voltage source",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Current I(t) is in phase with voltage V(t)",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Current I(t) leads voltage V(t) by 180^\\circ",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Current I(t) lags voltage V(t) by 90^\\circ",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 23347,
+      "number": 17,
+      "type": "mcq",
+      "text": "In a common emitter transistor amplifier the audio signal voltage across the collector is 3 V. The resistance of collector is 3 \\text{ k}\\Omega. If current gain is 100 and the base resistance is 2 \\text{ k}\\Omega, the voltage and power gain of the amplifier is :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 17,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "20 and 2000",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "200 and 1000",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "15 and 200",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "150 and 15000",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 23361,
+      "number": 18,
+      "type": "mcq",
+      "text": "The resistance of a wire is 'R' ohm. If it is melted and stretched to 'n' times its original length, its new resistance will be :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 18,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "\\frac{R}{n}",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "nR",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "\\frac{R}{n^{2}}",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "n^{2} R",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 22086,
+      "number": 19,
+      "type": "mcq",
+      "text": "A battery consists of a variable number 'n' of identical cells (having internal resistance 'r' each) which are connected in series. The terminals of the battery are short-circuited and the current I is measured. Which of the graphs shows the correct relationship between I and n ?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 19,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "",
+          "figure_url": "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/neet-2018/Q7_opt_1.png?v=1787857487838"
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "",
+          "figure_url": "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/neet-2018/Q7_opt_2.png?v=1787857487838"
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "",
+          "figure_url": "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/neet-2018/Q7_opt_3.png?v=1787857487838"
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "",
+          "figure_url": "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/neet-2018/Q7_opt_4.png?v=1787857487838"
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 22095,
+      "number": 20,
+      "type": "mcq",
+      "text": "In a p-n junction diode, change in temperature due to heating :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 20,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "does not affect resistance of p-n junction",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "affects only forward resistance",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "affects only reverse resistance",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "affects the overall V - I characteristics of p-n junction",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 20303,
+      "number": 21,
+      "type": "mcq",
+      "text": "Six similar bulbs are connected as shown in the figure with a DC source of emf E, and zero internal resistance.\nThe ratio of power consumption by the bulbs when (i) all are glowing and (ii) in the situation when two from section A and one from section B are glowing, will be :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 21,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "4 : 9",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "9 : 4",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "1 : 2",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "2 : 1",
+          "figure_url": null
+        }
+      ],
+      "figure_url": [
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/neet-2019/Q24.png?v=1787848063045"
+      ]
+    },
+    {
+      "id": 17579,
+      "number": 22,
+      "type": "mcq",
+      "text": "An inductor of inductance L, a capacitor of capacitance C and a resistor of resistance ‘R’ are connected in series to an ac source of potential difference ‘V’ volts as shown in figure. Potential difference across L, C and R is 40 V, 10 V and 40 V, respectively. The amplitude of current flowing through LCR series circuit is 10\\sqrt{2} A. The impedance of the circuit is :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 22,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "4\\sqrt{2} Ω",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "\\frac{5}{\\sqrt{2}} Ω",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "4 Ω",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "5 Ω",
+          "figure_url": null
+        }
+      ],
+      "figure_url": [
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/neet-2021/q20.png"
+      ]
+    },
+    {
+      "id": 17573,
+      "number": 23,
+      "type": "mcq",
+      "text": "Column - I gives certain physical terms associated with flow of current through a metallic conductor. Column - II gives some mathematical relations involving electrical quantities. Match Column - I and Column - II with appropriate relations. \n| Column-I | Column-II |\n|---|---|\n| (A) Drift Velocity | (P) \\frac{m}{ne^{2}\\rho} |\n| (B) Electrical Resistivity | (Q) nev_{d} |\n| (C) Relaxation Period | (R) \\frac{eE\\tau}{m} |\n| (D) Current Density | (S) \\frac{E}{J} |",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 23,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "(A)-(R), (B)-(S), (C)-(P), (D)-(Q)",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "(A)-(R), (B)-(S), (C)-(Q), (D)-(P)",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "(A)-(R), (B)-(P), (C)-(S), (D)-(Q)",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "(A)-(R), (B)-(Q), (C)-(S), (D)-(P)",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 14009,
+      "number": 24,
+      "type": "mcq",
+      "text": "To an ac power supply of 220 V at 50 Hz, a resistor of 20 Ω, a capacitor of reactance 25 Ω and an inductor of reactance 45 Ω are connected in series. The corresponding current in the circuit and the phase angle between the current and the voltage is, respectively:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 24,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "7.8 A and 30°",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "7.8 A and 45°",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "15.6 A and 30°",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "15.6 A and 45°",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 14026,
+      "number": 25,
+      "type": "mcq",
+      "text": "A wire of resistance R is cut into 8 equal pieces. From these pieces two equivalent resistances are made by adding four of these together in parallel. Then these two sets are added in series. The net effective resistance of the combination is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 25,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "R/64",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "R/32",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "R/16",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "R/8",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    }
+  ]
+}

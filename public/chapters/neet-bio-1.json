@@ -1,0 +1,1064 @@
+{
+  "key": "neet-bio-1",
+  "title": "Cell: The Unit of Life & Cell Cycle (NEET)",
+  "full_title": "NEET (UG) Chapter Test - Cell: The Unit of Life & Cell Cycle",
+  "subject": "Biology",
+  "chapter": "Cell Biology",
+  "exam_type": "neet",
+  "is_trial": true,
+  "duration_minutes": 40,
+  "difficulty": "Easy",
+  "question_count": 25,
+  "questions": [
+    {
+      "id": 17716,
+      "number": 1,
+      "type": "mcq",
+      "text": "The organelles that are included in the endomembrane system are :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 1,
+      "sections": {
+        "name": "Zoology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Endoplasmic reticulum, Mitochondria, Ribosomes and Lysosomes",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Endoplasmic reticulum, Golgi complex, Lysosomes and Vacuoles",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Golgi complex, Mitochondria, Ribosomes and Lysosomes",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Golgi complex, Endoplasmic reticulum, Mitochondria and Lysosomes",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 18227,
+      "number": 2,
+      "type": "mcq",
+      "text": "Endomembrane system includes ______.",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 2,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "endoplasmic reticulum, Golgi complex, lysosomes and vacuole",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "endoplasmic reticulum, chloroplast, peroxisomes and vacuole",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "mitochondria, chloroplast, peroxisomes and vacuole",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Golgi complex, chloroplast, peroxisomes and vacuole",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 23440,
+      "number": 3,
+      "type": "mcq",
+      "text": "Which of the following options gives the correct sequences of events during mitosis ?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 3,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "condensation \\rightarrow arrangement at equator \\rightarrow centromere division \\rightarrow segregation \\rightarrow telophase",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "condensation \\rightarrow nuclear membrane disassembly \\rightarrow crossing over \\rightarrow segregation \\rightarrow telophase",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "condensation \\rightarrow nuclear membrane disassembly \\rightarrow arrangement at equator \\rightarrow centromere division \\rightarrow segregation \\rightarrow telophase",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "condensation \\rightarrow crossing over \\rightarrow nuclear membrane disassembly \\rightarrow segregation \\rightarrow telophase",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 14147,
+      "number": 4,
+      "type": "mcq",
+      "text": "How many meiotic and mitotic divisions need to occur for the development of a mature female gametophyte from the megaspore mother cell in an angiosperm plant?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 4,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "2 Meiosis and 3 Mitosis",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "1 Meiosis and 2 Mitosis",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "1 Meiosis and 3 Mitosis",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "No Meiosis and 2 Mitosis",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 19194,
+      "number": 5,
+      "type": "mcq",
+      "text": "Choose the correct statements regarding cell organelles and their inclusions.\nA. The endomembrane system includes Golgi complex, endoplasmic reticulum and mitochondria.\nB. Rough endoplasmic reticulum bears ribosomes on its surface.\nC. Both mitochondria and plastids have circular DNA.\nD. A network of microtubules, microfilaments and intermediate filaments present in the cytoplasm is called cytoskeleton.\nE. Mitochondrion is a single membrane-bound structure.\nChoose the correct answer from the options given below:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 5,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "A and B only",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "A, B and C only",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "C, D and E only",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "B, C and D only",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 15337,
+      "number": 6,
+      "type": "mcq",
+      "text": "Regarding Meiosis, which of the statements is incorrect?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 6,
+      "sections": {
+        "name": "Zoology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "There are two stages in Meiosis, Meiosis-I and II",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "DNA replication occurs in S phase of Meiosis-II",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Pairing of homologous chromosomes and recombination occurs in Meiosis-I",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Four haploid cells are formed at the end of Meiosis-II",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 15357,
+      "number": 7,
+      "type": "mcq",
+      "text": "Select the incorrect statement with reference to mitosis:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 7,
+      "sections": {
+        "name": "Zoology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "All the chromosomes lie at the equator at metaphase",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Spindle fibres attach to centromere of chromosomes",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Chromosomes decondense at telophase",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Splitting of centromere occurs at anaphase",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 23462,
+      "number": 8,
+      "type": "mcq",
+      "text": "Anaphase Promoting Complex (APC) is protein degradation machinery necessary for proper mitosis of animal cells. If APC is defective in a human cell, which of the following is expected to occur ?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 8,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Recombination of chromosome arms will occur",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Chromosomes will not condense",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Chromosomes will be fragmented",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Chromosomes will not segregate",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 20456,
+      "number": 9,
+      "type": "mcq",
+      "text": "Which of the following statements regarding mitochondria is incorrect?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 9,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Outer membrane is permeable to monomers of carbohydrates fats and proteins.",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Enzymes of electron transport are embedded in outer membrane.",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Inner membrane is convoluted with infoldings.",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Mitochondrial matrix contains single circular DNA molecule and ribosomes.",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 14373,
+      "number": 10,
+      "type": "mcq",
+      "text": "Given below are two statements: Statement I: Mitochondria and chloroplasts are both double membrane bound organelles. Statement II: Inner membrane of mitochondria is relatively less permeable, as compared to chloroplast. In the light of the above statements, choose the most approriate answer from the options given below:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 10,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Statement I is correct but statement II is incorrect.",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Statement I is incorrect but statement II is correct.",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Both statement I and Statement II are correct.",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Both statement I and Statement II are incorrect.",
+          "figure_url": null
+        }
+      ],
+      "figure_url": null
+    },
+    {
+      "id": 17674,
+      "number": 11,
+      "type": "mcq",
+      "text": "Which of the following stages of meiosis involves division of centromere ?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 11,
+      "sections": {
+        "name": "Botany"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Metaphase I",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Metaphase II",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Anaphase II",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Telophase II",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 14482,
+      "number": 12,
+      "type": "mcq",
+      "text": "Which of the following stages of meiosis involves division of centromere?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 12,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Telophase",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Metaphase I",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Metaphase II",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Anaphase II",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 14527,
+      "number": 13,
+      "type": "mcq",
+      "text": "Which of the following are NOT considered as the part of endomembrane system? A. Mitochondria B. Endoplasmic Reticulum C. Chloroplasts E. Peroxisomes D. Golgi complex Choose the most appropriate answer from the options given below:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 13,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "A, D and E only",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "B and D only",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "A, C and E only",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "A and D only",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 14288,
+      "number": 14,
+      "type": "mcq",
+      "text": "Spindle fibers attach to kinetochores of chromosomes during",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 14,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Anaphase",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Telophase",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Prophase",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Metaphase",
+          "figure_url": null
+        }
+      ],
+      "figure_url": null
+    },
+    {
+      "id": 14317,
+      "number": 15,
+      "type": "mcq",
+      "text": "Match List I with List II:\nList I\nList II\nA. Citric acid cycle  I. Cytoplasm\nB. Glycolysis  II. Mitochondrial matrix\nC. Electron transport system  III. Intermembrane space of mitochondria\nD. Proton gradient  IV. Inner mitochondrial membrane\nChoose the correct answer from the options given below:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 15,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "A-III, B-IV, C-I, D-II",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "A-IV, B-III, C-II, D-I",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "A-I, B-II, C-III, D-IV",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "A-II, B-I, C-IV, D-III",
+          "figure_url": null
+        }
+      ],
+      "figure_url": null
+    },
+    {
+      "id": 14091,
+      "number": 16,
+      "type": "mcq",
+      "text": "From the statements given below choose the correct option: A. The eukaryotic ribosomes are 80S and prokaryotic ribosomes are 70S. B. Each ribosome has two sub-units. C. The two sub-units of 80S ribosome are 60S and 40S while that of 70S are 50S and 30S. D. The two sub-units of 80S ribosome are 60S and 20S and that of 70S are 50S and 20S. E. The two sub-units of 80S are 60S and 30S and that of 70S are 50S and 30S",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 16,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "A, B, C are true",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "A, B, D are true",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "A, B, E are true",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "B, D, E are true",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 14099,
+      "number": 17,
+      "type": "mcq",
+      "text": "Which chromosome in the human genome has the highest number of genes?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 17,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Chromosome X",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Chromosome Y",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Chromosome 1",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Chromosome 10",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 14133,
+      "number": 18,
+      "type": "mcq",
+      "text": "Given below are two statements : one is labelled as Assertion (A) and the other is labelled as Reason (R). Assertion (A): The primary function of the Golgi apparatus is to package the materials made by the endoplasmic reticulum and deliver it to intracellular targets and outside the cell. Reason (R): Vesicles containing materials made by the endoplasmic reticulum fuse with the cis face of the Golgi apparatus, and they are modified and released from the trans face of the Golgi apparatus. In the light of the above statements, choose the correct answer from the options given below:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 18,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Both A and R are true and R is the correct explanation of A",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Both A and R are true but R is not the correct explanation of A",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "A is true but R is false",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "A is false but R is true",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 18216,
+      "number": 19,
+      "type": "mcq",
+      "text": "Match List-I with List-II.\n| List-I | List-II |\n|---|---|\n| A. Cristae | I. Flat membrane sacs in stroma of chloroplast |\n| B. Cisternae | II. Infoldings in mitochondria |\n| C. Thylakoids | III. Cell membrane |\n| D. Phospholipid | IV. Disc shaped sacs in the Golgi apparatus |\nChoose the correct answer from the options given below.",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 19,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "A-III, B-IV, C-I, D-II",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "A-II, B-IV, C-I, D-III",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "A-II, B-IV, C-III, D-I",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "A-IV, B-III, C-I, D-II",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 24043,
+      "number": 20,
+      "type": "mcq",
+      "text": "Spindle fibres attach on to",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 20,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Kinetochore of the chromosomes",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Centromere of the chromosomes",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Kinetosome of the chromosomes",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Telomere of the chromosomes",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 24027,
+      "number": 21,
+      "type": "mcq",
+      "text": "In a testcross involving F1 dihybrid flies, more parental-type offspring were produced than the recombinant-type- offspring. This indicates -",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 21,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Chromosomes failed to separate during meiosis",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "The two genes are linked and present on the same chromosome",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Both of the characters are controlled by more than one gene",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "The two genes are located on two different chromosomes",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 22250,
+      "number": 22,
+      "type": "mcq",
+      "text": "Select the incorrect match :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 22,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Submetacentric - L-shaped chromososmes chromosomes",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Allosomes - Sex chromosomes",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Lampbrush - Diplotene bivalents chromosomes",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Polytene - Oocytes of amphibians chromosomes",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 20442,
+      "number": 23,
+      "type": "mcq",
+      "text": "Cells in \\text{G}_0 phase :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 23,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "exit the cell cycle",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "enter the cell cycle",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "suspend the cell cycle",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "terminate the cell cycle",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 17727,
+      "number": 24,
+      "type": "mcq",
+      "text": "The fruit fly has 8 chromosomes (2n) in each cell. During interphase of Mitosis if the number of chromosomes at G_{1} phase is 8, what would be the number of chromosomes after S phase ?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 24,
+      "sections": {
+        "name": "Zoology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "8",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "16",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "4",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "32",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 15313,
+      "number": 25,
+      "type": "mcq",
+      "text": "Match List-I with List-II.\nList-I\nList-II\nA. Metacentric chromosome  I. Centromere situated close to the end forming one extremely short and one very long arms\nB. Acrocentric chromosome  II. Centromere at the terminal end\nC. Submetacentric  III. Centromere in the middle forming two equal arms of chromosomes\nD. Telocentric chromosome  IV. Centromere slightly away from the middle forming one shorter arm and one longer arm\nChoose the correct answer from the options given below :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 25,
+      "sections": {
+        "name": "Botany"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "(a)-(iii), (b)-(i), (c)-(iv), (d)-(ii)",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "(a)-(i), (b)-(ii), (c)-(iii), (d)-(iv)",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "(a)-(ii), (b)-(iii), (c)-(iv), (d)-(i)",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "(a)-(i), (b)-(iii), (c)-(ii), (d)-(iv)",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    }
+  ]
+}

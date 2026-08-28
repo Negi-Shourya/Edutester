@@ -1,0 +1,1064 @@
+{
+  "key": "neet-bio-10",
+  "title": "Ecology & Environment (NEET)",
+  "full_title": "NEET (UG) Chapter Test - Ecology & Environment",
+  "subject": "Biology",
+  "chapter": "Ecology",
+  "exam_type": "neet",
+  "is_trial": false,
+  "duration_minutes": 40,
+  "difficulty": "Easy",
+  "question_count": 25,
+  "questions": [
+    {
+      "id": 23514,
+      "number": 1,
+      "type": "mcq",
+      "text": "Which ecosystem has the maximum biomass ?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 1,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Lake ecosystem",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Forest ecosystem",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Grassland ecosystem",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Pond ecosystem",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 18080,
+      "number": 2,
+      "type": "mcq",
+      "text": "Match the trophic levels with their correct species examples in grassland ecosystem.\n| List-I | List-II |\n|---|---|\n| (a) Fourth trophic level | (i) Crow |\n| (b) Second trophic level | (ii) Vulture |\n| (c) First trophic level | (iii) Rabbit |\n| (d) Third trophic level | (iv) Grass |\nSelect the correct option",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 2,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "(a) - (iii), (b) - (ii), (c) - (i), (d) - (iv)",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "(a) - (iv), (b) - (iii), (c) - (ii), (d) - (i)",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "(a) - (i), (b) - (ii), (c) - (iii), (d) - (iv)",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "(a) - (ii), (b) - (iii), (c) - (iv), (d) - (i)",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 19146,
+      "number": 3,
+      "type": "mcq",
+      "text": "\"The Evil Quartet\" of biodiversity loss includes which of the following?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 3,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Over-exploitation; Alien species invasions; Air pollution; Co-extinctions",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Habitat loss and fragmentation; Air pollution; Water pollution; Co-extinctions",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Habitat loss and fragmentation; over-exploitation; Alien species invasions; Co-extinctions",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Over-exploitation; Alien species invasions; Soil pollution; Co-extinctions",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 20425,
+      "number": 4,
+      "type": "mcq",
+      "text": "Which of the following protocols was signed to reduce greenhouse gas emissions ?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 4,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "to reduce \\text{CO}_2 emissions and global warming.",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "for conservation of biodiversity and sustainable utilization of its benefits.",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "to assess threat posed to native species by invasive weed species.",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "for immediate steps to discontinue use of CFCs that were damaging the ozone layer.",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 14319,
+      "number": 5,
+      "type": "mcq",
+      "text": "In an ecosystem if the Net Primary Productivity (NPP) of first trophic level is: −2 −1 100x(kcalm )yr what would be the GPP (Gross Primary Productivity) of the third trophic level of the same ecosystem? −2 −1",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 5,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "10x(kcalm )yr 100x_{−2−1}",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "(kcalm ) yr 3x x −2 −1",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "(kcalm ) yr 10 −2 −1",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "x(kcalm )yr",
+          "figure_url": null
+        }
+      ],
+      "figure_url": null
+    },
+    {
+      "id": 19192,
+      "number": 6,
+      "type": "mcq",
+      "text": "Ecological pyramids represent the relationship between the organisms at different trophic levels and they are generally inverted for :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 6,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Pyramid of biomass in grassland",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Pyramid of energy in pond ecosystem",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Pyramid of number in grassland",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Pyramid of biomass in sea",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 20376,
+      "number": 7,
+      "type": "mcq",
+      "text": "Which one of the following is not a method of in situ conservation of biodiversity ?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 7,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Biosphere Reserve",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Wildlife Sanctuary",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Botanical Garden",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Sacred Grove",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 17682,
+      "number": 8,
+      "type": "mcq",
+      "text": "Which of the following statements is not correct ?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 8,
+      "sections": {
+        "name": "Botany"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Pyramid of biomass in sea is generally inverted.",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Pyramid of biomass in sea is generally upright.",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Pyramid of energy is always upright.",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Pyramid of numbers in a grassland ecosystem is upright.",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 14092,
+      "number": 9,
+      "type": "mcq",
+      "text": "Which one of the following is an example of ex-situ conservation?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 9,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "National Park",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Wildlife Sanctuary",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Zoos and botanical gardens",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Protected areas.",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 23485,
+      "number": 10,
+      "type": "mcq",
+      "text": "Which one of the following is related to Ex-situ conservation of threatened animals and plants ?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 10,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Himalayan region",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Wildlife Safari Parks",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Biodiversity hot spots",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Amazon rainforest",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 23508,
+      "number": 11,
+      "type": "mcq",
+      "text": "Alexander Von Humbolt described for the first time :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 11,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Population Growth equation",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Ecological Biodiversity",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Laws of limiting factor",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Species are relationships",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 22194,
+      "number": 12,
+      "type": "mcq",
+      "text": "What type of ecological pyramid would be obtained with the following data ? Secondary consumer : 120 g Primary consumer : 60 g Primary producer : 10 g",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 12,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Upright pyramid of numbers",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Pyramid of energy",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Inverted pyramid of biomass",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Upright pyramid of biomass",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 20435,
+      "number": 13,
+      "type": "mcq",
+      "text": "Which of the following ecological pyramids is generally inverted ?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 13,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Pyramid of numbers in grassland",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Pyramid of energy",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Pyramid of biomass in a forest",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Pyramid of biomass in a sea",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 15274,
+      "number": 14,
+      "type": "mcq",
+      "text": "Which of the following is not a method of ex situ conservation?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 14,
+      "sections": {
+        "name": "Botany"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "In vitro fertilization",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "National Parks",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Micropropagation",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Cryopreservation",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 15285,
+      "number": 15,
+      "type": "mcq",
+      "text": "Habitat loss and fragmentation, over exploitation, alien species invasion and co-extinction are causes for:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 15,
+      "sections": {
+        "name": "Botany"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Population explosion",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Competition",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Biodiversity loss",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Natality",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 15324,
+      "number": 16,
+      "type": "mcq",
+      "text": "In-situ conservation refers to:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 16,
+      "sections": {
+        "name": "Zoology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Protect and conserve the whole ecosystem",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Conserve only high-risk species",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Conserve only endangered species",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Conserve only extinct species",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 15349,
+      "number": 17,
+      "type": "mcq",
+      "text": "If ‘8’ Drosophila in a laboratory population of ‘80’ died during a week, the death rate in the population is ______ individuals per Drosophila per week.",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 17,
+      "sections": {
+        "name": "Zoology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "1.0",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "10",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "0.1",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "zero",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 14523,
+      "number": 18,
+      "type": "mcq",
+      "text": "Which of the following answers are NOT correct?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 18,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "The amount of some toxic substances of industrial waste water increases in the organisms at successive trophic levels.",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "The micro-organisms involved in biodegradation of organic matter in a sewage polluted water body consume a lot of oxygen causing the death of aquatic organisms.",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Algal blooms caused by excess of organic matter in water improve water quality and promote fisheries.",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Water hyacinth grows abundantly in eutrophic water bodies and leads to an imbalance in the ecosystem dynamics of the water body.",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 14093,
+      "number": 19,
+      "type": "mcq",
+      "text": "Given below are two statements: Statement I: The primary source of energy in an ecosystem is solar energy. Statement II: The rate of production of organic matter during photosynthesis in an ecosystem is called net primary productivity (NPP). In the light of the above statements, choose the most appropriate answer from the options given below:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 19,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Both statement I and statement II are correct",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Both statement I and statement II are incorrect",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Statement I is correct but statement II is incorrect",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Statement I is incorrect but statement II is correct",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 14163,
+      "number": 20,
+      "type": "mcq",
+      "text": "Given below are two statements: Statement I: In ecosystem, there is unidirectional flow of energy of sun from producers to consumers. Statement II: Ecosystems are exempted from 2^{nd} law of thermodynamics. In the light of the above statements, choose the most appropriate answer from the options given below:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 20,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Both Statement I and Statement II are correct",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Both Statement I and Statement II are incorrect",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Statement I is correct but Statement II is incorrect",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Statement I is incorrect but Statement II is correct",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 14157,
+      "number": 21,
+      "type": "mcq",
+      "text": "Match List-I with List-II.\nList-I\nList-II\nA. The Evil Quartet -> I. Cryopreservation\nB. Ex situ conservation -> II. Alien species invasion\nC. Lantana camara -> III. Causes of biodiversity losses\nD. Dodo -> IV. Extinction\nChoose the option with all correct matches.",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 21,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "A-III, B-II, C-I, D-IV",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "A-III, B-I, C-II, D-IV",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "A-III, B-IV, C-II, D-I",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "A-III, B-II, C-IV, D-I",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 24061,
+      "number": 22,
+      "type": "mcq",
+      "text": "A river with an inflow of domestic sewage rich in organic waste may result in -",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 22,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Increased population of aquatic food web organisms",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "An increased production of fish due to biodegradable nutrients",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Death of fish due to lack of oxygen",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Drying of the river very soon due to algal bloom",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 24075,
+      "number": 23,
+      "type": "mcq",
+      "text": "Depletion  of which gas in the atmosphere can lead to an increased incidence of skin cancers -",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 23,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Ozone",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Ammonia",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Methane",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Nitrous oxide",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 24076,
+      "number": 24,
+      "type": "mcq",
+      "text": "Which one of the following is a characteristic feature of cropland ecosystem ?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 24,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Least genetic diversity",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Absence of weeds",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Ecological succession",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Absence of soil organisms",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 24089,
+      "number": 25,
+      "type": "mcq",
+      "text": "The term ecosystem was coined by :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 25,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "A.G. Tansley",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "E. Haeckel",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "E. Warming",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "E.P. Odum",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    }
+  ]
+}

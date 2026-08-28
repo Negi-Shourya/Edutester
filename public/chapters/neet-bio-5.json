@@ -1,0 +1,1064 @@
+{
+  "key": "neet-bio-5",
+  "title": "Human Physiology - Digestion & Respiration (NEET)",
+  "full_title": "NEET (UG) Chapter Test - Human Physiology - Digestion & Respiration",
+  "subject": "Biology",
+  "chapter": "Human Physiology I",
+  "exam_type": "neet",
+  "is_trial": false,
+  "duration_minutes": 40,
+  "difficulty": "Medium",
+  "question_count": 25,
+  "questions": [
+    {
+      "id": 23442,
+      "number": 1,
+      "type": "mcq",
+      "text": "Which one of the following statements is correct with reference to enzymes ?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 1,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Holoenzyme = Coenzyme + Co-factor",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Apoenzyme = Holoenzyme + Coenzymes",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Holoenzyme = Apoenzyme + Coenzyme",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Coenzyme = Apoenzyme + Holoenzyme",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 23451,
+      "number": 2,
+      "type": "mcq",
+      "text": "Which of the following options best represents the enzyme composition of pancreatic juice ?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 2,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Lipase, amylase, trypsinogen, procarboxypeptidase",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Amylase, peptidase, trypsinogen, rennin",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Amylase, pepsin, trypsinogen, maltase",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Peptidase, amylase, pepsin, rennin",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 18081,
+      "number": 3,
+      "type": "mcq",
+      "text": "The enzyme enterokinase helps in conversion of",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 3,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "trypsinogen into trypsin",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "caseinogen into casein",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "pepsinogen into pepsin",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "protein into polypeptides",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 22215,
+      "number": 4,
+      "type": "mcq",
+      "text": "Which of the following options correctly represents the lung conditions in asthma and emphysema, respectively ?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 4,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Increased respiratory surface; Inflammation of bronchioles",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Increased number of bronchioles; Increased respiratory surface",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Inflammation of bronchioles; Decreased respiratory surface",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Decreased respiratory surface; Inflammation of bronchioles",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 20436,
+      "number": 5,
+      "type": "mcq",
+      "text": "Consider the following statements : (A) Coenzyme or metal ion that is tightly bound to enzyme protein is called prosthetic group. (B) A complete catalytic active enzyme with its bound prosthetic group is called apoenzyme. Select the correct option.",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 5,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Both (A) and (B) are true.",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "(A) is true and (B) is false.",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Both (A) and (B) are false.",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "(A) is false and (B) is true.",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 24042,
+      "number": 6,
+      "type": "mcq",
+      "text": "Name the chronic respiratory disorder caused mainly by cigarette smoking",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 6,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Asthma",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Respiratory acidosis",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Respiratory alkalosis",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Emphysema",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 24108,
+      "number": 7,
+      "type": "mcq",
+      "text": "Asthma may be attributed to :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 7,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "allergic reaction of the mast cells in the lungs",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "inflammation of the trachea",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "accumulation of fluid in the lungs",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "bacterial infection of the lungs",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 23441,
+      "number": 8,
+      "type": "mcq",
+      "text": "Lungs are made up of air-filled sacs, the alveoli. They do not collapse even after forceful expiration, because of :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 8,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Expiratory Reserve Volume",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Residual Volume",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Inspiratory Reserve Volume",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Tidal Volume",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 14336,
+      "number": 9,
+      "type": "mcq",
+      "text": "Match List I with List II:\nList I\nList II\nA. Expiratory capacity  I. Expiratory reserve volume + Tidal volume + Inspiratory reserve volume\nB. Functional residual capacity  II. Tidal volume + Expiratory reserve volume\nC. Vital capacity  III. Tidal volume + Inspiratory reserve volume\nD. Inspiratory capacity  IV. Expiratory reserve volume + Residual volume\nChoose the correct answer from the options given below :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 9,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "A-II, B-I, C-IV, D-III",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "A-I, B-III, C-II, D-IV",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "A-II, B-IV, C-I, D-III",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "A-III, B-II, C-IV, D-I",
+          "figure_url": null
+        }
+      ],
+      "figure_url": null
+    },
+    {
+      "id": 14372,
+      "number": 10,
+      "type": "mcq",
+      "text": "Regarding catalytic cycle of an enzyme action, select the correct sequential steps:\nA. Substrate enzyme complex formation\nB. Free enzyme ready to bind with another substrate\nC. Release of products\nD. Chemical bonds of the substrate broken\nE. Substrate binding to active site\nChoose the correct answer from the options given below :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 10,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "B, A, C, D, E",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "E, D, C, B, A",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "E, A, D, C, B",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "A, E, B, D, C",
+          "figure_url": null
+        }
+      ],
+      "figure_url": null
+    },
+    {
+      "id": 14142,
+      "number": 11,
+      "type": "mcq",
+      "text": "The protein portion of an enzyme is called:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 11,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Cofactor",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Coenzyme",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Apoenzyme",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Prosthetic group",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 18243,
+      "number": 12,
+      "type": "mcq",
+      "text": "Which one of the following statements is incorrect?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 12,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "α-cells of pancreas secrete glucagon",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "α-cells of pancreas secrete insulin",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Glucagon stimulates glycogenolysis",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "β-cells of pancreas secrete insulin",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 24056,
+      "number": 13,
+      "type": "mcq",
+      "text": "Which type of tissue correctly matches with its locations ?\n\n| | Tissue | Location |\n| :--- | :--- | :--- |\n| (1) | Areolar tissue | Tendons |\n| (2) | Transitional epithelium | Tip of nose |\n| (3) | Cuboidal epithelium | Lining of stomach |\n| (4) | Smooth muscle | Wall of intestine |",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 13,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Areolar tissue - Tendons",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Transitional epithelium - Tip of nose",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Cuboidal epithelium - Lining of stomach",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Smooth muscle - Wall of intestine",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 24079,
+      "number": 14,
+      "type": "mcq",
+      "text": "Reduction in pH of blood will-",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 14,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "reduce the blood supply to the brain",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "decrease the affinity of hemoglobin with oxygen",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "release bicarbonate ions by the liver",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "reduce the rate of heart beat",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 23503,
+      "number": 15,
+      "type": "mcq",
+      "text": "The hepatic portal vein drains blood to liver from :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 15,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Intestine",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Heart",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Stomach",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Kidneys",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 20402,
+      "number": 16,
+      "type": "mcq",
+      "text": "Which of the following statements is not correct?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 16,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Lysosomes have numerous hydrolytic enzymes.",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "The hydrolytic enzymes of lysosomes are active under acidic pH.",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Lysosomes are membrane bound structures.",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Lysosomes are formed by the process of packaging in the endoplasmic reticulum.",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 20428,
+      "number": 17,
+      "type": "mcq",
+      "text": "Match the following structures with their respective locations in organs :-\n| Column-I | Column-II |\n|---|---|\n| (a) Crypts of Lieberkuhn | (i) Pancreas |\n| (b) Glisson's Capsule | (ii) Duodenum |\n| (c) Islets of Langerhans | (iii) Small intestine |\n| (d) Brunner's Glands | (iv) Liver |\n\nSelect the correct option from the following :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 17,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "(a) - (iii), (b) - (1), (c) - (ii), (d) - (iv)",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "(a) - (ii), (b) - (iv), (c) - (i), (d) - (iii)",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "(a) - (iii), (b) - (iv), (c) - (i), (d) - (ii)",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "(a) - (iii), (b) - (ii), (c) - (i), (d) - (iv)",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 18030,
+      "number": 18,
+      "type": "mcq",
+      "text": "Identify the wrong statement with reference to transport of oxygen",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 18,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Partial pressure of CO_{2} can interfere with O_{2} binding with haemoglobin",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Higher H^{+} conc. in alveoli favours the formation of oxyhaemoglobin",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Low pCO_{2} in alveoli favours the formation of oxyhaemoglobin",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Binding of oxygen with haemoglobin is mainly related to partial pressure of O_{2}",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 18084,
+      "number": 19,
+      "type": "mcq",
+      "text": "Identify the wrong statement with regard to Restriction Enzymes.",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 19,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "They cut the strand of DNA at palindromic sites.",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "They are useful in genetic engineering.",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Sticky ends can be joined by using DNA ligases.",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Each restriction enzyme functions by inspecting the length of a DNA sequence.",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 17701,
+      "number": 20,
+      "type": "mcq",
+      "text": "Plasmid pBR322 has PstI restriction enzyme site within gene ampR that confers ampicillin resistance. If this enzyme is used for inserting a gene for β-galactoside production and the recombinant plasmid is inserted in an E.coli strain",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 20,
+      "sections": {
+        "name": "Botany"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "it will not be able to confer ampicillin resistance to the host cell.",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "the transformed cells will have the ability to resist ampicillin as well as produce β-galactoside.",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "it will lead to lysis of host cell.",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "it will be able to produce a novel protein with dual ability.",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 14505,
+      "number": 21,
+      "type": "mcq",
+      "text": "In the equation GPP – R = NPP GPP is Gross Primary Productivity NPP is Net Primary Productivity. R here is",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 21,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Reproductive allocation",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Photosynthetically active radiation",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Respiratory quotient",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Respiratory loss",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 14529,
+      "number": 22,
+      "type": "mcq",
+      "text": "Given below are two statements: Statement I: Low temperature preserves the enzyme in a temporarily inactive state whereas high temperature destroys enzymatic activity because proteins are denatured by heat. Statement II: When the inhibitor closely resembles the substrate in its molecular structure and inhibits the activity of the enzyme, it is known as competitive inhibitor. In the light of the above statements, choose the correct answer from the options given below:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 22,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Statement I is false but statement II is true.",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Both Statement I and Statement II are true.",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Both Statement I and Statement II are false.",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Statement I is true but Statement II is false.",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 14341,
+      "number": 23,
+      "type": "mcq",
+      "text": "Match List I with List II:\nList I\nList II\nA. 𝛼–I antitrypsin  I. Cotton bollworm\nB. Cry IAb  II. ADA deficiency\nC. Cry IAc  III. Emphysema\nD. Enzyme replacement therapy  IV. Corn borer\nChoose the correct answer from the options given below:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 23,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "A-III, B-IV, C-I, D-II",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "A-II, B-IV, C-I, D-III",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "A-II, B-I, C-IV, D-III",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "A-III, B-I, C-II, D-IV",
+          "figure_url": null
+        }
+      ],
+      "figure_url": null
+    },
+    {
+      "id": 14276,
+      "number": 24,
+      "type": "mcq",
+      "text": "Inhibition of Succinic dehydrogenase enzyme by malonate is a classical example of:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 24,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Competitive inhibition",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Enzyme activation",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Cofactor inhibition",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Feedback inhibition",
+          "figure_url": null
+        }
+      ],
+      "figure_url": null
+    },
+    {
+      "id": 14314,
+      "number": 25,
+      "type": "mcq",
+      "text": "Match List I with List II:\nList I\nList II\nA. GLUT-4  I. Hormone\nB. Insulin  II. Enzyme\nC. Trypsin  III. Intercellular ground substance\nD. Collagen  IV. Enables glucose transport into cells\nChoose the correct answer from the options given below:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 25,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "A-II, B-III, C-IV, D-I",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "A-III, B-IV, C-I, D-II",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "A-IV, B-I, C-II, D-III",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "A-I, B-II, C-III, D-IV",
+          "figure_url": null
+        }
+      ],
+      "figure_url": null
+    }
+  ]
+}

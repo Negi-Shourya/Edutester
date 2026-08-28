@@ -1,0 +1,779 @@
+{
+  "key": "jee-math-8",
+  "title": "Probability & Statistics (JEE Main)",
+  "full_title": "JEE Main Chapter Test - Probability & Statistics",
+  "subject": "Mathematics",
+  "chapter": "Probability",
+  "exam_type": "jee",
+  "is_trial": false,
+  "duration_minutes": 50,
+  "difficulty": "Medium",
+  "question_count": 20,
+  "questions": [
+    {
+      "id": 9007,
+      "number": 1,
+      "type": "mcq",
+      "text": "A set of four observations has mean 1 and variance 13. Another set of six observations has mean 2 and variance 1. Then, the variance of all these 10 observations is equal to:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 1,
+      "sections": {
+        "name": "Mathematics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "5.96",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "6.14",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "6.04",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "6.24",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 3010,
+      "number": 2,
+      "type": "mcq",
+      "text": "Suppose that the mean and median of the non-negative numbers 21, 8, 17, a, 51, 103, b, 13, 67, (a > b), are 40 and 21, respectively. If the mean deviation about the median is 26, then 2a is equal to:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 2,
+      "sections": {
+        "name": "Mathematics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "109",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "117",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "161",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "131",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 2009,
+      "number": 3,
+      "type": "mcq",
+      "text": "The mean and variance of n observations are 8 and 16, respectively. If the sum of the first (n - 1) observations is 48 and the sum of squares of the first (n - 1) observations is 496, then the value of n is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 3,
+      "sections": {
+        "name": "Mathematics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "21",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "16",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "13",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "7",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 6006,
+      "number": 4,
+      "type": "mcq",
+      "text": "Let A₁, A₂, A₃, ..., A₃₉ be 39 arithmetic means between 59 and 159. Then the mean of A₂₅, A₂₈, A₃₁ and A₃₆ is equal to:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 4,
+      "sections": {
+        "name": "Mathematics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "129",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "136",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "131.50",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "134",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 6010,
+      "number": 5,
+      "type": "mcq",
+      "text": "Variable X takes values 0, 0, 2, 6, 12, ..., n(n-1) with frequencies ⁿC₀, ⁿC₁, ⁿC₂, ..., ⁿCₙ. If mean is 60, then median is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 5,
+      "sections": {
+        "name": "Mathematics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "56",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "42",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "72",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "90",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 5008,
+      "number": 6,
+      "type": "mcq",
+      "text": "The mean deviation about the mean for the data [xᵢ: 5, 7, 9, 10, 12, 15; fᵢ: 8, 6, 2, 2, 2, 6] is equal to:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 6,
+      "sections": {
+        "name": "Mathematics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "40 / 13",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "42 / 13",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "44 / 13",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "46 / 13",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 8008,
+      "number": 7,
+      "type": "mcq",
+      "text": "Let the mean and the variance of seven observations 2, 4, α, 8, β, 12, 14, α < β, be 8 and 16 respectively. Then the quadratic equation whose roots are 3α + 2 and 2β + 1 is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 7,
+      "sections": {
+        "name": "Mathematics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "x² - 35x + 306 = 0",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "x² - 41x + 420 = 0",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "x² - 45x + 506 = 0",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "x² - 37x + 342 = 0",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 7009,
+      "number": 8,
+      "type": "mcq",
+      "text": "A data consists of 20 observations x₁, x₂, ..., x₂₀. If ∑_{i=1}²⁰ (x_i + 5)² = 2500 and ∑_{i=1}²⁰ (x_i - 5)² = 1000, then the ratio of mean to standard deviation of this data is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 8,
+      "sections": {
+        "name": "Mathematics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "2 : 1",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "3 : 1",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "3 : 2",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "4 : 1",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 2008,
+      "number": 9,
+      "type": "mcq",
+      "text": "A man throws a fair coin repeatedly. He gets 10 points for each head he throws and 5 points for each tail he throws. If the probability that he gets exactly 30 points is m/n, gcd(m, n) = 1, then m + n is equal to:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 9,
+      "sections": {
+        "name": "Mathematics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "53",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "55",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "107",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "105",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 1023,
+      "number": 10,
+      "type": "numerical",
+      "text": "Let a, b, c ∈ {1, 2, 3, 4}. If the probability, that ax² + 2√2 bx + c > 0 for all x ∈ ℝ, is m/n, gcd(m, n) = 1, then m + n is equal to:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 10,
+      "sections": {
+        "name": "Mathematics"
+      },
+      "subsections": {
+        "name": "Section B"
+      },
+      "question_options": [],
+      "figure_url": []
+    },
+    {
+      "id": 1008,
+      "number": 11,
+      "type": "mcq",
+      "text": "If the mean of the data [5-10: 2, 10-15: k, 15-20: 28, 20-25: 54, 25-30: k+1, 30-35: 5] is 21, then k is one of the roots of the equation:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 11,
+      "sections": {
+        "name": "Mathematics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "2x² - 23x - 10 = 0",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "4x² - 35x + 24 = 0",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "2x² - 19x - 10 = 0",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "2x² - 35x + 98 = 0",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 4008,
+      "number": 12,
+      "type": "mcq",
+      "text": "For 10 observations x₁, x₂, ..., x₁₀, if ∑_{i=1}¹⁰ (x_i + 2)² = 180 and ∑_{i=1}¹⁰ (x_i - 1)² = 90, then their standard deviation is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 12,
+      "sections": {
+        "name": "Mathematics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "2",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "√3",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "2√2",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "3",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 4021,
+      "number": 13,
+      "type": "numerical",
+      "text": "From a month of 31 days, 3 different dates are selected at random. If probability that dates are in AP is a/b, gcd(a,b)=1, then a + b is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 13,
+      "sections": {
+        "name": "Mathematics"
+      },
+      "subsections": {
+        "name": "Section B"
+      },
+      "question_options": [],
+      "figure_url": []
+    },
+    {
+      "id": 3021,
+      "number": 14,
+      "type": "numerical",
+      "text": "A coin is tossed 8 times. If probability that exactly 4 heads appear in first 6 tosses and 3 heads in last 5 tosses is p, then 96p is equal to:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 14,
+      "sections": {
+        "name": "Mathematics"
+      },
+      "subsections": {
+        "name": "Section B"
+      },
+      "question_options": [],
+      "figure_url": []
+    },
+    {
+      "id": 6008,
+      "number": 15,
+      "type": "mcq",
+      "text": "The probabilities that players A and B of a team are selected for captaincy are 0.6 and 0.4. If A is captain, P(Win) = 0.8; if B is captain, P(Win) = 0.7. Probability team wins tournament is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 15,
+      "sections": {
+        "name": "Mathematics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "0.74",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "0.76",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "0.72",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "0.78",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 5007,
+      "number": 16,
+      "type": "mcq",
+      "text": "A letter is known to have arrived by post either from KANPUR or from ANANTPUR. On the envelope just two consecutive letters AN are visible. The probability that the letter came from ANANTPUR is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 16,
+      "sections": {
+        "name": "Mathematics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "7 / 10",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "10 / 17",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "12 / 19",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "7 / 19",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 8009,
+      "number": 17,
+      "type": "mcq",
+      "text": "A bag contains 6 blue and 6 green balls. Pairs of balls are drawn without replacement until the bag is empty. The probability that each drawn pair consists of one blue and one green ball is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 17,
+      "sections": {
+        "name": "Mathematics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "63 / 925",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "17 / 231",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "16 / 231",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "64 / 925",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 7007,
+      "number": 18,
+      "type": "mcq",
+      "text": "The number of 4-letter words, with or without meaning, each consisting of two vowels and two consonants that can be formed from the letters of the word INCONSEQUENTIAL, without repeating any letter, is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 18,
+      "sections": {
+        "name": "Mathematics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "2670",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "2840",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "2920",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "3600",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 7010,
+      "number": 19,
+      "type": "mcq",
+      "text": "A bag contains (N + 1) coins, N fair coins and one coin with 'Head' on both sides. A coin is selected at random and tossed. If the probability of getting 'Head' is 9/16, then N is equal to:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 19,
+      "sections": {
+        "name": "Mathematics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "5",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "7",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "8",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "9",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 9006,
+      "number": 20,
+      "type": "mcq",
+      "text": "The probabilities of a candidate going to an examination centre by bus, scooter and car are 2/5, 1/5 and 2/5 respectively. The probabilities of reaching late are 1/5, 1/3 and 1/4 respectively. Given that the candidate reached late, the probability that the candidate travelled by bus is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 20,
+      "sections": {
+        "name": "Mathematics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "11 / 37",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "12 / 37",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "13 / 37",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "14 / 37",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    }
+  ]
+}

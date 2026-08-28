@@ -1,0 +1,584 @@
+{
+  "key": "jee-chem-3",
+  "title": "Chemical Bonding (JEE Main)",
+  "full_title": "JEE Main Chapter Test - Chemical Bonding",
+  "subject": "Chemistry",
+  "chapter": "Chemical Bonding & Molecular Structure",
+  "exam_type": "jee",
+  "is_trial": false,
+  "duration_minutes": 60,
+  "difficulty": "Hard",
+  "question_count": 15,
+  "questions": [
+    {
+      "id": 8061,
+      "number": 1,
+      "type": "mcq",
+      "text": "Correct hybridization, geometry and magnetic nature:\nA. [NiCl₄]²⁻ - sp³, tetrahedral, paramagnetic\nB. [Ni(NH₃)₆]²⁺ - sp³d², octahedral, paramagnetic\nC. [Ni(CO)₄] - sp³, tetrahedral, paramagnetic\nD. [Ni(CN)₄]²⁻ - dsp², square planar, diamagnetic",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 1,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "A, B, C and D",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "B, C and D only",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "A, C and D only",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "A, B and D only",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 2074,
+      "number": 2,
+      "type": "numerical",
+      "text": "Number of paramagnetic ions among Mn²⁺, Cu²⁺, Zn²⁺, Yb²⁺, Sc³⁺, La³⁺, Gd³⁺, Lu³⁺, Ti⁴⁺, Ce⁴⁺ is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 2,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section B"
+      },
+      "question_options": [],
+      "figure_url": []
+    },
+    {
+      "id": 1064,
+      "number": 3,
+      "type": "mcq",
+      "text": "Given statements:\nStatement (I): Benzyl chloride reacts faster in S_N1 mechanism than ethyl chloride.\nStatement (II): Ethyl carbocation intermediate is less stabilized by hyperconjugation than benzyl carbocation by resonance.",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 3,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Both Statement I and Statement II are true",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Both Statement I and Statement II are false",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Statement I is true but Statement II is false",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Statement I is false but Statement II is true",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 4053,
+      "number": 4,
+      "type": "mcq",
+      "text": "Which pictorial diagram correctly represents π* (π-antibonding) molecular orbital if internuclear axis is z-direction?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 4,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Diagram (1)",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Diagram (2)",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Diagram (3)",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Diagram (4)",
+          "figure_url": null
+        }
+      ],
+      "figure_url": [
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/2026-04-04-evening/2026-04-04_evening_Q53.jpeg",
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/2026-04-04-evening/2026-04-04_evening_Q53_2.jpeg",
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/2026-04-04-evening/2026-04-04_evening_Q53_3.jpeg",
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/2026-04-04-evening/2026-04-04_evening_Q53_4.jpeg"
+      ]
+    },
+    {
+      "id": 6059,
+      "number": 5,
+      "type": "mcq",
+      "text": "Statement I: Al + NaOH forms [Al(OH)₆]³⁻ ion.\nStatement II: Geometry of ICl₄⁻, ClO₃⁻ and IBr₂⁻ is square planar, pyramidal and linear.",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 5,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Both Statement I and Statement II are true",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Both Statement I and Statement II are false",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Statement I is true but Statement II is false",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Statement I is false but Statement II is true",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 6061,
+      "number": 6,
+      "type": "mcq",
+      "text": "Correct statements:\nA. [Fe(C₂O₄)₃]³⁻ most stable among oxalate/thiocyanate complexes\nB. [Cu(NH₃)₄]²⁺ > [Cu(en)₂]²⁺\nC. Hybridization of Fe in K₄[Fe(CN)₆] is d²sp³\nD. [Fe(NO₂)₃Cl₃]³⁻ exhibits linkage isomerism\nE. NO₂⁻ and SCN⁻ NOT ambidentate",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 6,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "A, B, C, D and E",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "B, C and D only",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "A, C and D only",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "A, C and E only",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 5063,
+      "number": 7,
+      "type": "mcq",
+      "text": "Statement I: Alkyl carbanion stability order: CH₃⁻ > CH₃CH₂⁻ > (CH₃)₂CH⁻ > (CH₃)₃C⁻.\nStatement II: Allyl & benzyl carbanions stabilized by inductive effect not resonance.",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 7,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Both Statement I and Statement II are correct",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Both Statement I and Statement II are incorrect",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Statement I is correct but Statement II is incorrect",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Statement I is incorrect but Statement II is correct",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 9060,
+      "number": 8,
+      "type": "mcq",
+      "text": "Statement I: Pairs with both coloured ions is 3.\nStatement II: Pairs with both diamagnetic ions is 3.",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 8,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Both Statement I and Statement II are correct",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Both Statement I and Statement II are incorrect",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Statement I is correct but Statement II is incorrect",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Statement I is incorrect but Statement II is correct",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 9071,
+      "number": 9,
+      "type": "numerical",
+      "text": "Number of paramagnetic complexes among [MnBr₄]²⁻, [NiCl₄]²⁻, [Ni(CN)₄]²⁻, [Ni(CO)₄], [CoF₆]³⁻, [Fe(CN)₆]⁴⁻, [Mn(CN)₆]³⁻, [Ti(CN)₆]³⁻, [Cu(H₂O)₆]²⁺, [Co(C₂O₄)₃]³⁻ is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 9,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section B"
+      },
+      "question_options": [],
+      "figure_url": []
+    },
+    {
+      "id": 2067,
+      "number": 10,
+      "type": "mcq",
+      "text": "Molecule X hydrolysed under mild acidic condition produces Y and Z. Correct statements:\nA. Y and Z have same molar mass\nB. Y and Z distinguished by NaHCO₃\nC. Y and Z react with HCN at same rate\nD. Y and Z undergo addition with 2,4-DNP",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 10,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "A, B and C Only",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "B and C Only",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "C and D Only",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "A and D Only",
+          "figure_url": null
+        }
+      ],
+      "figure_url": [
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/2026-04-02-evening/2026-04-02_evening_Q67.jpeg"
+      ]
+    },
+    {
+      "id": 2068,
+      "number": 11,
+      "type": "mcq",
+      "text": "Reaction sequence starting from 1-ethyl-4-nitrobenzene: (i) Br₂/AlBr₃ → A; (ii) Sn/HCl → B; (iii) NaNO₂/HCl → C; (iv) C₂H₅OH → D; (v) KMnO₄/KOH, H₃O⁺ → E. Compounds A and E are:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 11,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "A = 2-nitro-4-ethylbromobenzene, E = 3-bromobenzoic acid",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "A = 4-ethyl-3-nitrobromobenzene, E = 2-bromo-4-ethylbenzoic acid",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "A = 4-ethyl-2-nitrobromobenzene, E = 4-bromobenzoic acid",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "A = 2-bromo-4-ethylnitrobenzene, E = 3-bromo-4-ethylbenzoic acid",
+          "figure_url": null
+        }
+      ],
+      "figure_url": [
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/2026-04-02-evening/2026-04-02_evening_Q68.jpeg",
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/2026-04-02-evening/2026-04-02_evening_Q68_2.jpeg",
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/2026-04-02-evening/2026-04-02_evening_Q68_3.jpeg",
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/2026-04-02-evening/2026-04-02_evening_Q68_4.jpeg",
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/2026-04-02-evening/2026-04-02_evening_Q68_5.jpeg"
+      ]
+    },
+    {
+      "id": 2075,
+      "number": 12,
+      "type": "numerical",
+      "text": "Reaction sequence starting from 4-methyl-nitrobenzene gives product P. 1.0 g of P subjected to Carius analysis with AgNO₃ produces AgBr precipitate mass in g (nearest integer):",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 12,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section B"
+      },
+      "question_options": [],
+      "figure_url": [
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/2026-04-02-evening/2026-04-02_evening_Q75.jpeg"
+      ]
+    },
+    {
+      "id": 2051,
+      "number": 13,
+      "type": "mcq",
+      "text": "The ratio of mass percentage (w/w) of C : H in a hydrocarbon is 12 : 1. It has two carbon atoms. The weight in g of CO₂ formed when 3.38 g of this hydrocarbon is burnt is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 13,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "5.68 g",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "11.44 g",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "22.74 g",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "17.05 g",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 2052,
+      "number": 14,
+      "type": "mcq",
+      "text": "First and second ionization constants of weak dibasic acid H₂A are 8.1 × 10⁻⁸ and 1.0 × 10⁻¹³ respectively. 0.1 mol H₂A dissolved in 1 L of 0.1 M HCl. Concentration of HA⁻ in resultant solution is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 14,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "0.1 M",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "9.53 × 10⁻⁶ M",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "8.1 × 10⁻⁸ M",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "1.0 × 10⁻¹³ M",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 2053,
+      "number": 15,
+      "type": "mcq",
+      "text": "SF₄ is isostructural with:\nA. BrF₄⁻\nB. CH₄\nC. IF₄⁺\nD. XeF₄\nE. XeO₂F₂",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 15,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "C Only",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "C and E Only",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "A and D Only",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "B and E Only",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    }
+  ]
+}

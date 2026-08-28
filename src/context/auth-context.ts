@@ -14,7 +14,7 @@ export interface AuthContextValue {
   authError: string | null;
   rememberMe: boolean;
   setRememberMe: (remember: boolean) => void;
-  signInWithGoogle: () => Promise<void>;
+  signInWithGoogle: (redirectTo?: string) => Promise<void>;
   signUp: (email: string, password: string, fullName: string, target: string) => Promise<AuthResult>;
   signIn: (email: string, password: string) => Promise<AuthResult>;
   signOut: () => Promise<void>;

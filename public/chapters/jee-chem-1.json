@@ -1,0 +1,907 @@
+{
+  "key": "jee-chem-1",
+  "title": "Some Basic Concepts (JEE Main)",
+  "full_title": "JEE Main Chapter Test - Some Basic Concepts",
+  "subject": "Chemistry",
+  "chapter": "Some Basic Concepts of Chemistry",
+  "exam_type": "jee",
+  "is_trial": true,
+  "duration_minutes": 50,
+  "difficulty": "Easy",
+  "question_count": 25,
+  "questions": [
+    {
+      "id": 1056,
+      "number": 1,
+      "type": "mcq",
+      "text": "The solubility product constants of Ag₂CrO₄ and AgBr are 32x and 4y respectively at 298 K. The value of (molarity of Ag₂CrO₄ / molarity of AgBr) is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 1,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "2 ∛x / y",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "2 √(x/y)",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "√(x/y)",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "∛x / √y",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 1071,
+      "number": 2,
+      "type": "numerical",
+      "text": "5.33 g CrCl₃·6H₂O (1:3 electrolyte) dissolved in water and passed through cation exchanger. Chloride ions in eluted solution react with AgNO₃ to give 8.61 g AgCl. Ratio of moles of complex reacted to moles of AgCl formed is α × 10⁻². α is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 2,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section B"
+      },
+      "question_options": [],
+      "figure_url": []
+    },
+    {
+      "id": 1073,
+      "number": 3,
+      "type": "numerical",
+      "text": "One mole of alkane (x) requires 8 moles oxygen for complete combustion. Sum of number of carbon and hydrogen atoms in alkane (x) is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 3,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section B"
+      },
+      "question_options": [],
+      "figure_url": []
+    },
+    {
+      "id": 3051,
+      "number": 4,
+      "type": "mcq",
+      "text": "Number of moles and number of molecules in 1.4187 L of SO₂ at STP respectively are:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 4,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "0.1266; 3.812 × 10²²",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "0.0633; 3.812 × 10²²",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "0.1266; 7.6238 × 10²²",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "0.0633; 7.6238 × 10²²",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 3056,
+      "number": 5,
+      "type": "mcq",
+      "text": "Number of moles of KMnO₄ required to oxidise a mixture of 1 mole each of FeC₂O₄, Fe₂(C₂O₄)₃, FeSO₄ and Fe₂(SO₄)₃ in acidic medium is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 5,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "3",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "2",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "5",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "7",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 7056,
+      "number": 6,
+      "type": "mcq",
+      "text": "When 0.25 moles of non-volatile solute dissolved in 1 mole solvent, vapour pressure was x% of pure solvent. What is x%?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 6,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "50%",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "60%",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "70%",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "80%",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 2067,
+      "number": 7,
+      "type": "mcq",
+      "text": "Molecule X hydrolysed under mild acidic condition produces Y and Z. Correct statements:\nA. Y and Z have same molar mass\nB. Y and Z distinguished by NaHCO₃\nC. Y and Z react with HCN at same rate\nD. Y and Z undergo addition with 2,4-DNP",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 7,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "A, B and C Only",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "B and C Only",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "C and D Only",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "A and D Only",
+          "figure_url": null
+        }
+      ],
+      "figure_url": [
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/2026-04-02-evening/2026-04-02_evening_Q67.jpeg"
+      ]
+    },
+    {
+      "id": 2051,
+      "number": 8,
+      "type": "mcq",
+      "text": "The ratio of mass percentage (w/w) of C : H in a hydrocarbon is 12 : 1. It has two carbon atoms. The weight in g of CO₂ formed when 3.38 g of this hydrocarbon is burnt is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 8,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "5.68 g",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "11.44 g",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "22.74 g",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "17.05 g",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 1066,
+      "number": 9,
+      "type": "mcq",
+      "text": "For the given molecule, the preferred site for the attack of the electrophile is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 9,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Predominantly at \"r\"",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "\"r\" and \"u\"",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "\"p\" and \"s\"",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Predominantly at \"u\"",
+          "figure_url": null
+        }
+      ],
+      "figure_url": [
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/2026-04-02-morning/2026-04-02_morning_Q66.png"
+      ]
+    },
+    {
+      "id": 1068,
+      "number": 10,
+      "type": "mcq",
+      "text": "Consider the three aromatic molecules (P, Q and R). The correct order regarding the reactivity of these compounds with Ph-N=N⁺ Cl⁻ under optimum slightly acidic medium is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 10,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "P > Q > R",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "R > P > Q",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "R > Q > P",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "P > R > Q",
+          "figure_url": null
+        }
+      ],
+      "figure_url": [
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/2026-04-02-morning/2026-04-02_morning_Q68.png"
+      ]
+    },
+    {
+      "id": 4053,
+      "number": 11,
+      "type": "mcq",
+      "text": "Which pictorial diagram correctly represents π* (π-antibonding) molecular orbital if internuclear axis is z-direction?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 11,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Diagram (1)",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Diagram (2)",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Diagram (3)",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Diagram (4)",
+          "figure_url": null
+        }
+      ],
+      "figure_url": [
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/2026-04-04-evening/2026-04-04_evening_Q53.jpeg",
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/2026-04-04-evening/2026-04-04_evening_Q53_2.jpeg",
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/2026-04-04-evening/2026-04-04_evening_Q53_3.jpeg",
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/2026-04-04-evening/2026-04-04_evening_Q53_4.jpeg"
+      ]
+    },
+    {
+      "id": 4065,
+      "number": 12,
+      "type": "mcq",
+      "text": "Given two 3D representations of 2-bromobutane. The structures are:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 12,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "enantiomers",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "identical molecules",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "diastereomers",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "meso compounds",
+          "figure_url": null
+        }
+      ],
+      "figure_url": [
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/2026-04-04-evening/2026-04-04_evening_Q65.jpeg"
+      ]
+    },
+    {
+      "id": 4051,
+      "number": 13,
+      "type": "mcq",
+      "text": "Correct order of total number of atoms present in:\n(A) 2 moles of cyclohexane\n(B) 684 g of sucrose\n(C) 90.8 L of dihydrogen at STP",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 13,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "C > A > B",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "C > B > A",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "B > C > A",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "B > A > C",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 3064,
+      "number": 14,
+      "type": "mcq",
+      "text": "An alkene X on ozonolysis gives H-CHO (2 moles), H-CO-CO-CHO, CH₃-CO-CO-CH₃. Alkene X is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 14,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Structure (1)",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Structure (2)",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "3,4-dimethylcyclohexa-1,3-diene (Structure 3)",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Structure (4)",
+          "figure_url": null
+        }
+      ],
+      "figure_url": [
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/2026-04-04-morning/2026-04-04_morning_Q64.png",
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/2026-04-04-morning/2026-04-04_morning_Q64_2.png",
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/2026-04-04-morning/2026-04-04_morning_Q64_3.png",
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/2026-04-04-morning/2026-04-04_morning_Q64_4.png"
+      ]
+    },
+    {
+      "id": 3057,
+      "number": 15,
+      "type": "mcq",
+      "text": "For first order reaction R → P, fraction of molecules decomposed at time t is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 15,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "1 - e^{k₁ t}",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "1 + e^{k₁ t}",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "1 + e^{-k₁ t}",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "1 - e^{-k₁ t}",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 3058,
+      "number": 16,
+      "type": "mcq",
+      "text": "A monoatomic anion A⁻ has 45 neutrons and 36 electrons. Atomic mass, group in periodic table and physical state at room temp are:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 16,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "80, 17, liquid",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "81, 16, solid",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "80, 16, gas",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "81, 15, gas",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 3073,
+      "number": 17,
+      "type": "numerical",
+      "text": "2.0 g bromo hydrocarbon subjected to Carius analysis gave 3.36 g AgCl. % C = 26.7%. Total number of C atoms in empirical formula is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 17,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section B"
+      },
+      "question_options": [],
+      "figure_url": []
+    },
+    {
+      "id": 3075,
+      "number": 18,
+      "type": "numerical",
+      "text": "Non-volatile solute in 40 g solvent decreases VP from 760 to 750 mm Hg. Boiling point = 320 K. Moles of solvent in solution is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 18,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section B"
+      },
+      "question_options": [],
+      "figure_url": []
+    },
+    {
+      "id": 6053,
+      "number": 19,
+      "type": "mcq",
+      "text": "Covalent radii of A and B are r_A and r_B. Covalent bond length and total length of AB molecule are:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 19,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "(r_A + r_B), 2(r_A + r_B)",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "(1/2)(r_A + r_B), (r_A + r_B)",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "(r_A + r_B), (r_A + r_B)",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "2(r_A + r_B), (1/2)(r_A + r_B)",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 6056,
+      "number": 20,
+      "type": "mcq",
+      "text": "A(g) ⇌ B(g) + C(g) initiated with a moles A. At equilibrium remaining A is (a - x) at total pressure p. K_p expression is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 20,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "(x² / (a² + x²)) × p",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "(x² / (a² - x²)) × p",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "((a + x²) / x²) × p",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "((a² - x²) / x²) × p",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 5054,
+      "number": 21,
+      "type": "mcq",
+      "text": "What is the mole fraction of water in 10% (w/w) aqueous urea solution?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 21,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "0.825",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "0.032",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "0.867",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "0.967",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 5073,
+      "number": 22,
+      "type": "numerical",
+      "text": "1 mole phenol treated with dil HNO₃ at 298 K. Steam volatile compound X separated. Increase in % oxygen in X with respect to phenol is α × 10⁻¹ %. Value of α is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 22,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section B"
+      },
+      "question_options": [],
+      "figure_url": []
+    },
+    {
+      "id": 8072,
+      "number": 23,
+      "type": "numerical",
+      "text": "Alkane Y requires 8 moles O₂ for complete combustion. Chlorination gives only 1 monochloro product Z. Primary carbons in Y is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 23,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section B"
+      },
+      "question_options": [],
+      "figure_url": []
+    },
+    {
+      "id": 8053,
+      "number": 24,
+      "type": "mcq",
+      "text": "Statement I: Number of compounds among SO₂, SO₃, SF₄, SF₆, H₂S not obeying octet rule is 3.\nStatement II: Sets in which all molecules have 1 lone pair on central atom is 1.",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 24,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Both Statement I and Statement II are true",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Both Statement I and Statement II are false",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Statement I is true but Statement II is false",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Statement I is false but Statement II is true",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 8071,
+      "number": 25,
+      "type": "numerical",
+      "text": "Excess AgNO₃ added to 100 mL 0.05 M [Cr(H₂O)₄Cl₂]Cl. Moles of AgCl precipitated is α × 10⁻³ mol. Value of α is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 25,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section B"
+      },
+      "question_options": [],
+      "figure_url": []
+    }
+  ]
+}

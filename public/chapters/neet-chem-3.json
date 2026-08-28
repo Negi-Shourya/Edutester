@@ -1,0 +1,1064 @@
+{
+  "key": "neet-chem-3",
+  "title": "Chemical Bonding (NEET)",
+  "full_title": "NEET (UG) Chapter Test - Chemical Bonding",
+  "subject": "Chemistry",
+  "chapter": "Chemical Bonding & Molecular Structure",
+  "exam_type": "neet",
+  "is_trial": false,
+  "duration_minutes": 45,
+  "difficulty": "Hard",
+  "question_count": 25,
+  "questions": [
+    {
+      "id": 22152,
+      "number": 1,
+      "type": "mcq",
+      "text": "The geometry and magnetic behaviour of the complex [\\text{Ni}(\\text{CO})_4] are :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 1,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "square planar geometry and paramagnetic",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "tetrahedral geometry and diamagnetic",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "square planar geometry and diamagnetic",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "tetrahedral geometry and paramagnetic",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 19091,
+      "number": 2,
+      "type": "mcq",
+      "text": "During Lassaigne's test, the elements present in an organic compound are converted from :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 2,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "ionic form to ionic form",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "covalent form to ionic form",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "covalent form to covalent form",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "ionic form to covalent form",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 19095,
+      "number": 3,
+      "type": "mcq",
+      "text": "Identify the correct statement about ClF_{3} from the following options:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 3,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "It has T-shaped geometry with two lone pairs on Cl atom.",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "It has T-shaped geometry with three lone pairs on Cl atom.",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "It has a trigonal pyramidal geometry with two lone pairs on Cl atom.",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "It has a planar trigonal geometry with two lone pairs on Cl atom.",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 15258,
+      "number": 4,
+      "type": "mcq",
+      "text": "Which amongst the following is incorrect statement?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 4,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "The bond orders of O_{2}^{+}, O_{2}, O_{2}^{–} and O_{2}^{2–} are 2.5, 2, 1.5 and 1, respectively",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "C_{2} molecule has four electrons in its two degenerate π molecular orbitals",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "H_{2}^{+} ion has one electron",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "O_{2}^{+} ion is diamagnetic",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 22133,
+      "number": 5,
+      "type": "mcq",
+      "text": "Regarding cross-linked or network polymers, which of the following statements is incorrect ?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 5,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Examples are bakelite and melamine.",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "They are formed from bi- and tri-functional monomers.",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "They contain covalent bonds between various linear polymer chains.",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "They contain strong covalent bonds in their polymer chains.",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 14430,
+      "number": 6,
+      "type": "mcq",
+      "text": "Intermolecular forces are forces of attraction and repulsion between interacting particles that will include: A. dipole-dipole forces. B. dipole - induced dipole forces, C. hydrogen bonding. D. covalent bonding. E. dispersion forces. Choose the most appropriate answer from the options given below:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 6,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "A, C, D, E are correct.",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "B, C, D, E are correct.",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "A, B, C, D are correct.",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "A, B, C, E are correct.",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 14265,
+      "number": 7,
+      "type": "mcq",
+      "text": "Identify the correct answer.",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 7,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Dipole moment of NF_{3} is greater than that of NH_{3}.",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Three canonical forms can be drawn for CO_{3}^{2-} ion.",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Three resonance structures can be drawn for ozone.",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "BF_{3} has non-zero dipole moment.",
+          "figure_url": null
+        }
+      ],
+      "figure_url": null
+    },
+    {
+      "id": 14237,
+      "number": 8,
+      "type": "mcq",
+      "text": "Given below are two statements:\nStatement I: Both [Co(NH_{3})_{6}]^{3+} and [CoF_{6}]^{3-} complexes are octahedral but differ in their magnetic behaviour.\nStatement II: [Co(NH_{3})_{6}]^{3+} is diamagnetic whereas [CoF_{6}]^{3-} is paramagnetic.\nIn the light of the above statements, choose the correct answer from the options given below:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 8,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Statement I is true but Statement II is false.",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Statement I is false but Statement II is true.",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Both Statement I and Statement II are true.",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Both Statement I and Statement II are false.",
+          "figure_url": null
+        }
+      ],
+      "figure_url": null
+    },
+    {
+      "id": 14055,
+      "number": 9,
+      "type": "mcq",
+      "text": "Given below are two statements: Statement I: A hypothetical diatomic molecule with bond order zero is quite stable. Statement II: As bond order increases, the bond length increases. In the light of the above statements, chose the most appropriate answer from the options given below:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 9,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Both statement I and Statement II are true",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Both statement I and Statement II are false",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Statement I is true but Statement II is false",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Statement I is true but Statement II is true",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 18169,
+      "number": 10,
+      "type": "mcq",
+      "text": "The correct statement about peptides and proteins is",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 10,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Tertiary structure of proteins has two or more polypeptide subunits.",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Only the proteins having a quaternary structure are biologically active.",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "In \\beta-pleated sheet structures, peptide chains are held together by intermolecular hydrogen bonds.",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "In \\alpha-helices, the polypeptide chain is twisted into a left-handed screw (helix) through intramolecular hydrogen bonds.",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 23390,
+      "number": 11,
+      "type": "mcq",
+      "text": "Which one of the following pairs of species have the same bond order ?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 11,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "\\text{N}_{2}, \\text{O}_{2}^{-}",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "\\text{CO}, \\text{NO}",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "\\text{O}_{2}, \\text{NO}^{+}",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "\\text{CN}^{-}, \\text{CO}",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 23400,
+      "number": 12,
+      "type": "mcq",
+      "text": "Match the interhalogen compounds of Column I with the geometry in Column II and assign the correct code.\n\n| Column I | Column II |\n| :--- | :--- |\n| (a) \\text{XX}' | (i) T-shape |\n| (b) \\text{XX}'_{3} | (ii) Pentagonal bipyramidal |\n| (c) \\text{XX}'_{5} | (iii) Linear |\n| (d) \\text{XX}'_{7} | (iv) Square-pyramidal |\n| | (v) Tetrahedral |",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 12,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "(a)-(iv), (b)-(iii), (c)-(ii), (d)-(i)",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "(a)-(iii), (b)-(iv), (c)-(i), (d)-(ii)",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "(a)-(iii), (b)-(i), (c)-(iv), (d)-(ii)",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "(a)-(v), (b)-(iv), (c)-(iii), (d)-(ii)",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 22166,
+      "number": 13,
+      "type": "mcq",
+      "text": "Consider the following species : \\text{CN}^{+}, \\text{CN}^{-}, \\text{NO} and \\text{CN}. Which one of these will have the highest bond order ?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 13,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "\\text{CN}^{+}",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "\\text{CN}^{-}",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "\\text{NO}",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "\\text{CN}",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 20331,
+      "number": 14,
+      "type": "mcq",
+      "text": "Which of the following diatomic molecular species has only \\pi bonds according to Molecular Orbital Theory ?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 14,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "\\text{Be}_2",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "\\text{O}_2",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "\\text{N}_2",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "\\text{C}_2",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 20334,
+      "number": 15,
+      "type": "mcq",
+      "text": "Which of the following is paramagnetic ?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 15,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "[\\text{Fe}(\\text{CN})_6]^{3-}",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "[\\text{Ni}(\\text{CO})_4]",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "[\\text{Ni}(\\text{CN})_4]^{2-}",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "[\\text{Co}(\\text{NH}_3)_6]^{3+}",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 20362,
+      "number": 16,
+      "type": "mcq",
+      "text": "Which of the following is incorrect statement ?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 16,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "\\text{PbF}_4\\text{ is covalent in nature}",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "\\text{SiCl}_4\\text{ is easily hydrolysed}",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "\\text{GeX}_4\\text{ (X = F, Cl, Br, I) is more stable than }\\text{GeX}_2",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "\\text{SnF}_4\\text{ is ionic in nature}",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 17999,
+      "number": 17,
+      "type": "mcq",
+      "text": "Which of the following set of molecules will have zero dipole moment?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 17,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Boron trifluoride, hydrogen fluoride, carbon dioxide, 1,3-dichlorobenzene",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Nitrogen trifluoride, beryllium difluoride, water, 1,3-dichlorobenzene",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Boron trifluoride, beryllium difluoride, carbon dioxide, 1,4-dichlorobenzene",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Ammonia, beryllium difluoride, water, 1,4-dichlorobenzene",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 17615,
+      "number": 18,
+      "type": "mcq",
+      "text": "BF_{3} is planar and electron deficient compound. Hybridization and number of electrons around the central atom, respectively are :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 18,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "sp_{3} and 4",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "sp_{3} and 6",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "sp_{2} and 6",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "sp_{2} and 8",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 17617,
+      "number": 19,
+      "type": "mcq",
+      "text": "Among the following alkaline earth metal halides, one which is covalent and soluble in organic solvents is :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 19,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Calcium chloride",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Strontium chloride",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Magnesium chloride",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Beryllium chloride",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 15243,
+      "number": 20,
+      "type": "mcq",
+      "text": "Choose the correct statement:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 20,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Diamond and graphite have two dimensional network.",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Diamond is covalent and graphite is ionic.",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Diamond is sp^{3} hybridised and graphite is sp^{2} hybridized.",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Both diamond and graphite are used as dry lubricants.",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 14429,
+      "number": 21,
+      "type": "mcq",
+      "text": "The correct order of energies of molecular orbitals of N_{2} molecule is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 21,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "σ1s < σ^{*}1s < σ2s < σ^{*} 2s < (π2p_{x} = π2p_{y} ) < (π^{*} 2p_{x} = π^{*} 2p_{y} ) < σ2p_{z} < σ^{*} 2p_{z}",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "σ1s < σ^{*}1s < σ2s < σ^{*} 2s < (π2p_{x} = π2p_{y} ) < σ2p_{z} < (π^{*} 2p_{x} = π^{*} 2p_{y} ) < σ^{*} 2p_{z}",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "σ1s < σ^{*}1s < σ2s < σ^{*} 2s < σ2p_{z} < (π2p_{x} = π2p_{y} ) < (π^{*} 2p_{x} = π^{*} 2p_{y} ) < σ^{*} 2p_{z}",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "σ1s < σ^{*}1s < σ2s < σ^{*} 2s < σ2p_{z} < σ^{*} 2p_{z} < (π2p_{x} = π2p_{y} ) < (π^{*} 2p_{x} = π^{*} 2p_{y} )",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 14434,
+      "number": 22,
+      "type": "mcq",
+      "text": "Given below are two statements: one is labelled as Assertion A and the other is labelled as Reason R: Assertion A: Metallic sodium dissolves in liquid ammonia giving a deep blue solution, which is paramagnetic. Reason R: The deep blue solution is due to the formation of amide. In the light of the above statements, choose the correct answer from the options given below:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 22,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "A is false but R is true.",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Both A and R are true and R is the correct explanation of A.",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Both A and R are true but R is NOT the correct explanation of A.",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "A is true but R is false.",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 14273,
+      "number": 23,
+      "type": "mcq",
+      "text": "The pair of lanthanoid ions which are diamagnetic is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 23,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Gd^{3+} and Eu^{3+}",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Pm^{3+} and Sm^{3+}",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Ce^{4+} and Yb^{2+}",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Ce^{3+} and Eu^{2+}",
+          "figure_url": null
+        }
+      ],
+      "figure_url": null
+    },
+    {
+      "id": 14226,
+      "number": 24,
+      "type": "mcq",
+      "text": "Intramolecular hydrogen bonding is present in",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 24,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "",
+          "figure_url": "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/neet-2024/Question 53 option a.png"
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "HF",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "",
+          "figure_url": "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/neet-2024/Question 53 option c.png"
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "",
+          "figure_url": "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/neet-2024/Question 53 option d.png"
+        }
+      ],
+      "figure_url": null
+    },
+    {
+      "id": 14229,
+      "number": 25,
+      "type": "mcq",
+      "text": "Match List I with List II.\nList I (Compound)\nList II (Shape/geometry)\nA. NH_{3}  I. Trigonal Pyramidal\nB. BrF_{5}  II. Square Planar\nC. XeF_{4}  III. Octahedral\nD. SF_{6}  IV. Square Pyramidal\nChoose the correct answer from the options given below:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 25,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "A-III, B-IV, C-I, D-II",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "A-II, B-III, C-IV, D-I",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "A-I, B-IV, C-II, D-III",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "A-II, B-IV, C-III, D-I",
+          "figure_url": null
+        }
+      ],
+      "figure_url": null
+    }
+  ]
+}

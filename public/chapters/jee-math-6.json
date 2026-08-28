@@ -1,0 +1,964 @@
+{
+  "key": "jee-math-6",
+  "title": "Coordinate Geometry (JEE Main)",
+  "full_title": "JEE Main Chapter Test - Coordinate Geometry",
+  "subject": "Mathematics",
+  "chapter": "Coordinate Geometry",
+  "exam_type": "jee",
+  "is_trial": false,
+  "duration_minutes": 60,
+  "difficulty": "Medium",
+  "question_count": 25,
+  "questions": [
+    {
+      "id": 8011,
+      "number": 1,
+      "type": "mcq",
+      "text": "The eccentricity of an ellipse E with centre at the origin O is √3/2 and its directrices are x = ± 4√6/3. Let H : x²/a² - y²/b² = 1 be a hyperbola whose eccentricity is equal to the length of semi-major axis of E, and whose length of latus rectum is equal to the length of minor axis of E. Then the distance between the foci of H is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 1,
+      "sections": {
+        "name": "Mathematics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "4√2 / √7",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "4√2 / 7",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "4 / √7",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "8 / 7",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 3022,
+      "number": 2,
+      "type": "numerical",
+      "text": "Consider parabola P : y² = 4kx and ellipse E : x²/a² + y²/b² = 1. Intersecting line segment of latus rectums has eccentricity e. Then e² + 2√2 is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 2,
+      "sections": {
+        "name": "Mathematics"
+      },
+      "subsections": {
+        "name": "Section B"
+      },
+      "question_options": [],
+      "figure_url": []
+    },
+    {
+      "id": 6013,
+      "number": 3,
+      "type": "mcq",
+      "text": "Let eccentricity e of hyperbola satisfy 6e² - 11e + 3 = 0. If foci of hyperbola are (3, 5) and (3, -4), then length of its latus rectum is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 3,
+      "sections": {
+        "name": "Mathematics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "11 / 3",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "17 / 3",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "15 / 2",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "17 / 2",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 8012,
+      "number": 4,
+      "type": "mcq",
+      "text": "Let x = 9 be a directrix of an ellipse E, whose centre is at the origin and eccentricity is 1/3. Let P(α, 0), α > 0, be a focus of E and AB be a chord passing through P. Then the locus of the mid point of AB is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 4,
+      "sections": {
+        "name": "Mathematics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "9y² = 8x(1 - x)",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "3y² = 4x(1 - x)",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "9y² = 8x(x - 1)",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "3y² = 4x(x - 1)",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 7011,
+      "number": 5,
+      "type": "mcq",
+      "text": "If the eccentricity e of the hyperbola x²/a² - y²/b² = 1, passing through (6, 4√3), satisfies 15(e² + 1) = 34e, then the length of the latus rectum of the hyperbola x²/b² - y²/(2(a² + 1)) = 1 is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 5,
+      "sections": {
+        "name": "Mathematics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "10",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "20",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "25",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "30",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 2023,
+      "number": 6,
+      "type": "numerical",
+      "text": "Let A(3, 0) and circles with variable diameter AB touch the circle x² + y² = 36 internally. Locus of B is curve C with eccentricity e. The value of 72e² is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 6,
+      "sections": {
+        "name": "Mathematics"
+      },
+      "subsections": {
+        "name": "Section B"
+      },
+      "question_options": [],
+      "figure_url": []
+    },
+    {
+      "id": 1010,
+      "number": 7,
+      "type": "mcq",
+      "text": "Let an ellipse x²/a² + y²/b² = 1, a < b, pass through the point (4, 3) and have eccentricity √5 / 3. Then the length of its latus rectum is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 7,
+      "sections": {
+        "name": "Mathematics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "4√5 / 3",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "2√5",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "7√5 / 3",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "8√5 / 3",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 5009,
+      "number": 8,
+      "type": "mcq",
+      "text": "Let a focus of the ellipse E : x²/a² + y²/b² = 1 be S(4, 0) and its eccentricity be 4/5. If the point P(3, α) lies on E and O is the origin, then the area of ΔPOS is equal to:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 8,
+      "sections": {
+        "name": "Mathematics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "12 / 5",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "14 / 5",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "24 / 5",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "48 / 5",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 8010,
+      "number": 9,
+      "type": "mcq",
+      "text": "Let C be a circle having centre in the first quadrant and touching the x-axis at a distance of 3 units from the origin. If the circle C has an intercept of length 6√3 on y-axis, then the length of the chord of the circle C on the line x - y = 3 is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 9,
+      "sections": {
+        "name": "Mathematics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "8",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "6",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "6√2",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "8√2",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 7003,
+      "number": 10,
+      "type": "mcq",
+      "text": "Let e₁ and e₂ be two distinct roots of the equation x² - ax + 2 = 0. Let the sets {a ∈ ℝ : e₁ and e₂ are eccentricities of hyperbolas} = (α, β), and {a ∈ ℝ : e₁ and e₂ are eccentricities of an ellipse and a hyperbola, respectively} = (γ, ∞). Then α² + β² + γ² is equal to:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 10,
+      "sections": {
+        "name": "Mathematics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "18",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "22",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "26",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "34",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 7012,
+      "number": 11,
+      "type": "mcq",
+      "text": "Let chord PQ of length 3√13 of the parabola y² = 12x be such that the ordinates of points P and Q are in the ratio 1 : 2. If the chord PQ subtends an angle α at the focus of the parabola, then sin α is equal to:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 11,
+      "sections": {
+        "name": "Mathematics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "3 / 5",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "4 / 5",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "5 / 13",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "12 / 13",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 2010,
+      "number": 12,
+      "type": "mcq",
+      "text": "Let a circle pass through the origin and its centre be the point of intersection of two mutually perpendicular lines x + (k - 1)y + 3 = 0 and 2x + k²y - 4 = 0. If the line x - y + 2 = 0 intersects the circle at points A and B, then (AB)² is equal to:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 12,
+      "sections": {
+        "name": "Mathematics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "10",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "27",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "18",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "34",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 4010,
+      "number": 13,
+      "type": "mcq",
+      "text": "Let P(3cos α, 2sin α), α ≠ 0, be a point on the ellipse x²/9 + y²/4 = 1, Q be a point on the circle x² + y² - 14x - 14y + 82 = 0 and R be a point on line x + y = 5 such that centroid of ΔPQR is (2 + cos α, 3 + (2/3)sin α). Then sum of ordinates of all possible points R is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 13,
+      "sections": {
+        "name": "Mathematics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "6",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "2",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "4",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "8",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 4011,
+      "number": 14,
+      "type": "mcq",
+      "text": "Let H : x²/a² - y²/b² = 1 be a hyperbola such that distance between its foci is 6 and distance between its directrices is 8/3. If line x = α intersects hyperbola at A and B such that area of ΔAOB is 4√15, O origin, then α² is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 14,
+      "sections": {
+        "name": "Mathematics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "12",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "16",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "24",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "25",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 4024,
+      "number": 15,
+      "type": "numerical",
+      "text": "Let A, B, C be vertices of variable right triangle inscribed in parabola y² = 16x with B(4,8). Locus of centroid of ΔABC is conic C_o. 3 × (latus rectum of C_o) is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 15,
+      "sections": {
+        "name": "Mathematics"
+      },
+      "subsections": {
+        "name": "Section B"
+      },
+      "question_options": [],
+      "figure_url": []
+    },
+    {
+      "id": 6011,
+      "number": 16,
+      "type": "mcq",
+      "text": "Let P be the vertex of parabola y = x² - 6x + 12. If line passing through P intersects circle x² + y² - 2x - 4y + 3 = 0 at R and S, then maximum value of (PR + PS)² is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 16,
+      "sections": {
+        "name": "Mathematics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "10",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "20",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "25",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "5",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 6012,
+      "number": 17,
+      "type": "mcq",
+      "text": "Let directrix of parabola P : y² = 8x cut x-axis at A. Let B(α, β), α > 1, be point on P such that slope of AB is 3/5. If BC is focal chord of P, then 6 × Area(ΔABC) is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 17,
+      "sections": {
+        "name": "Mathematics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "80",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "160",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "174",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "192",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 5010,
+      "number": 18,
+      "type": "mcq",
+      "text": "Let P be a moving point on the circle x² + y² - 6x - 8y + 21 = 0. Then the maximum distance of P from the vertex of the parabola x² + 6x + y + 13 = 0 is equal to:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 18,
+      "sections": {
+        "name": "Mathematics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "8",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "10",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "12",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "9",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 7002,
+      "number": 19,
+      "type": "mcq",
+      "text": "Let one root of the quadratic equation in x: (k² - 15k + 27)x² + 9(k - 1)x + 18 = 0 be twice the other. Then the length of the latus rectum of the parabola y² = 6kx is equal to:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 19,
+      "sections": {
+        "name": "Mathematics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "4",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "6",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "8",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "12",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 9011,
+      "number": 20,
+      "type": "mcq",
+      "text": "Let O be the vertex of the parabola y² = 4x and its chords OP and OQ are perpendicular to each other. If the locus of the mid-point of the line segment PQ is a conic C, then the length of its latus rectum is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 20,
+      "sections": {
+        "name": "Mathematics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "1",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "2",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "4",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "8",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 2012,
+      "number": 21,
+      "type": "mcq",
+      "text": "Let the parabola y = x² + px + q passing through (1, -1) be such that the distance between its vertex and x-axis is minimum. Then p² + q² is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 21,
+      "sections": {
+        "name": "Mathematics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "2",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "4",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "5",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "8",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 2002,
+      "number": 22,
+      "type": "mcq",
+      "text": "Let the circles C₁ : |z| = r and C₂ : |z - 3 - 4i| = 5, z ∈ ℂ, be such that C₂ lies within C₁. If z₁ moves on C₁, z₂ moves on C₂ and min|z₁ - z₂| = 2, then max|z₁ - z₂| is equal to:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 22,
+      "sections": {
+        "name": "Mathematics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "12",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "17",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "22",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "24",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 2011,
+      "number": 23,
+      "type": "mcq",
+      "text": "Let O be the origin, and P and Q be two points on the rectangular hyperbola xy = 12 such that the mid point of line segment PQ is (1/2, -1/2). Then the area of triangle OPQ equals:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 23,
+      "sections": {
+        "name": "Mathematics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "3/2",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "5/2",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "7/2",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "9/2",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 1024,
+      "number": 24,
+      "type": "numerical",
+      "text": "Let a circle C have its centre in the first quadrant, intersect the coordinate axes at exactly three points and cut off equal intercepts from the coordinate axes. If the length of the chord of C on the line x + y = 1 is √14, then the square of the radius of C is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 24,
+      "sections": {
+        "name": "Mathematics"
+      },
+      "subsections": {
+        "name": "Section B"
+      },
+      "question_options": [],
+      "figure_url": []
+    },
+    {
+      "id": 4006,
+      "number": 25,
+      "type": "mcq",
+      "text": "Let A = [[1, 2, 7], [4, -2, 8], [3, 8, -7]] and det(A - αI) = 0, where α is a real number. If the largest possible value of α is p, then the circle (x - p)² + (y - 2p)² = 320, intersects the co-ordinate axes at:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 25,
+      "sections": {
+        "name": "Mathematics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "1 point",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "2 points",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "3 points",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "4 points",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    }
+  ]
+}

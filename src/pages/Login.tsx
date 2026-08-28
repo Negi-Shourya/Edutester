@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Link, Navigate } from 'react-router-dom';
+import { Link, Navigate, useLocation } from 'react-router-dom';
 import { Loader2, Lock, Zap, ShieldCheck } from 'lucide-react';
 import { useAuth } from '../context/auth-context';
 import GoogleIcon from '../components/GoogleIcon';
@@ -12,20 +12,23 @@ const perks = [
 ];
 
 export default function Login() {
+  const location = useLocation();
   const { user, loading, signInWithGoogle, authError } = useAuth();
   const [error, setError] = useState<string | null>(null);
   const [googleLoading, setGoogleLoading] = useState(false);
   const [track, setTrack] = useState<ExamType>(getExam());
 
   if (!loading && user) {
-    return <Navigate to="/dashboard" replace />;
+    const from = (location.state as { from?: string } | null)?.from || '/dashboard';
+    return <Navigate to={from} replace />;
   }
 
   const handleGoogle = async () => {
     setError(null);
     setGoogleLoading(true);
     try {
-      await signInWithGoogle();
+      const from = (location.state as { from?: string } | null)?.from;
+      await signInWithGoogle(from ? `${window.location.origin}${from}` : undefined);
     } catch {
       setGoogleLoading(false);
       setError('Could not start Google sign in. Please try again.');

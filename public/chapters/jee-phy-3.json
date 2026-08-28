@@ -1,0 +1,572 @@
+{
+  "key": "jee-phy-3",
+  "title": "Work, Energy & Power (JEE Main)",
+  "full_title": "JEE Main Chapter Test - Work, Energy & Power",
+  "subject": "Physics",
+  "chapter": "Work, Energy & Power",
+  "exam_type": "jee",
+  "is_trial": false,
+  "duration_minutes": 50,
+  "difficulty": "Medium",
+  "question_count": 18,
+  "questions": [
+    {
+      "id": 1038,
+      "number": 1,
+      "type": "mcq",
+      "text": "Power dissipated in coil is P. When replaced with second coil having 2N, 2A and wire radius 3r, power dissipated is √2 α P. The value of α is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 1,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "36",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "128√2",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "16",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "64",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 4046,
+      "number": 2,
+      "type": "numerical",
+      "text": "Diode Zener voltage 10 V, max power dissipation 0.5 W. Minimum series resistance for safety when connected to 25 V power supply is _______ Ω:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 2,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section B"
+      },
+      "question_options": [],
+      "figure_url": []
+    },
+    {
+      "id": 2033,
+      "number": 3,
+      "type": "mcq",
+      "text": "Surface tension of a soap bubble is 0.03 N/m. Work done in increasing diameter from 2 cm to 6 cm is α π × 10⁻⁴ J. Value of α is (π = 3.14):",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 3,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "0.86",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "0.64",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "1.92",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "7.68",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 1047,
+      "number": 4,
+      "type": "numerical",
+      "text": "A vessel contains 0.15 m³ gas at 8 bar and 140°C with c_p = 3R and c_v = 2R. Expanded adiabatically till pressure falls to 1 bar. Work done during this process is _______ kJ:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 4,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section B"
+      },
+      "question_options": [],
+      "figure_url": []
+    },
+    {
+      "id": 4043,
+      "number": 5,
+      "type": "mcq",
+      "text": "In Rutherford alpha particle scattering experiment, few alpha particles rebound back because:\nA. Gold nucleus size very small\nB. Equal charge\nC. Minimum impact parameter\nD. High KE\nE. Head-on collision",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 5,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "A, B Only",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "B, E Only",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "C, D Only",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "A, C, E Only",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 3050,
+      "number": 6,
+      "type": "numerical",
+      "text": "Inductor 10 mH, capacitor 0.1 μF, resistor 100 Ω connected across AC supply 220 V, 70 Hz. Power factor is 0.5. Difference |X_L - X_C| is √3 α Ω. Value of α is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 6,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section B"
+      },
+      "question_options": [],
+      "figure_url": []
+    },
+    {
+      "id": 3046,
+      "number": 7,
+      "type": "numerical",
+      "text": "1 kg block subjected to forces (2î + 3ĵ + 4k̂) N and (3î - ĵ - 2k̂) N moves distance 25 m along (3î - 4ĵ). Work done is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 7,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section B"
+      },
+      "question_options": [],
+      "figure_url": []
+    },
+    {
+      "id": 3049,
+      "number": 8,
+      "type": "numerical",
+      "text": "Body of mass 2 kg moves under time dependent force \\vec{F} = (2t î + 6t² ĵ) N. Power produced at t = 2 s is _______ W:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 8,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section B"
+      },
+      "question_options": [],
+      "figure_url": []
+    },
+    {
+      "id": 6028,
+      "number": 9,
+      "type": "mcq",
+      "text": "Mass 1 kg on 30° incline moved up with constant velocity 4 m/s. Work done by friction force in 2 s is (g = 10 m/s²):",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 9,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "20 J",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "25 J",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "30 J",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "10 J",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 6032,
+      "number": 10,
+      "type": "mcq",
+      "text": "Body of mass m taken from earth surface to height 2 R_e. Increase in potential energy is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 10,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "(1/2) m g R_e",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "(3/4) m g R_e",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "(1/4) m g R_e",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "(2/3) m g R_e",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 6046,
+      "number": 11,
+      "type": "numerical",
+      "text": "Copper wire 3 m stretched by 3 mm. Volume = 600 × 10⁻⁶ m³. Elastic potential energy is _______ J (Y = 1.1 × 10¹¹ N/m²):",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 11,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section B"
+      },
+      "question_options": [],
+      "figure_url": []
+    },
+    {
+      "id": 8029,
+      "number": 12,
+      "type": "mcq",
+      "text": "Body of mass 1 kg moves along straight line with v = 2x². Work done during displacement from x = 0 to 5 m is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 12,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "0 J",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "250 J",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "1250 J",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "1000 J",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 7039,
+      "number": 13,
+      "type": "mcq",
+      "text": "Max LED rated power 2 mW, input 5 V. Current through R_S is 0.5 mA. Min value of R_S to ensure LED safety is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 13,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "6 kΩ",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "2 kΩ",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "4 kΩ",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "5 kΩ",
+          "figure_url": null
+        }
+      ],
+      "figure_url": [
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/2026-04-06-morning/2026-04-06_morning_Q39.png"
+      ]
+    },
+    {
+      "id": 7050,
+      "number": 14,
+      "type": "numerical",
+      "text": "Gas isothermally compressed to 1/3 of V₀ = 3 L. Bulk modulus 3 × 10⁵ N/m². Magnitude of work done is _______ J:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 14,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section B"
+      },
+      "question_options": [],
+      "figure_url": []
+    },
+    {
+      "id": 7049,
+      "number": 15,
+      "type": "numerical",
+      "text": "3 C charge moves from (0,-2,-5) to (5,1,2) in \\vec{E} = 2x î + 3y² ĵ + 4 k̂ N/C. Work done is _______ J:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 15,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section B"
+      },
+      "question_options": [],
+      "figure_url": []
+    },
+    {
+      "id": 7027,
+      "number": 16,
+      "type": "mcq",
+      "text": "Potential energy V = A √x / (x + B). Dimensions of AB are:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 16,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "[M¹ L^{5/2} T⁻²]",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "[M^{3/2} L^{5/2} T⁻²]",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "[M¹ L² T⁻²]",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "[M¹ L^{7/2} T⁻²]",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 7028,
+      "number": 17,
+      "type": "mcq",
+      "text": "Raindrop 1 g falls from 1 km height with v_initial = 0. Hits ground at 5 m/s. Work done by unknown resistive force is (g = 10 m/s²):",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 17,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "-8.75 J",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "-8.35 J",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "-9.55 J",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "-9.98 J",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 7045,
+      "number": 18,
+      "type": "mcq",
+      "text": "LCR series driven with E_rms = 90 V, f = 30 Hz, R = 80 Ω, X_L = 20 Ω, X_C = 80 Ω. Power factor is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 18,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "0.8",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "0.64",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "0.9",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "0.5",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    }
+  ]
+}

@@ -1,0 +1,1032 @@
+{
+  "key": "neet-chem-6",
+  "title": "Organic Chemistry Basics (NEET)",
+  "full_title": "NEET (UG) Chapter Test - Organic Chemistry Basics",
+  "subject": "Chemistry",
+  "chapter": "GOC & Hydrocarbons",
+  "exam_type": "neet",
+  "is_trial": false,
+  "duration_minutes": 45,
+  "difficulty": "Medium",
+  "question_count": 24,
+  "questions": [
+    {
+      "id": 23419,
+      "number": 1,
+      "type": "mcq",
+      "text": "The correct statement regarding electrophile is :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 1,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Electrophile can be either neutral or positively charged species and can form a bond by accepting a pair of electrons from a nucleophile",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Electrophile is a negatively charged species and can form a bond by accepting a pair of electrons from a nucleophile",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Electrophile is a negatively charged species and can form a bond by accepting a pair of electrons from another electrophile",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Electrophiles are generally neutral species and can form a bond by accepting a pair of electrons from a nucleophile",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 22151,
+      "number": 2,
+      "type": "mcq",
+      "text": "The type of isomerism shown by the complex [\\text{CoCl}_2(\\text{en})_2] is :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 2,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Ionization isomerism",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Coordination isomerism",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Geometrical isomerism",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Linkage isomerism",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 14253,
+      "number": 3,
+      "type": "mcq",
+      "text": "Match List I with List II.\nList I (Complex)\nList II (Type of isomerism)\nA. [Co(NH_{3})_{5}(NO_{2})]Cl_{2}  I. Solvate Isomerism\nB. [Co(NH_{3})_{5}(SO_{4})]Br  II. Linkage Isomerism\nC. [Co(NH_{3})_{6}][Cr(CN)_{6}]  III. Ionization Isomerism\nD. [Co(H_{2}O)_{6}]Cl_{3}  IV. Coordination Isomerism\nChoose the correct answer from the options given below:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 3,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "A-I, B-IV, C-III, D-II",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "A-II, B-IV, C-III, D-I",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "A-II, B-III, C-IV, D-I",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "A-I, B-III, C-IV, D-II",
+          "figure_url": null
+        }
+      ],
+      "figure_url": null
+    },
+    {
+      "id": 18016,
+      "number": 4,
+      "type": "mcq",
+      "text": "A tertiary butyl carbocation is more stable than a secondary butyl carbocation because of which of the following ?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 4,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "+ R effect of – CH_{3} groups",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "– R effect of – CH_{3} groups",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Hyperconjugation",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "– I effect of – CH_{3} groups",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 20354,
+      "number": 5,
+      "type": "mcq",
+      "text": "An alkene \"A\" on reaction with \\text{O}_3 and \\text{Zn}-\\text{H}_2\\text{O} gives propanone and ethanal in equimolar ratio. Addition of \\text{HCl} to alkene \"A\" gives \"B\" as the major product. The structure of product \"B\" is :-",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 5,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "\\text{Cl}-\\text{CH}_2-\\text{CH}_2-\\text{CH}(\\text{CH}_3)_2",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "\\text{H}_3\\text{C}-\\text{CH}_2-\\text{CH}(\\text{CH}_3)-\\text{CH}_2\\text{Cl}",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "\\text{H}_3\\text{C}-\\text{CH}_2-\\text{C}(\\text{Cl})(\\text{CH}_3)_2",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "\\text{H}_3\\text{C}-\\text{CH}(\\text{CH}_3)-\\text{CH}(\\text{Cl})-\\text{CH}_3",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 18008,
+      "number": 6,
+      "type": "mcq",
+      "text": "An alkene on ozonolysis gives methanal as one of the product. Its structure is",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 6,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "",
+          "figure_url": "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/neet-2020/q69_opt1.png"
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "",
+          "figure_url": "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/neet-2020/q69_opt2.png"
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "",
+          "figure_url": "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/neet-2020/q69_opt3.png"
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "",
+          "figure_url": "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/neet-2020/q69_opt4.png"
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 23415,
+      "number": 7,
+      "type": "mcq",
+      "text": "The IUPAC name of the compound is :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 7,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "3-keto-2-methylhex-5-enal",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "3-keto-2-methylhex-4-enal",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "5-formylhex-2-en-3-one",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "5-methyl-4-oxohex-2-en-5-al",
+          "figure_url": null
+        }
+      ],
+      "figure_url": [
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/neet-2017/Q76.png?v=1787866923092"
+      ]
+    },
+    {
+      "id": 22143,
+      "number": 8,
+      "type": "mcq",
+      "text": "Which of the following carbocations is expected to be most stable ?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 8,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "",
+          "figure_url": "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/neet-2018/Q64_opt_1.png?v=1787857487838"
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "",
+          "figure_url": "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/neet-2018/Q64_opt_2.png?v=1787857487838"
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "",
+          "figure_url": "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/neet-2018/Q64_opt_3.png?v=1787857487838"
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "",
+          "figure_url": "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/neet-2018/Q64_opt_4.png?v=1787857487838"
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 22145,
+      "number": 9,
+      "type": "mcq",
+      "text": "In the reaction shown, the electrophile involved is :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 9,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "\\text{dichloromethyl anion } (\\overset{\\ominus}{\\text{C}}\\text{HCl}_2)",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "\\text{formyl cation } (\\overset{\\oplus}{\\text{C}}\\text{HO})",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "\\text{dichloromethyl cation } (\\overset{\\oplus}{\\text{C}}\\text{HCl}_2)",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "\\text{dichlorocarbene } (:\\text{CCl}_2)",
+          "figure_url": null
+        }
+      ],
+      "figure_url": [
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/neet-2018/Q66.png?v=1787857487838"
+      ]
+    },
+    {
+      "id": 17989,
+      "number": 10,
+      "type": "mcq",
+      "text": "Which of the following alkane cannot be made in good yield by Wurtz reaction?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 10,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "2,3-Dimethylbutane",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "n-Heptane",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "n-Butane",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "n-Hexane",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 18001,
+      "number": 11,
+      "type": "mcq",
+      "text": "Identify the incorrect match.\n| Name | IUPAC Official Name |\n|---|---|\n| (a) Unnilunium | (i) Mendelevium |\n| (b) Unniltrium | (ii) Lawrencium |\n| (c) Unnilhexium | (iii) Seaborgium |\n| (d) Unununnium | (iv) Darmstadtium |",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 11,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "(b), (ii)",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "(c), (iii)",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "(d), (iv)",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "(a), (i)",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 17639,
+      "number": 12,
+      "type": "mcq",
+      "text": "What is the IUPAC name of the organic compound formed in the following chemical reaction ? Acetone \\xrightarrow[\\text{(ii) H}_{2}\\text{O, H}^{+}]{\\text{(i) C}_{2}\\text{H}_{5}\\text{MgBr, dry Ether}} Product",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 12,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "2-methyl propan-2-ol",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "pentan-2-ol",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "pentan-3-ol",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "2-methyl butan-2-ol",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 15227,
+      "number": 13,
+      "type": "mcq",
+      "text": "The IUPAC name of an element with atomic number 119 is",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 13,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "ununennium",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "unnilennium",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "unununnium",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "ununoctium",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 15231,
+      "number": 14,
+      "type": "mcq",
+      "text": "The IUPAC name of the complex- [Ag(H_{2}O)_{2}][Ag(CN)_{2}] is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 14,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "dicyanidosilver(II) diaquaargentate(II)",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "diaquasilver(II) dicyanidoargentate(II)",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "dicyanidosilver(I) diaquaargentate(I)",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "diaquasilver(I) dicyanidoargentate(I)",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 15239,
+      "number": 15,
+      "type": "mcq",
+      "text": "The incorrect statement regarding chirality is",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 15,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "SN_{1} reaction yields 1 : 1 mixture of both enantiomers",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "The product obtained by SN_{2} reaction of haloalkane having chirality at the reactive site shows inversion of configuration",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Enantiomers are superimposable mirror images on each other",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "A racemic mixture shows zero optical rotation",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 15263,
+      "number": 16,
+      "type": "mcq",
+      "text": "The correct IUPAC name of the following compound is",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 16,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "1-bromo-5-chloro-4-methylhexan-3-ol",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "6-bromo-2-chloro-4-methylhexan-4-ol",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "1-bromo-4-methyl-5-chlorohexan-3-ol",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "6-bromo-4-methyl-2-chlorohexan-4-ol",
+          "figure_url": null
+        }
+      ],
+      "figure_url": [
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/neet-2022/q90.png"
+      ]
+    },
+    {
+      "id": 14265,
+      "number": 17,
+      "type": "mcq",
+      "text": "Identify the correct answer.",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 17,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Dipole moment of NF_{3} is greater than that of NH_{3}.",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Three canonical forms can be drawn for CO_{3}^{2-} ion.",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Three resonance structures can be drawn for ozone.",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "BF_{3} has non-zero dipole moment.",
+          "figure_url": null
+        }
+      ],
+      "figure_url": null
+    },
+    {
+      "id": 14233,
+      "number": 18,
+      "type": "mcq",
+      "text": "A compound with a molecular formula of C_{6}H_{14} has two tertiary carbons. Its IUPAC name is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 18,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "2,3-dimethylbutane",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "2,2-dimethylbutane",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "n-hexane",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "2-methylpentane",
+          "figure_url": null
+        }
+      ],
+      "figure_url": null
+    },
+    {
+      "id": 14257,
+      "number": 19,
+      "type": "mcq",
+      "text": "The most stable carbocation among the following is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 19,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "",
+          "figure_url": "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/neet-2024/Question 84 option a.png"
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "",
+          "figure_url": "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/neet-2024/Question 84 option b.png"
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "",
+          "figure_url": "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/neet-2024/Question 84 option c.png"
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "",
+          "figure_url": "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/neet-2024/Question 84 option d.png"
+        }
+      ],
+      "figure_url": null
+    },
+    {
+      "id": 19066,
+      "number": 20,
+      "type": "mcq",
+      "text": "Match List-I with List-II.\n| List-I (Transition metal/compound/complex) | List-II (Catalytic Role) |\n|---|---|\n| (A) V_{2}O_{5} | (I) Preparation of ammonia from N_{2}/H_{2} mixture |\n| (B) Fe | (II) Polymerisation of alkynes |\n| (C) PdCl_{2} | (III) Preparation of H_{2}SO_{4} from SO_{2} |\n| (D) Ni complex | (IV) Oxidation of ethyne to ethanal |\nChoose the correct answer from the options given below:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 20,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "A-III, B-IV, C-I, D-II",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "A-IV, B-I, C-III, D-II",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "A-II, B-I, C-IV, D-III",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "A-III, B-I, C-IV, D-II",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 19072,
+      "number": 21,
+      "type": "mcq",
+      "text": "Match List I with List II:\n| List I (Complex) | List II (Type of isomerism) |\n|---|---|\n| A. [Pt(NH_{3})_{2}Cl_{2}] | I. Optical |\n| B. [Co(en)_{3}]^{3+} | II. Solvate |\n| C. [Co(NH_{3})_{5}]NO_{2}]Cl_{2} | III. Geometrical |\n| D. [Cr(H_{2}O)_{6}]Cl_{3} | IV. Linkage |\nChoose the correct answer from the options given below:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 21,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "A-III, B-I, C-II, D-IV",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "A-I, B-III, C-II, D-IV",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "A-II, B-IV, C-III, D-I",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "A-III, B-I, C-IV, D-II",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 19074,
+      "number": 22,
+      "type": "mcq",
+      "text": "The correct IUPAC name of the following compound is :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 22,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "3-ethyl-5-methylheptane",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "2,4-diethylhexane",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "3-methyl-5-ethylheptane",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "3,5-diethylhexane",
+          "figure_url": null
+        }
+      ],
+      "figure_url": [
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/neet-2026/q55_fig1.png"
+      ]
+    },
+    {
+      "id": 19107,
+      "number": 23,
+      "type": "mcq",
+      "text": "Identify the incorrect statement from the following:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 23,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "The largest and the smallest species among Mg, Mg^{2+}, Al and Al^{3+} are Al and Mg^{2+}, respectively.",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "The IUPAC name of the element with atomic number 107 is Unnilseptium.",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "The similarity in behaviour of Li with Mg is referred to as 'diagonal relationship'.",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "The oxidation state and covalency of Al in [AlCl(H_{2}O)_{5}]^{2+} are 3 and 6 respectively.",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 18167,
+      "number": 24,
+      "type": "mcq",
+      "text": "The following carbocation is stabilized by the interaction of the empty p orbital with",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 24,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "filled \\sigma and filled \\pi orbitals",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "empty \\sigma and empty \\pi* orbitals",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "empty \\sigma* and filled \\pi orbitals",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "empty \\sigma* and empty \\pi* orbitals",
+          "figure_url": null
+        }
+      ],
+      "figure_url": [
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/reneet-2026/q48_fig1.png"
+      ]
+    }
+  ]
+}

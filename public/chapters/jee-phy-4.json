@@ -1,0 +1,852 @@
+{
+  "key": "jee-phy-4",
+  "title": "Rotational Motion (JEE Main)",
+  "full_title": "JEE Main Chapter Test - Rotational Motion",
+  "subject": "Physics",
+  "chapter": "Rotational Motion",
+  "exam_type": "jee",
+  "is_trial": false,
+  "duration_minutes": 60,
+  "difficulty": "Hard",
+  "question_count": 21,
+  "questions": [
+    {
+      "id": 3030,
+      "number": 1,
+      "type": "mcq",
+      "text": "Solid sphere M, R divided into two parts: smaller part M/8 converted to sphere r, larger part converted to disc thickness t, radius 2R. Ratio of MOI I₂/I₁ is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 1,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "35",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "70",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "140",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "210",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 6031,
+      "number": 2,
+      "type": "mcq",
+      "text": "Object of uniform density rolls up curved path with initial velocity v₀. Max height h = 7 v₀² / (10g). Object is a:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 2,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "solid cylinder",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "ring",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "disc",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "solid sphere",
+          "figure_url": null
+        }
+      ],
+      "figure_url": [
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/2026-04-05-evening/2026-04-05_evening_Q31.jpeg"
+      ]
+    },
+    {
+      "id": 2050,
+      "number": 3,
+      "type": "numerical",
+      "text": "Moment of inertia of rod (mass 40 kg, length 3 m) about axis AB equals that of solid sphere (mass 10 kg, radius R) about parallel axis separated by 3 m. R is √(α/2). Value of α is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 3,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section B"
+      },
+      "question_options": [],
+      "figure_url": [
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/2026-04-02-evening/2026-04-02_evening_Q50.jpeg"
+      ]
+    },
+    {
+      "id": 1029,
+      "number": 4,
+      "type": "mcq",
+      "text": "The position of an object having mass 0.1 kg as a function of time t is given as \\vec{r} = (10t² î + 5t³ ĵ) m. At t = 1 s, which statements are correct?\nA. Linear momentum \\vec{p} = (2î + 1.5ĵ) kg·m/s\nB. Force \\vec{F} = (2î + 3ĵ) N\nC. Angular momentum \\vec{L} = 15k̂ J·s\nD. Torque \\vec{τ} = 20k̂ N·m",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 4,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "A, B and C only",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "B, C and D only",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "A, C and D only",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "A, B and D only",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 8040,
+      "number": 5,
+      "type": "mcq",
+      "text": "Sphere 100 pF charged to 100 V touched with identical uncharged sphere. Energy change is α × 10⁻⁷ J. Value of α is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 5,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "5",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "5 / 2",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "7 / 2",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "9 / 2",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 7031,
+      "number": 6,
+      "type": "mcq",
+      "text": "Solid sphere radius 4 cm, mass 5 kg rotates at 1200 rpm. Stopped in 10 s. Applied torque and rotations before rest are:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 6,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "0.128π Nm, 100",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "0.0128π Nm, 50",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "0.128π Nm, 50",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "0.0128π Nm, 100",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 9032,
+      "number": 7,
+      "type": "mcq",
+      "text": "Solid cylinder R, L slipping with v₀ = 49 m/s, ω₀ = v₀ / (4R). Time taken to start rolling is (μ_K = 0.25, g = 9.8 m/s²):",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 7,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "15 s",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "5 s",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "10 s",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "7.5 s",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 2032,
+      "number": 8,
+      "type": "mcq",
+      "text": "In a screw gauge, zero of main scale coincides with 5th division of circular scale (positive zero error). 100 divisions, pitch 0.1 mm. Main scale reading 5 mm, 50th division coincides. Diameter of sphere is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 8,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "5.045 mm",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "5.055 mm",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "5.450 mm",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "5.550 mm",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 2040,
+      "number": 9,
+      "type": "mcq",
+      "text": "Point charges 8 μC at x = 2 cm and -2 μC at x = 4 cm. Ratio of electric flux through concentric spheres r = 3 cm and r = 5 cm is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 9,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "4 : 1",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "3 : 4",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "4 : 3",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "4 : 5",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 1031,
+      "number": 10,
+      "type": "mcq",
+      "text": "A particle is rotating in a circular path described as θ = 5t⁴/40 - t³/3. The angular acceleration of the particle after 10 seconds is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 10,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "150 rad/s²",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "120 rad/s²",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "130 rad/s²",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "170 rad/s²",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 1034,
+      "number": 11,
+      "type": "mcq",
+      "text": "Two charged conducting spheres S₁ and S₂ of radii 8 cm and 18 cm are connected by a wire. After equilibrium is established, the ratio of electric fields E_{S₁} / E_{S₂} is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 11,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "3 / 2",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "2 / 3",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "4 / 9",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "9 / 4",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 1044,
+      "number": 12,
+      "type": "mcq",
+      "text": "Angular momentum of an electron in a hydrogen atom is 3h/π. Then the energy of the electron is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 12,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "-1.51 eV",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "-0.85 eV",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "-0.38 eV",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "-0.28 eV",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 4035,
+      "number": 13,
+      "type": "mcq",
+      "text": "Uniform disc radius R, mass M oscillates about top point A. Time period for small oscillations is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 13,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "2π √(5R / 4g)",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "2π √(2R / 3g)",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "2π √(3R / 2g)",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "2π √(3R / g)",
+          "figure_url": null
+        }
+      ],
+      "figure_url": [
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/2026-04-04-evening/2026-04-04_evening_Q35.jpeg"
+      ]
+    },
+    {
+      "id": 4049,
+      "number": 14,
+      "type": "numerical",
+      "text": "Circular coil radius 2 cm, N = 125 turns, I = 1 A in uniform B = 0.4 T at 30° to axis. Torque is α × 10⁻⁴ N·m. Value of α is (π = 3.14):",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 14,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section B"
+      },
+      "question_options": [],
+      "figure_url": []
+    },
+    {
+      "id": 6036,
+      "number": 15,
+      "type": "mcq",
+      "text": "Metal rod length L rotates with angular velocity ω. Magnetic field B(r) = B₀ e^{-λr}. EMF induced in rod is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 15,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "B₀ ω [1/λ² - e^{-λL}(1/λ² + L/λ)]",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "B₀ ω [1/λ² + e^{-λL}(1/λ² + L/λ)]",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "B₀ ω [4/λ² - e^{-2λL}(1/λ² + 2L/λ)]",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "B₀ ω [3/λ² - e^{-3λL}(3/λ² + L/λ)]",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 8026,
+      "number": 16,
+      "type": "mcq",
+      "text": "The percentage error in the calculated volume of a sphere, if there is 2% error in its diameter measurement, is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 16,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "1%",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "2%",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "6%",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "8%",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 8028,
+      "number": 17,
+      "type": "mcq",
+      "text": "Solid sphere A (mass 5m) and spherical shell B (mass m), same radius, roll without slipping down rough incline under tangential force. Ratio of accelerations a_A to a_B is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 17,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "5 : 21",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "6 : 10",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "21 : 25",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "1 : 5",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 8030,
+      "number": 18,
+      "type": "mcq",
+      "text": "Cylinder with adiabatic walls divided into two 9 L compartments at same P, V, T. Left heated until P_left = 27P/8. Final volume in right compartment is (γ = 1.5):",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 18,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "3 L",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "4 L",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "14 L",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "9 L",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 8032,
+      "number": 19,
+      "type": "mcq",
+      "text": "Two identical bodies A and B have \\vec{v₁} = 4î, \\vec{v₂} = 4ĵ. Body A has \\vec{a₁} = 6î + 6ĵ, B acceleration zero. Path of centre of mass is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 19,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "circular",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "parabolic",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "straight line",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "elliptical",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 7026,
+      "number": 20,
+      "type": "mcq",
+      "text": "Density of cylinder measured with m = 97.42 ± 0.02 g, l = 8.35 ± 0.05 mm, d = 20.20 ± 0.02 mm. Percentage fractional error in density is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 20,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "0.63%",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "0.82%",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "0.72%",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "0.25%",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 9039,
+      "number": 21,
+      "type": "mcq",
+      "text": "Circular loop r = 2 cm, normal n̂ = (k̂+î)/√2 in \\vec{B} = B₀(3î+2k̂), B₀ = 4×10⁻³ T, I = 100√2 A. Torque is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 21,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "16 × 10⁻⁵ k̂ Wb·A",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "5024 × 10⁻⁷ k̂ Wb·A",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "5024 × 10⁻⁷ î Wb·A",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "5024 × 10⁻⁷ ĵ Wb·A",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    }
+  ]
+}

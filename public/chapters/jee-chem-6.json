@@ -1,0 +1,745 @@
+{
+  "key": "jee-chem-6",
+  "title": "Hydrocarbons (JEE Main)",
+  "full_title": "JEE Main Chapter Test - Hydrocarbons",
+  "subject": "Chemistry",
+  "chapter": "Hydrocarbons",
+  "exam_type": "jee",
+  "is_trial": false,
+  "duration_minutes": 50,
+  "difficulty": "Easy",
+  "question_count": 19,
+  "questions": [
+    {
+      "id": 2068,
+      "number": 1,
+      "type": "mcq",
+      "text": "Reaction sequence starting from 1-ethyl-4-nitrobenzene: (i) Br₂/AlBr₃ → A; (ii) Sn/HCl → B; (iii) NaNO₂/HCl → C; (iv) C₂H₅OH → D; (v) KMnO₄/KOH, H₃O⁺ → E. Compounds A and E are:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 1,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "A = 2-nitro-4-ethylbromobenzene, E = 3-bromobenzoic acid",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "A = 4-ethyl-3-nitrobromobenzene, E = 2-bromo-4-ethylbenzoic acid",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "A = 4-ethyl-2-nitrobromobenzene, E = 4-bromobenzoic acid",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "A = 2-bromo-4-ethylnitrobenzene, E = 3-bromo-4-ethylbenzoic acid",
+          "figure_url": null
+        }
+      ],
+      "figure_url": [
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/2026-04-02-evening/2026-04-02_evening_Q68.jpeg",
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/2026-04-02-evening/2026-04-02_evening_Q68_2.jpeg",
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/2026-04-02-evening/2026-04-02_evening_Q68_3.jpeg",
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/2026-04-02-evening/2026-04-02_evening_Q68_4.jpeg",
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/2026-04-02-evening/2026-04-02_evening_Q68_5.jpeg"
+      ]
+    },
+    {
+      "id": 3067,
+      "number": 2,
+      "type": "mcq",
+      "text": "Reaction sequence starting from aniline: (i) Br₂/water → A; (ii) NaNO₂/HCl → B; (iii) HBF₄, NaNO₂, Cu, Δ → C. Major product C is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 2,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "1-Bromo-4-nitrobenzene",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "1,3,5-Tribromo-2-nitrobenzene",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "4-Bromo-1-nitrobenzene",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "1,3,5-Tribromobenzene",
+          "figure_url": null
+        }
+      ],
+      "figure_url": [
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/2026-04-04-morning/2026-04-04_morning_Q67.png"
+      ]
+    },
+    {
+      "id": 3064,
+      "number": 3,
+      "type": "mcq",
+      "text": "An alkene X on ozonolysis gives H-CHO (2 moles), H-CO-CO-CHO, CH₃-CO-CO-CH₃. Alkene X is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 3,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Structure (1)",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Structure (2)",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "3,4-dimethylcyclohexa-1,3-diene (Structure 3)",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Structure (4)",
+          "figure_url": null
+        }
+      ],
+      "figure_url": [
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/2026-04-04-morning/2026-04-04_morning_Q64.png",
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/2026-04-04-morning/2026-04-04_morning_Q64_2.png",
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/2026-04-04-morning/2026-04-04_morning_Q64_3.png",
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/2026-04-04-morning/2026-04-04_morning_Q64_4.png"
+      ]
+    },
+    {
+      "id": 2065,
+      "number": 4,
+      "type": "mcq",
+      "text": "Correct statements regarding alkyl halides:\nA. Alc. KOH favours elimination\nB. S_N1 reactivity: C₆H₅CH₂Cl > C₆H₅CHClC₆H₅\nC. Non-substituted aryl halides exhibit properties similar to alkyl halides\nD. Vinyl chloride is haloalkene, allyl chloride is haloalkyne\nE. R-Cl can be prepared by R-OH + SOCl₂, but Ar-Cl cannot from Ar-OH",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 4,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "A, B and C Only",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "B and D Only",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "A and E Only",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "D and E Only",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 1073,
+      "number": 5,
+      "type": "numerical",
+      "text": "One mole of alkane (x) requires 8 moles oxygen for complete combustion. Sum of number of carbon and hydrogen atoms in alkane (x) is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 5,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section B"
+      },
+      "question_options": [],
+      "figure_url": []
+    },
+    {
+      "id": 4056,
+      "number": 6,
+      "type": "mcq",
+      "text": "Match List-I (Reaction) with List-II (Mechanism):\nA. Williamson Synthesis  I. Electrophilic addition\nB. Friedel Craft Reaction  II. Free radical substitution\nC. Bromination of vinyl benzene  III. Nucleophilic substitution\nD. Chlorination of toluene in light  IV. Electrophilic substitution",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 6,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "A-III, B-I, C-II, D-IV",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "A-III, B-IV, C-II, D-I",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "A-III, B-IV, C-I, D-II",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "A-I, B-III, C-IV, D-II",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 5065,
+      "number": 7,
+      "type": "mcq",
+      "text": "Friedel Craft's alkylation of benzene with n-propyl chloride:\nA. Major product n-propylbenzene\nB. iso-propyl carbocation generated\nC. Multiple substitution inevitable\nD. Electron donating group prevents reaction",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 7,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "A and D only",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "B and C only",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "A and C only",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "B and D only",
+          "figure_url": null
+        }
+      ],
+      "figure_url": [
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/2026-04-05-morning/2026-04-05_morning_Q65.png"
+      ]
+    },
+    {
+      "id": 8067,
+      "number": 8,
+      "type": "mcq",
+      "text": "Propanoic acid (i) NH₃/Δ → (ii) NaOH/Br₂ → (iii) HNO₂/H₂O → (iv) C₆H₅N₂Cl → major product X is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 8,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Benzene",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Phenol",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Propanol",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Chlorobenzene",
+          "figure_url": null
+        }
+      ],
+      "figure_url": [
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/2026-04-06-evening/2026-04-06_evening_Q67.jpeg"
+      ]
+    },
+    {
+      "id": 9072,
+      "number": 9,
+      "type": "numerical",
+      "text": "Benzene + CO/HCl/CuCl → x (benzaldehyde). Benzene + acetyl chloride/AlCl₃ → y (acetophenone). Heating x and y with alkali → z (chalcone). Total π electrons in z is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 9,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section B"
+      },
+      "question_options": [],
+      "figure_url": []
+    },
+    {
+      "id": 9066,
+      "number": 10,
+      "type": "mcq",
+      "text": "Statement I: Boiling points CH₃CH₂CH₂I > CH₃CH₂I > CH₃I.\nStatement II: p-dichlorobenzene has higher MP than o-dichlorobenzene but lower BP.",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 10,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Both Statement I and Statement II are true",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Both Statement I and Statement II are false",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Statement I is true but Statement II is false",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Statement I is false but Statement II is true",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 2075,
+      "number": 11,
+      "type": "numerical",
+      "text": "Reaction sequence starting from 4-methyl-nitrobenzene gives product P. 1.0 g of P subjected to Carius analysis with AgNO₃ produces AgBr precipitate mass in g (nearest integer):",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 11,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section B"
+      },
+      "question_options": [],
+      "figure_url": [
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/2026-04-02-evening/2026-04-02_evening_Q75.jpeg"
+      ]
+    },
+    {
+      "id": 1068,
+      "number": 12,
+      "type": "mcq",
+      "text": "Consider the three aromatic molecules (P, Q and R). The correct order regarding the reactivity of these compounds with Ph-N=N⁺ Cl⁻ under optimum slightly acidic medium is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 12,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "P > Q > R",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "R > P > Q",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "R > Q > P",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "P > R > Q",
+          "figure_url": null
+        }
+      ],
+      "figure_url": [
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/2026-04-02-morning/2026-04-02_morning_Q68.png"
+      ]
+    },
+    {
+      "id": 6063,
+      "number": 13,
+      "type": "mcq",
+      "text": "Stability order of alkenes:\nA. 2-Methylbut-2-ene\nB. cis-But-2-ene\nC. 2,3-Dimethylbut-2-ene\nD. Prop-1-ene",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 13,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "C > A > B > D",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "C > A > D > B",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "B > D > A > C",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "A > B > C > D",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 5064,
+      "number": 14,
+      "type": "mcq",
+      "text": "Hydrocarbon P (C₈H₁₄) on ozonolysis gives Q. Q + alkali → R, R + I₂/NaOH → yellow ppt + acidification → S (shown). P is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 14,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Structure (1)",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Structure (2)",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Structure (3)",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "1-methylcyclohexene (Structure 4)",
+          "figure_url": null
+        }
+      ],
+      "figure_url": [
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/2026-04-05-morning/2026-04-05_morning_Q64.png",
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/2026-04-05-morning/2026-04-05_morning_Q64_2.png",
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/2026-04-05-morning/2026-04-05_morning_Q64_3.png",
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/2026-04-05-morning/2026-04-05_morning_Q64_4.png",
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/2026-04-05-morning/2026-04-05_morning_Q64_5.png"
+      ]
+    },
+    {
+      "id": 5068,
+      "number": 15,
+      "type": "mcq",
+      "text": "Incorrect statements:\nA. Aniline stronger base than p-nitroaniline\nB. p-methoxybenzylamine synthesized by Gabriel phthalimide\nC. Br₂/NaOH on p-methoxybenzamide gives primary aromatic amine\nD. p-nitroaniline + NaNO₂/HCl then Δ dissolves in NaOH",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 15,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "A and D Only",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "A and C Only",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "B and C Only",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "A and B Only",
+          "figure_url": null
+        }
+      ],
+      "figure_url": [
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/2026-04-05-morning/2026-04-05_morning_Q68.png"
+      ]
+    },
+    {
+      "id": 8066,
+      "number": 16,
+      "type": "mcq",
+      "text": "Ph-CH₂-O-Ph + HI → Product.\nStatement I: Product is mixture of benzyl alcohol and iodobenzene.\nStatement II: -O-CH₂- bond is cleaved.",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 16,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Both Statement I and Statement II are true",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Both Statement I and Statement II are false",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Statement I is true but Statement II is false",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Statement I is false but Statement II is true",
+          "figure_url": null
+        }
+      ],
+      "figure_url": [
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/2026-04-06-evening/2026-04-06_evening_Q66.jpeg"
+      ]
+    },
+    {
+      "id": 8072,
+      "number": 17,
+      "type": "numerical",
+      "text": "Alkane Y requires 8 moles O₂ for complete combustion. Chlorination gives only 1 monochloro product Z. Primary carbons in Y is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 17,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section B"
+      },
+      "question_options": [],
+      "figure_url": []
+    },
+    {
+      "id": 7065,
+      "number": 18,
+      "type": "mcq",
+      "text": "Statement I: Methane prepared by decarboxylation of sodium ethanoate, Kolbe's, CH₃MgBr + H₂O.\nStatement II: Methane cannot be prepared from unsaturated hydrocarbons and Wurtz reaction.",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 18,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Both Statement I and Statement II are true",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Both Statement I and Statement II are false",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Statement I is true but Statement II is false",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Statement I is false but Statement II is true",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 9064,
+      "number": 19,
+      "type": "mcq",
+      "text": "Total number of aromatic compounds/species from given structures is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 19,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "6",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "4",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "3",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "5",
+          "figure_url": null
+        }
+      ],
+      "figure_url": [
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/2026-04-08-evening/2026-04-08_evening_Q64.jpeg"
+      ]
+    }
+  ]
+}

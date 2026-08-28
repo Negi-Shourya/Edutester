@@ -31,7 +31,11 @@ export default function TestCard({ test, locked, trial, comingSoon, onLocked, on
       onLocked?.();
       return;
     }
-    navigate('/test');
+    if (test.chapter || test.id.startsWith('jee-') || test.id.startsWith('neet-') || test.id.startsWith('ch-')) {
+      navigate(`/test?chapter=${test.id}`);
+    } else {
+      navigate('/test');
+    }
   };
 
   return (

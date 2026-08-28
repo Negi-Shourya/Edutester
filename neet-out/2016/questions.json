@@ -1,0 +1,5260 @@
+{
+  "key": "neet-2016",
+  "title": "NEET 2016",
+  "fullTitle": "National Eligibility cum Entrance Test (UG) 2016 (Phase 1)",
+  "examDate": "2016-05-01",
+  "session": null,
+  "durationMinutes": 180,
+  "questionCount": 180,
+  "examType": "neet",
+  "questions": [
+    {
+      "number": 1,
+      "section": "Physics",
+      "type": "mcq",
+      "text": "A capacitor of 2 \\mu\\text{F} is charged as shown in the diagram. When the switch S is turned to position 2, the percentage of its stored energy dissipated is :",
+      "options": [
+        {
+          "label": "1",
+          "text": "20 %"
+        },
+        {
+          "label": "2",
+          "text": "75 %"
+        },
+        {
+          "label": "3",
+          "text": "80 %"
+        },
+        {
+          "label": "4",
+          "text": "0 %"
+        }
+      ],
+      "images": [
+        "Q1.png"
+      ],
+      "answers": [
+        "3"
+      ],
+      "solution": "U2 F = 2\n1 (2) V2 = V2  \nU  = \n)\nC\nC\n(\n2\nC\nC\n2\n1\n2\n1\n\n(V1 – V2)2  \n \n= \n)\n8\n2\n(\n2\n8\n2\n\n\n(V – 0)2  \n \n= 5\n4 V2 \n% dissipated = \n2\n2\nV\nV\n5\n4\n × 100 = 80 %"
+    },
+    {
+      "number": 2,
+      "section": "Physics",
+      "type": "mcq",
+      "text": "To get output 1 for the following circuit, the correct choice for the input is :",
+      "options": [
+        {
+          "label": "1",
+          "text": "A = 1, B = 0, C = 0"
+        },
+        {
+          "label": "2",
+          "text": "A = 1, B = 1, C = 0"
+        },
+        {
+          "label": "3",
+          "text": "A = 1, B = 0, C = 1"
+        },
+        {
+          "label": "4",
+          "text": "A = 0, B = 1, C = 0"
+        }
+      ],
+      "images": [
+        "Q2.png"
+      ],
+      "answers": [
+        "3"
+      ],
+      "solution": "A = 1, B = 0, C = 1"
+    },
+    {
+      "number": 3,
+      "section": "Physics",
+      "type": "mcq",
+      "text": "A potentiometer wire is 100 cm long and a constant potential difference is maintained across it. Two cells are connected in series first to support one another and then in opposite direction. The balance points are obtained at 50 cm and 10 cm from the positive end of the wire in the two cases. The ratio of emf's is :",
+      "options": [
+        {
+          "label": "1",
+          "text": "5 : 4"
+        },
+        {
+          "label": "2",
+          "text": "3 : 4"
+        },
+        {
+          "label": "3",
+          "text": "3 : 2"
+        },
+        {
+          "label": "4",
+          "text": "5 : 1"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "3"
+      ],
+      "solution": "E1 + E2 = x(50)  \n \n….(i) \n \nE1 – E2 = x(10)  \n \n….(ii) \n \n(i)/(ii); \n2\n1\n2\n1\nE\nE\nE\nE\n\n\n = 1\n5 \n \n2\n1\nE\nE = 2\n3"
+    },
+    {
+      "number": 4,
+      "section": "Physics",
+      "type": "mcq",
+      "text": "When a metallic surface is illuminated with radiation of wavelength \\lambda, the stopping potential is V. If the same surface is illuminated with radiation of wavelength 2\\lambda, the stopping potential is \\frac{V}{4}. The threshold wavelength for the metallic surface is :",
+      "options": [
+        {
+          "label": "1",
+          "text": "5\\lambda"
+        },
+        {
+          "label": "2",
+          "text": "\\frac{5}{2}\\lambda"
+        },
+        {
+          "label": "3",
+          "text": "3\\lambda"
+        },
+        {
+          "label": "4",
+          "text": "4\\lambda"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "3"
+      ],
+      "solution": "eV = \nhc – w \n \n \n.…(i)  \n \n4\neV = \n2\nhc – w  \n \n.…(ii) \n \n(i) – 4 × (ii) \n \n0 = – \nhc + 3w \n \n3w = \nhc \n \n3 \n\n\n\n\n\n\n0\nhc\n = \nhc \n \n0 = 3"
+    },
+    {
+      "number": 5,
+      "section": "Physics",
+      "type": "mcq",
+      "text": "Two non-mixing liquids of densities \\rho and n\\rho (n > 1) are put in a container. The height of each liquid is h. A solid cylinder of length L and density d is put in this container. The cylinder floats with its axis vertical and length pL (p < 1) in the denser liquid. The density d is equal to :",
+      "options": [
+        {
+          "label": "1",
+          "text": "[1 + (n + 1)p]\\rho"
+        },
+        {
+          "label": "2",
+          "text": "[2 + (n + 1)p]\\rho"
+        },
+        {
+          "label": "3",
+          "text": "[1 + (n - 1)p]\\rho"
+        },
+        {
+          "label": "4",
+          "text": "[2 + (n - 1)p]\\rho"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "3"
+      ],
+      "solution": "pLAng\nLAdg\n(1 – p)L\npL\n–\nn\n(1–p)LAg\n \n \nLAdg = (1 – p) LAg + pLAng \n \nd = (1 – p)  + np  \nd =  [L – p + np) \nd =  {1 + (n – 1) p}"
+    },
+    {
+      "number": 6,
+      "section": "Physics",
+      "type": "mcq",
+      "text": "Out of the following options which one can be used to produce a propagating electromagnetic wave ?",
+      "options": [
+        {
+          "label": "1",
+          "text": "A stationary charge"
+        },
+        {
+          "label": "2",
+          "text": "A chargeless particle"
+        },
+        {
+          "label": "3",
+          "text": "An accelerating charge"
+        },
+        {
+          "label": "4",
+          "text": "A charge moving at constant velocity"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "3"
+      ],
+      "solution": "Accelerated charge produces EMW.  \n \n \n<<<PAGE_40>>>\n \n \n \n40"
+    },
+    {
+      "number": 7,
+      "section": "Physics",
+      "type": "mcq",
+      "text": "The charge flowing through a resistance R varies with time t as Q = at - bt^{2}, where a and b are positive constants. The total heat produced in R is :",
+      "options": [
+        {
+          "label": "1",
+          "text": "\\frac{a^{3} R}{3b}"
+        },
+        {
+          "label": "2",
+          "text": "\\frac{a^{3} R}{2b}"
+        },
+        {
+          "label": "3",
+          "text": "\\frac{a^{3} R}{b}"
+        },
+        {
+          "label": "4",
+          "text": "\\frac{a^{3} R}{6b}"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "4"
+      ],
+      "solution": "Q = at – bt2  \nI = dt\ndQ = a – 2bt \nfor I = 0     t = b\n2\na \nHeat in time dt = I2Rdt \nTotal heat  = \nb\n2\n/\na\n0\n2\ndt\nR\nI\n \n \n= \n\nb\n2\n/\na\n0\n2\ndt\nR\n)\nbt\n2\na(\n \n \n=  \n\n\nb\n2\n/\na\n0\n2\n2\n2\ndt\nR\n)\nabt\n4\nt\nb\n4\na(\n \n \n= R\nb\n2\n/\na\n0\n2\n3\n2\n2\nabt\n2\n3\nt\nb\n4\nt\na\n\n\n\n\n\n\n\n\n \n \n= R \n\n\n\n\n\n\n\n\n\n0\nb\n2\na\nb\n6\na\nb\n2\na\n3\n3\n3\n \n \n= \nb\n6\nR\na3"
+    },
+    {
+      "number": 8,
+      "section": "Physics",
+      "type": "mcq",
+      "text": "At what height from the surface of earth the gravitation potential and the value of g are -5.4 \\times 10^{7} \\text{ J kg}^{-2} and 6.0 \\text{ ms}^{-2} respectively ? (Take the radius of earth as 6400 km)",
+      "options": [
+        {
+          "label": "1",
+          "text": "1600 km"
+        },
+        {
+          "label": "2",
+          "text": "1400 km"
+        },
+        {
+          "label": "3",
+          "text": "2000 km"
+        },
+        {
+          "label": "4",
+          "text": "2600 km"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "4"
+      ],
+      "solution": "Vh = – \nh\nR\nGM\n\n = – 5.4 × 107 J/k gm \n \ngh = \n2)\nh\nR\n(\nGM\n\n = 6 m/s2  \nh\nh\ng\nV = R + h = \n6\n10\n4.5\n7\n\n \nh = 0.9 × 107 – R \n   = 0.9 × 104 km – 6400 km \n   = 9000 – 6400 = 2600 km"
+    },
+    {
+      "number": 9,
+      "section": "Physics",
+      "type": "mcq",
+      "text": "Coefficient of linear expansion of brass and steel rods are \\alpha_{1} and \\alpha_{2}. Lengths of brass and steel rods are l_{1} and l_{2} respectively. If (l_{2} - l_{1}) is maintained same at all temperatures, which one of the following relations holds good ?",
+      "options": [
+        {
+          "label": "1",
+          "text": "\\alpha_{1} l_{2} = \\alpha_{2} l_{1}"
+        },
+        {
+          "label": "2",
+          "text": "\\alpha_{1} l_{2}^{2} = \\alpha_{2} l_{1}^{2}"
+        },
+        {
+          "label": "3",
+          "text": "\\alpha_{1} l_{1} = \\alpha_{2} l_{2}"
+        },
+        {
+          "label": "4",
+          "text": "\\alpha_{1}^{2} l_{2} = \\alpha_{2}^{2} l_{1}"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "3"
+      ],
+      "solution": "T1  L1 = L2 – L1  \nT2  L2 = \n1\n2\nL\nL\n\n\n\n \n \n   = L2 (1 + \n2\nT) – L1 (1 + 1T) \nL2 = L2 – L1 + (L22 – L11) T \nL1 = L2  \nL2 – L1 = L2 – L1 + (L22 – L11) T \nT  0  \nL11 = L22"
+    },
+    {
+      "number": 10,
+      "section": "Physics",
+      "type": "mcq",
+      "text": "The intensity at the maximum in a Young's double slit experiment is I_{0}. Distance between two slits is d = 5\\lambda, where \\lambda is the wavelength of light used in the experiment. What will be the intensity in front of one of the slits on the screen placed at a distance D = 10d ?",
+      "options": [
+        {
+          "label": "1",
+          "text": "\\frac{3}{4} I_{0}"
+        },
+        {
+          "label": "2",
+          "text": "\\frac{I_{0}}{4}"
+        },
+        {
+          "label": "3",
+          "text": "\\frac{I_{0}}{2}"
+        },
+        {
+          "label": "4",
+          "text": "I_{0}"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "3"
+      ],
+      "solution": "S1\nd = 5\nS2\nD = 10d = 50\nP\n \n \nPath difference S2P – S1P = \n2\n2\n)\n5\n(\n)\n50\n(\n\n\n\n – 50  = 0.25   \nS2P – S1P = 4\n \nor  phase difference = 2\n \nwhen I1 = I2  \nI = Imax cos2 2\n  \n \n(given Imax = I0 and  = 2\n)  \nI = I0 cos2 \n2\n2\n/\n\n \n  = I0 cos2 4\n \n  = 2\nI0"
+    },
+    {
+      "number": 11,
+      "section": "Physics",
+      "type": "mcq",
+      "text": "Given the value of Rydberg constant is 10^{7} \\text{ m}^{-1}, the wave number of the last line of the Balmer series in hydrogen spectrum will be :",
+      "options": [
+        {
+          "label": "1",
+          "text": "0.5 \\times 10^{7} \\text{ m}^{-1}"
+        },
+        {
+          "label": "2",
+          "text": "0.25 \\times 10^{7} \\text{ m}^{-1}"
+        },
+        {
+          "label": "3",
+          "text": "2.5 \\times 10^{7} \\text{ m}^{-1}"
+        },
+        {
+          "label": "4",
+          "text": "0.025 \\times 10^{4} \\text{ m}^{-1}"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "2"
+      ],
+      "solution": "\n1 = \n\n\n\n\n\n\n\n2\n2\n2\n1\n2\nn\n1\nn\n1\nRz\n \n \n\n1 = \n\n\n\n\n\n\n\n\n2\n2\n2\n1\n2\n1\n)1(\nR\n \n \n = R\n4 \n \n= \n1 = 4\nR = 0.25 × 107 m–1"
+    },
+    {
+      "number": 12,
+      "section": "Physics",
+      "type": "mcq",
+      "text": "The ratio of escape velocity at earth (v_{e}) to the escape velocity at a planet (v_{p}) whose radius and mean density are twice as that of earth is :",
+      "options": [
+        {
+          "label": "1",
+          "text": "1 : 2\\sqrt{2}"
+        },
+        {
+          "label": "2",
+          "text": "1 : 4"
+        },
+        {
+          "label": "3",
+          "text": "1 : \\sqrt{2}"
+        },
+        {
+          "label": "4",
+          "text": "1 : 2"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "1"
+      ],
+      "solution": "vescape = \nR\nGM\n2\n = \n\n\n2\nGR\n3\n8\n \n \nplanet\nearth\nv\nv\n = \n\n\n\n\n\n\n\n\n\n\n\n\n\n\np\ne\n2\np\ne\nR\nR\n \n            = \n\n\n\n\n\n\n\n\n\n\n\n\n\n\ne\ne\n2\ne\ne\n2\nR\n2\nR\n = \n8\n1 = 1 : \n2\n2"
+    },
+    {
+      "number": 13,
+      "section": "Physics",
+      "type": "mcq",
+      "text": "A long solenoid has 1000 turns. When a current of 4 A flows through it, the magnetic flux linked with each turn of the solenoid is 4 \\times 10^{-3} \\text{ Wb}. The self-inductance of the solenoid is :",
+      "options": [
+        {
+          "label": "1",
+          "text": "3 H"
+        },
+        {
+          "label": "2",
+          "text": "2 H"
+        },
+        {
+          "label": "3",
+          "text": "1 H"
+        },
+        {
+          "label": "4",
+          "text": "4 H"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "3"
+      ],
+      "solution": "L = I\nN \n \nL = \n4\n10\n4\n1000\n3\n\n\n\n = 1 H \n \n<<<PAGE_44>>>\n \n \n \n44"
+    },
+    {
+      "number": 14,
+      "section": "Physics",
+      "type": "mcq",
+      "text": "A car is negotiating a curved road of radius R. The road is banked at an angle \\theta. The coefficient of friction between the tyres of the car and the road is \\mu_{s}. The maximum safe velocity on this road is :",
+      "options": [
+        {
+          "label": "1",
+          "text": "\\sqrt{gR (\\frac{\\mu_{s} + \\tan\\theta}{1 - \\mu_{s}\\tan\\theta})}"
+        },
+        {
+          "label": "2",
+          "text": "\\sqrt{\\frac{g}{R} (\\frac{\\mu_{s} + \\tan\\theta}{1 - \\mu_{s}\\tan\\theta})}"
+        },
+        {
+          "label": "3",
+          "text": "\\sqrt{\\frac{g}{R^{2}} (\\frac{\\mu_{s} + \\tan\\theta}{1 - \\mu_{s}\\tan\\theta})}"
+        },
+        {
+          "label": "4",
+          "text": "\\sqrt{gR^{2} (\\frac{\\mu_{s} + \\tan\\theta}{1 - \\mu_{s}\\tan\\theta})}"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "1"
+      ],
+      "solution": "Ncos\nN\n\n\n\ns Nsin\nmg\n\ns N\ns Ncos\nNsin\n \n \nsN cos  + N sin  = \nR\nmv2\nmax \n \n….(i) \n \nN cos  = s N sin  + mg \n \nN cos  – s N sin  = mg \n \n….(ii) \n \n(i)/(ii); \n \n\n\n\n\n\n\n\n\nsin\ncos\nsin\ncos\ns\ns\n = Rg\nV2\n \n \nV = \n\n\n\n\n\n\ntan\n1\ntan\ngR\ns\ns"
+    },
+    {
+      "number": 15,
+      "section": "Physics",
+      "type": "mcq",
+      "text": "The magnetic susceptibility is negative for :",
+      "options": [
+        {
+          "label": "1",
+          "text": "paramagnetic material only"
+        },
+        {
+          "label": "2",
+          "text": "ferromagnetic material only"
+        },
+        {
+          "label": "3",
+          "text": "paramagnetic and ferromagnetic materials"
+        },
+        {
+          "label": "4",
+          "text": "diamagnetic material only"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "4"
+      ],
+      "solution": " is –ve for diamagnetic material only."
+    },
+    {
+      "number": 16,
+      "section": "Physics",
+      "type": "mcq",
+      "text": "A siren emitting a sound of frequency 800 Hz moves away from an observer towards a cliff at a speed of 15 \\text{ ms}^{-1}. Then, the frequency of sound that the observer hears in the echo reflected from the cliff is : (Take velocity of sound in air = 330 \\text{ ms}^{-1})",
+      "options": [
+        {
+          "label": "1",
+          "text": "800 Hz"
+        },
+        {
+          "label": "2",
+          "text": "838 Hz"
+        },
+        {
+          "label": "3",
+          "text": "885 Hz"
+        },
+        {
+          "label": "4",
+          "text": "765 Hz"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "2"
+      ],
+      "solution": "n\nn\nvs\nvs\nn\nvR = 0\nn= \n\n\n\n\n\n\nsv\n–\nv\nv\nn\nsource\nn\nn\n \n \nn = n = \n\n\n\n\n\n\nsv\n–\nv\nv\nn\n \n \n= 800 \n\n\n\n\n\n\n15\n–\n330\n330\n \n \n= 800 × 315\n330 = 838 Hz"
+    },
+    {
+      "number": 17,
+      "section": "Physics",
+      "type": "mcq",
+      "text": "A body of mass 1 kg begins to move under the action of a time dependent force \\vec{F} = (2t\\hat{i} + 3t^{2}\\hat{j}) \\text{ N}, where \\hat{i} and \\hat{j} are unit vectors along x and y axis. What power will be developed by the force at the time t ?",
+      "options": [
+        {
+          "label": "1",
+          "text": "(2t^{2} + 4t^{4}) \\text{ W}"
+        },
+        {
+          "label": "2",
+          "text": "(2t^{3} + 3t^{4}) \\text{ W}"
+        },
+        {
+          "label": "3",
+          "text": "(2t^{3} + 3t^{5}) \\text{ W}"
+        },
+        {
+          "label": "4",
+          "text": "(2t + 3t^{3}) \\text{ W}"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "3"
+      ],
+      "solution": "P = \n\nF .\n\nV \n \n\nF = \njˆ\nt3\niˆt\n2\n2\n\n  \n \nP = \n)jˆ\nt3\niˆt\n2\n(\n2\n\n·(\njˆ\nt\niˆ\nt\n3\n2 \n)  \n\na = m\nF\n\n= \njˆ\nt3\niˆt\n2\n2\n\n \n \n \n dV = \n\ndt\na\n \n \nP = (2t3 + 3t5)W \n \n\nV = \njˆ\nt\niˆ\nt\n3\n2 "
+    },
+    {
+      "number": 18,
+      "section": "Physics",
+      "type": "mcq",
+      "text": "From a disc of radius R and mass M, a circular hole of diameter R, whose rim passes through the centre is cut. What is the moment of inertia of the remaining part of the disc about a perpendicular axis, passing through the centre ?",
+      "options": [
+        {
+          "label": "1",
+          "text": "\\frac{13}{32} MR^{2}"
+        },
+        {
+          "label": "2",
+          "text": "\\frac{11}{32} MR^{2}"
+        },
+        {
+          "label": "3",
+          "text": "\\frac{9}{32} MR^{2}"
+        },
+        {
+          "label": "4",
+          "text": "\\frac{15}{32} MR^{2}"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "1"
+      ],
+      "solution": "Mass of the removed part  \n \nM =\n2\nR\nM\n\n× \n2\n2\nR \n\n\n\n\n\n= 4\nM \n \nR/2\nX\nX\n \n \nMoment of inertia of the disc I = \n2\nMR 2\n \n \nMoment of inertia of the removed part  \n \nI = ICM + \n4\nMd2\n \n \n= \n2\n2\nR\n4\nM\n2\n\n\n\n\n\n\n+ 4\nM\n2\n2\nR \n\n\n\n\n\n \n \n= \n32\nMR 2\n+ 16\nMR 2\n \n<<<PAGE_47>>>\n \n \n \n47                       \n \n \n= \n32\nMR\n3\n2\n \n \nSo moment of inertia of the remaining part  \n \n= I – I = \n2\nMR 2\n– \n32\nMR\n3\n2\n \n \n            = \n32\nMR\n3\n–\nMR\n16\n2\n2\n= \n32\nMR\n13\n2"
+    },
+    {
+      "number": 19,
+      "section": "Physics",
+      "type": "mcq",
+      "text": "In a diffraction pattern due to a single slit of width 'a', the first minimum is observed at an angle 30^\\circ when light of wavelength 5000 \\text{ \\AA} is incident on the slit. The first secondary maximum is observed at an angle of :",
+      "options": [
+        {
+          "label": "1",
+          "text": "\\sin^{-1}(\\frac{2}{3})"
+        },
+        {
+          "label": "2",
+          "text": "\\sin^{-1}(\\frac{1}{2})"
+        },
+        {
+          "label": "3",
+          "text": "\\sin^{-1}(\\frac{3}{4})"
+        },
+        {
+          "label": "4",
+          "text": "\\sin^{-1}(\\frac{1}{4})"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "3"
+      ],
+      "solution": "For first minimum  \n \nsin30º = a\n \n \na\n = 2\n1  \n \n \n… (1) \n \nFor first secondary maximum  \n \nsin = a\n2\n3 \n \na\n = 2\n1 \n \nsin = 2\n3 × 2\n1  \n \n = sin–1\n\n\n\n\n\n\n4\n3"
+    },
+    {
+      "number": 20,
+      "section": "Physics",
+      "type": "mcq",
+      "text": "A square loop ABCD carrying a current i is placed near and coplanar with a long straight conductor XY carrying a current I, the net force on the loop will be :",
+      "options": [
+        {
+          "label": "1",
+          "text": "\\frac{\\mu_{0} I i}{2\\pi}"
+        },
+        {
+          "label": "2",
+          "text": "\\frac{2\\mu_{0} I i L}{3\\pi}"
+        },
+        {
+          "label": "3",
+          "text": "\\frac{\\mu_{0} I i L}{2\\pi}"
+        },
+        {
+          "label": "4",
+          "text": "\\frac{2\\mu_{0} I i}{3\\pi}"
+        }
+      ],
+      "images": [
+        "Q20.png"
+      ],
+      "answers": [
+        "4"
+      ],
+      "solution": "FAB = \n\n\n\n\n\n\n2\nL\n2\nIi\nµ0\n× L \n(Attraction) \n \nFCD = \n\n\n\n\n\n\n\n2\nL\n3\n2\nIi\nµ0\nL  \n(Repulsion) \n \nBC\nF\n\n = –\nAD\nF\n\n \n \n Net force on loop \n \nFnet = FAB – FCD \n \n      = \nIi\nµ0\n – \n\n3\nIi\nµ0\n \n \n      = \n\n3\nIi\nµ\n2\n0"
+    },
+    {
+      "number": 21,
+      "section": "Physics",
+      "type": "mcq",
+      "text": "A black body is at a temperature of 5760 K. The energy of radiation emitted by the body at wavelength 250 nm is U_{1}, at wavelength 500 nm is U_{2} and that at 1000 nm is U_{3}. Wien's constant, b = 2.88 \\times 10^{6} \\text{ nm}\\cdot\\text{K}. Which of the following is correct ?",
+      "options": [
+        {
+          "label": "1",
+          "text": "U_{3} = 0"
+        },
+        {
+          "label": "2",
+          "text": "U_{1} > U_{2}"
+        },
+        {
+          "label": "3",
+          "text": "U_{2} > U_{1}"
+        },
+        {
+          "label": "4",
+          "text": "U_{1} = 0"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "3"
+      ],
+      "solution": "m × 5760 = 2.88 × 10–3 \n \nm = 2000\n10 3\n–\n= 5 × 10–7 m \n \nm = 500 nm \n \n \nU2 is greatest"
+    },
+    {
+      "number": 22,
+      "section": "Physics",
+      "type": "mcq",
+      "text": "An air column, closed at one end and open at the other, resonates with a tuning fork when the smallest length of the column is 50 cm. The next larger length of the column resonating with the same tuning fork is :",
+      "options": [
+        {
+          "label": "1",
+          "text": "100 cm"
+        },
+        {
+          "label": "2",
+          "text": "150 cm"
+        },
+        {
+          "label": "3",
+          "text": "200 cm"
+        },
+        {
+          "label": "4",
+          "text": "66.7 cm"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "2"
+      ],
+      "solution": "2 = 31 \n \n    = 3 × 50 = 150 cm"
+    },
+    {
+      "number": 23,
+      "section": "Physics",
+      "type": "mcq",
+      "text": "The molecules of a given mass of a gas have r.m.s velocity of 200 \\text{ ms}^{-1} at 27^\\circ\\text{C} and 1.0 \\times 10^{5} \\text{ Nm}^{-2} pressure. When the temperature and pressure of the gas are respectively, 127^\\circ\\text{C} and 0.05 \\times 10^{5} \\text{ Nm}^{-2}, the r.m.s. velocity of its molecules in \\text{ms}^{-1} is :",
+      "options": [
+        {
+          "label": "1",
+          "text": "\\frac{400}{\\sqrt{3}}"
+        },
+        {
+          "label": "2",
+          "text": "\\frac{100\\sqrt{2}}{3}"
+        },
+        {
+          "label": "3",
+          "text": "\\frac{100}{3}"
+        },
+        {
+          "label": "4",
+          "text": "100\\sqrt{2}"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "1"
+      ],
+      "solution": "VR.M.S.  \nT \n \n1\n2\nV\nV = \n1\n2\nT\nT = \n300\n400 = \n3\n2 \n \nV2 = \n3\nV\n2\n1 = \n3\n200\n2\n \n \n     = \n3\n400 m/sec"
+    },
+    {
+      "number": 24,
+      "section": "Physics",
+      "type": "mcq",
+      "text": "Consider the junction diode as ideal. The value of current flowing through AB is :",
+      "options": [
+        {
+          "label": "1",
+          "text": "10^{-2} \\text{ A}"
+        },
+        {
+          "label": "2",
+          "text": "10^{-1} \\text{ A}"
+        },
+        {
+          "label": "3",
+          "text": "10^{-3} \\text{ A}"
+        },
+        {
+          "label": "4",
+          "text": "0 \\text{ A}"
+        }
+      ],
+      "images": [
+        "Q24.png"
+      ],
+      "answers": [
+        "1"
+      ],
+      "solution": "Diode is forward bias \n\n Short circuit \n \nI = \nce\ntan\nsis\nRe\nPD\n = \n3\n10\n1\nvolt\n10\n\n \n \n  = 10–2 A \n<<<PAGE_50>>>\n \n \n \n50"
+    },
+    {
+      "number": 25,
+      "section": "Physics",
+      "type": "mcq",
+      "text": "If the magnitude of sum of two vectors is equal to the magnitude of difference of the two vectors, the angle between these vectors is :",
+      "options": [
+        {
+          "label": "1",
+          "text": "90^\\circ"
+        },
+        {
+          "label": "2",
+          "text": "45^\\circ"
+        },
+        {
+          "label": "3",
+          "text": "180^\\circ"
+        },
+        {
+          "label": "4",
+          "text": "0^\\circ"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "1"
+      ],
+      "solution": "|\n\n\nB\nA\n| = |\n\n\nB\n–\nA\n| \n \n\n\n\ncos\nAB\n2\nB\nA\n2\n2\n= \n\n\ncos\nAB\n2\n–\nB\nA\n2\n2\n \n \n 4AB cos = 0 \n \n  = 90º"
+    },
+    {
+      "number": 26,
+      "section": "Physics",
+      "type": "mcq",
+      "text": "An astronomical telescope has objective and eyepiece of focal lengths 40 cm and 4 cm respectively. To view an object 200 cm away from the objective, the lenses must be separated by a distance :",
+      "options": [
+        {
+          "label": "1",
+          "text": "46.0 cm"
+        },
+        {
+          "label": "2",
+          "text": "50.0 cm"
+        },
+        {
+          "label": "3",
+          "text": "54.0 cm"
+        },
+        {
+          "label": "4",
+          "text": "37.3 cm"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "3"
+      ],
+      "solution": "f0 = 40 cm\nfe = 4 cm\n200 cm\nV0\nUe\nB\nA\nB\n \n \n0\nV\n1 –\n0\nU\n1 = \n0f\n1 \n \n0\nV\n1 – \n200\n–\n1\n= 40\n1 \n \n0\nV\n1 = 40\n1 – 200\n1\n   \n \n0\nV\n1 = 200\n1\n–\n5\n= 200\n4\n= 50\n1 \n \nV0 = 50 cm \n \nIf image is at infinite \ne\nV\n1 – \ne\nU\n1 =\nef\n1 \n<<<PAGE_51>>>\n \n \n \n51                       \n \n \n\n1 –\ne\nU\n1 = 4\n1 \n \nUe = 4 cm \n \nSo separation between the lenses  \n \nL = |V0| + |Ue| = 50 + 4 = 54 cm"
+    },
+    {
+      "number": 27,
+      "section": "Physics",
+      "type": "mcq",
+      "text": "A npn transistor is connected to common emitter configuration in a given amplifier. A load resistance of 800 \\Omega is connected in the collector circuit and the voltage drop across it is 0.8 V. If the current amplification factor is 0.96 and the input resistance of the circuit is 192 \\Omega, the voltage gain and the power gain of the amplifier will respectively be :",
+      "options": [
+        {
+          "label": "1",
+          "text": "3.69, 3.84"
+        },
+        {
+          "label": "2",
+          "text": "4, 4"
+        },
+        {
+          "label": "3",
+          "text": "4, 3.69"
+        },
+        {
+          "label": "4",
+          "text": "4, 3.84"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "4"
+      ],
+      "solution": " = 0.96 \n \nRL = 800 \n \nV0 = 0.8 volt  \n \nRi = 192  \n \nAR = 192\n800 \n \nAV = AR = 192\n800 × 0.96 \n \nAV = 4  \n \nAP = 0.96 × 4 = 3.84  \n \n(Answer is upto given data but given data is incorrect as in CE amplifier. Current amplification factor can't \nbe less than 1.)"
+    },
+    {
+      "number": 28,
+      "section": "Physics",
+      "type": "mcq",
+      "text": "A gas is compressed isothermally to half its initial volume. The same gas is compressed separately through an adiabatic process until its volume is again reduced to half. Then :",
+      "options": [
+        {
+          "label": "1",
+          "text": "Compressing the gas through adiabatic process will require more work to be done."
+        },
+        {
+          "label": "2",
+          "text": "Compressing the gas isothermally or adiabatically will require the same amount of work."
+        },
+        {
+          "label": "3",
+          "text": "Which of the case (whether compression through isothermal or through adiabatic process) requires more work will depend upon the atomicity of the gas."
+        },
+        {
+          "label": "4",
+          "text": "Compressing the gas through isothermal process will require more work to be done."
+        }
+      ],
+      "images": [],
+      "answers": [
+        "1"
+      ],
+      "solution": "V \n\n\n\nC\n.\nT\n.I\n2\nV  P2 = 2P1 \n \nV \n\n\n\nC\n.\nD\n.\nA\n2\nV  P2 = (2)y P1 \nP\n2yP1\n2P1\nP1\nV/2\nV\nV\nA.D.\nI.T.\n \n \nWA.O.C. > WI.T.C."
+    },
+    {
+      "number": 29,
+      "section": "Physics",
+      "type": "mcq",
+      "text": "A long straight wire of radius a carries a steady current I. The current is uniformly distributed over its cross-section. The ratio of the magnetic fields B and B' at radial distance \\frac{a}{2} and 2a respectively, from the axis of the wire is :",
+      "options": [
+        {
+          "label": "1",
+          "text": "\\frac{1}{2}"
+        },
+        {
+          "label": "2",
+          "text": "1"
+        },
+        {
+          "label": "3",
+          "text": "4"
+        },
+        {
+          "label": "4",
+          "text": "\\frac{1}{4}"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "2"
+      ],
+      "solution": "Binside = \n2\n0\n)\na(\n2\n)\n2\n/\na(I\nµ\n\n= \na\n4\nI\nµ0\n \n \nBoutside = \n)\na\n2\n(\n2\nI\nµ0\n\n = \na\n4\nI\nµ0\n \n \n \n\nB\nB = 1 : 1"
+    },
+    {
+      "number": 30,
+      "section": "Physics",
+      "type": "mcq",
+      "text": "Match the corresponding entries of Column 1 with Column 2 [where m is the magnification produced by the mirror] :\n\n| Column 1 | Column 2 |\n| :--- | :--- |\n| (A) m = -2 | (a) Convex mirror |\n| (B) m = -\\frac{1}{2} | (b) Concave mirror |\n| (C) m = +2 | (c) Real image |\n| (D) m = +\\frac{1}{2} | (d) Virtual image |",
+      "options": [
+        {
+          "label": "1",
+          "text": "\\text{A} \\rightarrow \\text{a and c}; \\text{B} \\rightarrow \\text{a and d}; \\text{C} \\rightarrow \\text{a and b}; \\text{D} \\rightarrow \\text{c and d}"
+        },
+        {
+          "label": "2",
+          "text": "\\text{A} \\rightarrow \\text{a and d}; \\text{B} \\rightarrow \\text{b and c}; \\text{C} \\rightarrow \\text{b and d}; \\text{D} \\rightarrow \\text{b and c}"
+        },
+        {
+          "label": "3",
+          "text": "\\text{A} \\rightarrow \\text{c and d}; \\text{B} \\rightarrow \\text{b and d}; \\text{C} \\rightarrow \\text{b and c}; \\text{D} \\rightarrow \\text{a and d}"
+        },
+        {
+          "label": "4",
+          "text": "\\text{A} \\rightarrow \\text{b and c}; \\text{B} \\rightarrow \\text{b and c}; \\text{C} \\rightarrow \\text{b and d}; \\text{D} \\rightarrow \\text{a and d}"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "4"
+      ],
+      "solution": "A  b and c; B  b and c; C  b and d; D  a and d"
+    },
+    {
+      "number": 31,
+      "section": "Physics",
+      "type": "mcq",
+      "text": "If the velocity of a particle is v = At + Bt^{2}, where A and B are constants, then the distance travelled by it between 1 s and 2 s is :",
+      "options": [
+        {
+          "label": "1",
+          "text": "3A + 7B"
+        },
+        {
+          "label": "2",
+          "text": "\\frac{3}{2}A + \\frac{7}{3}B"
+        },
+        {
+          "label": "3",
+          "text": "\\frac{A}{2} + \\frac{B}{3}"
+        },
+        {
+          "label": "4",
+          "text": "\\frac{3}{2}A + 4B"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "2"
+      ],
+      "solution": "v = At + Bt2 \n \ndt\ndx = At + Bt2 \n \n\nx\n0\ndx = \n\n2\n1\n2)\nBt\nAt\n(\ndt \n \nx = \n2\n1\n3\n2\n3\nBt\n2\nAt\n\n\n\n\n\n\n\n \n \n  = \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n3\n)1(\nB\n2\n)1(\nA\n3\n)\n2\n(\nB\n2\n)\n2\n(\nA\n3\n2\n3\n2\n \n \n  =  \nB\n3\n7\nA\n2\n3\n"
+    },
+    {
+      "number": 32,
+      "section": "Physics",
+      "type": "mcq",
+      "text": "A disk and a sphere of same radius but different masses roll off on two inclined planes of the same altitude and length. Which one of the two objects gets to the bottom of the plane first ?",
+      "options": [
+        {
+          "label": "1",
+          "text": "Sphere"
+        },
+        {
+          "label": "2",
+          "text": "Both reach at the same time"
+        },
+        {
+          "label": "3",
+          "text": "Depends on their masses"
+        },
+        {
+          "label": "4",
+          "text": "Disk"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "1"
+      ],
+      "solution": "t = \n\n\n\n\n\n\n\n2\n2\nR\nk\n1\ng\nL\n2\nsin\n1\n \n \ndisk\n2\n2\nR\nk\n\n\n\n\n\n\n = 2\n1 = 0.5 \n \nsphere\n2\n2\nR\nk\n\n\n\n\n\n\n = 5\n2 = 0.4 \n \ntdisk > tsphere"
+    },
+    {
+      "number": 33,
+      "section": "Physics",
+      "type": "mcq",
+      "text": "Two identical charged spheres suspended from a common point by two massless strings of length l, are initially at a distance d (d \\ll l) apart because of their mutual repulsion. The charges begin to leak from both the spheres at a constant rate. As a result, the spheres approach each other with a velocity v. Then v varies as a function of the distance x between the spheres, as :",
+      "options": [
+        {
+          "label": "1",
+          "text": "v \\propto x"
+        },
+        {
+          "label": "2",
+          "text": "v \\propto x^{-1/2}"
+        },
+        {
+          "label": "3",
+          "text": "v \\propto x^{-1}"
+        },
+        {
+          "label": "4",
+          "text": "v \\propto x^{1/2}"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "2"
+      ],
+      "solution": "T\n\n\nTsin\nTcos\nmg\n\nd\n=small\n2\n2\nd\nkq\n \n \n \nAt balance \nTsin = \n2\n2\nd\nkq\n \n \n \n \nTcos = mg \n \ntan = \nmg\nd\nkq\n2\n2\n = \n2\n/\nd\n \n<<<PAGE_55>>>\n \n \n \n55                       \n \n \n \nd3 = \nmg\nkq\n2\n2 \n \n \nd3  q2 \n \nif separation is x at instant t \n \n \nx3  q2 \n \n \nq  x3/2 \n \n \ndt\ndq  2\n3 x1/2 . dt\ndx \n \n \ndt\ndq is given constant \n \n \nx1/2v = constant \n \n \nv  \n2\n1\nx\n\n"
+    },
+    {
+      "number": 34,
+      "section": "Physics",
+      "type": "mcq",
+      "text": "A particle moves so that its position vector is given by \\vec{r} = \\cos\\omega t\\hat{x} + \\sin\\omega t\\hat{y}, where \\omega is a constant.\n\nWhich of the following is true ?",
+      "options": [
+        {
+          "label": "1",
+          "text": "Velocity and acceleration both are parallel to \\vec{r}"
+        },
+        {
+          "label": "2",
+          "text": "Velocity is perpendicular to \\vec{r} and acceleration is directed towards the origin"
+        },
+        {
+          "label": "3",
+          "text": "Velocity is perpendicular to \\vec{r} and acceleration is directed away from the origin"
+        },
+        {
+          "label": "4",
+          "text": "Velocity and acceleration both are perpendicular to \\vec{r}"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "2"
+      ],
+      "solution": "r = \njˆ)t\n(sin\niˆ)t\n(cos\n\n\n\n \n \nv = dt\nr\nd\n = \njˆ)t\n(cos\niˆ)t\n(sin\n\n\n\n\n\n\n \n \na = dt\nv\nd\n = \njˆ)t\n(sin\niˆ)t\n(cos\n2\n2\n\n\n\n\n\n\n \n \na = \n)jˆt\nsin\niˆt\n(cos\n2\n\n\n\n\n\n \n \na = –2 r  direction towards origin \n \nr. v = 0  \nv\nr\n\n\n\n \n<<<PAGE_56>>>\n \n \n \n56"
+    },
+    {
+      "number": 35,
+      "section": "Physics",
+      "type": "mcq",
+      "text": "A piece of ice falls from a height h so that it melts completely. Only one-quarter of the heat produced is absorbed by the ice and all energy of ice gets converted into heat during its fall. The value of h is : [Latent heat of ice is 3.4 \\times 10^{5} \\text{ J/kg} and g = 10 \\text{ N/kg}]",
+      "options": [
+        {
+          "label": "1",
+          "text": "544 km"
+        },
+        {
+          "label": "2",
+          "text": "136 km"
+        },
+        {
+          "label": "3",
+          "text": "68 km"
+        },
+        {
+          "label": "4",
+          "text": "34 km"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "2"
+      ],
+      "solution": "heat loss = mgh \n \n)\nmgh\n(\n4\n1\n = mLf \n \nh = \ng\nL\n4\nf \n \n  = \n10\n10\n4.3\n4\n5\n\n\n \n \n  = 13.6 × 104 m \n \n  = 136 km"
+    },
+    {
+      "number": 36,
+      "section": "Physics",
+      "type": "mcq",
+      "text": "A uniform circular disc of radius 50 cm at rest is free to turn about an axis which is perpendicular to its plane and passes through its centre. It is subjected to a torque which produces a constant angular acceleration of 2.0 \\text{ rad s}^{-2}. Its net acceleration in \\text{ms}^{-2} at the end of 2.0 s is approximately :",
+      "options": [
+        {
+          "label": "1",
+          "text": "7.0"
+        },
+        {
+          "label": "2",
+          "text": "6.0"
+        },
+        {
+          "label": "3",
+          "text": "3.0"
+        },
+        {
+          "label": "4",
+          "text": "8.0"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "4"
+      ],
+      "solution": " = 2 rad/s2 \n \nR = 0.5 m \n \nt = 2 sec \n \n0 = 0 \n \n = 0 + t = 4 rad/sec \n \naR = R2 = 0.5 × 16 = 8 m/s2 \n \nat =  = 1 m/s2 \n \na = \n2\nR\n2\nt\na\na \n 8 m/s2\n \n<<<PAGE_57>>>\n \n \n \n57"
+    },
+    {
+      "number": 37,
+      "section": "Physics",
+      "type": "mcq",
+      "text": "What is the minimum velocity with which a body of mass m must enter a vertical loop of radius R so that it can complete the loop ?",
+      "options": [
+        {
+          "label": "1",
+          "text": "\\sqrt{2gR}"
+        },
+        {
+          "label": "2",
+          "text": "\\sqrt{3gR}"
+        },
+        {
+          "label": "3",
+          "text": "\\sqrt{5gR}"
+        },
+        {
+          "label": "4",
+          "text": "\\sqrt{gR}"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "4"
+      ],
+      "solution": "gR\n5\ngR\n \n \nBut answer is\ngR ."
+    },
+    {
+      "number": 38,
+      "section": "Physics",
+      "type": "mcq",
+      "text": "A small signal voltage V(t) = V_{0} \\sin\\omega t is applied across an ideal capacitor C :",
+      "options": [
+        {
+          "label": "1",
+          "text": "Over a full cycle the capacitor C does not consume any energy from the voltage source"
+        },
+        {
+          "label": "2",
+          "text": "Current I(t) is in phase with voltage V(t)"
+        },
+        {
+          "label": "3",
+          "text": "Current I(t) leads voltage V(t) by 180^\\circ"
+        },
+        {
+          "label": "4",
+          "text": "Current I(t) lags voltage V(t) by 90^\\circ"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "1"
+      ],
+      "solution": "In ideal capacitor,  I leads from voltage by 90º and capacitor does not consume energy."
+    },
+    {
+      "number": 39,
+      "section": "Physics",
+      "type": "mcq",
+      "text": "A uniform rope of length L and mass m_{1} hangs vertically from a rigid support. A block of mass m_{2} is attached to the free end of the rope. A transverse pulse of wavelength \\lambda_{1} is produced at the lower end of the rope. The wavelength of the pulse when it reaches the top of the rope is \\lambda_{2}. The ratio \\lambda_{2}/\\lambda_{1} is :",
+      "options": [
+        {
+          "label": "1",
+          "text": "\\sqrt{\\frac{m_{1} + m_{2}}{m_{2}}}"
+        },
+        {
+          "label": "2",
+          "text": "\\sqrt{\\frac{m_{2}}{m_{1}}}"
+        },
+        {
+          "label": "3",
+          "text": "\\sqrt{\\frac{m_{1} + m_{2}}{m_{1}}}"
+        },
+        {
+          "label": "4",
+          "text": "\\sqrt{\\frac{m_{1}}{m_{2}}}"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "1"
+      ],
+      "solution": "m2\nm1\nT1 = m2g \n1 = 1\nT2 = (m1 + m2)g\n2 = ?\n \n \n \nv = f = \nµ\nT \n \n  \nT \n \n2\n1\n\n = \n2\n1\nT\nT \n \n1\n2\n\n\n = \n2\n2\n1\nm\n)\nm\nm\n(\n\n \n \n2 = \n2\n2\n1\nm\nm\nm \n1"
+    },
+    {
+      "number": 40,
+      "section": "Physics",
+      "type": "mcq",
+      "text": "An inductor 20 mH, a capacitor 50 \\mu\\text{F} and a resistor 40 \\Omega are connected in series across a source of emf V = 10 \\sin(340t). The power loss in A.C. circuit is :",
+      "options": [
+        {
+          "label": "1",
+          "text": "0.67 W"
+        },
+        {
+          "label": "2",
+          "text": "0.76 W"
+        },
+        {
+          "label": "3",
+          "text": "0.89 W"
+        },
+        {
+          "label": "4",
+          "text": "0.51 W"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "4"
+      ],
+      "solution": " = 340 \n \nXL = L = 340 × 20 × 10–3 = 6.8 \n \nXC = \nC\n1\n\n = \n6\n10\n50\n340\n1\n\n\n\n = 58.8  \n \nR = 40  \n \n Z = \n2\n2\n)\n52\n(\n)\n40\n(\n\n = \n2704\n1600 \n \n \n \n= \n4304 \n \n \n= 65.6  \n \n     P =  Vrms Irms cos \n \n \n= \n\n\n\n\n\n\n2\n10\n\n\n\n\n\n\n\n\n\n\n\n\n6.\n65\n2\n10\n\n\n\n\n\n\n6.\n65\n40\n = 0.46 W  0.51 W \n \n<<<PAGE_59>>>\n \n \n \n59"
+    },
+    {
+      "number": 41,
+      "section": "Physics",
+      "type": "mcq",
+      "text": "An electron of mass m and a photon have same energy E. The ratio of de-Broglie wavelengths associated with them is : (c being velocity of light)",
+      "options": [
+        {
+          "label": "1",
+          "text": "(\\frac{E}{2m})^{1/2}"
+        },
+        {
+          "label": "2",
+          "text": "c(2mE)^{1/2}"
+        },
+        {
+          "label": "3",
+          "text": "\\frac{1}{c}(\\frac{2m}{E})^{1/2}"
+        },
+        {
+          "label": "4",
+          "text": "\\frac{1}{c}(\\frac{E}{2m})^{1/2}"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "4"
+      ],
+      "solution": "e = P\nh = \nmE\n2\nh\n \n \nph = E\nhc \n \n \nph\ne\n\n\n = \nhc\nE\nmE\n2\nh\n\n = \nm\n2\nE\nc\n1\n= \n2\n/\n1\nm\n2\nE\nc\n1\n\n\n\n\n\n\n"
+    },
+    {
+      "number": 42,
+      "section": "Physics",
+      "type": "mcq",
+      "text": "When an \\alpha-particle of mass 'm' moving with velocity 'v' bombards on a heavy nucleus of charge 'Ze', its distance of closest approach from the nucleus depends on m as :",
+      "options": [
+        {
+          "label": "1",
+          "text": "\\frac{1}{m}"
+        },
+        {
+          "label": "2",
+          "text": "\\frac{1}{m^{2}}"
+        },
+        {
+          "label": "3",
+          "text": "m"
+        },
+        {
+          "label": "4",
+          "text": "\\frac{1}{\\sqrt{m}}"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "4"
+      ],
+      "solution": "+Ze\nv = ? \nr \nv\n(+2e)\n\n*\n \nby conservation of mechanical energy \n \n(K + U) = (K + U)r \n \n2\n1 mv2 + 0 = 0 + \nr\n)e\n2\n)(\nZe\n(\nk\n \n \nr = \n2\n2\nmv\nkZe\n4\n\n \nr  m\n1 \n<<<PAGE_60>>>\n \n \n \n60"
+    },
+    {
+      "number": 43,
+      "section": "Physics",
+      "type": "mcq",
+      "text": "A refrigerator works between 4^\\circ\\text{C} and 30^\\circ\\text{C}. It is required to remove 600 calories of heat every second in order to keep the temperature of the refrigerated space constant. The power required is : (Take 1 cal = 4.2 Joules)",
+      "options": [
+        {
+          "label": "1",
+          "text": "23.65 W"
+        },
+        {
+          "label": "2",
+          "text": "236.5 W"
+        },
+        {
+          "label": "3",
+          "text": "2365 W"
+        },
+        {
+          "label": "4",
+          "text": "2.365 W"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "2"
+      ],
+      "solution": "C.O.P = W\nQ1 = \n1\n2\n1\nQ\nQ\nQ\n\n = \n1\n2\n1\nT\nT\nT\n\n \n \n\n\n\n\n\n\n\n\n\n\nK\n303\n273\n30\nT\nK\n277\n4\n273\nT\n2\n1\n \n \nC.O.P = \nin\nout\nP\nP\n = \n1\n2\n1\nT\nT\nT\n\n \n \nPin = Pout\n\n\n\n\n\n\n\n1\n1\n2\nT\nT\nT\n \n \n= 600 × 4.2 \n\n\n\n\n\n\n\n277\n277\n303\n \n \n= 236.53 watt"
+    },
+    {
+      "number": 44,
+      "section": "Physics",
+      "type": "mcq",
+      "text": "A particle of mass 10 g moves along a circle of radius 6.4 cm with a constant tangential acceleration. What is the magnitude of this acceleration if the kinetic energy of the particle becomes equal to 8 \\times 10^{-4} \\text{ J} by the end of the second revolution after the beginning of the motion ?",
+      "options": [
+        {
+          "label": "1",
+          "text": "0.15 \\text{ m/s}^{2}"
+        },
+        {
+          "label": "2",
+          "text": "0.18 \\text{ m/s}^{2}"
+        },
+        {
+          "label": "3",
+          "text": "0.2 \\text{ m/s}^{2}"
+        },
+        {
+          "label": "4",
+          "text": "0.1 \\text{ m/s}^{2}"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "4"
+      ],
+      "solution": "2\n1 mv2 = 8 × 10–4 \n \n2\n1 × 10 × 10–3 v2 = 8 × 10–4 \n \nv2 = 16 × 10–2 \n \nv = 0.4 m/s \n \nv2 = u2 + 2as \n \n(0.4)2 = 0 + 2a × 2(2r) \n \n0.16 = 8 × 3.14 × 6.4 × 10–2 a \n \na = 0.1 m/s2\n<<<PAGE_61>>>\n \n \n \n61"
+    },
+    {
+      "number": 45,
+      "section": "Physics",
+      "type": "mcq",
+      "text": "The angle of incidence for a ray of light at a refracting surface of a prism is 45^\\circ. The angle of prism is 60^\\circ. If the ray suffers minimum deviation through the prism, the angle of minimum deviation and refractive index of the material of the prism respectively, are :",
+      "options": [
+        {
+          "label": "1",
+          "text": "30^\\circ ; \\sqrt{2}"
+        },
+        {
+          "label": "2",
+          "text": "45^\\circ ; \\sqrt{2}"
+        },
+        {
+          "label": "3",
+          "text": "30^\\circ ; \\frac{1}{\\sqrt{2}}"
+        },
+        {
+          "label": "4",
+          "text": "45^\\circ ; \\frac{1}{\\sqrt{2}}"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "1"
+      ],
+      "solution": "A=60º\ni=45º\nr = A/2\n   =30º \nµ\n \n \ni = \n2\nA\nm \n\n \n \n45º = \n2\nº\n60\nm \n\n \n \nm = 30º \n \nsin45º = µsin30º \n \n2\n1 = 2\nµ \n \nµ = \n2"
+    },
+    {
+      "number": 46,
+      "section": "Chemistry",
+      "type": "mcq",
+      "text": "The addition of a catalyst during a chemical reaction alters which of the following quantities ?",
+      "options": [
+        {
+          "label": "1",
+          "text": "Internal energy"
+        },
+        {
+          "label": "2",
+          "text": "Enthalpy"
+        },
+        {
+          "label": "3",
+          "text": "Activation energy"
+        },
+        {
+          "label": "4",
+          "text": "Entropy"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "3"
+      ],
+      "solution": "Catalyst lowers the threshold point by making a short intermediate path so activation energy decreases"
+    },
+    {
+      "number": 47,
+      "section": "Chemistry",
+      "type": "mcq",
+      "text": "Predict the correct order among the following :",
+      "options": [
+        {
+          "label": "1",
+          "text": "\\text{lone pair - lone pair} > \\text{bond pair - bond pair} > \\text{lone pair - bond pair}"
+        },
+        {
+          "label": "2",
+          "text": "\\text{bond pair - bond pair} > \\text{lone pair - bond pair} > \\text{lone pair - lone pair}"
+        },
+        {
+          "label": "3",
+          "text": "\\text{lone pair - bond pair} > \\text{bond pair - bond pair} > \\text{lone pair - lone pair}"
+        },
+        {
+          "label": "4",
+          "text": "\\text{lone pair - lone pair} > \\text{lone pair - bond pair} > \\text{bond pair - bond pair}"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "4"
+      ],
+      "solution": "According to V.S.E.P.R.T lone-lone pair repulsion is maximum because lone pair electron held by nuclei of \none atom there for occupy more space.  \n \nRepulsion  lone pair-lone pair > lone pair-bond pair > bond pair-bond pair"
+    },
+    {
+      "number": 48,
+      "section": "Chemistry",
+      "type": "mcq",
+      "text": "The correct statement regarding the basicity of arylamines is :",
+      "options": [
+        {
+          "label": "1",
+          "text": "Arylamines are generally more basic than alkylamines because the nitrogen lone-pair electrons are not delocalized by interaction with the aromatic ring \\pi electron system."
+        },
+        {
+          "label": "2",
+          "text": "Arylamines are generally more basic than alkylamines because the nitrogen atom in arylamines is \\text{sp}-hybridized."
+        },
+        {
+          "label": "3",
+          "text": "Arylamines are generally less basic than alkylamines because the nitrogen lone-pair electrons are delocalized by interaction with the aromatic ring \\pi electron system."
+        },
+        {
+          "label": "4",
+          "text": "Arylamines are generally less basic than alkylamines because the nitrogen lone-pair electrons are delocalized by interaction with the aromatic ring \\pi electron system."
+        }
+      ],
+      "images": [],
+      "answers": [
+        "4"
+      ],
+      "solution": "Aryl amine  \n \n \n \nAlkyl amine  \n \nNH2\n \n \nv/s \n \n R – NH2 \n \ndelocalised .p.  \n \n \nlocalised .p. \n \ndue to resonance  \n \n \n         \n   \n          \n\n\n\nmore basic\nless basic"
+    },
+    {
+      "number": 49,
+      "section": "Chemistry",
+      "type": "mcq",
+      "text": "When copper is heated with conc. \\text{HNO}_{3} it produces :",
+      "options": [
+        {
+          "label": "1",
+          "text": "\\text{Cu}(\\text{NO}_{3})_{2} \\text{ and } \\text{NO}"
+        },
+        {
+          "label": "2",
+          "text": "\\text{Cu}(\\text{NO}_{3})_{2}, \\text{NO} \\text{ and } \\text{NO}_{2}"
+        },
+        {
+          "label": "3",
+          "text": "\\text{Cu}(\\text{NO}_{3})_{2} \\text{ and } \\text{N}_{2}\\text{O}"
+        },
+        {
+          "label": "4",
+          "text": "\\text{Cu}(\\text{NO}_{3})_{2} \\text{ and } \\text{NO}_{2}"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "4"
+      ],
+      "solution": "When copper react with conc. HNO3 reddish brown gas  NO2 evolved   \n \nCu + 4HNO3 Cu(NO3)2 + 2H2O + 2NO2"
+    },
+    {
+      "number": 50,
+      "section": "Chemistry",
+      "type": "mcq",
+      "text": "For the following reactions :\n\nWhich of the following statements is correct ?",
+      "options": [
+        {
+          "label": "1",
+          "text": "(a) is elimination, (b) is substitution and (c) addition reaction."
+        },
+        {
+          "label": "2",
+          "text": "(a) is elimination, (b) and (c) are substitution reactions."
+        },
+        {
+          "label": "3",
+          "text": "(a) is substitution, (b) and (c) are addition reactions."
+        },
+        {
+          "label": "4",
+          "text": "(a) and (b) are elimination reactions and (c) is addition reaction."
+        }
+      ],
+      "images": [
+        "Q50.png"
+      ],
+      "answers": [
+        "1"
+      ],
+      "solution": "CH3–CH2–CH2\nBr\n\n\nKOH\n CH3–CH=CH2 + KBr + H2O \n \nIt is elimination reaction   \n \n CH3–CH–CH3\nBr\n\n\nKOH\n CH3–CH–CH3\nOH\n + KBr \n \nIt is substitution reaction  \n \nBr\nBr\nBr2 \n \nIt is addition reaction"
+    },
+    {
+      "number": 51,
+      "section": "Chemistry",
+      "type": "mcq",
+      "text": "Two electrons occupying the same orbital are distinguished by :",
+      "options": [
+        {
+          "label": "1",
+          "text": "Magnetic quantum number"
+        },
+        {
+          "label": "2",
+          "text": "Azimuthal quantum number"
+        },
+        {
+          "label": "3",
+          "text": "Spin quantum number"
+        },
+        {
+          "label": "4",
+          "text": "Principal quantum number"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "3"
+      ],
+      "solution": "If electron occupy same orbital it will differ in spin quantum no."
+    },
+    {
+      "number": 52,
+      "section": "Chemistry",
+      "type": "mcq",
+      "text": "The reaction\n\ncan be classified as :",
+      "options": [
+        {
+          "label": "1",
+          "text": "Alcohol formation reaction"
+        },
+        {
+          "label": "2",
+          "text": "Dehydration reaction"
+        },
+        {
+          "label": "3",
+          "text": "Williamson alcohol synthesis reaction"
+        },
+        {
+          "label": "4",
+          "text": "Williamson ether synthesis reaction"
+        }
+      ],
+      "images": [
+        "Q52.png"
+      ],
+      "answers": [
+        "4"
+      ],
+      "solution": "It is williamson ether synthesis reaction  \n \nR – X + R – ONa  R – O – R + NaX \n \n<<<PAGE_4>>>\n \n \n \n4"
+    },
+    {
+      "number": 53,
+      "section": "Chemistry",
+      "type": "mcq",
+      "text": "The electronic configurations of Eu (Atomic No. 63), Gd (Atomic No. 64) and Tb (Atomic No. 65) are :",
+      "options": [
+        {
+          "label": "1",
+          "text": "[\\text{Xe}] 4f^{6} 5d^{1} 6s^{2}, [\\text{Xe}] 4f^{7} 5d^{1} 6s^{2} \\text{ and } [\\text{Xe}] 4f^{8} 5d^{1} 6s^{2}"
+        },
+        {
+          "label": "2",
+          "text": "[\\text{Xe}] 4f^{7} 6s^{2}, [\\text{Xe}] 4f^{7} 5d^{1} 6s^{2} \\text{ and } [\\text{Xe}] 4f^{9} 6s^{2}"
+        },
+        {
+          "label": "3",
+          "text": "[\\text{Xe}] 4f^{7} 6s^{2}, [\\text{Xe}] 4f^{8} 6s^{2} \\text{ and } [\\text{Xe}] 4f^{8} 5d^{1} 6s^{2}"
+        },
+        {
+          "label": "4",
+          "text": "[\\text{Xe}] 4f^{6} 5d^{1} 6s^{2}, [\\text{Xe}] 4f^{7} 5d^{1} 6s^{2} \\text{ and } [\\text{Xe}] 4f^{9} 6s^{2}"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "3"
+      ],
+      "solution": "63Eu  [Xe]4f75d06s2  \n \n 64Gd [Xe] 4f75d16s2  \n \nhalf filled f subshell is more stable  \n65Tb [Xe] 4f9 5d0 6s2"
+    },
+    {
+      "number": 54,
+      "section": "Chemistry",
+      "type": "mcq",
+      "text": "At 100^\\circ\\text{C} the vapour pressure of a solution of 6.5 g of a solute in 100 g water is 732 mm. If K_{b} = 0.52 \\text{ K kg mol}^{-1}, the boiling point of this solution will be :",
+      "options": [
+        {
+          "label": "1",
+          "text": "101^\\circ\\text{C}"
+        },
+        {
+          "label": "2",
+          "text": "100^\\circ\\text{C}"
+        },
+        {
+          "label": "3",
+          "text": "102^\\circ\\text{C}"
+        },
+        {
+          "label": "4",
+          "text": "100.52^\\circ\\text{C}"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "4"
+      ],
+      "solution": "1000\nM\nm\nP\nP\nP\nA\nA\nA\no\nA\n\n\n\n \n1000\n18\nm\n732\n732\n760\n\n\n\n \nm = 2.125 \nTb = Kb m  \n       = 0.52 × 2.125 \n       = 1.10  \n  Ts = 100 + 1.10 \n       = 101.1ºC"
+    },
+    {
+      "number": 55,
+      "section": "Chemistry",
+      "type": "mcq",
+      "text": "The correct statement regarding the comparison of staggered and eclipsed conformations of ethane, is :",
+      "options": [
+        {
+          "label": "1",
+          "text": "The eclipsed conformation of ethane is more stable than staggered conformation, because eclipsed conformation has no torsional strain."
+        },
+        {
+          "label": "2",
+          "text": "The eclipsed conformation of ethane is more stable than staggered conformation even through the eclipsed conformation has torsional strain."
+        },
+        {
+          "label": "3",
+          "text": "The staggered conformation of ethane is more stable than eclipsed conformation, because staggered conformation has no torsional strain."
+        },
+        {
+          "label": "4",
+          "text": "The staggered conformation of ethane is less stable than eclipsed conformation, because staggered conformation has torsional strain."
+        }
+      ],
+      "images": [],
+      "answers": [
+        "3"
+      ],
+      "solution": "H—C—C—H\nH\nH\nH\nH\n  \n(ethane) \n \n \nH\nH\nH\nH\nH\nH\n  \nV/s \n \n \nH\nH\nH\nH\nH\nH\n \n \nstaggered  \n \n \n \nEclipsed  \n \nconformer  \n \n \n \nconformer  \n \n        \nIt is more stable than ellipsed conformer because no torsional strain."
+    },
+    {
+      "number": 56,
+      "section": "Chemistry",
+      "type": "mcq",
+      "text": "Which one of the following characteristics is associated with adsorption ?",
+      "options": [
+        {
+          "label": "1",
+          "text": "\\Delta G, \\Delta H \\text{ and } \\Delta S \\text{ all are negative}"
+        },
+        {
+          "label": "2",
+          "text": "\\Delta G \\text{ and } \\Delta H \\text{ are negative but } \\Delta S \\text{ is positive}"
+        },
+        {
+          "label": "3",
+          "text": "\\Delta G \\text{ and } \\Delta S \\text{ are negative but } \\Delta H \\text{ is positive}"
+        },
+        {
+          "label": "4",
+          "text": "\\Delta G \\text{ is negative but } \\Delta H \\text{ and } \\Delta S \\text{ are positive}"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "1"
+      ],
+      "solution": "in adsorption  \n \nS = – ve \n \nH = – ve \n \nG = – ve"
+    },
+    {
+      "number": 57,
+      "section": "Chemistry",
+      "type": "mcq",
+      "text": "Match the compounds given in Column I with the hybridisation and shape given in Column II and mark the correct option.\n\n| Column I | Column II |\n| :--- | :--- |\n| (a) \\text{XeF}_{4} | (i) \\text{sp}^{3}\\text{d}^{3} \\text{ - distorted octahedral} |\n| (b) \\text{XeF}_{6} | (ii) \\text{sp}^{3}\\text{d}^{2} \\text{ - square planar} |\n| (c) \\text{XeOF}_{4} | (iii) \\text{sp}^{3} \\text{ - pyramidal} |\n| (d) \\text{XeO}_{3} | (iv) \\text{sp}^{3}\\text{d}^{2} \\text{ - square pyramidal} |",
+      "options": [
+        {
+          "label": "1",
+          "text": "(a)-(i), (b)-(ii), (c)-(iv), (d)-(iii)"
+        },
+        {
+          "label": "2",
+          "text": "(a)-(iv), (b)-(iii), (c)-(i), (d)-(ii)"
+        },
+        {
+          "label": "3",
+          "text": "(a)-(iv), (b)-(i), (c)-(ii), (d)-(iii)"
+        },
+        {
+          "label": "4",
+          "text": "(a)-(ii), (b)-(i), (c)-(iv), (d)-(iii)"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "4"
+      ],
+      "solution": ":XeF6  sp3d3 \ndistorted octahedral \n \nF\nF\nF\nF\nF\nF\n \n \n:XeO3 sp3 \npyramid  \n \n \nO\nXe\nO\nO\n \n \n4\neOF\nX\n\n\n sp3d2 \nsquare pyramid   \n \nF\nF\nF\nF\n\nO\nXe\n \n \n\n\n\n\n4\neF\nX\nsp3d2 \nsquare planar  \n \n \nF\nF\nF\nF\n\nXe\n"
+    },
+    {
+      "number": 58,
+      "section": "Chemistry",
+      "type": "mcq",
+      "text": "The correct statement regarding a carbonyl compound with a hydrogen atom on its \\alpha-carbon, is :",
+      "options": [
+        {
+          "label": "1",
+          "text": "a carbonyl compound with a hydrogen atom on its \\alpha-carbon never equilibrates with its corresponding enol"
+        },
+        {
+          "label": "2",
+          "text": "a carbonyl compound with a hydrogen atom on its \\alpha-carbon rapidly equilibrates with its corresponding enol and this process is known as aldehyde-ketone equilibration"
+        },
+        {
+          "label": "3",
+          "text": "a carbonyl compound with a hydrogen atom on its \\alpha-carbon rapidly equilibrates with its corresponding enol and this process is known as keto-enol tautomerism"
+        },
+        {
+          "label": "4",
+          "text": "a carbonyl compound with a hydrogen atom on its \\alpha-carbon rapidly equilibrates with its corresponding enol and this process is known as carbonylation"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "3"
+      ],
+      "solution": "H—CH2—C—R\nO\n(Keto)\nCH2 = C—R\nO – H \n(Enol) \n \nThis process is called as keto enol tautomerism."
+    },
+    {
+      "number": 59,
+      "section": "Chemistry",
+      "type": "mcq",
+      "text": "In a protein molecule various amino acids are linked together by :",
+      "options": [
+        {
+          "label": "1",
+          "text": "dicarboxylic bond"
+        },
+        {
+          "label": "2",
+          "text": "peptide bond"
+        },
+        {
+          "label": "3",
+          "text": "peptide bond"
+        },
+        {
+          "label": "4",
+          "text": "\\beta\\text{-glycosidic bond}"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "2"
+      ],
+      "solution": "The peptide bond is an amide bond which links amino acids together to form proteins.  \n \nH2N—C—C—O—H + H—N—C—C—OH\nH\nR\nO\nR\nH\nH\nO\n–H2O\nNH2—C—C—N—C — C—OH\nH\nR\nO\nR\nH\nH\nO\nPeptide bond"
+    },
+    {
+      "number": 60,
+      "section": "Chemistry",
+      "type": "mcq",
+      "text": "Match items of Column I with the items of Column II and assign the correct code :\n\n| Column I | Column II |\n| :--- | :--- |\n| (a) Cyanide process | (i) Ultrapure Ge |\n| (b) Froth floatation process | (ii) Dressing of \\text{ZnS} |\n| (c) Electrolytic reduction | (iii) Extraction of Al |\n| (d) Zone refining | (iv) Extraction of Au |\n| | (v) Purification of Ni |",
+      "options": [
+        {
+          "label": "1",
+          "text": "(a)-(ii), (b)-(iii), (c)-(i), (d)-(v)"
+        },
+        {
+          "label": "2",
+          "text": "(a)-(i), (b)-(ii), (c)-(iii), (d)-(iv)"
+        },
+        {
+          "label": "3",
+          "text": "(a)-(iii), (b)-(iv), (c)-(v), (d)-(i)"
+        },
+        {
+          "label": "4",
+          "text": "(a)-(iv), (b)-(ii), (c)-(iii), (d)-(i)"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "4"
+      ],
+      "solution": "Cyanide process: \n \n 4Au + 8NaCN + O2 + 2H2O  4Na[Au(CN)2] + 4NaOH \n               Impure \n \n2Na[Au(CN)2] \n\nZn\n 2\nppt\nAu + Na2[Zn(CN)4] \n \nfroth floatation process  all sulphide ore's concentrated by froth floatation method.  \n \nElectrolytic reduction  Bauxite reduced by electrolytic reduction in the presence of cryolite by Hall herault \nprocess  \n \nZone refining  semi conducter's (Ge, Si)are purified by zone refining"
+    },
+    {
+      "number": 61,
+      "section": "Chemistry",
+      "type": "mcq",
+      "text": "Which of the following is an analgesic ?",
+      "options": [
+        {
+          "label": "1",
+          "text": "Penicillin"
+        },
+        {
+          "label": "2",
+          "text": "Streptomycin"
+        },
+        {
+          "label": "3",
+          "text": "Chloromycetin"
+        },
+        {
+          "label": "4",
+          "text": "Novalgin"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "4"
+      ],
+      "solution": "Novalgin is an analgesic \n<<<PAGE_8>>>\n \n \n \n8"
+    },
+    {
+      "number": 62,
+      "section": "Chemistry",
+      "type": "mcq",
+      "text": "Which is the correct statement for the given acids ?",
+      "options": [
+        {
+          "label": "1",
+          "text": "\\text{H}_{3}\\text{PO}_{2} \\text{ is a diprotic acid while } \\text{H}_{3}\\text{PO}_{3} \\text{ is a monoprotic acid}"
+        },
+        {
+          "label": "2",
+          "text": "\\text{H}_{3}\\text{PO}_{2} \\text{ is a monoprotic acid while } \\text{H}_{3}\\text{PO}_{3} \\text{ is a diprotic acid}"
+        },
+        {
+          "label": "3",
+          "text": "\\text{H}_{3}\\text{PO}_{3} \\text{ is a diprotic acid while } \\text{H}_{3}\\text{PO}_{4} \\text{ is a monoprotic acid}"
+        },
+        {
+          "label": "4",
+          "text": "\\text{H}_{3}\\text{PO}_{2} \\text{ and } \\text{H}_{3}\\text{PO}_{3} \\text{ are both diprotic acids}"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "1"
+      ],
+      "solution": "Phosphinic acid is monoprotic as it contain one – OH group. \n \nH3PO2    \nP\nO\nH\nH\nHO\n \n \nPhosphonic acid (H3PO3) is diprotic as it contain two – OH group. \n \nH3PO3   \nP\nO\nOH\nH\nHO"
+    },
+    {
+      "number": 63,
+      "section": "Chemistry",
+      "type": "mcq",
+      "text": "The pair of electron in the given carbanion, \\text{CH}_{3}\\text{C} \\equiv \\text{C}^{-}, is present in which of the following orbitals ?",
+      "options": [
+        {
+          "label": "1",
+          "text": "\\text{sp}^{3}"
+        },
+        {
+          "label": "2",
+          "text": "\\text{sp}^{2}"
+        },
+        {
+          "label": "3",
+          "text": "\\text{sp}"
+        },
+        {
+          "label": "4",
+          "text": "2\\text{p}"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "3"
+      ],
+      "solution": "CH3 — C  C–\nsp\nsp\n2\n\nCH3 — C \n \n– ve charge of carbon present in sp - hybridised orbitals because both carbon has sp hybridisation in propyne."
+    },
+    {
+      "number": 64,
+      "section": "Chemistry",
+      "type": "mcq",
+      "text": "Consider the molecules \\text{CH}_{4}, \\text{NH}_{3} \\text{ and } \\text{H}_{2}\\text{O}. Which of the given statements is false ?",
+      "options": [
+        {
+          "label": "1",
+          "text": "The \\text{H}-\\text{C}-\\text{H} bond angle in \\text{CH}_{4}, the \\text{H}-\\text{N}-\\text{H} bond angle in \\text{NH}_{3}, and the \\text{H}-\\text{O}-\\text{H} bond angle in \\text{H}_{2}\\text{O} are all greater than 90^\\circ"
+        },
+        {
+          "label": "2",
+          "text": "The \\text{H}-\\text{O}-\\text{H} bond angle in \\text{H}_{2}\\text{O} is larger than the \\text{H}-\\text{C}-\\text{H} bond angle in \\text{CH}_{4}"
+        },
+        {
+          "label": "3",
+          "text": "The \\text{H}-\\text{O}-\\text{H} bond angle in \\text{H}_{2}\\text{O} is smaller than the \\text{H}-\\text{N}-\\text{H} bond angle in \\text{NH}_{3}"
+        },
+        {
+          "label": "4",
+          "text": "The \\text{H}-\\text{C}-\\text{H} bond angle in \\text{CH}_{4} is larger than the \\text{H}-\\text{N}-\\text{H} bond angle in \\text{NH}_{3}"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "1"
+      ],
+      "solution": "Bond angle \nCH4 \n >  \n NH3\n· ·\n   \n>   \n H2O· ·\n· ·  \nsp3 \n \nsp3\n \n \nsp3\n \n \nShape  \ntetrahedral \npyramid al \nbent/V \n \nBond angle \n109º28\"  \n107º \n \n105º \n \nRepulsion \nbp-bp   \nlp-bp \n \nlp-lp \n \n \n \n \n \nRepulsion    Bond angle  "
+    },
+    {
+      "number": 65,
+      "section": "Chemistry",
+      "type": "mcq",
+      "text": "Which one of the following statements is correct when \\text{SO}_{2} is passed through acidified \\text{K}_{2}\\text{Cr}_{2}\\text{O}_{7} solution ?",
+      "options": [
+        {
+          "label": "1",
+          "text": "\\text{SO}_{2} \\text{ is reduced}"
+        },
+        {
+          "label": "2",
+          "text": "Green \\text{Cr}_{2}(\\text{SO}_{4})_{3} \\text{ is formed}"
+        },
+        {
+          "label": "3",
+          "text": "Green \\text{Cr}_{2}(\\text{SO}_{4})_{3} \\text{ is formed}"
+        },
+        {
+          "label": "4",
+          "text": "The solution turns blue"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "3"
+      ],
+      "solution": "Acidified K2Cr2O7 oxidizes SO2 to green colour Cr2(SO4)3 \n \nK2Cr2O7 + 3SO2 + H2SO4 — K2SO4 + Cr2(SO4)3 + H2O \n \n \n \n \n \n \ngreen "
+    },
+    {
+      "number": 66,
+      "section": "Chemistry",
+      "type": "mcq",
+      "text": "The correct thermodynamic conditions for the spontaneous reaction at all temperatures is :",
+      "options": [
+        {
+          "label": "1",
+          "text": "\\Delta H > 0 \\text{ and } \\Delta S < 0"
+        },
+        {
+          "label": "2",
+          "text": "\\Delta H < 0 \\text{ and } \\Delta S > 0"
+        },
+        {
+          "label": "3",
+          "text": "\\Delta H < 0 \\text{ and } \\Delta S < 0"
+        },
+        {
+          "label": "4",
+          "text": "\\Delta H < 0 \\text{ and } \\Delta S = 0"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "2"
+      ],
+      "solution": "G = H – TS \n \nFor spontaneous process \n \nS = +ve \n \nH = – ve"
+    },
+    {
+      "number": 67,
+      "section": "Chemistry",
+      "type": "mcq",
+      "text": "Natural rubber has :",
+      "options": [
+        {
+          "label": "1",
+          "text": "All trans-configuration"
+        },
+        {
+          "label": "2",
+          "text": "Alternate cis- and trans-configuration"
+        },
+        {
+          "label": "3",
+          "text": "Random cis- and trans-configuration"
+        },
+        {
+          "label": "4",
+          "text": "All cis-configuration"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "4"
+      ],
+      "solution": "Natural rubber has all cis-configuration  \n \nC = C\nCH3\n...CH2\nH\nCH2\nCH2\nC = C\nCH3\nCH2\nH\nCH2\nC = C\nCH3\nH\nCH2 ....\ncis\nNatural Rubber\ncis\ncis"
+    },
+    {
+      "number": 68,
+      "section": "Chemistry",
+      "type": "mcq",
+      "text": "In which of the following options the order of arrangement does not agree with the variation of property indicated against it ?",
+      "options": [
+        {
+          "label": "1",
+          "text": "\\text{B} < \\text{C} < \\text{N} < \\text{O} \\text{ (increasing first ionisation enthalpy)}"
+        },
+        {
+          "label": "2",
+          "text": "\\text{I} < \\text{Br} < \\text{Cl} < \\text{F} \\text{ (increasing electron gain enthalpy)}"
+        },
+        {
+          "label": "3",
+          "text": "\\text{Li} < \\text{Na} < \\text{K} < \\text{Rb} \\text{ (increasing metallic radius)}"
+        },
+        {
+          "label": "4",
+          "text": "\\text{Al}^{3+} < \\text{Mg}^{2+} < \\text{Na}^{+} < \\text{F}^{-} \\text{ (increasing ionic size)}"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "1"
+      ],
+      "solution": "Ionisation enthalpy of N is greater than O because N has half filled p subshell. \n \nB   <  C  < O  <  N  (Ist ionization enthalpy) \n \n2p1    2p2   2p4    2p3 \n \nElectron gain enthalpy of F is less than Cl because in F small size of 2p orbital result in high electron density \nso inter electronic repulsion is high. \n \nI < Br < F < Cl (electron gain enthalpy)"
+    },
+    {
+      "number": 69,
+      "section": "Chemistry",
+      "type": "mcq",
+      "text": "Which of the following reagents would distinguish cis-cyclopenta-1,2-diol from the trans-isomer ?",
+      "options": [
+        {
+          "label": "1",
+          "text": "Ozone"
+        },
+        {
+          "label": "2",
+          "text": "\\text{MnO}_{2}"
+        },
+        {
+          "label": "3",
+          "text": "Aluminium isopropoxide"
+        },
+        {
+          "label": "4",
+          "text": "Acetone"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "4"
+      ],
+      "solution": "O H\nO H\n+ CH3 – C – CH3\nO\n(cis)\nH\n–H2O\nO\nO\nC\nMe Me \nOH\nHO\n+ CH3 – C – CH3\nO\n(trans)\nH\nNo reaction\n \n \n<<<PAGE_11>>>\n \n \n \n11"
+    },
+    {
+      "number": 70,
+      "section": "Chemistry",
+      "type": "mcq",
+      "text": "The product obtained as a result of a reaction of nitrogen with \\text{CaC}_{2} is :",
+      "options": [
+        {
+          "label": "1",
+          "text": "\\text{CaCN}"
+        },
+        {
+          "label": "2",
+          "text": "\\text{CaCN}_{3}"
+        },
+        {
+          "label": "3",
+          "text": "\\text{Ca}_{2}\\text{CN}"
+        },
+        {
+          "label": "4",
+          "text": "\\text{Ca}(\\text{CN})_{2}"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "solution": "When nitorgen react with CaC2 than Calcium cyanide CaCN2 form \n \nCaC2 + N2 – CaCN2 + C"
+    },
+    {
+      "number": 71,
+      "section": "Chemistry",
+      "type": "mcq",
+      "text": "Fog is a colloidal solution of :",
+      "options": [
+        {
+          "label": "1",
+          "text": "Gas in liquid"
+        },
+        {
+          "label": "2",
+          "text": "Solid in gas"
+        },
+        {
+          "label": "3",
+          "text": "Gas in gas"
+        },
+        {
+          "label": "4",
+          "text": "Liquid in gas"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "4"
+      ],
+      "solution": "Fog (liquid in gas)"
+    },
+    {
+      "number": 72,
+      "section": "Chemistry",
+      "type": "mcq",
+      "text": "Which one of the following orders is correct for the bond dissociation enthalpy of halogen molecules ?",
+      "options": [
+        {
+          "label": "1",
+          "text": "\\text{Cl}_{2} > \\text{Br}_{2} > \\text{F}_{2} > \\text{I}_{2}"
+        },
+        {
+          "label": "2",
+          "text": "\\text{Br}_{2} > \\text{I}_{2} > \\text{F}_{2} > \\text{Cl}_{2}"
+        },
+        {
+          "label": "3",
+          "text": "\\text{F}_{2} > \\text{Cl}_{2} > \\text{Br}_{2} > \\text{I}_{2}"
+        },
+        {
+          "label": "4",
+          "text": "\\text{I}_{2} > \\text{Br}_{2} > \\text{Cl}_{2} > \\text{F}_{2}"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "1"
+      ],
+      "solution": "Cl2 > Br2 > F2 > I2 \n \nBond dissociation energy of F2 less than Cl2 and Br2 because small size of f atom result in strong lone pair \nrepulsion."
+    },
+    {
+      "number": 73,
+      "section": "Chemistry",
+      "type": "mcq",
+      "text": "Equal moles of hydrogen and oxygen gases are placed in a container with a pin-hole through which both can escape. What fraction of the oxygen escapes in the time required for one-half of the hydrogen to escape ?",
+      "options": [
+        {
+          "label": "1",
+          "text": "1/4"
+        },
+        {
+          "label": "2",
+          "text": "3/8"
+        },
+        {
+          "label": "3",
+          "text": "1/2"
+        },
+        {
+          "label": "4",
+          "text": "1/8"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "4"
+      ],
+      "solution": "2\n2\n2\n2\nO\nH\nH\nO\nM\nM\nr\nr\n\n \n \n32\n2\nt\nn\nt\nn\n2\n2\nH\nO\n\n = \n4\n1\n16\n1 \n \n \n \n4\n1\nn\nn\n2\n2\nH\nO\n\n \n \nas 2\n1 moles of H2 are diffused, moles of O2 diffused in same time. \n \n2\n/\n1\nn\n2\nO\n = 4\n1  \n2\nO\nn\n = 8\n1 \n<<<PAGE_12>>>\n \n \n \n12"
+    },
+    {
+      "number": 74,
+      "section": "Chemistry",
+      "type": "mcq",
+      "text": "Lithium has a bcc structure. Its density is 530 \\text{ kg m}^{-3} and its atomic mass is 6.94 \\text{ g mol}^{-1}. Calculate the edge length of a unit cell of Lithium metal. (N_{\\text{A}} = 6.02 \\times 10^{23} \\text{ mol}^{-1})",
+      "options": [
+        {
+          "label": "1",
+          "text": "352 pm"
+        },
+        {
+          "label": "2",
+          "text": "527 pm"
+        },
+        {
+          "label": "3",
+          "text": "264 pm"
+        },
+        {
+          "label": "4",
+          "text": "154 pm"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "1"
+      ],
+      "solution": "For BCC \n \nd = \n3\nA\na\nN\nM\nZ\n\n\n \n \n530 = \n3\n23\n3\na\n10\n02\n.6\n10\n94\n.6\n2\n\n\n\n\n\n \n \na3 = \n28\n10\n023\n.6\n530\n694\n2\n\n\n\n \n \na3 = 0.435 × 10–28 m \n \n    = 43.5 × 10–30 m \n \n    = 43500000 pm \n \n   a = 352 pm"
+    },
+    {
+      "number": 75,
+      "section": "Chemistry",
+      "type": "mcq",
+      "text": "Which of the following statements about the composition of the vapour over an ideal 1 : 1 molar mixture of benzene and toluene is correct ? Assume that the temperature is constant at 25^\\circ\\text{C}. (Given, Vapour Pressure Data at 25^\\circ\\text{C}, \\text{benzene} = 12.8\\text{ kPa}, \\text{toluene} = 3.85\\text{ kPa})",
+      "options": [
+        {
+          "label": "1",
+          "text": "The vapour will contain a higher percentage of toluene"
+        },
+        {
+          "label": "2",
+          "text": "The vapour will contain equal amounts of benzene and toluene"
+        },
+        {
+          "label": "3",
+          "text": "Not enough information is given to make a prediction"
+        },
+        {
+          "label": "4",
+          "text": "The vapour will contain a higher percentage of benzene"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "4"
+      ],
+      "solution": "V.P. of C6H6 > V.P. of C6H5CH3 \n \nYA = \nP\nX\nP\nA\no\nA\n, YB = \nP\nX\nP\nB\no\nB\n \n\nXA and XB are same so mole fraction in vapour phase is directly proportional to the vapour pressure."
+    },
+    {
+      "number": 76,
+      "section": "Chemistry",
+      "type": "mcq",
+      "text": "Which of the following has longest \\text{C}-\\text{O} bond length ? (Free \\text{C}-\\text{O} bond length in \\text{CO} is 1.128 \\text{ \\AA})",
+      "options": [
+        {
+          "label": "1",
+          "text": "[\\text{Co}(\\text{CO})_{4}]^{-}"
+        },
+        {
+          "label": "2",
+          "text": "[\\text{Fe}(\\text{CO})_{4}]^{2-}"
+        },
+        {
+          "label": "3",
+          "text": "[\\text{Mn}(\\text{CO})_{6}]^{+}"
+        },
+        {
+          "label": "4",
+          "text": "\\text{Ni}(\\text{CO})_{4}"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "2"
+      ],
+      "solution": "Ni(CO)4  \nNi0 \n \n[Mn(CO)6]+ \nMn+ \n \n[Co(CO)4]  \nCo–1 \n \n[Fe(CO)4]2–  \nFe–2 \n \nDue to negative charge electron density of Fe is maximum these for back donation from metal to vacant  \n* abmo of CO ligand is high, so C–O bond order minimum therefore C – O bond length maximum."
+    },
+    {
+      "number": 77,
+      "section": "Chemistry",
+      "type": "mcq",
+      "text": "Among the following the correct order of acidity is :",
+      "options": [
+        {
+          "label": "1",
+          "text": "\\text{HClO} < \\text{HClO}_{2} < \\text{HClO}_{3} < \\text{HClO}_{4}"
+        },
+        {
+          "label": "2",
+          "text": "\\text{HClO}_{4} < \\text{HClO} < \\text{HClO}_{3} < \\text{HClO}_{2}"
+        },
+        {
+          "label": "3",
+          "text": "\\text{HClO}_{4} < \\text{HClO}_{2} < \\text{HClO} < \\text{HClO}_{3}"
+        },
+        {
+          "label": "4",
+          "text": "\\text{HClO}_{3} < \\text{HClO}_{4} < \\text{HClO}_{2} < \\text{HClO}"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "1"
+      ],
+      "solution": "HClO < HClO2 < HClO3 < HClO4 \nO.S. \n  +1 \n  +3 \n    +5 \n    +7 \nAcidic nature O.S."
+    },
+    {
+      "number": 78,
+      "section": "Chemistry",
+      "type": "mcq",
+      "text": "In the reaction :\n\n\\text{H}-\\text{C}\\equiv\\text{CH} \\xrightarrow[\\text{(2) }\\text{CH}_{3}\\text{CH}_{2}\\text{Br}]{\\text{(1) }\\text{NaNH}_{2}\\text{ / liq. }\\text{NH}_{3}} \\text{X} \\xrightarrow[\\text{(2) }\\text{CH}_{3}\\text{CH}_{2}\\text{Br}]{\\text{(1) }\\text{NaNH}_{2}\\text{ / liq. }\\text{NH}_{3}} \\text{Y}\n\n\\text{X} \\text{ and } \\text{Y} \\text{ are :}",
+      "options": [
+        {
+          "label": "1",
+          "text": "\\text{X} = \\text{2-Butyne}; \\text{Y} = \\text{3-Hexyne}"
+        },
+        {
+          "label": "2",
+          "text": "\\text{X} = \\text{2-Butyne}; \\text{Y} = \\text{2-Hexyne}"
+        },
+        {
+          "label": "3",
+          "text": "\\text{X} = \\text{1-Butyne}; \\text{Y} = \\text{2-Hexyne}"
+        },
+        {
+          "label": "4",
+          "text": "\\text{X} = \\text{1-Butyne}; \\text{Y} = \\text{3-Hexyne}"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "4"
+      ],
+      "solution": "H–CC–H\nNa NH2/\nliq. NH3\nHCC Na\nCH3 CH2–Br\n–NaBr\nCHC–CH2–CH3 \n \nCH3–CH2–CCH\nNa NH2/\nliq. NH3\nCH3–CH2–CC Na\nCH3 CH2–Br\n–NaBr\nCH3–CH2–CC–CH2–CH3\n3-Hexyne"
+    },
+    {
+      "number": 79,
+      "section": "Chemistry",
+      "type": "mcq",
+      "text": "\\text{MY} \\text{ and } \\text{NY}_{3}, two nearly insoluble salts, have the same K_{\\text{sp}} values of 6.2 \\times 10^{-13} at room temperature. Which statement would be true in regard to \\text{MY} \\text{ and } \\text{NY}_{3} ?",
+      "options": [
+        {
+          "label": "1",
+          "text": "The molar solubility of \\text{MY} in water is less than that of \\text{NY}_{3}"
+        },
+        {
+          "label": "2",
+          "text": "The salts \\text{MY} and \\text{NY}_{3} are more soluble in 0.5 M \\text{KY} than in pure water"
+        },
+        {
+          "label": "3",
+          "text": "The addition of the salt of \\text{KY} to solution of \\text{MY} and \\text{NY}_{3} will have no effect on their solubilities"
+        },
+        {
+          "label": "4",
+          "text": "The molar solubilities of \\text{MY} and \\text{NY}_{3} in water are identical"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "1"
+      ],
+      "solution": "For MY, \nKSP = S2  \nSP\nK\nS \n \n    \n13\n10\n2.6\n\n\n\n \n    \n14\n10\n62\n\n\n\n \n8 × 10–7 \nfor  NY3,  \nNY3  \n N+3 + 3Y–\nS\n3S \nKSP = 27S4 \nS = \n4\n/\n1\n13\n27\n10\n2.6\n\n\n\n\n\n\n\n\n= (0.2296 × 10–13)1/4 \nS = 3.89 × 10–4"
+    },
+    {
+      "number": 80,
+      "section": "Chemistry",
+      "type": "mcq",
+      "text": "Consider the nitration of benzene using mixed conc. \\text{H}_{2}\\text{SO}_{4} and \\text{HNO}_{3}. If a large amount of \\text{KHSO}_{4} is added to the mixture, the rate of nitration will be :",
+      "options": [
+        {
+          "label": "1",
+          "text": "slower"
+        },
+        {
+          "label": "2",
+          "text": "unchanged"
+        },
+        {
+          "label": "3",
+          "text": "doubled"
+        },
+        {
+          "label": "4",
+          "text": "faster"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "1"
+      ],
+      "solution": "H2SO4 + HNO3  \nO\nH\nO\nS\nH\nO\nN\n2\n4\n2\n\n\n\n\n \n \nKHSO4  K + \n4\nO\nS\nH\n\n \nDue to common ion effect backward reaction will take place so the formation \n\n2\nNO decrease so nitration \nprocess will become slower."
+    },
+    {
+      "number": 81,
+      "section": "Chemistry",
+      "type": "mcq",
+      "text": "The product formed by the reaction of an aldehyde with a primary amine is :",
+      "options": [
+        {
+          "label": "1",
+          "text": "Ketone"
+        },
+        {
+          "label": "2",
+          "text": "Carboxylic acid"
+        },
+        {
+          "label": "3",
+          "text": "Aromatic acid"
+        },
+        {
+          "label": "4",
+          "text": "Schiff base"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "4"
+      ],
+      "solution": "Aldehyde + Primary amines  Schiff base  \nC = O\nR\nH\n+\nN – R\nH\nH\nC = N \nR\nH\nR'\nAldehyde\nPrimary\namines  \nGeneral structure\nor Schiff base \n \nSchiff bases can be synthesized from an aliphatic or aromatic amine and a carbonyl compounds by \nnucleophilic addition-elimination reaction \n<<<PAGE_15>>>\n \n \n \n15"
+    },
+    {
+      "number": 82,
+      "section": "Chemistry",
+      "type": "mcq",
+      "text": "The pressure of \\text{H}_{2} required to make the potential of \\text{H}_{2}-electrode zero in pure water at 298 K is :",
+      "options": [
+        {
+          "label": "1",
+          "text": "10^{-12} \\text{ atm}"
+        },
+        {
+          "label": "2",
+          "text": "10^{-10} \\text{ atm}"
+        },
+        {
+          "label": "3",
+          "text": "10^{-4} \\text{ atm}"
+        },
+        {
+          "label": "4",
+          "text": "10^{-14} \\text{ atm}"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "4"
+      ],
+      "solution": ")\ng\n(\nH\ne\n2\nH\n2\n2\n\n\n\n\n\n \n \n2\nH\nH\n/\nH\n]\nH\n[\nP\nlog\n2\n0591\n.0\nE\n2\n2\n\n\n\n\n \n \n1\n10\n]\nH\n[\nP\n,0\n]\nH\n[\nP\nlog\n0\n2\nH\n2\nH\n2\n2\n\n\n\n\n\n \n \n2\nH\n]\nH\n[\nP\n2\n\n\n \nFor pure H2O ; H+ = 10–7 M \natm\n10\n)\n10\n(\nP\n14\n2\n7\nH2\n\n\n\n"
+    },
+    {
+      "number": 83,
+      "section": "Chemistry",
+      "type": "mcq",
+      "text": "The correct statement regarding RNA and DNA respectively is :",
+      "options": [
+        {
+          "label": "1",
+          "text": "The sugar component in RNA is ribose and the sugar component in DNA is 2'-deoxyribose"
+        },
+        {
+          "label": "2",
+          "text": "The sugar component in RNA is arabinose and the sugar component in DNA is ribose"
+        },
+        {
+          "label": "3",
+          "text": "The sugar component in RNA is 2'-deoxyribose and the sugar component in DNA is arabinose"
+        },
+        {
+          "label": "4",
+          "text": "The sugar component in RNA is arabinose and the sugar component in DNA is 2'-deoxyribose"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "1"
+      ],
+      "solution": "Sugar component in RNA is ribose \n \nOH\nH\nH\nOH\nH\nOH\nHO–CH2\nH\nO\n1\n2\n3\n4\n5\n \nSugar component in DNA is 2'-deoxyribose  \n  \nOH\nH\nH\nH\nH\nOH\nHO–CH2\nH\nO\n1\n2\n3\n4\n5\n \n \n<<<PAGE_16>>>\n \n \n \n16"
+    },
+    {
+      "number": 84,
+      "section": "Chemistry",
+      "type": "mcq",
+      "text": "Which one given below is a non-reducing sugar ?",
+      "options": [
+        {
+          "label": "1",
+          "text": "Lactose"
+        },
+        {
+          "label": "2",
+          "text": "Glucose"
+        },
+        {
+          "label": "3",
+          "text": "Sucrose"
+        },
+        {
+          "label": "4",
+          "text": "Maltose"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "3"
+      ],
+      "solution": "Sucrose is non reducing sugar because of glucose and fructose are involved in glycosidic bond formation  \nO\nH\nHO\nOH\nH\nH\nOH\nH\nCH2OH\nO\nH\nHO–CH2\nH\nOH\nHO\nH\nH\nCH2OH\n1\n2\n4\n3\n2\n5\n6\n6\n5\n4\n3\nO\n-D-glucose\nglycosidic\nlinkage \n-D-fructose"
+    },
+    {
+      "number": 85,
+      "section": "Chemistry",
+      "type": "mcq",
+      "text": "Which of the following statement about hydrogen is incorrect ?",
+      "options": [
+        {
+          "label": "1",
+          "text": "Hydrogen never acts as cation in ionic salts"
+        },
+        {
+          "label": "2",
+          "text": "Hydronium ion, \\text{H}_{3}\\text{O}^{+} exists freely in solution"
+        },
+        {
+          "label": "3",
+          "text": "Dihydrogen does not act as a reducing agent"
+        },
+        {
+          "label": "4",
+          "text": "Hydrogen has three isotopes of which tritium is the most common"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "3",
+        "4"
+      ],
+      "solution": "Hydrogen exist as a hydride (H) in ionic salt. \nMost abundant form of hydrogen is protium.  \nDihydrogen reduces some metal ions in aqueous solution and oxides of metals (less active than iron) into \ncorresponding metals.  \n \nH2(g) + Pd2+(aq)  Pd(s) + 2H+(aq) \nyH2(g) + MxOy(s)  xM(s) + yH2O()"
+    },
+    {
+      "number": 86,
+      "section": "Chemistry",
+      "type": "mcq",
+      "text": "Consider the following liquid-vapour equilibrium :\n\\text{Liquid} \\rightleftharpoons \\text{Vapour}\n\nWhich of the following relations is correct ?",
+      "options": [
+        {
+          "label": "1",
+          "text": "\\frac{d\\ln P}{dT} = -\\frac{\\Delta H_{v}}{RT}"
+        },
+        {
+          "label": "2",
+          "text": "\\frac{d\\ln P}{dT} = -\\frac{\\Delta H_{v}}{T^{2}}"
+        },
+        {
+          "label": "3",
+          "text": "\\frac{d\\ln P}{dT} = \\frac{\\Delta H_{v}}{RT^{2}}"
+        },
+        {
+          "label": "4",
+          "text": "\\frac{d\\ln G}{dT} = \\frac{\\Delta H_{v}}{RT^{2}}"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "3"
+      ],
+      "solution": "Acc. To Clausius Claperon equation \n \nRT\nH\ne\nA\nP\n\n\n\n \nln P = ln A + ln e RT\nH\n\n\n   lnp = lnA – RT\nH\n\nlne \nor  \nlnp = lnA – RT\nH\n\n\ndT\nd (ln P) = 0   + \n)\nT\n(\ndT\nd\nR\nH\n1\n\n\n\n \ndT\nd\nlnP = \n2\nv\nRT\nH\n"
+    },
+    {
+      "number": 87,
+      "section": "Chemistry",
+      "type": "mcq",
+      "text": "Which of the following biphenyls is optically active ?",
+      "options": [
+        {
+          "label": "1",
+          "text": "",
+          "figure": "Q87_opt_1.png"
+        },
+        {
+          "label": "2",
+          "text": "",
+          "figure": "Q87_opt_2.png"
+        },
+        {
+          "label": "3",
+          "text": "",
+          "figure": "Q87_opt_3.png"
+        },
+        {
+          "label": "4",
+          "text": "",
+          "figure": "Q87_opt_4.png"
+        }
+      ],
+      "images": [
+        "Q87_opt_1.png",
+        "Q87_opt_2.png",
+        "Q87_opt_3.png",
+        "Q87_opt_4.png"
+      ],
+      "answers": [
+        "1"
+      ],
+      "solution": "I\nI\nBr Br\n \n \nBoth phenyl ring placed in different plane so plane of symmetry absent result in it is optically active"
+    },
+    {
+      "number": 88,
+      "section": "Chemistry",
+      "type": "mcq",
+      "text": "Which of the following statements is false ?",
+      "options": [
+        {
+          "label": "1",
+          "text": "\\text{Ca}^{2+} \\text{ ions are important in blood clotting}"
+        },
+        {
+          "label": "2",
+          "text": "\\text{Ca}^{2+} \\text{ ions are not important in maintaining the regular beating of heart}"
+        },
+        {
+          "label": "3",
+          "text": "\\text{Mg}^{2+} \\text{ ions are important in the green parts of plants}"
+        },
+        {
+          "label": "4",
+          "text": "\\text{Mg}^{2+} \\text{ ions form a complex with ATP}"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "2"
+      ],
+      "solution": "Blood calcium plays a major role in the regulation of heart rate and rhythm because it is involved in the \ngeneration and transmission of current from pace makers to the heart muscle. low blood calcium increase the \nrisk for ventricular tachycardia."
+    },
+    {
+      "number": 89,
+      "section": "Chemistry",
+      "type": "mcq",
+      "text": "The ionic radii of \\text{A}^{+} and \\text{B}^{-} ions are 0.98 \\times 10^{-10} \\text{ m} and 1.81 \\times 10^{-10} \\text{ m}. The coordination number of each ion in AB is :",
+      "options": [
+        {
+          "label": "1",
+          "text": "4"
+        },
+        {
+          "label": "2",
+          "text": "8"
+        },
+        {
+          "label": "3",
+          "text": "2"
+        },
+        {
+          "label": "4",
+          "text": "6"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "4"
+      ],
+      "solution": "Radius ratio = \n10\n10\n10\n81\n.1\n10\n98\n.0\n\n\n\n\n = 0.541 \n \nit is in between 0.414 – 0.732 \n \nC.N. is 6."
+    },
+    {
+      "number": 90,
+      "section": "Chemistry",
+      "type": "mcq",
+      "text": "The rate of a first order reaction is 0.04 \\text{ mol L}^{-1}\\text{ s}^{-1} at 10 seconds and 0.03 \\text{ mol L}^{-1}\\text{ s}^{-1} at 20 seconds after initiation of the reaction. The half-life period of the reaction is :",
+      "options": [
+        {
+          "label": "1",
+          "text": "34.1 s"
+        },
+        {
+          "label": "2",
+          "text": "44.1 s"
+        },
+        {
+          "label": "3",
+          "text": "54.1 s"
+        },
+        {
+          "label": "4",
+          "text": "24.1 s"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "4"
+      ],
+      "solution": "03\n.0\n04\n.0\nlog\n10\n303\n.2\nK \n \n \n3\n4\nlog\n10\n303\n.2\nK \n \n \n10\n123\n.0\n303\n.2\nK\n\n\n \n \nK = 0.0285 \n \nt1/2 = \nK\n693\n.0\n \n \n.s\n1.\n24\n0285\n.0\n693\n.0\nt\n2\n/1\n\n\n  \n \n \n<<<PAGE_19>>>\n \n \n \n19"
+    },
+    {
+      "number": 91,
+      "section": "Biology",
+      "type": "mcq",
+      "text": "The two polypeptides of human insulin are linked together by",
+      "options": [
+        {
+          "label": "1",
+          "text": "Phosphodiester bond"
+        },
+        {
+          "label": "2",
+          "text": "Covalent bond"
+        },
+        {
+          "label": "3",
+          "text": "Disulphide bridges"
+        },
+        {
+          "label": "4",
+          "text": "Hydrogen bonds"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "3"
+      ],
+      "solution": "Disulphide bond is present in A and B polypeptide chain in, human insulin"
+    },
+    {
+      "number": 92,
+      "section": "Biology",
+      "type": "mcq",
+      "text": "The coconut water from tender coconut represents :",
+      "options": [
+        {
+          "label": "1",
+          "text": "Fleshy mesocarp"
+        },
+        {
+          "label": "2",
+          "text": "Free nuclear proembryo"
+        },
+        {
+          "label": "3",
+          "text": "Free nuclear endosperm"
+        },
+        {
+          "label": "4",
+          "text": "Endocarp"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "3"
+      ],
+      "solution": "Coconut water is free nuclear endosperm of coconut"
+    },
+    {
+      "number": 93,
+      "section": "Biology",
+      "type": "mcq",
+      "text": "Which of the following is not a feature of the plasmids ?",
+      "options": [
+        {
+          "label": "1",
+          "text": "Circular structure"
+        },
+        {
+          "label": "2",
+          "text": "Transferable"
+        },
+        {
+          "label": "3",
+          "text": "Single-stranded"
+        },
+        {
+          "label": "4",
+          "text": "Independent replication"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "3"
+      ],
+      "solution": "Plasmid is double strand circular DNA"
+    },
+    {
+      "number": 94,
+      "section": "Biology",
+      "type": "mcq",
+      "text": "Which is the National Aquatic Animal of India ?",
+      "options": [
+        {
+          "label": "1",
+          "text": "River dolphin"
+        },
+        {
+          "label": "2",
+          "text": "Blue whale"
+        },
+        {
+          "label": "3",
+          "text": "Sea-horse"
+        },
+        {
+          "label": "4",
+          "text": "Gangetic shark"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "1"
+      ],
+      "solution": "River dolphin or gangetic dolphine is national aquatic animal of India"
+    },
+    {
+      "number": 95,
+      "section": "Biology",
+      "type": "mcq",
+      "text": "The Avena curvature is used for bioassay of",
+      "options": [
+        {
+          "label": "1",
+          "text": "GA3"
+        },
+        {
+          "label": "2",
+          "text": "IAA"
+        },
+        {
+          "label": "3",
+          "text": "Ethylene"
+        },
+        {
+          "label": "4",
+          "text": "ABA"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "2"
+      ],
+      "solution": "Avena convature test is bioassay of plant hormone Auxin / IAA"
+    },
+    {
+      "number": 96,
+      "section": "Biology",
+      "type": "mcq",
+      "text": "Which of the following is the most important cause of animals and plants being driven to extinction ?",
+      "options": [
+        {
+          "label": "1",
+          "text": "Alien species invasion"
+        },
+        {
+          "label": "2",
+          "text": "Habitat loss and fragmentation"
+        },
+        {
+          "label": "3",
+          "text": "Co-extinctions"
+        },
+        {
+          "label": "4",
+          "text": "Over-exploitation"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "2"
+      ],
+      "solution": "Habitat loss & fragmentation is most common cause of species extinction across the globe. \n \n<<<PAGE_20>>>\n \n \n \n20"
+    },
+    {
+      "number": 97,
+      "section": "Biology",
+      "type": "mcq",
+      "text": "which of the following approaches does not give the defined action of contraceptive ?",
+      "options": [
+        {
+          "label": "1",
+          "text": "Intra uterine devices Increase phagocytosis of sperms, suppress sperm motility and fertilizing capacity of sperm"
+        },
+        {
+          "label": "2",
+          "text": "Hormonal contraceptives Prevent/retard entry of sperm, prevent ovulation and fertilization"
+        },
+        {
+          "label": "3",
+          "text": "Vasectomy Prevents spermatogenesis"
+        },
+        {
+          "label": "4",
+          "text": "Barrier methods Prevent fertilization"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "3"
+      ],
+      "solution": "Vasectomy prevents sperms from reaching the seminal secretion but it has no direct effect on stopping \nspermatogenesis."
+    },
+    {
+      "number": 98,
+      "section": "Biology",
+      "type": "mcq",
+      "text": "In a testcross involving F1 dihybrid flies, more parental-type offspring were produced than the recombinant-type- offspring. This indicates -",
+      "options": [
+        {
+          "label": "1",
+          "text": "Chromosomes failed to separate during meiosis"
+        },
+        {
+          "label": "2",
+          "text": "The two genes are linked and present on the same chromosome"
+        },
+        {
+          "label": "3",
+          "text": "Both of the characters are controlled by more than one gene"
+        },
+        {
+          "label": "4",
+          "text": "The two genes are located on two different chromosomes"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "2"
+      ],
+      "solution": "More parental less recombinant appear in phenomenon of incomplete linkage so the gene are linked and \npresent an some chromosome"
+    },
+    {
+      "number": 99,
+      "section": "Biology",
+      "type": "mcq",
+      "text": "A typical fat molecule is made up of -",
+      "options": [
+        {
+          "label": "1",
+          "text": "One glycerol and three fatty acid molecules"
+        },
+        {
+          "label": "2",
+          "text": "One glycerol and one fatty acid molecule"
+        },
+        {
+          "label": "3",
+          "text": "Three glycerol and three fatty acid molecules"
+        },
+        {
+          "label": "4",
+          "text": "Three glycerol molecules and one fatty acid molecule"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "1"
+      ],
+      "solution": "A typical fat molecule is a triglycerides & it is made up of one glycerol & three fatty acid molecules."
+    },
+    {
+      "number": 100,
+      "section": "Biology",
+      "type": "mcq",
+      "text": "Match the terms in Column-I with their description in Column-II and choose the correct option : Column-I Column-II (a) Dominance (i) Many genes govern a single character (b) Codominance (ii) In a heterozygous organism only one allele expresses itself (c) Pleiotropy (iii) In a heterozygous organism both alleles express themselves fully (d) Polygenic inheritance (iv) A single gene influences many characters Code : (a) (b) (c) (d)",
+      "options": [
+        {
+          "label": "1",
+          "text": "ii iii iv i"
+        },
+        {
+          "label": "2",
+          "text": "iv i ii iii"
+        },
+        {
+          "label": "3",
+          "text": "iv iii I ii"
+        },
+        {
+          "label": "4",
+          "text": "ii i iv iii <<<PAGE_21>>> 21"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "1"
+      ],
+      "solution": "In heterozygous only one allele is express"
+    },
+    {
+      "number": 101,
+      "section": "Biology",
+      "type": "mcq",
+      "text": "Which of the following statements is not correct ?",
+      "options": [
+        {
+          "label": "1",
+          "text": "Insects that consume pollen or nectar without bringing about pollination are called pollen / nector robbers."
+        },
+        {
+          "label": "2",
+          "text": "Pollen germination and pollen tube growth are regulated by chemical components of pollen interacting with those of the pistil"
+        },
+        {
+          "label": "3",
+          "text": "Some reptiles have also been reported as pollinators in some plant species"
+        },
+        {
+          "label": "4",
+          "text": "Pollen grains of many species can germinate on the stigma of a flower, but only one pollen tube of the same species grows into the style"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "4"
+      ],
+      "solution": "Many pollen tubes of same species can also grow into the style."
+    },
+    {
+      "number": 102,
+      "section": "Biology",
+      "type": "mcq",
+      "text": "Which of the following features is not present in Periplaneta americana ?",
+      "options": [
+        {
+          "label": "1",
+          "text": "Indeterminate and radial cleavage during embryonic development"
+        },
+        {
+          "label": "2",
+          "text": "Exoskeleton composed of N-acetylglucosamine"
+        },
+        {
+          "label": "3",
+          "text": "Metamerically segmented body"
+        },
+        {
+          "label": "4",
+          "text": "Schizocoelom as body cavity"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "1"
+      ],
+      "solution": "Periplanata americana shows spiral and determinate types of cleavage during embryonic development"
+    },
+    {
+      "number": 103,
+      "section": "Biology",
+      "type": "mcq",
+      "text": "Water soluble pigments found in plant cell vacuoles are -",
+      "options": [
+        {
+          "label": "1",
+          "text": "Chlorophylls"
+        },
+        {
+          "label": "2",
+          "text": "Carotenoids"
+        },
+        {
+          "label": "3",
+          "text": "Anthocyanine"
+        },
+        {
+          "label": "4",
+          "text": "Xanthophylls"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "3"
+      ],
+      "solution": "Anthocynine is water soluble pigment present in sap vacuole of plant."
+    },
+    {
+      "number": 104,
+      "section": "Biology",
+      "type": "mcq",
+      "text": "A cell at telophase stage is observed by a student in a plant brought from the field. He tells his teacher  that this cell is not like other cells at telophase stage. There is no formation of cell plate and thus the cell is contaning more number of chromosomes as compared to other dividing cells. This would results in -",
+      "options": [
+        {
+          "label": "1",
+          "text": "Polyploidy"
+        },
+        {
+          "label": "2",
+          "text": "Somaclonal variation"
+        },
+        {
+          "label": "3",
+          "text": "Polyteny"
+        },
+        {
+          "label": "4",
+          "text": "Aneuploidy"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "1"
+      ],
+      "solution": "When Nuclear membrane & cell plate is not formed in a cell during telophase of mitosis than polyploid cell \nis formed. \n \n<<<PAGE_22>>>\n \n \n \n22"
+    },
+    {
+      "number": 105,
+      "section": "Biology",
+      "type": "mcq",
+      "text": "A plant in your garden avoids photorespiratory losses, has improved water use efficiency, shows high rates of photosynthesis at high temperatures and has improved efficiency of nitrogen utilization. In which of the following physiological groups would you assign this plant ? ;",
+      "options": [
+        {
+          "label": "1",
+          "text": "C4"
+        },
+        {
+          "label": "2",
+          "text": "CAM"
+        },
+        {
+          "label": "3",
+          "text": "Nitrogen fixer"
+        },
+        {
+          "label": "4",
+          "text": "C3"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "1"
+      ],
+      "solution": "C4 plants are adapted to hot & dry climate and no photorespiration due to Kranz anatomy."
+    },
+    {
+      "number": 106,
+      "section": "Biology",
+      "type": "mcq",
+      "text": "In higher vertebrates, the immune system can distinguish self-cells and non-self. If this property is lost due to genetic abnormally and it attacks self-cells, then it leads to",
+      "options": [
+        {
+          "label": "1",
+          "text": "Graft rejection"
+        },
+        {
+          "label": "2",
+          "text": "Auto-immune disease"
+        },
+        {
+          "label": "3",
+          "text": "Active immunity"
+        },
+        {
+          "label": "4",
+          "text": "Allergic response"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "2"
+      ],
+      "solution": "Due to genetic and some unknown reason immune cell can not distinguish self and non-self cells"
+    },
+    {
+      "number": 107,
+      "section": "Biology",
+      "type": "mcq",
+      "text": "Emerson's enhancement effect and Red drop have been instrumental in the discovery of",
+      "options": [
+        {
+          "label": "1",
+          "text": "Two photosystems operating simultaneously"
+        },
+        {
+          "label": "2",
+          "text": "Photophosphorylation and cyclic electron transport"
+        },
+        {
+          "label": "3",
+          "text": "Oxidative phosphorylation"
+        },
+        {
+          "label": "4",
+          "text": "Photophosphorylation and non-cyclic electron transport"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "1"
+      ],
+      "solution": "Emerson's enhancement effect and Red drop effect leads to discovery of participation of two types of \nphotosystem in light reaction of photosynthesis"
+    },
+    {
+      "number": 108,
+      "section": "Biology",
+      "type": "mcq",
+      "text": "Select the correct statement",
+      "options": [
+        {
+          "label": "1",
+          "text": "Salvinia, Ginkgo and Pinus all are gymnosperms"
+        },
+        {
+          "label": "2",
+          "text": "Sequoia is one of the tallest trees"
+        },
+        {
+          "label": "3",
+          "text": "The leaves of gymnosperms are not well adapted to extremes of climate"
+        },
+        {
+          "label": "4",
+          "text": "Gymnosperms are both homosporous and heterosporous"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "2"
+      ],
+      "solution": "Sequoia semepervirans is one of the tallest tree (tallest in gymnosperm)."
+    },
+    {
+      "number": 109,
+      "section": "Biology",
+      "type": "mcq",
+      "text": "Which of the following  is not a characteristic feature during mitosis in somatic cells ?",
+      "options": [
+        {
+          "label": "1",
+          "text": "Disappearance of nucleolus"
+        },
+        {
+          "label": "2",
+          "text": "Chromosome movement"
+        },
+        {
+          "label": "3",
+          "text": "Synapsis"
+        },
+        {
+          "label": "4",
+          "text": "Spindle fibres"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "3"
+      ],
+      "solution": "Synapsis or pairing of homologous chromosome occurs in zygotene stage of meiosis. It does not occur in \nmitosis. \n<<<PAGE_23>>>\n \n \n \n23"
+    },
+    {
+      "number": 110,
+      "section": "Biology",
+      "type": "mcq",
+      "text": "Blood pressure in the pulmonary artery is  -",
+      "options": [
+        {
+          "label": "1",
+          "text": "More than that in the carotid"
+        },
+        {
+          "label": "2",
+          "text": "More than that in the pulmonary vein"
+        },
+        {
+          "label": "3",
+          "text": "Less than that in the venae cavae"
+        },
+        {
+          "label": "4",
+          "text": "Same as that in the aorta"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "2"
+      ],
+      "solution": "Arteries have higher blood pressure than vein because blood is forced inside them from heart and also their \nlumen is narrow."
+    },
+    {
+      "number": 111,
+      "section": "Biology",
+      "type": "mcq",
+      "text": "Which of the following structures is homologus to the wing of the birds ?",
+      "options": [
+        {
+          "label": "1",
+          "text": "Wing of a Moth"
+        },
+        {
+          "label": "2",
+          "text": "Hind limb of Rabbit"
+        },
+        {
+          "label": "3",
+          "text": "Flippers of Whale"
+        },
+        {
+          "label": "4",
+          "text": "Dorsal fin of a Shark"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "3"
+      ],
+      "solution": "Wings of a bird & flippers of a whale are modified forelimbs."
+    },
+    {
+      "number": 112,
+      "section": "Biology",
+      "type": "mcq",
+      "text": "Seed formation without fertilization in following plants involves the process of",
+      "options": [
+        {
+          "label": "1",
+          "text": "Budding"
+        },
+        {
+          "label": "2",
+          "text": "Somatic hybridization"
+        },
+        {
+          "label": "3",
+          "text": "Apomixis"
+        },
+        {
+          "label": "4",
+          "text": "Sporulation"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "3"
+      ],
+      "solution": "Seed formation without fertilization in flowering plant is termed as agamospermy which comes under \napomixis."
+    },
+    {
+      "number": 113,
+      "section": "Biology",
+      "type": "mcq",
+      "text": "Name the chronic respiratory disorder caused mainly by cigarette smoking",
+      "options": [
+        {
+          "label": "1",
+          "text": "Asthma"
+        },
+        {
+          "label": "2",
+          "text": "Respiratory acidosis"
+        },
+        {
+          "label": "3",
+          "text": "Respiratory alkalosis"
+        },
+        {
+          "label": "4",
+          "text": "Emphysema"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "4"
+      ],
+      "solution": "Emphysema is called smoker's disease"
+    },
+    {
+      "number": 114,
+      "section": "Biology",
+      "type": "mcq",
+      "text": "Spindle fibres attach on to",
+      "options": [
+        {
+          "label": "1",
+          "text": "Kinetochore of the chromosomes"
+        },
+        {
+          "label": "2",
+          "text": "Centromere of the chromosomes"
+        },
+        {
+          "label": "3",
+          "text": "Kinetosome of the chromosomes"
+        },
+        {
+          "label": "4",
+          "text": "Telomere of the chromosomes"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "1"
+      ],
+      "solution": "Spindle fiber during mitosis & meiosis are attached to kinetochore of the chromosome."
+    },
+    {
+      "number": 115,
+      "section": "Biology",
+      "type": "mcq",
+      "text": "In context of Amniocentesis, which of the following  statement is incorrect ?",
+      "options": [
+        {
+          "label": "1",
+          "text": "It is used for prenatal sex determination"
+        },
+        {
+          "label": "2",
+          "text": "It can be used for detection of Down syndrome"
+        },
+        {
+          "label": "3",
+          "text": "It can be used for detection of Cleft palate."
+        },
+        {
+          "label": "4",
+          "text": "It is usually done when a woman is between 14-16 weeks pregnant"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "3"
+      ],
+      "solution": "Cleft palate can not detect by amniocentesis. \n \n(Refer : Class notes) \n \n<<<PAGE_24>>>\n \n \n \n24"
+    },
+    {
+      "number": 116,
+      "section": "Biology",
+      "type": "mcq",
+      "text": "Stems modified into flat green organs performing the functions of leaves are known as",
+      "options": [
+        {
+          "label": "1",
+          "text": "Phyllodes"
+        },
+        {
+          "label": "2",
+          "text": "Phylloclades"
+        },
+        {
+          "label": "3",
+          "text": "Scales"
+        },
+        {
+          "label": "4",
+          "text": "Cladodes"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "2"
+      ],
+      "solution": "In phylloclade complete stem is modified in flat leaf like photosynthetic organ."
+    },
+    {
+      "number": 117,
+      "section": "Biology",
+      "type": "mcq",
+      "text": "In a chloroplast the highest number of protons are found in",
+      "options": [
+        {
+          "label": "1",
+          "text": "Lumen of thylakoids"
+        },
+        {
+          "label": "2",
+          "text": "Inter membrane space"
+        },
+        {
+          "label": "3",
+          "text": "Antennae complex"
+        },
+        {
+          "label": "4",
+          "text": "Stroma"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "1"
+      ],
+      "solution": "Highest number of protons found in lumen of thylakoid of chloroplast during day time due to photolysis of \nwater and active transport of protons by plastoquinone from stroma to lumen of thylakoid."
+    },
+    {
+      "number": 118,
+      "section": "Biology",
+      "type": "mcq",
+      "text": "Nomenclature is governed by certain universal rules. Which one of the following is contrary to the rules of nomenclature ?",
+      "options": [
+        {
+          "label": "1",
+          "text": "The first word in a biological name represents the genus name, and the second is a specific epithet"
+        },
+        {
+          "label": "2",
+          "text": "The names are written in Latin and are italicised"
+        },
+        {
+          "label": "3",
+          "text": "When written by hand, the names are to be underlined"
+        },
+        {
+          "label": "4",
+          "text": "Biological names can be written in any language"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "4"
+      ],
+      "solution": "Biological names are written in latin only so as to follow single universal norm."
+    },
+    {
+      "number": 119,
+      "section": "Biology",
+      "type": "mcq",
+      "text": "In meiosis crossing over is initiated at :",
+      "options": [
+        {
+          "label": "1",
+          "text": "Leptotene"
+        },
+        {
+          "label": "2",
+          "text": "Zygotene"
+        },
+        {
+          "label": "3",
+          "text": "Diplotene"
+        },
+        {
+          "label": "4",
+          "text": "Pachetene"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "4"
+      ],
+      "solution": "Initiation of crossing over occurs in pachytene stage of prophase I of meiosis."
+    },
+    {
+      "number": 120,
+      "section": "Biology",
+      "type": "mcq",
+      "text": "Antivenom injection contains preformed antibodies while polio drops that are administered into the body contain -",
+      "options": [
+        {
+          "label": "1",
+          "text": "Harvested antibodies"
+        },
+        {
+          "label": "2",
+          "text": "Gamma globulin"
+        },
+        {
+          "label": "3",
+          "text": "Attenuated pathogens"
+        },
+        {
+          "label": "4",
+          "text": "Activated pathogens"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "3"
+      ],
+      "solution": "O.P.V. is live attenuated pathogen vaccine"
+    },
+    {
+      "number": 121,
+      "section": "Biology",
+      "type": "mcq",
+      "text": "The taq polymerase enzyme is obtained from",
+      "options": [
+        {
+          "label": "1",
+          "text": "Thiobacillus ferroxidans"
+        },
+        {
+          "label": "2",
+          "text": "Bacillus subtilis"
+        },
+        {
+          "label": "3",
+          "text": "Pseudomonas putida"
+        },
+        {
+          "label": "4",
+          "text": "Thermus aquaticus"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "4"
+      ],
+      "solution": "Taq is obtain from thermus aquaticus \n<<<PAGE_25>>>\n \n \n \n25"
+    },
+    {
+      "number": 122,
+      "section": "Biology",
+      "type": "mcq",
+      "text": "Which of the following most appropriately describes haemophilia ?",
+      "options": [
+        {
+          "label": "1",
+          "text": "X-linked recessive gene disorder"
+        },
+        {
+          "label": "2",
+          "text": "Chromosomal disorder"
+        },
+        {
+          "label": "3",
+          "text": "Dominant gene disorder"
+        },
+        {
+          "label": "4",
+          "text": "Recessive gene disorder"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "1"
+      ],
+      "solution": "Hemophilia is x-linked recessive disorder"
+    },
+    {
+      "number": 123,
+      "section": "Biology",
+      "type": "mcq",
+      "text": "The standard petal of a papilionaceous corolla is also called -",
+      "options": [
+        {
+          "label": "1",
+          "text": "Pappus"
+        },
+        {
+          "label": "2",
+          "text": "Vexillum"
+        },
+        {
+          "label": "3",
+          "text": "Corona"
+        },
+        {
+          "label": "4",
+          "text": "Carina"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "2"
+      ],
+      "solution": "Standard petal or posterior petal in papilionaceous corolla is known as vaxillum."
+    },
+    {
+      "number": 124,
+      "section": "Biology",
+      "type": "mcq",
+      "text": "Which part of the tobacco plant is infected by Meloidogyne incognita ?",
+      "options": [
+        {
+          "label": "1",
+          "text": "Leaf"
+        },
+        {
+          "label": "2",
+          "text": "Stem"
+        },
+        {
+          "label": "3",
+          "text": "Root"
+        },
+        {
+          "label": "4",
+          "text": "Flower"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "3"
+      ],
+      "solution": "Meloidogyne incognita cause root node disease  \n \nNCERT XII page 209"
+    },
+    {
+      "number": 125,
+      "section": "Biology",
+      "type": "mcq",
+      "text": "Which of the following statements is wrong for viroids ?",
+      "options": [
+        {
+          "label": "1",
+          "text": "They are smaller than viruses"
+        },
+        {
+          "label": "2",
+          "text": "They cause infections"
+        },
+        {
+          "label": "3",
+          "text": "Their RNA is of high molecular weight"
+        },
+        {
+          "label": "4",
+          "text": "They lack a protein coat"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "3"
+      ],
+      "solution": "Viroids consist of low molecular weight RNA"
+    },
+    {
+      "number": 126,
+      "section": "Biology",
+      "type": "mcq",
+      "text": "Which of the following statements is not true for cancer cells in relation to mutations ?",
+      "options": [
+        {
+          "label": "1",
+          "text": "Mutations destroy telomerase inhibitor"
+        },
+        {
+          "label": "2",
+          "text": "Mutations inactivate the cell control"
+        },
+        {
+          "label": "3",
+          "text": "Mutations inhibit production of telomerase"
+        },
+        {
+          "label": "4",
+          "text": "Mutations in proto-oncogenes accelerate the cell cycle Students may it in CP class notes"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "3"
+      ],
+      "solution": "Telomerase production is increased in cancer by mutation."
+    },
+    {
+      "number": 127,
+      "section": "Biology",
+      "type": "mcq",
+      "text": "Which type of tissue correctly matches with its locations ?\n\n| | Tissue | Location |\n| :--- | :--- | :--- |\n| (1) | Areolar tissue | Tendons |\n| (2) | Transitional epithelium | Tip of nose |\n| (3) | Cuboidal epithelium | Lining of stomach |\n| (4) | Smooth muscle | Wall of intestine |",
+      "options": [
+        {
+          "label": "1",
+          "text": "Areolar tissue - Tendons"
+        },
+        {
+          "label": "2",
+          "text": "Transitional epithelium - Tip of nose"
+        },
+        {
+          "label": "3",
+          "text": "Cuboidal epithelium - Lining of stomach"
+        },
+        {
+          "label": "4",
+          "text": "Smooth muscle - Wall of intestine"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "4"
+      ],
+      "solution": "In this match the column correct matching is smooth muscle –Wall of intestine"
+    },
+    {
+      "number": 128,
+      "section": "Biology",
+      "type": "mcq",
+      "text": "Which of the following pairs of hormones are not antagonistic (having opposite effects) to each other ?",
+      "options": [
+        {
+          "label": "1",
+          "text": "Insulin Glucagon"
+        },
+        {
+          "label": "2",
+          "text": "Aldosterone Atrial Natriuretic Factor"
+        },
+        {
+          "label": "3",
+          "text": "Relaxin Inhibin"
+        },
+        {
+          "label": "4",
+          "text": "Parathormone Calcitonin"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "3"
+      ],
+      "solution": "In this match the column which pairing of hormones are not antagonistic (having opposite effects) to each \nother is Relaxin-Inhibin"
+    },
+    {
+      "number": 129,
+      "section": "Biology",
+      "type": "mcq",
+      "text": "Specialised epidermal cells surrounding the guard cells are called -",
+      "options": [
+        {
+          "label": "1",
+          "text": "Subsidiary cells"
+        },
+        {
+          "label": "2",
+          "text": "Bulliform cells"
+        },
+        {
+          "label": "3",
+          "text": "Lenticels"
+        },
+        {
+          "label": "4",
+          "text": "Complementary cells"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "1"
+      ],
+      "solution": "Specialized epidermal cells surrounding the guard cells are known as Subsidiary or accessory cell."
+    },
+    {
+      "number": 130,
+      "section": "Biology",
+      "type": "mcq",
+      "text": "Fertilization in humans is practically feasible only if -",
+      "options": [
+        {
+          "label": "1",
+          "text": "The ovum and sperms are transported simultaneously to ampullary-isthmic junction of the fallopian tube"
+        },
+        {
+          "label": "2",
+          "text": "The ovum and sperms are transported simultaneously to ampullary-isthmic junction of the cervix"
+        },
+        {
+          "label": "3",
+          "text": "The sperm are transported into cervix within 48 hrs of release of ovum in uterus"
+        },
+        {
+          "label": "4",
+          "text": "The sperm are transported into vagina just after the release of ovum in fallopian tube"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "1"
+      ],
+      "solution": "Sperm and egg can lead to formation of zygote only when both of them are viable \n \nLife of sperm after insemination – 4 to 5 days \n \nLife of egg after ovulation – 2 days"
+    },
+    {
+      "number": 131,
+      "section": "Biology",
+      "type": "mcq",
+      "text": "Which one of the following is the starter codon ?",
+      "options": [
+        {
+          "label": "1",
+          "text": "UGA"
+        },
+        {
+          "label": "2",
+          "text": "UAA"
+        },
+        {
+          "label": "3",
+          "text": "UAG"
+        },
+        {
+          "label": "4",
+          "text": "AUG"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "3"
+      ],
+      "solution": "AUG is initiation codon during protein synthesis. \n \n \n \n<<<PAGE_27>>>\n \n \n \n27"
+    },
+    {
+      "number": 132,
+      "section": "Biology",
+      "type": "mcq",
+      "text": "A river with an inflow of domestic sewage rich in organic waste may result in -",
+      "options": [
+        {
+          "label": "1",
+          "text": "Increased population of aquatic food web organisms"
+        },
+        {
+          "label": "2",
+          "text": "An increased production of fish due to biodegradable nutrients"
+        },
+        {
+          "label": "3",
+          "text": "Death of fish due to lack of oxygen"
+        },
+        {
+          "label": "4",
+          "text": "Drying of the river very soon due to algal bloom"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "3"
+      ],
+      "solution": "Domestic sewage rich in organic waste leads to increase in B.O.D, which leads to decrease D.O. (dissolved \noxygen) Which leads to death of fishes."
+    },
+    {
+      "number": 133,
+      "section": "Biology",
+      "type": "mcq",
+      "text": "Following are the two statements regarding the origin of life :\n\n(a) The earliest organisms that appeared on the earth were non-green and presumably anaerobes.\n(b) The first autotrophic organisms were the chemoautotrophs that never released oxygen.\n\nOf the above statements which one of the following options is correct ?",
+      "options": [
+        {
+          "label": "1",
+          "text": "(a) is correct but (b) is false."
+        },
+        {
+          "label": "2",
+          "text": "Both (a) and (b) are correct."
+        },
+        {
+          "label": "3",
+          "text": "Both (a) and (b) are false."
+        },
+        {
+          "label": "4",
+          "text": "(a) is false but (b) is correct."
+        }
+      ],
+      "images": [],
+      "answers": [
+        "2"
+      ],
+      "solution": "Both statements are correct because primitive atmosphere was reducing and chlorophyll appeared later on."
+    },
+    {
+      "number": 134,
+      "section": "Biology",
+      "type": "mcq",
+      "text": "A system of rotating crops with legume or grass pasture to improve soil structure and fertility is called -",
+      "options": [
+        {
+          "label": "1",
+          "text": "Contour farming"
+        },
+        {
+          "label": "2",
+          "text": "Strip farming"
+        },
+        {
+          "label": "3",
+          "text": "Shifting agriculture"
+        },
+        {
+          "label": "4",
+          "text": "Ley farming"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "4"
+      ],
+      "solution": "Rotating crops with legume or grass pasture to improve soil fertility is called as lay farming"
+    },
+    {
+      "number": 135,
+      "section": "Biology",
+      "type": "mcq",
+      "text": "Gause's principle of competitive exclusion states that -",
+      "options": [
+        {
+          "label": "1",
+          "text": "Competition for the same resources excludes species having different food preferences"
+        },
+        {
+          "label": "2",
+          "text": "No two species can occupy the same niche indefinitely for the same limiting resources"
+        },
+        {
+          "label": "3",
+          "text": "Larger organisms exclude smaller ones through competition"
+        },
+        {
+          "label": "4",
+          "text": "More abundant species will exclude the less abundant species through competition"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "2"
+      ],
+      "solution": "Gause's competitive exclusion principle starts that no two species can occupy the same niche indefinitely in a \nhabitat."
+    },
+    {
+      "number": 136,
+      "section": "Biology",
+      "type": "mcq",
+      "text": "Which of the following characteristic features always holds true for the corresponding group of animals?\n\n| | Feature | Group of animals |\n| :--- | :--- | :--- |\n| (1) | Viviparous | Mammalia |\n| (2) | Possess a mouth with an upper and a lower jaw | Chordata |\n| (3) | 3-chambered heart with one incompletely divided ventricle | Reptilia |\n| (4) | Cartilaginous endoskeleton | Chondrichthyes |",
+      "options": [
+        {
+          "label": "1",
+          "text": "Viviparous - Mammalia"
+        },
+        {
+          "label": "2",
+          "text": "Possess a mouth with an upper and a lower jaw - Chordata"
+        },
+        {
+          "label": "3",
+          "text": "3-chambered heart with one incompletely divided ventricle - Reptilia"
+        },
+        {
+          "label": "4",
+          "text": "Cartilaginous endoskeleton - Chondrichthyes"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "4"
+      ],
+      "solution": "Chondrichthyse always have cartilagenous endoskeleton. \n<<<PAGE_28>>>\n \n \n \n28"
+    },
+    {
+      "number": 137,
+      "section": "Biology",
+      "type": "mcq",
+      "text": "Change in GnRH pulse frequency in females is controlled by circulating levels of -",
+      "options": [
+        {
+          "label": "1",
+          "text": "estrogen and inhibin"
+        },
+        {
+          "label": "2",
+          "text": "progesterone only"
+        },
+        {
+          "label": "3",
+          "text": "progesterone and inhibin"
+        },
+        {
+          "label": "4",
+          "text": "estrogen and progesterone"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "4"
+      ],
+      "solution": "Changes in GnRH pulse frequency in female is controlled by circulating level of estrogen and progesteron \nhormone ."
+    },
+    {
+      "number": 138,
+      "section": "Biology",
+      "type": "mcq",
+      "text": "Microtubules are the constituents of -",
+      "options": [
+        {
+          "label": "1",
+          "text": "Spindle fibres, Centrioles and Cilia"
+        },
+        {
+          "label": "2",
+          "text": "Centrioles, spindle fibres and chromatin"
+        },
+        {
+          "label": "3",
+          "text": "Centrosome, Nucleosome and Centrioles"
+        },
+        {
+          "label": "4",
+          "text": "Cilia, Flagella and Peroxisomes"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "1"
+      ],
+      "solution": "Microtubule is structural component of spindle fiber, cilia, flagella, centriole etc."
+    },
+    {
+      "number": 139,
+      "section": "Biology",
+      "type": "mcq",
+      "text": "Mitochondria and chloroplast are :\n\n(a) semi-autonomous organelles\n(b) formed by division of pre-existing organelles and they contain DNA but lack protein synthesizing machinery\n\nWhich one of the following options is correct ?",
+      "options": [
+        {
+          "label": "1",
+          "text": "Both (a) and (b) are correct"
+        },
+        {
+          "label": "2",
+          "text": "(b) is true but (a) is false"
+        },
+        {
+          "label": "3",
+          "text": "(a) is true but (b) is false"
+        },
+        {
+          "label": "4",
+          "text": "Both (a) and (b) are false"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "2"
+      ],
+      "solution": "Mitochondria & chloroplast is semi autonomous cell organelle which formed by division of pre existing \norganelle & contain DNA but they also contain protein synthesizing mechinary, thus A is true & B is false. \n \n \n \n \n \n \n<<<PAGE_29>>>\n \n \n \n29"
+    },
+    {
+      "number": 140,
+      "section": "Biology",
+      "type": "mcq",
+      "text": "Photosensitive compound in human eye is made up of -",
+      "options": [
+        {
+          "label": "1",
+          "text": "Opsin and Retinal"
+        },
+        {
+          "label": "2",
+          "text": "Opsin and Retinol"
+        },
+        {
+          "label": "3",
+          "text": "Transducin and Retinene"
+        },
+        {
+          "label": "4",
+          "text": "Guanosine and Retinol"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "1"
+      ],
+      "solution": "Photosensitive compound Rhodopsin is made up of opsin and retinal"
+    },
+    {
+      "number": 141,
+      "section": "Biology",
+      "type": "mcq",
+      "text": "Chrysophytes, Euglenoids, Dinoflagellates and Slime moulds are included in the kingdom",
+      "options": [
+        {
+          "label": "1",
+          "text": "Protista"
+        },
+        {
+          "label": "2",
+          "text": "Fungi"
+        },
+        {
+          "label": "3",
+          "text": "Animalia"
+        },
+        {
+          "label": "4",
+          "text": "Monera"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "1"
+      ],
+      "solution": "All unicellular eukaryotic organism like diatoms, desmids (chrysophytes), euglenoids, dinoflagellates and \nslime mould are included in Protista."
+    },
+    {
+      "number": 142,
+      "section": "Biology",
+      "type": "mcq",
+      "text": "The primitive prokaryotes responsible for the production of biogas from the dung of ruminant animals include the -",
+      "options": [
+        {
+          "label": "1",
+          "text": "Thermoacidophiles"
+        },
+        {
+          "label": "2",
+          "text": "Methanogens"
+        },
+        {
+          "label": "3",
+          "text": "Eubacteria"
+        },
+        {
+          "label": "4",
+          "text": "Halophiles"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "2"
+      ],
+      "solution": "Methanogens are methane producing organism."
+    },
+    {
+      "number": 143,
+      "section": "Biology",
+      "type": "mcq",
+      "text": "Identify the correct statement on 'inhibin' -",
+      "options": [
+        {
+          "label": "1",
+          "text": "Is produced by granulose cells in ovary and inhibits the secretion of FSH"
+        },
+        {
+          "label": "2",
+          "text": "Is produced by granulose cells in ovary and inhibits the secretion of LH"
+        },
+        {
+          "label": "3",
+          "text": "Is produced by nurse cells in testes and inhibits the secretion of LH"
+        },
+        {
+          "label": "4",
+          "text": "Inhibits the secretion of LH, FSH and Prolactin"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "1"
+      ],
+      "solution": "Inhibin hormone secreted by granulosa cell of ovary and inhibits the secretion of FSH from pituitary in female \nwhile in male it also secreted by sertoli cells of testis and inhibits the secretion of FSH of pituitary in male."
+    },
+    {
+      "number": 144,
+      "section": "Biology",
+      "type": "mcq",
+      "text": "It is much easier for a small animals to run uphill than for a large animal, because -",
+      "options": [
+        {
+          "label": "1",
+          "text": "Smaller animals have a higher metabolic rate"
+        },
+        {
+          "label": "2",
+          "text": "Small animals have a lower O2 requirement"
+        },
+        {
+          "label": "3",
+          "text": "The efficiency of muscles in large animals is less than in the small animals"
+        },
+        {
+          "label": "4",
+          "text": "It is easier to carry a small body weight"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "1"
+      ],
+      "solution": "Small animal have high metabolic rate so they can easily run uphill than for a large animal"
+    },
+    {
+      "number": 145,
+      "section": "Biology",
+      "type": "mcq",
+      "text": "A tall true breeding garden pea plant is crossed with a dwarf true breeding garden pea plant. When the F1 plants were selfed the resulting genotypes were in the ratio of  -",
+      "options": [
+        {
+          "label": "1",
+          "text": "1 : 2 : 1 :: Tall heterozygous : Tall homozygous : Dwarf"
+        },
+        {
+          "label": "2",
+          "text": "3 : 1 :: Tall : Dwarf"
+        },
+        {
+          "label": "3",
+          "text": "3 : 1 :: Dwarf : Tall"
+        },
+        {
+          "label": "4",
+          "text": "1 : 2 : 1 :: Tall homozygous : Tall heterozygous : Dwarf <<<PAGE_30>>> 30"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "4"
+      ],
+      "solution": "Tt × Tt \n \n \nT\nt\nT\nt\nTT\nTt \nTt \ntt \n \n \nGenotypic ratio \n \n \n1 : 2 : 1"
+    },
+    {
+      "number": 146,
+      "section": "Biology",
+      "type": "mcq",
+      "text": "Depletion  of which gas in the atmosphere can lead to an increased incidence of skin cancers -",
+      "options": [
+        {
+          "label": "1",
+          "text": "Ozone"
+        },
+        {
+          "label": "2",
+          "text": "Ammonia"
+        },
+        {
+          "label": "3",
+          "text": "Methane"
+        },
+        {
+          "label": "4",
+          "text": "Nitrous oxide"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "1"
+      ],
+      "solution": "Ozone depletion is stratosphere leads to reaching of harmfull U.V. rays on earth which cause skin cancer"
+    },
+    {
+      "number": 147,
+      "section": "Biology",
+      "type": "mcq",
+      "text": "Which one of the following is a characteristic feature of cropland ecosystem ?",
+      "options": [
+        {
+          "label": "1",
+          "text": "Least genetic diversity"
+        },
+        {
+          "label": "2",
+          "text": "Absence of weeds"
+        },
+        {
+          "label": "3",
+          "text": "Ecological succession"
+        },
+        {
+          "label": "4",
+          "text": "Absence of soil organisms"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "1"
+      ],
+      "solution": "Cropland ecosystem posses least genetic diversity"
+    },
+    {
+      "number": 148,
+      "section": "Biology",
+      "type": "mcq",
+      "text": "Tricarpellary, syncarpous gynoecium is found in flowers of -",
+      "options": [
+        {
+          "label": "1",
+          "text": "Solanaceae"
+        },
+        {
+          "label": "2",
+          "text": "Fabaceae"
+        },
+        {
+          "label": "3",
+          "text": "Poaceae"
+        },
+        {
+          "label": "4",
+          "text": "Liliaceae"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "4"
+      ],
+      "solution": "Tricarpellary syncarpous gyanoecium is a characteristic feature of flowers of liliaceae family."
+    },
+    {
+      "number": 149,
+      "section": "Biology",
+      "type": "mcq",
+      "text": "In which of the following, all three are macronutrients ?",
+      "options": [
+        {
+          "label": "1",
+          "text": "Iron, copper, molybdenum"
+        },
+        {
+          "label": "2",
+          "text": "Molybdenum, magnesium, manganese"
+        },
+        {
+          "label": "3",
+          "text": "Nitrogen, nickel, phosphorus"
+        },
+        {
+          "label": "4",
+          "text": "Boron, zinc, manganese"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "solution": "Mis question should be bonus as all 4 options are incorrect. \n3rd option is more correct which includes N, Ni & P, but Ni (Nickel) is a micronutrient. \n \n<<<PAGE_31>>>\n \n \n \n31"
+    },
+    {
+      "number": 150,
+      "section": "Biology",
+      "type": "mcq",
+      "text": "Reduction in pH of blood will-",
+      "options": [
+        {
+          "label": "1",
+          "text": "reduce the blood supply to the brain"
+        },
+        {
+          "label": "2",
+          "text": "decrease the affinity of hemoglobin with oxygen"
+        },
+        {
+          "label": "3",
+          "text": "release bicarbonate ions by the liver"
+        },
+        {
+          "label": "4",
+          "text": "reduce the rate of heart beat"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "2"
+      ],
+      "solution": "Fall in pH or Rise in acidity of blood decreases the O2 – Hb affinity."
+    },
+    {
+      "number": 151,
+      "section": "Biology",
+      "type": "mcq",
+      "text": "Lack of relaxation between successive stimuli in sustained muscle contraction is known as -",
+      "options": [
+        {
+          "label": "1",
+          "text": "Fatigue"
+        },
+        {
+          "label": "2",
+          "text": "Tetanus"
+        },
+        {
+          "label": "3",
+          "text": "Tonus"
+        },
+        {
+          "label": "4",
+          "text": "Spasm"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "2"
+      ],
+      "solution": "Lack of relaxation between successive stimuli in sustain muscle contraction in known as tetanus."
+    },
+    {
+      "number": 152,
+      "section": "Biology",
+      "type": "mcq",
+      "text": "Which one of the following statements is wrong ?",
+      "options": [
+        {
+          "label": "1",
+          "text": "Golden algae are also called desmids"
+        },
+        {
+          "label": "2",
+          "text": "Eubacteria are also called false bacteria"
+        },
+        {
+          "label": "3",
+          "text": "Phycomycetes are also called algal fungi"
+        },
+        {
+          "label": "4",
+          "text": "Cyanobacteria are also called blue-green algae"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "2"
+      ],
+      "solution": "Eubacteria are true bacteria."
+    },
+    {
+      "number": 153,
+      "section": "Biology",
+      "type": "mcq",
+      "text": "Which of the following is a restriction endonuclease ?",
+      "options": [
+        {
+          "label": "1",
+          "text": "Protease"
+        },
+        {
+          "label": "2",
+          "text": "DNase I"
+        },
+        {
+          "label": "3",
+          "text": "RNase I"
+        },
+        {
+          "label": "4",
+          "text": "Hind II"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "4"
+      ],
+      "solution": "Hind II is first discovered restriction enzyme by Warner Arber."
+    },
+    {
+      "number": 154,
+      "section": "Biology",
+      "type": "mcq",
+      "text": "Which of the following would appear as the pioneer organisms on bare rocks?",
+      "options": [
+        {
+          "label": "1",
+          "text": "Liverworts"
+        },
+        {
+          "label": "2",
+          "text": "Mosses"
+        },
+        {
+          "label": "3",
+          "text": "Green algae"
+        },
+        {
+          "label": "4",
+          "text": "Lichens"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "4"
+      ],
+      "solution": "On bare rock, Lichens are pioneer as they secretes carbonic acid which leads to rock weathering and creation \nof soil."
+    },
+    {
+      "number": 155,
+      "section": "Biology",
+      "type": "mcq",
+      "text": "Water vapour comes out from the plant leaf through the stomatal opening. Through the same stomatal opening carbon dioxide diffuses into the plant during photosynthesis. Reason out the above statements using one of following options :",
+      "options": [
+        {
+          "label": "1",
+          "text": "Both processes can happen together because the diffusion coefficient of water and CO2 is different."
+        },
+        {
+          "label": "2",
+          "text": "The above processes happen only during night time."
+        },
+        {
+          "label": "3",
+          "text": "One process occurs during day time, and the other at night."
+        },
+        {
+          "label": "4",
+          "text": "Both processes cannot happen simultaneously. <<<PAGE_32>>> 32"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "1"
+      ],
+      "solution": "Transpirational loss of water occurs through stomata & gaseous exchange also occurs through stomata in \nterrestrial plants. Simultaneously as both are the process of simple diffusion occurs in order of diffusion \npressure gradient or diffusion coefficient."
+    },
+    {
+      "number": 156,
+      "section": "Biology",
+      "type": "mcq",
+      "text": "Cotyledon of maize grain is called :",
+      "options": [
+        {
+          "label": "1",
+          "text": "Coleorhiza"
+        },
+        {
+          "label": "2",
+          "text": "Coleoptile"
+        },
+        {
+          "label": "3",
+          "text": "Scutellum"
+        },
+        {
+          "label": "4",
+          "text": "Plumule"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "3"
+      ],
+      "solution": "Single shield shape cotyledon of maize grain is known as scutellum."
+    },
+    {
+      "number": 157,
+      "section": "Biology",
+      "type": "mcq",
+      "text": "Which of the following guards the opening of hepatopancreatic duct into the duodenum?",
+      "options": [
+        {
+          "label": "1",
+          "text": "Ileocaecal valve"
+        },
+        {
+          "label": "2",
+          "text": "Pyloric sphincter"
+        },
+        {
+          "label": "3",
+          "text": "Sphincter of Oddi"
+        },
+        {
+          "label": "4",
+          "text": "Semilunar valve"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "3"
+      ],
+      "solution": "Opening of hepatopancreatic duct in the duodenum is guarded by sphincter of oddi"
+    },
+    {
+      "number": 158,
+      "section": "Biology",
+      "type": "mcq",
+      "text": "In the stomach, gastric acid is secreted by the :",
+      "options": [
+        {
+          "label": "1",
+          "text": "Parietal cells"
+        },
+        {
+          "label": "2",
+          "text": "Peptic cells"
+        },
+        {
+          "label": "3",
+          "text": "Acidic cells"
+        },
+        {
+          "label": "4",
+          "text": "Gastrin secreting cells"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "1"
+      ],
+      "solution": "In stomach, gastric acid (HCl) is secreted by parietal cells of gastric gland."
+    },
+    {
+      "number": 159,
+      "section": "Biology",
+      "type": "mcq",
+      "text": "In mammals, which blood vessel would normally carry largest amount of urea?",
+      "options": [
+        {
+          "label": "1",
+          "text": "Dorsal Aorta"
+        },
+        {
+          "label": "2",
+          "text": "Hepatic Vein"
+        },
+        {
+          "label": "3",
+          "text": "Hepatic Portal Vein"
+        },
+        {
+          "label": "4",
+          "text": "Renal Vein"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "2"
+      ],
+      "solution": "Urea synthesis occurs in liver."
+    },
+    {
+      "number": 160,
+      "section": "Biology",
+      "type": "mcq",
+      "text": "The term ecosystem was coined by :",
+      "options": [
+        {
+          "label": "1",
+          "text": "A.G. Tansley"
+        },
+        {
+          "label": "2",
+          "text": "E. Haeckel"
+        },
+        {
+          "label": "3",
+          "text": "E. Warming"
+        },
+        {
+          "label": "4",
+          "text": "E.P. Odum"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "1"
+      ],
+      "solution": "Term Ecosystem was coined by A.G. Tansley."
+    },
+    {
+      "number": 161,
+      "section": "Biology",
+      "type": "mcq",
+      "text": "Which of the following is required as inducer(s) for the expression of Lac operon?",
+      "options": [
+        {
+          "label": "1",
+          "text": "galactose"
+        },
+        {
+          "label": "2",
+          "text": "lactose"
+        },
+        {
+          "label": "3",
+          "text": "lactose and galactose"
+        },
+        {
+          "label": "4",
+          "text": "glucose"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "2"
+      ],
+      "solution": "Lactose is inducer of lac operon. \n<<<PAGE_33>>>\n \n \n \n33"
+    },
+    {
+      "number": 162,
+      "section": "Biology",
+      "type": "mcq",
+      "text": "Which of the following is wrongly matched in the given table?\n\n| | Microbe | Product | Application |\n| :--- | :--- | :--- | :--- |\n| (1) | *Monascus purpureus* | Statins | Lowering of blood cholesterol |\n| (2) | *Streptococcus* | Streptokinase | Removal of clot from blood vessel |\n| (3) | *Clostridium butylicum* | Lipase | Removal of oil stains |\n| (4) | *Trichoderma polysporum* | Cyclosporin A | Immunosuppressive drug |",
+      "options": [
+        {
+          "label": "1",
+          "text": "Monascus purpureus - Statins - Lowering of blood cholesterol"
+        },
+        {
+          "label": "2",
+          "text": "Streptococcus - Streptokinase - Removal of clot from blood vessel"
+        },
+        {
+          "label": "3",
+          "text": "Clostridium butylicum - Lipase - Removal of oil stains"
+        },
+        {
+          "label": "4",
+          "text": "Trichoderma polysporum - Cyclosporin A - Immunosuppressive drug"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "3"
+      ],
+      "solution": "Clostridium butylicum ils used for butyric acid production  \n \nNCERT-XII page 183"
+    },
+    {
+      "number": 163,
+      "section": "Biology",
+      "type": "mcq",
+      "text": "When does the growth rate of a population following the logistic model equal zero? The logistic model is given as dN/dt = rN(1-N/K) :",
+      "options": [
+        {
+          "label": "1",
+          "text": "When N nears the carrying capacity of the habitat."
+        },
+        {
+          "label": "2",
+          "text": "When N/K equals zero."
+        },
+        {
+          "label": "3",
+          "text": "When death rate is greater than birth rate."
+        },
+        {
+          "label": "4",
+          "text": "When N/K is exactly one."
+        }
+      ],
+      "images": [],
+      "answers": [
+        "4"
+      ],
+      "solution": "dt\ndN = rN \n\n\n\n\n\n\nK\nN\n–\n1\n \n \nwhen K\nN = 1 \n \nthen dt\ndN = rN (1 – 1)  \n dt\ndN = rN × 0  dt\ndN = 0"
+    },
+    {
+      "number": 164,
+      "section": "Biology",
+      "type": "mcq",
+      "text": "Which one of the following statements is not true?",
+      "options": [
+        {
+          "label": "1",
+          "text": "Exine of pollen grains is made up of sporopollenin"
+        },
+        {
+          "label": "2",
+          "text": "Pollen grains of many species cause severe allergies"
+        },
+        {
+          "label": "3",
+          "text": "Stored pollen in liquid nitrogen can be used in the crop breeding programmes"
+        },
+        {
+          "label": "4",
+          "text": "Tapetum helps in the dehiscence of anther"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "4"
+      ],
+      "solution": "Endothecium helps in dehiscence of anther."
+    },
+    {
+      "number": 165,
+      "section": "Biology",
+      "type": "mcq",
+      "text": "In bryophytes and pteridophytes, transport of male gametes requires :",
+      "options": [
+        {
+          "label": "1",
+          "text": "Insects"
+        },
+        {
+          "label": "2",
+          "text": "Birds"
+        },
+        {
+          "label": "3",
+          "text": "Water"
+        },
+        {
+          "label": "4",
+          "text": "Wind"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "3"
+      ],
+      "solution": "Bryophytes and Pteridophytes require water for fertilization and have motile male gametes. \n \n<<<PAGE_34>>>\n \n \n \n34"
+    },
+    {
+      "number": 166,
+      "section": "Biology",
+      "type": "mcq",
+      "text": "Which of the following is not a stem modification?",
+      "options": [
+        {
+          "label": "1",
+          "text": "Thorns of citrus"
+        },
+        {
+          "label": "2",
+          "text": "Tendrils of cucumber"
+        },
+        {
+          "label": "3",
+          "text": "Flattened structures of Opuntia"
+        },
+        {
+          "label": "4",
+          "text": "Pitcher of Nepenthes"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "4"
+      ],
+      "solution": "Pitcher of Nepentheis or pitcher plant is modification of leaf not stem"
+    },
+    {
+      "number": 167,
+      "section": "Biology",
+      "type": "mcq",
+      "text": "Which one of the following cell organelles is enclosed by a single membrane?",
+      "options": [
+        {
+          "label": "1",
+          "text": "Chloroplasts"
+        },
+        {
+          "label": "2",
+          "text": "Lysosomes"
+        },
+        {
+          "label": "3",
+          "text": "Nuclei"
+        },
+        {
+          "label": "4",
+          "text": "Mitochondria"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "2"
+      ],
+      "solution": "Lysosome Single membrane bound, Chloroplast, nucleus & mitochondria Double membrane bound"
+    },
+    {
+      "number": 168,
+      "section": "Biology",
+      "type": "mcq",
+      "text": "Analogous structures are a result of :",
+      "options": [
+        {
+          "label": "1",
+          "text": "Convergent evolution"
+        },
+        {
+          "label": "2",
+          "text": "Shared ancestry"
+        },
+        {
+          "label": "3",
+          "text": "Stabilizing selection"
+        },
+        {
+          "label": "4",
+          "text": "Divergent evolution"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "1"
+      ],
+      "solution": "Development of similar adaptive functional structure in organs of different origin is due to convergent \nevolution."
+    },
+    {
+      "number": 169,
+      "section": "Biology",
+      "type": "mcq",
+      "text": "Which one of the following statements is wrong?",
+      "options": [
+        {
+          "label": "1",
+          "text": "Cellulose is a polysaccharide."
+        },
+        {
+          "label": "2",
+          "text": "Uracil is a pyrimidine."
+        },
+        {
+          "label": "3",
+          "text": "Glycine is a sulphur containing amino acid."
+        },
+        {
+          "label": "4",
+          "text": "Sucrose is a disaccharide."
+        }
+      ],
+      "images": [],
+      "answers": [
+        "3"
+      ],
+      "solution": "Glycins is simplest amino acid and does not contain sulphur"
+    },
+    {
+      "number": 170,
+      "section": "Biology",
+      "type": "mcq",
+      "text": "Proximal end of the filament of stamen is attached to the :",
+      "options": [
+        {
+          "label": "1",
+          "text": "Connective"
+        },
+        {
+          "label": "2",
+          "text": "Placenta"
+        },
+        {
+          "label": "3",
+          "text": "Thalamus or petal"
+        },
+        {
+          "label": "4",
+          "text": "Anther"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "3"
+      ],
+      "solution": "Proximal or basal end of a stamen is attached on thalamus or petal"
+    },
+    {
+      "number": 171,
+      "section": "Biology",
+      "type": "mcq",
+      "text": "Which of the following is not required for any of the techniques of DNA fingerprinting available at present?",
+      "options": [
+        {
+          "label": "1",
+          "text": "Zinc finger analysis"
+        },
+        {
+          "label": "2",
+          "text": "Restriction enzymes"
+        },
+        {
+          "label": "3",
+          "text": "DNA – DNA hybridization"
+        },
+        {
+          "label": "4",
+          "text": "Polymerase chain reaction Students may it in CP exercise sheet : Genetics Page No.53"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "1"
+      ],
+      "solution": null
+    },
+    {
+      "number": 172,
+      "section": "Biology",
+      "type": "mcq",
+      "text": "Which one of the following characteristics is not shared by birds and mammals?",
+      "options": [
+        {
+          "label": "1",
+          "text": "Breathing using lungs"
+        },
+        {
+          "label": "2",
+          "text": "Viviparity"
+        },
+        {
+          "label": "3",
+          "text": "Warm blooded nature"
+        },
+        {
+          "label": "4",
+          "text": "Ossified endoskeleton"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "2"
+      ],
+      "solution": "Birds are always oviparous where as prototherian mammals are oviparous while rest of the mammals are \nviviparous. \n \n<<<PAGE_35>>>\n \n \n \n35"
+    },
+    {
+      "number": 173,
+      "section": "Biology",
+      "type": "mcq",
+      "text": "Select the incorrect statement :",
+      "options": [
+        {
+          "label": "1",
+          "text": "LH triggers ovulation in ovary."
+        },
+        {
+          "label": "2",
+          "text": "LH and FSH decrease gradually during the follicular phase."
+        },
+        {
+          "label": "3",
+          "text": "LH triggers secretion of androgens from the Leydig cells."
+        },
+        {
+          "label": "4",
+          "text": "FSH stimulates the sertoli cells which help in spermiogenesis."
+        }
+      ],
+      "images": [],
+      "answers": [
+        "2"
+      ],
+      "solution": "In this  question select the incorrect statement which is LH and FSH decrease gradually during the follicular \nphase. While LH is decrease and FSH is gradually increase. \n \n(Second statement is wrong because LH & FSH gradually rise during follicular phase.)"
+    },
+    {
+      "number": 174,
+      "section": "Biology",
+      "type": "mcq",
+      "text": "The amino acid Tryptophan is the precursor for the synthesis of :",
+      "options": [
+        {
+          "label": "1",
+          "text": "Thyroxine and Triiodothyronine"
+        },
+        {
+          "label": "2",
+          "text": "Estrogen and Progesterone"
+        },
+        {
+          "label": "3",
+          "text": "Cortisol and Cortisone"
+        },
+        {
+          "label": "4",
+          "text": "Melatonin and Serotonin"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "4"
+      ],
+      "solution": "Tryptaphan is the precursor of synthesis of melatonin and serotonin."
+    },
+    {
+      "number": 175,
+      "section": "Biology",
+      "type": "mcq",
+      "text": "Joint Forest Management Concept was introduced in India during :",
+      "options": [
+        {
+          "label": "1",
+          "text": "1970s"
+        },
+        {
+          "label": "2",
+          "text": "1980s"
+        },
+        {
+          "label": "3",
+          "text": "1990s"
+        },
+        {
+          "label": "4",
+          "text": "1960s"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "2"
+      ],
+      "solution": "Joint Forest Management Concept was introduced in India during 1980s."
+    },
+    {
+      "number": 176,
+      "section": "Biology",
+      "type": "mcq",
+      "text": "One of the major components of cell wall of most fungi is :",
+      "options": [
+        {
+          "label": "1",
+          "text": "Peptidoglycan"
+        },
+        {
+          "label": "2",
+          "text": "Cellulose"
+        },
+        {
+          "label": "3",
+          "text": "Hemicellulose"
+        },
+        {
+          "label": "4",
+          "text": "Chitin"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "4"
+      ],
+      "solution": "Most of the fungi have chitin in their cell wall [Oomycetes have cellulosic cell wall]"
+    },
+    {
+      "number": 177,
+      "section": "Biology",
+      "type": "mcq",
+      "text": "A complex of ribosomes attached to a single strand of RNA is known as :",
+      "options": [
+        {
+          "label": "1",
+          "text": "Polymer"
+        },
+        {
+          "label": "2",
+          "text": "Polypeptide"
+        },
+        {
+          "label": "3",
+          "text": "Okazaki fragment"
+        },
+        {
+          "label": "4",
+          "text": "Polysome"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "4"
+      ],
+      "solution": "String of ribosome on mRNA molecule during translation is known as polysome"
+    },
+    {
+      "number": 178,
+      "section": "Biology",
+      "type": "mcq",
+      "text": "Which of the following features is not present in the Phylum – Arthropoda?",
+      "options": [
+        {
+          "label": "1",
+          "text": "Metameric segmentation"
+        },
+        {
+          "label": "2",
+          "text": "Parapodia"
+        },
+        {
+          "label": "3",
+          "text": "Jointed appendages"
+        },
+        {
+          "label": "4",
+          "text": "Chitinous exoskeleton"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "2"
+      ],
+      "solution": "Presence of parapodia is a feature of polychaete annelids [eg. Neries] not of arthropods \n \n<<<PAGE_36>>>\n \n \n \n36"
+    },
+    {
+      "number": 179,
+      "section": "Biology",
+      "type": "mcq",
+      "text": "Asthma may be attributed to :",
+      "options": [
+        {
+          "label": "1",
+          "text": "allergic reaction of the mast cells in the lungs"
+        },
+        {
+          "label": "2",
+          "text": "inflammation of the trachea"
+        },
+        {
+          "label": "3",
+          "text": "accumulation of fluid in the lungs"
+        },
+        {
+          "label": "4",
+          "text": "bacterial infection of the lungs"
+        }
+      ],
+      "images": [],
+      "answers": [
+        "1"
+      ],
+      "solution": "Asthma is allergic disorder"
+    },
+    {
+      "number": 180,
+      "section": "Biology",
+      "type": "mcq",
+      "text": "Pick out the correct statements :\n\n(a) Haemophilia is a sex-linked recessive disease.\n(b) Down's syndrome is due to aneuploidy.\n(c) Phenylketonuria is an autosomal recessive gene disorder.\n(d) Sickle cell anaemia is an X-linked recessive gene disorder.",
+      "options": [
+        {
+          "label": "1",
+          "text": "(a) and (d) are correct."
+        },
+        {
+          "label": "2",
+          "text": "(b) and (d) are correct."
+        },
+        {
+          "label": "3",
+          "text": "(a), (b) and (c) are correct."
+        },
+        {
+          "label": "4",
+          "text": "(a), (c) and (d) are correct."
+        }
+      ],
+      "images": [],
+      "answers": [
+        "3"
+      ],
+      "solution": "Sickle cell anemia is autosomal recessive gene disorder  \n \n \n \n \n \n \n \n \n \n \n \n<<<PAGE_37>>>\n \n \n \n37"
+    }
+  ]
+}

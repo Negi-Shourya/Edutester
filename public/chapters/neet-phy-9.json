@@ -1,0 +1,1074 @@
+{
+  "key": "neet-phy-9",
+  "title": "Ray Optics & Optical Instruments (NEET)",
+  "full_title": "NEET (UG) Chapter Test - Ray Optics & Optical Instruments",
+  "subject": "Physics",
+  "chapter": "Ray Optics",
+  "exam_type": "neet",
+  "is_trial": false,
+  "duration_minutes": 45,
+  "difficulty": "Hard",
+  "question_count": 25,
+  "questions": [
+    {
+      "id": 22098,
+      "number": 1,
+      "type": "mcq",
+      "text": "The refractive index of the material of a prism is \\sqrt{2} and the angle of the prism is 30°. One of the two refracting surfaces of the prism is made a mirror inwards, by silver coating. A beam of monochromatic light entering the prism from the other face will retrace its path (after reflection from the silvered surface) if its angle of incidence on the prism is :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 1,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "30°",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "45°",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "60°",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "zero",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 17600,
+      "number": 2,
+      "type": "mcq",
+      "text": "A point object is placed at a distance of 60 cm from a convex lens of focal length 30 cm. If a plane mirror were put perpendicular to the principal axis of the lens and at a distance of 40 cm from it, the final image would be formed at a distance of :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 2,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "20 cm from the lens, it would be a real image.",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "30 cm from the lens, it would be a real image.",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "30 cm from the plane mirror, it would be a virtual image.",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "20 cm from the plane mirror, it would be a virtual image.",
+          "figure_url": null
+        }
+      ],
+      "figure_url": [
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/neet-2021/q41.png"
+      ]
+    },
+    {
+      "id": 22089,
+      "number": 3,
+      "type": "mcq",
+      "text": "An astronomical refracting telescope will have large angular magnification and high angular resolution, when it has an objective lens of :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 3,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "large focal length and large diameter",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "small focal length and small diameter",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "small focal length and large diameter",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "large focal length and small diameter",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 22099,
+      "number": 4,
+      "type": "mcq",
+      "text": "An object is placed at a distance of 40 cm from a concave mirror of focal length 15 cm. If the object is displaced through a distance of 20 cm towards the mirror, the displacement of the image will be :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 4,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "30 cm towards the mirror",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "36 cm away from the mirror",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "30 cm away from the mirror",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "36 cm towards the mirror",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 18148,
+      "number": 5,
+      "type": "mcq",
+      "text": "The lens combination as shown in the figure, consists of two lenses, L_{1} and L_{2}, of the focal lengths + 10 cm and - 10 cm, respectively. The position of the image formed is :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 5,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "20 cm to the left of the concave lens",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "60 cm to the left of the concave lens",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "30 cm to the right of the concave lens",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "60 cm to the right of the concave lens",
+          "figure_url": null
+        }
+      ],
+      "figure_url": [
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/reneet-2026/q29_fig1.png"
+      ]
+    },
+    {
+      "id": 23365,
+      "number": 6,
+      "type": "mcq",
+      "text": "A thin prism having refracting angle 10^\\circ is made of glass of refractive index 1.42. This prism is combined with another thin prism of glass of refractive index 1.7. This combination produces dispersion without deviation. The refracting angle of second prism should be :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 6,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "10^\\circ",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "4^\\circ",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "6^\\circ",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "8^\\circ",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 20309,
+      "number": 7,
+      "type": "mcq",
+      "text": "Two similar thin equi-convex lenses, of focal length f each, are kept coaxially in contact with each other such that the focal length of the combination is F_1. When the space between the two lenses is filled with glycerin (which has the same refractive index (\\mu = 1.5) as that of glass) then the equivalent focal length is F_2. The ratio F_1 : F_2 will be :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 7,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "2 : 1",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "1 : 2",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "2 : 3",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "3 : 4",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 14020,
+      "number": 8,
+      "type": "mcq",
+      "text": "An unpolarized light beam travelling in air is incident on a medium of refractive index 1.73 at Brewster's angle. Then-",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 8,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "reflected light is completely polarized and the angle of reflection is close to 60°",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "reflected light is partially polarized and the angle of reflection is close to 30°.",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "both reflected and transmitted light are perfectly polarized with angles of reflection and refraction close to 60° and 30°, respectively.",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "transmitted light is completely polarized with angle of refraction close to 30°",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 23974,
+      "number": 9,
+      "type": "mcq",
+      "text": "The angle of incidence for a ray of light at a refracting surface of a prism is 45^\\circ. The angle of prism is 60^\\circ. If the ray suffers minimum deviation through the prism, the angle of minimum deviation and refractive index of the material of the prism respectively, are :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 9,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "30^\\circ ; \\sqrt{2}",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "45^\\circ ; \\sqrt{2}",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "30^\\circ ; \\frac{1}{\\sqrt{2}}",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "45^\\circ ; \\frac{1}{\\sqrt{2}}",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 13995,
+      "number": 10,
+      "type": "mcq",
+      "text": "A microscope has an objective of focal length 2 cm, eyepiece of focal length 4 cm and the tube length of 40 cm. If the distance of distinct vision of eye is 25 cm, the magnification in the microscope is",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 10,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "100",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "125",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "150",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "250",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 23959,
+      "number": 11,
+      "type": "mcq",
+      "text": "Match the corresponding entries of Column 1 with Column 2 [where m is the magnification produced by the mirror] :\n\n| Column 1 | Column 2 |\n| :--- | :--- |\n| (A) m = -2 | (a) Convex mirror |\n| (B) m = -\\frac{1}{2} | (b) Concave mirror |\n| (C) m = +2 | (c) Real image |\n| (D) m = +\\frac{1}{2} | (d) Virtual image |",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 11,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "\\text{A} \\rightarrow \\text{a and c}; \\text{B} \\rightarrow \\text{a and d}; \\text{C} \\rightarrow \\text{a and b}; \\text{D} \\rightarrow \\text{c and d}",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "\\text{A} \\rightarrow \\text{a and d}; \\text{B} \\rightarrow \\text{b and c}; \\text{C} \\rightarrow \\text{b and d}; \\text{D} \\rightarrow \\text{b and c}",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "\\text{A} \\rightarrow \\text{c and d}; \\text{B} \\rightarrow \\text{b and d}; \\text{C} \\rightarrow \\text{b and c}; \\text{D} \\rightarrow \\text{a and d}",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "\\text{A} \\rightarrow \\text{b and c}; \\text{B} \\rightarrow \\text{b and c}; \\text{C} \\rightarrow \\text{b and d}; \\text{D} \\rightarrow \\text{a and d}",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 20310,
+      "number": 12,
+      "type": "mcq",
+      "text": "In total internal reflection when the angle of incidence is equal to the critical angle for the pair of media in contact, what will be angle of refraction?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 12,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "180°",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "0°",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "equal to angle of incidence",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "90°",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 17971,
+      "number": 13,
+      "type": "mcq",
+      "text": "A ray is incident at an angle of incidence i on one surface of a small angle prism (with angle of prism A) and emerges normally from the opposite surface. If the refractive index of the material of the prism is \\mu, then the angle of incidence is nearly equal to :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 13,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "\\frac{2A}{\\mu}",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "\\mu A",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "\\frac{\\mu A}{2}",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "\\frac{A}{2\\mu}",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 17567,
+      "number": 14,
+      "type": "mcq",
+      "text": "A convex lens ‘A’ of focal length 20 cm and a concave lens ‘B’ of focal length 5 cm are kept along the same axis with a distance ‘d’ between them. If a parallel beam of light falling on ‘A’ leaves ‘B’ as a parallel beam, then the distance ‘d’ in cm will be :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 14,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "25",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "15",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "50",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "30",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 15178,
+      "number": 15,
+      "type": "mcq",
+      "text": "A biconvex lens has radii of curvature, 20 cm each. If the refractive index of the material of the lens is 1.5, the power of the lens is",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 15,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "+2 D",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "+20 D",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "+5 D",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Infinity",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 14188,
+      "number": 16,
+      "type": "mcq",
+      "text": "A light ray enters through a right angled prism at point P with the angle of incidence 30° as shown in figure. It travels through the prism parallel to its base BC and emerges along the face AC. The refractive index of the prism is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 16,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "\\frac{\\sqrt{3}}{4}",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "\\frac{\\sqrt{3}}{2}",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "\\frac{\\sqrt{5}}{4}",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "\\frac{\\sqrt{5}}{2}",
+          "figure_url": null
+        }
+      ],
+      "figure_url": [
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/neet-2024/Question 15.png"
+      ]
+    },
+    {
+      "id": 14006,
+      "number": 17,
+      "type": "mcq",
+      "text": "In a certain camera, a combination of four similar thin convex lenses are arranged axially in contact. Then the power of the combination and the total magnification in comparison to the power (p) and magnification (m) for each lens will be, respectively–",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 17,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "4p and 4m",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "p^{4} and 4m",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "4p and m^{4}",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "p^{4} and m^{4}",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 19062,
+      "number": 18,
+      "type": "mcq",
+      "text": "In a concave lens, a ray of light emanating from the object parallel to the principal axis of the lens, after refraction:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 18,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "passes through 2F, which is the radius of curvature of the lens.",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "appears to diverge from the first principal focus.",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "emerges parallel to the principal axis.",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "passes through the second principal focus.",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 23955,
+      "number": 19,
+      "type": "mcq",
+      "text": "An astronomical telescope has objective and eyepiece of focal lengths 40 cm and 4 cm respectively. To view an object 200 cm away from the objective, the lenses must be separated by a distance :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 19,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "46.0 cm",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "50.0 cm",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "54.0 cm",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "37.3 cm",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 20306,
+      "number": 20,
+      "type": "mcq",
+      "text": "Pick the wrong answer in the context with rainbow.",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 20,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "When the light rays undergo two internal reflections in a water drop, a secondary rainbow is formed.",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "The order of colours is reversed in the secondary rainbow.",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "An observer can see a rainbow when his front is towards the sun.",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Rainbow is a combined effect of dispersion refraction and reflection sunlight.",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 17577,
+      "number": 21,
+      "type": "mcq",
+      "text": "A lens of large focal length and large aperture is best suited as an objective of an astronomical telescope since :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 21,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "a large aperture contributes to the quality and visibility of the images.",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "a large area of the objective ensures better light gathering power.",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "a large aperture provides a better resolution.",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "all of the above.",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 14421,
+      "number": 22,
+      "type": "mcq",
+      "text": "Two thin lenses are of same focal lengths (f), but one is convex and the other one is concave. When they are placed in contact with each other, the equivalent focal length of the combination will be:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 22,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Infinite",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Zero",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "\\frac{f}{4}",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "\\frac{f}{2}",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 23362,
+      "number": 23,
+      "type": "mcq",
+      "text": "A beam of light from a source L is incident normally on a plane mirror fixed at a certain distance x from the source. The beam is reflected back as a spot on a scale placed just above the source L. When the mirror is rotated through a small angle \\theta, the spot of the light is found to move through a distance y on the scale. The angle \\theta is given by :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 23,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "\\frac{y}{x}",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "\\frac{x}{2y}",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "\\frac{x}{y}",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "\\frac{y}{2x}",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 17564,
+      "number": 24,
+      "type": "mcq",
+      "text": "Find the value of the angle of emergence from the prism. Refractive index of the glass is \\sqrt{3}.",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 24,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "60^{\\circ}",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "30^{\\circ}",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "45^{\\circ}",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "90^{\\circ}",
+          "figure_url": null
+        }
+      ],
+      "figure_url": [
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/neet-2021/q5.png"
+      ]
+    },
+    {
+      "id": 14420,
+      "number": 25,
+      "type": "mcq",
+      "text": "In the figure shown here, what is the equivalent focal length of the combination of lenses (Assume that all layers are thin)?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 25,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "–50 cm",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "40 cm",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "–40 cm",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "–100 cm",
+          "figure_url": null
+        }
+      ],
+      "figure_url": [
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/neet-2023/q47.png"
+      ]
+    }
+  ]
+}

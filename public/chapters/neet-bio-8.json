@@ -1,0 +1,1064 @@
+{
+  "key": "neet-bio-8",
+  "title": "Molecular Basis of Inheritance (NEET)",
+  "full_title": "NEET (UG) Chapter Test - Molecular Basis of Inheritance",
+  "subject": "Biology",
+  "chapter": "Genetics II",
+  "exam_type": "neet",
+  "is_trial": false,
+  "duration_minutes": 45,
+  "difficulty": "Hard",
+  "question_count": 25,
+  "questions": [
+    {
+      "id": 14498,
+      "number": 1,
+      "type": "mcq",
+      "text": "What is the role of RNA polymerase III in the process of transcription in Eukaryotes?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 1,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Transcription of only snRNAS",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Transcription of rRNAs (28S, 18S and 5.8S)",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Transcription of tRNA, 5 srRNA and snRNA",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Transcription of precursor of mRNA",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 15280,
+      "number": 2,
+      "type": "mcq",
+      "text": "The process of translation of mRNA to proteins begins as soon as :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 2,
+      "sections": {
+        "name": "Botany"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "The small subunit of ribosome encounters mRNA",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "The larger subunit of ribosome encounters mRNA",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Both the subunits join together to bind with mRNA",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "The tRNA is activated and the larger subunit of ribosome encounters mRNA",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 14318,
+      "number": 3,
+      "type": "mcq",
+      "text": "Which of the following statement is correct regarding the process of replication in E.coli ?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 3,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "The DNA dependent DNA polymerase catalyses polymerization in 5’→3’ as well as 3’→5’ direction.",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "The DNA dependent DNA polymerase catalyses polymerization in 5’→3’ direction.",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "The DNA dependent DNA polymerase catalyses polymerization in one direction, that is 3’→5’.",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "The DNA dependent RNA polymerase catalyase polymerization in one direction, that is 5’→3’.",
+          "figure_url": null
+        }
+      ],
+      "figure_url": null
+    },
+    {
+      "id": 17681,
+      "number": 4,
+      "type": "mcq",
+      "text": "Complete the flow chart on central dogma.",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 4,
+      "sections": {
+        "name": "Botany"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "(a)-Replication; (b)-Transcription; (c)-Transduction; (d)-Protein",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "(a)-Translation; (b)-Replication; (c)-Transcription; (d)-Transduction",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "(a)-Replication; (b)-Transcription; (c)-Translation; (d)-Protein",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "(a)-Transduction; (b)-Translation; (c)-Replication; (d)-Protein",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 17700,
+      "number": 5,
+      "type": "mcq",
+      "text": "What is the role of RNA polymerase III in the process of transcription in eukaryotes ?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 5,
+      "sections": {
+        "name": "Botany"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Transcribes rRNAs (28S, 18S and 5.8S)",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Transcribes tRNA, 5s rRNA and snRNA",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Transcribes precursor of mRNA",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Transcribes only snRNAs",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 17728,
+      "number": 6,
+      "type": "mcq",
+      "text": "Which is the “Only enzyme” that has “Capability” to catalyse Initiation, Elongation and Termination in the process of transcription in prokaryotes ?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 6,
+      "sections": {
+        "name": "Zoology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "DNA dependent DNA polymerase",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "DNA dependent RNA polymerase",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "DNA Ligase",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "DNase",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 14137,
+      "number": 7,
+      "type": "mcq",
+      "text": "Silencing of specific mRNA is possible via RNAi because of -",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 7,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Complementary dsRNA",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Inhibitory ssRNA",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Complementary tRNA",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Non-complementary ssRNA",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 18046,
+      "number": 8,
+      "type": "mcq",
+      "text": "The first phase of translation is",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 8,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Recognition of DNA molecule",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Aminoacylation of tRNA",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Recognition of an anti-codon",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Binding of mRNA to ribosome",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 18089,
+      "number": 9,
+      "type": "mcq",
+      "text": "Name the enzyme that facilitates opening of DNA helix during transcription.",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 9,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "DNA helicase",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "DNA polymerase",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "RNA polymerase",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "DNA ligase",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 17719,
+      "number": 10,
+      "type": "mcq",
+      "text": "Which of the following RNAs is not required for the synthesis of protein ?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 10,
+      "sections": {
+        "name": "Zoology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "mRNA",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "tRNA",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "rRNA",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "siRNA",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 18286,
+      "number": 11,
+      "type": "mcq",
+      "text": "Which of the following enzymes synthesizes precursor mRNA?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 11,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "RNA polymerase I",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "RNA polymerase II",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "RNA polymerase III",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "DNA polymerase",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 23458,
+      "number": 12,
+      "type": "mcq",
+      "text": "During DNA replication, Okazaki fragments are used to elongate.",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 12,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "The lagging strand away from the replication fork",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "The leading strand towards replication fork",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "The lagging strand towards replication fork",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "The leading strand away from replication",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 23512,
+      "number": 13,
+      "type": "mcq",
+      "text": "During DNA replication, Okazaki fragments are used to elongate :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 13,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "The lagging strand away from the replication fork",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "The leading strand towards replication fork",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "The lagging strand towards replication fork",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "The leading strand away from replication",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 20401,
+      "number": 14,
+      "type": "mcq",
+      "text": "Which of the following features of genetic code does allow bacteria to produce human insulin by recombinant DNA technology?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 14,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Genetic code is not ambiguous",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Genetic code is redundant",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Genetic code is nearly universal",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Genetic code is specific",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 17708,
+      "number": 15,
+      "type": "mcq",
+      "text": "DNA fingerprinting involves identifying differences in some specific regions in DNA sequence, called as :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 15,
+      "sections": {
+        "name": "Botany"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Satellite DNA",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Repetitive DNA",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Single nucleotides",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Polymorphic DNA",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 17696,
+      "number": 16,
+      "type": "mcq",
+      "text": "Identify the correct statement.",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 16,
+      "sections": {
+        "name": "Botany"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "In capping, methyl guanosine triphosphate is added to the 3′ end of hnRNA.",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "RNA polymerase binds with Rho factor to terminate the process of transcription in bacteria.",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "The coding strand in a transcription unit is copied to an mRNA.",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Split gene arrangement is characteristic of prokaryotes.",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 14089,
+      "number": 17,
+      "type": "mcq",
+      "text": "Given below are two statements: Statement I: In the RNA world, RNA is considered the first genetic material evolved to carry out essential life processes. RNA acts as a genetic material and also as a catalyst for some important biochemical reactions in living systems. Being reactive, RNA is unstable. Statement II: DNA evolved from RNA and is a more stable genetic material. Its double helical strands being complementary, resist changes by evolving repairing mechanism. In the light of the above statements, choose the most appropriate answer from the options given below:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 17,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Both statement I and statement II are correct",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Both statement I and statement II are incorrect",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Statement I is correct but statement II is incorrect",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Statement I is incorrect but statement II is correct",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 14107,
+      "number": 18,
+      "type": "mcq",
+      "text": "Given below are two statements: Statement I: Transfer RNAs and ribosomal RNA do not interact with mRNA. Statement II: RNA interference (RNAi) takes place in all eukaryotic organisms as a method of cellular defence. In the light of the above statements, choose the most appropriate answer from the options given below:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 18,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Both statement I and statement II are correct",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Both statement I and statement II are incorrect",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Statement I is correct but statement II is incorrect",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Statement I is incorrect but statement II is correct",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 14122,
+      "number": 19,
+      "type": "mcq",
+      "text": "Which of the following are the post-transcriptional events in an eukaryotic cell? A. Transport of pre-mRNA to cytoplasm prior to splicing. B. Removal of introns and joining of exons. C. Addition of methyl group at 5’ end of hnRNA. D. Addition of adenine residues at 3’ end of hnRNA. E. Base pairing of two complementary RNAs. Choose the correct answer from the options given below:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 19,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "A, B, C only",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "B, C, D only",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "B, C, E only",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "C, D, E only",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 19122,
+      "number": 20,
+      "type": "mcq",
+      "text": "Which of the following statements are correct with reference to a transcription unit?\nA. A transcription unit in DNA is defined primarily by three regions: promoter, structural gene and terminator.\nB. The promoter is said to be located towards the 5'-end of the structural gene.\nC. The promoter is a DNA sequence that provides binding site for RNA polymerase.\nD. The promoter defines the template and coding strands.\nE. The terminator is located towards the 3'-end of the coding strand and it defines the end of the process of transcription.\nChoose the correct answer from the options given below:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 20,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "A, B, C and D only",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "A, C, D and E only",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "B, C, D and E only",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "A, B, C, D and E",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 19128,
+      "number": 21,
+      "type": "mcq",
+      "text": "Arrange the following steps of DNA fingerprinting in a correct sequence.\nA. Isolation of DNA and its digestion by restriction endonucleases.\nB. Hybridisation using a labelled VNTR probe.\nC. Transferring of separated DNA fragments to synthetic membranes.\nD. Detection of hybridised DNA fragments by autoradiography.\nE. Separation of DNA fragments by electrophoresis.\nChoose the correct answer from the options given below:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 21,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "A, B, D, C, E",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "A, D, B, E, C",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "A, E, C, B, D",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "A, E, B, C, D",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 23437,
+      "number": 22,
+      "type": "mcq",
+      "text": "The association of histone \\text{H}_{1} with a nucleosome indicates :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 22,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Transcription is occurring",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "DNA replication is occurring",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "The DNA is condensed into a Chromatin Fibre",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "The DNA double helix is exposed",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 23457,
+      "number": 23,
+      "type": "mcq",
+      "text": "Which of the following RNAs should be most abundant in animal cell ?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 23,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "mi-RNA",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "r-RNA",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "t-RNA",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "m-RNA",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 14363,
+      "number": 24,
+      "type": "mcq",
+      "text": "Match List I with List II:\nList I\nList II\nA. RNA polymerase III  I. snRNPs\nB. Termination of transcription  II. Promotor\nC. Splicing of Exons  III. Rho factor\nD. TATA box  IV. SnRNAs, tRNA\nChoose the correct answer from the options given below:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 24,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "A-III, B-IV, C-I, D-II",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "A-IV, B-III, C-I, D-II",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "A-II, B-IV, C-I, D-III",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "A-III, B-II, C-IV, D-I",
+          "figure_url": null
+        }
+      ],
+      "figure_url": null
+    },
+    {
+      "id": 14165,
+      "number": 25,
+      "type": "mcq",
+      "text": "Which of the following enzyme(s) are NOT essential for gene cloning? A. Restriction enzymes B. DNA ligase C. DNA mutase D. DNA recombinase E. DNA polymerase Choose the correct answer from the options given below :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 25,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "C and D only",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "A and B only",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "D and E only",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "B and C only",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    }
+  ]
+}

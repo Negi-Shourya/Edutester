@@ -65,9 +65,6 @@ function formatDateTime(iso: string): string {
 }
 
 function formatDuration(totalSeconds: number): string {
-  // Round to whole minutes first, then split into h/m. Rounding the seconds
-  // remainder on its own overflows the minute field: 1h 59m 59s came out as
-  // "1h 60m", and 59m 59s as "60m".
   const totalMinutes = Math.round(totalSeconds / 60);
   const h = Math.floor(totalMinutes / 60);
   const m = totalMinutes % 60;
@@ -89,38 +86,39 @@ export default function Dashboard() {
   const [analyses, setAnalyses] = useState<TestAnalysis[] | null>(null);
   const [expanded, setExpanded] = useState<string | null>(null);
   const [inProgress, setInProgress] = useState<SavedAttempt | null>(null);
+  const [historyFilter, setHistoryFilter] = useState<'all' | 'paper' | 'chapter'>('all');
 
   useEffect(() => {
     let cancelled = false;
-    // Clear the previous account's data on sign-in/sign-out before refetching.
-    // Without this, switching accounts leaves account A's stats, history and
-    // trend on screen until account B's rows resolve — the same cross-account
-    // leak that PaperTests resets `dbAttempts` to avoid.
     setAttempts(null);
     setAnalyses(null);
     (async () => {
       const userId = user?.id ?? '';
       setInProgress(findInProgressAttempt(userId));
-      await backfillLocalAttempts(userId);
-      if (cancelled) return;
+
+      // Run backfill in background without blocking dashboard render
+      void backfillLocalAttempts(userId);
+
+      // Fetch attempts directly from database
       const rows = await getAttempts();
       if (cancelled) return;
-      const meta = await loadQuestionMeta(rows);
-      if (cancelled) return;
+
+      // Immediately render stats, cards and history with zero delay
       setAttempts(rows);
-      setAnalyses(rows.map((r) => analyzeTest(r, meta.get(r.paper_key))));
+      setAnalyses(rows.map((r) => analyzeTest(r)));
+
+      // Enriched question metadata loads asynchronously and updates insights
+      loadQuestionMeta(rows).then((meta) => {
+        if (!cancelled) {
+          setAnalyses(rows.map((r) => analyzeTest(r, meta.get(r.paper_key))));
+        }
+      });
     })();
     return () => {
       cancelled = true;
     };
-    // Re-runs on sign-in/sign-out: both the resume offer and the backfill are
-    // scoped to one account, so stale values must not survive a switch.
   }, [user?.id]);
 
-  // The JEE/NEET switch used to only restyle its own buttons, so the dashboard
-  // mixed both tracks together: a NEET student saw JEE papers in their history,
-  // and "weak areas" blended two syllabi — Mathematics ranked next to Biology.
-  // Attempt rows have no exam_type column, so the track comes from the paper key.
   const trackAttempts = useMemo(
     () => attempts?.filter((r) => examOfPaperKey(r.paper_key) === exam) ?? null,
     [attempts, exam]
@@ -129,8 +127,6 @@ export default function Dashboard() {
     () => analyses?.filter((a) => examOfPaperKey(a.row.paper_key) === exam) ?? null,
     [analyses, exam]
   );
-  // Attempts on the other track, so the empty state can point there instead of
-  // claiming no tests exist at all.
   const otherTrackCount = useMemo(
     () => (attempts ?? []).filter((r) => examOfPaperKey(r.paper_key) !== exam).length,
     [attempts, exam]
@@ -167,11 +163,52 @@ export default function Dashboard() {
     [trackAttempts, trackAnalyses]
   );
 
-  // `loading` tracks the raw fetch (still null until rows arrive); the
-  // track-filtered views are derived synchronously from it.
+  const filteredAnalyses = useMemo(() => {
+    if (!trackAnalyses) return null;
+    if (historyFilter === 'all') return trackAnalyses;
+    return trackAnalyses.filter((a) => {
+      const isCh =
+        a.row.test_type === 'chapter' ||
+        a.row.paper_key.startsWith('jee-') ||
+        a.row.paper_key.startsWith('neet-') ||
+        a.row.paper_key.startsWith('ch-');
+      return historyFilter === 'chapter' ? isCh : !isCh;
+    });
+  }, [trackAnalyses, historyFilter]);
+
+  const paperCount = useMemo(
+    () =>
+      (trackAnalyses ?? []).filter(
+        (a) =>
+          a.row.test_type !== 'chapter' &&
+          !a.row.paper_key.startsWith('jee-') &&
+          !a.row.paper_key.startsWith('neet-') &&
+          !a.row.paper_key.startsWith('ch-')
+      ).length,
+    [trackAnalyses]
+  );
+
+  const chapterCount = useMemo(
+    () =>
+      (trackAnalyses ?? []).filter(
+        (a) =>
+          a.row.test_type === 'chapter' ||
+          a.row.paper_key.startsWith('jee-') ||
+          a.row.paper_key.startsWith('neet-') ||
+          a.row.paper_key.startsWith('ch-')
+      ).length,
+    [trackAnalyses]
+  );
+
   const loading = attempts === null || analyses === null;
   const rows = trackAttempts ?? [];
   const firstName = (user?.user_metadata?.full_name as string | undefined)?.split(' ')[0] ?? 'there';
+
+  const inProgressIsChapter = inProgress?.paperKey
+    ? inProgress.paperKey.startsWith('jee-') ||
+      inProgress.paperKey.startsWith('neet-') ||
+      inProgress.paperKey.startsWith('ch-')
+    : false;
 
   return (
     <div className="bg-gray-50 min-h-screen">
@@ -224,19 +261,19 @@ export default function Dashboard() {
                 <div className="flex items-center gap-2 text-indigo-100 text-xs font-semibold uppercase tracking-wide mb-1.5">
                   <Clock className="w-4 h-4" /> Resume where you left off
                 </div>
-                <h2 className="text-xl font-bold mb-1">You have a test in progress</h2>
+                <h2 className="text-xl font-bold mb-1">You have a {inProgressIsChapter ? 'chapter test' : 'full paper'} in progress</h2>
                 <p className="text-indigo-100 text-sm">Pick up right where you stopped.</p>
               </div>
               <div className="flex flex-col sm:flex-row gap-3 shrink-0">
                 <Link
-                  to={`/test?paper=${inProgress.paperKey}`}
+                  to={inProgressIsChapter ? `/test?chapter=${inProgress.paperKey}` : `/test?paper=${inProgress.paperKey}`}
                   className="flex items-center justify-center gap-2 bg-white text-primary px-6 py-3 rounded-xl text-sm font-semibold hover:bg-indigo-50 transition-colors shadow-md active:scale-[0.98]"
                 >
                   <Play className="w-4 h-4 fill-current" />
                   Resume Test
                 </Link>
                 <Link
-                  to="/paper-tests"
+                  to={inProgressIsChapter ? "/chapter-tests" : "/paper-tests"}
                   className="flex items-center justify-center gap-2 bg-white/15 text-white border border-white/30 px-6 py-3 rounded-xl text-sm font-semibold hover:bg-white/25 transition-colors"
                 >
                   Start New Test
@@ -265,7 +302,7 @@ export default function Dashboard() {
                 <>
                   Your {exam === 'jee' ? 'NEET' : 'JEE'} history is under the{' '}
                   {exam === 'jee' ? 'NEET' : 'JEE'} track — switch above to see it.
-                  Attempt a {exam.toUpperCase()} paper and its results, weak areas,
+                  Attempt a {exam.toUpperCase()} paper or chapter test and its results, weak areas,
                   and what to work on next will show up here.
                 </>
               ) : (
@@ -298,25 +335,25 @@ export default function Dashboard() {
                 icon={<BookOpen className="w-5 h-5 text-white" />}
                 color="from-blue-500 to-blue-600"
                 value={String(stats.n)}
-                label="Tests Taken"
-                sub="total submissions"
+                label="Tests Completed"
+                sub={`${chapterCount} chapter, ${paperCount} full papers`}
               />
               <StatCard
-                icon={<CheckCircle2 className="w-5 h-5 text-white" />}
+                icon={<Target className="w-5 h-5 text-white" />}
                 color="from-green-500 to-green-600"
                 value={String(stats.questionsSolved)}
                 label="Questions Solved"
-                sub="correct + incorrect"
-              />
-              <StatCard
-                icon={<TrendingUp className="w-5 h-5 text-white" />}
-                color="from-teal-500 to-teal-600"
-                value={`${stats.avgScorePct}%`}
-                label="Avg. Score"
-                sub="across all tests"
+                sub="across all attempts"
               />
               <StatCard
                 icon={<Award className="w-5 h-5 text-white" />}
+                color="from-purple-500 to-purple-600"
+                value={`${stats.avgScorePct}%`}
+                label="Avg. Score"
+                sub="percentage of max score"
+              />
+              <StatCard
+                icon={<TrendingUp className="w-5 h-5 text-white" />}
                 color="from-saffron to-saffron-dark"
                 value={`${stats.bestPct}%`}
                 label="Best Score"
@@ -376,22 +413,63 @@ export default function Dashboard() {
 
                 {/* Test history */}
                 <div className="bg-white rounded-xl border border-gray-200 p-5">
-                  <div className="flex items-center justify-between mb-4">
-                    <h2 className="font-semibold text-gray-900 flex items-center gap-2">
+                  <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-4">
+                    <div className="flex items-center gap-2">
                       <BookOpen className="w-5 h-5 text-primary" />
-                      Test History
-                    </h2>
-                    <span className="text-xs text-gray-400">{rows.length} total</span>
+                      <h2 className="font-semibold text-gray-900">Test History</h2>
+                      <span className="text-xs text-gray-400">({rows.length} total)</span>
+                    </div>
+
+                    {/* Filter tabs */}
+                    <div className="inline-flex bg-gray-100 p-1 rounded-lg text-xs font-medium">
+                      <button
+                        onClick={() => setHistoryFilter('all')}
+                        className={`px-3 py-1 rounded-md transition-all ${
+                          historyFilter === 'all'
+                            ? 'bg-white text-gray-900 shadow-xs font-semibold'
+                            : 'text-gray-500 hover:text-gray-900'
+                        }`}
+                      >
+                        All ({trackAnalyses?.length ?? 0})
+                      </button>
+                      <button
+                        onClick={() => setHistoryFilter('chapter')}
+                        className={`px-3 py-1 rounded-md transition-all ${
+                          historyFilter === 'chapter'
+                            ? 'bg-white text-purple-700 shadow-xs font-semibold'
+                            : 'text-gray-500 hover:text-gray-900'
+                        }`}
+                      >
+                        Chapters ({chapterCount})
+                      </button>
+                      <button
+                        onClick={() => setHistoryFilter('paper')}
+                        className={`px-3 py-1 rounded-md transition-all ${
+                          historyFilter === 'paper'
+                            ? 'bg-white text-blue-700 shadow-xs font-semibold'
+                            : 'text-gray-500 hover:text-gray-900'
+                        }`}
+                      >
+                        Papers ({paperCount})
+                      </button>
+                    </div>
                   </div>
+
                   <div className="space-y-3">
-                    {trackAnalyses!.map((a) => (
-                      <TestHistoryCard
-                        key={a.row.id}
-                        analysis={a}
-                        expanded={expanded === a.row.id}
-                        onToggle={() => setExpanded(expanded === a.row.id ? null : a.row.id)}
-                      />
-                    ))}
+                    {filteredAnalyses && filteredAnalyses.length > 0 ? (
+                      filteredAnalyses.map((a) => (
+                        <TestHistoryCard
+                          key={a.row.id}
+                          analysis={a}
+                          expanded={expanded === a.row.id}
+                          onToggle={() => setExpanded(expanded === a.row.id ? null : a.row.id)}
+                        />
+                      ))
+                    ) : (
+                      <div className="text-center py-8 text-sm text-gray-400 border border-dashed border-gray-200 rounded-xl">
+                        No {historyFilter === 'chapter' ? 'chapter tests' : 'paper tests'} recorded yet.
+                      </div>
+                    )}
                   </div>
                 </div>
               </div>
@@ -502,9 +580,9 @@ export default function Dashboard() {
                 {/* Subscription CTA — hidden for paying users */}
                 {!subscriptionLoading && !hasSubscription && (
                   <div className="bg-gradient-to-br from-primary to-primary-dark rounded-xl p-5">
-                    <h3 className="text-white font-semibold text-sm mb-1.5">Unlock every paper</h3>
+                    <h3 className="text-white font-semibold text-sm mb-1.5">Unlock every paper & chapter</h3>
                     <p className="text-indigo-100 text-xs mb-4 leading-relaxed">
-                      Get access to all chapter tests, full papers, and the complete test series.
+                      Get access to all 54 chapter tests, full papers, and the complete test series.
                     </p>
                     <Link to="/pricing" className="flex items-center justify-center gap-1.5 bg-white text-primary px-4 py-2.5 rounded-xl text-xs font-semibold hover:bg-indigo-50 transition-colors">
                       View Plans <ArrowRight className="w-3.5 h-3.5" />
@@ -551,8 +629,6 @@ function StatCard({ icon, color, value, label, sub }: {
   );
 }
 
-// Animates numeric values ("58%", "12") counting up on mount; falls back
-// to static text for non-numeric values like "3h 12m".
 function CountUp({ value }: { value: string }) {
   const match = /^(\d+(?:\.\d+)?)(%?)$/.exec(value);
   const target = match ? parseFloat(match[1]) : null;
@@ -607,6 +683,12 @@ function TestHistoryCard({ analysis, expanded, onToggle }: {
   onToggle: () => void;
 }) {
   const { row, scorePct, sections, insights } = analysis;
+  const isChapter =
+    row.test_type === 'chapter' ||
+    row.paper_key.startsWith('jee-') ||
+    row.paper_key.startsWith('neet-') ||
+    row.paper_key.startsWith('ch-');
+
   const insightIcon = (kind: TestAnalysis['insights'][number]['kind']) => {
     switch (kind) {
       case 'positive':
@@ -624,15 +706,26 @@ function TestHistoryCard({ analysis, expanded, onToggle }: {
   };
 
   return (
-    <div className="border border-gray-100 rounded-xl overflow-hidden">
+    <div className="border border-gray-100 rounded-xl overflow-hidden bg-white shadow-xs">
       <button
         onClick={onToggle}
         className="w-full text-left p-4 hover:bg-gray-50 transition-colors"
       >
         <div className="flex items-start justify-between gap-3 mb-2.5">
           <div className="min-w-0">
-            <div className="text-sm font-semibold text-gray-900 truncate">{row.title}</div>
-            <div className="text-xs text-gray-500 mt-0.5">
+            <div className="flex items-center gap-2 flex-wrap">
+              <span className="text-sm font-semibold text-gray-900 truncate">{row.title}</span>
+              <span
+                className={`inline-flex items-center text-[10px] font-semibold px-2 py-0.5 rounded-full ${
+                  isChapter
+                    ? 'bg-purple-50 text-purple-700 border border-purple-200/60'
+                    : 'bg-blue-50 text-blue-700 border border-blue-200/60'
+                }`}
+              >
+                {isChapter ? 'Chapter Test' : 'Full Paper'}
+              </span>
+            </div>
+            <div className="text-xs text-gray-500 mt-1">
               {formatDateTime(row.created_at)} · {formatDuration(row.time_spent)} spent
             </div>
           </div>
@@ -681,66 +774,75 @@ function TestHistoryCard({ analysis, expanded, onToggle }: {
             exit={{ height: 0, opacity: 0 }}
             transition={{ duration: 0.3, ease: [0.22, 1, 0.36, 1] }}
           >
-          {/* Section breakdown */}
-          <div>
-            <h4 className="text-xs font-semibold text-gray-700 uppercase tracking-wide mb-2.5">
-              Section-wise Performance
-            </h4>
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
-              {sections.map((sec) => {
-                const color = SECTION_COLORS[sec.section] ?? 'bg-gray-500';
-                return (
-                  <div key={sec.section} className="bg-white border border-gray-200 rounded-xl p-3">
-                    <div className="flex items-center justify-between mb-2">
-                      <span className="text-xs font-semibold text-gray-700">{sec.section}</span>
-                      <span className={`text-xs font-bold ${pctClass(sec.scorePct)}`}>{sec.scorePct}%</span>
+            {/* Section breakdown */}
+            <div>
+              <h4 className="text-xs font-semibold text-gray-700 uppercase tracking-wide mb-2.5">
+                Section-wise Performance
+              </h4>
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                {sections.map((sec) => {
+                  const color = SECTION_COLORS[sec.section] ?? 'bg-gray-500';
+                  return (
+                    <div key={sec.section} className="bg-white border border-gray-200 rounded-xl p-3">
+                      <div className="flex items-center justify-between mb-2">
+                        <span className="text-xs font-semibold text-gray-700">{sec.section}</span>
+                        <span className={`text-xs font-bold ${pctClass(sec.scorePct)}`}>{sec.scorePct}%</span>
+                      </div>
+                      <div className="w-full bg-gray-100 rounded-full h-1.5 mb-2.5">
+                        <div className={`${color} h-1.5 rounded-full`} style={{ width: `${sec.scorePct}%` }} />
+                      </div>
+                      <div className="flex items-center justify-between text-[11px] text-gray-500">
+                        <span className="flex items-center gap-1">
+                          <CheckCircle2 className="w-3 h-3 text-green-500" /> {sec.correct}
+                        </span>
+                        <span className="flex items-center gap-1">
+                          <XCircle className="w-3 h-3 text-red-500" /> {sec.incorrect}
+                        </span>
+                        <span className="flex items-center gap-1">
+                          <SkipForward className="w-3 h-3 text-gray-400" /> {sec.unattempted}
+                        </span>
+                        <span className="font-medium">{sec.accuracy}% acc</span>
+                      </div>
                     </div>
-                    <div className="w-full bg-gray-100 rounded-full h-1.5 mb-2.5">
-                      <div className={`${color} h-1.5 rounded-full`} style={{ width: `${sec.scorePct}%` }} />
-                    </div>
-                    <div className="flex items-center justify-between text-[11px] text-gray-500">
-                      <span className="flex items-center gap-1">
-                        <CheckCircle2 className="w-3 h-3 text-green-500" /> {sec.correct}
-                      </span>
-                      <span className="flex items-center gap-1">
-                        <XCircle className="w-3 h-3 text-red-500" /> {sec.incorrect}
-                      </span>
-                      <span className="flex items-center gap-1">
-                        <SkipForward className="w-3 h-3 text-gray-400" /> {sec.unattempted}
-                      </span>
-                      <span className="font-medium">{sec.accuracy}% acc</span>
-                    </div>
+                  );
+                })}
+              </div>
+            </div>
+
+            {/* Learning from this test */}
+            <div>
+              <h4 className="text-xs font-semibold text-gray-700 uppercase tracking-wide mb-2.5 flex items-center gap-1.5">
+                <Lightbulb className="w-3.5 h-3.5 text-amber-500" />
+                What this test taught you
+              </h4>
+              <div className="space-y-2">
+                {insights.map((ins, i) => (
+                  <div
+                    key={i}
+                    className={`flex items-start gap-2.5 border rounded-xl px-3 py-2.5 ${insightBars[ins.kind]}`}
+                  >
+                    {insightIcon(ins.kind)}
+                    <p className="text-xs text-gray-700 leading-relaxed">{ins.text}</p>
                   </div>
-                );
-              })}
+                ))}
+              </div>
             </div>
-          </div>
 
-          {/* Learning from this test */}
-          <div>
-            <h4 className="text-xs font-semibold text-gray-700 uppercase tracking-wide mb-2.5 flex items-center gap-1.5">
-              <Lightbulb className="w-3.5 h-3.5 text-amber-500" />
-              What this test taught you
-            </h4>
-            <div className="space-y-2">
-              {insights.map((ins, i) => (
-                <div
-                  key={i}
-                  className={`flex items-start gap-2.5 border rounded-xl px-3 py-2.5 ${insightBars[ins.kind]}`}
-                >
-                  {insightIcon(ins.kind)}
-                  <p className="text-xs text-gray-700 leading-relaxed">{ins.text}</p>
-                </div>
-              ))}
+            {/* Retake and navigation bar */}
+            <div className="flex items-center justify-between pt-2 border-t border-gray-200/60">
+              <Link
+                to={isChapter ? `/test?chapter=${row.paper_key}` : `/test?paper=${row.paper_key}`}
+                className="inline-flex items-center gap-1.5 text-xs font-semibold text-primary bg-primary/10 hover:bg-primary/20 px-3 py-1.5 rounded-lg transition-colors"
+              >
+                <Play className="w-3 h-3 fill-current" /> Retake this {isChapter ? 'Chapter Test' : 'Paper'}
+              </Link>
+              <Link
+                to={isChapter ? "/chapter-tests" : "/paper-tests"}
+                className="inline-flex items-center gap-1 text-xs font-medium text-gray-500 hover:text-gray-900 transition-colors"
+              >
+                Browse {isChapter ? 'more chapter tests' : 'more papers'} <ChevronRight className="w-3.5 h-3.5" />
+              </Link>
             </div>
-          </div>
-
-          <Link
-            to="/chapter-tests"
-            className="inline-flex items-center gap-1 text-xs font-semibold text-primary hover:underline"
-          >
-            Practice the weak topics <ChevronRight className="w-3 h-3" />
-          </Link>
           </motion.div>
         )}
       </AnimatePresence>

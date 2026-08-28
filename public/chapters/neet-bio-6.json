@@ -1,0 +1,1064 @@
+{
+  "key": "neet-bio-6",
+  "title": "Human Physiology - Circulation & Excretion (NEET)",
+  "full_title": "NEET (UG) Chapter Test - Human Physiology - Circulation & Excretion",
+  "subject": "Biology",
+  "chapter": "Human Physiology II",
+  "exam_type": "neet",
+  "is_trial": false,
+  "duration_minutes": 40,
+  "difficulty": "Medium",
+  "question_count": 25,
+  "questions": [
+    {
+      "id": 19156,
+      "number": 1,
+      "type": "mcq",
+      "text": "Arrange the following events occurring in Renin-Angiotensin mechanism in the correct order :\nA. Increase in blood pressure and Glomerular filtration rate.\nB. Reabsorption of Na^{+} and water from distal parts of tubule due to Aldosterone.\nC. Fall in Glomerular filtration rate.\nD. Vasoconstriction by Angiotensin II and release of Aldosterone.\nE. Renin converts Angiotensinogen into Angiotensin I, followed by Angiotensin II.\nChoose the correct answer from the options given below :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 1,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "A, C, E, B, D",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "C, A, B, D, E",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "A, D, B, E, C",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "C, E, D, B, A",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 14368,
+      "number": 2,
+      "type": "mcq",
+      "text": "Choose the correct statement given below regarding juxta medullary nephron.",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 2,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Loop of Henle of juxtamedullary nephron runs deep into medulla.",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Juxtamedullary nephrons outnumber the cortical nephtons.",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Juxtamedullary nephrons are located in the columns of Bertini.",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Renal corpuscle of juxtamedullary nephron lies in the outer portion of he renal medulla.",
+          "figure_url": null
+        }
+      ],
+      "figure_url": null
+    },
+    {
+      "id": 14535,
+      "number": 3,
+      "type": "mcq",
+      "text": "Given below are statements: one is labelled as Assertion A and the other is labelled as Reason R. Assertion A: Nephrons are of two types: Cortical & Juxta medullary, based on their relative position in cortex and medulla. Reason R: Juxta medullary nephrons have short loop of Henle whereas, cortical nephrons have longer loop of Henle. In the light of the above statements, choose the correct answer from the options given below:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 3,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "A is false but R is true.",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Both A and R are true and R is the correct explanation of A.",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Both A and R are true but R is NOT the correct explanation of A.",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "A is true but R is false.",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 14087,
+      "number": 4,
+      "type": "mcq",
+      "text": "What is the name of the blood vessel that carries deoxygenated blood from the body to the heart in a frog?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 4,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Aorta",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Pulmonary artery",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Pulmonary vein",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Vena cava",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 24088,
+      "number": 5,
+      "type": "mcq",
+      "text": "In mammals, which blood vessel would normally carry largest amount of urea?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 5,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Dorsal Aorta",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Hepatic Vein",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Hepatic Portal Vein",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Renal Vein",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 24091,
+      "number": 6,
+      "type": "mcq",
+      "text": "Which of the following is wrongly matched in the given table?\n\n| | Microbe | Product | Application |\n| :--- | :--- | :--- | :--- |\n| (1) | *Monascus purpureus* | Statins | Lowering of blood cholesterol |\n| (2) | *Streptococcus* | Streptokinase | Removal of clot from blood vessel |\n| (3) | *Clostridium butylicum* | Lipase | Removal of oil stains |\n| (4) | *Trichoderma polysporum* | Cyclosporin A | Immunosuppressive drug |",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 6,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Monascus purpureus - Statins - Lowering of blood cholesterol",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Streptococcus - Streptokinase - Removal of clot from blood vessel",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Clostridium butylicum - Lipase - Removal of oil stains",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Trichoderma polysporum - Cyclosporin A - Immunosuppressive drug",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 23481,
+      "number": 7,
+      "type": "mcq",
+      "text": "Which of the following statements is correct?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 7,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "The descending limb of loop of Henle is permeable to electrolytes.",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "The ascending limb of loop of Henle is impermeable to water.",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "The descending limb of loop of Henle is impermeable to water.",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "The ascending limb of loop of Henle is permeable to water.",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 23503,
+      "number": 8,
+      "type": "mcq",
+      "text": "The hepatic portal vein drains blood to liver from :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 8,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Intestine",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Heart",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Stomach",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Kidneys",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 24039,
+      "number": 9,
+      "type": "mcq",
+      "text": "Blood pressure in the pulmonary artery is  -",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 9,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "More than that in the carotid",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "More than that in the pulmonary vein",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Less than that in the venae cavae",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Same as that in the aorta",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 24079,
+      "number": 10,
+      "type": "mcq",
+      "text": "Reduction in pH of blood will-",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 10,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "reduce the blood supply to the brain",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "decrease the affinity of hemoglobin with oxygen",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "release bicarbonate ions by the liver",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "reduce the rate of heart beat",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 23506,
+      "number": 11,
+      "type": "mcq",
+      "text": "Frog’s heart when taken out of the body continues to beat for sometime. Select the best option from the following statements. (a) Frog is a poikilotherm (b) Frog does not have any coronary circulation (c) Heart is “myogenic” in nature (d) Heart is autoexcitable Options :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 11,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "(c) and (d)",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Only (c)",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Only (d)",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "(a) and (b)",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 22243,
+      "number": 12,
+      "type": "mcq",
+      "text": "Match the items given in Column I (Function) with Column II (Part of Excretory System) and select the correct option given below :\n\n| Column I (Function) | Column II (Part of Excretory System) |\n| :--- | :--- |\n| a. Ultrafiltration | i. Henle's loop |\n| b. Concentration of urine | ii. Ureter |\n| c. Transport of urine | iii. Urinary bladder |\n| d. Storage of urine | iv. Malpighian corpuscle |\n| | v. Proximal convoluted tubule |",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 12,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "a-v, b-iv, c-i, d-ii",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "a-iv, b-v, c-ii, d-iii",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "a-v, b-iv, c-i, d-iii",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "a-iv, b-i, c-ii, d-iii",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 20444,
+      "number": 13,
+      "type": "mcq",
+      "text": "Which would be the heart rate of a person if the cardiac output is 5L, blood volume in the ventricles at the end of diastole is 100 mL and at the end of ventricular systole is 50 mL?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 13,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "50 beats per minute",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "75 beats per minute",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "100 beats per minute",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "125 beats per minute",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 14162,
+      "number": 14,
+      "type": "mcq",
+      "text": "In frog, the Renal portal system is a special venous connection that acts to link :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 14,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Liver and intestine",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Liver and kidney",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Kidney and intestine",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Kidney and lower part of body",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 19176,
+      "number": 15,
+      "type": "mcq",
+      "text": "Select the incorrect statements with reference to Rh grouping.\nA. Erythroblastosis foetalis is a condition observed having foetus with Rh^{-ve} blood and mother with Rh^{+ve} blood.\nB. Rh antigen is observed on RBCs in the majority of human beings.\nC. Before blood transfusion, Rh group should also be matched.\nD. Rh incompatibility is observed when a pregnant mother is Rh^{-ve} and the foetus is Rh^{+ve}.\nE. Erythroblastosis foetalis can be avoided by administering anti-Rh antibodies to the mother immediately after the delivery of the second child.\nChoose the answer from the options given below:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 15,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "C and D only",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "A and B only",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "A and E only",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "B and C only",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 24065,
+      "number": 16,
+      "type": "mcq",
+      "text": "Which of the following characteristic features always holds true for the corresponding group of animals?\n\n| | Feature | Group of animals |\n| :--- | :--- | :--- |\n| (1) | Viviparous | Mammalia |\n| (2) | Possess a mouth with an upper and a lower jaw | Chordata |\n| (3) | 3-chambered heart with one incompletely divided ventricle | Reptilia |\n| (4) | Cartilaginous endoskeleton | Chondrichthyes |",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 16,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Viviparous - Mammalia",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Possess a mouth with an upper and a lower jaw - Chordata",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "3-chambered heart with one incompletely divided ventricle - Reptilia",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Cartilaginous endoskeleton - Chondrichthyes",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 23513,
+      "number": 17,
+      "type": "mcq",
+      "text": "A decrease in blood pressure/volume will not cause the release of :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 17,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "ADH",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Renin",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Atrial Natriuretic Factor",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Aldosterone",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 22242,
+      "number": 18,
+      "type": "mcq",
+      "text": "Match the items given in Column I with those in Column II and select the correct option given below :\n\n| Column I | Column II |\n| :--- | :--- |\n| a. Glycosuria | i. Accumulation of uric acid in joints |\n| b. Gout | ii. Mass of crystallised salts within the kidney |\n| c. Renal calculi | iii. Inflammation in glomeruli |\n| d. Glomerular nephritis | iv. Presence of glucose in urine |",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 18,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "a-ii, b-iii, c-i, d-iv",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "a-iv, b-i, c-ii, d-iii",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "a-iii, b-ii, c-iv, d-i",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "a-i, b-ii, c-iii, d-iv",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 20400,
+      "number": 19,
+      "type": "mcq",
+      "text": "Which of the following factors is responsible for the formation of concentrated urine?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 19,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Low levels of antidiuretic hormone.",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Maintaining hyperosmolarity towards inner medullary interstitium in the kidneys.",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Secretion of erythropoietin by juxtaglomerular complex.",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Hydrostatic pressure during glomerular filtration.",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 20404,
+      "number": 20,
+      "type": "mcq",
+      "text": "Use of an artificial kidney during hemodialysis may result in : (a) Nitrogenous waste build-up in the body (b) Non-elimination of excess potassium ions (c) Reduced absorption of calcium ions from gastro- intestinal tract (d) Reduced RBC production Which of the following options is the most appropiate?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 20,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "(a) and (b) are correct",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "(b) and (c) are correct",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "(c) and (d) are correct",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "(a) and (d) are correct",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 18041,
+      "number": 21,
+      "type": "mcq",
+      "text": "Identify the incorrect statement.",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 21,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Sapwood is involved in conduction of water and minerals from root to leaf",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Sapwood is the innermost secondary xylem and is lighter in colour",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Due to deposition of tannins, resins, oils etc., heart wood is dark in colour",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Heart wood does not conduct water but gives mechanical support",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 14562,
+      "number": 22,
+      "type": "mcq",
+      "text": "Match List-I with List-II:\nList-I\nList-II\nA. Mast cells  I. Ciliated epithelium\nB. Inner surface of bronchiole  II. Areolar connective tissue\nC. Blood  III. Cuboidal epithelium\nD. Tubular parts of nephron  IV. specialised connective tissue\nChoose the correct answer from the options given below:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 22,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "A-III, B-IV, C-II, D-I",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "A-I, B-II, C-IV, D-III",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "A-II, B-III, C-I, D-IV",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "A-II, B-I, C-IV, D-III",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 14346,
+      "number": 23,
+      "type": "mcq",
+      "text": "Given below are two statements: Statements I: In the nephron the descending limb of loop of Henle is impermeable to water and permeable to electrolytes. Statement II: The proximal convoluted tubule is lined by simple columnar brush border epithelium and increases the surface area for reabsorption. In the light of the above statements, choose the correct answer fropm the options given below:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 23,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Statement I is true but Statement II is false.",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Statement I is false but Statement II is true.",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Both Statement I and Statement II are true.",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Both Statement I and Statement II are false.",
+          "figure_url": null
+        }
+      ],
+      "figure_url": null
+    },
+    {
+      "id": 14370,
+      "number": 24,
+      "type": "mcq",
+      "text": "As per ABO blood grouping system, the blood group of fathers is B^{+}, mother is A^{+} and child is O^{+}. Their respective genotype can be A. I^{B}i/I^{A}i/ii B. I^{B}I^{B}/I^{A}I^{A}/ii C. I^{A}I^{B}/iI^{A}/I^{B}i D. I^{A}i/I^{B}i/I^{A}i E. iI^{B}/iI^{A}/I^{A}I^{B} Choose the most appropriate answer from the options given below:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 24,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "C & B only",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "D & E only",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "A only",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "B only",
+          "figure_url": null
+        }
+      ],
+      "figure_url": null
+    },
+    {
+      "id": 14094,
+      "number": 25,
+      "type": "mcq",
+      "text": "Match List-I with List-II. below:\nList-I\nList-II\nA. Emphysema -> I. Rapid spasms in muscle due to low Ca^{2+} in body fluid\nB. Angina Pectoris -> II. Damaged alveolar walls and decreased respiratory surface\nC. Glomerulo-nephritis -> III. Acute chest pain when not enough oxygen is reaching to heart muscle\nD. Tetany -> IV. Inflammation of glomeruli of kidney\nChoose the correct answer from the options given below.",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 25,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "A-III, B-I, C-IV, D-II",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "A-III, B-I, C-II, D-IV",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "A-II, B-IV, C-III, D-I",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "A-II, B-III, C-IV, D-I",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    }
+  ]
+}

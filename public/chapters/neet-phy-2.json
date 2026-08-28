@@ -1,0 +1,1070 @@
+{
+  "key": "neet-phy-2",
+  "title": "Kinematics (NEET)",
+  "full_title": "NEET (UG) Chapter Test - Kinematics",
+  "subject": "Physics",
+  "chapter": "Motion in a Straight Line & Plane",
+  "exam_type": "neet",
+  "is_trial": true,
+  "duration_minutes": 45,
+  "difficulty": "Medium",
+  "question_count": 25,
+  "questions": [
+    {
+      "id": 23963,
+      "number": 1,
+      "type": "mcq",
+      "text": "A particle moves so that its position vector is given by \\vec{r} = \\cos\\omega t\\hat{x} + \\sin\\omega t\\hat{y}, where \\omega is a constant.\n\nWhich of the following is true ?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 1,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Velocity and acceleration both are parallel to \\vec{r}",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Velocity is perpendicular to \\vec{r} and acceleration is directed towards the origin",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Velocity is perpendicular to \\vec{r} and acceleration is directed away from the origin",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Velocity and acceleration both are perpendicular to \\vec{r}",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 14200,
+      "number": 2,
+      "type": "mcq",
+      "text": "A particle moving with uniform speed in a circular path maintains;",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 2,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "constant velocity but varying acceleration.",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "varying velocity and varying acceleration.",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "constant velocity.",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "constant acceleration.",
+          "figure_url": null
+        }
+      ],
+      "figure_url": null
+    },
+    {
+      "id": 17570,
+      "number": 3,
+      "type": "mcq",
+      "text": "A particle is released from height S from the surface of the Earth. At a certain height its kinetic energy is three times its potential energy. The height from the surface of earth and the speed of the particle at that instant are respectively :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 3,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "\\frac{S}{4}, \\frac{3gS}{2}",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "\\frac{S}{2}, \\frac{\\sqrt{3gS}}{2}",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "\\frac{S}{4}, \\frac{\\sqrt{3gS}}{2}",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "\\frac{S}{4}, \\sqrt{\\frac{3gS}{2}}",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 22084,
+      "number": 4,
+      "type": "mcq",
+      "text": "A carbon resistor of (47 \\pm 4.7)\\text{ k}\\Omega is to be marked with rings of different colours for its identification. The colour code sequence will be :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 4,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Yellow - Green - Violet - Gold",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Yellow - Violet - Orange - Silver",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Violet - Yellow - Orange - Silver",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Green - Orange - Violet - Gold",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 22113,
+      "number": 5,
+      "type": "mcq",
+      "text": "A toy car with charge q moves on a frictionless horizontal plane surface under the influence of a uniform electric field \\vec{E}. Due to the force q\\vec{E}, its velocity increases from 0 to 6 m/s in one second duration. At that instant the direction of the field is reversed. The car continues to move for two more seconds under the influence of this field. The average velocity and the average speed of the toy car between 0 to 3 seconds are respectively :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 5,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "1 m/s, 3.5 m/s",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "1 m/s, 3 m/s",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "2 m/s, 4 m/s",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "1.5 m/s, 3 m/s",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 17963,
+      "number": 6,
+      "type": "mcq",
+      "text": "A ball is thrown vertically downward with a velocity of 20 m/s from the top of a tower. It hits the ground after some time with a velocity of 80 m/s. The height of the tower is : (g = 10 m/s^{2})",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 6,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "340 m",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "320 m",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "300 m",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "360 m",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 17607,
+      "number": 7,
+      "type": "mcq",
+      "text": "A particle of mass ‘m’ is projected with a velocity v=kVe(k < 1) from the surface of the earth. (Ve=escape velocity) The maximum height above the surface reached by the particle is :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 7,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "R(\\frac{k}{1-k})^{2}",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "R(\\frac{k}{1+k})^{2}",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "\\frac{R^{2}k}{1+k}",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "\\frac{Rk^{2}}{1-k^{2}}",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 17606,
+      "number": 8,
+      "type": "mcq",
+      "text": "A particle moving in a circle of radius R with a uniform speed takes a time T to complete one revolution. If this particle were projected with the same speed at an angle ‘θ’ to the horizontal, the maximum height attained by it equals 4R. The angle of projection, θ, is then given by :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 8,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "\\theta = \\cos^{-1}[(\\frac{gT^{2}}{\\pi R^{2}})^{\\frac{1}{2}}]",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "\\theta = \\cos^{-1}[(\\frac{\\pi R^{2}}{gT^{2}})^{\\frac{1}{2}}]",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "\\theta = \\sin^{-1}[(\\frac{gT^{2}}{\\pi R^{2}})^{\\frac{1}{2}}]",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "\\theta = \\sin^{-1}[(\\frac{2gT^{2}}{\\pi^{2}R})^{\\frac{1}{2}}]",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 15176,
+      "number": 9,
+      "type": "mcq",
+      "text": "The angular speed of a fly wheel moving with uniform angular acceleration changes from 1200 rpm to 3120 rpm in 16 seconds. The angular acceleration in rad/s^{2} is",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 9,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "2π",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "4π",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "12π",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "104π",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 14376,
+      "number": 10,
+      "type": "mcq",
+      "text": "A vehicle travels half the distance with speed v and the remaining distance with speed 2v. Its average speed is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 10,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "\\frac{3v}{4}",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "\\frac{v}{3}",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "\\frac{2v}{3}",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "\\frac{4v}{3}",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 14199,
+      "number": 11,
+      "type": "mcq",
+      "text": "A wheel of a bullock cart is rolling on a level road as shows in the figure below. If its linerar speed is v in the direction shown, which one of the following options is correct (P and Q are any highest and lowest points on the wheel respectively)?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 11,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Both the points P and Q move with equal speed.",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Point P has zero speed.",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Point P moves slower than point Q.",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Point P moves faster than point Q.",
+          "figure_url": null
+        }
+      ],
+      "figure_url": [
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/neet-2024/Question 26.png"
+      ]
+    },
+    {
+      "id": 14210,
+      "number": 12,
+      "type": "mcq",
+      "text": "A parallel plate capacitor is charged by connecting it to a battery through a resistor. If I is the current in the circuit, then in the gap between the plates;",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 12,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "displacement current of magnitude equal to I flows m a direction opposite to that of I.",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "displacement current of magnitude greater than I flows but can be in any direction.",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "there is no current.",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "displacement current of magnitude equal to I flows in the same direction as I.",
+          "figure_url": null
+        }
+      ],
+      "figure_url": null
+    },
+    {
+      "id": 13996,
+      "number": 13,
+      "type": "mcq",
+      "text": "An electron (mass 9 \\times 10^{–31} kg and charge 1.6 \\times 10^{–19} C) moving with speed c/100 (c = speed of light) is injected into a magnetic field B of magnitude 9 \\times 10^{–4} T perpendicular to its direction of motion. We wish to apply an uniform electric E together with the magnetic field so that the electron does not deflect from its path. Then (speed of light c = 3 \\times 10^{8} ms^{–1})",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 13,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "E is perpendicular to B and its magnitude is 27 \\times 10^{4} V m^{–1}",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "E is perpendicular to B and its magnitude is 27 \\times 10^{2} V m^{–1}",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "E is parallel to B and its magnitude is 27 \\times 10^{2} V m^{–1}",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "E is parallel to B and its magnitude is 27 \\times 10^{4} V m^{–1}",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 14000,
+      "number": 14,
+      "type": "mcq",
+      "text": "A bob of heavy mass m is suspended by a light string of length l. The bob is given a horizontal velocity v₀ as shown in figure. If the string gets slack at some point P making an angle θ from the horizontal, the ratio of the speed v of the bob at point P to its initial speed v₀ is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 14,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "(\\sin\\theta)^{1/2}",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "[\\frac{1}{2+3\\sin\\theta}]^{1/2}",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "[\\frac{\\cos\\theta}{2+3\\sin\\theta}]^{1/2}",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "[\\frac{\\sin\\theta}{2+3\\sin\\theta}]^{1/2}",
+          "figure_url": null
+        }
+      ],
+      "figure_url": [
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/neet-2025-images/Question%207.png"
+      ]
+    },
+    {
+      "id": 23941,
+      "number": 15,
+      "type": "mcq",
+      "text": "The ratio of escape velocity at earth (v_{e}) to the escape velocity at a planet (v_{p}) whose radius and mean density are twice as that of earth is :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 15,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "1 : 2\\sqrt{2}",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "1 : 4",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "1 : \\sqrt{2}",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "1 : 2",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 23945,
+      "number": 16,
+      "type": "mcq",
+      "text": "A siren emitting a sound of frequency 800 Hz moves away from an observer towards a cliff at a speed of 15 \\text{ ms}^{-1}. Then, the frequency of sound that the observer hears in the echo reflected from the cliff is : (Take velocity of sound in air = 330 \\text{ ms}^{-1})",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 16,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "800 Hz",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "838 Hz",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "885 Hz",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "765 Hz",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 23952,
+      "number": 17,
+      "type": "mcq",
+      "text": "The molecules of a given mass of a gas have r.m.s velocity of 200 \\text{ ms}^{-1} at 27^\\circ\\text{C} and 1.0 \\times 10^{5} \\text{ Nm}^{-2} pressure. When the temperature and pressure of the gas are respectively, 127^\\circ\\text{C} and 0.05 \\times 10^{5} \\text{ Nm}^{-2}, the r.m.s. velocity of its molecules in \\text{ms}^{-1} is :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 17,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "\\frac{400}{\\sqrt{3}}",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "\\frac{100\\sqrt{2}}{3}",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "\\frac{100}{3}",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "100\\sqrt{2}",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 23965,
+      "number": 18,
+      "type": "mcq",
+      "text": "A uniform circular disc of radius 50 cm at rest is free to turn about an axis which is perpendicular to its plane and passes through its centre. It is subjected to a torque which produces a constant angular acceleration of 2.0 \\text{ rad s}^{-2}. Its net acceleration in \\text{ms}^{-2} at the end of 2.0 s is approximately :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 18,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "7.0",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "6.0",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "3.0",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "8.0",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 23973,
+      "number": 19,
+      "type": "mcq",
+      "text": "A particle of mass 10 g moves along a circle of radius 6.4 cm with a constant tangential acceleration. What is the magnitude of this acceleration if the kinetic energy of the particle becomes equal to 8 \\times 10^{-4} \\text{ J} by the end of the second revolution after the beginning of the motion ?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 19,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "0.15 \\text{ m/s}^{2}",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "0.18 \\text{ m/s}^{2}",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "0.2 \\text{ m/s}^{2}",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "0.1 \\text{ m/s}^{2}",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 23341,
+      "number": 20,
+      "type": "mcq",
+      "text": "Consider a drop of rain water having mass 1g falling from a height of 1 km. It hits the ground with a speed of 50 m/s. Take 'g' constant with a value 10 m/s2. The work done by the (i) gravitational force and the (ii) resistive force of air is",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 20,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "(i) 10 J (ii) – 8.75 J",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "(i) –10 J (ii) –8.25 J",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "(i) 1.25 J (ii) –8.25 J",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "(i) 100 J (ii) 8.75 J",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 23348,
+      "number": 21,
+      "type": "mcq",
+      "text": "Two cars moving in opposite directions approach each other with speed of 22 m/s and 16.5 m/s respectively. The driver of the first car blows a horn having a frequency 400 Hz. The frequency heard by the driver of the second car is (velocity of sound 340 m/s) :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 21,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "448 Hz",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "350 Hz",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "361 Hz",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "411 Hz",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 23355,
+      "number": 22,
+      "type": "mcq",
+      "text": "The acceleration due to gravity at a height 1 km above the earth is the same as at a depth d below the surface of earth. Then :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 22,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "d = 1 km",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "d = \\frac{3}{2} km",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "d = 2 km",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "d = \\frac{1}{2} km",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 23356,
+      "number": 23,
+      "type": "mcq",
+      "text": "A particle executes linear simple harmonic motion with an amplitude of 3 cm. When the particle is at 2 cm from the mean position, the magnitude of its velocity is equal to that of its acceleration. Then its time period in seconds is :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 23,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "\\frac{\\sqrt{5}}{\\pi}",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "\\frac{\\sqrt{5}}{2\\pi}",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "\\frac{4\\pi}{\\sqrt{5}}",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "\\frac{2\\pi}{\\sqrt{5}}",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 22092,
+      "number": 24,
+      "type": "mcq",
+      "text": "When the light of frequency 2\\nu_0 (where \\nu_0 is threshold frequency), is incident on a metal plate, the maximum velocity of electrons emitted is v_1. When the frequency of the incident radiation is increased to 5\\nu_0, the maximum velocity of electrons emitted from the same plate is v_2. The ratio of v_1 to v_2 is :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 24,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "1 : 4",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "1 : 2",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "1 : 1",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "4 : 1",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 22109,
+      "number": 25,
+      "type": "mcq",
+      "text": "A body initially at rest and sliding along a frictionless track from a height h (as shown in the figure) just completes a vertical circle of diameter AB = D. The height h is equal to :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 25,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "\\frac{7}{5} D",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "D",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "\\frac{3}{2} D",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "\\frac{5}{4} D",
+          "figure_url": null
+        }
+      ],
+      "figure_url": [
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/neet-2018/Q30.png?v=1787857487838"
+      ]
+    }
+  ]
+}

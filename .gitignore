@@ -44,3 +44,5 @@ scratch/
 # Python build artifacts
 __pycache__/
 *.pyc
+temp_inspect/
+*_raw_dump.json

@@ -1,16 +1,16 @@
 # Graph Report - Edutester  (2026-08-28)
 
 ## Corpus Check
-- 458 files · ~2,142,531 words
+- 542 files · ~2,800,060 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 3170 nodes · 2517 edges · 1550 communities (220 shown, 1330 thin omitted)
+- 3252 nodes · 2616 edges · 1573 communities (240 shown, 1333 thin omitted)
 - Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 16 edges (avg confidence: 0.92)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `f9f09b1a`
+- Built from commit: `1c9a6cc7`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -25,14 +25,14 @@
 - extract_neet_2023.py
 - razorpay-create-order/index.ts
 - mathText.ts
-- react
+- build_chapter_tests.py
 - App.tsx
 - compilerOptions
-- razorpay.ts
+- seed-neet-2016.mjs
 - Match Table Normalization Scripts
 - compilerOptions
 - compilerOptions
-- Profile.tsx
+- ChapterTests.tsx
 - types/index.ts
 - dependencies
 - devDependencies
@@ -179,7 +179,7 @@
 - supabase-postgres-best-practices/SKILL.md
 - skill-feedback.md
 - supabase/SKILL.md
-- @types/node
+- Pricing.tsx
 - vite
 - Diagram: glyph_f0ce
 - Diagram: glyphs_all
@@ -1456,27 +1456,32 @@
 - Diagram: hero
 - Diagram: react
 - Diagram: vite
-- attemptsDb.ts
+- attemptStorage.ts
 - seed-neet-2018.mjs
 - seed-neet-2019.mjs
 - LandingPage.tsx
-- NtaResultScreen.tsx
+- attemptsDb.ts
 - refine_neet_2018.py
 - extract_neet_2018.py
 - extract_neet_2019.py
-- QuestionPalette.tsx
+- seed-neet-2017.mjs
 - refine_neet_2019.py
 - _render-check-2018.mts
+- Profile.tsx
+- @types/node
+- _render-check-2016.mts
+- _render-check-2017.mts
+- _run_render_check_2016.mjs
 
 ## God Nodes (most connected - your core abstractions)
 1. `react` - 33 edges
-2. `useAuth()` - 27 edges
+2. `useAuth()` - 29 edges
 3. `main()` - 24 edges
 4. `main()` - 24 edges
-5. `useSubscriptionAccess()` - 18 edges
-6. `compilerOptions` - 18 edges
-7. `main()` - 17 edges
-8. `tokenizeMath()` - 17 edges
+5. `useSubscriptionAccess()` - 20 edges
+6. `tokenizeMath()` - 18 edges
+7. `compilerOptions` - 18 edges
+8. `main()` - 17 edges
 9. `Question` - 17 edges
 10. `QuestionState` - 17 edges
 
@@ -1499,7 +1504,7 @@
 - **NEET Extraction and Seeding Pipeline** — context_neet_exam_pipeline [INFERRED 0.95]
 - **NTA Exam Simulation Flow** — src_pages_testinterface_testinterface, src_components_vectortext_vectortext [INFERRED 0.95]
 
-## Communities (1550 total, 1330 thin omitted)
+## Communities (1573 total, 1333 thin omitted)
 
 ### Community 0 - "extract_neet_2020.py"
 Cohesion: 0.07
@@ -1522,12 +1527,12 @@ Cohesion: 0.07
 Nodes (42): attrib_qn(), build_lines(), clean_char(), cluster_free_of_text(), col_of_vline(), collect_chars(), collect_raster_placements(), detect_fractions() (+34 more)
 
 ### Community 5 - "NtaQuestionPanel.tsx"
-Cohesion: 0.16
-Nodes (12): FormattedQuestionText(), FormattedQuestionTextProps, MatchItem, NtaQuestionPanel(), NtaQuestionPanelProps, NtaQuestionPaperModal(), NtaQuestionPaperModalProps, QuestionDiagram() (+4 more)
+Cohesion: 0.18
+Nodes (10): FormattedQuestionText(), FormattedQuestionTextProps, MatchItem, NtaQuestionPaperModal(), NtaQuestionPaperModalProps, QuestionDiagram(), QuestionDiagramProps, renderKatex() (+2 more)
 
 ### Community 6 - "Dashboard.tsx"
 Cohesion: 0.12
-Nodes (24): getPaperQuestions(), AttemptRow, analyzeOverall(), analyzeTest(), buildRecommendations(), computeSubjectTrends(), loadQuestionMeta(), OverallAnalysis (+16 more)
+Nodes (24): AttemptRow, backfillLocalAttempts(), analyzeOverall(), analyzeTest(), buildRecommendations(), computeSubjectTrends(), OverallAnalysis, QuestionMeta (+16 more)
 
 ### Community 7 - "extract_neet_2023.py"
 Cohesion: 0.07
@@ -1539,23 +1544,23 @@ Nodes (29): corsHeaders, RATE_LIMIT, supabaseAdmin, supabaseAnon, corsHeaders, R
 
 ### Community 9 - "mathText.ts"
 Cohesion: 0.08
-Nodes (26): render(), render(), render(), render(), render(), want, env, errSamples (+18 more)
+Nodes (27): files, render(), render(), render(), render(), render(), want, env (+19 more)
 
-### Community 10 - "react"
-Cohesion: 0.11
-Nodes (21): react, formatExpiry(), PricingCard(), Props, ease, StaggerItem(), StaggerReveal(), difficultyColors (+13 more)
+### Community 10 - "build_chapter_tests.py"
+Cohesion: 0.83
+Nodes (3): build_chapter_tests(), load_all_questions(), match_question_score()
 
 ### Community 11 - "App.tsx"
-Cohesion: 0.21
-Nodes (13): App(), Footer(), Navbar(), ProtectedRoute(), RootGate(), ScrollToTop(), useAuth(), useSubscriptionAccess() (+5 more)
+Cohesion: 0.20
+Nodes (15): react, App(), Footer(), Navbar(), ProtectedRoute(), RootGate(), ScrollToTop(), useAuth() (+7 more)
 
 ### Community 12 - "compilerOptions"
 Cohesion: 0.08
 Nodes (23): src, vite/client, compilerOptions, allowArbitraryExtensions, allowImportingTsExtensions, erasableSyntaxOnly, jsx, lib (+15 more)
 
-### Community 13 - "razorpay.ts"
-Cohesion: 0.38
-Nodes (6): checkoutPlan, CheckoutResult, invokeEdgeFunction(), loadRazorpayScript(), RazorpayResponse, Window
+### Community 13 - "seed-neet-2016.mjs"
+Cohesion: 0.18
+Nodes (12): BUST, __dirname, figureUrls(), FORCE, key, LABEL_TO_LETTER, OUT_DIR, sectionName() (+4 more)
 
 ### Community 14 - "Match Table Normalization Scripts"
 Cohesion: 0.17
@@ -1569,13 +1574,13 @@ Nodes (19): ES2022, ./node_modules/*, ./node_modules/@supabase/supabase-js, supa
 Cohesion: 0.10
 Nodes (19): node, vite.config.ts, compilerOptions, allowImportingTsExtensions, erasableSyntaxOnly, lib, module, moduleDetection (+11 more)
 
-### Community 17 - "Profile.tsx"
-Cohesion: 0.20
-Nodes (13): GoogleIcon(), pricingPlans, getExam(), setExam(), Login(), perks, daysRemaining(), formatDate() (+5 more)
+### Community 17 - "ChapterTests.tsx"
+Cohesion: 0.18
+Nodes (14): difficultyColors, Props, TestCard(), ChapterTestData, chapterTests, isChapterTrial(), jeeChapterTests, neetChapterTests (+6 more)
 
 ### Community 18 - "types/index.ts"
-Cohesion: 0.16
-Nodes (17): formatDateTime(), formatINR(), isAdmin(), Admin(), Counts, headCount(), Tab, tabs (+9 more)
+Cohesion: 0.18
+Nodes (15): formatDateTime(), formatINR(), isAdmin(), Admin(), Counts, headCount(), Tab, tabs (+7 more)
 
 ### Community 19 - "dependencies"
 Cohesion: 0.12
@@ -1650,8 +1655,8 @@ Cohesion: 0.18
 Nodes (12): __dirname, figureUrls(), __filename, FORCE, key, LABEL_TO_LETTER, OUT_DIR, sectionName() (+4 more)
 
 ### Community 37 - "auth-context.ts"
-Cohesion: 0.18
-Nodes (14): AuthContext, AuthContextValue, AuthResult, AuthProvider(), FREE_TRIAL_TEST_ID, currentStore(), isRemembered(), isRememberMe() (+6 more)
+Cohesion: 0.23
+Nodes (11): AuthContext, AuthContextValue, AuthResult, AuthProvider(), currentStore(), isRemembered(), isRememberMe(), setRememberMe() (+3 more)
 
 ### Community 38 - "NEET Past Year Papers"
 Cohesion: 0.15
@@ -1679,7 +1684,7 @@ Nodes (11): __dirname, figureUrls(), FORCE, key, LABEL_TO_LETTER, OUT_DIR, secti
 
 ### Community 44 - "TestInterface.tsx"
 Cohesion: 0.13
-Nodes (17): NtaHeader(), NtaHeaderProps, NtaInstructionsModal(), NtaInstructionsModalProps, NtaQuestionPalette(), NtaQuestionPaletteProps, NtaResultScreen(), NtaSubmitModal() (+9 more)
+Nodes (16): NtaHeader(), NtaHeaderProps, NtaInstructionsModal(), NtaInstructionsModalProps, NtaQuestionPalette(), NtaQuestionPaletteProps, NtaQuestionPanel(), NtaResultScreen() (+8 more)
 
 ### Community 45 - "apply-neet-2024-images.mjs"
 Cohesion: 0.17
@@ -1730,8 +1735,8 @@ Cohesion: 0.18
 Nodes (6): __dirname, env, jsonHeaders, root, rows, spaRoutes
 
 ### Community 57 - "questions.ts"
-Cohesion: 0.23
-Nodes (12): fetchStaticPaper(), loadPaperQuestions(), mapPaper(), mapQuestion(), paperCache, PaperRow, papersCache, PaperSummary (+4 more)
+Cohesion: 0.19
+Nodes (16): chapterCache, fetchStaticChapter(), fetchStaticPaper(), getChapterQuestions(), getPaperQuestions(), loadChapterQuestions(), loadPaperQuestions(), mapPaper() (+8 more)
 
 ### Community 58 - "build-paper-json.mjs"
 Cohesion: 0.24
@@ -1882,8 +1887,8 @@ Cohesion: 0.33
 Nodes (4): folders, key, supabase, url
 
 ### Community 95 - "PageTransition.tsx"
-Cohesion: 0.40
-Nodes (5): DEPTH, depthOf(), EASE_IN, EASE_OUT, PageTransition()
+Cohesion: 0.22
+Nodes (6): DEPTH, depthOf(), EASE_IN, EASE_OUT, PageTransition(), Props
 
 ### Community 96 - "CONTEXT.md"
 Cohesion: 0.40
@@ -1949,9 +1954,13 @@ Nodes (3): matrix_text(), Set Q40's options to the truth tables (matrix notation
 Cohesion: 0.67
 Nodes (3): PaletteSignature(), TILE_STATES, tileState()
 
-### Community 1537 - "attemptsDb.ts"
-Cohesion: 0.26
-Nodes (15): backfillLocalAttempts(), runBackfill(), submitAttempt(), SubmitAttemptPayload, SubmitAttemptResult, attemptKey(), clearAttempt(), findInProgressAttempt() (+7 more)
+### Community 175 - "Pricing.tsx"
+Cohesion: 0.14
+Nodes (18): formatExpiry(), PricingCard(), Props, pricingPlans, applyCoupon(), CouponApplied, CouponRejected, CouponResult (+10 more)
+
+### Community 1537 - "attemptStorage.ts"
+Cohesion: 0.35
+Nodes (11): runBackfill(), submitAttempt(), attemptKey(), clearAttempt(), findInProgressAttempt(), listSavedPaperKeys(), loadAttempt(), purgeUnownedAttempts() (+3 more)
 
 ### Community 1538 - "seed-neet-2018.mjs"
 Cohesion: 0.18
@@ -1962,12 +1971,12 @@ Cohesion: 0.18
 Nodes (12): BUST, __dirname, figureUrls(), FORCE, key, LABEL_TO_LETTER, OUT_DIR, sectionName() (+4 more)
 
 ### Community 1540 - "LandingPage.tsx"
-Cohesion: 0.19
-Nodes (9): ExamScreenPreview(), SAMPLE_OPTIONS, SAMPLE_TABS, FeatureCard(), Props, ease, Reveal(), SpringTile() (+1 more)
+Cohesion: 0.16
+Nodes (12): ExamScreenPreview(), SAMPLE_OPTIONS, SAMPLE_TABS, FeatureCard(), Props, ease, Reveal(), ease (+4 more)
 
-### Community 1541 - "NtaResultScreen.tsx"
-Cohesion: 0.25
-Nodes (9): NtaResultScreenProps, SolutionCard, SolutionCardProps, STATUS_FILTERS, StatusFilter, QuestionKey, AttemptResult, QuestionOutcome (+1 more)
+### Community 1541 - "attemptsDb.ts"
+Cohesion: 0.14
+Nodes (18): NtaQuestionPanelProps, NtaResultScreenProps, SolutionCard, SolutionCardProps, STATUS_FILTERS, StatusFilter, Props, statusColors (+10 more)
 
 ### Community 1542 - "refine_neet_2018.py"
 Cohesion: 0.60
@@ -1981,30 +1990,34 @@ Nodes (3): clean_text(), extract_all_questions(), main()
 Cohesion: 0.70
 Nodes (4): clean_span_text(), clip_figure(), main(), polish_math_text()
 
-### Community 1545 - "QuestionPalette.tsx"
-Cohesion: 0.40
-Nodes (3): Props, statusColors, statusLabels
+### Community 1545 - "seed-neet-2017.mjs"
+Cohesion: 0.18
+Nodes (12): BUST, __dirname, figureUrls(), FORCE, key, LABEL_TO_LETTER, OUT_DIR, sectionName() (+4 more)
 
 ### Community 1546 - "refine_neet_2019.py"
 Cohesion: 0.83
 Nodes (3): apply_precision_formatting(), clean_general_text(), main()
 
+### Community 1550 - "Profile.tsx"
+Cohesion: 0.19
+Nodes (16): GoogleIcon(), PaperRow, PaperSummary, ExamType, getExam(), setExam(), Login(), perks (+8 more)
+
 ## Knowledge Gaps
-- **1970 isolated node(s):** `$schema`, `typescript`, `oxc`, `react/rules-of-hooks`, `warn` (+1965 more)
+- **2000 isolated node(s):** `$schema`, `typescript`, `oxc`, `react/rules-of-hooks`, `warn` (+1995 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **1330 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **1333 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `react` connect `react` to `LandingPage.tsx`, `NtaResultScreen.tsx`, `NtaQuestionPanel.tsx`, `auth-context.ts`, `Dashboard.tsx`, `App.tsx`, `TestInterface.tsx`, `Profile.tsx`, `types/index.ts`, `plugins`, `PaperTests.tsx`, `PageTransition.tsx`?**
+- **Why does `react` connect `App.tsx` to `LandingPage.tsx`, `NtaQuestionPanel.tsx`, `attemptsDb.ts`, `auth-context.ts`, `Dashboard.tsx`, `TestInterface.tsx`, `Profile.tsx`, `Pricing.tsx`, `ChapterTests.tsx`, `types/index.ts`, `plugins`, `PaperTests.tsx`, `PageTransition.tsx`?**
   _High betweenness centrality (0.003) - this node is a cross-community bridge._
 - **Why does `tokenizeMath()` connect `mathText.ts` to `NtaQuestionPanel.tsx`?**
   _High betweenness centrality (0.001) - this node is a cross-community bridge._
-- **Why does `Question` connect `TestInterface.tsx` to `questions.ts`, `NtaResultScreen.tsx`, `types/index.ts`, `NtaQuestionPanel.tsx`?**
-  _High betweenness centrality (0.001) - this node is a cross-community bridge._
+- **Why does `QuestionState` connect `attemptsDb.ts` to `attemptStorage.ts`, `types/index.ts`, `TestInterface.tsx`, `NtaQuestionPanel.tsx`?**
+  _High betweenness centrality (0.000) - this node is a cross-community bridge._
 - **What connects `$schema`, `typescript`, `oxc` to the rest of the system?**
-  _1970 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _2000 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `extract_neet_2020.py` be split into smaller, more focused modules?**
   _Cohesion score 0.07291666666666667 - nodes in this community are weakly interconnected._
 - **Should `extract_neet_2021.py` be split into smaller, more focused modules?**

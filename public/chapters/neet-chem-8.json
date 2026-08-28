@@ -1,0 +1,1068 @@
+{
+  "key": "neet-chem-8",
+  "title": "Coordination & d-Block Elements (NEET)",
+  "full_title": "NEET (UG) Chapter Test - Coordination & d-Block Elements",
+  "subject": "Chemistry",
+  "chapter": "Inorganic Chemistry",
+  "exam_type": "neet",
+  "is_trial": false,
+  "duration_minutes": 45,
+  "difficulty": "Hard",
+  "question_count": 25,
+  "questions": [
+    {
+      "id": 14263,
+      "number": 1,
+      "type": "mcq",
+      "text": "Given below are two statements:\nStatement I: [Co(NH_{3})_{6}]^{3+} is a homoleptic complex whereas [Co(NH_{3})_{4}Cl_{2}]^{+} is a heteroleptic complex.\nStatement II: Complex [Co(NH_{3})_{6}]^{3+} has only one kind of ligands but [Co(NH_{3})_{4}Cl_{2}]^{+} has more than one kind of ligands.\nIn the light of the above statements, choose the correct answer from the options given below:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 1,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Statement I is true but Statement II is false.",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Statement I is false but Statement II is true.",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Both Statement I and Statement II are true.",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Both Statement I and Statement II are false.",
+          "figure_url": null
+        }
+      ],
+      "figure_url": null
+    },
+    {
+      "id": 17631,
+      "number": 2,
+      "type": "mcq",
+      "text": "Ethylene diaminetetraacetate (EDTA) ion is :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 2,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Hexadentate ligand with four “O” and two “N” donor atoms",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Unidentate ligand",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Bidentate ligand with two “N” donor atoms",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Tridentate ligand with three “N” donor atoms",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 18020,
+      "number": 3,
+      "type": "mcq",
+      "text": "Identify the incorrect statement.",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 3,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "The transition metals and their compounds are known for their catalytic activity due to their ability to adopt multiple oxidation states and to form complexes.",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Interstitial compounds are those that are formed when small atoms like H, C or N are trapped inside the crystal lattices of metals.",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "The oxidation states of chromium in CrO_{4}^{2–} and Cr_{2}O_{7}^{2–} are not the same.",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Cr^{2+} (d^{4}) is a stronger reducing agent than Fe^{2+} (d^{6}) in water.",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 17642,
+      "number": 4,
+      "type": "mcq",
+      "text": "The incorrect statement among the following is :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 4,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Actinoid contraction is greater for element to element than Lanthanoid contraction.",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Most of the trivalent Lanthanoid ions are colorless in the solid state.",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Lanthanoids are good conductors of heat and electricity.",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Actinoids are highly reactive metals, especially when finely divided.",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 19085,
+      "number": 5,
+      "type": "mcq",
+      "text": "Although +3 oxidation state is most common in lanthanoids, cerium still shows +4 oxidation state because:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 5,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "After losing one more electron, it acquires 4f^{14} electronic configuration.",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Its nearest gas is Radon.",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Its atomic number is 61.",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "After losing one more electron, it acquires 4f^{0} electronic configuration.",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 22151,
+      "number": 6,
+      "type": "mcq",
+      "text": "The type of isomerism shown by the complex [\\text{CoCl}_2(\\text{en})_2] is :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 6,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Ionization isomerism",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Coordination isomerism",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Geometrical isomerism",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Linkage isomerism",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 18023,
+      "number": 7,
+      "type": "mcq",
+      "text": "Which of the following is the correct order of increasing field strength of ligands to form coordination compounds?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 7,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "SCN^{–} < F^{–} < CN^{–} < C_{2}O_{4}^{2–}",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "F^{–} < SCN^{–} < C_{2}O_{4}^{2–} < CN^{–}",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "CN^{–} < C_{2}O_{4}^{2–} < SCN^{–} < F^{–}",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "SCN^{–} < F^{–} < C_{2}O_{4}^{2–} < CN^{–}",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 15231,
+      "number": 8,
+      "type": "mcq",
+      "text": "The IUPAC name of the complex- [Ag(H_{2}O)_{2}][Ag(CN)_{2}] is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 8,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "dicyanidosilver(II) diaquaargentate(II)",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "diaquasilver(II) dicyanidoargentate(II)",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "dicyanidosilver(I) diaquaargentate(I)",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "diaquasilver(I) dicyanidoargentate(I)",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 14449,
+      "number": 9,
+      "type": "mcq",
+      "text": "Homoleptic complex from the following complexes is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 9,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Triamminetriaquachromium (III) chloride",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Potassium trioxalatoaluminate (III)",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Diamminechloridonitrito – N- platinum(II)",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Pentaamminecarbonatocobalt (III) chloride",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 14253,
+      "number": 10,
+      "type": "mcq",
+      "text": "Match List I with List II.\nList I (Complex)\nList II (Type of isomerism)\nA. [Co(NH_{3})_{5}(NO_{2})]Cl_{2}  I. Solvate Isomerism\nB. [Co(NH_{3})_{5}(SO_{4})]Br  II. Linkage Isomerism\nC. [Co(NH_{3})_{6}][Cr(CN)_{6}]  III. Ionization Isomerism\nD. [Co(H_{2}O)_{6}]Cl_{3}  IV. Coordination Isomerism\nChoose the correct answer from the options given below:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 10,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "A-I, B-IV, C-III, D-II",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "A-II, B-IV, C-III, D-I",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "A-II, B-III, C-IV, D-I",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "A-I, B-III, C-IV, D-II",
+          "figure_url": null
+        }
+      ],
+      "figure_url": null
+    },
+    {
+      "id": 19066,
+      "number": 11,
+      "type": "mcq",
+      "text": "Match List-I with List-II.\n| List-I (Transition metal/compound/complex) | List-II (Catalytic Role) |\n|---|---|\n| (A) V_{2}O_{5} | (I) Preparation of ammonia from N_{2}/H_{2} mixture |\n| (B) Fe | (II) Polymerisation of alkynes |\n| (C) PdCl_{2} | (III) Preparation of H_{2}SO_{4} from SO_{2} |\n| (D) Ni complex | (IV) Oxidation of ethyne to ethanal |\nChoose the correct answer from the options given below:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 11,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "A-III, B-IV, C-I, D-II",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "A-IV, B-I, C-III, D-II",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "A-II, B-I, C-IV, D-III",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "A-III, B-I, C-IV, D-II",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 19107,
+      "number": 12,
+      "type": "mcq",
+      "text": "Identify the incorrect statement from the following:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 12,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "The largest and the smallest species among Mg, Mg^{2+}, Al and Al^{3+} are Al and Mg^{2+}, respectively.",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "The IUPAC name of the element with atomic number 107 is Unnilseptium.",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "The similarity in behaviour of Li with Mg is referred to as 'diagonal relationship'.",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "The oxidation state and covalency of Al in [AlCl(H_{2}O)_{5}]^{2+} are 3 and 6 respectively.",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 18177,
+      "number": 13,
+      "type": "mcq",
+      "text": "According to crystal field theory, the correct order of ligands with respect to their decreasing order of field strength is",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 13,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "CO > NH_{3} > H_{2}O > Cl^{-}",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "CO > H_{2}O > NH_{3} > Cl^{-}",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Cl^{-} > H_{2}O > NH_{3} > CO",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Cl^{-} > NH_{3} > H_{2}O > CO",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 24017,
+      "number": 14,
+      "type": "mcq",
+      "text": "Which of the following statements is false ?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 14,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "\\text{Ca}^{2+} \\text{ ions are important in blood clotting}",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "\\text{Ca}^{2+} \\text{ ions are not important in maintaining the regular beating of heart}",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "\\text{Mg}^{2+} \\text{ ions are important in the green parts of plants}",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "\\text{Mg}^{2+} \\text{ ions form a complex with ATP}",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 24018,
+      "number": 15,
+      "type": "mcq",
+      "text": "The ionic radii of \\text{A}^{+} and \\text{B}^{-} ions are 0.98 \\times 10^{-10} \\text{ m} and 1.81 \\times 10^{-10} \\text{ m}. The coordination number of each ion in AB is :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 15,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "4",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "8",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "2",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "6",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 23392,
+      "number": 16,
+      "type": "mcq",
+      "text": "The reason for greater range of oxidation states in actinoids is attributed to :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 16,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "4f and 5d levels being close in energies",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "the radioactive nature of actinoids",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "actinoid contraction",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "5f, 6d and 7s levels having comparable energies",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 23407,
+      "number": 17,
+      "type": "mcq",
+      "text": "The correct order of the stoichiometries of \\text{AgCl} formed when \\text{AgNO}_{3} in excess is treated with the complexes: \\text{CoCl}_{3}\\cdot 6\\text{NH}_{3}, \\text{CoCl}_{3}\\cdot 5\\text{NH}_{3}, \\text{CoCl}_{3}\\cdot 4\\text{NH}_{3} respectively is :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 17,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "2 AgCl, 3 AgCl, 1 AgCl",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "1 AgCl, 3 AgCl, 2 AgCl",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "3 AgCl, 1 AgCl, 2 AgCl",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "3 AgCl, 2 AgCl, 1 AgCl",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 23415,
+      "number": 18,
+      "type": "mcq",
+      "text": "The IUPAC name of the compound is :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 18,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "3-keto-2-methylhex-5-enal",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "3-keto-2-methylhex-4-enal",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "5-formylhex-2-en-3-one",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "5-methyl-4-oxohex-2-en-5-al",
+          "figure_url": null
+        }
+      ],
+      "figure_url": [
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/neet-2017/Q76.png?v=1787866923092"
+      ]
+    },
+    {
+      "id": 23418,
+      "number": 19,
+      "type": "mcq",
+      "text": "Correct increasing order for the wavelengths of absorption in the visible region for the complexes of \\text{Co}^{3+} is :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 19,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "[\\text{Co}(\\text{NH}_{3})_{6}]^{3+} < [\\text{Co}(\\text{en})_{3}]^{3+} < [\\text{Co}(\\text{H}_{2}\\text{O})_{6}]^{3+}",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "[\\text{Co}(\\text{en})_{3}]^{3+} < [\\text{Co}(\\text{NH}_{3})_{6}]^{3+} < [\\text{Co}(\\text{H}_{2}\\text{O})_{6}]^{3+}",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "[\\text{Co}(\\text{H}_{2}\\text{O})_{6}]^{3+} < [\\text{Co}(\\text{en})_{3}]^{3+} < [\\text{Co}(\\text{NH}_{3})_{6}]^{3+}",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "[\\text{Co}(\\text{H}_{2}\\text{O})_{6}]^{3+} < [\\text{Co}(\\text{NH}_{3})_{6}]^{3+} < [\\text{Co}(\\text{en})_{3}]^{3+}",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 22125,
+      "number": 20,
+      "type": "mcq",
+      "text": "The correct order of N-compounds in its decreasing order of oxidation states is :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 20,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "\\text{HNO}_3, \\text{NH}_4\\text{Cl}, \\text{NO}, \\text{N}_2",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "\\text{HNO}_3, \\text{NO}, \\text{NH}_4\\text{Cl}, \\text{N}_2",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "\\text{HNO}_3, \\text{NO}, \\text{N}_2, \\text{NH}_4\\text{Cl}",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "\\text{NH}_4\\text{Cl}, \\text{N}_2, \\text{NO}, \\text{HNO}_3",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 22129,
+      "number": 21,
+      "type": "mcq",
+      "text": "Which of the following statements is not true for halogens ?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 21,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "All but fluorine show positive oxidation states.",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "All are oxidizing agents.",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "All form monobasic oxyacids.",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Chlorine has the highest electron-gain enthalpy.",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 22148,
+      "number": 22,
+      "type": "mcq",
+      "text": "Match the metal ions given in Column I with the spin magnetic moments of the ions given in Column II and assign the correct code :\n\n| Column I | Column II |\n| :--- | :--- |\n| a. \\text{Co}^{3+} | i. \\sqrt{8}\\text{ B.M.} |\n| b. \\text{Cr}^{3+} | ii. \\sqrt{35}\\text{ B.M.} |\n| c. \\text{Fe}^{3+} | iii. \\sqrt{3}\\text{ B.M.} |\n| d. \\text{Ni}^{2+} | iv. \\sqrt{24}\\text{ B.M.} |\n| | v. \\sqrt{15}\\text{ B.M.} |",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 22,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "a-iv, b-i, c-ii, d-iii",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "a-i, b-ii, c-iii, d-iv",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "a-iv, b-v, c-ii, d-i",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "a-iii, b-v, c-i, d-ii",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 22152,
+      "number": 23,
+      "type": "mcq",
+      "text": "The geometry and magnetic behaviour of the complex [\\text{Ni}(\\text{CO})_4] are :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 23,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "square planar geometry and paramagnetic",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "tetrahedral geometry and diamagnetic",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "square planar geometry and diamagnetic",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "tetrahedral geometry and paramagnetic",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 22160,
+      "number": 24,
+      "type": "mcq",
+      "text": "Consider the change in oxidation state of Bromine corresponding to different emf values as shown in the diagram below : \\text{BrO}_4^{-} \\xrightarrow{1.82\\text{ V}} \\text{BrO}_3^{-} \\xrightarrow{1.5\\text{ V}} \\text{HBrO} \\xrightarrow{1.595\\text{ V}} \\text{Br}_2 \\xrightarrow{1.0652\\text{ V}} \\text{Br}^{-} Then the species undergoing disproportionation is :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 24,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "\\text{Br}_2",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "\\text{BrO}_4^{-}",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "\\text{BrO}_3^{-}",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "\\text{HBrO}",
+          "figure_url": null
+        }
+      ],
+      "figure_url": [
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/neet-2018/Q81.png?v=1787857487838"
+      ]
+    },
+    {
+      "id": 20368,
+      "number": 25,
+      "type": "mcq",
+      "text": "What is the correct electronic configuration of the central atom in \\text{K}_4[\\text{Fe}(\\text{CN})_6] based on crystal field theory ?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 25,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "t_{2g}^4 e_g^2",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "t_{2g}^6 e_g^0",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "e^3 t_2^3",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "e^4 t_2^2",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    }
+  ]
+}

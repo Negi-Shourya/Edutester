@@ -1,0 +1,1068 @@
+{
+  "key": "neet-chem-2",
+  "title": "Structure of Atom (NEET)",
+  "full_title": "NEET (UG) Chapter Test - Structure of Atom",
+  "subject": "Chemistry",
+  "chapter": "Atomic Structure",
+  "exam_type": "neet",
+  "is_trial": true,
+  "duration_minutes": 45,
+  "difficulty": "Medium",
+  "question_count": 25,
+  "questions": [
+    {
+      "id": 23980,
+      "number": 1,
+      "type": "mcq",
+      "text": "Two electrons occupying the same orbital are distinguished by :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 1,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Magnetic quantum number",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Azimuthal quantum number",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Spin quantum number",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Principal quantum number",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 22169,
+      "number": 2,
+      "type": "mcq",
+      "text": "Which one is a wrong statement ?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 2,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "The electronic configuration of N atom is :",
+          "figure_url": "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/neet-2018/Q90_opt_1.png?v=1787857487838"
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "An orbital is designated by three quantum numbers while an electron in an atom is designated by four quantum numbers.",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Total orbital angular momentum of electron in 's' orbital is equal to zero.",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "The value of m for d_{z^2} is zero.",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 20345,
+      "number": 3,
+      "type": "mcq",
+      "text": "The manganate and permanganate ions are tetrahedral, due to :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 3,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "The \\pi\\text{-bonding involves overlap of p-orbitals of oxygen with d-orbitals of manganese}",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "There is no \\pi\\text{-bonding}",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "The \\pi\\text{-bonding involves overlap of p-orbitals of oxygen with p-orbitals of manganese}",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "The \\pi\\text{-bonding involves overlap of d-orbitals of oxygen with d-orbitals of manganese}",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 15241,
+      "number": 4,
+      "type": "mcq",
+      "text": "Identify the incorrect statement from the following.",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 4,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "All the five 5d orbitals are different in size when compared to the respective 4d orbitals.",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "All the five 4d orbitals have shapes similar to the respective 3d orbitals.",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "In an atom, all the five 3d orbitals are equal in energy in free state.",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "The shapes of d_{xy}, d_{yz} and d_{zx} orbitals are similar to each other; and d_{x^{2}–y^{2}} and d_{z^{2}} are similar to each other.",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 18167,
+      "number": 5,
+      "type": "mcq",
+      "text": "The following carbocation is stabilized by the interaction of the empty p orbital with",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 5,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "filled \\sigma and filled \\pi orbitals",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "empty \\sigma and empty \\pi* orbitals",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "empty \\sigma* and filled \\pi orbitals",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "empty \\sigma* and empty \\pi* orbitals",
+          "figure_url": null
+        }
+      ],
+      "figure_url": [
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/reneet-2026/q48_fig1.png"
+      ]
+    },
+    {
+      "id": 23409,
+      "number": 6,
+      "type": "mcq",
+      "text": "Which one is the wrong statement ?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 6,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "The energy of 2s orbital is less than the energy of 2p orbital in case of Hydrogen like atoms",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "de-Broglie's wavelength is given by \\lambda = \\frac{h}{mv} where m = mass of the particle, v = group velocity of the particle.",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "The uncertainty principle is \\Delta E \\times \\Delta t \\ge \\frac{h}{4\\pi}",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Half filled and fully filled orbitals have greater stability due to greater exchange energy, greater symmetry and more balanced arrangement",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 18207,
+      "number": 7,
+      "type": "mcq",
+      "text": "Consider the following schematic plots of orbital wavefunction (Ψ_{r}) against distance (r) from the nucleus.\nThe figure representing two radial nodes in the orbital is",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 7,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "A",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "B",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "C",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "D",
+          "figure_url": null
+        }
+      ],
+      "figure_url": [
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/reneet-2026/q88_fig1.png"
+      ]
+    },
+    {
+      "id": 15260,
+      "number": 8,
+      "type": "mcq",
+      "text": "If radius of second Bohr orbit of the He^{+} ion is 105.8 pm, what is the radius of third Bohr orbit of Li^{2+} ion?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 8,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "158.7 pm",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "15.87 pm",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "1.587 pm",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "158.7 Å",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 14426,
+      "number": 9,
+      "type": "mcq",
+      "text": "The relation between n_{m},(n_{m} = the number of permissible values of magnetic quantum number (m)) for a given value of azimuthal quantum number (l), is",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 9,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "n_{m} = l + 2",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "n_{m} = 2l + 1",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "l = 2n_{m} + 1",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "n_{m} = 2l^{2} + 1",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 19068,
+      "number": 10,
+      "type": "mcq",
+      "text": "Match List-I with List-II.\n| List-I (Quantum Numbers 'n', 'l') | List-II (Orbital) |\n|---|---|\n| (A) n = 2, l = 1 | (I) 3d |\n| (B) n = 4, l = 0 | (II) 2p |\n| (C) n = 5, l = 3 | (III) 4s |\n| (D) n = 3, l = 2 | (IV) 5f |\nChoose the correct answer from the options given below:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 10,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "A-IV, B-II, C-III, D-I",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "A-II, B-III, C-I, D-IV",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "A-II, B-III, C-IV, D-I",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "A-I, B-II, C-III, D-IV",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 19085,
+      "number": 11,
+      "type": "mcq",
+      "text": "Although +3 oxidation state is most common in lanthanoids, cerium still shows +4 oxidation state because:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 11,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "After losing one more electron, it acquires 4f^{14} electronic configuration.",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Its nearest gas is Radon.",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Its atomic number is 61.",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "After losing one more electron, it acquires 4f^{0} electronic configuration.",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 18192,
+      "number": 12,
+      "type": "mcq",
+      "text": "The correct statement is",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 12,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Boron has a maximum covalency of four.",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Beryllium has three valence orbitals.",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Magnesium has a maximum covalency of four.",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Aluminium has five valence orbitals.",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 23982,
+      "number": 13,
+      "type": "mcq",
+      "text": "The electronic configurations of Eu (Atomic No. 63), Gd (Atomic No. 64) and Tb (Atomic No. 65) are :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 13,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "[\\text{Xe}] 4f^{6} 5d^{1} 6s^{2}, [\\text{Xe}] 4f^{7} 5d^{1} 6s^{2} \\text{ and } [\\text{Xe}] 4f^{8} 5d^{1} 6s^{2}",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "[\\text{Xe}] 4f^{7} 6s^{2}, [\\text{Xe}] 4f^{7} 5d^{1} 6s^{2} \\text{ and } [\\text{Xe}] 4f^{9} 6s^{2}",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "[\\text{Xe}] 4f^{7} 6s^{2}, [\\text{Xe}] 4f^{8} 6s^{2} \\text{ and } [\\text{Xe}] 4f^{8} 5d^{1} 6s^{2}",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "[\\text{Xe}] 4f^{6} 5d^{1} 6s^{2}, [\\text{Xe}] 4f^{7} 5d^{1} 6s^{2} \\text{ and } [\\text{Xe}] 4f^{9} 6s^{2}",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 23992,
+      "number": 14,
+      "type": "mcq",
+      "text": "The pair of electron in the given carbanion, \\text{CH}_{3}\\text{C} \\equiv \\text{C}^{-}, is present in which of the following orbitals ?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 14,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "\\text{sp}^{3}",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "\\text{sp}^{2}",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "\\text{sp}",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "2\\text{p}",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 23425,
+      "number": 15,
+      "type": "mcq",
+      "text": "The element Z = 114 has been discovered recently. It will belong to which of the following family/group and electronic configuration ?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 15,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Nitrogen family, [\\text{Rn}] 5f^{14} 6d^{10} 7s^{2} 7p^{6}",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Halogen family, [\\text{Rn}] 5f^{14} 6d^{10} 7s^{2} 7p^{5}",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Carbon family, [\\text{Rn}] 5f^{14} 6d^{10} 7s^{2} 7p^{2}",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Oxygen family, [\\text{Rn}] 5f^{14} 6d^{10} 7s^{2} 7p^{4}",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 22167,
+      "number": 16,
+      "type": "mcq",
+      "text": "Magnesium reacts with an element (X) to form an ionic compound. If the ground state electronic configuration of (X) is 1s^2 2s^2 2p^3, the simplest formula for this compound is :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 16,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "\\text{Mg}_2\\text{X}",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "\\text{MgX}_2",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "\\text{Mg}_2\\text{X}_3",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "\\text{Mg}_3\\text{X}_2",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 20331,
+      "number": 17,
+      "type": "mcq",
+      "text": "Which of the following diatomic molecular species has only \\pi bonds according to Molecular Orbital Theory ?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 17,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "\\text{Be}_2",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "\\text{O}_2",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "\\text{N}_2",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "\\text{C}_2",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 20333,
+      "number": 18,
+      "type": "mcq",
+      "text": "The correct set of four quantum numbers for the valence electron of rubidium atom (Z = 37) is :-",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 18,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "5, 1, 0, +\\frac{1}{2}",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "5, 0, 0, +\\frac{1}{2}",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "5, 0, 1, +\\frac{1}{2}",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "5, 1, 1, +\\frac{1}{2}",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 20349,
+      "number": 19,
+      "type": "mcq",
+      "text": "4d, 5p, 5f and 6p orbitals are arranged in the order of decreasing energy. The correct option is :-",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 19,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "5f > 6p > 5p > 4d",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "6p > 5f > 5p > 4d",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "6p > 5f > 4d > 5p",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "5f > 6p > 4d > 5p",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 20357,
+      "number": 20,
+      "type": "mcq",
+      "text": "Which of the following series of transitions in the spectrum of hydrogen atom falls in visible region ?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 20,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Lyman series",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Balmer series",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Paschen series",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Brackett series",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 20368,
+      "number": 21,
+      "type": "mcq",
+      "text": "What is the correct electronic configuration of the central atom in \\text{K}_4[\\text{Fe}(\\text{CN})_6] based on crystal field theory ?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 21,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "t_{2g}^4 e_g^2",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "t_{2g}^6 e_g^0",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "e^3 t_2^3",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "e^4 t_2^2",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 17986,
+      "number": 22,
+      "type": "mcq",
+      "text": "On electrolysis of dil. sulphuric acid using Platinum (Pt) electrode, the product obtained at anode will be",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 22,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Oxygen gas",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "H_{2}S gas",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "SO_{2} gas",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Hydrogen gas",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 17613,
+      "number": 23,
+      "type": "mcq",
+      "text": "The major product formed in dehydrohalogenation reaction of 2-Bromo pentane is Pent-2-ene. This product formation is based on ?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 23,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Saytzeff’s Rule",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Hund’s Rule",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Hofmann Rule",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Huckel’s Rule",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 15258,
+      "number": 24,
+      "type": "mcq",
+      "text": "Which amongst the following is incorrect statement?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 24,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "The bond orders of O_{2}^{+}, O_{2}, O_{2}^{–} and O_{2}^{2–} are 2.5, 2, 1.5 and 1, respectively",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "C_{2} molecule has four electrons in its two degenerate π molecular orbitals",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "H_{2}^{+} ion has one electron",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "O_{2}^{+} ion is diamagnetic",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 14429,
+      "number": 25,
+      "type": "mcq",
+      "text": "The correct order of energies of molecular orbitals of N_{2} molecule is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 25,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "σ1s < σ^{*}1s < σ2s < σ^{*} 2s < (π2p_{x} = π2p_{y} ) < (π^{*} 2p_{x} = π^{*} 2p_{y} ) < σ2p_{z} < σ^{*} 2p_{z}",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "σ1s < σ^{*}1s < σ2s < σ^{*} 2s < (π2p_{x} = π2p_{y} ) < σ2p_{z} < (π^{*} 2p_{x} = π^{*} 2p_{y} ) < σ^{*} 2p_{z}",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "σ1s < σ^{*}1s < σ2s < σ^{*} 2s < σ2p_{z} < (π2p_{x} = π2p_{y} ) < (π^{*} 2p_{x} = π^{*} 2p_{y} ) < σ^{*} 2p_{z}",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "σ1s < σ^{*}1s < σ2s < σ^{*} 2s < σ2p_{z} < σ^{*} 2p_{z} < (π2p_{x} = π2p_{y} ) < (π^{*} 2p_{x} = π^{*} 2p_{y} )",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    }
+  ]
+}

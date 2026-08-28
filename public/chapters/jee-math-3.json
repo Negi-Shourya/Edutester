@@ -1,0 +1,619 @@
+{
+  "key": "jee-math-3",
+  "title": "Matrices & Determinants (JEE Main)",
+  "full_title": "JEE Main Chapter Test - Matrices & Determinants",
+  "subject": "Mathematics",
+  "chapter": "Matrices & Determinants",
+  "exam_type": "jee",
+  "is_trial": false,
+  "duration_minutes": 50,
+  "difficulty": "Medium",
+  "question_count": 15,
+  "questions": [
+    {
+      "id": 3005,
+      "number": 1,
+      "type": "mcq",
+      "text": "Let S = { A = [[a, b], [c, d]] : a, b, c, d ∈ {0, 1, 2, 3, 4} and A² - 4A + 3I = O } be a set of 2 × 2 matrices. Then the number of matrices in S, for which the sum of the diagonal elements is equal to 4, is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 1,
+      "sections": {
+        "name": "Mathematics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "20",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "17",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "21",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "19",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 2003,
+      "number": 2,
+      "type": "mcq",
+      "text": "If the system of equations x + 5y + 6z = 4, 2x + 3y + 4z = 7, x + 6y + az = b has infinitely many solutions, then the point (a, b) lies on the line:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 2,
+      "sections": {
+        "name": "Mathematics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "y - x = 3",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "x - y = 3",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "x + y = 11",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "x + y = 12",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 2022,
+      "number": 3,
+      "type": "numerical",
+      "text": "Consider matrices A = [[2, -2], [4, -2]] and B = [[3, 9], [1, 3]]. If PA = B and AQ = B, then the absolute value of the sum of diagonal elements of 2(P + Q) is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 3,
+      "sections": {
+        "name": "Mathematics"
+      },
+      "subsections": {
+        "name": "Section B"
+      },
+      "question_options": [],
+      "figure_url": []
+    },
+    {
+      "id": 4003,
+      "number": 4,
+      "type": "mcq",
+      "text": "If the system of equations x + y + z = 5, x + 2y + 3z = 9, x + 3y + λz = μ has infinitely many solutions, then the value of λ + μ is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 4,
+      "sections": {
+        "name": "Mathematics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "16",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "18",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "19",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "21",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 3006,
+      "number": 5,
+      "type": "mcq",
+      "text": "Let A = [[1, 1, 2], [-2, 0, 1], [1, 3, 5]]. Then the sum of all elements of the matrix adj(adj(2(adj A)⁻¹)) is equal to:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 5,
+      "sections": {
+        "name": "Mathematics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "3",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "4",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "-4",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "-3",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 6004,
+      "number": 6,
+      "type": "mcq",
+      "text": "Let M be a 3 × 3 matrix such that M[[1],[0],[0]] = [[1],[2],[3]], M[[0],[1],[0]] = [[0],[1],[2]] and M[[0],[0],[1]] = [[-1],[1],[1]]. If M[[x],[y],[z]] = [[1],[7],[11]], then x + y + z equals:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 6,
+      "sections": {
+        "name": "Mathematics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "4",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "5",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "7",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "11",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 5003,
+      "number": 7,
+      "type": "mcq",
+      "text": "Let A be a 3 × 3 matrix such that Aᵀ[[1],[0],[1]] = [[5],[2],[2]], Aᵀ[[0],[0],[1]] = [[3],[1],[1]] and A[[1],[0],[1]] = [[3],[4],[4]], A[[0],[0],[1]] = [[1],[3],[1]]. If det(A) = 1, then det(adj(A² + A)) is equal to:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 7,
+      "sections": {
+        "name": "Mathematics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "16",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "25",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "49",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "64",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 8004,
+      "number": 8,
+      "type": "mcq",
+      "text": "The sum of all possible values of θ ∈ [0, 2π], for which the system of equations x cos 3θ - 8y - 12z = 0, x cos 2θ + 3y + 3z = 0, x + y + 3z = 0 has a non-trivial solution, is equal to:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 8,
+      "sections": {
+        "name": "Mathematics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "π",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "2π",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "3π",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "4π",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 8017,
+      "number": 9,
+      "type": "mcq",
+      "text": "Let A = [[1, 3, -1], [2, 1, α], [0, 1, -1]] be a singular matrix. Let f(x) = ∫₀ˣ (t² + 2t + 3) dt, x ∈ [1, α]. If M and m are respectively the maximum and minimum values of f in [1, α], then 3(M - m) is equal to:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 9,
+      "sections": {
+        "name": "Mathematics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "64",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "68",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "72",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "76",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 2012,
+      "number": 10,
+      "type": "mcq",
+      "text": "Let the parabola y = x² + px + q passing through (1, -1) be such that the distance between its vertex and x-axis is minimum. Then p² + q² is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 10,
+      "sections": {
+        "name": "Mathematics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "2",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "4",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "5",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "8",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 2013,
+      "number": 11,
+      "type": "mcq",
+      "text": "Let P = {θ ∈ [0, 4π] : tan² θ ≠ 1} and S = {a ∈ ℤ : 2(cos⁸ θ - sin⁸ θ) sec 2θ = a², θ ∈ P}. Then n(S) is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 11,
+      "sections": {
+        "name": "Mathematics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "0",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "1",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "2",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "3",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 2015,
+      "number": 12,
+      "type": "mcq",
+      "text": "Let A be the foot of perpendicular drawn from P(a, b, 0) on line (x - 1)/2 = (y - 2)/1 = (z - α)/3. If midpoint of PA is (0, 3/4, -1/4), then a² + b² + α² is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 12,
+      "sections": {
+        "name": "Mathematics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "1",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "2",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "6",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "9",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 2016,
+      "number": 13,
+      "type": "mcq",
+      "text": "Two adjacent sides of parallelogram PQRS are P\\vec{Q} = ĵ + k̂ and P\\vec{S} = î - ĵ. If PS is rotated about P by acute angle α to become perpendicular to PQ, then sin²(5α/2) - sin²(α/2) is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 13,
+      "sections": {
+        "name": "Mathematics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "1/2",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "√3 / 2",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "√3 / 4",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "2√3 / 5",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 2001,
+      "number": 14,
+      "type": "mcq",
+      "text": "Let α, β be the roots of the equation x² - 3x + r = 0, and α/2, 2β be the roots of x² + 3x + r = 0. If the roots of the equation x² + 6x = m are 2α + β + 2r and α - 2β - r/2, then m is equal to:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 14,
+      "sections": {
+        "name": "Mathematics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "-135",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "-567",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "135",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "567",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 2002,
+      "number": 15,
+      "type": "mcq",
+      "text": "Let the circles C₁ : |z| = r and C₂ : |z - 3 - 4i| = 5, z ∈ ℂ, be such that C₂ lies within C₁. If z₁ moves on C₁, z₂ moves on C₂ and min|z₁ - z₂| = 2, then max|z₁ - z₂| is equal to:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 15,
+      "sections": {
+        "name": "Mathematics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "12",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "17",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "22",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "24",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    }
+  ]
+}

@@ -1,0 +1,1068 @@
+{
+  "key": "neet-chem-5",
+  "title": "Equilibrium (Physical & Chemical) (NEET)",
+  "full_title": "NEET (UG) Chapter Test - Equilibrium (Physical & Chemical)",
+  "subject": "Chemistry",
+  "chapter": "Equilibrium",
+  "exam_type": "neet",
+  "is_trial": false,
+  "duration_minutes": 45,
+  "difficulty": "Medium",
+  "question_count": 25,
+  "questions": [
+    {
+      "id": 23991,
+      "number": 1,
+      "type": "mcq",
+      "text": "Which is the correct statement for the given acids ?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 1,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "\\text{H}_{3}\\text{PO}_{2} \\text{ is a diprotic acid while } \\text{H}_{3}\\text{PO}_{3} \\text{ is a monoprotic acid}",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "\\text{H}_{3}\\text{PO}_{2} \\text{ is a monoprotic acid while } \\text{H}_{3}\\text{PO}_{3} \\text{ is a diprotic acid}",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "\\text{H}_{3}\\text{PO}_{3} \\text{ is a diprotic acid while } \\text{H}_{3}\\text{PO}_{4} \\text{ is a monoprotic acid}",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "\\text{H}_{3}\\text{PO}_{2} \\text{ and } \\text{H}_{3}\\text{PO}_{3} \\text{ are both diprotic acids}",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 14264,
+      "number": 2,
+      "type": "mcq",
+      "text": "During the preparation of Mohr’s salt solution (Ferrous ammonium sulphate), which of the following acid is added to prevent hydrolysis of Fe^{2+} ion?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 2,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "dilute nitric acid",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "dilute sulphuric acid",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "dilute hydrochloric acid",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "concentrated sulphuric acid",
+          "figure_url": null
+        }
+      ],
+      "figure_url": null
+    },
+    {
+      "id": 18005,
+      "number": 3,
+      "type": "mcq",
+      "text": "Which of the following oxoacid of sulphur has – O – O – linkage?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 3,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "H_{2}SO_{4}, sulphuric acid",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "H_{2}S_{2}O_{8}, peroxodisulphuric acid",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "H_{2}S_{2}O_{7}, pyrosulphuric acid",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "H_{2}SO_{3}, sulphurous acid",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 14467,
+      "number": 4,
+      "type": "mcq",
+      "text": "Match List-I with List-II:\nList-I (Oxoacids of Sulphur)\nList-II (Bonds of Sulphur)\nA. Peroxodisulphuric acid  I. Two S-OH, Four S=O, One S-O-S\nB. Sulphuric acid  II. Two S-OH, One S=O\nC. Pyrosulphuric acid  III. Two S-OH, Four S=O, One S-O-O-S\nD. Sulphurous acid  IV. Two S-OH, Two S=O",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 4,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "A-III, B-IV, C-II, D-I",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "A-I, B-III, C-II, D-IV",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "A-III, B-IV, C-I, D-II",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "A-I, B-III, C-IV, D-II",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 19070,
+      "number": 5,
+      "type": "mcq",
+      "text": "The correct statement with regard to the secondary structure of DNA/RNA is :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 5,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "RNA possesses a double strand helix structure and contains uracil as one of the four bases.",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "DNA possesses a double strand helix structure and contains thymine as one of the four bases.",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "RNA possesses a single strand helix structure and contains thymine as one of the four bases.",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "DNA possesses a single strand helix structure and contains uracil as one of the four bases.",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 24010,
+      "number": 6,
+      "type": "mcq",
+      "text": "The product formed by the reaction of an aldehyde with a primary amine is :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 6,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Ketone",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Carboxylic acid",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Aromatic acid",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Schiff base",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 17655,
+      "number": 7,
+      "type": "mcq",
+      "text": "The molar conductivity of 0.007 M acetic acid is 20 S cm^{2} mol^{-1}. What is the dissociation constant of acetic acid ? Choose the correct option. \\Lambda_{H^{+}}^{\\infty} = 350 S cm^{2} mol^{-1}, \\Lambda_{CH_{3}COO^{-}}^{\\infty} = 50 S cm^{2} mol^{-1}",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 7,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "1.75 \\times 10^{-4} mol L^{-1}",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "2.50 \\times 10^{-4} mol L^{-1}",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "1.75 \\times 10^{-5} mol L^{-1}",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "2.50 \\times 10^{-5} mol L^{-1}",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 19097,
+      "number": 8,
+      "type": "mcq",
+      "text": "At 298 K, a certain buffer solution contains equal concentrations of X^{-} and HX, K_{b} for X^{-} is 10^{-10}. What is the pH of this buffer solution ?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 8,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "2",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "4",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "6",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "10",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 18165,
+      "number": 9,
+      "type": "mcq",
+      "text": "For the following reaction sequence, choose the correct option.",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 9,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "If P is the sodium salt of a carboxylic acid, Q is a primary alcohol.",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "P and Q are aromatic compounds.",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "If P gives a carboxylic acid on acidification, Q gives a poisonous gas on exposure to air and light.",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Both P and Q are carbonyl compounds.",
+          "figure_url": null
+        }
+      ],
+      "figure_url": [
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/reneet-2026/q46_fig1.png"
+      ]
+    },
+    {
+      "id": 18203,
+      "number": 10,
+      "type": "mcq",
+      "text": "Given below are two statements:\nStatement I: Oxidation of p-nitrotoluene with acidic KMnO_{4} gives an acid that is stronger than benzoic acid.\nStatement II: Reduction of p-nitrotoluene with Sn/HCl followed by neutralization gives an amine that is more basic than aniline.\nIn light of the above statements, choose the most appropriate answer from the options given below.",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 10,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Both Statement I and Statement II are correct.",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Both Statement I and Statement II are incorrect.",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Statement I is correct but Statement II is incorrect.",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Statement I is incorrect but Statement II is correct.",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 23399,
+      "number": 11,
+      "type": "mcq",
+      "text": "The equilibrium constants of the following are :\n\\text{N}_{2} + 3\\text{H}_{2} \\rightleftharpoons 2\\text{NH}_{3}\\quad (K_{1})\n\\text{N}_{2} + \\text{O}_{2} \\rightleftharpoons 2\\text{NO}\\quad (K_{2})\n\\text{H}_{2} + \\frac{1}{2}\\text{O}_{2} \\rightleftharpoons \\text{H}_{2}\\text{O}\\quad (K_{3})\nThe equilibrium constant (K) of the reaction :\n2\\text{NH}_{3} + \\frac{5}{2}\\text{O}_{2} \\stackrel{K}{\\rightleftharpoons} 2\\text{NO} + 3\\text{H}_{2}\\text{O}, will be :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 11,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "K_{2} K_{3}^{3} / K_{1}",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "K_{1} K_{3}^{3} / K_{2}",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "K_{2} K_{3}^{3} / K_{1}",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "K_{2} K_{3} / K_{1}",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 23412,
+      "number": 12,
+      "type": "mcq",
+      "text": "Consider the reactions :\n\nIdentify A, X, Y and Z :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 12,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "A = Ethanol, X = Acetaldehyde, Y = Butanone, Z = Hydrazone",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "A = Methoxymethane, X = Ethanoic acid, Y = Acetate ion, Z = Hydrazine",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "A = Methoxymethane, X = Ethanol, Y = Ethanoic acid, Z = Semicarbazide",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "A = Ethanal, X = Ethanol, Y = But-2-enal, Z = Semicarbazone",
+          "figure_url": null
+        }
+      ],
+      "figure_url": [
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/neet-2017/Q73.png?v=1787866923092"
+      ]
+    },
+    {
+      "id": 23423,
+      "number": 13,
+      "type": "mcq",
+      "text": "Which one of the following statements is not correct ?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 13,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Coenzymes increase the catalytic activity of enzyme",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Catalyst does not initiate any reaction",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "The value of equilibrium constant is changed in the presence of a catalyst in the reaction at equilibrium",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Enzymes catalyse mainly bio-chemical reaction",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 22134,
+      "number": 14,
+      "type": "mcq",
+      "text": "Nitration of aniline in strong acidic medium also gives m-nitroaniline because :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 14,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "In absence of substituents nitro group always goes to m-position.",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "In electrophilic substitution reactions amino group is meta directive.",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "In spite of substituents nitro group always goes to only m-position.",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "In acidic (strong) medium aniline is present as anilinium ion.",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 22136,
+      "number": 15,
+      "type": "mcq",
+      "text": "A mixture of 2.3 g formic acid and 4.5 g oxalic acid is treated with conc. \\text{H}_2\\text{SO}_4. The evolved gaseous mixture is passed through \\text{KOH} pellets. Weight (in g) of the remaining product at STP will be :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 15,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "2.8",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "3.0",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "1.4",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "4.4",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 22146,
+      "number": 16,
+      "type": "mcq",
+      "text": "Carboxylic acids have higher boiling points than aldehydes, ketones and even alcohols of comparable molecular mass. It is due to their :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 16,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "more extensive association of carboxylic acid via van der Waals force of attraction",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "formation of carboxylate ion",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "formation of intramolecular H-bonding",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "formation of intermolecular H-bonding",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 20327,
+      "number": 17,
+      "type": "mcq",
+      "text": "pH of a saturated solution of \\text{Ca}(\\text{OH})_2 is 9. The solubility product (K_{\\text{sp}}) of \\text{Ca}(\\text{OH})_2 is :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 17,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "0.5 \\times 10^{-10}",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "0.5 \\times 10^{-15}",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "0.25 \\times 10^{-10}",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "0.125 \\times 10^{-15}",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 20338,
+      "number": 18,
+      "type": "mcq",
+      "text": "Conjugate base for Bronsted acids \\text{H}_2\\text{O} and \\text{HF} are :-",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 18,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "\\text{OH}^-\\text{ and }\\text{H}_2\\text{F}^+\\text{ respectively}",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "\\text{H}_3\\text{O}^+\\text{ and }\\text{F}^-,\\text{ respectively}",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "\\text{OH}^-\\text{ and }\\text{F}^-,\\text{ respectively}",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "\\text{H}_3\\text{O}^+\\text{ and }\\text{H}_2\\text{F}^+,\\text{ respectively}",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 18022,
+      "number": 19,
+      "type": "mcq",
+      "text": "Hydrolysis of sucrose is given by the following reaction. Sucrose + H_{2}O \\rightleftharpoons Glucose + Fructose If the equilibrium constant (K_{C}) is 2 × 10^{13} at 300 K, the value of \\Delta_{r}G^{\\ominus} at the same temperature will be :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 19,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "8.314 J mol^{–1}K^{–1} × 300 K × ln(2 × 10^{13})",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "8.314 J mol^{–1}K^{–1} × 300 K × ln(3 × 10^{13})",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "–8.314 J mol^{–1}K^{–1} × 300 K × ln(4 × 10^{13})",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "–8.314 J mol^{–1}K^{–1} × 300 K × ln(2 × 10^{13})",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 17653,
+      "number": 20,
+      "type": "mcq",
+      "text": "In which one of the following arrangements the given sequence is not strictly according to the properties indicated against it ?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 20,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "HF < HCl < HBr < HI : Increasing acidic strength",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "H_{2}O < H_{2}S < H_{2}Se < H_{2}Te : Increasing pK_{a} values",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "NH_{3} < PH_{3} < AsH_{3} < SbH_{3} : Increasing acidic character",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "CO_{2} < SiO_{2} < SnO_{2} < PbO_{2} : Increasing oxidizing power",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 17633,
+      "number": 21,
+      "type": "mcq",
+      "text": "The pK_{b} of dimethylamine and pK_{a} of acetic acid are 3.27 and 4.77 respectively at T (K). The correct option for the pH of dimethylammonium acetate solution is :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 21,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "8.50",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "5.50",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "7.75",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "6.25",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 17637,
+      "number": 22,
+      "type": "mcq",
+      "text": "Statement I : Acid strength increases in the order given as HF << HCl << HBr << HI. Statement II : As the size of the elements F, Cl, Br, I increases down the group, the bond strength of HF, HCl, HBr and HI decreases and so the acid strength increases. In the light of the above statements, choose the correct answer from the options given below.",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 22,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Both Statement I and Statement II are true.",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Both Statement I and Statement II are false.",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Statement I is correct but Statement II is false.",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Statement I is incorrect but Statement II is true.",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 15246,
+      "number": 23,
+      "type": "mcq",
+      "text": "Given below are two statements Statement I: The acidic strength of monosubstituted nitrophenol is higher than phenol because of electron withdrawing nitro group. Statement II: o-nitrophenol, m-nitrophenol and p-nitrophenol will have same acidic strength as they have one nitro group attached to the phenolic ring. In the light of the above statements, choose the most appropriate answer from the options given below:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 23,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Both Statement I and Statement II are correct.",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Both Statement I and Statement II are incorrect.",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Statement I is correct but Statement II is incorrect.",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Statement I is incorrect but Statement II is correct.",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 15256,
+      "number": 24,
+      "type": "mcq",
+      "text": "The pH of the solution containing 50 mL each of 0.10 M sodium acetate and 0.01 M acetic acid is [Given pKa of CH_{3}COOH = 4.57]",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 24,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "5.57",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "3.57",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "4.57",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "2.57",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 14456,
+      "number": 25,
+      "type": "mcq",
+      "text": "Given below are two statements: Statement I: A unit formed by the attachment of a base to 1' position of sugar is known as nucleoside Statement II: When nucleoside is linked to phosphorous acid at 5'-position of sugar moiety, we get nucleotide. In the light of the above statements, choose the correct answer from the options given below:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 25,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Statement I is false but Statement II is true.",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Both Statement I and Statement II are true.",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Both Statement I and Statement II are false.",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Statement I is true but Statement II is false.",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    }
+  ]
+}

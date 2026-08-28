@@ -1,0 +1,1070 @@
+{
+  "key": "neet-phy-10",
+  "title": "Dual Nature & Modern Physics (NEET)",
+  "full_title": "NEET (UG) Chapter Test - Dual Nature & Modern Physics",
+  "subject": "Physics",
+  "chapter": "Modern Physics",
+  "exam_type": "neet",
+  "is_trial": false,
+  "duration_minutes": 35,
+  "difficulty": "Easy",
+  "question_count": 25,
+  "questions": [
+    {
+      "id": 22095,
+      "number": 1,
+      "type": "mcq",
+      "text": "In a p-n junction diode, change in temperature due to heating :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 1,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "does not affect resistance of p-n junction",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "affects only forward resistance",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "affects only reverse resistance",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "affects the overall V - I characteristics of p-n junction",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 15180,
+      "number": 2,
+      "type": "mcq",
+      "text": "As the temperature increases, the electrical resistance",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 2,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Increases for both conductors and semiconductors",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Decreases for both conductors and semiconductors",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Increases for conductors but decreases for semiconductors",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Decreases for conductors but increases for semiconductors",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 14407,
+      "number": 3,
+      "type": "mcq",
+      "text": "A full wave rectifier circuit consists of two p-n junction diodes, a centre-tapped transformer, capacitor and a load resistance. Which of these components remove the ac ripple from the rectified output",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 3,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Load resistance",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "A centre-tapped transformer",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "p-n junction diodes",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Capacitor",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 14027,
+      "number": 4,
+      "type": "mcq",
+      "text": "De-Broglie wavelength of an electron orbiting in the n = 2 state of hydrogen atom is close to (Given Bohr radius = 0.052 nm)",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 4,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "0.067 nm",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "0.67 nm",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "1.67 nm",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "2.67 nm",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 19059,
+      "number": 5,
+      "type": "mcq",
+      "text": "Two statements are given below :\nA. When the forward bias voltage across a p-n junction diode increases above a certain threshold voltage, the diode current increases significantly.\nB. This current is called reverse saturation current.\nChoose the correct answer from the options given below :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 5,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Both Statements A and B are false",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Statement A is true, but Statement B is false",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Both Statements A and B are true",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Statement A is false, but Statement B is true",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 23359,
+      "number": 6,
+      "type": "mcq",
+      "text": "Suppose the charge of a proton and an electron differ slightly. One of them is -e, the other is (e + \\Delta e). If the net of electrostatic force and gravitational force between two hydrogen atoms placed at a distance d (much greater than atomic size) apart is zero, then \\Delta e is of the order of (Given mass of hydrogen m_{h} = 1.67 \\times 10^{-27} \\text{ kg}) :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 6,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "10^{-37} \\text{ C}",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "10^{-39} \\text{ C}",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "10^{-40} \\text{ C}",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "10^{-20} \\text{ C}",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 22090,
+      "number": 7,
+      "type": "mcq",
+      "text": "The ratio of kinetic energy to the total energy of an electron in a Bohr orbit of the hydrogen atom, is :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 7,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "2 : -1",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "1 : -1",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "1 : 1",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "1 : -2",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 22091,
+      "number": 8,
+      "type": "mcq",
+      "text": "An electron of mass m with an initial velocity \\vec{v} = v_0 \\hat{i} (v_0 > 0) enters an electric field \\vec{E} = -E_0 \\hat{i} (E_0 = \\text{constant} > 0) at t = 0. If \\lambda_0 is its de-Broglie wavelength initially, then its de-Broglie wavelength at time t is :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 8,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "\\lambda_0",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "\\lambda_0 (1 + \\frac{e E_0 t}{m v_0})",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "\\frac{\\lambda_0}{1 + \\frac{e E_0 t}{m v_0}}",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "\\lambda_0 t",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 22093,
+      "number": 9,
+      "type": "mcq",
+      "text": "For a radioactive material, half-life is 10 minutes. If initially there are 600 number of nuclei, the time taken (in minutes) for the disintegration of 450 nuclei is :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 9,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "30 min",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "10 min",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "15 min",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "20 min",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 17966,
+      "number": 10,
+      "type": "mcq",
+      "text": "The increase in the width of the depletion region in a p-n junction diode is due to :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 10,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "reverse bias only",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "both forward bias and reverse bias",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "increase in forward current",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "forward bias only",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 17979,
+      "number": 11,
+      "type": "mcq",
+      "text": "The solids which have the negative temperature coefficient of resistance are:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 11,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "insulators only",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "semiconductors only",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "insulators and semiconductors",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "metals",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 17984,
+      "number": 12,
+      "type": "mcq",
+      "text": "For which one of the following, Bohr model is not valid ?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 12,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Singly ionised helium atom (He^{+})",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Deuteron atom",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Singly ionised neon atom (Ne^{+})",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Hydrogen atom",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 17589,
+      "number": 13,
+      "type": "mcq",
+      "text": "The electron concentration in an n-type semiconductor is the same as hole concentration in a p-type semiconductor. An external field (electric) is applied across each of them. Compare the currents in them.",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 13,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "current in n-type=current in p-type.",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "current in p-type > current in n-type.",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "current in n-type > current in p-type.",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "No current will flow in p-type, current will only flow in n-type.",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 17593,
+      "number": 14,
+      "type": "mcq",
+      "text": "The half-life of a radioactive nuclide is 100 hours. The fraction of original activity that will remain after 150 hours would be :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 14,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "\\frac{1}{2}",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "\\frac{1}{2\\sqrt{2}}",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "\\frac{2}{3}",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "\\frac{2}{3\\sqrt{2}}",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 17594,
+      "number": 15,
+      "type": "mcq",
+      "text": "A nucleus with mass number 240 breaks into two fragments each of mass number 120, the binding energy per nucleon of unfragmented nuclei is 7.6 MeV while that of fragments is 8.5 MeV. The total gain in the Binding Energy in the process is :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 15,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "0.9 MeV",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "9.4 MeV",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "804 MeV",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "216 MeV",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 15208,
+      "number": 16,
+      "type": "mcq",
+      "text": "Let T_{1} and T_{2} be the energy of an electron in the first and second excited states of hydrogen atom, respectively. According to the Bohr’s model of an atom, the ratio T_{1} : T_{2} is",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 16,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "1 : 4",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "4 : 1",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "4 : 9",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "9 : 4",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 14422,
+      "number": 17,
+      "type": "mcq",
+      "text": "The radius of inner most orbit of hydrogen atom is 5.3 \\times 10^{−11} m. What is the radius of third allowed orbit of hydrogen atom?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 17,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "4.77Å",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "0.53Å",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "1.06Å",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "1.59Å",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 14408,
+      "number": 18,
+      "type": "mcq",
+      "text": "Given below are two statements: Statement I: Photovoltaic devices can convert optical radiation into electricity. Statement II: Zener diode is designed to operate under reverse bias in breakdown region. In the light of the above statements, choose the most appropriate answer from the options given below:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 18,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Statement I is incorrect but Statement II is correct.",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Both Statement I and Statement II are correct.",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Both Statement I and Statement II are incorrect.",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Statement I is correct but Statement II is incorrect.",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 19029,
+      "number": 19,
+      "type": "mcq",
+      "text": "In the first excited state of hydrogen atom, the energy of its electron is –3.4 eV. The radial distance of the electron from the hydrogen nucleus in this case is approximately :\n(Take 1 eV = 1.6 \\times 10^{-19} J, e = 1.6 \\times 10^{-19} C and \\frac{1}{4\\pi\\epsilon_{0}} = 9 \\times 10^{9} N m^{2}/C^{2})",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 19,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "2.1 \\times 10^{-9} m",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "2.1 \\times 10^{-8} m",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "2.1 \\times 10^{-10} m",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "2.1 \\times 10^{-11} m",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 18135,
+      "number": 20,
+      "type": "mcq",
+      "text": "An ideal Zener diode with breakdown voltage of -3 V is reverse biased with a negative input voltage V_{i} = -5 V. The magnitude of voltage difference between points B and A is :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 20,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "3 V",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "2 V",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "1 V",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "0 V",
+          "figure_url": null
+        }
+      ],
+      "figure_url": [
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/reneet-2026/q16_fig1.png"
+      ]
+    },
+    {
+      "id": 18161,
+      "number": 21,
+      "type": "mcq",
+      "text": "Three identical p-n junction diodes D_{1}, D_{2} and D_{3} are connected across a battery as shown in the figure. If the width of the depletion regions of D_{1}, D_{2} and D_{3} are W_{1}, W_{2} and W_{3}, respectively, then the correct option is :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 21,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "W_{1} > W_{2} > W_{3}",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "W_{3} = W_{1} > W_{2}",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "W_{3} > W_{2} > W_{1}",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "W_{2} > W_{1} = W_{3}",
+          "figure_url": null
+        }
+      ],
+      "figure_url": [
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/reneet-2026/q42_fig1.png"
+      ]
+    },
+    {
+      "id": 23940,
+      "number": 22,
+      "type": "mcq",
+      "text": "Given the value of Rydberg constant is 10^{7} \\text{ m}^{-1}, the wave number of the last line of the Balmer series in hydrogen spectrum will be :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 22,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "0.5 \\times 10^{7} \\text{ m}^{-1}",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "0.25 \\times 10^{7} \\text{ m}^{-1}",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "2.5 \\times 10^{7} \\text{ m}^{-1}",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "0.025 \\times 10^{4} \\text{ m}^{-1}",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 23953,
+      "number": 23,
+      "type": "mcq",
+      "text": "Consider the junction diode as ideal. The value of current flowing through AB is :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 23,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "10^{-2} \\text{ A}",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "10^{-1} \\text{ A}",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "10^{-3} \\text{ A}",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "0 \\text{ A}",
+          "figure_url": null
+        }
+      ],
+      "figure_url": [
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/neet-2016/Q24.png?v=1787918461717"
+      ]
+    },
+    {
+      "id": 23970,
+      "number": 24,
+      "type": "mcq",
+      "text": "An electron of mass m and a photon have same energy E. The ratio of de-Broglie wavelengths associated with them is : (c being velocity of light)",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 24,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "(\\frac{E}{2m})^{1/2}",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "c(2mE)^{1/2}",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "\\frac{1}{c}(\\frac{2m}{E})^{1/2}",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "\\frac{1}{c}(\\frac{E}{2m})^{1/2}",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 23344,
+      "number": 25,
+      "type": "mcq",
+      "text": "Radioactive material 'A' has decay constant '8\\lambda' and material 'B' has decay constant '\\lambda'. Initially they have same number of nuclei. After what time, the ratio of number of nuclei of material 'B' to that 'A' will be \\frac{1}{e} ?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 25,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "\\frac{1}{9\\lambda}",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "\\frac{1}{\\lambda}",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "\\frac{1}{7\\lambda}",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "\\frac{1}{8\\lambda}",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    }
+  ]
+}

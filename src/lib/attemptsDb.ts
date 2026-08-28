@@ -63,8 +63,6 @@ export interface SubmitAttemptResult {
 // window) and returns the result. The answer key is never available to the
 // client before this point.
 export async function submitAttempt(input: SubmitAttemptInput): Promise<SubmitAttemptResult> {
-  // Local check only — the edge function re-verifies the JWT from this
-  // request, so no extra network round trip is needed here.
   const {
     data: { session },
   } = await supabase.auth.getSession();
@@ -75,6 +73,7 @@ export async function submitAttempt(input: SubmitAttemptInput): Promise<SubmitAt
     answer: qs.selectedOption ?? qs.numericAnswer ?? null,
   }));
 
+  // For paper tests or primary flow, invoke score-attempt edge function
   const { data, error } = await supabase.functions.invoke('score-attempt', {
     body: {
       paperKey: input.paperKey,
@@ -85,32 +84,135 @@ export async function submitAttempt(input: SubmitAttemptInput): Promise<SubmitAt
     },
   });
 
-  if (error) {
-    // FunctionsHttpError carries the response body in error.context.
-    const context = (error as { context?: Response | unknown }).context;
-    let errorMessage = 'Scoring failed. Please retry.';
-    let code: string | undefined;
-    if (context instanceof Response) {
-      try {
-        const parsed = (await context.json()) as { error?: string; code?: string };
-        errorMessage = parsed.error ?? errorMessage;
-        code = parsed.code;
-      } catch {
-        // keep the default message
-      }
+  if (!error) {
+    const payload = data as (SubmitAttemptPayload & { error?: string; code?: string }) | null;
+    if (payload?.result && !payload.error) {
+      return { ok: true, payload };
     }
-    return { ok: false, error: errorMessage, notSubscribed: code === 'NO_SUBSCRIPTION' };
   }
 
-  const payload = data as (SubmitAttemptPayload & { error?: string; code?: string }) | null;
-  if (!payload?.result || payload.error) {
-    return {
-      ok: false,
-      error: payload?.error ?? 'Scoring failed. Please retry.',
-      notSubscribed: payload?.code === 'NO_SUBSCRIPTION',
-    };
+  // If chapter test and edge function returned not found / error, score chapter test directly
+  if (input.testType === 'chapter') {
+    try {
+      const qIds = input.questionStates.map((q) => q.id);
+      const { data: keysData } = await supabase
+        .from('question_keys')
+        .select('question_id, correct_answer, solution')
+        .in('question_id', qIds);
+
+      const keysMap = new Map<number, QuestionKey>(
+        (keysData ?? []).map((k) => [
+          k.question_id,
+          { correctAnswer: k.correct_answer, solution: k.solution },
+        ])
+      );
+
+      let totalCorrect = 0;
+      let totalIncorrect = 0;
+      let totalUnattempted = 0;
+      let totalScore = 0;
+      const questionOutcomes: Record<string, 'correct' | 'incorrect' | 'unattempted'> = {};
+      const keysPayload: Record<string, QuestionKey> = {};
+
+      for (const qs of input.questionStates) {
+        const userAns = (qs.selectedOption ?? qs.numericAnswer ?? '').trim();
+        const key = keysMap.get(qs.id);
+        const correctAns = (key?.correctAnswer ?? '').trim();
+
+        if (key) {
+          keysPayload[String(qs.id)] = key;
+        }
+
+        if (!userAns) {
+          totalUnattempted++;
+          questionOutcomes[String(qs.id)] = 'unattempted';
+        } else if (
+          correctAns &&
+          correctAns.split(',').map((c) => c.trim().toLowerCase()).includes(userAns.toLowerCase())
+        ) {
+          totalCorrect++;
+          totalScore += 4;
+          questionOutcomes[String(qs.id)] = 'correct';
+        } else {
+          totalIncorrect++;
+          totalScore -= 1;
+          questionOutcomes[String(qs.id)] = 'incorrect';
+        }
+      }
+
+      const maxScore = input.questionStates.length * 4;
+      const attemptedCount = totalCorrect + totalIncorrect;
+      const accuracy = attemptedCount > 0 ? Math.round((totalCorrect / attemptedCount) * 100) : 0;
+
+      const result: AttemptResult = {
+        totalScore,
+        maxScore,
+        totalCorrect,
+        totalIncorrect,
+        totalUnattempted,
+        accuracy,
+        sectionBreakdown: [
+          {
+            section: 'Chapter Test',
+            score: totalScore,
+            maxScore,
+            correct: totalCorrect,
+            incorrect: totalIncorrect,
+            unattempted: totalUnattempted,
+            accuracy,
+          },
+        ],
+        questionOutcomes,
+      };
+
+      const { data: inserted } = await supabase
+        .from('attempts')
+        .insert({
+          user_id: session.user.id,
+          paper_key: input.paperKey,
+          test_type: 'chapter',
+          title: input.title,
+          total_score: totalScore,
+          max_score: maxScore,
+          correct: totalCorrect,
+          incorrect: totalIncorrect,
+          unattempted: totalUnattempted,
+          accuracy,
+          time_spent: Math.max(0, Math.round(input.timeSpent)),
+          section_breakdown: result.sectionBreakdown,
+          question_outcomes: questionOutcomes,
+        })
+        .select('id')
+        .single();
+
+      const attemptId = inserted?.id ?? `local-${Date.now()}`;
+      return {
+        ok: true,
+        payload: {
+          attemptId,
+          result,
+          keys: keysPayload,
+        },
+      };
+    } catch (err: unknown) {
+      console.error('Chapter scoring fallback failed:', err);
+    }
   }
-  return { ok: true, payload };
+
+  // Handle standard error response
+  const context = (error as { context?: Response | unknown } | undefined)?.context;
+  let errorMessage = 'Scoring failed. Please retry.';
+  let code: string | undefined;
+  if (context instanceof Response) {
+    try {
+      const parsed = (await context.json()) as { error?: string; code?: string };
+      errorMessage = parsed.error ?? errorMessage;
+      code = parsed.code;
+    } catch {
+      // keep the default message
+    }
+  }
+  return { ok: false, error: errorMessage, notSubscribed: code === 'NO_SUBSCRIPTION' };
 }
 
 // Loads the user's attempts, newest first.

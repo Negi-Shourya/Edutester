@@ -1,0 +1,1064 @@
+{
+  "key": "neet-bio-2",
+  "title": "Diversity in the Living World (NEET)",
+  "full_title": "NEET (UG) Chapter Test - Diversity in the Living World",
+  "subject": "Biology",
+  "chapter": "Biological Classification & Plant/Animal Kingdom",
+  "exam_type": "neet",
+  "is_trial": true,
+  "duration_minutes": 40,
+  "difficulty": "Easy",
+  "question_count": 25,
+  "questions": [
+    {
+      "id": 20407,
+      "number": 1,
+      "type": "mcq",
+      "text": "Consider following features: (a) Organ system level of organisation (b) Bilateral symmetry (c) True coelomates with segmentation of body Select the correct option of animal groups which possess all the above characteristics.",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 1,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Annelida, Arthropoda and Chordata",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Annelida, Arthropoda and Mollusca",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Arthropoda , Mollusca and Chordata",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Annelida, Mollusca and Chordata",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 18044,
+      "number": 2,
+      "type": "mcq",
+      "text": "Which of the following statements are true for the phylum-Chordata? (a) In Urochordata notochord extends from head to tail and it is present throughout their life. (b) In Vertebrata notochord is present during the embryonic period only. (c) Central nervous system is dorsal and hollow. (d) Chordata is divided into 3 subphyla : Hemichordata, Tunicata and Cephalochordata.",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 2,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "(c) and (a)",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "(a) and (b)",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "(b) and (c)",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "(d) and (c)",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 17671,
+      "number": 3,
+      "type": "mcq",
+      "text": "Which of the following algae produce Carrageen ?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 3,
+      "sections": {
+        "name": "Botany"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Green algae",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Brown algae",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Red algae",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Blue-green algae",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 23488,
+      "number": 4,
+      "type": "mcq",
+      "text": "Double fertilization is exhibited by :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 4,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Angiosperms",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Gymnosperms",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Algae",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Fungi",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 14155,
+      "number": 5,
+      "type": "mcq",
+      "text": "Match List-I with List-II.\nList-I\nList-II\nA. Pteridophyte -> I. Salvia\nB. Bryophyte -> II. Ginkgo\nC. Angiosperm -> III. Polytrichum\nD. Gymnosperm -> IV. Salvinia\nChoose the option with all correct matches.",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 5,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "A-III, B-IV, C-II, D-I",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "A-IV, B-III, C-I, D-II",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "A-III, B-IV, C-I, D-II",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "A-IV, B-III, C-II, D-I",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 18240,
+      "number": 6,
+      "type": "mcq",
+      "text": "Sphenopsida class belongs to ______.",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 6,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "bryophytes",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "angiosperms",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "gymnosperms",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "pteridophytes",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 24037,
+      "number": 7,
+      "type": "mcq",
+      "text": "Select the correct statement",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 7,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Salvinia, Ginkgo and Pinus all are gymnosperms",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Sequoia is one of the tallest trees",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "The leaves of gymnosperms are not well adapted to extremes of climate",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Gymnosperms are both homosporous and heterosporous",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 24070,
+      "number": 8,
+      "type": "mcq",
+      "text": "Chrysophytes, Euglenoids, Dinoflagellates and Slime moulds are included in the kingdom",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 8,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Protista",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Fungi",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Animalia",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Monera",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 24081,
+      "number": 9,
+      "type": "mcq",
+      "text": "Which one of the following statements is wrong ?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 9,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Golden algae are also called desmids",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Eubacteria are also called false bacteria",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Phycomycetes are also called algal fungi",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Cyanobacteria are also called blue-green algae",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 20443,
+      "number": 10,
+      "type": "mcq",
+      "text": "Match Column - I with Column - II :-\n| Column-I | Column-II |\n|---|---|\n| (a) Saprophyte | (i) Symbiotic association of fungi with plant roots |\n| (b) Parasite | (ii) Decomposition of dead organic materials |\n| (c) Lichens | (iii) Living on living plants or animals |\n| (d) Mycorrhiza | (iv) Symbiotic association of algae and fungi |\n\nChoose the correct answer from the options given below :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 10,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "(a) - (i), (b) - (ii), (c) - (iii), (d) - (iv)",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "(a) - (iii), (b) - (ii), (c) - (i), (d) - (iv)",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "(a) - (ii), (b) - (i), (c) - (iii), (d) - (iv)",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "(a) - (ii), (b) - (iii), (c) - (iv), (d) - (i)",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 24065,
+      "number": 11,
+      "type": "mcq",
+      "text": "Which of the following characteristic features always holds true for the corresponding group of animals?\n\n| | Feature | Group of animals |\n| :--- | :--- | :--- |\n| (1) | Viviparous | Mammalia |\n| (2) | Possess a mouth with an upper and a lower jaw | Chordata |\n| (3) | 3-chambered heart with one incompletely divided ventricle | Reptilia |\n| (4) | Cartilaginous endoskeleton | Chondrichthyes |",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 11,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Viviparous - Mammalia",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Possess a mouth with an upper and a lower jaw - Chordata",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "3-chambered heart with one incompletely divided ventricle - Reptilia",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Cartilaginous endoskeleton - Chondrichthyes",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 24094,
+      "number": 12,
+      "type": "mcq",
+      "text": "In bryophytes and pteridophytes, transport of male gametes requires :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 12,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Insects",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Birds",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Water",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Wind",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 22209,
+      "number": 13,
+      "type": "mcq",
+      "text": "Which of the following statements is correct ?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 13,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Horsetails are gymnosperms.",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Selaginella is heterosporous, while Salvinia is homosporous.",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Ovules are not enclosed by ovary wall in gymnosperms.",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Stems are usually unbranched in both Cyca s and Cedrus.",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 22210,
+      "number": 14,
+      "type": "mcq",
+      "text": "Select the wrong statement :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 14,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Pseudopodia are locomotory and feeding structures in Sporozoans.",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Mushrooms belong to Basidiomycetes.",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Cell wall is present in members of Fungi and Plantae.",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Mitochondria are the powerhouse of the cell in all kingdoms except Monera.",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 20420,
+      "number": 15,
+      "type": "mcq",
+      "text": "From evolutionary point of view, retention of the female gametophyte with developing young embryo on the parent sporophyte for some time, is first observed in :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 15,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Liverworts",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Mosses",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Pteridophytes",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Gymnosperms",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 17717,
+      "number": 16,
+      "type": "mcq",
+      "text": "Match List - I with List - II. \n| List-I | List-II |\n|---|---|\n| (a) Metamerism | (i) Coelenterata |\n| (b) Canal system | (ii) Ctenophora |\n| (c) Comb plates | (iii) Annelida |\n| (d) Cnidoblasts | (iv) Porifera |\nChoose the correct answer from the options given below.",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 16,
+      "sections": {
+        "name": "Zoology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "(iv) (iii) (i) (ii)",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "(iii) (iv) (i) (ii)",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "(iii) (iv) (ii) (i)",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "(iv) (i) (ii) (iii)",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 17666,
+      "number": 17,
+      "type": "mcq",
+      "text": "Gemmae are present in :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 17,
+      "sections": {
+        "name": "Botany"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Mosses",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Pteridophytes",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Some Gymnosperms",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Some Liverworts",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 15372,
+      "number": 18,
+      "type": "mcq",
+      "text": "Which of the following is a correct statement?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 18,
+      "sections": {
+        "name": "Zoology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Cyanobacteria are a group of autotrophic organisms classified under kingdom Monera.",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Bacteria are exclusively heterotrophic organisms.",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Slime moulds are saprophytic organisms classified under Kingdom Monera.",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Mycoplasma have DNA, ribosome and cell wall.",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 14524,
+      "number": 19,
+      "type": "mcq",
+      "text": "Radial symmetry is NOT found in adults of phylum",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 19,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Echinodermata",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Ctenophora",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Hemichordata",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Coelenterata",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 14349,
+      "number": 20,
+      "type": "mcq",
+      "text": "Match List I with List II:\nList I\nList II\nA. Pleurobrachia  I. Mollusca\nB. Radula  II. Ctenophora\nC. Stomochord  III. Osteichthyes\nD. Air bladder  IV. Hemichordata\nChoose the correct answer from the options given below :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 20,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "A-II, B-IV, C-I, D-III",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "A-IV, B-III, C-II, D-I",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "A-IV, B-II, C-III, D-I",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "A-II, B-I, C-IV, D-III",
+          "figure_url": null
+        }
+      ],
+      "figure_url": null
+    },
+    {
+      "id": 14305,
+      "number": 21,
+      "type": "mcq",
+      "text": "Given below are two statements: Statement I: Parenchyma is living but collenchyma is dead tissue. Statement II: Gymnosperms lack xylem vessels but presence of xylem vessels is the characteristic of angiosperms. In the light of the above statements, choose the correct answer from the options given below:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 21,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Statement I is true but Statement II is false.",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Statement I is false but Statement II is true.",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Both Statement I and Statement II are true.",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Both Statement I and Statement II are false",
+          "figure_url": null
+        }
+      ],
+      "figure_url": null
+    },
+    {
+      "id": 14152,
+      "number": 22,
+      "type": "mcq",
+      "text": "Which one of the following is the characteristic feature of gymnosperms?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 22,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Seeds are enclosed in fruits.",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Seeds are naked.",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Seeds are absent.",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Gymnosperms have flowers for reproduction.",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 18211,
+      "number": 23,
+      "type": "mcq",
+      "text": "Symbiotic association between fungi and algae are called ______.",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 23,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "lichens",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "sponges",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "mycorrhiza",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "chrysophytes",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 18230,
+      "number": 24,
+      "type": "mcq",
+      "text": "Given below are two statements:\nStatement I: In gymnosperms, the male and female gametophytes remain within the sporangia.\nStatement II: In gymnosperms, seeds are not covered.\nIn the light of the above statements, choose the most appropriate answer from the options given below:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 24,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Both Statement I and Statement II are correct.",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Both Statement I and Statement II are incorrect.",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Statement I is correct but Statement II is incorrect.",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Statement I is incorrect but Statement II is correct.",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 18245,
+      "number": 25,
+      "type": "mcq",
+      "text": "Which of the following is not a prokaryote?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 25,
+      "sections": {
+        "name": "Biology"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Bacteria",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Blue green algae",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Mycoplasma",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Fungi",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    }
+  ]
+}

@@ -265,10 +265,15 @@ export function preprocessMath(text: string): string {
   // Division → proper fractions
   out = convertFractions(out);
 
-  // Function names → math operators
+  // Function names → math operators (do not double-prefix if already starts with \)
   for (const [fn, latex] of Object.entries(FUNC_NAMES)) {
-    out = out.replace(new RegExp(`\\b${fn}(?=\\(|\\{|\\[|\\|)`, 'g'), latex);
+    out = out.replace(new RegExp(`(?<!\\\\)\\b${fn}(?=\\(|\\{|\\[|\\|)`, 'g'), latex);
   }
+
+  // Normalize LaTeX spacing escapes like "\ " -> " " and stray backslashes before punctuation
+  out = out.replace(/\\\s+/g, ' ');
+  out = out.replace(/\\\s*([;,])/g, '$1');
+  out = out.replace(/\\%/g, '%');
 
   // Unicode dashes → minus, unicode math → LaTeX
   out = out.replace(/[\u2013\u2212]/g, '-');

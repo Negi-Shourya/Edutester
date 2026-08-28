@@ -1,0 +1,964 @@
+{
+  "key": "jee-math-5",
+  "title": "Integral Calculus (JEE Main)",
+  "full_title": "JEE Main Chapter Test - Integral Calculus",
+  "subject": "Mathematics",
+  "chapter": "Integral Calculus",
+  "exam_type": "jee",
+  "is_trial": false,
+  "duration_minutes": 60,
+  "difficulty": "Hard",
+  "question_count": 25,
+  "questions": [
+    {
+      "id": 2020,
+      "number": 1,
+      "type": "mcq",
+      "text": "Let x = x(y) be the solution of differential equation 2y² dx/dy - 2xy + x² = 0, y > 1, x(e) = e. Then x(e²) is equal to:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 1,
+      "sections": {
+        "name": "Mathematics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "(3/2)e²",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "(2/3)e²",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "e²",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "2e²",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 1017,
+      "number": 2,
+      "type": "mcq",
+      "text": "If the curve y = f(x) passes through the point (1, e) and satisfies the differential equation dy = y(2 + log_e x) dx, x > 0, then f(e) is equal to:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 2,
+      "sections": {
+        "name": "Mathematics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "eᵉ",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "e^{e²}",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "e^{2e}",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "e^{2e}",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 1020,
+      "number": 3,
+      "type": "mcq",
+      "text": "Let y = y(x) be the solution curve of the differential equation (1 + sin x) dy/dx + (y + 1) cos x = 0, y(0) = 0. If the curve passes through the point (α, -1/2), then a value of α is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 3,
+      "sections": {
+        "name": "Mathematics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "π / 6",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "π / 4",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "π / 3",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "π / 2",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 1025,
+      "number": 4,
+      "type": "numerical",
+      "text": "If α = ∫₀^{2√3} log₂(x² + 4) dx + ∫₂⁴ √(2^x - 4) dx, then α² is equal to:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 4,
+      "sections": {
+        "name": "Mathematics"
+      },
+      "subsections": {
+        "name": "Section B"
+      },
+      "question_options": [],
+      "figure_url": []
+    },
+    {
+      "id": 4020,
+      "number": 5,
+      "type": "mcq",
+      "text": "The integral ∫₀¹ cot⁻¹(1 + x + x²) dx is equal to:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 5,
+      "sections": {
+        "name": "Mathematics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "2 tan⁻¹ 2 + (1/2) ln(5/4) + π/2",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "2 tan⁻¹ 2 + (1/2) ln(5/4) - π/2",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "2 tan⁻¹ 2 - (1/2) ln(5/4) + π/2",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "2 tan⁻¹ 2 - (1/2) ln(5/4) - π/2",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 5018,
+      "number": 6,
+      "type": "mcq",
+      "text": "The value of the integral ∫₀^∞ (log_e(x) / (x² + 4)) dx is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 6,
+      "sections": {
+        "name": "Mathematics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "(π log_e 2) / 2",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "(π log_e 2) / 4",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "1 + π log_e 2",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "2 + π log_e 2",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 5020,
+      "number": 7,
+      "type": "mcq",
+      "text": "The value of the integral ∫_{π/6}^{π/3} ((4 - csc² x) / cos⁴ x) dx is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 7,
+      "sections": {
+        "name": "Mathematics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "11 / √3",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "16 / √3",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "32 / (3√3)",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "64 / (3√3)",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 5025,
+      "number": 8,
+      "type": "numerical",
+      "text": "Let y = y(x) be solution of x sin(y/x) dy = (y sin(y/x) - x) dx, y(1) = π/2 and α = cos(y(e¹²)/e¹²). Number of integral values of p for which x² + y² - 2px + 2py + α + 2 = 0 represents circle of radius r ≤ 6 is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 8,
+      "sections": {
+        "name": "Mathematics"
+      },
+      "subsections": {
+        "name": "Section B"
+      },
+      "question_options": [],
+      "figure_url": []
+    },
+    {
+      "id": 8020,
+      "number": 9,
+      "type": "mcq",
+      "text": "The value of the integral ∫_{-1}¹ ((x³ + |x| + 1) / (x² + 2|x| + 1)) dx is equal to:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 9,
+      "sections": {
+        "name": "Mathematics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "3 log_e 2",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "2 log_e 2",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "5 log_e 3",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "3 log_e 3",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 7018,
+      "number": 10,
+      "type": "mcq",
+      "text": "The value of the integral ∫_{-π/4}^{π/4} (32 cos⁴ x / (1 + e^{sin x})) dx is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 10,
+      "sections": {
+        "name": "Mathematics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "4π + 2",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "3π + 8",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "3π + 4",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "4π + 3",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 9016,
+      "number": 11,
+      "type": "mcq",
+      "text": "The value of the integral ∫₀² [√x (x² + x + 1) / ((√x + 1) √(x⁴ + x² + 1))] dx is equal to:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 11,
+      "sections": {
+        "name": "Mathematics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "(1/3) log_e (3 - 2√2)",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "(2/3) log_e (4 + √2)",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "(2/3) log_e (3 + 2√2)",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "(1/3) log_e (1 + 6√2)",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 9017,
+      "number": 12,
+      "type": "mcq",
+      "text": "Let y = y(x) be the solution of differential equation x √(1-x²) dy + (y √(1-x²) - x cos⁻¹ x) dx = 0, x ∈ (0, 1), lim_{x→1⁻} y(x) = 1. Then y(1/2) equals:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 12,
+      "sections": {
+        "name": "Mathematics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "3 - π / √3",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "4 - √3 π",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "4 - 2π / √3",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "3 - π / (2√3)",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 2017,
+      "number": 13,
+      "type": "mcq",
+      "text": "The value of ∫₀²⁰ᵖⁱ (sin⁴ x + cos⁴ x) dx is equal to:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 13,
+      "sections": {
+        "name": "Mathematics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "15π / 2",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "25π",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "15π",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "25π / 2",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 2019,
+      "number": 14,
+      "type": "mcq",
+      "text": "Let f(x) = ∫ ((16x + 24)/(x² + 2x - 15)) dx. If f(4) = 14 ln 3 and f(7) = ln(2ᵃ · 3ᵇ), α, β ∈ ℕ, then α + β is equal to:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 14,
+      "sections": {
+        "name": "Mathematics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "31",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "37",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "39",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "41",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 2024,
+      "number": 15,
+      "type": "numerical",
+      "text": "If area bounded by 16x² - 9y² = 144 and 8x - 3y = 24 is A, then 3(A + 6 ln 3) is equal to:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 15,
+      "sections": {
+        "name": "Mathematics"
+      },
+      "subsections": {
+        "name": "Section B"
+      },
+      "question_options": [],
+      "figure_url": []
+    },
+    {
+      "id": 1019,
+      "number": 16,
+      "type": "mcq",
+      "text": "Let [·] denote the greatest integer function. Then the value of ∫₀³ ((e^x + e^-x) / [x]!) dx is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 16,
+      "sections": {
+        "name": "Mathematics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "e² + e³ - 1/e² - 1/e³",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "(1/2)(e² + e³ - 1/e² - 1/e³)",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "e² + e³ - 1/(2e²) - 1/(2e³)",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "(1/2)(e² + e³) - 1/e² - 1/e³",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 4004,
+      "number": 17,
+      "type": "mcq",
+      "text": "If α = 1 and β = 1 + i√2, where i = √-1 are two roots of the equation x³ + ax² + bx + c = 0, a, b, c ∈ ℝ, then ∫_{-1}¹ (x³ + ax² + bx + c) dx is equal to:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 17,
+      "sections": {
+        "name": "Mathematics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "-2",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "-4",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "-8",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "-10",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 4005,
+      "number": 18,
+      "type": "mcq",
+      "text": "If the quadratic equation (λ + 2)x² - 3λx + 4λ = 0, λ ≠ -2, has two positive roots, then the number of possible integral values of λ is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 18,
+      "sections": {
+        "name": "Mathematics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "1",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "2",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "3",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "4",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 4019,
+      "number": 19,
+      "type": "mcq",
+      "text": "Let y = y(x) be solution of dy/dx + ((6x² + (3x² + 2x³ + 4)e⁻²ˣ)/((x³ + 2)(2 + e⁻²ˣ))) y = 2 + e⁻²ˣ, y(0) = 3/2. If y(1) = α(2 + e⁻²), then α is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 19,
+      "sections": {
+        "name": "Mathematics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "13 / 8",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "6 / 13",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "12 / 13",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "13 / 12",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 3016,
+      "number": 20,
+      "type": "mcq",
+      "text": "If y = tan⁻¹((3cos x - 4sin x)/(4cos x + 3sin x)) + 2 tan⁻¹(x / (1 + √(1 - x²))), then dy/dx at x = √3/2 is equal to:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 20,
+      "sections": {
+        "name": "Mathematics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "3",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "-1",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "1",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "2",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 3017,
+      "number": 21,
+      "type": "mcq",
+      "text": "Let f be a real polynomial of degree n such that f(x) = f'(x) f''(x) for all x ∈ ℝ. If f(0) = 0, then 36(f'(2) + f''(2) + ∫₀² f(x) dx) is equal to:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 21,
+      "sections": {
+        "name": "Mathematics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "42",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "46",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "56",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "66",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 3019,
+      "number": 22,
+      "type": "mcq",
+      "text": "Let ∫_{-2}² (|sin x| + [x sin x]) dx = 2(3 - cos 2) + β, where [·] is GIF. Then β sin(β/2) equals:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 22,
+      "sections": {
+        "name": "Mathematics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "1",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "2",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "4",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "8",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 3020,
+      "number": 23,
+      "type": "mcq",
+      "text": "Let y = y(x) be solution of dy/dx = (1 + x + x²)(1 - y + y²), y(0) = 1/2. Then (2y(1) - 1) is equal to:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 23,
+      "sections": {
+        "name": "Mathematics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "√3 tan(11√3 / 6)",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "(√3/2) tan(11√3 / 12)",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "√3 tan(11√3 / 12)",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "(√3/2) tan(11√3 / 6)",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 6018,
+      "number": 24,
+      "type": "mcq",
+      "text": "Let (2^{1-a} + 2^{1+a}), f(a), (3^a + 3^{-a}) be in A.P. and α be minimum value of f(a). Then ∫_{log_e(α-1)}^{log_e(α)} (dx / (e²ˣ - e⁻²ˣ)) is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 24,
+      "sections": {
+        "name": "Mathematics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "(1/2) log_e(4/3)",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "(1/4) log_e(4/3)",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "(1/2) log_e(8/5)",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "(1/4) log_e(8/5)",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 6024,
+      "number": 25,
+      "type": "numerical",
+      "text": "Let f : ℝ → ℝ satisfy f(x) + 3f(π/2 - x) = sin x. Max value of f is α. Area bounded by g(x) = x² and h(x) = β x³ (β > 0) is α². 30β³ is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 25,
+      "sections": {
+        "name": "Mathematics"
+      },
+      "subsections": {
+        "name": "Section B"
+      },
+      "question_options": [],
+      "figure_url": []
+    }
+  ]
+}

@@ -1,0 +1,1064 @@
+{
+  "key": "neet-chem-4",
+  "title": "Chemical Thermodynamics (NEET)",
+  "full_title": "NEET (UG) Chapter Test - Chemical Thermodynamics",
+  "subject": "Chemistry",
+  "chapter": "Thermodynamics",
+  "exam_type": "neet",
+  "is_trial": false,
+  "duration_minutes": 40,
+  "difficulty": "Medium",
+  "question_count": 25,
+  "questions": [
+    {
+      "id": 23985,
+      "number": 1,
+      "type": "mcq",
+      "text": "Which one of the following characteristics is associated with adsorption ?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 1,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "\\Delta G, \\Delta H \\text{ and } \\Delta S \\text{ all are negative}",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "\\Delta G \\text{ and } \\Delta H \\text{ are negative but } \\Delta S \\text{ is positive}",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "\\Delta G \\text{ and } \\Delta S \\text{ are negative but } \\Delta H \\text{ is positive}",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "\\Delta G \\text{ is negative but } \\Delta H \\text{ and } \\Delta S \\text{ are positive}",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 18178,
+      "number": 2,
+      "type": "mcq",
+      "text": "Two moles of an ideal gas undergo free expansion from 10 L to 100 L at 300 K. The values of \\Delta S_{system} and \\Delta S_{surroundings} are\n(R is universal gas constant)",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 2,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "\\Delta S_{system} = 0; \\Delta S_{surroundings} = 0",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "\\Delta S_{system} = 4.606 R; \\Delta S_{surroundings} = -4.606 R",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "\\Delta S_{system} = 0; \\Delta S_{surroundings} = 4.606 R",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "\\Delta S_{system} = 4.606 R; \\Delta S_{surroundings} = 0",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 23995,
+      "number": 3,
+      "type": "mcq",
+      "text": "The correct thermodynamic conditions for the spontaneous reaction at all temperatures is :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 3,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "\\Delta H > 0 \\text{ and } \\Delta S < 0",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "\\Delta H < 0 \\text{ and } \\Delta S > 0",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "\\Delta H < 0 \\text{ and } \\Delta S < 0",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "\\Delta H < 0 \\text{ and } \\Delta S = 0",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 19067,
+      "number": 4,
+      "type": "mcq",
+      "text": "Consider the following reaction:\n2A (g) + B (g) \\rightarrow 2D (g)\n\\Delta U^{\\ominus} = -10 kJ mol^{-1} and \\Delta S^{\\ominus} = -44 J K^{-1} at 298 K.\nIdentify the correct option with \\Delta G^{\\ominus} for the reaction and spontaneity of the reaction at 298 K.\n(Given: R = 8.31 J mol^{-1} K^{-1})",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 4,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "-1.635 kJ mol^{-1}, spontaneous",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "-0.63568 kJ mol^{-1}, spontaneous",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "+0.63568 kJ mol^{-1}, non-spontaneous",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "+1.635 kJ mol^{-1} non-spontaneous",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 23420,
+      "number": 5,
+      "type": "mcq",
+      "text": "For a given reaction, \\Delta H = 35.5\\text{ kJ}\\cdot\\text{mol}^{-1} and \\Delta S = 83.6\\text{ J}\\cdot\\text{K}^{-1}\\cdot\\text{mol}^{-1}. The reaction is spontaneous at : (Assume that \\Delta H and \\Delta S do not vary with temperature)",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 5,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "T > 298 K",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "T < 425 K",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "T > 425 K",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "All temperatures",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 24015,
+      "number": 6,
+      "type": "mcq",
+      "text": "Consider the following liquid-vapour equilibrium :\n\\text{Liquid} \\rightleftharpoons \\text{Vapour}\n\nWhich of the following relations is correct ?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 6,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "\\frac{d\\ln P}{dT} = -\\frac{\\Delta H_{v}}{RT}",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "\\frac{d\\ln P}{dT} = -\\frac{\\Delta H_{v}}{T^{2}}",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "\\frac{d\\ln P}{dT} = \\frac{\\Delta H_{v}}{RT^{2}}",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "\\frac{d\\ln G}{dT} = \\frac{\\Delta H_{v}}{RT^{2}}",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 17659,
+      "number": 7,
+      "type": "mcq",
+      "text": "For irreversible expansion of an ideal gas under isothermal condition, the correct option is :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 7,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "\\Delta U = 0, \\Delta S_{total} = 0",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "\\Delta U \\neq 0, \\Delta S_{total} \\neq 0",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "\\Delta U = 0, \\Delta S_{total} \\neq 0",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "\\Delta U \\neq 0, \\Delta S_{total} = 0",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 14448,
+      "number": 8,
+      "type": "mcq",
+      "text": "The stability of Cu^{2+} is more than Cu^{+} salts in aqueous solutions due to:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 8,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "second ionisation enthalpy",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "first ionisation enthalpy",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "enthalpy of atomisation",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "hydration energy",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 14078,
+      "number": 9,
+      "type": "mcq",
+      "text": "The standard heat of formation, in kcal/mol of Ba^{2+} is: 2− [Given : standard heat of formation of SO_{4} ion (aq)= –216 kcal/mol, standard heat of crystallization of BaSO4(s) = –4.5 kcal/mol, standard heat of formation of BaSO4(s) = –349 kcal/mol]",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 9,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "–128.5",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "–133.0",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "+133.0",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "+220.5",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 18193,
+      "number": 10,
+      "type": "mcq",
+      "text": "A protein undergoes reversible thermal denaturation from its initial state N to denatured state D according to N \\rightleftharpoons D. At 60°C, the concentrations of both N and D are equal at equilibrium, and the standard enthalpy change of denaturation of 666 kJ mol^{-1}. The standard entropy change (\\Delta S° in kJ K^{-1} mol^{-1}) of the protein upon denaturation at 60° C is closest to:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 10,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "2.0",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "2000.0",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "333.0",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "11.1",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 23975,
+      "number": 11,
+      "type": "mcq",
+      "text": "The addition of a catalyst during a chemical reaction alters which of the following quantities ?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 11,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Internal energy",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Enthalpy",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Activation energy",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Entropy",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 23997,
+      "number": 12,
+      "type": "mcq",
+      "text": "In which of the following options the order of arrangement does not agree with the variation of property indicated against it ?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 12,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "\\text{B} < \\text{C} < \\text{N} < \\text{O} \\text{ (increasing first ionisation enthalpy)}",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "\\text{I} < \\text{Br} < \\text{Cl} < \\text{F} \\text{ (increasing electron gain enthalpy)}",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "\\text{Li} < \\text{Na} < \\text{K} < \\text{Rb} \\text{ (increasing metallic radius)}",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "\\text{Al}^{3+} < \\text{Mg}^{2+} < \\text{Na}^{+} < \\text{F}^{-} \\text{ (increasing ionic size)}",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 17619,
+      "number": 13,
+      "type": "mcq",
+      "text": "For a reaction A→B, enthalpy of reaction is −4.2 kJ mol^{-1} and enthalpy of activation is 9.6 kJ mol^{-1}. The correct potential energy profile for the reaction is shown in option.",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 13,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "",
+          "figure_url": "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/neet-2021/q60_opt_a.png"
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "",
+          "figure_url": "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/neet-2021/q60_opt_b.png"
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "",
+          "figure_url": "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/neet-2021/q60_opt_c.png"
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "",
+          "figure_url": "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/neet-2021/q60_opt_d.png"
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 15232,
+      "number": 14,
+      "type": "mcq",
+      "text": "Gadolinium has a low value of third ionisation enthalpy because of",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 14,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "small size",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "high exchange enthalpy",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "high electronegativity",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "high basic character",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 24001,
+      "number": 15,
+      "type": "mcq",
+      "text": "Which one of the following orders is correct for the bond dissociation enthalpy of halogen molecules ?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 15,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "\\text{Cl}_{2} > \\text{Br}_{2} > \\text{F}_{2} > \\text{I}_{2}",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "\\text{Br}_{2} > \\text{I}_{2} > \\text{F}_{2} > \\text{Cl}_{2}",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "\\text{F}_{2} > \\text{Cl}_{2} > \\text{Br}_{2} > \\text{I}_{2}",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "\\text{I}_{2} > \\text{Br}_{2} > \\text{Cl}_{2} > \\text{F}_{2}",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 22129,
+      "number": 16,
+      "type": "mcq",
+      "text": "Which of the following statements is not true for halogens ?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 16,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "All but fluorine show positive oxidation states.",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "All are oxidizing agents.",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "All form monobasic oxyacids.",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Chlorine has the highest electron-gain enthalpy.",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 22164,
+      "number": 17,
+      "type": "mcq",
+      "text": "The bond dissociation energies of \\text{X}_2, \\text{Y}_2 and \\text{XY} are in the ratio of 1 : 0.5 : 1. \\Delta H for the formation of \\text{XY} is -200\\text{ kJ mol}^{-1}. The bond dissociation energy of \\text{X}_2 will be :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 17,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "800\\text{ kJ mol}^{-1}",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "100\\text{ kJ mol}^{-1}",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "200\\text{ kJ mol}^{-1}",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "400\\text{ kJ mol}^{-1}",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 20346,
+      "number": 18,
+      "type": "mcq",
+      "text": "For the second period elements the correct increasing order of first ionisation enthalpy is :-",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 18,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Li < Be < B < C < N < O < F < Ne",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Li < B < Be < C < O < N < F < Ne",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Li < B < Be < C < N < O < F < Ne",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Li < Be < B < C < O < N < F < Ne",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 20359,
+      "number": 19,
+      "type": "mcq",
+      "text": "For the cell reaction 2\\text{Fe}^{3+}(\\text{aq}) + 2\\text{I}^-(\\text{aq}) \\rightarrow 2\\text{Fe}^{2+}(\\text{aq}) + \\text{I}_2(\\text{aq}), E_{\\text{cell}}^{\\circ} = 0.24\\text{ V at }298\\text{ K}. The standard Gibbs energy (\\Delta_r G^{\\circ}) of the cell reaction is : [Given that Faraday constant F = 96500\\text{ C mol}^{-1}]",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 19,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "-46.32\\text{ kJ mol}^{-1}",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "-23.16\\text{ kJ mol}^{-1}",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "46.32\\text{ kJ mol}^{-1}",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "23.16\\text{ kJ mol}^{-1}",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 20360,
+      "number": 20,
+      "type": "mcq",
+      "text": "In which case change in entropy is negative ?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 20,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Evaporation of water",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Expansion of a gas at constant temperature",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Sublimation of solid to gas",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "2\\text{H}(\\text{g}) \\rightarrow \\text{H}_2(\\text{g})",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 17612,
+      "number": 21,
+      "type": "mcq",
+      "text": "Noble gases are named because of their inertness towards reactivity. Identify an incorrect statement about them.",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 21,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Noble gases are sparingly soluble in water.",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Noble gases have very high melting and boiling points.",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Noble gases have weak dispersion forces.",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Noble gases have large positive values of electron gain enthalpy.",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 17632,
+      "number": 22,
+      "type": "mcq",
+      "text": "The correct sequence of bond enthalpy of ‘C–X’ bond is :",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 22,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "CH_{3}−F < CH_{3}−Cl < CH_{3}−Br < CH_{3}−I",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "CH_{3}−F > CH_{3}−Cl > CH_{3}−Br > CH_{3}−I",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "CH_{3}−F < CH_{3}−Cl > CH_{3}−Br > CH_{3}−I",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "CH_{3}−Cl > CH_{3}−F > CH_{3}−Br > CH_{3}−I",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 15244,
+      "number": 23,
+      "type": "mcq",
+      "text": "Identify the incorrect statement from the following",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 23,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Alkali metals react with water to form their hydroxides.",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "The oxidation number of K in KO_{2} is +4.",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Ionisation enthalpy of alkali metals decreases from top to bottom in the group.",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Lithium is the strongest reducing agent among the alkali metals.",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 14459,
+      "number": 24,
+      "type": "mcq",
+      "text": "Which amongst the following options is the correct relation between change in enthalpy and change in internal Energy?",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 24,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "ΔH + ΔU = ΔnR",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "ΔH = ΔU – Δn_{g}RT",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "ΔH = ΔU + Δn_{g}RT",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "ΔH − ΔU = −ΔnRT",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 14251,
+      "number": 25,
+      "type": "mcq",
+      "text": "In which of the following processes entropy increases?\nA. A liquid evaporates to vapour.\nB. Temperature of a crystalline solid lowered from 130 K to 0 K.\nC. 2NaHCO_{3}(s) → Na_{2}CO_{3}(s) + CO_{2}(g) + H_{2}O(g)\nD. Cl_{2}(g) → 2Cl(g)\nChoose the correct answer from the options given below:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 25,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "A, C and D",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "C and D",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "A and C",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "A, B and D",
+          "figure_url": null
+        }
+      ],
+      "figure_url": null
+    }
+  ]
+}

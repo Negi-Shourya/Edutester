@@ -1,0 +1,554 @@
+{
+  "key": "jee-phy-5",
+  "title": "Thermodynamics (JEE Main)",
+  "full_title": "JEE Main Chapter Test - Thermodynamics",
+  "subject": "Physics",
+  "chapter": "Thermodynamics",
+  "exam_type": "jee",
+  "is_trial": false,
+  "duration_minutes": 50,
+  "difficulty": "Medium",
+  "question_count": 15,
+  "questions": [
+    {
+      "id": 2048,
+      "number": 1,
+      "type": "numerical",
+      "text": "5 moles of unknown gas heated at constant volume from 10°C to 20°C. Molar specific heat c_p = 8 cal/mol·°C. Change in internal energy in calories is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 1,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section B"
+      },
+      "question_options": [],
+      "figure_url": []
+    },
+    {
+      "id": 1047,
+      "number": 2,
+      "type": "numerical",
+      "text": "A vessel contains 0.15 m³ gas at 8 bar and 140°C with c_p = 3R and c_v = 2R. Expanded adiabatically till pressure falls to 1 bar. Work done during this process is _______ kJ:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 2,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section B"
+      },
+      "question_options": [],
+      "figure_url": []
+    },
+    {
+      "id": 5032,
+      "number": 3,
+      "type": "mcq",
+      "text": "Statement I: Change in internal energy ΔU = n C_v (T_f - T_i) = (n R / (γ-1)) (T_f - T_i).\nStatement II: Relation between degree of freedom f and γ is γ = 1 + 2/f.",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 3,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Both A and R are true and R is correct explanation",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Both A and R are true but R is NOT correct explanation",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "A is true but R is false",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "A is false but R is true",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 5033,
+      "number": 4,
+      "type": "mcq",
+      "text": "Consider statements:\nA. Zeroth law gives temperature concept\nB. First law gives internal energy concept\nC. Isothermal expansion ΔQ ≠ ΔW\nD. Product of intensive and extensive is extensive\nE. Ratio of extensive to mass is extensive",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 4,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "C, D and E Only",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "A, B and C Only",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "A, B and D Only",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "B, C and D Only",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 9036,
+      "number": 5,
+      "type": "mcq",
+      "text": "Monoatomic gas initial P, V. Change in internal energy in adiabatic expansion to V_final = 27V is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 5,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "-2PV (3√3 - 1)",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "(4/3) PV",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "-(4/3) PV",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "(3/4) PV",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 8030,
+      "number": 6,
+      "type": "mcq",
+      "text": "Cylinder with adiabatic walls divided into two 9 L compartments at same P, V, T. Left heated until P_left = 27P/8. Final volume in right compartment is (γ = 1.5):",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 6,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "3 L",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "4 L",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "14 L",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "9 L",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 7050,
+      "number": 7,
+      "type": "numerical",
+      "text": "Gas isothermally compressed to 1/3 of V₀ = 3 L. Bulk modulus 3 × 10⁵ N/m². Magnitude of work done is _______ J:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 7,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section B"
+      },
+      "question_options": [],
+      "figure_url": []
+    },
+    {
+      "id": 2030,
+      "number": 8,
+      "type": "mcq",
+      "text": "If X and Y are inputs to the logic circuit shown in figure, the circuit acts as:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 8,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "OR gate",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "AND gate",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "NAND gate",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "NOR gate",
+          "figure_url": null
+        }
+      ],
+      "figure_url": [
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/2026-04-02-evening/2026-04-02_evening_Q30.jpeg"
+      ]
+    },
+    {
+      "id": 2038,
+      "number": 9,
+      "type": "mcq",
+      "text": "Two resistors 200 Ω and 400 Ω in series with 100 V battery. Bulb rated 200 V, 100 W connected across 400 Ω. Potential drop across bulb is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 9,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "25 V",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "50 V",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "66.6 V",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "100 V",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 2028,
+      "number": 10,
+      "type": "mcq",
+      "text": "Two blocks of masses 2 kg and 1 kg are tied to ends of a string over a light frictionless pulley. Held at rest at same level and released. Distance traversed by COM in 2 s is (g = 10 m/s²):",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 10,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "3.33 m",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "3.12 m",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "2.22 m",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "1.42 m",
+          "figure_url": null
+        }
+      ],
+      "figure_url": [
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/2026-04-02-evening/2026-04-02_evening_Q28.jpeg"
+      ]
+    },
+    {
+      "id": 2041,
+      "number": 11,
+      "type": "mcq",
+      "text": "Equilateral prism of refractive index 1.6 has one face painted with transparent material of refractive index n₂. Minimum n₂ for total internal reflection is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 11,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "3√3 / 1.6",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "√3",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "3.2 / √3",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "4√3 / 5",
+          "figure_url": null
+        }
+      ],
+      "figure_url": [
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/2026-04-02-evening/2026-04-02_evening_Q41.jpeg"
+      ]
+    },
+    {
+      "id": 2042,
+      "number": 12,
+      "type": "mcq",
+      "text": "LCR series circuit with C = 100 μF. Phase diff 30° when S₁ closed, 60° when S₂ closed. Value of (3L₁ - L₂) is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 12,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "9 / 2 H",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "2 / 9 H",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "1 / 3 H",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "3 H",
+          "figure_url": null
+        }
+      ],
+      "figure_url": [
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/2026-04-02-evening/2026-04-02_evening_Q42.jpeg"
+      ]
+    },
+    {
+      "id": 2050,
+      "number": 13,
+      "type": "numerical",
+      "text": "Moment of inertia of rod (mass 40 kg, length 3 m) about axis AB equals that of solid sphere (mass 10 kg, radius R) about parallel axis separated by 3 m. R is √(α/2). Value of α is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 13,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section B"
+      },
+      "question_options": [],
+      "figure_url": [
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/2026-04-02-evening/2026-04-02_evening_Q50.jpeg"
+      ]
+    },
+    {
+      "id": 2026,
+      "number": 14,
+      "type": "mcq",
+      "text": "Dimensions of universal gravitational constant G in terms of Planck's constant h, distance L, mass M and time T are:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 14,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "[h T L M⁻²]",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "[h T⁻¹ L M⁻²]",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "[h T L² M⁻²]",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "[h⁻¹ T⁻¹ L M⁻²]",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 2027,
+      "number": 15,
+      "type": "mcq",
+      "text": "A 0.5 kg mass is in contact against the inner wall of a cylindrical drum of radius 4 m rotating about its vertical axis. The minimum rotational speed of drum to remain stuck is 5 rad/s. Coefficient of friction is (g = 10 m/s²):",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 15,
+      "sections": {
+        "name": "Physics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "0.1",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "0.5",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "0.7",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "0.3",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    }
+  ]
+}

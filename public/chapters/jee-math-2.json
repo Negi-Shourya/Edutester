@@ -1,0 +1,644 @@
+{
+  "key": "jee-math-2",
+  "title": "Complex Numbers & Quadratics (JEE Main)",
+  "full_title": "JEE Main Chapter Test - Complex Numbers & Quadratics",
+  "subject": "Mathematics",
+  "chapter": "Complex Numbers",
+  "exam_type": "jee",
+  "is_trial": true,
+  "duration_minutes": 50,
+  "difficulty": "Medium",
+  "question_count": 15,
+  "questions": [
+    {
+      "id": 2003,
+      "number": 1,
+      "type": "mcq",
+      "text": "If the system of equations x + 5y + 6z = 4, 2x + 3y + 4z = 7, x + 6y + az = b has infinitely many solutions, then the point (a, b) lies on the line:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 1,
+      "sections": {
+        "name": "Mathematics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "y - x = 3",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "x - y = 3",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "x + y = 11",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "x + y = 12",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 1003,
+      "number": 2,
+      "type": "mcq",
+      "text": "Let α, β ∈ ℝ be such that the system of linear equations:\nx + 2y + z = 5\n2x + y + αz = 5\n8x + 4y + βz = 18\nhas no solution. Then β / α is equal to:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 2,
+      "sections": {
+        "name": "Mathematics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "-4",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "4",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "8",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "-8",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 4003,
+      "number": 3,
+      "type": "mcq",
+      "text": "If the system of equations x + y + z = 5, x + 2y + 3z = 9, x + 3y + λz = μ has infinitely many solutions, then the value of λ + μ is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 3,
+      "sections": {
+        "name": "Mathematics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "16",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "18",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "19",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "21",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 5004,
+      "number": 4,
+      "type": "mcq",
+      "text": "Consider the system of linear equations in x, y, z:\nx + 2y + tz = 0,\n6x + y + 5tz = 0,\n3x + t² y + f(t) z = 0,\nwhere f : ℝ → ℝ is a differentiable function. If this system has infinitely many solutions for all t ∈ ℝ, then f:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 4,
+      "sections": {
+        "name": "Mathematics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "is a constant function",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "is strictly increasing on ℝ",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "is strictly decreasing on ℝ",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "has two critical points",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 8004,
+      "number": 5,
+      "type": "mcq",
+      "text": "The sum of all possible values of θ ∈ [0, 2π], for which the system of equations x cos 3θ - 8y - 12z = 0, x cos 2θ + 3y + 3z = 0, x + y + 3z = 0 has a non-trivial solution, is equal to:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 5,
+      "sections": {
+        "name": "Mathematics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "π",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "2π",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "3π",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "4π",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 9003,
+      "number": 6,
+      "type": "mcq",
+      "text": "If the system of linear equations:\nx + y + z = 6\nx + 2y + 5z = 10\n2x + 3y + λz = μ\nhas infinitely many solutions, then the value of λ + μ equals:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 6,
+      "sections": {
+        "name": "Mathematics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "12",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "16",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "22",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "28",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 1001,
+      "number": 7,
+      "type": "mcq",
+      "text": "Let α, α + 2, α ∈ ℤ, be the roots of the quadratic equation x(x + 2) + (x + 1)(x + 3) + (x + 2)(x + 4) + ... + (x + n - 1)(x + n + 1) = 4n for some n ∈ ℕ. Then n + α is equal to:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 7,
+      "sections": {
+        "name": "Mathematics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "0",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "1",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "2",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "3",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 4005,
+      "number": 8,
+      "type": "mcq",
+      "text": "If the quadratic equation (λ + 2)x² - 3λx + 4λ = 0, λ ≠ -2, has two positive roots, then the number of possible integral values of λ is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 8,
+      "sections": {
+        "name": "Mathematics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "1",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "2",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "3",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "4",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 3003,
+      "number": 9,
+      "type": "mcq",
+      "text": "Let z be a complex number such that |z + 2| = |z - 2| and arg((z + 3)/(z - i)) = π/4. Then |z|² is equal to:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 9,
+      "sections": {
+        "name": "Mathematics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "9",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "4",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "5",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "1",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 5006,
+      "number": 10,
+      "type": "mcq",
+      "text": "Let tan A, tan B, where A, B ∈ (-π/2, π/2), be the roots of the quadratic equation x² - 2x - 5 = 0. Then 20 sin²((A + B)/2) is equal to:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 10,
+      "sections": {
+        "name": "Mathematics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "10 + √10",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "10 - 2√10",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "10 - 3√10",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "10 - √10",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 8002,
+      "number": 11,
+      "type": "mcq",
+      "text": "Consider the quadratic equation (n² - 2n + 2)x² - 3x + (n² - 2n + 2)² = 0, n ∈ ℝ. Let α be the minimum value of the product of its roots and β be the maximum value of the sum of its roots. Then the sum of the first six terms of the G.P., whose first term is α and common ratio is α/β, is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 11,
+      "sections": {
+        "name": "Mathematics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "61 / 37",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "121 / 81",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "364 / 243",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "1093 / 729",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 8008,
+      "number": 12,
+      "type": "mcq",
+      "text": "Let the mean and the variance of seven observations 2, 4, α, 8, β, 12, 14, α < β, be 8 and 16 respectively. Then the quadratic equation whose roots are 3α + 2 and 2β + 1 is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 12,
+      "sections": {
+        "name": "Mathematics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "x² - 35x + 306 = 0",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "x² - 41x + 420 = 0",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "x² - 45x + 506 = 0",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "x² - 37x + 342 = 0",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 7002,
+      "number": 13,
+      "type": "mcq",
+      "text": "Let one root of the quadratic equation in x: (k² - 15k + 27)x² + 9(k - 1)x + 18 = 0 be twice the other. Then the length of the latus rectum of the parabola y² = 6kx is equal to:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 13,
+      "sections": {
+        "name": "Mathematics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "4",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "6",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "8",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "12",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 2012,
+      "number": 14,
+      "type": "mcq",
+      "text": "Let the parabola y = x² + px + q passing through (1, -1) be such that the distance between its vertex and x-axis is minimum. Then p² + q² is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 14,
+      "sections": {
+        "name": "Mathematics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "2",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "4",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "5",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "8",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 2013,
+      "number": 15,
+      "type": "mcq",
+      "text": "Let P = {θ ∈ [0, 4π] : tan² θ ≠ 1} and S = {a ∈ ℤ : 2(cos⁸ θ - sin⁸ θ) sec 2θ = a², θ ∈ P}. Then n(S) is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 15,
+      "sections": {
+        "name": "Mathematics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "0",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "1",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "2",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "3",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    }
+  ]
+}

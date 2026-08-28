@@ -1,0 +1,594 @@
+{
+  "key": "jee-math-4",
+  "title": "Differential Calculus (JEE Main)",
+  "full_title": "JEE Main Chapter Test - Differential Calculus",
+  "subject": "Mathematics",
+  "chapter": "Differential Calculus",
+  "exam_type": "jee",
+  "is_trial": false,
+  "duration_minutes": 60,
+  "difficulty": "Hard",
+  "question_count": 15,
+  "questions": [
+    {
+      "id": 5004,
+      "number": 1,
+      "type": "mcq",
+      "text": "Consider the system of linear equations in x, y, z:\nx + 2y + tz = 0,\n6x + y + 5tz = 0,\n3x + t² y + f(t) z = 0,\nwhere f : ℝ → ℝ is a differentiable function. If this system has infinitely many solutions for all t ∈ ℝ, then f:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 1,
+      "sections": {
+        "name": "Mathematics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "is a constant function",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "is strictly increasing on ℝ",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "is strictly decreasing on ℝ",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "has two critical points",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 7020,
+      "number": 2,
+      "type": "mcq",
+      "text": "Let f : {1, 2, 3, 4} → {1, e, e², e³} and g : {1, e, e², e³} → {1, 1/2, 1/3, 1/4} be two bijective functions such that f is strictly decreasing and g is strictly increasing. If ϕ(x) = [f⁻¹{g⁻¹(1/2)}]^x, then the area of the region R = {(x, y) : x² ≤ y ≤ ϕ(x), 0 ≤ x ≤ 1} is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 2,
+      "sections": {
+        "name": "Mathematics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "(3 - log_e 2) / (3 log_e 2)",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "1 / (3 log_e 2)",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "(3 + log_e 2) / (2 + log_e 3)",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "3 + log_e 2",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 9013,
+      "number": 3,
+      "type": "mcq",
+      "text": "For the function f(x) = e^{sin|x|} - |x|, x ∈ ℝ:\nStatement I: f is differentiable for all x ∈ ℝ.\nStatement II: f is increasing in (-π, -π/2).",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 3,
+      "sections": {
+        "name": "Mathematics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Both Statement I and Statement II are true",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Both Statement I and Statement II are false",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Statement I is true but Statement II is false",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Statement I is false but Statement II is true",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 2004,
+      "number": 4,
+      "type": "mcq",
+      "text": "Let a₁, a₂, a₃, ... be an A.P. and g₁, g₂, g₃, ... be an increasing G.P. If a₁ = a₂ + g₂ = 1 and a₃ + g₃ = 4, then a₁₀ + g₅ is equal to:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 4,
+      "sections": {
+        "name": "Mathematics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "81",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "76",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "62",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "55",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 1020,
+      "number": 5,
+      "type": "mcq",
+      "text": "Let y = y(x) be the solution curve of the differential equation (1 + sin x) dy/dx + (y + 1) cos x = 0, y(0) = 0. If the curve passes through the point (α, -1/2), then a value of α is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 5,
+      "sections": {
+        "name": "Mathematics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "π / 6",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "π / 4",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "π / 3",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "π / 2",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 4019,
+      "number": 6,
+      "type": "mcq",
+      "text": "Let y = y(x) be solution of dy/dx + ((6x² + (3x² + 2x³ + 4)e⁻²ˣ)/((x³ + 2)(2 + e⁻²ˣ))) y = 2 + e⁻²ˣ, y(0) = 3/2. If y(1) = α(2 + e⁻²), then α is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 6,
+      "sections": {
+        "name": "Mathematics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "13 / 8",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "6 / 13",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "12 / 13",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "13 / 12",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 4022,
+      "number": 7,
+      "type": "numerical",
+      "text": "Let f(x) = (e^{x-1} for x < 0, x² - 5x + 6 for x ≥ 0) and g(x) = f(|x|) + |f(x)|. If number of points where g is not continuous and not differentiable are α and β, then α + β is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 7,
+      "sections": {
+        "name": "Mathematics"
+      },
+      "subsections": {
+        "name": "Section B"
+      },
+      "question_options": [],
+      "figure_url": []
+    },
+    {
+      "id": 3016,
+      "number": 8,
+      "type": "mcq",
+      "text": "If y = tan⁻¹((3cos x - 4sin x)/(4cos x + 3sin x)) + 2 tan⁻¹(x / (1 + √(1 - x²))), then dy/dx at x = √3/2 is equal to:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 8,
+      "sections": {
+        "name": "Mathematics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "3",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "-1",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "1",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "2",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 3020,
+      "number": 9,
+      "type": "mcq",
+      "text": "Let y = y(x) be solution of dy/dx = (1 + x + x²)(1 - y + y²), y(0) = 1/2. Then (2y(1) - 1) is equal to:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 9,
+      "sections": {
+        "name": "Mathematics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "√3 tan(11√3 / 6)",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "(√3/2) tan(11√3 / 12)",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "√3 tan(11√3 / 12)",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "(√3/2) tan(11√3 / 6)",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 3025,
+      "number": 10,
+      "type": "numerical",
+      "text": "The number of points in (-π, π) at which f(x) = max{6x, 2 + 3x²} + |x - 1| |cos(x² - 1/4)| is not differentiable is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 10,
+      "sections": {
+        "name": "Mathematics"
+      },
+      "subsections": {
+        "name": "Section B"
+      },
+      "question_options": [],
+      "figure_url": []
+    },
+    {
+      "id": 6019,
+      "number": 11,
+      "type": "mcq",
+      "text": "Let f : [1, ∞) → ℝ be differentiable function defined as f(x) = ∫₁ˣ f(t) dt + (1 - x)(log_e x - 1) + e. Then f(f(1)) is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 11,
+      "sections": {
+        "name": "Mathematics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "1 + e^e",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "1 + e",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "1 + e + e^e",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "1 + 2e",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 6020,
+      "number": 12,
+      "type": "mcq",
+      "text": "Let f(x) and g(x) be twice differentiable functions satisfying f''(x) = g''(x) for all x ∈ ℝ, f'(1) = 2g'(1) = 4 and g(2) = 3f(2) = 9. Then f(25) - g(25) is equal to:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 12,
+      "sections": {
+        "name": "Mathematics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "20",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "40",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "-20",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "-40",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 5019,
+      "number": 13,
+      "type": "mcq",
+      "text": "Let f : ℝ → ℝ be a differentiable function such that f((x + y)/3) = (f(x) + f(y))/3 for all x, y ∈ ℝ, and f'(0) = 3. Then the minimum value of g(x) = 3 + e^{x f(x)} is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 13,
+      "sections": {
+        "name": "Mathematics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "3((e + 1)/e)",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "3((e - 1)/e)",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "(3 - e)/e",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "3e",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 8018,
+      "number": 14,
+      "type": "mcq",
+      "text": "Let f : ℝ → ℝ be such that f(xy) = f(x)f(y), for all x, y ∈ ℝ and f(0) ≠ 0. Let g : [1, ∞) → ℝ be a differentiable function such that x² g(x) = ∫₁ˣ (t² f(t) - t g(t)) dt. Then g(2) is equal to:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 14,
+      "sections": {
+        "name": "Mathematics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "13 / 8",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "11 / 16",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "15 / 32",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "17 / 64",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 9020,
+      "number": 15,
+      "type": "mcq",
+      "text": "Let x² / f(a² + 7a + 3) + y² / f(3a + 15) = 1 represent an ellipse with major axis along y-axis, where f is a strictly decreasing positive function on ℝ. If the set of all possible values of a is ℝ - [α, β], then α² + β² is equal to:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 15,
+      "sections": {
+        "name": "Mathematics"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "28",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "40",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "61",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "24",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    }
+  ]
+}

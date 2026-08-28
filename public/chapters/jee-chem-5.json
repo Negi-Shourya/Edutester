@@ -1,0 +1,956 @@
+{
+  "key": "jee-chem-5",
+  "title": "Equilibrium (JEE Main)",
+  "full_title": "JEE Main Chapter Test - Equilibrium",
+  "subject": "Chemistry",
+  "chapter": "Equilibrium",
+  "exam_type": "jee",
+  "is_trial": false,
+  "duration_minutes": 60,
+  "difficulty": "Hard",
+  "question_count": 25,
+  "questions": [
+    {
+      "id": 3055,
+      "number": 1,
+      "type": "mcq",
+      "text": "Equilibrium constant of A₂(g) + B₂(g) ⇌ C(g) is 2.7 × 10⁻⁵. Equilibrium constant for (1/3)A₂(g) + (1/3)B₂(g) ⇌ (1/3)C(g) is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 1,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "(2.7 × 10⁻⁵)³",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "6 × 10⁻²",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "√(2.7 × 10⁻⁵)",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "3 × 10⁻²",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 6066,
+      "number": 2,
+      "type": "mcq",
+      "text": "Statement I: CH₃-CH=O + H₂N-NH-C(=O)-NH₂ → CH₃-CH=N-NH-C(=O)-NH₂.\nStatement II: Ph-CH(OH)(OCH₃) generates Ph-CH=O in dil acid.",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 2,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Both Statement I and Statement II are true",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Both Statement I and Statement II are false",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Statement I is true but Statement II is false",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Statement I is false but Statement II is true",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 5074,
+      "number": 3,
+      "type": "numerical",
+      "text": "For A(g) ⇌ B(g) + C(g), pressure equilibrium constants log₁₀ K_p vs 1/T give slope ΔH°/R. Magnitude of ΔH°/R calculated from table is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 3,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section B"
+      },
+      "question_options": [],
+      "figure_url": []
+    },
+    {
+      "id": 8066,
+      "number": 4,
+      "type": "mcq",
+      "text": "Ph-CH₂-O-Ph + HI → Product.\nStatement I: Product is mixture of benzyl alcohol and iodobenzene.\nStatement II: -O-CH₂- bond is cleaved.",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 4,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Both Statement I and Statement II are true",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Both Statement I and Statement II are false",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Statement I is true but Statement II is false",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Statement I is false but Statement II is true",
+          "figure_url": null
+        }
+      ],
+      "figure_url": [
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/2026-04-06-evening/2026-04-06_evening_Q66.jpeg"
+      ]
+    },
+    {
+      "id": 8056,
+      "number": 5,
+      "type": "mcq",
+      "text": "Concentrated weak electrolyte A_x B_y conc c, dissociation constant K. Degree of dissociation α is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 5,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "[K × c^{x+y-1} x^x y^y]^{x+y}",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "( (c^{x+y-1} x^x y^y) / K )^{1/(x+y)}",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "( (c^{x+y-1} x^x y^y) / K )^{x+y}",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "( (K) / (c^{x+y-1} x^x y^y) )^{1/(x+y)}",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 9075,
+      "number": 6,
+      "type": "numerical",
+      "text": "CaCO₃(s) ⇌ CaO(s) + CO₂(g) (K_p1 = 0.08 atm), C(s) + CO₂(g) ⇌ 2CO(g) (K_p2 = 2 atm). Partial pressure of CO is α × 10⁻¹ atm. α is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 6,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section B"
+      },
+      "question_options": [],
+      "figure_url": []
+    },
+    {
+      "id": 2056,
+      "number": 7,
+      "type": "mcq",
+      "text": "20 mL 0.2 M weak acid HX (K_a = 5×10⁻⁴, pK_a = 3.3) titrated against 0.2 M NaOH. pH at (a) start and (b) when 10 mL NaOH added:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 7,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "0.7 and 2.0",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "2.0 and 3.3",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "1.1 and 2.2",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "3.0 and 2.2",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 1068,
+      "number": 8,
+      "type": "mcq",
+      "text": "Consider the three aromatic molecules (P, Q and R). The correct order regarding the reactivity of these compounds with Ph-N=N⁺ Cl⁻ under optimum slightly acidic medium is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 8,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "P > Q > R",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "R > P > Q",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "R > Q > P",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "P > R > Q",
+          "figure_url": null
+        }
+      ],
+      "figure_url": [
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/2026-04-02-morning/2026-04-02_morning_Q68.png"
+      ]
+    },
+    {
+      "id": 1056,
+      "number": 9,
+      "type": "mcq",
+      "text": "The solubility product constants of Ag₂CrO₄ and AgBr are 32x and 4y respectively at 298 K. The value of (molarity of Ag₂CrO₄ / molarity of AgBr) is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 9,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "2 ∛x / y",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "2 √(x/y)",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "√(x/y)",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "∛x / √y",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 4063,
+      "number": 10,
+      "type": "mcq",
+      "text": "Graph of reactant concentration vs time for reactions 1, 2, 3. Correct statement:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 10,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Order of all three reactions is same",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Rate constant of 3 is larger than 2 if order is same",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "SI unit of rate constant of 1 is s⁻¹",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Thermal decomposition of HI on gold is 2",
+          "figure_url": null
+        }
+      ],
+      "figure_url": [
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/2026-04-04-evening/2026-04-04_evening_Q63.jpeg"
+      ]
+    },
+    {
+      "id": 4067,
+      "number": 11,
+      "type": "mcq",
+      "text": "The strongest conjugate acid will result from protonation of the weakest base among:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 11,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "aniline",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "4-methoxyaniline",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "4-nitroaniline",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "p-toluidine",
+          "figure_url": null
+        }
+      ],
+      "figure_url": [
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/2026-04-04-evening/2026-04-04_evening_Q67.jpeg",
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/2026-04-04-evening/2026-04-04_evening_Q67_2.jpeg",
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/2026-04-04-evening/2026-04-04_evening_Q67_3.jpeg",
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/2026-04-04-evening/2026-04-04_evening_Q67_4.jpeg"
+      ]
+    },
+    {
+      "id": 4055,
+      "number": 12,
+      "type": "mcq",
+      "text": "20 mL acetic acid neutralized by 28.4 mL 0.1 M NaOH. Solution X prepared by mixing 20 mL acetic acid and 14.2 mL 0.1 M NaOH. pH of X is (pK_a = 4.75):",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 12,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "7.0",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "4.75",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "3.5",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "4.82",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 3061,
+      "number": 13,
+      "type": "mcq",
+      "text": "Correct statements:\nA. K₂Cr₂O₇ oxidises FeSO₄ to Fe₂(SO₄)₃ in acidic medium\nB. Na₂Cr₂O₇ used as primary standard\nC. CrO₄²⁻ and Cr₂O₇²⁻ interconvertible by varying pH\nD. Cr-O-Cr bond angle in Cr₂O₇²⁻ is 126°",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 13,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "A, B and C Only",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "A, C and D Only",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "A and C Only",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "B and D Only",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 3074,
+      "number": 14,
+      "type": "numerical",
+      "text": "pH of solution obtained by mixing 5 mL 0.1 M NH₄OH with 250 mL 0.1 M NH₄Cl is α × 10⁻². Value of α is (pK_b = 4.74):",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 14,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section B"
+      },
+      "question_options": [],
+      "figure_url": []
+    },
+    {
+      "id": 6075,
+      "number": 15,
+      "type": "numerical",
+      "text": "Half-life graph t_{1/2} vs [A]₀ is a straight line through origin with [A]₀ = 4 × 10⁻³ at t_{1/2} = 240 s. Value of x at 1.5 × 10⁻³ is _______ s:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 15,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section B"
+      },
+      "question_options": [],
+      "figure_url": [
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/2026-04-05-evening/2026-04-05_evening_Q75.jpeg"
+      ]
+    },
+    {
+      "id": 6056,
+      "number": 16,
+      "type": "mcq",
+      "text": "A(g) ⇌ B(g) + C(g) initiated with a moles A. At equilibrium remaining A is (a - x) at total pressure p. K_p expression is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 16,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "(x² / (a² + x²)) × p",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "(x² / (a² - x²)) × p",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "((a + x²) / x²) × p",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "((a² - x²) / x²) × p",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 6068,
+      "number": 17,
+      "type": "mcq",
+      "text": "Incorrect statement about tertiary structure of proteins:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 17,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "They can be fibrous or globular",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Stabilized by H-bonds, disulphide links, van der Waals",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Structure remains intact when exposed to pH changes",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Linear chain converts to secondary then folds to tertiary",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 5068,
+      "number": 18,
+      "type": "mcq",
+      "text": "Incorrect statements:\nA. Aniline stronger base than p-nitroaniline\nB. p-methoxybenzylamine synthesized by Gabriel phthalimide\nC. Br₂/NaOH on p-methoxybenzamide gives primary aromatic amine\nD. p-nitroaniline + NaNO₂/HCl then Δ dissolves in NaOH",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 18,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "A and D Only",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "A and C Only",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "B and C Only",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "A and B Only",
+          "figure_url": null
+        }
+      ],
+      "figure_url": [
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/2026-04-05-morning/2026-04-05_morning_Q68.png"
+      ]
+    },
+    {
+      "id": 5055,
+      "number": 19,
+      "type": "mcq",
+      "text": "M₃A₂ is sparingly soluble salt of molar mass y and solubility x g/L. Ratio of molar concentration of anion [A³⁻] to K_sp is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 19,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "(1/54) (y⁴ / x⁴)",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "y⁵ / (108 x⁴)",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "108 (x⁵ / y⁵)",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "(1/108) (y⁴ / x⁴)",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 5056,
+      "number": 20,
+      "type": "mcq",
+      "text": "Arrange mixtures in increasing order of pH:\nA. 10 mL 0.2 M Ca(OH)₂ + 25 mL 0.1 M HCl\nB. 10 mL 0.01 M H₂SO₄ + 10 mL 0.01 M Ca(OH)₂\nC. 10 mL 0.1 M H₂SO₄ + 10 mL 0.1 M KOH",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 20,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "B < C < A",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "C < A < B",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "C < B < A",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "A < C < B",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 5070,
+      "number": 21,
+      "type": "mcq",
+      "text": "Statement I: Na₂Cr₂O₇ and K₂Cr₂O₇ classified as primary standards in titrimetric analysis.\nStatement II: Phenolphthalein is weak base, dissociates in acidic medium.",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 21,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Both Statement I and Statement II are true",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Both Statement I and Statement II are false",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Statement I is true but Statement II is false",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Statement I is false but Statement II is true",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 7058,
+      "number": 22,
+      "type": "mcq",
+      "text": "Given Λ_m° for BaCl₂ (x₁), H₂SO₄ (x₂), HCl (x₃). K_sp of BaSO₄ with conductivity x S cm⁻¹ is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 22,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "10⁶ x² / [α² (x₁ + x₂ - 2x₃)²]",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "x² / (x₁ + x₂ - 2x₃)²",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "α² (x₁ + x₂ - 2x₃)² / (10⁶ x²)",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "x² / (x₁ + x₂ + 2x₃)²",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 7057,
+      "number": 23,
+      "type": "mcq",
+      "text": "1 mole each of He and A(g) in 10 L flask at 400 K. A(g) ⇌ B(g), K_c = 4.0. Partial pressures of He and B(g) at equilibrium are:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 23,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "3.28, 2.624",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "2.624, 3.28",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "3.28, 0.656",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "0.656, 6.56",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 7074,
+      "number": 24,
+      "type": "numerical",
+      "text": "Sucrose 1st order hydrolysis t_{1/2} = 3 hours. Percentage of sucrose remaining after 6 hours is _______ %:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 24,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section B"
+      },
+      "question_options": [],
+      "figure_url": []
+    },
+    {
+      "id": 9057,
+      "number": 25,
+      "type": "mcq",
+      "text": "Statement I: When E_a = 12.6 kcal/mol, room temp rate constant doubles for 10 °C increase.\nStatement II: For 1st order reaction t_{1/2} vs [A]₀ graph is a straight line through origin.",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 25,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Both Statement I and Statement II are true",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Both Statement I and Statement II are false",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "Statement I is true but Statement II is false",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Statement I is false but Statement II is true",
+          "figure_url": null
+        }
+      ],
+      "figure_url": [
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/2026-04-08-evening/2026-04-08_evening_Q57.jpeg"
+      ]
+    }
+  ]
+}

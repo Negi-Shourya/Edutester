@@ -1,0 +1,609 @@
+{
+  "key": "jee-chem-8",
+  "title": "Aldehydes, Ketones & Carboxylic Acids (JEE Main)",
+  "full_title": "JEE Main Chapter Test - Aldehydes, Ketones & Carboxylic Acids",
+  "subject": "Chemistry",
+  "chapter": "Carbonyl Compounds",
+  "exam_type": "jee",
+  "is_trial": false,
+  "duration_minutes": 50,
+  "difficulty": "Medium",
+  "question_count": 15,
+  "questions": [
+    {
+      "id": 1067,
+      "number": 1,
+      "type": "mcq",
+      "text": "Match List-I (Mixture of Compounds) with List-II (Reagent used to distinguish):\nA. Diethyl amine + Ethyl amine  I. Bromine water\nB. Acetaldehyde + Acetone  II. CHCl₃ + KOH, Δ\nC. Ethanol + Phenol  III. Neutral FeCl₃\nD. Benzoic acid + Cinnamic acid  IV. Ammonical silver nitrate",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 1,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "A-IV, B-II, C-I, D-III",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "A-IV, B-II, C-III, D-I",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "A-II, B-IV, C-I, D-III",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "A-II, B-IV, C-III, D-I",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 4068,
+      "number": 2,
+      "type": "mcq",
+      "text": "A D-aldotetrose on oxidation with conc. HNO₃ results in optically inactive dicarboxylic acid (meso-tartaric acid). Its structure is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 2,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "Structure (1)",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "Structure (2)",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "D-Erythrose (Structure 3)",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "Structure (4)",
+          "figure_url": null
+        }
+      ],
+      "figure_url": [
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/2026-04-04-evening/2026-04-04_evening_Q68.jpeg",
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/2026-04-04-evening/2026-04-04_evening_Q68_2.jpeg",
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/2026-04-04-evening/2026-04-04_evening_Q68_3.jpeg",
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/2026-04-04-evening/2026-04-04_evening_Q68_4.jpeg"
+      ]
+    },
+    {
+      "id": 4070,
+      "number": 3,
+      "type": "mcq",
+      "text": "Match List-I (Compound) with List-II (Test):\nA. Cyclohexanol  I. Hinsberg's reagent test\nB. Cyclohexylamine  II. Phthalein dye test\nC. Cyclohexanecarbaldehyde  III. Lucas test\nD. Phenol  IV. Tollen's test",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 3,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "A-III, B-I, C-IV, D-II",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "A-III, B-IV, C-I, D-II",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "A-I, B-III, C-II, D-IV",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "A-I, B-II, C-III, D-IV",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 5061,
+      "number": 4,
+      "type": "mcq",
+      "text": "Correct statements about metal carbonyls:\nA. Possess both σ and π character\nB. Synergic bonding weakens M-C bond\nC. M-C σ bond formed by donation of lone pair from C into vacant metal orbital\nD. M-C π bond formed by donation from filled metal d-orbital to vacant π* of CO",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 4,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "A and B Only",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "A, C and D Only",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "B and C Only",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "A and D Only",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 9072,
+      "number": 5,
+      "type": "numerical",
+      "text": "Benzene + CO/HCl/CuCl → x (benzaldehyde). Benzene + acetyl chloride/AlCl₃ → y (acetophenone). Heating x and y with alkali → z (chalcone). Total π electrons in z is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 5,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section B"
+      },
+      "question_options": [],
+      "figure_url": []
+    },
+    {
+      "id": 2067,
+      "number": 6,
+      "type": "mcq",
+      "text": "Molecule X hydrolysed under mild acidic condition produces Y and Z. Correct statements:\nA. Y and Z have same molar mass\nB. Y and Z distinguished by NaHCO₃\nC. Y and Z react with HCN at same rate\nD. Y and Z undergo addition with 2,4-DNP",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 6,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "A, B and C Only",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "B and C Only",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "C and D Only",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "A and D Only",
+          "figure_url": null
+        }
+      ],
+      "figure_url": [
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/2026-04-02-evening/2026-04-02_evening_Q67.jpeg"
+      ]
+    },
+    {
+      "id": 2068,
+      "number": 7,
+      "type": "mcq",
+      "text": "Reaction sequence starting from 1-ethyl-4-nitrobenzene: (i) Br₂/AlBr₃ → A; (ii) Sn/HCl → B; (iii) NaNO₂/HCl → C; (iv) C₂H₅OH → D; (v) KMnO₄/KOH, H₃O⁺ → E. Compounds A and E are:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 7,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "A = 2-nitro-4-ethylbromobenzene, E = 3-bromobenzoic acid",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "A = 4-ethyl-3-nitrobromobenzene, E = 2-bromo-4-ethylbenzoic acid",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "A = 4-ethyl-2-nitrobromobenzene, E = 4-bromobenzoic acid",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "A = 2-bromo-4-ethylnitrobenzene, E = 3-bromo-4-ethylbenzoic acid",
+          "figure_url": null
+        }
+      ],
+      "figure_url": [
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/2026-04-02-evening/2026-04-02_evening_Q68.jpeg",
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/2026-04-02-evening/2026-04-02_evening_Q68_2.jpeg",
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/2026-04-02-evening/2026-04-02_evening_Q68_3.jpeg",
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/2026-04-02-evening/2026-04-02_evening_Q68_4.jpeg",
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/2026-04-02-evening/2026-04-02_evening_Q68_5.jpeg"
+      ]
+    },
+    {
+      "id": 2075,
+      "number": 8,
+      "type": "numerical",
+      "text": "Reaction sequence starting from 4-methyl-nitrobenzene gives product P. 1.0 g of P subjected to Carius analysis with AgNO₃ produces AgBr precipitate mass in g (nearest integer):",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 8,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section B"
+      },
+      "question_options": [],
+      "figure_url": [
+        "https://gvsgromfsqvywawauzfi.supabase.co/storage/v1/object/public/question-images/2026-04-02-evening/2026-04-02_evening_Q75.jpeg"
+      ]
+    },
+    {
+      "id": 2051,
+      "number": 9,
+      "type": "mcq",
+      "text": "The ratio of mass percentage (w/w) of C : H in a hydrocarbon is 12 : 1. It has two carbon atoms. The weight in g of CO₂ formed when 3.38 g of this hydrocarbon is burnt is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 9,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "5.68 g",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "11.44 g",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "22.74 g",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "17.05 g",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 2052,
+      "number": 10,
+      "type": "mcq",
+      "text": "First and second ionization constants of weak dibasic acid H₂A are 8.1 × 10⁻⁸ and 1.0 × 10⁻¹³ respectively. 0.1 mol H₂A dissolved in 1 L of 0.1 M HCl. Concentration of HA⁻ in resultant solution is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 10,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "0.1 M",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "9.53 × 10⁻⁶ M",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "8.1 × 10⁻⁸ M",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "1.0 × 10⁻¹³ M",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 2053,
+      "number": 11,
+      "type": "mcq",
+      "text": "SF₄ is isostructural with:\nA. BrF₄⁻\nB. CH₄\nC. IF₄⁺\nD. XeF₄\nE. XeO₂F₂",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 11,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "C Only",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "C and E Only",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "A and D Only",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "B and E Only",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 2054,
+      "number": 12,
+      "type": "mcq",
+      "text": "Gas A undergoes change X to Y: q = 10 J, w = 18 J. Gas brought back to X by process where 6 J heat evolved. In reverse process Y to X, work done is:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 12,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "18 J of work done by gas A",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "2 J of work done by gas A",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "12 J of work done on gas A",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "14 J of work done on gas A by surrounding",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 2055,
+      "number": 13,
+      "type": "mcq",
+      "text": "Solution A: 1 g protein (50000 g/mol) in 0.5 L water at 300 K (pressure x). Solution B: 2 g protein in 1 L (pressure y). Mixture pressure z. Values of x, y, z respectively are:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 13,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "9.96×10⁻⁴; 9.96×10⁻⁴; 9.96×10⁻⁴ bar",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "9.96×10⁻⁴; 9.96×10⁻⁴; 19.92×10⁻⁴ bar",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "4.98×10⁻⁴; 4.98×10⁻⁴; 9.96×10⁻⁴ bar",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "4.98×10⁻⁴; 4.98×10⁻⁴; 4.98×10⁻⁴ bar",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 2056,
+      "number": 14,
+      "type": "mcq",
+      "text": "20 mL 0.2 M weak acid HX (K_a = 5×10⁻⁴, pK_a = 3.3) titrated against 0.2 M NaOH. pH at (a) start and (b) when 10 mL NaOH added:",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 14,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "0.7 and 2.0",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "2.0 and 3.3",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "1.1 and 2.2",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "3.0 and 2.2",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    },
+    {
+      "id": 2057,
+      "number": 15,
+      "type": "mcq",
+      "text": "For aX → bY, rate constant at 30°C is 1×10⁻³ L mol⁻¹ s⁻¹. Statements:\nA. 4x conc ⇒ 16x rate\nB. Second order reaction\nC. t₁/₂ independent of conc\nD. N₂O₅ decomposition example\nE. ln[R₀]/[R] vs t valid",
+      "marks": 4,
+      "negative_marks": -1,
+      "position": 15,
+      "sections": {
+        "name": "Chemistry"
+      },
+      "subsections": {
+        "name": "Section A"
+      },
+      "question_options": [
+        {
+          "position": 1,
+          "label": "A",
+          "text": "A and B Only",
+          "figure_url": null
+        },
+        {
+          "position": 2,
+          "label": "B",
+          "text": "A, B and C Only",
+          "figure_url": null
+        },
+        {
+          "position": 3,
+          "label": "C",
+          "text": "A, B, D and E Only",
+          "figure_url": null
+        },
+        {
+          "position": 4,
+          "label": "D",
+          "text": "C and D Only",
+          "figure_url": null
+        }
+      ],
+      "figure_url": []
+    }
+  ]
+}
