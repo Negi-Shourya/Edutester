@@ -13,7 +13,7 @@ import fitz
 SRC = sys.argv[1]
 OUT = sys.argv[2]
 
-FILENAME_RE = re.compile(r"JEE Main (\d{4}) (\d{2}) (\w+) (Morning|Evening) Shift Questions\.pdf$")
+FILENAME_RE = re.compile(r"JEE Main (\d{4}) (\d{2}) (\w+) (Morning|Evening) Shift Questions\.pdf$|jee (\d{2}) (\w+) s([12]) (\d{4})\.pdf$", re.IGNORECASE)
 MARKER_RE = re.compile(r"^Q(\d+)\.$")
 
 MIN_EDGE = 30  # skip tiny images (logo pixels, artifacts)
@@ -23,10 +23,15 @@ def parse_paper(fname):
     m = FILENAME_RE.search(fname)
     if not m:
         return None
-    year, day, month_name, shift = m.group(1), m.group(2), m.group(3), m.group(4)
+    if m.group(1):  # JEE Main YYYY DD Month Shift pattern
+        year, day, month_name, shift = m.group(1), m.group(2), m.group(3), m.group(4)
+    else:  # jee DD mon sN YYYY pattern
+        day, month_name, shift_num, year = m.group(5), m.group(6), m.group(7), m.group(8)
+        shift = "Morning" if shift_num == "1" else "Evening"
     month = {"January": 1, "February": 2, "March": 3, "April": 4, "May": 5, "June": 6,
              "July": 7, "August": 8, "September": 9, "October": 10, "November": 11,
-             "December": 12}[month_name]
+             "December": 12, "jan": 1, "feb": 2, "mar": 3, "apr": 4, "may": 5, "jun": 6,
+             "jul": 7, "aug": 8, "sep": 9, "oct": 10, "nov": 11, "dec": 12}[month_name.lower()]
     date = f"{year}-{month:02d}-{int(day):02d}"
     return f"{date}_{shift.lower()}", f"{date}-{shift.lower()}"
 

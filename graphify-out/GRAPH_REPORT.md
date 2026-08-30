@@ -1,65 +1,72 @@
-# Graph Report - Edutester  (2026-08-28)
+# Graph Report - Edutester  (2026-08-29)
 
 ## Corpus Check
-- 542 files · ~2,800,060 words
+- 564 files · ~2,568,210 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 3252 nodes · 2616 edges · 1573 communities (240 shown, 1333 thin omitted)
+- 3303 nodes · 2678 edges · 1574 communities (241 shown, 1333 thin omitted)
 - Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 16 edges (avg confidence: 0.92)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `1c9a6cc7`
+- Built from commit: `71c97a69`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
 ## Community Hubs (Navigation)
-- extract_neet_2020.py
-- extract_neet_2021.py
-- extract_neet_2022.py
-- extract_neet_2024.py
-- extract_neet_2025.py
-- NtaQuestionPanel.tsx
-- Dashboard.tsx
+- Test & Examination Pipeline 0
+- Test & Examination Pipeline 1
+- Test & Examination Pipeline 2
+- Test & Examination Pipeline 3
+- Test & Examination Pipeline 4
 - extract_neet_2023.py
-- razorpay-create-order/index.ts
 - mathText.ts
-- build_chapter_tests.py
-- App.tsx
-- compilerOptions
-- seed-neet-2016.mjs
-- Match Table Normalization Scripts
-- compilerOptions
-- compilerOptions
+- razorpay-create-order/index.ts
 - ChapterTests.tsx
-- types/index.ts
-- dependencies
+- Dashboard.tsx
+- attemptsDb.ts
+- TestInterface.tsx
+- src (12)
+- useAuth
+- NtaQuestionPanel.tsx
+- fix_match_list_questions.py
+- compilerOptions
+- compilerOptions
+- extract_jee_paper.py
+- Mathematical Rendering 19
 - devDependencies
-- reclip_diagrams.py
-- replace-neet-2023-images.mjs
+- Test & Examination Pipeline 21
+- Test & Examination Pipeline 22
+- Pricing.tsx
+- questions.ts
 - add-neet-2021-images.mjs
 - reclip_diagrams_2023.py
 - remove-neet-2021-deleted-syllabus.mjs
-- NEET Exam Processing
-- NEET Exam Processing
-- NEET Exam Processing
-- NEET Exam Processing
+- Context
+- assemble-neet-2022.py
+- _assemble-neet-2026.mjs
+- _assemble-reneet-2026.mjs
+- replace-neet-2022-images.mjs
 - PaperTests.tsx
 - score-attempt/index.ts
 - extract_neet.py
 - fix-neet-2022-q42-q43-options.mjs
+- seed-neet-2016.mjs
+- seed-neet-2017.mjs
+- seed-neet-2018.mjs
+- seed-neet-2019.mjs
 - seed-neet-2023.mjs
 - seed-neet-2024.mjs
 - seed-neet-2025.mjs
-- auth-context.ts
+- Admin.tsx
+- Profile.tsx
 - NEET Past Year Papers
 - patch-neet-2021-biology.mjs
 - patch-neet-2023-chem.mjs
 - seed-neet-2020.mjs
 - seed-neet-2026.mjs
 - seed-reneet-2026.mjs
-- TestInterface.tsx
 - apply-neet-2024-images.mjs
 - assemble-neet-2022.mjs
 - patch-neet-2021-chemistry.mjs
@@ -69,10 +76,12 @@
 - preview_neet_2023_diagrams.py
 - restore-neet-2022-originals.mjs
 - seed-neet.mjs
+- NtaResultScreen.tsx
+- auth-context.ts
 - cleanup_neet_2025_v2.py
 - remove-neet-deleted-syllabus.mjs
 - route-test.mjs
-- questions.ts
+- seed-jee-paper.mjs
 - build-paper-json.mjs
 - _check-neet-2023-storage.mjs
 - patch-neet-2025-images.mjs
@@ -108,25 +117,28 @@
 - fix-neet-2025-subscripts.mjs
 - _investigate.mjs
 - patch-neet-2021-q12.mjs
+- refine_neet_2018.py
 - remove-neet.mjs
 - upload-images.mjs
-- PageTransition.tsx
-- CONTEXT.md
+- App.tsx
 - opencode.json
 - package.json
 - check-2024-db.mjs
 - _dump-neet-2023-bio-keys.mjs
 - _dump-neet-2023-figures.mjs
 - _dump-neet-2023-keys.mjs
+- extract_neet_2018.py
+- extract_neet_2019.py
 - fix-neet-2022-q30-options.mjs
 - _match_s1.py
 - recover2.py
 - _scan-neet-2021.mjs
 - deno-shim.d.ts
 - reneet-2026/PROGRESS.md
-- PROGRESS.md
+- build_chapter_tests.py
 - _dump-neet-2021-physics.mjs
 - _fix_q40.py
+- refine_neet_2019.py
 - PaletteSignature.tsx
 - ABOUT.md
 - fix_match_tables.py
@@ -137,6 +149,10 @@
 - _check-db.mjs
 - cell_gray
 - katex-2022.py
+- _render-check-2016.mts
+- _render-check-2017.mts
+- _render-check-2018.mts
+- _run_render_check_2016.mjs
 - jeeSessions.ts
 - tsconfig.json
 - feedback-issue-template.md
@@ -179,7 +195,7 @@
 - supabase-postgres-best-practices/SKILL.md
 - skill-feedback.md
 - supabase/SKILL.md
-- Pricing.tsx
+- @types/node
 - vite
 - Diagram: glyph_f0ce
 - Diagram: glyphs_all
@@ -1456,30 +1472,15 @@
 - Diagram: hero
 - Diagram: react
 - Diagram: vite
-- attemptStorage.ts
-- seed-neet-2018.mjs
-- seed-neet-2019.mjs
-- LandingPage.tsx
-- attemptsDb.ts
-- refine_neet_2018.py
-- extract_neet_2018.py
-- extract_neet_2019.py
-- seed-neet-2017.mjs
-- refine_neet_2019.py
-- _render-check-2018.mts
-- Profile.tsx
-- @types/node
-- _render-check-2016.mts
-- _render-check-2017.mts
-- _run_render_check_2016.mjs
+- Progress
 
 ## God Nodes (most connected - your core abstractions)
 1. `react` - 33 edges
 2. `useAuth()` - 29 edges
 3. `main()` - 24 edges
 4. `main()` - 24 edges
-5. `useSubscriptionAccess()` - 20 edges
-6. `tokenizeMath()` - 18 edges
+5. `tokenizeMath()` - 20 edges
+6. `useSubscriptionAccess()` - 20 edges
 7. `compilerOptions` - 18 edges
 8. `main()` - 17 edges
 9. `Question` - 17 edges
@@ -1500,89 +1501,85 @@
 ## Import Cycles
 - None detected.
 
-## Hyperedges (group relationships)
-- **NEET Extraction and Seeding Pipeline** — context_neet_exam_pipeline [INFERRED 0.95]
-- **NTA Exam Simulation Flow** — src_pages_testinterface_testinterface, src_components_vectortext_vectortext [INFERRED 0.95]
+## Communities (1574 total, 1333 thin omitted)
 
-## Communities (1573 total, 1333 thin omitted)
-
-### Community 0 - "extract_neet_2020.py"
+### Community 0 - "Test & Examination Pipeline 0"
 Cohesion: 0.07
 Nodes (60): Document, Pixmap, Art, Atom, atomize(), attach_hats(), Bar, _bridged() (+52 more)
 
-### Community 1 - "extract_neet_2021.py"
+### Community 1 - "Test & Examination Pipeline 1"
 Cohesion: 0.06
 Nodes (36): build_lines(), clean_char(), col_of_vline(), collect_chars(), detect_fractions(), fraction_bars(), get_answer_key(), is_garbled_text() (+28 more)
 
-### Community 2 - "extract_neet_2022.py"
+### Community 2 - "Test & Examination Pipeline 2"
 Cohesion: 0.08
 Nodes (39): main(), parse_questions(), band_ocr(), main(), main(), ocr_region(), OCR an OCR-coord rect; returns list of (box, text)., main() (+31 more)
 
-### Community 3 - "extract_neet_2024.py"
+### Community 3 - "Test & Examination Pipeline 3"
 Cohesion: 0.07
 Nodes (42): attrib_qn(), build_lines(), clean_char(), cluster_free_of_text(), col_of_vline(), collect_chars(), collect_raster_placements(), detect_fractions() (+34 more)
 
-### Community 4 - "extract_neet_2025.py"
+### Community 4 - "Test & Examination Pipeline 4"
 Cohesion: 0.07
 Nodes (42): attrib_qn(), build_lines(), clean_char(), cluster_free_of_text(), col_of_vline(), collect_chars(), collect_raster_placements(), detect_fractions() (+34 more)
 
-### Community 5 - "NtaQuestionPanel.tsx"
-Cohesion: 0.18
-Nodes (10): FormattedQuestionText(), FormattedQuestionTextProps, MatchItem, NtaQuestionPaperModal(), NtaQuestionPaperModalProps, QuestionDiagram(), QuestionDiagramProps, renderKatex() (+2 more)
-
-### Community 6 - "Dashboard.tsx"
-Cohesion: 0.12
-Nodes (24): AttemptRow, backfillLocalAttempts(), analyzeOverall(), analyzeTest(), buildRecommendations(), computeSubjectTrends(), OverallAnalysis, QuestionMeta (+16 more)
-
-### Community 7 - "extract_neet_2023.py"
+### Community 5 - "extract_neet_2023.py"
 Cohesion: 0.07
 Nodes (29): build_lines(), clean_char(), collect_chars(), detect_fractions(), drawing_clusters(), fraction_bars(), has_bad_chars(), is_garbled_text() (+21 more)
 
-### Community 8 - "razorpay-create-order/index.ts"
+### Community 6 - "mathText.ts"
+Cohesion: 0.07
+Nodes (29): files, render(), render(), render(), data, render(), render(), render() (+21 more)
+
+### Community 7 - "razorpay-create-order/index.ts"
 Cohesion: 0.08
 Nodes (29): corsHeaders, RATE_LIMIT, supabaseAdmin, supabaseAnon, corsHeaders, RATE_LIMIT, razorpay, supabaseAdmin (+21 more)
 
-### Community 9 - "mathText.ts"
-Cohesion: 0.08
-Nodes (27): files, render(), render(), render(), render(), render(), want, env (+19 more)
+### Community 8 - "ChapterTests.tsx"
+Cohesion: 0.17
+Nodes (15): difficultyColors, Props, TestCard(), ChapterTestData, chapterTests, isChapterTrial(), jeeChapterTests, neetChapterTests (+7 more)
 
-### Community 10 - "build_chapter_tests.py"
-Cohesion: 0.83
-Nodes (3): build_chapter_tests(), load_all_questions(), match_question_score()
+### Community 9 - "Dashboard.tsx"
+Cohesion: 0.12
+Nodes (23): AttemptRow, analyzeOverall(), analyzeTest(), buildRecommendations(), computeSubjectTrends(), OverallAnalysis, QuestionMeta, questionMetaCache (+15 more)
 
-### Community 11 - "App.tsx"
-Cohesion: 0.20
-Nodes (15): react, App(), Footer(), Navbar(), ProtectedRoute(), RootGate(), ScrollToTop(), useAuth() (+7 more)
+### Community 10 - "attemptsDb.ts"
+Cohesion: 0.26
+Nodes (15): backfillLocalAttempts(), runBackfill(), submitAttempt(), SubmitAttemptPayload, SubmitAttemptResult, attemptKey(), clearAttempt(), findInProgressAttempt() (+7 more)
 
-### Community 12 - "compilerOptions"
+### Community 11 - "TestInterface.tsx"
+Cohesion: 0.10
+Nodes (25): NtaHeader(), NtaHeaderProps, NtaInstructionsModal(), NtaInstructionsModalProps, NtaQuestionPalette(), NtaQuestionPaletteProps, NtaQuestionPanel(), NtaQuestionPanelProps (+17 more)
+
+### Community 12 - "src (12)"
 Cohesion: 0.08
 Nodes (23): src, vite/client, compilerOptions, allowArbitraryExtensions, allowImportingTsExtensions, erasableSyntaxOnly, jsx, lib (+15 more)
 
-### Community 13 - "seed-neet-2016.mjs"
-Cohesion: 0.18
-Nodes (12): BUST, __dirname, figureUrls(), FORCE, key, LABEL_TO_LETTER, OUT_DIR, sectionName() (+4 more)
+### Community 13 - "useAuth"
+Cohesion: 0.31
+Nodes (9): Footer(), Navbar(), RootGate(), useAuth(), DEFAULT_PAPER_KEY, FREE_TRIAL_TEST_ID, useSubscriptionAccess(), LandingPage() (+1 more)
 
-### Community 14 - "Match Table Normalization Scripts"
+### Community 14 - "NtaQuestionPanel.tsx"
+Cohesion: 0.18
+Nodes (10): FormattedQuestionText(), FormattedQuestionTextProps, MatchItem, NtaQuestionPaperModal(), NtaQuestionPaperModalProps, QuestionDiagram(), QuestionDiagramProps, renderKatex() (+2 more)
+
+### Community 15 - "fix_match_list_questions.py"
 Cohesion: 0.17
 Nodes (20): conv(), escape(), find_question_block(), flatten(), line_baseline(), line_conv_chars(), line_text(), line_xrange() (+12 more)
 
-### Community 15 - "compilerOptions"
+### Community 16 - "compilerOptions"
 Cohesion: 0.10
 Nodes (19): ES2022, ./node_modules/*, ./node_modules/@supabase/supabase-js, supabase/functions/**/*.ts, compilerOptions, allowImportingTsExtensions, lib, module (+11 more)
 
-### Community 16 - "compilerOptions"
+### Community 17 - "compilerOptions"
 Cohesion: 0.10
 Nodes (19): node, vite.config.ts, compilerOptions, allowImportingTsExtensions, erasableSyntaxOnly, lib, module, moduleDetection (+11 more)
 
-### Community 17 - "ChapterTests.tsx"
-Cohesion: 0.18
-Nodes (14): difficultyColors, Props, TestCard(), ChapterTestData, chapterTests, isChapterTrial(), jeeChapterTests, neetChapterTests (+6 more)
+### Community 18 - "extract_jee_paper.py"
+Cohesion: 0.15
+Nodes (10): build_lines(), clean_char(), collect_chars(), detect_fractions(), extract_paper(), fraction_bars(), LChar, line_markup() (+2 more)
 
-### Community 18 - "types/index.ts"
-Cohesion: 0.18
-Nodes (15): formatDateTime(), formatINR(), isAdmin(), Admin(), Counts, headCount(), Tab, tabs (+7 more)
-
-### Community 19 - "dependencies"
+### Community 19 - "Mathematical Rendering 19"
 Cohesion: 0.12
 Nodes (17): katex, lucide-react, motion, dependencies, katex, lucide-react, motion, react (+9 more)
 
@@ -1590,437 +1587,441 @@ Nodes (17): katex, lucide-react, motion, dependencies, katex, lucide-react, moti
 Cohesion: 0.12
 Nodes (17): oxlint, devDependencies, oxlint, tailwindcss, @tailwindcss/vite, @types/react, @types/react-dom, typescript (+9 more)
 
-### Community 21 - "reclip_diagrams.py"
+### Community 21 - "Test & Examination Pipeline 21"
 Cohesion: 0.18
 Nodes (15): drawing_clusters(), find_question_on_page(), has_figure_reference(), is_answer_key_page(), is_instruction_page(), main(), page_column_split(), question_markers_on_page() (+7 more)
 
-### Community 22 - "replace-neet-2023-images.mjs"
+### Community 22 - "Test & Examination Pipeline 22"
 Cohesion: 0.12
 Nodes (13): IMG_ROOT, key, letterByPos, missing, numById, opts, orphans, referenced (+5 more)
 
-### Community 23 - "add-neet-2021-images.mjs"
-Cohesion: 0.12
-Nodes (14): expected, IMG_DIR, key, letterByPos, missing, numById, opts, orphans (+6 more)
+### Community 23 - "Pricing.tsx"
+Cohesion: 0.09
+Nodes (23): ExamScreenPreview(), SAMPLE_OPTIONS, SAMPLE_TABS, FeatureCard(), Props, formatExpiry(), PricingCard(), Props (+15 more)
 
-### Community 24 - "reclip_diagrams_2023.py"
-Cohesion: 0.19
-Nodes (15): collect_chars(), drawing_clusters(), expand_cluster_with_text(), is_answer_key_page(), is_instruction_page(), main(), question_markers(), Expand a drawing cluster to include nearby text characters. This captures… (+7 more)
-
-### Community 25 - "remove-neet-2021-deleted-syllabus.mjs"
-Cohesion: 0.12
-Nodes (12): counters, data, DRY_RUN, file, kept, key, REMOVALS, removeSet (+4 more)
-
-### Community 26 - "NEET Exam Processing"
-Cohesion: 0.23
-Nodes (14): align_options(), clean_option_text(), dice(), format_match_text(), main(), pairing(), norm(), Order-aware similarity: exact pairing strings for match-list options; max(Dice… (+6 more)
-
-### Community 27 - "NEET Exam Processing"
-Cohesion: 0.14
-Nodes (14): DIR, __dirname, dropped, dupes, keyRaw, META, missing, multi (+6 more)
-
-### Community 28 - "NEET Exam Processing"
-Cohesion: 0.14
-Nodes (14): DIR, __dirname, dropped, dupes, keyRaw, META, missing, multi (+6 more)
-
-### Community 29 - "NEET Exam Processing"
-Cohesion: 0.13
-Nodes (11): IMG_DIR, key, letterByPos, missing, numById, opts, orphans, referenced (+3 more)
-
-### Community 30 - "PaperTests.tsx"
-Cohesion: 0.18
-Nodes (13): PaywallModal(), Props, getPapers(), getAttempts(), comingSoon, formatDuration(), groupByDate(), jan2026Papers (+5 more)
-
-### Community 31 - "score-attempt/index.ts"
-Cohesion: 0.13
-Nodes (9): AnswerInput, AnswerKey, answerKeyCache, corsHeaders, paperCache, ScoredQuestion, ScoringPaper, supabaseAdmin (+1 more)
-
-### Community 32 - "extract_neet.py"
-Cohesion: 0.20
-Nodes (13): collect_placements(), main(), normalize_text(), page_furniture_xrefs(), question_markers(), List of (page_no, xref, rect) in document order, deduped, excluding page-…, Render the on-page region of an image placement. Aakash figures are encoded as…, Some Aakash PDFs draw option content (and even question stems) as vector… (+5 more)
-
-### Community 33 - "fix-neet-2022-q42-q43-options.mjs"
-Cohesion: 0.14
-Nodes (12): blank, CLEAR_OPTIONS, CLEAR_STEMS, have, idByNum, key, leftovers, numById (+4 more)
-
-### Community 34 - "seed-neet-2023.mjs"
-Cohesion: 0.18
-Nodes (12): __dirname, figureUrls(), __filename, FORCE, key, LABEL_TO_LETTER, OUT_DIR, sectionName() (+4 more)
-
-### Community 35 - "seed-neet-2024.mjs"
-Cohesion: 0.18
-Nodes (12): __dirname, figureUrls(), __filename, FORCE, key, LABEL_TO_LETTER, OUT_DIR, sectionName() (+4 more)
-
-### Community 36 - "seed-neet-2025.mjs"
-Cohesion: 0.18
-Nodes (12): __dirname, figureUrls(), __filename, FORCE, key, LABEL_TO_LETTER, OUT_DIR, sectionName() (+4 more)
-
-### Community 37 - "auth-context.ts"
-Cohesion: 0.23
-Nodes (11): AuthContext, AuthContextValue, AuthResult, AuthProvider(), currentStore(), isRemembered(), isRememberMe(), setRememberMe() (+3 more)
-
-### Community 38 - "NEET Past Year Papers"
-Cohesion: 0.15
-Nodes (13): NEET Past Year Papers, Paper: 2023 Neet, Paper: 2024 Neet, Paper: Neet2026, Paper: Neet 2019, Paper: neet 2021 answer key, Paper: neet 2021 question paper, Paper: neet 2022 (+5 more)
-
-### Community 39 - "patch-neet-2021-biology.mjs"
-Cohesion: 0.18
-Nodes (11): applyOptionFix(), applyStemFix(), env, json, jsonPath, keyMap, N(), numbers (+3 more)
-
-### Community 40 - "patch-neet-2023-chem.mjs"
-Cohesion: 0.15
-Nodes (11): byNum, chem, env, freshByQ, freshChem, OPTIONS_FULL, optsByQ, problems (+3 more)
-
-### Community 41 - "seed-neet-2020.mjs"
-Cohesion: 0.19
-Nodes (11): __dirname, figureUrls(), FORCE, key, LABEL_TO_LETTER, OUT_DIR, sectionName(), seed() (+3 more)
-
-### Community 42 - "seed-neet-2026.mjs"
-Cohesion: 0.19
-Nodes (11): __dirname, figureUrls(), FORCE, key, LABEL_TO_LETTER, OUT_DIR, sectionName(), seed() (+3 more)
-
-### Community 43 - "seed-reneet-2026.mjs"
-Cohesion: 0.19
-Nodes (11): __dirname, figureUrls(), FORCE, key, LABEL_TO_LETTER, OUT_DIR, sectionName(), seed() (+3 more)
-
-### Community 44 - "TestInterface.tsx"
-Cohesion: 0.13
-Nodes (16): NtaHeader(), NtaHeaderProps, NtaInstructionsModal(), NtaInstructionsModalProps, NtaQuestionPalette(), NtaQuestionPaletteProps, NtaQuestionPanel(), NtaResultScreen() (+8 more)
-
-### Community 45 - "apply-neet-2024-images.mjs"
-Cohesion: 0.17
-Nodes (10): byNum, __dirname, files, IMG_DIR, key, LETTERS, optLookup, qIds (+2 more)
-
-### Community 46 - "assemble-neet-2022.mjs"
-Cohesion: 0.20
-Nodes (10): final, FIXED_ANSWERS, map, matchS1Option(), norm(), out, rawByN, report (+2 more)
-
-### Community 47 - "patch-neet-2021-chemistry.mjs"
-Cohesion: 0.20
-Nodes (11): applyOptionFix(), applyStemFix(), env, json, jsonPath, keyMap, N(), numbers (+3 more)
-
-### Community 48 - "patch-neet-2021-physics.mjs"
-Cohesion: 0.20
-Nodes (11): applyOptionFix(), applyStemFix(), env, json, jsonPath, keyMap, N(), numbers (+3 more)
-
-### Community 49 - "patch-neet-2023-bio.mjs"
-Cohesion: 0.17
-Nodes (10): bio, byNum, env, freshBio, freshByQ, OPTIONS_FULL, optsByQ, problems (+2 more)
-
-### Community 50 - "patch-neet-2023-physics.mjs"
-Cohesion: 0.17
-Nodes (10): byNum, env, freshByQ, freshPhys, OPTIONS_FULL, optsByQ, phys, problems (+2 more)
-
-### Community 51 - "preview_neet_2023_diagrams.py"
-Cohesion: 0.26
-Nodes (11): collect_chars(), drawing_clusters(), expand_cluster_with_text(), is_answer_key_page(), is_instruction_page(), main(), Expand a drawing cluster's bounding box to include nearby text characters. This…, Render a page region to an image file. (+3 more)
-
-### Community 52 - "restore-neet-2022-originals.mjs"
-Cohesion: 0.17
-Nodes (9): blank, have, IMG_DIR, key, numById, numById2, OPT_FILES, STEM_FILES (+1 more)
-
-### Community 53 - "seed-neet.mjs"
-Cohesion: 0.24
-Nodes (10): figureUrls(), FORCE, key, LABEL_TO_LETTER, sectionName(), seedYear(), subNameSectionOf(), supabase (+2 more)
-
-### Community 54 - "cleanup_neet_2025_v2.py"
-Cohesion: 0.29
-Nodes (10): cleanup(), has_diagram_keywords(), image_is_table_for_wrong_question(), image_looks_like_ad(), is_block_image(), is_option_image(), is_stem_image(), Check if question text references a figure/diagram. (+2 more)
-
-### Community 55 - "remove-neet-deleted-syllabus.mjs"
-Cohesion: 0.20
-Nodes (7): DRY_RUN, fetchPaper(), key, REMOVALS, removeFromPaper(), RENUMBER_START, supabase
-
-### Community 56 - "route-test.mjs"
-Cohesion: 0.18
-Nodes (6): __dirname, env, jsonHeaders, root, rows, spaRoutes
-
-### Community 57 - "questions.ts"
+### Community 24 - "questions.ts"
 Cohesion: 0.19
 Nodes (16): chapterCache, fetchStaticChapter(), fetchStaticPaper(), getChapterQuestions(), getPaperQuestions(), loadChapterQuestions(), loadPaperQuestions(), mapPaper() (+8 more)
 
-### Community 58 - "build-paper-json.mjs"
+### Community 25 - "add-neet-2021-images.mjs"
+Cohesion: 0.12
+Nodes (14): expected, IMG_DIR, key, letterByPos, missing, numById, opts, orphans (+6 more)
+
+### Community 26 - "reclip_diagrams_2023.py"
+Cohesion: 0.19
+Nodes (15): collect_chars(), drawing_clusters(), expand_cluster_with_text(), is_answer_key_page(), is_instruction_page(), main(), question_markers(), Expand a drawing cluster to include nearby text characters. This captures… (+7 more)
+
+### Community 27 - "remove-neet-2021-deleted-syllabus.mjs"
+Cohesion: 0.12
+Nodes (12): counters, data, DRY_RUN, file, kept, key, REMOVALS, removeSet (+4 more)
+
+### Community 28 - "Context"
+Cohesion: 0.14
+Nodes (13): Commands, Context, Data (Supabase), Data (Supabase), JEE Main Section, Known quirks from PDF extraction, NEET Section, NTA Interface (+5 more)
+
+### Community 29 - "assemble-neet-2022.py"
+Cohesion: 0.23
+Nodes (14): align_options(), clean_option_text(), dice(), format_match_text(), main(), pairing(), norm(), Order-aware similarity: exact pairing strings for match-list options; max(Dice… (+6 more)
+
+### Community 30 - "_assemble-neet-2026.mjs"
+Cohesion: 0.14
+Nodes (14): DIR, __dirname, dropped, dupes, keyRaw, META, missing, multi (+6 more)
+
+### Community 31 - "_assemble-reneet-2026.mjs"
+Cohesion: 0.14
+Nodes (14): DIR, __dirname, dropped, dupes, keyRaw, META, missing, multi (+6 more)
+
+### Community 32 - "replace-neet-2022-images.mjs"
+Cohesion: 0.13
+Nodes (11): IMG_DIR, key, letterByPos, missing, numById, opts, orphans, referenced (+3 more)
+
+### Community 33 - "PaperTests.tsx"
+Cohesion: 0.19
+Nodes (12): PaywallModal(), Props, getPapers(), PaperSummary, comingSoon, formatDuration(), groupByDate(), PaperEntry (+4 more)
+
+### Community 34 - "score-attempt/index.ts"
+Cohesion: 0.13
+Nodes (9): AnswerInput, AnswerKey, answerKeyCache, corsHeaders, paperCache, ScoredQuestion, ScoringPaper, supabaseAdmin (+1 more)
+
+### Community 35 - "extract_neet.py"
+Cohesion: 0.20
+Nodes (13): collect_placements(), main(), normalize_text(), page_furniture_xrefs(), question_markers(), List of (page_no, xref, rect) in document order, deduped, excluding page-…, Render the on-page region of an image placement. Aakash figures are encoded as…, Some Aakash PDFs draw option content (and even question stems) as vector… (+5 more)
+
+### Community 36 - "fix-neet-2022-q42-q43-options.mjs"
+Cohesion: 0.14
+Nodes (12): blank, CLEAR_OPTIONS, CLEAR_STEMS, have, idByNum, key, leftovers, numById (+4 more)
+
+### Community 37 - "seed-neet-2016.mjs"
+Cohesion: 0.18
+Nodes (12): BUST, __dirname, figureUrls(), FORCE, key, LABEL_TO_LETTER, OUT_DIR, sectionName() (+4 more)
+
+### Community 38 - "seed-neet-2017.mjs"
+Cohesion: 0.18
+Nodes (12): BUST, __dirname, figureUrls(), FORCE, key, LABEL_TO_LETTER, OUT_DIR, sectionName() (+4 more)
+
+### Community 39 - "seed-neet-2018.mjs"
+Cohesion: 0.18
+Nodes (12): BUST, __dirname, figureUrls(), FORCE, key, LABEL_TO_LETTER, OUT_DIR, sectionName() (+4 more)
+
+### Community 40 - "seed-neet-2019.mjs"
+Cohesion: 0.18
+Nodes (12): BUST, __dirname, figureUrls(), FORCE, key, LABEL_TO_LETTER, OUT_DIR, sectionName() (+4 more)
+
+### Community 41 - "seed-neet-2023.mjs"
+Cohesion: 0.18
+Nodes (12): __dirname, figureUrls(), __filename, FORCE, key, LABEL_TO_LETTER, OUT_DIR, sectionName() (+4 more)
+
+### Community 42 - "seed-neet-2024.mjs"
+Cohesion: 0.18
+Nodes (12): __dirname, figureUrls(), __filename, FORCE, key, LABEL_TO_LETTER, OUT_DIR, sectionName() (+4 more)
+
+### Community 43 - "seed-neet-2025.mjs"
+Cohesion: 0.18
+Nodes (12): __dirname, figureUrls(), __filename, FORCE, key, LABEL_TO_LETTER, OUT_DIR, sectionName() (+4 more)
+
+### Community 44 - "Admin.tsx"
+Cohesion: 0.22
+Nodes (12): formatDateTime(), formatINR(), isAdmin(), Admin(), Counts, headCount(), Tab, tabs (+4 more)
+
+### Community 45 - "Profile.tsx"
+Cohesion: 0.24
+Nodes (13): GoogleIcon(), ExamType, getExam(), setExam(), Login(), perks, daysRemaining(), formatDate() (+5 more)
+
+### Community 46 - "NEET Past Year Papers"
+Cohesion: 0.15
+Nodes (13): NEET Past Year Papers, Paper: 2023 Neet, Paper: 2024 Neet, Paper: Neet2026, Paper: Neet 2019, Paper: neet 2021 answer key, Paper: neet 2021 question paper, Paper: neet 2022 (+5 more)
+
+### Community 47 - "patch-neet-2021-biology.mjs"
+Cohesion: 0.18
+Nodes (11): applyOptionFix(), applyStemFix(), env, json, jsonPath, keyMap, N(), numbers (+3 more)
+
+### Community 48 - "patch-neet-2023-chem.mjs"
+Cohesion: 0.15
+Nodes (11): byNum, chem, env, freshByQ, freshChem, OPTIONS_FULL, optsByQ, problems (+3 more)
+
+### Community 49 - "seed-neet-2020.mjs"
+Cohesion: 0.19
+Nodes (11): __dirname, figureUrls(), FORCE, key, LABEL_TO_LETTER, OUT_DIR, sectionName(), seed() (+3 more)
+
+### Community 50 - "seed-neet-2026.mjs"
+Cohesion: 0.19
+Nodes (11): __dirname, figureUrls(), FORCE, key, LABEL_TO_LETTER, OUT_DIR, sectionName(), seed() (+3 more)
+
+### Community 51 - "seed-reneet-2026.mjs"
+Cohesion: 0.19
+Nodes (11): __dirname, figureUrls(), FORCE, key, LABEL_TO_LETTER, OUT_DIR, sectionName(), seed() (+3 more)
+
+### Community 52 - "apply-neet-2024-images.mjs"
+Cohesion: 0.17
+Nodes (10): byNum, __dirname, files, IMG_DIR, key, LETTERS, optLookup, qIds (+2 more)
+
+### Community 53 - "assemble-neet-2022.mjs"
+Cohesion: 0.20
+Nodes (10): final, FIXED_ANSWERS, map, matchS1Option(), norm(), out, rawByN, report (+2 more)
+
+### Community 54 - "patch-neet-2021-chemistry.mjs"
+Cohesion: 0.20
+Nodes (11): applyOptionFix(), applyStemFix(), env, json, jsonPath, keyMap, N(), numbers (+3 more)
+
+### Community 55 - "patch-neet-2021-physics.mjs"
+Cohesion: 0.20
+Nodes (11): applyOptionFix(), applyStemFix(), env, json, jsonPath, keyMap, N(), numbers (+3 more)
+
+### Community 56 - "patch-neet-2023-bio.mjs"
+Cohesion: 0.17
+Nodes (10): bio, byNum, env, freshBio, freshByQ, OPTIONS_FULL, optsByQ, problems (+2 more)
+
+### Community 57 - "patch-neet-2023-physics.mjs"
+Cohesion: 0.17
+Nodes (10): byNum, env, freshByQ, freshPhys, OPTIONS_FULL, optsByQ, phys, problems (+2 more)
+
+### Community 58 - "preview_neet_2023_diagrams.py"
+Cohesion: 0.26
+Nodes (11): collect_chars(), drawing_clusters(), expand_cluster_with_text(), is_answer_key_page(), is_instruction_page(), main(), Expand a drawing cluster's bounding box to include nearby text characters. This…, Render a page region to an image file. (+3 more)
+
+### Community 59 - "restore-neet-2022-originals.mjs"
+Cohesion: 0.17
+Nodes (9): blank, have, IMG_DIR, key, numById, numById2, OPT_FILES, STEM_FILES (+1 more)
+
+### Community 60 - "seed-neet.mjs"
+Cohesion: 0.24
+Nodes (10): figureUrls(), FORCE, key, LABEL_TO_LETTER, sectionName(), seedYear(), subNameSectionOf(), supabase (+2 more)
+
+### Community 61 - "NtaResultScreen.tsx"
+Cohesion: 0.23
+Nodes (10): NtaResultScreen(), NtaResultScreenProps, SolutionCard, SolutionCardProps, STATUS_FILTERS, StatusFilter, QuestionKey, AttemptResult (+2 more)
+
+### Community 62 - "auth-context.ts"
+Cohesion: 0.14
+Nodes (18): AuthContext, AuthContextValue, AuthResult, AuthProvider(), checkoutPlan, CheckoutResult, invokeEdgeFunction(), loadRazorpayScript() (+10 more)
+
+### Community 63 - "cleanup_neet_2025_v2.py"
+Cohesion: 0.29
+Nodes (10): cleanup(), has_diagram_keywords(), image_is_table_for_wrong_question(), image_looks_like_ad(), is_block_image(), is_option_image(), is_stem_image(), Check if question text references a figure/diagram. (+2 more)
+
+### Community 64 - "remove-neet-deleted-syllabus.mjs"
+Cohesion: 0.20
+Nodes (7): DRY_RUN, fetchPaper(), key, REMOVALS, removeFromPaper(), RENUMBER_START, supabase
+
+### Community 65 - "route-test.mjs"
+Cohesion: 0.18
+Nodes (6): __dirname, env, jsonHeaders, root, rows, spaRoutes
+
+### Community 66 - "seed-jee-paper.mjs"
+Cohesion: 0.20
+Nodes (9): __dirname, FORCE, JSON_PATH, key, OUT_DIR, paperData, seed(), supabase (+1 more)
+
+### Community 67 - "build-paper-json.mjs"
 Cohesion: 0.24
 Nodes (7): assertNoAnswerData(), buildPaper(), outDir, requested, rows, sortKeysDeep(), supabase
 
-### Community 59 - "_check-neet-2023-storage.mjs"
+### Community 68 - "_check-neet-2023-storage.mjs"
 Cohesion: 0.20
 Nodes (9): env, missing, objects, orphaned, qWithFigs, referenced, sb, stored (+1 more)
 
-### Community 60 - "patch-neet-2025-images.mjs"
+### Community 69 - "patch-neet-2025-images.mjs"
 Cohesion: 0.22
 Nodes (8): DIR, __dirname, key, LETTER_TO_POS, main(), parseName(), supabase, url
 
-### Community 61 - "plugins"
+### Community 70 - "plugins"
 Cohesion: 0.22
 Nodes (8): plugins, rules, react/only-export-components, react/rules-of-hooks, $schema, oxc, typescript, warn
 
-### Community 62 - "cleanup_neet_2025.py"
+### Community 71 - "cleanup_neet_2025.py"
 Cohesion: 0.31
 Nodes (8): Path, classify_image(), cleanup(), is_artifact_by_dimensions(), question_has_figure_reference(), Check if the question text references a figure/diagram., Return 'block', 'opt', or 'raster'., Check if an image is too small to be a real diagram.
 
-### Community 63 - "cleanup-neet-2025-uncurated-images.mjs"
+### Community 72 - "cleanup-neet-2025-uncurated-images.mjs"
 Cohesion: 0.22
 Nodes (6): curated, CURATED_DIR, __dirname, key, supabase, url
 
-### Community 64 - "extract-questions.mjs"
+### Community 73 - "extract-questions.mjs"
 Cohesion: 0.22
 Nodes (5): columns, paperModuleNames, papers, questionFiles, rows
 
-### Community 65 - "_find-subs.mjs"
+### Community 74 - "_find-subs.mjs"
 Cohesion: 0.22
 Nodes (7): found, foundOpts, ids, key, qByNum, supabase, url
 
-### Community 66 - "fix-neet-2022-chem-options.mjs"
+### Community 75 - "fix-neet-2022-chem-options.mjs"
 Cohesion: 0.22
 Nodes (7): blank, chem, key, numById, numById2, supabase, TEXTS
 
-### Community 67 - "fix-neet-2024-mojibake.mjs"
+### Community 76 - "fix-neet-2024-mojibake.mjs"
 Cohesion: 0.22
 Nodes (5): FIX_MAP, key, q5, Q5_OPTIONS, supabase
 
-### Community 68 - "merge-neet-2024-biology-sections.mjs"
+### Community 77 - "merge-neet-2024-biology-sections.mjs"
 Cohesion: 0.22
 Nodes (7): biology, botany, data, JSON_PATH, key, supabase, zoology
 
-### Community 69 - "patch-neet-2024-questions.mjs"
+### Community 78 - "patch-neet-2024-questions.mjs"
 Cohesion: 0.22
 Nodes (7): byNumber, data, JSON_PATH, key, PATCH, qIdByNumber, supabase
 
-### Community 70 - "_mathText.mjs"
+### Community 79 - "_mathText.mjs"
 Cohesion: 0.46
 Nodes (7): braceDepthAt(), convertFractions(), convertMatrices(), countParens(), preprocessMath(), tokenizeMath(), tokenToLatex()
 
-### Community 71 - "scripts"
+### Community 80 - "scripts"
 Cohesion: 0.25
 Nodes (8): scripts, build, cf:preview, deploy, dev, lint, preview, typecheck:functions
 
-### Community 72 - "extract_paper_images.py"
+### Community 81 - "extract_paper_images.py"
 Cohesion: 0.39
 Nodes (7): collect_placements(), extract_image(), main(), parse_paper(), question_markers(), Return sorted [(qnumber, y0)] for the page., Return list of (page_no, xref, rect) in document order, deduped.
 
-### Community 73 - "fix-neet-2025-match-questions.mjs"
+### Community 82 - "fix-neet-2025-match-questions.mjs"
 Cohesion: 0.29
 Nodes (6): buildText(), key, main(), MATCH_QUESTIONS, supabase, url
 
-### Community 74 - "patch-neet-2021-q16-options.mjs"
+### Community 83 - "patch-neet-2021-q16-options.mjs"
 Cohesion: 0.25
 Nodes (7): env, jq, json, jsonPath, OPTIONS_NEW, OPTIONS_OLD, sb
 
-### Community 75 - "patch-neet-2021-q24.mjs"
+### Community 84 - "patch-neet-2021-q24.mjs"
 Cohesion: 0.25
 Nodes (7): env, jq, json, jsonPath, OPTIONS_NEW, OPTIONS_OLD, sb
 
-### Community 76 - "verify-paper-json.mjs"
+### Community 85 - "verify-paper-json.mjs"
 Cohesion: 0.29
 Nodes (5): canonical(), outDir, requested, sortKeysDeep(), supabase
 
-### Community 77 - "_check-2024-problems.mjs"
+### Community 86 - "_check-2024-problems.mjs"
 Cohesion: 0.29
 Nodes (6): env, ids, keyByQ, optByQ, sb, WANT
 
-### Community 78 - "_check-q8-q179.mjs"
+### Community 87 - "_check-q8-q179.mjs"
 Cohesion: 0.29
 Nodes (5): ids, key, optByQ, supabase, url
 
-### Community 79 - "_dump-candidates.mjs"
+### Community 88 - "_dump-candidates.mjs"
 Cohesion: 0.29
 Nodes (5): ids, key, optByQ, supabase, url
 
-### Community 80 - "generate-figure-url-migration.mjs"
+### Community 89 - "generate-figure-url-migration.mjs"
 Cohesion: 0.29
 Nodes (4): byPaper, lines, MONTHS, PAPER_ID
 
-### Community 81 - "_marker_test.py"
+### Community 90 - "_marker_test.py"
 Cohesion: 0.38
 Nodes (3): find_markers(), load_page_dets(), page_dets()
 
-### Community 82 - "patch-neet-2021-q40-options.mjs"
+### Community 91 - "patch-neet-2021-q40-options.mjs"
 Cohesion: 0.29
 Nodes (6): env, jq, json, jsonPath, OPTIONS_NEW, sb
 
-### Community 83 - "patch-neet-2024.py"
+### Community 92 - "patch-neet-2024.py"
 Cohesion: 0.48
 Nodes (6): _char_to_byte(), _decode_run_utf8(), fix_mojibake(), main(), parse_match_block(), _utf8_len()
 
-### Community 84 - "_check-figure-urls.mjs"
+### Community 93 - "_check-figure-urls.mjs"
 Cohesion: 0.33
 Nodes (5): broken, env, list, sb, urls
 
-### Community 85 - "_dump-neet-2023-bio.mjs"
+### Community 94 - "_dump-neet-2023-bio.mjs"
 Cohesion: 0.33
 Nodes (5): bio, env, ids, optsByQ, sb
 
-### Community 86 - "_dump-neet-2023-chem.mjs"
+### Community 95 - "_dump-neet-2023-chem.mjs"
 Cohesion: 0.33
 Nodes (5): chem, env, ids, optsByQ, sb
 
-### Community 87 - "_dump-neet-2023-physics.mjs"
+### Community 96 - "_dump-neet-2023-physics.mjs"
 Cohesion: 0.33
 Nodes (5): env, ids, optsByQ, physics, sb
 
-### Community 88 - "fix-neet-2025-q46-q148.mjs"
+### Community 97 - "fix-neet-2025-q46-q148.mjs"
 Cohesion: 0.33
 Nodes (4): FIXES, key, supabase, url
 
-### Community 89 - "fix-neet-2025-q90-q92.mjs"
+### Community 98 - "fix-neet-2025-q90-q92.mjs"
 Cohesion: 0.33
 Nodes (4): FIXES, key, supabase, url
 
-### Community 90 - "fix-neet-2025-subscripts.mjs"
+### Community 99 - "fix-neet-2025-subscripts.mjs"
 Cohesion: 0.33
 Nodes (4): FIXES, key, supabase, url
 
-### Community 91 - "_investigate.mjs"
+### Community 100 - "_investigate.mjs"
 Cohesion: 0.33
 Nodes (5): env, qImg, sb, secName, withImg
 
-### Community 92 - "patch-neet-2021-q12.mjs"
+### Community 101 - "patch-neet-2021-q12.mjs"
 Cohesion: 0.33
 Nodes (5): env, jq, json, jsonPath, sb
 
-### Community 93 - "remove-neet.mjs"
-Cohesion: 0.33
-Nodes (4): DRY_RUN, key, neetFolders, supabase
-
-### Community 94 - "upload-images.mjs"
-Cohesion: 0.33
-Nodes (4): folders, key, supabase, url
-
-### Community 95 - "PageTransition.tsx"
-Cohesion: 0.22
-Nodes (6): DEPTH, depthOf(), EASE_IN, EASE_OUT, PageTransition(), Props
-
-### Community 96 - "CONTEXT.md"
-Cohesion: 0.40
-Nodes (4): JEE Main 2026 Pipeline, KaTeX Math Rendering Pipeline, NEET Exam Pipeline (2020-2026), NTA Test Interface Architecture
-
-### Community 97 - "opencode.json"
-Cohesion: 0.40
-Nodes (4): $schema, skills, paths, .agents/skills
-
-### Community 98 - "package.json"
-Cohesion: 0.40
-Nodes (4): name, private, type, version
-
-### Community 99 - "check-2024-db.mjs"
-Cohesion: 0.40
-Nodes (4): byNum, env, json, sb
-
-### Community 100 - "_dump-neet-2023-bio-keys.mjs"
-Cohesion: 0.40
-Nodes (4): bio, env, m, sb
-
-### Community 101 - "_dump-neet-2023-figures.mjs"
-Cohesion: 0.40
-Nodes (4): byQ, env, qids, sb
-
-### Community 102 - "_dump-neet-2023-keys.mjs"
-Cohesion: 0.40
-Nodes (4): env, m, ph, sb
-
-### Community 103 - "fix-neet-2022-q30-options.mjs"
-Cohesion: 0.40
-Nodes (3): key, OPTION_TEXTS, supabase
-
-### Community 104 - "_match_s1.py"
-Cohesion: 0.70
-Nodes (4): main(), norm(), read_s1(), tokens()
-
-### Community 105 - "recover2.py"
-Cohesion: 0.60
-Nodes (3): col_split(), find(), markers()
-
-### Community 106 - "_scan-neet-2021.mjs"
-Cohesion: 0.40
-Nodes (4): env, issues, optIssues, sb
-
-### Community 108 - "reneet-2026/PROGRESS.md"
-Cohesion: 0.50
-Nodes (3): Razorpay Subscriptions Phase 3, Project Implementation Phases, Real User Dashboard Phase 5
-
-### Community 109 - "PROGRESS.md"
-Cohesion: 0.50
-Nodes (3): Razorpay Subscriptions Phase 3, Project Implementation Phases, Real User Dashboard Phase 5
-
-### Community 110 - "_dump-neet-2021-physics.mjs"
-Cohesion: 0.50
-Nodes (3): env, keyByQ, sb
-
-### Community 112 - "_fix_q40.py"
-Cohesion: 0.50
-Nodes (3): matrix_text(), Set Q40's options to the truth tables (matrix notation) and copy the user's…, [[A, B, C], [r1], [r2], [r3], [r4]] using the app's matrix notation.
-
-### Community 115 - "PaletteSignature.tsx"
-Cohesion: 0.67
-Nodes (3): PaletteSignature(), TILE_STATES, tileState()
-
-### Community 175 - "Pricing.tsx"
-Cohesion: 0.14
-Nodes (18): formatExpiry(), PricingCard(), Props, pricingPlans, applyCoupon(), CouponApplied, CouponRejected, CouponResult (+10 more)
-
-### Community 1537 - "attemptStorage.ts"
-Cohesion: 0.35
-Nodes (11): runBackfill(), submitAttempt(), attemptKey(), clearAttempt(), findInProgressAttempt(), listSavedPaperKeys(), loadAttempt(), purgeUnownedAttempts() (+3 more)
-
-### Community 1538 - "seed-neet-2018.mjs"
-Cohesion: 0.18
-Nodes (12): BUST, __dirname, figureUrls(), FORCE, key, LABEL_TO_LETTER, OUT_DIR, sectionName() (+4 more)
-
-### Community 1539 - "seed-neet-2019.mjs"
-Cohesion: 0.18
-Nodes (12): BUST, __dirname, figureUrls(), FORCE, key, LABEL_TO_LETTER, OUT_DIR, sectionName() (+4 more)
-
-### Community 1540 - "LandingPage.tsx"
-Cohesion: 0.16
-Nodes (12): ExamScreenPreview(), SAMPLE_OPTIONS, SAMPLE_TABS, FeatureCard(), Props, ease, Reveal(), ease (+4 more)
-
-### Community 1541 - "attemptsDb.ts"
-Cohesion: 0.14
-Nodes (18): NtaQuestionPanelProps, NtaResultScreenProps, SolutionCard, SolutionCardProps, STATUS_FILTERS, StatusFilter, Props, statusColors (+10 more)
-
-### Community 1542 - "refine_neet_2018.py"
+### Community 102 - "refine_neet_2018.py"
 Cohesion: 0.60
 Nodes (5): build_refined_dataset(), clean_span(), extract_continuous_questions(), main(), normalize_text_katex()
 
-### Community 1543 - "extract_neet_2018.py"
+### Community 103 - "remove-neet.mjs"
+Cohesion: 0.33
+Nodes (4): DRY_RUN, key, neetFolders, supabase
+
+### Community 104 - "upload-images.mjs"
+Cohesion: 0.33
+Nodes (4): folders, key, supabase, url
+
+### Community 105 - "App.tsx"
+Cohesion: 0.17
+Nodes (11): react, App(), DEPTH, depthOf(), EASE_IN, EASE_OUT, PageTransition(), ProtectedRoute() (+3 more)
+
+### Community 106 - "opencode.json"
+Cohesion: 0.40
+Nodes (4): $schema, skills, paths, .agents/skills
+
+### Community 107 - "package.json"
+Cohesion: 0.40
+Nodes (4): name, private, type, version
+
+### Community 108 - "check-2024-db.mjs"
+Cohesion: 0.40
+Nodes (4): byNum, env, json, sb
+
+### Community 109 - "_dump-neet-2023-bio-keys.mjs"
+Cohesion: 0.40
+Nodes (4): bio, env, m, sb
+
+### Community 110 - "_dump-neet-2023-figures.mjs"
+Cohesion: 0.40
+Nodes (4): byQ, env, qids, sb
+
+### Community 111 - "_dump-neet-2023-keys.mjs"
+Cohesion: 0.40
+Nodes (4): env, m, ph, sb
+
+### Community 112 - "extract_neet_2018.py"
 Cohesion: 0.60
 Nodes (3): clean_text(), extract_all_questions(), main()
 
-### Community 1544 - "extract_neet_2019.py"
+### Community 113 - "extract_neet_2019.py"
 Cohesion: 0.70
 Nodes (4): clean_span_text(), clip_figure(), main(), polish_math_text()
 
-### Community 1545 - "seed-neet-2017.mjs"
-Cohesion: 0.18
-Nodes (12): BUST, __dirname, figureUrls(), FORCE, key, LABEL_TO_LETTER, OUT_DIR, sectionName() (+4 more)
+### Community 114 - "fix-neet-2022-q30-options.mjs"
+Cohesion: 0.40
+Nodes (3): key, OPTION_TEXTS, supabase
 
-### Community 1546 - "refine_neet_2019.py"
+### Community 115 - "_match_s1.py"
+Cohesion: 0.70
+Nodes (4): main(), norm(), read_s1(), tokens()
+
+### Community 116 - "recover2.py"
+Cohesion: 0.60
+Nodes (3): col_split(), find(), markers()
+
+### Community 117 - "_scan-neet-2021.mjs"
+Cohesion: 0.40
+Nodes (4): env, issues, optIssues, sb
+
+### Community 119 - "reneet-2026/PROGRESS.md"
+Cohesion: 0.50
+Nodes (3): Razorpay Subscriptions Phase 3, Project Implementation Phases, Real User Dashboard Phase 5
+
+### Community 120 - "build_chapter_tests.py"
+Cohesion: 0.83
+Nodes (3): build_chapter_tests(), load_all_questions(), match_question_score()
+
+### Community 121 - "_dump-neet-2021-physics.mjs"
+Cohesion: 0.50
+Nodes (3): env, keyByQ, sb
+
+### Community 123 - "_fix_q40.py"
+Cohesion: 0.50
+Nodes (3): matrix_text(), Set Q40's options to the truth tables (matrix notation) and copy the user's…, [[A, B, C], [r1], [r2], [r3], [r4]] using the app's matrix notation.
+
+### Community 127 - "refine_neet_2019.py"
 Cohesion: 0.83
 Nodes (3): apply_precision_formatting(), clean_general_text(), main()
 
-### Community 1550 - "Profile.tsx"
-Cohesion: 0.19
-Nodes (16): GoogleIcon(), PaperRow, PaperSummary, ExamType, getExam(), setExam(), Login(), perks (+8 more)
+### Community 129 - "PaletteSignature.tsx"
+Cohesion: 0.67
+Nodes (3): PaletteSignature(), TILE_STATES, tileState()
+
+### Community 1573 - "Progress"
+Cohesion: 0.14
+Nodes (13): Content & Rendering, Key Components, Marketing/Copy (latest polish), Pages (routes), Phase 1 — UI Complete ✅, Phase 2 — Auth & Backend ✅, Phase 3 — Payments & Subscriptions ✅, Phase 4 — Admin ✅ (+5 more)
 
 ## Knowledge Gaps
-- **2000 isolated node(s):** `$schema`, `typescript`, `oxc`, `react/rules-of-hooks`, `warn` (+1995 more)
+- **2019 isolated node(s):** `$schema`, `typescript`, `oxc`, `react/rules-of-hooks`, `warn` (+2014 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **1333 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `react` connect `App.tsx` to `LandingPage.tsx`, `NtaQuestionPanel.tsx`, `attemptsDb.ts`, `auth-context.ts`, `Dashboard.tsx`, `TestInterface.tsx`, `Profile.tsx`, `Pricing.tsx`, `ChapterTests.tsx`, `types/index.ts`, `plugins`, `PaperTests.tsx`, `PageTransition.tsx`?**
-  _High betweenness centrality (0.003) - this node is a cross-community bridge._
+- **Why does `react` connect `App.tsx` to `PaperTests.tsx`, `plugins`, `ChapterTests.tsx`, `Dashboard.tsx`, `TestInterface.tsx`, `Admin.tsx`, `useAuth`, `NtaQuestionPanel.tsx`, `Profile.tsx`, `Pricing.tsx`, `NtaResultScreen.tsx`, `auth-context.ts`?**
+  _High betweenness centrality (0.004) - this node is a cross-community bridge._
 - **Why does `tokenizeMath()` connect `mathText.ts` to `NtaQuestionPanel.tsx`?**
+  _High betweenness centrality (0.002) - this node is a cross-community bridge._
+- **Why does `Question` connect `TestInterface.tsx` to `questions.ts`, `NtaResultScreen.tsx`, `NtaQuestionPanel.tsx`?**
   _High betweenness centrality (0.001) - this node is a cross-community bridge._
-- **Why does `QuestionState` connect `attemptsDb.ts` to `attemptStorage.ts`, `types/index.ts`, `TestInterface.tsx`, `NtaQuestionPanel.tsx`?**
-  _High betweenness centrality (0.000) - this node is a cross-community bridge._
 - **What connects `$schema`, `typescript`, `oxc` to the rest of the system?**
-  _2000 weakly-connected nodes found - possible documentation gaps or missing edges._
-- **Should `extract_neet_2020.py` be split into smaller, more focused modules?**
+  _2019 weakly-connected nodes found - possible documentation gaps or missing edges._
+- **Should `Test & Examination Pipeline 0` be split into smaller, more focused modules?**
   _Cohesion score 0.07291666666666667 - nodes in this community are weakly interconnected._
-- **Should `extract_neet_2021.py` be split into smaller, more focused modules?**
+- **Should `Test & Examination Pipeline 1` be split into smaller, more focused modules?**
   _Cohesion score 0.05909090909090909 - nodes in this community are weakly interconnected._
-- **Should `extract_neet_2022.py` be split into smaller, more focused modules?**
+- **Should `Test & Examination Pipeline 2` be split into smaller, more focused modules?**
   _Cohesion score 0.07764876632801161 - nodes in this community are weakly interconnected._

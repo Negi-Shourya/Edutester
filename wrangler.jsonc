@@ -2,6 +2,13 @@
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "edutester",
   "compatibility_date": "2026-08-24",
+  "workers_dev": true,
+  "routes": [
+    { "pattern": "edutester.in", "custom_domain": true },
+    { "pattern": "www.edutester.in", "custom_domain": true },
+    { "pattern": "edutester.in/*", "zone_name": "edutester.in" },
+    { "pattern": "www.edutester.in/*", "zone_name": "edutester.in" }
+  ],
 
   // This is a static Vite SPA — there is no Worker script. `assets` alone
   // serves the built site straight off Cloudflare's edge, which is exactly

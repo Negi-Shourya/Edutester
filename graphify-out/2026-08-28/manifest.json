@@ -1998,16 +1998,16 @@
     "semantic_hash": "eb2fc2b318836f3966f176b82ebb0bfe"
   },
   "src/context/AuthContext.tsx": {
-    "mtime": 1787462102.8639376,
-    "seen": 1787835489.9523664,
-    "ast_hash": "5aab2d1c4304930865eed149be8b8b6b",
-    "semantic_hash": "5aab2d1c4304930865eed149be8b8b6b"
+    "mtime": 1787923319.4149227,
+    "seen": 1787923407.8797312,
+    "ast_hash": "baec0f13dac88f1c3c01154969cbb4b0",
+    "semantic_hash": ""
   },
   "src/context/auth-context.ts": {
-    "mtime": 1787462102.8639376,
-    "seen": 1787835489.952368,
-    "ast_hash": "13c3347d2bf8aa395d0496c3f2a398e3",
-    "semantic_hash": "13c3347d2bf8aa395d0496c3f2a398e3"
+    "mtime": 1787923325.6860569,
+    "seen": 1787923407.8797367,
+    "ast_hash": "aadca29dc4512f8702d71e4a8c897e30",
+    "semantic_hash": ""
   },
   "src/data/chapters.ts": {
     "mtime": 1787921527.588192,
@@ -2142,10 +2142,10 @@
     "semantic_hash": "958324366f889108d15f2d695a6b6af6"
   },
   "src/pages/Login.tsx": {
-    "mtime": 1787462102.8814955,
-    "seen": 1787835489.9524295,
-    "ast_hash": "7719889fd3de5460da78633b0e2f8475",
-    "semantic_hash": "7719889fd3de5460da78633b0e2f8475"
+    "mtime": 1787923332.8314407,
+    "seen": 1787923407.8877497,
+    "ast_hash": "ef575d607d163987d3e62dcfdfde5374",
+    "semantic_hash": ""
   },
   "src/pages/PaperTests.tsx": {
     "mtime": 1787919895.0925193,

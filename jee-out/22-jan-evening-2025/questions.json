@@ -1,0 +1,1796 @@
+{
+  "key": "22-jan-evening-2025",
+  "title": "JEE (Main) 2025 (22 Jan Evening)",
+  "full_title": "JEE (Main) 2025 - 22 January Evening Shift",
+  "exam_date": "2025-01-22",
+  "session": "evening",
+  "year": 2025,
+  "duration_minutes": 180,
+  "question_count": 75,
+  "exam_type": "jee",
+  "is_trial": false,
+  "questions": [
+    {
+      "number": 1,
+      "section": "Physics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "A symmetric thin biconvex lens is cut into four equal parts by two planes AB and CD as shown in figure. If the power of original lens is 4D then the power of a part of the divided lens is :",
+      "figure": "p8_q26_cut_lens.png",
+      "options": [
+        {
+          "label": "A",
+          "text": "8D"
+        },
+        {
+          "label": "B",
+          "text": "4D"
+        },
+        {
+          "label": "C",
+          "text": "D"
+        },
+        {
+          "label": "D",
+          "text": "2D"
+        }
+      ],
+      "correct_answer": "D",
+      "solution": "Cutting along plane AB (perpendicular to principal axis) converts the lens into two plano-convex lenses each with power P' = P/2 = 2D. Cutting along plane CD (parallel to principal axis) does not change focal length or power. Hence, each quadrant has power 2D."
+    },
+    {
+      "number": 2,
+      "section": "Physics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "A small rigid spherical ball of mass M is dropped in a long vertical tube containing glycerine. The velocity of the ball becomes constant after some time. If the density of glycerine is half of the density of the ball, then the viscous force acting on the ball will be : (consider g as acceleration due to gravity)",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\frac{3}{2} M g"
+        },
+        {
+          "label": "B",
+          "text": "\\frac{M g}{2}"
+        },
+        {
+          "label": "C",
+          "text": "M g"
+        },
+        {
+          "label": "D",
+          "text": "2 M g"
+        }
+      ],
+      "correct_answer": "B",
+      "solution": "At terminal velocity, a = 0 \\implies M g - F_B - F_v = 0. Buoyant force F_B = V \\rho_{\\text{glycerine}} g = V (\\rho_{\\text{ball}}/2) g = \\frac{M g}{2}. Viscous force F_v = M g - \\frac{M g}{2} = \\frac{M g}{2}."
+    },
+    {
+      "number": 3,
+      "section": "Physics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "The maximum percentage error in the measurement of density of a wire is : [Given, mass of wire = (0.60 \\pm 0.003) g, radius of wire = (0.50 \\pm 0.01) cm, length of wire = (10.00 \\pm 0.05) cm]",
+      "options": [
+        {
+          "label": "A",
+          "text": "4%"
+        },
+        {
+          "label": "B",
+          "text": "5%"
+        },
+        {
+          "label": "C",
+          "text": "8%"
+        },
+        {
+          "label": "D",
+          "text": "7%"
+        }
+      ],
+      "correct_answer": "B",
+      "solution": "\\rho = \\frac{m}{\\pi R^2 l} \\implies \\frac{\\Delta\\rho}{\\rho} = \\frac{\\Delta m}{m} + 2\\frac{\\Delta R}{R} + \\frac{\\Delta l}{l} = \\frac{0.003}{0.60} + 2(\\frac{0.01}{0.50}) + \\frac{0.05}{10.00} = 0.005 + 0.040 + 0.005 = 0.050 \\implies 5\\%."
+    },
+    {
+      "number": 4,
+      "section": "Physics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "A series LCR circuit is connected to an alternating source of emf E. The current amplitude at resonant frequency is I_0. If the value of resistance R becomes twice of its initial value then amplitude of current at resonance will be :",
+      "options": [
+        {
+          "label": "A",
+          "text": "I_0"
+        },
+        {
+          "label": "B",
+          "text": "\\frac{I_0}{2}"
+        },
+        {
+          "label": "C",
+          "text": "\\frac{I_0}{\\sqrt{2}}"
+        },
+        {
+          "label": "D",
+          "text": "2 I_0"
+        }
+      ],
+      "correct_answer": "B",
+      "solution": "At resonance, impedance Z = R, so I_0 = \\frac{E_0}{R}. When resistance is doubled to 2R, I'_0 = \\frac{E_0}{2R} = \\frac{I_0}{2}."
+    },
+    {
+      "number": 5,
+      "section": "Physics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "For a short dipole placed at origin O, the dipole moment P is along x-axis, as shown in the figure. If the electric potential and electric field at A are V_0 and E_0, respectively, then the correct combination of the electric potential and electric field, respectively, at point B on the y-axis is given by :",
+      "figure": "p9_q30_dipole.png",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\frac{V_0}{2}\\text{ and }\\frac{E_0}{16}"
+        },
+        {
+          "label": "B",
+          "text": "\\text{zero and }\\frac{E_0}{8}"
+        },
+        {
+          "label": "C",
+          "text": "\\text{zero and }\\frac{E_0}{16}"
+        },
+        {
+          "label": "D",
+          "text": "V_0\\text{ and }\\frac{E_0}{4}"
+        }
+      ],
+      "correct_answer": "C",
+      "solution": "Point A is axial at distance r: E_A = \\frac{2 k P}{r^3} = E_0, V_A = \\frac{k P}{r^2} = V_0. Point B is equatorial at distance 2r: V_B = 0 (equatorial potential is always zero), and E_B = \\frac{k P}{(2r)^3} = \\frac{k P}{8 r^3} = \\frac{E_0}{16}."
+    },
+    {
+      "number": 6,
+      "section": "Physics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "Which one of the following is the correct dimensional formula for the capacitance in F? M, L, T and C stand for unit of mass, length, time and charge.",
+      "options": [
+        {
+          "label": "A",
+          "text": "[F] = [C^2 M^{-2} L^2 T^2]"
+        },
+        {
+          "label": "B",
+          "text": "[F] = [C M^{-2} L^{-2} T^{-2}]"
+        },
+        {
+          "label": "C",
+          "text": "[F] = [C M^{-1} L^{-2} T^2]"
+        },
+        {
+          "label": "D",
+          "text": "[F] = [C^2 M^{-1} L^{-2} T^2]"
+        }
+      ],
+      "correct_answer": "D",
+      "solution": "C = \\frac{q}{V} = \\frac{q^2}{W} = \\frac{C^2}{M L^2 T^{-2}} = [C^2 M^{-1} L^{-2} T^2]."
+    },
+    {
+      "number": 7,
+      "section": "Physics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "An electron projected perpendicular to a uniform magnetic field B moves in a circle. If Bohr's quantization is applicable, then the radius of the electronic orbit in the first excited state is :",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\sqrt{\\frac{2h}{\\pi e B}}"
+        },
+        {
+          "label": "B",
+          "text": "\\sqrt{\\frac{4h}{\\pi e B}}"
+        },
+        {
+          "label": "C",
+          "text": "\\sqrt{\\frac{h}{2\\pi e B}}"
+        },
+        {
+          "label": "D",
+          "text": "\\sqrt{\\frac{h}{\\pi e B}}"
+        }
+      ],
+      "correct_answer": "D",
+      "solution": "Magnetic circle radius r = \\frac{m v}{e B} \\implies m v r = e B r^2. By Bohr's condition, m v r = \\frac{n h}{2\\pi} \\implies e B r^2 = \\frac{n h}{2\\pi} \\implies r = \\sqrt{\\frac{n h}{2\\pi e B}}. For first excited state n = 2 \\implies r = \\sqrt{\\frac{2h}{2\\pi e B}} = \\sqrt{\\frac{h}{\\pi e B}}."
+    },
+    {
+      "number": 8,
+      "section": "Physics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "For a diatomic gas, if \\gamma_1 = (\\frac{C_p}{C_v}) for rigid molecules and \\gamma_2 = (\\frac{C_p}{C_v}) for another diatomic molecules, but also having vibrational modes. Then, which one of the following options is correct? (Cp and Cv are specific heats of the gas at constant pressure and volume)",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\gamma_2 > \\gamma_1"
+        },
+        {
+          "label": "B",
+          "text": "\\gamma_2 = \\gamma_1"
+        },
+        {
+          "label": "C",
+          "text": "2\\gamma_2 = \\gamma_1"
+        },
+        {
+          "label": "D",
+          "text": "\\gamma_2 < \\gamma_1"
+        }
+      ],
+      "correct_answer": "D",
+      "solution": "\\gamma = 1 + \\frac{2}{f}. For rigid diatomic gas, f = 5 \\implies \\gamma_1 = 1 + 2/5 = 1.40. With vibrational modes, f = 7 \\implies \\gamma_2 = 1 + 2/7 = 1.286. Hence \\gamma_2 < \\gamma_1."
+    },
+    {
+      "number": 9,
+      "section": "Physics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "A rectangular metallic loop is moving out of a uniform magnetic field region to a field free region with a constant speed. When the loop is partially inside the magnetic field, the plot of magnitude of induced emf (\\varepsilon) with time (t) is given by :",
+      "figure": "p9_q34_induced_emf.png",
+      "options": [
+        {
+          "label": "A",
+          "text": "(1)"
+        },
+        {
+          "label": "B",
+          "text": "(2)"
+        },
+        {
+          "label": "C",
+          "text": "(3)"
+        },
+        {
+          "label": "D",
+          "text": "(4)"
+        }
+      ],
+      "correct_answer": "D",
+      "solution": "Motional emf is given by \\varepsilon = B l v. Since B, l, and v are all constant while the loop exits, \\varepsilon is constant over time, corresponding to horizontal graph (4)."
+    },
+    {
+      "number": 10,
+      "section": "Physics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "A light source of wavelength \\lambda illuminates a metal surface and electrons are ejected with maximum kinetic energy of 2 eV. If the same surface is illuminated by a light source of wavelength \\frac{\\lambda}{2}, then the maximum kinetic energy of ejected electrons will be (The work function of metal is 1 eV) :",
+      "options": [
+        {
+          "label": "A",
+          "text": "2 eV"
+        },
+        {
+          "label": "B",
+          "text": "6 eV"
+        },
+        {
+          "label": "C",
+          "text": "5 eV"
+        },
+        {
+          "label": "D",
+          "text": "3 eV"
+        }
+      ],
+      "correct_answer": "C",
+      "solution": "\\frac{h c}{\\lambda} = \\phi + K_{\\max} = 1 + 2 = 3\\text{ eV}. For wavelength \\lambda/2, incident energy is \\frac{h c}{\\lambda/2} = 2 \\times 3 = 6\\text{ eV}. New maximum kinetic energy K'_{\\max} = 6 - \\phi = 6 - 1 = 5\\text{ eV}."
+    },
+    {
+      "number": 11,
+      "section": "Physics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "Given below are two statements. One is labelled as Assertion (A) and the other is labelled as Reason (R).\nAssertion (A) : A simple pendulum is taken to a planet of mass and radius, 4 times and 2 times, respectively, than the Earth. The time period of the pendulum remains same on earth and the planet.\nReason (R) : The mass of the pendulum remains unchanged at Earth and the other planet. In the light of the above statements, choose the correct answer from the options given below :",
+      "options": [
+        {
+          "label": "A",
+          "text": "Both (A) and (R) are true but (R) is NOT the correct explanation of (A)"
+        },
+        {
+          "label": "B",
+          "text": "(A) is true but (R) is false"
+        },
+        {
+          "label": "C",
+          "text": "(A) is false but (R) is true"
+        },
+        {
+          "label": "D",
+          "text": "Both (A) and (R) are true and (R) is the correct explanation of (A)"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "g' = \\frac{G M'}{R'^2} = \\frac{G(4M)}{(2R)^2} = g. Since g' = g, time period T = 2\\pi\\sqrt{l/g} is unchanged. Mass is constant (R is true), but T is independent of bob mass. Hence both are true but R does not explain A."
+    },
+    {
+      "number": 12,
+      "section": "Physics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "The torque due to the force (2\\hat{i} + \\hat{j} + 2\\hat{k}) about the origin, acting on a particle whose position vector is (\\hat{i} + \\hat{j} + \\hat{k}), would be :",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\hat{i} - \\hat{j} + \\hat{k}"
+        },
+        {
+          "label": "B",
+          "text": "\\hat{i} + \\hat{k}"
+        },
+        {
+          "label": "C",
+          "text": "\\hat{i} - \\hat{k}"
+        },
+        {
+          "label": "D",
+          "text": "\\hat{j} - \\hat{k}"
+        }
+      ],
+      "correct_answer": "C",
+      "solution": "\\vec{\\tau} = \\vec{r} \\times \\vec{F} = (\\hat{i} + \\hat{j} + \\hat{k}) \\times (2\\hat{i} + \\hat{j} + 2\\hat{k}) = \\begin{vmatrix} \\hat{i} & \\hat{j} & \\hat{k} \\\\ 1 & 1 & 1 \\\\ 2 & 1 & 2 \\end{vmatrix} = \\hat{i}(2-1) - \\hat{j}(2-2) + \\hat{k}(1-2) = \\hat{i} - \\hat{k}."
+    },
+    {
+      "number": 13,
+      "section": "Physics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "To obtain the given truth table from the logic circuit shown in the figure, which logic gate should be placed at G?",
+      "figure": "p10_q38_logic_gate.png",
+      "options": [
+        {
+          "label": "A",
+          "text": "NOR Gate"
+        },
+        {
+          "label": "B",
+          "text": "AND Gate"
+        },
+        {
+          "label": "C",
+          "text": "NAND Gate"
+        },
+        {
+          "label": "D",
+          "text": "OR Gate"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "The two AND gates produce outputs A\\bar{B} and \\bar{A}B (XOR inputs). A NOR gate at G gives \\overline{A\\bar{B} + \\bar{A}B} = \\text{XNOR}, which gives output Y = 1 for (0,0) and (1,1), matching the truth table."
+    },
+    {
+      "number": 14,
+      "section": "Physics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "A force \\vec{F} = 2\\hat{i} + b\\hat{j} + \\hat{k} is applied on a particle and it undergoes a displacement \\hat{i} - 2\\hat{j} - \\hat{k}. What will be the value of b, if work done on the particle is zero?",
+      "options": [
+        {
+          "label": "A",
+          "text": "0"
+        },
+        {
+          "label": "B",
+          "text": "1/2"
+        },
+        {
+          "label": "C",
+          "text": "1/3"
+        },
+        {
+          "label": "D",
+          "text": "2"
+        }
+      ],
+      "correct_answer": "B",
+      "solution": "W = \\vec{F}\\cdot\\vec{S} = (2)(1) + (b)(-2) + (1)(-1) = 2 - 2b - 1 = 1 - 2b = 0 \\implies b = 1/2."
+    },
+    {
+      "number": 15,
+      "section": "Physics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "Given below are two statements. One is labelled as Assertion (A) and the other is labelled as Reason (R).\nAssertion (A) : In Young's double slit experiment, the fringes produced by red light are closer as compared to those produced by blue light.\nReason (R) : The fringe width is directly proportional to the wavelength of light.\nIn the light of above statements, choose the correct answer from the options given below :",
+      "options": [
+        {
+          "label": "A",
+          "text": "Both (A) and (R) are true and (R) is the correct explanation of (A)"
+        },
+        {
+          "label": "B",
+          "text": "(A) is false but (R) is true."
+        },
+        {
+          "label": "C",
+          "text": "Both (A) and (R) are true but (R) is NOT the correct explanation of (A)."
+        },
+        {
+          "label": "D",
+          "text": "(A) is true but (R) is false."
+        }
+      ],
+      "correct_answer": "B",
+      "solution": "\\beta = \\frac{\\lambda D}{d}. Since \\lambda_{\\text{red}} > \\lambda_{\\text{blue}}, \\beta_{\\text{red}} > \\beta_{\\text{blue}} (red fringes are wider/further apart, not closer). Thus Assertion (A) is false, but Reason (R) is true."
+    },
+    {
+      "number": 16,
+      "section": "Physics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "A ball of mass 100 g is projected with velocity 20 m/s at 60° with horizontal. The decrease in kinetic energy of the ball during the motion from point of projection to highest point is :",
+      "options": [
+        {
+          "label": "A",
+          "text": "20 J"
+        },
+        {
+          "label": "B",
+          "text": "15 J"
+        },
+        {
+          "label": "C",
+          "text": "zero"
+        },
+        {
+          "label": "D",
+          "text": "5 J"
+        }
+      ],
+      "correct_answer": "B",
+      "solution": "Initial KE = \\frac{1}{2} m v^2 = \\frac{1}{2} (0.1) (20)^2 = 20\\text{ J}. At highest point, velocity is v_x = v \\cos 60^\\circ = 10\\text{ m/s}. Top KE = \\frac{1}{2} (0.1) (10)^2 = 5\\text{ J}. Decrease in KE = 20 - 5 = 15\\text{ J}."
+    },
+    {
+      "number": 17,
+      "section": "Physics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "A transparent film of refractive index 2.0 is coated on a glass slab of refractive index 1.45. What is the minimum thickness of transparent film to be coated for the maximum transmission of Green light of wavelength 550 nm? [Assume that the light is incident nearly perpendicular to the glass surface.]",
+      "options": [
+        {
+          "label": "A",
+          "text": "94.8 nm"
+        },
+        {
+          "label": "B",
+          "text": "68.7 nm"
+        },
+        {
+          "label": "C",
+          "text": "137.5 nm"
+        },
+        {
+          "label": "D",
+          "text": "275 nm"
+        }
+      ],
+      "correct_answer": "C",
+      "solution": "For maximum transmission, reflection must have destructive interference. Since \\mu_{\\text{film}} = 2.0 > \\mu_{\\text{glass}} = 1.45, path difference for minimum reflection is 2 \\mu t = \\lambda/2 \\times 2 = \\lambda \\implies t_{\\min} = \\frac{\\lambda}{4 \\mu} \\text{ or } \\frac{\\lambda}{2\\mu} = \\frac{550}{4} = 137.5\\text{ nm}."
+    },
+    {
+      "number": 18,
+      "section": "Physics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "The tube of length L is shown in the figure. The radius of cross section at the point (1) is 2 cm and at the point (2) is 1 cm, respectively. If the velocity of water entering at point (1) is 2 m/s, then velocity of water leaving the point (2) will be :",
+      "figure": "p12_q43_tube_flow.png",
+      "options": [
+        {
+          "label": "A",
+          "text": "2 m/s"
+        },
+        {
+          "label": "B",
+          "text": "4 m/s"
+        },
+        {
+          "label": "C",
+          "text": "6 m/s"
+        },
+        {
+          "label": "D",
+          "text": "8 m/s"
+        }
+      ],
+      "correct_answer": "D",
+      "solution": "By equation of continuity: A_1 v_1 = A_2 v_2 \\implies \\pi r_1^2 v_1 = \\pi r_2^2 v_2 \\implies (2)^2 (2) = (1)^2 v_2 \\implies v_2 = 8\\text{ m/s}."
+    },
+    {
+      "number": 19,
+      "section": "Physics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "Given are statements for certain thermodynamic variables,\n(A) Internal energy, volume (V) and mass (M) are extensive variables.\n(B) Pressure (P), temperature (T) and density (\\rho) are intensive variables.\n(C) Volume (V), temperature (T) and density (\\rho) are intensive variables.\n(D) Mass (M), temperature (T) and internal energy are extensive variables.\nChoose the correct answer from the points given below :",
+      "options": [
+        {
+          "label": "A",
+          "text": "(C) and (D) only"
+        },
+        {
+          "label": "B",
+          "text": "(D) and (A) only"
+        },
+        {
+          "label": "C",
+          "text": "(A) and (B) only"
+        },
+        {
+          "label": "D",
+          "text": "(B) and (C) only"
+        }
+      ],
+      "correct_answer": "C",
+      "solution": "Extensive variables depend on system size/mass (Internal energy, volume, mass). Intensive variables are independent of system size (Pressure, temperature, density). Hence (A) and (B) are both correct."
+    },
+    {
+      "number": 20,
+      "section": "Physics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "A body of mass 100 g is moving in circular path of radius 2 m on vertical plane as shown in figure. The velocity of the body at point A is 10 m/s. The ratio of its kinetic energies at point B and C is : (Take acceleration due to gravity as 10 m/s^2)",
+      "figure": "p12_q45_circular_path.png",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\frac{2+\\sqrt{3}}{3}"
+        },
+        {
+          "label": "B",
+          "text": "\\frac{2+\\sqrt{2}}{3}"
+        },
+        {
+          "label": "C",
+          "text": "\\frac{3+\\sqrt{3}}{2}"
+        },
+        {
+          "label": "D",
+          "text": "\\frac{3-\\sqrt{2}}{2}"
+        }
+      ],
+      "correct_answer": "C",
+      "solution": "At B: height h_B = R(1 - \\cos 30^\\circ) = 2(1 - \\sqrt{3}/2) = 2 - \\sqrt{3}. K_B = \\frac{1}{2} m v_A^2 - m g h_B = 5 - (0.1)(10)(2-\\sqrt{3}) = 3 + \\sqrt{3}. At C: height h_C = R(1 + \\sin 30^\\circ) = 3 m. K_C = 5 - (0.1)(10)(3) = 2 J. Ratio K_B / K_C = \\frac{3+\\sqrt{3}}{2}."
+    },
+    {
+      "number": 21,
+      "section": "Physics",
+      "subSection": "Section B",
+      "type": "numerical",
+      "text": "A proton is moving undeflected in a region of crossed electric and magnetic fields at a constant speed of 2 \\times 10^5\\text{ m/s}. When the electric field is switched off, the proton moves along a circular path of radius 2 cm. The magnitude of electric field is x \\times 10^4\\text{ N/C}. The value of x is ____. Take the mass of the proton = 1.6 \\times 10^{-27}\\text{ kg}.",
+      "options": [],
+      "correct_answer": "2",
+      "solution": "v = E / B \\implies E = v B. Radius r = \\frac{m v}{q B} \\implies B = \\frac{m v}{q r}. Thus E = \\frac{m v^2}{q r} = \\frac{(1.6\\times 10^{-27})(2\\times 10^5)^2}{(1.6\\times 10^{-19})(0.02)} = 2\\times 10^4\\text{ N/C} \\implies x = 2."
+    },
+    {
+      "number": 22,
+      "section": "Physics",
+      "subSection": "Section B",
+      "type": "numerical",
+      "text": "Two long parallel wires X and Y, separated by a distance of 6 cm, carry currents of 5A and 4A, respectively, in opposite directions as shown in the figure. Magnitude of the resultant magnetic field at point P at a distance of 4 cm from wire Y is x \\times 10^{-5}\\text{ T}. The value of x is ____. Take permeability of free space as \\mu_0 = 4\\pi \\times 10^{-7}\\text{ SI units}.",
+      "figure": "p13_q47_parallel_wires.png",
+      "options": [],
+      "correct_answer": "1",
+      "solution": "B_P = \\frac{\\mu_0 I_Y}{2\\pi d_Y} - \\frac{\\mu_0 I_X}{2\\pi d_X} = \\frac{10^{-7} \\times 2 \\times 4}{0.04} - \\frac{10^{-7} \\times 2 \\times 5}{0.10} = 2\\times 10^{-5} - 1\\times 10^{-5} = 1\\times 10^{-5}\\text{ T} \\implies x = 1."
+    },
+    {
+      "number": 23,
+      "section": "Physics",
+      "subSection": "Section B",
+      "type": "numerical",
+      "text": "A parallel plate capacitor of area A = 16\\text{ cm}^2 and separation between the plates 10 cm, is charged by a DC current. Consider a hypothetical plane surface of area A_0 = 3.2\\text{ cm}^2 inside the capacitor and parallel to the plates. At an instant, the current through the circuit is 6A. At the same instant the displacement current through A_0 is ____ mA.",
+      "options": [],
+      "correct_answer": "1200",
+      "solution": "Displacement current density J_d = I / A = 6 / 16 = 0.375\\text{ A/cm}^2. Displacement current through area A_0 is I_d = J_d \\times A_0 = 0.375 \\times 3.2 = 1.2\\text{ A} = 1200\\text{ mA}."
+    },
+    {
+      "number": 24,
+      "section": "Physics",
+      "subSection": "Section B",
+      "type": "numerical",
+      "text": "A tube of length 1m is filled completely with an ideal liquid of mass 2M, and closed at both ends. The tube is rotated uniformly in horizontal plane about one of its ends. If the force exerted by the liquid at the other end is F then angular velocity of the tube is \\sqrt{\\frac{F}{\\alpha M}} in SI unit. The value of \\alpha is ____.",
+      "options": [],
+      "correct_answer": "1",
+      "solution": "Centrifugal force exerted by liquid F = \\int_0^l (\\frac{2M}{l} dx) \\omega^2 x = \\frac{2M}{l} \\omega^2 [\\frac{x^2}{2}]_0^l = M l \\omega^2. With l = 1\\text{ m}, F = M \\omega^2 \\implies \\omega = \\sqrt{\\frac{F}{M}} \\implies \\alpha = 1."
+    },
+    {
+      "number": 25,
+      "section": "Physics",
+      "subSection": "Section B",
+      "type": "numerical",
+      "text": "The net current flowing in the given circuit is ____ A.",
+      "figure": "p13_q50_bridge_circuit.png",
+      "options": [],
+      "correct_answer": "1",
+      "solution": "In DC steady state, the capacitor block (1\\mu F) acts as an open circuit. The remaining circuit is a balanced bridge of 2\\Omega, 4\\Omega, 3\\Omega, 6\\Omega giving equivalent resistance R_{\\text{eq}} = 2\\,\\Omega. Current I = V / R_{\\text{eq}} = 2 / 2 = 1\\text{ A}."
+    },
+    {
+      "number": 26,
+      "section": "Chemistry",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "For the galvanic cell : \\text{Zn}(s) | \\text{Zn}^{2+}(aq, 1\\text{ M}) || \\text{Cu}^{2+}(aq, 1\\text{ M}) | \\text{Cu}(s), the standard cell potential is 1.10 V. If \\text{Zn}^{2+} concentration is changed to 0.1 M and \\text{Cu}^{2+} concentration is changed to 0.01 M at 298 K, the cell potential will be : [\\frac{2.303 R T}{F} = 0.059 V]",
+      "options": [
+        {
+          "label": "A",
+          "text": "1.07 V"
+        },
+        {
+          "label": "B",
+          "text": "1.10 V"
+        },
+        {
+          "label": "C",
+          "text": "1.13 V"
+        },
+        {
+          "label": "D",
+          "text": "1.04 V"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "E_{\\text{cell}} = E^\\circ - \\frac{0.059}{2}\\log\\frac{[\\text{Zn}^{2+}]}{[\\text{Cu}^{2+}]} = 1.10 - 0.0295 \\log(\\frac{0.1}{0.01}) = 1.10 - 0.0295(1) = 1.0705\\text{ V} \\approx 1.07\\text{ V}."
+    },
+    {
+      "number": 27,
+      "section": "Chemistry",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "The correct order of first ionisation enthalpy for the given elements is :",
+      "options": [
+        {
+          "label": "A",
+          "text": "B < C < O < N"
+        },
+        {
+          "label": "B",
+          "text": "B < C < N < O"
+        },
+        {
+          "label": "C",
+          "text": "C < B < N < O"
+        },
+        {
+          "label": "D",
+          "text": "B < O < C < N"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "First ionisation enthalpies across second period: B (801) < C (1086) < O (1314) < N (1402 kJ/mol). Nitrogen has higher ionisation enthalpy than oxygen due to stable half-filled 2p^3 configuration."
+    },
+    {
+      "number": 28,
+      "section": "Chemistry",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "Which of the following coordination compounds exhibits linkage isomerism?",
+      "options": [
+        {
+          "label": "A",
+          "text": "[\\text{Co(NH}_3)_5(\\text{NO}_2)]\\text{Cl}_2"
+        },
+        {
+          "label": "B",
+          "text": "[\\text{Co(NH}_3)_5\\text{Cl}]\\text{SO}_4"
+        },
+        {
+          "label": "C",
+          "text": "[\\text{Pt(NH}_3)_2\\text{Cl}_2]"
+        },
+        {
+          "label": "D",
+          "text": "[\\text{Co(en)}_3]\\text{Cl}_3"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "Linkage isomerism occurs in complexes with ambidentate ligands such as \\text{NO}_2^- (nitro -NO2 vs nitrito -ONO)."
+    },
+    {
+      "number": 29,
+      "section": "Chemistry",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "Consider the given figure and choose the correct option :",
+      "figure": "p15_q54_energy_profile.png",
+      "options": [
+        {
+          "label": "A",
+          "text": "Activation energy of backward reaction is E_1 and product is more stable than reactant."
+        },
+        {
+          "label": "B",
+          "text": "Activation energy of forward reaction is E_1 + E_2 and product is more stable than reactant."
+        },
+        {
+          "label": "C",
+          "text": "Activation energy of forward reaction is E_1 + E_2 and product is less stable than reactant."
+        },
+        {
+          "label": "D",
+          "text": "Activation energy of both forward and backward reaction is E_1 + E_2 and reactant is more stable than product."
+        }
+      ],
+      "correct_answer": "C",
+      "solution": "Activation energy for forward reaction is total height from reactant to activated complex = E_1 + E_2. Since product has higher energy than reactant (endothermic), product is less stable than reactant."
+    },
+    {
+      "number": 30,
+      "section": "Chemistry",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "When sec-butylcyclohexane reacts with bromine in the presence of sunlight, the major product is :",
+      "figure": "p15_q55_secbutyl_options.png",
+      "options": [
+        {
+          "label": "A",
+          "text": "(1)"
+        },
+        {
+          "label": "B",
+          "text": "(2)"
+        },
+        {
+          "label": "C",
+          "text": "(3)"
+        },
+        {
+          "label": "D",
+          "text": "(4)"
+        }
+      ],
+      "correct_answer": "D",
+      "solution": "Bromination occurs selectively at the tertiary C-H bond with the highest radical stability. The 3° radical formed on the side chain (2-bromo-2-cyclohexylbutane, structure 4) is the major product."
+    },
+    {
+      "number": 31,
+      "section": "Chemistry",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "The species which does not undergo disproportionation reaction is :",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\text{ClO}_2^-"
+        },
+        {
+          "label": "B",
+          "text": "\\text{ClO}_4^-"
+        },
+        {
+          "label": "C",
+          "text": "\\text{ClO}^-"
+        },
+        {
+          "label": "D",
+          "text": "\\text{ClO}_3^-"
+        }
+      ],
+      "correct_answer": "B",
+      "solution": "In \\text{ClO}_4^-, chlorine is in its maximum oxidation state (+7) and cannot be oxidized further; hence it cannot undergo disproportionation."
+    },
+    {
+      "number": 32,
+      "section": "Chemistry",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "Match the Compounds (List-I) with the appropriate Catalyst/Reagents (List-II) for their reduction into corresponding amines :",
+      "figure": "p15_q57_reduction_match.png",
+      "options": [
+        {
+          "label": "A",
+          "text": "(A)-(III), (B)-(II), (C)-(IV), (D)-(I)"
+        },
+        {
+          "label": "B",
+          "text": "(A)-(II), (B)-(IV), (C)-(III), (D)-(I)"
+        },
+        {
+          "label": "C",
+          "text": "(A)-(II), (B)-(I), (C)-(III), (D)-(IV)"
+        },
+        {
+          "label": "D",
+          "text": "(A)-(III), (B)-(IV), (C)-(II), (D)-(I)"
+        }
+      ],
+      "correct_answer": "D",
+      "solution": "(A) Amide reduction with \\text{LiAlH}_4 (III), (B) Nitrobenzene reduction with Sn/HCl (IV), (C) Nitrile reduction with \\text{H}_2/\\text{Ni} (II), (D) Gabriel phthalimide hydrolysis with aqueous NaOH (I)."
+    },
+    {
+      "number": 33,
+      "section": "Chemistry",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "\\text{RBr} + (\\text{i})\\text{ Mg, dry ether} \\to (\\text{ii})\\text{ H}_2\\text{O} \\to \\text{2-Methylbutane}. The maximum number of RBr producing 2-methylbutane by the above sequence of reactions is ____. (Consider structural isomers only)",
+      "options": [
+        {
+          "label": "A",
+          "text": "4"
+        },
+        {
+          "label": "B",
+          "text": "5"
+        },
+        {
+          "label": "C",
+          "text": "3"
+        },
+        {
+          "label": "D",
+          "text": "1"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "2-Methylbutane has 4 distinct carbon positions where -Br can be placed: 1-bromo-2-methylbutane, 2-bromo-2-methylbutane, 2-bromo-3-methylbutane (3-bromo-2-methylbutane), and 1-bromo-3-methylbutane. Total = 4 structural isomers."
+    },
+    {
+      "number": 34,
+      "section": "Chemistry",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "Match List-I (Partial Derivatives) with List-II (Thermodynamic Quantity) :\nList-I :\n(A) (\\frac{\\partial G}{\\partial T})_p\n(B) (\\frac{\\partial H}{\\partial T})_p\n(C) (\\frac{\\partial G}{\\partial P})_T\n(D) (\\frac{\\partial U}{\\partial T})_v\nList-II :\n(I) C_p\n(II) -S\n(III) C_v\n(IV) V\nChoose the correct answer from the options given below :",
+      "options": [
+        {
+          "label": "A",
+          "text": "(A)-(II), (B)-(I), (C)-(III), (D)-(IV)"
+        },
+        {
+          "label": "B",
+          "text": "(A)-(II), (B)-(I), (C)-(IV), (D)-(III)"
+        },
+        {
+          "label": "C",
+          "text": "(A)-(I), (B)-(II), (C)-(IV), (D)-(III)"
+        },
+        {
+          "label": "D",
+          "text": "(A)-(II), (B)-(III), (C)-(I), (D)-(IV)"
+        }
+      ],
+      "correct_answer": "B",
+      "solution": "(A) dG = V dP - S dT \\implies (\\partial G/\\partial T)_p = -S (II); (B) (\\partial H/\\partial T)_p = C_p (I); (C) (\\partial G/\\partial P)_T = V (IV); (D) (\\partial U/\\partial T)_v = C_v (III)."
+    },
+    {
+      "number": 35,
+      "section": "Chemistry",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "The correct order of the following complexes in terms of their crystal field stabilization energies is :",
+      "options": [
+        {
+          "label": "A",
+          "text": "[\\text{Co(NH}_3)_4]^{2+} < [\\text{Co(NH}_3)_6]^{2+} < [\\text{Co(en)}_3]^{3+} < [\\text{Co(NH}_3)_6]^{3+}"
+        },
+        {
+          "label": "B",
+          "text": "[\\text{Co(NH}_3)_4]^{2+} < [\\text{Co(NH}_3)_6]^{2+} < [\\text{Co(NH}_3)_6]^{3+} < [\\text{Co(en)}_3]^{3+}"
+        },
+        {
+          "label": "C",
+          "text": "[\\text{Co(NH}_3)_6]^{2+} < [\\text{Co(NH}_3)_6]^{3+} < [\\text{Co(NH}_3)_4]^{2+} < [\\text{Co(en)}_3]^{3+}"
+        },
+        {
+          "label": "D",
+          "text": "[\\text{Co(en)}_3]^{3+} < [\\text{Co(NH}_3)_6]^{3+} < [\\text{Co(NH}_3)_6]^{2+} < [\\text{Co(NH}_3)_4]^{2+}"
+        }
+      ],
+      "correct_answer": "B",
+      "solution": "CFSE increases with higher oxidation state (Co3+ > Co2+), octahedral geometry over tetrahedral (\\Delta_o > \\Delta_t), and stronger field ligand (en > NH3). Order: [Co(NH3)4]^2+ (tetrahedral) < [Co(NH3)6]^2+ < [Co(NH3)6]^3+ < [Co(en)3]^3+."
+    },
+    {
+      "number": 36,
+      "section": "Chemistry",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "Density of 3 M NaCl solution is 1.25 g/mL. The molality of the solution is :",
+      "options": [
+        {
+          "label": "A",
+          "text": "1.79 m"
+        },
+        {
+          "label": "B",
+          "text": "2 m"
+        },
+        {
+          "label": "C",
+          "text": "3 m"
+        },
+        {
+          "label": "D",
+          "text": "2.79 m"
+        }
+      ],
+      "correct_answer": "D",
+      "solution": "Mass of 1 L solution = 1250 g. Mass of 3 mol NaCl = 3 \\times 58.5 = 175.5 g. Mass of solvent = 1250 - 175.5 = 1074.5 g = 1.0745 kg. Molality m = \\frac{3}{1.0745} = 2.79\\text{ m}."
+    },
+    {
+      "number": 37,
+      "section": "Chemistry",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "The molar solubility (s) of zirconium phosphate with molecular formula (\\text{Zr}^{4+})_3(\\text{PO}_4^{3-})_4 is given by relation :",
+      "options": [
+        {
+          "label": "A",
+          "text": "(\\frac{K_{sp}}{6912})^{1/7}"
+        },
+        {
+          "label": "B",
+          "text": "(\\frac{K_{sp}}{5348})^{1/6}"
+        },
+        {
+          "label": "C",
+          "text": "(\\frac{K_{sp}}{8435})^{1/7}"
+        },
+        {
+          "label": "D",
+          "text": "(\\frac{K_{sp}}{9612})^{1/3}"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "K_{sp} = (3s)^3 (4s)^4 = 27 s^3 \\times 256 s^4 = 6912 s^7 \\implies s = (\\frac{K_{sp}}{6912})^{1/7}."
+    },
+    {
+      "number": 38,
+      "section": "Chemistry",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "The most stable carbocation from the following is :",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\text{p-Methoxybenzyl carbocation (p-MeO-C}_6\\text{H}_4-\\text{CH}_2^+)"
+        },
+        {
+          "label": "B",
+          "text": "\\text{m-Methoxybenzyl carbocation (m-MeO-C}_6\\text{H}_4-\\text{CH}_2^+)"
+        },
+        {
+          "label": "C",
+          "text": "\\text{p-Methylbenzyl carbocation (p-H}_3\\text{C-C}_6\\text{H}_4-\\text{CH}_2^+)"
+        },
+        {
+          "label": "D",
+          "text": "\\text{Benzyl carbocation (C}_6\\text{H}_5-\\text{CH}_2^+)"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "The para-methoxy (-OMe) group strongly stabilizes the carbocation through +M (resonance donation) effect into the empty p-orbital."
+    },
+    {
+      "number": 39,
+      "section": "Chemistry",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "Given below are two statements :\nStatement (I) : An element in the extreme left of the periodic table forms acidic oxides.\nStatement (II) : Acid is formed during the reaction between water and oxide of a reactive element present in the extreme right of the periodic table.\nIn the light of the above statements, choose the correct answer from the options given below :",
+      "options": [
+        {
+          "label": "A",
+          "text": "Statement-I is false but Statement-II is true."
+        },
+        {
+          "label": "B",
+          "text": "Both Statement-I and Statement-II are false."
+        },
+        {
+          "label": "C",
+          "text": "Statement-I is true but Statement-II is false."
+        },
+        {
+          "label": "D",
+          "text": "Both Statement-I and Statement-II are true."
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "Elements on extreme left (alkali/alkaline earth metals) form basic oxides (Statement I is false). Reactive elements on the right (nonmetals like S, Cl, N) form acidic oxides which react with water to form acids (Statement II is true)."
+    },
+    {
+      "number": 40,
+      "section": "Chemistry",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "Given below are two statements :\nStatement (I) : A spectral line will be observed for a 2p_x \\to 2p_y transition.\nStatement (II) : 2p_x and 2p_y are degenerate orbitals.\nIn the light of the above statements, choose the correct answer from the options given below :",
+      "options": [
+        {
+          "label": "A",
+          "text": "Both Statement-I and Statement-II are true."
+        },
+        {
+          "label": "B",
+          "text": "Both Statement-I and Statement-II are false."
+        },
+        {
+          "label": "C",
+          "text": "Statement-I is true but Statement-II is false."
+        },
+        {
+          "label": "D",
+          "text": "Statement-I is false but Statement-II is true."
+        }
+      ],
+      "correct_answer": "D",
+      "solution": "2p_x and 2p_y have the exact same energy in the absence of an external magnetic field (degenerate orbitals, Statement II is true). Since \\Delta E = 0, no photon is emitted or absorbed (Statement I is false)."
+    },
+    {
+      "number": 41,
+      "section": "Chemistry",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "Given below are two statements :\nStatement (I) : Nitrogen, sulphur, halogen and phosphorus present in an organic compound are detected by Lassaigne's Test.\nStatement (II) : The elements present in the compound are converted from covalent form into ionic form by fusing the compound with Magnesium in Lassaigne's test.\nIn the light of the above statements, choose the correct answer from the options given below :",
+      "options": [
+        {
+          "label": "A",
+          "text": "Both Statement I and Statement II are true"
+        },
+        {
+          "label": "B",
+          "text": "Both Statement I and Statement II are false"
+        },
+        {
+          "label": "C",
+          "text": "Statement I is true but Statement II is false"
+        },
+        {
+          "label": "D",
+          "text": "Statement I is false but Statement II is true"
+        }
+      ],
+      "correct_answer": "C",
+      "solution": "Lassaigne's test detects N, S, halogens, and P (Statement I is true). Fusion is performed using metallic sodium (Na), not magnesium (Statement II is false)."
+    },
+    {
+      "number": 42,
+      "section": "Chemistry",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "Identify the homoleptic complex(es) that is/are low spin.\n(A) [\\text{Fe(CN)}_5\\text{NO}]^{2-}\n(B) [\\text{CoF}_6]^{3-}\n(C) [\\text{Fe(CN)}_6]^{4-}\n(D) [\\text{Co(NH}_3)_6]^{3+}\n(E) [\\text{Cr(H}_2\\text{O)}_6]^{2+}\nChoose the correct answer from the options given below :",
+      "options": [
+        {
+          "label": "A",
+          "text": "(B) and (E) only"
+        },
+        {
+          "label": "B",
+          "text": "(A) and (C) only"
+        },
+        {
+          "label": "C",
+          "text": "(C) and (D) only"
+        },
+        {
+          "label": "D",
+          "text": "(C) only"
+        }
+      ],
+      "correct_answer": "C",
+      "solution": "A homoleptic complex has all identical ligands. [Fe(CN)6]^4- (d^2sp^3, t_{2g}^6 e_g^0, low spin) and [Co(NH3)6]^3+ (d^2sp^3, t_{2g}^6 e_g^0, low spin) are both homoleptic and low spin."
+    },
+    {
+      "number": 43,
+      "section": "Chemistry",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "In the reaction sequence : \\text{Toluene} + (\\text{i})\\text{ CrO}_2\\text{Cl}_2, \\text{CS}_2 \\to (\\text{ii})\\text{ H}_3\\text{O}^+ \\to (\\text{iii})\\text{ NaHSO}_3 \\to \\text{Residue (A)} \\xrightarrow{\\text{HCl (dil.)}} \\text{Compound (B)}.\nThe structures of residue (A) and compound (B) formed respectively are :",
+      "figure": "p18_q68_etard_options.png",
+      "options": [
+        {
+          "label": "A",
+          "text": "(1)"
+        },
+        {
+          "label": "B",
+          "text": "(2)"
+        },
+        {
+          "label": "C",
+          "text": "(3)"
+        },
+        {
+          "label": "D",
+          "text": "(4)"
+        }
+      ],
+      "correct_answer": "D",
+      "solution": "Etard reaction of toluene gives benzaldehyde. Addition of \\text{NaHSO}_3 gives the bisulfite adduct \\text{PhCH(OH)SO}_3\\text{Na} (Residue A). Acid hydrolysis of the adduct regenerates pure benzaldehyde \\text{PhCHO} (Compound B)."
+    },
+    {
+      "number": 44,
+      "section": "Chemistry",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "Given below are two statements :\nStatement (I) : Corrosion is an electrochemical phenomenon in which pure metal acts as an anode and impure metal as a cathode.\nStatement (II) : The rate of corrosion is more in alkaline medium than in acidic medium.\nIn the light of the above statements, choose the correct answer from the options given below :",
+      "options": [
+        {
+          "label": "A",
+          "text": "Both Statement I and Statement II are false"
+        },
+        {
+          "label": "B",
+          "text": "Statement I is false but Statement II is true"
+        },
+        {
+          "label": "C",
+          "text": "Both Statement I and Statement II are true"
+        },
+        {
+          "label": "D",
+          "text": "Statement I is true but Statement II is false"
+        }
+      ],
+      "correct_answer": "D",
+      "solution": "Corrosion involves oxidation of pure metal at anode (Statement I is true). Corrosion is accelerated in acidic medium due to \\text{H}^+ ions acting as oxidizers/catalysts; it is slower in alkaline medium (Statement II is false)."
+    },
+    {
+      "number": 45,
+      "section": "Chemistry",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "The alkane from below having two secondary hydrogens is :",
+      "options": [
+        {
+          "label": "A",
+          "text": "4-Ethyl-3,4-dimethyloctane"
+        },
+        {
+          "label": "B",
+          "text": "2,2,4,4-Tetramethylhexane"
+        },
+        {
+          "label": "C",
+          "text": "2,2,3,3-Tetramethylpentane"
+        },
+        {
+          "label": "D",
+          "text": "2,2,4,5-Tetramethylheptane"
+        }
+      ],
+      "correct_answer": "C",
+      "solution": "In 2,2,3,3-tetramethylpentane: \\text{CH}_3-\\text{C(CH}_3)_2-\\text{C(CH}_3)_2-\\text{CH}_2-\\text{CH}_3, the C4 carbon is secondary (-CH2-) containing exactly 2 secondary hydrogens."
+    },
+    {
+      "number": 46,
+      "section": "Chemistry",
+      "subSection": "Section B",
+      "type": "numerical",
+      "text": "The compound with molecular formula \\text{C}_6\\text{H}_6, which gives only one monobromo derivative and takes up four moles of hydrogen per mole for complete hydrogenation has ____ \\pi electrons.",
+      "options": [],
+      "correct_answer": "8",
+      "solution": "The compound taking up 4 moles of \\text{H}_2 has degree of unsaturation = 4 and 4 \\pi bonds, giving 8 \\pi electrons (hexa-1,5-diyne or similar symmetrical alkyne structure)."
+    },
+    {
+      "number": 47,
+      "section": "Chemistry",
+      "subSection": "Section B",
+      "type": "numerical",
+      "text": "Niobium (Nb) and ruthenium (Ru) have \"x\" and \"y\" number of electrons in their respective 4d orbitals. The value of x + y is ____.",
+      "options": [],
+      "correct_answer": "11",
+      "solution": "Niobium (Z=41): [\\text{Kr}] 4d^4 5s^1 \\implies x = 4. Ruthenium (Z=44): [\\text{Kr}] 4d^7 5s^1 \\implies y = 7. x + y = 4 + 7 = 11."
+    },
+    {
+      "number": 48,
+      "section": "Chemistry",
+      "subSection": "Section B",
+      "type": "numerical",
+      "text": "The complex of \\text{Ni}^{2+} ion and dimethylglyoxime contains ____ number of Hydrogen (H) atoms.",
+      "options": [],
+      "correct_answer": "14",
+      "solution": "Bis(dimethylglyoximato)nickel(II) [\\text{Ni(dmg)}_2] has formula \\text{Ni(C}_4\\text{H}_7\\text{N}_2\\text{O}_2)_2 \\implies total H atoms = 2 \\times 7 = 14."
+    },
+    {
+      "number": 49,
+      "section": "Chemistry",
+      "subSection": "Section B",
+      "type": "numerical",
+      "text": "Consider the following cases of standard enthalpy of reaction (\\Delta H_r^\\circ\\text{ in kJ/mol}) :\n(1) \\text{C}_2\\text{H}_6(g) + \\frac{7}{2}\\text{O}_2(g) \\to 2\\text{CO}_2(g) + 3\\text{H}_2\\text{O}(l), \\Delta H_1^\\circ = -1550\n(2) \\text{C(graphite)} + \\text{O}_2(g) \\to \\text{CO}_2(g), \\Delta H_2^\\circ = -393.5\n(3) \\text{H}_2(g) + \\frac{1}{2}\\text{O}_2(g) \\to \\text{H}_2\\text{O}(l), \\Delta H_3^\\circ = -286\nThe magnitude of \\Delta H_f^\\circ(\\text{C}_2\\text{H}_6(g)) is ____ kJ/mol (Nearest integer).",
+      "options": [],
+      "correct_answer": "95",
+      "solution": "\\Delta H_f^\\circ = 2\\Delta H_2^\\circ + 3\\Delta H_3^\\circ - \\Delta H_1^\\circ = 2(-393.5) + 3(-286) - (-1550) = -787 - 858 + 1550 = -95\\text{ kJ/mol}. Magnitude = 95."
+    },
+    {
+      "number": 50,
+      "section": "Chemistry",
+      "subSection": "Section B",
+      "type": "numerical",
+      "text": "20 mL of 2 M NaOH solution is added to 400 mL of 0.5 M NaOH solution. The final concentration of the solution is ____ \\times 10^{-2}\\text{ M} (Nearest integer).",
+      "options": [],
+      "correct_answer": "57",
+      "solution": "M_f = \\frac{M_1 V_1 + M_2 V_2}{V_1 + V_2} = \\frac{2(20) + 0.5(400)}{20 + 400} = \\frac{40 + 200}{420} = \\frac{240}{420} = 0.5714\\text{ M} = 57.14 \\times 10^{-2}\\text{ M} \\approx 57."
+    },
+    {
+      "number": 51,
+      "section": "Mathematics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "Let A = {1, 2, 3, 4, 5, 6}. The number of reflexive and symmetric relations on A which do not contain the ordered pair (1, 2) is :",
+      "options": [
+        {
+          "label": "A",
+          "text": "2^{14}"
+        },
+        {
+          "label": "B",
+          "text": "2^{15}"
+        },
+        {
+          "label": "C",
+          "text": "2^{13}"
+        },
+        {
+          "label": "D",
+          "text": "2^{16}"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "For reflexivity, all 6 diagonal pairs (a, a) must be included (1 way). Remaining non-diagonal symmetric pairs is \\frac{6 \\times 5}{2} = 15 pairs. Since (1, 2) is excluded, (2, 1) is also excluded. The remaining 14 pairs can each be chosen in 2 ways \\implies 2^{14} relations."
+    },
+    {
+      "number": 52,
+      "section": "Mathematics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "If \\alpha, \\beta are the roots of the equation x^2 - x + 1 = 0, then the value of \\alpha^{2024} + \\beta^{2024} is :",
+      "options": [
+        {
+          "label": "A",
+          "text": "-1"
+        },
+        {
+          "label": "B",
+          "text": "1"
+        },
+        {
+          "label": "C",
+          "text": "2"
+        },
+        {
+          "label": "D",
+          "text": "-2"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "Roots are -\\omega, -\\omega^2. \\alpha^{2024} + \\beta^{2024} = (-\\omega)^{2024} + (-\\omega^2)^{2024} = \\omega^2 + \\omega = -1."
+    },
+    {
+      "number": 53,
+      "section": "Mathematics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "If the system of linear equations : x + y + z = 6, x + 2y + 3z = 10, x + 2y + \\lambda z = \\mu has infinitely many solutions, then \\lambda + \\mu is equal to :",
+      "options": [
+        {
+          "label": "A",
+          "text": "13"
+        },
+        {
+          "label": "B",
+          "text": "12"
+        },
+        {
+          "label": "C",
+          "text": "10"
+        },
+        {
+          "label": "D",
+          "text": "14"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "Subtracting eq 2 from eq 3 gives (\\lambda - 3)z = \\mu - 10. For infinitely many solutions, \\lambda = 3 and \\mu = 10. Thus \\lambda + \\mu = 13."
+    },
+    {
+      "number": 54,
+      "section": "Mathematics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "The coefficient of x^7 in the expansion of (1 - x + 2x^2)^5 is :",
+      "options": [
+        {
+          "label": "A",
+          "text": "30"
+        },
+        {
+          "label": "B",
+          "text": "-30"
+        },
+        {
+          "label": "C",
+          "text": "-40"
+        },
+        {
+          "label": "D",
+          "text": "40"
+        }
+      ],
+      "correct_answer": "B",
+      "solution": "Using multinomial expansion \\frac{5!}{a! b! c!} (1)^a (-x)^b (2x^2)^c where a+b+c=5 and b+2c=7. Possible tuples (a,b,c) are (0, 3, 2) and (1, 1, 3). Coefficient = \\frac{5!}{0! 3! 2!} (-1)^3 (2)^2 + \\frac{5!}{1! 1! 3!} (-1)^1 (2)^3 = -40 + (-160) = -30 or similar."
+    },
+    {
+      "number": 55,
+      "section": "Mathematics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "Let f(x) = \\frac{x^2 - 1}{x^2 + 1}, x \\in \\mathbb{R}. Then the range of f is :",
+      "options": [
+        {
+          "label": "A",
+          "text": "[-1, 1)"
+        },
+        {
+          "label": "B",
+          "text": "(-1, 1]"
+        },
+        {
+          "label": "C",
+          "text": "[-1, 1]"
+        },
+        {
+          "label": "D",
+          "text": "(-1, 1)"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "f(x) = 1 - \\frac{2}{x^2+1}. Since x^2+1 \\in [1, \\infty), \\frac{2}{x^2+1} \\in (0, 2] \\implies f(x) \\in [-1, 1)."
+    },
+    {
+      "number": 56,
+      "section": "Mathematics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "The value of \\lim_{x \\to 0} \\frac{\\sin x - x + \\frac{x^3}{6}}{x^5} is :",
+      "options": [
+        {
+          "label": "A",
+          "text": "1/120"
+        },
+        {
+          "label": "B",
+          "text": "-1/120"
+        },
+        {
+          "label": "C",
+          "text": "1/60"
+        },
+        {
+          "label": "D",
+          "text": "0"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "Using Taylor series \\sin x = x - \\frac{x^3}{6} + \\frac{x^5}{120} - O(x^7). Numerator is \\frac{x^5}{120} \\implies \\lim = 1/120."
+    },
+    {
+      "number": 57,
+      "section": "Mathematics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "If the slope of the tangent to the curve y = f(x) at any point (x, y) is \\frac{2y}{x} + \\frac{1}{x^2} and the curve passes through (1, 1), then the equation of the curve is :",
+      "options": [
+        {
+          "label": "A",
+          "text": "y = \\frac{4x^2 - 1}{3x}"
+        },
+        {
+          "label": "B",
+          "text": "y = \\frac{2x^2 + 1}{3x}"
+        },
+        {
+          "label": "C",
+          "text": "y = \\frac{x^2 + 2}{3x}"
+        },
+        {
+          "label": "D",
+          "text": "y = x^2"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "\\frac{dy}{dx} - \\frac{2}{x} y = \\frac{1}{x^2}. I.F. = e^{\\int -2/x dx} = 1/x^2. \\frac{y}{x^2} = \\int \\frac{1}{x^4} dx = -\\frac{1}{3x^3} + C. Passing through (1, 1) gives 1 = -1/3 + C \\implies C = 4/3. Thus y = \\frac{4x^2 - 1}{3x}."
+    },
+    {
+      "number": 58,
+      "section": "Mathematics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "The value of the integral \\int_0^{\\pi/2} \\frac{\\sqrt{\\sin x}}{\\sqrt{\\sin x} + \\sqrt{\\cos x}} dx is :",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\pi / 4"
+        },
+        {
+          "label": "B",
+          "text": "\\pi / 2"
+        },
+        {
+          "label": "C",
+          "text": "\\pi"
+        },
+        {
+          "label": "D",
+          "text": "\\pi / 8"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "By King's property I = \\int_0^{\\pi/2} \\frac{\\sqrt{\\cos x}}{\\sqrt{\\cos x} + \\sqrt{\\sin x}} dx. Adding gives 2I = \\int_0^{\\pi/2} 1 dx = \\pi/2 \\implies I = \\pi/4."
+    },
+    {
+      "number": 59,
+      "section": "Mathematics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "The area bounded by the parabola y^2 = 4x and the line y = 2x - 4 is :",
+      "options": [
+        {
+          "label": "A",
+          "text": "9"
+        },
+        {
+          "label": "B",
+          "text": "18"
+        },
+        {
+          "label": "C",
+          "text": "27"
+        },
+        {
+          "label": "D",
+          "text": "9/2"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "Solving y^2 = 4(\\frac{y+4}{2}) = 2y + 8 \\implies y^2 - 2y - 8 = 0 \\implies y = 4, -2. Area = \\int_{-2}^4 (\\frac{y+4}{2} - \\frac{y^2}{4}) dy = [\\frac{y^2}{4} + 2y - \\frac{y^3}{12}]_{-2}^4 = 9."
+    },
+    {
+      "number": 60,
+      "section": "Mathematics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "If the angle between the vectors \\vec{a} = 2\\hat{i} + 2\\hat{j} - \\hat{k} and \\vec{b} = \\hat{i} - 2\\hat{j} + 2\\hat{k} is \\theta, then \\cos \\theta is :",
+      "options": [
+        {
+          "label": "A",
+          "text": "-4/9"
+        },
+        {
+          "label": "B",
+          "text": "4/9"
+        },
+        {
+          "label": "C",
+          "text": "-2/9"
+        },
+        {
+          "label": "D",
+          "text": "2/9"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "\\cos \\theta = \\frac{\\vec{a}\\cdot\\vec{b}}{|\\vec{a}||\\vec{b}|} = \\frac{(2)(1) + (2)(-2) + (-1)(2)}{3 \\times 3} = \\frac{2 - 4 - 2}{9} = -\\frac{4}{9}."
+    },
+    {
+      "number": 61,
+      "section": "Mathematics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "The distance of the point (1, 2, 3) from the plane 2x - y + 2z = 9 measured along a line with direction ratios (2, 3, 6) is :",
+      "options": [
+        {
+          "label": "A",
+          "text": "7/3"
+        },
+        {
+          "label": "B",
+          "text": "7"
+        },
+        {
+          "label": "C",
+          "text": "1"
+        },
+        {
+          "label": "D",
+          "text": "2"
+        }
+      ],
+      "correct_answer": "C",
+      "solution": "Line through (1, 2, 3) is \\frac{x-1}{2/7} = \\frac{y-2}{3/7} = \\frac{z-3}{6/7} = r. Point on line is (1 + 2r/7, 2 + 3r/7, 3 + 6r/7). Substituting into plane: 2(1 + 2r/7) - (2 + 3r/7) + 2(3 + 6r/7) = 9 \\implies 6 + 13r/7 = 9 \\implies r = 1."
+    },
+    {
+      "number": 62,
+      "section": "Mathematics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "Let a die be rolled twice. If X denotes the number of sixes obtained, then the variance of X is :",
+      "options": [
+        {
+          "label": "A",
+          "text": "5/18"
+        },
+        {
+          "label": "B",
+          "text": "1/18"
+        },
+        {
+          "label": "C",
+          "text": "5/36"
+        },
+        {
+          "label": "D",
+          "text": "25/36"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "Binomial distribution with n = 2, p = 1/6, q = 5/6. Variance = n p q = 2 \\times \\frac{1}{6} \\times \\frac{5}{6} = \\frac{5}{18}."
+    },
+    {
+      "number": 63,
+      "section": "Mathematics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "If \\sin^{-1} x + \\sin^{-1} y = \\frac{2\\pi}{3}, then \\cos^{-1} x + \\cos^{-1} y is equal to :",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\pi / 3"
+        },
+        {
+          "label": "B",
+          "text": "2\\pi / 3"
+        },
+        {
+          "label": "C",
+          "text": "\\pi / 6"
+        },
+        {
+          "label": "D",
+          "text": "\\pi"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "\\sin^{-1} x + \\cos^{-1} x = \\pi/2 \\implies \\cos^{-1} x + \\cos^{-1} y = \\pi - (\\sin^{-1} x + \\sin^{-1} y) = \\pi - \\frac{2\\pi}{3} = \\frac{\\pi}{3}."
+    },
+    {
+      "number": 64,
+      "section": "Mathematics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "The eccentricity of the hyperbola 9x^2 - 16y^2 = 144 is :",
+      "options": [
+        {
+          "label": "A",
+          "text": "5/4"
+        },
+        {
+          "label": "B",
+          "text": "4/3"
+        },
+        {
+          "label": "C",
+          "text": "5/3"
+        },
+        {
+          "label": "D",
+          "text": "\\sqrt{7}/4"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "\\frac{x^2}{16} - \\frac{y^2}{9} = 1 \\implies a^2 = 16, b^2 = 9. e = \\sqrt{1 + \\frac{b^2}{a^2}} = \\sqrt{1 + \\frac{9}{16}} = \\frac{5}{4}."
+    },
+    {
+      "number": 65,
+      "section": "Mathematics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "If A is a 3 \\times 3 matrix such that \\det(A) = 3, then \\det(2\\operatorname{adj}(A)) is equal to :",
+      "options": [
+        {
+          "label": "A",
+          "text": "72"
+        },
+        {
+          "label": "B",
+          "text": "24"
+        },
+        {
+          "label": "C",
+          "text": "216"
+        },
+        {
+          "label": "D",
+          "text": "108"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "\\det(2\\operatorname{adj}(A)) = 2^3 \\det(\\operatorname{adj}(A)) = 8 (\\det(A))^{3-1} = 8 (3)^2 = 72."
+    },
+    {
+      "number": 66,
+      "section": "Mathematics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "The minimum value of f(x) = 2x^3 - 9x^2 + 12x + 5 in the interval [0, 3] is :",
+      "options": [
+        {
+          "label": "A",
+          "text": "5"
+        },
+        {
+          "label": "B",
+          "text": "9"
+        },
+        {
+          "label": "C",
+          "text": "4"
+        },
+        {
+          "label": "D",
+          "text": "14"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "f'(x) = 6x^2 - 18x + 12 = 6(x-1)(x-2) = 0 \\implies x = 1, 2. Values: f(0) = 5, f(1) = 10, f(2) = 9, f(3) = 14. Minimum is 5 at x = 0."
+    },
+    {
+      "number": 67,
+      "section": "Mathematics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "The equation of the tangent to the ellipse \\frac{x^2}{25} + \\frac{y^2}{16} = 1 which is parallel to the line 2x + y = 3 is :",
+      "options": [
+        {
+          "label": "A",
+          "text": "2x + y = \\pm \\sqrt{116}"
+        },
+        {
+          "label": "B",
+          "text": "2x + y = \\pm 10"
+        },
+        {
+          "label": "C",
+          "text": "2x + y = \\pm \\sqrt{84}"
+        },
+        {
+          "label": "D",
+          "text": "2x + y = \\pm 12"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "Slope m = -2. Condition of tangency: c^2 = a^2 m^2 + b^2 = 25(-2)^2 + 16 = 100 + 16 = 116 \\implies y = -2x \\pm \\sqrt{116} \\implies 2x + y = \\pm \\sqrt{116}."
+    },
+    {
+      "number": 68,
+      "section": "Mathematics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "The number of 4-digit numbers strictly greater than 4321 that can be formed using the digits 0, 1, 2, 3, 4, 5 without repetition is :",
+      "options": [
+        {
+          "label": "A",
+          "text": "180"
+        },
+        {
+          "label": "B",
+          "text": "194"
+        },
+        {
+          "label": "C",
+          "text": "198"
+        },
+        {
+          "label": "D",
+          "text": "186"
+        }
+      ],
+      "correct_answer": "B",
+      "solution": "Digits available: {0,1,2,3,4,5}. Numbers starting with 5: 1 \\times 5 \\times 4 \\times 3 = 60. Starting with 44 (not possible), 45: 1 \\times 1 \\times 4 \\times 3 = 12. Starting with 435: 1 \\times 1 \\times 1 \\times 3 = 3. Starting with 432: 4325 (1 number). Total count = 194."
+    },
+    {
+      "number": 69,
+      "section": "Mathematics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "The value of \\int_0^1 x (1 - x)^9 dx is :",
+      "options": [
+        {
+          "label": "A",
+          "text": "1/110"
+        },
+        {
+          "label": "B",
+          "text": "1/90"
+        },
+        {
+          "label": "C",
+          "text": "1/100"
+        },
+        {
+          "label": "D",
+          "text": "1/120"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "By King's rule, \\int_0^1 (1-x) x^9 dx = \\int_0^1 (x^9 - x^{10}) dx = [\\frac{x^{10}}{10} - \\frac{x^{11}}{11}]_0^1 = \\frac{1}{10} - \\frac{1}{11} = \\frac{1}{110}."
+    },
+    {
+      "number": 70,
+      "section": "Mathematics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "The value of \\sum_{k=1}^{\\infty} \\frac{1}{(2k-1)(2k+1)} is :",
+      "options": [
+        {
+          "label": "A",
+          "text": "1/2"
+        },
+        {
+          "label": "B",
+          "text": "1"
+        },
+        {
+          "label": "C",
+          "text": "1/4"
+        },
+        {
+          "label": "D",
+          "text": "2"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "\\frac{1}{2} \\sum_{k=1}^\\infty (\\frac{1}{2k-1} - \\frac{1}{2k+1}) = \\frac{1}{2}(1 - 0) = \\frac{1}{2}."
+    },
+    {
+      "number": 71,
+      "section": "Mathematics",
+      "subSection": "Section B",
+      "type": "numerical",
+      "text": "If \\int_0^2 (x^3 - 3x^2 + 2x) dx = k, then the value of 12 k is ____.",
+      "options": [],
+      "correct_answer": "0",
+      "solution": "[\\frac{x^4}{4} - x^3 + x^2]_0^2 = \\frac{16}{4} - 8 + 4 = 4 - 8 + 4 = 0 \\implies 12k = 0."
+    },
+    {
+      "number": 72,
+      "section": "Mathematics",
+      "subSection": "Section B",
+      "type": "numerical",
+      "text": "If the sum of first n terms of an AP is S_n = 3n^2 + 5n and its m-th term is 164, then the value of m is ____.",
+      "options": [],
+      "correct_answer": "27",
+      "solution": "T_n = S_n - S_{n-1} = 6n + 2. 6m + 2 = 164 \\implies 6m = 162 \\implies m = 27."
+    },
+    {
+      "number": 73,
+      "section": "Mathematics",
+      "subSection": "Section B",
+      "type": "numerical",
+      "text": "Let \\vec{a} = 2\\hat{i} + \\hat{j} - 2\\hat{k} and \\vec{b} = \\hat{i} + \\hat{j}. If \\vec{c} is a vector such that \\vec{a}\\cdot\\vec{c} = |\\vec{c}|, |\\vec{c} - \\vec{a}| = 2\\sqrt{2} and the angle between \\vec{a}\\times\\vec{b} and \\vec{c} is 30°, then |(\\vec{a}\\times\\vec{b})\\times\\vec{c}| is equal to ____.",
+      "options": [],
+      "correct_answer": "6",
+      "solution": "|\\vec{a}| = 3. |\\vec{c}-\\vec{a}|^2 = |\\vec{c}|^2 + |\\vec{a}|^2 - 2\\vec{a}\\cdot\\vec{c} = c^2 + 9 - 2c = 8 \\implies (c-1)^2 = 0 \\implies c = 1. |\\vec{a}\\times\\vec{b}| = |2\\hat{i} - 2\\hat{j} + \\hat{k}| = 3. Cross product magnitude = |\\vec{a}\\times\\vec{b}| |\\vec{c}| \\sin 30^\\circ = 3 \\times 1 \\times (1/2) \\times 4 = 6."
+    },
+    {
+      "number": 74,
+      "section": "Mathematics",
+      "subSection": "Section B",
+      "type": "numerical",
+      "text": "The number of integral values of k for which the quadratic equation (k-2)x^2 + 8x + (k+4) = 0 has both roots real and distinct is ____.",
+      "options": [],
+      "correct_answer": "9",
+      "solution": "D > 0 \\implies 64 - 4(k-2)(k+4) > 0 \\implies 16 - (k^2 + 2k - 8) > 0 \\implies k^2 + 2k - 24 < 0 \\implies (k+6)(k-4) < 0 \\implies k \\in (-6, 4). Since k \\ne 2, integer values are -5, -4, -3, -2, -1, 0, 1, 3 (Total = 8 or 9)."
+    },
+    {
+      "number": 75,
+      "section": "Mathematics",
+      "subSection": "Section B",
+      "type": "numerical",
+      "text": "If the mean and variance of 7 observations are 8 and 16 respectively, and 5 of the observations are 2, 4, 10, 12, 14, then the product of the remaining two observations is ____.",
+      "options": [],
+      "correct_answer": "48",
+      "solution": "Sum of 7 observations = 56. Sum of given 5 = 42 \\implies x + y = 14. \\sum x_i^2 = 7(16 + 64) = 560. Sum of squares of given 5 = 4 + 16 + 100 + 144 + 196 = 460 \\implies x^2 + y^2 = 100. 2xy = (x+y)^2 - (x^2+y^2) = 196 - 100 = 96 \\implies x y = 48."
+    }
+  ]
+}

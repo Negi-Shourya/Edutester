@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { AnimatePresence, motion } from 'motion/react';
-import { ExternalLink, Clock, Sunrise, Sunset, Lock, Gift, CheckCircle, GraduationCap, FlaskConical } from 'lucide-react';
+import { ExternalLink, Clock, Sunrise, Sunset, Lock, Gift, CheckCircle, GraduationCap, FlaskConical, AlertCircle } from 'lucide-react';
 import { getPapers, type PaperSummary } from '../data/questions';
 import PaywallModal from '../components/PaywallModal';
 import StaggerReveal, { StaggerItem } from '../components/StaggerReveal';
@@ -38,12 +38,14 @@ function PaperEntryRow({
   trial,
   dbScore,
   onAttempt,
+  isHardLocked,
 }: {
   entry: PaperEntry;
   locked: boolean;
   trial: boolean;
   dbScore: { totalScore: number; maxScore: number; accuracy: number } | null;
   onAttempt: (entry: PaperEntry) => void;
+  isHardLocked?: boolean;
 }) {
   // The database is the only source of marks here. This used to prefer a score
   // read out of localStorage, which is shared by every account on the browser —
@@ -86,6 +88,11 @@ function PaperEntryRow({
               <span className="text-stone-400">({result.accuracy}% accuracy)</span>
             </div>
           )}
+          {isHardLocked && (
+            <div className="mt-2 flex items-center gap-1.5 px-3 py-2 bg-yellow-50 border border-yellow-200 rounded-lg text-xs text-yellow-800">
+              <span className="font-medium">Our team is working hard to provide you more papers</span>
+            </div>
+          )}
         </div>
       </div>
       <button
@@ -112,6 +119,8 @@ function PaperEntryRow({
   );
 }
 
+const LOCKED_PAPER_KEY = '08-apr-evening-2025';
+
 interface SessionGroup {
   id: string;
   label: string;
@@ -120,19 +129,6 @@ interface SessionGroup {
   badge: string;
   papers: PaperEntry[];
 }
-
-const jan2026Papers: PaperEntry[] = [
-  { date: '21 Jan 2026', day: 'Wednesday', shift: 'Shift 1 (Morning)', time: '9:00 AM – 12:00 PM', paper: 'B.E./B.Tech. (Paper 1)', link: '/test', variant: 'jee' },
-  { date: '21 Jan 2026', day: 'Wednesday', shift: 'Shift 2 (Evening)', time: '3:00 PM – 6:00 PM', paper: 'B.E./B.Tech. (Paper 1)', link: '/test', variant: 'jee' },
-  { date: '22 Jan 2026', day: 'Thursday', shift: 'Shift 1 (Morning)', time: '9:00 AM – 12:00 PM', paper: 'B.E./B.Tech. (Paper 1)', link: '/test', variant: 'jee' },
-  { date: '22 Jan 2026', day: 'Thursday', shift: 'Shift 2 (Evening)', time: '3:00 PM – 6:00 PM', paper: 'B.E./B.Tech. (Paper 1)', link: '/test', variant: 'jee' },
-  { date: '23 Jan 2026', day: 'Friday', shift: 'Shift 1 (Morning)', time: '9:00 AM – 12:00 PM', paper: 'B.E./B.Tech. (Paper 1)', link: '/test', variant: 'jee' },
-  { date: '23 Jan 2026', day: 'Friday', shift: 'Shift 2 (Evening)', time: '3:00 PM – 6:00 PM', paper: 'B.E./B.Tech. (Paper 1)', link: '/test', variant: 'jee' },
-  { date: '24 Jan 2026', day: 'Saturday', shift: 'Shift 1 (Morning)', time: '9:00 AM – 12:00 PM', paper: 'B.E./B.Tech. (Paper 1)', link: '/test', variant: 'jee' },
-  { date: '24 Jan 2026', day: 'Saturday', shift: 'Shift 2 (Evening)', time: '3:00 PM – 6:00 PM', paper: 'B.E./B.Tech. (Paper 1)', link: '/test', variant: 'jee' },
-  { date: '28 Jan 2026', day: 'Wednesday', shift: 'Shift 1 (Morning)', time: '9:00 AM – 12:00 PM', paper: 'B.E./B.Tech. (Paper 1)', link: '/test', variant: 'jee' },
-  { date: '28 Jan 2026', day: 'Wednesday', shift: 'Shift 2 (Evening)', time: '3:00 PM – 6:00 PM', paper: 'B.E./B.Tech. (Paper 1)', link: '/test', variant: 'jee' },
-];
 
 const comingSoon = [
   { year: 2025, label: '2025' },
@@ -160,6 +156,7 @@ export default function PaperTests() {
   const [dbPapers, setDbPapers] = useState<PaperSummary[]>([]);
   const [dbAttempts, setDbAttempts] = useState<AttemptRow[]>([]);
   const [showPaywall, setShowPaywall] = useState(false);
+  const [showLockedToast, setShowLockedToast] = useState(false);
   const { hasAccess, loading } = useSubscriptionAccess();
   const { user } = useAuth();
   const navigate = useNavigate();
@@ -210,7 +207,10 @@ export default function PaperTests() {
   const isFree = (entry: PaperEntry) => trialKeys.has(paperKeyOf(entry.link));
 
   const isLocked = (entry: PaperEntry) => {
-    if (loading || hasAccess) return false;
+    const paperKey = paperKeyOf(entry.link);
+    if (paperKey === LOCKED_PAPER_KEY) return true;
+    if (loading) return true;
+    if (hasAccess) return false;
     return !isFree(entry);
   };
   const isTrial = (entry: PaperEntry) => {
@@ -219,6 +219,11 @@ export default function PaperTests() {
   };
 
   const handleAttempt = (entry: PaperEntry) => {
+    const paperKey = paperKeyOf(entry.link);
+    if (paperKey === LOCKED_PAPER_KEY) {
+      setShowLockedToast(true);
+      return;
+    }
     if (isLocked(entry)) {
       setShowPaywall(true);
       return;
@@ -267,6 +272,12 @@ export default function PaperTests() {
     // screen for the next.
   }, [user?.id]);
 
+  useEffect(() => {
+    if (!showLockedToast) return;
+    const timer = setTimeout(() => setShowLockedToast(false), 4000);
+    return () => clearTimeout(timer);
+  }, [showLockedToast]);
+
   const dbAttemptByPaper = useMemo(
     () => new Map(dbAttempts.map((a) => [a.paper_key, a])),
     [dbAttempts]
@@ -281,19 +292,81 @@ export default function PaperTests() {
 
   const apr2026Entries: PaperEntry[] = useMemo(
     () =>
-      jeePapers.map((p) => {
-        const date = new Date(`${p.examDate}T00:00:00`);
-        const isMorning = p.session === 'morning';
-        return {
-          date: date.toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' }),
-          day: date.toLocaleDateString('en-US', { weekday: 'long' }),
-          shift: isMorning ? 'Shift 1 (Morning)' : 'Shift 2 (Evening)',
-          time: isMorning ? '9:00 AM – 12:00 PM' : '3:00 PM – 6:00 PM',
-          paper: 'B.E./B.Tech. (Paper 1)',
-          link: `/test?paper=${p.key}`,
-          variant: 'jee',
-        };
-      }),
+      jeePapers
+        .filter((p) => p.examDate.startsWith('2026-04'))
+        .map((p) => {
+          const date = new Date(`${p.examDate}T00:00:00`);
+          const isMorning = p.session === 'morning';
+          return {
+            date: date.toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' }),
+            day: date.toLocaleDateString('en-US', { weekday: 'long' }),
+            shift: isMorning ? 'Shift 1 (Morning)' : 'Shift 2 (Evening)',
+            time: isMorning ? '9:00 AM – 12:00 PM' : '3:00 PM – 6:00 PM',
+            paper: 'B.E./B.Tech. (Paper 1)',
+            link: `/test?paper=${p.key}`,
+            variant: 'jee',
+          };
+        }),
+    [jeePapers]
+  );
+
+  const jan2026Entries: PaperEntry[] = useMemo(
+    () =>
+      jeePapers
+        .filter((p) => p.examDate.startsWith('2026-01'))
+        .map((p) => {
+          const date = new Date(`${p.examDate}T00:00:00`);
+          const isMorning = p.session === 'morning';
+          return {
+            date: date.toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' }),
+            day: date.toLocaleDateString('en-US', { weekday: 'long' }),
+            shift: isMorning ? 'Shift 1 (Morning)' : 'Shift 2 (Evening)',
+            time: isMorning ? '9:00 AM – 12:00 PM' : '3:00 PM – 6:00 PM',
+            paper: 'B.E./B.Tech. (Paper 1)',
+            link: `/test?paper=${p.key}`,
+            variant: 'jee',
+          };
+        }),
+    [jeePapers]
+  );
+
+  const apr2025Entries: PaperEntry[] = useMemo(
+    () =>
+      jeePapers
+        .filter((p) => p.examDate.startsWith('2025-04'))
+        .map((p) => {
+          const date = new Date(`${p.examDate}T00:00:00`);
+          const isMorning = p.session === 'morning';
+          return {
+            date: date.toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' }),
+            day: date.toLocaleDateString('en-US', { weekday: 'long' }),
+            shift: isMorning ? 'Shift 1 (Morning)' : 'Shift 2 (Evening)',
+            time: isMorning ? '9:00 AM – 12:00 PM' : '3:00 PM – 6:00 PM',
+            paper: 'B.E./B.Tech. (Paper 1)',
+            link: `/test?paper=${p.key}`,
+            variant: 'jee',
+          };
+        }),
+    [jeePapers]
+  );
+
+  const jan2025Entries: PaperEntry[] = useMemo(
+    () =>
+      jeePapers
+        .filter((p) => p.examDate.startsWith('2025-01'))
+        .map((p) => {
+          const date = new Date(`${p.examDate}T00:00:00`);
+          const isMorning = p.session === 'morning';
+          return {
+            date: date.toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' }),
+            day: date.toLocaleDateString('en-US', { weekday: 'long' }),
+            shift: isMorning ? 'Shift 1 (Morning)' : 'Shift 2 (Evening)',
+            time: isMorning ? '9:00 AM – 12:00 PM' : '3:00 PM – 6:00 PM',
+            paper: 'B.E./B.Tech. (Paper 1)',
+            link: `/test?paper=${p.key}`,
+            variant: 'jee',
+          };
+        }),
     [jeePapers]
   );
 
@@ -312,7 +385,23 @@ export default function PaperTests() {
       subtitle: 'Session 1',
       accent: 'from-sky-50 to-blue-50',
       badge: 'Session 1',
-      papers: jan2026Papers,
+      papers: jan2026Entries,
+    },
+    {
+      id: 'apr-2025',
+      label: 'April 2025',
+      subtitle: 'Session 2',
+      accent: 'from-emerald-50 to-teal-50',
+      badge: 'Session 2',
+      papers: apr2025Entries,
+    },
+    {
+      id: 'jan-2025',
+      label: 'January 2025',
+      subtitle: 'Session 1',
+      accent: 'from-indigo-50 to-violet-50',
+      badge: 'Session 1',
+      papers: jan2025Entries,
     },
   ];
 
@@ -401,6 +490,7 @@ export default function PaperTests() {
                         trial={isTrial(entry)}
                         dbScore={dbScoreFor(entry)}
                         onAttempt={handleAttempt}
+                        isHardLocked={paperKeyOf(entry.link) === LOCKED_PAPER_KEY}
                       />
                     </div>
                   ))}
@@ -432,7 +522,7 @@ export default function PaperTests() {
                     <div className="flex items-center gap-4">
                       <div className={`w-10 h-10 rounded-xl bg-gradient-to-br ${session.accent} flex items-center justify-center`}>
                         <span className="text-sm font-semibold text-stone-700">
-                          {session.label === 'April 2026' ? 'A' : 'J'}
+                          {session.label.startsWith('April') ? 'A' : 'J'}
                         </span>
                       </div>
                       <div className="text-left">
@@ -525,6 +615,12 @@ export default function PaperTests() {
         )}
 
         <PaywallModal open={showPaywall} onClose={() => setShowPaywall(false)} />
+        {showLockedToast && (
+          <div className="fixed top-6 left-1/2 -translate-x-1/2 z-50 bg-yellow-50 text-yellow-800 px-5 py-3 rounded-lg shadow-2xl flex items-center gap-2.5 text-sm font-medium border border-yellow-200 animate-in fade-in zoom-in duration-300">
+            <AlertCircle className="w-4 h-4 flex-shrink-0" />
+            <span>Our team is working hard to provide you more papers</span>
+          </div>
+        )}
       </div>
     </div>
   );

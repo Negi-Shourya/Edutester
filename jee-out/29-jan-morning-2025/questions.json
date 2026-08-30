@@ -1,0 +1,1773 @@
+{
+  "key": "29-jan-morning-2025",
+  "title": "JEE (Main) 2025 (29 Jan Morning)",
+  "full_title": "JEE (Main) 2025 - 29 January Morning Shift",
+  "exam_date": "2025-01-29",
+  "session": "morning",
+  "year": 2025,
+  "duration_minutes": 180,
+  "question_count": 75,
+  "exam_type": "jee",
+  "is_trial": false,
+  "questions": [
+    {
+      "number": 1,
+      "section": "Physics",
+      "type": "mcq",
+      "text": "Given below are two statements : one is labelled as Assertion (A) and the other is labelled as Reason (R).\n\nAssertion (A) : Choke coil is simply a coil having a large inductance but a small resistance. Choke coils are used with fluorescent mercury-tube fittings. If household electric power is directly connected to a mercury tube, the tube will be damaged.\n\nReason (R) : By using the choke coil, the voltage across the tube is reduced by a factor (R/\\sqrt{R^2 + \\omega^2 L^2}), where \\omega is frequency of the supply across resistor R and inductor L. If the choke coil were not used, the voltage across the resistor would be the same as the applied voltage.\n\nIn the light of the above statements, choose the most appropriate answer from the options given below:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Both (A) and (R) are true but (R) is not the correct explanation of (A)."
+        },
+        {
+          "label": "B",
+          "text": "(A) is false but (R) is true."
+        },
+        {
+          "label": "C",
+          "text": "Both (A) and (R) are true and (R) is the correct explanation of (A)."
+        },
+        {
+          "label": "D",
+          "text": "(A) is true but (R) is false."
+        }
+      ],
+      "correct_option": "C",
+      "solution": "Assertion (A) is true: A choke coil has high inductance and negligible resistance, reducing current without consuming large power, protecting the tube from high voltage and excess current.\nReason (R) is true and correctly explains the voltage reduction across the tube.",
+      "correct_answer": "C"
+    },
+    {
+      "number": 2,
+      "section": "Physics",
+      "type": "mcq",
+      "text": "Two projectiles are fired with same initial speed from same point on ground at angles of (45^\\circ - \\alpha) and (45^\\circ + \\alpha), respectively, with the horizontal direction. The ratio of their maximum heights attained is :",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\frac{1 - \\tan \\alpha}{1 + \\tan \\alpha}"
+        },
+        {
+          "label": "B",
+          "text": "\\frac{1 + \\sin \\alpha}{1 - \\sin \\alpha}"
+        },
+        {
+          "label": "C",
+          "text": "\\frac{1 - \\sin 2\\alpha}{1 + \\sin 2\\alpha}"
+        },
+        {
+          "label": "D",
+          "text": "\\frac{1 + \\sin 2\\alpha}{1 - \\sin 2\\alpha}"
+        }
+      ],
+      "correct_option": "C",
+      "solution": "Maximum height H = \\frac{u^2 \\sin^2 \\theta}{2g}.\n\\frac{H_1}{H_2} = \\frac{\\sin^2(45^\\circ - \\alpha)}{\\sin^2(45^\\circ + \\alpha)} = \\frac{(\\frac{1}{\\sqrt{2}}\\cos\\alpha - \\frac{1}{\\sqrt{2}}\\sin\\alpha)^2}{(\\frac{1}{\\sqrt{2}}\\cos\\alpha + \\frac{1}{\\sqrt{2}}\\sin\\alpha)^2} = \\frac{1 - 2\\sin\\alpha\\cos\\alpha}{1 + 2\\sin\\alpha\\cos\\alpha} = \\frac{1 - \\sin 2\\alpha}{1 + \\sin 2\\alpha}",
+      "correct_answer": "C"
+    },
+    {
+      "number": 3,
+      "section": "Physics",
+      "type": "mcq",
+      "text": "An electric dipole of mass m, charge q, and length l is placed in a uniform electric field \\vec{E} = E_0 \\hat{i}. When the dipole is rotated slightly from its equilibrium position and released, the time period of its oscillations will be :",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\frac{1}{2\\pi}\\sqrt{\\frac{2ml}{qE_0}}"
+        },
+        {
+          "label": "B",
+          "text": "2\\pi\\sqrt{\\frac{ml}{qE_0}}"
+        },
+        {
+          "label": "C",
+          "text": "\\frac{1}{2\\pi}\\sqrt{\\frac{ml}{2qE_0}}"
+        },
+        {
+          "label": "D",
+          "text": "2\\pi\\sqrt{\\frac{ml}{2qE_0}}"
+        }
+      ],
+      "correct_option": "D",
+      "solution": "Restoring torque \\tau = -p E_0 \\sin\\theta \\approx - (q l) E_0 \\theta.\nMoment of inertia about center: I = 2 \\times m (l/2)^2 = \\frac{m l^2}{2}.\nI \\omega^2 \\theta = q l E_0 \\theta \\implies \\frac{m l^2}{2} \\omega^2 = q l E_0 \\implies \\omega^2 = \\frac{2q E_0}{ml}.\nTime period T = \\frac{2\\pi}{\\omega} = 2\\pi \\sqrt{\\frac{ml}{2q E_0}}.",
+      "correct_answer": "D"
+    },
+    {
+      "number": 4,
+      "section": "Physics",
+      "type": "mcq",
+      "text": "The pair of physical quantities not having same dimensions is :",
+      "options": [
+        {
+          "label": "A",
+          "text": "Torque and energy"
+        },
+        {
+          "label": "B",
+          "text": "Surface tension and impulse"
+        },
+        {
+          "label": "C",
+          "text": "Angular momentum and Planck's constant"
+        },
+        {
+          "label": "D",
+          "text": "Pressure and Young's modulus"
+        }
+      ],
+      "correct_option": "B",
+      "solution": "Surface tension [\\sigma] = [\\text{F}/\\text{L}] = [\\text{M}\\text{T}^{-2}].\nImpulse [\\text{I}] = [\\text{F} \\cdot \\text{t}] = [\\text{M}\\text{L}\\text{T}^{-1}].\nThey have different dimensions.",
+      "correct_answer": "B"
+    },
+    {
+      "number": 5,
+      "section": "Physics",
+      "type": "mcq",
+      "text": "Given below are two statements : one is labelled as Assertion (A) and the other is labelled as Reason (R).\n\nAssertion (A) : Time period of a simple pendulum is longer at the top of a mountain than that at the base of the mountain.\n\nReason (R) : Time period of a simple pendulum decreases with increasing value of acceleration due to gravity and vice-versa.\n\nIn the light of the above statements, choose the most appropriate answer from the options given below:",
+      "options": [
+        {
+          "label": "A",
+          "text": "Both (A) and (R) are true but (R) is not the correct explanation of (A)."
+        },
+        {
+          "label": "B",
+          "text": "Both (A) and (R) are true and (R) is the correct explanation of (A)."
+        },
+        {
+          "label": "C",
+          "text": "(A) is true but (R) is false."
+        },
+        {
+          "label": "D",
+          "text": "(A) is false but (R) is true."
+        }
+      ],
+      "correct_option": "B",
+      "solution": "T = 2\\pi \\sqrt{\\frac{l}{g}}.\nAt top of mountain, altitude h > 0, so g decreases (g = g_0 / (1 + h/R)^2), hence time period T increases.\nReason correctly states that T decreases with increasing g and vice-versa.",
+      "correct_answer": "B"
+    },
+    {
+      "number": 6,
+      "section": "Physics",
+      "type": "mcq",
+      "text": "The expression given below shows the variation of velocity (v) with time (t), v = At^2 + \\frac{Bt}{C + t}. The dimension of ABC is :",
+      "options": [
+        {
+          "label": "A",
+          "text": "[\\text{M}^0\\text{L}^2\\text{T}^{-3}]"
+        },
+        {
+          "label": "B",
+          "text": "[\\text{M}^0\\text{L}^1\\text{T}^{-3}]"
+        },
+        {
+          "label": "C",
+          "text": "[\\text{M}^0\\text{L}^1\\text{T}^{-2}]"
+        },
+        {
+          "label": "D",
+          "text": "[\\text{M}^0\\text{L}^2\\text{T}^{-2}]"
+        }
+      ],
+      "correct_option": "A",
+      "solution": "Since C is added to t: [C] = [\\text{T}].\n[At^2] = [v] = [\\text{L}\\text{T}^{-1}] \\implies [A] = [\\text{L}\\text{T}^{-3}].\n[\\frac{Bt}{C + t}] = [\\text{L}\\text{T}^{-1}] \\implies [B] = [\\text{L}\\text{T}^{-1}].\n[ABC] = [\\text{L}\\text{T}^{-3}][\\text{L}\\text{T}^{-1}][\\text{T}] = [\\text{M}^0\\text{L}^2\\text{T}^{-3}].",
+      "correct_answer": "A"
+    },
+    {
+      "number": 7,
+      "section": "Physics",
+      "type": "mcq",
+      "text": "Consider I_1 and I_2 are the currents flowing simultaneously in two nearby coils 1 & 2, respectively. If L_1 = self inductance of coil 1, M_{12} = mutual inductance of coil 1 with respect to coil 2, then the value of induced emf in coil 1 will be",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\varepsilon_1 = -L_1 \\frac{dI_1}{dt} + M_{12} \\frac{dI_2}{dt}"
+        },
+        {
+          "label": "B",
+          "text": "\\varepsilon_1 = -L_1 \\frac{dI_1}{dt} - M_{12} \\frac{dI_1}{dt}"
+        },
+        {
+          "label": "C",
+          "text": "\\varepsilon_1 = -L_1 \\frac{dI_1}{dt} - M_{12} \\frac{dI_2}{dt}"
+        },
+        {
+          "label": "D",
+          "text": "\\varepsilon_1 = -L_1 \\frac{dI_2}{dt} - M_{12} \\frac{dI_1}{dt}"
+        }
+      ],
+      "correct_option": "C",
+      "solution": "Total flux through coil 1 is \\phi_1 = L_1 I_1 + M_{12} I_2.\nInduced emf \\varepsilon_1 = -\\frac{d\\phi_1}{dt} = -L_1 \\frac{dI_1}{dt} - M_{12} \\frac{dI_2}{dt}.",
+      "correct_answer": "C"
+    },
+    {
+      "number": 8,
+      "section": "Physics",
+      "type": "mcq",
+      "text": "At the interface between two materials having refractive indices n_1 and n_2, the critical angle for reflection of an em wave is \\theta_{1c}. The n_2 material is replaced by another material having refractive index n_3, such that the critical angle at the interface between n_1 and n_3 materials is \\theta_{2c}. If n_3 > n_2 > n_1, \\frac{n_2}{n_3} = \\frac{2}{5} and \\sin\\theta_{2c} - \\sin\\theta_{1c} = \\frac{1}{2}, then \\theta_{1c} is",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\sin^{-1}(\\frac{1}{6n_1})"
+        },
+        {
+          "label": "B",
+          "text": "\\sin^{-1}(\\frac{2}{3n_1})"
+        },
+        {
+          "label": "C",
+          "text": "\\sin^{-1}(\\frac{5}{6n_1})"
+        },
+        {
+          "label": "D",
+          "text": "\\sin^{-1}(\\frac{1}{3n_1})"
+        }
+      ],
+      "correct_option": "D",
+      "solution": "Critical angle from denser medium to rarer medium: \\sin\\theta_{1c} = \\frac{n_1}{n_2} and \\sin\\theta_{2c} = \\frac{n_1}{n_3}.\nGiven \\sin\\theta_{2c} - \\sin\\theta_{1c} = \\frac{1}{2} \\implies n_1 (\\frac{1}{n_3} - \\frac{1}{n_2}) = \\frac{1}{2}.\nUsing \\frac{n_2}{n_3} = \\frac{2}{5} \\implies \\frac{1}{n_3} = \\frac{2}{5n_2}:\n\\frac{n_1}{n_2} (\\frac{2}{5} - 1) = \\frac{1}{2} \\implies \\sin\\theta_{1c} (-\\frac{3}{5}) = -\\frac{1}{2} \\implies \\sin\\theta_{1c} = \\frac{1}{3n_1} \\text{ (taking modulus)}.",
+      "correct_answer": "D"
+    },
+    {
+      "number": 9,
+      "section": "Physics",
+      "type": "mcq",
+      "text": "Consider a long straight wire of a circular cross-section (radius a) carrying a steady current I. The current is uniformly distributed across this cross-section. The distances from the centre of the wire's cross-section at which the magnetic field [inside the wire, outside the wire] is half of the maximum possible magnetic field, any where due to the wire, will be",
+      "options": [
+        {
+          "label": "A",
+          "text": "[a/4, 3a/2]"
+        },
+        {
+          "label": "B",
+          "text": "[a/2, 2a]"
+        },
+        {
+          "label": "C",
+          "text": "[a/2, 3a]"
+        },
+        {
+          "label": "D",
+          "text": "[a/4, 2a]"
+        }
+      ],
+      "correct_option": "B",
+      "solution": "Maximum field is at surface r = a: B_{\\max} = \\frac{\\mu_0 I}{2\\pi a}.\nInside (r < a): B_{in} = \\frac{\\mu_0 I r}{2\\pi a^2} = \\frac{B_{\\max}}{2} \\implies r = \\frac{a}{2}.\nOutside (r > a): B_{out} = \\frac{\\mu_0 I}{2\\pi r} = \\frac{B_{\\max}}{2} \\implies r = 2a.\nThus distances are [a/2, 2a].",
+      "correct_answer": "B"
+    },
+    {
+      "number": 10,
+      "section": "Physics",
+      "type": "mcq",
+      "text": "As shown below, bob A of a pendulum having massless string of length 'R' is released from 60^\\circ to the vertical. It hits another bob B of half the mass that is at rest on a friction less table in the centre. Assuming elastic collision, the magnitude of the velocity of bob A after the collision will be (take g as acceleration due to gravity)",
+      "figure": "images/p12_q35_pendulum_collision.png",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\frac{1}{3}\\sqrt{Rg}"
+        },
+        {
+          "label": "B",
+          "text": "\\sqrt{Rg}"
+        },
+        {
+          "label": "C",
+          "text": "\\frac{4}{3}\\sqrt{Rg}"
+        },
+        {
+          "label": "D",
+          "text": "\\frac{2}{3}\\sqrt{Rg}"
+        }
+      ],
+      "correct_option": "A",
+      "solution": "Initial speed of bob A at lowest point:\nu = \\sqrt{2g(R - R\\cos 60^\\circ)} = \\sqrt{2g(R/2)} = \\sqrt{gR}.\nFor 1D elastic collision with m_A = m and m_B = m/2 (initially at rest):\nv_A = \\frac{m_A - m_B}{m_A + m_B} u = \\frac{m - m/2}{m + m/2} \\sqrt{gR} = \\frac{1}{3}\\sqrt{gR}.",
+      "correct_answer": "A"
+    },
+    {
+      "number": 11,
+      "section": "Physics",
+      "type": "mcq",
+      "text": "Given below are two statements : one is labelled as Assertion (A) and the other is labelled as Reason (R).\n\nAssertion (A) : Emission of electrons in photoelectric effect can be suppressed by applying a sufficiently negative electron potential to the photoemissive substance.\n\nReason (R) : A negative electric potential, which stops the emission of electrons from the surface of a photoemissive substance, varies linearly with frequency of incident radiation.\n\nIn the light of the above statements, choose the most appropriate answer from the options given below:",
+      "options": [
+        {
+          "label": "A",
+          "text": "(A) is false but (R) is true."
+        },
+        {
+          "label": "B",
+          "text": "(A) is true but (R) is false."
+        },
+        {
+          "label": "C",
+          "text": "Both (A) and (R) are true and (R) is the correct explanation of (A)."
+        },
+        {
+          "label": "D",
+          "text": "Both (A) and (R) are true but (R) is not the correct explanation of (A)."
+        }
+      ],
+      "correct_option": "D",
+      "solution": "Assertion (A) is true: Applying stopping potential stops photocurrent from reaching anode / suppresses photoemission.\nReason (R) is true: Stopping potential eV_0 = h\\nu - \\phi varies linearly with frequency \\nu.\nHowever, (R) is a property of stopping potential and does not directly explain why negative potential suppresses the current.",
+      "correct_answer": "D"
+    },
+    {
+      "number": 12,
+      "section": "Physics",
+      "type": "mcq",
+      "text": "A coil of area A and N turns is rotating with angular velocity \\omega in a uniform magnetic field \\vec{B} about an axis perpendicular to \\vec{B}. Magnetic flux \\varphi and induced emf \\varepsilon across it, at an instant when \\vec{B} is parallel to the plane of coil, are :",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\varphi = AB, \\varepsilon = 0"
+        },
+        {
+          "label": "B",
+          "text": "\\varphi = 0, \\varepsilon = NAB\\omega"
+        },
+        {
+          "label": "C",
+          "text": "\\varphi = 0, \\varepsilon = 0"
+        },
+        {
+          "label": "D",
+          "text": "\\varphi = AB, \\varepsilon = NAB\\omega"
+        }
+      ],
+      "correct_option": "B",
+      "solution": "\\phi = NAB \\cos(\\omega t). When \\vec{B} is parallel to plane of coil, normal to coil is perpendicular to \\vec{B}, so \\theta = 90^\\circ \\implies \\phi = 0.\nInduced emf \\varepsilon = -\\frac{d\\phi}{dt} = NAB\\omega \\sin(\\omega t) = NAB\\omega \\sin 90^\\circ = NAB\\omega.",
+      "correct_answer": "B"
+    },
+    {
+      "number": 13,
+      "section": "Physics",
+      "type": "mcq",
+      "text": "The fractional compression (\\frac{\\Delta V}{V}) of water at the depth of 2.5\\text{ km} below the sea level is ______ %.\nGiven, the Bulk modulus of water = 2 \\times 10^9\\text{ Nm}^{-2}, density of water = 10^3\\text{ kg m}^{-3}, acceleration due to gravity = g = 10\\text{ ms}^{-2}.",
+      "options": [
+        {
+          "label": "A",
+          "text": "1.75"
+        },
+        {
+          "label": "B",
+          "text": "1.0"
+        },
+        {
+          "label": "C",
+          "text": "1.5"
+        },
+        {
+          "label": "D",
+          "text": "1.25"
+        }
+      ],
+      "correct_option": "D",
+      "solution": "Pressure at depth h = 2.5\\text{ km} = 2500\\text{ m}:\n\\Delta P = \\rho g h = 10^3 \\times 10 \\times 2500 = 2.5 \\times 10^7\\text{ N/m}^2.\nBulk modulus B = \\frac{\\Delta P}{\\Delta V / V} \\implies \\frac{\\Delta V}{V} = \\frac{\\Delta P}{B} = \\frac{2.5 \\times 10^7}{2 \\times 10^9} = 1.25 \\times 10^{-2} = 1.25\\%.",
+      "correct_answer": "D"
+    },
+    {
+      "number": 14,
+      "section": "Physics",
+      "type": "mcq",
+      "text": "If \\lambda and K are de Broglie Wavelength and kinetic energy, respectively, of a particle with constant mass. The correct graphical representation for the particle will be :",
+      "figure": "images/p13_q39_graph_options.png",
+      "options": [
+        {
+          "label": "A",
+          "text": "Graph (1)"
+        },
+        {
+          "label": "B",
+          "text": "Graph (2)"
+        },
+        {
+          "label": "C",
+          "text": "Graph (3)"
+        },
+        {
+          "label": "D",
+          "text": "Graph (4)"
+        }
+      ],
+      "correct_option": "B",
+      "solution": "\\lambda = \\frac{h}{\\sqrt{2mK}} \\implies \\lambda^2 = \\frac{h^2}{2mK} \\implies \\frac{1}{K} = \\frac{2m}{h^2} \\lambda^2.\nPlotting \\frac{1}{K} vs \\lambda gives a parabola opening upwards passing through origin (Graph 2).",
+      "correct_answer": "B"
+    },
+    {
+      "number": 15,
+      "section": "Physics",
+      "type": "mcq",
+      "text": "For the circuit shown above, equivalent GATE is :",
+      "figure": "images/p14_q40_logic_gate.png",
+      "options": [
+        {
+          "label": "A",
+          "text": "OR gate"
+        },
+        {
+          "label": "B",
+          "text": "NOT gate"
+        },
+        {
+          "label": "C",
+          "text": "AND gate"
+        },
+        {
+          "label": "D",
+          "text": "NAND gate"
+        }
+      ],
+      "correct_option": "A",
+      "solution": "Output of top NAND gate is \\overline{A \\cdot B}.\nOutput of bottom NOR-inverter is \\overline{A + B}.\nThey are fed to a NAND gate: Y = \\overline{\\overline{A \\cdot B} \\cdot \\overline{A + B}} = (A \\cdot B) + (A + B) = A + B (\\text{OR gate}).",
+      "correct_answer": "A"
+    },
+    {
+      "number": 16,
+      "section": "Physics",
+      "type": "mcq",
+      "text": "A body of mass 'm' connected to a massless and unstretchable string goes in verticle circle of radius 'R' under gravity g. The other end of the string is fixed at the center of circle. If velocity at top of circular path is n\\sqrt{gR}, where n \\ge 1, then ratio of kinetic energy of the body at bottom to that at top of the circle is",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\frac{n}{n + 4}"
+        },
+        {
+          "label": "B",
+          "text": "\\frac{n + 4}{n}"
+        },
+        {
+          "label": "C",
+          "text": "\\frac{n^2}{n^2 + 4}"
+        },
+        {
+          "label": "D",
+          "text": "\\frac{n^2 + 4}{n^2}"
+        }
+      ],
+      "correct_option": "D",
+      "solution": "v_{top}^2 = n^2 gR.\nBy conservation of energy: \\frac{1}{2}m v_{bot}^2 = \\frac{1}{2}m v_{top}^2 + mg(2R) \\implies v_{bot}^2 = n^2 gR + 4gR = (n^2 + 4)gR.\n\\text{Ratio of KE} = \\frac{v_{bot}^2}{v_{top}^2} = \\frac{n^2 + 4}{n^2}.",
+      "correct_answer": "D"
+    },
+    {
+      "number": 17,
+      "section": "Physics",
+      "type": "mcq",
+      "text": "Let u and v be the distances of the object and the image from a lens of focal length f. The correct graphical representation of u and v for a convex lens when |u| > f, is",
+      "figure": "images/p14_q42_uv_graph.png",
+      "options": [
+        {
+          "label": "A",
+          "text": "Graph (1)"
+        },
+        {
+          "label": "B",
+          "text": "Graph (2)"
+        },
+        {
+          "label": "C",
+          "text": "Graph (3)"
+        },
+        {
+          "label": "D",
+          "text": "Graph (4)"
+        }
+      ],
+      "correct_option": "B",
+      "solution": "From lens formula \\frac{1}{v} - \\frac{1}{u} = \\frac{1}{f} (with sign convention, (u + f)(v - f) = f^2). For real objects beyond focus (|u| > f), v vs -u is rectangular hyperbola shown in Graph (2).",
+      "correct_answer": "B"
+    },
+    {
+      "number": 18,
+      "section": "Physics",
+      "type": "mcq",
+      "text": "Match List-I with List-II.\n\n| List-I | List-II |\n| :--- | :--- |\n| (A) Electric field inside (distance r > 0 from center) of a uniformly charged spherical shell with surface charge density \\sigma, and radius R. | (I) \\sigma/\\varepsilon_0 |\n| (B) Electric field at distance r > 0 from a uniformly charged infinite plane sheet with surface charge density \\sigma. | (II) \\sigma/2\\varepsilon_0 |\n| (C) Electric field outside (distance r > 0 from center) of a uniformly charged spherical shell with surface charge density \\sigma, and radius R | (III) 0 |\n| (D) Electric field between 2 oppositely charged infinite plane parallel sheets with uniform surface charge density \\sigma. | (IV) \\sigma R^2 / \\varepsilon_0 r^2 |\n\nChoose the correct answer from the options given below :",
+      "options": [
+        {
+          "label": "A",
+          "text": "(A)-(IV), (B)-(I), (C)-(III), (D)-(II)"
+        },
+        {
+          "label": "B",
+          "text": "(A)-(IV), (B)-(II), (C)-(III), (D)-(I)"
+        },
+        {
+          "label": "C",
+          "text": "(A)-(II), (B)-(I), (C)-(IV), (D)-(III)"
+        },
+        {
+          "label": "D",
+          "text": "(A)-(III), (B)-(II), (C)-(IV), (D)-(I)"
+        }
+      ],
+      "correct_option": "D",
+      "solution": "(A) Field inside spherical shell = 0 \\rightarrow (III)\n(B) Field near infinite sheet = \\sigma / (2\\varepsilon_0) \\rightarrow (II)\n(C) Field outside shell = \\frac{q}{4\\pi\\varepsilon_0 r^2} = \\frac{\\sigma R^2}{\\varepsilon_0 r^2} \\rightarrow (IV)\n(D) Field between oppositely charged sheets = \\sigma / \\varepsilon_0 \\rightarrow (I)\nMatching: (A)-(III), (B)-(II), (C)-(IV), (D)-(I).",
+      "correct_answer": "D"
+    },
+    {
+      "number": 19,
+      "section": "Physics",
+      "type": "mcq",
+      "text": "The workdone in an adiabatic change in an ideal gas depends upon only :",
+      "options": [
+        {
+          "label": "A",
+          "text": "change in its pressure"
+        },
+        {
+          "label": "B",
+          "text": "change in its specific heat"
+        },
+        {
+          "label": "C",
+          "text": "change in its volume"
+        },
+        {
+          "label": "D",
+          "text": "change in its temperature"
+        }
+      ],
+      "correct_option": "D",
+      "solution": "In an adiabatic process (Q = 0), \\Delta W = -\\Delta U = -n C_v \\Delta T = \\frac{n R (T_1 - T_2)}{\\gamma - 1}, which depends only on the change in temperature.",
+      "correct_answer": "D"
+    },
+    {
+      "number": 20,
+      "section": "Physics",
+      "type": "mcq",
+      "text": "Given below are two statements : one is labelled as Assertion (A) and other is labelled as Reason (R).\n\nAssertion (A) : Electromagnetic waves carry energy but not momentum.\n\nReason (R) : Mass of a photon is zero.\n\nIn the light of the above statements, choose the most appropriate answer from the options given below :",
+      "options": [
+        {
+          "label": "A",
+          "text": "(A) is true but (R) is false."
+        },
+        {
+          "label": "B",
+          "text": "(A) is false but (R) is true."
+        },
+        {
+          "label": "C",
+          "text": "Both (A) and (R) are true but (R) is not the correct explanation of (A)."
+        },
+        {
+          "label": "D",
+          "text": "Both (A) and (R) are true and (R) is the correct explanation of (A)."
+        }
+      ],
+      "correct_option": "B",
+      "solution": "Assertion is false: Electromagnetic waves carry both energy and momentum (p = E/c).\nReason is true: The rest mass of a photon is zero.",
+      "correct_answer": "B"
+    },
+    {
+      "number": 21,
+      "section": "Physics",
+      "type": "numerical",
+      "text": "The coordinates of a particle with respect to origin in a given reference frame is (1, 1, 1) meters. If a force of \\vec{F} = \\hat{i} - \\hat{j} + \\hat{k} acts on the particle, then the magnitude of torque (with respect to origin) in z-direction is ______ .",
+      "correct_answer": "2",
+      "solution": "\\vec{\\tau} = \\vec{r} \\times \\vec{F} = [(\\hat{i} + \\hat{j} + \\hat{k}) \\times (\\hat{i} - \\hat{j} + \\hat{k})].\nz-component \\tau_z = x F_y - y F_x = (1)(-1) - (1)(1) = -2\\text{ N m}.\nMagnitude = |-2| = 2."
+    },
+    {
+      "number": 22,
+      "section": "Physics",
+      "type": "numerical",
+      "text": "A container of fixed volume contains a gas at 27^\\circ\\text{C}. To double the pressure of the gas, the temperature of gas should be raised to ______ ^\\circ\\text{C}.",
+      "correct_answer": "327",
+      "solution": "For fixed volume (isochoric process): \\frac{P_1}{T_1} = \\frac{P_2}{T_2}.\nT_1 = 27 + 273 = 300\\text{ K}.\n\\frac{P}{300} = \\frac{2P}{T_2} \\implies T_2 = 600\\text{ K} = 600 - 273 = 327^\\circ\\text{C}."
+    },
+    {
+      "number": 23,
+      "section": "Physics",
+      "type": "numerical",
+      "text": "Two light beams fall on a transparent material block at point 1 and 2 with angle \\theta_1 and \\theta_2, respectively, as shown in figure. After refraction, the beams intersect at point 3 which is exactly on the interface at other end of the block. Given : the distance between 1 and 2, d = 4\\sqrt{3}\\text{ cm} and \\theta_1 = \\theta_2 = \\cos^{-1}(\\frac{n_2}{2n_1}), where refractive index of the block n_2 > refractive index of the outside medium n_1, then the thickness of the block is ______ \\text{cm}.",
+      "figure": "images/p15_q48_block_refraction.png",
+      "correct_answer": "6",
+      "solution": "By Snell's law at incidence angle (90^\\circ - \\theta_1):\nn_1 \\sin(90^\\circ - \\theta_1) = n_2 \\sin \\theta_3 \\implies n_1 \\cos\\theta_1 = n_2 \\sin\\theta_3.\nGiven \\cos\\theta_1 = \\frac{n_2}{2n_1} \\implies n_1 (\\frac{n_2}{2n_1}) = n_2 \\sin\\theta_3 \\implies \\sin\\theta_3 = \\frac{1}{2} \\implies \\theta_3 = 30^\\circ.\nFrom geometry: \\tan 30^\\circ = \\frac{d/2}{t} = \\frac{d}{2t} \\implies \\frac{1}{\\sqrt{3}} = \\frac{4\\sqrt{3}}{2t} \\implies t = \\frac{4\\sqrt{3} \\times \\sqrt{3}}{2} = 6\\text{ cm}."
+    },
+    {
+      "number": 24,
+      "section": "Physics",
+      "type": "numerical",
+      "text": "In a hydraulic lift, the surface area of the input piston is 6\\text{ cm}^2 and that of the output piston is 1500\\text{ cm}^2. If 100\\text{ N} force is applied to the input piston to raise the output piston by 20\\text{ cm}, then the work done is ______ \\text{kJ}.",
+      "correct_answer": "5",
+      "solution": "Output force F_2 = F_1 \\times \\frac{A_2}{A_1} = 100 \\times \\frac{1500}{6} = 25000\\text{ N} = 25\\text{ kN}.\nWork done W = F_2 \\times s_2 = 25000 \\times 0.20\\text{ m} = 5000\\text{ J} = 5\\text{ kJ}."
+    },
+    {
+      "number": 25,
+      "section": "Physics",
+      "type": "numerical",
+      "text": "The maximum speed of a boat in still water is 27\\text{ km/h}. Now this boat is moving downstream in a river flowing at 9\\text{ km/h}. A man in the boat throws a ball vertically upwards with speed of 10\\text{ m/s}. Range of the ball as observed by an observer at rest on the river bank, is ______ \\text{cm}. (Take g = 10\\text{ m/s}^2)",
+      "correct_answer": "2000",
+      "solution": "Downstream speed of boat = 27 + 9 = 36\\text{ km/h} = 36 \\times \\frac{5}{18} = 10\\text{ m/s}.\nHorizontal speed of ball relative to bank = 10\\text{ m/s}.\nTime of flight T = \\frac{2 u_y}{g} = \\frac{2 \\times 10}{10} = 2\\text{ s}.\nRange = v_x \\times T = 10 \\times 2 = 20\\text{ m} = 2000\\text{ cm}."
+    },
+    {
+      "number": 26,
+      "section": "Chemistry",
+      "type": "mcq",
+      "text": "Total number of nucleophiles from the following is :-\n\n\\text{NH}_3\\text{, PhSH, (H}_3\\text{C)}_2\\text{S, H}_2\\text{C=CH}_2\\text{, }\\overset{\\ominus}{\\text{O}}\\text{H, H}_3\\overset{\\oplus}{\\text{O}}\\text{, (CH}_3\\text{)}_2\\text{CO, }\\text{C}=\\text{NCH}_3",
+      "options": [
+        {
+          "label": "A",
+          "text": "5"
+        },
+        {
+          "label": "B",
+          "text": "4"
+        },
+        {
+          "label": "C",
+          "text": "7"
+        },
+        {
+          "label": "D",
+          "text": "6"
+        }
+      ],
+      "correct_option": "A",
+      "solution": "Nucleophiles have lone pairs or negative charge or electron-rich pi bonds to donate: \\text{NH}_3, \\text{PhSH}, (\\text{CH}_3)_2\\text{S}, \\text{CH}_2=\\text{CH}_2, \\text{OH}^- (Total 5 nucleophiles).",
+      "correct_answer": "A"
+    },
+    {
+      "number": 27,
+      "section": "Chemistry",
+      "type": "mcq",
+      "text": "The standard reduction potential values of some of the p-block ions are given below. Predict the one with the strongest oxidising capacity.\n\n(1) \\text{E}^\\circ_{\\text{Sn}^{4+}/\\text{Sn}^{2+}} = +1.15\\text{V}\n(2) \\text{E}^\\circ_{\\text{Tl}^{3+}/\\text{Tl}} = +1.26\\text{V}\n(3) \\text{E}^\\circ_{\\text{Al}^{3+}/\\text{Al}} = -1.66\\text{V}\n(4) \\text{E}^\\circ_{\\text{Pb}^{4+}/\\text{Pb}^{2+}} = +1.67\\text{V}",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\text{E}^\\circ_{\\text{Sn}^{4+}/\\text{Sn}^{2+}} = +1.15\\text{V}"
+        },
+        {
+          "label": "B",
+          "text": "\\text{E}^\\circ_{\\text{Tl}^{3+}/\\text{Tl}} = +1.26\\text{V}"
+        },
+        {
+          "label": "C",
+          "text": "\\text{E}^\\circ_{\\text{Al}^{3+}/\\text{Al}} = -1.66\\text{V}"
+        },
+        {
+          "label": "D",
+          "text": "\\text{E}^\\circ_{\\text{Pb}^{4+}/\\text{Pb}^{2+}} = +1.67\\text{V}"
+        }
+      ],
+      "correct_option": "D",
+      "solution": "Higher (more positive) standard reduction potential means greater tendency to get reduced and thus stronger oxidising power. \\text{Pb}^{4+} / \\text{Pb}^{2+} has the highest value (+1.67 V).",
+      "correct_answer": "D"
+    },
+    {
+      "number": 28,
+      "section": "Chemistry",
+      "type": "mcq",
+      "text": "The molar conductivity of a weak electrolyte when plotted against the square root of its concentration, which of the following is expected to be observed?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A small decrease in molar conductivity is observed at infinite dilution."
+        },
+        {
+          "label": "B",
+          "text": "A small increase in molar conductivity is observed at infinite dilution."
+        },
+        {
+          "label": "C",
+          "text": "Molar conductivity increases sharply with increase in concentration."
+        },
+        {
+          "label": "D",
+          "text": "Molar conductivity decreases sharply with increase in concentration."
+        }
+      ],
+      "correct_option": "D",
+      "solution": "For weak electrolytes, with increasing concentration the degree of dissociation (\\alpha) drops sharply, so molar conductivity decreases steeply.",
+      "correct_answer": "D"
+    },
+    {
+      "number": 29,
+      "section": "Chemistry",
+      "type": "mcq",
+      "text": "At temperature T, compound \\text{AB}_{2\\text{(g)}} dissociates as \\text{AB}_{2\\text{(g)}} \\rightleftharpoons \\text{AB}_{\\text{(g)}} + \\frac{1}{2}\\text{B}_{2\\text{(g)}} having degree of dissociation x (small compared to unity). The correct expression for x in terms of \\text{K}_{\\text{p}} and p is",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\sqrt[3]{\\frac{2\\text{K}_{\\text{p}}}{\\text{p}}}"
+        },
+        {
+          "label": "B",
+          "text": "\\sqrt[4]{\\frac{2\\text{K}_{\\text{p}}}{\\text{p}}}"
+        },
+        {
+          "label": "C",
+          "text": "\\sqrt[3]{\\frac{2\\text{K}_{\\text{p}}^2}{\\text{p}}}"
+        },
+        {
+          "label": "D",
+          "text": "\\sqrt{\\text{K}_{\\text{p}}}"
+        }
+      ],
+      "correct_option": "C",
+      "solution": "At equilibrium: n_{\\text{total}} = 1 + x/2 \\approx 1.\np_{\\text{AB}_2} = (1 - x)p \\approx p, p_{\\text{AB}} = xp, p_{\\text{B}_2} = \\frac{x}{2}p.\n\\text{K}_{\\text{p}} = \\frac{(xp) (x p / 2)^{1/2}}{p} = x^{3/2} p^{1/2} / \\sqrt{2}.\n\\text{K}_{\\text{p}}^2 = x^3 p / 2 \\implies x^3 = \\frac{2\\text{K}_{\\text{p}}^2}{p} \\implies x = \\sqrt[3]{\\frac{2\\text{K}_{\\text{p}}^2}{p}}.",
+      "correct_answer": "C"
+    },
+    {
+      "number": 30,
+      "section": "Chemistry",
+      "type": "mcq",
+      "text": "Match List-I with List-II.",
+      "figure": "images/p17_q55_match_structures.png",
+      "options": [
+        {
+          "label": "A",
+          "text": "(A)-(III), (B)-(II), (C)-(IV), (D)-(I)"
+        },
+        {
+          "label": "B",
+          "text": "(A)-(III), (B)-(II), (C)-(I), (D)-(IV)"
+        },
+        {
+          "label": "C",
+          "text": "(A)-(II), (B)-(III), (C)-(IV), (D)-(I)"
+        },
+        {
+          "label": "D",
+          "text": "(A)-(II), (B)-(III), (C)-(I), (D)-(IV)"
+        }
+      ],
+      "correct_option": "C",
+      "solution": "(A) \\text{CH}_3\\text{CH}_2\\text{CH(C}_2\\text{H}_5)\\text{CH}_2\\text{CH(CH}_3)\\text{C}_2\\text{H}_5 is 3-Ethyl-5-methylheptane \\rightarrow (II)\n(B) (\\text{CH}_3)_2\\text{C(C}_3\\text{H}_7)_2 is 4,4-Dimethylheptane \\rightarrow (III)\n(C) Skeletal diene with methyl at C2 is 2-Methyl-1,3-pentadiene \\rightarrow (IV)\n(D) Skeletal alkene with methyl at C4 is 4-Methylpent-1-ene \\rightarrow (I)\nMatching: (A)-(II), (B)-(III), (C)-(IV), (D)-(I).",
+      "correct_answer": "C"
+    },
+    {
+      "number": 31,
+      "section": "Chemistry",
+      "type": "mcq",
+      "text": "Choose the correct statements.\n\n(A) Weight of a substance is the amount of matter present in it.\n(B) Mass is the force exerted by gravity on an object.\n(C) Volume is the amount of space occupied by a substance.\n(D) Temperatures below 0^\\circ\\text{C} are possible in Celsius scale, but in Kelvin scale negative temperature is not possible.\n(E) Precision refers to the closeness of various measurements for the same quantity.",
+      "options": [
+        {
+          "label": "A",
+          "text": "(B), (C) and (D) Only"
+        },
+        {
+          "label": "B",
+          "text": "(A), (B) and (C) Only"
+        },
+        {
+          "label": "C",
+          "text": "(A), (D) and (E) Only"
+        },
+        {
+          "label": "D",
+          "text": "(C), (D) and (E) Only"
+        }
+      ],
+      "correct_option": "D",
+      "solution": "Statements (C), (D), and (E) are correct according to standard chemical definitions (Mass is amount of matter, weight is gravitational force).",
+      "correct_answer": "D"
+    },
+    {
+      "number": 32,
+      "section": "Chemistry",
+      "type": "mcq",
+      "text": "The correct increasing order of stability of the complexes based on \\Delta_0 value is :\n\n(I) [\\text{Mn(CN)}_6]^{3-}\n(II) [\\text{Co(CN)}_6]^{4-}\n(III) [\\text{Fe(CN)}_6]^{4-}\n(IV) [\\text{Fe(CN)}_6]^{3-}",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\text{II} < \\text{III} < \\text{I} < \\text{IV}"
+        },
+        {
+          "label": "B",
+          "text": "\\text{IV} < \\text{III} < \\text{II} < \\text{I}"
+        },
+        {
+          "label": "C",
+          "text": "\\text{I} < \\text{II} < \\text{IV} < \\text{III}"
+        },
+        {
+          "label": "D",
+          "text": "\\text{III} < \\text{II} < \\text{IV} < \\text{I}"
+        }
+      ],
+      "correct_option": "C",
+      "solution": "Crystal field stabilization energy values:\n(I) [\\text{Mn(CN)}_6]^{3-} (\\text{d}^4): -1.6 \\Delta_0\n(II) [\\text{Co(CN)}_6]^{4-} (\\text{d}^7): -1.8 \\Delta_0\n(IV) [\\text{Fe(CN)}_6]^{3-} (\\text{d}^5): -2.0 \\Delta_0\n(III) [\\text{Fe(CN)}_6]^{4-} (\\text{d}^6): -2.4 \\Delta_0\nOrder of CFSE stabilization magnitude: \\text{I} < \\text{II} < \\text{IV} < \\text{III}.",
+      "correct_answer": "C"
+    },
+    {
+      "number": 33,
+      "section": "Chemistry",
+      "type": "mcq",
+      "text": "Match List-I with List-II.\n\n| List-I (Complex) | List-II (Hybridisation & Magnetic characters) |\n| :--- | :--- |\n| (A) [\\text{MnBr}_4]^{2-} | (I) \\text{d}^2\\text{sp}^3 \\text{ and diamagnetic} |\n| (B) [\\text{FeF}_6]^{3-} | (II) \\text{sp}^3\\text{d}^2 \\text{ and paramagnetic} |\n| (C) [\\text{Co(C}_2\\text{O}_4)_3]^{3-} | (III) \\text{sp}^3 \\text{ and diamagnetic} |\n| (D) [\\text{Ni(CO)}_4] | (IV) \\text{sp}^3 \\text{ and paramagnetic} |\n\nChoose the correct answer from the options given below :",
+      "options": [
+        {
+          "label": "A",
+          "text": "(A)-(III), (B)-(II), (C)-(I), (D)-(IV)"
+        },
+        {
+          "label": "B",
+          "text": "(A)-(III), (B)-(I), (C)-(II), (D)-(IV)"
+        },
+        {
+          "label": "C",
+          "text": "(A)-(IV), (B)-(I), (C)-(II), (D)-(III)"
+        },
+        {
+          "label": "D",
+          "text": "(A)-(IV), (B)-(II), (C)-(I), (D)-(III)"
+        }
+      ],
+      "correct_option": "D",
+      "solution": "(A) [\\text{MnBr}_4]^{2-} : \\text{Mn}^{2+} (3\\text{d}^5), weak field \\rightarrow \\text{sp}^3 \\text{ and paramagnetic} (IV)\n(B) [\\text{FeF}_6]^{3-} : \\text{Fe}^{3+} (3\\text{d}^5), weak field \\rightarrow \\text{sp}^3\\text{d}^2 \\text{ and paramagnetic} (II)\n(C) [\\text{Co(C}_2\\text{O}_4)_3]^{3-} : \\text{Co}^{3+} (3\\text{d}^6), strong field \\rightarrow \\text{d}^2\\text{sp}^3 \\text{ and diamagnetic} (I)\n(D) [\\text{Ni(CO)}_4] : \\text{Ni}^0 (3\\text{d}^{10}), strong field \\rightarrow \\text{sp}^3 \\text{ and diamagnetic} (III)\nMatching: (A)-(IV), (B)-(II), (C)-(I), (D)-(III).",
+      "correct_answer": "D"
+    },
+    {
+      "number": 34,
+      "section": "Chemistry",
+      "type": "mcq",
+      "text": "In the following substitution reaction :\n\nProduct 'P' formed is :",
+      "figure": "images/p19_q59_scheme.png",
+      "options": [
+        {
+          "label": "A",
+          "text": "Option (1)",
+          "figure": "images/p19_q59_opt1.png"
+        },
+        {
+          "label": "B",
+          "text": "Option (2)",
+          "figure": "images/p19_q59_opt2.png"
+        },
+        {
+          "label": "C",
+          "text": "Option (3)",
+          "figure": "images/p19_q59_opt3.png"
+        },
+        {
+          "label": "D",
+          "text": "Option (4)",
+          "figure": "images/p19_q59_opt4.png"
+        }
+      ],
+      "correct_option": "A",
+      "solution": "Nucleophilic aromatic substitution: the bromine ortho/para to -\\text{NO}_2 group undergoes replacement by -\\text{OC}_2\\text{H}_5 because the negative charge in Meisenheimer complex is stabilized by the nitro group at para position.",
+      "correct_answer": "A"
+    },
+    {
+      "number": 35,
+      "section": "Chemistry",
+      "type": "mcq",
+      "text": "For a \\text{Mg} \\mid \\text{Mg}^{2+}\\text{(aq)} \\parallel \\text{Ag}^+\\text{(aq)} \\mid \\text{Ag} the correct Nernst Equation is :",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\text{E}_{\\text{cell}} = \\text{E}^\\circ_{\\text{cell}} - \\frac{\\text{RT}}{2\\text{F}}\\ln\\frac{[\\text{Ag}^+]}{[\\text{Mg}^{2+}]}"
+        },
+        {
+          "label": "B",
+          "text": "\\text{E}_{\\text{cell}} = \\text{E}^\\circ_{\\text{cell}} + \\frac{\\text{RT}}{2\\text{F}}\\ln\\frac{[\\text{Ag}^+]^2}{[\\text{Mg}^{2+}]}"
+        },
+        {
+          "label": "C",
+          "text": "\\text{E}_{\\text{cell}} = \\text{E}^\\circ_{\\text{cell}} - \\frac{\\text{RT}}{2\\text{F}}\\ln\\frac{[\\text{Mg}^{2+}]}{[\\text{Ag}^+]}"
+        },
+        {
+          "label": "D",
+          "text": "\\text{E}_{\\text{cell}} = \\text{E}^\\circ_{\\text{cell}} - \\frac{\\text{RT}}{2\\text{F}}\\ln\\frac{[\\text{Ag}^+]^2}{[\\text{Mg}^{2+}]}"
+        }
+      ],
+      "correct_option": "B",
+      "solution": "Cell reaction: \\text{Mg(s)} + 2\\text{Ag}^+\\text{(aq)} \\rightleftharpoons \\text{Mg}^{2+}\\text{(aq)} + 2\\text{Ag(s)} (n = 2).\n\\text{E} = \\text{E}^\\circ - \\frac{\\text{RT}}{2\\text{F}}\\ln\\frac{[\\text{Mg}^{2+}]}{[\\text{Ag}^+]^2} = \\text{E}^\\circ + \\frac{\\text{RT}}{2\\text{F}}\\ln\\frac{[\\text{Ag}^+]^2}{[\\text{Mg}^{2+}]}.",
+      "correct_answer": "B"
+    },
+    {
+      "number": 36,
+      "section": "Chemistry",
+      "type": "mcq",
+      "text": "The correct option with order of melting points of the pairs (\\text{Mn}, \\text{Fe}), (\\text{Tc}, \\text{Ru}) and (\\text{Re}, \\text{Os}) is :",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\text{Fe} < \\text{Mn}, \\text{Ru} < \\text{Tc}\\text{ and }\\text{Re} < \\text{Os}"
+        },
+        {
+          "label": "B",
+          "text": "\\text{Mn} < \\text{Fe}, \\text{Tc} < \\text{Ru}\\text{ and }\\text{Re} < \\text{Os}"
+        },
+        {
+          "label": "C",
+          "text": "\\text{Mn} < \\text{Fe}, \\text{Tc} < \\text{Ru}\\text{ and }\\text{Os} < \\text{Re}"
+        },
+        {
+          "label": "D",
+          "text": "\\text{Fe} < \\text{Mn}, \\text{Ru} < \\text{Tc}\\text{ and }\\text{Os} < \\text{Re}"
+        }
+      ],
+      "correct_option": "C",
+      "solution": "According to NCERT d-block transition metal melting point trends:\n\\text{Mn} < \\text{Fe} (dip in Mn due to stable 3d5 configuration),\n\\text{Tc} < \\text{Ru},\n\\text{Os} < \\text{Re}.",
+      "correct_answer": "C"
+    },
+    {
+      "number": 37,
+      "section": "Chemistry",
+      "type": "mcq",
+      "text": "1.24\\text{ g} of \\text{AX}_2 (molar mass 124\\text{ g mol}^{-1}) is dissolved in 1\\text{ kg} of water to form a solution with boiling point of 100.0156^\\circ\\text{C}, while 25.4\\text{ g} of \\text{AY}_2 (molar mass 250\\text{ g mol}^{-1}) in 2\\text{ kg} of water constitutes a solution with a boiling point of 100.0260^\\circ\\text{C}.\n\\text{K}_{\\text{b}}(\\text{H}_2\\text{O}) = 0.52\\text{ K kg mol}^{-1}\n\nWhich of the following is correct ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\text{AX}_2\\text{ and }\\text{AY}_2\\text{ (both) are completely unionised.}"
+        },
+        {
+          "label": "B",
+          "text": "\\text{AX}_2\\text{ and }\\text{AY}_2\\text{ (both) are fully ionised.}"
+        },
+        {
+          "label": "C",
+          "text": "\\text{AX}_2\\text{ is completely unionised while }\\text{AY}_2\\text{ is fully ionised.}"
+        },
+        {
+          "label": "D",
+          "text": "\\text{AX}_2\\text{ is fully ionised while }\\text{AY}_2\\text{ is completely unionised.}"
+        }
+      ],
+      "correct_option": "D",
+      "solution": "For \\text{AX}_2: m_1 = \\frac{1.24/124}{1} = 0.01\\text{ m}.\n\\Delta T_b = 0.0156 = 0.52 \\times 0.01 \\times i_1 \\implies i_1 = 3 (\\text{completely ionised into 3 ions}).\nFor \\text{AY}_2: m_2 = \\frac{25.4/250}{2} \\approx 0.0508\\text{ m}.\n\\Delta T_b = 0.0260 = 0.52 \\times 0.0508 \\times i_2 \\implies i_2 \\approx 1 (\\text{completely unionised}).",
+      "correct_answer": "D"
+    },
+    {
+      "number": 38,
+      "section": "Chemistry",
+      "type": "mcq",
+      "text": "500\\text{ J} of energy is transferred as heat to 0.5\\text{ mol} of Argon gas at 298\\text{ K} and 1.00\\text{ atm}. The final temperature and the change in internal energy respectively are :\nGiven : \\text{R} = 8.3\\text{ J K}^{-1}\\text{mol}^{-1}",
+      "options": [
+        {
+          "label": "A",
+          "text": "348\\text{ K and }300\\text{ J}"
+        },
+        {
+          "label": "B",
+          "text": "378\\text{ K and }300\\text{ J}"
+        },
+        {
+          "label": "C",
+          "text": "368\\text{ K and }500\\text{ J}"
+        },
+        {
+          "label": "D",
+          "text": "378\\text{ K and }500\\text{ J}"
+        }
+      ],
+      "correct_option": "D",
+      "solution": "At constant pressure: q_p = n C_p \\Delta T = 0.5 \\times \\frac{5}{2} \\times 8.3 \\times (T_f - 298) = 500 \\implies T_f \\approx 346.2\\text{ K}.\n\\Delta U = n C_v \\Delta T = \\frac{3}{5} q_p = 300\\text{ J}.",
+      "correct_answer": "D"
+    },
+    {
+      "number": 39,
+      "section": "Chemistry",
+      "type": "mcq",
+      "text": "The reaction \\text{A}_2 + \\text{B}_2 \\rightarrow 2\\text{AB} follows the mechanism\n\n\\text{A}_2 \\underset{\\text{k}_{-1}}{\\overset{\\text{k}_1}{\\rightleftharpoons}} \\text{A} + \\text{A (fast)}\n\\text{A} + \\text{B}_2 \\xrightarrow{\\text{k}_2} \\text{AB} + \\text{B (slow)}\n\\text{A} + \\text{B} \\rightarrow \\text{AB (fast)}\n\nThe overall order of the reaction is :",
+      "options": [
+        {
+          "label": "A",
+          "text": "1.5"
+        },
+        {
+          "label": "B",
+          "text": "3"
+        },
+        {
+          "label": "C",
+          "text": "2.5"
+        },
+        {
+          "label": "D",
+          "text": "2"
+        }
+      ],
+      "correct_option": "A",
+      "solution": "Rate law from RDS: \\text{Rate} = k_2 [\\text{A}][\\text{B}_2].\nFrom fast pre-equilibrium: K_{eq} = \\frac{[\\text{A}]^2}{[\\text{A}_2]} \\implies [\\text{A}] = K_{eq}^{1/2} [\\text{A}_2]^{1/2}.\n\\text{Rate} = k' [\\text{A}_2]^{1/2} [\\text{B}_2]^1.\n\\text{Overall order} = 1/2 + 1 = 1.5.",
+      "correct_answer": "A"
+    },
+    {
+      "number": 40,
+      "section": "Chemistry",
+      "type": "mcq",
+      "text": "If \\text{a}_0 is denoted as the Bohr radius of hydrogen atom, then what is the de-Broglie wavelength (\\lambda) of the electron present in the second orbit of hydrogen atom ? [n : any integer]",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\frac{2\\text{a}_0}{\\text{n}\\pi}"
+        },
+        {
+          "label": "B",
+          "text": "\\frac{8\\pi \\text{a}_0}{\\text{n}}"
+        },
+        {
+          "label": "C",
+          "text": "\\frac{4\\pi \\text{a}_0}{\\text{n}}"
+        },
+        {
+          "label": "D",
+          "text": "\\frac{4\\text{n}}{\\pi \\text{a}_0}"
+        }
+      ],
+      "correct_option": "B",
+      "solution": "From Bohr's postulate: 2\\pi r_n = n \\lambda.\nFor n = 2: r_2 = 2^2 a_0 = 4 a_0.\n2\\pi (4a_0) = n \\lambda \\implies \\lambda = \\frac{8\\pi a_0}{n}.",
+      "correct_answer": "B"
+    },
+    {
+      "number": 41,
+      "section": "Chemistry",
+      "type": "mcq",
+      "text": "The product (P) formed in the following reaction is :",
+      "figure": "images/p21_q66_scheme.png",
+      "options": [
+        {
+          "label": "A",
+          "text": "Option (1)",
+          "figure": "images/p21_q66_opt1.png"
+        },
+        {
+          "label": "B",
+          "text": "Option (2)",
+          "figure": "images/p21_q66_opt2.png"
+        },
+        {
+          "label": "C",
+          "text": "Option (3)",
+          "figure": "images/p21_q66_opt3.png"
+        },
+        {
+          "label": "D",
+          "text": "Option (4)",
+          "figure": "images/p21_q66_opt4.png"
+        }
+      ],
+      "correct_option": "C",
+      "solution": "Clemmensen reduction (\\text{Zn-Hg / conc. HCl}) reduces aldehydes and ketones to alkanes (-CHO \\rightarrow -\\text{CH}_3, -\\text{COCH}_3 \\rightarrow -\\text{CH}_2\\text{CH}_3), while ester group remains unreacted.",
+      "correct_answer": "C"
+    },
+    {
+      "number": 42,
+      "section": "Chemistry",
+      "type": "mcq",
+      "text": "An element 'E' has the ionisation enthalpy value of 374\\text{ kJ mol}^{-1}. 'E' reacts with elements A, B, C and D with electron gain enthalpy values of -328, -349, -325 and -295\\text{ kJ mol}^{-1}, respectively.\nThe correct order of the products EA, EB, EC and ED in terms of ionic character is :",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\text{EB} > \\text{EA} > \\text{EC} > \\text{ED}"
+        },
+        {
+          "label": "B",
+          "text": "\\text{ED} > \\text{EC} > \\text{EA} > \\text{EB}"
+        },
+        {
+          "label": "C",
+          "text": "\\text{EA} > \\text{EB} > \\text{EC} > \\text{ED}"
+        },
+        {
+          "label": "D",
+          "text": "\\text{ED} > \\text{EC} > \\text{EB} > \\text{EA}"
+        }
+      ],
+      "correct_option": "A",
+      "solution": "Higher negative electron gain enthalpy corresponds to greater electronegativity difference with electropositive element 'E', resulting in higher percentage of ionic character: \\text{B (-349)} > \\text{A (-328)} > \\text{C (-325)} > \\text{D (-295)}.",
+      "correct_answer": "A"
+    },
+    {
+      "number": 43,
+      "section": "Chemistry",
+      "type": "mcq",
+      "text": "Match List-I with List-II.\n\n| List-I (Carbohydrate) | List-II (Linkage Source) |\n| :--- | :--- |\n| (A) Amylose | (I) \\beta\\text{-C}_1\\text{-C}_4\\text{, plant} |\n| (B) Cellulose | (II) \\alpha\\text{-C}_1\\text{-C}_4\\text{, animal} |\n| (C) Glycogen | (III) \\alpha\\text{-C}_1\\text{-C}_4\\text{, }\\alpha\\text{-C}_1\\text{-C}_6\\text{, plant} |\n| (D) Amylopectin | (IV) \\alpha\\text{-C}_1\\text{-C}_4\\text{, plant} |\n\nChoose the correct answer from the options given below :",
+      "options": [
+        {
+          "label": "A",
+          "text": "(A)-(III), (B)-(II), (C)-(I), (D)-(IV)"
+        },
+        {
+          "label": "B",
+          "text": "(A)-(IV), (B)-(I), (C)-(II), (D)-(III)"
+        },
+        {
+          "label": "C",
+          "text": "(A)-(II), (B)-(III), (C)-(I), (D)-(IV)"
+        },
+        {
+          "label": "D",
+          "text": "(A)-(IV), (B)-(I), (C)-(III), (D)-(II)"
+        }
+      ],
+      "correct_option": "B",
+      "solution": "(A) Amylose : \\alpha\\text{-C}_1\\text{-C}_4\\text{, plant} \\rightarrow (IV)\n(B) Cellulose : \\beta\\text{-C}_1\\text{-C}_4\\text{, plant} \\rightarrow (I)\n(C) Glycogen : \\alpha\\text{-C}_1\\text{-C}_4\\text{, animal} \\rightarrow (II)\n(D) Amylopectin : \\alpha\\text{-C}_1\\text{-C}_4\\text{, }\\alpha\\text{-C}_1\\text{-C}_6\\text{, plant} \\rightarrow (III)\nMatching: (A)-(IV), (B)-(I), (C)-(II), (D)-(III).",
+      "correct_answer": "B"
+    },
+    {
+      "number": 44,
+      "section": "Chemistry",
+      "type": "mcq",
+      "text": "The steam volatile compounds among the following are :",
+      "figure": "images/p21_q69_structures.png",
+      "options": [
+        {
+          "label": "A",
+          "text": "(B) and (D) only"
+        },
+        {
+          "label": "B",
+          "text": "(A) and (C) only"
+        },
+        {
+          "label": "C",
+          "text": "(A) and (B) only"
+        },
+        {
+          "label": "D",
+          "text": "(A), (B) and (C) only"
+        }
+      ],
+      "correct_option": "C",
+      "solution": "o-Nitrophenol (A) and o-Nitroaniline (B) exhibit intramolecular hydrogen bonding (chelation), lowering their boiling points and making them steam volatile compared to para-isomers.",
+      "correct_answer": "C"
+    },
+    {
+      "number": 45,
+      "section": "Chemistry",
+      "type": "mcq",
+      "text": "Given below are two statements :\n\nStatement (I) : The radii of isoelectronic species increases in the order \\text{Mg}^{2+} < \\text{Na}^+ < \\text{F}^- < \\text{O}^{2-}.\n\nStatement (II) : The magnitude of electron gain enthalpy of halogen decreases in the order \\text{Cl} > \\text{F} > \\text{Br} > \\text{I}.\n\nIn the light of the above statements, choose the most appropriate answer from the options given below :",
+      "options": [
+        {
+          "label": "A",
+          "text": "Statement I is incorrect but Statement II is correct"
+        },
+        {
+          "label": "B",
+          "text": "Both Statement I and Statement II are incorrect"
+        },
+        {
+          "label": "C",
+          "text": "Statement I is correct but Statement II is incorrect"
+        },
+        {
+          "label": "D",
+          "text": "Both Statement I and Statement II are correct"
+        }
+      ],
+      "correct_option": "D",
+      "solution": "Statement I is correct: For isoelectronic species, radius increases as negative charge increases (lower effective nuclear charge).\nStatement II is correct: Due to interelectronic repulsion in small 2p orbital of F, magnitude of \\Delta_{eg}H for Cl > F > Br > I.",
+      "correct_answer": "D"
+    },
+    {
+      "number": 46,
+      "section": "Chemistry",
+      "type": "numerical",
+      "text": "Given below are some nitrogen containing compounds.\nEach of them is treated with HCl separately. 1.0\\text{ g} of the most basic compound will consume ______ \\text{mg} of HCl.\n(Given molar mass in \\text{g mol}^{-1}\\text{ C: 12, H : 1, O : 16, Cl : 35.5})",
+      "figure": "images/p22_q71_nitrogen_compounds.png",
+      "correct_answer": "341",
+      "solution": "Benzylamine (\\text{PhCH}_2\\text{NH}_2, \\text{M} = 107\\text{ g/mol}) is an aliphatic amine where the lone pair is not delocalized into the aromatic ring, making it the most basic.\n1 mole of \\text{PhCH}_2\\text{NH}_2 reacts with 1 mole of \\text{HCl} (\\text{M} = 36.5\\text{ g/mol}).\nMass of \\text{HCl} = \\frac{1.0}{107} \\times 36.5 = 0.3411\\text{ g} = 341\\text{ mg}."
+    },
+    {
+      "number": 47,
+      "section": "Chemistry",
+      "type": "numerical",
+      "text": "The molar mass of the water insoluble product formed from the fusion of chromite ore (\\text{FeCr}_2\\text{O}_4) with \\text{Na}_2\\text{CO}_3 in presence of \\text{O}_2 is ______ \\text{g mol}^{-1}.",
+      "correct_answer": "160",
+      "solution": "4\\text{FeCr}_2\\text{O}_4 + 8\\text{Na}_2\\text{CO}_3 + 7\\text{O}_2 \\rightarrow 8\\text{Na}_2\\text{CrO}_4 + 2\\text{Fe}_2\\text{O}_3 + 8\\text{CO}_2.\n\\text{Fe}_2\\text{O}_3 is water insoluble.\nMolar mass of \\text{Fe}_2\\text{O}_3 = 2(56) + 3(16) = 112 + 48 = 160\\text{ g/mol}."
+    },
+    {
+      "number": 48,
+      "section": "Chemistry",
+      "type": "numerical",
+      "text": "The sum of sigma (\\sigma) and pi (\\pi) bonds in Hex-1,3-dien-5-yne is ______ .",
+      "correct_answer": "15",
+      "solution": "Structure: \\text{HC}\\equiv\\text{C}-\\text{CH}=\\text{CH}-\\text{CH}=\\text{CH}_2.\nNumber of \\sigma bonds = 11 (5 C-C and 6 C-H).\nNumber of \\pi bonds = 4 (2 in triple bond + 2 in double bonds).\nTotal sum = 11 + 4 = 15."
+    },
+    {
+      "number": 49,
+      "section": "Chemistry",
+      "type": "numerical",
+      "text": "If \\text{A}_2\\text{B} is 30% ionised in an aqueous solution, then the value of van't Hoff factor (i) is ______ \\times 10^{-1}.",
+      "correct_answer": "16",
+      "solution": "\\text{A}_2\\text{B} \\rightarrow 2\\text{A}^+ + \\text{B}^{2-} (n = 3).\ni = 1 + (n - 1)\\alpha = 1 + (3 - 1)(0.30) = 1 + 0.60 = 1.6 = 16 \\times 10^{-1}."
+    },
+    {
+      "number": 50,
+      "section": "Chemistry",
+      "type": "numerical",
+      "text": "0.1\\text{ mole} of compound 'S' will weigh ______ \\text{g}.\n(Given molar mass in \\text{g mol}^{-1}\\text{ C:12, H:1, O:16})",
+      "figure": "images/p22_q75_synthesis_pathway.png",
+      "correct_answer": "13",
+      "solution": "1. Oxidation of diol with excess \\text{CrO}_3 gives 2-oxocyclopentanecarboxylic acid (P).\n2. Protection with 1 mole ethylene glycol protects the ketone as cyclic ketal (Q).\n3. Reaction with \\text{CH}_3\\text{MgI} converts ester -\\text{COOH} to methyl ketone followed by deprotection (R).\n4. Reduction of ketone with \\text{NaBH}_4 gives hydroxy compound (S): \\text{C}_7\\text{H}_{14}\\text{O}_2 (Molar mass = 7(12) + 14(1) + 2(16) = 84 + 14 + 32 = 130\\text{ g/mol}).\n0.1 mole weighs 0.1 \\times 130 = 13\\text{ g}."
+    },
+    {
+      "number": 51,
+      "section": "Mathematics",
+      "type": "mcq",
+      "text": "Let the line x + y = 1 meet the circle x^2 + y^2 = 4 at the points A and B. If the line perpendicular to AB and passing through the mid point of the chord AB intersects the circle at C and D, then the area of the quadrilateral ADBC is equal to",
+      "options": [
+        {
+          "label": "A",
+          "text": "3\\sqrt{7}"
+        },
+        {
+          "label": "B",
+          "text": "2\\sqrt{14}"
+        },
+        {
+          "label": "C",
+          "text": "5\\sqrt{7}"
+        },
+        {
+          "label": "D",
+          "text": "\\sqrt{14}"
+        }
+      ],
+      "correct_option": "B",
+      "solution": "Circle center O(0, 0), radius R = 2.\nDistance of line x + y - 1 = 0 from O: d = \\frac{|0 + 0 - 1|}{\\sqrt{2}} = \\frac{1}{\\sqrt{2}}.\nLength of chord AB: 2\\sqrt{R^2 - d^2} = 2\\sqrt{4 - 1/2} = 2\\sqrt{7/2} = \\sqrt{14}.\nThe perpendicular bisector CD passes through center O(0,0), so CD is a diameter: length of CD = 2R = 4.\nSince diagonals AB and CD are perpendicular, area of quadrilateral ADBC = \\frac{1}{2} \\times AB \\times CD = \\frac{1}{2} \\times \\sqrt{14} \\times 4 = 2\\sqrt{14}.",
+      "correct_answer": "B"
+    },
+    {
+      "number": 52,
+      "section": "Mathematics",
+      "type": "mcq",
+      "text": "Let M and m respectively be the maximum and the minimum values of\n\nf(x) = [[1 + \\sin^2 x, \\cos^2 x, 4\\sin 4x], [\\sin^2 x, 1 + \\cos^2 x, 4\\sin 4x], [\\sin^2 x, \\cos^2 x, 1 + 4\\sin 4x]], x \\in \\mathbb{R}\n\nThen M^4 - m^4 is equal to :",
+      "options": [
+        {
+          "label": "A",
+          "text": "1280"
+        },
+        {
+          "label": "B",
+          "text": "1295"
+        },
+        {
+          "label": "C",
+          "text": "1040"
+        },
+        {
+          "label": "D",
+          "text": "1215"
+        }
+      ],
+      "correct_option": "A",
+      "solution": "Applying R_2 \\rightarrow R_2 - R_1, R_3 \\rightarrow R_3 - R_1:\nf(x) = [[1 + \\sin^2 x, \\cos^2 x, 4\\sin 4x], [-1, 1, 0], [-1, 0, 1]]\nExpanding: f(x) = 2 + 4\\sin 4x.\nMaximum value M = 2 + 4(1) = 6.\nMinimum value m = 2 + 4(-1) = -2.\nM^4 - m^4 = 6^4 - (-2)^4 = 1296 - 16 = 1280.",
+      "correct_answer": "A"
+    },
+    {
+      "number": 53,
+      "section": "Mathematics",
+      "type": "mcq",
+      "text": "Two parabolas have the same focus (4, 3) and their directrices are the x-axis and the y-axis, respectively. If these parabolas intersects at the points A and B, then (\\text{AB})^2 is equal to",
+      "options": [
+        {
+          "label": "A",
+          "text": "192"
+        },
+        {
+          "label": "B",
+          "text": "384"
+        },
+        {
+          "label": "C",
+          "text": "96"
+        },
+        {
+          "label": "D",
+          "text": "392"
+        }
+      ],
+      "correct_option": "A",
+      "solution": "Parabola I (directrix y = 0): (x - 4)^2 + (y - 3)^2 = y^2.\nParabola II (directrix x = 0): (x - 4)^2 + (y - 3)^2 = x^2.\nAt points of intersection: x^2 = y^2 \\implies x = y (since both x, y > 0).\n(x - 4)^2 + (x - 3)^2 = x^2 \\implies x^2 - 14x + 25 = 0.\nx_1 + x_2 = 14, x_1 x_2 = 25.\n(x_1 - x_2)^2 = 14^2 - 4(25) = 196 - 100 = 96.\n(\\text{AB})^2 = (x_1 - x_2)^2 + (y_1 - y_2)^2 = 2(x_1 - x_2)^2 = 2 \\times 96 = 192.",
+      "correct_answer": "A"
+    },
+    {
+      "number": 54,
+      "section": "Mathematics",
+      "type": "mcq",
+      "text": "Let ABC be a triangle formed by the lines 7x - 6y + 3 = 0, x + 2y - 31 = 0 and 9x - 2y - 19 = 0. Let the point (h, k) be the image of the centroid of \\Delta\\text{ABC} in the line 3x + 6y - 53 = 0. Then h^2 + k^2 + hk is equal to",
+      "options": [
+        {
+          "label": "A",
+          "text": "37"
+        },
+        {
+          "label": "B",
+          "text": "47"
+        },
+        {
+          "label": "C",
+          "text": "40"
+        },
+        {
+          "label": "D",
+          "text": "36"
+        }
+      ],
+      "correct_option": "A",
+      "solution": "Intersecting the lines gives vertices A(9, 11), B(3, 4), C(5, 13).\nCentroid G = (\\frac{9+3+5}{3}, \\frac{11+4+13}{3}) = (17/3, 28/3).\nImage (h, k) in line 3x + 6y - 53 = 0:\n\\frac{h - 17/3}{3} = \\frac{k - 28/3}{6} = \\frac{-2(3(17/3) + 6(28/3) - 53)}{3^2 + 6^2} = \\frac{-2(17 + 56 - 53)}{45} = \\frac{-2(20)}{45} = -\\frac{8}{9}.\nh = 17/3 - 8/3 = 3, k = 28/3 - 16/3 = 4.\nh^2 + k^2 + hk = 3^2 + 4^2 + (3)(4) = 9 + 16 + 12 = 37.",
+      "correct_answer": "A"
+    },
+    {
+      "number": 55,
+      "section": "Mathematics",
+      "type": "mcq",
+      "text": "Let \\vec{a} = 2\\hat{i} - \\hat{j} + 3\\hat{k}, \\vec{b} = 3\\hat{i} - 5\\hat{j} + \\hat{k} and \\vec{c} be a vector such that \\vec{a} \\times \\vec{c} = \\vec{c} \\times \\vec{b} and (\\vec{a} + \\vec{c}) \\cdot (\\vec{b} + \\vec{c}) = 168. Then the maximum value of |\\vec{c}|^2 is :",
+      "options": [
+        {
+          "label": "A",
+          "text": "77"
+        },
+        {
+          "label": "B",
+          "text": "462"
+        },
+        {
+          "label": "C",
+          "text": "308"
+        },
+        {
+          "label": "D",
+          "text": "154"
+        }
+      ],
+      "correct_option": "C",
+      "solution": "\\vec{a} \\times \\vec{c} + \\vec{b} \\times \\vec{c} = 0 \\implies (\\vec{a} + \\vec{b}) \\times \\vec{c} = 0 \\implies \\vec{c} = \\lambda(\\vec{a} + \\vec{b}) = \\lambda(5\\hat{i} - 6\\hat{j} + 4\\hat{k}).\n|\\vec{c}|^2 = \\lambda^2(25 + 36 + 16) = 77\\lambda^2.\nGiven (\\vec{a} + \\vec{c}) \\cdot (\\vec{b} + \\vec{c}) = 168 \\implies \\vec{a} \\cdot \\vec{b} + \\vec{c} \\cdot (\\vec{a} + \\vec{b}) + |\\vec{c}|^2 = 168.\n14 + 77\\lambda + 77\\lambda^2 = 168 \\implies 77\\lambda^2 + 77\\lambda - 154 = 0 \\implies \\lambda^2 + \\lambda - 2 = 0 \\implies \\lambda = 1, -2.\nFor \\lambda = -2, |\\vec{c}|^2 = 77(-2)^2 = 308.",
+      "correct_answer": "C"
+    },
+    {
+      "number": 56,
+      "section": "Mathematics",
+      "type": "mcq",
+      "text": "Let P be the set of seven digit numbers with sum of their digits equal to 11. If the numbers in P are formed by using the digits 1, 2 and 3 only, then the number of elements in the set P is :",
+      "options": [
+        {
+          "label": "A",
+          "text": "158"
+        },
+        {
+          "label": "B",
+          "text": "173"
+        },
+        {
+          "label": "C",
+          "text": "164"
+        },
+        {
+          "label": "D",
+          "text": "161"
+        }
+      ],
+      "correct_option": "D",
+      "solution": "Let 7 digits be x_1 + x_2 + \\dots + x_7 = 11 with x_i \\in {1, 2, 3}.\nCases:\n1. Five 1s, two 3s (1,1,1,1,1,3,3): \\frac{7!}{5!2!} = 21\n2. Four 1s, two 2s, one 3 (1,1,1,1,2,2,3): \\frac{7!}{4!2!1!} = 105\n3. Three 1s, four 2s (1,1,1,2,2,2,2): \\frac{7!}{3!4!} = 35\nTotal = 21 + 105 + 35 = 161.",
+      "correct_answer": "D"
+    },
+    {
+      "number": 57,
+      "section": "Mathematics",
+      "type": "mcq",
+      "text": "Let the area of the region {(x, y) : 2y \\le x^2 + 3, y + |x| \\le 3, y \\ge |x - 1|} be A. Then 6A is equal to:",
+      "options": [
+        {
+          "label": "A",
+          "text": "16"
+        },
+        {
+          "label": "B",
+          "text": "12"
+        },
+        {
+          "label": "C",
+          "text": "18"
+        },
+        {
+          "label": "D",
+          "text": "14"
+        }
+      ],
+      "correct_option": "D",
+      "solution": "Area is enclosed between line boundaries and parabola y = (x^2 + 3)/2.\nEvaluating the integral:\nA = 4 - 2\\int_0^1 ((3 - x) - \\frac{x^2 + 3}{2}) dx = 4 - 2[3x - \\frac{x^2}{2} - \\frac{x^3}{6} - \\frac{3x}{2}]_0^1 = 4 - 2(3 - 1/2 - 1/6 - 3/2) = 4 - 2(5/6) = 4 - 5/3 = 7/3.\n6A = 6 \\times (7/3) = 14.",
+      "correct_answer": "D"
+    },
+    {
+      "number": 58,
+      "section": "Mathematics",
+      "type": "mcq",
+      "text": "The least value of n for which the number of integral terms in the Binomial expansion of (\\sqrt[3]{7} + \\sqrt[12]{11})^n is 183, is :",
+      "options": [
+        {
+          "label": "A",
+          "text": "2184"
+        },
+        {
+          "label": "B",
+          "text": "2148"
+        },
+        {
+          "label": "C",
+          "text": "2172"
+        },
+        {
+          "label": "D",
+          "text": "2196"
+        }
+      ],
+      "correct_option": "A",
+      "solution": "General term T_{r+1} = \\binom{n}{r} (7^{1/3})^{n-r} (11^{1/12})^r = \\binom{n}{r} 7^{\\frac{n-r}{3}} 11^{\\frac{r}{12}}.\nFor integral terms, r must be a multiple of 12 (r = 0, 12, 24, \\dots, 12k).\nTotal 183 terms \\implies k = 182 \\implies r_{\\max} = 12 \\times 182 = 2184.\nThus minimum n = 2184.",
+      "correct_answer": "A"
+    },
+    {
+      "number": 59,
+      "section": "Mathematics",
+      "type": "mcq",
+      "text": "The number of solutions of the equation (\\frac{9}{x} - \\frac{9}{\\sqrt{x}} + 2)(\\frac{2}{x} - \\frac{7}{\\sqrt{x}} + 3) = 0 is :",
+      "options": [
+        {
+          "label": "A",
+          "text": "2"
+        },
+        {
+          "label": "B",
+          "text": "4"
+        },
+        {
+          "label": "C",
+          "text": "1"
+        },
+        {
+          "label": "D",
+          "text": "3"
+        }
+      ],
+      "correct_option": "B",
+      "solution": "Let \\alpha = \\frac{1}{\\sqrt{x}} > 0:\n(9\\alpha^2 - 9\\alpha + 2)(2\\alpha^2 - 7\\alpha + 3) = 0\n(3\\alpha - 2)(3\\alpha - 1)(\\alpha - 3)(2\\alpha - 1) = 0\n\\alpha = 2/3, 1/3, 3, 1/2\nAll 4 values are positive real numbers, giving 4 distinct positive values of x: x = 9/4, 9, 1/9, 4.\nNumber of solutions = 4.",
+      "correct_answer": "B"
+    },
+    {
+      "number": 60,
+      "section": "Mathematics",
+      "type": "mcq",
+      "text": "Let y = y(x) be the solution of the differential equation \\cos x(\\log_e(\\cos x))^2 dy + (\\sin x - 3y\\sin x \\log_e(\\cos x)) dx = 0, x \\in (0, \\pi/2). If y(\\pi/4) = \\frac{-1}{\\log_e 2}, then y(\\pi/6) is :",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\frac{2}{\\log_e(3) - \\log_e(4)}"
+        },
+        {
+          "label": "B",
+          "text": "\\frac{1}{\\log_e(4) - \\log_e(3)}"
+        },
+        {
+          "label": "C",
+          "text": "\\frac{1}{\\log_e(4)}"
+        },
+        {
+          "label": "D",
+          "text": "\\frac{1}{\\log_e(3) - \\log_e(4)}"
+        }
+      ],
+      "correct_option": "D",
+      "solution": "Dividing by \\cos x (\\ln(\\cos x))^2 dx:\n\\frac{dy}{dx} - \\frac{3\\tan x}{\\ln(\\cos x)} y = \\frac{-\\tan x}{(\\ln(\\cos x))^2}\n\\frac{dy}{dx} + \\frac{3\\tan x}{\\ln(\\sec x)} y = \\frac{-\\tan x}{(\\ln(\\sec x))^2}\n\\text{I.F.} = e^{\\int \\frac{3\\tan x}{\\ln(\\sec x)} dx} = (\\ln(\\sec x))^3.\ny (\\ln(\\sec x))^3 = -\\frac{1}{2}(\\ln(\\sec x))^2 + C.\nUsing y(\\pi/4) = -1/\\ln 2 \\implies C = 0.\ny(x) = \\frac{-1}{2\\ln(\\sec x)} = \\frac{1}{2\\ln(\\cos x)}.\nFor x = \\pi/6: y(\\pi/6) = \\frac{1}{2\\ln(\\sqrt{3}/2)} = \\frac{1}{\\ln 3 - \\ln 4}.",
+      "correct_answer": "D"
+    },
+    {
+      "number": 61,
+      "section": "Mathematics",
+      "type": "mcq",
+      "text": "Define a relation R on the interval [0, \\pi/2] by x\\text{ R }y if and only if \\sec^2 x - \\tan^2 y = 1. Then R is :",
+      "options": [
+        {
+          "label": "A",
+          "text": "an equivalence relation"
+        },
+        {
+          "label": "B",
+          "text": "both reflexive and transitive but not symmetric"
+        },
+        {
+          "label": "C",
+          "text": "both reflexive and symmetric but not transitive"
+        },
+        {
+          "label": "D",
+          "text": "reflexive but neither symmetric not transitive"
+        }
+      ],
+      "correct_option": "A",
+      "solution": "\\sec^2 x - \\tan^2 y = 1 \\iff 1 + \\tan^2 x - \\tan^2 y = 1 \\iff \\tan^2 x = \\tan^2 y.\nSince x, y \\in [0, \\pi/2], \\tan x = \\tan y \\iff x = y.\nThe relation is reflexive, symmetric, and transitive, so it is an equivalence relation.",
+      "correct_answer": "A"
+    },
+    {
+      "number": 62,
+      "section": "Mathematics",
+      "type": "mcq",
+      "text": "Let the ellipse, \\text{E}_1 : \\frac{x^2}{a^2} + \\frac{y^2}{b^2} = 1, a > b and \\text{E}_2 : \\frac{x^2}{\\text{A}^2} + \\frac{y^2}{\\text{B}^2} = 1, \\text{A} < \\text{B} have same eccentricity \\frac{1}{\\sqrt{3}}. Let the product of their lengths of latus rectums be \\frac{32}{\\sqrt{3}}, and the distance between the foci of \\text{E}_1 be 4. If \\text{E}_1 and \\text{E}_2 meet at A, B, C and D, then the area of the quadrilateral ABCD equals:",
+      "options": [
+        {
+          "label": "A",
+          "text": "6\\sqrt{6}"
+        },
+        {
+          "label": "B",
+          "text": "\\frac{18\\sqrt{6}}{5}"
+        },
+        {
+          "label": "C",
+          "text": "\\frac{12\\sqrt{6}}{5}"
+        },
+        {
+          "label": "D",
+          "text": "\\frac{24\\sqrt{6}}{5}"
+        }
+      ],
+      "correct_option": "D",
+      "solution": "For E_1: 2ae = 4 \\implies a = 2\\sqrt{3}, b^2 = a^2(1 - e^2) = 12(2/3) = 8.\nProduct of latus rectums: (\\frac{2b^2}{a})(\\frac{2A^2}{B}) = \\frac{32}{\\sqrt{3}} \\implies A^2 = 2B.\nFor E_2: 1 - A^2/B^2 = 1/3 \\implies B = 3, A^2 = 6.\nIntersecting \\frac{x^2}{12} + \\frac{y^2}{8} = 1 and \\frac{x^2}{6} + \\frac{y^2}{9} = 1 gives vertices (\\pm \\frac{\\sqrt{6}}{\\sqrt{5}}, \\pm \\frac{6}{\\sqrt{5}}).\nArea of rectangle = 4 \\times \\frac{\\sqrt{6}}{\\sqrt{5}} \\times \\frac{6}{\\sqrt{5}} = \\frac{24\\sqrt{6}}{5}.",
+      "correct_answer": "D"
+    },
+    {
+      "number": 63,
+      "section": "Mathematics",
+      "type": "mcq",
+      "text": "Consider an A.P. of positive integers, whose sum of the first three terms is 54 and the sum of the first twenty terms lies between 1600 and 1800. Then its 11^{\\text{th}} term is :",
+      "options": [
+        {
+          "label": "A",
+          "text": "84"
+        },
+        {
+          "label": "B",
+          "text": "122"
+        },
+        {
+          "label": "C",
+          "text": "90"
+        },
+        {
+          "label": "D",
+          "text": "108"
+        }
+      ],
+      "correct_option": "C",
+      "solution": "S_3 = 3a + 3d = 54 \\implies a + d = 18 \\implies a = 18 - d.\nS_{20} = 10(2a + 19d) = 10(36 + 17d).\n1600 < 10(36 + 17d) < 1800 \\implies 160 < 36 + 17d < 180 \\implies 124 < 17d < 144 \\implies 7.29 < d < 8.47.\nSince d is an integer, d = 8 \\implies a = 18 - 8 = 10.\nT_{11} = a + 10d = 10 + 10(8) = 90.",
+      "correct_answer": "C"
+    },
+    {
+      "number": 64,
+      "section": "Mathematics",
+      "type": "mcq",
+      "text": "Let \\vec{a} = \\hat{i} + 2\\hat{j} + \\hat{k} and \\vec{b} = 2\\hat{i} + 7\\hat{j} + 3\\hat{k}. Let \\text{L}_1 : \\vec{r} = (-\\hat{i} + 2\\hat{j} + \\hat{k}) + \\lambda \\vec{a}, \\lambda \\in \\mathbb{R} and \\text{L}_2 : \\vec{r} = (\\hat{j} + \\hat{k}) + \\mu \\vec{b}, \\mu \\in \\mathbb{R} be two lines. If the line \\text{L}_3 passes through the point of intersection of \\text{L}_1 and \\text{L}_2, and is parallel to \\vec{a} + \\vec{b}, then \\text{L}_3 passes through the point:",
+      "options": [
+        {
+          "label": "A",
+          "text": "(8, 26, 12)"
+        },
+        {
+          "label": "B",
+          "text": "(2, 8, 5)"
+        },
+        {
+          "label": "C",
+          "text": "(-1, -1, 1)"
+        },
+        {
+          "label": "D",
+          "text": "(5, 17, 4)"
+        }
+      ],
+      "correct_option": "A",
+      "solution": "Intersecting L_1 and L_2:\n-\\hat{i} + 2\\hat{j} + \\hat{k} + \\lambda(\\hat{i} + 2\\hat{j} + \\hat{k}) = \\hat{j} + \\hat{k} + \\mu(2\\hat{i} + 7\\hat{j} + 3\\hat{k})\nSolving gives \\lambda = 3, \\mu = 1.\nPoint of intersection: P = (2, 8, 4).\nDirection of L_3: \\vec{a} + \\vec{b} = 3\\hat{i} + 9\\hat{j} + 4\\hat{k}.\nL_3 : \\vec{r} = (2, 8, 4) + t(3, 9, 4).\nFor t = 2: \\vec{r} = (2 + 6, 8 + 18, 4 + 8) = (8, 26, 12).",
+      "correct_answer": "A"
+    },
+    {
+      "number": 65,
+      "section": "Mathematics",
+      "type": "mcq",
+      "text": "The value of \\lim_{n \\to \\infty} \\sum_{k=1}^n \\frac{k^3 + 6k^2 + 11k + 5}{(k + 3)!} is :",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\frac{4}{3}"
+        },
+        {
+          "label": "B",
+          "text": "2"
+        },
+        {
+          "label": "C",
+          "text": "\\frac{7}{3}"
+        },
+        {
+          "label": "D",
+          "text": "\\frac{5}{3}"
+        }
+      ],
+      "correct_option": "D",
+      "solution": "k^3 + 6k^2 + 11k + 5 = (k + 1)(k + 2)(k + 3) - 1.\n\\frac{k^3 + 6k^2 + 11k + 5}{(k + 3)!} = \\frac{(k + 1)(k + 2)(k + 3)}{(k + 3)!} - \\frac{1}{(k + 3)!} = \\frac{1}{k!} - \\frac{1}{(k + 3)!}.\nTelescoping sum:\n\\sum_{k=1}^n (\\frac{1}{k!} - \\frac{1}{(k + 3)!}) = \\frac{1}{1!} + \\frac{1}{2!} + \\frac{1}{3!} - (\\frac{1}{(n+1)!} + \\frac{1}{(n+2)!} + \\frac{1}{(n+3)!}).\nAs n \\to \\infty, sum = 1 + 1/2 + 1/6 = 10/6 = 5/3.",
+      "correct_answer": "D"
+    },
+    {
+      "number": 66,
+      "section": "Mathematics",
+      "type": "mcq",
+      "text": "The integral 80 \\int_0^{\\pi/4} \\frac{\\sin \\theta + \\cos \\theta}{9 + 16\\sin 2\\theta} d\\theta is equal to :",
+      "options": [
+        {
+          "label": "A",
+          "text": "3\\log_e 4"
+        },
+        {
+          "label": "B",
+          "text": "6\\log_e 4"
+        },
+        {
+          "label": "C",
+          "text": "4\\log_e 3"
+        },
+        {
+          "label": "D",
+          "text": "2\\log_e 3"
+        }
+      ],
+      "correct_option": "C",
+      "solution": "Let t = \\sin\\theta - \\cos\\theta \\implies dt = (\\cos\\theta + \\sin\\theta) d\\theta.\nt^2 = 1 - \\sin 2\\theta \\implies \\sin 2\\theta = 1 - t^2.\nDenominator: 9 + 16(1 - t^2) = 25 - 16t^2 = 16(25/16 - t^2).\nLimits: \\theta = 0 \\implies t = -1; \\theta = \\pi/4 \\implies t = 0.\nI = 80 \\int_{-1}^0 \\frac{dt}{25 - 16t^2} = \\frac{80}{16} [\\frac{1}{2(5/4)} \\ln |\\frac{5/4 + t}{5/4 - t}|]_{-1}^0 = 2 [0 - \\ln(1/9)] = 2\\ln 9 = 4\\ln 3.",
+      "correct_answer": "C"
+    },
+    {
+      "number": 67,
+      "section": "Mathematics",
+      "type": "mcq",
+      "text": "Let \\text{L}_1 : \\frac{x - 1}{1} = \\frac{y - 2}{-1} = \\frac{z - 1}{2} and \\text{L}_2 : \\frac{x + 1}{-1} = \\frac{y - 2}{2} = \\frac{z}{1} be two lines. Let \\text{L}_3 be a line passing through the point (\\alpha, \\beta, \\gamma) and be perpendicular to both \\text{L}_1 and \\text{L}_2. If \\text{L}_3 intersects \\text{L}_1, then |5\\alpha - 11\\beta - 8\\gamma| equals :",
+      "options": [
+        {
+          "label": "A",
+          "text": "18"
+        },
+        {
+          "label": "B",
+          "text": "16"
+        },
+        {
+          "label": "C",
+          "text": "25"
+        },
+        {
+          "label": "D",
+          "text": "20"
+        }
+      ],
+      "correct_option": "C",
+      "solution": "Direction vector of L_3: \\vec{d} = (1, -1, 2) \\times (-1, 2, 1) = (-5, -3, 1).\nGeneral point on L_3: (\\alpha - 5\\lambda, \\beta - 3\\lambda, \\gamma + \\lambda).\nSince L_3 intersects L_1 at point (k + 1, -k + 2, 2k + 1):\n\\alpha - 5\\lambda = k + 1 \\implies \\alpha = 5\\lambda + k + 1\n\\beta - 3\\lambda = -k + 2 \\implies \\beta = 3\\lambda - k + 2\n\\gamma + \\lambda = 2k + 1 \\implies \\gamma = -\\lambda + 2k + 1\n5\\alpha - 11\\beta - 8\\gamma = 5(5\\lambda + k + 1) - 11(3\\lambda - k + 2) - 8(-\\lambda + 2k + 1) = -25.\n|5\\alpha - 11\\beta - 8\\gamma| = |-25| = 25.",
+      "correct_answer": "C"
+    },
+    {
+      "number": 68,
+      "section": "Mathematics",
+      "type": "mcq",
+      "text": "Let x_1, x_2, \\dots, x_{10} be ten observations such that \\sum_{i=1}^{10}(x_i - 2) = 30, \\sum_{i=1}^{10}(x_i - \\beta)^2 = 98, \\beta > 2 and their variance is \\frac{4}{5}. If \\mu and \\sigma^2 are respectively the mean and the variance of 2(x_1 - 1) + 4\\beta, 2(x_2 - 1) + 4\\beta, \\dots, 2(x_{10} - 1) + 4\\beta, then \\frac{\\beta\\mu}{\\sigma^2} is equal to :",
+      "options": [
+        {
+          "label": "A",
+          "text": "100"
+        },
+        {
+          "label": "B",
+          "text": "110"
+        },
+        {
+          "label": "C",
+          "text": "120"
+        },
+        {
+          "label": "D",
+          "text": "90"
+        }
+      ],
+      "correct_option": "A",
+      "solution": "\\sum x_i = 50 \\implies \\bar{x} = 5.\n\\text{Var}(x) = \\frac{\\sum x_i^2}{10} - 25 = \\frac{4}{5} \\implies \\sum x_i^2 = 258.\n\\sum(x_i - \\beta)^2 = 258 - 2\\beta(50) + 10\\beta^2 = 98 \\implies 10\\beta^2 - 100\\beta + 160 = 0 \\implies \\beta^2 - 10\\beta + 16 = 0 \\implies \\beta = 8 (\\text{since } \\beta > 2).\nNew observations: y_i = 2x_i + 30.\nMean \\mu = 2(5) + 30 = 40.\nVariance \\sigma^2 = 2^2 \\times (4/5) = 16/5.\n\\frac{\\beta\\mu}{\\sigma^2} = \\frac{8 \\times 40}{16/5} = 100.",
+      "correct_answer": "A"
+    },
+    {
+      "number": 69,
+      "section": "Mathematics",
+      "type": "mcq",
+      "text": "Let |z_1 - 8 - 2i| \\le 1 and |z_2 - 2 + 6i| \\le 2, z_1, z_2 \\in \\mathbb{C}. Then the minimum value of |z_1 - z_2| is :",
+      "options": [
+        {
+          "label": "A",
+          "text": "3"
+        },
+        {
+          "label": "B",
+          "text": "7"
+        },
+        {
+          "label": "C",
+          "text": "13"
+        },
+        {
+          "label": "D",
+          "text": "10"
+        }
+      ],
+      "correct_option": "B",
+      "solution": "Circle 1: center C_1(8, 2), radius r_1 = 1.\nCircle 2: center C_2(2, -6), radius r_2 = 2.\nDistance between centers: |C_1 C_2| = \\sqrt{(8 - 2)^2 + (2 - (-6))^2} = \\sqrt{36 + 64} = 10.\nMinimum distance |z_1 - z_2|_{\\min} = |C_1 C_2| - r_1 - r_2 = 10 - 1 - 2 = 7.",
+      "correct_answer": "B"
+    },
+    {
+      "number": 70,
+      "section": "Mathematics",
+      "type": "mcq",
+      "text": "Let \\text{A} = [a_{ij}] = [[\\log_5 128, \\log_4 5], [\\log_5 8, \\log_4 25]]. If A_{ij} is the cofactor of a_{ij}, \\text{C}_{ij} = \\sum_{k=1}^2 a_{ik} A_{jk}, 1 \\le i, j \\le 2, and \\text{C} = [\\text{C}_{ij}], then 8|\\text{C}| is equal to :",
+      "options": [
+        {
+          "label": "A",
+          "text": "262"
+        },
+        {
+          "label": "B",
+          "text": "288"
+        },
+        {
+          "label": "C",
+          "text": "242"
+        },
+        {
+          "label": "D",
+          "text": "222"
+        }
+      ],
+      "correct_option": "C",
+      "solution": "|\\text{A}| = (\\log_5 128)(\\log_4 25) - (\\log_4 5)(\\log_5 8) = (7\\log_5 2)(2\\log_4 5) - (\\frac{1}{2}\\log_2 5)(3\\log_5 2) = 7(1) - 3/2 = 11/2.\nBy definition of matrix C: \\text{C} = \\text{A} \\cdot \\text{adj}(\\text{A})^T = |\\text{A}| \\text{I}.\n|\\text{C}| = |\\text{A}|^2 = (11/2)^2 = 121/4.\n8|\\text{C}| = 8 \\times \\frac{121}{4} = 242.",
+      "correct_answer": "C"
+    },
+    {
+      "number": 71,
+      "section": "Mathematics",
+      "type": "numerical",
+      "text": "Let f : (0, \\infty) \\rightarrow \\mathbb{R} be a twice differentiable function. If for some a \\ne 0, \\int_0^1 f(\\lambda x) d\\lambda = af(x), f(1) = 1 and f(16) = \\frac{1}{8}, then 16 - f'(\\frac{1}{16}) is equal to ______ .",
+      "correct_answer": "112",
+      "solution": "Let t = \\lambda x \\implies d\\lambda = \\frac{dt}{x}.\n\\frac{1}{x}\\int_0^x f(t) dt = af(x) \\implies \\int_0^x f(t) dt = a x f(x).\nDifferentiating: f(x) = a(x f'(x) + f(x)) \\implies (1 - a)f(x) = ax f'(x) \\implies \\frac{f'(x)}{f(x)} = \\frac{1 - a}{a}\\frac{1}{x}.\n\\ln f(x) = \\frac{1 - a}{a} \\ln x + c. Since f(1) = 1 \\implies c = 0.\nf(x) = x^{\\frac{1-a}{a}}.\nGiven f(16) = 1/8 \\implies 16^{\\frac{1-a}{a}} = 2^{-3} = (2^4)^{\\frac{1-a}{a}} \\implies 4(\\frac{1-a}{a}) = -3 \\implies a = 4.\nThus f(x) = x^{-3/4} \\implies f'(x) = -\\frac{3}{4} x^{-7/4}.\n16 - f'(1/16) = 16 - (-3/4 (16)^{7/4}) = 16 + 3/4 (128) = 16 + 96 = 112."
+    },
+    {
+      "number": 72,
+      "section": "Mathematics",
+      "type": "numerical",
+      "text": "Let \\text{S} = {m \\in \\mathbb{Z} : \\text{A}^{m^2} + \\text{A}^m = 3\\text{I} - \\text{A}^{-6}}, where \\text{A} = [[2, -1], [1, 0]]. Then n(\\text{S}) is equal to ______ .",
+      "correct_answer": "2",
+      "solution": "Characteristic equation of A: |\\text{A} - \\lambda\\text{I}| = \\lambda^2 - 2\\lambda + 1 = (\\lambda - 1)^2 = 0.\nBy induction, \\text{A}^k = [[k + 1, -k], [k, -(k - 1)]].\nEquation: \\text{A}^{m^2} + \\text{A}^m = 3\\text{I} - \\text{A}^{-6}.\nMatching (1,1) entries: (m^2 + 1) + (m + 1) = 3 - (-6 + 1) = 3 + 5 = 8.\nm^2 + m + 2 = 8 \\implies m^2 + m - 6 = 0 \\implies m = 2, -3.\nBoth are integers, so n(\\text{S}) = 2."
+    },
+    {
+      "number": 73,
+      "section": "Mathematics",
+      "type": "numerical",
+      "text": "Let [t] be the greatest integer less than or equal to t. Then the least value of p \\in \\mathbb{N} for which \\lim_{x \\to 0^+} (x([\\frac{1}{x}] + [\\frac{2}{x}] + \\dots + [\\frac{p}{x}]) - x^2([\\frac{1}{x^2}] + [\\frac{2^2}{x^2}] + \\dots + [\\frac{9^2}{x^2}])) \\ge 1 is equal to ______ .",
+      "correct_answer": "24",
+      "solution": "Using [u] = u - {u}:\n\\lim_{x \\to 0^+} x([1/x] + \\dots + [p/x]) = 1 + 2 + \\dots + p = \\frac{p(p + 1)}{2}.\n\\lim_{x \\to 0^+} x^2([1/x^2] + \\dots + [9^2/x^2]) = 1^2 + 2^2 + \\dots + 9^2 = \\frac{9 \\times 10 \\times 19}{6} = 285.\nCondition: \\frac{p(p + 1)}{2} - 285 \\ge 1 \\implies \\frac{p(p + 1)}{2} \\ge 286 \\implies p(p + 1) \\ge 572.\nSince 23 \\times 24 = 552 and 24 \\times 25 = 600, least natural value of p = 24."
+    },
+    {
+      "number": 74,
+      "section": "Mathematics",
+      "type": "numerical",
+      "text": "The number of 6-letter words, with or without meaning, that can be formed using the letters of the word MATHS such that any letter that appears in the word must appear at least twice, is ______ .",
+      "correct_answer": "1405",
+      "solution": "Word MATHS has 5 distinct letters {M, A, T, H, S}.\nAny chosen letter must appear at least twice in a 6-letter word.\nCases:\n1. 1 letter used 6 times: \\binom{5}{1} \\times 1 = 5 words.\n2. 2 distinct letters used (either 4+2 or 3+3):\n   - 4+2: \\binom{5}{1} \\times \\binom{4}{1} \\times \\frac{6!}{4!2!} = 20 \\times 15 = 300\n   - 3+3: \\binom{5}{2} \\times \\frac{6!}{3!3!} = 10 \\times 20 = 200\n   Subtotal = 500 words.\n3. 3 distinct letters used (2+2+2):\n   \\binom{5}{3} \\times \\frac{6!}{2!2!2!} = 10 \\times 90 = 900 words.\nTotal number of words = 5 + 500 + 900 = 1405."
+    },
+    {
+      "number": 75,
+      "section": "Mathematics",
+      "type": "numerical",
+      "text": "Let \\text{S} = {x : \\cos^{-1} x = \\pi + \\sin^{-1} x + \\sin^{-1}(2x + 1)}. Then \\sum_{x \\in \\text{S}} (2x - 1)^2 is equal to ______ .",
+      "correct_answer": "5",
+      "solution": "\\cos^{-1} x - \\sin^{-1} x = \\pi + \\sin^{-1}(2x + 1)\nSince \\sin^{-1} x + \\cos^{-1} x = \\pi/2 \\implies \\cos^{-1} x - (\\pi/2 - \\cos^{-1} x) = \\pi + \\sin^{-1}(2x + 1)\n2\\cos^{-1} x - \\frac{3\\pi}{2} = \\sin^{-1}(2x + 1)\nTaking sine on both sides: \\sin(2\\cos^{-1} x - 3\\pi/2) = 2x + 1 \\implies \\cos(2\\cos^{-1} x) = 2x + 1\n2x^2 - 1 = 2x + 1 \\implies 2x^2 - 2x - 2 = 0 \\implies x^2 - x - 1 = 0.\nx = \\frac{1 \\pm \\sqrt{5}}{2}.\nChecking domain [-1, 1]: x = \\frac{1 + \\sqrt{5}}{2} > 1 is rejected; x = \\frac{1 - \\sqrt{5}}{2} \\in [-1, 1] satisfies the equation.\nSince 2x - 1 = -\\sqrt{5}, (2x - 1)^2 = (-\\sqrt{5})^2 = 5."
+    }
+  ]
+}

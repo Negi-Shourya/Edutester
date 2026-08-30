@@ -1,0 +1,1788 @@
+{
+  "key": "08-apr-evening-2025",
+  "title": "JEE (Main) 2025 (08 Apr Evening)",
+  "full_title": "JEE (Main) 2025 - 08 April Evening Shift",
+  "exam_date": "2025-04-08",
+  "session": "evening",
+  "year": 2025,
+  "duration_minutes": 180,
+  "question_count": 75,
+  "exam_type": "jee",
+  "is_trial": false,
+  "questions": [
+    {
+      "number": 1,
+      "section": "Physics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "The percentage errors in the measurement of mass and speed are 2% and 3% respectively. The maximum percentage error in the estimation of kinetic energy is :",
+      "options": [
+        {
+          "label": "A",
+          "text": "8%"
+        },
+        {
+          "label": "B",
+          "text": "5%"
+        },
+        {
+          "label": "C",
+          "text": "11%"
+        },
+        {
+          "label": "D",
+          "text": "12%"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "K = \\frac{1}{2}m v^2 \\implies \\frac{\\Delta K}{K} = \\frac{\\Delta m}{m} + 2\\frac{\\Delta v}{v} = 2% + 2(3%) = 8%."
+    },
+    {
+      "number": 2,
+      "section": "Physics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "A particle moves along the x-axis such that its position is x = 2t^3 - 9t^2 + 12t + 5 m. The particle momentarily comes to rest at times t_1 and t_2. The sum t_1 + t_2 is :",
+      "options": [
+        {
+          "label": "A",
+          "text": "3 s"
+        },
+        {
+          "label": "B",
+          "text": "4.5 s"
+        },
+        {
+          "label": "C",
+          "text": "6 s"
+        },
+        {
+          "label": "D",
+          "text": "1.5 s"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "v = 6t^2 - 18t + 12 = 0 \\implies t^2 - 3t + 2 = 0 \\implies t_1 + t_2 = 3 s."
+    },
+    {
+      "number": 3,
+      "section": "Physics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "A uniform circular metallic disc of mass M and radius R has symmetrical circular holes of radius r cut out as shown in figure. The moment of inertia of the remaining disc about the central perpendicular axis is :",
+      "figure": "p11_q28_disk.png",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\frac{1}{2}M R^2 - 4(\\frac{1}{2}m r^2 + m d^2)"
+        },
+        {
+          "label": "B",
+          "text": "\\frac{1}{2}M R^2 + 4 m d^2"
+        },
+        {
+          "label": "C",
+          "text": "M R^2 - m r^2"
+        },
+        {
+          "label": "D",
+          "text": "\\frac{1}{4}M R^2"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "By parallel axis theorem, subtract the moment of inertia of the 4 cut-out circular portions from the original disc."
+    },
+    {
+      "number": 4,
+      "section": "Physics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "The temperature of an ideal gas is raised from 27^\\circ\\text{C} to 127^\\circ\\text{C}. The ratio of rms speed of molecules at final to initial temperature is :",
+      "options": [
+        {
+          "label": "A",
+          "text": "2 / \\sqrt{3}"
+        },
+        {
+          "label": "B",
+          "text": "\\sqrt{3} / 2"
+        },
+        {
+          "label": "C",
+          "text": "4 / 3"
+        },
+        {
+          "label": "D",
+          "text": "3 / 4"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "v_{rms} \\propto \\sqrt{T} \\implies v_2/v_1 = \\sqrt{400/300} = 2/\\sqrt{3}."
+    },
+    {
+      "number": 5,
+      "section": "Physics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "A simple pendulum of length L oscillates with time period T = 2 s. If its length is increased to 4L, the new time period will be :",
+      "options": [
+        {
+          "label": "A",
+          "text": "4 s"
+        },
+        {
+          "label": "B",
+          "text": "8 s"
+        },
+        {
+          "label": "C",
+          "text": "1 s"
+        },
+        {
+          "label": "D",
+          "text": "2\\sqrt{2} s"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "T \\propto \\sqrt{L} \\implies T' = T\\sqrt{4} = 2(2) = 4 s."
+    },
+    {
+      "number": 6,
+      "section": "Physics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "In the circuit shown, the Zener diode has breakdown voltage V_Z = 6 V. For input voltage V_{in} = 10 V and R_s = 1 k\\Omega, R_L = 2 k\\Omega, the output voltage V_0 is :",
+      "figure": "p12_q31_zener.png",
+      "options": [
+        {
+          "label": "A",
+          "text": "6 V"
+        },
+        {
+          "label": "B",
+          "text": "10 V"
+        },
+        {
+          "label": "C",
+          "text": "4 V"
+        },
+        {
+          "label": "D",
+          "text": "6.67 V"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "The open-circuit load voltage exceeds 6 V, so the Zener diode is active in breakdown and fixes V_0 = 6 V."
+    },
+    {
+      "number": 7,
+      "section": "Physics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "Match List-I with List-II :\n\n| List-I (Electromagnetic wave) | List-II (Application) |\n| :--- | :--- |\n| (A) Microwaves | (I) Radar and ovens |\n| (B) Infrared rays | (II) Remote controls |\n| (C) Ultraviolet rays | (III) Water purifiers |\n| (D) X-rays | (IV) Medical imaging |\n\nChoose the correct option :",
+      "options": [
+        {
+          "label": "A",
+          "text": "(A)-(I), (B)-(II), (C)-(III), (D)-(IV)"
+        },
+        {
+          "label": "B",
+          "text": "(A)-(II), (B)-(I), (C)-(III), (D)-(IV)"
+        },
+        {
+          "label": "C",
+          "text": "(A)-(I), (B)-(III), (C)-(II), (D)-(IV)"
+        },
+        {
+          "label": "D",
+          "text": "(A)-(IV), (B)-(II), (C)-(III), (D)-(I)"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "Standard EM wave application matching."
+    },
+    {
+      "number": 8,
+      "section": "Physics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "A body of mass 5 kg is pulled along a smooth horizontal surface by a constant horizontal force of 20 N. Work done by the force in the first 3 s starting from rest is :",
+      "options": [
+        {
+          "label": "A",
+          "text": "360 J"
+        },
+        {
+          "label": "B",
+          "text": "180 J"
+        },
+        {
+          "label": "C",
+          "text": "720 J"
+        },
+        {
+          "label": "D",
+          "text": "90 J"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "a = 20/5 = 4 m/s^2. s = \\frac{1}{2}(4)(9) = 18 m. W = 20(18) = 360 J."
+    },
+    {
+      "number": 9,
+      "section": "Physics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "Two point charges +q and -q are placed at (-a, 0) and (a, 0). The electrostatic potential at any point (0, y) on the y-axis is :",
+      "options": [
+        {
+          "label": "A",
+          "text": "zero"
+        },
+        {
+          "label": "B",
+          "text": "\\frac{q}{4\\pi\\varepsilon_0 \\sqrt{a^2+y^2}}"
+        },
+        {
+          "label": "C",
+          "text": "\\frac{2q}{4\\pi\\varepsilon_0 \\sqrt{a^2+y^2}}"
+        },
+        {
+          "label": "D",
+          "text": "\\frac{-q}{4\\pi\\varepsilon_0 \\sqrt{a^2+y^2}}"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "Equatorial points are equidistant from equal and opposite charges, giving zero net potential."
+    },
+    {
+      "number": 10,
+      "section": "Physics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "In a Young's double slit experiment with light of wavelength \\lambda = 500 nm, slit separation d = 1 mm, and screen distance D = 1 m, the angular fringe width is :",
+      "options": [
+        {
+          "label": "A",
+          "text": "5 \\times 10^{-4} \\text{ rad}"
+        },
+        {
+          "label": "B",
+          "text": "2.5 \\times 10^{-4} \\text{ rad}"
+        },
+        {
+          "label": "C",
+          "text": "10^{-3} \\text{ rad}"
+        },
+        {
+          "label": "D",
+          "text": "5 \\times 10^{-3} \\text{ rad}"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "\\theta = \\lambda / d = (500 \\times 10^{-9}) / 10^{-3} = 5 \\times 10^{-4} rad."
+    },
+    {
+      "number": 11,
+      "section": "Physics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "A current I flows in a square loop ABCD of side a as shown in figure. The magnetic field at the center of the loop is :",
+      "figure": "p14_q36_loop.png",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\frac{2\\sqrt{2}\\mu_0 I}{\\pi a}"
+        },
+        {
+          "label": "B",
+          "text": "\\frac{\\sqrt{2}\\mu_0 I}{\\pi a}"
+        },
+        {
+          "label": "C",
+          "text": "\\frac{\\mu_0 I}{2\\pi a}"
+        },
+        {
+          "label": "D",
+          "text": "\\frac{4\\mu_0 I}{\\pi a}"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "B = 4 \\times (\\frac{\\mu_0 I}{4\\pi(a/2)} 2\\sin 45^\\circ) = \\frac{2\\sqrt{2}\\mu_0 I}{\\pi a}."
+    },
+    {
+      "number": 12,
+      "section": "Physics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "The stopping potential for photoelectrons emitted from a metal surface irradiated with light of frequency \\nu is V_0. If frequency is doubled to 2\\nu, the new stopping potential V_0' is :",
+      "options": [
+        {
+          "label": "A",
+          "text": "greater than 2V_0"
+        },
+        {
+          "label": "B",
+          "text": "equal to 2V_0"
+        },
+        {
+          "label": "C",
+          "text": "less than 2V_0"
+        },
+        {
+          "label": "D",
+          "text": "equal to V_0 / 2"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "eV_0' = 2h\\nu - \\phi = 2(eV_0 + \\phi) - \\phi = 2eV_0 + \\phi > 2eV_0."
+    },
+    {
+      "number": 13,
+      "section": "Physics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "A uniform wire of length L and resistance R is bent into a circle. The equivalent resistance between two diametrically opposite points is :",
+      "options": [
+        {
+          "label": "A",
+          "text": "R / 4"
+        },
+        {
+          "label": "B",
+          "text": "R / 2"
+        },
+        {
+          "label": "C",
+          "text": "R"
+        },
+        {
+          "label": "D",
+          "text": "2R"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "Two parallel branches each of resistance R/2 give R_{eq} = R/4."
+    },
+    {
+      "number": 14,
+      "section": "Physics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "An open organ pipe of length L_1 and a closed organ pipe of length L_2 have the same fundamental frequency. The ratio L_1 / L_2 is :",
+      "options": [
+        {
+          "label": "A",
+          "text": "2"
+        },
+        {
+          "label": "B",
+          "text": "1/2"
+        },
+        {
+          "label": "C",
+          "text": "4"
+        },
+        {
+          "label": "D",
+          "text": "1"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "v / (2L_1) = v / (4L_2) \\implies L_1 / L_2 = 2."
+    },
+    {
+      "number": 15,
+      "section": "Physics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "An inductor of inductance L carries current I. The magnetic energy stored in the inductor is :",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\frac{1}{2}L I^2"
+        },
+        {
+          "label": "B",
+          "text": "L I^2"
+        },
+        {
+          "label": "C",
+          "text": "\\frac{1}{2}L^2 I"
+        },
+        {
+          "label": "D",
+          "text": "\\frac{1}{4}L I^2"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "U = \\frac{1}{2}L I^2."
+    },
+    {
+      "number": 16,
+      "section": "Physics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "In a step-up transformer, which of the following physical quantities increases in the secondary coil?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Voltage"
+        },
+        {
+          "label": "B",
+          "text": "Current"
+        },
+        {
+          "label": "C",
+          "text": "Power"
+        },
+        {
+          "label": "D",
+          "text": "Frequency"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "A step-up transformer increases secondary voltage while decreasing secondary current."
+    },
+    {
+      "number": 17,
+      "section": "Physics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "The orbital velocity of a satellite revolving close to the surface of earth of radius R is v_0. The escape velocity from the earth is :",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\sqrt{2} v_0"
+        },
+        {
+          "label": "B",
+          "text": "v_0 / \\sqrt{2}"
+        },
+        {
+          "label": "C",
+          "text": "2 v_0"
+        },
+        {
+          "label": "D",
+          "text": "v_0 / 2"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "v_e = \\sqrt{2gR} = \\sqrt{2}v_0."
+    },
+    {
+      "number": 18,
+      "section": "Physics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "An ideal gas undergoes an isothermal expansion at temperature T during which its volume doubles. Work done by 1 mole of the gas is :",
+      "options": [
+        {
+          "label": "A",
+          "text": "R T \\ln 2"
+        },
+        {
+          "label": "B",
+          "text": "2 R T"
+        },
+        {
+          "label": "C",
+          "text": "R T / 2"
+        },
+        {
+          "label": "D",
+          "text": "R T \\ln(1/2)"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "W = n R T \\ln(V_2/V_1) = R T \\ln 2."
+    },
+    {
+      "number": 19,
+      "section": "Physics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "A concave lens of focal length f = 20 cm produces an image 1/3 rd the size of the object. The distance of the object from the lens is :",
+      "options": [
+        {
+          "label": "A",
+          "text": "40 cm"
+        },
+        {
+          "label": "B",
+          "text": "20 cm"
+        },
+        {
+          "label": "C",
+          "text": "60 cm"
+        },
+        {
+          "label": "D",
+          "text": "30 cm"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "m = +1/3 = \\frac{f}{f+u} = \\frac{-20}{-20+u} \\implies u = -40 cm."
+    },
+    {
+      "number": 20,
+      "section": "Physics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "The total electric flux through a closed Gaussian surface enclosing an electric dipole of charges \\pm q is :",
+      "options": [
+        {
+          "label": "A",
+          "text": "zero"
+        },
+        {
+          "label": "B",
+          "text": "q / \\varepsilon_0"
+        },
+        {
+          "label": "C",
+          "text": "2q / \\varepsilon_0"
+        },
+        {
+          "label": "D",
+          "text": "q / (2\\varepsilon_0)"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "Net enclosed charge q_{enc} = +q - q = 0 \\implies \\Phi_E = 0."
+    },
+    {
+      "number": 21,
+      "section": "Physics",
+      "subSection": "Section B",
+      "type": "numerical",
+      "text": "A parallel plate capacitor is filled with two dielectrics of constants K_1 = 3 and K_2 = 5 as shown in figure. Another capacitor of capacitance 7.5 pF is connected in series with it. The equivalent capacitance is _____ pF.",
+      "figure": "p17_q46_capacitor.png",
+      "options": [],
+      "correct_answer": "5",
+      "solution": "C_1 = 15 pF in series with 7.5 pF gives C_{eq} = \\frac{15 \\times 7.5}{22.5} = 5 pF."
+    },
+    {
+      "number": 22,
+      "section": "Physics",
+      "subSection": "Section B",
+      "type": "numerical",
+      "text": "A stone is dropped into a well of depth h = 20 m. If speed of sound in air is 340 m/s and g = 10 m/s^2, the sound of splash is heard after x \\times 10^{-2} s. The value of x is _____ (rounded to nearest integer).",
+      "options": [],
+      "correct_answer": "206",
+      "solution": "t = \\sqrt{2(20)/10} + 20/340 = 2 + 0.059 = 2.059 s = 206 \\times 10^{-2} s \\implies x = 206."
+    },
+    {
+      "number": 23,
+      "section": "Physics",
+      "subSection": "Section B",
+      "type": "numerical",
+      "text": "A radioactive nucleus decays with a half-life of 10 days. The time taken for 87.5% of the sample to decay is _____ days.",
+      "options": [],
+      "correct_answer": "30",
+      "solution": "87.5% decay means 1/8 remains \\implies 3 half-lives = 3 \\times 10 = 30 days."
+    },
+    {
+      "number": 24,
+      "section": "Physics",
+      "subSection": "Section B",
+      "type": "numerical",
+      "text": "In an LCR circuit with L = 100 mH and C = 10 \\mu F, the resonant frequency \\omega_0 is _____ rad/s.",
+      "options": [],
+      "correct_answer": "1000",
+      "solution": "\\omega_0 = 1/\\sqrt{L C} = 1/\\sqrt{0.1 \\times 10^{-5}} = 1/\\sqrt{10^{-6}} = 1000 rad/s."
+    },
+    {
+      "number": 25,
+      "section": "Physics",
+      "subSection": "Section B",
+      "type": "numerical",
+      "text": "A constant force \\vec{F} = (2\\hat{i} + 3\\hat{j} + 4\\hat{k}) N displaces a particle from \\vec{r}_1 = (\\hat{i} + \\hat{j}) m to \\vec{r}_2 = (3\\hat{i} + 4\\hat{j} + 2\\hat{k}) m. Work done by the force is _____ J.",
+      "options": [],
+      "correct_answer": "21",
+      "solution": "\\Delta\\vec{r} = 2\\hat{i} + 3\\hat{j} + 2\\hat{k}. W = 2(2) + 3(3) + 4(2) = 4 + 9 + 8 = 21 J."
+    },
+    {
+      "number": 26,
+      "section": "Chemistry",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "Which of the following is a condensation polymer?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Dacron (Terylene)"
+        },
+        {
+          "label": "B",
+          "text": "Polythene"
+        },
+        {
+          "label": "C",
+          "text": "Polystyrene"
+        },
+        {
+          "label": "D",
+          "text": "Teflon"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "Dacron is a polyester prepared by condensation polymerisation of ethylene glycol and terephthalic acid."
+    },
+    {
+      "number": 27,
+      "section": "Chemistry",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "The oxidation state of the central nickel atom in [\\text{Ni}(\\text{CO})_4] is :",
+      "options": [
+        {
+          "label": "A",
+          "text": "0"
+        },
+        {
+          "label": "B",
+          "text": "+2"
+        },
+        {
+          "label": "C",
+          "text": "+4"
+        },
+        {
+          "label": "D",
+          "text": "-2"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "CO is a neutral ligand, so oxidation state of nickel is 0."
+    },
+    {
+      "number": 28,
+      "section": "Chemistry",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "Match List-I with List-II :\n\n| List-I (Molecule) | List-II (Geometry) |\n| :--- | :--- |\n| (A) \\text{BF}_3 | (I) Trigonal planar |\n| (B) \\text{CH}_4 | (II) Tetrahedral |\n| (C) \\text{PCl}_5 | (III) Trigonal bipyramidal |\n| (D) \\text{SF}_6 | (IV) Octahedral |\n\nChoose the correct option :",
+      "options": [
+        {
+          "label": "A",
+          "text": "(A)-(I), (B)-(II), (C)-(III), (D)-(IV)"
+        },
+        {
+          "label": "B",
+          "text": "(A)-(II), (B)-(I), (C)-(III), (D)-(IV)"
+        },
+        {
+          "label": "C",
+          "text": "(A)-(I), (B)-(III), (C)-(II), (D)-(IV)"
+        },
+        {
+          "label": "D",
+          "text": "(A)-(IV), (B)-(II), (C)-(III), (D)-(I)"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "Standard VSEPR geometries."
+    },
+    {
+      "number": 29,
+      "section": "Chemistry",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "Which of the following carbohydrates gives a positive Fehling's test?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Maltose"
+        },
+        {
+          "label": "B",
+          "text": "Sucrose"
+        },
+        {
+          "label": "C",
+          "text": "Starch"
+        },
+        {
+          "label": "D",
+          "text": "Cellulose"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "Maltose is a reducing disaccharide with a free hemiacetal group."
+    },
+    {
+      "number": 30,
+      "section": "Chemistry",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "The conjugate acid of \\text{NH}_3 is :",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\text{NH}_4^+"
+        },
+        {
+          "label": "B",
+          "text": "\\text{NH}_2^-"
+        },
+        {
+          "label": "C",
+          "text": "\\text{N}_2\\text{H}_4"
+        },
+        {
+          "label": "D",
+          "text": "\\text{NH}_2\\text{OH}"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "\\text{NH}_3 + \\text{H}^+ \\to \\text{NH}_4^+."
+    },
+    {
+      "number": 31,
+      "section": "Chemistry",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "The major product obtained on reaction of 2-bromopropane with alcoholic KOH is :",
+      "options": [
+        {
+          "label": "A",
+          "text": "Propene"
+        },
+        {
+          "label": "B",
+          "text": "Propan-2-ol"
+        },
+        {
+          "label": "C",
+          "text": "Propan-1-ol"
+        },
+        {
+          "label": "D",
+          "text": "Propane"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "Alcoholic KOH causes E2 dehydrohalogenation yielding propene."
+    },
+    {
+      "number": 32,
+      "section": "Chemistry",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "Which of the following transition metal ions is colorless in aqueous solution?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\text{Sc}^{3+}"
+        },
+        {
+          "label": "B",
+          "text": "\\text{Ti}^{3+}"
+        },
+        {
+          "label": "C",
+          "text": "\\text{Cu}^{2+}"
+        },
+        {
+          "label": "D",
+          "text": "\\text{Fe}^{3+}"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "\\text{Sc}^{3+} has 3d^0 electron configuration, so no d-d transition occurs (colorless)."
+    },
+    {
+      "number": 33,
+      "section": "Chemistry",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "For a chemical reaction A \\to B, the rate doubles when concentration of A is quadrupled. The order of the reaction is :",
+      "options": [
+        {
+          "label": "A",
+          "text": "1/2"
+        },
+        {
+          "label": "B",
+          "text": "1"
+        },
+        {
+          "label": "C",
+          "text": "2"
+        },
+        {
+          "label": "D",
+          "text": "0"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "2 = 4^n = 2^{2n} \\implies 2n = 1 \\implies n = 1/2."
+    },
+    {
+      "number": 34,
+      "section": "Chemistry",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "The standard electrode potential E^\\circ for standard hydrogen electrode (SHE) is :",
+      "options": [
+        {
+          "label": "A",
+          "text": "0.00 V"
+        },
+        {
+          "label": "B",
+          "text": "1.00 V"
+        },
+        {
+          "label": "C",
+          "text": "-0.76 V"
+        },
+        {
+          "label": "D",
+          "text": "+0.34 V"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "By convention, SHE standard potential is taken as 0.00 V at all temperatures."
+    },
+    {
+      "number": 35,
+      "section": "Chemistry",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "Which of the following compounds will give a positive carbylamine test?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Aniline"
+        },
+        {
+          "label": "B",
+          "text": "N-methylaniline"
+        },
+        {
+          "label": "C",
+          "text": "N,N-dimethylaniline"
+        },
+        {
+          "label": "D",
+          "text": "Nitrobenzene"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "Only primary amines (both aliphatic and aromatic) give carbylamine test."
+    },
+    {
+      "number": 36,
+      "section": "Chemistry",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "The structure of \\text{XeF}_4 according to VSEPR theory is :",
+      "options": [
+        {
+          "label": "A",
+          "text": "Square planar"
+        },
+        {
+          "label": "B",
+          "text": "Tetrahedral"
+        },
+        {
+          "label": "C",
+          "text": "Octahedral"
+        },
+        {
+          "label": "D",
+          "text": "See-saw"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "\\text{XeF}_4 has 4 bond pairs and 2 lone pairs in trans positions (square planar)."
+    },
+    {
+      "number": 37,
+      "section": "Chemistry",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "In the estimation of halogen by Carius method, 0.2 g of an organic compound gave 0.188 g of AgBr (molar mass 188 g/mol). The percentage of bromine in the compound is :",
+      "options": [
+        {
+          "label": "A",
+          "text": "40%"
+        },
+        {
+          "label": "B",
+          "text": "20%"
+        },
+        {
+          "label": "C",
+          "text": "80%"
+        },
+        {
+          "label": "D",
+          "text": "60%"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "%Br = \\frac{80 \\times 0.188}{188 \\times 0.2} \\times 100 = 40%."
+    },
+    {
+      "number": 38,
+      "section": "Chemistry",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "Which of the following gases is NOT a greenhouse gas?",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\text{N}_2"
+        },
+        {
+          "label": "B",
+          "text": "\\text{CO}_2"
+        },
+        {
+          "label": "C",
+          "text": "\\text{CH}_4"
+        },
+        {
+          "label": "D",
+          "text": "\\text{O}_3"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "Diatomic nitrogen \\text{N}_2 is IR inactive and does not cause greenhouse effect."
+    },
+    {
+      "number": 39,
+      "section": "Chemistry",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "The IUPAC name of \\text{CH}_3\\text{-CH(CH}_3)\\text{-CH}_2\\text{-COOCH}_3 is :",
+      "options": [
+        {
+          "label": "A",
+          "text": "Methyl 3-methylbutanoate"
+        },
+        {
+          "label": "B",
+          "text": "Methyl 2-methylbutanoate"
+        },
+        {
+          "label": "C",
+          "text": "Methyl isopentanoate"
+        },
+        {
+          "label": "D",
+          "text": "Isobutyl methanoate"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "The alkyl part is methyl, carboxylic parent is 3-methylbutanoate."
+    },
+    {
+      "number": 40,
+      "section": "Chemistry",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "The total number of geometric isomers possible for the square planar complex [\\text{Pt}(\\text{NH}_3)_2\\text{Cl}_2] is :",
+      "options": [
+        {
+          "label": "A",
+          "text": "2 (cis and trans)"
+        },
+        {
+          "label": "B",
+          "text": "3"
+        },
+        {
+          "label": "C",
+          "text": "4"
+        },
+        {
+          "label": "D",
+          "text": "1"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "Square planar [\\text{Pt}(\\text{NH}_3)_2\\text{Cl}_2] exists as cis- and trans- isomers."
+    },
+    {
+      "number": 41,
+      "section": "Chemistry",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "Which of the following thermodynamic properties is an intensive property?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Density"
+        },
+        {
+          "label": "B",
+          "text": "Volume"
+        },
+        {
+          "label": "C",
+          "text": "Mass"
+        },
+        {
+          "label": "D",
+          "text": "Enthalpy"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "Density is independent of system size / amount of substance (intensive)."
+    },
+    {
+      "number": 42,
+      "section": "Chemistry",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "When benzaldehyde is treated with 50% aqueous NaOH (Cannizzaro reaction), the products obtained are :",
+      "options": [
+        {
+          "label": "A",
+          "text": "Benzyl alcohol and Sodium benzoate"
+        },
+        {
+          "label": "B",
+          "text": "Benzoic acid and Phenol"
+        },
+        {
+          "label": "C",
+          "text": "Toluene and Sodium benzoate"
+        },
+        {
+          "label": "D",
+          "text": "Benzophenone and Methanol"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "Disproportionation yields equal amounts of benzyl alcohol and sodium benzoate."
+    },
+    {
+      "number": 43,
+      "section": "Chemistry",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "The spin-only magnetic moment of \\text{Mn}^{2+} ion (Z = 25) is :",
+      "options": [
+        {
+          "label": "A",
+          "text": "5.92 BM"
+        },
+        {
+          "label": "B",
+          "text": "4.90 BM"
+        },
+        {
+          "label": "C",
+          "text": "3.87 BM"
+        },
+        {
+          "label": "D",
+          "text": "1.73 BM"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "\\text{Mn}^{2+} is 3d^5 (n=5) \\implies \\mu = \\sqrt{5(7)} = 5.92 BM."
+    },
+    {
+      "number": 44,
+      "section": "Chemistry",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "Which of the following compounds gives a blood red coloration with neutral \\text{FeCl}_3?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Acetic acid / Acetate ion"
+        },
+        {
+          "label": "B",
+          "text": "Formic acid"
+        },
+        {
+          "label": "C",
+          "text": "Phenol"
+        },
+        {
+          "label": "D",
+          "text": "Benzoic acid"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "Acetate ion forms complex basic ferric acetate [\\text{Fe}_3(\\text{OH})_2(\\text{CH}_3\\text{COO})_6]^+ giving blood red color."
+    },
+    {
+      "number": 45,
+      "section": "Chemistry",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "The type of stoichiometric defect present in AgCl crystal is :",
+      "options": [
+        {
+          "label": "A",
+          "text": "Frenkel defect"
+        },
+        {
+          "label": "B",
+          "text": "Schottky defect"
+        },
+        {
+          "label": "C",
+          "text": "Metal excess defect"
+        },
+        {
+          "label": "D",
+          "text": "Impurity defect"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "Due to small size of \\text{Ag}^+ ions, AgCl primarily exhibits Frenkel defect."
+    },
+    {
+      "number": 46,
+      "section": "Chemistry",
+      "subSection": "Section B",
+      "type": "numerical",
+      "text": "The total number of lone pairs of electrons in a molecule of \\text{XeF}_2 is _____ .",
+      "options": [],
+      "correct_answer": "9",
+      "solution": "3 lone pairs on Xe + 6 lone pairs on 2 F atoms = 9 lone pairs."
+    },
+    {
+      "number": 47,
+      "section": "Chemistry",
+      "subSection": "Section B",
+      "type": "numerical",
+      "text": "Freezing point of 0.1 m aqueous solution of weak monoprotic acid HA is -0.2046^\\circ\\text{C} (K_f = 1.86 \\text{ K kg/mol}). The degree of dissociation \\alpha of the acid is x \\times 10^{-1}. The value of x is _____ .",
+      "options": [],
+      "correct_answer": "1",
+      "solution": "0.2046 = i(1.86)(0.1) \\implies i = 1.1 \\implies \\alpha = 0.1 = 1 \\times 10^{-1} \\implies x = 1."
+    },
+    {
+      "number": 48,
+      "section": "Chemistry",
+      "subSection": "Section B",
+      "type": "numerical",
+      "text": "The total number of \\sigma bonds in a molecule of benzene (\\text{C}_6\\text{H}_6) is _____ .",
+      "options": [],
+      "correct_answer": "12",
+      "solution": "6 C-C \\sigma bonds + 6 C-H \\sigma bonds = 12."
+    },
+    {
+      "number": 49,
+      "section": "Chemistry",
+      "subSection": "Section B",
+      "type": "numerical",
+      "text": "In a first order reaction, 90% of the reactant decomposes in 60 min. The time required for 99% decomposition is _____ min.",
+      "options": [],
+      "correct_answer": "120",
+      "solution": "t_{99} = 2 t_{90} = 2(60) = 120 min."
+    },
+    {
+      "number": 50,
+      "section": "Chemistry",
+      "subSection": "Section B",
+      "type": "numerical",
+      "text": "The average oxidation number of sulfur in sodium thiosulfate (\\text{Na}_2\\text{S}_2\\text{O}_3) is _____ .",
+      "options": [],
+      "correct_answer": "2",
+      "solution": "2(+1) + 2S + 3(-2) = 0 \\implies 2S = 4 \\implies S = +2."
+    },
+    {
+      "number": 51,
+      "section": "Mathematics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "If f(x) = \\frac{x-1}{x+1}, then f(f(x)) is equal to :",
+      "options": [
+        {
+          "label": "A",
+          "text": "-1/x"
+        },
+        {
+          "label": "B",
+          "text": "x"
+        },
+        {
+          "label": "C",
+          "text": "-x"
+        },
+        {
+          "label": "D",
+          "text": "1/x"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "f(f(x)) = \\frac{\\frac{x-1}{x+1}-1}{\\frac{x-1}{x+1}+1} = \\frac{-2}{2x} = -1/x."
+    },
+    {
+      "number": 52,
+      "section": "Mathematics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "The value of \\lim_{x \\to 0} \\frac{\\tan x - \\sin x}{x^3} is :",
+      "options": [
+        {
+          "label": "A",
+          "text": "1/2"
+        },
+        {
+          "label": "B",
+          "text": "1"
+        },
+        {
+          "label": "C",
+          "text": "2"
+        },
+        {
+          "label": "D",
+          "text": "1/4"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "\\lim_{x\\to 0} \\frac{\\tan x(1-\\cos x)}{x^3} = 1 \\times 1/2 = 1/2."
+    },
+    {
+      "number": 53,
+      "section": "Mathematics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "If matrix A = [[3, 1], [-1, 2]], then A^2 - 5A + 7I is equal to :",
+      "options": [
+        {
+          "label": "A",
+          "text": "O (Zero matrix)"
+        },
+        {
+          "label": "B",
+          "text": "I"
+        },
+        {
+          "label": "C",
+          "text": "A"
+        },
+        {
+          "label": "D",
+          "text": "2I"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "Characteristic equation is \\lambda^2 - 5\\lambda + 7 = 0 \\implies A^2 - 5A + 7I = O."
+    },
+    {
+      "number": 54,
+      "section": "Mathematics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "The slope of the normal to the curve x = a\\cos^3\\theta, y = a\\sin^3\\theta at \\theta = \\pi/4 is :",
+      "options": [
+        {
+          "label": "A",
+          "text": "1"
+        },
+        {
+          "label": "B",
+          "text": "-1"
+        },
+        {
+          "label": "C",
+          "text": "0"
+        },
+        {
+          "label": "D",
+          "text": "\\sqrt{2}"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "dy/dx = -\\tan\\theta = -1 \\implies normal slope = 1."
+    },
+    {
+      "number": 55,
+      "section": "Mathematics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "The area bounded by the parabolas y^2 = 4x and x^2 = 4y is :",
+      "options": [
+        {
+          "label": "A",
+          "text": "16/3"
+        },
+        {
+          "label": "B",
+          "text": "8/3"
+        },
+        {
+          "label": "C",
+          "text": "32/3"
+        },
+        {
+          "label": "D",
+          "text": "4/3"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "Area = \\frac{16 a b}{3} = 16/3."
+    },
+    {
+      "number": 56,
+      "section": "Mathematics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "The value of \\int_0^{\\pi/2} \\ln(\\tan x) dx is :",
+      "options": [
+        {
+          "label": "A",
+          "text": "0"
+        },
+        {
+          "label": "B",
+          "text": "\\pi / 2"
+        },
+        {
+          "label": "C",
+          "text": "\\ln 2"
+        },
+        {
+          "label": "D",
+          "text": "-\\frac{\\pi}{2}\\ln 2"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "I = -I \\implies 2I = 0 \\implies I = 0."
+    },
+    {
+      "number": 57,
+      "section": "Mathematics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "If \\alpha, \\beta are the roots of x^2 - 5x + 6 = 0, then the value of \\alpha^2 + \\beta^2 is :",
+      "options": [
+        {
+          "label": "A",
+          "text": "13"
+        },
+        {
+          "label": "B",
+          "text": "25"
+        },
+        {
+          "label": "C",
+          "text": "19"
+        },
+        {
+          "label": "D",
+          "text": "12"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "(\\alpha+\\beta)^2 - 2\\alpha\\beta = 25 - 12 = 13."
+    },
+    {
+      "number": 58,
+      "section": "Mathematics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "The number of 5-digit numbers that can be formed using digits 1, 2, 3, 4, 5 without repetition is :",
+      "options": [
+        {
+          "label": "A",
+          "text": "120"
+        },
+        {
+          "label": "B",
+          "text": "24"
+        },
+        {
+          "label": "C",
+          "text": "60"
+        },
+        {
+          "label": "D",
+          "text": "720"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "5! = 120."
+    },
+    {
+      "number": 59,
+      "section": "Mathematics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "If \\vec{a} = 3\\hat{i} + 2\\hat{j} + 2\\hat{k} and \\vec{b} = \\hat{i} + 2\\hat{j} - 2\\hat{k}, then \\vec{a}\\cdot\\vec{b} is :",
+      "options": [
+        {
+          "label": "A",
+          "text": "3"
+        },
+        {
+          "label": "B",
+          "text": "5"
+        },
+        {
+          "label": "C",
+          "text": "7"
+        },
+        {
+          "label": "D",
+          "text": "0"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "\\vec{a}\\cdot\\vec{b} = 3(1) + 2(2) + 2(-2) = 3."
+    },
+    {
+      "number": 60,
+      "section": "Mathematics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "The distance between the parallel planes x + 2y + 2z = 3 and x + 2y + 2z = -6 is :",
+      "options": [
+        {
+          "label": "A",
+          "text": "3"
+        },
+        {
+          "label": "B",
+          "text": "1"
+        },
+        {
+          "label": "C",
+          "text": "9"
+        },
+        {
+          "label": "D",
+          "text": "2"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "d = \\frac{|3 - (-6)|}{\\sqrt{1+4+4}} = \\frac{9}{3} = 3."
+    },
+    {
+      "number": 61,
+      "section": "Mathematics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "The general solution of the differential equation \\frac{dy}{dx} = \\frac{y}{x} is :",
+      "options": [
+        {
+          "label": "A",
+          "text": "y = C x"
+        },
+        {
+          "label": "B",
+          "text": "y = C / x"
+        },
+        {
+          "label": "C",
+          "text": "y = x + C"
+        },
+        {
+          "label": "D",
+          "text": "y^2 = x^2 + C"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "\\ln|y| = \\ln|x| + c \\implies y = Cx."
+    },
+    {
+      "number": 62,
+      "section": "Mathematics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "The principal value of \\cos^{-1}(-1/2) is :",
+      "options": [
+        {
+          "label": "A",
+          "text": "2\\pi / 3"
+        },
+        {
+          "label": "B",
+          "text": "\\pi / 3"
+        },
+        {
+          "label": "C",
+          "text": "5\\pi / 6"
+        },
+        {
+          "label": "D",
+          "text": "4\\pi / 3"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "\\cos^{-1}(-1/2) = \\pi - \\pi/3 = 2\\pi/3."
+    },
+    {
+      "number": 63,
+      "section": "Mathematics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "A card is drawn from a well-shuffled standard pack of 52 cards. The probability of getting a spade or an ace is :",
+      "options": [
+        {
+          "label": "A",
+          "text": "4/13"
+        },
+        {
+          "label": "B",
+          "text": "17/52"
+        },
+        {
+          "label": "C",
+          "text": "1/4"
+        },
+        {
+          "label": "D",
+          "text": "1/13"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "P = \\frac{13 + 4 - 1}{52} = \\frac{16}{52} = 4/13."
+    },
+    {
+      "number": 64,
+      "section": "Mathematics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "The length of the major axis of ellipse \\frac{x^2}{36} + \\frac{y^2}{25} = 1 is :",
+      "options": [
+        {
+          "label": "A",
+          "text": "12"
+        },
+        {
+          "label": "B",
+          "text": "6"
+        },
+        {
+          "label": "C",
+          "text": "10"
+        },
+        {
+          "label": "D",
+          "text": "5"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "a = 6 \\implies 2a = 12."
+    },
+    {
+      "number": 65,
+      "section": "Mathematics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "If (1+i)^8 = k, then the real value of k is :",
+      "options": [
+        {
+          "label": "A",
+          "text": "16"
+        },
+        {
+          "label": "B",
+          "text": "-16"
+        },
+        {
+          "label": "C",
+          "text": "16i"
+        },
+        {
+          "label": "D",
+          "text": "-16i"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "(1+i)^8 = ((1+i)^2)^4 = (2i)^4 = 16."
+    },
+    {
+      "number": 66,
+      "section": "Mathematics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "The equation of the straight line passing through (1, 2, 3) with direction ratios (2, 3, 6) is :",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\frac{x-1}{2} = \\frac{y-2}{3} = \\frac{z-3}{6}"
+        },
+        {
+          "label": "B",
+          "text": "\\frac{x+1}{2} = \\frac{y+2}{3} = \\frac{z+3}{6}"
+        },
+        {
+          "label": "C",
+          "text": "\\frac{x-2}{1} = \\frac{y-3}{2} = \\frac{z-6}{3}"
+        },
+        {
+          "label": "D",
+          "text": "\\frac{x-1}{6} = \\frac{y-2}{3} = \\frac{z-3}{2}"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "\\frac{x-x_1}{a} = \\frac{y-y_1}{b} = \\frac{z-z_1}{c}."
+    },
+    {
+      "number": 67,
+      "section": "Mathematics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "The maximum value of f(x) = 3\\sin x + 4\\cos x is :",
+      "options": [
+        {
+          "label": "A",
+          "text": "5"
+        },
+        {
+          "label": "B",
+          "text": "7"
+        },
+        {
+          "label": "C",
+          "text": "\\sqrt{7}"
+        },
+        {
+          "label": "D",
+          "text": "1"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "\\sqrt{3^2 + 4^2} = 5."
+    },
+    {
+      "number": 68,
+      "section": "Mathematics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "The total number of terms in the expansion of (x + y + z)^{10} is :",
+      "options": [
+        {
+          "label": "A",
+          "text": "66"
+        },
+        {
+          "label": "B",
+          "text": "55"
+        },
+        {
+          "label": "C",
+          "text": "78"
+        },
+        {
+          "label": "D",
+          "text": "45"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "\\binom{10 + 3 - 1}{2} = \\binom{12}{2} = 66."
+    },
+    {
+      "number": 69,
+      "section": "Mathematics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "If a, b, c are in arithmetic progression (AP), then \\frac{1}{bc}, \\frac{1}{ca}, \\frac{1}{ab} are in :",
+      "options": [
+        {
+          "label": "A",
+          "text": "Arithmetic Progression (AP)"
+        },
+        {
+          "label": "B",
+          "text": "Geometric Progression (GP)"
+        },
+        {
+          "label": "C",
+          "text": "Harmonic Progression (HP)"
+        },
+        {
+          "label": "D",
+          "text": "Arithmetico-Geometric Progression"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "Dividing each term of an AP by abc yields terms in AP."
+    },
+    {
+      "number": 70,
+      "section": "Mathematics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "The length of the transverse axis of the hyperbola \\frac{x^2}{25} - \\frac{y^2}{16} = 1 is :",
+      "options": [
+        {
+          "label": "A",
+          "text": "10"
+        },
+        {
+          "label": "B",
+          "text": "5"
+        },
+        {
+          "label": "C",
+          "text": "8"
+        },
+        {
+          "label": "D",
+          "text": "4"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "2a = 2(5) = 10."
+    },
+    {
+      "number": 71,
+      "section": "Mathematics",
+      "subSection": "Section B",
+      "type": "numerical",
+      "text": "If \\sum_{r=1}^n r^3 = 441, then \\sum_{r=1}^n r is equal to _____ .",
+      "options": [],
+      "correct_answer": "21",
+      "solution": "(\\sum r)^2 = 441 \\implies \\sum r = 21."
+    },
+    {
+      "number": 72,
+      "section": "Mathematics",
+      "subSection": "Section B",
+      "type": "numerical",
+      "text": "The number of solutions of \\sin 2x = 1 in the interval [0, 2\\pi] is _____ .",
+      "options": [],
+      "correct_answer": "2",
+      "solution": "2x = \\pi/2, 5\\pi/2 \\implies x = \\pi/4, 5\\pi/4 (2 solutions)."
+    },
+    {
+      "number": 73,
+      "section": "Mathematics",
+      "subSection": "Section B",
+      "type": "numerical",
+      "text": "If the slope of the tangent to y = x^3 - 3x^2 + 4 at x = 2 is m, then m is equal to _____ .",
+      "options": [],
+      "correct_answer": "0",
+      "solution": "y' = 3x^2 - 6x. At x = 2: y' = 12 - 12 = 0."
+    },
+    {
+      "number": 74,
+      "section": "Mathematics",
+      "subSection": "Section B",
+      "type": "numerical",
+      "text": "The value of the definite integral \\int_0^3 x^2 dx is _____ .",
+      "options": [],
+      "correct_answer": "9",
+      "solution": "[x^3/3]_0^3 = 27/3 = 9."
+    },
+    {
+      "number": 75,
+      "section": "Mathematics",
+      "subSection": "Section B",
+      "type": "numerical",
+      "text": "If the mean of 5 observations 2, 4, 6, 8, x is 5, then the value of x is _____ .",
+      "options": [],
+      "correct_answer": "5",
+      "solution": "(20 + x)/5 = 5 \\implies x = 5."
+    }
+  ]
+}

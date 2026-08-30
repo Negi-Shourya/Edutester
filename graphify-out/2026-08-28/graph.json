@@ -47834,7 +47834,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/pages/Login.tsx",
-      "source_location": "L15",
+      "source_location": "L16",
       "weight": 1.0
     },
     {
@@ -47846,7 +47846,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/pages/Login.tsx",
-      "source_location": "L18",
+      "source_location": "L19",
       "weight": 1.0
     },
     {
@@ -47858,7 +47858,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/pages/Login.tsx",
-      "source_location": "L67",
+      "source_location": "L70",
       "weight": 1.0
     },
     {

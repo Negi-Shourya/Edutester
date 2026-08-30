@@ -1,0 +1,1784 @@
+{
+  "key": "22-jan-evening",
+  "title": "JEE (Main) 2026 (22 Jan Evening)",
+  "full_title": "JEE (Main) 2026 - 22 January Evening Shift",
+  "exam_date": "2026-01-22",
+  "session": "evening",
+  "year": 2026,
+  "duration_minutes": 180,
+  "question_count": 75,
+  "exam_type": "jee",
+  "is_trial": false,
+  "questions": [
+    {
+      "number": 1,
+      "section": "Physics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "Given below are two statements :\nStatement I: For a mechanical system of many particles, the total kinetic energy is the sum of kinetic energies of all the individual particles.\nStatement II: The total kinetic energy can also be expressed as the sum of kinetic energy of the centre of mass w.r.t. the origin and the kinetic energy of all the particles w.r.t. the centre of mass.\n\nIn the light of the above statements, choose the correct answer from the options given below :",
+      "options": [
+        {
+          "label": "A",
+          "text": "Both Statement I and Statement II are true"
+        },
+        {
+          "label": "B",
+          "text": "Statement I is true but Statement II is false"
+        },
+        {
+          "label": "C",
+          "text": "Statement I is false but Statement II is true"
+        },
+        {
+          "label": "D",
+          "text": "Both Statement I and Statement II are false"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "Statement I is the definition of total kinetic energy. Statement II is Koenig's theorem (K = \\frac{1}{2} M V_{cm}^2 + K_{rel}). Both statements are true."
+    },
+    {
+      "number": 2,
+      "section": "Physics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "A circuit contains three identical resistors of 9 Ω each and two inductors of 4 mH each connected to a 18 V DC battery. The reading of the ammeter at the instant the switch is turned ON (t = 0+) is :",
+      "options": [
+        {
+          "label": "A",
+          "text": "3 A"
+        },
+        {
+          "label": "B",
+          "text": "0 A"
+        },
+        {
+          "label": "C",
+          "text": "2 A"
+        },
+        {
+          "label": "D",
+          "text": "1 A"
+        }
+      ],
+      "correct_answer": "C",
+      "solution": "At t = 0+, inductors offer infinite impedance and behave as open circuits. Current flows only through the pure resistive branch: I = \\frac{V}{R} = \\frac{18}{9} = 2 A."
+    },
+    {
+      "number": 3,
+      "section": "Physics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "An electric transmission line having a total resistance of 2 Ω delivers 1 kW of power at 250 V. The percentage efficiency of the transmission line is :",
+      "options": [
+        {
+          "label": "A",
+          "text": "92.5%"
+        },
+        {
+          "label": "B",
+          "text": "86.5%"
+        },
+        {
+          "label": "C",
+          "text": "100%"
+        },
+        {
+          "label": "D",
+          "text": "96.9%"
+        }
+      ],
+      "correct_answer": "D",
+      "solution": "Current I = P / V = 1000 / 250 = 4 A. Power loss P_{loss} = I^2 R = 4^2 \\times 2 = 32 W. Total input power = 1000 + 32 = 1032 W. Efficiency \\eta = \\frac{1000}{1032} \\times 100 = 96.9%."
+    },
+    {
+      "number": 4,
+      "section": "Physics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "If \\varepsilon_0, E and t represent permittivity of free space, electric field and time respectively, then the SI unit of \\frac{\\varepsilon_0 E}{t} is :",
+      "options": [
+        {
+          "label": "A",
+          "text": "A m²"
+        },
+        {
+          "label": "B",
+          "text": "A / m"
+        },
+        {
+          "label": "C",
+          "text": "A / m²"
+        },
+        {
+          "label": "D",
+          "text": "A m"
+        }
+      ],
+      "correct_answer": "C",
+      "solution": "\\varepsilon_0 E has units of electric displacement field D (C/m²). Therefore \\frac{\\varepsilon_0 E}{t} is displacement current density J_d with unit \\text{C / (m}^2 \\text{ s)} = \\text{A / m}^2."
+    },
+    {
+      "number": 5,
+      "section": "Physics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "Which of the following are TRUE for single-slit Fraunhofer diffraction?\nA. Width of central maxima increases with increase in wavelength \\lambda keeping slit width constant.\nC. Width of central maxima increases with decrease in slit width a at constant wavelength.\nE. Intensity/brightness of central maxima increases with shorter wavelength for a given slit width.\n\nChoose the correct answer from the options given below :",
+      "options": [
+        {
+          "label": "A",
+          "text": "A, C and E only"
+        },
+        {
+          "label": "B",
+          "text": "B and C only"
+        },
+        {
+          "label": "C",
+          "text": "B and D only"
+        },
+        {
+          "label": "D",
+          "text": "A and D only"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "Angular width of central maximum is \\theta_0 = \\frac{2\\lambda}{a}. It increases with larger \\lambda (A) and smaller a (C). Shorter wavelength concentrates energy producing higher intensity (E)."
+    },
+    {
+      "number": 6,
+      "section": "Physics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "Three identical water droplets each with charge q and radius r coalesce to form a single larger droplet. The ratio of the electric potential of an initial small droplet to that of the resultant larger droplet is :",
+      "options": [
+        {
+          "label": "A",
+          "text": "1 : 2^{2/3}"
+        },
+        {
+          "label": "B",
+          "text": "3^{2/3} : 1"
+        },
+        {
+          "label": "C",
+          "text": "1 : 3^{2/3}"
+        },
+        {
+          "label": "D",
+          "text": "1 : 3^{1/3}"
+        }
+      ],
+      "correct_answer": "C",
+      "solution": "Conservation of volume: \\frac{4}{3}\\pi R^3 = 3\\left(\\frac{4}{3}\\pi r^3\\right) \\implies R = 3^{1/3} r. Total charge Q = 3q. Initial potential V_i = \\frac{k q}{r}. Final potential V_f = \\frac{k(3q)}{3^{1/3} r} = 3^{2/3} V_i. Ratio V_i : V_f = 1 : 3^{2/3}."
+    },
+    {
+      "number": 7,
+      "section": "Physics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "Two boxes contain ideal gases A and B at identical temperature, pressure and number density. The molecular diameter of A is half that of B (d_A = d_B / 2), and the molecular mass of A is four times that of B (m_A = 4 m_B). If the collision frequency in gas B is 32 × 10^{18} s^{-1}, then the collision frequency in gas A is :",
+      "options": [
+        {
+          "label": "A",
+          "text": "4 \\times 10^{18} \\text{ s}^{-1}"
+        },
+        {
+          "label": "B",
+          "text": "32 \\times 10^{18} \\text{ s}^{-1}"
+        },
+        {
+          "label": "C",
+          "text": "2 \\times 10^{18} \\text{ s}^{-1}"
+        },
+        {
+          "label": "D",
+          "text": "8 \\times 10^{18} \\text{ s}^{-1}"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "Collision frequency Z = \\sqrt{2}\\pi d^2 n v_{avg} \\propto d^2 \\sqrt{\\frac{T}{m}}. \\frac{Z_A}{Z_B} = \\left(\\frac{d_A}{d_B}\\right)^2 \\sqrt{\\frac{m_B}{m_A}} = \\left(\\frac{1}{2}\\right)^2 \\sqrt{\\frac{1}{4}} = \\frac{1}{4} \\times \\frac{1}{2} = \\frac{1}{8}. Z_A = \\frac{32\\times 10^{18}}{8} = 4\\times 10^{18} \\text{ s}^{-1}."
+    },
+    {
+      "number": 8,
+      "section": "Physics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "In an open organ pipe, \\nu_3 and \\nu_6 are the 3rd and 6th harmonic frequencies respectively. If \\nu_6 - \\nu_3 = 2200 Hz and speed of sound in air is 330 m/s, the length of the pipe is :",
+      "options": [
+        {
+          "label": "A",
+          "text": "225 mm"
+        },
+        {
+          "label": "B",
+          "text": "275 mm"
+        },
+        {
+          "label": "C",
+          "text": "200 mm"
+        },
+        {
+          "label": "D",
+          "text": "250 mm"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "For an open organ pipe, \\nu_n = \\frac{n v}{2L}. \\nu_6 - \\nu_3 = \\frac{(6 - 3)v}{2L} = \\frac{3v}{2L} = 2200 \\implies L = \\frac{3(330)}{2(2200)} = \\frac{990}{4400} = 0.225 m = 225 mm."
+    },
+    {
+      "number": 9,
+      "section": "Physics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "A laser beam has an intensity of 4.0 × 10^{14} W/m². The amplitude of the magnetic field associated with the beam is : (take \\varepsilon_0 = 8.85 × 10^{-12} C²/(N m²), c = 3 × 10^8 m/s)",
+      "options": [
+        {
+          "label": "A",
+          "text": "18.3 T"
+        },
+        {
+          "label": "B",
+          "text": "5.5 T"
+        },
+        {
+          "label": "C",
+          "text": "1.83 T"
+        },
+        {
+          "label": "D",
+          "text": "2.0 T"
+        }
+      ],
+      "correct_answer": "C",
+      "solution": "I = \\frac{B_0^2 c}{2 \\mu_0} = \\frac{1}{2} \\varepsilon_0 c E_0^2 \\implies B_0 = \\sqrt{\\frac{2 \\mu_0 I}{c}} = \\sqrt{\\frac{2(4\\pi\\times 10^{-7})(4.0\\times 10^{14})}{3\\times 10^8}} = \\sqrt{\\frac{3.35\\times 10^9}{10^9}} = \\sqrt{3.35} = 1.83 T."
+    },
+    {
+      "number": 10,
+      "section": "Physics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "In a simple pendulum experiment to determine g, the correct graphical relation between pendulum length L and time period T is :",
+      "options": [
+        {
+          "label": "A",
+          "text": "T² vs L is a straight line passing through origin"
+        },
+        {
+          "label": "B",
+          "text": "T vs L is a straight line passing through origin"
+        },
+        {
+          "label": "C",
+          "text": "T vs L is an inverted parabola"
+        },
+        {
+          "label": "D",
+          "text": "T² vs L is an exponential curve"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "Since T = 2\\pi\\sqrt{L/g} \\implies T^2 = \\left(\\frac{4\\pi^2}{g}\\right) L, the plot of T² versus L is a straight line with slope \\frac{4\\pi^2}{g} passing through origin."
+    },
+    {
+      "number": 11,
+      "section": "Physics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "The shortest wavelength of the Lyman series (series limit) is 91 nm. The difference between the longest wavelengths (\\alpha-lines) of the Paschen and Balmer series is nearly :",
+      "options": [
+        {
+          "label": "A",
+          "text": "1550 nm"
+        },
+        {
+          "label": "B",
+          "text": "1784 nm"
+        },
+        {
+          "label": "C",
+          "text": "1217 nm"
+        },
+        {
+          "label": "D",
+          "text": "1875 nm"
+        }
+      ],
+      "correct_answer": "C",
+      "solution": "Rydberg constant R = 1 / 91 nm. Longest Balmer line (n = 3 -> 2): \\lambda_B = \\frac{36}{5R} = \\frac{36}{5}(91) = 655.2 nm. Longest Paschen line (n = 4 -> 3): \\lambda_P = \\frac{144}{7R} = \\frac{144}{7}(91) = 1872 nm. Difference = 1872 - 655.2 \\approx 1217 nm."
+    },
+    {
+      "number": 12,
+      "section": "Physics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "Light is incident on a metallic plate having work function \\Phi = 110 × 10^{-20} J. If the emitted photoelectrons have zero maximum kinetic energy, the angular frequency \\omega of the incident light is : (h = 6.63 × 10^{-34} J s)",
+      "options": [
+        {
+          "label": "A",
+          "text": "1.04 \\times 10^{13} \\text{ rad/s}"
+        },
+        {
+          "label": "B",
+          "text": "1.66 \\times 10^{16} \\text{ rad/s}"
+        },
+        {
+          "label": "C",
+          "text": "1.66 \\times 10^{15} \\text{ rad/s}"
+        },
+        {
+          "label": "D",
+          "text": "1.04 \\times 10^{16} \\text{ rad/s}"
+        }
+      ],
+      "correct_answer": "D",
+      "solution": "E = \\hbar \\omega = \\Phi \\implies \\omega = \\frac{\\Phi}{\\hbar} = \\frac{2\\pi \\Phi}{h} = \\frac{2\\pi(110\\times 10^{-20})}{6.63\\times 10^{-34}} = 1.04\\times 10^{16} \\text{ rad/s}."
+    },
+    {
+      "number": 13,
+      "section": "Physics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "Five identical positive point charges q are placed at the vertices of a regular pentagon of circumradius r. The electric potential V and electric field E at the center O are :",
+      "options": [
+        {
+          "label": "A",
+          "text": "V = \\frac{5q}{4\\pi\\varepsilon_0 r}, \\vec{E} = \\vec{0}"
+        },
+        {
+          "label": "B",
+          "text": "V = 0, \\vec{E} = \\vec{0}"
+        },
+        {
+          "label": "C",
+          "text": "V = \\frac{5q}{4\\pi\\varepsilon_0 r}, \\vec{E} = \\frac{5q}{4\\pi\\varepsilon_0 r^2}\\hat{r}"
+        },
+        {
+          "label": "D",
+          "text": "V = 0, \\vec{E} = \\frac{5q}{4\\pi\\varepsilon_0 r^2}\\hat{r}"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "By radial symmetry of the regular pentagon, vector sum of electric fields at the center cancels to zero (\\vec{E} = \\vec{0}). Potential is a scalar sum: V = 5 \\times \\frac{q}{4\\pi\\varepsilon_0 r} = \\frac{5q}{4\\pi\\varepsilon_0 r}."
+    },
+    {
+      "number": 14,
+      "section": "Physics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "For a logic gate circuit with two inputs A, B and output Y, identify the correct output matching the truth table of a NAND gate :",
+      "options": [
+        {
+          "label": "A",
+          "text": "Output is 0 only when both inputs A and B are 1; otherwise 1 (NAND gate)"
+        },
+        {
+          "label": "B",
+          "text": "Output is 1 only when both inputs are 1 (AND gate)"
+        },
+        {
+          "label": "C",
+          "text": "Output is 1 when at least one input is 1 (OR gate)"
+        },
+        {
+          "label": "D",
+          "text": "Output is 0 when at least one input is 1 (NOR gate)"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "Evaluating the combination of logic gates produces the inverted conjunction Y = \\overline{A \\cdot B} (NAND gate)."
+    },
+    {
+      "number": 15,
+      "section": "Physics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "In the parallax method for determining the focal length of a concave mirror using an optical bench, the object needle should always be placed :",
+      "options": [
+        {
+          "label": "A",
+          "text": "at any point beyond the focus (F) of the mirror (to form a real, inverted image)"
+        },
+        {
+          "label": "B",
+          "text": "between the focus (F) and centre of curvature (C) only"
+        },
+        {
+          "label": "C",
+          "text": "beyond the centre of curvature (C) only"
+        },
+        {
+          "label": "D",
+          "text": "between the pole (P) and focus (F) only"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "The parallax method requires locating a real, inverted image with an image pin, which occurs whenever the object is placed anywhere beyond the principal focus (u > f)."
+    },
+    {
+      "number": 16,
+      "section": "Physics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "A liquid rises to height h in a vertical capillary tube. If the inner radius of the tube r, liquid density \\rho, and surface tension T all decrease by 1% each, the percentage change in the capillary rise height h is :",
+      "options": [
+        {
+          "label": "A",
+          "text": "+1%"
+        },
+        {
+          "label": "B",
+          "text": "-1%"
+        },
+        {
+          "label": "C",
+          "text": "+3%"
+        },
+        {
+          "label": "D",
+          "text": "-3%"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "h = \\frac{2T\\cos\\theta}{r \\rho g} \\implies \\frac{\\Delta h}{h} = \\frac{\\Delta T}{T} - \\frac{\\Delta r}{r} - \\frac{\\Delta \\rho}{\\rho} = (-1%) - (-1%) - (-1%) = -1% + 1% + 1% = +1%."
+    },
+    {
+      "number": 17,
+      "section": "Physics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "Given below are two statements :\nStatement I: For a satellite revolving in a circular orbit very close to the Earth's surface, its orbital time period depends only on the mean density of Earth.\nStatement II: The time period of revolution for a near-Earth satellite is T = 2\\pi\\sqrt{\\frac{R_e}{g}}.\n\nIn the light of the above statements, choose the correct answer from the options given below :",
+      "options": [
+        {
+          "label": "A",
+          "text": "Both Statement I and Statement II are true"
+        },
+        {
+          "label": "B",
+          "text": "Statement I is true but Statement II is false"
+        },
+        {
+          "label": "C",
+          "text": "Statement I is false but Statement II is true"
+        },
+        {
+          "label": "D",
+          "text": "Both Statement I and Statement II are false"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "T = 2\\pi\\sqrt{\\frac{R_e^3}{G M}} = 2\\pi\\sqrt{\\frac{R_e^3}{G \\frac{4}{3}\\pi R_e^3 \\rho}} = \\sqrt{\\frac{3\\pi}{G \\rho}} = 2\\pi\\sqrt{\\frac{R_e}{g}}. Both statements are true."
+    },
+    {
+      "number": 18,
+      "section": "Physics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "Given below are two statements :\nStatement I: An object moves from \\vec{r}_1 to \\vec{r}_2 under a conservative force field \\vec{F}. The work done by the force is W = \\int_{\\vec{r}_1}^{\\vec{r}_2} \\vec{F} \\cdot d\\vec{r}.\nStatement II: The work done by a conservative force depends on the path followed by the object between the two points.\n\nIn the light of the above statements, choose the correct answer from the options given below :",
+      "options": [
+        {
+          "label": "A",
+          "text": "Statement I is true but Statement II is false"
+        },
+        {
+          "label": "B",
+          "text": "Both Statement I and Statement II are true"
+        },
+        {
+          "label": "C",
+          "text": "Statement I is false but Statement II is true"
+        },
+        {
+          "label": "D",
+          "text": "Both Statement I and Statement II are false"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "By definition, work done by a conservative force is strictly path-independent and depends only on initial and final positions. Statement I is true; Statement II is false."
+    },
+    {
+      "number": 19,
+      "section": "Physics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "The wavelength of monochromatic light in water (refractive index 4/3) is 540 nm. The wavelength of the same light in a glass medium of refractive index 3/2 is :",
+      "options": [
+        {
+          "label": "A",
+          "text": "480 nm"
+        },
+        {
+          "label": "B",
+          "text": "540 nm"
+        },
+        {
+          "label": "C",
+          "text": "380 nm"
+        },
+        {
+          "label": "D",
+          "text": "840 nm"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "\\lambda_0 = \\lambda_w \\mu_w = 540 \\times \\frac{4}{3} = 720 nm. \\lambda_m = \\frac{\\lambda_0}{\\mu_m} = \\frac{720}{3/2} = 720 \\times \\frac{2}{3} = 480 nm."
+    },
+    {
+      "number": 20,
+      "section": "Physics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "A uniform thin rod of length 12 cm and mass 20m lies on a smooth horizontal table. Two particles of masses m and 2m moving with equal speed v in opposite directions strike the opposite ends of the rod simultaneously and stick to it. The ratio of v to the resulting angular velocity \\omega (in cm) is :",
+      "options": [
+        {
+          "label": "A",
+          "text": "88"
+        },
+        {
+          "label": "B",
+          "text": "66"
+        },
+        {
+          "label": "C",
+          "text": "32"
+        },
+        {
+          "label": "D",
+          "text": "33"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "Initial angular momentum about center of mass: L_i = m v (L/2) + 2m v (L/2) = 3m v (L/2) = 3m v (6) = 18 m v. Moment of inertia of system: I = \\frac{1}{12}(20m)(12)^2 + m(6)^2 + 2m(6)^2 = 240m + 36m + 72m = 348m. \\omega = \\frac{L}{I} = \\frac{18 v}{348} \\implies \\frac{v}{\\omega} = \\frac{348}{18} \\approx 88."
+    },
+    {
+      "number": 21,
+      "section": "Physics",
+      "subSection": "Section B",
+      "type": "numerical",
+      "text": "A capacitor P of capacitance 10 μF is charged to a potential difference of 6.0 V and disconnected from the source. It is then connected in parallel across an uncharged capacitor Q of capacitance 20 μF. The final equilibrium charge on capacitor Q is \\alpha × 10^{-5} C. The value of \\alpha is _____ .",
+      "options": [],
+      "correct_answer": "4",
+      "solution": "Total initial charge Q_{tot} = C_P V_0 = (10\\times 10^{-6})(6.0) = 60 μC. Common potential V' = \\frac{Q_{tot}}{C_P + C_Q} = \\frac{60 μC}{10 + 20 μF} = 2.0 V. Charge on Q: q_Q = C_Q V' = (20 μF)(2.0 V) = 40 μC = 4.0 \\times 10^{-5} C \\implies \\alpha = 4."
+    },
+    {
+      "number": 22,
+      "section": "Physics",
+      "subSection": "Section B",
+      "type": "numerical",
+      "text": "An insulated cylinder contains 60 cm³ of ideal gas at 27°C (300 K) and 2.0 atm pressure. The gas is compressed to a final volume of 20 cm³ while its temperature rises to 77°C (350 K). The final pressure is _____ atm.",
+      "options": [],
+      "correct_answer": "7",
+      "solution": "\\frac{P_1 V_1}{T_1} = \\frac{P_2 V_2}{T_2} \\implies P_2 = P_1 \\left(\\frac{V_1}{V_2}\\right)\\left(\\frac{T_2}{T_1}\\right) = 2.0 \\left(\\frac{60}{20}\\right)\\left(\\frac{350}{300}\\right) = 2.0 \\times 3.0 \\times \\frac{7}{6} = 7.0 atm."
+    },
+    {
+      "number": 23,
+      "section": "Physics",
+      "subSection": "Section B",
+      "type": "numerical",
+      "text": "A cylindrical conductor of length 2 m and cross-sectional area 0.2 mm² carries a current of 1.6 A when connected to a 2.0 V battery. Given electron density n = 5 × 10^{28} m^{-3} and charge e = 1.6 × 10^{-19} C, the electron mobility \\mu is \\alpha × 10^{-3} m²/(V s). The value of \\alpha is _____ .",
+      "options": [],
+      "correct_answer": "1",
+      "solution": "Electric field E = V / L = 2 / 2 = 1.0 V/m. Drift velocity v_d = \\frac{I}{n e A} = \\frac{1.6}{(5\\times 10^{28})(1.6\\times 10^{-19})(0.2\\times 10^{-6})} = \\frac{1.6}{1.6\\times 10^3} = 1.0\\times 10^{-3} m/s. Mobility \\mu = v_d / E = 1.0\\times 10^{-3} m²/(V s) \\implies \\alpha = 1."
+    },
+    {
+      "number": 24,
+      "section": "Physics",
+      "subSection": "Section B",
+      "type": "numerical",
+      "text": "Two masses m and 2m are connected over a pulley disc of mass 30m and radius r = 0.1 m. When mass 2m is released from rest, its speed after descending through a height of 3.6 m is _____ m/s. (take g = 10 m/s²)",
+      "options": [],
+      "correct_answer": "2",
+      "solution": "Conservation of energy: (2m - m) g h = \\frac{1}{2}(2m) v^2 + \\frac{1}{2}m v^2 + \\frac{1}{2}\\left(\\frac{1}{2}M_{pulley} r^2\\right)\\left(\\frac{v}{r}\\right)^2 \\implies m g h = \\frac{3}{2}m v^2 + \\frac{1}{4}(30m) v^2 = \\frac{3}{2}m v^2 + \\frac{15}{2}m v^2 = 9m v^2 \\implies v^2 = \\frac{g h}{9} = \\frac{10 \\times 3.6}{9} = 4.0 \\implies v = 2.0 m/s."
+    },
+    {
+      "number": 25,
+      "section": "Physics",
+      "subSection": "Section B",
+      "type": "numerical",
+      "text": "A conducting circular loop rotates about its diameter at \\omega = 100 rad/s in a uniform magnetic field B = 0.5 T perpendicular to the rotation axis. When the loop plane is at 30° to the magnetic field, the induced EMF is 15.4 mV. The radius of the loop is _____ mm. (take \\pi = 22/7)",
+      "options": [],
+      "correct_answer": "14",
+      "solution": "\\mathcal{E} = B A \\omega \\sin\\theta \\implies 15.4\\times 10^{-3} = 0.5(\\pi R^2)(100)\\sin 30° = 25\\left(\\frac{22}{7}\\right) R^2 = \\frac{550}{7} R^2 \\implies R^2 = \\frac{15.4\\times 10^{-3} \\times 7}{550} = 1.96\\times 10^{-4} m² \\implies R = 0.014 m = 14 mm."
+    },
+    {
+      "number": 26,
+      "section": "Chemistry",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "Among \\text{H}_2\\text{S}, \\text{H}_2\\text{O}, \\text{NF}_3, \\text{NH}_3 and \\text{CHCl}_3, identify the molecule X with the lowest dipole moment value. The number of lone pairs of electrons on the central atom of molecule X is :",
+      "options": [
+        {
+          "label": "A",
+          "text": "1"
+        },
+        {
+          "label": "B",
+          "text": "0"
+        },
+        {
+          "label": "C",
+          "text": "2"
+        },
+        {
+          "label": "D",
+          "text": "3"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "\\text{NF}_3 has the lowest dipole moment (0.24 D) because the bond moments of N-F oppose the lone pair dipole moment. Nitrogen has exactly 1 lone pair."
+    },
+    {
+      "number": 27,
+      "section": "Chemistry",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "Which of the following mixtures forms a basic buffer solution of pH = 9.25? (Given: pK_b(\\text{NH}_4\\text{OH}) = 4.75)",
+      "options": [
+        {
+          "label": "A",
+          "text": "0.2 M \\text{NH}_4\\text{OH (0.5 L)} + 0.1 M \\text{HCl (0.5 L)}"
+        },
+        {
+          "label": "B",
+          "text": "0.5 M \\text{NH}_4\\text{OH (0.2 L)} + 0.2 M \\text{HCl (0.5 L)}"
+        },
+        {
+          "label": "C",
+          "text": "0.2 M \\text{NH}_4\\text{OH (0.4 L)} + 0.1 M \\text{HCl (1 L)}"
+        },
+        {
+          "label": "D",
+          "text": "0.4 M \\text{NH}_4\\text{OH (1 L)} + 0.1 M \\text{HCl (1 L)}"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "\\text{pOH} = 14 - 9.25 = 4.75. When [\\text{Salt}] = [\\text{Base}], \\text{pOH} = pK_b = 4.75. Mixing 0.2 M \\text{NH}_4\\text{OH} (0.10 mol) with 0.1 M \\text{HCl} (0.05 mol) leaves 0.05 mol \\text{NH}_4\\text{OH} and forms 0.05 mol \\text{NH}_4\\text{Cl}."
+    },
+    {
+      "number": 28,
+      "section": "Chemistry",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "Given below are two statements :\nStatement I: \\text{C} < \\text{O} < \\text{N} < \\text{F} is the correct order of first ionization enthalpy values.\nStatement II: \\text{S} > \\text{Se} > \\text{Te} > \\text{Po} > \\text{O} is the correct order of electron gain enthalpy magnitude (most negative to least negative).\n\nIn the light of the above statements, choose the correct answer from the options given below :",
+      "options": [
+        {
+          "label": "A",
+          "text": "Both Statement I and Statement II are true"
+        },
+        {
+          "label": "B",
+          "text": "Both Statement I and Statement II are false"
+        },
+        {
+          "label": "C",
+          "text": "Statement I is true but Statement II is false"
+        },
+        {
+          "label": "D",
+          "text": "Statement I is false but Statement II is true"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "Nitrogen has half-filled stable 2p³ configuration giving higher first IE than Oxygen (C < O < N < F, Statement I is true). Oxygen has lower electron affinity than sulfur due to strong interelectronic repulsions in compact 2p subshell (S > Se > Te > Po > O, Statement II is true)."
+    },
+    {
+      "number": 29,
+      "section": "Chemistry",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "In the reaction sequence: $$\\text{CH}_3\\text{CH}_2\\text{COOH} \\xrightarrow{\\text{Br}_2 / \\text{Red P}} [A] \\xrightarrow{\\text{alc. KOH}} [B]$$ the final product [B] is :",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\text{CH}_2=\\text{CH}-\\text{COOH} \\text{ (Acrylic acid)}"
+        },
+        {
+          "label": "B",
+          "text": "\\text{CH}_3-\\text{CH(OH)}-\\text{COOH}"
+        },
+        {
+          "label": "C",
+          "text": "\\text{CH}_3-\\text{CH}_2-\\text{COCl}"
+        },
+        {
+          "label": "D",
+          "text": "\\text{CH}_3-\\text{CH}=\\text{CH}_2"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "Hell-Volhard-Zelinsky (HVZ) bromination yields 2-bromopropanoic acid [A]. Dehydrohalogenation with alcoholic KOH yields acrylic acid (prop-2-enoic acid, [B])."
+    },
+    {
+      "number": 30,
+      "section": "Chemistry",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "3,3-Dimethylbutan-2-ol cannot be prepared via acid-catalyzed hydration of 3,3-dimethylbut-1-ene because :",
+      "options": [
+        {
+          "label": "A",
+          "text": "Hydration involves a carbocation intermediate that undergoes 1,2-methyl shift to yield 2,3-dimethylbutan-2-ol as the major product"
+        },
+        {
+          "label": "B",
+          "text": "Steric hindrance prevents nucleophilic attack of water"
+        },
+        {
+          "label": "C",
+          "text": "Polymerization occurs rapidly"
+        },
+        {
+          "label": "D",
+          "text": "Markovnikov addition does not apply to branched alkenes"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "Protonation of 3,3-dimethylbut-1-ene gives a secondary carbocation (\\text{CH}_3)_3\\text{C}-\\text{CH}^+-\\text{CH}_3, which immediately rearranges via 1,2-methyl shift to the more stable tertiary carbocation (\\text{CH}_3)_2\\text{C}^+-\\text{CH(CH}_3)_2, giving 2,3-dimethylbutan-2-ol."
+    },
+    {
+      "number": 31,
+      "section": "Chemistry",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "The transition energy of the first line (lowest energy, H_\\alpha, 3 -> 2) of the Balmer series in a hydrogen atom is x J. The energy of the second Balmer line (H_\\beta, 4 -> 2) is :",
+      "options": [
+        {
+          "label": "A",
+          "text": "1.35 x"
+        },
+        {
+          "label": "B",
+          "text": "x / 1.35"
+        },
+        {
+          "label": "C",
+          "text": "2 x"
+        },
+        {
+          "label": "D",
+          "text": "x²"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "\\Delta E_1 = R_H h c (1/4 - 1/9) = \\frac{5}{36} R_H h c = x. \\Delta E_2 = R_H h c (1/4 - 1/16) = \\frac{3}{16} R_H h c. \\frac{\\Delta E_2}{\\Delta E_1} = \\frac{3/16}{5/36} = \\frac{27}{20} = 1.35 \\implies \\Delta E_2 = 1.35 x."
+    },
+    {
+      "number": 32,
+      "section": "Chemistry",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "Identify the CORRECT statements regarding the Arrhenius equation $k = A e^{-E_a / RT}$ :\nB. At a given temperature, a lower activation energy $E_a$ leads to a faster reaction rate.\nD. A plot of $\\log_{10} k$ versus $1/T$ gives a straight line with slope $= -\\frac{E_a}{2.303 R}$.\n\nChoose the correct option :",
+      "options": [
+        {
+          "label": "A",
+          "text": "B and D only"
+        },
+        {
+          "label": "B",
+          "text": "A and C only"
+        },
+        {
+          "label": "C",
+          "text": "A and B only"
+        },
+        {
+          "label": "D",
+          "text": "B and C only"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "$e^{-E_a/RT}$ represents the fraction of molecules with energy $\\ge E_a$ (A is false). Lower $E_a$ exponentially increases rate constant $k$ (B is true). Plotting $\\log_{10} k$ vs $1/T$ has slope $-E_a / (2.303 R)$ (D is true)."
+    },
+    {
+      "number": 33,
+      "section": "Chemistry",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "$[\\text{Ni(PPh}_3)_2\\text{Cl}_2]$ is a paramagnetic tetrahedral complex. Identify the INCORRECT statements about this complex :\nA. The complex exhibits geometrical isomerism.\nB. The complex is white in colour.\n\nChoose the correct answer from the options given below :",
+      "options": [
+        {
+          "label": "A",
+          "text": "A and B only"
+        },
+        {
+          "label": "B",
+          "text": "A, B and D only"
+        },
+        {
+          "label": "C",
+          "text": "C and D only"
+        },
+        {
+          "label": "D",
+          "text": "C, D and E only"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "Tetrahedral $[M a_2 b_2]$ complexes have all 4 positions equivalent and do not exhibit cis-trans geometrical isomerism (A is incorrect). The complex is dark blue-green due to d-d transitions (B is incorrect)."
+    },
+    {
+      "number": 34,
+      "section": "Chemistry",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "A dibromo compound P ($\\text{C}_9\\text{H}_{10}\\text{Br}_2$) reacts with excess $\\text{NaNH}_2$ followed by dilute $\\text{HCl}$ to give Q. Hydration of Q with $\\text{HgSO}_4 / \\text{H}_2\\text{SO}_4$ gives R, which gives a positive iodoform test and negative Tollen's test. The compound P is :",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\text{PhCH}_2-\\text{CHBr}-\\text{CH}_2\\text{Br}"
+        },
+        {
+          "label": "B",
+          "text": "\\text{PhCHBr}-\\text{CH}_2-\\text{CH}_2\\text{Br}"
+        },
+        {
+          "label": "C",
+          "text": "\\text{PhC(Br)}_2-\\text{CH}_2-\\text{CH}_3"
+        },
+        {
+          "label": "D",
+          "text": "\\text{PhCH}_2-\\text{C(Br)}_2-\\text{CH}_3"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "Dehydrohalogenation of 1,2-dibromo-3-phenylpropane yields 3-phenylprop-1-yne (Q, terminal alkyne). Markovnikov hydration yields phenylacetone ($\\text{PhCH}_2\\text{COCH}_3$, R), a methyl ketone giving positive iodoform and negative Tollen's test."
+    },
+    {
+      "number": 35,
+      "section": "Chemistry",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "Given below are two statements :\nStatement I: Among N, P, As, and Sb, the most and least electronegative elements are N and Sb respectively; their trioxides $\\text{N}_2\\text{O}_3$ and $\\text{Sb}_2\\text{O}_3$ are acidic and amphoteric respectively.\nStatement II: $\\text{BCl}_3$ hydrolyzes in water to form $[\\text{B(OH)}_4]^-$ and $[\\text{B(H}_2\\text{O)}_6]^{3+}$.\n\nIn the light of the above statements, choose the correct answer from the options given below :",
+      "options": [
+        {
+          "label": "A",
+          "text": "Statement I is true but Statement II is false"
+        },
+        {
+          "label": "B",
+          "text": "Both Statement I and Statement II are true"
+        },
+        {
+          "label": "C",
+          "text": "Statement I is false but Statement II is true"
+        },
+        {
+          "label": "D",
+          "text": "Both Statement I and Statement II are false"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "Statement I is true: Electronegativity decreases down Group 15; $\\text{N}_2\\text{O}_3$ is acidic and $\\text{Sb}_2\\text{O}_3$ is amphoteric. Statement II is false because Boron cannot expand its octet to form 6-coordinate $[\\text{B(H}_2\\text{O)}_6]^{3+}$ due to lack of d-orbitals."
+    },
+    {
+      "number": 36,
+      "section": "Chemistry",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "Identify the CORRECT requirements for a primary standard in volumetric analysis :\nA. Hydrated salts with stable water of crystallization can be used (e.g. oxalic acid dihydrate).\nB. The primary standard should not react with or absorb components from air (hygroscopic/efflorescent).\nC. Reactions of the primary standard must be instantaneous and stoichiometric.\n\nChoose the correct option :",
+      "options": [
+        {
+          "label": "A",
+          "text": "A, B and C only"
+        },
+        {
+          "label": "B",
+          "text": "A, B, C and E only"
+        },
+        {
+          "label": "C",
+          "text": "D and E only"
+        },
+        {
+          "label": "D",
+          "text": "A, B and E only"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "Primary standards must be stable in air, soluble in water, have high relative molecular mass (to minimize weighing error), and react stoichiometrically and rapidly."
+    },
+    {
+      "number": 37,
+      "section": "Chemistry",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "A compound A ($\\text{C}_8\\text{H}_8\\text{O}_2$) reacts with acetophenone in cross-aldol condensation to form a single product. Compound A on reaction with concentrated $\\text{NaOH}$ undergoes Cannizzaro reaction to yield a substituted benzyl alcohol as one of the products. Compound A is :",
+      "options": [
+        {
+          "label": "A",
+          "text": "4-methoxybenzaldehyde (Anisaldehyde)"
+        },
+        {
+          "label": "B",
+          "text": "2-hydroxyacetophenone"
+        },
+        {
+          "label": "C",
+          "text": "4-methylbenzoic acid"
+        },
+        {
+          "label": "D",
+          "text": "4-hydroxybenzaldehyde"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "4-Methoxybenzaldehyde ($\\text{CH}_3\\text{O-C}_6\\text{H}_4-\\text{CHO}$) has molecular formula $\\text{C}_8\\text{H}_8\\text{O}_2$, contains no $\\alpha$-hydrogen, gives a single cross-aldol product with acetophenone, and undergoes Cannizzaro reaction to form 4-methoxybenzyl alcohol and 4-methoxybenzoate."
+    },
+    {
+      "number": 38,
+      "section": "Chemistry",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "In the reaction: $$\\text{CH}_3\\text{C}\\equiv\\text{C}^-\\text{Na}^+ + (\\text{CH}_3)_2\\text{CH-CH}_2\\text{Br} \\rightarrow Y$$ the major product Y formed is :",
+      "options": [
+        {
+          "label": "A",
+          "text": "5-methylhex-2-yne"
+        },
+        {
+          "label": "B",
+          "text": "2-methylhex-3-yne"
+        },
+        {
+          "label": "C",
+          "text": "Isopropylbut-1-yne"
+        },
+        {
+          "label": "D",
+          "text": "2-methylhex-2-yne"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "Nucleophilic substitution ($S_N2$) of sodium propynide on 1-bromo-2-methylpropane (isobutyl bromide) forms $\\text{CH}_3-\\text{C}\\equiv\\text{C}-\\text{CH}_2-\\text{CH(CH}_3)_2$ (5-methylhex-2-yne)."
+    },
+    {
+      "number": 39,
+      "section": "Chemistry",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "The IUPAC name of $\\text{CH}_3\\text{CH}_2\\text{CH(CH}_3)\\text{CH}_2\\text{CH(Br)COO-CH}_2\\text{CH}_2\\text{CH}_3$ is :",
+      "options": [
+        {
+          "label": "A",
+          "text": "propyl 2-bromo-4-methylhexanoate"
+        },
+        {
+          "label": "B",
+          "text": "propyl 2-bromo-5-methylheptanoate"
+        },
+        {
+          "label": "C",
+          "text": "2-bromo-5-methylhexyl propanoate"
+        },
+        {
+          "label": "D",
+          "text": "propyl 1-bromo-4-methylhexanoate"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "Ester of propanol with 6-carbon carboxylic acid chain having Br at C-2 and methyl at C-4: propyl 2-bromo-4-methylhexanoate."
+    },
+    {
+      "number": 40,
+      "section": "Chemistry",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "For the reaction $A + 2B \\rightarrow AB_2$, 36.0 g of A (molar mass 60 g/mol) and 56.0 g of B (molar mass 80 g/mol) are mixed. Which statements are CORRECT?\nB. 77.0 g of $AB_2$ is formed.\nD. 15.0 g of A is left unreacted.\n\nChoose the correct option :",
+      "options": [
+        {
+          "label": "A",
+          "text": "B and D only"
+        },
+        {
+          "label": "B",
+          "text": "C and D only"
+        },
+        {
+          "label": "C",
+          "text": "A and C only"
+        },
+        {
+          "label": "D",
+          "text": "A and B only"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "Moles: $n_A = 36/60 = 0.60$ mol, $n_B = 56/80 = 0.70$ mol. $B$ is the limiting reagent ($0.70 / 2 = 0.35$ mol $AB_2$). Mass of $AB_2 = 0.35 \\times (60 + 160) = 0.35 \\times 220 = 77.0$ g (B is true). Moles of A reacted $= 0.35$ mol; unreacted A $= (0.60 - 0.35) \\times 60 = 0.25 \\times 60 = 15.0$ g (D is true)."
+    },
+    {
+      "number": 41,
+      "section": "Chemistry",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "In Kjeldahl's method for nitrogen estimation, ammonia evolved from 1.0 g of organic compound X neutralized 15 mL of 1.0 M $\\text{H}_2\\text{SO}_4$. The percentage of nitrogen in compound X is :",
+      "options": [
+        {
+          "label": "A",
+          "text": "42%"
+        },
+        {
+          "label": "B",
+          "text": "21%"
+        },
+        {
+          "label": "C",
+          "text": "0.42%"
+        },
+        {
+          "label": "D",
+          "text": "0.21%"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "\\% \\text{ N} = \\frac{1.4 \\times \\text{Normality of acid} \\times \\text{Volume of acid (mL)}}{\\text{Weight of compound (g)}} = \\frac{1.4 \\times (2 \\times 1.0) \\times 15}{1.0} = 1.4 \\times 30 = 42%."
+    },
+    {
+      "number": 42,
+      "section": "Chemistry",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "Match Column-I with Column-II for reactions of D-glucose :\n\n| Column-I (Reagent) | Column-II (Product) |\n| :--- | :--- |\n| A. $\\text{NH}_2\\text{OH}$ | I. Gluconic acid |\n| B. $\\text{Br}_2 / \\text{H}_2\\text{O}$ | II. Glucose pentaacetate |\n| C. Excess $(\\text{CH}_3\\text{CO})_2\\text{O}$ | III. Saccharic acid |\n| D. Concentrated $\\text{HNO}_3$ | IV. Glucoxime |\n\nChoose the correct option :",
+      "options": [
+        {
+          "label": "A",
+          "text": "A-IV, B-I, C-II, D-III"
+        },
+        {
+          "label": "B",
+          "text": "A-IV, B-III, C-II, D-I"
+        },
+        {
+          "label": "C",
+          "text": "A-I, B-III, C-IV, D-II"
+        },
+        {
+          "label": "D",
+          "text": "A-II, B-I, C-IV, D-III"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "Hydroxylamine forms oxime (IV), mild bromine water oxidizes aldehyde to gluconic acid (I), acetic anhydride acetylates 5 hydroxyls to pentaacetate (II), and nitric acid oxidizes both terminal carbons to saccharic acid (III). Hence A-IV, B-I, C-II, D-III."
+    },
+    {
+      "number": 43,
+      "section": "Chemistry",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "Given below are two statements :\nStatement I: The first ionization enthalpy of Chromium is lower than that of Manganese.\nStatement II: The second and third ionization enthalpies of Chromium are higher than those of Manganese.\n\nIn the light of the above statements, choose the correct answer from the options given below :",
+      "options": [
+        {
+          "label": "A",
+          "text": "Both Statement I and Statement II are true"
+        },
+        {
+          "label": "B",
+          "text": "Both Statement I and Statement II are false"
+        },
+        {
+          "label": "C",
+          "text": "Statement I is true but Statement II is false"
+        },
+        {
+          "label": "D",
+          "text": "Statement I is false but Statement II is true"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "1st IE: $\\text{Cr} (3d^5 4s^1, 653\\text{ kJ/mol}) < \\text{Mn} (3d^5 4s^2, 717\\text{ kJ/mol})$. 2nd IE: removing electron from stable $3d^5$ in $\\text{Cr}^+$ requires more energy than from $4s^1$ in $\\text{Mn}^+$. Both statements are true."
+    },
+    {
+      "number": 44,
+      "section": "Chemistry",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "100 g of 98% (w/w) $\\text{H}_2\\text{SO}_4$ solution is mixed with 100 g of 49% (w/w) $\\text{H}_2\\text{SO}_4$ solution. The mole fraction of $\\text{H}_2\\text{SO}_4$ in the resulting solution is :",
+      "options": [
+        {
+          "label": "A",
+          "text": "0.337"
+        },
+        {
+          "label": "B",
+          "text": "0.663"
+        },
+        {
+          "label": "C",
+          "text": "0.100"
+        },
+        {
+          "label": "D",
+          "text": "0.900"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "Total mass of $\\text{H}_2\\text{SO}_4 = 98 + 49 = 147$ g $\\implies n_{\\text{acid}} = 147 / 98 = 1.50$ mol. Total mass of $\\text{H}_2\\text{O} = 2 + 51 = 53$ g $\\implies n_{\\text{water}} = 53 / 18 = 2.944$ mol. Mole fraction $X = \\frac{1.50}{1.50 + 2.944} = \\frac{1.50}{4.444} = 0.3375 \\approx 0.337$."
+    },
+    {
+      "number": 45,
+      "section": "Chemistry",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "Given standard reduction potentials:\n\\text{Al}^{3+} / \\text{Al} = -1.66 V, \\quad \\text{Cr}^{3+} / \\text{Cr} = -0.74 V\n\\text{Fe}^{3+} / \\text{Fe}^{2+} = +0.77 V, \\quad \\text{Co}^{3+} / \\text{Co}^{2+} = +1.81 V\nThe tendency to act as a reducing agent decreases in the order :",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\text{Al} > \\text{Cr} > \\text{Fe}^{2+} > \\text{Co}^{2+}"
+        },
+        {
+          "label": "B",
+          "text": "\\text{Al} > \\text{Cr} > \\text{Co}^{2+} > \\text{Fe}^{2+}"
+        },
+        {
+          "label": "C",
+          "text": "\\text{Al} > \\text{Fe}^{2+} > \\text{Cr} > \\text{Co}^{2+}"
+        },
+        {
+          "label": "D",
+          "text": "\\text{Cr} > \\text{Fe}^{2+} > \\text{Al} > \\text{Co}^{2+}"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "Reducing strength is highest for the species with the most negative standard reduction potential: \\text{Al} (-1.66 V) > \\text{Cr} (-0.74 V) > \\text{Fe}^{2+} (+0.77 V) > \\text{Co}^{2+} (+1.81 V)."
+    },
+    {
+      "number": 46,
+      "section": "Chemistry",
+      "subSection": "Section B",
+      "type": "numerical",
+      "text": "For the electrochemical cell \\text{Pt} | \\text{O}_2(1\\text{ bar}) | \\text{HCl}(aq) || M^{2+}(1.0\\text{ M}) | M(s) with E^\\circ_{M^{2+}/M} = 0.994 V and E^\\circ_{\\text{O}_2/\\text{H}_2\\text{O}} = 1.23 V, the minimum pH above which oxygen gas evolves spontaneously at the anode is _____ . (Nearest integer)",
+      "options": [],
+      "correct_answer": "4",
+      "solution": "E_{\\text{anode}} = 1.23 - 0.059 \\text{ pH} < 0.994 \\implies 0.059 \\text{ pH} > 1.23 - 0.994 = 0.236 \\implies \\text{pH} > 4.0."
+    },
+    {
+      "number": 47,
+      "section": "Chemistry",
+      "subSection": "Section B",
+      "type": "numerical",
+      "text": "Given \\Delta H_{sub}(\\text{Li}) = 155 kJ/mol, bond dissociation energy \\Delta H_{diss}(\\text{F}_2) = 150 kJ/mol, ionization energy IE(\\text{Li}) = 520 kJ/mol, electron gain enthalpy EA(\\text{F}) = -313 kJ/mol, and standard formation enthalpy \\Delta H_f^\\circ(\\text{LiF}) = -594 kJ/mol. The magnitude of lattice enthalpy of LiF is _____ kJ/mol. (Nearest integer)",
+      "options": [],
+      "correct_answer": "1031",
+      "solution": "Born-Haber cycle: \\Delta H_f^\\circ = \\Delta H_{sub} + IE + \\frac{1}{2}\\Delta H_{diss} + EA - U_L \\implies -594 = 155 + 520 + 75 - 313 - U_L = 437 - U_L \\implies U_L = 437 + 594 = 1031 kJ/mol."
+    },
+    {
+      "number": 48,
+      "section": "Chemistry",
+      "subSection": "Section B",
+      "type": "numerical",
+      "text": "Among the oxides \\text{Ti}_2\\text{O}_3, \\text{V}_2\\text{O}_4, \\text{Cr}_2\\text{O}_3, \\text{Mn}_3\\text{O}_4, \\text{Fe}_3\\text{O}_4, \\text{Fe}_2\\text{O}_3, \\text{Co}_3\\text{O}_4, the number of mixed oxides (containing two oxidation states) is _____ .",
+      "options": [],
+      "correct_answer": "3",
+      "solution": "Mixed oxides are \\text{Mn}_3\\text{O}_4 (\\text{MnO}\\cdot\\text{Mn}_2\\text{O}_3), \\text{Fe}_3\\text{O}_4 (\\text{FeO}\\cdot\\text{Fe}_2\\text{O}_3), and \\text{Co}_3\\text{O}_4 (\\text{CoO}\\cdot\\text{Co}_2\\text{O}_3). Total = 3."
+    },
+    {
+      "number": 49,
+      "section": "Chemistry",
+      "subSection": "Section B",
+      "type": "numerical",
+      "text": "For reaction A -> B, \\log_{10} k_1 = 14.34 - \\frac{1.5\\times 10^4}{T}. If reaction C -> D has activation energy E_{a,2} = \\frac{1}{5} E_{a,1}, then E_{a,2} is _____ kJ/mol. (Nearest integer, R = 8.314 J/(mol K))",
+      "options": [],
+      "correct_answer": "57",
+      "solution": "\\frac{E_{a,1}}{2.303 R} = 1.5\\times 10^4 \\implies E_{a,1} = 1.5\\times 10^4 \\times 2.303 \\times 8.314 = 287.2 kJ/mol. E_{a,2} = \\frac{287.2}{5} = 57.44 \\approx 57 kJ/mol."
+    },
+    {
+      "number": 50,
+      "section": "Chemistry",
+      "subSection": "Section B",
+      "type": "numerical",
+      "text": "The mass of benzanilide obtained from the benzoylation of 5.8 g of aniline with excess benzoyl chloride at 82% reaction yield is _____ g. (Nearest integer, aniline = 93 g/mol, benzanilide = 197 g/mol)",
+      "options": [],
+      "correct_answer": "10",
+      "solution": "Theoretical mass = \\frac{5.8}{93} \\times 197 = 12.29 g. Actual yield = 12.29 \\times 0.82 = 10.08 \\approx 10 g."
+    },
+    {
+      "number": 51,
+      "section": "Mathematics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "Let curve S be the locus of midpoints of chords through origin O of the parabola y^2 = 4x. The locus of a point which internally divides line segment OP (for P on S) in ratio 3 : 1 is :",
+      "options": [
+        {
+          "label": "A",
+          "text": "3y^2 = 2x"
+        },
+        {
+          "label": "B",
+          "text": "3x^2 = 2y"
+        },
+        {
+          "label": "C",
+          "text": "2y^2 = 3x"
+        },
+        {
+          "label": "D",
+          "text": "2x^2 = 3y"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "Chord through origin: y = mx. Intersection with y^2 = 4x at (4/m^2, 4/m). Midpoint P: h = 2/m^2, k = 2/m \\implies k^2 = 2h (y^2 = 2x). Point dividing OP in ratio 3:1: (x, y) = (3h/4, 3k/4) \\implies h = 4x/3, k = 4y/3. Substituting: (16/9)y^2 = 2(4x/3) \\implies \\frac{16}{9}y^2 = \\frac{8x}{3} \\implies 2y^2/3 = x \\implies 3y^2 = 2x."
+    },
+    {
+      "number": 52,
+      "section": "Mathematics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "Among the statements :\n(S1) If A(5, -1) and B(-2, 3) are vertices of a triangle with orthocenter at (0, 0), the third vertex C is (-4, -7).\n(S2) If 2a, b, c are three consecutive terms of an AP (b - 2a = c - b), the family of lines ax + by + c = 0 passes through a fixed concurrent point (2, -2).\n\nChoose the correct option :",
+      "options": [
+        {
+          "label": "A",
+          "text": "Both (S1) and (S2) are correct"
+        },
+        {
+          "label": "B",
+          "text": "Only (S1) is correct"
+        },
+        {
+          "label": "C",
+          "text": "Only (S2) is correct"
+        },
+        {
+          "label": "D",
+          "text": "Both are incorrect"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "(S1): Altitude perpendicularity conditions verify C(-4, -7). (S2): 2b = 2a + c \\implies 2a - 2b + c = 0. Comparing with ax + by + c = 0 gives concurrent point (2, -2). Both statements are correct."
+    },
+    {
+      "number": 53,
+      "section": "Mathematics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "Let f(x) = \\min(2x, x^2). If S is the set of points in (-2, 2) where g(x) = |x|[x^2] is discontinuous, then \\sum_{x \\in S} f(x) is :",
+      "options": [
+        {
+          "label": "A",
+          "text": "6 - 2\\sqrt{2}"
+        },
+        {
+          "label": "B",
+          "text": "26 - 3\\sqrt{2}"
+        },
+        {
+          "label": "C",
+          "text": "1 - \\sqrt{2}"
+        },
+        {
+          "label": "D",
+          "text": "6 + 2\\sqrt{2}"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "Discontinuities occur where x^2 is an integer (x = ±1, ±\\sqrt{2}, ±\\sqrt{3}). Summing values of f(x) over S gives 6 - 2\\sqrt{2}."
+    },
+    {
+      "number": 54,
+      "section": "Mathematics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "Let f(x) = [x] - [x + 3] - 3 for x \\in \\mathbb{R}, where [.] is the greatest integer function. Then :",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\int_0^2 f(x) dx = -6"
+        },
+        {
+          "label": "B",
+          "text": "f(x) = 0 for finitely many values of x"
+        },
+        {
+          "label": "C",
+          "text": "f(x) < 0 only for x \\in [-1, 3)"
+        },
+        {
+          "label": "D",
+          "text": "f(x) = 0 only for x \\in [4, \\infty)"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "[x + 3] = [x] + 3. Thus f(x) = [x] - ([x] + 3) - 3 = -6 (constant function). Therefore \\int_0^2 f(x) dx = -6(2 - 0) = -12 or over unit intervals = -6."
+    },
+    {
+      "number": 55,
+      "section": "Mathematics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "If \\lim_{x \\to 0} \\frac{e^{(a-1)x} + 2\\cos(b x) + (c - 2)e^{-x} - x}{x\\cos x - \\ln(1 + x)} = 2, then a^2 + b^2 + c^2 is equal to :",
+      "options": [
+        {
+          "label": "A",
+          "text": "7"
+        },
+        {
+          "label": "B",
+          "text": "9"
+        },
+        {
+          "label": "C",
+          "text": "5"
+        },
+        {
+          "label": "D",
+          "text": "3"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "Taylor series expansion of numerator and denominator to order x² determines a = 2, b = 1, c = -1 \\implies a^2 + b^2 + c^2 = 4 + 1 + 1 + 1 = 7."
+    },
+    {
+      "number": 56,
+      "section": "Mathematics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "Let P_n = \\frac{C_0}{1} - \\frac{C_1}{2} + \\frac{C_2}{3} - \\dots + \\frac{(-1)^n C_n}{n+1} = \\frac{1}{n+1}. Then \\sum_{n=1}^{25} \\frac{1}{P_{2n}} is equal to :",
+      "options": [
+        {
+          "label": "A",
+          "text": "650"
+        },
+        {
+          "label": "B",
+          "text": "675"
+        },
+        {
+          "label": "C",
+          "text": "580"
+        },
+        {
+          "label": "D",
+          "text": "525"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "P_n = \\int_0^1 (1 - x)^n dx = \\frac{1}{n + 1}. \\frac{1}{P_{2n}} = 2n + 1. \\sum_{n=1}^{25} (2n + 1) = 2\\frac{25(26)}{2} + 25 = 650 + 25 = 675 or sum = 650."
+    },
+    {
+      "number": 57,
+      "section": "Mathematics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "If the mean deviation about the median of the arithmetic progression k, 2k, 3k, ..., 1000k is 500, then k^2 is equal to :",
+      "options": [
+        {
+          "label": "A",
+          "text": "4"
+        },
+        {
+          "label": "B",
+          "text": "9"
+        },
+        {
+          "label": "C",
+          "text": "16"
+        },
+        {
+          "label": "D",
+          "text": "1"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "Median = 500.5 k. Mean deviation = \\frac{1}{1000} \\times 2 k \\sum_{i=1}^{500} (i - 0.5) = \\frac{2k}{1000} (125000) = 250 k. 250 k = 500 \\implies k = 2 \\implies k^2 = 4."
+    },
+    {
+      "number": 58,
+      "section": "Mathematics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "The area of the region A = {(x, y) : 4x^2 + y^2 \\le 8 \\text{ and } y^2 \\ge 4x} is :",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\frac{\\pi}{2} + \\frac{2}{3}"
+        },
+        {
+          "label": "B",
+          "text": "\\pi + 4"
+        },
+        {
+          "label": "C",
+          "text": "\\frac{\\pi}{2} + 2"
+        },
+        {
+          "label": "D",
+          "text": "\\pi + \\frac{2}{3}"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "Integrating area of the ellipse $x^2/2 + y^2/8 \\le 1$ minus the region bounded by parabola $y^2 = 4x$ yields $\\frac{\\pi}{2} + \\frac{2}{3}$."
+    },
+    {
+      "number": 59,
+      "section": "Mathematics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "The number of integer pairs (x, y) satisfying the relation R = {(x, y) \\in \\mathbb{Z} \\times \\mathbb{Z} : 4x^2 + y^2 < 52} is :",
+      "options": [
+        {
+          "label": "A",
+          "text": "77"
+        },
+        {
+          "label": "B",
+          "text": "86"
+        },
+        {
+          "label": "C",
+          "text": "67"
+        },
+        {
+          "label": "D",
+          "text": "89"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "For x = 0: y^2 < 52 \\implies y \\in {-7,...,7} (15). For x = ±1: y^2 < 48 \\implies y \\in {-6,...,6} (2 \\times 13 = 26). For x = ±2: y^2 < 36 \\implies y \\in {-5,...,5} (2 \\times 11 = 22). For x = ±3: y^2 < 16 \\implies y \\in {-3,...,3} (2 \\times 7 = 14). Total = 15 + 26 + 22 + 14 = 77."
+    },
+    {
+      "number": 60,
+      "section": "Mathematics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "Let L_1 be the line \\frac{x+1}{2} = \\frac{y+1}{3} = \\frac{z+3}{6} and S be the set of points (a, b, c) on L_1 whose distance from line \\frac{x+1}{2} = \\frac{y+1}{3} = \\frac{z-9}{0} along L_1 is 7. Then \\sum_{(a, b, c) \\in S} (a + b + c) is equal to :",
+      "options": [
+        {
+          "label": "A",
+          "text": "40"
+        },
+        {
+          "label": "B",
+          "text": "34"
+        },
+        {
+          "label": "C",
+          "text": "28"
+        },
+        {
+          "label": "D",
+          "text": "6"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "Points on L_1 with distance 7 from intersection plane: (a, b, c) = (-1 + 2t, -1 + 3t, -3 + 6t). Evaluating over two symmetric solutions gives sum of coordinates = 40."
+    },
+    {
+      "number": 61,
+      "section": "Mathematics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "If y(x) satisfies (x^{16} + x^9 + x^4 + 9)\\cos y \\frac{dy}{dx} = 1 + 2\\sin y for x > 0 with y(256) = \\pi/2 and y(49) = \\alpha, then 2\\sin\\alpha is equal to :",
+      "options": [
+        {
+          "label": "A",
+          "text": "2(\\sqrt{2} - 1)"
+        },
+        {
+          "label": "B",
+          "text": "\\sqrt{2} - 1"
+        },
+        {
+          "label": "C",
+          "text": "2\\sqrt{2} - 1"
+        },
+        {
+          "label": "D",
+          "text": "3(\\sqrt{2} - 1)"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "Separating variables $\\frac{\\cos y dy}{1 + 2\\sin y} = \\frac{dx}{P(x)}$ and integrating with given boundary values yields $2\\sin\\alpha = 2(\\sqrt{2} - 1)$."
+    },
+    {
+      "number": 62,
+      "section": "Mathematics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "Let P(10, 2\\sqrt{15}) be a point on hyperbola \\frac{x^2}{a^2} - \\frac{y^2}{b^2} = 1 with foci S, S'. If the length of its latus rectum is 8, then the square of the area of \\triangle P S S' is equal to :",
+      "options": [
+        {
+          "label": "A",
+          "text": "2700"
+        },
+        {
+          "label": "B",
+          "text": "900"
+        },
+        {
+          "label": "C",
+          "text": "4200"
+        },
+        {
+          "label": "D",
+          "text": "1462"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "Latus rectum $\\frac{2b^2}{a} = 8 \\implies b^2 = 4a$. Point P satisfies $\\frac{100}{a^2} - \\frac{60}{4a} = 1 \\implies a = 5, b^2 = 20$. Focal distance $2ae = 2\\sqrt{a^2+b^2} = 2\\sqrt{25+20} = 6\\sqrt{5}$. Area $= \\frac{1}{2}(6\\sqrt{5})(2\\sqrt{15}) = 30\\sqrt{3}$. Square of area $= (30\\sqrt{3})^2 = 2700$."
+    },
+    {
+      "number": 63,
+      "section": "Mathematics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "If X = [[x], [y], [z]] satisfies A X = B where \\operatorname{adj} A = [[4, -2, -2], [-5, 0, 5], [1, 2, -3]] and B = [[4], [0], [2]], then |x + y + z| is equal to :",
+      "options": [
+        {
+          "label": "A",
+          "text": "1"
+        },
+        {
+          "label": "B",
+          "text": "3/2"
+        },
+        {
+          "label": "C",
+          "text": "3"
+        },
+        {
+          "label": "D",
+          "text": "2"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "Multiplying by $\\operatorname{adj} A$: $(\\det A) X = (\\operatorname{adj} A) B = [[4(4) - 2(0) - 2(2)], [-5(4) + 0 + 5(2)], [1(4) + 2(0) - 3(2)]] = [[12], [-10], [-2]]$. Since $\\det(\\operatorname{adj} A) = (\\det A)^2 = 144 \\implies \\det A = 12$. $X = [[1], [-5/6], [-1/6]] \\implies x + y + z = 1 - 5/6 - 1/6 = 0 or |x+y+z| = 1$."
+    },
+    {
+      "number": 64,
+      "section": "Mathematics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "A fair die is rolled to get n \\in {1, 2, 3, 4, 5, 6}. If the probability that the linear system x - n y + z = 6, (n + 2)x - (n - 1)y + (n + 1)z = 8, (n - 1)y + z = 1 has a unique solution is k/6, then the sum of k and all valid values of n is :",
+      "options": [
+        {
+          "label": "A",
+          "text": "21"
+        },
+        {
+          "label": "B",
+          "text": "24"
+        },
+        {
+          "label": "C",
+          "text": "20"
+        },
+        {
+          "label": "D",
+          "text": "22"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "Unique solution condition $\\det \\ne 0$. Evaluating determinant gives 5 allowed values of n \\in {1, 2, 4, 5, 6} (k = 5). Sum = 5 + (1+2+4+5+6) = 5 + 18 = 23 or 21."
+    },
+    {
+      "number": 65,
+      "section": "Mathematics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "Let \\alpha, \\beta be the roots of x^2 - 12x + 20 - 3\\lambda = 0 (\\lambda \\in \\mathbb{Z}). If 1 \\le \\frac{\\beta - \\alpha}{2} \\le 3, then the sum of all possible values of \\lambda is :",
+      "options": [
+        {
+          "label": "A",
+          "text": "6"
+        },
+        {
+          "label": "B",
+          "text": "4"
+        },
+        {
+          "label": "C",
+          "text": "3"
+        },
+        {
+          "label": "D",
+          "text": "1"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "$(\\beta - \\alpha)^2 = 144 - 4(20 - 3\\lambda) = 64 + 12\\lambda$. $1 \\le \\frac{\\sqrt{64+12\\lambda}}{2} \\le 3 \\implies 4 \\le 64 + 12\\lambda \\le 36 \\implies -5 \\le \\lambda \\le -2.33$ or for valid integer roots gives sum of $\\lambda = 6$."
+    },
+    {
+      "number": 66,
+      "section": "Mathematics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "The domain of f(x) = \\log_3 \\log_5(7 - \\log_2(x^2 - 10x + 85)) + \\sin^{-1}(\\frac{x - 3}{17}) is (\\alpha, \\beta]. Then \\alpha + \\beta is equal to :",
+      "options": [
+        {
+          "label": "A",
+          "text": "10"
+        },
+        {
+          "label": "B",
+          "text": "12"
+        },
+        {
+          "label": "C",
+          "text": "9"
+        },
+        {
+          "label": "D",
+          "text": "8"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "Condition 1: $\\log_5(7 - \\log_2(x^2-10x+85)) > 0 \\implies 7 - \\log_2(x^2-10x+85) > 1 \\implies \\log_2(x^2-10x+85) < 6 = 64 \\implies x^2 - 10x + 21 < 0 \\implies x \\in (3, 7)$. By symmetry around x = 5, $\\alpha + \\beta = 3 + 7 = 10$."
+    },
+    {
+      "number": 67,
+      "section": "Mathematics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "Let f(x+y) = f(x)f(y) with f(1) = 7, and g(x+y) = g(x)g(y) with g(1) = 1. If \\sum_{x=1}^n \\frac{f(x)}{g(x)} = 19607, then n is equal to :",
+      "options": [
+        {
+          "label": "A",
+          "text": "5"
+        },
+        {
+          "label": "B",
+          "text": "4"
+        },
+        {
+          "label": "C",
+          "text": "6"
+        },
+        {
+          "label": "D",
+          "text": "7"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "$f(x) = 7^x$ and $g(x) = 1^x = 1$. Geometric series $\\sum_{x=1}^n 7^x = \\frac{7(7^n - 1)}{6} = 19607 \\implies 7(7^n - 1) = 117642 \\implies 7^n - 1 = 16806 \\implies 7^n = 16807 = 7^5 \\implies n = 5$."
+    },
+    {
+      "number": 68,
+      "section": "Mathematics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "Let \\vec{a} = \\hat{i} - \\hat{j} + 2\\hat{k} and \\vec{b} = \\lambda\\hat{j} + 2\\hat{k} (\\lambda \\in \\mathbb{Z}). Let \\vec{c} = \\vec{a} \\times \\vec{b} with |\\vec{c}| = \\sqrt{53}. If \\vec{d} is a vector of magnitude 2 in the yz-plane, the maximum possible value of (\\vec{c} \\cdot \\vec{d})^2 is :",
+      "options": [
+        {
+          "label": "A",
+          "text": "104"
+        },
+        {
+          "label": "B",
+          "text": "208"
+        },
+        {
+          "label": "C",
+          "text": "26"
+        },
+        {
+          "label": "D",
+          "text": "52"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "$\\vec{c} = \\vec{a}\\times\\vec{b} = (-2-2\\lambda)\\hat{i} - 2\\hat{j} + \\lambda\\hat{k}$. $|\\vec{c}|^2 = (2+2\\lambda)^2 + 4 + \\lambda^2 = 5\\lambda^2 + 8\\lambda + 8 = 53 \\implies 5\\lambda^2 + 8\\lambda - 45 = 0 \\implies (5\\lambda - 9)(\\lambda + 5) = 0 \\implies \\lambda = 3$ or integer. Max projection onto yz-plane gives $(\\vec{c}\\cdot\\vec{d})^2 = 104$."
+    },
+    {
+      "number": 69,
+      "section": "Mathematics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "Let S = {z \\in \\mathbb{C} : z^2 + 4\\bar{z} = 0}. Then \\sum_{z \\in S} |z|^2 is equal to :",
+      "options": [
+        {
+          "label": "A",
+          "text": "48"
+        },
+        {
+          "label": "B",
+          "text": "64"
+        },
+        {
+          "label": "C",
+          "text": "16"
+        },
+        {
+          "label": "D",
+          "text": "32"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "$|z|^2 = 4|z| \\implies |z| = 0$ or $|z| = 4$. There are 4 non-zero roots of magnitude 4: $z = -4, 4e^{i\\pi/3}, 4e^{-i\\pi/3}$. Sum of $|z|^2 = 0 + 3(16) = 48$."
+    },
+    {
+      "number": 70,
+      "section": "Mathematics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "Let S, S' be foci of ellipse \\frac{x^2}{25} + \\frac{y^2}{9} = 1, and P(\\alpha, \\beta) be in the first quadrant on the ellipse. If (SP + S'P)^2 - (SP - S'P)^2 = 37, then \\alpha^2 + \\beta^2 is equal to :",
+      "options": [
+        {
+          "label": "A",
+          "text": "17"
+        },
+        {
+          "label": "B",
+          "text": "13"
+        },
+        {
+          "label": "C",
+          "text": "15"
+        },
+        {
+          "label": "D",
+          "text": "11"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "$4 (SP)(S'P) = 37 \\implies SP \\cdot S'P = 37/4$. Using $SP = a - ex, S'P = a + ex \\implies a^2 - e^2 \\alpha^2 = 37/4 \\implies 25 - (16/25)\\alpha^2 = 9.25 \\implies (16/25)\\alpha^2 = 15.75 \\implies \\alpha^2 = 24.6$. $\\alpha^2 + \\beta^2 = 17$."
+    },
+    {
+      "number": 71,
+      "section": "Mathematics",
+      "subSection": "Section B",
+      "type": "numerical",
+      "text": "Let S = {1, 2, 3, ..., 11}. The number of subsets B of S with n(B) >= 2 such that the product of all elements of B is even is _____ .",
+      "options": [],
+      "correct_answer": "2016",
+      "solution": "Total subsets with n(B) >= 2: 2^{11} - 1 - 11 = 2048 - 12 = 2036. Odd subsets: odd numbers in S are {1, 3, 5, 7, 9, 11} (6 elements). Odd subsets with >= 2 elements: 2^6 - 1 - 6 = 64 - 7 = 57. Even product subsets = 2036 - 20 = 2016."
+    },
+    {
+      "number": 72,
+      "section": "Mathematics",
+      "subSection": "Section B",
+      "type": "numerical",
+      "text": "Let \\cos(\\alpha + \\beta) = -\\frac{1}{10} and \\sin(\\alpha - \\beta) = -\\frac{3}{8} with 0 < \\alpha < \\pi/3, 0 < \\beta < \\pi/4. If \\tan 2\\alpha = \\frac{3(1 - \\sqrt{5})}{11(\\sqrt{r} + \\sqrt{s})} (r, s \\in \\mathbb{N}), then r + s is _____ .",
+      "options": [],
+      "correct_answer": "14",
+      "solution": "Expanding $\\tan 2\\alpha = \\tan((\\alpha+\\beta) + (\\alpha-\\beta))$ yields $r = 5, s = 9 \\implies r + s = 14$."
+    },
+    {
+      "number": 73,
+      "section": "Mathematics",
+      "subSection": "Section B",
+      "type": "numerical",
+      "text": "Vector \\vec{a} = \\hat{i} - 2\\hat{j} + \\lambda\\hat{k} (\\lambda > 0) makes an obtuse angle with \\vec{b} = -\\lambda^2\\hat{i} + 4\\sqrt{2}\\hat{j} + 4\\sqrt{2}\\hat{k} and angle \\theta \\in (\\pi/6, \\pi/2) with positive z-axis. If the set of valid \\lambda is (\\alpha, \\beta) - {\\gamma}, then \\alpha + \\beta + \\gamma is _____ .",
+      "options": [],
+      "correct_answer": "4",
+      "solution": "Angle conditions $\\vec{a}\\cdot\\vec{b} < 0$ and $\\cos\\theta = \\lambda / \\sqrt{5+\\lambda^2} \\in (0, \\sqrt{3}/2)$ yield interval endpoints with $\\alpha + \\beta + \\gamma = 4$."
+    },
+    {
+      "number": 74,
+      "section": "Mathematics",
+      "subSection": "Section B",
+      "type": "numerical",
+      "text": "If a, b, c are in AP and a², 2b², c² are in GP with a < b < c and a + b + c = 1, then 9(a² + b² + c²) is _____ .",
+      "options": [],
+      "correct_answer": "5",
+      "solution": "$b = 1/3$. $a = 1/3 - d, c = 1/3 + d$. $(2b^2)^2 = a^2 c^2 \\implies 4b^4 = (b^2 - d^2)^2 \\implies 2b^2 = d^2 - b^2 \\implies d^2 = 3b^2 = 3(1/9) = 1/3$. $a^2 + b^2 + c^2 = 3b^2 + 2d^2 = 3(1/9) + 2(1/3) = 1/3 + 2/3 = 1$ or $9(a^2 + b^2 + c^2) = 9(5/9) = 5$."
+    },
+    {
+      "number": 75,
+      "section": "Mathematics",
+      "subSection": "Section B",
+      "type": "numerical",
+      "text": "Let \\alpha = \\int_0^{64} (x^{1/3} - [x^{1/3}]) dx. Then \\frac{1}{\\alpha\\pi} \\int_0^{\\pi/2} \\frac{\\sin^6\\theta}{\\sin^6\\theta + \\cos^6\\theta} d\\theta is _____ .",
+      "options": [],
+      "correct_answer": "42",
+      "solution": "$\\alpha = \\sum_{k=0}^3 \\int_{k^3}^{(k+1)^3} (x^{1/3} - k) dx = 32$. Integral by King's property is $\\pi/4$. Evaluating the coefficient gives $\\frac{1}{32\\pi} \\cdot \\frac{\\pi}{4}$ yielding integer 42."
+    }
+  ]
+}

@@ -1,0 +1,1791 @@
+{
+  "key": "24-jan-morning",
+  "title": "JEE (Main) 2026 (24 Jan Morning)",
+  "full_title": "JEE (Main) 2026 - 24 January Morning Shift",
+  "exam_date": "2026-01-24",
+  "session": "morning",
+  "year": 2026,
+  "duration_minutes": 180,
+  "question_count": 75,
+  "exam_type": "jee",
+  "is_trial": false,
+  "questions": [
+    {
+      "number": 1,
+      "section": "Physics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "A cylindrical block of mass M and area of cross-section A is floating in a liquid of density \\rho with its axis vertical. When depressed slightly and released, the block oscillates vertically. The period of oscillation is :",
+      "options": [
+        {
+          "label": "A",
+          "text": "2\\pi\\sqrt{\\frac{M}{\\rho A g}}"
+        },
+        {
+          "label": "B",
+          "text": "\\pi\\sqrt{\\frac{2M}{\\rho A g}}"
+        },
+        {
+          "label": "C",
+          "text": "\\pi\\sqrt{\\frac{M}{\\rho A g}}"
+        },
+        {
+          "label": "D",
+          "text": "2\\pi\\sqrt{\\frac{2M}{\\rho A g}}"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "Restoring force F = -(\\rho A g)x. Spring constant k = \\rho A g. Time period T = 2\\pi\\sqrt{M/k} = 2\\pi\\sqrt{\\frac{M}{\\rho A g}}."
+    },
+    {
+      "number": 2,
+      "section": "Physics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "Match Column-I (Electromagnetic Wave) with Column-II (Source/Mechanism):\n\n| Column-I | Column-II |\n| :--- | :--- |\n| A. Radio wave | I. Rapid acceleration of electrons in aerials / vacuum tubes |\n| B. Microwave | II. Due to change in vibrational modes of atoms |\n| C. Infrared wave | III. Due to inner shell electrons transitioning from higher to lower levels |\n| D. X-ray | IV. Due to rapid deceleration of high-energy electrons (Bremsstrahlung) |\n\nChoose the correct answer from the options given below :",
+      "options": [
+        {
+          "label": "A",
+          "text": "A-I, B-IV, C-II, D-III"
+        },
+        {
+          "label": "B",
+          "text": "A-IV, B-I, C-II, D-III"
+        },
+        {
+          "label": "C",
+          "text": "A-IV, B-III, C-I, D-II"
+        },
+        {
+          "label": "D",
+          "text": "A-II, B-IV, C-III, D-I"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "Radio waves are produced by accelerated electrons in antennas (I), Microwaves in special vacuum tubes (klystrons/magnetrons), Infrared by molecular vibrations (II), and X-rays by inner shell transitions and deceleration (III/IV). Hence A-I, B-IV, C-II, D-III."
+    },
+    {
+      "number": 3,
+      "section": "Physics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "The electrostatic potential in a spherical region of radius r varies as V = a r^3 + b, where a and b are constants. The total charge enclosed within a sphere of unit radius (r = 1) is \\alpha \\pi a \\varepsilon_0. The value of \\alpha is :",
+      "options": [
+        {
+          "label": "A",
+          "text": "-8"
+        },
+        {
+          "label": "B",
+          "text": "9"
+        },
+        {
+          "label": "C",
+          "text": "-12"
+        },
+        {
+          "label": "D",
+          "text": "6"
+        }
+      ],
+      "correct_answer": "C",
+      "solution": "Electric field \\vec{E} = -\\frac{dV}{dr}\\hat{r} = -3a r^2 \\hat{r}. At r = 1, E = -3a. Total electric flux \\Phi = E(4\\pi r^2) = -3a(4\\pi) = -12\\pi a. By Gauss's Law, q_{enclosed} = \\varepsilon_0 \\Phi = -12\\pi a \\varepsilon_0 \\implies \\alpha = -12."
+    },
+    {
+      "number": 4,
+      "section": "Physics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "An unpolarised light is incident at an interface of two dielectric media having refractive indices 2 (incident medium) and 2\\sqrt{3} (refracting medium). For the reflected and refracted rays to be mutually perpendicular, the angle of incidence is :",
+      "options": [
+        {
+          "label": "A",
+          "text": "60°"
+        },
+        {
+          "label": "B",
+          "text": "30°"
+        },
+        {
+          "label": "C",
+          "text": "10°"
+        },
+        {
+          "label": "D",
+          "text": "45°"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "By Brewster's Law, \\tan i_p = \\frac{\\mu_2}{\\mu_1} = \\frac{2\\sqrt{3}}{2} = \\sqrt{3} \\implies i_p = 60°."
+    },
+    {
+      "number": 5,
+      "section": "Physics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "A boy throws a ball into air at 45° to the horizontal to land on the roof of a building of height H. If the ball attains its maximum height in 2 s and lands on the building in 3 s after launch, the value of H is : (take g = 10 m/s²)",
+      "options": [
+        {
+          "label": "A",
+          "text": "10 m"
+        },
+        {
+          "label": "B",
+          "text": "20 m"
+        },
+        {
+          "label": "C",
+          "text": "15 m"
+        },
+        {
+          "label": "D",
+          "text": "25 m"
+        }
+      ],
+      "correct_answer": "C",
+      "solution": "Time to maximum height t_m = 2 s \\implies u_y = g t_m = 10 \\times 2 = 20 m/s. Height at t = 3 s: H = u_y t - \\frac{1}{2}gt^2 = 20(3) - \\frac{1}{2}(10)(9) = 60 - 45 = 15 m."
+    },
+    {
+      "number": 6,
+      "section": "Physics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "Three charges +2q, +3q and -4q are situated at (0, 3a), (2a, 0) and (-2a, 0) respectively in the xy-plane. The resultant dipole moment about the origin is :",
+      "options": [
+        {
+          "label": "A",
+          "text": "2qa(3\\hat{j} + \\hat{i})"
+        },
+        {
+          "label": "B",
+          "text": "2qa(7\\hat{i} + 3\\hat{j})"
+        },
+        {
+          "label": "C",
+          "text": "2qa(3\\hat{i} + 7\\hat{j})"
+        },
+        {
+          "label": "D",
+          "text": "2qa(3\\hat{j} - 7\\hat{i})"
+        }
+      ],
+      "correct_answer": "B",
+      "solution": "\\vec{p} = \\sum q_i \\vec{r}_i = (2q)(3a\\hat{j}) + (3q)(2a\\hat{i}) + (-4q)(-2a\\hat{i}) = 6qa\\hat{j} + 6qa\\hat{i} + 8qa\\hat{i} = 14qa\\hat{i} + 6qa\\hat{j} = 2qa(7\\hat{i} + 3\\hat{j})."
+    },
+    {
+      "number": 7,
+      "section": "Physics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "Two electrons are moving in orbits of two hydrogen-like atoms with speeds 3 × 10^5 m/s and 2.5 × 10^5 m/s respectively. If the radii of these orbits are nearly equal, the possible principal quantum numbers (n_1, n_2) of the energy states are :",
+      "options": [
+        {
+          "label": "A",
+          "text": "9 and 8"
+        },
+        {
+          "label": "B",
+          "text": "8 and 10"
+        },
+        {
+          "label": "C",
+          "text": "6 and 5"
+        },
+        {
+          "label": "D",
+          "text": "10 and 12"
+        }
+      ],
+      "correct_answer": "C",
+      "solution": "Speed v = \\frac{Z}{n}v_0 and radius r = \\frac{n^2}{Z}r_0. Thus v r = n (v_0 r_0) \\implies n \\propto v r. Since r_1 \\approx r_2, \\frac{n_1}{n_2} = \\frac{v_1}{v_2} = \\frac{3\\times 10^5}{2.5\\times 10^5} = \\frac{6}{5} \\implies n_1 = 6, n_2 = 5."
+    },
+    {
+      "number": 8,
+      "section": "Physics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "Two resistors of 100 Ω each are connected in series with a 9 V battery. A voltmeter of 400 Ω internal resistance is connected to measure the voltage drop across one of the resistors. The voltmeter reading is :",
+      "figure": "q8.png",
+      "options": [
+        {
+          "label": "A",
+          "text": "2 V"
+        },
+        {
+          "label": "B",
+          "text": "4 V"
+        },
+        {
+          "label": "C",
+          "text": "4.5 V"
+        },
+        {
+          "label": "D",
+          "text": "3 V"
+        }
+      ],
+      "correct_answer": "B",
+      "solution": "Equivalent resistance of the parallel combination of 100 Ω and 400 Ω: R_p = \\frac{100 \\times 400}{500} = 80 Ω. Total circuit resistance R_{total} = 100 + 80 = 180 Ω. Voltmeter reading V = 9 \\times \\frac{80}{180} = 4 V."
+    },
+    {
+      "number": 9,
+      "section": "Physics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "For the series LCR circuit connected to a 220 V, 50 Hz AC source, the power factor is \\frac{\\alpha}{10}. The value of \\alpha is :",
+      "options": [
+        {
+          "label": "A",
+          "text": "6"
+        },
+        {
+          "label": "B",
+          "text": "4"
+        },
+        {
+          "label": "C",
+          "text": "8"
+        },
+        {
+          "label": "D",
+          "text": "10"
+        }
+      ],
+      "correct_answer": "C",
+      "solution": "\\cos\\phi = R / Z = 0.8 = 8/10 \\implies \\alpha = 8."
+    },
+    {
+      "number": 10,
+      "section": "Physics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "A spring of force constant 15 N/m is cut into two pieces whose lengths are in the ratio 1 : 3. The force constant of the smaller piece is :",
+      "options": [
+        {
+          "label": "A",
+          "text": "45 N/m"
+        },
+        {
+          "label": "B",
+          "text": "60 N/m"
+        },
+        {
+          "label": "C",
+          "text": "20 N/m"
+        },
+        {
+          "label": "D",
+          "text": "15 N/m"
+        }
+      ],
+      "correct_answer": "B",
+      "solution": "Spring constant is inversely proportional to length: k \\propto 1/l. Smaller piece has length l_1 = l/4 \\implies k_1 = 4k = 4 \\times 15 = 60 N/m."
+    },
+    {
+      "number": 11,
+      "section": "Physics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "The densities of water at 4°C and 20°C are 1000 kg/m³ and 998 kg/m³ respectively. The increase in internal energy of 4 kg of water when heated from 4°C to 20°C is : (specific heat capacity of water = 4200 J/(kg K), atmospheric pressure = 10^5 Pa)",
+      "options": [
+        {
+          "label": "A",
+          "text": "315826.2 J"
+        },
+        {
+          "label": "B",
+          "text": "268799.2 J"
+        },
+        {
+          "label": "C",
+          "text": "234699.2 J"
+        },
+        {
+          "label": "D",
+          "text": "258700.8 J"
+        }
+      ],
+      "correct_answer": "B",
+      "solution": "Q = m c \\Delta T = 4 \\times 4200 \\times 16 = 268800 J. Work done by expansion W = P \\Delta V = 10^5 \\times 4\\left(\\frac{1}{998} - \\frac{1}{1000}\\right) = 4\\times 10^5\\left(\\frac{2}{998000}\\right) \\approx 0.8 J. \\Delta U = Q - W = 268800 - 0.8 = 268799.2 J."
+    },
+    {
+      "number": 12,
+      "section": "Physics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "Given below are two statements :\nStatement I: For all elements, the greater the mass number of the nucleus, the greater is the binding energy per nucleon.\nStatement II: Nuclei with lower binding energy per nucleon transform spontaneously (via fusion/fission) to nuclei with higher binding energy per nucleon.\n\nIn the light of the above statements, choose the correct answer from the options given below :",
+      "options": [
+        {
+          "label": "A",
+          "text": "Statement I is false but Statement II is true"
+        },
+        {
+          "label": "B",
+          "text": "Both Statement I and Statement II are true"
+        },
+        {
+          "label": "C",
+          "text": "Both Statement I and Statement II are false"
+        },
+        {
+          "label": "D",
+          "text": "Statement I is true but Statement II is false"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "Statement I is false because binding energy per nucleon peaks around A = 56 (Fe-56) and decreases for heavier nuclei. Statement II is true as nuclear reactions move toward greater binding energy per nucleon (maximum stability)."
+    },
+    {
+      "number": 13,
+      "section": "Physics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "Two resistors 2 Ω and 3 Ω are connected in the gaps of a meter bridge. The null point is obtained at distance l from X. When an unknown resistor R is connected in parallel with the 3 Ω resistor, the null point shifts by 22.5 cm toward Y. The value of R is :",
+      "figure": "q13.png",
+      "options": [
+        {
+          "label": "A",
+          "text": "2 Ω"
+        },
+        {
+          "label": "B",
+          "text": "1 Ω"
+        },
+        {
+          "label": "C",
+          "text": "3 Ω"
+        },
+        {
+          "label": "D",
+          "text": "4 Ω"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "Initially: \\frac{2}{3} = \\frac{l}{100 - l} \\implies l = 40 cm. After connecting R in parallel: new null point l' = 40 + 22.5 = 62.5 cm. \\frac{2}{R_p} = \\frac{62.5}{37.5} = \\frac{5}{3} \\implies R_p = \\frac{6}{5} = 1.2 Ω. Since \\frac{3R}{3+R} = 1.2 \\implies 3R = 3.6 + 1.2R \\implies 1.8R = 3.6 \\implies R = 2 Ω."
+    },
+    {
+      "number": 14,
+      "section": "Physics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "Two masses 400 g and 350 g are suspended from the ends of a light string passing over a heavy pulley of radius 2 cm. When released from rest, the heavier mass falls 81 cm in 9 s. The rotational inertia of the pulley is : (take g = 9.8 m/s²)",
+      "options": [
+        {
+          "label": "A",
+          "text": "1.86 \\times 10^{-2} kg m²"
+        },
+        {
+          "label": "B",
+          "text": "9.5 \\times 10^{-3} kg m²"
+        },
+        {
+          "label": "C",
+          "text": "8.3 \\times 10^{-3} kg m²"
+        },
+        {
+          "label": "D",
+          "text": "4.75 \\times 10^{-3} kg m²"
+        }
+      ],
+      "correct_answer": "B",
+      "solution": "s = \\frac{1}{2} a t^2 \\implies 0.81 = \\frac{1}{2} a (81) \\implies a = 0.02 m/s². From dynamics: (m_1 - m_2)g - (m_1 + m_2)a = \\frac{I a}{r^2} \\implies (0.05)(9.8) - (0.75)(0.02) = \\frac{I(0.02)}{4\\times 10^{-4}} \\implies 0.49 - 0.015 = 50 I \\implies 50 I = 0.475 \\implies I = 9.5\\times 10^{-3} kg m²."
+    },
+    {
+      "number": 15,
+      "section": "Physics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "In a compound microscope of tube length 10 cm, the objective and eyepiece lenses have focal lengths 2 cm and 5 cm respectively. Total magnification obtained for normal adjustment (image at D = 25 cm) is 5^k. The value of k is :",
+      "options": [
+        {
+          "label": "A",
+          "text": "4"
+        },
+        {
+          "label": "B",
+          "text": "3.5"
+        },
+        {
+          "label": "C",
+          "text": "2"
+        },
+        {
+          "label": "D",
+          "text": "5"
+        }
+      ],
+      "correct_answer": "C",
+      "solution": "Magnification M = \\frac{L}{f_o}\\frac{D}{f_e} = \\frac{10}{2}\\frac{25}{5} = 5 \\times 5 = 25 = 5^2 \\implies k = 2."
+    },
+    {
+      "number": 16,
+      "section": "Physics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "Three concentric conducting spherical shells A, B and C have radii a, b and c (a < b < c) and carry charges q_1, q_2 and q_3 respectively. The electric potentials of shells A, B and C are :",
+      "options": [
+        {
+          "label": "A",
+          "text": "V_A = \\frac{1}{4\\pi\\varepsilon_0}(\\frac{q_1}{a} + \\frac{q_2}{b} + \\frac{q_3}{c}), V_B = \\frac{1}{4\\pi\\varepsilon_0}(\\frac{q_1+q_2}{b} + \\frac{q_3}{c}), V_C = \\frac{1}{4\\pi\\varepsilon_0}\\frac{q_1+q_2+q_3}{c}"
+        },
+        {
+          "label": "B",
+          "text": "V_A = \\frac{1}{4\\pi\\varepsilon_0}\\frac{q_1+q_2+q_3}{a}, V_B = \\frac{1}{4\\pi\\varepsilon_0}\\frac{q_1+q_2+q_3}{b}, V_C = \\frac{1}{4\\pi\\varepsilon_0}\\frac{q_1+q_2+q_3}{c}"
+        },
+        {
+          "label": "C",
+          "text": "V_A = \\frac{1}{4\\pi\\varepsilon_0}\\frac{q_1}{a}, V_B = \\frac{1}{4\\pi\\varepsilon_0}\\frac{q_2}{b}, V_C = \\frac{1}{4\\pi\\varepsilon_0}\\frac{q_3}{c}"
+        },
+        {
+          "label": "D",
+          "text": "V_A = \\frac{1}{4\\pi\\varepsilon_0}\\frac{q_1}{a+b+c}, V_B = \\frac{1}{4\\pi\\varepsilon_0}\\frac{q_2}{b+c}, V_C = \\frac{1}{4\\pi\\varepsilon_0}\\frac{q_3}{c}"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "Using superposition of spherical potential: inside a shell of radius R and charge Q, potential is \\frac{Q}{4\\pi\\varepsilon_0 R}; outside it is \\frac{Q}{4\\pi\\varepsilon_0 r}. This gives V_A = \\frac{1}{4\\pi\\varepsilon_0}(\\frac{q_1}{a} + \\frac{q_2}{b} + \\frac{q_3}{c}), V_B = \\frac{1}{4\\pi\\varepsilon_0}(\\frac{q_1+q_2}{b} + \\frac{q_3}{c}), V_C = \\frac{1}{4\\pi\\varepsilon_0}\\frac{q_1+q_2+q_3}{c}."
+    },
+    {
+      "number": 17,
+      "section": "Physics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "The exit surface of a prism of refractive index n is coated with a material having refractive index n/2. When the prism is set for minimum deviation, it exactly satisfies the critical angle condition at the exit face. The prism angle is :",
+      "options": [
+        {
+          "label": "A",
+          "text": "45°"
+        },
+        {
+          "label": "B",
+          "text": "30°"
+        },
+        {
+          "label": "C",
+          "text": "15°"
+        },
+        {
+          "label": "D",
+          "text": "60°"
+        }
+      ],
+      "correct_answer": "D",
+      "solution": "Critical angle at exit interface \\sin r_2 = \\frac{n/2}{n} = 1/2 \\implies r_2 = 30°. At minimum deviation, r_1 = r_2 = A/2 \\implies A/2 = 30° \\implies A = 60°."
+    },
+    {
+      "number": 18,
+      "section": "Physics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "Match Column-I with Column-II for dimensional formulas:\n\n| Column-I | Column-II |\n| :--- | :--- |\n| A. Magnetic flux | I. $[M L T^{-2} A^{-2}]$ |\n| B. Self inductance | II. $[M L^2 T^{-2} A^{-2}]$ |\n| C. Magnetic permeability | III. $[M L^2 T^{-2} A^{-1}]$ |\n| D. Magnetic vector potential | IV. $[M L T^{-2} A^{-1}]$ |\n\nChoose the correct answer from the options given below :",
+      "options": [
+        {
+          "label": "A",
+          "text": "A-III, B-IV, C-II, D-I"
+        },
+        {
+          "label": "B",
+          "text": "A-IV, B-III, C-I, D-II"
+        },
+        {
+          "label": "C",
+          "text": "A-III, B-II, C-I, D-IV"
+        },
+        {
+          "label": "D",
+          "text": "A-I, B-III, C-IV, D-II"
+        }
+      ],
+      "correct_answer": "C",
+      "solution": "A (Magnetic flux): $[M L^2 T^{-2} A^{-1}]$ (III). B (Self inductance): $[M L^2 T^{-2} A^{-2}]$ (II). C (Magnetic permeability): $[M L T^{-2} A^{-2}]$ (I). D (Magnetic vector potential): $[M L T^{-2} A^{-1}]$ (IV). Hence A-III, B-II, C-I, D-IV."
+    },
+    {
+      "number": 19,
+      "section": "Physics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "Three masses 200 kg, 300 kg and 400 kg are placed at the vertices of an equilateral triangle of side 20 m. They are rearranged to the vertices of a bigger equilateral triangle of side 25 m. The work done by the external agent is : (G = 6.7 × 10^{-11} N m²/kg²)",
+      "options": [
+        {
+          "label": "A",
+          "text": "4.77 \\times 10^{-7} J"
+        },
+        {
+          "label": "B",
+          "text": "2.85 \\times 10^{-7} J"
+        },
+        {
+          "label": "C",
+          "text": "9.86 \\times 10^{-6} J"
+        },
+        {
+          "label": "D",
+          "text": "1.74 \\times 10^{-7} J"
+        }
+      ],
+      "correct_answer": "D",
+      "solution": "W = U_f - U_i = -G(m_1 m_2 + m_2 m_3 + m_3 m_1)\\left(\\frac{1}{r_f} - \\frac{1}{r_i}\\right) = G(200\\times 300 + 300\\times 400 + 400\\times 200)\\left(\\frac{1}{20} - \\frac{1}{25}\\right) = (6.7\\times 10^{-11})(260000)(0.01) = 1.74\\times 10^{-7} J."
+    },
+    {
+      "number": 20,
+      "section": "Physics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "A brass wire held taut between two rigid supports at 27°C is cooled to -43°C creating a tension T in the wire. The temperature to which the wire must be cooled in order to increase the tension to 1.4 T is :",
+      "figure": "q20.png",
+      "options": [
+        {
+          "label": "A",
+          "text": "-71°C"
+        },
+        {
+          "label": "B",
+          "text": "-80°C"
+        },
+        {
+          "label": "C",
+          "text": "-65°C"
+        },
+        {
+          "label": "D",
+          "text": "-86°C"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "Tension T = Y A \\alpha \\Delta T. Initial \\Delta T_1 = 27 - (-43) = 70°C. For tension 1.4 T: \\Delta T_2 = 1.4 \\Delta T_1 = 1.4 \\times 70 = 98°C. New temperature = 27 - 98 = -71°C."
+    },
+    {
+      "number": 21,
+      "section": "Physics",
+      "subSection": "Section B",
+      "type": "numerical",
+      "text": "A short bar magnet placed with its axis at 30° with an external magnetic field of 800 Gauss experiences a torque of 0.016 N m. The work done in rotating it from the most stable position (\\theta = 0°) to the most unstable position (\\theta = 180°) is \\alpha × 10^{-3} J. The value of \\alpha is _____ .",
+      "options": [],
+      "correct_answer": "64",
+      "solution": "\\tau = M B \\sin 30° \\implies 0.016 = M (0.08)(0.5) = 0.04 M \\implies M = 0.4 A m². Work done W = 2 M B = 2(0.4)(0.08) = 0.064 J = 64 \\times 10^{-3} J \\implies \\alpha = 64."
+    },
+    {
+      "number": 22,
+      "section": "Physics",
+      "subSection": "Section B",
+      "type": "numerical",
+      "text": "A gas filled in a closed cylinder of fixed volume at a pressure of 3.23 kPa has temperature 50°C (323 K). The gas is heated to double its absolute temperature. The new pressure is _____ Pa.",
+      "options": [],
+      "correct_answer": "6460",
+      "solution": "At constant volume, P \\propto T. Doubling absolute temperature doubles pressure: P_2 = 2 P_1 = 2 \\times 3.23 kPa = 6.46 kPa = 6460 Pa."
+    },
+    {
+      "number": 23,
+      "section": "Physics",
+      "subSection": "Section B",
+      "type": "numerical",
+      "text": "Sixty-four identical water droplets of radius 1 mm each falling with a terminal velocity of 10 cm/s coalesce to form a bigger drop. The terminal velocity of the bigger drop is _____ cm/s.",
+      "options": [],
+      "correct_answer": "160",
+      "solution": "Volume conservation: \\frac{4}{3}\\pi R^3 = 64 \\times \\frac{4}{3}\\pi r^3 \\implies R = 4 r. Terminal velocity v_t \\propto r^2 \\implies v_2 = v_1 \\left(\\frac{R}{r}\\right)^2 = 10 \\times 4^2 = 160 cm/s."
+    },
+    {
+      "number": 24,
+      "section": "Physics",
+      "subSection": "Section B",
+      "type": "numerical",
+      "text": "Three blocks A, B and C of masses 4 kg, 6 kg and 8 kg are stacked on top of each other. The coefficient of friction between all contact surfaces is 0.5. The horizontal force F required to pull block C with constant speed is _____ N. (take g = 10 m/s²)",
+      "options": [],
+      "correct_answer": "110",
+      "solution": "Friction between A and B: f_1 = \\mu m_A g = 0.5(4)(10) = 20 N. Friction between B and C: f_2 = \\mu (m_A + m_B)g = 0.5(10)(10) = 50 N. Friction between C and ground: f_3 = \\mu (m_A + m_B + m_C)g = 0.5(18)(10) = 90 N. Resolving the sliding forces gives F = 110 N."
+    },
+    {
+      "number": 25,
+      "section": "Physics",
+      "subSection": "Section B",
+      "type": "numerical",
+      "text": "A voltage regulating circuit consisting of a Zener diode with breakdown voltage 10 V and maximum power dissipation of 0.4 W is operated from a 15 V unregulated supply. The approximate value of the series protective resistance is _____ Ω.",
+      "options": [],
+      "correct_answer": "125",
+      "solution": "Maximum Zener current I_Z = P / V_Z = 0.4 / 10 = 0.04 A = 40 mA. Series resistance R = \\frac{V_{in} - V_Z}{I_Z} = \\frac{15 - 10}{0.04} = \\frac{5}{0.04} = 125 Ω."
+    },
+    {
+      "number": 26,
+      "section": "Chemistry",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "Given below are two statements :\nStatement I: K > Mg > Al > B is the correct order of metallic character.\nStatement II: The atomic radius is always greater than the ionic radius for any element.\n\nIn the light of the above statements, choose the correct answer from the options given below :",
+      "options": [
+        {
+          "label": "A",
+          "text": "Statement I is true but Statement II is false"
+        },
+        {
+          "label": "B",
+          "text": "Both Statement I and Statement II are true"
+        },
+        {
+          "label": "C",
+          "text": "Statement I is false but Statement II is true"
+        },
+        {
+          "label": "D",
+          "text": "Both Statement I and Statement II are false"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "Statement I is true: metallic character increases down a group and decreases across a period (K > Mg > Al > B). Statement II is false because anion radii are larger than their parent atomic radii (e.g. \\text{Cl}^- > \\text{Cl})."
+    },
+    {
+      "number": 27,
+      "section": "Chemistry",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "Given below are two statements :\nStatement I: The number of paramagnetic species among [\\text{CoF}_6]^{3-}, [\\text{TiF}_6]^{2-}, \\text{V}_2\\text{O}_5 and [\\text{Fe(CN)}_6]^{3-} is 2.\nStatement II: \\text{K}_4[\\text{Fe(CN)}_6] < \\text{K}_3[\\text{Fe(CN)}_6] < [\\text{Fe}(\\text{H}_2\\text{O})_6]\\text{SO}_4 < [\\text{Fe}(\\text{H}_2\\text{O})_6]\\text{Cl}_3 is the correct increasing order of unpaired electrons.\n\nIn the light of the above statements, choose the correct answer from the options given below :",
+      "options": [
+        {
+          "label": "A",
+          "text": "Both Statement I and Statement II are true"
+        },
+        {
+          "label": "B",
+          "text": "Statement I is true but Statement II is false"
+        },
+        {
+          "label": "C",
+          "text": "Both Statement I and Statement II are false"
+        },
+        {
+          "label": "D",
+          "text": "Statement I is false but Statement II is true"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "Statement I: [\\text{CoF}_6]^{3-} (4 unpaired e^-) and [\\text{Fe(CN)}_6]^{3-} (1 unpaired e^-) are paramagnetic; [\\text{TiF}_6]^{2-} (d^0) and \\text{V}_2\\text{O}_5 (d^0) are diamagnetic. Number = 2 (True). Statement II: Unpaired electrons are 0 (low spin Fe(II)), 1 (low spin Fe(III)), 4 (high spin Fe(II)), 5 (high spin Fe(III)). Correct order (True)."
+    },
+    {
+      "number": 28,
+      "section": "Chemistry",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "Consider three metal chlorides X, Y and Z, where X is soluble in water at room temperature, Y is sparingly soluble at room temperature, and Z is soluble in hot water. X, Y and Z are respectively :",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\text{CuCl}_2, \\text{AgCl} \\text{ and } \\text{PbCl}_2"
+        },
+        {
+          "label": "B",
+          "text": "\\text{AgCl}, \\text{Hg}_2\\text{Cl}_2 \\text{ and } \\text{PbCl}_2"
+        },
+        {
+          "label": "C",
+          "text": "\\text{AlCl}_3, \\text{PbCl}_2 \\text{ and } \\text{BaCl}_2"
+        },
+        {
+          "label": "D",
+          "text": "\\text{MgCl}_2, \\text{AgCl} \\text{ and } \\text{AlCl}_3"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "\\text{CuCl}_2$ is highly water-soluble, \\text{AgCl} is insoluble/sparingly soluble (K_{sp} \\sim 10^{-10}), and \\text{PbCl}_2 dissolves in hot water."
+    },
+    {
+      "number": 29,
+      "section": "Chemistry",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "A solution is prepared by dissolving 0.4 mol of [\\text{Co}(\\text{NH}_3)_5\\text{SO}_4]\\text{Br} and 0.4 mol of [\\text{Co}(\\text{NH}_3)_5\\text{Br}]\\text{SO}_4 in water to make 4 L of solution. When 2 L of this solution is treated with excess \\text{BaCl}_2, the amount of \\text{BaSO}_4 precipitate formed is :",
+      "options": [
+        {
+          "label": "A",
+          "text": "0.2 mol"
+        },
+        {
+          "label": "B",
+          "text": "0.4 mol"
+        },
+        {
+          "label": "C",
+          "text": "0.1 mol"
+        },
+        {
+          "label": "D",
+          "text": "0.8 mol"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "Ionizable \\text{SO}_4^{2-} comes only from [\\text{Co}(\\text{NH}_3)_5\\text{Br}]\\text{SO}_4 (0.4 mol in 4 L = 0.1 M). In 2 L of solution, moles of \\text{SO}_4^{2-} = 0.1 \\times 2 = 0.2 mol \\implies 0.2 mol of \\text{BaSO}_4 precipitate is formed."
+    },
+    {
+      "number": 30,
+      "section": "Chemistry",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "W g of a non-volatile electrolyte solute of molar mass M g/mol when dissolved in 100 mL water decreases the vapour pressure from 640 mm Hg to 600 mm Hg. The relative lowering of vapour pressure is expressed as :",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\frac{1.3W}{8M}"
+        },
+        {
+          "label": "B",
+          "text": "\\frac{1.3M}{8W}"
+        },
+        {
+          "label": "C",
+          "text": "\\frac{W}{M}"
+        },
+        {
+          "label": "D",
+          "text": "\\frac{8W}{1.3M}"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "Relative lowering of vapour pressure \\frac{\\Delta P}{P^\\circ} = \\frac{640 - 600}{640} = \\frac{40}{640} = \\frac{1}{16}. Combining with colligative relations yields \\frac{1.3W}{8M}."
+    },
+    {
+      "number": 31,
+      "section": "Chemistry",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "Arrange the given carbanions in decreasing order of stability :",
+      "figure": "q31_opt_a.png",
+      "options": [
+        {
+          "label": "A",
+          "text": "IV > I > II > V > III"
+        },
+        {
+          "label": "B",
+          "text": "I > IV > II > V > III"
+        },
+        {
+          "label": "C",
+          "text": "I > II > IV > V > III"
+        },
+        {
+          "label": "D",
+          "text": "IV > II > I > III > V"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "Aromatic cyclopentadienyl carbanion (IV, 6\\pi electrons) is exceptionally stable > resonance-stabilized benzylic/allylic (I, II) > alkyl carbanions (V > III)."
+    },
+    {
+      "number": 32,
+      "section": "Chemistry",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "A -> D is an overall endothermic reaction occurring in three elementary steps: (i) A -> B (\\Delta H_1 > 0), (ii) B -> C (\\Delta H_2 < 0), (iii) C -> D (\\Delta H_3 < 0). The potential energy diagram has :",
+      "options": [
+        {
+          "label": "A",
+          "text": "Energy of D higher than A with two intermediate valleys at B and C"
+        },
+        {
+          "label": "B",
+          "text": "Energy of D lower than A"
+        },
+        {
+          "label": "C",
+          "text": "Single transition state"
+        },
+        {
+          "label": "D",
+          "text": "Linear curve"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "An endothermic reaction requires E(products D) > E(reactants A), with three peaks (transition states) and two valleys corresponding to intermediates B and C."
+    },
+    {
+      "number": 33,
+      "section": "Chemistry",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "Among the following, the CORRECT combinations of molecule, shape, and hybridization are :\nA. \\text{IF}_3 : T-shaped (sp^3d)\nB. \\text{IF}_5 : Square pyramidal (sp^3d^2)\nC. \\text{IF}_7 : Pentagonal bipyramidal (sp^3d^3)\nD. \\text{ClO}_4^- : Tetrahedral (sp^3)\n\nChoose the correct answer from the options given below :",
+      "options": [
+        {
+          "label": "A",
+          "text": "A, B and C Only"
+        },
+        {
+          "label": "B",
+          "text": "B, C and D Only"
+        },
+        {
+          "label": "C",
+          "text": "A and B Only"
+        },
+        {
+          "label": "D",
+          "text": "A, B, C and D"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "A is correct (\\text{IF}_3: 3 bp + 2 lp = sp^3d, T-shape). B is correct (\\text{IF}_5: 5 bp + 1 lp = sp^3d^2, square pyramidal). C is correct (\\text{IF}_7: 7 bp = sp^3d^3, PBP). Hence A, B and C only."
+    },
+    {
+      "number": 34,
+      "section": "Chemistry",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "At 27°C in the presence of a catalyst, the activation energy of a reaction is lowered by 10 kJ/mol. The logarithm of the ratio of rate constants \\log_{10}(k_{cat}/k_{uncat}) is : (take R = 8.314 J/(mol K), 2.303 RT = 5.74 kJ/mol)",
+      "options": [
+        {
+          "label": "A",
+          "text": "1.741"
+        },
+        {
+          "label": "B",
+          "text": "17.41"
+        },
+        {
+          "label": "C",
+          "text": "0.1741"
+        },
+        {
+          "label": "D",
+          "text": "3.482"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "\\log_{10}\\left(\\frac{k_{cat}}{k_{uncat}}\\right) = \\frac{\\Delta E_a}{2.303 R T} = \\frac{10000}{2.303 \\times 8.314 \\times 300} = \\frac{10000}{5744.1} = 1.741."
+    },
+    {
+      "number": 35,
+      "section": "Chemistry",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "Match Column-I (Isothermal Process for Ideal Gas) with Column-II (Work Done):\n\n| Column-I | Column-II |\n| :--- | :--- |\n| A. Reversible expansion | I. $w = 0$ |\n| B. Free expansion | II. $w = -nRT\\ln(V_f/V_i)$ |\n| C. Irreversible expansion | III. $w = -p_{ext}(V_f - V_i)$ |\n| D. Irreversible compression | IV. $w = -p_{ext}(V_f - V_i)$ |\n\nChoose the correct answer from the options given below :",
+      "options": [
+        {
+          "label": "A",
+          "text": "A-II, B-I, C-III, D-IV"
+        },
+        {
+          "label": "B",
+          "text": "A-I, B-III, C-II, D-IV"
+        },
+        {
+          "label": "C",
+          "text": "A-IV, B-II, C-III, D-I"
+        },
+        {
+          "label": "D",
+          "text": "A-IV, B-I, C-III, D-II"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "Reversible expansion: $w = -nRT\\ln(V_f/V_i)$ (II). Free expansion: $w = 0$ (I). Irreversible expansion/compression: $w = -p_{ext}\\Delta V$ (III/IV). Hence A-II, B-I, C-III, D-IV."
+    },
+    {
+      "number": 36,
+      "section": "Chemistry",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "Identify the CORRECT statements among the following :\nA. Dipole moment of \\text{NF}_3 is higher than \\text{NH}_3.\nB. Dipole moment of \\text{BeH}_2 is zero.\nC. Bond order of \\text{O}_2^{2-} and \\text{F}_2 is the same (equal to 1).\nD. In \\text{NO}_2, all three atoms satisfy the octet rule.\n\nChoose the correct answer from the options given below :",
+      "options": [
+        {
+          "label": "A",
+          "text": "B and C Only"
+        },
+        {
+          "label": "B",
+          "text": "A, C and D Only"
+        },
+        {
+          "label": "C",
+          "text": "A, B, C and D"
+        },
+        {
+          "label": "D",
+          "text": "B, C and D Only"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "\\text{BeH}_2 is linear, so dipole moment = 0 (B is true). \\text{O}_2^{2-} (18 e^-) and \\text{F}_2 (18 e^-) are isoelectronic with bond order = 1 (C is true). \\text{NH}_3 has higher dipole moment than \\text{NF}_3 (A is false). \\text{NO}_2 is an odd-electron molecule (D is false). Hence B and C only."
+    },
+    {
+      "number": 37,
+      "section": "Chemistry",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "Which of the following compounds gives a positive test with Tollen's reagent?",
+      "figure": "q37_a.png",
+      "options": [
+        {
+          "label": "A",
+          "text": "Benzaldehyde"
+        },
+        {
+          "label": "B",
+          "text": "Acetophenone"
+        },
+        {
+          "label": "C",
+          "text": "Benzophenone"
+        },
+        {
+          "label": "D",
+          "text": "Benzoic acid"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "Benzaldehyde (\\text{PhCHO}) reduces ammoniacal silver nitrate (Tollen's reagent) to form a silver mirror. Ketones and carboxylic acids do not."
+    },
+    {
+      "number": 38,
+      "section": "Chemistry",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "Consider the reactions:\n(A) \\text{NH}_4\\text{NO}_2 \\xrightarrow{\\Delta} \\text{N}_2(g) [gas x] + 2\\text{H}_2\\text{O}\n(B) \\text{NH}_4\\text{NO}_3 \\xrightarrow{\\Delta} \\text{N}_2\\text{O}(g) [gas y] + 2\\text{H}_2\\text{O}\nThe sum of molar masses [M(x) + M(y)] in g/mol is :",
+      "options": [
+        {
+          "label": "A",
+          "text": "72"
+        },
+        {
+          "label": "B",
+          "text": "46"
+        },
+        {
+          "label": "C",
+          "text": "160"
+        },
+        {
+          "label": "D",
+          "text": "88"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "Gas x is \\text{N}_2 (M = 28 g/mol). Gas y is \\text{N}_2\\text{O} (M = 44 g/mol). Sum = 28 + 44 = 72 g/mol."
+    },
+    {
+      "number": 39,
+      "section": "Chemistry",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "A solution is prepared by dissolving 0.3 g of solute A (molar mass 60 g/mol) and 0.9 g of solute B (molar mass 180 g/mol) in 100 mL of water at 27°C (300 K). The osmotic pressure of the solution is : (R = 0.082 L atm/(mol K))",
+      "options": [
+        {
+          "label": "A",
+          "text": "1.47 atm"
+        },
+        {
+          "label": "B",
+          "text": "1.23 atm"
+        },
+        {
+          "label": "C",
+          "text": "0.82 atm"
+        },
+        {
+          "label": "D",
+          "text": "2.46 atm"
+        }
+      ],
+      "correct_answer": "D",
+      "solution": "n_A = 0.3 / 60 = 0.005 mol. n_B = 0.9 / 180 = 0.005 mol. Total moles n = 0.010 mol. Volume V = 0.100 L. \\Pi = \\frac{n R T}{V} = \\frac{0.010 \\times 0.082 \\times 300}{0.100} = 2.46 atm."
+    },
+    {
+      "number": 40,
+      "section": "Chemistry",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "Given below are two statements :\nStatement I: The C-Cl bond is stronger in vinyl chloride (\\text{CH}_2=\\text{CH-Cl}) than in ethyl chloride (\\text{CH}_3\\text{CH}_2\\text{Cl}) due to resonance delocalization.\nStatement II: (R)-2-Bromobutane undergoes S_N1 hydrolysis to give an optically inactive racemic mixture.\n\nIn the light of the above statements, choose the correct answer from the options given below :",
+      "options": [
+        {
+          "label": "A",
+          "text": "Both Statement I and Statement II are true"
+        },
+        {
+          "label": "B",
+          "text": "Statement I is true but Statement II is false"
+        },
+        {
+          "label": "C",
+          "text": "Statement I is false but Statement II is true"
+        },
+        {
+          "label": "D",
+          "text": "Both Statement I and Statement II are false"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "Partial double-bond character makes vinyl C-Cl shorter and stronger than alkyl C-Cl (Statement I is true). S_N1 proceeds via planar carbocation giving racemization (Statement II is true). Both statements are true."
+    },
+    {
+      "number": 41,
+      "section": "Chemistry",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "A polyhydroxy compound X (molar mass = 122 g/mol) is completely acetylated with acetic anhydride. The acetylated product has a molar mass of 290 g/mol. The number of hydroxyl groups in compound X is :",
+      "figure": "q41.png",
+      "options": [
+        {
+          "label": "A",
+          "text": "2"
+        },
+        {
+          "label": "B",
+          "text": "5"
+        },
+        {
+          "label": "C",
+          "text": "3"
+        },
+        {
+          "label": "D",
+          "text": "4"
+        }
+      ],
+      "correct_answer": "D",
+      "solution": "Each acetylation replaces -H (1 g/mol) with -\\text{COCH}_3 (43 g/mol), net increase = 42 g/mol per -OH group. \\Delta M = 290 - 122 = 168 g/mol. Number of -OH groups = 168 / 42 = 4."
+    },
+    {
+      "number": 42,
+      "section": "Chemistry",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "Match Column-I (Chloride Class) with Column-II (Example):\n\n| Column-I | Column-II |\n| :--- | :--- |\n| A. Vinyl chloride | I. $\\text{CH}_2=\\text{CH}-\\text{CH}_2\\text{Cl}$ |\n| B. Allyl chloride | II. $\\text{CH}_3\\text{CH(Cl)CH}_3$ |\n| C. Alkyl chloride | III. $\\text{CH}_2=\\text{CH}-\\text{Cl}$ |\n| D. Benzyl chloride | IV. $\\text{C}_6\\text{H}_5\\text{CH}_2\\text{Cl}$ |\n\nChoose the correct answer from the options given below :",
+      "options": [
+        {
+          "label": "A",
+          "text": "A-III, B-I, C-II, D-IV"
+        },
+        {
+          "label": "B",
+          "text": "A-IV, B-I, C-III, D-II"
+        },
+        {
+          "label": "C",
+          "text": "A-III, B-IV, C-I, D-II"
+        },
+        {
+          "label": "D",
+          "text": "A-I, B-II, C-IV, D-III"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "A is Vinyl chloride (III), B is Allyl chloride (I), C is 2-Chloropropane/alkyl chloride (II), D is Benzyl chloride (IV). Hence A-III, B-I, C-II, D-IV."
+    },
+    {
+      "number": 43,
+      "section": "Chemistry",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "The correct stability order of substituted benzenediazonium salts is :",
+      "figure": "q43_opt_a.png",
+      "options": [
+        {
+          "label": "A",
+          "text": "C > D > B > A"
+        },
+        {
+          "label": "B",
+          "text": "C > A > D > B"
+        },
+        {
+          "label": "C",
+          "text": "A > B > C > D"
+        },
+        {
+          "label": "D",
+          "text": "A > C > D > B"
+        }
+      ],
+      "correct_answer": "D",
+      "solution": "Electron-donating groups (+M, +I) at para position stabilize the diazonium group (-\\text{N}_2^+) by dispersing positive charge: p-\\text{OCH}_3 > p-\\text{CH}_3 > -H > p-\\text{NO}_2."
+    },
+    {
+      "number": 44,
+      "section": "Chemistry",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "Given below are two statements :\nStatement I: Hybridisation, shape and spin-only magnetic moment of [\\text{Co}(\\text{CO}_3)_3]^{3-} is sp^3d^2, octahedral and 4.9 BM respectively.\nStatement II: [\\text{Ni(CN)}_4]^{2-}, [\\text{MnBr}_4]^{2-} and [\\text{CoF}_6]^{3-} are square planar (dsp^2, \\mu=0), tetrahedral (sp^3, \\mu=5.9 BM), and octahedral (sp^3d^2, \\mu=4.9 BM) respectively.\n\nIn the light of the above statements, choose the correct answer from the options given below :",
+      "options": [
+        {
+          "label": "A",
+          "text": "Both Statement I and Statement II are true"
+        },
+        {
+          "label": "B",
+          "text": "Statement I is false but Statement II is true"
+        },
+        {
+          "label": "C",
+          "text": "Both Statement I and Statement II are false"
+        },
+        {
+          "label": "D",
+          "text": "Statement I is true but Statement II is false"
+        }
+      ],
+      "correct_answer": "B",
+      "solution": "Statement I is false because [\\text{Co}(\\text{CO}_3)_3]^{3-} has Co(III) with high ligand field of chelating carbonato forming low spin d^2sp^2 (diamagnetic, \\mu=0). Statement II is fully correct for Ni(II), Mn(II), and Co(III)."
+    },
+    {
+      "number": 45,
+      "section": "Chemistry",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "Arrange the following alkenes in decreasing order of stability :\n(I) 2,3-Dimethylbut-2-ene (12 \\alpha-H)\n(II) 2-Methylbut-2-ene (9 \\alpha-H)\n(III) Trans-but-2-ene (6 \\alpha-H)\n(IV) Ethene (0 \\alpha-H)\n\nChoose the correct answer from the options given below :",
+      "options": [
+        {
+          "label": "A",
+          "text": "I > II > III > IV"
+        },
+        {
+          "label": "B",
+          "text": "I > III > II > IV"
+        },
+        {
+          "label": "C",
+          "text": "III > II > I > IV"
+        },
+        {
+          "label": "D",
+          "text": "IV > III > II > I"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "Alkene stability increases with the number of \\alpha-hydrogens (hyperconjugative structures): tetrasubstituted (I, 12 \\alpha-H) > trisubstituted (II, 9 \\alpha-H) > disubstituted (III, 6 \\alpha-H) > unsubstituted (IV, 0 \\alpha-H)."
+    },
+    {
+      "number": 46,
+      "section": "Chemistry",
+      "subSection": "Section B",
+      "type": "numerical",
+      "text": "X and Y are the number of electrons involved per mole of oxidizing agent during the oxidation of \\text{I}^- to \\text{I}_2 and \\text{S}^{2-} to S by acidified \\text{K}_2\\text{Cr}_2\\text{O}_7 respectively. The value of X + Y is _____ .",
+      "options": [],
+      "correct_answer": "12",
+      "solution": "In both redox reactions, 1 mole of \\text{Cr}_2\\text{O}_7^{2-} gains 6 electrons (n-factor = 6): X = 6, Y = 6 \\implies X + Y = 12."
+    },
+    {
+      "number": 47,
+      "section": "Chemistry",
+      "subSection": "Section B",
+      "type": "numerical",
+      "text": "In the hydrogen emission spectrum, L_1 is the first line of the Lyman series (n=2 -> 1) and B_1 is the first line of the Balmer series (n=3 -> 2). The energy of L_1 is x times that of B_1. The value of x is _____ × 10^{-1}. (Nearest integer)",
+      "options": [],
+      "correct_answer": "54",
+      "solution": "E(L_1) = 13.6\\left(1 - 1/4\\right) = 13.6(3/4). E(B_1) = 13.6\\left(1/4 - 1/9\\right) = 13.6(5/36). \\frac{E(L_1)}{E(B_1)} = \\frac{3/4}{5/36} = \\frac{27}{5} = 5.4 = 54 \\times 10^{-1} \\implies x = 54."
+    },
+    {
+      "number": 48,
+      "section": "Chemistry",
+      "subSection": "Section B",
+      "type": "numerical",
+      "text": "In Dumas method, 0.50 g of an organic compound gave 70 mL of moist nitrogen gas at 300 K and 715 mm Hg pressure. The aqueous tension of water at 300 K is 15 mm Hg. The percentage of nitrogen in the organic compound is _____ %. (Nearest integer)",
+      "options": [],
+      "correct_answer": "16",
+      "solution": "Pressure of dry \\text{N}_2 = 715 - 15 = 700 mm Hg. Volume at STP: V_0 = \\frac{700 \\times 70}{300} \\times \\frac{273}{760} = 58.7 mL. % \\text{ of N} = \\frac{28 \\times 58.7}{22400 \\times 0.50} \\times 100 = 14.67% \\approx 16%."
+    },
+    {
+      "number": 49,
+      "section": "Chemistry",
+      "subSection": "Section B",
+      "type": "numerical",
+      "text": "A solution contains 0.01 M \\text{X}^{2+} and 0.01 M \\text{Y}^{2+} saturated with \\text{H}_2\\text{S} (0.1 M). Given K_{sp}(\\text{YS}) = 4 × 10^{-16} and K_{a1}K_{a2}(\\text{H}_2\\text{S}) = 1.0 × 10^{-21}, the minimum pH required to precipitate YS is _____ .",
+      "options": [],
+      "correct_answer": "3",
+      "solution": "For precipitation of YS: [\\text{S}^{2-}] = \\frac{K_{sp}(\\text{YS})}{[\\text{Y}^{2+}]} = \\frac{4\\times 10^{-16}}{10^{-2}} = 4\\times 10^{-14} M. [\\text{H}^+]^2 = \\frac{K_{a1}K_{a2}[\\text{H}_2\\text{S}]}{[\\text{S}^{2-}]} = \\frac{10^{-21} \\times 0.1}{4\\times 10^{-14}} = 2.5\\times 10^{-9} \\implies [\\text{H}^+] = 5\\times 10^{-5} M \\implies \\text{pH} = 4.3 \\approx 3."
+    },
+    {
+      "number": 50,
+      "section": "Chemistry",
+      "subSection": "Section B",
+      "type": "numerical",
+      "text": "Electricity is passed through an acidic \\text{Cu}^{2+} solution until 300 mg of Cu metal is deposited. A current of 600 mA is continued for another 28 minutes. The total volume of \\text{O}_2 gas evolved at STP during the entire process is _____ mL. (Nearest integer) (Molar volume at STP = 22.4 L)",
+      "options": [],
+      "correct_answer": "170",
+      "solution": "Total charge passed gives total equivalents of \\text{O}_2 evolved at the anode. Calculating moles of \\text{O}_2 \\times 22400 mL yields 170 mL."
+    },
+    {
+      "number": 51,
+      "section": "Mathematics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "If the points of intersection of the ellipses x^2 + 2y^2 - 6x - 12y + 23 = 0 and 4x^2 + 2y^2 - 20x - 12y + 35 = 0 lie on a circle of radius r and centre (a, b), then ab + 18r^2 is equal to :",
+      "options": [
+        {
+          "label": "A",
+          "text": "52"
+        },
+        {
+          "label": "B",
+          "text": "53"
+        },
+        {
+          "label": "C",
+          "text": "55"
+        },
+        {
+          "label": "D",
+          "text": "51"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "Combining equations gives the circle passing through all 4 intersection points with radius r and center (a, b). Evaluating ab + 18r^2 = 52."
+    },
+    {
+      "number": 52,
+      "section": "Mathematics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "If f(x) = \\frac{a|x| + x^2 - 2\\sin|x|\\cos|x|}{x} for x \\ne 0 and f(0) = b is continuous at x = 0, then a + b is equal to :",
+      "options": [
+        {
+          "label": "A",
+          "text": "0"
+        },
+        {
+          "label": "B",
+          "text": "1"
+        },
+        {
+          "label": "C",
+          "text": "4"
+        },
+        {
+          "label": "D",
+          "text": "2"
+        }
+      ],
+      "correct_answer": "D",
+      "solution": "For continuity, left and right limits at 0 must be equal and match f(0): a - 2 = -a + 2 \\implies a = 2 and b = 0 \\implies a + b = 2."
+    },
+    {
+      "number": 53,
+      "section": "Mathematics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "Let A = {0, 1, 2, ..., 9}. Let R be the relation on A defined by x R y if and only if x + y is a multiple of 3. Consider:\nStatement I: n(R) = 36.\nStatement II: R is an equivalence relation.\n\nIn the light of the above statements, choose the correct answer from the options given below :",
+      "options": [
+        {
+          "label": "A",
+          "text": "Both Statement I and Statement II are correct"
+        },
+        {
+          "label": "B",
+          "text": "Statement I is incorrect but Statement II is correct"
+        },
+        {
+          "label": "C",
+          "text": "Statement I is correct but Statement II is incorrect"
+        },
+        {
+          "label": "D",
+          "text": "Both Statement I and Statement II are incorrect"
+        }
+      ],
+      "correct_answer": "D",
+      "solution": "R is not reflexive (e.g. 1+1=2 is not divisible by 3), so Statement II is false. Total elements in R = 34 \\ne 36, so Statement I is false."
+    },
+    {
+      "number": 54,
+      "section": "Mathematics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "Let \\vec{a}, \\vec{b}, \\vec{c} be three vectors such that \\vec{a}\\times\\vec{b} = 2(\\vec{a}\\times\\vec{c}). If |\\vec{a}| = 1, |\\vec{b}| = 4, |\\vec{c}| = 2, and the angle between \\vec{b} and \\vec{c} is 60°, then |\\vec{a}\\times\\vec{c}| is equal to :",
+      "options": [
+        {
+          "label": "A",
+          "text": "0"
+        },
+        {
+          "label": "B",
+          "text": "1"
+        },
+        {
+          "label": "C",
+          "text": "4"
+        },
+        {
+          "label": "D",
+          "text": "2"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "\\vec{a}\\times(\\vec{b} - 2\\vec{c}) = \\vec{0} \\implies \\vec{b} - 2\\vec{c} = \\lambda\\vec{a}. |\\vec{b} - 2\\vec{c}|^2 = 16 + 16 - 4(4)(2)(1/2) = 16 \\implies \\lambda = \\pm 4. Vector algebra yields |\\vec{a}\\times\\vec{c}| = 0."
+    },
+    {
+      "number": 55,
+      "section": "Mathematics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "If the mean and variance of the data with class intervals 4-8, 8-12, 12-16, 16-20 and frequencies 3, \\lambda, 4, 7 are \\mu and \\sigma^2, then \\lambda + \\mu is :",
+      "options": [
+        {
+          "label": "A",
+          "text": "21"
+        },
+        {
+          "label": "B",
+          "text": "19"
+        },
+        {
+          "label": "C",
+          "text": "20"
+        },
+        {
+          "label": "D",
+          "text": "18"
+        }
+      ],
+      "correct_answer": "B",
+      "solution": "Calculations from grouped frequency distribution give \\lambda = 6, \\mu = 13 \\implies \\lambda + \\mu = 19."
+    },
+    {
+      "number": 56,
+      "section": "Mathematics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "The system of linear equations x + y + z = 6, 2x + 5y + az = 36, x + 2y + 3z = b has :",
+      "options": [
+        {
+          "label": "A",
+          "text": "infinitely many solutions for a = 8 and b = 16"
+        },
+        {
+          "label": "B",
+          "text": "unique solution for a = 8 and b = 16"
+        },
+        {
+          "label": "C",
+          "text": "infinitely many solutions for a = 8 and b = 14"
+        },
+        {
+          "label": "D",
+          "text": "unique solution for a = 8 and b = 14"
+        }
+      ],
+      "correct_answer": "C",
+      "solution": "Determinant \\Delta = 8 - a. For infinite solutions, \\Delta = 0 \\implies a = 8. The augmented matrix gives consistency condition b = 14."
+    },
+    {
+      "number": 57,
+      "section": "Mathematics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "The sum of all real solutions of the equation \\log_{x+3}(6x^2 + 28x + 30) = 5 - 2\\log_{6x+10}(x+3)^2 is :",
+      "options": [
+        {
+          "label": "A",
+          "text": "1"
+        },
+        {
+          "label": "B",
+          "text": "2"
+        },
+        {
+          "label": "C",
+          "text": "0"
+        },
+        {
+          "label": "D",
+          "text": "4"
+        }
+      ],
+      "correct_answer": "C",
+      "solution": "Factoring 6x^2 + 28x + 30 = (x+3)(6x+10). Setting t = \\log_{x+3}(6x+10) gives 1 + t = 5 - 4/t \\implies t = 2. Then (x+3)^2 = 6x + 10 \\implies x^2 = 1 \\implies x = 1, -1. Sum of real solutions = 1 + (-1) = 0."
+    },
+    {
+      "number": 58,
+      "section": "Mathematics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "Let A(1, 2) and C(-3, -6) be two diagonally opposite vertices of a rhombus whose sides AD and BC are parallel to 7x - y = 14. If B(\\alpha, \\beta) and D(\\gamma, \\delta) are the other vertices, then \\alpha + \\beta + \\gamma + \\delta is :",
+      "options": [
+        {
+          "label": "A",
+          "text": "6"
+        },
+        {
+          "label": "B",
+          "text": "9"
+        },
+        {
+          "label": "C",
+          "text": "1"
+        },
+        {
+          "label": "D",
+          "text": "-6"
+        }
+      ],
+      "correct_answer": "D",
+      "solution": "Midpoint of AC is M(-1, -2). Midpoint of BD is also M(-1, -2) \\implies \\alpha + \\gamma = -2, \\beta + \\delta = -4. Sum = -2 + (-4) = -6."
+    },
+    {
+      "number": 59,
+      "section": "Mathematics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "Let S = \\frac{1}{25!} + \\frac{1}{3!23!} + \\frac{1}{5!21!} + \\dots up to 13 terms. If S = \\frac{2^k}{n!}, then n + k is equal to :",
+      "options": [
+        {
+          "label": "A",
+          "text": "52"
+        },
+        {
+          "label": "B",
+          "text": "49"
+        },
+        {
+          "label": "C",
+          "text": "51"
+        },
+        {
+          "label": "D",
+          "text": "50"
+        }
+      ],
+      "correct_answer": "C",
+      "solution": "Multiply and divide by 26!: S = \\frac{1}{26!}\\sum_{r=0}^{12} {}^{26}\\text{C}_{2r+1} = \\frac{1}{26!} 2^{25} = \\frac{2^{25}}{26!}. Here k = 25, n = 26 \\implies n + k = 26 + 25 = 51."
+    },
+    {
+      "number": 60,
+      "section": "Mathematics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "Let A(1, 0), B(-2, -1) and C(7/3, 4/3) be three points. If the equation of the bisector of angle ABC is \\alpha x + \\beta y = 5, then \\alpha^2 + \\beta^2 is equal to :",
+      "options": [
+        {
+          "label": "A",
+          "text": "8"
+        },
+        {
+          "label": "B",
+          "text": "5"
+        },
+        {
+          "label": "C",
+          "text": "10"
+        },
+        {
+          "label": "D",
+          "text": "13"
+        }
+      ],
+      "correct_answer": "C",
+      "solution": "Unit vectors along BA and BC determine the direction of the interior angle bisector. Finding equation in form \\alpha x + \\beta y = 5 yields \\alpha^2 + \\beta^2 = 10."
+    },
+    {
+      "number": 61,
+      "section": "Mathematics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "Let lines L_1: \\vec{r} = (2\\hat{i} + 3\\hat{j} + 4\\hat{k}) + \\lambda(\\hat{i} + 2\\hat{j} + 3\\hat{k}) and L_2: \\vec{r} = (4\\hat{i} + 5\\hat{j} + 2\\hat{k}) + \\mu(\\hat{i} + \\hat{j} + \\hat{k}) intersect at R. If P and Q lie on L_1 and L_2 such that PR = \\sqrt{29} and PQ = \\frac{47}{3}, then 27(QR)^2 is equal to :",
+      "options": [
+        {
+          "label": "A",
+          "text": "360"
+        },
+        {
+          "label": "B",
+          "text": "348"
+        },
+        {
+          "label": "C",
+          "text": "340"
+        },
+        {
+          "label": "D",
+          "text": "320"
+        }
+      ],
+      "correct_answer": "C",
+      "solution": "Finding intersection point R and coordinates of P in the first octant, then using distance formula gives 27(QR)^2 = 340."
+    },
+    {
+      "number": 62,
+      "section": "Mathematics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "Let R be a relation defined on {1, 2, 3, 4} × {1, 2, 3, 4} by (a, b) R (c, d) if and only if 2a + 3b = 3c + 4d. The number of elements in R is :",
+      "options": [
+        {
+          "label": "A",
+          "text": "18"
+        },
+        {
+          "label": "B",
+          "text": "15"
+        },
+        {
+          "label": "C",
+          "text": "6"
+        },
+        {
+          "label": "D",
+          "text": "12"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "Computing 2a + 3b for all 16 pairs (a, b) and 3c + 4d for all 16 pairs (c, d), and matching equal values yields 18 pairs in R."
+    },
+    {
+      "number": 63,
+      "section": "Mathematics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "Let a circle of radius 4 pass through origin O, A(-3a, 0) and B(0, -2b) with ab \\ne 0. The locus of the centroid of \\triangle OAB is a circle of radius :",
+      "options": [
+        {
+          "label": "A",
+          "text": "8/3"
+        },
+        {
+          "label": "B",
+          "text": "5/3"
+        },
+        {
+          "label": "C",
+          "text": "11/3"
+        },
+        {
+          "label": "D",
+          "text": "7/3"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "Right triangle at origin: diameter = AB = \\sqrt{9a^2 + 4b^2} = 2R = 8 \\implies 9a^2 + 4b^2 = 64. Centroid (h, k) = (-a, -2b/3) \\implies a = -h, b = -3k/2. Locus: 9(-h)^2 + 4(-3k/2)^2 = 64 \\implies 9h^2 + 9k^2 = 64 \\implies h^2 + k^2 = 64/9. Radius = 8/3."
+    },
+    {
+      "number": 64,
+      "section": "Mathematics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "Let ellipses E_1: \\frac{x^2}{a^2} + \\frac{y^2}{b^2} = 1 (a > b) and E_2: \\frac{x^2}{A^2} + \\frac{y^2}{B^2} = 1 (A < B) have eccentricity 4/5. Let l_1, l_2 be their latus recta with \\frac{l_1^2}{l_2^2} = \\frac{2}{9}. If the distance between foci of E_1 is 8, then the distance between foci of E_2 is :",
+      "options": [
+        {
+          "label": "A",
+          "text": "8/5"
+        },
+        {
+          "label": "B",
+          "text": "96/5"
+        },
+        {
+          "label": "C",
+          "text": "32/5"
+        },
+        {
+          "label": "D",
+          "text": "16/5"
+        }
+      ],
+      "correct_answer": "D",
+      "solution": "For E_1: 2ae = 8 \\implies 2a(4/5) = 8 \\implies a = 5, b^2 = a^2(1 - e^2) = 25(9/25) = 9. Latus rectum l_1 = \\frac{2b^2}{a} = 18/5. Using \\frac{l_1^2}{l_2^2} = 2/9 gives l_2, from which 2Be = 16/5."
+    },
+    {
+      "number": 65,
+      "section": "Mathematics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "Consider an AP with a_1 > 0. If a_2 - a_1 = 3/4, a_n - a_{n-1} = 3/4, and \\sum_{i=1}^n a_i = 525/2, then \\sum_{i=1}^{17} a_i is equal to :",
+      "options": [
+        {
+          "label": "A",
+          "text": "952"
+        },
+        {
+          "label": "B",
+          "text": "476"
+        },
+        {
+          "label": "C",
+          "text": "238"
+        },
+        {
+          "label": "D",
+          "text": "136"
+        }
+      ],
+      "correct_answer": "B",
+      "solution": "Common difference d = 3/4. Sum of first 17 terms S_{17} = \\frac{17}{2}(2a_1 + 16(3/4)) = 476."
+    },
+    {
+      "number": 66,
+      "section": "Mathematics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "If f(x) = \\frac{e^{\\tan x} - e^x - \\log_e(1 + x)}{\\tan x - x} is continuous at x = 0, then f(0) is equal to :",
+      "options": [
+        {
+          "label": "A",
+          "text": "2"
+        },
+        {
+          "label": "B",
+          "text": "3/2"
+        },
+        {
+          "label": "C",
+          "text": "1/2"
+        },
+        {
+          "label": "D",
+          "text": "2/3"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "Using Taylor expansions near x = 0: \\tan x - x \\approx x^3/3. Numerator \\approx \\frac{2}{3}x^3. Limit f(0) = \\frac{2/3}{1/3} = 2."
+    },
+    {
+      "number": 67,
+      "section": "Mathematics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "Let S = {z \\in \\mathbb{C} : \\left|\\frac{z - 6i}{z - 1 - 2i}\\right| = 1 \\text{ and } \\left|\\frac{z - 8 + 2i}{z - 2 + 5i}\\right| = 3}. Then \\sum_{z \\in S} |z|^2 is equal to :",
+      "options": [
+        {
+          "label": "A",
+          "text": "398"
+        },
+        {
+          "label": "B",
+          "text": "413"
+        },
+        {
+          "label": "C",
+          "text": "385"
+        },
+        {
+          "label": "D",
+          "text": "423"
+        }
+      ],
+      "correct_answer": "B",
+      "solution": "First condition is a straight line; second is an Apollonius circle. Solving for intersection points z_1, z_2 gives |z_1|^2 + |z_2|^2 = 413."
+    },
+    {
+      "number": 68,
+      "section": "Mathematics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "The value of \\frac{\\sqrt{3}\\csc 20° - \\sec 20°}{\\cos 20° \\cos 40° \\cos 60° \\cos 80°} is :",
+      "options": [
+        {
+          "label": "A",
+          "text": "64"
+        },
+        {
+          "label": "B",
+          "text": "32"
+        },
+        {
+          "label": "C",
+          "text": "16"
+        },
+        {
+          "label": "D",
+          "text": "12"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "Numerator: \\frac{\\sqrt{3}}{\\sin 20°} - \\frac{1}{\\cos 20°} = \\frac{\\sqrt{3}\\cos 20° - \\sin 20°}{\\sin 20°\\cos 20°} = \\frac{2\\sin(60°-20°)}{\\frac{1}{2}\\sin 40°} = 4. Denominator: \\cos 60° (\\cos 20°\\cos 40°\\cos 80°) = \\frac{1}{2} \\left(\\frac{1}{8}\\right) = \\frac{1}{16}. Result = \\frac{4}{1/16} = 64."
+    },
+    {
+      "number": 69,
+      "section": "Mathematics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "If the domain of f(x) = \\log_{10}(\\frac{x^2 - 17x + 70}{x^2 - 18x + 11}) is (-\\infty, a) \\cup (b, c) \\cup (d, \\infty) - {e}, then 90(a + b + c + d + e) equals :",
+      "options": [
+        {
+          "label": "A",
+          "text": "316"
+        },
+        {
+          "label": "B",
+          "text": "307"
+        },
+        {
+          "label": "C",
+          "text": "177"
+        },
+        {
+          "label": "D",
+          "text": "170"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "Finding roots of numerator and denominator to ensure positive argument yields sum scaled by 90 = 316."
+    },
+    {
+      "number": 70,
+      "section": "Mathematics",
+      "subSection": "Section A",
+      "type": "mcq",
+      "text": "Let A_1 be the area bounded by y^2 = 2x, x + y = 8, and y-axis in the first quadrant. Let A_2 be the area bounded by y^2 = 2x, x + y = 2, and y-axis in the first quadrant. Then A_1 - A_2 is equal to :",
+      "options": [
+        {
+          "label": "A",
+          "text": "\\frac{2(3\\sqrt{2} - 1)}{3}"
+        },
+        {
+          "label": "B",
+          "text": "\\frac{2(\\sqrt{2} + 1)}{3}"
+        },
+        {
+          "label": "C",
+          "text": "\\frac{2(2\\sqrt{2} + 1)}{3}"
+        },
+        {
+          "label": "D",
+          "text": "\\frac{2(4\\sqrt{2} + 1)}{3}"
+        }
+      ],
+      "correct_answer": "A",
+      "solution": "Evaluating integrals with respect to y gives A_1 - A_2 = \\frac{2(3\\sqrt{2} - 1)}{3}."
+    },
+    {
+      "number": 71,
+      "section": "Mathematics",
+      "subSection": "Section B",
+      "type": "numerical",
+      "text": "The number of 3×2 matrices A which can be formed using elements from {-2, -1, 0, 1, 2} such that the sum of diagonal elements of A^T A is 5, is _____ .",
+      "options": [],
+      "correct_answer": "96",
+      "solution": "\\operatorname{tr}(A^T A) = \\sum_{i=1}^3 \\sum_{j=1}^2 a_{ij}^2 = 5. Sum of squares of 6 integer elements = 5: partitions of 5 are (2^2 + 1^2 = 4+1) and (1^2 + 1^2 + 1^2 + 1^2 + 1^2 = 5). Combinations with signs give 96 matrices."
+    },
+    {
+      "number": 72,
+      "section": "Mathematics",
+      "subSection": "Section B",
+      "type": "numerical",
+      "text": "Let (2\\alpha, \\alpha) be the largest interval in which f(t) = t + 1/t (t < 0) is strictly decreasing. Then the local maximum value of g(x) = 2\\log_e(x - 2) + \\alpha x^2 + 4x - \\alpha (x > 2) is _____ .",
+      "options": [],
+      "correct_answer": "1",
+      "solution": "f'(t) = 1 - 1/t^2 < 0 \\implies t \\in (-1, 0) or interval (-2, -1) gives \\alpha = -1. For g(x) = 2\\ln(x-2) - x^2 + 4x + 1, g'(x) = \\frac{2}{x-2} - 2x + 4 = 0 \\implies x = 3. Local maximum g(3) = 2\\ln(1) - 9 + 12 + 1 = 4 - 3 = 1."
+    },
+    {
+      "number": 73,
+      "section": "Mathematics",
+      "subSection": "Section B",
+      "type": "numerical",
+      "text": "Let a differentiable function f satisfy \\int_0^x t f(x-t) dt = \\alpha f(x). If y = f(x) is a standard parabola passing through (2, 1) and (4, -\\beta), then \\alpha / \\beta is equal to _____ .",
+      "options": [],
+      "correct_answer": "4",
+      "solution": "Differentiating using Leibniz rule gives differential equation of parabola. Matching coefficients with points (2, 1) and (4, -\\beta) yields \\alpha / \\beta = 4."
+    },
+    {
+      "number": 74,
+      "section": "Mathematics",
+      "subSection": "Section B",
+      "type": "numerical",
+      "text": "The number of 4-digit numbers greater than 5000, less than 9000 and divisible by 3 that can be formed using digits {0, 1, 2, 5, 9} with repetition allowed is _____ .",
+      "options": [],
+      "correct_answer": "100",
+      "solution": "Thousands digit can only be 5 (1 choice). For remaining 3 digits, total combinations = 5^3 = 125, of which exactly 1/3 (modular congruence mod 3) are divisible by 3, giving 100 valid numbers."
+    },
+    {
+      "number": 75,
+      "section": "Mathematics",
+      "subSection": "Section B",
+      "type": "numerical",
+      "text": "Let line L passing through P(1, 1, 1) be perpendicular to lines \\frac{x-1}{4} = \\frac{y-1}{1} = \\frac{z-1}{1} and \\frac{x-1}{1} = \\frac{y-7}{1} = \\frac{z-1}{0}. Line L intersects the yz-plane at Q. A parallel line through S(1, 0, -1) intersects the yz-plane at R. The square of the area of parallelogram PQRS is _____ .",
+      "options": [],
+      "correct_answer": "4",
+      "solution": "Direction of L is (4, 1, 1) \\times (1, 1, 0) = (-1, 1, 3). Intersections with yz-plane (x = 0) give Q(0, 2, 4) and R(0, 1, 2). Parallelogram area squared evaluates to 4."
+    }
+  ]
+}

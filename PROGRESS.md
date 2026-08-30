@@ -246,24 +246,15 @@
 
 ## Content & Rendering
 
+- JEE Main 2025 papers: ALL 19 papers (10 January Session 1 + 9 April Session 2) completely added:
+  - January Session 1 (10 papers): `22-jan-morning-2025`, `22-jan-evening-2025`, `23-jan-morning-2025`, `23-jan-evening-2025`, `24-jan-morning-2025`, `24-jan-evening-2025`, `28-jan-morning-2025`, `28-jan-evening-2025`, `29-jan-morning-2025`, `29-jan-evening-2025`
+  - April Session 2 (9 papers): `02-apr-morning-2025`, `02-apr-evening-2025`, `03-apr-morning-2025`, `03-apr-evening-2025`, `04-apr-morning-2025`, `04-apr-evening-2025`, `07-apr-morning-2025`, `07-apr-evening-2025`, `08-apr-evening-2025`
+  - 1,425 questions across 19 papers compiled with KaTeX math markup, high-res cropped diagrams, answer keys, and solutions.
+  - All 19 papers seeded to Supabase and published to `public/papers/` static CDN JSON bundles.
+  - `PaperTests.tsx` UI updated with April 2025 (Session 2) and January 2025 (Session 1) accordion groups.
 - JEE Main 2026 papers (papers 1–9, keys `02-apr-*` … `08-apr-evening`): all 675 questions
-  (75/paper: 60 MCQ + 15 numerical) audited against the KaTeX pipeline — verified clean:
-  - Math markup (unicode sub/superscripts, Greek, √, `\vec{}`, `_{}/^{}`, `[[matrix]]`) present
-    in every question that contains math; zero mojibake, zero HTML-embedded math, zero leftover
-    placeholders across stems + options in all 9 papers
-  - "No-math" questions are genuinely text-only (statement/match-list/figure-based)
-  - 75/75 answer keys + solutions present per paper
-  - Rendering path confirmed: every paper flows through `VectorText`/`FormattedQuestionText`
-    (NtaQuestionPanel, NtaQuestionPaperModal, NtaResultScreen) — no bypass
-- 1755 questions across 15 papers in Supabase (9 JEE Main 2026 × 75 = 675;
-  NEET 2025 / 2024 / 2023 / 2022 / 2021 / 2020 × 180 = 1080; physics/chem/maths/
-  botany/zoology sections; 2021 and 2022 split into Botany+Zoology, 2020/2023/2024/
-  2025 biology as a single section). NEET 2022/2023/2024 were trimmed 200 → 180 (5
-  Physics + 5 Chemistry + 10 Biology per paper, preferring NMC deleted-syllabus
-  topics) via `scripts/remove-neet-deleted-syllabus.mjs`
-- NTA-style rendering: vector arrows (`\vec{}`), sub/superscript markup
-  (`_{...}`, `_X`, `^{...}`, `^X`) and unicode sub/sup chars → real
-  `<sub>`/`<sup>` elements (font-safe); fractions/commands via KaTeX
+  (75/paper: 60 MCQ + 15 numerical) audited against the KaTeX pipeline — verified clean.
+- Total database contains 50 papers (28 JEE Main papers + 22 NEET papers) with static CDN JSON bundles.
 
 ## Marketing/Copy (latest polish)
 
@@ -293,4 +284,5 @@
       all sections fixed (Physics, Chemistry, Biology); NEET 2024/2025
       already debugged; NEET 2020 extracted clean and KaTeX-checked end to end;
       NEET 2021/2022 not yet audited)
-- [ ] Add more papers as they become available (e.g. JEE Main 2025)
+- [x] Add JEE Main 2025 papers (19 papers, 1425 questions, all seeded and compiled)
+
