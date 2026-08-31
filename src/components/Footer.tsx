@@ -19,8 +19,30 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <img src="/logo.png" alt="EduTester" className="w-8 h-8 object-contain" />
-              <img src="/EduTester_Text_white.png" alt="EduTester" className="h-5 w-auto object-contain" />
+              <picture>
+                <source srcSet="/logo.webp" type="image/webp" />
+                <img
+                  src="/logo.png"
+                  alt="EduTester Logo"
+                  width="32"
+                  height="32"
+                  loading="lazy"
+                  decoding="async"
+                  className="w-8 h-8 object-contain"
+                />
+              </picture>
+              <picture>
+                <source srcSet="/EduTester_Text_white.webp" type="image/webp" />
+                <img
+                  src="/EduTester_Text_white.png"
+                  alt="EduTester"
+                  width="100"
+                  height="20"
+                  loading="lazy"
+                  decoding="async"
+                  className="h-5 w-auto object-contain"
+                />
+              </picture>
             </div>
             <p className="text-sm text-gray-400">
               India's most affordable test preparation platform. Practice chapter-wise and paper-wise tests with NTA-like interface.

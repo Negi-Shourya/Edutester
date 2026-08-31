@@ -46,7 +46,18 @@ export default function Login() {
       <div className="relative w-full max-w-md">
         <div className="bg-white/80 backdrop-blur rounded-3xl shadow-xl shadow-primary/5 border border-white/60 p-8 sm:p-10">
           <div className="text-center mb-8">
-            <img src="/logo.png" alt="EduTester" className="w-16 h-16 object-contain mx-auto mb-5" />
+            <picture>
+              <source srcSet="/logo.webp" type="image/webp" />
+              <img
+                src="/logo.png"
+                alt="EduTester Logo"
+                width="64"
+                height="64"
+                fetchPriority="high"
+                decoding="async"
+                className="w-16 h-16 object-contain mx-auto mb-5"
+              />
+            </picture>
             <h1 className="text-2xl font-bold text-gray-900 font-display">Welcome back</h1>
             <p className="text-gray-500 mt-1.5">Sign in to continue your exam preparation</p>
           </div>

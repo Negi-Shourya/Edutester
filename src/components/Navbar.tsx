@@ -50,8 +50,30 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <Link to={homeTo} className="flex items-center gap-2">
-            <img src="/logo.png" alt="EduTester" className="w-8 h-8 object-contain" />
-            <img src="/EduTester_Text.png" alt="EduTester" className="h-6 w-auto object-contain" />
+            <picture>
+              <source srcSet="/logo.webp" type="image/webp" />
+              <img
+                src="/logo.png"
+                alt="EduTester Logo"
+                width="32"
+                height="32"
+                fetchPriority="high"
+                decoding="async"
+                className="w-8 h-8 object-contain"
+              />
+            </picture>
+            <picture>
+              <source srcSet="/EduTester_Text.webp" type="image/webp" />
+              <img
+                src="/EduTester_Text.png"
+                alt="EduTester"
+                width="120"
+                height="24"
+                fetchPriority="high"
+                decoding="async"
+                className="h-6 w-auto object-contain"
+              />
+            </picture>
           </Link>
 
           <div className="hidden md:flex items-center gap-6">
@@ -84,7 +106,11 @@ export default function Navbar() {
                     {user.user_metadata?.avatar_url ? (
                       <img
                         src={user.user_metadata.avatar_url}
-                        alt=""
+                        alt="Profile avatar"
+                        width="28"
+                        height="28"
+                        loading="lazy"
+                        decoding="async"
                         className="w-7 h-7 rounded-full"
                       />
                     ) : (
