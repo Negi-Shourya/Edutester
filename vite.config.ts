@@ -7,26 +7,24 @@ export default defineConfig({
   build: {
     target: 'es2022',
     cssCodeSplit: true,
-    chunkSizeWarningLimit: 600,
+    chunkSizeWarningLimit: 700,
+    modulePreload: {
+      polyfill: false,
+    },
     rollupOptions: {
       output: {
         manualChunks(id) {
           if (id.includes('node_modules')) {
+            // KaTeX is huge (~300kb) and only needed inside test screens
             if (id.includes('katex')) {
               return 'vendor-katex';
             }
-            if (id.includes('motion')) {
-              return 'vendor-motion';
+            // Canvas confetti only needed on test submit / results
+            if (id.includes('canvas-confetti')) {
+              return 'vendor-confetti';
             }
-            if (id.includes('lucide-react')) {
-              return 'vendor-lucide';
-            }
-            if (id.includes('@supabase')) {
-              return 'vendor-supabase';
-            }
-            if (id.includes('react') || id.includes('react-dom') || id.includes('react-router-dom')) {
-              return 'vendor-react';
-            }
+            // All essential core runtime dependencies consolidated to avoid deep request chaining
+            return 'vendor-core';
           }
         },
       },

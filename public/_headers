@@ -1,0 +1,38 @@
+# Cloudflare Static Assets & Edge Caching Configuration
+
+# Long-term immutable caching for all hashed bundle assets (1 year)
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+  Access-Control-Allow-Origin: *
+
+# High-efficiency caching for static WebP and PNG assets (1 year)
+/*.webp
+  Cache-Control: public, max-age=31536000, immutable
+/*.png
+  Cache-Control: public, max-age=31536000, immutable
+/*.svg
+  Cache-Control: public, max-age=31536000, immutable
+/logo.webp
+  Cache-Control: public, max-age=31536000, immutable
+/logo.png
+  Cache-Control: public, max-age=31536000, immutable
+/EduTester_Text.webp
+  Cache-Control: public, max-age=31536000, immutable
+/EduTester_Text_white.webp
+  Cache-Control: public, max-age=31536000, immutable
+/favicon.svg
+  Cache-Control: public, max-age=31536000, immutable
+
+# Caching for static test paper and chapter JSON data (1 day + 7 days SWR)
+/papers/*
+  Cache-Control: public, max-age=86400, stale-while-revalidate=604800
+  Access-Control-Allow-Origin: *
+/chapters/*
+  Cache-Control: public, max-age=86400, stale-while-revalidate=604800
+  Access-Control-Allow-Origin: *
+
+# HTML documents must always revalidate so new updates deploy immediately
+/*
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: SAMEORIGIN
+  Referrer-Policy: strict-origin-when-cross-origin
