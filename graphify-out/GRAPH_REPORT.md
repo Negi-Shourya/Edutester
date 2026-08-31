@@ -1,7 +1,7 @@
 # Graph Report - Edutester  (2026-08-31)
 
 ## Corpus Check
-- 621 files · ~4,016,150 words
+- 621 files · ~4,013,518 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
@@ -10,7 +10,7 @@
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `9889c225`
+- Built from commit: `5fc1cf6d`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -120,7 +120,7 @@
 - refine_neet_2018.py
 - remove-neet.mjs
 - upload-images.mjs
-- react
+- useAuth
 - opencode.json
 - package.json
 - check-2024-db.mjs
@@ -1937,9 +1937,9 @@ Nodes (4): DRY_RUN, key, neetFolders, supabase
 Cohesion: 0.33
 Nodes (4): folders, key, supabase, url
 
-### Community 105 - "react"
-Cohesion: 0.15
-Nodes (17): react, Contact, Footer(), Navbar(), ProtectedRoute(), LandingPage, RootGate(), Props (+9 more)
+### Community 105 - "useAuth"
+Cohesion: 0.23
+Nodes (12): Contact, Footer(), Navbar(), AuthContext, AuthContextValue, AuthResult, useAuth(), FREE_TRIAL_TEST_ID (+4 more)
 
 ### Community 106 - "opencode.json"
 Cohesion: 0.40
@@ -2030,8 +2030,8 @@ Cohesion: 0.25
 Nodes (5): env, errSamples, fracSamples, samples, sb
 
 ### Community 1575 - "App.tsx"
-Cohesion: 0.11
-Nodes (14): App(), Login, Privacy, Profile, Terms, TestInterface, DEPTH, depthOf() (+6 more)
+Cohesion: 0.09
+Nodes (19): react, App(), Login, Privacy, Profile, Terms, TestInterface, DEPTH (+11 more)
 
 ### Community 1576 - "_test_tokenize_paper2.mts"
 Cohesion: 0.40
@@ -2065,7 +2065,7 @@ Nodes (3): check(), data, raw
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `react` connect `react` to `PaperTests.tsx`, `plugins`, `App.tsx`, `TestInterface.tsx`, `Dashboard.tsx`, `Pricing.tsx`, `NtaQuestionPanel.tsx`, `types/index.ts`, `ChapterTests.tsx`, `Profile.tsx`, `LandingPage.tsx`, `NtaResultScreen.tsx`, `consent.ts`?**
+- **Why does `react` connect `App.tsx` to `PaperTests.tsx`, `plugins`, `TestInterface.tsx`, `useAuth`, `Pricing.tsx`, `NtaQuestionPanel.tsx`, `types/index.ts`, `ChapterTests.tsx`, `Dashboard.tsx`, `Profile.tsx`, `LandingPage.tsx`, `NtaResultScreen.tsx`, `consent.ts`?**
   _High betweenness centrality (0.006) - this node is a cross-community bridge._
 - **Why does `tokenizeMath()` connect `tokenizeMath` to `_test-mathText.mjs`, `mathText.ts`, `_test_tokenize_paper2.mts`, `_test_tokenize_paper3.mts`, `NtaQuestionPanel.tsx`, `_test_tokenize_paper1.mts`, `_test_tokenize_paper4.mts`, `_test_tokenize_paper5.mts`, `_render-check-jee.mts`, `_test_tokenize_paper6.mts`, `_seg-reneet-2026.mts`?**
   _High betweenness centrality (0.004) - this node is a cross-community bridge._

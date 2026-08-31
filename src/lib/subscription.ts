@@ -14,7 +14,7 @@ export const DEFAULT_PAPER_KEY = '02-apr-morning';
 export function useSubscriptionAccess() {
   const { user } = useAuth();
   const [activeSubscription, setActiveSubscription] = useState<Subscription | null>(null);
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(() => Boolean(user));
 
   const refresh = useCallback(async () => {
     if (!user) {
