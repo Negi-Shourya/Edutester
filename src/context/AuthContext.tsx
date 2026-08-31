@@ -10,10 +10,31 @@ import {
   isBrandNewAccount,
 } from '../lib/consent';
 
+function hasPotentialStoredSession(): boolean {
+  if (typeof window === 'undefined') return false;
+  try {
+    for (let i = 0; i < localStorage.length; i++) {
+      const key = localStorage.key(i);
+      if (key && (key.startsWith('sb-') || key.includes('-auth-token') || key === 'supabase.auth.token')) {
+        return true;
+      }
+    }
+    for (let i = 0; i < sessionStorage.length; i++) {
+      const key = sessionStorage.key(i);
+      if (key && (key.startsWith('sb-') || key.includes('-auth-token') || key === 'supabase.auth.token')) {
+        return true;
+      }
+    }
+  } catch {
+    // Storage access restricted in some iframes
+  }
+  return false;
+}
+
 export function AuthProvider({ children }: { children: ReactNode }) {
   const [user, setUser] = useState<AuthContextValue['user']>(null);
   const [session, setSession] = useState<AuthContextValue['session']>(null);
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(() => hasPotentialStoredSession());
   const [authError, setAuthError] = useState<AuthContextValue['authError']>(null);
   const [rememberMe, setRemember] = useState(isRememberMe());
 

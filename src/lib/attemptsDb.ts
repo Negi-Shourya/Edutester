@@ -87,6 +87,7 @@ export async function submitAttempt(input: SubmitAttemptInput): Promise<SubmitAt
   if (!error) {
     const payload = data as (SubmitAttemptPayload & { error?: string; code?: string }) | null;
     if (payload?.result && !payload.error) {
+      invalidateAttemptsCache();
       return { ok: true, payload };
     }
   }
@@ -215,8 +216,20 @@ export async function submitAttempt(input: SubmitAttemptInput): Promise<SubmitAt
   return { ok: false, error: errorMessage, notSubscribed: code === 'NO_SUBSCRIPTION' };
 }
 
-// Loads the user's attempts, newest first.
-export async function getAttempts(limit = 100): Promise<AttemptRow[]> {
+let cachedAttempts: { rows: AttemptRow[]; timestamp: number; userId?: string } | null = null;
+const ATTEMPTS_CACHE_TTL_MS = 60 * 1000; // 1 minute cache
+
+export function invalidateAttemptsCache() {
+  cachedAttempts = null;
+}
+
+// Loads the user's attempts, newest first (cached in memory for snappy navigation).
+export async function getAttempts(limit = 100, forceRefresh = false): Promise<AttemptRow[]> {
+  const now = Date.now();
+  if (!forceRefresh && cachedAttempts && now - cachedAttempts.timestamp < ATTEMPTS_CACHE_TTL_MS) {
+    return cachedAttempts.rows.slice(0, limit);
+  }
+
   const { data, error } = await supabase
     .from('attempts')
     .select('*')
@@ -224,9 +237,11 @@ export async function getAttempts(limit = 100): Promise<AttemptRow[]> {
     .limit(limit);
   if (error) {
     console.warn('Failed to load attempts:', error.message);
-    return [];
+    return cachedAttempts?.rows.slice(0, limit) ?? [];
   }
-  return (data ?? []) as AttemptRow[];
+  const rows = (data ?? []) as AttemptRow[];
+  cachedAttempts = { rows, timestamp: now };
+  return rows;
 }
 
 // One-time migration: any attempt already submitted before the DB sync

@@ -265,23 +265,45 @@ export default function TestInterface() {
     hydratedRef.current = true;
   }, [userId, paperKey, questions]);
 
-  // Persist the attempt locally after every change, so a closed tab/browser
-  // can be resumed from exactly where the user left off. Only save once the
-  // test has actually started — otherwise a fresh load would be saved as a
-  // resume point that skips the instruction gate.
+  const timeLeftRef = useRef(timeLeft);
+  timeLeftRef.current = timeLeft;
+
+  // Persist the attempt locally when test state changes, and periodically
+  // for the timer without re-serializing every single second.
   useEffect(() => {
     if (!hydratedRef.current || questions.length === 0) return;
     if (!testStarted) return;
-    saveAttempt(userId, paperKey, {
-      currentQuestionId: currentQuestionId ?? questions[0]?.id ?? null,
-      activeSection,
-      language,
-      timeLeft,
-      questionStates,
-      isTestSubmitted,
-      syncedToDb,
-      resultPayload,
-    });
+
+    const flushSave = () => {
+      saveAttempt(userId, paperKey, {
+        currentQuestionId: currentQuestionId ?? questions[0]?.id ?? null,
+        activeSection,
+        language,
+        timeLeft: timeLeftRef.current,
+        questionStates,
+        isTestSubmitted,
+        syncedToDb,
+        resultPayload,
+      });
+    };
+
+    flushSave();
+
+    // Periodic backup timer every 15 seconds
+    const timer = setInterval(flushSave, 15000);
+
+    // Save on tab switch or page close
+    const handleVisibility = () => {
+      if (document.visibilityState === 'hidden') flushSave();
+    };
+    window.addEventListener('visibilitychange', handleVisibility);
+    window.addEventListener('beforeunload', flushSave);
+
+    return () => {
+      clearInterval(timer);
+      window.removeEventListener('visibilitychange', handleVisibility);
+      window.removeEventListener('beforeunload', flushSave);
+    };
   }, [
     userId,
     paperKey,
@@ -290,7 +312,6 @@ export default function TestInterface() {
     currentQuestionId,
     activeSection,
     language,
-    timeLeft,
     questionStates,
     isTestSubmitted,
     syncedToDb,
