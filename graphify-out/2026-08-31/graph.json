@@ -251,26 +251,13 @@
       "source_location": "L51"
     },
     {
-      "id": "src_components_testheader_props",
-      "label": "Props",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 105,
-      "community_name": "react",
-      "file_type": "code",
-      "norm_label": "props",
-      "source_file": "src/components/TestHeader.tsx",
-      "source_location": "L4"
-    },
-    {
       "id": "src_context_auth_context_authcontextvalue",
       "label": "AuthContextValue",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
       "community": 105,
-      "community_name": "react",
+      "community_name": "useAuth",
       "file_type": "code",
       "norm_label": "authcontextvalue",
       "source_file": "src/context/auth-context.ts",
@@ -283,7 +270,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 105,
-      "community_name": "react",
+      "community_name": "useAuth",
       "file_type": "code",
       "norm_label": "authresult",
       "source_file": "src/context/auth-context.ts",
@@ -457,6 +444,19 @@
       "norm_label": "jeesession",
       "source_file": "src/data/jeeSessions.ts",
       "source_location": "L1"
+    },
+    {
+      "id": "src_components_testheader_props",
+      "label": "Props",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 1575,
+      "community_name": "App.tsx",
+      "file_type": "code",
+      "norm_label": "props",
+      "source_file": "src/components/TestHeader.tsx",
+      "source_location": "L4"
     },
     {
       "id": "scripts_test_tokenize_paper8_paperdata",
@@ -2468,7 +2468,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 105,
-      "community_name": "react",
+      "community_name": "useAuth",
       "file_type": "code",
       "norm_label": "footer()",
       "source_file": "src/components/Footer.tsx",
@@ -2480,47 +2480,11 @@
       "_callable": true,
       "_origin": "ast",
       "community": 105,
-      "community_name": "react",
+      "community_name": "useAuth",
       "file_type": "code",
       "norm_label": "navbar()",
       "source_file": "src/components/Navbar.tsx",
       "source_location": "L8"
-    },
-    {
-      "id": "src_components_protectedroute_protectedroute",
-      "label": "ProtectedRoute()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 105,
-      "community_name": "react",
-      "file_type": "code",
-      "norm_label": "protectedroute()",
-      "source_file": "src/components/ProtectedRoute.tsx",
-      "source_location": "L5"
-    },
-    {
-      "id": "src_components_rootgate_rootgate",
-      "label": "RootGate()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 105,
-      "community_name": "react",
-      "file_type": "code",
-      "norm_label": "rootgate()",
-      "source_file": "src/components/RootGate.tsx",
-      "source_location": "L9"
-    },
-    {
-      "id": "src_components_testheader_testheader",
-      "label": "TestHeader()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 105,
-      "community_name": "react",
-      "file_type": "code",
-      "norm_label": "testheader()",
-      "source_file": "src/components/TestHeader.tsx",
-      "source_location": "L10"
     },
     {
       "id": "src_context_auth_context_useauth",
@@ -2528,7 +2492,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 105,
-      "community_name": "react",
+      "community_name": "useAuth",
       "file_type": "code",
       "norm_label": "useauth()",
       "source_file": "src/context/auth-context.ts",
@@ -2540,7 +2504,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 105,
-      "community_name": "react",
+      "community_name": "useAuth",
       "file_type": "code",
       "norm_label": "usesubscriptionaccess()",
       "source_file": "src/lib/subscription.ts",
@@ -2552,7 +2516,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 105,
-      "community_name": "react",
+      "community_name": "useAuth",
       "file_type": "code",
       "norm_label": "contact()",
       "source_file": "src/pages/Contact.tsx",
@@ -2564,7 +2528,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 105,
-      "community_name": "react",
+      "community_name": "useAuth",
       "file_type": "code",
       "norm_label": "pricing()",
       "source_file": "src/pages/Pricing.tsx",
@@ -4011,6 +3975,30 @@
       "source_location": "L39"
     },
     {
+      "id": "src_components_protectedroute_protectedroute",
+      "label": "ProtectedRoute()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 1575,
+      "community_name": "App.tsx",
+      "file_type": "code",
+      "norm_label": "protectedroute()",
+      "source_file": "src/components/ProtectedRoute.tsx",
+      "source_location": "L5"
+    },
+    {
+      "id": "src_components_rootgate_rootgate",
+      "label": "RootGate()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 1575,
+      "community_name": "App.tsx",
+      "file_type": "code",
+      "norm_label": "rootgate()",
+      "source_file": "src/components/RootGate.tsx",
+      "source_location": "L9"
+    },
+    {
       "id": "src_components_scrolltotop_scrolltotop",
       "label": "ScrollToTop()",
       "_callable": true,
@@ -4021,6 +4009,18 @@
       "norm_label": "scrolltotop()",
       "source_file": "src/components/ScrollToTop.tsx",
       "source_location": "L4"
+    },
+    {
+      "id": "src_components_testheader_testheader",
+      "label": "TestHeader()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 1575,
+      "community_name": "App.tsx",
+      "file_type": "code",
+      "norm_label": "testheader()",
+      "source_file": "src/components/TestHeader.tsx",
+      "source_location": "L10"
     },
     {
       "id": "src_lib_attemptstorage_purgeunownedattempts",
@@ -10730,7 +10730,7 @@
       "label": "Contact",
       "_origin": "ast",
       "community": 105,
-      "community_name": "react",
+      "community_name": "useAuth",
       "file_type": "code",
       "norm_label": "contact",
       "source_file": "src/App.tsx",
@@ -10741,7 +10741,7 @@
       "label": "Footer.tsx",
       "_origin": "ast",
       "community": 105,
-      "community_name": "react",
+      "community_name": "useAuth",
       "file_type": "code",
       "norm_label": "footer.tsx",
       "source_file": "src/components/Footer.tsx",
@@ -10752,54 +10752,10 @@
       "label": "Navbar.tsx",
       "_origin": "ast",
       "community": 105,
-      "community_name": "react",
+      "community_name": "useAuth",
       "file_type": "code",
       "norm_label": "navbar.tsx",
       "source_file": "src/components/Navbar.tsx",
-      "source_location": "L1"
-    },
-    {
-      "id": "src_components_protectedroute",
-      "label": "ProtectedRoute.tsx",
-      "_origin": "ast",
-      "community": 105,
-      "community_name": "react",
-      "file_type": "code",
-      "norm_label": "protectedroute.tsx",
-      "source_file": "src/components/ProtectedRoute.tsx",
-      "source_location": "L1"
-    },
-    {
-      "id": "src_components_rootgate",
-      "label": "RootGate.tsx",
-      "_origin": "ast",
-      "community": 105,
-      "community_name": "react",
-      "file_type": "code",
-      "norm_label": "rootgate.tsx",
-      "source_file": "src/components/RootGate.tsx",
-      "source_location": "L1"
-    },
-    {
-      "id": "src_components_rootgate_landingpage",
-      "label": "LandingPage",
-      "_origin": "ast",
-      "community": 105,
-      "community_name": "react",
-      "file_type": "code",
-      "norm_label": "landingpage",
-      "source_file": "src/components/RootGate.tsx",
-      "source_location": "L5"
-    },
-    {
-      "id": "src_components_testheader",
-      "label": "TestHeader.tsx",
-      "_origin": "ast",
-      "community": 105,
-      "community_name": "react",
-      "file_type": "code",
-      "norm_label": "testheader.tsx",
-      "source_file": "src/components/TestHeader.tsx",
       "source_location": "L1"
     },
     {
@@ -10807,7 +10763,7 @@
       "label": "auth-context.ts",
       "_origin": "ast",
       "community": 105,
-      "community_name": "react",
+      "community_name": "useAuth",
       "file_type": "code",
       "norm_label": "auth-context.ts",
       "source_file": "src/context/auth-context.ts",
@@ -10818,7 +10774,7 @@
       "label": "AuthContext",
       "_origin": "ast",
       "community": 105,
-      "community_name": "react",
+      "community_name": "useAuth",
       "file_type": "code",
       "norm_label": "authcontext",
       "source_file": "src/context/auth-context.ts",
@@ -10829,7 +10785,7 @@
       "label": "subscription.ts",
       "_origin": "ast",
       "community": 105,
-      "community_name": "react",
+      "community_name": "useAuth",
       "file_type": "code",
       "norm_label": "subscription.ts",
       "source_file": "src/lib/subscription.ts",
@@ -10840,7 +10796,7 @@
       "label": "FREE_TRIAL_TEST_ID",
       "_origin": "ast",
       "community": 105,
-      "community_name": "react",
+      "community_name": "useAuth",
       "file_type": "code",
       "norm_label": "free_trial_test_id",
       "source_file": "src/lib/subscription.ts",
@@ -10851,7 +10807,7 @@
       "label": "Contact.tsx",
       "_origin": "ast",
       "community": 105,
-      "community_name": "react",
+      "community_name": "useAuth",
       "file_type": "code",
       "norm_label": "contact.tsx",
       "source_file": "src/pages/Contact.tsx",
@@ -10862,22 +10818,11 @@
       "label": "HOW_WE_HELP",
       "_origin": "ast",
       "community": 105,
-      "community_name": "react",
+      "community_name": "useAuth",
       "file_type": "code",
       "norm_label": "how_we_help",
       "source_file": "src/pages/Contact.tsx",
       "source_location": "L10"
-    },
-    {
-      "id": "ref_react",
-      "label": "react",
-      "_origin": "ast",
-      "community": 105,
-      "community_name": "react",
-      "file_type": "concept",
-      "norm_label": "react",
-      "source_file": ".oxlintrc.json",
-      "source_location": "L3"
     },
     {
       "id": "opencode",
@@ -13611,6 +13556,39 @@
       "source_location": "L22"
     },
     {
+      "id": "src_components_protectedroute",
+      "label": "ProtectedRoute.tsx",
+      "_origin": "ast",
+      "community": 1575,
+      "community_name": "App.tsx",
+      "file_type": "code",
+      "norm_label": "protectedroute.tsx",
+      "source_file": "src/components/ProtectedRoute.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_components_rootgate",
+      "label": "RootGate.tsx",
+      "_origin": "ast",
+      "community": 1575,
+      "community_name": "App.tsx",
+      "file_type": "code",
+      "norm_label": "rootgate.tsx",
+      "source_file": "src/components/RootGate.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_components_rootgate_landingpage",
+      "label": "LandingPage",
+      "_origin": "ast",
+      "community": 1575,
+      "community_name": "App.tsx",
+      "file_type": "code",
+      "norm_label": "landingpage",
+      "source_file": "src/components/RootGate.tsx",
+      "source_location": "L5"
+    },
+    {
       "id": "src_components_scrolltotop",
       "label": "ScrollToTop.tsx",
       "_origin": "ast",
@@ -13619,6 +13597,17 @@
       "file_type": "code",
       "norm_label": "scrolltotop.tsx",
       "source_file": "src/components/ScrollToTop.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_components_testheader",
+      "label": "TestHeader.tsx",
+      "_origin": "ast",
+      "community": 1575,
+      "community_name": "App.tsx",
+      "file_type": "code",
+      "norm_label": "testheader.tsx",
+      "source_file": "src/components/TestHeader.tsx",
       "source_location": "L1"
     },
     {
@@ -13653,6 +13642,17 @@
       "norm_label": "terms.tsx",
       "source_file": "src/pages/Terms.tsx",
       "source_location": "L1"
+    },
+    {
+      "id": "ref_react",
+      "label": "react",
+      "_origin": "ast",
+      "community": 1575,
+      "community_name": "App.tsx",
+      "file_type": "concept",
+      "norm_label": "react",
+      "source_file": ".oxlintrc.json",
+      "source_location": "L3"
     },
     {
       "id": "scripts_test_tokenize_paper2",
@@ -49866,7 +49866,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/pages/Login.tsx",
-      "source_location": "L72",
+      "source_location": "L83",
       "weight": 1.0
     },
     {
@@ -50130,7 +50130,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/pages/Signup.tsx",
-      "source_location": "L102",
+      "source_location": "L113",
       "weight": 1.0
     },
     {
@@ -75931,5 +75931,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "9889c225b795804fe93b64491db9d8f84e39437b"
+  "built_at_commit": "5fc1cf6de777789a9cdd7ca8d6f9663ebafc550d"
 }

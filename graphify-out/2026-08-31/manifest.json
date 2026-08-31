@@ -1830,9 +1830,9 @@
     "semantic_hash": "991b9895dc31bca7696cdda43094aeaf"
   },
   "src/components/Footer.tsx": {
-    "mtime": 1788195937.854237,
-    "seen": 1788196221.799502,
-    "ast_hash": "40e58e91ebcc29f1599e37ea636ce468",
+    "mtime": 1788199416.7521098,
+    "seen": 1788199494.2971125,
+    "ast_hash": "3fbf5168bcd376c9cc862de1c737087c",
     "semantic_hash": ""
   },
   "src/components/FormattedQuestionText.tsx": {
@@ -1848,10 +1848,10 @@
     "semantic_hash": "ad39cd79d9aa490783ca0182dd9bd231"
   },
   "src/components/Navbar.tsx": {
-    "mtime": 1787462102.84909,
-    "seen": 1787835489.9523327,
-    "ast_hash": "9117146b4f76b721ab89f5b7e369523c",
-    "semantic_hash": "9117146b4f76b721ab89f5b7e369523c"
+    "mtime": 1788199409.3568377,
+    "seen": 1788199494.2982242,
+    "ast_hash": "b71b17c1e8b1168917ec248c341f572d",
+    "semantic_hash": ""
   },
   "src/components/NtaHeader.tsx": {
     "mtime": 1787462102.8500886,
@@ -2076,10 +2076,10 @@
     "semantic_hash": "9a67b2197e88ccb9f293d948dea4e7e5"
   },
   "src/lib/subscription.ts": {
-    "mtime": 1787594635.884758,
-    "seen": 1787835489.952416,
-    "ast_hash": "3650bcef0f0c200f531c81ee1ef5bbb7",
-    "semantic_hash": "3650bcef0f0c200f531c81ee1ef5bbb7"
+    "mtime": 1788199827.9732428,
+    "seen": 1788199921.1214352,
+    "ast_hash": "eb13b05b811683c3e05accf49cec0086",
+    "semantic_hash": ""
   },
   "src/lib/supabase.ts": {
     "mtime": 1787925248.1541295,
@@ -2130,9 +2130,9 @@
     "semantic_hash": "958324366f889108d15f2d695a6b6af6"
   },
   "src/pages/Login.tsx": {
-    "mtime": 1788194163.224918,
-    "seen": 1788194255.149414,
-    "ast_hash": "5e21a1dc663d5f770dca0f955beb79d6",
+    "mtime": 1788199426.2088165,
+    "seen": 1788199494.3182185,
+    "ast_hash": "7c053e9d55589678ffcf72813dde5f59",
     "semantic_hash": ""
   },
   "src/pages/PaperTests.tsx": {
@@ -2154,9 +2154,9 @@
     "semantic_hash": "490b284ae968a4aacb4dc57664f3b379"
   },
   "src/pages/Signup.tsx": {
-    "mtime": 1788194194.419139,
-    "seen": 1788194255.150858,
-    "ast_hash": "e7bad5472c9572b5e7b4a2845f71e786",
+    "mtime": 1788199434.2968771,
+    "seen": 1788199494.319811,
+    "ast_hash": "da76d5d693c0fcbda135f0160c9d6cd0",
     "semantic_hash": ""
   },
   "src/pages/TestInterface.tsx": {
@@ -2694,9 +2694,9 @@
     "semantic_hash": "74356cc54329e9e67248a611a7e4193f"
   },
   "index.html": {
-    "mtime": 1788197859.5682948,
-    "seen": 1788198030.810456,
-    "ast_hash": "543421bb3250cdedce2d4cd4d26bf2ba",
+    "mtime": 1788199865.8874242,
+    "seen": 1788199921.152931,
+    "ast_hash": "6271b42004fdb51b78f7a99dd79ad492",
     "semantic_hash": ""
   },
   "neet-out/2022/_katex_report.txt": {
@@ -9474,10 +9474,10 @@
     "semantic_hash": "21c7473c592c67dc87223d49892c8f0a"
   },
   "public/logo.png": {
-    "mtime": 1787462102.3224957,
-    "seen": 1787836260.418041,
-    "ast_hash": "3aa9b4f3cbbf26e28335decdd203be27",
-    "semantic_hash": "3aa9b4f3cbbf26e28335decdd203be27"
+    "mtime": 1788199336.41,
+    "seen": 1788199495.1123981,
+    "ast_hash": "03c15b402e76884a65271f2e2dfab662",
+    "semantic_hash": ""
   },
   "question_images/2026-04-02-evening/2026-04-02_evening_Q28.jpeg": {
     "mtime": 1787462102.3245268,
@@ -15105,6 +15105,24 @@
     "mtime": 1788039034.582269,
     "seen": 1788193487.9451492,
     "ast_hash": "2ca06ca2ff09b74e592741e59041ef02",
+    "semantic_hash": ""
+  },
+  "public/EduTester_Text.webp": {
+    "mtime": 1788199336.633,
+    "seen": 1788199495.1113203,
+    "ast_hash": "cbd01d5df692c5c91c996dd8810434aa",
+    "semantic_hash": ""
+  },
+  "public/EduTester_Text_white.webp": {
+    "mtime": 1788199336.891,
+    "seen": 1788199495.1117082,
+    "ast_hash": "031c17905062ba70506e0a51fefaaf47",
+    "semantic_hash": ""
+  },
+  "public/logo.webp": {
+    "mtime": 1788199336.35,
+    "seen": 1788199495.1124017,
+    "ast_hash": "0640e0c3e2f4f7c0acc82f9f7a39e535",
     "semantic_hash": ""
   }
 }

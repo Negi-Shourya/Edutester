@@ -3900,7 +3900,7 @@
       "file_type": "code",
       "norm_label": "manualchunks()",
       "source_file": "vite.config.ts",
-      "source_location": "L13"
+      "source_location": "L16"
     },
     {
       "id": "scripts_test_mathtext_check",
@@ -73332,7 +73332,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "vite.config.ts",
-      "source_location": "L13",
+      "source_location": "L16",
       "weight": 1.0
     },
     {
@@ -75931,5 +75931,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "5fc1cf6de777789a9cdd7ca8d6f9663ebafc550d"
+  "built_at_commit": "6a606c9b6cfc2ebc0a284f2093120e8724a6e6ed"
 }

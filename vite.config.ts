@@ -8,9 +8,7 @@ export default defineConfig({
     target: 'es2022',
     cssCodeSplit: true,
     chunkSizeWarningLimit: 700,
-    modulePreload: {
-      polyfill: false,
-    },
+    modulePreload: false,
     rollupOptions: {
       output: {
         manualChunks(id) {
@@ -23,7 +21,7 @@ export default defineConfig({
             if (id.includes('canvas-confetti')) {
               return 'vendor-confetti';
             }
-            // All essential core runtime dependencies consolidated to avoid deep request chaining
+            // All essential core runtime dependencies consolidated
             return 'vendor-core';
           }
         },
