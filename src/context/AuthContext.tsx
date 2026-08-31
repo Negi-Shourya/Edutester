@@ -1,6 +1,14 @@
 import { useEffect, useState, type ReactNode } from 'react';
 import { supabase, setRememberMe as setRememberFlag, isRememberMe } from '../lib/supabase';
 import { AuthContext, type AuthContextValue, type AuthResult } from './auth-context';
+import {
+  syncPendingConsentToDatabase,
+  recordUserEntryLog,
+  getAuthFlow,
+  clearAuthFlow,
+  getPendingConsent,
+  isBrandNewAccount,
+} from '../lib/consent';
 
 export function AuthProvider({ children }: { children: ReactNode }) {
   const [user, setUser] = useState<AuthContextValue['user']>(null);
@@ -22,22 +30,56 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   }, []);
 
   useEffect(() => {
+    const handleSessionResolution = async (
+      nextSession: AuthContextValue['session'],
+      isSignInEvent: boolean = false
+    ) => {
+      if (nextSession?.user) {
+        const flow = getAuthFlow();
+        const pending = getPendingConsent();
+
+        // If the user arrived through the "Login" page as a brand new account
+        // created in the current OAuth callback (without prior registration)
+        if (flow === 'login' && !pending && isBrandNewAccount(nextSession.user)) {
+          clearAuthFlow();
+          await supabase.auth.signOut();
+          setUser(null);
+          setSession(null);
+          setLoading(false);
+          if (typeof window !== 'undefined' && !window.location.pathname.startsWith('/signup')) {
+            window.location.href = '/signup?notice=unregistered';
+          }
+          return;
+        }
+
+        clearAuthFlow();
+        setAuthError(null);
+        void syncPendingConsentToDatabase();
+
+        if (isSignInEvent) {
+          void recordUserEntryLog('login');
+        } else {
+          void recordUserEntryLog('session_entry');
+        }
+      }
+
+      setSession(nextSession);
+      setUser(nextSession?.user ?? null);
+      setLoading(false);
+    };
+
     supabase.auth
       .getSession()
-      .then(({ data, error }) => {
+      .then(async ({ data, error }) => {
         if (error) setAuthError(error.message);
-        setSession(data.session);
-        setUser(data.session?.user ?? null);
+        await handleSessionResolution(data.session, false);
       })
       .finally(() => setLoading(false));
 
     const {
       data: { subscription },
-    } = supabase.auth.onAuthStateChange((_event, nextSession) => {
-      if (nextSession) setAuthError(null);
-      setSession(nextSession);
-      setUser(nextSession?.user ?? null);
-      setLoading(false);
+    } = supabase.auth.onAuthStateChange(async (event, nextSession) => {
+      await handleSessionResolution(nextSession, event === 'SIGNED_IN');
     });
 
     return () => subscription.unsubscribe();

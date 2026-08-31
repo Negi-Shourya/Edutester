@@ -27,7 +27,7 @@ const faqs = [
   },
   { q: 'What payment methods are accepted?', a: 'All debit cards, credit cards, and UPI options are available.' },
   { q: 'Can I get a refund?', a: 'No, you cannot get a refund once you have purchased a subscription.' },
-  { q: 'Where can I contact for help?', a: 'You can contact us at edutester4u@gmail.com, and we will get back to you within 48 hours.' },
+  { q: 'Where can I contact for help?', a: 'You can contact us at help@edutester.in, and we will get back to you within 48 hours.' },
 ];
 
 export default function Pricing() {
@@ -357,11 +357,11 @@ export default function Pricing() {
                         transition={{ duration: 0.3, ease: [0.22, 1, 0.36, 1] }}
                       >
                         <p className="px-4 pb-4 text-sm text-gray-500 leading-relaxed">
-                          {faq.a.includes('edutester4u@gmail.com') ? (
+                          {faq.a.includes('help@edutester.in') ? (
                             <>
                               You can contact us at{' '}
-                              <a href="mailto:edutester4u@gmail.com" className="text-primary hover:underline font-medium">
-                                edutester4u@gmail.com
+                              <a href="mailto:help@edutester.in" className="text-primary hover:underline font-medium">
+                                help@edutester.in
                               </a>
                               , and we will get back to you within 48 hours.
                             </>

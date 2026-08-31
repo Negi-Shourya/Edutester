@@ -66,7 +66,8 @@ export default function Footer() {
                   NEET (UG) Syllabus
                 </a>
               </li>
-              <li><a href="#" className="hover:text-white transition-colors">Preparation Tips</a></li>
+              <li><Link to="/terms" className="hover:text-white transition-colors">Terms &amp; Conditions</Link></li>
+              <li><Link to="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link></li>
               {showPricing && <li><Link to="/pricing#faq" className="hover:text-white transition-colors">FAQ</Link></li>}
             </ul>
           </div>
@@ -76,16 +77,25 @@ export default function Footer() {
             <ul className="space-y-3 text-sm">
               <li className="flex items-center gap-2">
                 <Mail className="w-4 h-4 text-saffron" />
-                <a href="mailto:edutester4u@gmail.com" className="hover:text-white transition-colors">
-                  edutester4u@gmail.com
+                <a href="mailto:help@edutester.in" className="hover:text-white transition-colors">
+                  help@edutester.in
                 </a>
               </li>
             </ul>
           </div>
         </div>
 
-        <div className="border-t border-gray-800 mt-8 pt-8 text-center text-sm text-gray-500">
-          &copy; {new Date().getFullYear()} EduTester. All rights reserved. | Made with &hearts; for exam aspirants
+        <div className="border-t border-gray-800 mt-8 pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-gray-500 gap-4">
+          <div>
+            &copy; {new Date().getFullYear()} EduTester. All rights reserved. | Made with &hearts; for exam aspirants
+          </div>
+          <div className="flex items-center gap-4">
+            <Link to="/terms" className="hover:text-gray-300 transition-colors">Terms</Link>
+            <span>&middot;</span>
+            <Link to="/privacy" className="hover:text-gray-300 transition-colors">Privacy Policy</Link>
+            <span>&middot;</span>
+            <Link to="/contact" className="hover:text-gray-300 transition-colors">Contact</Link>
+          </div>
         </div>
       </div>
     </footer>

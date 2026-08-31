@@ -1,31 +1,35 @@
 import { useState } from 'react';
-import { Link, Navigate } from 'react-router-dom';
-import { Loader2, Lock, Zap, ShieldCheck, AlertCircle } from 'lucide-react';
+import { Link, Navigate, useLocation } from 'react-router-dom';
+import {
+  Loader2,
+  Lock,
+  Zap,
+  ShieldCheck,
+  AlertCircle,
+  Sparkles,
+} from 'lucide-react';
 import { useAuth } from '../context/auth-context';
 import GoogleIcon from '../components/GoogleIcon';
 import { setExam, type ExamType } from '../lib/exam';
+import { savePendingConsent } from '../lib/consent';
 
 const perks = [
   { icon: Zap, text: 'Instant sign up with your existing Google account' },
   { icon: Lock, text: 'No passwords to remember or reset' },
-  { icon: ShieldCheck, text: 'Your details stay private and secure' },
-];
-
-const termsSummary = [
-  'Your account data is used only to run the service — practice tests, scores and progress.',
-  'We do not sell, rent or share your personal data with third parties.',
-  'Test attempts and results are stored so your dashboard can show your progress.',
-  'You can delete your account at any time and your data is removed.',
+  { icon: ShieldCheck, text: 'Your details stay private, encrypted and secure' },
 ];
 
 export default function Signup() {
+  const location = useLocation();
   const { user, loading, signInWithGoogle, authError } = useAuth();
   const [error, setError] = useState<string | null>(null);
   const [googleLoading, setGoogleLoading] = useState(false);
   const [track, setTrack] = useState<ExamType>('jee');
   const [acceptedTerms, setAcceptedTerms] = useState(false);
   const [termsError, setTermsError] = useState(false);
-  const [showTerms, setShowTerms] = useState(false);
+
+  const searchParams = new URLSearchParams(location.search);
+  const isUnregisteredRedirect = searchParams.get('notice') === 'unregistered';
 
   if (!loading && user) {
     return <Navigate to="/dashboard" replace />;
@@ -39,6 +43,10 @@ export default function Signup() {
     setTermsError(false);
     setError(null);
     setGoogleLoading(true);
+
+    // Save verifiable consent and entry timestamp prior to OAuth redirect
+    savePendingConsent(track);
+
     try {
       await signInWithGoogle();
     } catch {
@@ -54,14 +62,24 @@ export default function Signup() {
       <div className="absolute top-1/3 left-1/4 w-40 h-40 bg-amber-100/50 rounded-full blur-2xl" />
 
       <div className="relative w-full max-w-md">
-        <div className="bg-white/80 backdrop-blur rounded-3xl shadow-xl shadow-primary/5 border border-white/60 p-8 sm:p-10">
-          <div className="text-center mb-8">
-            <img src="/logo.png" alt="EduTester" className="w-16 h-16 object-contain mx-auto mb-5" />
-            <h1 className="text-2xl font-bold text-gray-900">Create your account</h1>
-            <p className="text-gray-500 mt-1.5">
-              Start practicing on Edutester in seconds
+        <div className="bg-white/85 backdrop-blur rounded-3xl shadow-xl shadow-primary/5 border border-white/60 p-8 sm:p-10">
+          <div className="text-center mb-7">
+            <img src="/logo.png" alt="EduTester" className="w-16 h-16 object-contain mx-auto mb-4" />
+            <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 font-display">Create your account</h1>
+            <p className="text-gray-500 mt-1.5 text-sm">
+              Start practicing on EduTester in seconds
             </p>
           </div>
+
+          {isUnregisteredRedirect && (
+            <div className="mb-5 p-3.5 rounded-2xl bg-amber-50 border border-amber-200 text-xs sm:text-sm text-amber-800 flex items-start gap-2.5 animate-fadeIn">
+              <Sparkles className="w-4 h-4 text-amber-600 shrink-0 mt-0.5" />
+              <div>
+                <strong className="font-semibold block text-amber-900">Welcome to EduTester!</strong>
+                <span>No existing account was found for that Google ID. Please choose your exam track and create your account below.</span>
+              </div>
+            </div>
+          )}
 
           {error && (
             <div className="mb-5 p-3.5 rounded-xl bg-red-50 border border-red-200 text-sm text-red-600">
@@ -82,7 +100,7 @@ export default function Signup() {
               <button
                 type="button"
                 onClick={() => { setTrack('jee'); setExam('jee'); }}
-                className={`rounded-2xl border-2 px-4 py-3.5 text-left transition-all ${
+                className={`rounded-2xl border-2 px-4 py-3 text-left transition-all ${
                   track === 'jee'
                     ? 'border-primary bg-primary/5 shadow-sm'
                     : 'border-gray-200 hover:border-gray-300'
@@ -94,7 +112,7 @@ export default function Signup() {
               <button
                 type="button"
                 onClick={() => { setTrack('neet'); setExam('neet'); }}
-                className={`rounded-2xl border-2 px-4 py-3.5 text-left transition-all ${
+                className={`rounded-2xl border-2 px-4 py-3 text-left transition-all ${
                   track === 'neet'
                     ? 'border-green-600 bg-green-50 shadow-sm'
                     : 'border-gray-200 hover:border-gray-300'
@@ -106,9 +124,9 @@ export default function Signup() {
             </div>
           </div>
 
-          {/* Terms & conditions */}
+          {/* Clean, user-friendly consent checkbox */}
           <div className="mb-5">
-            <label className="flex items-start gap-3 cursor-pointer select-none">
+            <label className="flex items-start gap-2.5 cursor-pointer select-none">
               <input
                 type="checkbox"
                 checked={acceptedTerms}
@@ -116,35 +134,25 @@ export default function Signup() {
                   setAcceptedTerms(e.target.checked);
                   if (e.target.checked) setTermsError(false);
                 }}
-                className="mt-0.5 w-4 h-4 accent-primary rounded"
+                className="mt-0.5 w-4 h-4 accent-primary rounded cursor-pointer shrink-0"
               />
               <span className="text-xs text-gray-600 leading-relaxed">
-                I have read and agree to the{' '}
-                <button
-                  type="button"
-                  onClick={() => setShowTerms((s) => !s)}
-                  className="text-primary font-semibold hover:underline"
-                >
+                I agree to the{' '}
+                <Link to="/terms" target="_blank" className="text-primary font-semibold hover:underline">
                   Terms &amp; Conditions
-                </button>
+                </Link>{' '}
+                and{' '}
+                <Link to="/privacy" target="_blank" className="text-primary font-semibold hover:underline">
+                  Privacy Policy
+                </Link>
+                , and confirm I am 18+ or have parent/guardian consent.
               </span>
             </label>
 
-            {showTerms && (
-              <div className="mt-3 text-xs text-gray-500 rounded-xl bg-gray-50 border border-gray-200 p-3.5">
-                <p className="font-semibold text-gray-700 mb-1.5">Terms &amp; Conditions summary</p>
-                <ul className="list-disc pl-4 space-y-1.5">
-                  {termsSummary.map((point) => (
-                    <li key={point}>{point}</li>
-                  ))}
-                </ul>
-              </div>
-            )}
-
             {termsError && (
-              <p className="mt-2 text-xs text-red-600 font-medium flex items-start gap-1.5">
-                <AlertCircle className="w-3.5 h-3.5 mt-0.5 shrink-0" />
-                Please read and accept the Terms &amp; Conditions before signing up.
+              <p className="mt-2 text-xs text-red-600 font-medium flex items-center gap-1.5">
+                <AlertCircle className="w-3.5 h-3.5 shrink-0" />
+                Please accept the Terms and Privacy Policy to continue.
               </p>
             )}
           </div>
@@ -156,7 +164,7 @@ export default function Signup() {
             aria-disabled={!acceptedTerms}
             className={`w-full flex items-center justify-center gap-3 bg-white border-2 border-gray-200 rounded-2xl py-3.5 text-sm font-bold text-gray-800 transition-all duration-200 ${
               acceptedTerms
-                ? 'hover:border-primary/50 hover:shadow-lg hover:shadow-primary/10 hover:-translate-y-0.5'
+                ? 'hover:border-primary/50 hover:shadow-lg hover:shadow-primary/10 hover:-translate-y-0.5 cursor-pointer'
                 : 'opacity-60 cursor-not-allowed'
             }`}
           >
@@ -169,10 +177,10 @@ export default function Signup() {
           </button>
 
           <p className="text-center text-xs text-gray-400 mt-3">
-            No sign-up forms. No passwords. Just one click.
+            Secure sign up. No passwords to remember.
           </p>
 
-          <div className="flex items-center gap-3 my-7">
+          <div className="flex items-center gap-3 my-6">
             <div className="flex-1 h-px bg-gray-200" />
             <span className="text-[11px] uppercase tracking-wider text-gray-400 font-semibold">
               Why Google

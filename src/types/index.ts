@@ -77,6 +77,36 @@ export interface AdminUser {
   full_name: string | null;
   created_at: string;
   last_sign_in_at: string | null;
+  consent_version?: string | null;
+  consented_at?: string | null;
+  last_entry_time?: string | null;
+}
+
+export interface AdminConsentRecord {
+  id: string;
+  user_id: string;
+  email: string | null;
+  consent_type: string;
+  consent_version: string;
+  consented_at: string;
+  entry_time: string;
+  exam_track: string;
+  user_agent: string | null;
+  terms_accepted: boolean;
+  privacy_accepted: boolean;
+  age_declaration: boolean;
+  created_at: string;
+}
+
+export interface AdminEntryLog {
+  id: string;
+  user_id: string | null;
+  email: string | null;
+  entry_type: string;
+  entry_time: string;
+  path: string | null;
+  user_agent: string | null;
+  created_at: string;
 }
 
 export interface AdminPurchase {

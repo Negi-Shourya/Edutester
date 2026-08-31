@@ -4,6 +4,7 @@ import { Loader2, Lock, Zap, ShieldCheck } from 'lucide-react';
 import { useAuth } from '../context/auth-context';
 import GoogleIcon from '../components/GoogleIcon';
 import { getExam, setExam, type ExamType } from '../lib/exam';
+import { setAuthFlow } from '../lib/consent';
 
 const perks = [
   { icon: Zap, text: 'Instant sign in — no password to remember' },
@@ -26,6 +27,7 @@ export default function Login() {
   const handleGoogle = async () => {
     setError(null);
     setGoogleLoading(true);
+    setAuthFlow('login');
     try {
       const from = (location.state as { from?: string } | null)?.from;
       await signInWithGoogle(from ? `${window.location.origin}${from}` : undefined);
@@ -45,7 +47,7 @@ export default function Login() {
         <div className="bg-white/80 backdrop-blur rounded-3xl shadow-xl shadow-primary/5 border border-white/60 p-8 sm:p-10">
           <div className="text-center mb-8">
             <img src="/logo.png" alt="EduTester" className="w-16 h-16 object-contain mx-auto mb-5" />
-            <h1 className="text-2xl font-bold text-gray-900">Welcome back</h1>
+            <h1 className="text-2xl font-bold text-gray-900 font-display">Welcome back</h1>
             <p className="text-gray-500 mt-1.5">Sign in to continue your exam preparation</p>
           </div>
 
@@ -96,7 +98,7 @@ export default function Login() {
             type="button"
             onClick={handleGoogle}
             disabled={googleLoading}
-            className="w-full flex items-center justify-center gap-3 bg-white border-2 border-gray-200 rounded-2xl py-3.5 text-sm font-bold text-gray-800 hover:border-primary/50 hover:shadow-lg hover:shadow-primary/10 hover:-translate-y-0.5 transition-all duration-200 disabled:opacity-60 disabled:hover:translate-y-0"
+            className="w-full flex items-center justify-center gap-3 bg-white border-2 border-gray-200 rounded-2xl py-3.5 text-sm font-bold text-gray-800 hover:border-primary/50 hover:shadow-lg hover:shadow-primary/10 hover:-translate-y-0.5 transition-all duration-200 disabled:opacity-60 disabled:hover:translate-y-0 cursor-pointer"
           >
             {googleLoading ? (
               <Loader2 className="w-5 h-5 animate-spin text-primary" />

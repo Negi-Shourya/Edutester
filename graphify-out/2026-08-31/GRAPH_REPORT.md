@@ -1,7 +1,7 @@
 # Graph Report - Edutester  (2026-08-31)
 
 ## Corpus Check
-- 621 files · ~4,015,796 words
+- 621 files · ~4,015,807 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
@@ -1550,15 +1550,15 @@ Nodes (22): AttemptRow, analyzeOverall(), analyzeTest(), buildRecommendations(),
 
 ### Community 11 - "NtaResultScreen.tsx"
 Cohesion: 0.07
-Nodes (32): FormattedQuestionText(), FormattedQuestionTextProps, MatchItem, NtaQuestionPalette(), NtaQuestionPaletteProps, NtaQuestionPanel(), NtaQuestionPanelProps, NtaQuestionPaperModal() (+24 more)
+Nodes (34): FormattedQuestionText(), FormattedQuestionTextProps, MatchItem, NtaQuestionPalette(), NtaQuestionPaletteProps, NtaQuestionPanel(), NtaQuestionPanelProps, NtaQuestionPaperModal() (+26 more)
 
 ### Community 12 - "src (12)"
 Cohesion: 0.08
 Nodes (23): src, vite/client, compilerOptions, allowArbitraryExtensions, allowImportingTsExtensions, erasableSyntaxOnly, jsx, lib (+15 more)
 
 ### Community 13 - "TestInterface.tsx"
-Cohesion: 0.12
-Nodes (27): NtaHeader(), NtaHeaderProps, NtaInstructionsModal(), NtaInstructionsModalProps, getChapterQuestions(), getPaperQuestions(), backfillLocalAttempts(), runBackfill() (+19 more)
+Cohesion: 0.14
+Nodes (25): NtaHeader(), NtaHeaderProps, NtaInstructionsModal(), NtaInstructionsModalProps, getChapterQuestions(), getPaperQuestions(), backfillLocalAttempts(), runBackfill() (+17 more)
 
 ### Community 15 - "fix_match_list_questions.py"
 Cohesion: 0.17

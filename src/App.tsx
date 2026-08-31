@@ -17,6 +17,8 @@ import Login from './pages/Login'
 import Signup from './pages/Signup'
 import Admin from './pages/Admin'
 import Profile from './pages/Profile'
+import Terms from './pages/Terms'
+import Privacy from './pages/Privacy'
 import ProtectedRoute from './components/ProtectedRoute'
 import { AuthProvider } from './context/AuthContext'
 import { trackPageView } from './lib/tracking'
@@ -43,6 +45,8 @@ function App() {
             <Route path="/pricing" element={<Pricing />} />
             <Route path="/login" element={<Login />} />
             <Route path="/signup" element={<Signup />} />
+            <Route path="/terms" element={<Terms />} />
+            <Route path="/privacy" element={<Privacy />} />
             <Route
               path="/dashboard"
               element={

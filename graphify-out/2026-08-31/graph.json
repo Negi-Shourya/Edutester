@@ -355,17 +355,43 @@
       "source_location": "L45"
     },
     {
-      "id": "src_lib_attemptstorage_savedattempt",
-      "label": "SavedAttempt",
+      "id": "src_lib_scoring_attemptresult",
+      "label": "AttemptResult",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
       "community": 11,
       "community_name": "NtaResultScreen.tsx",
       "file_type": "code",
-      "norm_label": "savedattempt",
-      "source_file": "src/lib/attemptStorage.ts",
-      "source_location": "L4"
+      "norm_label": "attemptresult",
+      "source_file": "src/lib/scoring.ts",
+      "source_location": "L18"
+    },
+    {
+      "id": "src_lib_scoring_questionoutcome",
+      "label": "QuestionOutcome",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 11,
+      "community_name": "NtaResultScreen.tsx",
+      "file_type": "code",
+      "norm_label": "questionoutcome",
+      "source_file": "src/lib/scoring.ts",
+      "source_location": "L16"
+    },
+    {
+      "id": "src_lib_scoring_sectionresult",
+      "label": "SectionResult",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 11,
+      "community_name": "NtaResultScreen.tsx",
+      "file_type": "code",
+      "norm_label": "sectionresult",
+      "source_file": "src/lib/scoring.ts",
+      "source_location": "L6"
     },
     {
       "id": "src_types_index_question",
@@ -446,43 +472,17 @@
       "source_location": "L53"
     },
     {
-      "id": "src_lib_scoring_attemptresult",
-      "label": "AttemptResult",
+      "id": "src_lib_attemptstorage_savedattempt",
+      "label": "SavedAttempt",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
       "community": 13,
       "community_name": "TestInterface.tsx",
       "file_type": "code",
-      "norm_label": "attemptresult",
-      "source_file": "src/lib/scoring.ts",
-      "source_location": "L18"
-    },
-    {
-      "id": "src_lib_scoring_questionoutcome",
-      "label": "QuestionOutcome",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 13,
-      "community_name": "TestInterface.tsx",
-      "file_type": "code",
-      "norm_label": "questionoutcome",
-      "source_file": "src/lib/scoring.ts",
-      "source_location": "L16"
-    },
-    {
-      "id": "src_lib_scoring_sectionresult",
-      "label": "SectionResult",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 13,
-      "community_name": "TestInterface.tsx",
-      "file_type": "code",
-      "norm_label": "sectionresult",
-      "source_file": "src/lib/scoring.ts",
-      "source_location": "L6"
+      "norm_label": "savedattempt",
+      "source_file": "src/lib/attemptStorage.ts",
+      "source_location": "L4"
     },
     {
       "id": "src_data_jeesessions_jeesession",
@@ -8583,18 +8583,6 @@
       "source_location": "L91"
     },
     {
-      "id": "src_lib_consent_isbrandnewaccount",
-      "label": "isBrandNewAccount()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 62,
-      "community_name": "consent.ts",
-      "file_type": "code",
-      "norm_label": "isbrandnewaccount()",
-      "source_file": "src/lib/consent.ts",
-      "source_location": "L117"
-    },
-    {
       "id": "src_lib_consent_recorduserentrylog",
       "label": "recordUserEntryLog()",
       "_callable": true,
@@ -8604,7 +8592,7 @@
       "file_type": "code",
       "norm_label": "recorduserentrylog()",
       "source_file": "src/lib/consent.ts",
-      "source_location": "L190"
+      "source_location": "L199"
     },
     {
       "id": "src_lib_consent_syncpendingconsenttodatabase",
@@ -8616,7 +8604,19 @@
       "file_type": "code",
       "norm_label": "syncpendingconsenttodatabase()",
       "source_file": "src/lib/consent.ts",
-      "source_location": "L130"
+      "source_location": "L139"
+    },
+    {
+      "id": "src_lib_consent_verifyuserregistered",
+      "label": "verifyUserRegistered()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 62,
+      "community_name": "consent.ts",
+      "file_type": "code",
+      "norm_label": "verifyuserregistered()",
+      "source_file": "src/lib/consent.ts",
+      "source_location": "L116"
     },
     {
       "id": "src_lib_supabase_currentstore",
@@ -11173,6 +11173,17 @@
       "source_location": "L1"
     },
     {
+      "id": "src_lib_scoring",
+      "label": "scoring.ts",
+      "_origin": "ast",
+      "community": 11,
+      "community_name": "NtaResultScreen.tsx",
+      "file_type": "code",
+      "norm_label": "scoring.ts",
+      "source_file": "src/lib/scoring.ts",
+      "source_location": "L1"
+    },
+    {
       "id": "scripts_dump_neet_2023_figures",
       "label": "_dump-neet-2023-figures.mjs",
       "_origin": "ast",
@@ -11940,17 +11951,6 @@
       "file_type": "code",
       "norm_label": "attemptstorage.ts",
       "source_file": "src/lib/attemptStorage.ts",
-      "source_location": "L1"
-    },
-    {
-      "id": "src_lib_scoring",
-      "label": "scoring.ts",
-      "_origin": "ast",
-      "community": 13,
-      "community_name": "TestInterface.tsx",
-      "file_type": "code",
-      "norm_label": "scoring.ts",
-      "source_file": "src/lib/scoring.ts",
       "source_location": "L1"
     },
     {
@@ -48698,7 +48698,7 @@
     },
     {
       "source": "src_context_authcontext_authprovider",
-      "target": "src_lib_consent_isbrandnewaccount",
+      "target": "src_lib_consent_verifyuserregistered",
       "relation": "calls",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -48717,7 +48717,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/context/AuthContext.tsx",
-      "source_location": "L44",
+      "source_location": "L45",
       "weight": 1.0
     },
     {
@@ -48729,7 +48729,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/context/AuthContext.tsx",
-      "source_location": "L57",
+      "source_location": "L59",
       "weight": 1.0
     },
     {
@@ -48741,7 +48741,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/context/AuthContext.tsx",
-      "source_location": "L60",
+      "source_location": "L62",
       "weight": 1.0
     },
     {
@@ -49005,7 +49005,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/lib/consent.ts",
-      "source_location": "L131",
+      "source_location": "L140",
       "weight": 1.0
     },
     {
@@ -49017,7 +49017,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/lib/consent.ts",
-      "source_location": "L176",
+      "source_location": "L185",
       "weight": 1.0
     },
     {
@@ -49029,7 +49029,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/lib/consent.ts",
-      "source_location": "L177",
+      "source_location": "L186",
       "weight": 1.0
     },
     {
@@ -52166,18 +52166,6 @@
     },
     {
       "source": "src_context_authcontext",
-      "target": "src_lib_consent_isbrandnewaccount",
-      "relation": "imports",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/context/AuthContext.tsx",
-      "source_location": "L4",
-      "weight": 1.0
-    },
-    {
-      "source": "src_context_authcontext",
       "target": "src_lib_consent_recorduserentrylog",
       "relation": "imports",
       "_origin": "ast",
@@ -52191,6 +52179,18 @@
     {
       "source": "src_context_authcontext",
       "target": "src_lib_consent_syncpendingconsenttodatabase",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/context/AuthContext.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "src_context_authcontext",
+      "target": "src_lib_consent_verifyuserregistered",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -70459,13 +70459,13 @@
     },
     {
       "source": "src_lib_consent",
-      "target": "src_lib_consent_isbrandnewaccount",
+      "target": "src_lib_consent_verifyuserregistered",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/lib/consent.ts",
-      "source_location": "L117",
+      "source_location": "L116",
       "weight": 1.0
     },
     {
@@ -70476,7 +70476,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/lib/consent.ts",
-      "source_location": "L130",
+      "source_location": "L139",
       "weight": 1.0
     },
     {
@@ -70487,7 +70487,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/lib/consent.ts",
-      "source_location": "L190",
+      "source_location": "L199",
       "weight": 1.0
     },
     {
