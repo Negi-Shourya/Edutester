@@ -1,10 +1,11 @@
 import { Link, Navigate } from 'react-router-dom';
-import { ArrowRight, BookOpen, Timer, Layers, LifeBuoy, Sparkles, GraduationCap, Target, LineChart } from 'lucide-react';
+import { ArrowRight, BookOpen, Timer, Layers, LifeBuoy, Sparkles, GraduationCap, Target, LineChart, LogIn, UserPlus } from 'lucide-react';
 import FeatureCard from '../components/FeatureCard';
 import ExamScreenPreview from '../components/ExamScreenPreview';
 import Reveal from '../components/Reveal';
 import StaggerReveal, { StaggerItem, SpringTile } from '../components/StaggerReveal';
 import { useSubscriptionAccess } from '../lib/subscription';
+import { useAuth } from '../context/auth-context';
 
 const features = [
   { icon: Layers, title: 'NTA-Like Interface', description: 'Experience the exact same test interface as the actual exam conducted by NTA — palette, marking, and navigation included.' },
@@ -14,6 +15,7 @@ const features = [
 ];
 
 export default function LandingPage() {
+  const { user } = useAuth();
   const { hasAccess, loading: subscriptionLoading } = useSubscriptionAccess();
   const showPricing = subscriptionLoading || !hasAccess;
 
@@ -44,13 +46,25 @@ export default function LandingPage() {
                 papers and full-length test series. Same palette. Same timer.
                 Same pressure.
               </p>
-              <div className="flex flex-col sm:flex-row items-start gap-4 animate-fade-up" style={{ animationDelay: '240ms' }}>
-                <Link to="/test?paper=02-apr-morning" className="cta-shimmer inline-flex items-center gap-2 text-white px-7 py-3.5 rounded-xl text-sm font-semibold hover:bg-primary-dark transition-all shadow-lg shadow-primary/25 hover:shadow-primary/40 hover:-translate-y-0.5 active:scale-[0.98]">
+              <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 animate-fade-up w-full sm:w-auto" style={{ animationDelay: '240ms' }}>
+                <Link to="/test?paper=02-apr-morning" className="cta-shimmer inline-flex items-center justify-center gap-2 text-white px-6 py-3.5 rounded-xl text-sm font-semibold hover:bg-primary-dark transition-all shadow-lg shadow-primary/25 hover:shadow-primary/40 hover:-translate-y-0.5 active:scale-[0.98]">
                   Give a Demo Test for Free
                   <ArrowRight className="w-4 h-4" />
                 </Link>
-                {showPricing && (
-                  <Link to="/pricing" className="inline-flex items-center gap-2 bg-white text-gray-900 px-7 py-3.5 rounded-xl text-sm font-semibold border border-gray-200 hover:border-primary hover:text-primary transition-colors active:scale-[0.98]">
+                {!user && (
+                  <div className="flex items-center gap-2.5 w-full sm:w-auto">
+                    <Link to="/login" className="flex-1 sm:flex-none inline-flex items-center justify-center gap-1.5 bg-white text-gray-800 px-5 py-3.5 rounded-xl text-sm font-semibold border border-gray-200 hover:border-primary hover:text-primary transition-all shadow-sm active:scale-[0.98]">
+                      <LogIn className="w-4 h-4 text-primary" />
+                      Login
+                    </Link>
+                    <Link to="/signup" className="flex-1 sm:flex-none inline-flex items-center justify-center gap-1.5 bg-saffron text-white px-5 py-3.5 rounded-xl text-sm font-semibold hover:bg-saffron-dark transition-all shadow-md shadow-saffron/20 active:scale-[0.98]">
+                      <UserPlus className="w-4 h-4" />
+                      Sign Up
+                    </Link>
+                  </div>
+                )}
+                {user && showPricing && (
+                  <Link to="/pricing" className="inline-flex items-center justify-center gap-2 bg-white text-gray-900 px-6 py-3.5 rounded-xl text-sm font-semibold border border-gray-200 hover:border-primary hover:text-primary transition-colors active:scale-[0.98]">
                     View Pricing
                   </Link>
                 )}
@@ -140,10 +154,24 @@ export default function LandingPage() {
             </div>
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4 tracking-tight font-display">Try It Before You Buy It</h2>
             <p className="text-primary-light mb-8 max-w-xl mx-auto">Take the free demo test on the real NTA interface — no payment details needed.</p>
-            <Link to="/test?paper=02-apr-morning" className="inline-flex items-center gap-2 bg-saffron text-white px-8 py-3.5 rounded-xl text-sm font-semibold hover:bg-saffron-dark transition-colors shadow-lg shadow-black/20 hover:-translate-y-0.5 active:scale-[0.98]">
-              Give a Demo Test for Free
-              <ArrowRight className="w-4 h-4" />
-            </Link>
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-3 max-w-lg mx-auto">
+              <Link to="/test?paper=02-apr-morning" className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-saffron text-white px-7 py-3.5 rounded-xl text-sm font-semibold hover:bg-saffron-dark transition-colors shadow-lg shadow-black/20 hover:-translate-y-0.5 active:scale-[0.98]">
+                Give a Demo Test for Free
+                <ArrowRight className="w-4 h-4" />
+              </Link>
+              {!user && (
+                <div className="flex items-center gap-2.5 w-full sm:w-auto">
+                  <Link to="/login" className="flex-1 sm:flex-none inline-flex items-center justify-center gap-1.5 bg-white/10 text-white hover:bg-white/20 px-5 py-3.5 rounded-xl text-sm font-semibold border border-white/20 transition-all active:scale-[0.98]">
+                    <LogIn className="w-4 h-4" />
+                    Login
+                  </Link>
+                  <Link to="/signup" className="flex-1 sm:flex-none inline-flex items-center justify-center gap-1.5 bg-white text-primary hover:bg-gray-100 px-5 py-3.5 rounded-xl text-sm font-semibold transition-all shadow-md active:scale-[0.98]">
+                    <UserPlus className="w-4 h-4" />
+                    Sign Up
+                  </Link>
+                </div>
+              )}
+            </div>
           </Reveal>
         </div>
       </section>

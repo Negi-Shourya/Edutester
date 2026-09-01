@@ -375,12 +375,121 @@ export default function TestInterface() {
     questions[0];
   const currentQuestionState = questionStates.find((qs) => qs.id === currentQuestion?.id);
 
-  // Helper to force full screen mode
-  const forceFullscreen = useCallback(() => {
-    if (!document.fullscreenElement && !isTestSubmitted) {
-      document.documentElement.requestFullscreen?.().catch(() => {});
+  // Fullscreen state: tracks native or iOS pseudo-fullscreen mode
+  const [isFullscreen, setIsFullscreen] = useState<boolean>(false);
+  const [isPseudoFullscreen, setIsPseudoFullscreen] = useState<boolean>(false);
+
+  // Detect iOS device (iPhone/iPad)
+  const isIos = useMemo(() => {
+    if (typeof window === 'undefined' || typeof navigator === 'undefined') return false;
+    return (
+      /iPad|iPhone|iPod/.test(navigator.userAgent) ||
+      (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1)
+    );
+  }, []);
+
+  const toggleFullscreen = useCallback(() => {
+    if (isTestSubmitted) return;
+
+    const doc = document as any;
+    const el = document.documentElement as any;
+    const activeNativeFS = !!(
+      doc.fullscreenElement ||
+      doc.webkitFullscreenElement ||
+      doc.mozFullScreenElement ||
+      doc.msFullscreenElement
+    );
+
+    if (activeNativeFS || isPseudoFullscreen) {
+      if (activeNativeFS) {
+        const exitFS =
+          doc.exitFullscreen ||
+          doc.webkitExitFullscreen ||
+          doc.mozCancelFullScreen ||
+          doc.msExitFullscreen;
+        if (exitFS) {
+          try {
+            exitFS.call(doc)?.catch?.(() => {});
+          } catch {
+            // ignore
+          }
+        }
+      }
+      setIsFullscreen(false);
+      setIsPseudoFullscreen(false);
+    } else {
+      let attemptedNative = false;
+      const requestFS =
+        el.requestFullscreen ||
+        el.webkitRequestFullscreen ||
+        el.mozRequestFullScreen ||
+        el.msRequestFullscreen;
+
+      if (requestFS && !isIos) {
+        try {
+          const res = requestFS.call(el);
+          if (res && typeof res.catch === 'function') {
+            res
+              .then(() => {
+                setIsFullscreen(true);
+                setIsPseudoFullscreen(false);
+              })
+              .catch(() => {
+                setIsPseudoFullscreen(true);
+                setIsFullscreen(true);
+              });
+            attemptedNative = true;
+          } else {
+            setIsFullscreen(true);
+            setIsPseudoFullscreen(false);
+            attemptedNative = true;
+          }
+        } catch {
+          attemptedNative = false;
+        }
+      }
+
+      if (!attemptedNative) {
+        // Fallback pseudo-fullscreen mode for iPhone / iOS devices
+        setIsPseudoFullscreen(true);
+        setIsFullscreen(true);
+      }
     }
-  }, [isTestSubmitted]);
+  }, [isTestSubmitted, isPseudoFullscreen, isIos]);
+
+  const forceFullscreen = useCallback(() => {
+    if (!isFullscreen) {
+      toggleFullscreen();
+    }
+  }, [isFullscreen, toggleFullscreen]);
+
+  // Sync native fullscreen events
+  useEffect(() => {
+    const handleFsChange = () => {
+      const doc = document as any;
+      const active = !!(
+        doc.fullscreenElement ||
+        doc.webkitFullscreenElement ||
+        doc.mozFullScreenElement ||
+        doc.msFullscreenElement
+      );
+      if (!active && !isPseudoFullscreen) {
+        setIsFullscreen(false);
+      }
+    };
+
+    document.addEventListener('fullscreenchange', handleFsChange);
+    document.addEventListener('webkitfullscreenchange', handleFsChange);
+    document.addEventListener('mozfullscreenchange', handleFsChange);
+    document.addEventListener('MSFullscreenChange', handleFsChange);
+
+    return () => {
+      document.removeEventListener('fullscreenchange', handleFsChange);
+      document.removeEventListener('webkitfullscreenchange', handleFsChange);
+      document.removeEventListener('mozfullscreenchange', handleFsChange);
+      document.removeEventListener('MSFullscreenChange', handleFsChange);
+    };
+  }, [isPseudoFullscreen]);
 
   // Request Full-screen automatically on test mount
   useEffect(() => {
@@ -674,7 +783,9 @@ export default function TestInterface() {
   return (
     <div
       onClick={forceFullscreen}
-      className="nta-test-root h-screen h-[100dvh] w-screen overflow-hidden bg-[#091526] flex flex-col font-sans select-none relative"
+      className={`nta-test-root h-screen h-[100dvh] w-screen overflow-hidden bg-[#091526] flex flex-col font-sans select-none relative ${
+        isPseudoFullscreen ? 'ios-fullscreen' : ''
+      }`}
     >
       {/* Orientation / rotate suggestion: only on a portrait phone, and only
           until the user starts the test-oriented flow or dismisses it. */}
@@ -731,6 +842,8 @@ export default function TestInterface() {
         language={language}
         onLanguageChange={setLanguage}
         compact={compactLandscape}
+        isFullscreen={isFullscreen}
+        onToggleFullscreen={toggleFullscreen}
       />
 
       {/* 2. Main Test Area (Split Panel: Question Panel + Question Palette) */}
@@ -841,7 +954,7 @@ export default function TestInterface() {
           durationMinutes={paperData?.paper.durationMinutes ?? 180}
           onStart={() => {
             setTestStarted(true);
-            forceFullscreen();
+            toggleFullscreen();
           }}
         />
       )}

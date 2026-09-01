@@ -1,11 +1,11 @@
 # Graph Report - Edutester  (2026-09-02)
 
 ## Corpus Check
-- 621 files · ~4,014,123 words
+- 621 files · ~4,013,566 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 3394 nodes · 2816 edges · 1587 communities (250 shown, 1337 thin omitted)
+- 3394 nodes · 2813 edges · 1588 communities (251 shown, 1337 thin omitted)
 - Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 16 edges (avg confidence: 0.92)
 - Token cost: 0 input · 0 output
 
@@ -23,13 +23,13 @@
 - extract_neet_2023.py
 - mathText.ts
 - razorpay-create-order/index.ts
-- Question
+- TestInterface.tsx
 - Dashboard.tsx
 - Pricing.tsx
 - NtaQuestionPanel.tsx
 - src (12)
 - attemptsDb.ts
-- TestInterface.tsx
+- Profile.tsx
 - fix_match_list_questions.py
 - compilerOptions
 - compilerOptions
@@ -39,6 +39,7 @@
 - Test & Examination Pipeline 21
 - Test & Examination Pipeline 22
 - LandingPage.tsx
+- questions.ts
 - add-neet-2021-images.mjs
 - reclip_diagrams_2023.py
 - remove-neet-2021-deleted-syllabus.mjs
@@ -47,7 +48,7 @@
 - _assemble-neet-2026.mjs
 - _assemble-reneet-2026.mjs
 - replace-neet-2022-images.mjs
-- react
+- PaperTests.tsx
 - score-attempt/index.ts
 - extract_neet.py
 - fix-neet-2022-q42-q43-options.mjs
@@ -119,7 +120,7 @@
 - refine_neet_2018.py
 - remove-neet.mjs
 - upload-images.mjs
-- useAuth
+- react
 - opencode.json
 - package.json
 - check-2024-db.mjs
@@ -1490,7 +1491,7 @@
 ## God Nodes (most connected - your core abstractions)
 1. `tokenizeMath()` - 36 edges
 2. `react` - 34 edges
-3. `useAuth()` - 31 edges
+3. `useAuth()` - 29 edges
 4. `main()` - 24 edges
 5. `main()` - 24 edges
 6. `useSubscriptionAccess()` - 20 edges
@@ -1514,7 +1515,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (1587 total, 1337 thin omitted)
+## Communities (1588 total, 1337 thin omitted)
 
 ### Community 0 - "Test & Examination Pipeline 0"
 Cohesion: 0.07
@@ -1548,33 +1549,33 @@ Nodes (14): files, braceDepthAt(), convertFractions(), convertMatrices(), countP
 Cohesion: 0.08
 Nodes (29): corsHeaders, RATE_LIMIT, supabaseAdmin, supabaseAnon, corsHeaders, RATE_LIMIT, razorpay, supabaseAdmin (+21 more)
 
-### Community 8 - "Question"
-Cohesion: 0.21
-Nodes (9): NtaQuestionPaletteProps, NtaQuestionPanelProps, NtaSubmitModalProps, Props, Props, statusColors, statusLabels, Question (+1 more)
+### Community 8 - "TestInterface.tsx"
+Cohesion: 0.11
+Nodes (19): NtaHeader(), NtaHeaderProps, NtaInstructionsModal(), NtaInstructionsModalProps, NtaQuestionPalette(), NtaQuestionPaletteProps, NtaSubmitModal(), NtaSubmitModalProps (+11 more)
 
 ### Community 9 - "Dashboard.tsx"
-Cohesion: 0.08
-Nodes (40): Dashboard, chapterCache, fetchStaticChapter(), fetchStaticPaper(), getChapterQuestions(), getPaperQuestions(), loadChapterQuestions(), loadPaperQuestions() (+32 more)
+Cohesion: 0.11
+Nodes (24): Dashboard, AttemptRow, analyzeOverall(), analyzeTest(), buildRecommendations(), computeSubjectTrends(), OverallAnalysis, QuestionMeta (+16 more)
 
 ### Community 10 - "Pricing.tsx"
-Cohesion: 0.11
-Nodes (24): Pricing, Profile, formatExpiry(), PricingCard(), Props, pricingPlans, applyCoupon(), CouponApplied (+16 more)
+Cohesion: 0.13
+Nodes (18): Pricing, formatExpiry(), PricingCard(), Props, pricingPlans, applyCoupon(), CouponApplied, CouponRejected (+10 more)
 
 ### Community 11 - "NtaQuestionPanel.tsx"
-Cohesion: 0.18
-Nodes (10): FormattedQuestionText(), FormattedQuestionTextProps, MatchItem, NtaQuestionPaperModalProps, QuestionDiagram(), QuestionDiagramProps, katexHtmlCache, renderKatex() (+2 more)
+Cohesion: 0.15
+Nodes (13): FormattedQuestionText(), FormattedQuestionTextProps, MatchItem, NtaQuestionPanel(), NtaQuestionPanelProps, NtaQuestionPaperModal(), NtaQuestionPaperModalProps, QuestionDiagram() (+5 more)
 
 ### Community 12 - "src (12)"
 Cohesion: 0.08
 Nodes (23): src, vite/client, compilerOptions, allowArbitraryExtensions, allowImportingTsExtensions, erasableSyntaxOnly, jsx, lib (+15 more)
 
 ### Community 13 - "attemptsDb.ts"
-Cohesion: 0.22
-Nodes (17): backfillLocalAttempts(), invalidateAttemptsCache(), runBackfill(), submitAttempt(), SubmitAttemptInput, SubmitAttemptPayload, SubmitAttemptResult, attemptKey() (+9 more)
+Cohesion: 0.27
+Nodes (15): backfillLocalAttempts(), invalidateAttemptsCache(), runBackfill(), submitAttempt(), SubmitAttemptPayload, SubmitAttemptResult, attemptKey(), clearAttempt() (+7 more)
 
-### Community 14 - "TestInterface.tsx"
-Cohesion: 0.16
-Nodes (11): NtaHeader(), NtaHeaderProps, NtaInstructionsModal(), NtaInstructionsModalProps, NtaQuestionPalette(), NtaQuestionPanel(), NtaQuestionPaperModal(), NtaSubmitModal() (+3 more)
+### Community 14 - "Profile.tsx"
+Cohesion: 0.19
+Nodes (17): Signup, GoogleIcon(), PaperSummary, PendingConsentData, savePendingConsent(), setAuthFlow(), ExamType, getExam() (+9 more)
 
 ### Community 15 - "fix_match_list_questions.py"
 Cohesion: 0.17
@@ -1609,8 +1610,12 @@ Cohesion: 0.12
 Nodes (13): IMG_ROOT, key, letterByPos, missing, numById, opts, orphans, referenced (+5 more)
 
 ### Community 23 - "LandingPage.tsx"
-Cohesion: 0.15
-Nodes (13): LandingPage, ExamScreenPreview(), SAMPLE_OPTIONS, SAMPLE_TABS, FeatureCard(), Props, ease, Reveal() (+5 more)
+Cohesion: 0.14
+Nodes (14): LandingPage, ExamScreenPreview(), SAMPLE_OPTIONS, SAMPLE_TABS, FeatureCard(), Props, ease, Reveal() (+6 more)
+
+### Community 24 - "questions.ts"
+Cohesion: 0.18
+Nodes (17): chapterCache, fetchStaticChapter(), fetchStaticPaper(), getChapterQuestions(), getPaperQuestions(), loadChapterQuestions(), loadPaperQuestions(), mapPaper() (+9 more)
 
 ### Community 25 - "add-neet-2021-images.mjs"
 Cohesion: 0.12
@@ -1644,9 +1649,9 @@ Nodes (14): DIR, __dirname, dropped, dupes, keyRaw, META, missing, multi (+6 mor
 Cohesion: 0.13
 Nodes (11): IMG_DIR, key, letterByPos, missing, numById, opts, orphans, referenced (+3 more)
 
-### Community 33 - "react"
-Cohesion: 0.17
-Nodes (11): react, PaywallModal(), Props, Props, getPapers(), formatDuration(), groupByDate(), PaperEntry (+3 more)
+### Community 33 - "PaperTests.tsx"
+Cohesion: 0.22
+Nodes (10): PaperTests, PaywallModal(), Props, getPapers(), formatDuration(), groupByDate(), PaperEntry, paperKeyOf() (+2 more)
 
 ### Community 34 - "score-attempt/index.ts"
 Cohesion: 0.13
@@ -1689,12 +1694,12 @@ Cohesion: 0.18
 Nodes (12): __dirname, figureUrls(), __filename, FORCE, key, LABEL_TO_LETTER, OUT_DIR, sectionName() (+4 more)
 
 ### Community 44 - "types/index.ts"
-Cohesion: 0.13
-Nodes (21): Admin, formatDateTime(), formatINR(), isAdmin(), Admin(), Counts, headCount(), safeRpcFetch() (+13 more)
+Cohesion: 0.14
+Nodes (20): Admin, formatDateTime(), formatINR(), isAdmin(), Admin(), Counts, headCount(), safeRpcFetch() (+12 more)
 
 ### Community 45 - "ChapterTests.tsx"
-Cohesion: 0.10
-Nodes (29): Signup, GoogleIcon(), difficultyColors, Props, TestCard(), ChapterTestData, chapterTests, isChapterTrial() (+21 more)
+Cohesion: 0.16
+Nodes (16): ChapterTests, difficultyColors, Props, TestCard(), ChapterTestData, chapterTests, isChapterTrial(), jeeChapterTests (+8 more)
 
 ### Community 46 - "NEET Past Year Papers"
 Cohesion: 0.15
@@ -1761,8 +1766,8 @@ Cohesion: 0.23
 Nodes (10): NtaResultScreen(), NtaResultScreenProps, SolutionCard, SolutionCardProps, STATUS_FILTERS, StatusFilter, QuestionKey, AttemptResult (+2 more)
 
 ### Community 62 - "consent.ts"
-Cohesion: 0.22
-Nodes (17): AuthProvider(), hasPotentialStoredSession(), AUTH_FLOW_KEY, clearAuthFlow(), clearPendingConsent(), CONSENT_STORAGE_KEY, CURRENT_CONSENT_VERSION, getAuthFlow() (+9 more)
+Cohesion: 0.20
+Nodes (18): AuthProvider(), hasPotentialStoredSession(), AUTH_FLOW_KEY, clearAuthFlow(), clearPendingConsent(), CONSENT_STORAGE_KEY, CURRENT_CONSENT_VERSION, getAuthFlow() (+10 more)
 
 ### Community 63 - "cleanup_neet_2025_v2.py"
 Cohesion: 0.29
@@ -1932,9 +1937,9 @@ Nodes (4): DRY_RUN, key, neetFolders, supabase
 Cohesion: 0.33
 Nodes (4): folders, key, supabase, url
 
-### Community 105 - "useAuth"
-Cohesion: 0.17
-Nodes (16): Contact, Footer(), Navbar(), ProtectedRoute(), LandingPage, RootGate(), AuthContext, AuthContextValue (+8 more)
+### Community 105 - "react"
+Cohesion: 0.15
+Nodes (17): react, Contact, Footer(), Navbar(), ProtectedRoute(), LandingPage, RootGate(), Props (+9 more)
 
 ### Community 106 - "opencode.json"
 Cohesion: 0.40
@@ -2026,7 +2031,7 @@ Nodes (5): env, errSamples, fracSamples, samples, sb
 
 ### Community 1575 - "App.tsx"
 Cohesion: 0.11
-Nodes (14): App(), ChapterTests, Login, PaperTests, Privacy, Terms, TestInterface, DEPTH (+6 more)
+Nodes (14): App(), Login, Privacy, Profile, Terms, TestInterface, DEPTH, depthOf() (+6 more)
 
 ### Community 1576 - "_test_tokenize_paper2.mts"
 Cohesion: 0.40
@@ -2060,7 +2065,7 @@ Nodes (3): check(), data, raw
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `react` connect `react` to `plugins`, `App.tsx`, `Question`, `useAuth`, `Pricing.tsx`, `NtaQuestionPanel.tsx`, `types/index.ts`, `attemptsDb.ts`, `TestInterface.tsx`, `ChapterTests.tsx`, `Dashboard.tsx`, `LandingPage.tsx`, `NtaResultScreen.tsx`, `consent.ts`?**
+- **Why does `react` connect `react` to `PaperTests.tsx`, `plugins`, `App.tsx`, `TestInterface.tsx`, `Dashboard.tsx`, `Pricing.tsx`, `NtaQuestionPanel.tsx`, `types/index.ts`, `ChapterTests.tsx`, `Profile.tsx`, `LandingPage.tsx`, `NtaResultScreen.tsx`, `consent.ts`?**
   _High betweenness centrality (0.006) - this node is a cross-community bridge._
 - **Why does `tokenizeMath()` connect `tokenizeMath` to `_test-mathText.mjs`, `mathText.ts`, `_test_tokenize_paper2.mts`, `_test_tokenize_paper3.mts`, `NtaQuestionPanel.tsx`, `_test_tokenize_paper1.mts`, `_test_tokenize_paper4.mts`, `_test_tokenize_paper5.mts`, `_render-check-jee.mts`, `_test_tokenize_paper6.mts`, `_seg-reneet-2026.mts`?**
   _High betweenness centrality (0.004) - this node is a cross-community bridge._

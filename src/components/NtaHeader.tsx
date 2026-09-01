@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { User, FileText, HelpCircle, AlertTriangle, Clock } from 'lucide-react';
+import { User, FileText, HelpCircle, AlertTriangle, Clock, Maximize2, Minimize2 } from 'lucide-react';
 
 interface NtaHeaderProps {
   examName: string;
@@ -14,6 +14,8 @@ interface NtaHeaderProps {
   // 'jee' shows "JEE (Main) Computer Based Test", 'neet' shows
   // "NEET (UG) Computer Based Test" in the top banner.
   examType?: 'jee' | 'neet';
+  isFullscreen?: boolean;
+  onToggleFullscreen?: () => void;
 }
 
 export default function NtaHeader({
@@ -27,6 +29,8 @@ export default function NtaHeader({
   onLanguageChange,
   compact = false,
   examType = 'jee',
+  isFullscreen = false,
+  onToggleFullscreen,
 }: NtaHeaderProps) {
   const [showProfileModal, setShowProfileModal] = useState(false);
 
@@ -54,25 +58,41 @@ export default function NtaHeader({
             </div>
           </div>
 
-          <div
-            className={`flex items-center gap-1 px-2 py-0.5 rounded border font-mono text-[10px] sm:text-xs font-bold shrink-0 ${
-              isLowTime
-                ? 'bg-red-600 border-red-400 text-white animate-pulse'
-                : 'bg-[#0f2444] border-amber-400/50 text-amber-300'
-            }`}
-          >
-            {isLowTime ? (
-              <AlertTriangle className="w-3 h-3 text-white" />
-            ) : (
-              <Clock className="w-3 h-3 text-amber-300" />
+          <div className="flex items-center gap-1.5 shrink-0">
+            <div
+              className={`flex items-center gap-1 px-2 py-0.5 rounded border font-mono text-[10px] sm:text-xs font-bold shrink-0 ${
+                isLowTime
+                  ? 'bg-red-600 border-red-400 text-white animate-pulse'
+                  : 'bg-[#0f2444] border-amber-400/50 text-amber-300'
+              }`}
+            >
+              {isLowTime ? (
+                <AlertTriangle className="w-3 h-3 text-white" />
+              ) : (
+                <Clock className="w-3 h-3 text-amber-300" />
+              )}
+              <span className="text-[9px] font-normal text-gray-300 mr-0.5 hidden sm:inline">
+                Time Left:
+              </span>
+              <span>
+                {String(hours).padStart(2, '0')}:{String(minutes).padStart(2, '0')}:
+                {String(seconds).padStart(2, '0')}
+              </span>
+            </div>
+
+            {onToggleFullscreen && (
+              <button
+                onClick={onToggleFullscreen}
+                className="p-1 bg-[#0f2444] text-amber-300 rounded border border-amber-400/50 hover:bg-[#1b3b6b] transition-colors shrink-0"
+                title={isFullscreen ? 'Exit Fullscreen' : 'Enter Fullscreen'}
+              >
+                {isFullscreen ? (
+                  <Minimize2 className="w-3.5 h-3.5" />
+                ) : (
+                  <Maximize2 className="w-3.5 h-3.5" />
+                )}
+              </button>
             )}
-            <span className="text-[9px] font-normal text-gray-300 mr-0.5 hidden sm:inline">
-              Time Left:
-            </span>
-            <span>
-              {String(hours).padStart(2, '0')}:{String(minutes).padStart(2, '0')}:
-              {String(seconds).padStart(2, '0')}
-            </span>
           </div>
         </div>
       ) : (
@@ -94,7 +114,7 @@ export default function NtaHeader({
           </div>
         </div>
 
-        {/* Action Controls: Question Paper, Instructions, Language */}
+        {/* Action Controls: Question Paper, Instructions, Language, Fullscreen */}
         <div className="flex items-center gap-1.5 sm:gap-2 shrink-0">
           <button
             onClick={onOpenQuestionPaper}
@@ -113,6 +133,23 @@ export default function NtaHeader({
             <HelpCircle className="w-3.5 h-3.5 text-amber-300" />
             <span className="hidden sm:inline">Instructions</span>
           </button>
+
+          {onToggleFullscreen && (
+            <button
+              onClick={onToggleFullscreen}
+              className="flex items-center gap-1 bg-[#1e447b] hover:bg-[#285799] text-white px-2 py-1.5 rounded text-[11px] sm:text-xs font-semibold border border-white/20 transition-all shadow-sm active:scale-95"
+              title={isFullscreen ? 'Exit Fullscreen' : 'Enter Fullscreen'}
+            >
+              {isFullscreen ? (
+                <Minimize2 className="w-3.5 h-3.5 text-amber-300" />
+              ) : (
+                <Maximize2 className="w-3.5 h-3.5 text-amber-300" />
+              )}
+              <span className="hidden sm:inline">
+                {isFullscreen ? 'Exit Fullscreen' : 'Fullscreen'}
+              </span>
+            </button>
+          )}
 
           <div className="flex items-center gap-1 bg-[#0a182d] px-1.5 sm:px-2 py-1 rounded border border-white/20 text-xs">
             <span className="text-[11px] text-gray-300 hidden sm:inline">Default Language:</span>
