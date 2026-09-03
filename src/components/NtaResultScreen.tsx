@@ -1,11 +1,15 @@
 import { memo, useEffect, useMemo, useRef, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
-import { CheckCircle2, XCircle, Award, BarChart2, RefreshCw, LayoutDashboard } from 'lucide-react';
+import { Link, useNavigate } from 'react-router-dom';
+import { CheckCircle2, XCircle, Award, BarChart2, RefreshCw, LayoutDashboard, Target, ArrowRight, BookOpen } from 'lucide-react';
 import type { Question, QuestionState } from '../types';
 import type { AttemptResult } from '../lib/scoring';
 import type { QuestionKey } from '../lib/attemptsDb';
+import { chapterInfo, paperTestChapters, type ChapterPerformance } from '../lib/chapterAnalysis';
+import { loadChapterIndex } from '../lib/questionChapterMap';
+import { examOfPaperKey } from '../lib/exam';
 import QuestionDiagram from './QuestionDiagram';
 import VectorText from './VectorText';
+import ScoreRing from './ScoreRing';
 
 // Solutions are shown in pages of this many questions; the next page loads
 // via the Load More button / progress bar, so the DOM stays small and the
@@ -22,6 +26,10 @@ interface NtaResultScreenProps {
   result: AttemptResult;
   // Answer keys + solutions for this paper only, returned with the result.
   keys: Record<string, QuestionKey>;
+  // Identifies the test for chapter-aware analysis links. For chapter tests
+  // paperKey is the chapter id (e.g. "jee-phy-1").
+  paperKey?: string;
+  isChapter?: boolean;
 }
 
 interface SolutionCardProps {
@@ -127,6 +135,238 @@ const SolutionCard = memo(function SolutionCard({ q, qState, keyInfo, outcome }:
 
 type StatusFilter = 'ALL' | 'attempted' | 'unattempted';
 
+// Post-submit analysis: a donut ring of the outcome split (correct /
+// incorrect / unattempted) with the score share in the middle, per-section
+// mini rings, and a weakest-area callout that points at the next practice
+// step. Everything here feeds the dashboard — the same attempt row powers
+// the weak-subject → weak-chapter drill-down there.
+function PerformanceAnalysis({
+  result,
+  sectionResults,
+  paperKey,
+  isChapter,
+}: {
+  result: AttemptResult;
+  sectionResults: Array<{
+    section: string;
+    total: number;
+    correct: number;
+    incorrect: number;
+    unattempted: number;
+    score: number;
+    maxScore: number;
+  }>;
+  paperKey?: string;
+  isChapter: boolean;
+}) {
+  const scorePct =
+    result.maxScore > 0 ? Math.round((result.totalScore / result.maxScore) * 100) : 0;
+  const attempted = sectionResults.filter((s) => s.total > 0);
+  const byAcc = (s: (typeof attempted)[number]) =>
+    s.correct + s.incorrect > 0 ? s.correct / (s.correct + s.incorrect) : 1;
+  const sorted = [...attempted].sort((a, b) => byAcc(a) - byAcc(b));
+  const weakest = sorted.length > 0 ? sorted[0] : null;
+  const strongest = sorted.length > 0 ? sorted[sorted.length - 1] : null;
+  const weakestAcc =
+    weakest && weakest.correct + weakest.incorrect > 0
+      ? Math.round((weakest.correct / (weakest.correct + weakest.incorrect)) * 100)
+      : null;
+  const needsWork = weakestAcc !== null && weakestAcc < 60;
+
+  const chapter = isChapter && paperKey ? chapterInfo(paperKey) : null;
+
+  // Full papers: attribute each question to its chapter via the
+  // question→chapter index (chapter tests were carved out of papers, so the
+  // ids match). Loaded lazily here in the post-submit analysis — never
+  // during the test, so the chapter stays hidden while attempting.
+  const [paperChapters, setPaperChapters] = useState<ChapterPerformance[] | null>(null);
+  useEffect(() => {
+    if (isChapter || !paperKey) {
+      setPaperChapters(null);
+      return;
+    }
+    let cancelled = false;
+    setPaperChapters(null);
+    loadChapterIndex().then((index) => {
+      if (cancelled) return;
+      setPaperChapters(
+        paperTestChapters(result.questionOutcomes ?? {}, examOfPaperKey(paperKey), index)
+      );
+    });
+    return () => {
+      cancelled = true;
+    };
+  }, [isChapter, paperKey, result]);
+
+  const weakPaperChapters = useMemo(
+    () => (paperChapters ?? []).filter((c) => c.isWeak).slice(0, 3),
+    [paperChapters]
+  );
+  const mappedQuestions = useMemo(
+    () => (paperChapters ?? []).reduce((s, c) => s + c.questions, 0),
+    [paperChapters]
+  );
+  const totalQuestions =
+    result.totalCorrect + result.totalIncorrect + result.totalUnattempted;
+
+  return (
+    <div className="bg-white border border-gray-300 rounded shadow-sm overflow-hidden">
+      <div className="bg-[#1b365d] text-white px-4 py-2.5 font-bold text-xs uppercase tracking-wide flex items-center gap-2">
+        <Target className="w-4 h-4 text-amber-300" />
+        Performance Analysis
+      </div>
+      <div className="p-4 sm:p-5 grid grid-cols-1 md:grid-cols-[auto_1fr] gap-6 items-center">
+        <ScoreRing
+          percent={scorePct}
+          centerLabel="score"
+          segments={[
+            { value: result.totalCorrect, color: '#16a34a', label: 'Correct' },
+            { value: result.totalIncorrect, color: '#dc2626', label: 'Incorrect' },
+            {
+              value: result.totalUnattempted,
+              color: '#d1d5db',
+              label: 'Unattempted',
+            },
+          ]}
+        />
+        <div className="min-w-0">
+          {/* Per-section mini rings */}
+          <div className="flex flex-wrap gap-4 mb-4">
+            {sectionResults.map((sec) => {
+              const secTotal = sec.correct + sec.incorrect + sec.unattempted;
+              const secPct =
+                sec.maxScore > 0 ? Math.round((sec.score / sec.maxScore) * 100) : 0;
+              return (
+                <div key={sec.section} className="flex items-center gap-2.5">
+                  <ScoreRing
+                    percent={secPct}
+                    segments={[
+                      { value: sec.correct, color: '#16a34a', label: 'Correct' },
+                      { value: sec.incorrect, color: '#dc2626', label: 'Incorrect' },
+                      { value: sec.unattempted, color: '#d1d5db', label: 'Unattempted' },
+                    ]}
+                    size={64}
+                    stroke={9}
+                    legend={false}
+                  />
+                  <div>
+                    <div className="text-xs font-bold text-gray-900">{sec.section}</div>
+                    <div className="text-[11px] text-gray-500 font-mono">
+                      {sec.score}/{sec.maxScore} · {secTotal > 0 ? `${sec.correct}/${secTotal} correct` : 'no questions'}
+                    </div>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+          {/* Weakest-area callout */}
+          {weakest && weakestAcc !== null && (
+            <div
+              className={`border rounded-lg px-3.5 py-3 text-xs leading-relaxed ${
+                needsWork ? 'bg-red-50 border-red-200 text-red-900' : 'bg-green-50 border-green-200 text-green-900'
+              }`}
+            >
+              {needsWork ? (
+                <>
+                  <strong>Weak spot: {weakest.section}</strong> — {weakestAcc}% accuracy
+                  ({weakest.correct} correct, {weakest.incorrect} wrong
+                  {weakest.unattempted > 0 ? `, ${weakest.unattempted} skipped` : ''}).
+                  {chapter ? (
+                    <>
+                      {' '}Revise <strong>{chapter.title}</strong> and retake this chapter test to close the gap.
+                    </>
+                  ) : (
+                    <>
+                      {' '}The weak chapters behind it are broken down below with practice links.
+                    </>
+                  )}
+                </>
+              ) : (
+                <>
+                  <strong>Balanced performance</strong> — no section below 60% accuracy
+                  {strongest ? <> (best: {strongest.section})</> : null}. Keep the streak going.
+                </>
+              )}
+            </div>
+          )}
+          {/* Weak chapters inside this paper (full papers only) */}
+          {!isChapter && paperChapters && paperChapters.length > 0 && (
+            <div className="mt-3 border border-gray-200 rounded-lg p-3.5 bg-gray-50/60">
+              <h4 className="text-[11px] font-bold uppercase tracking-wide text-gray-700 mb-1 flex items-center gap-1.5">
+                <BookOpen className="w-3.5 h-3.5 text-[#1b365d]" />
+                Weak chapters in this paper
+              </h4>
+              <p className="text-[10px] text-gray-400 mb-2.5">
+                Chapter mapped for {mappedQuestions} of {totalQuestions} questions — coverage grows as more chapters are added.
+              </p>
+              {weakPaperChapters.length === 0 ? (
+                <p className="text-xs text-green-800 font-medium">
+                  No weak chapter stood out — every mapped chapter is at 60%+ accuracy.
+                </p>
+              ) : (
+                <div className="space-y-2.5">
+                  {weakPaperChapters.map((ch) => (
+                    <div key={ch.chapterId}>
+                      <div className="flex items-center justify-between gap-2 text-xs mb-1">
+                        <span className="font-semibold text-gray-900">
+                          {ch.title}
+                          <span className="ml-1.5 font-normal text-gray-400">· {ch.subject}</span>
+                        </span>
+                        <span className="font-mono font-bold text-red-600">{ch.avgAccuracy}%</span>
+                      </div>
+                      <div className="w-full bg-gray-200 rounded-full h-1.5 mb-1">
+                        <div
+                          className="h-1.5 rounded-full bg-red-500"
+                          style={{ width: `${ch.avgAccuracy}%` }}
+                        />
+                      </div>
+                      <div className="flex items-center justify-between text-[10px] text-gray-500">
+                        <span>
+                          {ch.totalCorrect} right · {ch.totalIncorrect} wrong
+                          {ch.totalUnattempted > 0 ? ` · ${ch.totalUnattempted} skipped` : ''} ({ch.questions} questions)
+                        </span>
+                        <Link
+                          to={`/test?chapter=${ch.chapterId}`}
+                          className="inline-flex items-center gap-0.5 font-bold text-[#1b365d] hover:underline"
+                        >
+                          Practice chapter <ArrowRight className="w-3 h-3" />
+                        </Link>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              )}
+            </div>
+          )}
+          <div className="flex flex-wrap items-center gap-2 mt-3">
+            {isChapter && paperKey ? (
+              <Link
+                to={`/test?chapter=${paperKey}`}
+                className="inline-flex items-center gap-1.5 text-[11px] font-bold text-white bg-[#1b365d] hover:bg-[#152a4a] px-3 py-1.5 rounded transition-colors"
+              >
+                <RefreshCw className="w-3 h-3" /> Retake this chapter
+              </Link>
+            ) : (
+              <Link
+                to="/chapter-tests"
+                className="inline-flex items-center gap-1.5 text-[11px] font-bold text-white bg-[#1b365d] hover:bg-[#152a4a] px-3 py-1.5 rounded transition-colors"
+              >
+                Practice weak chapters <ArrowRight className="w-3 h-3" />
+              </Link>
+            )}
+            <Link
+              to="/dashboard"
+              className="inline-flex items-center gap-1.5 text-[11px] font-bold text-[#1b365d] bg-blue-50 hover:bg-blue-100 border border-blue-200 px-3 py-1.5 rounded transition-colors"
+            >
+              <LayoutDashboard className="w-3 h-3" /> Full analysis on dashboard
+            </Link>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
 const STATUS_FILTERS: { value: StatusFilter; label: string }[] = [
   { value: 'ALL', label: 'All' },
   { value: 'attempted', label: 'Attempted' },
@@ -141,6 +381,8 @@ export default function NtaResultScreen({
   onRetake,
   result,
   keys,
+  paperKey,
+  isChapter = false,
 }: NtaResultScreenProps) {
   const navigate = useNavigate();
   const [activeFilterSection, setActiveFilterSection] = useState<string>('ALL');
@@ -313,6 +555,14 @@ export default function NtaResultScreen({
             </div>
           </div>
         </div>
+
+        {/* Performance Analysis — outcome ring + weakest-area callout */}
+        <PerformanceAnalysis
+          result={result}
+          sectionResults={sectionResults}
+          paperKey={paperKey}
+          isChapter={isChapter}
+        />
 
         {/* Section Score Breakdown */}
         <div className="bg-white border border-gray-300 rounded shadow-sm overflow-hidden">

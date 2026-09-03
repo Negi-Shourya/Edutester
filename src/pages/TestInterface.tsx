@@ -736,6 +736,8 @@ export default function TestInterface() {
           onRetake={handleRetakeTest}
           result={resultPayload.result}
           keys={resultPayload.keys}
+          paperKey={paperKey}
+          isChapter={isChapter}
         />
       );
     }

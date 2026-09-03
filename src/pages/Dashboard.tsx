@@ -16,6 +16,10 @@ import {
   loadQuestionMeta, analyzeTest, analyzeOverall, type TestAnalysis, type SubjectOverall,
   type Recommendation,
 } from '../lib/dashboard';
+import {
+  analyzeChapters, chaptersForSubject, mergePaperChapters, type ChapterPerformance,
+} from '../lib/chapterAnalysis';
+import { loadChapterIndex } from '../lib/questionChapterMap';
 
 const SECTION_COLORS: Record<string, string> = {
   Physics: 'bg-blue-500',
@@ -85,8 +89,12 @@ export default function Dashboard() {
   const [attempts, setAttempts] = useState<AttemptRow[] | null>(null);
   const [analyses, setAnalyses] = useState<TestAnalysis[] | null>(null);
   const [expanded, setExpanded] = useState<string | null>(null);
+  const [expandedSubject, setExpandedSubject] = useState<string | null>(null);
   const [inProgress, setInProgress] = useState<SavedAttempt | null>(null);
   const [historyFilter, setHistoryFilter] = useState<'all' | 'paper' | 'chapter'>('all');
+  // Test history shows the 7 most recent tests; "Show more" reveals the rest.
+  const [showAllHistory, setShowAllHistory] = useState(false);
+  const HISTORY_VISIBLE = 7;
 
   useEffect(() => {
     let cancelled = false;
@@ -162,6 +170,50 @@ export default function Dashboard() {
     () => (trackAttempts && trackAnalyses ? analyzeOverall(trackAttempts, trackAnalyses) : null),
     [trackAttempts, trackAnalyses]
   );
+
+  // Chapter-level signal. Chapter-test attempts map to chapters directly;
+  // full-paper questions are attributed via the question→chapter index
+  // (chapter tests were carved out of papers). Merged async — the sync base
+  // renders instantly, paper-derived stats join in when the index loads.
+  const chapterBase = useMemo(
+    () => analyzeChapters(trackAttempts ?? []),
+    [trackAttempts]
+  );
+  const [mergedChapters, setMergedChapters] = useState<ChapterPerformance[] | null>(null);
+  useEffect(() => {
+    let cancelled = false;
+    setMergedChapters(null);
+    const rows = trackAttempts ?? [];
+    if (rows.length === 0) {
+      setMergedChapters([]);
+      return;
+    }
+    loadChapterIndex().then((index) => {
+      if (cancelled) return;
+      setMergedChapters(mergePaperChapters(analyzeChapters(rows), rows, index));
+    });
+    return () => {
+      cancelled = true;
+    };
+  }, [trackAttempts]);
+  const chapterPerf = mergedChapters ?? chapterBase;
+
+  // "What to Work On": weakest chapters first (deep link to that chapter's
+  // test), then the generic subject/habit recommendations.
+  const recommendations = useMemo<Recommendation[] | null>(() => {
+    if (!overall) return null;
+    const chapterRecs: Recommendation[] = chapterPerf
+      .filter((c) => c.isWeak)
+      .slice(0, 2)
+      .map((c) => ({
+        priority: (c.avgAccuracy < 45 ? 'high' : 'medium') as Recommendation['priority'],
+        title: `Fix ${c.title}`,
+        detail: `${c.avgAccuracy}% accuracy across ${c.attempts} ${c.attempts === 1 ? 'attempt' : 'attempts'} in ${c.subject}. Revise the chapter, then retake its test.`,
+        ctaLabel: `Practice ${c.title}`,
+        ctaTo: `/test?chapter=${c.chapterId}`,
+      }));
+    return [...chapterRecs, ...overall.recommendations].slice(0, 4);
+  }, [overall, chapterPerf]);
 
   const filteredAnalyses = useMemo(() => {
     if (!trackAnalyses) return null;
@@ -423,7 +475,7 @@ export default function Dashboard() {
                     {/* Filter tabs */}
                     <div className="inline-flex bg-gray-100 p-1 rounded-lg text-xs font-medium">
                       <button
-                        onClick={() => setHistoryFilter('all')}
+                        onClick={() => { setHistoryFilter('all'); setShowAllHistory(false); }}
                         className={`px-3 py-1 rounded-md transition-all ${
                           historyFilter === 'all'
                             ? 'bg-white text-gray-900 shadow-xs font-semibold'
@@ -433,7 +485,7 @@ export default function Dashboard() {
                         All ({trackAnalyses?.length ?? 0})
                       </button>
                       <button
-                        onClick={() => setHistoryFilter('chapter')}
+                        onClick={() => { setHistoryFilter('chapter'); setShowAllHistory(false); }}
                         className={`px-3 py-1 rounded-md transition-all ${
                           historyFilter === 'chapter'
                             ? 'bg-white text-purple-700 shadow-xs font-semibold'
@@ -443,7 +495,7 @@ export default function Dashboard() {
                         Chapters ({chapterCount})
                       </button>
                       <button
-                        onClick={() => setHistoryFilter('paper')}
+                        onClick={() => { setHistoryFilter('paper'); setShowAllHistory(false); }}
                         className={`px-3 py-1 rounded-md transition-all ${
                           historyFilter === 'paper'
                             ? 'bg-white text-blue-700 shadow-xs font-semibold'
@@ -457,14 +509,34 @@ export default function Dashboard() {
 
                   <div className="space-y-3">
                     {filteredAnalyses && filteredAnalyses.length > 0 ? (
-                      filteredAnalyses.map((a) => (
-                        <TestHistoryCard
-                          key={a.row.id}
-                          analysis={a}
-                          expanded={expanded === a.row.id}
-                          onToggle={() => setExpanded(expanded === a.row.id ? null : a.row.id)}
-                        />
-                      ))
+                      <>
+                        {(showAllHistory ? filteredAnalyses : filteredAnalyses.slice(0, HISTORY_VISIBLE)).map((a) => (
+                          <TestHistoryCard
+                            key={a.row.id}
+                            analysis={a}
+                            expanded={expanded === a.row.id}
+                            onToggle={() => setExpanded(expanded === a.row.id ? null : a.row.id)}
+                          />
+                        ))}
+                        {filteredAnalyses.length > HISTORY_VISIBLE && (
+                          <button
+                            onClick={() => setShowAllHistory(!showAllHistory)}
+                            className="w-full flex items-center justify-center gap-1.5 py-2.5 rounded-xl text-xs font-semibold text-primary bg-primary/5 hover:bg-primary/10 border border-primary/10 transition-colors"
+                          >
+                            {showAllHistory ? (
+                              <>
+                                Show less
+                                <ChevronDown className="w-3.5 h-3.5 rotate-180" />
+                              </>
+                            ) : (
+                              <>
+                                Show more ({filteredAnalyses.length - HISTORY_VISIBLE} more)
+                                <ChevronDown className="w-3.5 h-3.5" />
+                              </>
+                            )}
+                          </button>
+                        )}
+                      </>
                     ) : (
                       <div className="text-center py-8 text-sm text-gray-400 border border-dashed border-gray-200 rounded-xl">
                         No {historyFilter === 'chapter' ? 'chapter tests' : 'paper tests'} recorded yet.
@@ -484,27 +556,35 @@ export default function Dashboard() {
                       <h2 className="font-semibold text-gray-900">Overall Weak Areas</h2>
                     </div>
                     <p className="text-xs text-gray-500 mb-4">
-                      Ranked weakest first, with your recent trend
+                      Ranked weakest first, with your recent trend — tap a subject to see its weak chapters
                     </p>
                     <div className="space-y-4">
                       {[...overall.subjects]
                         .sort((a, b) => a.avgAccuracy - b.avgAccuracy)
                         .map((sub) => (
-                          <SubjectRow key={sub.section} sub={sub} />
+                          <SubjectRow
+                            key={sub.section}
+                            sub={sub}
+                            chapters={chaptersForSubject(chapterPerf, sub.section, exam)}
+                            expanded={expandedSubject === sub.section}
+                            onToggle={() =>
+                              setExpandedSubject(expandedSubject === sub.section ? null : sub.section)
+                            }
+                          />
                         ))}
                     </div>
                   </div>
                 )}
 
                 {/* Recommendations */}
-                {overall && (
+                {recommendations && (
                   <div className="bg-white rounded-xl border border-gray-200 p-5">
                     <h2 className="font-semibold text-gray-900 mb-4 flex items-center gap-2">
                       <Lightbulb className="w-5 h-5 text-amber-500" />
                       What to Work On
                     </h2>
                     <div className="space-y-3">
-                      {overall.recommendations.map((rec, i) => (
+                      {recommendations.map((rec, i) => (
                         <div key={i} className="border border-gray-100 rounded-xl p-3.5">
                           <div className="flex items-center gap-2 mb-1">
                             <span className={`text-[10px] font-bold uppercase tracking-wide px-1.5 py-0.5 rounded ${PRIORITY_BADGE[rec.priority]}`}>
@@ -647,18 +727,30 @@ function CountUp({ value }: { value: string }) {
   return <motion.span>{text}</motion.span>;
 }
 
-function SubjectRow({ sub }: { sub: SubjectOverall }) {
+function SubjectRow({ sub, chapters, expanded, onToggle }: {
+  sub: SubjectOverall;
+  chapters: ChapterPerformance[];
+  expanded: boolean;
+  onToggle: () => void;
+}) {
   const color = SECTION_COLORS[sub.section] ?? 'bg-gray-500';
   const trend = TREND_ICONS[sub.trend];
   return (
     <div>
-      <div className="flex items-center justify-between text-sm mb-1">
-        <span className="text-gray-900 font-medium">{sub.section}</span>
-        <span className="flex items-center gap-1.5 text-xs">
-          <span className="text-gray-500">{sub.avgAccuracy}% accuracy</span>
-          <span className={trend.cls}>{trend.icon}</span>
-        </span>
-      </div>
+      <button onClick={onToggle} className="w-full text-left group">
+        <div className="flex items-center justify-between text-sm mb-1">
+          <span className="text-gray-900 font-medium flex items-center gap-1.5">
+            {sub.section}
+            <ChevronDown
+              className={`w-3.5 h-3.5 text-gray-400 transition-transform ${expanded ? 'rotate-180' : ''}`}
+            />
+          </span>
+          <span className="flex items-center gap-1.5 text-xs">
+            <span className="text-gray-500">{sub.avgAccuracy}% accuracy</span>
+            <span className={trend.cls}>{trend.icon}</span>
+          </span>
+        </div>
+      </button>
       <div className="text-[11px] text-gray-400 mb-1.5">
         {sub.attempts} {sub.attempts === 1 ? 'test' : 'tests'} · {sub.avgScorePct}% score
         {sub.recentAccuracy !== null && sub.previousAccuracy !== null
@@ -673,6 +765,56 @@ function SubjectRow({ sub }: { sub: SubjectOverall }) {
           style={{ width: `${sub.avgAccuracy}%` }}
         />
       </div>
+
+      {/* Chapter drill-down: weakest chapters of this subject first */}
+      {expanded && (
+        <div className="mt-2.5 ml-1 pl-3 border-l-2 border-gray-100 space-y-2.5">
+          {chapters.length === 0 ? (
+            <p className="text-[11px] text-gray-500 leading-relaxed">
+              Nothing mapped to {sub.section} yet — take a chapter test or a
+              full paper and the weak chapters will appear here.
+              <Link
+                to="/chapter-tests"
+                className="inline-flex items-center gap-0.5 ml-1 font-semibold text-primary hover:underline"
+              >
+                Browse chapters <ArrowRight className="w-3 h-3" />
+              </Link>
+            </p>
+          ) : (
+            chapters.map((ch) => (
+              <div key={ch.chapterId}>
+                <div className="flex items-center justify-between gap-2 text-xs mb-1">
+                  <span className={`font-medium ${ch.isWeak ? 'text-red-600' : 'text-gray-700'}`}>
+                    {ch.title}
+                  </span>
+                  <span className={`font-mono font-semibold ${pctClass(ch.avgAccuracy)}`}>
+                    {ch.avgAccuracy}%
+                  </span>
+                </div>
+                <div className="w-full bg-gray-100 rounded-full h-1 mb-1">
+                  <div
+                    className={`h-1 rounded-full ${
+                      ch.avgAccuracy < 50 ? 'bg-red-400' : ch.avgAccuracy < 70 ? 'bg-amber-400' : 'bg-green-500'
+                    }`}
+                    style={{ width: `${ch.avgAccuracy}%` }}
+                  />
+                </div>
+                <div className="flex items-center justify-between text-[10px] text-gray-400">
+                  <span>
+                    {ch.questions} {ch.questions === 1 ? 'question' : 'questions'} · {ch.attempts} {ch.attempts === 1 ? 'test' : 'tests'}
+                  </span>
+                  <Link
+                    to={`/test?chapter=${ch.chapterId}`}
+                    className="inline-flex items-center gap-0.5 font-semibold text-primary hover:underline"
+                  >
+                    <Play className="w-2.5 h-2.5 fill-current" /> Practice
+                  </Link>
+                </div>
+              </div>
+            ))
+          )}
+        </div>
+      )}
     </div>
   );
 }

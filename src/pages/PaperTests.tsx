@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { AnimatePresence, motion } from 'motion/react';
-import { ExternalLink, Clock, Sunrise, Sunset, Lock, Gift, CheckCircle, GraduationCap, FlaskConical, AlertCircle, Hourglass } from 'lucide-react';
+import { ExternalLink, Clock, Sunrise, Sunset, Lock, Gift, CheckCircle, GraduationCap, FlaskConical, AlertCircle, Hourglass, RotateCcw } from 'lucide-react';
 import { getPapers, type PaperSummary } from '../data/questions';
 import PaywallModal from '../components/PaywallModal';
 import { useSubscriptionAccess } from '../lib/subscription';
@@ -92,10 +92,16 @@ function PaperEntryRow({
         </div>
         <button
           onClick={() => onAttempt(entry)}
-          className={`inline-flex items-center gap-1.5 text-sm font-medium transition-colors px-3 py-1.5 rounded-lg ${
+          title={locked ? 'Unlock this paper' : result ? `Retake — last score ${result.totalScore}/${result.maxScore}` : 'Attempt this paper'}
+          className={`inline-flex items-center gap-1.5 text-sm font-medium transition-colors px-3.5 py-1.5 rounded-lg shrink-0 ${
             locked
               ? 'text-stone-400 hover:text-stone-600 hover:bg-stone-100'
-              : 'text-emerald-600 hover:text-emerald-700 hover:bg-emerald-50'
+              : result
+                // Retake: calm soft-emerald outline button.
+                ? 'text-emerald-700 bg-emerald-50 border border-emerald-200 hover:bg-emerald-100 hover:border-emerald-300 active:scale-[0.97]'
+                // Attempt: the primary action — flat primary fill, no
+                // gradient or glow, clearly ahead of Retake.
+                : 'text-white bg-primary hover:bg-primary-dark shadow-sm active:scale-[0.97]'
           }`}
         >
           {locked ? (
@@ -103,9 +109,14 @@ function PaperEntryRow({
               <Lock className="w-3.5 h-3.5" />
               Unlock
             </>
+          ) : result ? (
+            <>
+              <RotateCcw className="w-3.5 h-3.5" />
+              Retake
+            </>
           ) : (
             <>
-              {result ? 'Retake' : 'Attempt'}
+              Attempt
               <ExternalLink className="w-3.5 h-3.5" />
             </>
           )}

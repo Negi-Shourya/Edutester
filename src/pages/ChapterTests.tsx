@@ -212,6 +212,7 @@ export default function ChapterTests() {
                               test={test}
                               locked={locked}
                               trial={trial}
+                              subscribed={hasSubscription}
                               onLocked={() => setShowPaywall(true)}
                               attemptScore={scoreFor(test.id)}
                             />
@@ -251,6 +252,7 @@ export default function ChapterTests() {
                           test={test}
                           locked={locked}
                           trial={trial}
+                          subscribed={hasSubscription}
                           onLocked={() => setShowPaywall(true)}
                           attemptScore={scoreFor(test.id)}
                         />
