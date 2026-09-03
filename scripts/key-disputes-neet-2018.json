@@ -1,0 +1,1127 @@
+[
+ {
+  "id": 22082,
+  "number": 3,
+  "key": "C",
+  "mine": "B",
+  "reason": "v_rms = v_esc gives T = mv²/3k = 8.36×10⁴ K (B); key C (2.508×10⁴ K) matches no standard derivation",
+  "status": "key-corrected",
+  "correctedTo": "B"
+ },
+ {
+  "id": 22084,
+  "number": 5,
+  "key": "C",
+  "mine": "B",
+  "reason": "47 kΩ = Yellow(4)-Violet(7)-Orange(×10³), 4.7/47 = 10% = Silver → (B); key C reads 74 kΩ",
+  "status": "key-corrected",
+  "correctedTo": "B"
+ },
+ {
+  "id": 22085,
+  "number": 6,
+  "key": "B",
+  "mine": "C",
+  "reason": "I_series = E/R(n+1), I_parallel = nE/R(n+1) = n·I = 10I → n = 10 → (C); key B (11) inconsistent",
+  "status": "key-corrected",
+  "correctedTo": "C"
+ },
+ {
+  "id": 22087,
+  "number": 8,
+  "key": "A",
+  "mine": "D",
+  "reason": "Reflected ⊥ refracted is Brewster's condition, tan i = μ → (D); key A is the critical-angle formula",
+  "status": "key-corrected",
+  "correctedTo": "D"
+ },
+ {
+  "id": 22088,
+  "number": 9,
+  "key": "D",
+  "mine": "B",
+  "reason": "Angular width θ = λ/d; 0.20°→0.21° needs d = 2×0.20/0.21 ≈ 1.9 mm → (B); key D (1.7 mm) gives 0.235°",
+  "status": "key-corrected",
+  "correctedTo": "B"
+ },
+ {
+  "id": 22089,
+  "number": 10,
+  "key": "D",
+  "mine": "A",
+  "reason": "Magnification needs large f_o, resolution needs large aperture → (A); key D pairs large f with small diameter",
+  "status": "key-corrected",
+  "correctedTo": "A"
+ },
+ {
+  "id": 22090,
+  "number": 11,
+  "key": "C",
+  "mine": "B",
+  "reason": "KE:PE:TE = 1:−2:−1 so KE:TE = 1:−1 → (B); key C (1:1) has the wrong sign",
+  "status": "key-corrected",
+  "correctedTo": "B"
+ },
+ {
+  "id": 22091,
+  "number": 12,
+  "key": "B",
+  "mine": "C",
+  "reason": "F = −eE = +eE_0 along v_0, so the electron accelerates and λ falls: λ_0/(1 + eE_0t/mv_0) → (C); key B grows",
+  "status": "key-corrected",
+  "correctedTo": "C"
+ },
+ {
+  "id": 22094,
+  "number": 15,
+  "key": "B",
+  "mine": "D",
+  "reason": "Figure verified: I_B = 20/500kΩ = 40 μA, I_C = 20/4kΩ = 5 mA, β = 125 → (D); key B (25 μA, β = 200) fits no values",
+  "status": "key-corrected",
+  "correctedTo": "D"
+ },
+ {
+  "id": 22100,
+  "number": 21,
+  "key": "A",
+  "mine": "D",
+  "reason": "U = 1/2LI2 gives L = 13.89 H -> (D); key A (1.389) off by 10x",
+  "status": "key-corrected",
+  "correctedTo": "D"
+ },
+ {
+  "id": 22103,
+  "number": 24,
+  "key": "C",
+  "mine": "B",
+  "reason": "Successive resonances differ by lam/2 = 53cm -> v = 339.2 m/s -> (B); key C (330) inconsistent",
+  "status": "key-corrected",
+  "correctedTo": "B"
+ },
+ {
+  "id": 22104,
+  "number": 25,
+  "key": "C",
+  "mine": "B",
+  "reason": "a = w2x gives w2=4, T = pi s -> (B); key C (2pi) inconsistent",
+  "status": "key-corrected",
+  "correctedTo": "B"
+ },
+ {
+  "id": 22105,
+  "number": 26,
+  "key": "B",
+  "mine": "D",
+  "reason": "ILB cos30 = mg sin30 gives I = 11.32 A -> (D); key B inconsistent",
+  "status": "key-corrected",
+  "correctedTo": "D"
+ },
+ {
+  "id": 22107,
+  "number": 28,
+  "key": "D",
+  "mine": "C",
+  "reason": "P = Vrms2 R/Z2 = 0.79 W -> (C); key D inconsistent",
+  "status": "key-corrected",
+  "correctedTo": "C"
+ },
+ {
+  "id": 22108,
+  "number": 29,
+  "key": "D",
+  "mine": "A",
+  "reason": "R = 5000/20 = 250 ohm -> (A); key D inconsistent",
+  "status": "key-corrected",
+  "correctedTo": "A"
+ },
+ {
+  "id": 22109,
+  "number": 30,
+  "key": "B",
+  "mine": "D",
+  "reason": "Loop needs h = 5D/4 -> (D); h = D impossible",
+  "status": "key-corrected",
+  "correctedTo": "D"
+ },
+ {
+  "id": 22110,
+  "number": 31,
+  "key": "D",
+  "mine": "C",
+  "reason": "I: sphere 2/5, disk 1/2, ring 1 (×MR²) → WC>WB>WA → (C)",
+  "status": "key-corrected",
+  "correctedTo": "C"
+ },
+ {
+  "id": 22111,
+  "number": 32,
+  "key": "D",
+  "mine": "B",
+  "reason": "mv = 4mv2 → v2 = v/4; e = (v/4)/v = 0.25 → (B)",
+  "status": "key-corrected",
+  "correctedTo": "B"
+ },
+ {
+  "id": 22113,
+  "number": 34,
+  "key": "D",
+  "mine": "B",
+  "reason": "x(3) = 3 m → avg velocity 1 m/s; distance 9 m → avg speed 3 m/s → (B)",
+  "status": "key-corrected",
+  "correctedTo": "B"
+ },
+ {
+  "id": 22114,
+  "number": 35,
+  "key": "C",
+  "mine": "D",
+  "reason": "Figure verified: ma·cosθ = mg·sinθ → a = g·tanθ → (D)",
+  "status": "key-corrected",
+  "correctedTo": "D"
+ },
+ {
+  "id": 22115,
+  "number": 36,
+  "key": "B",
+  "mine": "D",
+  "reason": "r×F = −7i−4j−8k → (D), verified twice",
+  "status": "key-corrected",
+  "correctedTo": "D"
+ },
+ {
+  "id": 22117,
+  "number": 38,
+  "key": "C",
+  "mine": "D",
+  "reason": "No external torque → angular momentum conserved → (D); ω and KE fall as I rises",
+  "status": "key-corrected",
+  "correctedTo": "D"
+ },
+ {
+  "id": 22120,
+  "number": 41,
+  "key": "A",
+  "mine": "B",
+  "reason": "Kt/(Kt+Kr) = (1/2)/(7/10) = 5/7 → (B)",
+  "status": "key-corrected",
+  "correctedTo": "B"
+ },
+ {
+  "id": 22121,
+  "number": 42,
+  "key": "C",
+  "mine": "A",
+  "reason": "Heat rate = F·vT = mg·vT ∝ r³·r² = r⁵ → (A)",
+  "status": "key-corrected",
+  "correctedTo": "A"
+ },
+ {
+  "id": 22122,
+  "number": 43,
+  "key": "C",
+  "mine": "D",
+  "reason": "T2/T1 = 4/3, P ∝ T⁴ → n = (4/3)⁴ = 256/81 → (D)",
+  "status": "key-corrected",
+  "correctedTo": "D"
+ },
+ {
+  "id": 22123,
+  "number": 44,
+  "key": "B",
+  "mine": "C",
+  "reason": "F2/F1 = (A2/A1)(l1/l2) = 3×3 = 9 → (C)",
+  "status": "key-corrected",
+  "correctedTo": "C"
+ },
+ {
+  "id": 22124,
+  "number": 45,
+  "key": "C",
+  "mine": "B",
+  "reason": "ΔU = 54×4.184 − 1.013e5×167.1e-6 ≈ 209 J → (B)",
+  "status": "key-corrected",
+  "correctedTo": "B"
+ },
+ {
+  "id": 22119,
+  "number": 40,
+  "key": "A",
+  "mine": "D",
+  "reason": "g rises 10x (G is universal), so A/B/C are correct and only D (g unchanged) is not correct → (D)",
+  "status": "key-corrected",
+  "correctedTo": "D"
+ },
+ {
+  "id": 22125,
+  "number": 46,
+  "key": "B",
+  "mine": "C",
+  "reason": "N states +5,+2,0,−3 → HNO₃,NO,N₂,NH₄Cl → (C)",
+  "status": "key-corrected",
+  "correctedTo": "C"
+ },
+ {
+  "id": 22126,
+  "number": 47,
+  "key": "C",
+  "mine": "A",
+  "reason": "B cannot expand octet (max covalence 4); hexafluorogallate exists → (A)",
+  "status": "key-corrected",
+  "correctedTo": "A"
+ },
+ {
+  "id": 22129,
+  "number": 50,
+  "key": "D",
+  "mine": "A",
+  "reason": "Aakash + HOF: F shows +1 OS in HOF, so statement (1) is the false one (internet-verified)",
+  "status": "key-corrected",
+  "correctedTo": "A"
+ },
+ {
+  "id": 22130,
+  "number": 51,
+  "key": "D",
+  "mine": "B",
+  "reason": "ClF₃: 3 bond pairs + 2 lone pairs → (B)",
+  "status": "key-corrected",
+  "correctedTo": "B"
+ },
+ {
+  "id": 22132,
+  "number": 53,
+  "key": "C",
+  "mine": "D",
+  "reason": "Glycine is the zwitterion former; aniline cannot form one → (D)",
+  "status": "key-corrected",
+  "correctedTo": "D"
+ },
+ {
+  "id": 22134,
+  "number": 55,
+  "key": "A",
+  "mine": "D",
+  "reason": "Strong acid converts aniline to meta-directing anilinium → (D)",
+  "status": "key-corrected",
+  "correctedTo": "D"
+ },
+ {
+  "id": 22135,
+  "number": 56,
+  "key": "B",
+  "mine": "C",
+  "reason": "Amylopectin = α-1,4 + α-1,6; option B misstates amylose with a β-linkage → (C)",
+  "status": "key-corrected",
+  "correctedTo": "C"
+ },
+ {
+  "id": 22136,
+  "number": 57,
+  "key": "D",
+  "mine": "A",
+  "reason": "CO = 0.05+0.05 = 0.1 mol = 2.8 g after KOH absorbs CO₂ → (A)",
+  "status": "key-corrected",
+  "correctedTo": "A"
+ },
+ {
+  "id": 22081,
+  "number": 2,
+  "key": "B",
+  "mine": "C",
+  "status": "key-corrected",
+  "correctedTo": "C",
+  "reason": "physics-decides batch"
+ },
+ {
+  "id": 22096,
+  "number": 17,
+  "key": "D",
+  "mine": "B",
+  "status": "key-corrected",
+  "correctedTo": "B",
+  "reason": "physics-decides batch"
+ },
+ {
+  "id": 22141,
+  "number": 62,
+  "key": "C",
+  "mine": "D",
+  "status": "key-corrected",
+  "correctedTo": "D",
+  "reason": "CH4 -> CH3Br -> Wurtz -> C2H6 (gaseous, fewer than 4 C); vinyl halides do not undergo Wurtz"
+ },
+ {
+  "id": 22145,
+  "number": 66,
+  "key": "A",
+  "mine": "D",
+  "status": "key-corrected",
+  "correctedTo": "D",
+  "reason": "Reimer-Tiemann electrophile is dichlorocarbene :CCl2 (figure verified)"
+ },
+ {
+  "id": 22148,
+  "number": 69,
+  "key": "A",
+  "mine": "C",
+  "status": "key-corrected",
+  "correctedTo": "C",
+  "reason": "Co3+(24^.5), Cr3+(15^.5), Fe3+(35^.5), Ni2+(8^.5) gives a-iv,b-v,c-ii,d-i"
+ },
+ {
+  "id": 22149,
+  "number": 70,
+  "key": "B",
+  "mine": "D",
+  "status": "key-corrected",
+  "correctedTo": "D",
+  "reason": "Only MnO4 2- (Mn VI, d1) has d-electrons for d-d transition plus paramagnetism"
+ },
+ {
+  "id": 22150,
+  "number": 71,
+  "key": "C",
+  "mine": "B",
+  "status": "key-corrected",
+  "correctedTo": "B",
+  "reason": "Fe(CO)5 has a single Fe centre, mononuclear"
+ },
+ {
+  "id": 22151,
+  "number": 72,
+  "key": "A",
+  "mine": "C",
+  "status": "key-corrected",
+  "correctedTo": "C",
+  "reason": "[CoCl2(en)2] shows cis/trans isomerism, geometrical"
+ },
+ {
+  "id": 22152,
+  "number": 73,
+  "key": "D",
+  "mine": "B",
+  "status": "key-corrected",
+  "correctedTo": "B",
+  "reason": "Ni(0) is d10: tetrahedral and diamagnetic"
+ },
+ {
+  "id": 22153,
+  "number": 74,
+  "key": "B",
+  "mine": "D",
+  "status": "key-corrected",
+  "correctedTo": "D",
+  "reason": "Only mixture (c) leaves 0.1 M H+ (10 mmol/100 mL), pH 1"
+ },
+ {
+  "key": "C",
+  "id": 22143,
+  "number": 64,
+  "mine": "A",
+  "correctedTo": "A",
+  "status": "key-corrected",
+  "reason": "Aakash distance reasoning: + farthest from NO2 in option (1) (internet-verified); meta mapping was wrong"
+ },
+ {
+  "id": 22171,
+  "number": 92,
+  "key": "B",
+  "mine": "D",
+  "correctedTo": "D",
+  "status": "key-corrected",
+  "reason": "Double fertilization = syngamy + triple fusion; option B names only one (Aakash (4) agrees)"
+ },
+ {
+  "id": 22173,
+  "number": 94,
+  "key": "B",
+  "mine": "A",
+  "correctedTo": "A",
+  "status": "key-corrected",
+  "reason": "Liquid N2 = -196C (Aakash (1) agrees)"
+ },
+ {
+  "id": 22174,
+  "number": 95,
+  "key": "D",
+  "mine": "A",
+  "correctedTo": "A",
+  "status": "key-corrected",
+  "reason": "K+ maintains turgor (Aakash (1) agrees)"
+ },
+ {
+  "id": 22175,
+  "number": 96,
+  "key": "D",
+  "mine": "B",
+  "correctedTo": "B",
+  "status": "key-corrected",
+  "reason": "NAD+ is an electron carrier (Aakash (2) agrees)"
+ },
+ {
+  "id": 22176,
+  "number": 97,
+  "key": "B",
+  "mine": "C",
+  "correctedTo": "C",
+  "status": "key-corrected",
+  "reason": "NCERT lists ferric form (Aakash (3)* starred - ambiguous, flagged for review)"
+ },
+ {
+  "id": 22179,
+  "number": 100,
+  "key": "C",
+  "mine": "D",
+  "correctedTo": "D",
+  "status": "key-corrected",
+  "reason": "GEAC clears GMOs (Aakash (4) agrees)"
+ },
+ {
+  "id": 22180,
+  "number": 101,
+  "key": "A",
+  "mine": "D",
+  "correctedTo": "D",
+  "status": "key-corrected",
+  "reason": "PCR order D-Annealing-E (Aakash (4) agrees)"
+ },
+ {
+  "id": 22181,
+  "number": 102,
+  "key": "D",
+  "mine": "C",
+  "correctedTo": "C",
+  "status": "key-corrected",
+  "reason": "Ribozyme = nucleic acid (Aakash (3) agrees)"
+ },
+ {
+  "id": 22183,
+  "number": 104,
+  "key": "B",
+  "mine": "C",
+  "correctedTo": "C",
+  "status": "key-corrected",
+  "reason": "Starch synthesis is Mendelian, not multiple alleles (Aakash (3) agrees)"
+ },
+ {
+  "id": 22184,
+  "number": 105,
+  "key": "D",
+  "mine": "B",
+  "correctedTo": "B",
+  "status": "key-corrected",
+  "reason": "Only the Punnett statement is true (Aakash key ambiguous here - flagged for review)"
+ },
+ {
+  "id": 22172,
+  "number": 93,
+  "key": "A",
+  "mine": "B",
+  "correctedTo": "B",
+  "status": "key-corrected",
+  "reason": "Yucca-moth obligate mutualism (Aakash (2) agrees)"
+ },
+ {
+  "id": 22182,
+  "number": 103,
+  "key": "A",
+  "mine": "D",
+  "correctedTo": "D",
+  "status": "key-corrected",
+  "reason": "Basmati patent controversy (Aakash (4) agrees)"
+ },
+ {
+  "id": 22133,
+  "number": 54,
+  "key": "C",
+  "mine": "D",
+  "correctedTo": "D",
+  "status": "key-corrected",
+  "reason": "Aakash: (3) is textbook-true, (4) unrelated to cross-linking (internet-verified)"
+ },
+ {
+  "id": 22154,
+  "number": 75,
+  "key": "C",
+  "mine": "A",
+  "correctedTo": "A",
+  "status": "key-corrected",
+  "reason": "Aakash: coagulation needs opposite sign + scales with magnitude (internet-verified)"
+ },
+ {
+  "id": 22155,
+  "number": 76,
+  "key": "A",
+  "mine": "C",
+  "correctedTo": "C",
+  "status": "key-corrected",
+  "reason": "Highest a (NH3 4.17) liquefies easiest (Aakash (3) agrees)"
+ },
+ {
+  "id": 22156,
+  "number": 77,
+  "key": "D",
+  "mine": "C",
+  "correctedTo": "C",
+  "status": "key-corrected",
+  "reason": "Ksp = s^2 = 1.08e-10 (Aakash (3) agrees)"
+ },
+ {
+  "id": 22157,
+  "number": 78,
+  "key": "D",
+  "mine": "C",
+  "correctedTo": "C",
+  "status": "key-corrected",
+  "reason": "18 mL = 1 mol is maximum (Aakash (3) agrees)"
+ },
+ {
+  "id": 22158,
+  "number": 79,
+  "key": "A",
+  "mine": "B",
+  "correctedTo": "B",
+  "status": "key-corrected",
+  "reason": "t-half dependence statement (Aakash (2) agrees)"
+ },
+ {
+  "id": 22160,
+  "number": 81,
+  "key": "B",
+  "mine": "D",
+  "correctedTo": "D",
+  "status": "key-corrected",
+  "reason": "E-right > E-left only for HBrO (Aakash (4) agrees)"
+ },
+ {
+  "id": 22162,
+  "number": 83,
+  "key": "D",
+  "mine": "C",
+  "correctedTo": "C",
+  "status": "key-corrected",
+  "reason": "Low T + high P for exothermic fewer-moles (Aakash (3) agrees)"
+ },
+ {
+  "id": 22163,
+  "number": 84,
+  "key": "C",
+  "mine": "B",
+  "correctedTo": "B",
+  "status": "key-corrected",
+  "reason": "Zero-order t-half doubles (Aakash (2) agrees)"
+ },
+ {
+  "id": 22164,
+  "number": 85,
+  "key": "D",
+  "mine": "A",
+  "correctedTo": "A",
+  "status": "key-corrected",
+  "reason": "x = 800 kJ/mol (Aakash (1) agrees)"
+ },
+ {
+  "id": 22165,
+  "number": 86,
+  "key": "A",
+  "mine": "D",
+  "correctedTo": "D",
+  "status": "key-corrected",
+  "reason": "Constant a = attraction forces (Aakash (4) agrees)"
+ },
+ {
+  "id": 22166,
+  "number": 87,
+  "key": "C",
+  "mine": "B",
+  "correctedTo": "B",
+  "status": "key-corrected",
+  "reason": "CN- bond order 3 is highest (Aakash (2) agrees)"
+ },
+ {
+  "id": 22167,
+  "number": 88,
+  "key": "C",
+  "mine": "D",
+  "correctedTo": "D",
+  "status": "key-corrected",
+  "reason": "Mg3X2 (Aakash (4) agrees)"
+ },
+ {
+  "id": 22168,
+  "number": 89,
+  "key": "D",
+  "mine": "A",
+  "correctedTo": "A",
+  "status": "key-corrected",
+  "reason": "Ratio 3x6^.5/8 (Aakash (1) agrees)"
+ },
+ {
+  "id": 22169,
+  "number": 90,
+  "key": "D",
+  "mine": "A",
+  "correctedTo": "A",
+  "status": "key-corrected",
+  "reason": "Only A is wrong (Aakash (1) agrees)"
+ },
+ {
+  "id": 22185,
+  "number": 106,
+  "key": "C",
+  "mine": "B",
+  "correctedTo": "B",
+  "status": "key-corrected",
+  "reason": "Meselson-Stahl used E. coli (Aakash (2) agrees)"
+ },
+ {
+  "id": 22186,
+  "number": 107,
+  "key": "A",
+  "mine": "C",
+  "correctedTo": "C",
+  "status": "key-corrected",
+  "reason": "Bamboo monocarpic (Aakash (3) agrees)"
+ },
+ {
+  "id": 22187,
+  "number": 108,
+  "key": "C",
+  "mine": "B",
+  "correctedTo": "B",
+  "status": "key-corrected",
+  "reason": "Offsets from mitosis (Aakash (2) agrees)"
+ },
+ {
+  "id": 22189,
+  "number": 110,
+  "key": "B",
+  "mine": "D",
+  "correctedTo": "D",
+  "status": "key-corrected",
+  "reason": "Sporopollenin preserves pollen (Aakash (4) agrees)"
+ },
+ {
+  "id": 22191,
+  "number": 112,
+  "key": "B",
+  "mine": "A",
+  "correctedTo": "A",
+  "status": "key-corrected",
+  "reason": "16 September (Aakash (1) agrees)"
+ },
+ {
+  "id": 22192,
+  "number": 113,
+  "key": "B",
+  "mine": "D",
+  "correctedTo": "D",
+  "status": "key-corrected",
+  "reason": "Ozone is secondary (Aakash (4) agrees)"
+ },
+ {
+  "id": 22194,
+  "number": 115,
+  "key": "D",
+  "mine": "C",
+  "correctedTo": "C",
+  "status": "key-corrected",
+  "reason": "Inverted biomass pyramid (Aakash (3) agrees)"
+ },
+ {
+  "id": 22196,
+  "number": 117,
+  "key": "C",
+  "mine": "D",
+  "correctedTo": "D",
+  "status": "key-corrected",
+  "reason": "Carbonyl + hydroxyl (Aakash (4) agrees)"
+ },
+ {
+  "id": 22198,
+  "number": 119,
+  "key": "D",
+  "mine": "B",
+  "correctedTo": "B",
+  "status": "key-corrected",
+  "reason": "Secretory vesicles (Aakash (2) agrees)"
+ },
+ {
+  "id": 22199,
+  "number": 120,
+  "key": "A",
+  "mine": "B",
+  "correctedTo": "B",
+  "status": "key-corrected",
+  "reason": "NADH is not a light-reaction product (Aakash (2) agrees)"
+ },
+ {
+  "id": 22200,
+  "number": 121,
+  "key": "C",
+  "mine": "D",
+  "correctedTo": "D",
+  "status": "key-corrected",
+  "reason": "rRNA synthesis site (Aakash (4) agrees)"
+ },
+ {
+  "id": 22201,
+  "number": 122,
+  "key": "D",
+  "mine": "A",
+  "correctedTo": "A",
+  "status": "key-corrected",
+  "reason": "O2 does not affect stomata (Aakash (1) agrees)"
+ },
+ {
+  "id": 22206,
+  "number": 127,
+  "key": "A",
+  "mine": "D",
+  "correctedTo": "D",
+  "status": "key-corrected",
+  "reason": "Endodermis (Aakash (4) agrees)"
+ },
+ {
+  "id": 22207,
+  "number": 128,
+  "key": "D",
+  "mine": "C",
+  "correctedTo": "C",
+  "status": "key-corrected",
+  "reason": "Grasses lack secondary growth (Aakash (3) agrees)"
+ },
+ {
+  "id": 22208,
+  "number": 129,
+  "key": "C",
+  "mine": "B",
+  "correctedTo": "B",
+  "status": "key-corrected",
+  "reason": "Adventitious tuberous root (Aakash (2) agrees)"
+ },
+ {
+  "id": 22209,
+  "number": 130,
+  "key": "D",
+  "mine": "C",
+  "correctedTo": "C",
+  "status": "key-corrected",
+  "reason": "Naked ovules (Aakash (3) agrees)"
+ },
+ {
+  "id": 22210,
+  "number": 131,
+  "key": "C",
+  "mine": "A",
+  "correctedTo": "A",
+  "status": "key-corrected",
+  "reason": "No locomotory organelles in sporozoans (Aakash (1) agrees)"
+ },
+ {
+  "id": 22211,
+  "number": 132,
+  "key": "D",
+  "mine": "A",
+  "correctedTo": "A",
+  "status": "key-corrected",
+  "reason": "Exogenous basidiospores (Aakash (1) agrees)"
+ },
+ {
+  "id": 22214,
+  "number": 135,
+  "key": "B",
+  "mine": "C",
+  "correctedTo": "C",
+  "status": "key-corrected",
+  "reason": "Red-algal gametes are non-motile (Aakash (3) agrees)"
+ },
+ {
+  "id": 22219,
+  "number": 140,
+  "key": "A",
+  "mine": "C",
+  "correctedTo": "C",
+  "status": "key-corrected",
+  "reason": "Epinephrine from tyrosine (Aakash (3) agrees)"
+ },
+ {
+  "id": 22220,
+  "number": 141,
+  "key": "C",
+  "mine": "A",
+  "correctedTo": "A",
+  "status": "key-corrected",
+  "reason": "Estrogen + PTH (Aakash (1) agrees)"
+ },
+ {
+  "id": 22221,
+  "number": 142,
+  "key": "A",
+  "mine": "B",
+  "correctedTo": "B",
+  "status": "key-corrected",
+  "reason": "Limbic = emotion, not movement tracts"
+ },
+ {
+  "id": 22222,
+  "number": 143,
+  "key": "B",
+  "mine": "C",
+  "correctedTo": "C",
+  "status": "key-corrected",
+  "reason": "Amnion = ectoderm + mesoderm"
+ },
+ {
+  "id": 22223,
+  "number": 144,
+  "key": "D",
+  "mine": "A",
+  "correctedTo": "A",
+  "status": "key-corrected",
+  "reason": "Placental quartet incl. progestogens/estrogens"
+ },
+ {
+  "id": 22224,
+  "number": 145,
+  "key": "C",
+  "mine": "D",
+  "correctedTo": "D",
+  "status": "key-corrected",
+  "reason": "Spermiation = release step"
+ },
+ {
+  "id": 22225,
+  "number": 146,
+  "key": "D",
+  "mine": "C",
+  "correctedTo": "C",
+  "status": "key-corrected",
+  "reason": "Saheli blocks estrogen receptors"
+ },
+ {
+  "id": 22226,
+  "number": 147,
+  "key": "A",
+  "mine": "D",
+  "correctedTo": "D",
+  "status": "key-corrected",
+  "reason": "Two nuclei unique to ciliates"
+ },
+ {
+  "id": 22227,
+  "number": 148,
+  "key": "C",
+  "mine": "A",
+  "correctedTo": "A",
+  "status": "key-corrected",
+  "reason": "Crop + gizzard = birds"
+ },
+ {
+  "id": 22228,
+  "number": 149,
+  "key": "A",
+  "mine": "B",
+  "correctedTo": "B",
+  "status": "key-corrected",
+  "reason": "Anal styles only in males"
+ },
+ {
+  "id": 22230,
+  "number": 151,
+  "key": "D",
+  "mine": "C",
+  "correctedTo": "C",
+  "status": "key-corrected",
+  "reason": "Direct development only in earthworm (Aakash (3) agrees)"
+ },
+ {
+  "id": 22232,
+  "number": 153,
+  "key": "A",
+  "mine": "D",
+  "correctedTo": "D",
+  "status": "key-corrected",
+  "reason": "Antibiotic action is amensalism (Aakash (4) agrees)"
+ },
+ {
+  "id": 22233,
+  "number": 154,
+  "key": "C",
+  "mine": "B",
+  "correctedTo": "B",
+  "status": "key-corrected",
+  "reason": "Sacred groves are in-situ (Aakash (2) agrees)"
+ },
+ {
+  "id": 22234,
+  "number": 155,
+  "key": "B",
+  "mine": "A",
+  "correctedTo": "A",
+  "status": "key-corrected",
+  "reason": "a-iii,b-iv,c-i,d-ii (Aakash (1) agrees)"
+ },
+ {
+  "id": 22235,
+  "number": 156,
+  "key": "A",
+  "mine": "C",
+  "correctedTo": "C",
+  "status": "key-corrected",
+  "reason": "Expanding pyramid (Aakash (3) agrees)"
+ },
+ {
+  "id": 22236,
+  "number": 157,
+  "key": "C",
+  "mine": "B",
+  "correctedTo": "B",
+  "status": "key-corrected",
+  "reason": "Poppy latex (Aakash (2) agrees)"
+ },
+ {
+  "id": 22237,
+  "number": 158,
+  "key": "C",
+  "mine": "A",
+  "correctedTo": "A",
+  "status": "key-corrected",
+  "reason": "Enhancers are not operon parts (Aakash (1) agrees)"
+ },
+ {
+  "id": 22239,
+  "number": 160,
+  "key": "C",
+  "mine": "B",
+  "correctedTo": "B",
+  "status": "key-corrected",
+  "reason": "Saltation (Aakash (2) agrees)"
+ },
+ {
+  "id": 22241,
+  "number": 162,
+  "key": "B",
+  "mine": "A",
+  "correctedTo": "A",
+  "status": "key-corrected",
+  "reason": "a-ii,b-iii,c-i (Aakash (1) agrees)"
+ },
+ {
+  "id": 22244,
+  "number": 165,
+  "key": "B",
+  "mine": "D",
+  "correctedTo": "D",
+  "status": "key-corrected",
+  "reason": "Parietal cells aid erythropoiesis (Aakash (4) agrees)"
+ },
+ {
+  "id": 22246,
+  "number": 167,
+  "key": "D",
+  "mine": "B",
+  "correctedTo": "B",
+  "status": "key-corrected",
+  "reason": "Silicosis is occupational (Aakash (2) agrees)"
+ },
+ {
+  "id": 22247,
+  "number": 168,
+  "key": "D",
+  "mine": "C",
+  "correctedTo": "C",
+  "status": "key-corrected",
+  "reason": "Ca-troponin unmasks actin (Aakash (3) agrees)"
+ },
+ {
+  "id": 22249,
+  "number": 170,
+  "key": "C",
+  "mine": "D",
+  "correctedTo": "D",
+  "status": "key-corrected",
+  "reason": "Ox-phos on inner membrane (Aakash (4) agrees)"
+ },
+ {
+  "id": 22250,
+  "number": 171,
+  "key": "B",
+  "mine": "D",
+  "correctedTo": "D",
+  "status": "key-corrected",
+  "reason": "Amphibian oocytes are lampbrush (Aakash (4) agrees)"
+ },
+ {
+  "id": 22251,
+  "number": 172,
+  "key": "D",
+  "mine": "B",
+  "correctedTo": "B",
+  "status": "key-corrected",
+  "reason": "Thecodont/diphyodont/heterodont (Aakash (2) agrees)"
+ },
+ {
+  "id": 22253,
+  "number": 174,
+  "key": "D",
+  "mine": "C",
+  "correctedTo": "C",
+  "status": "key-corrected",
+  "reason": "Polysome (Aakash (3) agrees)"
+ },
+ {
+  "id": 22254,
+  "number": 175,
+  "key": "B",
+  "mine": "C",
+  "correctedTo": "C",
+  "status": "key-corrected",
+  "reason": "Filarial elephantiasis (Aakash (3) agrees)"
+ },
+ {
+  "id": 22255,
+  "number": 176,
+  "key": "B",
+  "mine": "A",
+  "correctedTo": "A",
+  "status": "key-corrected",
+  "reason": "Alzheimers not autoimmune (Aakash (1) agrees)"
+ },
+ {
+  "id": 22256,
+  "number": 177,
+  "key": "A",
+  "mine": "D",
+  "correctedTo": "D",
+  "status": "key-corrected",
+  "reason": "Eyes are analogous (Aakash (4) agrees)"
+ },
+ {
+  "id": 22257,
+  "number": 178,
+  "key": "D",
+  "mine": "A",
+  "correctedTo": "A",
+  "status": "key-corrected",
+  "reason": "B12 rises in curd (Aakash (1) agrees)"
+ },
+ {
+  "id": 22258,
+  "number": 179,
+  "key": "B",
+  "mine": "C",
+  "correctedTo": "C",
+  "status": "key-corrected",
+  "reason": "Homology (Aakash (3) agrees)"
+ },
+ {
+  "id": 22259,
+  "number": 180,
+  "key": "C",
+  "mine": "B",
+  "correctedTo": "B",
+  "status": "key-corrected",
+  "reason": "a,b,c only (Aakash (2) agrees)"
+ }
+]

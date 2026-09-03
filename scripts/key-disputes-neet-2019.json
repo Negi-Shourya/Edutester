@@ -1,0 +1,55 @@
+[
+ {
+  "id": 20326,
+  "number": 47,
+  "key": "C",
+  "mine": "D",
+  "correctedTo": "D",
+  "status": "key-corrected",
+  "reason": "C4.5A6 = C3A4 (PDF Ans (3) = C3A4 agrees)"
+ },
+ {
+  "id": 20327,
+  "number": 48,
+  "key": "A",
+  "mine": "B",
+  "correctedTo": "B",
+  "status": "key-corrected",
+  "reason": "Ksp = 0.5e-15 (PDF Ans (1) = 0.5e-15 agrees)"
+ },
+ {
+  "id": 20333,
+  "number": 54,
+  "key": "C",
+  "mine": "B",
+  "correctedTo": "B",
+  "status": "key-corrected",
+  "reason": "Rb 5s1: m must be 0; option C has impossible m=1"
+ },
+ {
+  "id": 20335,
+  "number": 56,
+  "key": "A",
+  "mine": "C",
+  "correctedTo": "C",
+  "status": "key-corrected",
+  "reason": "5.12 x 0.078 = 0.40 K"
+ },
+ {
+  "id": 20409,
+  "number": 130,
+  "key": "B",
+  "mine": "D",
+  "correctedTo": "D",
+  "status": "key-corrected",
+  "reason": "G1-S-G2-M order (PDF Ans (4) agrees)"
+ },
+ {
+  "id": 20425,
+  "number": 146,
+  "key": "B",
+  "mine": null,
+  "status": "stem-mismatch",
+  "reason": "DB stem (greenhouse protocols) does not match options/key (Rio Earth Summit -> biodiversity (B), PDF-verified). Needs stem replacement, not a solution."
+ }
+]
