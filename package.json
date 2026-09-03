@@ -10,6 +10,7 @@
     "typecheck:functions": "tsc -p tsconfig.functions.json",
     "preview": "vite preview",
     "build:chapter-index": "node scripts/build-question-chapter-index.mjs",
+    "classify-questions": "node scripts/classify-questions.mjs",
     "deploy": "npm run build && wrangler deploy",
     "cf:preview": "npm run build && wrangler versions upload"
   },

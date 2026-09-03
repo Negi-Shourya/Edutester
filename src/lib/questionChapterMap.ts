@@ -2,7 +2,9 @@ import type { ExamType } from './exam';
 
 // Runtime resolver: question id → chapter. Backed by
 // public/chapters/question-chapter-index.json (built by
-// scripts/build-question-chapter-index.mjs — re-run it when chapters change).
+// scripts/build-question-chapter-index.mjs — re-run it when chapters change)
+// plus public/chapters/question-chapter-auto.json (classifier leftovers —
+// npm run classify-questions). Curated entries win on conflict.
 //
 // PRIVACY RULE: this module must only ever be imported by post-submit
 // analysis code (result screen, dashboard). It must never be imported by
@@ -14,9 +16,20 @@ export interface ChapterCandidate {
   title: string;
   subject: string;
   exam: ExamType;
+  // False for classifier-mapped chapters with no dedicated chapter test —
+  // analysis still works, but practice links must fall back to browsing.
+  hasTest: boolean;
 }
 
 export type ChapterIndex = Record<string, ChapterCandidate[]>;
+
+interface RawEntry {
+  chapterId: string;
+  title: string;
+  subject: string;
+  exam: ExamType;
+  hasTest?: boolean;
+}
 
 let cached: Promise<ChapterIndex> | null = null;
 
@@ -25,17 +38,32 @@ let cached: Promise<ChapterIndex> | null = null;
 export function loadChapterIndex(): Promise<ChapterIndex> {
   if (!cached) {
     cached = (async () => {
-      try {
-        const res = await fetch(`${import.meta.env.BASE_URL}chapters/question-chapter-index.json`);
-        if (!res.ok) return {};
-        const data = (await res.json()) as ChapterIndex;
-        return data && typeof data === 'object' ? data : {};
-      } catch {
-        return {};
+      const [curated, auto] = await Promise.all([
+        fetchIndex('question-chapter-index.json'),
+        fetchIndex('question-chapter-auto.json'),
+      ]);
+      const merged: ChapterIndex = {};
+      for (const [qid, list] of Object.entries(auto)) {
+        merged[qid] = list.map((c) => ({ ...c, hasTest: c.hasTest ?? false }));
       }
+      for (const [qid, list] of Object.entries(curated)) {
+        merged[qid] = list.map((c) => ({ ...c, hasTest: true }));
+      }
+      return merged;
     })();
   }
   return cached;
+}
+
+async function fetchIndex(file: string): Promise<Record<string, RawEntry[]>> {
+  try {
+    const res = await fetch(`${import.meta.env.BASE_URL}chapters/${file}`);
+    if (!res.ok) return {};
+    const data = (await res.json()) as Record<string, RawEntry[]>;
+    return data && typeof data === 'object' ? data : {};
+  } catch {
+    return {};
+  }
 }
 
 // A question can belong to 2+ chapters (shared JEE/NEET content). Prefer

@@ -26,6 +26,9 @@ export interface ChapterPerformance {
   // Total questions this aggregate is built from. Chapter tests contribute
   // 15-25 each; paper-derived chapters may rest on just a few questions.
   questions: number;
+  // False when the chapter has no dedicated chapter test (classifier-only
+  // chapter) — show analysis, but link practice to browsing, not a test.
+  hasTest: boolean;
   isWeak: boolean;
 }
 
@@ -88,6 +91,7 @@ export function analyzeChapters(attempts: AttemptRow[]): ChapterPerformance[] {
       lastAccuracy,
       lastScorePct,
       questions: totalCorrect + totalIncorrect + totalUnattempted,
+      hasTest: true,
       isWeak: avgAccuracy < 60 || avgScorePct < 40,
     });
   }
@@ -119,6 +123,7 @@ interface PaperBucket {
   title: string;
   subject: string;
   exam: ExamType;
+  hasTest: boolean;
   correct: number;
   incorrect: number;
   unattempted: number;
@@ -138,6 +143,7 @@ function bucketizePaperOutcomes(
       title: hit.title,
       subject: hit.subject,
       exam: hit.exam,
+      hasTest: hit.hasTest,
       correct: 0,
       incorrect: 0,
       unattempted: 0,
@@ -186,6 +192,7 @@ export function paperTestChapters(
       lastAccuracy: avgAccuracy,
       lastScorePct: approxScorePct,
       questions,
+      hasTest: b.hasTest,
       isWeak: questions >= 3 && avgAccuracy < 60,
     });
   }
@@ -228,6 +235,7 @@ export function mergePaperChapters(
           lastAccuracy: 0,
           lastScorePct: 0,
           questions: b.correct + b.incorrect + b.unattempted,
+          hasTest: b.hasTest,
           isWeak: false,
         });
       }

@@ -128,6 +128,18 @@ const SolutionCard = memo(function SolutionCard({ q, qState, keyInfo, outcome }:
           <div>Your Answer: <strong className={isCorrect ? 'text-green-700' : isUnattempted ? 'text-gray-500' : 'text-red-600'}>{userAns || 'None'}</strong></div>
           <div>Correct Answer: <strong className="text-green-700">{keyInfo?.correctAnswer ?? '—'}</strong></div>
         </div>
+
+        {/* Step-by-step explanation (from question_keys.solution) */}
+        {keyInfo?.solution && (
+          <div className="mt-3 bg-blue-50/60 border border-blue-100 rounded p-3">
+            <div className="text-[11px] font-bold text-[#1b365d] uppercase tracking-wide mb-1.5">
+              Explanation
+            </div>
+            <div className="text-xs text-gray-700 leading-relaxed whitespace-pre-line">
+              <VectorText text={keyInfo.solution} />
+            </div>
+          </div>
+        )}
       </div>
     </div>
   );
@@ -326,10 +338,10 @@ function PerformanceAnalysis({
                           {ch.totalUnattempted > 0 ? ` · ${ch.totalUnattempted} skipped` : ''} ({ch.questions} questions)
                         </span>
                         <Link
-                          to={`/test?chapter=${ch.chapterId}`}
+                          to={ch.hasTest ? `/test?chapter=${ch.chapterId}` : '/chapter-tests'}
                           className="inline-flex items-center gap-0.5 font-bold text-[#1b365d] hover:underline"
                         >
-                          Practice chapter <ArrowRight className="w-3 h-3" />
+                          {ch.hasTest ? 'Practice chapter' : 'Browse chapter tests'} <ArrowRight className="w-3 h-3" />
                         </Link>
                       </div>
                     </div>

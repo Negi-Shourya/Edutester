@@ -208,9 +208,9 @@ export default function Dashboard() {
       .map((c) => ({
         priority: (c.avgAccuracy < 45 ? 'high' : 'medium') as Recommendation['priority'],
         title: `Fix ${c.title}`,
-        detail: `${c.avgAccuracy}% accuracy across ${c.attempts} ${c.attempts === 1 ? 'attempt' : 'attempts'} in ${c.subject}. Revise the chapter, then retake its test.`,
-        ctaLabel: `Practice ${c.title}`,
-        ctaTo: `/test?chapter=${c.chapterId}`,
+        detail: `${c.avgAccuracy}% accuracy across ${c.attempts} ${c.attempts === 1 ? 'test' : 'tests'} in ${c.subject}${c.hasTest ? '' : ' (no dedicated test yet — practice it via full papers)'}. Revise the chapter${c.hasTest ? ', then retake its test' : ''}.`,
+        ctaLabel: c.hasTest ? `Practice ${c.title}` : 'Browse chapter tests',
+        ctaTo: c.hasTest ? `/test?chapter=${c.chapterId}` : '/chapter-tests',
       }));
     return [...chapterRecs, ...overall.recommendations].slice(0, 4);
   }, [overall, chapterPerf]);
@@ -804,10 +804,10 @@ function SubjectRow({ sub, chapters, expanded, onToggle }: {
                     {ch.questions} {ch.questions === 1 ? 'question' : 'questions'} · {ch.attempts} {ch.attempts === 1 ? 'test' : 'tests'}
                   </span>
                   <Link
-                    to={`/test?chapter=${ch.chapterId}`}
+                    to={ch.hasTest ? `/test?chapter=${ch.chapterId}` : '/chapter-tests'}
                     className="inline-flex items-center gap-0.5 font-semibold text-primary hover:underline"
                   >
-                    <Play className="w-2.5 h-2.5 fill-current" /> Practice
+                    <Play className="w-2.5 h-2.5 fill-current" /> {ch.hasTest ? 'Practice' : 'Browse tests'}
                   </Link>
                 </div>
               </div>
