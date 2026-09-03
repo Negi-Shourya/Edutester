@@ -8,7 +8,7 @@ import { useAuth } from '../context/auth-context';
 import { supabase } from '../lib/supabase';
 import { formatINR } from '../lib/admin';
 import { pricingPlans } from '../data/pricing';
-import { checkoutPlan } from '../lib/razorpay';
+import { checkoutPlan, resumePendingOrder, PaymentError } from '../lib/razorpay';
 import { getExam, setExam, type ExamType } from '../lib/exam';
 import { GraduationCap } from 'lucide-react';
 import type { PricingPlan, Subscription } from '../types';
@@ -69,6 +69,19 @@ export default function Profile() {
     let cancelled = false;
     (async () => {
       if (cancelled) return;
+      // Recover an interrupted checkout before rendering subscription state:
+      // a paid-but-unconfirmed order becomes access here, not a re-purchase.
+      try {
+        const res = await resumePendingOrder();
+        if (!cancelled && res.recovered) {
+          setCheckoutSuccess(
+            'Good news — we found your interrupted payment and your subscription is now active. No extra charge was made.'
+          );
+        }
+      } catch {
+        // Recovery failure is silent; the user can still use the page.
+      }
+      if (cancelled) return;
       await loadSubscriptions();
       if (!cancelled) setLoading(false);
     })();
@@ -124,6 +137,20 @@ export default function Profile() {
         `Payment successful (ref ${result.paymentId}). Your access now runs until ${formatDate(newExpiry)}.`
       );
     } catch (err) {
+      if (err instanceof PaymentError && err.code === 'VERIFY_NETWORK') {
+        try {
+          const recovered = await resumePendingOrder();
+          if (recovered.recovered) {
+            await loadSubscriptions();
+            setCheckoutSuccess(
+              'Payment confirmed — your subscription is now active. No extra charge was made.'
+            );
+            return;
+          }
+        } catch {
+          // Fall through; the mount effect and webhook keep trying.
+        }
+      }
       setCheckoutError(err instanceof Error ? err.message : 'Payment failed. Please try again.');
     } finally {
       setCheckoutPlanId(null);

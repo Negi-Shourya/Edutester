@@ -7,7 +7,7 @@ import StaggerReveal, { StaggerItem } from '../components/StaggerReveal';
 import { pricingPlans } from '../data/pricing';
 import { useAuth } from '../context/auth-context';
 import { useSubscriptionAccess } from '../lib/subscription';
-import { checkoutPlan } from '../lib/razorpay';
+import { checkoutPlan, resumePendingOrder, PaymentError } from '../lib/razorpay';
 import { applyCoupon, type CouponApplied } from '../lib/coupon';
 import type { PricingPlan } from '../types';
 
@@ -91,6 +91,28 @@ export default function Pricing() {
     }
   }, [location.hash]);
 
+  // Recover an interrupted checkout (internet lost after the bank approved
+  // the payment). If the pending order was actually paid, access is
+  // activated here instead of asking the user to pay again.
+  useEffect(() => {
+    if (!user) return;
+    let cancelled = false;
+    resumePendingOrder()
+      .then(async (res) => {
+        if (cancelled || !res.recovered) return;
+        await refreshSubscription();
+        if (!cancelled) {
+          setSuccess(
+            'Good news — we found your interrupted payment and your subscription is now active. No extra charge was made.'
+          );
+        }
+      })
+      .catch(() => {});
+    return () => {
+      cancelled = true;
+    };
+  }, [user?.id]);
+
   const activePlanIndex = activeSubscription
     ? pricingPlans.findIndex((p) => p.id === activeSubscription.plan_id)
     : -1;
@@ -131,6 +153,23 @@ export default function Pricing() {
           : `${opening} Your ${plan.duration} subscription is now active.`
       );
     } catch (err) {
+      // Connection lost during confirmation: the bank may still have taken
+      // the payment, so check once right away before showing the message.
+      if (err instanceof PaymentError && err.code === 'VERIFY_NETWORK') {
+        try {
+          const recovered = await resumePendingOrder();
+          if (recovered.recovered) {
+            await refreshSubscription();
+            setSuccess(
+              'Payment confirmed — your subscription is now active. No extra charge was made.'
+            );
+            return;
+          }
+        } catch {
+          // Fall through to the pending message below; the mount effect
+          // and the webhook will keep trying.
+        }
+      }
       const message = err instanceof Error ? err.message : 'Payment failed. Please try again.';
       // The promo can run out between applying the code and paying, so the
       // banner has to fall back to the sold-out state rather than leaving a

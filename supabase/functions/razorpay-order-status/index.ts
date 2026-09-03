@@ -1,21 +1,21 @@
 import { createClient } from 'npm:@supabase/supabase-js@2.111.0';
 import Razorpay from 'npm:razorpay@2.9.4';
-import { createHmac } from 'node:crypto';
 import { checkRateLimit } from '../_shared/rate_limit.ts';
 import { provisionSubscription } from '../_shared/subscriptions.ts';
 
-// SUPABASE_URL, SUPABASE_ANON_KEY and SUPABASE_SERVICE_ROLE_KEY are injected
-// automatically by the edge runtime. RAZORPAY_KEY_ID / RAZORPAY_KEY_SECRET
-// are set as secrets (supabase secrets set NAME=value).
+// Lets the app recover a checkout that died mid-flight (internet lost after
+// the bank approved the payment, tab closed, verify call failed). The client
+// stores the orderId locally and asks here: "did that order actually get
+// paid?" If yes, the subscription is provisioned now — idempotently, so a
+// later webhook or verify retry converges on the same row.
+
 const SUPABASE_URL = Deno.env.get('SUPABASE_URL') ?? '';
 const SUPABASE_ANON_KEY = Deno.env.get('SUPABASE_ANON_KEY') ?? '';
 const SUPABASE_SERVICE_ROLE_KEY = Deno.env.get('SUPABASE_SERVICE_ROLE_KEY') ?? '';
 const RAZORPAY_KEY_ID = Deno.env.get('RAZORPAY_KEY_ID') ?? '';
 const RAZORPAY_KEY_SECRET = Deno.env.get('RAZORPAY_KEY_SECRET') ?? '';
 
-// Anon client: used ONLY to verify the caller's JWT.
 const supabaseAnon = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
-// Service-role client: used to write subscriptions. Never exposed to the browser.
 const supabaseAdmin = createClient(SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY);
 
 const razorpay = new Razorpay({
@@ -23,9 +23,7 @@ const razorpay = new Razorpay({
   key_secret: RAZORPAY_KEY_SECRET,
 });
 
-// Per-user rate limit: at most 30 verifications per rolling hour. A real
-// checkout verifies once, so this only stops scripted replay attempts.
-const RATE_LIMIT = { route: 'razorpay-verify', limit: 30, windowMs: 60 * 60 * 1000 };
+const RATE_LIMIT = { route: 'razorpay-order-status', limit: 30, windowMs: 60 * 60 * 1000 };
 
 const corsHeaders = {
   'Access-Control-Allow-Origin': '*',
@@ -40,10 +38,6 @@ function json(body: unknown, status = 200): Response {
   });
 }
 
-// Adds whole calendar months without the setMonth() overflow bug — see
-// _shared/plans.ts.
-
-// Bearer <supabase JWT> -> the authenticated user or null.
 async function getUser(req: Request) {
   const auth = req.headers.get('authorization') ?? '';
   const token = auth.startsWith('Bearer ') ? auth.slice(7) : null;
@@ -63,50 +57,55 @@ Deno.serve(async (req) => {
   const rate = await checkRateLimit(supabaseAdmin, user.id, RATE_LIMIT);
   if (!rate.allowed) {
     return new Response(
-      JSON.stringify({ error: 'Verification limit reached. Please try again later.', code: 'RATE_LIMITED' }),
-      { status: 429, headers: { ...corsHeaders, 'Content-Type': 'application/json', 'Retry-After': String(rate.retryAfterSeconds) } }
+      JSON.stringify({ error: 'Too many checks. Please try again later.', code: 'RATE_LIMITED' }),
+      { status: 429, headers: { ...corsHeaders, 'Content-Type': 'application/json' } }
     );
   }
 
   const body = await req.json().catch(() => ({}));
-  const { orderId, paymentId, signature } = body as {
-    orderId?: string;
-    paymentId?: string;
-    signature?: string;
-  };
-  if (!orderId || !paymentId || !signature) {
-    return json({ error: 'Missing payment details' }, 400);
+  const { orderId } = body as { orderId?: string };
+  if (!orderId || typeof orderId !== 'string') {
+    return json({ error: 'Missing orderId' }, 400);
   }
 
-  const expected = createHmac('sha256', RAZORPAY_KEY_SECRET)
-    .update(`${orderId}|${paymentId}`)
-    .digest('hex');
-  if (expected !== signature) {
-    return json({ error: 'Invalid payment signature' }, 400);
-  }
-
-  // Look up the order and reject if it does not match the user/plan that was
-  // charged when the order was created (server-set notes, not client input).
   let order;
   try {
     order = await razorpay.orders.fetch(orderId);
   } catch {
     return json({ error: 'Could not fetch order' }, 502);
   }
+  if (order.notes?.userId && order.notes.userId !== user.id) {
+    return json({ error: 'Order does not belong to this user' }, 400);
+  }
 
-  // Idempotent provisioning: safe to call again after a network drop, and
-  // converges with the webhook / order-status entry points on a single row.
+  // order.status === 'paid' means fully paid. Anything else (created /
+  // attempted) means no money moved — safe to discard and start over.
+  if (order.status !== 'paid') {
+    return json({ ok: true, paid: false, status: order.status });
+  }
+
+  let paymentId: string | null = null;
+  try {
+    const payments = await razorpay.orders.fetchPayments(orderId);
+    const captured = (payments.items ?? []).find((p: { status?: string }) => p.status === 'captured');
+    paymentId = captured?.id ?? payments.items?.[0]?.id ?? null;
+  } catch (err) {
+    console.error('fetchPayments failed', err);
+    return json({ error: 'Could not check payment status' }, 502);
+  }
+  if (!paymentId) {
+    return json({ ok: true, paid: false, status: order.status });
+  }
+
   try {
     const result = await provisionSubscription(supabaseAdmin, user.id, order, paymentId);
-    return json({ ok: true, subscription: result.subscription, upgraded: result.upgraded });
+    return json({
+      ok: true,
+      paid: true,
+      recovered: !result.alreadyProvisioned,
+      subscription: result.subscription,
+    });
   } catch (err) {
-    const message = err instanceof Error ? err.message : 'Failed to record subscription';
-    const status =
-      message === 'Order does not belong to this user' ||
-      message === 'Order does not match any plan' ||
-      message === 'Order amount does not match any plan'
-        ? 400
-        : 502;
-    return json({ error: message }, status);
+    return json({ error: err instanceof Error ? err.message : 'Recovery failed' }, 502);
   }
 });
