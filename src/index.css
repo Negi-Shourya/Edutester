@@ -113,12 +113,44 @@ h1, h2, h3, h4 {
   animation: shimmer 6s linear infinite;
 }
 
+/* Spring-feel hover tile (replaces motion whileHover/whileTap) */
+.spring-tile {
+  display: inline-flex;
+  transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+.group:hover .spring-tile,
+.spring-tile:hover {
+  transform: scale(1.12) rotate(4deg);
+}
+.spring-tile:active {
+  transform: scale(0.95);
+}
+
+/* Route enter transitions (replaces motion page-slide) */
+@keyframes page-in-fwd {
+  from { opacity: 0; transform: translate(44px, 6px); }
+  to { opacity: 1; transform: none; }
+}
+@keyframes page-in-back {
+  from { opacity: 0; transform: translate(-44px, 6px); }
+  to { opacity: 1; transform: none; }
+}
+.page-enter-fwd {
+  animation: page-in-fwd 0.38s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+.page-enter-back {
+  animation: page-in-back 0.38s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .reveal,
   .animate-float,
   .animate-fade-up,
   .cta-shimmer,
-  .animate-pulse-dot {
+  .animate-pulse-dot,
+  .spring-tile,
+  .page-enter-fwd,
+  .page-enter-back {
     animation: none !important;
     transition: none !important;
     opacity: 1 !important;

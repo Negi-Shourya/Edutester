@@ -21,24 +21,24 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-    <!-- Asynchronous, non-render-blocking font loader -->
-    <script>
-      (function() {
-        function loadWebFonts() {
-          var link = document.createElement('link');
-          link.rel = 'stylesheet';
-          link.href = 'https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Space+Grotesk:wght@600;700&family=IBM+Plex+Mono:wght@500;600&display=swap';
-          document.head.appendChild(link);
-        }
-        if (window.requestAnimationFrame) {
-          window.requestAnimationFrame(function() {
-            setTimeout(loadWebFonts, 0);
-          });
-        } else {
-          window.addEventListener('load', loadWebFonts);
-        }
-      })();
-    </script>
+    <!-- DNS prefetch & Preconnect for Supabase (auth + data). Saves ~1 RTT
+         on mobile when the app checks the session / subscription. -->
+    <link rel="dns-prefetch" href="https://gvsgromfsqvywawauzfi.supabase.co" />
+    <link rel="preconnect" href="https://gvsgromfsqvywawauzfi.supabase.co" crossorigin />
+
+    <!-- Non-render-blocking font CSS: fetch starts during HTML parse and
+         applies on load (no JS delay, no render block). -->
+    <link
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Space+Grotesk:wght@600;700&family=IBM+Plex+Mono:wght@500;600&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Space+Grotesk:wght@600;700&family=IBM+Plex+Mono:wght@500;600&display=swap"
+      media="print"
+      onload="this.media='all'"
+    />
     <noscript>
       <link
         rel="stylesheet"

@@ -21,7 +21,27 @@ export default defineConfig({
             if (id.includes('canvas-confetti')) {
               return 'vendor-confetti';
             }
-            // All essential core runtime dependencies consolidated
+            // Animation runtime: no longer in the first-paint bundle
+            // (Navbar/Reveal/Stagger/PageTransition are CSS-only now), so
+            // keep it in one shared async chunk for the lazy pages that
+            // still use it (Dashboard, Pricing, ChapterTests, ...).
+            if (id.includes('motion')) {
+              return 'vendor-motion';
+            }
+            // Supabase client (~100kb+) — shared by auth + lazy pages
+            if (id.includes('@supabase')) {
+              return 'vendor-supabase';
+            }
+            if (id.includes('react-router')) {
+              return 'vendor-router';
+            }
+            if (id.includes('lucide-react')) {
+              return 'vendor-icons';
+            }
+            if (/node_modules\/(react|react-dom|scheduler)\//.test(id)) {
+              return 'vendor-react';
+            }
+            // All other essential core runtime dependencies consolidated
             return 'vendor-core';
           }
         },

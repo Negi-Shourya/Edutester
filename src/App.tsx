@@ -1,6 +1,5 @@
 import { useEffect, lazy, Suspense } from 'react';
 import { Routes, Route, useLocation } from 'react-router-dom';
-import { MotionConfig } from 'motion/react';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import PageTransition from './components/PageTransition';
@@ -9,9 +8,11 @@ import RootGate from './components/RootGate';
 import ProtectedRoute from './components/ProtectedRoute';
 import { AuthProvider } from './context/AuthContext';
 import { trackPageView } from './lib/tracking';
+import LandingPage from './pages/LandingPage';
 
-// Route-level code splitting to keep initial bundle size ultra-small (<80kb)
-const LandingPage = lazy(() => import('./pages/LandingPage'));
+// Route-level code splitting to keep initial bundle size small. LandingPage
+// is imported statically: "/" renders it on first paint (via RootGate), so
+// splitting it would only add a network round-trip before LCP.
 const Contact = lazy(() => import('./pages/Contact'));
 const Dashboard = lazy(() => import('./pages/Dashboard'));
 const ChapterTests = lazy(() => import('./pages/ChapterTests'));
@@ -37,13 +38,25 @@ function App() {
   const location = useLocation();
 
   useEffect(() => {
-    trackPageView(location.pathname);
+    // Page-view tracking hits Supabase over the network — defer it until
+    // the browser is idle so it never contends with first paint / LCP.
+    const path = location.pathname;
+    const fire = () => trackPageView(path);
+    const w = window as Window & {
+      requestIdleCallback?: (cb: () => void, opts?: { timeout: number }) => number;
+      cancelIdleCallback?: (id: number) => void;
+    };
+    if (w.requestIdleCallback) {
+      const id = w.requestIdleCallback(fire, { timeout: 4000 });
+      return () => w.cancelIdleCallback?.(id);
+    }
+    const t = w.setTimeout(fire, 2500);
+    return () => w.clearTimeout(t);
   }, [location.pathname]);
 
   return (
     <AuthProvider>
-      <MotionConfig reducedMotion="user">
-        <div className="flex flex-col min-h-screen">
+      <div className="flex flex-col min-h-screen">
           <ScrollToTop />
           <Navbar />
           <main className="flex-1">
@@ -112,7 +125,6 @@ function App() {
           </main>
           <Footer />
         </div>
-      </MotionConfig>
     </AuthProvider>
   );
 }

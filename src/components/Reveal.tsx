@@ -1,11 +1,8 @@
-import { motion } from 'motion/react';
-import type { ReactNode } from 'react';
+import { useEffect, useRef, type CSSProperties, type ReactNode } from 'react';
 
-const ease = [0.22, 1, 0.36, 1] as const;
-
-// Fades content up once it scrolls into view. Uses motion's whileInView so
-// it stays a single prop away from staggered variants; MotionConfig's
-// reducedMotion="user" snaps it instantly for reduced-motion users.
+// Fades content up once it scrolls into view. Zero-dependency:
+// IntersectionObserver toggles the .reveal/.is-in classes from index.css,
+// so the animation library stays out of the first-paint bundle.
 export default function Reveal({
   children,
   delay = 0,
@@ -15,15 +12,36 @@ export default function Reveal({
   delay?: number;
   className?: string;
 }) {
+  const ref = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+    if (typeof IntersectionObserver === 'undefined') {
+      el.classList.add('is-in');
+      return;
+    }
+    const io = new IntersectionObserver(
+      (entries) => {
+        for (const entry of entries) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-in');
+            io.disconnect();
+          }
+        }
+      },
+      { threshold: 0.12, rootMargin: '0px 0px -8% 0px' }
+    );
+    io.observe(el);
+    return () => io.disconnect();
+  }, []);
+
+  const style: CSSProperties | undefined =
+    delay > 0 ? { transitionDelay: `${delay}ms` } : undefined;
+
   return (
-    <motion.div
-      className={className}
-      initial={{ opacity: 0, y: 18 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, amount: 0.12 }}
-      transition={{ duration: 0.6, ease, delay: delay / 1000 }}
-    >
+    <div ref={ref} className={`reveal ${className}`} style={style}>
       {children}
-    </motion.div>
+    </div>
   );
 }

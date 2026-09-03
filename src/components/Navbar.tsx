@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
-import { motion } from 'motion/react';
 import { Menu, X, LogIn, UserPlus, LogOut } from 'lucide-react';
 import { useAuth } from '../context/auth-context';
 import { useSubscriptionAccess } from '../lib/subscription';
@@ -69,7 +68,7 @@ export default function Navbar() {
                 alt="EduTester"
                 width="120"
                 height="24"
-                fetchPriority="high"
+                fetchPriority="low"
                 decoding="async"
                 className="h-6 w-auto object-contain"
               />
@@ -89,11 +88,7 @@ export default function Navbar() {
               >
                 {link.label}
                 {location.pathname === link.to ? (
-                  <motion.span
-                    layoutId="nav-active-pill"
-                    className="absolute -bottom-1 left-0 right-0 h-0.5 rounded-full bg-saffron"
-                    transition={{ type: 'spring', stiffness: 420, damping: 34 }}
-                  />
+                  <span className="absolute -bottom-1 left-0 right-0 h-0.5 rounded-full bg-saffron" />
                 ) : (
                   <span className="absolute -bottom-1 left-0 h-0.5 rounded-full bg-saffron/50 w-0 group-hover:w-full transition-all duration-300" />
                 )}

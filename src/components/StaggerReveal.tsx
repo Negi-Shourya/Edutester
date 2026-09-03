@@ -1,10 +1,16 @@
-import { motion } from 'motion/react';
-import type { ReactNode } from 'react';
+import {
+  Children,
+  cloneElement,
+  isValidElement,
+  useEffect,
+  useRef,
+  type CSSProperties,
+  type ReactNode,
+} from 'react';
 
-const ease = [0.22, 1, 0.36, 1] as const;
-
-// Orchestrates children: each StaggerItem cascades in after the last one,
-// no per-child delays needed. Just nest — the variant flow does the timing.
+// Orchestrates children: each StaggerItem cascades in after the last one.
+// Zero-dependency — the parent stamps a per-index transition-delay and each
+// item reveals itself via IntersectionObserver (.reveal/.is-in in index.css).
 export default function StaggerReveal({
   children,
   className = '',
@@ -13,52 +19,62 @@ export default function StaggerReveal({
   className?: string;
 }) {
   return (
-    <motion.div
-      className={className}
-      variants={{
-        hidden: {},
-        show: { transition: { staggerChildren: 0.12, delayChildren: 0.05 } },
-      }}
-      initial="hidden"
-      whileInView="show"
-      viewport={{ once: true, amount: 0.15 }}
-    >
-      {children}
-    </motion.div>
+    <div className={className}>
+      {Children.map(children, (child, index) =>
+        isValidElement<{ index?: number }>(child)
+          ? cloneElement(child, { index })
+          : child
+      )}
+    </div>
   );
 }
 
 export function StaggerItem({
   children,
   className = '',
+  index = 0,
 }: {
   children: ReactNode;
   className?: string;
+  index?: number;
 }) {
+  const ref = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+    if (typeof IntersectionObserver === 'undefined') {
+      el.classList.add('is-in');
+      return;
+    }
+    const io = new IntersectionObserver(
+      (entries) => {
+        for (const entry of entries) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-in');
+            io.disconnect();
+          }
+        }
+      },
+      { threshold: 0.15, rootMargin: '0px 0px -8% 0px' }
+    );
+    io.observe(el);
+    return () => io.disconnect();
+  }, []);
+
+  const style: CSSProperties = {
+    transitionDelay: `${50 + index * 120}ms`,
+  };
+
   return (
-    <motion.div
-      className={className}
-      variants={{
-        hidden: { opacity: 0, y: 18 },
-        show: { opacity: 1, y: 0, transition: { duration: 0.6, ease } },
-      }}
-    >
+    <div ref={ref} className={`reveal ${className}`} style={style}>
       {children}
-    </motion.div>
+    </div>
   );
 }
 
-// Spring-physics hover: overshoots and settles instead of a linear scale.
-// Kept on the icon tile so it swaps in for the old CSS group-hover rule.
+// Spring-feel hover: overshoots and settles instead of a linear scale.
+// Pure CSS (.spring-tile in index.css) — no animation library needed.
 export function SpringTile({ children }: { children: ReactNode }) {
-  return (
-    <motion.div
-      className="inline-flex"
-      whileHover={{ scale: 1.12, rotate: 4 }}
-      whileTap={{ scale: 0.95 }}
-      transition={{ type: 'spring', stiffness: 320, damping: 14 }}
-    >
-      {children}
-    </motion.div>
-  );
+  return <span className="spring-tile">{children}</span>;
 }
