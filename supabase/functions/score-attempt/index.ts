@@ -110,6 +110,24 @@ interface AnswerKey {
 const paperCache = new Map<string, ScoringPaper>();
 const answerKeyCache = new Map<string, Map<number, AnswerKey>>();
 
+// Chapter tests are static JSON bundles (public/chapters/*.json), not paper
+// rows, so there is no papers row to look up. Their trial/free status lives
+// in the client's TRIAL_CHAPTER_IDS (src/data/chapters.ts); the same 12 ids
+// are mirrored here so the access gate stays server-side. Keep in sync.
+const TRIAL_CHAPTERS = new Set([
+  'jee-phy-1', 'jee-phy-2',
+  'jee-chem-1', 'jee-chem-2',
+  'jee-math-1', 'jee-math-2',
+  'neet-phy-1', 'neet-phy-2',
+  'neet-chem-1', 'neet-chem-2',
+  'neet-bio-1', 'neet-bio-2',
+]);
+
+// Upper bound on questions per chapter submission. Chapter tests top out
+// around 25 questions; the cap only stops key-harvest abuse (each call
+// returns that many answer keys).
+const MAX_CHAPTER_QUESTIONS = 60;
+
 async function loadScoringPaper(paperKey: string): Promise<ScoringPaper | null> {
   const cached = paperCache.get(paperKey);
   if (cached) return cached;
@@ -241,9 +259,13 @@ Deno.serve(async (req) => {
   }
 
   // The log insert and the paper load are independent, so they overlap.
+  // Chapter tests have no papers row (static JSON bundles), so the paper
+  // load is skipped for them — their questions resolve from submitted ids
+  // further below.
+  const isChapter = testType === 'chapter';
   const [logResult, paper] = await Promise.all([
     supabaseAdmin.from('scoring_calls').insert({ user_id: user.id }),
-    loadScoringPaper(paperKey),
+    isChapter ? Promise.resolve(null) : loadScoringPaper(paperKey),
   ]);
 
   if (logResult.error) {
@@ -251,11 +273,40 @@ Deno.serve(async (req) => {
     return json({ error: 'Failed to record submission' }, 502);
   }
 
-  if (!paper) {
+  // Resolved paper (full papers) or chapter bundle (chapter tests).
+  let scoringPaper: ScoringPaper | null = paper;
+  let isTrial = paper?.is_trial ?? false;
+
+  if (isChapter) {
+    if (!/^[a-z0-9-]+$/i.test(paperKey)) {
+      return json({ error: 'Invalid chapter key' }, 400);
+    }
+    const chapterIds = [...new Set(answers.map((a) => Number(a.id)).filter((id) => Number.isFinite(id) && id > 0))];
+    if (chapterIds.length === 0 || chapterIds.length > MAX_CHAPTER_QUESTIONS) {
+      return json({ error: 'Invalid chapter submission' }, 400);
+    }
+    const { data: chapterQuestions, error: chapterError } = await supabaseAdmin
+      .from('questions')
+      .select('id, number, type, marks, negative_marks, sections ( name )')
+      .in('id', chapterIds);
+    if (chapterError || !chapterQuestions || chapterQuestions.length === 0) {
+      return json({ error: 'Paper not found' }, 404);
+    }
+    scoringPaper = {
+      key: paperKey,
+      title: title ?? paperKey,
+      full_title: title ?? paperKey,
+      is_trial: TRIAL_CHAPTERS.has(paperKey),
+      questions: (chapterQuestions as unknown as ScoringPaper['questions']).slice().sort((a, b) => a.number - b.number),
+    };
+    isTrial = scoringPaper.is_trial;
+  }
+
+  if (!scoringPaper) {
     return json({ error: 'Paper not found' }, 404);
   }
 
-  if (!paper.is_trial) {
+  if (!isTrial) {
     const now = new Date().toISOString();
     const { data: subs, error: subError } = await supabaseAdmin
       .from('subscriptions')
@@ -273,14 +324,15 @@ Deno.serve(async (req) => {
     }
   }
 
-  const questions = paper.questions ?? [];
+  const questions = scoringPaper.questions ?? [];
   const questionIds = questions.map((q) => q.id);
 
   // A failed key load must not fall through to an empty map: scoreQuestion
   // reads a blank correct_answer as "awarded to all candidates", so an empty
   // map would silently give every student full marks and write that to
-  // attempts. Fail the request instead.
-  const keys = await loadAnswerKeys(paperKey, questionIds);
+  // attempts. Fail the request instead. Chapter bundles are cached under a
+  // distinct prefix so a chapter id can never collide with a paper key.
+  const keys = await loadAnswerKeys(isChapter ? `chapter:${paperKey}` : paperKey, questionIds);
   if (!keys) {
     return json({ error: 'Failed to load answer keys' }, 502);
   }
@@ -376,7 +428,7 @@ Deno.serve(async (req) => {
         user_id: user.id,
         paper_key: paperKey,
         test_type: testType,
-        title: title ?? paper.title ?? paperKey,
+        title: title ?? scoringPaper.title ?? paperKey,
         total_score: result.totalScore,
         max_score: result.maxScore,
         correct: result.totalCorrect,
