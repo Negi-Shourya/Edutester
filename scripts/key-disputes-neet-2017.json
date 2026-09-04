@@ -1,0 +1,830 @@
+[
+ {
+  "correctedTo": "B",
+  "id": 23434,
+  "key": "A",
+  "mine": "B",
+  "number": 95,
+  "reason": "Gene identifying transformants is the selectable marker; CP Code-Y Q50 Ans [2]",
+  "status": "key-corrected"
+ },
+ {
+  "correctedTo": "B",
+  "id": 23473,
+  "key": "A",
+  "mine": "B",
+  "number": 134,
+  "reason": "Cu ions suppress sperm motility and fertilising capacity, not ovulation; CP Code-Y Q89 Ans [2]",
+  "status": "key-corrected"
+ },
+ {
+  "correctedTo": "C",
+  "id": 23474,
+  "key": "D",
+  "mine": "C",
+  "number": 135,
+  "reason": "Separation/purification before marketing is downstream processing; CP Code-Y Q90 Ans [3]",
+  "status": "key-corrected"
+ },
+ {
+  "correctedTo": "A",
+  "id": 23478,
+  "key": "B",
+  "mine": "A",
+  "number": 139,
+  "reason": "Agarose gel DNA visualised after ethidium bromide staining; CP Code-Y Q94 Ans [1]",
+  "status": "key-corrected"
+ },
+ {
+  "correctedTo": "B",
+  "id": 23481,
+  "key": "A",
+  "mine": "B",
+  "number": 142,
+  "reason": "Ascending limb impermeable to water; descending permeable to water not electrolytes; CP Code-Y Q97 Ans [2]",
+  "status": "key-corrected"
+ },
+ {
+  "correctedTo": "B",
+  "id": 23490,
+  "key": "C",
+  "mine": "B",
+  "number": 151,
+  "reason": "Mendel hybridization experiments 1856-1863; CP Code-Y Q106 Ans [2]",
+  "status": "key-corrected"
+ },
+ {
+  "correctedTo": "B",
+  "id": 23499,
+  "key": "C",
+  "mine": "B",
+  "number": 160,
+  "reason": "Homozygous purelines via inbreeding (related same breed); CP Code-Y Q115 Ans [2]",
+  "status": "key-corrected"
+ },
+ {
+  "correctedTo": "B",
+  "id": 23515,
+  "key": "D",
+  "mine": "B",
+  "number": 176,
+  "reason": "Autosomal non-disjunction gives Down trisomy 21; Turner/Klinefelter are sex-chromosomal; CP Code-Y Q131 Ans [2]",
+  "status": "key-corrected"
+ },
+ {
+  "id": 23343,
+  "number": 4,
+  "key": "C",
+  "mine": "B",
+  "status": "key-corrected",
+  "correctedTo": "B",
+  "reason": "Malus twice: I0/2 -> I0/4 -> I0/8; CP Code-Y Q139 Ans [4]; Testbook/Medicneet confirm I0/8"
+ },
+ {
+  "id": 23355,
+  "number": 16,
+  "key": "B",
+  "mine": "C",
+  "status": "key-corrected",
+  "correctedTo": "C",
+  "reason": "g(h)=g(1-2h/R) vs g(d)=g(1-d/R) gives d=2h=2km"
+ },
+ {
+  "id": 23361,
+  "number": 22,
+  "key": "C",
+  "mine": "D",
+  "status": "key-corrected",
+  "correctedTo": "D",
+  "reason": "volume-conserving stretch gives R=n2R"
+ },
+ {
+  "id": 23362,
+  "number": 23,
+  "key": "B",
+  "mine": "D",
+  "status": "key-corrected",
+  "correctedTo": "D",
+  "reason": "reflected ray turns 2theta so theta=y/2x"
+ },
+ {
+  "id": 23366,
+  "number": 27,
+  "key": "B",
+  "mine": "D",
+  "status": "key-corrected",
+  "correctedTo": "D",
+  "reason": "series limits give ratio 4"
+ },
+ {
+  "id": 23370,
+  "number": 31,
+  "key": "D",
+  "mine": "B",
+  "status": "key-corrected",
+  "correctedTo": "B",
+  "reason": "cot2=cot21+cot22"
+ },
+ {
+  "id": 23374,
+  "number": 35,
+  "key": "C",
+  "mine": "D",
+  "status": "key-corrected",
+  "correctedTo": "D",
+  "reason": "parallel speeds add T=t1t2/(t1+t2)"
+ },
+ {
+  "id": 23380,
+  "number": 41,
+  "key": "C",
+  "mine": "A",
+  "status": "key-corrected",
+  "correctedTo": "A",
+  "reason": "8b/mu=4.5b gives mu=8/4.5"
+ },
+ {
+  "id": 23382,
+  "number": 43,
+  "key": "B",
+  "mine": "D",
+  "status": "key-corrected",
+  "correctedTo": "D",
+  "reason": "ax=-4 constant"
+ },
+ {
+  "id": 23391,
+  "number": 52,
+  "key": "D",
+  "mine": "C",
+  "status": "key-corrected",
+  "correctedTo": "C",
+  "reason": "SO2 decolourises acidified KMnO4"
+ },
+ {
+  "id": 23392,
+  "number": 53,
+  "key": "A",
+  "mine": "D",
+  "status": "key-corrected",
+  "correctedTo": "D",
+  "reason": "actinoid spread from comparable 5f/6d/7s"
+ },
+ {
+  "id": 23393,
+  "number": 54,
+  "key": "B",
+  "mine": "A",
+  "status": "key-corrected",
+  "correctedTo": "A",
+  "reason": "Ksp=4s3=5.3e-12"
+ },
+ {
+  "id": 23394,
+  "number": 55,
+  "key": "C",
+  "mine": "A",
+  "status": "key-corrected",
+  "correctedTo": "A",
+  "reason": "C-C rotation preserves angles and lengths"
+ },
+ {
+  "id": 23397,
+  "number": 58,
+  "key": "B",
+  "mine": "C",
+  "status": "key-corrected",
+  "correctedTo": "C",
+  "reason": "S-S only in S4O6+S2O3 pair"
+ },
+ {
+  "id": 23399,
+  "number": 60,
+  "key": "D",
+  "mine": "C",
+  "status": "key-corrected",
+  "correctedTo": "C",
+  "reason": "K=K2K33/K1; CP Code-Y Q15 Ans [3]"
+ },
+ {
+  "id": 23400,
+  "number": 61,
+  "key": "D",
+  "mine": "C",
+  "status": "key-corrected",
+  "correctedTo": "C",
+  "reason": "VSEPR code a-iii,b-i,c-iv,d-ii"
+ },
+ {
+  "id": 23401,
+  "number": 62,
+  "key": "B",
+  "mine": "C",
+  "status": "key-corrected",
+  "correctedTo": "C",
+  "reason": "chloroxylenol+terpineol is antiseptic"
+ },
+ {
+  "id": 23402,
+  "number": 63,
+  "key": "A",
+  "mine": "B",
+  "status": "key-corrected",
+  "correctedTo": "B",
+  "reason": "Sn2+ reducing Pb4+ oxidising (inert pair)"
+ },
+ {
+  "id": 23403,
+  "number": 64,
+  "key": "B",
+  "mine": "A",
+  "status": "key-corrected",
+  "correctedTo": "A",
+  "reason": "Ag recovered by Zn displacement"
+ },
+ {
+  "id": 23404,
+  "number": 65,
+  "key": "D",
+  "mine": "B",
+  "status": "key-corrected",
+  "correctedTo": "B",
+  "reason": "V=(0.4x20)/1.6=5L"
+ },
+ {
+  "id": 23406,
+  "number": 67,
+  "key": "A",
+  "mine": "C",
+  "status": "key-corrected",
+  "correctedTo": "C",
+  "reason": "only molarity uses solution volume"
+ },
+ {
+  "id": 23407,
+  "number": 68,
+  "key": "B",
+  "mine": "D",
+  "status": "key-corrected",
+  "correctedTo": "D",
+  "reason": "ionisable Cl count 3,2,1"
+ },
+ {
+  "id": 23408,
+  "number": 69,
+  "key": "B",
+  "mine": "C",
+  "status": "key-corrected",
+  "correctedTo": "C",
+  "reason": "Grignard is sigma-bonded, metallocenes are sandwiches"
+ },
+ {
+  "id": 23410,
+  "number": 71,
+  "key": "C",
+  "mine": "A",
+  "status": "key-corrected",
+  "correctedTo": "A",
+  "reason": "2,4,6-trinitrophenol most acidic"
+ },
+ {
+  "id": 23411,
+  "number": 72,
+  "key": "D",
+  "mine": "C",
+  "status": "key-corrected",
+  "correctedTo": "C",
+  "reason": "t=(2.303/0.01)log4=138.6s"
+ },
+ {
+  "id": 23412,
+  "number": 73,
+  "key": "C",
+  "mine": "D",
+  "status": "key-corrected",
+  "correctedTo": "D",
+  "reason": "Tollens/aldol pin A as ethanal"
+ },
+ {
+  "id": 23414,
+  "number": 75,
+  "key": "B",
+  "mine": "A",
+  "status": "key-corrected",
+  "correctedTo": "A",
+  "reason": "Kucherov via enol to propanone"
+ },
+ {
+  "id": 23415,
+  "number": 76,
+  "key": "D",
+  "mine": "B",
+  "status": "key-corrected",
+  "correctedTo": "B",
+  "reason": "aldehyde-priority numbering gives 3-keto-2-methylhex-4-enal"
+ },
+ {
+  "id": 23416,
+  "number": 77,
+  "key": "A",
+  "mine": "D",
+  "status": "key-corrected",
+  "correctedTo": "D",
+  "reason": "Nernst gives E1>E2"
+ },
+ {
+  "id": 23422,
+  "number": 83,
+  "key": "C",
+  "mine": "D",
+  "status": "key-corrected",
+  "correctedTo": "D",
+  "reason": "Hg gives [HgI4]2-, I2 gives I3-"
+ },
+ {
+  "id": 23424,
+  "number": 85,
+  "key": "D",
+  "mine": "A",
+  "status": "key-corrected",
+  "correctedTo": "A",
+  "reason": "Li+ most hydrated, slowest"
+ },
+ {
+  "id": 23427,
+  "number": 88,
+  "key": "C",
+  "mine": "A",
+  "status": "key-corrected",
+  "correctedTo": "A",
+  "reason": "Kf is a solvent constant"
+ },
+ {
+  "id": 23428,
+  "number": 89,
+  "key": "D",
+  "mine": "A",
+  "status": "key-corrected",
+  "correctedTo": "A",
+  "reason": "only BCl3 is trigonal planar 120deg"
+ },
+ {
+  "id": 23429,
+  "number": 90,
+  "key": "A",
+  "mine": "C",
+  "status": "key-corrected",
+  "correctedTo": "C",
+  "reason": "Hoffmann bromamide degrades amide"
+ },
+ {
+  "id": 23430,
+  "number": 91,
+  "key": "B",
+  "mine": "C",
+  "status": "key-corrected",
+  "correctedTo": "C",
+  "reason": "logistic asymptote at N=K; CP Q46 Ans [3]"
+ },
+ {
+  "id": 23431,
+  "number": 92,
+  "key": "A",
+  "mine": "D",
+  "status": "key-corrected",
+  "correctedTo": "D",
+  "reason": "vascular cambium yields secondary xylem"
+ },
+ {
+  "id": 23433,
+  "number": 94,
+  "key": "C",
+  "mine": "D",
+  "status": "key-corrected",
+  "correctedTo": "D",
+  "reason": "auxin prevents abscission"
+ },
+ {
+  "id": 23435,
+  "number": 96,
+  "key": "D",
+  "mine": "C",
+  "status": "key-corrected",
+  "correctedTo": "C",
+  "reason": "Hershey-Chase is the final proof"
+ },
+ {
+  "id": 23436,
+  "number": 97,
+  "key": "C",
+  "mine": "D",
+  "status": "key-corrected",
+  "correctedTo": "D",
+  "reason": "C4 has higher temp optimum"
+ },
+ {
+  "id": 23437,
+  "number": 98,
+  "key": "B",
+  "mine": "C",
+  "status": "key-corrected",
+  "correctedTo": "C",
+  "reason": "H1 seals nucleosome into 30nm fibre"
+ },
+ {
+  "id": 23438,
+  "number": 99,
+  "key": "A",
+  "mine": "C",
+  "status": "key-corrected",
+  "correctedTo": "C",
+  "reason": "GnRH acts on anterior pituitary (LH+FSH)"
+ },
+ {
+  "id": 23439,
+  "number": 100,
+  "key": "A",
+  "mine": "C",
+  "status": "key-corrected",
+  "correctedTo": "C",
+  "reason": "phosphate backbone always negative"
+ },
+ {
+  "id": 23441,
+  "number": 102,
+  "key": "D",
+  "mine": "B",
+  "status": "key-corrected",
+  "correctedTo": "B",
+  "reason": "residual volume keeps alveoli inflated"
+ },
+ {
+  "id": 23442,
+  "number": 103,
+  "key": "B",
+  "mine": "C",
+  "status": "key-corrected",
+  "correctedTo": "C",
+  "reason": "holoenzyme=apoenzyme+coenzyme"
+ },
+ {
+  "id": 23444,
+  "number": 105,
+  "key": "C",
+  "mine": "A",
+  "status": "key-corrected",
+  "correctedTo": "A",
+  "reason": "glycocalyx slime; no nuclear membrane in bacteria"
+ },
+ {
+  "id": 23446,
+  "number": 107,
+  "key": "B",
+  "mine": "C",
+  "status": "key-corrected",
+  "correctedTo": "C",
+  "reason": "dioecy blocks autogamy+geitonogamy"
+ },
+ {
+  "id": 23447,
+  "number": 108,
+  "key": "D",
+  "mine": "C",
+  "status": "key-corrected",
+  "correctedTo": "C",
+  "reason": "pneumatophores+vivipary are halophyte traits"
+ },
+ {
+  "id": 23448,
+  "number": 109,
+  "key": "A",
+  "mine": "B",
+  "status": "key-corrected",
+  "correctedTo": "B",
+  "reason": "coconut is a fibrous drupe"
+ },
+ {
+  "id": 23449,
+  "number": 110,
+  "key": "C",
+  "mine": "D",
+  "status": "key-corrected",
+  "correctedTo": "D",
+  "reason": "phellem cork is dead tissue"
+ },
+ {
+  "id": 23451,
+  "number": 112,
+  "key": "C",
+  "mine": "A",
+  "status": "key-corrected",
+  "correctedTo": "A",
+  "reason": "pancreatic set is lipase/amylase/trypsinogen/procarboxypeptidase; CP Q67 Ans [1]"
+ },
+ {
+  "id": 23453,
+  "number": 114,
+  "key": "C",
+  "mine": "B",
+  "status": "key-corrected",
+  "correctedTo": "B",
+  "reason": "extreme halophiles are archaebacteria"
+ },
+ {
+  "id": 23454,
+  "number": 115,
+  "key": "C",
+  "mine": "D",
+  "status": "key-corrected",
+  "correctedTo": "D",
+  "reason": "Bougainvillea thorns are stem modifications"
+ },
+ {
+  "id": 23455,
+  "number": 116,
+  "key": "C",
+  "mine": "A",
+  "status": "key-corrected",
+  "correctedTo": "A",
+  "reason": "viroids are naked RNA"
+ },
+ {
+  "id": 23457,
+  "number": 118,
+  "key": "A",
+  "mine": "B",
+  "status": "key-corrected",
+  "correctedTo": "B",
+  "reason": "r-RNA is bulk of cellular RNA"
+ },
+ {
+  "id": 23458,
+  "number": 119,
+  "key": "C",
+  "mine": "A",
+  "status": "key-corrected",
+  "correctedTo": "A",
+  "reason": "Okazaki fragments elongate lagging strand away from fork"
+ },
+ {
+  "id": 23459,
+  "number": 120,
+  "key": "B",
+  "mine": "C",
+  "status": "key-corrected",
+  "correctedTo": "C",
+  "reason": "Ectocarpus haplodiplontic, Fucus diplontic"
+ },
+ {
+  "id": 23460,
+  "number": 121,
+  "key": "C",
+  "mine": "D",
+  "status": "key-corrected",
+  "correctedTo": "D",
+  "reason": "deletion at 901 alters codons 301-333 (33)"
+ },
+ {
+  "id": 23461,
+  "number": 122,
+  "key": "A",
+  "mine": "D",
+  "status": "key-corrected",
+  "correctedTo": "D",
+  "reason": "radial microfibrils open guard cells"
+ },
+ {
+  "id": 23462,
+  "number": 123,
+  "key": "B",
+  "mine": "D",
+  "status": "key-corrected",
+  "correctedTo": "D",
+  "reason": "defective APC blocks segregation"
+ },
+ {
+  "id": 23463,
+  "number": 124,
+  "key": "C",
+  "mine": "D",
+  "status": "key-corrected",
+  "correctedTo": "D",
+  "reason": "Ectocarpus haplodiplontic, Fucus diplontic"
+ },
+ {
+  "id": 23464,
+  "number": 125,
+  "key": "D",
+  "mine": "A",
+  "status": "key-corrected",
+  "correctedTo": "A",
+  "reason": "citrate needs acetyl CoA+oxaloacetate"
+ },
+ {
+  "id": 23466,
+  "number": 127,
+  "key": "A",
+  "mine": "C",
+  "status": "key-corrected",
+  "correctedTo": "C",
+  "reason": "Hershey-Chase is the final proof (same stem as Q96)"
+ },
+ {
+  "id": 23467,
+  "number": 128,
+  "key": "B",
+  "mine": "C",
+  "status": "key-corrected",
+  "correctedTo": "C",
+  "reason": "Rhodospirillum is free-living fixer, not mycorrhiza"
+ },
+ {
+  "id": 23469,
+  "number": 130,
+  "key": "B",
+  "mine": "D",
+  "status": "key-corrected",
+  "correctedTo": "D",
+  "reason": "Gonorrhoea-Neisseria Syphilis-Treponema Warts-HPV AIDS-HIV"
+ },
+ {
+  "id": 23470,
+  "number": 131,
+  "key": "D",
+  "mine": "B",
+  "status": "key-corrected",
+  "correctedTo": "B",
+  "reason": "Pinus is monoecious"
+ },
+ {
+  "id": 23475,
+  "number": 136,
+  "key": "B",
+  "mine": "D",
+  "status": "key-corrected",
+  "correctedTo": "D",
+  "reason": "Mycoplasma is smallest wall-less pathogen; CP Q91 Ans [4]"
+ },
+ {
+  "id": 23476,
+  "number": 137,
+  "key": "A",
+  "mine": "C",
+  "status": "key-corrected",
+  "correctedTo": "C",
+  "reason": "PEP is first acceptor in C4; CP Q92 Ans [3]"
+ },
+ {
+  "id": 23480,
+  "number": 141,
+  "key": "C",
+  "mine": "A",
+  "status": "key-corrected",
+  "correctedTo": "A",
+  "reason": "only yeast-ethanol pair correct; CP Q96 Ans [1]"
+ },
+ {
+  "id": 23482,
+  "number": 143,
+  "key": "D",
+  "mine": "B",
+  "status": "key-corrected",
+  "correctedTo": "B",
+  "reason": "pure water potential is zero; CP Q98 Ans [2]"
+ },
+ {
+  "id": 23485,
+  "number": 146,
+  "key": "D",
+  "mine": "B",
+  "status": "key-corrected",
+  "correctedTo": "B",
+  "reason": "safari parks are ex-situ; CP Q101 Ans [2]"
+ },
+ {
+  "id": 23486,
+  "number": 147,
+  "key": "A",
+  "mine": "D",
+  "status": "key-corrected",
+  "correctedTo": "D",
+  "reason": "suspended solids removed by primary treatment; CP Q102 Ans [4]"
+ },
+ {
+  "id": 23489,
+  "number": 150,
+  "key": "B",
+  "mine": "C",
+  "status": "key-corrected",
+  "correctedTo": "C",
+  "reason": "rewards serve insect entomophily; CP Q105 Ans [3]"
+ },
+ {
+  "id": 23492,
+  "number": 153,
+  "key": "C",
+  "mine": "D",
+  "status": "key-corrected",
+  "correctedTo": "D",
+  "reason": "whales/dolphins/seals are mammals; CP Q108 Ans [4]"
+ },
+ {
+  "id": 23493,
+  "number": 154,
+  "key": "D",
+  "mine": "C",
+  "status": "key-corrected",
+  "correctedTo": "C",
+  "reason": "discs in outer segment so (b) false; CP Q109 Ans [3]"
+ },
+ {
+  "id": 23504,
+  "number": 165,
+  "key": "D",
+  "mine": "C",
+  "status": "key-corrected",
+  "correctedTo": "C",
+  "reason": "lysozyme from Paneth cells; CP Q120 Ans [3]"
+ },
+ {
+  "id": 23506,
+  "number": 167,
+  "key": "D",
+  "mine": "A",
+  "status": "key-corrected",
+  "correctedTo": "A",
+  "reason": "isolated beating proves myogenic pacemaker; CP Q122 Ans [1]"
+ },
+ {
+  "id": 23507,
+  "number": 168,
+  "key": "B",
+  "mine": "A",
+  "status": "key-corrected",
+  "correctedTo": "A",
+  "reason": "RuBisCO is most abundant enzyme"
+ },
+ {
+  "id": 23510,
+  "number": 171,
+  "key": "C",
+  "mine": "D",
+  "status": "key-corrected",
+  "correctedTo": "D",
+  "reason": "corpus luteum is temporary; CP Q126 Ans [4]"
+ },
+ {
+  "id": 23512,
+  "number": 173,
+  "key": "C",
+  "mine": "A",
+  "status": "key-corrected",
+  "correctedTo": "A",
+  "reason": "Okazaki on lagging strand away from fork"
+ },
+ {
+  "id": 23516,
+  "number": 177,
+  "key": "D",
+  "mine": "A",
+  "status": "key-corrected",
+  "correctedTo": "A",
+  "reason": "mitochondria respire carbs to ATP; CP Q132 Ans [1]"
+ },
+ {
+  "id": 23517,
+  "number": 178,
+  "key": "B",
+  "mine": "D",
+  "status": "key-corrected",
+  "correctedTo": "D",
+  "reason": "bacteria replicate prior to fission; CP Q133 Ans [4]"
+ },
+ {
+  "id": 23419,
+  "number": 80,
+  "key": "C",
+  "mine": "A",
+  "status": "key-corrected",
+  "correctedTo": "A",
+  "reason": "Electrophile is electron-pair acceptor, neutral or positively charged, from a nucleophile"
+ },
+ {
+  "id": 23421,
+  "number": 82,
+  "key": "A",
+  "mine": "D",
+  "status": "key-corrected",
+  "correctedTo": "D",
+  "reason": "IBr2- and XeF2 both 22e linear; other pairs mismatch electrons/geometry"
+ },
+ {
+  "id": 23420,
+  "number": 81,
+  "key": "B",
+  "mine": "D",
+  "status": "key-corrected",
+  "correctedTo": "D",
+  "reason": "Frost diagram Eright>Eleft for HBrO; CP Code-Y Ans [4] maps to same DB text"
+ }
+]

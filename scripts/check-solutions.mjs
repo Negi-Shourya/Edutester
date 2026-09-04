@@ -66,6 +66,11 @@ for (const [qid, sol] of Object.entries(solutions)) {
     }
     continue;
   }
+  if (!key || key.toUpperCase() === 'BONUS') {
+    if (last.endsWith('(Bonus)') || last.match(/\(([A-D])\)\s*$/)) {
+      continue;
+    }
+  }
   const m = last.match(/\(([A-D])\)\s*$/);
   if (!m) {
     console.log(`FAIL ${tag}: last line must end with (A)/(B)/(C)/(D): ${last.slice(0, 80)}`);

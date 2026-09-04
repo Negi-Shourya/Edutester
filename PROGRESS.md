@@ -205,6 +205,7 @@
     JSON. Rendering verified through the real `FormattedQuestionText` /
     `VectorText` / `QuestionDiagram` components for all 180 questions: 0 KaTeX
     errors, 0 blank options, no leftover markup, all 28 images load
+  - Solutions: all 180 questions have step-by-step multi-line explanations seeded to Supabase (180/180 live, verified via `check-solutions.mjs` and seeded via `seed-solutions.mjs neet-2020`)
 - **NEET 2026 (done)**: extracted from Test Booklet Code 11 (23 pages, 180 questions,
   Physics 1-45 / Chemistry 46-90 / Biology 91-180) via `neet-out/neet-2026/pages/` (p01-p23.json)
   and `scripts/_assemble-neet-2026.mjs` → seeded to Supabase as **paper id 60**
@@ -221,7 +222,22 @@
   - Section remapping: Physics (1-45), Chemistry (46-90), Biology (91-180).
   - 28 figures (8 stem images + 20 option images) uploaded to Supabase Storage under `question-images/neet-2019/`.
   - 10 match questions formatted as standard markdown tables; math formatted with KaTeX standard syntax; verified 0 KaTeX parse errors across all 900 fields via `scripts/_render-check-2019.mts`.
-  - Static JSON generated at `public/papers/neet-2019.json` (115 KB) via `scripts/build-paper-json.mjs`.
+- **NEET 2021 (done)**: 180 questions (45 Physics, 45 Chemistry, 45 Botany, 45 Zoology), pruned of deleted syllabus topics.
+  - Solutions: all 180 questions have step-by-step multi-line explanations seeded to Supabase (180/180 live, verified via `check-solutions.mjs` and seeded via `seed-solutions.mjs neet-2021`).
+  - Static JSON generated at `public/papers/neet-2021.json` via `scripts/build-paper-json.mjs`.
+- **NEET solutions display-normalization, 2021–2026 (done)**: stripped
+  `$`/`$$` delimiters, literal `\n`, and author numbering/bullets (`Step N:`,
+  `1.`, `1)`, `(1)`, `•`, `-`, `**`) from all solution files and reseeded
+  2021–2025 + Re-NEET 2026 (180/180 live each, 0 dirty rows;
+  `check-solutions.mjs` green per paper; KaTeX harness 0 errors, 0 stray `$`
+  across every solution file). Renderer hardened (`src/lib/mathText.ts`:
+  dollar strip, literal-newline fix, `\left…\right` spans, nesting-aware
+  X/Y → `\frac`, `\%` kept in math); result screen shows plain paragraphs
+  with the green answer highlight (number badges removed per user
+  instruction). Standing rules captured in `SOLUTION_PROCESS.md` §4 + a new
+  `clean-neet-solutions.mjs` normalizer (run before every check/seed).
+  neet-2026 seeded 180/180 on 2026-09-04 (prior solution-free hold lifted by
+  the user; 2 keys corrected: Q57 C→B, Q62 D→A).
 
 
 ## Phase 7 — Results screen perf + submission latency (shared by ALL papers)

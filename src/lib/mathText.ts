@@ -39,6 +39,14 @@ const SCRIPT_GROUP_SRC = String.raw`[_\^]` + GROUP_SRC;
 // tokenizer below would otherwise split its content into text pieces.
 const SMALLMATRIX_SRC = String.raw`\\left\[\\begin\{smallmatrix\}[\s\S]*?\\end\{smallmatrix\}\\right\]`;
 
+// Same for a \left…\right delimited span: KaTeX only accepts the pair
+// in a single render call, so "\left(" must never be cut off from its
+// "\right)". Brace delimiters arrive escaped ("\\left\\{"), so an
+// optional backslash precedes each delimiter. Unbalanced leftovers
+// fall through to the bare-command rule and are repaired by the
+// post-pass below.
+const LEFTRIGHT_SRC = String.raw`\\left\s*\\?[(|.\[{][\s\S]*?\\right\s*\\?[)\]|}.]`;
+
 // ── Regex to find math markup in our custom notation ──
 // Order matters: command names first (so \frac is a command, not a group),
 // then brace groups, explicit _/^ groups, then unicode sub/sup chars.
@@ -48,6 +56,7 @@ const SMALLMATRIX_SRC = String.raw`\\left\[\\begin\{smallmatrix\}[\s\S]*?\\end\{
 const MATH_TOKEN_RE = new RegExp(
   [
     SMALLMATRIX_SRC,
+    LEFTRIGHT_SRC,
     String.raw`\\[a-zA-Z]+(?:\[[^\[\]]*\])?`,
     SCRIPT_GROUP_SRC,
     GROUP_SRC,
@@ -129,6 +138,18 @@ function countParens(s: string): number {
   return n;
 }
 
+// Net depth over (), [] and {} — nonzero means the operand was chopped
+// mid-group (e.g. "3}" from "10^{-3}/…"), in which case the slash is
+// left alone rather than built into a broken \frac.
+function groupDepth(s: string): number {
+  let n = 0;
+  for (const ch of s) {
+    if (ch === '(' || ch === '[' || ch === '{') n++;
+    else if (ch === ')' || ch === ']' || ch === '}') n--;
+  }
+  return n;
+}
+
 // Brace depth at position idx — slashes inside {…} groups (script groups
 // like "_{1/2}", \sqrt{…}, \int_{π/6}^{π/3}) are left as-is.
 function braceDepthAt(text: string, idx: number): number {
@@ -158,45 +179,67 @@ function convertFractions(text: string): string {
       idx = out.lastIndexOf('/', idx - 1);
       continue;
     }
-    // Left operand: scan left over non-boundary chars → [ls, idx)
-    let ls = idx - 1;
-    while (ls >= 0 && !FRAC_BOUNDARY_RE.test(out[ls])) ls--;
-    ls++;
-    let L = out.slice(ls, idx);
-    // Dangling closing parens on the left → extend one char at a time
-    // until balanced (e.g. "(x - 2)" from "2)").
-    while (ls > 0 && countParens(L) < 0) {
+    // Left operand: scan left over non-boundary chars → [ls, idx).
+    // Group closers dive one level (so "+"/"-" inside "10^{-3}" or
+    // "\text{Mn}^{3+}" don't split the operand); the matching opener
+    // climbs back out. An opener met at depth 0, or any boundary at
+    // depth 0, ends the operand.
+    let ls = idx;
+    let ldepth = 0;
+    while (ls > 0) {
+      const ch = out[ls - 1];
+      if (ch === ')' || ch === ']' || ch === '}') ldepth--;
+      else if (ch === '(' || ch === '[' || ch === '{') {
+        if (ldepth === 0) break;
+        ldepth++;
+      } else if (ldepth === 0 && FRAC_BOUNDARY_RE.test(ch)) break;
       ls--;
-      L = out.slice(ls, idx);
     }
-    // Right operand: scan right over non-boundary chars → (idx, ri)
+    const L = out.slice(ls, idx);
+    // Right operand: mirror image → (idx, ri).
     let ri = idx + 1;
-    while (ri < out.length && !FRAC_BOUNDARY_RE.test(out[ri])) ri++;
-    let R = out.slice(idx + 1, ri);
-    while (ri < out.length && countParens(R) > 0) {
+    let rdepth = 0;
+    while (ri < out.length) {
+      const ch = out[ri];
+      if (ch === '(' || ch === '[' || ch === '{') rdepth++;
+      else if (ch === ')' || ch === ']' || ch === '}') {
+        if (rdepth === 0) break;
+        rdepth--;
+      } else if (rdepth === 0 && FRAC_BOUNDARY_RE.test(ch)) break;
       ri++;
-      R = out.slice(idx + 1, ri);
     }
+    // A trailing ".", "," or similar rode along after a closed group
+    // ("…/(600 × 10^{-9}).") — it punctuates the sentence, not the
+    // denominator.
+    while (ri > idx + 1 && /[.,;:]/.test(out[ri - 1])) ri--;
+    const R = out.slice(idx + 1, ri);
     // A dangling ")" on R can belong to a "(" just left of L
     // (e.g. "((x³ + 1) / (x² + 1))" → drop the outer ")").
-    if (countParens(R) < 0 && ls > 0 && out[ls - 1] === '(') {
-      R = R.slice(0, -1);
+    let Rfix = R;
+    if (countParens(Rfix) < 0 && ls > 0 && out[ls - 1] === '(') {
+      Rfix = Rfix.slice(0, -1);
     }
-    if (countParens(L) === 0 && countParens(R) === 0) {
+    // Chopped (unbalanced) operands or a dangling ^/_ keep the slash —
+    // a broken \frac renders as a red KaTeX error, plain "a/b" does not.
+    if (
+      groupDepth(L) === 0 && groupDepth(Rfix) === 0 &&
+      !/[\^_]$/.test(L) && !/^[\^_]/.test(Rfix) && !/[\^_]$/.test(Rfix)
+    ) {
       const after = out.slice(ri, ri + 12);
       const keepSlash =
-        L === '' || R === '' ||
-        /^(w|v)\/(w|v)$/.test(`${L}/${R}`) ||
-        (L === 't₁' && R === '₂') ||
-        (WORD_RE.test(L) !== WORD_RE.test(R)) ||
-        (CHEM_RE.test(L) && CHEM_RE.test(R)) ||
-        (!MATHY_RE.test(L) || !MATHY_RE.test(R)) ||
+        L === '' || Rfix === '' ||
+        /^(w|v)\/(w|v)$/.test(`${L}/${Rfix}`) ||
+        (L === 't₁' && Rfix === '₂') ||
+        (WORD_RE.test(L) !== WORD_RE.test(Rfix)) ||
+        (CHEM_RE.test(L) && CHEM_RE.test(Rfix)) ||
+        (!MATHY_RE.test(L) || !MATHY_RE.test(Rfix)) ||
         /^[^→\n]{0,10}→/.test(after) ||
         /^\s+gives\b/.test(after);
       if (!keepSlash) {
-        // Replace the whole [ls, ri) range (L + "/" + R) — otherwise L's
-        // characters would be duplicated in the output.
-        out = out.slice(0, ls) + `\\frac{${L}}{${R}}` + out.slice(ri);
+        // Replace the whole [ls, ri) range (L + "/" + Rfix) — otherwise
+        // L's characters would be duplicated in the output. The ")" shed
+        // from Rfix above is dropped with the range, as before.
+        out = out.slice(0, ls) + `\\frac{${L}}{${Rfix}}` + out.slice(ri);
       }
     }
     // continue scanning left of the original slash
@@ -250,6 +293,28 @@ const FUNC_NAMES: Record<string, string> = {
 export function preprocessMath(text: string): string {
   let out = text;
 
+  // Literal "\n" (backslash + n) from double-escaped solution JSON
+  // (NEET 2022 fully, NEET 2023 partly) → real newline. Real TeX
+  // commands are preserved: \neq \ne \nabla \ni \notin \nexists \nu
+  // (the \nu in "h\nu" stays; the literal break in "\nununennium"
+  // is converted because a command never continues with a letter).
+  out = out.replace(/\\n(?!(?:neq|ne|nabla|ni|notin|nexists|nu)(?![a-zA-Z]))/g, '\n');
+
+  // $…$ / $$…$$ delimiters (NEET 2023–2026 solutions were authored
+  // with them, but the tokenizer below works on raw TeX, not
+  // dollars). Strip the delimiters and let the inner content flow
+  // through the normal passes. Display math first (may span lines),
+  // then inline math (same line only, so an unmatched $ can never
+  // swallow whole paragraphs). Any stray $ left over is dropped —
+  // no question content uses $ as currency.
+  out = out.replace(/\$\$([\s\S]+?)\$\$/g, '$1');
+  out = out.replace(/\$([^$\n]+?)\$/g, '$1');
+  out = out.replace(/\$/g, '');
+
+  // Markdown bold markers (NEET 2024–2026 solutions) carry no meaning
+  // here — drop the markers, keep the words.
+  out = out.replace(/\*\*/g, '');
+
   // Matrices first — entries keep their raw content so the later
   // passes (greek, fractions, …) apply inside the smallmatrix too.
   out = convertMatrices(out);
@@ -273,7 +338,10 @@ export function preprocessMath(text: string): string {
   // Normalize LaTeX spacing escapes like "\ " -> " " and stray backslashes before punctuation
   out = out.replace(/\\\s+/g, ' ');
   out = out.replace(/\\\s*([;,])/g, '$1');
-  out = out.replace(/\\%/g, '%');
+  // NOTE: \% is deliberately left alone here — inside math it is the
+  // correct way to typeset a percent, and stripping it to a bare %
+  // breaks KaTeX (everything after % parses as a comment). Text
+  // segments get their \% → % in tokenizeMath below.
 
   // Unicode dashes → minus, unicode math → LaTeX
   out = out.replace(/[\u2013\u2212]/g, '-');
@@ -414,6 +482,39 @@ export function tokenizeMath(text: string): Segment[] {
         }
       }
     }
+  }
+
+  // \left / \right are tokenized as bare commands, split from the
+  // delimiter that follows them ("\left" + text "(…") — and KaTeX
+  // renders a lone \left as an error. Pull one delimiter character
+  // ([ { | . for \left; ) ] } | . for \right) from the next text
+  // segment back into the math expression.
+  for (let i = 0; i < segments.length - 1; i++) {
+    const seg = segments[i];
+    const next = segments[i + 1];
+    if (seg.kind !== 'math' || next.kind !== 'text') continue;
+    const m = seg.value.match(/\\(left|right)\s*$/);
+    if (!m) continue;
+    // The delimiter may be escaped ("\left\{" / "\right\}").
+    let delim = next.value[0];
+    let take = 1;
+    if (delim === '\\' && (next.value[1] === '{' || next.value[1] === '}')) {
+      delim = next.value[1];
+      take = 2;
+    }
+    const ok = m[1] === 'left' ? '([{|.'.includes(delim) : ')]}|.'.includes(delim);
+    if (!ok) continue;
+    seg.value = seg.value.replace(/\s*$/, '') + next.value.slice(0, take);
+    next.value = next.value.slice(take);
+    if (next.value === '') {
+      segments.splice(i + 1, 1);
+    }
+  }
+
+  // \% survives preprocessing so math keeps its percent escape; plain
+  // prose must not show the backslash.
+  for (const seg of segments) {
+    if (seg.kind === 'text') seg.value = seg.value.replace(/\\%/g, '%');
   }
 
   return segments;

@@ -1,0 +1,56 @@
+[
+  {
+    "id": 15266,
+    "number": 83,
+    "key": null,
+    "mine": "C",
+    "status": "key-corrected",
+    "correctedTo": "C",
+    "reason": "Nernst equation: E = 1.05 - (0.059/2)*log(10^-3 / 10^-6) = 1.05 - 0.0885 = 0.9615 V, matching option C exactly. DB key was null (paper booklet printed misprint E°=10.5V resulting in NA, but our DB stem has 1.05V and option C is 0.9615V)."
+  },
+  {
+    "id": 15214,
+    "number": 39,
+    "key": "C",
+    "mine": "B",
+    "status": "key-corrected",
+    "correctedTo": "B",
+    "reason": "Ampere circuital law gives B = mu_0*I*r/(2*pi*R^2) inside (linearly increasing with r) and B = mu_0*I/(2*pi*r) outside (decreasing with 1/r dependence). Option B has 1/r dependence; option C says linearly decreasing. S1 Q49 confirms option with 1/r dependence is the answer. DB key was C due to option label transposition (label 2 vs 3)."
+  },
+  {
+    "id": 15268,
+    "number": 85,
+    "key": "C",
+    "mine": "A",
+    "status": "key-corrected",
+    "correctedTo": "A",
+    "reason": "Crystal field splitting Delta_o increases with ligand field strength: en > H2O. Complex (C) [Ni(en)3]2+ has 3 en ligands (highest Delta_o), (A) [Ni(H2O)2(en)2]2+ has 2 en, (B) [Ni(H2O)4(en)]2+ has 1 en. Energy absorbed follows (C) > (A) > (B), which is option A. S1 Q99 confirms Answer (1). DB key was C due to option text containing '(C)' being confused with option letter C during assembly."
+  },
+  {
+    "id": 15349,
+    "number": 158,
+    "key": "A",
+    "mine": "C",
+    "status": "key-corrected",
+    "correctedTo": "C",
+    "reason": "Death rate = number of deaths / initial population = 8 / 80 = 0.1 individuals per Drosophila per week. 0.1 is Option C. S1 Q163 confirms Answer (3) = 0.1. DB key was A due to scan OCR error."
+  },
+  {
+    "id": 15353,
+    "number": 161,
+    "key": "A",
+    "mine": "C",
+    "status": "key-corrected",
+    "correctedTo": "C",
+    "reason": "The standard taxonomic hierarchy for animals is Kingdom -> Phylum -> Class -> Order -> Family -> Genus -> Species, which is option C. S1 Q172 confirms Answer (3). assemble-neet-2022.mjs noted this fix for Q180 of raw scan, but the question was renumbered to Q161 so the fix was not applied."
+  },
+  {
+    "id": 15365,
+    "number": 173,
+    "key": "D",
+    "mine": "B",
+    "status": "key-corrected",
+    "correctedTo": "B",
+    "reason": "Linear chromosome gene mapping: d(a,c)=5, d(c,b)=15 gives d(a,b)=20 (order a-c-b). d(b,d)=9 and d(c,d)=24 = 15+9 confirms d lies past b. Total distance d(a,d) = 5+15+9 = 29. Sequence is a, c, b, d (option B). S1 Q199 confirms Answer (2). DB key was D due to scan booklet error."
+  }
+]

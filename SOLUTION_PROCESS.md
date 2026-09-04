@@ -60,13 +60,39 @@ Causes of mismatch seen in 2018 and how to resolve them:
 
 Append to `scripts/solutions-<paper>.json` as `{ "<question_id>": "<text>" }`.
 
-Format rules (enforced by `check-solutions.mjs`):
+Format rules (enforced by `clean-neet-solutions.mjs` + `check-solutions.mjs`):
 
-- Steps separated by `\n`; KaTeX markup (`\frac{}{}`, `_{}`, `^{}`, `\times`,
+- Steps separated by real `\n` newlines — **one idea per line**, never a wall
+  of text. The result screen renders each `\n`-separated line as its own
+  plain paragraph with spacing (`SolutionSteps` in `NtaResultScreen.tsx`).
+  There are NO number badges and NO author numbering in the display — what
+  you put on one line is what the student reads as one paragraph.
+- **No author numbering or bullets, ever** (explicit user instruction):
+  no `Step 1:`, `1.`, `1)`, `1).`, `(1)`, `1:`, `•`, `- `, `**bold**` at line
+  starts. The renderer strips these defensively, but files must be clean at
+  source — always run the cleaner before check/seed.
+- **Raw TeX only — no `$`/`$$` delimiters** (explicit user instruction).
+  `$…$` was the cause of the visible dollar signs + KaTeX failures across
+  NEET 2022–2026: the renderer works on raw TeX, so dollars leak as text
+  and chop formulas into invalid fragments (`\frac` alone, `\left` alone).
+- Real newlines, never literal `\n` (backslash + n). A literal `\n` before
+  a word is tokenized as a TeX command and renders as a red KaTeX error.
+  (Genuine commands are preserved: `\neq \ne \nabla \ni \notin \nexists \nu`.)
+- Ion/electron charges braced: `\text{Cl}^{-}`, `e^{-}` — never `^-`.
+  A dangling `^-` breaks the X/Y → `\frac` pass and the fraction operand.
+- `S_N1` / `S_N2`, never `\text{S}_\text{N}1` (invalid KaTeX).
+- No `\char"XXXX` escapes for glyphs KaTeX has no font for (⚥ rendered
+  blank) — name them in words instead, e.g. `\text{(bisexual)}`.
+- Physics/Chemistry numericals: one step each for principle → substitution →
+  computation → final value + answer (typically 3–5 lines).
+- Biology/factual: 1–3 lines max; if the explanation runs longer than ~2
+  clauses, split it with `\n` instead of one long sentence.
+- KaTeX markup (`\frac{}{}`, `_{}`, `^{}`, `\times`,
   `\rightarrow`) for math; plain text otherwise.
 - No HTML tags, balanced `{}` braces.
 - **Last line ends with the answer in parentheses**, e.g. `→ (C)`. Dual-award
-  keys (`"A,B"`) end `(A, B)` — the validator accepts this form.
+  keys (`"A,B"`) end `(A, B)` — the validator accepts this form. The last
+  line renders highlighted green as the answer step.
 - Step-by-step but skip trivial algebra; name the principle first.
 
 ### 4b. Second-source rule (mandatory since 2019)
@@ -92,16 +118,22 @@ match it to the DB option text before concluding anything.
 - `reason` = the derivation in one line + source if internet-verified.
 - The log is internal audit trail; students never see it.
 
-### 6. Validate → seed → verify
+### 6. Validate → clean → seed → verify
 
 ```bash
+node scripts/clean-neet-solutions.mjs <paper>  # normalize + self-verify (idempotent)
 node scripts/check-solutions.mjs <paper>   # letters, braces, no HTML
 node scripts/apply-key-corrections.mjs 62,66,69   # correct_answer ONLY
 node scripts/seed-solutions.mjs <paper>    # solution column ONLY
 ```
 
-The seed script ends with a DB count check (`DONE: n/180`). Re-run the
-validator after any key change.
+The cleaner rewrites `scripts/solutions-<paper>.json` in place (only when
+something changed) and refuses to write while anything suspicious remains
+(leftover `$`/`**`/literal `\n`/`Step N:`, unbalanced braces, last line not
+naming the answer). The seed script ends with a DB count check
+(`DONE: n/180`). Re-run the validator after any key change. The renderer
+(`mathText.ts` + `SolutionSteps`) is hardened against all of §4 as
+defense-in-depth, but files must be clean at source regardless.
 
 ### 7. Spot-check gate
 
@@ -112,6 +144,21 @@ enough to review (one subject block at a time is ideal).
 
 If keys must ever go back: for each `key-corrected` log entry, set
 `correct_answer` back to `entry.key`. The log preserves every original.
+
+## Standing user decisions (solutions — do not revisit without asking)
+
+1. **Solution column ONLY.** `seed-solutions.mjs` writes
+   `question_keys.solution` and nothing else; the `questions` table is NEVER
+   touched (see guardrails).
+2. **No numbering or badges in solutions.** No author-side `Step N:` / `1.` /
+   bullets in the data files, and no number badges in the display — plain
+   paragraphs + green final-answer highlight only.
+3. **No `$` delimiters.** Raw TeX in solution files, always.
+4. **neet-2026 seeded 180/180 on 2026-09-04** (prior solution-free hold lifted
+   by the user on request). 2 keys corrected with second sources (Q57 C→B
+   steam reforming, Q62 D→A dπ-pπ); log:
+   `scripts/key-disputes-neet-2026.json`. Prior 30 drafts expanded to full
+   paper in the same pass.
 
 ## File inventory (per paper)
 
@@ -124,8 +171,12 @@ If keys must ever go back: for each `key-corrected` log entry, set
 
 ## Shared tooling
 
+- `scripts/clean-neet-solutions.mjs [papers...]` — normalizer + self-verifier
+  (literal `\n` → real newlines, `$`/`$$` strip, numbering/bullet/`**`
+  strip, ion-charge braces, `S_N`, `\char` fixes). Defaults to the six
+  2022–2026 papers; skips missing files. Always run before check/seed.
 - `scripts/check-solutions.mjs <paper>` — validator
-- `scripts/seed-solutions.mjs <paper>` — solution seeder
+- `scripts/seed-solutions.mjs <paper>` — solution seeder (solution column ONLY)
 - `scripts/apply-key-corrections.mjs [n,...]` — key fixer (correct_answer only)
 - `scripts/_pdftext.mjs "<file>" [from] [to]` — PDF text dump
 

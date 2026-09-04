@@ -1,0 +1,74 @@
+[
+ {
+  "id": 23966,
+  "number": 37,
+  "key": "D",
+  "mine": "C",
+  "status": "key-corrected",
+  "correctedTo": "C",
+  "reason": "loop entry needs v2=5gR (top gR + 2R fall)"
+ },
+ {
+  "id": 23971,
+  "number": 42,
+  "key": "D",
+  "mine": "A",
+  "status": "key-corrected",
+  "correctedTo": "A",
+  "reason": "closest approach r0=4kZe2/mv2 scales 1/m at fixed v"
+ },
+ {
+  "id": 23982,
+  "number": 53,
+  "key": "C",
+  "mine": "B",
+  "status": "key-corrected",
+  "correctedTo": "B",
+  "reason": "Eu 4f7, Gd 4f7 5d1, Tb 4f9 (all 6s2)"
+ },
+ {
+  "id": 23983,
+  "number": 54,
+  "key": "D",
+  "mine": "A",
+  "status": "key-corrected",
+  "correctedTo": "A",
+  "reason": "Raoult gives m~2.13, dTb~1.1K, bp~101C"
+ },
+ {
+  "id": 23991,
+  "number": 62,
+  "key": "A",
+  "mine": "B",
+  "status": "key-corrected",
+  "correctedTo": "B",
+  "reason": "H3PO2 one P-OH monoprotic, H3PO3 two P-OH diprotic"
+ },
+ {
+  "id": 23993,
+  "number": 64,
+  "key": "A",
+  "mine": "B",
+  "status": "key-corrected",
+  "correctedTo": "B",
+  "reason": "angles 109.5/107/104.5 so H-O-H smallest, claim false"
+ },
+ {
+  "id": 24060,
+  "number": 131,
+  "key": "C",
+  "mine": "D",
+  "status": "key-corrected",
+  "correctedTo": "D",
+  "reason": "AUG is start codon; UAA/UAG/UGA are stops"
+ },
+ {
+  "id": 24068,
+  "number": 139,
+  "key": "B",
+  "mine": "C",
+  "status": "key-corrected",
+  "correctedTo": "C",
+  "reason": "mito+chloroplast semi-autonomous (a true); 70S protein synthesis (b false)"
+ }
+]
