@@ -79,7 +79,8 @@ export default function NtaInstructionsModal({
           <ul className="list-disc pl-5 space-y-1 text-gray-700">
             <li>Click on the question number in the Question Palette at the right of your screen to go to that numbered question directly.</li>
             <li>Click on <strong>Save &amp; Next</strong> to save your answer for the current question and then go to the next question.</li>
-            <li>Click on <strong>Mark for Review &amp; Next</strong> to save your answer for the current question, mark it for review, and then go to the next question.</li>
+            <li>Click on <strong>Save &amp; Review</strong> to save your answer for the current question, mark it for review, and then go to the next question. Such answers <strong>are</strong> considered in evaluation.</li>
+            <li>Click on <strong>Review &amp; Next</strong> to mark the current question for review <strong>without</strong> saving your answer, and then go to the next question. Such answers are <strong>not</strong> considered in evaluation.</li>
           </ul>
 
           <h3 className="font-bold text-sm text-[#1b365d] border-b pb-1 pt-2">3. Answering a Question:</h3>

@@ -607,14 +607,16 @@ export default function TestInterface() {
   };
 
   const handleMarkReviewNext = () => {
-    const isMCQ = currentQuestion.type === 'mcq' || !currentQuestion.type;
-    const hasAnswer = isMCQ
-      ? !!currentQuestionState?.selectedOption
-      : !!currentQuestionState?.numericAnswer?.trim();
-
-    const newStatus: QuestionStatus = hasAnswer ? 'answered-marked' : 'marked';
-
-    updateQuestionState(currentQuestion.id, { status: newStatus });
+    // NTA "Mark for Review & Next": flag the question for review WITHOUT
+    // saving — the draft response is cleared so it stays out of
+    // evaluation (the palette shows plain purple "Marked"). This is what
+    // sets it apart from "Save & Review", which keeps the answer and
+    // marks "Answered & Marked for Review" (considered for evaluation).
+    updateQuestionState(currentQuestion.id, {
+      selectedOption: undefined,
+      numericAnswer: undefined,
+      status: 'marked',
+    });
     advanceToNextQuestion();
   };
 

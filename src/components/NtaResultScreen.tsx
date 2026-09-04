@@ -39,6 +39,50 @@ interface SolutionCardProps {
   outcome: 'correct' | 'incorrect' | 'unattempted' | undefined;
 }
 
+// Solution authors numbered/bulleted their own steps ("Step 1:", "1).",
+// "(1)", "•", "- ", "**bold**"). Strip those markers per line so steps
+// read as plain flowing text. Lines that are genuinely content (e.g.
+// "(a) - (ii)", decimals like "0.1 → (C)") never match these anchored
+// prefixes — the (?=\s|$) lookahead and the decimal guard keep them safe.
+function cleanSolutionStep(line: string): string {
+  let s = line.trim();
+  s = s.replace(/\*\*/g, '');
+  s = s.replace(/^Step\s*\d+\s*[:.)\]-]\s*/i, '');
+  // "1.", "1)", "1).", "(1)", "(1).", "1:" — but never "0.1" or "2.5".
+  s = s.replace(/^(?!\d+\.\d)\(?\d{1,2}[.)][.)]?(?=\s|$)\s*/, '');
+  s = s.replace(/^(?!\d+\.\d)\d{1,2}\s*:\s*/, '');
+  s = s.replace(/^[•\-*]\s+/, '');
+  return s.trim();
+}
+
+// One solution step per line (\n-separated in question_keys.solution),
+// rendered as plain paragraphs with breathing room — no number badges,
+// no bullets. The final line (which names the answer) keeps its green
+// highlight; single-line solutions render as-is.
+function SolutionSteps({ text }: { text: string }) {
+  const steps = text
+    .split('\n')
+    .map((s) => cleanSolutionStep(s))
+    .filter(Boolean);
+  if (steps.length <= 1) {
+    return <VectorText text={steps.length === 1 ? steps[0] : text} />;
+  }
+  const body = steps.slice(0, -1);
+  const final = steps[steps.length - 1];
+  return (
+    <div className="space-y-2">
+      {body.map((step, i) => (
+        <p key={i} className="leading-relaxed">
+          <VectorText text={step} />
+        </p>
+      ))}
+      <p className="rounded border border-green-200 bg-green-50 px-2 py-1.5 font-medium text-green-900">
+        <VectorText text={final} />
+      </p>
+    </div>
+  );
+}
+
 // One question's full solution block — question, options, answer summary and
 // explanation, always shown (no expand/collapse). Memoized so re-renders of
 // the parent don't touch cards whose props are unchanged.
@@ -81,8 +125,8 @@ const SolutionCard = memo(function SolutionCard({ q, qState, keyInfo, outcome }:
       </div>
 
       {/* Solution Content */}
-      <div className="p-4 bg-white text-xs space-y-3">
-        <p className="font-semibold text-gray-900 leading-relaxed text-sm">
+      <div className="p-4 bg-white text-[15px] space-y-3">
+        <p className="font-semibold text-gray-900 leading-relaxed">
           <VectorText text={q.text} />
         </p>
 
@@ -103,7 +147,7 @@ const SolutionCard = memo(function SolutionCard({ q, qState, keyInfo, outcome }:
               }
 
               return (
-                <div key={opt.label} className={`p-2 border rounded text-xs flex items-center justify-between ${style}`}>
+                <div key={opt.label} className={`p-2 border rounded flex items-center justify-between ${style}`}>
                   <span className="inline-flex items-center gap-1.5 flex-wrap">
                     <strong className="mr-1">({opt.label})</strong>
                     {opt.figureUrl && (
@@ -132,11 +176,11 @@ const SolutionCard = memo(function SolutionCard({ q, qState, keyInfo, outcome }:
         {/* Step-by-step explanation (from question_keys.solution) */}
         {keyInfo?.solution && (
           <div className="mt-3 bg-blue-50/60 border border-blue-100 rounded p-3">
-            <div className="text-[11px] font-bold text-[#1b365d] uppercase tracking-wide mb-1.5">
+            <div className="text-xs font-bold text-[#1b365d] uppercase tracking-wide mb-1.5">
               Explanation
             </div>
-            <div className="text-xs text-gray-700 leading-relaxed whitespace-pre-line">
-              <VectorText text={keyInfo.solution} />
+            <div className="text-gray-700 leading-relaxed">
+              <SolutionSteps text={keyInfo.solution} />
             </div>
           </div>
         )}
