@@ -5,7 +5,7 @@
   "subject": "Chemistry",
   "chapter": "Atomic Structure",
   "exam_type": "neet",
-  "is_trial": true,
+  "is_trial": false,
   "duration_minutes": 45,
   "difficulty": "Medium",
   "question_count": 25,

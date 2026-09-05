@@ -5,7 +5,7 @@
   "subject": "Biology",
   "chapter": "Biological Classification & Plant/Animal Kingdom",
   "exam_type": "neet",
-  "is_trial": true,
+  "is_trial": false,
   "duration_minutes": 40,
   "difficulty": "Easy",
   "question_count": 25,

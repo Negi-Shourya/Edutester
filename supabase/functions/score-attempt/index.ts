@@ -111,17 +111,10 @@ const paperCache = new Map<string, ScoringPaper>();
 const answerKeyCache = new Map<string, Map<number, AnswerKey>>();
 
 // Chapter tests are static JSON bundles (public/chapters/*.json), not paper
-// rows, so there is no papers row to look up. Their trial/free status lives
-// in the client's TRIAL_CHAPTER_IDS (src/data/chapters.ts); the same 12 ids
-// are mirrored here so the access gate stays server-side. Keep in sync.
-const TRIAL_CHAPTERS = new Set([
-  'jee-phy-1', 'jee-phy-2',
-  'jee-chem-1', 'jee-chem-2',
-  'jee-math-1', 'jee-math-2',
-  'neet-phy-1', 'neet-phy-2',
-  'neet-chem-1', 'neet-chem-2',
-  'neet-bio-1', 'neet-bio-2',
-]);
+// rows, so there is no papers row to look up. Trial chapters are disabled:
+// every chapter test requires an active subscription. Kept as an (empty) set
+// so the gate below keeps working if trial chapters are ever re-enabled.
+const TRIAL_CHAPTERS = new Set<string>([]);
 
 // Upper bound on questions per chapter submission. Chapter tests top out
 // around 25 questions; the cap only stops key-harvest abuse (each call

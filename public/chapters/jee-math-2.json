@@ -5,7 +5,7 @@
   "subject": "Mathematics",
   "chapter": "Complex Numbers",
   "exam_type": "jee",
-  "is_trial": true,
+  "is_trial": false,
   "duration_minutes": 50,
   "difficulty": "Medium",
   "question_count": 15,

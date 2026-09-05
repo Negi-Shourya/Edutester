@@ -900,14 +900,8 @@ def build_chapter_tests():
                 "figure_url": q.get("figure_url")
             })
             
-        TRIAL_IDS = {
-            "jee-phy-1", "jee-phy-2",
-            "jee-chem-1", "jee-chem-2",
-            "jee-math-1", "jee-math-2",
-            "neet-phy-1", "neet-phy-2",
-            "neet-chem-1", "neet-chem-2",
-            "neet-bio-1", "neet-bio-2",
-        }
+        # No free-trial chapters: every chapter test requires a subscription.
+        TRIAL_IDS = set()
         is_trial = rule["id"] in TRIAL_IDS
 
         chapter_data = {

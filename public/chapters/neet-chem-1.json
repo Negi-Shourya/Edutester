@@ -5,7 +5,7 @@
   "subject": "Chemistry",
   "chapter": "Mole Concept & Stoichiometry",
   "exam_type": "neet",
-  "is_trial": true,
+  "is_trial": false,
   "duration_minutes": 35,
   "difficulty": "Easy",
   "question_count": 25,

@@ -5,16 +5,10 @@ export interface ChapterTestData extends TestCardData {
   exam: ExamType;
 }
 
-export const TRIAL_CHAPTER_IDS = new Set<string>([
-  // JEE
-  'jee-phy-1', 'jee-phy-2',
-  'jee-chem-1', 'jee-chem-2',
-  'jee-math-1', 'jee-math-2',
-  // NEET
-  'neet-phy-1', 'neet-phy-2',
-  'neet-chem-1', 'neet-chem-2',
-  'neet-bio-1', 'neet-bio-2',
-]);
+// No free-trial chapters: every chapter-wise test requires an active
+// subscription. Kept as an (empty) set so re-enabling trial chapters later
+// is a one-line change, and so isChapterTrial() keeps working.
+export const TRIAL_CHAPTER_IDS = new Set<string>([]);
 
 export function isChapterTrial(chapterId: string): boolean {
   return TRIAL_CHAPTER_IDS.has(chapterId);

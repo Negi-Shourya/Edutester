@@ -5,7 +5,7 @@
   "subject": "Physics",
   "chapter": "Kinematics",
   "exam_type": "jee",
-  "is_trial": true,
+  "is_trial": false,
   "duration_minutes": 50,
   "difficulty": "Easy",
   "question_count": 25,
