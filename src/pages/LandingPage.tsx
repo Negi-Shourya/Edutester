@@ -8,9 +8,9 @@ import { useSubscriptionAccess } from '../lib/subscription';
 import { useAuth } from '../context/auth-context';
 
 const features = [
-  { icon: Layers, title: 'NTA-Like Interface', description: 'Experience the exact same test interface as the actual exam conducted by NTA — palette, marking, and navigation included.' },
-  { icon: BookOpen, title: 'Previous Year Papers', description: 'Practice full-length previous year question papers to simulate the real exam under timed conditions.' },
-  { icon: Timer, title: 'Chapter Test Series', description: 'Chapter-wise tests that isolate your weak topics so you can fix them one chapter at a time.' },
+  { icon: Layers, title: 'NTA-Like Interface', description: 'Attempt every NEET mock test 2026 and JEE Main mock test on the exact NTA interface — palette, marking, and navigation included.' },
+  { icon: BookOpen, title: 'NEET & JEE Previous Year Papers', description: 'Full-length NEET previous year question papers and JEE Main previous year papers with solutions, simulated under timed conditions.' },
+  { icon: Timer, title: 'Chapter-Wise PYQ Tests', description: 'NEET PYQ chapter-wise and JEE Main PYQ chapter-wise tests that isolate weak topics so you can fix them one chapter at a time.' },
   { icon: LifeBuoy, title: 'Support First', description: 'We address your questions and issues first — quick help whenever you need it.' },
 ];
 
@@ -37,14 +37,15 @@ export default function LandingPage() {
                 India's Most Affordable Test Platform
               </div>
               <h1 className="text-4xl sm:text-5xl xl:text-6xl font-extrabold text-gray-900 leading-[1.05] tracking-tight mb-6 font-display animate-fade-up" style={{ animationDelay: '80ms' }}>
-                Practice Like the{' '}
-                <span className="text-primary">Real Exam</span>
+                NEET Test Series 2026 &{' '}
+                <span className="text-primary">JEE Main Mock Tests</span>
                 <span className="text-saffron">.</span>
               </h1>
               <p className="text-lg text-gray-600 mb-8 max-w-xl leading-relaxed animate-fade-up" style={{ animationDelay: '160ms' }}>
-                The authentic NTA test interface with previous year question
-                papers and full-length test series. Same palette. Same timer.
-                Same pressure.
+                Practice NEET PYQs chapter-wise with step-by-step solutions —
+                including NEET biology PYQs — plus JEE Main previous year
+                questions and full mock tests on the authentic NTA interface.
+                Same palette. Same timer. Same pressure.
               </p>
               <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 animate-fade-up w-full sm:w-auto" style={{ animationDelay: '240ms' }}>
                 <Link to="/test?paper=02-apr-morning" className="cta-shimmer inline-flex items-center justify-center gap-2 text-white px-6 py-3.5 rounded-xl text-sm font-semibold hover:bg-primary-dark transition-all shadow-lg shadow-primary/25 hover:shadow-primary/40 hover:-translate-y-0.5 active:scale-[0.98]">
@@ -98,8 +99,8 @@ export default function LandingPage() {
             <div className="inline-flex items-center gap-2 text-saffron text-sm font-semibold uppercase tracking-wider mb-3 font-mono">
               <Target className="w-4 h-4" /> Why EduTester
             </div>
-            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 tracking-tight font-display">Everything You Need to Crack JEE</h2>
-            <p className="text-gray-500 max-w-2xl mx-auto mt-3">Comprehensive preparation tools designed to help you ace the JEE Main exam.</p>
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 tracking-tight font-display">NEET PYQs & JEE Main Previous Year Questions, One Platform</h2>
+            <p className="text-gray-500 max-w-2xl mx-auto mt-3">Chapter-wise NEET PYQs with solutions, NEET biology PYQs and JEE Main mock tests 2026 — everything you need to crack NEET and JEE Main.</p>
           </Reveal>
           <StaggerReveal className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-4xl mx-auto">
             {features.map((f) => (
@@ -138,6 +139,54 @@ export default function LandingPage() {
               </StaggerItem>
             ))}
           </StaggerReveal>
+        </div>
+      </section>
+
+      {/* SEO: exam-wise keyword content */}
+      <section className="bg-white py-20 border-t border-gray-100">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            <Reveal>
+              <h2 className="text-2xl font-bold text-gray-900 tracking-tight font-display mb-3">
+                NEET Test Series 2026 with PYQs & Solutions
+              </h2>
+              <p className="text-gray-600 leading-relaxed mb-4">
+                Our NEET online test series covers NEET previous year questions
+                with step-by-step solutions — NEET PYQ chapter-wise across
+                Physics, Chemistry and Biology, dedicated NEET biology PYQ
+                sets, and full-length NEET mock tests 2026 on the NTA pattern.
+                Every solution explains the concept, not just the answer.
+              </p>
+              <Link to="/pricing" className="text-primary font-semibold text-sm hover:underline">
+                See NEET test series plans →
+              </Link>
+            </Reveal>
+            <Reveal>
+              <h2 className="text-2xl font-bold text-gray-900 tracking-tight font-display mb-3">
+                JEE Main Mock Test 2026 & PYQ Practice
+              </h2>
+              <p className="text-gray-600 leading-relaxed mb-4">
+                The JEE Mains test series 2026 includes JEE Main PYQ
+                chapter-wise practice for Physics, Chemistry and Maths, JEE
+                Main previous year papers with solutions, and timed JEE Main
+                online test series papers — all on the authentic NTA mock test
+                interface with instant scoring.
+              </p>
+              <Link to="/pricing" className="text-primary font-semibold text-sm hover:underline">
+                See JEE test series plans →
+              </Link>
+            </Reveal>
+          </div>
+          <Reveal className="text-center mt-10">
+            <p className="text-gray-500 mb-3">New here? Read the most-asked questions about our test series.</p>
+            <Link
+              to="/faq"
+              className="inline-flex items-center gap-2 text-primary font-semibold text-sm border border-primary/30 rounded-xl px-5 py-2.5 hover:border-primary hover:bg-primary/5 transition-all"
+            >
+              Frequently Asked Questions
+              <ArrowRight className="w-4 h-4" />
+            </Link>
+          </Reveal>
         </div>
       </section>
 

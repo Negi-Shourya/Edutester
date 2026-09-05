@@ -31,6 +31,12 @@
   Cache-Control: public, max-age=86400, stale-while-revalidate=604800
   Access-Control-Allow-Origin: *
 
+# Sitemap and robots must stay fresh for crawlers
+/sitemap.xml
+  Cache-Control: public, max-age=3600
+/robots.txt
+  Cache-Control: public, max-age=3600
+
 # HTML documents must always revalidate so new updates deploy immediately
 /*
   X-Content-Type-Options: nosniff

@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import {
   Mail, MapPin, Clock, Heart, GraduationCap, BookOpen, Timer, Layers,
@@ -6,6 +6,7 @@ import {
 } from 'lucide-react';
 import { supabase } from '../lib/supabase';
 import { useSubscriptionAccess } from '../lib/subscription';
+import { setPageMeta } from '../lib/pageMeta';
 
 const HOW_WE_HELP = [
   {
@@ -43,6 +44,13 @@ export default function Contact() {
   const [submitting, setSubmitting] = useState(false);
   const [sent, setSent] = useState(false);
   const [error, setError] = useState<string | null>(null);
+
+  useEffect(() => {
+    setPageMeta(
+      'Contact Us | EduTester NEET & JEE Test Series Support',
+      'Contact EduTester support for help with the NEET test series 2026, JEE Main mock tests, subscriptions and payments.'
+    );
+  }, []);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();

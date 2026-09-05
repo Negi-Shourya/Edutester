@@ -36,11 +36,13 @@ export default function Navbar() {
         { to: '/paper-tests', label: 'Paper Tests' },
         // Paying users don't need to see the pricing page.
         ...(subscriptionLoading || !hasAccess ? [{ to: '/pricing', label: 'Pricing' }] : []),
+        { to: '/faq', label: 'FAQ' },
         { to: '/contact', label: 'Contact Us' },
       ]
     : [
         { to: '/landing', label: 'About Us' },
         { to: '/pricing', label: 'Pricing' },
+        { to: '/faq', label: 'FAQ' },
         { to: '/contact', label: 'Contact Us' },
       ];
 

@@ -25,6 +25,7 @@ const Admin = lazy(() => import('./pages/Admin'));
 const Profile = lazy(() => import('./pages/Profile'));
 const Terms = lazy(() => import('./pages/Terms'));
 const Privacy = lazy(() => import('./pages/Privacy'));
+const Faq = lazy(() => import('./pages/Faq'));
 
 function PageLoader() {
   return (
@@ -42,10 +43,15 @@ function App() {
     // the browser is idle so it never contends with first paint / LCP.
     const path = location.pathname;
     const fire = () => trackPageView(path);
+    // SPA route change: tell Google Analytics (gtag.js is in index.html).
     const w = window as Window & {
       requestIdleCallback?: (cb: () => void, opts?: { timeout: number }) => number;
       cancelIdleCallback?: (id: number) => void;
+      gtag?: (...args: unknown[]) => void;
     };
+    if (typeof w.gtag === 'function') {
+      w.gtag('config', 'G-EYPDRP3HFR', { page_path: path });
+    }
     if (w.requestIdleCallback) {
       const id = w.requestIdleCallback(fire, { timeout: 4000 });
       return () => w.cancelIdleCallback?.(id);
@@ -71,6 +77,7 @@ function App() {
                   <Route path="/signup" element={<Signup />} />
                   <Route path="/terms" element={<Terms />} />
                   <Route path="/privacy" element={<Privacy />} />
+                  <Route path="/faq" element={<Faq />} />
                   <Route
                     path="/dashboard"
                     element={

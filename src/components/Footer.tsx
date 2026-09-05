@@ -88,6 +88,7 @@ export default function Footer() {
                   NEET (UG) Syllabus
                 </a>
               </li>
+              <li><Link to="/faq" className="hover:text-white transition-colors">FAQ</Link></li>
               <li><Link to="/terms" className="hover:text-white transition-colors">Terms &amp; Conditions</Link></li>
               <li><Link to="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link></li>
               {showPricing && <li><Link to="/pricing#faq" className="hover:text-white transition-colors">FAQ</Link></li>}

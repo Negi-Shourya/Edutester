@@ -10,6 +10,7 @@ import { useSubscriptionAccess } from '../lib/subscription';
 import { checkoutPlan, resumePendingOrder, PaymentError } from '../lib/razorpay';
 import { applyCoupon, type CouponApplied } from '../lib/coupon';
 import type { PricingPlan } from '../types';
+import { setPageMeta } from '../lib/pageMeta';
 
 // The launch code students are told about on this page.
 const PROMO_CODE = 'First50';
@@ -23,7 +24,7 @@ const faqs = [
   { q: 'Can I switch plans later?', a: 'Yes, you can upgrade at any time.' },
   {
     q: 'Is there a free trial?',
-    a: 'Yes! You can practice 2 free trial chapter tests for each subject (Physics, Chemistry, Maths, Biology) plus free trial full papers before subscribing.',
+    a: 'Yes! Take a free demo test on the real NTA interface plus free trial full papers before subscribing — no payment details needed.',
   },
   { q: 'What payment methods are accepted?', a: 'All debit cards, credit cards, and UPI options are available.' },
   { q: 'Can I get a refund?', a: 'No, you cannot get a refund once you have purchased a subscription.' },
@@ -83,6 +84,13 @@ export default function Pricing() {
     setCouponInput('');
     setCouponError(null);
   };
+
+  useEffect(() => {
+    setPageMeta(
+      'Pricing — NEET Test Series 2026 & JEE Main Mock Test from ₹19 | EduTester',
+      'Subscribe to the NEET test series 2026 & JEE Main mock tests: NEET PYQs with solutions, chapter-wise tests and full papers from ₹19/month.'
+    );
+  }, []);
 
   useEffect(() => {
     if (location.hash === '#faq') {

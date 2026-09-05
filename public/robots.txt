@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /dashboard
+Disallow: /profile
+Disallow: /test
+Disallow: /chapter-tests
+Disallow: /paper-tests
+
+Sitemap: https://edutester.in/sitemap.xml
