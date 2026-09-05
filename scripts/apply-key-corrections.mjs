@@ -8,7 +8,7 @@ const sb = createClient(env('SUPABASE_URL'), env('SUPABASE_SERVICE_ROLE_KEY'));
 const args = process.argv.slice(2);
 let paper = 'neet-2022';
 let numbersArg = null;
-if (args[0] && (args[0].startsWith('neet-') || args[0].startsWith('reneet-'))) {
+if (args[0] && (args[0].startsWith('neet-') || args[0].startsWith('reneet-') || /^\d{2}-apr-(morning|evening)/.test(args[0]))) {
   paper = args[0];
   numbersArg = args[1];
 } else if (args[0]) {

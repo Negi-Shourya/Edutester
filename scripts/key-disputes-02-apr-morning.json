@@ -1,0 +1,11 @@
+[
+  {
+    "id": 1018,
+    "number": 18,
+    "key": "C",
+    "mine": "B",
+    "status": "key-corrected",
+    "correctedTo": "B",
+    "reason": "sinc critical points in (-2pi,2pi) are roots of tan x = x plus x=0: one in (-3pi/2,-pi), x=0, one in (pi,3pi/2) = 3 points, not 5"
+  }
+]

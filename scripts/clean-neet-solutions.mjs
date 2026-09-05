@@ -110,7 +110,7 @@ for (const paper of papers) {
     if (depth !== 0) problems.push(`Qid ${qid}: unbalanced braces`);
     const lines = sol.trim().split('\n').filter((l) => l.trim());
     const last = lines[lines.length - 1];
-    if (!/\([A-D]\)\s*$/.test(last) && !last.endsWith('(Bonus)')) {
+    if (!/\([A-D]\)\s*$/.test(last) && !last.endsWith('(Bonus)') && !/\(\d+(\.\d+)?\)\s*$/.test(last)) {
       problems.push(`Qid ${qid}: last line must end with (A)/(B)/(C)/(D): ${last.slice(0, 60)}`);
     }
   }

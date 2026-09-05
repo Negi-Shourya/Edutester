@@ -56,6 +56,15 @@ for (const [qid, sol] of Object.entries(solutions)) {
   const lines = sol.trim().split('\n').filter((l) => l.trim());
   const last = lines[lines.length - 1];
   const key = keyByQid.get(qid);
+  // JEE numerical keys ("33", "7.5"): last line must end with that number.
+  if (key && /^-?\d+(\.\d+)?$/.test(key.trim())) {
+    const mn = last.match(/\((-?\d+(?:\.\d+)?)\)\s*$/);
+    if (!mn || Number(mn[1]) !== Number(key.trim())) {
+      console.log(`FAIL ${tag}: last line must end with (${key.trim()}): ${last.slice(0, 80)}`);
+      errors++;
+    }
+    continue;
+  }
   // Single-letter keys end "(X)"; multi-award keys like "A,B" end "(A, B)".
   if (key && key.includes(',')) {
     const letters = key.split(',').map((s) => s.trim().toUpperCase());
