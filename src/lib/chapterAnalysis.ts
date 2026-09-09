@@ -1,5 +1,7 @@
 import type { AttemptRow } from './attemptsDb';
 import { chapterTests } from '../data/chapters';
+import { NEET_CUSTOM_CHAPTERS } from '../data/neetCustomChapters';
+import { isCustomKey } from './customTest';
 import { examOfPaperKey, type ExamType } from './exam';
 import type { ChapterIndex } from './questionChapterMap';
 import { resolveChapter } from './questionChapterMap';
@@ -199,6 +201,60 @@ export function paperTestChapters(
   return out.sort((a, b) => a.avgAccuracy - b.avgAccuracy);
 }
 
+// ---------------------------------------------------------------------------
+// Custom-test chapters: attribute each outcome via the curated audit map
+// (public/custom/neet-chapter-map.json: question id → NCERT chapter id).
+// Used by the result screen AFTER submission — never during the test.
+// ---------------------------------------------------------------------------
+
+const neetCustomMeta = new Map(NEET_CUSTOM_CHAPTERS.map((c) => [c.id, c]));
+
+export function customTestChapters(
+  outcomes: Record<string, string>,
+  map: Record<string, string>
+): ChapterPerformance[] {
+  const buckets = new Map<string, { correct: number; incorrect: number; unattempted: number }>();
+  for (const [qid, outcome] of Object.entries(outcomes)) {
+    const chapterId = map[qid];
+    if (!chapterId) continue;
+    const b = buckets.get(chapterId) ?? { correct: 0, incorrect: 0, unattempted: 0 };
+    if (outcome === 'correct') b.correct++;
+    else if (outcome === 'incorrect') b.incorrect++;
+    else b.unattempted++;
+    buckets.set(chapterId, b);
+  }
+  const out: ChapterPerformance[] = [];
+  for (const [chapterId, b] of buckets) {
+    const meta = neetCustomMeta.get(chapterId);
+    const questions = b.correct + b.incorrect + b.unattempted;
+    const avgAccuracy = accuracyOf(b.correct, b.incorrect);
+    const approxScorePct =
+      questions > 0
+        ? Math.max(0, Math.round(((4 * b.correct - b.incorrect) / (4 * questions)) * 100))
+        : 0;
+    out.push({
+      chapterId,
+      title: meta?.title ?? chapterId,
+      subject: meta?.subject ?? 'General',
+      exam: 'neet',
+      attempts: 1,
+      avgAccuracy,
+      avgScorePct: approxScorePct,
+      totalCorrect: b.correct,
+      totalIncorrect: b.incorrect,
+      totalUnattempted: b.unattempted,
+      lastAccuracy: avgAccuracy,
+      lastScorePct: approxScorePct,
+      questions,
+      // NCERT chapters have no dedicated chapter test — practice CTA goes
+      // back to the custom builder.
+      hasTest: false,
+      isWeak: questions >= 3 && avgAccuracy < 60,
+    });
+  }
+  return out.sort((a, b) => a.avgAccuracy - b.avgAccuracy);
+}
+
 // Merge paper-derived stats into the chapter-test aggregates (for the
 // dashboard). Every question counts once, whatever it came from; the weak
 // flag needs at least 3 questions behind it.
@@ -212,6 +268,11 @@ export function mergePaperChapters(
 
   for (const row of attempts) {
     if (isChapterAttempt(row)) continue;
+    // Custom tests carry their own curated audit map (public/custom/…),
+    // not the chapter-carve index — attributing them here would use the
+    // wrong (inaccurate) chapters. Their chapter split is shown on the
+    // result screen instead, from the curated map.
+    if (isCustomKey(row.paper_key)) continue;
     const exam = examOfPaperKey(row.paper_key);
     for (const [chapterId, b] of bucketizePaperOutcomes(row.question_outcomes ?? {}, exam, index)) {
       const cur = merged.get(chapterId);

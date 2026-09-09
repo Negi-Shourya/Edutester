@@ -22,8 +22,9 @@ const DEDUPE_WINDOW_MS = 10 * 60 * 1000;
 // Rate limit: one account may not invoke the scoring endpoint more than
 // SCORE_CALL_LIMIT times per rolling hour (each call returns that paper's
 // answer keys). Legit flows are 1 call per submission with an occasional
-// retry, so 10/hour is generous while capping key-download spam.
-const SCORE_CALL_LIMIT = 10;
+// retry, so 20/hour covers chapter grinders and custom-test builders while
+// capping key-download spam.
+const SCORE_CALL_LIMIT = 20;
 const SCORE_CALL_WINDOW_MS = 60 * 60 * 1000;
 
 // Anon client: used ONLY to verify the caller's JWT.
@@ -116,10 +117,10 @@ const answerKeyCache = new Map<string, Map<number, AnswerKey>>();
 // so the gate below keeps working if trial chapters are ever re-enabled.
 const TRIAL_CHAPTERS = new Set<string>([]);
 
-// Upper bound on questions per chapter submission. Chapter tests top out
-// around 25 questions; the cap only stops key-harvest abuse (each call
-// returns that many answer keys).
-const MAX_CHAPTER_QUESTIONS = 60;
+// Upper bound on questions per chapter/custom submission. Chapter tests top
+// out around 25 questions; custom tests go up to 180. The cap only stops
+// key-harvest abuse (each call returns that many answer keys).
+const MAX_CHAPTER_QUESTIONS = 200;
 
 async function loadScoringPaper(paperKey: string): Promise<ScoringPaper | null> {
   const cached = paperCache.get(paperKey);
@@ -150,9 +151,12 @@ async function loadScoringPaper(paperKey: string): Promise<ScoringPaper | null> 
 // wrong result for the isolate's lifetime.
 async function loadAnswerKeys(
   paperKey: string,
-  questionIds: number[]
+  questionIds: number[],
+  // Custom tests have a unique key per student build, so caching them would
+  // grow the isolate's memory without ever hitting — fetch direct instead.
+  cache = true
 ): Promise<Map<number, AnswerKey> | null> {
-  const cached = answerKeyCache.get(paperKey);
+  const cached = cache ? answerKeyCache.get(paperKey) : undefined;
   if (cached) return cached;
 
   const { data, error } = await supabaseAdmin
@@ -171,7 +175,7 @@ async function loadAnswerKeys(
       { correctAnswer: k.correct_answer, solution: k.solution },
     ])
   );
-  answerKeyCache.set(paperKey, keys);
+  if (cache) answerKeyCache.set(paperKey, keys);
   return keys;
 }
 
@@ -251,20 +255,16 @@ Deno.serve(async (req) => {
     return json({ error: 'Submission limit reached. Please try again later.', code: 'RATE_LIMITED' }, 429);
   }
 
-  // The log insert and the paper load are independent, so they overlap.
-  // Chapter tests have no papers row (static JSON bundles), so the paper
-  // load is skipped for them — their questions resolve from submitted ids
-  // further below.
-  const isChapter = testType === 'chapter';
-  const [logResult, paper] = await Promise.all([
-    supabaseAdmin.from('scoring_calls').insert({ user_id: user.id }),
-    isChapter ? Promise.resolve(null) : loadScoringPaper(paperKey),
-  ]);
-
-  if (logResult.error) {
-    console.error('scoring log insert failed', logResult.error);
-    return json({ error: 'Failed to record submission' }, 502);
-  }
+  // The paper load runs first and the quota row is written only once the
+  // submission validates (paper/chapter questions resolved below) — so
+  // rejected calls (unknown paper, bad payload) never consume quota.
+  // Chapter and custom tests have no papers row (chapter tests are static
+  // JSON bundles; custom tests are per-student question-id lists), so the
+  // paper load is skipped for them — their questions resolve from submitted
+  // ids further below.
+  const isCustom = testType === 'custom';
+  const isChapter = testType === 'chapter' || isCustom;
+  const paper = isChapter ? null : await loadScoringPaper(paperKey);
 
   // Resolved paper (full papers) or chapter bundle (chapter tests).
   let scoringPaper: ScoringPaper | null = paper;
@@ -299,6 +299,16 @@ Deno.serve(async (req) => {
     return json({ error: 'Paper not found' }, 404);
   }
 
+  // Genuine scoring run — consume one quota slot. Everything above returns
+  // before this point, so validation failures never count against the limit.
+  const { error: logError } = await supabaseAdmin
+    .from('scoring_calls')
+    .insert({ user_id: user.id });
+  if (logError) {
+    console.error('scoring log insert failed', logError);
+    return json({ error: 'Failed to record submission' }, 502);
+  }
+
   if (!isTrial) {
     const now = new Date().toISOString();
     const { data: subs, error: subError } = await supabaseAdmin
@@ -325,7 +335,7 @@ Deno.serve(async (req) => {
   // map would silently give every student full marks and write that to
   // attempts. Fail the request instead. Chapter bundles are cached under a
   // distinct prefix so a chapter id can never collide with a paper key.
-  const keys = await loadAnswerKeys(isChapter ? `chapter:${paperKey}` : paperKey, questionIds);
+  const keys = await loadAnswerKeys(isChapter ? `chapter:${paperKey}` : paperKey, questionIds, !isCustom);
   if (!keys) {
     return json({ error: 'Failed to load answer keys' }, 502);
   }

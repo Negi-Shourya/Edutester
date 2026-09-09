@@ -1,6 +1,7 @@
 import { useState, useEffect, useCallback, useRef, useMemo } from 'react';
 import { useSearchParams, useNavigate } from 'react-router-dom';
 import { getPaperQuestions, getChapterQuestions, type PaperQuestions } from '../data/questions';
+import { getCustomQuestions, loadCustomTest } from '../lib/customTest';
 import type { Question, QuestionState, QuestionStatus } from '../types';
 import { DEFAULT_PAPER_KEY, useSubscriptionAccess } from '../lib/subscription';
 import { loadAttempt, saveAttempt, clearAttempt } from '../lib/attemptStorage';
@@ -28,9 +29,13 @@ export default function TestInterface() {
   const navigate = useNavigate();
   const chapterParam = searchParams.get('chapter');
   const paperParam = searchParams.get('paper');
+  const customParam = searchParams.get('custom');
   const isChapter = Boolean(chapterParam);
-  const paperKey = chapterParam || paperParam || DEFAULT_PAPER_KEY;
-  const testType: 'paper' | 'chapter' = isChapter ? 'chapter' : 'paper';
+  // Custom tests (?custom=custom-neet-…) are student-built from the audited
+  // chapter pool: randomly sampled, shuffled, single "Mixed" section.
+  const isCustom = Boolean(customParam) && !isChapter;
+  const paperKey = chapterParam || paperParam || customParam || DEFAULT_PAPER_KEY;
+  const testType: 'paper' | 'chapter' | 'custom' = isChapter ? 'chapter' : isCustom ? 'custom' : 'paper';
 
   const { user } = useAuth();
   // Saved attempts are stored per account, so every read and write is scoped to
@@ -165,7 +170,10 @@ export default function TestInterface() {
   // second submit before resultPayload state flips.
   const submitRef = useRef(false);
 
-  // Load the paper from the database when the paper key changes
+  // Load the paper from the database when the paper key changes. Custom
+  // tests resolve their stored definition (question ids + duration) and
+  // fetch exactly those questions — never the chapter map, so subjects and
+  // chapters stay hidden while attempting.
   useEffect(() => {
     let cancelled = false;
     setPaperData(null);
@@ -179,6 +187,45 @@ export default function TestInterface() {
     setSubmitError(null);
     setSubmitRetry(0);
     submitRef.current = false;
+
+    if (isCustom) {
+      if (!userId || !customParam) return;
+      const def = loadCustomTest(userId, customParam);
+      if (!def) {
+        setLoadError('This custom test was created on another device or browser. Build a new one to continue.');
+        return;
+      }
+      getCustomQuestions(def.questionIds)
+        .then((questions) => {
+          if (cancelled) return;
+          setPaperData({
+            paper: {
+              key: def.id,
+              title: 'Custom Test',
+              fullTitle: def.title,
+              examDate: new Date(def.createdAt).toISOString().slice(0, 10),
+              session: null,
+              examType: 'neet',
+              isTrial: false,
+              durationMinutes: def.durationMinutes,
+            },
+            questions,
+          });
+          setTimeLeft(def.durationMinutes * 60);
+          if (questions.length > 0) {
+            setActiveSection(questions[0].section);
+          }
+        })
+        .catch((err: unknown) => {
+          if (!cancelled) {
+            setLoadError(err instanceof Error ? err.message : 'Failed to load test.');
+          }
+        });
+
+      return () => {
+        cancelled = true;
+      };
+    }
 
     const loadPromise = isChapter
       ? getChapterQuestions(paperKey)
@@ -203,7 +250,7 @@ export default function TestInterface() {
     return () => {
       cancelled = true;
     };
-  }, [paperKey, isChapter]);
+  }, [paperKey, isChapter, isCustom, customParam, userId]);
 
   // Question States initialized to 'not-visited' (Question 1 is immediately marked 'not-answered')
   const [questionStates, setQuestionStates] = useState<QuestionState[]>([]);
@@ -646,7 +693,7 @@ export default function TestInterface() {
     setIsTestSubmitted(false);
     setTestStarted(false);
     setCurrentQuestionId(questions[0]?.id ?? null);
-    setActiveSection('Physics');
+    setActiveSection(questions[0]?.section ?? 'Physics');
   };
 
   if (accessLoading) {
@@ -740,6 +787,7 @@ export default function TestInterface() {
           keys={resultPayload.keys}
           paperKey={paperKey}
           isChapter={isChapter}
+          isCustom={isCustom}
         />
       );
     }

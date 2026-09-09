@@ -4,8 +4,9 @@ import { CheckCircle2, XCircle, Award, BarChart2, RefreshCw, LayoutDashboard, Ta
 import type { Question, QuestionState } from '../types';
 import type { AttemptResult } from '../lib/scoring';
 import type { QuestionKey } from '../lib/attemptsDb';
-import { chapterInfo, paperTestChapters, type ChapterPerformance } from '../lib/chapterAnalysis';
+import { chapterInfo, customTestChapters, paperTestChapters, type ChapterPerformance } from '../lib/chapterAnalysis';
 import { loadChapterIndex } from '../lib/questionChapterMap';
+import { loadNeetChapterMap } from '../lib/customTest';
 import { examOfPaperKey } from '../lib/exam';
 import QuestionDiagram from './QuestionDiagram';
 import VectorText from './VectorText';
@@ -30,6 +31,9 @@ interface NtaResultScreenProps {
   // paperKey is the chapter id (e.g. "jee-phy-1").
   paperKey?: string;
   isChapter?: boolean;
+  // Custom tests: chapter split comes from the curated audit map instead of
+  // the chapter-carve index, and practice CTAs point back to the builder.
+  isCustom?: boolean;
 }
 
 interface SolutionCardProps {
@@ -201,6 +205,7 @@ function PerformanceAnalysis({
   sectionResults,
   paperKey,
   isChapter,
+  isCustom = false,
 }: {
   result: AttemptResult;
   sectionResults: Array<{
@@ -214,6 +219,7 @@ function PerformanceAnalysis({
   }>;
   paperKey?: string;
   isChapter: boolean;
+  isCustom?: boolean;
 }) {
   const scorePct =
     result.maxScore > 0 ? Math.round((result.totalScore / result.maxScore) * 100) : 0;
@@ -233,8 +239,10 @@ function PerformanceAnalysis({
 
   // Full papers: attribute each question to its chapter via the
   // question→chapter index (chapter tests were carved out of papers, so the
-  // ids match). Loaded lazily here in the post-submit analysis — never
-  // during the test, so the chapter stays hidden while attempting.
+  // ids match). Custom tests use the curated audit map instead — the carve
+  // index is known-inaccurate for them. Loaded lazily here in the
+  // post-submit analysis — never during the test, so the chapter stays
+  // hidden while attempting.
   const [paperChapters, setPaperChapters] = useState<ChapterPerformance[] | null>(null);
   useEffect(() => {
     if (isChapter || !paperKey) {
@@ -243,16 +251,23 @@ function PerformanceAnalysis({
     }
     let cancelled = false;
     setPaperChapters(null);
-    loadChapterIndex().then((index) => {
-      if (cancelled) return;
-      setPaperChapters(
-        paperTestChapters(result.questionOutcomes ?? {}, examOfPaperKey(paperKey), index)
-      );
-    });
+    if (isCustom) {
+      loadNeetChapterMap().then((map) => {
+        if (cancelled) return;
+        setPaperChapters(customTestChapters(result.questionOutcomes ?? {}, map));
+      });
+    } else {
+      loadChapterIndex().then((index) => {
+        if (cancelled) return;
+        setPaperChapters(
+          paperTestChapters(result.questionOutcomes ?? {}, examOfPaperKey(paperKey), index)
+        );
+      });
+    }
     return () => {
       cancelled = true;
     };
-  }, [isChapter, paperKey, result]);
+  }, [isChapter, isCustom, paperKey, result]);
 
   const weakPaperChapters = useMemo(
     () => (paperChapters ?? []).filter((c) => c.isWeak).slice(0, 3),
@@ -382,10 +397,10 @@ function PerformanceAnalysis({
                           {ch.totalUnattempted > 0 ? ` · ${ch.totalUnattempted} skipped` : ''} ({ch.questions} questions)
                         </span>
                         <Link
-                          to={ch.hasTest ? `/test?chapter=${ch.chapterId}` : '/chapter-tests'}
+                          to={isCustom ? '/custom-test' : ch.hasTest ? `/test?chapter=${ch.chapterId}` : '/chapter-tests'}
                           className="inline-flex items-center gap-0.5 font-bold text-[#1b365d] hover:underline"
                         >
-                          {ch.hasTest ? 'Practice chapter' : 'Browse chapter tests'} <ArrowRight className="w-3 h-3" />
+                          {isCustom ? 'Build a custom test' : ch.hasTest ? 'Practice chapter' : 'Browse chapter tests'} <ArrowRight className="w-3 h-3" />
                         </Link>
                       </div>
                     </div>
@@ -401,6 +416,13 @@ function PerformanceAnalysis({
                 className="inline-flex items-center gap-1.5 text-[11px] font-bold text-white bg-[#1b365d] hover:bg-[#152a4a] px-3 py-1.5 rounded transition-colors"
               >
                 <RefreshCw className="w-3 h-3" /> Retake this chapter
+              </Link>
+            ) : isCustom ? (
+              <Link
+                to="/custom-test"
+                className="inline-flex items-center gap-1.5 text-[11px] font-bold text-white bg-[#1b365d] hover:bg-[#152a4a] px-3 py-1.5 rounded transition-colors"
+              >
+                Build another custom test <ArrowRight className="w-3 h-3" />
               </Link>
             ) : (
               <Link
@@ -439,6 +461,7 @@ export default function NtaResultScreen({
   keys,
   paperKey,
   isChapter = false,
+  isCustom = false,
 }: NtaResultScreenProps) {
   const navigate = useNavigate();
   const [activeFilterSection, setActiveFilterSection] = useState<string>('ALL');
@@ -618,6 +641,7 @@ export default function NtaResultScreen({
           sectionResults={sectionResults}
           paperKey={paperKey}
           isChapter={isChapter}
+          isCustom={isCustom}
         />
 
         {/* Section Score Breakdown */}

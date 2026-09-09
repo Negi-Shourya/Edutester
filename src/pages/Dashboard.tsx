@@ -4,7 +4,7 @@ import { AnimatePresence, animate, motion, useMotionValue, useTransform } from '
 import {
   BookOpen, FileText, TrendingUp, TrendingDown, Minus, Clock, BarChart3, Target,
   ArrowRight, Play, AlertCircle, LineChart, Award, ChevronRight, ChevronDown,
-  Lightbulb, CheckCircle2, XCircle, SkipForward
+  Lightbulb, CheckCircle2, XCircle, SkipForward, Shuffle
 } from 'lucide-react';
 import { useAuth } from '../context/auth-context';
 import { getAttempts, backfillLocalAttempts, type AttemptRow } from '../lib/attemptsDb';
@@ -20,6 +20,7 @@ import {
   analyzeChapters, chaptersForSubject, mergePaperChapters, type ChapterPerformance,
 } from '../lib/chapterAnalysis';
 import { loadChapterIndex } from '../lib/questionChapterMap';
+import { isCustomKey } from '../lib/customTest';
 
 const SECTION_COLORS: Record<string, string> = {
   Physics: 'bg-blue-500',
@@ -28,6 +29,7 @@ const SECTION_COLORS: Record<string, string> = {
   Biology: 'bg-green-500',
   Botany: 'bg-lime-500',
   Zoology: 'bg-teal-500',
+  Mixed: 'bg-violet-500',
 };
 
 const TREND_ICONS: Record<SubjectOverall['trend'], { icon: React.ReactNode; cls: string }> = {
@@ -261,6 +263,14 @@ export default function Dashboard() {
       inProgress.paperKey.startsWith('neet-') ||
       inProgress.paperKey.startsWith('ch-')
     : false;
+  const inProgressIsCustom = inProgress?.paperKey ? isCustomKey(inProgress.paperKey) : false;
+  const inProgressLink = !inProgress
+    ? ''
+    : inProgressIsCustom
+      ? `/test?custom=${inProgress.paperKey}`
+      : inProgressIsChapter
+        ? `/test?chapter=${inProgress.paperKey}`
+        : `/test?paper=${inProgress.paperKey}`;
 
   return (
     <div className="bg-gray-50 min-h-screen">
@@ -303,6 +313,14 @@ export default function Dashboard() {
               <Play className="w-4 h-4 fill-current" />
               Take a Test
             </Link>
+            <Link
+              to="/custom-test"
+              title="Build a custom paper from any chapters"
+              className="flex items-center gap-2 bg-violet-600 text-white px-6 py-3 rounded-xl text-sm font-semibold hover:bg-violet-700 transition-all shadow-lg shadow-violet-600/25 hover:shadow-violet-600/40 hover:-translate-y-0.5 active:scale-[0.98]"
+            >
+              <Shuffle className="w-4 h-4" />
+              Custom
+            </Link>
           </div>
         </div>
 
@@ -313,12 +331,12 @@ export default function Dashboard() {
                 <div className="flex items-center gap-2 text-indigo-100 text-xs font-semibold uppercase tracking-wide mb-1.5">
                   <Clock className="w-4 h-4" /> Resume where you left off
                 </div>
-                <h2 className="text-xl font-bold mb-1">You have a {inProgressIsChapter ? 'chapter test' : 'full paper'} in progress</h2>
+                <h2 className="text-xl font-bold mb-1">You have a {inProgressIsCustom ? 'custom test' : inProgressIsChapter ? 'chapter test' : 'full paper'} in progress</h2>
                 <p className="text-indigo-100 text-sm">Pick up right where you stopped.</p>
               </div>
               <div className="flex flex-col sm:flex-row gap-3 shrink-0">
                 <Link
-                  to={inProgressIsChapter ? `/test?chapter=${inProgress.paperKey}` : `/test?paper=${inProgress.paperKey}`}
+                  to={inProgressLink}
                   className="flex items-center justify-center gap-2 bg-white text-primary px-6 py-3 rounded-xl text-sm font-semibold hover:bg-indigo-50 transition-colors shadow-md active:scale-[0.98]"
                 >
                   <Play className="w-4 h-4 fill-current" />
@@ -376,6 +394,12 @@ export default function Dashboard() {
                 className="flex items-center justify-center gap-2 bg-primary/10 text-primary px-6 py-3 rounded-xl text-sm font-semibold hover:bg-primary/20 transition-colors"
               >
                 <BookOpen className="w-4 h-4" /> Chapter Tests
+              </Link>
+              <Link
+                to="/custom-test"
+                className="flex items-center justify-center gap-2 bg-violet-600/10 text-violet-700 px-6 py-3 rounded-xl text-sm font-semibold hover:bg-violet-600/20 transition-colors"
+              >
+                <Shuffle className="w-4 h-4" /> Custom Test
               </Link>
             </div>
           </div>
@@ -637,6 +661,16 @@ export default function Dashboard() {
                       whileTap={{ scale: 0.97 }}
                       transition={{ type: 'spring', stiffness: 320, damping: 20 }}
                     >
+                      <Link to="/custom-test" className="w-full flex flex-col items-center gap-2 p-4 bg-violet-600/10 rounded-xl hover:bg-violet-600/20 transition-colors group">
+                        <Shuffle className="w-6 h-6 text-violet-600 group-hover:scale-110 transition-transform" />
+                        <span className="text-xs font-medium text-gray-700">Custom</span>
+                      </Link>
+                    </motion.div>
+                    <motion.div
+                      whileHover={{ y: -4 }}
+                      whileTap={{ scale: 0.97 }}
+                      transition={{ type: 'spring', stiffness: 320, damping: 20 }}
+                    >
                       <Link to="/profile" className="flex flex-col items-center gap-2 p-4 bg-green-50 rounded-xl hover:bg-green-100 transition-colors group">
                         <Award className="w-6 h-6 text-green-600 group-hover:scale-110 transition-transform" />
                         <span className="text-xs font-medium text-gray-700">My Plan</span>
@@ -671,13 +705,12 @@ export default function Dashboard() {
                 )}
               </div>
             </div>
-          </>
-        )}
+            </>
+          )}
+        </div>
       </div>
-    </div>
   );
 }
-
 function StatCard({ icon, color, value, label, sub }: {
   icon: React.ReactNode;
   color: string;
@@ -825,6 +858,7 @@ function TestHistoryCard({ analysis, expanded, onToggle }: {
   onToggle: () => void;
 }) {
   const { row, scorePct, sections, insights } = analysis;
+  const isCustom = isCustomKey(row.paper_key);
   const isChapter =
     row.test_type === 'chapter' ||
     row.paper_key.startsWith('jee-') ||
@@ -859,12 +893,14 @@ function TestHistoryCard({ analysis, expanded, onToggle }: {
               <span className="text-sm font-semibold text-gray-900 truncate">{row.title}</span>
               <span
                 className={`inline-flex items-center text-[10px] font-semibold px-2 py-0.5 rounded-full ${
-                  isChapter
+                  isCustom
+                    ? 'bg-violet-50 text-violet-700 border border-violet-200/60'
+                    : isChapter
                     ? 'bg-purple-50 text-purple-700 border border-purple-200/60'
                     : 'bg-blue-50 text-blue-700 border border-blue-200/60'
                 }`}
               >
-                {isChapter ? 'Chapter Test' : 'Full Paper'}
+                {isCustom ? 'Custom Test' : isChapter ? 'Chapter Test' : 'Full Paper'}
               </span>
             </div>
             <div className="text-xs text-gray-500 mt-1">
@@ -972,17 +1008,26 @@ function TestHistoryCard({ analysis, expanded, onToggle }: {
 
             {/* Retake and navigation bar */}
             <div className="flex items-center justify-between pt-2 border-t border-gray-200/60">
+              {isCustom ? (
+                <Link
+                  to="/custom-test"
+                  className="inline-flex items-center gap-1.5 text-xs font-semibold text-violet-700 bg-violet-600/10 hover:bg-violet-600/20 px-3 py-1.5 rounded-lg transition-colors"
+                >
+                  <Shuffle className="w-3 h-3" /> Build a new custom test
+                </Link>
+              ) : (
+                <Link
+                  to={isChapter ? `/test?chapter=${row.paper_key}` : `/test?paper=${row.paper_key}`}
+                  className="inline-flex items-center gap-1.5 text-xs font-semibold text-primary bg-primary/10 hover:bg-primary/20 px-3 py-1.5 rounded-lg transition-colors"
+                >
+                  <Play className="w-3 h-3 fill-current" /> Retake this {isChapter ? 'Chapter Test' : 'Paper'}
+                </Link>
+              )}
               <Link
-                to={isChapter ? `/test?chapter=${row.paper_key}` : `/test?paper=${row.paper_key}`}
-                className="inline-flex items-center gap-1.5 text-xs font-semibold text-primary bg-primary/10 hover:bg-primary/20 px-3 py-1.5 rounded-lg transition-colors"
-              >
-                <Play className="w-3 h-3 fill-current" /> Retake this {isChapter ? 'Chapter Test' : 'Paper'}
-              </Link>
-              <Link
-                to={isChapter ? "/chapter-tests" : "/paper-tests"}
+                to={isCustom ? "/custom-test" : isChapter ? "/chapter-tests" : "/paper-tests"}
                 className="inline-flex items-center gap-1 text-xs font-medium text-gray-500 hover:text-gray-900 transition-colors"
               >
-                Browse {isChapter ? 'more chapter tests' : 'more papers'} <ChevronRight className="w-3.5 h-3.5" />
+                Browse {isCustom ? 'custom tests' : isChapter ? 'more chapter tests' : 'more papers'} <ChevronRight className="w-3.5 h-3.5" />
               </Link>
             </div>
           </motion.div>

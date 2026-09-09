@@ -16,6 +16,7 @@ import LandingPage from './pages/LandingPage';
 const Contact = lazy(() => import('./pages/Contact'));
 const Dashboard = lazy(() => import('./pages/Dashboard'));
 const ChapterTests = lazy(() => import('./pages/ChapterTests'));
+const CustomTestBuilder = lazy(() => import('./pages/CustomTestBuilder'));
 const PaperTests = lazy(() => import('./pages/PaperTests'));
 const TestInterface = lazy(() => import('./pages/TestInterface'));
 const Pricing = lazy(() => import('./pages/Pricing'));
@@ -91,6 +92,14 @@ function App() {
                     element={
                       <ProtectedRoute>
                         <ChapterTests />
+                      </ProtectedRoute>
+                    }
+                  />
+                  <Route
+                    path="/custom-test"
+                    element={
+                      <ProtectedRoute>
+                        <CustomTestBuilder />
                       </ProtectedRoute>
                     }
                   />

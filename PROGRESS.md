@@ -302,3 +302,63 @@
       NEET 2021/2022 not yet audited)
 - [x] Add JEE Main 2025 papers (19 papers, 1425 questions, all seeded and compiled)
 
+## Phase 7 — NEET Custom Tests (builder live, NEET 2026 audited) ✅
+
+- Builder (`/custom-test`, subscription-gated): exam picker on Dashboard
+  (NEET live, JEE "Soon") → 82-chapter NCERT taxonomy
+  (`src/data/neetCustomChapters.ts`: 28 Phy + 21 Chem + 33 Bio) →   per-chapter
+  steppers clamped to audited pool → custom duration (default ~1 min/Q) →
+  Generate samples without replacement (crypto shuffle) inside each subject
+  and keeps subjects as blocks, so repeat builds differ
+- Dashboard header has a Custom button next to Take a Test (both open the
+  exam picker: NEET live, JEE Soon); paper/chapter flows untouched — every
+  custom branch is keyed off the `custom-neet-` prefix, and the only shared
+  change is the chapter-backfill path now deriving its test type from the
+  key (previously hardcoded `'paper'`, which 404'd chapter backfills)
+- `?custom=custom-neet-…` mode in TestInterface: real Physics / Chemistry /
+  Biology blocks like an actual NEET paper, shuffled WITHIN each subject
+  (intrasubject, never intersubject) — chapter identity never shown during
+  the test; resume, timer, palette, instructions gate all reused via
+  attemptStorage keyed by the custom id
+- Scoring: `score-attempt` accepts `testType 'custom'` (same by-id path as
+  chapters; cap raised 60 → 200; key cache bypassed — ids are unique per
+  build); attempts stored with `test_type='custom'`; backfill derives the
+  test type from the key (was hardcoded `'paper'`)
+- Result screen shows the chapter split from the curated audit map
+  (`customTestChapters`) with "Build a custom test" CTAs; dashboard history
+  badges custom rows separately and skips them in the old carve-index
+  chapter merge (would misattribute)
+- Audit pool: `public/custom/neet-chapter-map.json` — NEET 2026 fully tagged
+  (180/180: 45 Phy + 45 Chem + 90 Bio, figure-based Qs verified against the
+  images), then Re-NEET 2026 fully tagged (180/180, 5 figure Qs verified),
+  then NEET 2025 fully tagged (180/180, 2 figure Qs verified — Grignard and
+  amine sequences), then NEET 2024 fully tagged (180/180, 4 figure Qs
+  verified; site Q135's truncated stem recovered from the PDF as the
+  Phaeophyceae question → Plant Kingdom), then NEET 2023 fully tagged
+  (180/180, 6 figure Qs verified — Clemmensen, diazonium–Grignard, ether
+  cleavage, Tollens), then NEET 2021 fully tagged (180/180, 4 figure Qs
+  verified — peroxide addition, NaBH₄ selectivity, diazonium reduction,
+  Étard; site Q123's blank match columns recovered from neet-out as plant
+  families → Morphology), then NEET 2020 fully tagged (180/180, side-chain
+  chlorination figure verified → Hydrocarbons), then NEET 2019 fully tagged
+  (180/180, phenol   protonation + cumene + phthalimide figures verified), then NEET 2018 fully
+  tagged (180/180, FC-cumene figure verified → Alcohols), then NEET 2017
+  fully tagged (180/180, benzyne + alkyne-hydration figures verified), then
+  NEET 2016 fully tagged (180/180, elimination/substitution + Williamson
+  figures verified) — all 12 NEET papers 2016→2026 done.
+  Pool now 2160 (12 papers × 180) across 82/82 chapters (thinnest: 6 Qs)
+- Out-of-syllabus tagging: the 11 deleted chapters (9 Chem + 2 Bio, Physics
+  has none) added to the taxonomy with red OUT OF SYLLABUS badges in the
+  builder (still selectable); 64 questions re-homed from proxy chapters
+  after a 362-candidate keyword review (e.g. metallurgy out of d-Block,
+  polymers out of Biomolecules, gas laws out of Mole Concept, s-block out
+  of Periodicity, asexual/vegetative modes out of Morphology/Plant Kingdom,
+  breeding questions out of Inheritance/Biotech). Pool stays 2160, now
+  across 93 chapters
+- NEXT: continue the audit 2025 → 2019, appending `{questionId: chapterId}`
+  to the same map (builder pool + availability counts pick it up with no
+  code changes); `score-attempt` deployed 09-Sep-2026 (custom branch + cap
+  200 live — redeploy again after any future key/scoring change, warm
+  isolates cache paper data); quota fix redeployed same day (failed
+  validations no longer consume the hourly slot, cap 10 → 20/hr)
+

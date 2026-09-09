@@ -2,12 +2,13 @@ import { supabase } from './supabase';
 import type { AttemptResult } from './scoring';
 import type { QuestionState } from '../types';
 import { listSavedPaperKeys, loadAttempt, saveAttempt } from './attemptStorage';
+import { isCustomKey } from './customTest';
 
 export interface AttemptRow {
   id: string;
   user_id: string;
   paper_key: string;
-  test_type: 'paper' | 'chapter';
+  test_type: 'paper' | 'chapter' | 'custom';
   title: string;
   total_score: number;
   max_score: number;
@@ -44,7 +45,7 @@ export interface SubmitAttemptPayload {
 
 export interface SubmitAttemptInput {
   paperKey: string;
-  testType: 'paper' | 'chapter';
+  testType: 'paper' | 'chapter' | 'custom';
   title: string;
   timeSpent: number;
   questionStates: QuestionState[];
@@ -277,9 +278,20 @@ async function runBackfill(userId: string): Promise<void> {
     const attempt = loadAttempt(userId, paperKey);
     if (!attempt || !attempt.isTestSubmitted || attempt.syncedToDb) continue;
 
+    // The stored key determines the scoring path server-side: custom tests
+    // resolve by question ids, chapter tests likewise, papers by paper row.
+    // This used to hardcode 'paper', which scored custom backfills as
+    // "Paper not found".
+    const testType = isCustomKey(paperKey)
+      ? 'custom'
+      : attempt.paperKey.startsWith('jee-') ||
+          attempt.paperKey.startsWith('neet-') ||
+          attempt.paperKey.startsWith('ch-')
+        ? 'chapter'
+        : 'paper';
     const res = await submitAttempt({
       paperKey,
-      testType: 'paper',
+      testType,
       title: paperKey,
       timeSpent: Math.max(0, 180 * 60 - attempt.timeLeft),
       questionStates: attempt.questionStates,
