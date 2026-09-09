@@ -285,38 +285,40 @@ export default function Dashboard() {
               Your test history, performance & growth — at a glance
             </p>
           </div>
-          <div className="flex items-center gap-3">
-            {/* Exam track switch */}
-            <div className="inline-flex bg-white border border-gray-200 rounded-full p-1 shadow-sm">
-              <button
-                onClick={() => { setExam('jee'); setExamState('jee'); }}
-                className={`px-4 py-1.5 rounded-full text-xs font-semibold transition-colors ${
-                  exam === 'jee' ? 'bg-primary text-white' : 'text-gray-500 hover:text-gray-700'
-                }`}
+          <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
+            <div className="flex items-center gap-3">
+              {/* Exam track switch */}
+              <div className="inline-flex bg-white border border-gray-200 rounded-full p-1 shadow-sm">
+                <button
+                  onClick={() => { setExam('jee'); setExamState('jee'); }}
+                  className={`px-4 py-1.5 rounded-full text-xs font-semibold transition-colors ${
+                    exam === 'jee' ? 'bg-primary text-white' : 'text-gray-500 hover:text-gray-700'
+                  }`}
+                >
+                  JEE
+                </button>
+                <button
+                  onClick={() => { setExam('neet'); setExamState('neet'); }}
+                  className={`inline-flex items-center gap-1 px-4 py-1.5 rounded-full text-xs font-semibold transition-colors ${
+                    exam === 'neet' ? 'bg-green-600 text-white' : 'text-gray-500 hover:text-gray-700'
+                  }`}
+                >
+                  <GraduationCap className="w-3.5 h-3.5" />
+                  NEET
+                </button>
+              </div>
+              <Link
+                to="/paper-tests"
+                className="flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-xl text-sm font-semibold hover:bg-primary-dark transition-all shadow-lg shadow-primary/25 hover:shadow-primary/40 hover:-translate-y-0.5 active:scale-[0.98]"
               >
-                JEE
-              </button>
-              <button
-                onClick={() => { setExam('neet'); setExamState('neet'); }}
-                className={`inline-flex items-center gap-1 px-4 py-1.5 rounded-full text-xs font-semibold transition-colors ${
-                  exam === 'neet' ? 'bg-green-600 text-white' : 'text-gray-500 hover:text-gray-700'
-                }`}
-              >
-                <GraduationCap className="w-3.5 h-3.5" />
-                NEET
-              </button>
+                <Play className="w-4 h-4 fill-current" />
+                Take a Test
+              </Link>
             </div>
-            <Link
-              to="/paper-tests"
-              className="flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-xl text-sm font-semibold hover:bg-primary-dark transition-all shadow-lg shadow-primary/25 hover:shadow-primary/40 hover:-translate-y-0.5 active:scale-[0.98]"
-            >
-              <Play className="w-4 h-4 fill-current" />
-              Take a Test
-            </Link>
             <Link
               to="/custom-test"
               title="Build a custom paper from any chapters"
-              className="flex items-center gap-2 bg-violet-600 text-white px-6 py-3 rounded-xl text-sm font-semibold hover:bg-violet-700 transition-all shadow-lg shadow-violet-600/25 hover:shadow-violet-600/40 hover:-translate-y-0.5 active:scale-[0.98]"
+              className="flex items-center justify-center gap-2 bg-violet-600 text-white px-6 py-3 rounded-xl text-sm font-semibold hover:bg-violet-700 transition-all shadow-lg shadow-violet-600/25 hover:shadow-violet-600/40 hover:-translate-y-0.5 active:scale-[0.98] sm:w-auto"
             >
               <Shuffle className="w-4 h-4" />
               Custom
