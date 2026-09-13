@@ -47,3 +47,15 @@ __pycache__/
 *.pyc
 temp_inspect/
 *_raw_dump.json
+
+# Temporary work files and scratch images
+scripts/work-*.json
+scripts/temp_images/
+scripts/q16.png
+scripts/disputes-*-chem.json
+scripts/disputes-*-math.json
+scripts/disputes-*-phy.json
+scripts/solutions-*-chem.json
+scripts/solutions-*-math.json
+scripts/solutions-*-phy.json
+

@@ -21,8 +21,13 @@ const papers = process.argv.slice(2).length > 0 ? process.argv.slice(2) : DEFAUL
 // Literal backslash-n → newline, unless a real TeX command (\neq \ne
 // \nabla \ni \notin \nexists \nu — the \nu in "h\nu" stays, while the
 // break in "\nununennium" converts since commands never continue +letter).
-const LITERAL_N_RE = /\\n(?!(?:neq|ne|nabla|ni|notin|nexists|nu)(?![a-zA-Z]))/g;
-const LITERAL_N_TEST = /\\n(?!(?:neq|ne|nabla|ni|notin|nexists|nu)(?![a-zA-Z]))/;
+// NOTE: \\n already consumed the backslash AND the "n", so the lookahead
+// must match the REMAINDER of the command name (eq for \neq, e for \ne,
+// abla for \nabla, …) with a letter boundary — matching full names here
+// (neq|ne|…) never fires and silently eats real commands (seen: \neq and
+// \ne in JEE solutions rewritten as newline + "eq"/"e").
+const LITERAL_N_RE = /\\n(?!(?:riangleleft|riangleright|shortparallel|shortmid|subseteq|supseteq|arallel|simeq|cong|otin|xists|abla|vdash|Vdash|vDash|mid|leq|geq|less|gtr|prec|succ|eg|eq|ewline|e|i|u)(?![a-zA-Z]))/g;
+const LITERAL_N_TEST = /\\n(?!(?:riangleleft|riangleright|shortparallel|shortmid|subseteq|supseteq|arallel|simeq|cong|otin|xists|abla|vdash|Vdash|vDash|mid|leq|geq|less|gtr|prec|succ|eg|eq|ewline|e|i|u)(?![a-zA-Z]))/;
 
 function cleanLine(line) {
   let s = line.trim().replace(/\*\*/g, '');
@@ -110,7 +115,7 @@ for (const paper of papers) {
     if (depth !== 0) problems.push(`Qid ${qid}: unbalanced braces`);
     const lines = sol.trim().split('\n').filter((l) => l.trim());
     const last = lines[lines.length - 1];
-    if (!/\([A-D]\)\s*$/.test(last) && !last.endsWith('(Bonus)') && !/\(\d+(\.\d+)?\)\s*$/.test(last)) {
+    if (!/\([A-D]\)\s*$/.test(last) && !last.endsWith('(Bonus)') && !/\(-?\d+(\.\d+)?\)\s*$/.test(last)) {
       problems.push(`Qid ${qid}: last line must end with (A)/(B)/(C)/(D): ${last.slice(0, 60)}`);
     }
   }

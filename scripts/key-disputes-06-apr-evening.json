@@ -1,0 +1,11 @@
+[
+  {
+    "id": 8042,
+    "number": 17,
+    "key": "B",
+    "mine": "C",
+    "status": "key-corrected",
+    "correctedTo": "C",
+    "reason": "n = sin((60+30)/2)/sin30 = sin45/sin30 = sqrt(2); options B=sqrt(3) C=sqrt(2); prism formula second-sourced"
+  }
+]

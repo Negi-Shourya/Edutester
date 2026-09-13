@@ -1,0 +1,191 @@
+[
+  {
+    "id": 24154,
+    "number": 4,
+    "key": "D",
+    "mine": "B",
+    "status": "needs-verification",
+    "correctedTo": null,
+    "reason": "tied-NOR NOTs + NOR + NOT = (NOT A) OR (NOT B) = NAND; figure viewed"
+  },
+  {
+    "id": 24162,
+    "number": 12,
+    "key": "A",
+    "mine": "D",
+    "status": "key-corrected",
+    "correctedTo": "D",
+    "reason": "DeltaE = GMm(1/r1-1/r2)/2 = mgRE/6 = 1e9 J; alpha=1000 = option D. Independently recomputed: CONFIRMED"
+  },
+  {
+    "id": 24166,
+    "number": 16,
+    "key": "A",
+    "mine": "?",
+    "status": "needs-verification",
+    "correctedTo": null,
+    "reason": "figure/stem R mismatch (2 vs 3 ohm); 7.5e-3 matches neither; needs figure review"
+  },
+  {
+    "id": 24167,
+    "number": 17,
+    "key": "D",
+    "mine": "?",
+    "status": "needs-verification",
+    "correctedTo": null,
+    "reason": "DB numbers give pi^2/25 (not in options); published original gives pi (option C)"
+  },
+  {
+    "id": 24168,
+    "number": 18,
+    "key": "B",
+    "mine": "?",
+    "status": "needs-verification",
+    "correctedTo": null,
+    "reason": "figure slopes give BC>AB>DE>CD; external paper lists that ranking as an option"
+  },
+  {
+    "id": 24172,
+    "number": 22,
+    "key": "5",
+    "mine": "17",
+    "status": "needs-verification",
+    "correctedTo": null,
+    "reason": "DB text/figure (P on top) gives 17/12; x=5 only for axis-at-junction variant"
+  },
+  {
+    "id": 24174,
+    "number": 24,
+    "key": "480",
+    "mine": "1080",
+    "status": "needs-verification",
+    "correctedTo": null,
+    "reason": "balanced bridge R_AB=2, 9V battery: H=1080J; 480J matches 6V variant"
+  },
+  {
+    "id": 24183,
+    "number": 8,
+    "key": "A",
+    "mine": "B",
+    "status": "needs-verification",
+    "correctedTo": null,
+    "reason": "M_PQ=85, M_PQ2=145 gives Q=60, P=25; external NTA value 25,60"
+  },
+  {
+    "id": 24185,
+    "number": 10,
+    "key": "B",
+    "mine": "D",
+    "status": "needs-verification",
+    "correctedTo": null,
+    "reason": "only NH4+,NiCl4 tetrahedral (2, not 3); all four listed species incomplete octet"
+  },
+  {
+    "id": 24191,
+    "number": 16,
+    "key": "A",
+    "mine": "B",
+    "status": "needs-verification",
+    "correctedTo": null,
+    "reason": "CO2=160, O2 used=200 gives x=2,y=2 (C2H2); external value C2H2"
+  },
+  {
+    "id": 24194,
+    "number": 19,
+    "key": "D",
+    "mine": "A",
+    "status": "needs-verification",
+    "correctedTo": null,
+    "reason": "least stable is +/+ adjacent structure (option image q43_opt_a)"
+  },
+  {
+    "id": 24197,
+    "number": 22,
+    "key": "600",
+    "mine": "6000",
+    "status": "needs-verification",
+    "correctedTo": null,
+    "reason": "DB text dims give 6000; paper original (15cm) gives 6 S m2/mol = 60000 S cm2/mol"
+  },
+  {
+    "id": 24198,
+    "number": 23,
+    "key": "48",
+    "mine": "70",
+    "status": "needs-verification",
+    "correctedTo": null,
+    "reason": "dS=18, dG=-21.03, dH=-12.03; 58-x=-12 gives x=70; external value 70"
+  },
+  {
+    "id": 24203,
+    "number": 3,
+    "key": "A",
+    "mine": "C",
+    "status": "key-corrected",
+    "correctedTo": "C",
+    "reason": "odd part vanishes; 2pi*integral=4pi (numeric 12.56637); options A6pi B2pi C4pi D8pi. Independently recomputed: CONFIRMED"
+  },
+  {
+    "id": 24207,
+    "number": 7,
+    "key": "B",
+    "mine": "D",
+    "status": "needs-verification",
+    "correctedTo": null,
+    "reason": "c=(2,-1,3); |a+c|^2=27"
+  },
+  {
+    "id": 24216,
+    "number": 16,
+    "key": "A",
+    "mine": "D",
+    "status": "needs-verification",
+    "correctedTo": null,
+    "reason": "a+b+c=1403 (c=3,b=100,a=1300); published option set lists 1403"
+  },
+  {
+    "id": 24218,
+    "number": 18,
+    "key": "D",
+    "mine": "B",
+    "status": "needs-verification",
+    "correctedTo": null,
+    "reason": "lambda1=4,lambda2=-4 gives K=1; DB text drops /2 (no real K without it)"
+  },
+  {
+    "id": 24221,
+    "number": 21,
+    "key": "2",
+    "mine": "?",
+    "status": "needs-verification",
+    "correctedTo": null,
+    "reason": "terms bounded away from 0 so series diverges; key 2 impossible as stated"
+  },
+  {
+    "id": 24222,
+    "number": 22,
+    "key": "1",
+    "mine": "?",
+    "status": "needs-verification",
+    "correctedTo": null,
+    "reason": "det(A^3-B^3)=-15 so det(adj)=-15; published variant asks (det)^2=225; key 1 impossible"
+  },
+  {
+    "id": 24223,
+    "number": 23,
+    "key": "2",
+    "mine": "?",
+    "status": "needs-verification",
+    "correctedTo": null,
+    "reason": "exact integral = 5pi/6 ≈ 2.62, not integer; key 2 impossible as stated"
+  },
+  {
+    "id": 24224,
+    "number": 24,
+    "key": "1314",
+    "mine": "1333",
+    "status": "key-corrected",
+    "correctedTo": "1333",
+    "reason": "p=1250 (n odd), q=3+8+24+48=83; DB short SOL sums to 83 yet writes 64. Independently recomputed: CONFIRMED"
+  }
+]
