@@ -1,0 +1,62 @@
+[
+ {
+  "id": 24616,
+  "number": 16,
+  "section": "Physics",
+  "key": "A",
+  "mine": "B",
+  "status": "key-corrected",
+  "correctedTo": "B",
+  "reason": "EMF=0.2*33e-4/0.5=1.32e-3V=1.32mV, not 13.2mV"
+ },
+ {
+  "id": 24651,
+  "number": 1,
+  "section": "Mathematics",
+  "key": "A",
+  "mine": "C",
+  "status": "key-corrected",
+  "correctedTo": "C",
+  "reason": "circle center (8/3,3) r^2=47/18; ab+18r^2=8+47=55"
+ },
+ {
+  "id": 24659,
+  "number": 9,
+  "section": "Mathematics",
+  "key": "B",
+  "mine": "A",
+  "status": "key-corrected",
+  "correctedTo": "A",
+  "reason": "p=2/√3 gives 9p^2=12"
+ },
+ {
+  "id": 24673,
+  "number": 23,
+  "section": "Mathematics",
+  "key": "270",
+  "mine": "260",
+  "status": "key-corrected",
+  "correctedTo": "260",
+  "reason": "210+20+30=260 valid numbers"
+ },
+ {
+  "id": 24650,
+  "number": 25,
+  "section": "Chemistry",
+  "key": "400",
+  "mine": "200",
+  "status": "key-corrected",
+  "correctedTo": "200",
+  "reason": "Raoult pair solves PA=600, PB=200"
+ },
+ {
+  "id": 24608,
+  "number": 8,
+  "section": "Physics",
+  "key": "D",
+  "mine": "A",
+  "status": "key-corrected",
+  "correctedTo": "A",
+  "reason": "3 sides × 1e-5√3 gives α=3√3 exactly"
+ }
+]

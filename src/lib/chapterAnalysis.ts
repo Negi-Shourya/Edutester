@@ -1,6 +1,7 @@
 import type { AttemptRow } from './attemptsDb';
 import { chapterTests } from '../data/chapters';
 import { NEET_CUSTOM_CHAPTERS } from '../data/neetCustomChapters';
+import { JEE_CUSTOM_CHAPTERS } from '../data/jeeCustomChapters';
 import { isCustomKey } from './customTest';
 import { examOfPaperKey, type ExamType } from './exam';
 import type { ChapterIndex } from './questionChapterMap';
@@ -208,10 +209,12 @@ export function paperTestChapters(
 // ---------------------------------------------------------------------------
 
 const neetCustomMeta = new Map(NEET_CUSTOM_CHAPTERS.map((c) => [c.id, c]));
+const jeeCustomMeta = new Map(JEE_CUSTOM_CHAPTERS.map((c) => [c.id, c]));
 
 export function customTestChapters(
   outcomes: Record<string, string>,
-  map: Record<string, string>
+  map: Record<string, string>,
+  exam: ExamType = 'neet'
 ): ChapterPerformance[] {
   const buckets = new Map<string, { correct: number; incorrect: number; unattempted: number }>();
   for (const [qid, outcome] of Object.entries(outcomes)) {
@@ -225,7 +228,7 @@ export function customTestChapters(
   }
   const out: ChapterPerformance[] = [];
   for (const [chapterId, b] of buckets) {
-    const meta = neetCustomMeta.get(chapterId);
+    const meta = exam === 'jee' ? jeeCustomMeta.get(chapterId) : neetCustomMeta.get(chapterId);
     const questions = b.correct + b.incorrect + b.unattempted;
     const avgAccuracy = accuracyOf(b.correct, b.incorrect);
     const approxScorePct =
@@ -236,7 +239,7 @@ export function customTestChapters(
       chapterId,
       title: meta?.title ?? chapterId,
       subject: meta?.subject ?? 'General',
-      exam: 'neet',
+      exam,
       attempts: 1,
       avgAccuracy,
       avgScorePct: approxScorePct,
@@ -246,7 +249,7 @@ export function customTestChapters(
       lastAccuracy: avgAccuracy,
       lastScorePct: approxScorePct,
       questions,
-      // NCERT chapters have no dedicated chapter test — practice CTA goes
+      // Custom chapters have no dedicated chapter test — practice CTA goes
       // back to the custom builder.
       hasTest: false,
       isWeak: questions >= 3 && avgAccuracy < 60,

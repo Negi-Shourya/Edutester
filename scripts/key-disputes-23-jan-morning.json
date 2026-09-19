@@ -1,0 +1,32 @@
+[
+ {
+  "correctedTo": "B",
+  "id": 24557,
+  "key": "A",
+  "mine": "B",
+  "number": 7,
+  "reason": "Total lone pairs: NF3 has 10 (max); F-N-F angle is 102°, not ozone 116°",
+  "section": "Chemistry",
+  "status": "key-corrected"
+ },
+ {
+  "id": 24591,
+  "number": 16,
+  "section": "Mathematics",
+  "key": "A",
+  "mine": "C",
+  "status": "key-corrected",
+  "correctedTo": "C",
+  "reason": "brute force: l=23, m=4, n=6, total=33"
+ },
+ {
+  "id": 24595,
+  "number": 20,
+  "section": "Mathematics",
+  "key": "B",
+  "mine": "C",
+  "status": "key-corrected",
+  "correctedTo": "C",
+  "reason": "AP condition factors (n-2)(n-3)(n-4)=0; sum=9"
+ }
+]

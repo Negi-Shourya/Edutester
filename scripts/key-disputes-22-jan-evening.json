@@ -1,0 +1,52 @@
+[
+ {
+  "correctedTo": "C",
+  "id": 25018,
+  "key": "A",
+  "mine": "C",
+  "number": 18,
+  "reason": "IE3: Cr (2987) < Mn (3248, removed from half-filled 3d5); Statement II claims both IE2+IE3 higher for Cr, so it is false",
+  "section": "Chemistry",
+  "status": "key-corrected"
+ },
+ {
+  "id": 25036,
+  "number": 6,
+  "section": "Mathematics",
+  "key": "A",
+  "mine": "B",
+  "status": "key-corrected",
+  "correctedTo": "B",
+  "reason": "sum(2n+1)=2*325+25=675"
+ },
+ {
+  "id": 25035,
+  "number": 10,
+  "section": "Mathematics",
+  "key": "A",
+  "mine": "B",
+  "status": "key-corrected",
+  "correctedTo": "B",
+  "reason": "dist=6|t-2|=7; coord sum=2(-5)+11(4)=34"
+ },
+ {
+  "id": 25046,
+  "number": 21,
+  "section": "Mathematics",
+  "key": "2016",
+  "mine": "1979",
+  "status": "key-corrected",
+  "correctedTo": "1979",
+  "reason": "2036-57=1979 even-product subsets"
+ },
+ {
+  "id": 25049,
+  "number": 24,
+  "section": "Mathematics",
+  "key": "5",
+  "mine": "9",
+  "status": "key-corrected",
+  "correctedTo": "9",
+  "reason": "a^2+b^2+c^2=1 so 9x=9"
+ }
+]

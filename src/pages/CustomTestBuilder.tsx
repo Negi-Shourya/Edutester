@@ -2,29 +2,39 @@ import { useEffect, useMemo, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { motion } from 'motion/react';
 import {
-  Atom, FlaskConical, Dna, Minus, Plus, Clock, Shuffle, GraduationCap,
+  Atom, FlaskConical, Dna, Sigma, Minus, Plus, Clock, Shuffle, GraduationCap,
   Lock, Crown, ChevronRight, RotateCcw, Search, ListChecks,
 } from 'lucide-react';
 import { useAuth } from '../context/auth-context';
 import { useSubscriptionAccess } from '../lib/subscription';
+import { getExam, type ExamType } from '../lib/exam';
 import {
   NEET_CUSTOM_CHAPTERS, NEET_CUSTOM_SUBJECTS, type NeetSubject,
 } from '../data/neetCustomChapters';
 import {
-  loadNeetChapterMap, poolByChapter, buildCustomTest, saveCustomTest,
-  MAX_CUSTOM_QUESTIONS,
+  JEE_CUSTOM_CHAPTERS, type JeeSubject,
+} from '../data/jeeCustomChapters';
+import {
+  loadNeetChapterMap, loadJeeChapterMap, poolByChapter, buildCustomTest,
+  buildJeeCustomTest, saveCustomTest, MAX_CUSTOM_QUESTIONS,
 } from '../lib/customTest';
 
-const SUBJECT_ICONS: Record<NeetSubject, typeof Atom> = {
+type BuilderSubject = NeetSubject | JeeSubject;
+
+const JEE_CUSTOM_SUBJECTS: JeeSubject[] = ['Physics', 'Chemistry', 'Mathematics'];
+
+const SUBJECT_ICONS: Record<BuilderSubject, typeof Atom> = {
   Physics: Atom,
   Chemistry: FlaskConical,
   Biology: Dna,
+  Mathematics: Sigma,
 };
 
-const SUBJECT_STYLES: Record<NeetSubject, string> = {
+const SUBJECT_STYLES: Record<BuilderSubject, string> = {
   Physics: 'bg-indigo-100 text-indigo-700',
   Chemistry: 'bg-amber-100 text-amber-700',
   Biology: 'bg-emerald-100 text-emerald-700',
+  Mathematics: 'bg-sky-100 text-sky-700',
 };
 
 const DURATION_CHIPS = [30, 45, 60, 90, 120, 180];
@@ -37,14 +47,20 @@ export default function CustomTestBuilder() {
 
   const [pool, setPool] = useState<Record<string, number[]>>({});
   const [poolLoading, setPoolLoading] = useState(true);
-  const [subject, setSubject] = useState<NeetSubject | 'All'>('All');
+  const [exam, setExam] = useState<ExamType>(() => getExam());
+  const [subject, setSubject] = useState<BuilderSubject | 'All'>('All');
   const [search, setSearch] = useState('');
   const [picks, setPicks] = useState<Record<string, number>>({});
   const [minutes, setMinutes] = useState(60);
 
+  const isJee = exam === 'jee';
+  const chapters = isJee ? JEE_CUSTOM_CHAPTERS : NEET_CUSTOM_CHAPTERS;
+  const examSubjects: readonly BuilderSubject[] = isJee ? JEE_CUSTOM_SUBJECTS : NEET_CUSTOM_SUBJECTS;
+
   useEffect(() => {
     let cancelled = false;
-    loadNeetChapterMap().then((map) => {
+    setPoolLoading(true);
+    (isJee ? loadJeeChapterMap() : loadNeetChapterMap()).then((map) => {
       if (!cancelled) {
         setPool(poolByChapter(map));
         setPoolLoading(false);
@@ -53,7 +69,15 @@ export default function CustomTestBuilder() {
     return () => {
       cancelled = true;
     };
-  }, []);
+  }, [isJee]);
+
+  const switchExam = (next: ExamType) => {
+    if (next === exam) return;
+    setExam(next);
+    setPicks({});
+    setSearch('');
+    setSubject('All');
+  };
 
   const totalPicked = useMemo(
     () => Object.values(picks).reduce((s, n) => s + n, 0),
@@ -73,12 +97,12 @@ export default function CustomTestBuilder() {
 
   const visibleChapters = useMemo(() => {
     const q = search.trim().toLowerCase();
-    return NEET_CUSTOM_CHAPTERS.filter((c) => {
+    return chapters.filter((c) => {
       if (subject !== 'All' && c.subject !== subject) return false;
       if (q && !c.title.toLowerCase().includes(q)) return false;
       return true;
     });
-  }, [subject, search]);
+  }, [chapters, subject, search]);
 
   const setPick = (chapterId: string, n: number) => {
     const available = pool[chapterId]?.length ?? 0;
@@ -96,7 +120,9 @@ export default function CustomTestBuilder() {
   };
 
   const handleGenerate = () => {
-    const def = buildCustomTest(picks, pool, minutes);
+    const def = isJee
+      ? buildJeeCustomTest(picks, pool, minutes)
+      : buildCustomTest(picks, pool, minutes);
     if (!def) return;
     saveCustomTest(userId, def);
     navigate(`/test?custom=${def.id}`);
@@ -111,7 +137,7 @@ export default function CustomTestBuilder() {
           </div>
           <h2 className="text-xl font-bold text-stone-800 mb-2">Custom Tests are a Pro feature</h2>
           <p className="text-sm text-stone-500 mb-6 leading-relaxed">
-            Build your own NEET papers from any chapters — strengths, weaknesses,
+            Build your own papers from any chapters — strengths, weaknesses,
             or the full syllabus. Subscribe to unlock it.
           </p>
           <div className="flex flex-col gap-2">
@@ -139,27 +165,33 @@ export default function CustomTestBuilder() {
   return (
     <div className="bg-stone-50 min-h-screen">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
-        {/* Exam picker: NEET only for now */}
+        {/* Exam picker */}
         <div className="flex justify-center mb-8">
           <div className="inline-flex bg-white border border-stone-200 rounded-full p-1 shadow-sm">
-            <span className="inline-flex items-center gap-1.5 px-5 py-2 rounded-full text-sm font-medium bg-emerald-600 text-white shadow">
+            <button
+              onClick={() => switchExam('neet')}
+              className={`inline-flex items-center gap-1.5 px-5 py-2 rounded-full text-sm font-medium transition-all ${
+                !isJee ? 'bg-emerald-600 text-white shadow' : 'text-stone-500 hover:bg-stone-100'
+              }`}
+            >
               <GraduationCap className="w-4 h-4" />
               NEET
-            </span>
-            <span
-              title="JEE custom tests are coming soon"
-              className="inline-flex items-center gap-1.5 px-5 py-2 rounded-full text-sm font-medium text-stone-400 cursor-not-allowed"
+            </button>
+            <button
+              onClick={() => switchExam('jee')}
+              className={`inline-flex items-center gap-1.5 px-5 py-2 rounded-full text-sm font-medium transition-all ${
+                isJee ? 'bg-indigo-600 text-white shadow' : 'text-stone-500 hover:bg-stone-100'
+              }`}
             >
               JEE Main
-              <span className="text-[10px] font-semibold bg-stone-100 px-2 py-0.5 rounded-full">Soon</span>
-            </span>
+            </button>
           </div>
         </div>
 
         <div className="text-center mb-8">
           <div className="inline-flex items-center gap-2 bg-white border border-stone-200 px-4 py-1.5 rounded-full text-sm text-stone-500 mb-3 shadow-sm">
             <Shuffle className="w-3.5 h-3.5 text-violet-500" />
-            {poolLoading ? 'Loading question pool…' : `${poolSize} audited NEET questions in the pool`}
+            {poolLoading ? 'Loading question pool…' : `${poolSize} audited ${isJee ? 'JEE' : 'NEET'} questions in the pool`}
           </div>
           <h1 className="text-3xl sm:text-4xl font-bold text-stone-900 tracking-tight font-display">
             Build a Custom Test
@@ -167,12 +199,17 @@ export default function CustomTestBuilder() {
           <p className="text-stone-500 mt-2 max-w-lg mx-auto text-sm sm:text-base">
             Pick chapters and question counts — each subject stays its own
             block, shuffled within, so you never know which chapter a question
-            came from. Chapters tagged{' '}
-            <span className="text-[11px] font-bold uppercase tracking-wide text-red-700 bg-red-100 border border-red-200 px-1.5 py-px rounded whitespace-nowrap">
-              Out of syllabus
-            </span>{' '}
-            were dropped from the new NEET syllabus but still have real
-            past-paper questions — attempt them only if you want to.
+            came from.{' '}
+            {!isJee && (
+              <>
+                Chapters tagged{' '}
+                <span className="text-[11px] font-bold uppercase tracking-wide text-red-700 bg-red-100 border border-red-200 px-1.5 py-px rounded whitespace-nowrap">
+                  Out of syllabus
+                </span>{' '}
+                were dropped from the new NEET syllabus but still have real
+                past-paper questions — attempt them only if you want to.
+              </>
+            )}
           </p>
         </div>
 
@@ -190,7 +227,7 @@ export default function CustomTestBuilder() {
               />
             </div>
             <div className="flex gap-2 flex-wrap items-center">
-              {(['All', ...NEET_CUSTOM_SUBJECTS] as const).map((s) => (
+              {(['All', ...examSubjects] as const).map((s) => (
                 <button
                   key={s}
                   onClick={() => setSubject(s)}
@@ -212,7 +249,7 @@ export default function CustomTestBuilder() {
         </div>
 
         {/* Chapter pickers */}
-        {(['Physics', 'Chemistry', 'Biology'] as NeetSubject[])
+        {([...examSubjects] as BuilderSubject[])
           .filter((s) => subject === 'All' || subject === s)
           .map((sub) => {
             const rows = visibleChapters.filter((c) => c.subject === sub);
@@ -249,7 +286,7 @@ export default function CustomTestBuilder() {
                         <div className="min-w-0">
                           <div className="text-sm font-medium text-stone-800 leading-snug">{c.title}</div>
                           <div className="flex items-center gap-1.5 mt-1">
-                            {c.outOfSyllabus && (
+                            {('outOfSyllabus' in c && c.outOfSyllabus) && (
                               <span className="text-[10px] font-bold uppercase tracking-wide text-red-700 bg-red-100 border border-red-200 px-1.5 py-px rounded">
                                 Out of syllabus
                               </span>

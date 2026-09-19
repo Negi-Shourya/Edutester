@@ -362,3 +362,27 @@
   isolates cache paper data); quota fix redeployed same day (failed
   validations no longer consume the hourly slot, cap 10 → 20/hr)
 
+## Phase 8 — JEE Custom Tests (builder live) ✅
+
+- Builder (`/custom-test`) now has a NEET / JEE Main exam toggle (defaults
+  to the user's track): JEE side loads `JEE_CUSTOM_CHAPTERS`
+  (`src/data/jeeCustomChapters.ts`: 28 Phy + 22 Chem + 16 Math) +
+  `public/custom/jee-chapter-map.json` pool, with Physics / Chemistry /
+  Mathematics blocks and steppers clamped to audited availability
+- Engine (`src/lib/customTest.ts`): `custom-jee-` prefix ids,
+  `loadJeeChapterMap`, `sampleJeeQuestions`/`buildJeeCustomTest`
+  (intrasubject shuffle, P/C/M blocks); `loadCustomTest` + `isCustomKey`
+  accept both prefixes; new `isJeeCustomKey` discriminator
+- Result screen picks the JEE map + `customTestChapters(…, 'jee')` for
+  `custom-jee-` keys (chapter split + "Build a custom test" CTA reused)
+- No edge-function change needed (`score-attempt` custom branch is by-id
+  and prefix-agnostic, cap 200 covers the 180 max); dashboard history,
+  exam-track filter, backfill, and retake labels all key off
+  `isCustomKey`/`examOfPaperKey`, which resolve `custom-jee-` → jee
+- Pool: 1125 tagged (15 papers × 75) across 63/66 chapters
+  (Phy 375 / Chem 387 / Math 363); 3 empty chapters
+  (jchem-s-block, jchem-everyday, jmath-indefinite); 332 in review pile,
+  541 overrides applied
+- Verified: `npm run build` green; sampling smoke test (P/C/M blocks,
+  clamp-to-pool, min-5 gate, `custom-jee-` ids) passes
+

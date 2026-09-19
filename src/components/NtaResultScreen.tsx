@@ -6,7 +6,7 @@ import type { AttemptResult } from '../lib/scoring';
 import type { QuestionKey } from '../lib/attemptsDb';
 import { chapterInfo, customTestChapters, paperTestChapters, type ChapterPerformance } from '../lib/chapterAnalysis';
 import { loadChapterIndex } from '../lib/questionChapterMap';
-import { loadNeetChapterMap } from '../lib/customTest';
+import { loadNeetChapterMap, loadJeeChapterMap, isJeeCustomKey } from '../lib/customTest';
 import { examOfPaperKey } from '../lib/exam';
 import QuestionDiagram from './QuestionDiagram';
 import VectorText from './VectorText';
@@ -252,9 +252,10 @@ function PerformanceAnalysis({
     let cancelled = false;
     setPaperChapters(null);
     if (isCustom) {
-      loadNeetChapterMap().then((map) => {
+      const jee = !!paperKey && isJeeCustomKey(paperKey);
+      (jee ? loadJeeChapterMap() : loadNeetChapterMap()).then((map) => {
         if (cancelled) return;
-        setPaperChapters(customTestChapters(result.questionOutcomes ?? {}, map));
+        setPaperChapters(customTestChapters(result.questionOutcomes ?? {}, map, jee ? 'jee' : 'neet'));
       });
     } else {
       loadChapterIndex().then((index) => {

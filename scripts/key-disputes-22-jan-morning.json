@@ -1,0 +1,212 @@
+[
+ {
+  "correctedTo": "0",
+  "id": 24499,
+  "key": "14",
+  "mine": "0",
+  "number": 24,
+  "reason": "ΔG° = 2(-45) - (-100) = +10 kJ gives Kp = 0.0155, α² = 0.00388, x = 0.39 → 0. Official NTA stem (examside/cracku) shows ΔfG(A) = -50.832 → x = 33, so the DB stem value -45 is additionally suspect and needs stem review (questions table untouched).",
+  "section": "Chemistry",
+  "status": "key-corrected"
+ },
+ {
+  "id": 24459,
+  "number": 9,
+  "section": "Physics",
+  "key": "A",
+  "mine": "D",
+  "status": "key-corrected",
+  "correctedTo": "D",
+  "reason": "E = 0.66 amu = 9.86e-11 J gives ν = 1.49e23 Hz = 14.94e19 kHz = option D; prepp derivation agrees (their label contradicts own math)"
+ },
+ {
+  "id": 24460,
+  "number": 10,
+  "section": "Physics",
+  "key": "D",
+  "mine": "C",
+  "status": "key-corrected",
+  "correctedTo": "C",
+  "reason": "R1/R2 = 40/60 = 2/3 and R1 = 16R2/(16+R2) forces R2 = 8, R1 = 16/3 = option C; NTA official answer (4) carries these values (Matrix)"
+ },
+ {
+  "id": 24469,
+  "number": 19,
+  "section": "Physics",
+  "key": "B",
+  "mine": "C",
+  "status": "key-corrected",
+  "correctedTo": "C",
+  "reason": "ve ∝ R√ρ gives ratio 0.1√0.1, vB = 100√10 = option C; Matrix official opt4 = 100√10 verbatim"
+ },
+ {
+  "id": 24502,
+  "number": 2,
+  "section": "Mathematics",
+  "key": "D",
+  "mine": "C",
+  "status": "key-corrected",
+  "correctedTo": "C",
+  "reason": "f=2x-x^2 gives f(2)-f(3)=0-(-3)=3"
+ },
+ {
+  "id": 24503,
+  "number": 3,
+  "section": "Mathematics",
+  "key": "D",
+  "mine": "B",
+  "status": "key-corrected",
+  "correctedTo": "B",
+  "reason": "domain gives α=-8,β=2/3,γ=10,δ=9; 6×35/3=70"
+ },
+ {
+  "id": 24505,
+  "number": 5,
+  "section": "Mathematics",
+  "key": "B",
+  "mine": "D",
+  "status": "key-corrected",
+  "correctedTo": "D",
+  "reason": "midpoint+perp gives a=3,b=8,c=15; sum squares=298"
+ },
+ {
+  "id": 24515,
+  "number": 15,
+  "section": "Mathematics",
+  "key": "A",
+  "mine": "C",
+  "status": "key-corrected",
+  "correctedTo": "C",
+  "reason": "miss needs |α|>0.745; only 0.8 qualifies"
+ },
+ {
+  "id": 24519,
+  "number": 19,
+  "section": "Mathematics",
+  "key": "A",
+  "mine": "D",
+  "status": "key-corrected",
+  "correctedTo": "D",
+  "reason": "αβ=(√34-3)(√34+3)=34-9=25"
+ },
+ {
+  "id": 24520,
+  "number": 20,
+  "section": "Mathematics",
+  "key": "A",
+  "mine": "C",
+  "status": "key-corrected",
+  "correctedTo": "C",
+  "reason": "d=-5/6, 2a=11/2; S12=6(11/2-55/6)=-22"
+ },
+ {
+  "id": 24524,
+  "number": 24,
+  "section": "Mathematics",
+  "key": "2",
+  "mine": "4",
+  "status": "key-corrected",
+  "correctedTo": "4",
+  "reason": "ratio=(3+√5)/2 so α+β=4"
+ },
+ {
+  "id": 24525,
+  "number": 25,
+  "section": "Mathematics",
+  "key": "715",
+  "mine": "660",
+  "status": "key-corrected",
+  "correctedTo": "660",
+  "reason": "1287-153-321-153=660 valid pentagons"
+ },
+ {
+  "id": 24501,
+  "number": 1,
+  "section": "Mathematics",
+  "key": "C",
+  "mine": "A",
+  "status": "key-corrected",
+  "correctedTo": "A",
+  "reason": "NTA original (examside 22-Jan-Morning Q13) is f(x) = x^2025 - x^2000, min on [0,1] = 80^80 n^-81: x0^25 = 80/81 gives min = -80^80/81^81 so n = -81 (option A). DB stem dropped the 2025/2000 exponents."
+ },
+ {
+  "id": 24504,
+  "number": 4,
+  "section": "Mathematics",
+  "key": "C",
+  "mine": "C",
+  "status": "needs-verification",
+  "correctedTo": null,
+  "reason": "NTA original (Aakash Sec-B Q21 + examside) is A = [[2,3],[3,5]] as a NUMERICAL with answer 16; DB stem shows [[1,2],[3,5]] as MCQ. Value 16 = option C, so key C retained; solution derives 16 via the true matrix."
+ },
+ {
+  "id": 24516,
+  "number": 16,
+  "section": "Mathematics",
+  "key": "A",
+  "mine": "A",
+  "status": "needs-verification",
+  "correctedTo": null,
+  "reason": "NTA original (examside Q17) has the point at distance 4sqrt(14) (DB stem: sqrt(14)) and radical options; SD = 28/sqrt(35) = 4sqrt(7)/sqrt(5) = option A. Key A retained; solution derives the true value."
+ },
+ {
+  "id": 24517,
+  "number": 17,
+  "section": "Mathematics",
+  "key": "B",
+  "mine": "C",
+  "status": "key-corrected",
+  "correctedTo": "C",
+  "reason": "NTA original (Aakash Sec-A Q7 + examside Q10) is integral dx/([x]+4) over [-pi/2, pi/2] = 7pi/20 - 7/60 = 7(3pi-1)/60 (option C). DB stem shows [x]/(1+4^x)."
+ },
+ {
+  "id": 24471,
+  "number": 21,
+  "section": "Physics",
+  "key": "2",
+  "mine": "20",
+  "status": "key-corrected",
+  "correctedTo": "20",
+  "reason": "NTA original (examside official answer 20): current is (1/e) of max and value is alpha.pi/e^2 (DB stem: (1-1/e), alpha.pi). u = mu0.n^2.I^2/2 = 20pi/e^2 so alpha = 20."
+ },
+ {
+  "id": 24521,
+  "number": 21,
+  "section": "Mathematics",
+  "key": "16",
+  "mine": "18",
+  "status": "key-corrected",
+  "correctedTo": "18",
+  "reason": "NTA original (examside official answer 18): A + A^T = O with A[1,-1,0]T = [3,3,2]T and A^2[1,-1,0]T = [-3,19,-24]T gives a = -3, b = 3, c = 5; det(A+I) = 44 = 4x11 so (8x44^2)^2 = 2^14.11^4, sum 18. DB stem (A^2+A=O etc.) is unrelated."
+ },
+ {
+  "id": 24522,
+  "number": 22,
+  "section": "Mathematics",
+  "key": "20",
+  "mine": "49",
+  "status": "key-corrected",
+  "correctedTo": "49",
+  "reason": "NTA original (examside official answer 49): the three omega-terms have equal modulus 228 and sum 0, so their 20th powers cancel; total = 7^20 = m^10 gives m = 49. DB stem shows = 10^m (should be = m^10)."
+ },
+ {
+  "id": 24523,
+  "number": 23,
+  "section": "Mathematics",
+  "key": "30",
+  "mine": "16",
+  "status": "key-corrected",
+  "correctedTo": "16",
+  "reason": "NTA original (Aakash Sec-A Q9, MCQ answer 16): integral cos^-5/2.sin^-11/2 with t = cot x gives -(2/9)t^9/2 -(6/5)t^5/2 -6t^1/2 +(2/3)t^-3/2; 15x144/135 = 16. DB stem integrand/form garbled."
+ },
+ {
+  "id": 24475,
+  "number": 25,
+  "section": "Physics",
+  "key": "648",
+  "mine": "600",
+  "status": "key-corrected",
+  "correctedTo": "600",
+  "reason": "NTA original (examside official answer 600, figure: O->A 40 m, A->B 25 m): path diff at B = 50 - 20sqrt(5) = 5.4 m with sqrt(5) = 2.23; 10 cycles give 10L = 5.4, L = 0.54, f = 324/0.54 = 600. DB stem lacks the figure/givens."
+ }
+]

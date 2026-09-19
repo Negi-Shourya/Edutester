@@ -31,7 +31,7 @@ export default function TestInterface() {
   const paperParam = searchParams.get('paper');
   const customParam = searchParams.get('custom');
   const isChapter = Boolean(chapterParam);
-  // Custom tests (?custom=custom-neet-…) are student-built from the audited
+  // Custom tests (?custom=custom-neet-… / custom-jee-…) are student-built from the audited
   // chapter pool: randomly sampled, shuffled, single "Mixed" section.
   const isCustom = Boolean(customParam) && !isChapter;
   const paperKey = chapterParam || paperParam || customParam || DEFAULT_PAPER_KEY;
