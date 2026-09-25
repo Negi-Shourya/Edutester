@@ -128,6 +128,11 @@ export async function submitAttempt(input: SubmitAttemptInput): Promise<SubmitAt
         if (!userAns) {
           totalUnattempted++;
           questionOutcomes[String(qs.id)] = 'unattempted';
+        } else if (!correctAns) {
+          // Bonus question (empty key): anyone who attempted gets full marks (mirrors score-attempt edge fn).
+          totalCorrect++;
+          totalScore += 4;
+          questionOutcomes[String(qs.id)] = 'correct';
         } else if (
           correctAns &&
           correctAns.split(',').map((c) => c.trim().toLowerCase()).includes(userAns.toLowerCase())

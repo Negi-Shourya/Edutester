@@ -93,7 +93,7 @@ export default function Dashboard() {
   const [expanded, setExpanded] = useState<string | null>(null);
   const [expandedSubject, setExpandedSubject] = useState<string | null>(null);
   const [inProgress, setInProgress] = useState<SavedAttempt | null>(null);
-  const [historyFilter, setHistoryFilter] = useState<'all' | 'paper' | 'chapter'>('all');
+  const [historyFilter, setHistoryFilter] = useState<'all' | 'paper' | 'chapter' | 'custom'>('all');
   // Test history shows the 7 most recent tests; "Show more" reveals the rest.
   const [showAllHistory, setShowAllHistory] = useState(false);
   const HISTORY_VISIBLE = 7;
@@ -217,24 +217,21 @@ export default function Dashboard() {
     return [...chapterRecs, ...overall.recommendations].slice(0, 4);
   }, [overall, chapterPerf]);
 
-  const filteredAnalyses = useMemo(() => {
-    if (!trackAnalyses) return null;
-    if (historyFilter === 'all') return trackAnalyses;
-    return trackAnalyses.filter((a) => {
-      const isCh =
-        a.row.test_type === 'chapter' ||
-        a.row.paper_key.startsWith('jee-') ||
-        a.row.paper_key.startsWith('neet-') ||
-        a.row.paper_key.startsWith('ch-');
-      return historyFilter === 'chapter' ? isCh : !isCh;
-    });
-  }, [trackAnalyses, historyFilter]);
+  const customCount = useMemo(
+    () =>
+      (trackAnalyses ?? []).filter(
+        (a) => a.row.test_type === 'custom' || isCustomKey(a.row.paper_key)
+      ).length,
+    [trackAnalyses]
+  );
 
   const paperCount = useMemo(
     () =>
       (trackAnalyses ?? []).filter(
         (a) =>
           a.row.test_type !== 'chapter' &&
+          a.row.test_type !== 'custom' &&
+          !isCustomKey(a.row.paper_key) &&
           !a.row.paper_key.startsWith('jee-') &&
           !a.row.paper_key.startsWith('neet-') &&
           !a.row.paper_key.startsWith('ch-')
@@ -246,13 +243,35 @@ export default function Dashboard() {
     () =>
       (trackAnalyses ?? []).filter(
         (a) =>
-          a.row.test_type === 'chapter' ||
+          (a.row.test_type === 'chapter' ||
           a.row.paper_key.startsWith('jee-') ||
           a.row.paper_key.startsWith('neet-') ||
-          a.row.paper_key.startsWith('ch-')
+          a.row.paper_key.startsWith('ch-')) &&
+          a.row.test_type !== 'custom' &&
+          !isCustomKey(a.row.paper_key)
       ).length,
     [trackAnalyses]
   );
+
+  const filteredAnalyses = useMemo(() => {
+    if (!trackAnalyses) return null;
+    if (historyFilter === 'all') return trackAnalyses;
+    if (historyFilter === 'custom') {
+      return trackAnalyses.filter(
+        (a) => a.row.test_type === 'custom' || isCustomKey(a.row.paper_key)
+      );
+    }
+    return trackAnalyses.filter((a) => {
+      const isCustom = a.row.test_type === 'custom' || isCustomKey(a.row.paper_key);
+      if (isCustom) return false;
+      const isCh =
+        a.row.test_type === 'chapter' ||
+        a.row.paper_key.startsWith('jee-') ||
+        a.row.paper_key.startsWith('neet-') ||
+        a.row.paper_key.startsWith('ch-');
+      return historyFilter === 'chapter' ? isCh : !isCh;
+    });
+  }, [trackAnalyses, historyFilter]);
 
   const loading = attempts === null || analyses === null;
   const rows = trackAttempts ?? [];
@@ -530,6 +549,16 @@ export default function Dashboard() {
                       >
                         Papers ({paperCount})
                       </button>
+                      <button
+                        onClick={() => { setHistoryFilter('custom'); setShowAllHistory(false); }}
+                        className={`px-3 py-1 rounded-md transition-all ${
+                          historyFilter === 'custom'
+                            ? 'bg-white text-violet-700 shadow-xs font-semibold'
+                            : 'text-gray-500 hover:text-gray-900'
+                        }`}
+                      >
+                        Custom ({customCount})
+                      </button>
                     </div>
                   </div>
 
@@ -565,7 +594,7 @@ export default function Dashboard() {
                       </>
                     ) : (
                       <div className="text-center py-8 text-sm text-gray-400 border border-dashed border-gray-200 rounded-xl">
-                        No {historyFilter === 'chapter' ? 'chapter tests' : 'paper tests'} recorded yet.
+                        No {historyFilter === 'chapter' ? 'chapter tests' : historyFilter === 'custom' ? 'custom tests' : 'paper tests'} recorded yet.
                       </div>
                     )}
                   </div>
@@ -1011,12 +1040,20 @@ function TestHistoryCard({ analysis, expanded, onToggle }: {
             {/* Retake and navigation bar */}
             <div className="flex items-center justify-between pt-2 border-t border-gray-200/60">
               {isCustom ? (
-                <Link
-                  to="/custom-test"
-                  className="inline-flex items-center gap-1.5 text-xs font-semibold text-violet-700 bg-violet-600/10 hover:bg-violet-600/20 px-3 py-1.5 rounded-lg transition-colors"
-                >
-                  <Shuffle className="w-3 h-3" /> Build a new custom test
-                </Link>
+                <div className="flex items-center gap-2 flex-wrap">
+                  <Link
+                    to={`/test?custom=${row.paper_key}`}
+                    className="inline-flex items-center gap-1.5 text-xs font-semibold text-white bg-violet-600 hover:bg-violet-700 px-3 py-1.5 rounded-lg transition-colors shadow-xs"
+                  >
+                    <FileText className="w-3.5 h-3.5" /> View Solutions & Analysis
+                  </Link>
+                  <Link
+                    to="/custom-test"
+                    className="inline-flex items-center gap-1.5 text-xs font-medium text-violet-700 bg-violet-50 hover:bg-violet-100 px-2.5 py-1.5 rounded-lg transition-colors"
+                  >
+                    <Shuffle className="w-3 h-3" /> Build another test
+                  </Link>
+                </div>
               ) : (
                 <Link
                   to={isChapter ? `/test?chapter=${row.paper_key}` : `/test?paper=${row.paper_key}`}

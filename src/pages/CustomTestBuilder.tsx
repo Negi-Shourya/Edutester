@@ -3,7 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { motion } from 'motion/react';
 import {
   Atom, FlaskConical, Dna, Sigma, Minus, Plus, Clock, Shuffle, GraduationCap,
-  Lock, Crown, ChevronRight, RotateCcw, Search, ListChecks,
+  Lock, Crown, ChevronRight, RotateCcw, Search, ListChecks, Sparkles,
 } from 'lucide-react';
 import { useAuth } from '../context/auth-context';
 import { useSubscriptionAccess } from '../lib/subscription';
@@ -16,7 +16,7 @@ import {
 } from '../data/jeeCustomChapters';
 import {
   loadNeetChapterMap, loadJeeChapterMap, poolByChapter, buildCustomTest,
-  buildJeeCustomTest, saveCustomTest, MAX_CUSTOM_QUESTIONS,
+  buildJeeCustomTest, saveCustomTest, MAX_CUSTOM_QUESTIONS, getCustomTestQuota,
 } from '../lib/customTest';
 
 type BuilderSubject = NeetSubject | JeeSubject;
@@ -52,6 +52,29 @@ export default function CustomTestBuilder() {
   const [search, setSearch] = useState('');
   const [picks, setPicks] = useState<Record<string, number>>({});
   const [minutes, setMinutes] = useState(60);
+
+  const [quotaLoading, setQuotaLoading] = useState(true);
+  const [hasFreeAttempt, setHasFreeAttempt] = useState(false);
+  const [customAttemptsCount, setCustomAttemptsCount] = useState(0);
+
+  useEffect(() => {
+    let cancelled = false;
+    if (!userId) {
+      setQuotaLoading(false);
+      return;
+    }
+    setQuotaLoading(true);
+    getCustomTestQuota(userId).then((res) => {
+      if (!cancelled) {
+        setHasFreeAttempt(res.hasFreeAttempt);
+        setCustomAttemptsCount(res.customAttemptsCount);
+        setQuotaLoading(false);
+      }
+    });
+    return () => {
+      cancelled = true;
+    };
+  }, [userId]);
 
   const isJee = exam === 'jee';
   const chapters = isJee ? JEE_CUSTOM_CHAPTERS : NEET_CUSTOM_CHAPTERS;
@@ -128,25 +151,26 @@ export default function CustomTestBuilder() {
     navigate(`/test?custom=${def.id}`);
   };
 
-  if (!accessLoading && !hasAccess) {
+  const canAccessBuilder = hasAccess || hasFreeAttempt;
+  const isFreeTrial = !hasAccess && hasFreeAttempt;
+
+  if (!user) {
     return (
       <div className="min-h-screen bg-stone-50 flex items-center justify-center px-4 py-12">
         <div className="bg-white border border-stone-200 rounded-2xl p-10 max-w-md w-full text-center shadow-sm">
-          <div className="w-14 h-14 bg-gradient-to-br from-violet-500 to-purple-600 rounded-2xl flex items-center justify-center mx-auto mb-5 shadow-lg">
-            <Lock className="w-7 h-7 text-white" />
+          <div className="w-14 h-14 bg-gradient-to-br from-violet-500 to-indigo-600 rounded-2xl flex items-center justify-center mx-auto mb-5 shadow-lg">
+            <Sparkles className="w-7 h-7 text-white" />
           </div>
-          <h2 className="text-xl font-bold text-stone-800 mb-2">Custom Tests are a Pro feature</h2>
+          <h2 className="text-xl font-bold text-stone-800 mb-2">Claim your 1 Free Custom Test</h2>
           <p className="text-sm text-stone-500 mb-6 leading-relaxed">
-            Build your own papers from any chapters — strengths, weaknesses,
-            or the full syllabus. Subscribe to unlock it.
+            Sign in to pick any combination of chapters, customize question count and timer, and test yourself with full NTA-style scoring.
           </p>
           <div className="flex flex-col gap-2">
             <button
-              onClick={() => navigate('/pricing')}
-              className="w-full flex items-center justify-center gap-2 bg-gradient-to-r from-violet-500 to-purple-600 text-white py-3 rounded-xl text-sm font-semibold hover:opacity-90 transition-opacity"
+              onClick={() => navigate('/login?next=/custom-test')}
+              className="w-full flex items-center justify-center gap-2 bg-gradient-to-r from-violet-600 to-indigo-600 text-white py-3 rounded-xl text-sm font-semibold hover:opacity-90 transition-opacity"
             >
-              <Crown className="w-4 h-4" />
-              View Subscription Plans
+              Sign In to Continue
             </button>
             <button
               onClick={() => navigate('/dashboard')}
@@ -160,11 +184,67 @@ export default function CustomTestBuilder() {
     );
   }
 
+  if (!accessLoading && !quotaLoading && !canAccessBuilder) {
+    return (
+      <div className="min-h-screen bg-stone-50 flex items-center justify-center px-4 py-12">
+        <div className="bg-white border border-stone-200 rounded-2xl p-10 max-w-md w-full text-center shadow-sm">
+          <div className="w-14 h-14 bg-gradient-to-br from-violet-500 to-purple-600 rounded-2xl flex items-center justify-center mx-auto mb-5 shadow-lg">
+            <Lock className="w-7 h-7 text-white" />
+          </div>
+          <h2 className="text-xl font-bold text-stone-800 mb-2">You've used your free custom test!</h2>
+          <p className="text-sm text-stone-500 mb-6 leading-relaxed">
+            You have already completed {customAttemptsCount > 1 ? `${customAttemptsCount} custom tests` : 'your 1 free custom test'}. Subscribe to Pro to unlock unlimited custom tests from any chapter, targeted weakness practice, and complete analytics.
+          </p>
+          <div className="flex flex-col gap-2.5">
+            <button
+              onClick={() => navigate('/pricing')}
+              className="w-full flex items-center justify-center gap-2 bg-gradient-to-r from-violet-500 to-purple-600 text-white py-3 rounded-xl text-sm font-semibold hover:opacity-90 transition-opacity"
+            >
+              <Crown className="w-4 h-4" />
+              Upgrade to Pro for Unlimited Tests
+            </button>
+            <button
+              onClick={() => navigate('/dashboard')}
+              className="w-full py-2.5 rounded-xl text-sm font-medium text-stone-600 hover:bg-stone-100 transition-colors"
+            >
+              View Your Test Results on Dashboard
+            </button>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
   const canGenerate = totalPicked >= 5 && !poolLoading;
 
   return (
     <div className="bg-stone-50 min-h-screen">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+        {/* Free trial banner */}
+        {isFreeTrial && (
+          <div className="bg-gradient-to-r from-violet-600 to-indigo-600 text-white p-4 rounded-2xl flex flex-col sm:flex-row sm:items-center justify-between gap-3 shadow-md shadow-violet-600/10 mb-8 animate-fade-up">
+            <div className="flex items-center gap-3">
+              <div className="w-9 h-9 rounded-xl bg-white/15 flex items-center justify-center shrink-0">
+                <Sparkles className="w-5 h-5 text-amber-300" />
+              </div>
+              <div>
+                <p className="font-bold text-sm text-white flex items-center gap-1.5">
+                  1 Free Custom Test Available
+                  <span className="text-[10px] bg-amber-400 text-stone-900 font-bold px-2 py-0.5 rounded-full uppercase tracking-wider">Free Trial</span>
+                </p>
+                <p className="text-xs text-violet-100">
+                  Select your chapters, choose your duration and question count, and experience full NTA-style testing & chapter-wise analytics.
+                </p>
+              </div>
+            </div>
+            <Link
+              to="/pricing"
+              className="inline-flex items-center justify-center gap-1 text-xs font-semibold bg-white text-violet-700 hover:bg-violet-50 px-3.5 py-2 rounded-xl transition-all shadow-sm shrink-0"
+            >
+              <Crown className="w-3.5 h-3.5" /> Unlock Unlimited Tests
+            </Link>
+          </div>
+        )}
         {/* Exam picker */}
         <div className="flex justify-center mb-8">
           <div className="inline-flex bg-white border border-stone-200 rounded-full p-1 shadow-sm">

@@ -1,0 +1,56 @@
+[
+ {
+  "id": 29829,
+  "number": 4,
+  "key": "B",
+  "mine": "none",
+  "status": "bonus-awarded",
+  "reason": "partitions give -200 absent from options",
+  "correctedTo": ""
+ },
+ {
+  "id": 29832,
+  "number": 7,
+  "key": "A",
+  "mine": "none",
+  "status": "bonus-awarded",
+  "reason": "(4x^3-1)/3x; option A fails ODE at x=2",
+  "correctedTo": ""
+ },
+ {
+  "id": 29836,
+  "number": 11,
+  "key": "C",
+  "mine": "none",
+  "status": "bonus-awarded",
+  "reason": "21/13 absent from options",
+  "correctedTo": ""
+ },
+ {
+  "id": 29843,
+  "number": 18,
+  "key": "B",
+  "mine": "none",
+  "status": "bonus-awarded",
+  "reason": "count=76 absent (options 180/194/198/186); verified by hand",
+  "correctedTo": ""
+ },
+ {
+  "id": 29848,
+  "number": 23,
+  "key": "6",
+  "mine": "none",
+  "status": "bonus-awarded",
+  "reason": "|axb|=3,|c|=1,sin30 -> 3/2 absent",
+  "correctedTo": ""
+ },
+ {
+  "id": 29849,
+  "number": 24,
+  "key": "9",
+  "mine": "none",
+  "status": "bonus-awarded",
+  "reason": "-6<k<4 minus degenerate k=2 -> 8 integers",
+  "correctedTo": ""
+ }
+]

@@ -42,6 +42,30 @@ const PAPERS = [
   '22-jan-morning',
   '22-jan-evening',
   '23-jan-morning',
+  '23-jan-evening',
+  '24-jan-morning',
+  '24-jan-evening',
+  '28-jan-morning',
+  '28-jan-evening',
+  '08-apr-evening-2025',
+  '22-jan-morning-2025',
+  '22-jan-evening-2025',
+  '23-jan-morning-2025',
+  '23-jan-evening-2025',
+  '24-jan-morning-2025',
+  '24-jan-evening-2025',
+  '28-jan-morning-2025',
+  '28-jan-evening-2025',
+  '29-jan-morning-2025',
+  '29-jan-evening-2025',
+  '02-apr-morning-2025',
+  '02-apr-evening-2025',
+  '03-apr-morning-2025',
+  '03-apr-evening-2025',
+  '04-apr-morning-2025',
+  '04-apr-evening-2025',
+  '07-apr-morning-2025',
+  '07-apr-evening-2025',
 ];
 
 let THRESHOLD = 2;
@@ -384,6 +408,17 @@ function main() {
       const stem = q.text || '';
       total++;
       perPaper[key].total++;
+
+      if (overrides[String(q.id)]) {
+        const ovr = overrides[String(q.id)];
+        if (PROFILES.some((p) => p.chapterId === ovr)) {
+          map[String(q.id)] = ovr;
+          perChapter[ovr] = (perChapter[ovr] || 0) + 1;
+          perPaper[key].accepted++;
+          continue;
+        }
+      }
+
       const hit = classify(stem, subject);
       const optText = ((q.question_options || []).map((o) => o.text || '').join(' ')).trim();
       if (!hit) {

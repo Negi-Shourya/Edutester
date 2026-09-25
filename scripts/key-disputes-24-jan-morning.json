@@ -1,1 +1,29 @@
-[{"correctedTo":"D","id":24708,"key":"A","mine":"D","number":8,"reason":"ClO4- is genuinely tetrahedral sp3, so all four (A,B,C,D) are correct","section":"Chemistry","status":"key-corrected"}]
+[
+ {
+  "id": 24684,
+  "number": 9,
+  "key": "C",
+  "mine": "A",
+  "status": "key-corrected",
+  "reason": "LCR: XL=70,XC=150,R=60 -> Z=100, cos=0.6, alpha=6; NTA official key 6",
+  "correctedTo": "A"
+ },
+ {
+  "id": 24699,
+  "number": 24,
+  "key": "110",
+  "mine": "210",
+  "status": "key-corrected",
+  "reason": "F=70+50+90=210N; NTA official key 210",
+  "correctedTo": "210"
+ },
+ {
+  "id": 24677,
+  "number": 2,
+  "key": "A",
+  "mine": "B",
+  "status": "key-corrected",
+  "reason": "EM match A-IV,B-I,C-II,D-III is option B text; official mapping",
+  "correctedTo": "B"
+ }
+]

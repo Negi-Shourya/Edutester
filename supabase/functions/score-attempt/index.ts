@@ -309,6 +309,21 @@ Deno.serve(async (req) => {
     return json({ error: 'Failed to record submission' }, 502);
   }
 
+  // Free trial policy for custom tests: every signed-in user is entitled to 1 free
+  // custom test attempt. If this is a custom test and the user has not yet recorded
+  // any completed custom test attempt in the database, permit scoring as a trial.
+  if (isCustom && !isTrial) {
+    const { count: customAttemptsCount, error: countError } = await supabaseAdmin
+      .from('attempts')
+      .select('id', { count: 'exact', head: true })
+      .eq('user_id', user.id)
+      .eq('test_type', 'custom');
+
+    if (!countError && (customAttemptsCount ?? 0) === 0) {
+      isTrial = true;
+    }
+  }
+
   if (!isTrial) {
     const now = new Date().toISOString();
     const { data: subs, error: subError } = await supabaseAdmin
@@ -453,3 +468,4 @@ Deno.serve(async (req) => {
 
   return json({ attemptId, result, keys: keysPayload });
 });
+

@@ -58,4 +58,12 @@ scripts/disputes-*-phy.json
 scripts/solutions-*-chem.json
 scripts/solutions-*-math.json
 scripts/solutions-*-phy.json
+scripts/_*
+scripts/dump_*
+scripts/inspect_*
+scripts/backup-*
+scripts/check_endings.py
+scripts/make_review_*.py
+graphify-out/2026-*/
+
 

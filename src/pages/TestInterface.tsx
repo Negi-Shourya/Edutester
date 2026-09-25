@@ -1,7 +1,7 @@
 import { useState, useEffect, useCallback, useRef, useMemo } from 'react';
 import { useSearchParams, useNavigate } from 'react-router-dom';
 import { getPaperQuestions, getChapterQuestions, type PaperQuestions } from '../data/questions';
-import { getCustomQuestions, loadCustomTest } from '../lib/customTest';
+import { getCustomQuestions, loadCustomTest, getCustomTestQuota, saveCustomTest } from '../lib/customTest';
 import type { Question, QuestionState, QuestionStatus } from '../types';
 import { DEFAULT_PAPER_KEY, useSubscriptionAccess } from '../lib/subscription';
 import { loadAttempt, saveAttempt, clearAttempt } from '../lib/attemptStorage';
@@ -190,37 +190,73 @@ export default function TestInterface() {
 
     if (isCustom) {
       if (!userId || !customParam) return;
-      const def = loadCustomTest(userId, customParam);
-      if (!def) {
-        setLoadError('This custom test was created on another device or browser. Build a new one to continue.');
-        return;
-      }
-      getCustomQuestions(def.questionIds)
-        .then((questions) => {
-          if (cancelled) return;
-          setPaperData({
-            paper: {
-              key: def.id,
-              title: 'Custom Test',
-              fullTitle: def.title,
-              examDate: new Date(def.createdAt).toISOString().slice(0, 10),
-              session: null,
-              examType: 'neet',
-              isTrial: false,
-              durationMinutes: def.durationMinutes,
-            },
-            questions,
-          });
-          setTimeLeft(def.durationMinutes * 60);
-          if (questions.length > 0) {
-            setActiveSection(questions[0].section);
+      let def = loadCustomTest(userId, customParam);
+
+      const setupCustom = async () => {
+        if (!def) {
+          // If def is missing from localStorage, check if this test was already recorded in attempts DB
+          const { data: dbAttempt } = await supabase
+            .from('attempts')
+            .select('*')
+            .eq('user_id', userId)
+            .eq('paper_key', customParam)
+            .maybeSingle();
+
+          if (dbAttempt && dbAttempt.question_outcomes) {
+            const qIds = Object.keys(dbAttempt.question_outcomes)
+              .map(Number)
+              .filter((n) => Number.isFinite(n) && n > 0);
+            if (qIds.length > 0) {
+              def = {
+                id: customParam,
+                title: dbAttempt.title || 'Custom Test',
+                questionIds: qIds,
+                durationMinutes: Math.max(5, Math.round((dbAttempt.time_spent || 3600) / 60)),
+                picks: {},
+                createdAt: new Date(dbAttempt.created_at).getTime(),
+              };
+              saveCustomTest(userId, def);
+            }
           }
-        })
-        .catch((err: unknown) => {
+        }
+
+        if (!def) {
           if (!cancelled) {
-            setLoadError(err instanceof Error ? err.message : 'Failed to load test.');
+            setLoadError('This custom test was created on another device or browser. Build a new one to continue.');
           }
+          return;
+        }
+
+        // Allow taking the test if subscriber OR eligible for 1 free custom test
+        const quota = await getCustomTestQuota(userId);
+        const isTrialAllowed = hasAccess || quota.hasFreeAttempt;
+
+        const questions = await getCustomQuestions(def.questionIds);
+        if (cancelled) return;
+        setPaperData({
+          paper: {
+            key: def.id,
+            title: 'Custom Test',
+            fullTitle: def.title,
+            examDate: new Date(def.createdAt).toISOString().slice(0, 10),
+            session: null,
+            examType: def.id.includes('jee') ? 'jee' : 'neet',
+            isTrial: isTrialAllowed,
+            durationMinutes: def.durationMinutes,
+          },
+          questions,
         });
+        setTimeLeft(def.durationMinutes * 60);
+        if (questions.length > 0) {
+          setActiveSection(questions[0].section);
+        }
+      };
+
+      setupCustom().catch((err: unknown) => {
+        if (!cancelled) {
+          setLoadError(err instanceof Error ? err.message : 'Failed to load test.');
+        }
+      });
 
       return () => {
         cancelled = true;
@@ -713,7 +749,7 @@ export default function TestInterface() {
   // Waits for the paper to load: until then `is_trial` is unknown, and
   // defaulting either way is wrong — false flashes a paywall at a free paper,
   // true flashes the exam at a locked one. The loading branch below covers it.
-  if (paperData && !hasAccess && !paperData.paper.isTrial) {
+  if (paperData && !hasAccess && !paperData.paper.isTrial && !resultPayload) {
     return (
       <div className="min-h-screen bg-[#091526] flex items-center justify-center px-4">
         <div className="bg-white/5 border border-white/10 rounded-2xl p-10 max-w-md w-full text-center">

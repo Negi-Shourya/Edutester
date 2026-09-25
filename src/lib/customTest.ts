@@ -244,3 +244,24 @@ export async function getCustomQuestions(ids: number[]): Promise<Question[]> {
       figureUrl: row.figure_url ?? undefined,
     }));
 }
+
+/** Check if the user is eligible for a free custom test (1 free attempt allowed). */
+export async function getCustomTestQuota(userId: string): Promise<{
+  hasFreeAttempt: boolean;
+  customAttemptsCount: number;
+}> {
+  if (!userId) return { hasFreeAttempt: false, customAttemptsCount: 0 };
+  const { count, error } = await supabase
+    .from('attempts')
+    .select('id', { count: 'exact', head: true })
+    .eq('user_id', userId)
+    .eq('test_type', 'custom');
+  if (error) {
+    console.warn('Failed to fetch custom attempts count:', error.message);
+  }
+  const countNum = count ?? 0;
+  return {
+    hasFreeAttempt: countNum === 0,
+    customAttemptsCount: countNum,
+  };
+}

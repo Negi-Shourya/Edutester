@@ -1,0 +1,418 @@
+[
+ {
+  "path": "jee-2026-jan/21-jan-evening/q1.png",
+  "bytes": 10073
+ },
+ {
+  "path": "jee-2026-jan/21-jan-evening/q11.png",
+  "bytes": 7418
+ },
+ {
+  "path": "jee-2026-jan/21-jan-evening/q39.png",
+  "bytes": 40982
+ },
+ {
+  "path": "jee-2026-jan/21-jan-evening/q40_opt_a.png",
+  "bytes": 8893
+ },
+ {
+  "path": "jee-2026-jan/21-jan-evening/q40_opt_b.png",
+  "bytes": 10460
+ },
+ {
+  "path": "jee-2026-jan/21-jan-evening/q40_opt_c.png",
+  "bytes": 9704
+ },
+ {
+  "path": "jee-2026-jan/21-jan-evening/q40_opt_d.png",
+  "bytes": 7837
+ },
+ {
+  "path": "jee-2026-jan/21-jan-evening/q5.png",
+  "bytes": 22727
+ },
+ {
+  "path": "jee-2026-jan/21-jan-evening/q9.png",
+  "bytes": 11714
+ },
+ {
+  "path": "jee-2026-jan/21-jan-morning/q16.png",
+  "bytes": 8315
+ },
+ {
+  "path": "jee-2026-jan/21-jan-morning/q18.png",
+  "bytes": 31891
+ },
+ {
+  "path": "jee-2026-jan/21-jan-morning/q19.png",
+  "bytes": 12613
+ },
+ {
+  "path": "jee-2026-jan/21-jan-morning/q22.png",
+  "bytes": 8812
+ },
+ {
+  "path": "jee-2026-jan/21-jan-morning/q24.png",
+  "bytes": 9188
+ },
+ {
+  "path": "jee-2026-jan/21-jan-morning/q27_opt_a.png",
+  "bytes": 4341
+ },
+ {
+  "path": "jee-2026-jan/21-jan-morning/q27_opt_b.png",
+  "bytes": 4735
+ },
+ {
+  "path": "jee-2026-jan/21-jan-morning/q27_opt_c.png",
+  "bytes": 5034
+ },
+ {
+  "path": "jee-2026-jan/21-jan-morning/q27_opt_d.png",
+  "bytes": 3071
+ },
+ {
+  "path": "jee-2026-jan/21-jan-morning/q32.png",
+  "bytes": 29057
+ },
+ {
+  "path": "jee-2026-jan/21-jan-morning/q34.png",
+  "bytes": 15528
+ },
+ {
+  "path": "jee-2026-jan/21-jan-morning/q34_opt_a.png",
+  "bytes": 11122
+ },
+ {
+  "path": "jee-2026-jan/21-jan-morning/q34_opt_b.png",
+  "bytes": 11211
+ },
+ {
+  "path": "jee-2026-jan/21-jan-morning/q34_opt_c.png",
+  "bytes": 11024
+ },
+ {
+  "path": "jee-2026-jan/21-jan-morning/q34_opt_d.png",
+  "bytes": 11131
+ },
+ {
+  "path": "jee-2026-jan/21-jan-morning/q37.png",
+  "bytes": 63164
+ },
+ {
+  "path": "jee-2026-jan/21-jan-morning/q38.png",
+  "bytes": 15528
+ },
+ {
+  "path": "jee-2026-jan/21-jan-morning/q38_opt_a.png",
+  "bytes": 11122
+ },
+ {
+  "path": "jee-2026-jan/21-jan-morning/q38_opt_b.png",
+  "bytes": 11211
+ },
+ {
+  "path": "jee-2026-jan/21-jan-morning/q38_opt_c.png",
+  "bytes": 11024
+ },
+ {
+  "path": "jee-2026-jan/21-jan-morning/q38_opt_d.png",
+  "bytes": 11131
+ },
+ {
+  "path": "jee-2026-jan/21-jan-morning/q39.png",
+  "bytes": 63164
+ },
+ {
+  "path": "jee-2026-jan/21-jan-morning/q4.png",
+  "bytes": 8151
+ },
+ {
+  "path": "jee-2026-jan/21-jan-morning/q43_opt_a.png",
+  "bytes": 15553
+ },
+ {
+  "path": "jee-2026-jan/21-jan-morning/q43_opt_b.png",
+  "bytes": 15325
+ },
+ {
+  "path": "jee-2026-jan/21-jan-morning/q43_opt_c.png",
+  "bytes": 15132
+ },
+ {
+  "path": "jee-2026-jan/21-jan-morning/q43_opt_d.png",
+  "bytes": 15843
+ },
+ {
+  "path": "jee-2026-jan/21-jan-morning/q44_opt_a.png",
+  "bytes": 15553
+ },
+ {
+  "path": "jee-2026-jan/21-jan-morning/q44_opt_b.png",
+  "bytes": 15325
+ },
+ {
+  "path": "jee-2026-jan/21-jan-morning/q44_opt_c.png",
+  "bytes": 15132
+ },
+ {
+  "path": "jee-2026-jan/21-jan-morning/q44_opt_d.png",
+  "bytes": 15843
+ },
+ {
+  "path": "jee-2026-jan/21-jan-morning/q49.png",
+  "bytes": 8170
+ },
+ {
+  "path": "jee-2026-jan/21-jan-morning/q6.png",
+  "bytes": 36276
+ },
+ {
+  "path": "jee-2026-jan/22-jan-evening/p9_fig1.png",
+  "bytes": 18817
+ },
+ {
+  "path": "jee-2026-jan/22-jan-evening/p9_fig2.png",
+  "bytes": 553
+ },
+ {
+  "path": "jee-2026-jan/22-jan-morning/q18.png",
+  "bytes": 13255
+ },
+ {
+  "path": "jee-2026-jan/22-jan-morning/q44_opt_a.png",
+  "bytes": 11967
+ },
+ {
+  "path": "jee-2026-jan/22-jan-morning/q44_opt_b.png",
+  "bytes": 10482
+ },
+ {
+  "path": "jee-2026-jan/22-jan-morning/q44_opt_c.png",
+  "bytes": 9910
+ },
+ {
+  "path": "jee-2026-jan/22-jan-morning/q44_opt_d.png",
+  "bytes": 9649
+ },
+ {
+  "path": "jee-2026-jan/22-jan-morning/q46.png",
+  "bytes": 18434
+ },
+ {
+  "path": "jee-2026-jan/22-jan-morning/q49.png",
+  "bytes": 8062
+ },
+ {
+  "path": "jee-2026-jan/23-jan-evening/q14.png",
+  "bytes": 10445
+ },
+ {
+  "path": "jee-2026-jan/23-jan-evening/q38.png",
+  "bytes": 54341
+ },
+ {
+  "path": "jee-2026-jan/23-jan-evening/q4.png",
+  "bytes": 7285
+ },
+ {
+  "path": "jee-2026-jan/23-jan-evening/q42.png",
+  "bytes": 13621
+ },
+ {
+  "path": "jee-2026-jan/23-jan-evening/q45.png",
+  "bytes": 5744
+ },
+ {
+  "path": "jee-2026-jan/23-jan-morning/q11.png",
+  "bytes": 25894
+ },
+ {
+  "path": "jee-2026-jan/23-jan-morning/q15.png",
+  "bytes": 12682
+ },
+ {
+  "path": "jee-2026-jan/23-jan-morning/q16.png",
+  "bytes": 8280
+ },
+ {
+  "path": "jee-2026-jan/23-jan-morning/q21.png",
+  "bytes": 13878
+ },
+ {
+  "path": "jee-2026-jan/23-jan-morning/q23_opt_a.png",
+  "bytes": 19594
+ },
+ {
+  "path": "jee-2026-jan/23-jan-morning/q23_opt_b.png",
+  "bytes": 7763
+ },
+ {
+  "path": "jee-2026-jan/23-jan-morning/q24.png",
+  "bytes": 14966
+ },
+ {
+  "path": "jee-2026-jan/23-jan-morning/q25.png",
+  "bytes": 7583
+ },
+ {
+  "path": "jee-2026-jan/23-jan-morning/q28.png",
+  "bytes": 14565
+ },
+ {
+  "path": "jee-2026-jan/23-jan-morning/q3.png",
+  "bytes": 28873
+ },
+ {
+  "path": "jee-2026-jan/23-jan-morning/q31_opt_a.png",
+  "bytes": 13406
+ },
+ {
+  "path": "jee-2026-jan/23-jan-morning/q31_opt_b.png",
+  "bytes": 11728
+ },
+ {
+  "path": "jee-2026-jan/23-jan-morning/q31_opt_c.png",
+  "bytes": 13894
+ },
+ {
+  "path": "jee-2026-jan/23-jan-morning/q31_opt_d.png",
+  "bytes": 12841
+ },
+ {
+  "path": "jee-2026-jan/23-jan-morning/q36.png",
+  "bytes": 8949
+ },
+ {
+  "path": "jee-2026-jan/23-jan-morning/q36_opt_a.png",
+  "bytes": 10242
+ },
+ {
+  "path": "jee-2026-jan/23-jan-morning/q36_opt_b.png",
+  "bytes": 9638
+ },
+ {
+  "path": "jee-2026-jan/23-jan-morning/q36_opt_c.png",
+  "bytes": 9005
+ },
+ {
+  "path": "jee-2026-jan/23-jan-morning/q36_opt_d.png",
+  "bytes": 9915
+ },
+ {
+  "path": "jee-2026-jan/23-jan-morning/q38.png",
+  "bytes": 19676
+ },
+ {
+  "path": "jee-2026-jan/23-jan-morning/q39_opt_a.png",
+  "bytes": 12120
+ },
+ {
+  "path": "jee-2026-jan/23-jan-morning/q39_opt_b.png",
+  "bytes": 12635
+ },
+ {
+  "path": "jee-2026-jan/23-jan-morning/q39_opt_c.png",
+  "bytes": 10781
+ },
+ {
+  "path": "jee-2026-jan/23-jan-morning/q39_opt_d.png",
+  "bytes": 11588
+ },
+ {
+  "path": "jee-2026-jan/23-jan-morning/q40.png",
+  "bytes": 12852
+ },
+ {
+  "path": "jee-2026-jan/23-jan-morning/q46.png",
+  "bytes": 6074
+ },
+ {
+  "path": "jee-2026-jan/23-jan-morning/q50.png",
+  "bytes": 11716
+ },
+ {
+  "path": "jee-2026-jan/23-jan-morning/q7.png",
+  "bytes": 6792
+ },
+ {
+  "path": "jee-2026-jan/24-jan-morning/q13.png",
+  "bytes": 11255
+ },
+ {
+  "path": "jee-2026-jan/24-jan-morning/q20.png",
+  "bytes": 14156
+ },
+ {
+  "path": "jee-2026-jan/24-jan-morning/q31_opt_a.png",
+  "bytes": 12042
+ },
+ {
+  "path": "jee-2026-jan/24-jan-morning/q31_opt_b.png",
+  "bytes": 11006
+ },
+ {
+  "path": "jee-2026-jan/24-jan-morning/q31_opt_c.png",
+  "bytes": 7804
+ },
+ {
+  "path": "jee-2026-jan/24-jan-morning/q31_opt_d.png",
+  "bytes": 9076
+ },
+ {
+  "path": "jee-2026-jan/24-jan-morning/q37_a.png",
+  "bytes": 6817
+ },
+ {
+  "path": "jee-2026-jan/24-jan-morning/q37_b.png",
+  "bytes": 6669
+ },
+ {
+  "path": "jee-2026-jan/24-jan-morning/q41.png",
+  "bytes": 10319
+ },
+ {
+  "path": "jee-2026-jan/24-jan-morning/q43_opt_a.png",
+  "bytes": 3828
+ },
+ {
+  "path": "jee-2026-jan/24-jan-morning/q43_opt_b.png",
+  "bytes": 6706
+ },
+ {
+  "path": "jee-2026-jan/24-jan-morning/q43_opt_c.png",
+  "bytes": 3213
+ },
+ {
+  "path": "jee-2026-jan/24-jan-morning/q43_opt_d.png",
+  "bytes": 6164
+ },
+ {
+  "path": "jee-2026-jan/24-jan-morning/q8.png",
+  "bytes": 26267
+ },
+ {
+  "path": "jee-2026-jan/28-jan-evening/q11.png",
+  "bytes": 13804
+ },
+ {
+  "path": "jee-2026-jan/28-jan-evening/q13.png",
+  "bytes": 35197
+ },
+ {
+  "path": "jee-2026-jan/28-jan-evening/q15.png",
+  "bytes": 7218
+ },
+ {
+  "path": "jee-2026-jan/28-jan-evening/q19.png",
+  "bytes": 14200
+ },
+ {
+  "path": "jee-2026-jan/28-jan-evening/q23.png",
+  "bytes": 17226
+ },
+ {
+  "path": "jee-2026-jan/28-jan-evening/q6.png",
+  "bytes": 19057
+ }
+]

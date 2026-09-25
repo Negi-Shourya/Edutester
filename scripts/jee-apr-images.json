@@ -1,0 +1,478 @@
+[
+ {
+  "path": "2026-04-02-morning/2026-04-02_morning_Q32.png",
+  "bytes": 59805
+ },
+ {
+  "path": "2026-04-02-morning/2026-04-02_morning_Q36.png",
+  "bytes": 5810
+ },
+ {
+  "path": "2026-04-02-morning/2026-04-02_morning_Q37.png",
+  "bytes": 5146
+ },
+ {
+  "path": "2026-04-02-morning/2026-04-02_morning_Q37_2.png",
+  "bytes": 44480
+ },
+ {
+  "path": "2026-04-02-morning/2026-04-02_morning_Q37_3.png",
+  "bytes": 4880
+ },
+ {
+  "path": "2026-04-02-morning/2026-04-02_morning_Q39.png",
+  "bytes": 14284
+ },
+ {
+  "path": "2026-04-02-morning/2026-04-02_morning_Q41.png",
+  "bytes": 22793
+ },
+ {
+  "path": "2026-04-02-morning/2026-04-02_morning_Q66.png",
+  "bytes": 57045
+ },
+ {
+  "path": "2026-04-02-morning/2026-04-02_morning_Q68.png",
+  "bytes": 128888
+ },
+ {
+  "path": "2026-04-02-evening/2026-04-02_evening_Q28.jpeg",
+  "bytes": 45926
+ },
+ {
+  "path": "2026-04-02-evening/2026-04-02_evening_Q30.jpeg",
+  "bytes": 29554
+ },
+ {
+  "path": "2026-04-02-evening/2026-04-02_evening_Q41.jpeg",
+  "bytes": 18331
+ },
+ {
+  "path": "2026-04-02-evening/2026-04-02_evening_Q42.jpeg",
+  "bytes": 26736
+ },
+ {
+  "path": "2026-04-02-evening/2026-04-02_evening_Q50.jpeg",
+  "bytes": 18480
+ },
+ {
+  "path": "2026-04-02-evening/2026-04-02_evening_Q67.jpeg",
+  "bytes": 8960
+ },
+ {
+  "path": "2026-04-02-evening/2026-04-02_evening_Q68.jpeg",
+  "bytes": 50173
+ },
+ {
+  "path": "2026-04-02-evening/2026-04-02_evening_Q68_2.jpeg",
+  "bytes": 23636
+ },
+ {
+  "path": "2026-04-02-evening/2026-04-02_evening_Q68_3.jpeg",
+  "bytes": 23249
+ },
+ {
+  "path": "2026-04-02-evening/2026-04-02_evening_Q68_4.jpeg",
+  "bytes": 22182
+ },
+ {
+  "path": "2026-04-02-evening/2026-04-02_evening_Q68_5.jpeg",
+  "bytes": 25591
+ },
+ {
+  "path": "2026-04-02-evening/2026-04-02_evening_Q75.jpeg",
+  "bytes": 38395
+ },
+ {
+  "path": "2026-04-04-morning/2026-04-04_morning_Q32.png",
+  "bytes": 18409
+ },
+ {
+  "path": "2026-04-04-morning/2026-04-04_morning_Q38.png",
+  "bytes": 8381
+ },
+ {
+  "path": "2026-04-04-morning/2026-04-04_morning_Q39.png",
+  "bytes": 19141
+ },
+ {
+  "path": "2026-04-04-morning/2026-04-04_morning_Q42.png",
+  "bytes": 27352
+ },
+ {
+  "path": "2026-04-04-morning/2026-04-04_morning_Q43.png",
+  "bytes": 55189
+ },
+ {
+  "path": "2026-04-04-morning/2026-04-04_morning_Q45.png",
+  "bytes": 38586
+ },
+ {
+  "path": "2026-04-04-morning/2026-04-04_morning_Q64.png",
+  "bytes": 6297
+ },
+ {
+  "path": "2026-04-04-morning/2026-04-04_morning_Q64_2.png",
+  "bytes": 4980
+ },
+ {
+  "path": "2026-04-04-morning/2026-04-04_morning_Q64_3.png",
+  "bytes": 5290
+ },
+ {
+  "path": "2026-04-04-morning/2026-04-04_morning_Q64_4.png",
+  "bytes": 6961
+ },
+ {
+  "path": "2026-04-04-morning/2026-04-04_morning_Q66.png",
+  "bytes": 128551
+ },
+ {
+  "path": "2026-04-04-morning/2026-04-04_morning_Q67.png",
+  "bytes": 70281
+ },
+ {
+  "path": "2026-04-04-morning/2026-04-04_morning_Q68.png",
+  "bytes": 49640
+ },
+ {
+  "path": "2026-04-04-morning/2026-04-04_morning_Q68_2.png",
+  "bytes": 45119
+ },
+ {
+  "path": "2026-04-04-morning/2026-04-04_morning_Q70.png",
+  "bytes": 130813
+ },
+ {
+  "path": "2026-04-04-morning/2026-04-04_morning_Q72.png",
+  "bytes": 34554
+ },
+ {
+  "path": "2026-04-04-evening/2026-04-04_evening_Q35.jpeg",
+  "bytes": 24745
+ },
+ {
+  "path": "2026-04-04-evening/2026-04-04_evening_Q37.jpeg",
+  "bytes": 15890
+ },
+ {
+  "path": "2026-04-04-evening/2026-04-04_evening_Q48.jpeg",
+  "bytes": 23382
+ },
+ {
+  "path": "2026-04-04-evening/2026-04-04_evening_Q53.jpeg",
+  "bytes": 10546
+ },
+ {
+  "path": "2026-04-04-evening/2026-04-04_evening_Q53_2.jpeg",
+  "bytes": 11122
+ },
+ {
+  "path": "2026-04-04-evening/2026-04-04_evening_Q53_3.jpeg",
+  "bytes": 12332
+ },
+ {
+  "path": "2026-04-04-evening/2026-04-04_evening_Q53_4.jpeg",
+  "bytes": 10655
+ },
+ {
+  "path": "2026-04-04-evening/2026-04-04_evening_Q54.jpeg",
+  "bytes": 40294
+ },
+ {
+  "path": "2026-04-04-evening/2026-04-04_evening_Q61.jpeg",
+  "bytes": 39509
+ },
+ {
+  "path": "2026-04-04-evening/2026-04-04_evening_Q63.jpeg",
+  "bytes": 40011
+ },
+ {
+  "path": "2026-04-04-evening/2026-04-04_evening_Q64.jpeg",
+  "bytes": 49165
+ },
+ {
+  "path": "2026-04-04-evening/2026-04-04_evening_Q65.jpeg",
+  "bytes": 35778
+ },
+ {
+  "path": "2026-04-04-evening/2026-04-04_evening_Q66.jpeg",
+  "bytes": 70761
+ },
+ {
+  "path": "2026-04-04-evening/2026-04-04_evening_Q67.jpeg",
+  "bytes": 10048
+ },
+ {
+  "path": "2026-04-04-evening/2026-04-04_evening_Q67_2.jpeg",
+  "bytes": 12767
+ },
+ {
+  "path": "2026-04-04-evening/2026-04-04_evening_Q67_3.jpeg",
+  "bytes": 12527
+ },
+ {
+  "path": "2026-04-04-evening/2026-04-04_evening_Q67_4.jpeg",
+  "bytes": 12271
+ },
+ {
+  "path": "2026-04-04-evening/2026-04-04_evening_Q68.jpeg",
+  "bytes": 13467
+ },
+ {
+  "path": "2026-04-04-evening/2026-04-04_evening_Q68_2.jpeg",
+  "bytes": 16759
+ },
+ {
+  "path": "2026-04-04-evening/2026-04-04_evening_Q68_3.jpeg",
+  "bytes": 15608
+ },
+ {
+  "path": "2026-04-04-evening/2026-04-04_evening_Q68_4.jpeg",
+  "bytes": 15397
+ },
+ {
+  "path": "2026-04-05-morning/2026-04-05_morning_Q29.png",
+  "bytes": 12423
+ },
+ {
+  "path": "2026-04-05-morning/2026-04-05_morning_Q30.png",
+  "bytes": 10057
+ },
+ {
+  "path": "2026-04-05-morning/2026-04-05_morning_Q34.png",
+  "bytes": 29385
+ },
+ {
+  "path": "2026-04-05-morning/2026-04-05_morning_Q38.png",
+  "bytes": 91855
+ },
+ {
+  "path": "2026-04-05-morning/2026-04-05_morning_Q43.png",
+  "bytes": 31202
+ },
+ {
+  "path": "2026-04-05-morning/2026-04-05_morning_Q45.png",
+  "bytes": 32744
+ },
+ {
+  "path": "2026-04-05-morning/2026-04-05_morning_Q50.png",
+  "bytes": 18792
+ },
+ {
+  "path": "2026-04-05-morning/2026-04-05_morning_Q64.png",
+  "bytes": 17443
+ },
+ {
+  "path": "2026-04-05-morning/2026-04-05_morning_Q64_2.png",
+  "bytes": 11194
+ },
+ {
+  "path": "2026-04-05-morning/2026-04-05_morning_Q64_3.png",
+  "bytes": 12423
+ },
+ {
+  "path": "2026-04-05-morning/2026-04-05_morning_Q64_4.png",
+  "bytes": 18059
+ },
+ {
+  "path": "2026-04-05-morning/2026-04-05_morning_Q64_5.png",
+  "bytes": 12911
+ },
+ {
+  "path": "2026-04-05-morning/2026-04-05_morning_Q65.png",
+  "bytes": 43283
+ },
+ {
+  "path": "2026-04-05-morning/2026-04-05_morning_Q66.png",
+  "bytes": 127302
+ },
+ {
+  "path": "2026-04-05-morning/2026-04-05_morning_Q68.png",
+  "bytes": 187617
+ },
+ {
+  "path": "2026-04-05-evening/2026-04-05_evening_Q29.jpeg",
+  "bytes": 14235
+ },
+ {
+  "path": "2026-04-05-evening/2026-04-05_evening_Q31.jpeg",
+  "bytes": 6774
+ },
+ {
+  "path": "2026-04-05-evening/2026-04-05_evening_Q37.jpeg",
+  "bytes": 14452
+ },
+ {
+  "path": "2026-04-05-evening/2026-04-05_evening_Q75.jpeg",
+  "bytes": 20952
+ },
+ {
+  "path": "2026-04-06-morning/2026-04-06_morning_Q29.png",
+  "bytes": 43600
+ },
+ {
+  "path": "2026-04-06-morning/2026-04-06_morning_Q32.png",
+  "bytes": 33184
+ },
+ {
+  "path": "2026-04-06-morning/2026-04-06_morning_Q33.png",
+  "bytes": 39380
+ },
+ {
+  "path": "2026-04-06-morning/2026-04-06_morning_Q39.png",
+  "bytes": 41394
+ },
+ {
+  "path": "2026-04-06-morning/2026-04-06_morning_Q41.png",
+  "bytes": 38718
+ },
+ {
+  "path": "2026-04-06-morning/2026-04-06_morning_Q43.png",
+  "bytes": 18061
+ },
+ {
+  "path": "2026-04-06-morning/2026-04-06_morning_Q46.png",
+  "bytes": 41669
+ },
+ {
+  "path": "2026-04-06-morning/2026-04-06_morning_Q67.png",
+  "bytes": 48777
+ },
+ {
+  "path": "2026-04-06-morning/2026-04-06_morning_Q67_2.png",
+  "bytes": 16088
+ },
+ {
+  "path": "2026-04-06-morning/2026-04-06_morning_Q67_3.png",
+  "bytes": 16348
+ },
+ {
+  "path": "2026-04-06-morning/2026-04-06_morning_Q67_4.png",
+  "bytes": 17882
+ },
+ {
+  "path": "2026-04-06-morning/2026-04-06_morning_Q67_5.png",
+  "bytes": 19231
+ },
+ {
+  "path": "2026-04-06-morning/2026-04-06_morning_Q72.png",
+  "bytes": 112803
+ },
+ {
+  "path": "2026-04-06-evening/2026-04-06_evening_Q33.jpeg",
+  "bytes": 53379
+ },
+ {
+  "path": "2026-04-06-evening/2026-04-06_evening_Q43.jpeg",
+  "bytes": 27657
+ },
+ {
+  "path": "2026-04-06-evening/2026-04-06_evening_Q44.jpeg",
+  "bytes": 46718
+ },
+ {
+  "path": "2026-04-06-evening/2026-04-06_evening_Q45.jpeg",
+  "bytes": 55480
+ },
+ {
+  "path": "2026-04-06-evening/2026-04-06_evening_Q55.jpeg",
+  "bytes": 67430
+ },
+ {
+  "path": "2026-04-06-evening/2026-04-06_evening_Q57.jpeg",
+  "bytes": 57250
+ },
+ {
+  "path": "2026-04-06-evening/2026-04-06_evening_Q63.jpeg",
+  "bytes": 13853
+ },
+ {
+  "path": "2026-04-06-evening/2026-04-06_evening_Q66.jpeg",
+  "bytes": 29187
+ },
+ {
+  "path": "2026-04-06-evening/2026-04-06_evening_Q67.jpeg",
+  "bytes": 50804
+ },
+ {
+  "path": "2026-04-06-evening/2026-04-06_evening_Q68.jpeg",
+  "bytes": 80504
+ },
+ {
+  "path": "2026-04-06-evening/2026-04-06_evening_Q69.jpeg",
+  "bytes": 59770
+ },
+ {
+  "path": "2026-04-08-evening/2026-04-08_evening_Q42.jpeg",
+  "bytes": 14383
+ },
+ {
+  "path": "2026-04-08-evening/2026-04-08_evening_Q45.jpeg",
+  "bytes": 24055
+ },
+ {
+  "path": "2026-04-08-evening/2026-04-08_evening_Q45_2.jpeg",
+  "bytes": 11771
+ },
+ {
+  "path": "2026-04-08-evening/2026-04-08_evening_Q45_3.jpeg",
+  "bytes": 12357
+ },
+ {
+  "path": "2026-04-08-evening/2026-04-08_evening_Q45_4.jpeg",
+  "bytes": 12160
+ },
+ {
+  "path": "2026-04-08-evening/2026-04-08_evening_Q45_5.jpeg",
+  "bytes": 12088
+ },
+ {
+  "path": "2026-04-08-evening/2026-04-08_evening_Q49.jpeg",
+  "bytes": 42529
+ },
+ {
+  "path": "2026-04-08-evening/2026-04-08_evening_Q57.jpeg",
+  "bytes": 16654
+ },
+ {
+  "path": "2026-04-08-evening/2026-04-08_evening_Q63.jpeg",
+  "bytes": 17803
+ },
+ {
+  "path": "2026-04-08-evening/2026-04-08_evening_Q63_2.jpeg",
+  "bytes": 8320
+ },
+ {
+  "path": "2026-04-08-evening/2026-04-08_evening_Q63_3.jpeg",
+  "bytes": 20896
+ },
+ {
+  "path": "2026-04-08-evening/2026-04-08_evening_Q63_4.jpeg",
+  "bytes": 9364
+ },
+ {
+  "path": "2026-04-08-evening/2026-04-08_evening_Q64.jpeg",
+  "bytes": 34368
+ },
+ {
+  "path": "2026-04-08-evening/2026-04-08_evening_Q67.jpeg",
+  "bytes": 26952
+ },
+ {
+  "path": "2026-04-08-evening/2026-04-08_evening_Q67_2.jpeg",
+  "bytes": 7797
+ },
+ {
+  "path": "2026-04-08-evening/2026-04-08_evening_Q67_3.jpeg",
+  "bytes": 9679
+ },
+ {
+  "path": "2026-04-08-evening/2026-04-08_evening_Q67_4.jpeg",
+  "bytes": 11328
+ },
+ {
+  "path": "2026-04-08-evening/2026-04-08_evening_Q67_5.jpeg",
+  "bytes": 10546
+ }
+]

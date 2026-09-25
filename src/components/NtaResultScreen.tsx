@@ -142,9 +142,10 @@ const SolutionCard = memo(function SolutionCard({ q, qState, keyInfo, outcome }:
             {q.options.map((opt) => {
               const isUserChoice = userAns === opt.label;
               const isCorrectChoice = keyInfo?.correctAnswer === opt.label;
+              const isBonus = !keyInfo?.correctAnswer;
               let style = 'bg-gray-50 border-gray-200 text-gray-700';
 
-              if (isCorrectChoice) {
+              if (isCorrectChoice || (isBonus && isUserChoice)) {
                 style = 'bg-green-100 border-green-400 text-green-900 font-bold';
               } else if (isUserChoice && !isCorrectChoice) {
                 style = 'bg-red-100 border-red-400 text-red-900 font-bold';
@@ -164,7 +165,8 @@ const SolutionCard = memo(function SolutionCard({ q, qState, keyInfo, outcome }:
                     {opt.text && <VectorText text={opt.text} />}
                   </span>
                   {isCorrectChoice && <span className="text-green-700 text-[10px] font-bold">✓ Correct Answer</span>}
-                  {isUserChoice && !isCorrectChoice && <span className="text-red-700 text-[10px] font-bold">✗ Your Answer</span>}
+                  {isBonus && isUserChoice && <span className="text-green-700 text-[10px] font-bold">✓ Bonus — full marks</span>}
+                  {isUserChoice && !isCorrectChoice && !isBonus && <span className="text-red-700 text-[10px] font-bold">✗ Your Answer</span>}
                 </div>
               );
             })}
@@ -174,7 +176,7 @@ const SolutionCard = memo(function SolutionCard({ q, qState, keyInfo, outcome }:
         {/* Answer Summary */}
         <div className="flex flex-wrap items-center gap-4 bg-gray-50 p-2.5 rounded border border-gray-200 text-xs">
           <div>Your Answer: <strong className={isCorrect ? 'text-green-700' : isUnattempted ? 'text-gray-500' : 'text-red-600'}>{userAns || 'None'}</strong></div>
-          <div>Correct Answer: <strong className="text-green-700">{keyInfo?.correctAnswer ?? '—'}</strong></div>
+          <div>Correct Answer: <strong className="text-green-700">{keyInfo?.correctAnswer ? keyInfo.correctAnswer : 'Bonus'}</strong></div>
         </div>
 
         {/* Step-by-step explanation (from question_keys.solution) */}
