@@ -53,6 +53,10 @@ const faqs: { q: string; a: string }[] = [
     q: 'How do I subscribe?',
     a: 'Create an account, open the Pricing page, pick a plan and pay securely via Razorpay (UPI, cards, netbanking). Your subscription activates instantly.',
   },
+  {
+    q: 'Can I get a refund on my subscription?',
+    a: 'Refund requests must be emailed to help@edutester.in within 24 hours of purchase with a valid and proper reason along with your payment details. After 24 hours from purchase, no refunds will be initiated.',
+  },
 ];
 
 export default function Faq() {

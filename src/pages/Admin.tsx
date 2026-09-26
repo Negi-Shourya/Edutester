@@ -18,6 +18,14 @@ import {
   X,
   FileCheck,
   Clock,
+  Share2,
+  Copy,
+  Check,
+  Plus,
+  ExternalLink,
+  Edit3,
+  Trash2,
+  Video,
 } from 'lucide-react';
 import { useAuth } from '../context/auth-context';
 import { isAdmin, formatINR, formatDateTime } from '../lib/admin';
@@ -29,9 +37,11 @@ import type {
   PageView,
   AdminConsentRecord,
   AdminEntryLog,
+  AdminAffiliate,
+  AdminAffiliateUser,
 } from '../types';
 
-type Tab = 'overview' | 'users' | 'consent' | 'purchases' | 'cancellations' | 'visitors';
+type Tab = 'overview' | 'users' | 'consent' | 'purchases' | 'cancellations' | 'visitors' | 'affiliates';
 
 interface Counts {
   totalUsers: number;
@@ -52,6 +62,7 @@ const tabs: { id: Tab; label: string; icon: typeof Users }[] = [
   { id: 'purchases', label: 'Purchases', icon: ShoppingCart },
   { id: 'cancellations', label: 'Cancellations', icon: Ban },
   { id: 'visitors', label: 'Visitors', icon: BarChart3 },
+  { id: 'affiliates', label: 'YouTubers & Referrals', icon: Share2 },
 ];
 
 async function headCount(query: any): Promise<number> {
@@ -85,6 +96,24 @@ export default function Admin() {
   const [cancelLoading, setCancelLoading] = useState(false);
   const [cancelError, setCancelError] = useState<string | null>(null);
 
+  const [affiliates, setAffiliates] = useState<AdminAffiliate[]>([]);
+  const [affiliateModalOpen, setAffiliateModalOpen] = useState(false);
+  const [selectedAffiliate, setSelectedAffiliate] = useState<AdminAffiliate | null>(null);
+  const [affiliateUsers, setAffiliateUsers] = useState<AdminAffiliateUser[]>([]);
+  const [affiliateUsersLoading, setAffiliateUsersLoading] = useState(false);
+  const [affiliateFormLoading, setAffiliateFormLoading] = useState(false);
+  const [copiedCode, setCopiedCode] = useState<string | null>(null);
+  const [affiliateSearch, setAffiliateSearch] = useState('');
+  const [affiliateForm, setAffiliateForm] = useState({
+    id: '',
+    name: '',
+    code: '',
+    commission_percent: 20,
+    upi_id: '',
+    channel_url: '',
+    notes: '',
+  });
+
   const fetchAll = useCallback(async () => {
     const dayStart = new Date();
     dayStart.setHours(0, 0, 0, 0);
@@ -101,6 +130,7 @@ export default function Admin() {
       viewCounts,
       consentList,
       entryList,
+      affiliatesList,
     ] = await Promise.all([
       supabase.rpc('admin_get_users'),
       supabase.rpc('admin_get_purchases'),
@@ -118,6 +148,7 @@ export default function Admin() {
       ]),
       safeRpcFetch<AdminConsentRecord>('admin_get_consents'),
       safeRpcFetch<AdminEntryLog>('admin_get_entry_logs', { p_limit: 100 }),
+      safeRpcFetch<AdminAffiliate>('admin_get_affiliates'),
     ]);
 
     if (usersRes.error) throw usersRes.error;
@@ -132,6 +163,7 @@ export default function Admin() {
     setUsers((usersRes.data ?? []) as AdminUser[]);
     setConsents(consentList);
     setEntryLogs(entryList);
+    setAffiliates(affiliatesList);
     setPurchases((purchasesRes.data ?? []) as AdminPurchase[]);
     setCancellations((cancelsRes.data ?? []) as AdminCancellation[]);
     setViews7d((viewsRes.data ?? []) as PageView[]);
@@ -184,6 +216,158 @@ export default function Admin() {
       setError(e instanceof Error ? e.message : 'Failed to refresh admin data.');
     }
   };
+
+  const handleOpenAddAffiliate = () => {
+    setAffiliateForm({
+      id: '',
+      name: '',
+      code: '',
+      commission_percent: 20,
+      upi_id: '',
+      channel_url: '',
+      notes: '',
+    });
+    setAffiliateModalOpen(true);
+  };
+
+  const handleOpenEditAffiliate = (aff: AdminAffiliate) => {
+    setAffiliateForm({
+      id: aff.id,
+      name: aff.name,
+      code: aff.code,
+      commission_percent: aff.commission_percent,
+      upi_id: aff.upi_id ?? '',
+      channel_url: aff.channel_url ?? '',
+      notes: aff.notes ?? '',
+    });
+    setAffiliateModalOpen(true);
+  };
+
+  const handleSaveAffiliate = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!affiliateForm.name.trim() || !affiliateForm.code.trim()) return;
+    setAffiliateFormLoading(true);
+    try {
+      const cleanCode = affiliateForm.code.trim().toLowerCase();
+      if (affiliateForm.id) {
+        const { error: updErr } = await supabase
+          .from('affiliates')
+          .update({
+            name: affiliateForm.name.trim(),
+            code: cleanCode,
+            commission_percent: Number(affiliateForm.commission_percent) || 20,
+            upi_id: affiliateForm.upi_id.trim() || null,
+            channel_url: affiliateForm.channel_url.trim() || null,
+            notes: affiliateForm.notes.trim() || null,
+            updated_at: new Date().toISOString(),
+          })
+          .eq('id', affiliateForm.id);
+        if (updErr) throw updErr;
+      } else {
+        const { error: insErr } = await supabase
+          .from('affiliates')
+          .insert({
+            name: affiliateForm.name.trim(),
+            code: cleanCode,
+            commission_percent: Number(affiliateForm.commission_percent) || 20,
+            upi_id: affiliateForm.upi_id.trim() || null,
+            channel_url: affiliateForm.channel_url.trim() || null,
+            notes: affiliateForm.notes.trim() || null,
+          });
+        if (insErr) throw insErr;
+      }
+      setAffiliateModalOpen(false);
+      const updated = await safeRpcFetch<AdminAffiliate>('admin_get_affiliates');
+      setAffiliates(updated);
+    } catch (err: any) {
+      alert('Failed to save YouTuber: ' + (err.message || 'Unknown error'));
+    } finally {
+      setAffiliateFormLoading(false);
+    }
+  };
+
+  const handleToggleAffiliateStatus = async (aff: AdminAffiliate) => {
+    try {
+      const { error: togErr } = await supabase
+        .from('affiliates')
+        .update({ is_active: !aff.is_active, updated_at: new Date().toISOString() })
+        .eq('id', aff.id);
+      if (togErr) throw togErr;
+      setAffiliates((prev) =>
+        prev.map((a) => (a.id === aff.id ? { ...a, is_active: !a.is_active } : a))
+      );
+    } catch (err: any) {
+      alert('Could not update status: ' + err.message);
+    }
+  };
+
+  const handleDeleteAffiliate = async (aff: AdminAffiliate) => {
+    if (!confirm(`Are you sure you want to delete ${aff.name}?`)) return;
+    try {
+      const { error: delErr } = await supabase
+        .from('affiliates')
+        .delete()
+        .eq('id', aff.id);
+      if (delErr) throw delErr;
+      setAffiliates((prev) => prev.filter((a) => a.id !== aff.id));
+      if (selectedAffiliate?.id === aff.id) {
+        setSelectedAffiliate(null);
+      }
+    } catch (err: any) {
+      alert('Could not delete: ' + err.message);
+    }
+  };
+
+  const handleViewAffiliateDetails = async (aff: AdminAffiliate) => {
+    setSelectedAffiliate(aff);
+    setAffiliateUsersLoading(true);
+    const users = await safeRpcFetch<AdminAffiliateUser>('admin_get_affiliate_details', {
+      p_affiliate_id: aff.id,
+    });
+    setAffiliateUsers(users);
+    setAffiliateUsersLoading(false);
+  };
+
+  const handleCopyLink = (code: string) => {
+    const origin = typeof window !== 'undefined' ? window.location.origin : 'https://edutester.in';
+    const link = `${origin}/?ref=${code}`;
+    navigator.clipboard.writeText(link);
+    setCopiedCode(code);
+    setTimeout(() => setCopiedCode(null), 2000);
+  };
+
+  const affiliateStats = useMemo(() => {
+    let totalSignups = 0;
+    let totalPaid = 0;
+    let totalRevPaise = 0;
+    let totalPayoutPaise = 0;
+
+    for (const a of affiliates) {
+      totalSignups += Number(a.referred_users_count || 0);
+      totalPaid += Number(a.paid_subscriptions_count || 0);
+      totalRevPaise += Number(a.total_revenue_paise || 0);
+      totalPayoutPaise += Number(a.calculated_payout_paise || 0);
+    }
+
+    return {
+      creatorsCount: affiliates.length,
+      totalSignups,
+      totalPaid,
+      totalRevPaise,
+      totalPayoutPaise,
+    };
+  }, [affiliates]);
+
+  const filteredAffiliates = useMemo(() => {
+    if (!affiliateSearch.trim()) return affiliates;
+    const q = affiliateSearch.toLowerCase();
+    return affiliates.filter(
+      (a) =>
+        a.name.toLowerCase().includes(q) ||
+        a.code.toLowerCase().includes(q) ||
+        (a.upi_id && a.upi_id.toLowerCase().includes(q))
+    );
+  }, [affiliates, affiliateSearch]);
 
   const dailyViews = useMemo(() => {
     const buckets: { label: string; count: number }[] = [];
@@ -723,6 +907,204 @@ export default function Admin() {
                 </div>
               </div>
             )}
+
+            {tab === 'affiliates' && (
+              <div className="space-y-6">
+                {/* Affiliate Summary Cards */}
+                <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
+                  {[
+                    { label: 'Total Creators', value: affiliateStats.creatorsCount.toLocaleString('en-IN'), color: 'from-purple-500 to-indigo-600', icon: Video },
+                    { label: 'Referred Signups', value: affiliateStats.totalSignups.toLocaleString('en-IN'), color: 'from-blue-500 to-blue-600', icon: Users },
+                    { label: 'Subscriptions Sold', value: affiliateStats.totalPaid.toLocaleString('en-IN'), color: 'from-amber-500 to-amber-600', icon: ShoppingCart },
+                    { label: 'Total Sales Revenue', value: formatINR(affiliateStats.totalRevPaise), color: 'from-emerald-500 to-emerald-600', icon: IndianRupee },
+                    { label: 'Estimated Payout', value: formatINR(affiliateStats.totalPayoutPaise), color: 'from-primary to-primary-dark', icon: Shield },
+                  ].map((s) => (
+                    <div key={s.label} className="bg-white rounded-xl border border-gray-200 p-4">
+                      <div className="flex items-start justify-between mb-3">
+                        <div className={`w-10 h-10 rounded-xl bg-gradient-to-br ${s.color} flex items-center justify-center`}>
+                          <s.icon className="w-5 h-5 text-white" />
+                        </div>
+                      </div>
+                      <div className="text-xl sm:text-2xl font-bold text-gray-900">{s.value}</div>
+                      <div className="text-xs text-gray-500 mt-0.5">{s.label}</div>
+                    </div>
+                  ))}
+                </div>
+
+                {/* Table Header & Search */}
+                <div className="bg-white rounded-xl border border-gray-200 p-5">
+                  <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-4 mb-5">
+                    <div>
+                      <h2 className="font-semibold text-gray-900 text-lg flex items-center gap-2">
+                        <Share2 className="w-5 h-5 text-primary" />
+                        YouTubers &amp; Referral Partners
+                      </h2>
+                      <p className="text-xs text-gray-500 mt-0.5">
+                        Track referred students and calculate commission earnings per YouTuber.
+                      </p>
+                    </div>
+                    <div className="flex items-center gap-3">
+                      <input
+                        type="text"
+                        placeholder="Search YouTubers..."
+                        value={affiliateSearch}
+                        onChange={(e) => setAffiliateSearch(e.target.value)}
+                        className="px-3.5 py-2 text-xs sm:text-sm rounded-xl border border-gray-200 bg-gray-50 focus:bg-white focus:outline-none focus:ring-2 focus:ring-primary/20 w-48 sm:w-60"
+                      />
+                      <button
+                        type="button"
+                        onClick={handleOpenAddAffiliate}
+                        className="inline-flex items-center gap-1.5 px-4 py-2 bg-primary hover:bg-primary-dark text-white text-xs sm:text-sm font-semibold rounded-xl transition-colors shadow-sm shrink-0"
+                      >
+                        <Plus className="w-4 h-4" /> Add YouTuber
+                      </button>
+                    </div>
+                  </div>
+
+                  {/* YouTubers Table */}
+                  <div className="overflow-x-auto">
+                    <table className="w-full text-sm">
+                      <thead>
+                        <tr className="border-b border-gray-200 text-left text-xs text-gray-500">
+                          <th className="py-3 pr-4 font-medium">YouTuber / Channel</th>
+                          <th className="py-3 pr-4 font-medium">Referral Link</th>
+                          <th className="py-3 pr-4 font-medium">Share %</th>
+                          <th className="py-3 pr-4 font-medium">Users Added</th>
+                          <th className="py-3 pr-4 font-medium">Paid Subs</th>
+                          <th className="py-3 pr-4 font-medium">Sales Generated</th>
+                          <th className="py-3 pr-4 font-medium">Payout Due</th>
+                          <th className="py-3 pr-4 font-medium">Status</th>
+                          <th className="py-3 font-medium text-right">Actions</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {filteredAffiliates.map((a) => {
+                          const origin = typeof window !== 'undefined' ? window.location.origin : 'https://edutester.in';
+                          const linkUrl = `${origin}/?ref=${a.code}`;
+                          const isCopied = copiedCode === a.code;
+                          const revPaise = Number(a.total_revenue_paise || 0);
+                          const payoutPaise = Number(a.calculated_payout_paise || 0);
+
+                          return (
+                            <tr key={a.id} className="border-b border-gray-100 last:border-0 hover:bg-gray-50/50 transition-colors">
+                              <td className="py-3 pr-4">
+                                <div className="font-semibold text-gray-900">{a.name}</div>
+                                {a.upi_id && (
+                                  <div className="text-xs text-gray-500 font-mono mt-0.5">UPI: {a.upi_id}</div>
+                                )}
+                                {a.channel_url && (
+                                  <a
+                                    href={a.channel_url}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="inline-flex items-center gap-1 text-[11px] text-primary hover:underline mt-0.5"
+                                  >
+                                    Channel <ExternalLink className="w-3 h-3" />
+                                  </a>
+                                )}
+                              </td>
+                              <td className="py-3 pr-4">
+                                <div className="inline-flex items-center gap-1.5 bg-gray-100/80 px-2.5 py-1 rounded-lg border border-gray-200">
+                                  <span className="font-mono text-xs text-gray-700 font-semibold">{a.code}</span>
+                                  <button
+                                    type="button"
+                                    onClick={() => handleCopyLink(a.code)}
+                                    title={`Copy link: ${linkUrl}`}
+                                    className="p-1 hover:text-primary transition-colors text-gray-400"
+                                  >
+                                    {isCopied ? (
+                                      <Check className="w-3.5 h-3.5 text-emerald-600" />
+                                    ) : (
+                                      <Copy className="w-3.5 h-3.5" />
+                                    )}
+                                  </button>
+                                </div>
+                                {isCopied && (
+                                  <span className="text-[11px] text-emerald-600 font-medium block mt-0.5">
+                                    Link copied!
+                                  </span>
+                                )}
+                              </td>
+                              <td className="py-3 pr-4">
+                                <span className="font-bold text-gray-800 text-xs px-2 py-0.5 bg-indigo-50 text-indigo-700 rounded-md">
+                                  {a.commission_percent}%
+                                </span>
+                              </td>
+                              <td className="py-3 pr-4 font-semibold text-gray-900">
+                                {Number(a.referred_users_count || 0).toLocaleString('en-IN')}
+                              </td>
+                              <td className="py-3 pr-4">
+                                <span className="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-semibold bg-emerald-50 text-emerald-700">
+                                  {Number(a.paid_subscriptions_count || 0).toLocaleString('en-IN')}
+                                </span>
+                              </td>
+                              <td className="py-3 pr-4 font-semibold text-gray-900">
+                                {formatINR(revPaise)}
+                              </td>
+                              <td className="py-3 pr-4">
+                                <span className="font-bold text-primary text-sm">
+                                  {formatINR(payoutPaise)}
+                                </span>
+                              </td>
+                              <td className="py-3 pr-4">
+                                <button
+                                  type="button"
+                                  onClick={() => handleToggleAffiliateStatus(a)}
+                                  className={`px-2.5 py-1 rounded-full text-xs font-semibold transition-colors ${
+                                    a.is_active
+                                      ? 'bg-green-100 text-green-700 hover:bg-green-200'
+                                      : 'bg-gray-200 text-gray-600 hover:bg-gray-300'
+                                  }`}
+                                >
+                                  {a.is_active ? 'Active' : 'Paused'}
+                                </button>
+                              </td>
+                              <td className="py-3 text-right">
+                                <div className="inline-flex items-center gap-1.5">
+                                  <button
+                                    type="button"
+                                    onClick={() => handleViewAffiliateDetails(a)}
+                                    title="View Referred Students"
+                                    className="px-2.5 py-1 text-xs font-semibold text-primary bg-primary/10 hover:bg-primary/20 rounded-lg transition-colors inline-flex items-center gap-1"
+                                  >
+                                    <Eye className="w-3.5 h-3.5" /> Details
+                                  </button>
+                                  <button
+                                    type="button"
+                                    onClick={() => handleOpenEditAffiliate(a)}
+                                    title="Edit Details"
+                                    className="p-1.5 text-gray-500 hover:text-gray-800 rounded-lg hover:bg-gray-100 transition-colors"
+                                  >
+                                    <Edit3 className="w-3.5 h-3.5" />
+                                  </button>
+                                  <button
+                                    type="button"
+                                    onClick={() => handleDeleteAffiliate(a)}
+                                    title="Delete YouTuber"
+                                    className="p-1.5 text-red-500 hover:text-red-700 rounded-lg hover:bg-red-50 transition-colors"
+                                  >
+                                    <Trash2 className="w-3.5 h-3.5" />
+                                  </button>
+                                </div>
+                              </td>
+                            </tr>
+                          );
+                        })}
+                        {filteredAffiliates.length === 0 && (
+                          <tr>
+                            <td colSpan={9} className="py-8 text-center text-gray-500">
+                              {affiliates.length === 0
+                                ? 'No YouTubers added yet. Click "+ Add YouTuber" to generate their custom referral link.'
+                                : 'No matching YouTubers found.'}
+                            </td>
+                          </tr>
+                        )}
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            )}
           </>
         )}
       </div>
@@ -792,6 +1174,306 @@ export default function Admin() {
                     <Ban className="w-4 h-4" />
                   )}
                   Yes, cancel it
+                </button>
+              </div>
+            </motion.div>
+          </motion.div>
+        )}
+
+        {/* Add / Edit YouTuber Modal */}
+        {affiliateModalOpen && (
+          <motion.div
+            className="fixed inset-0 z-[60] bg-black/50 backdrop-blur-sm flex items-center justify-center px-4 overflow-y-auto py-8"
+            onClick={() => { if (!affiliateFormLoading) setAffiliateModalOpen(false); }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.2 }}
+          >
+            <motion.div
+              className="bg-white rounded-2xl shadow-2xl max-w-lg w-full p-6 sm:p-8 relative my-auto"
+              onClick={(e) => e.stopPropagation()}
+              initial={{ opacity: 0, scale: 0.94, y: 16 }}
+              animate={{ opacity: 1, scale: 1, y: 0 }}
+              exit={{ opacity: 0, scale: 0.95, y: -8 }}
+              transition={{ type: 'spring', stiffness: 380, damping: 28 }}
+            >
+              <button
+                type="button"
+                onClick={() => setAffiliateModalOpen(false)}
+                disabled={affiliateFormLoading}
+                className="absolute right-4 top-4 text-gray-400 hover:text-gray-600 transition-colors p-1"
+                aria-label="Close"
+              >
+                <X className="w-5 h-5" />
+              </button>
+
+              <div className="flex items-center gap-3 mb-5">
+                <div className="w-11 h-11 rounded-xl bg-primary/10 text-primary flex items-center justify-center shrink-0">
+                  <Video className="w-5 h-5" />
+                </div>
+                <div>
+                  <h2 className="text-xl font-bold text-gray-900 font-display">
+                    {affiliateForm.id ? 'Edit YouTuber' : 'Add New YouTuber'}
+                  </h2>
+                  <p className="text-xs text-gray-500">
+                    Create their custom referral link and track purchases.
+                  </p>
+                </div>
+              </div>
+
+              <form onSubmit={handleSaveAffiliate} className="space-y-4">
+                <div>
+                  <label className="block text-xs font-semibold text-gray-700 uppercase tracking-wider mb-1.5">
+                    Creator / Channel Name *
+                  </label>
+                  <input
+                    type="text"
+                    required
+                    placeholder="e.g. Physics With Aman"
+                    value={affiliateForm.name}
+                    onChange={(e) => setAffiliateForm({ ...affiliateForm, name: e.target.value })}
+                    className="w-full px-3.5 py-2 text-sm rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-primary/20"
+                  />
+                </div>
+
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                  <div>
+                    <label className="block text-xs font-semibold text-gray-700 uppercase tracking-wider mb-1.5">
+                      Referral Code / Slug *
+                    </label>
+                    <input
+                      type="text"
+                      required
+                      placeholder="e.g. aman"
+                      value={affiliateForm.code}
+                      onChange={(e) => setAffiliateForm({ ...affiliateForm, code: e.target.value.toLowerCase().replace(/[^a-z0-9_-]/g, '') })}
+                      className="w-full px-3.5 py-2 text-sm font-mono rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-primary/20"
+                    />
+                    <span className="text-[11px] text-gray-500 mt-1 block truncate">
+                      Link: <span className="font-mono text-primary font-semibold">?ref={affiliateForm.code || 'code'}</span>
+                    </span>
+                  </div>
+
+                  <div>
+                    <label className="block text-xs font-semibold text-gray-700 uppercase tracking-wider mb-1.5">
+                      Commission Share (%) *
+                    </label>
+                    <div className="relative">
+                      <input
+                        type="number"
+                        min="0"
+                        max="100"
+                        step="1"
+                        required
+                        placeholder="20"
+                        value={affiliateForm.commission_percent}
+                        onChange={(e) => setAffiliateForm({ ...affiliateForm, commission_percent: Number(e.target.value) })}
+                        className="w-full px-3.5 py-2 text-sm rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-primary/20"
+                      />
+                      <span className="absolute right-3 top-2 text-sm font-semibold text-gray-400">%</span>
+                    </div>
+                    <span className="text-[11px] text-gray-500 mt-1 block">
+                      Percentage per subscription
+                    </span>
+                  </div>
+                </div>
+
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                  <div>
+                    <label className="block text-xs font-semibold text-gray-700 uppercase tracking-wider mb-1.5">
+                      Payout UPI ID (for your transfers)
+                    </label>
+                    <input
+                      type="text"
+                      placeholder="e.g. aman@okhdfcbank"
+                      value={affiliateForm.upi_id}
+                      onChange={(e) => setAffiliateForm({ ...affiliateForm, upi_id: e.target.value })}
+                      className="w-full px-3.5 py-2 text-sm font-mono rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-primary/20"
+                    />
+                  </div>
+
+                  <div>
+                    <label className="block text-xs font-semibold text-gray-700 uppercase tracking-wider mb-1.5">
+                      YouTube Channel URL
+                    </label>
+                    <input
+                      type="url"
+                      placeholder="https://youtube.com/@..."
+                      value={affiliateForm.channel_url}
+                      onChange={(e) => setAffiliateForm({ ...affiliateForm, channel_url: e.target.value })}
+                      className="w-full px-3.5 py-2 text-sm rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-primary/20"
+                    />
+                  </div>
+                </div>
+
+                <div>
+                  <label className="block text-xs font-semibold text-gray-700 uppercase tracking-wider mb-1.5">
+                    Notes / Agreement Details
+                  </label>
+                  <textarea
+                    rows={2}
+                    placeholder="e.g. Agreed 20% on all JEE test packages, paid monthly via UPI"
+                    value={affiliateForm.notes}
+                    onChange={(e) => setAffiliateForm({ ...affiliateForm, notes: e.target.value })}
+                    className="w-full px-3.5 py-2 text-sm rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-primary/20"
+                  />
+                </div>
+
+                <div className="flex gap-3 pt-3">
+                  <button
+                    type="button"
+                    onClick={() => setAffiliateModalOpen(false)}
+                    disabled={affiliateFormLoading}
+                    className="flex-1 py-2.5 rounded-xl border-2 border-gray-200 text-sm font-semibold text-gray-700 hover:border-gray-300 transition-colors"
+                  >
+                    Cancel
+                  </button>
+                  <button
+                    type="submit"
+                    disabled={affiliateFormLoading}
+                    className="flex-1 py-2.5 rounded-xl bg-primary text-sm font-semibold text-white hover:bg-primary-dark transition-colors inline-flex items-center justify-center gap-2 shadow-sm"
+                  >
+                    {affiliateFormLoading ? (
+                      <Loader2 className="w-4 h-4 animate-spin" />
+                    ) : (
+                      affiliateForm.id ? 'Save Changes' : 'Create YouTuber Link'
+                    )}
+                  </button>
+                </div>
+              </form>
+            </motion.div>
+          </motion.div>
+        )}
+
+        {/* Referred Students Drill-Down Modal */}
+        {selectedAffiliate && (
+          <motion.div
+            className="fixed inset-0 z-[60] bg-black/50 backdrop-blur-sm flex items-center justify-center px-4 overflow-y-auto py-8"
+            onClick={() => setSelectedAffiliate(null)}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.2 }}
+          >
+            <motion.div
+              className="bg-white rounded-2xl shadow-2xl max-w-3xl w-full p-6 sm:p-8 relative my-auto max-h-[85vh] flex flex-col"
+              onClick={(e) => e.stopPropagation()}
+              initial={{ opacity: 0, scale: 0.94, y: 16 }}
+              animate={{ opacity: 1, scale: 1, y: 0 }}
+              exit={{ opacity: 0, scale: 0.95, y: -8 }}
+              transition={{ type: 'spring', stiffness: 380, damping: 28 }}
+            >
+              <button
+                type="button"
+                onClick={() => setSelectedAffiliate(null)}
+                className="absolute right-4 top-4 text-gray-400 hover:text-gray-600 transition-colors p-1"
+                aria-label="Close"
+              >
+                <X className="w-5 h-5" />
+              </button>
+
+              <div className="mb-4">
+                <div className="flex items-center gap-2 font-mono text-xs font-semibold text-primary uppercase">
+                  <span>?ref={selectedAffiliate.code}</span>
+                  <span>&middot;</span>
+                  <span>{selectedAffiliate.commission_percent}% Share</span>
+                </div>
+                <h2 className="text-xl font-bold text-gray-900 font-display mt-0.5">
+                  {selectedAffiliate.name} &mdash; Referred Students
+                </h2>
+                <div className="flex flex-wrap items-center gap-3 mt-2 text-xs text-gray-600">
+                  <span className="bg-blue-50 text-blue-700 px-2.5 py-1 rounded-md font-semibold">
+                    {affiliateUsers.length} Students Signed Up
+                  </span>
+                  <span className="bg-emerald-50 text-emerald-700 px-2.5 py-1 rounded-md font-semibold">
+                    {affiliateUsers.filter((u) => u.has_purchased).length} Subscriptions Purchased
+                  </span>
+                  {selectedAffiliate.upi_id && (
+                    <span className="bg-gray-100 text-gray-700 px-2.5 py-1 rounded-md font-mono">
+                      UPI: {selectedAffiliate.upi_id}
+                    </span>
+                  )}
+                </div>
+              </div>
+
+              {/* Students List Table */}
+              <div className="flex-1 overflow-y-auto -mx-6 sm:-mx-8 px-6 sm:px-8">
+                {affiliateUsersLoading ? (
+                  <div className="py-12 flex flex-col items-center justify-center text-gray-400 gap-2">
+                    <Loader2 className="w-6 h-6 animate-spin text-primary" />
+                    <span className="text-xs">Loading referred students...</span>
+                  </div>
+                ) : (
+                  <table className="w-full text-sm">
+                    <thead>
+                      <tr className="border-b border-gray-200 text-left text-xs text-gray-500 sticky top-0 bg-white">
+                        <th className="py-3 pr-4 font-medium">Student</th>
+                        <th className="py-3 pr-4 font-medium">Joined Date</th>
+                        <th className="py-3 pr-4 font-medium">Purchased?</th>
+                        <th className="py-3 pr-4 font-medium">Plan / Amount</th>
+                        <th className="py-3 font-medium">Purchased At</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {affiliateUsers.map((u) => (
+                        <tr key={u.user_id} className="border-b border-gray-100 last:border-0">
+                          <td className="py-3 pr-4">
+                            <div className="font-medium text-gray-900">{u.email ?? 'Unknown'}</div>
+                            {u.full_name && (
+                              <div className="text-xs text-gray-500">{u.full_name}</div>
+                            )}
+                          </td>
+                          <td className="py-3 pr-4 text-xs text-gray-600 font-mono">
+                            {formatDateTime(u.referred_at)}
+                          </td>
+                          <td className="py-3 pr-4">
+                            {u.has_purchased ? (
+                              <span className="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-semibold bg-emerald-100 text-emerald-800">
+                                Paid Sub ({u.subscriptions_count})
+                              </span>
+                            ) : (
+                              <span className="text-xs text-gray-400">No Purchase</span>
+                            )}
+                          </td>
+                          <td className="py-3 pr-4">
+                            {u.has_purchased ? (
+                              <div>
+                                <span className="font-semibold text-gray-900 text-xs">
+                                  {formatINR(Number(u.total_spent_paise || 0))}
+                                </span>
+                                {u.latest_plan_name && (
+                                  <div className="text-[11px] text-gray-500">{u.latest_plan_name}</div>
+                                )}
+                              </div>
+                            ) : (
+                              <span className="text-xs text-gray-300">&mdash;</span>
+                            )}
+                          </td>
+                          <td className="py-3 text-xs text-gray-600 font-mono">
+                            {formatDateTime(u.latest_purchase_at)}
+                          </td>
+                        </tr>
+                      ))}
+                      {affiliateUsers.length === 0 && (
+                        <tr>
+                          <td colSpan={5} className="py-8 text-center text-gray-500 text-sm">
+                            No students have signed up using this YouTuber's link yet.
+                          </td>
+                        </tr>
+                      )}
+                    </tbody>
+                  </table>
+                )}
+              </div>
+
+              <div className="pt-4 border-t border-gray-100 mt-2 flex justify-end">
+                <button
+                  type="button"
+                  onClick={() => setSelectedAffiliate(null)}
+                  className="px-4 py-2 text-xs font-semibold text-gray-700 bg-gray-100 hover:bg-gray-200 rounded-xl transition-colors"
+                >
+                  Close
                 </button>
               </div>
             </motion.div>

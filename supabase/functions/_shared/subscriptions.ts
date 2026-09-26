@@ -78,6 +78,21 @@ export async function provisionSubscription(
   const base = activeSub && new Date(activeSub.ends_at) > now ? new Date(activeSub.ends_at) : now;
   const endsAt = addMonths(base, plan.months);
 
+  // Check if this user was referred by an affiliate/YouTuber
+  let affiliateId: string | null = null;
+  try {
+    const { data: refRows } = await admin
+      .from('user_referrals')
+      .select('affiliate_id')
+      .eq('user_id', userId)
+      .limit(1);
+    if (refRows && refRows.length > 0) {
+      affiliateId = refRows[0].affiliate_id;
+    }
+  } catch (refErr) {
+    console.error('referral check failed', refErr);
+  }
+
   const { data, error } = await admin
     .from('subscriptions')
     .insert({
@@ -90,6 +105,7 @@ export async function provisionSubscription(
       razorpay_payment_id: paymentId,
       starts_at: base.toISOString(),
       ends_at: endsAt.toISOString(),
+      affiliate_id: affiliateId,
     })
     .select()
     .single();

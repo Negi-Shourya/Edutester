@@ -8,7 +8,9 @@ import RootGate from './components/RootGate';
 import ProtectedRoute from './components/ProtectedRoute';
 import { AuthProvider } from './context/AuthContext';
 import { trackPageView } from './lib/tracking';
+import { captureReferralParam } from './lib/referral';
 import LandingPage from './pages/LandingPage';
+import CookieBanner from './components/CookieBanner';
 
 // Route-level code splitting to keep initial bundle size small. LandingPage
 // is imported statically: "/" renders it on first paint (via RootGate), so
@@ -26,6 +28,7 @@ const Admin = lazy(() => import('./pages/Admin'));
 const Profile = lazy(() => import('./pages/Profile'));
 const Terms = lazy(() => import('./pages/Terms'));
 const Privacy = lazy(() => import('./pages/Privacy'));
+const CookiePolicy = lazy(() => import('./pages/CookiePolicy'));
 const Faq = lazy(() => import('./pages/Faq'));
 
 function PageLoader() {
@@ -43,6 +46,7 @@ function App() {
     // Page-view tracking hits Supabase over the network — defer it until
     // the browser is idle so it never contends with first paint / LCP.
     const path = location.pathname;
+    captureReferralParam();
     const fire = () => trackPageView(path);
     // SPA route change: tell Google Analytics (gtag.js is in index.html).
     const w = window as Window & {
@@ -78,6 +82,7 @@ function App() {
                   <Route path="/signup" element={<Signup />} />
                   <Route path="/terms" element={<Terms />} />
                   <Route path="/privacy" element={<Privacy />} />
+                  <Route path="/cookies" element={<CookiePolicy />} />
                   <Route path="/faq" element={<Faq />} />
                   <Route
                     path="/dashboard"
@@ -140,6 +145,7 @@ function App() {
             </PageTransition>
           </main>
           <Footer />
+          <CookieBanner />
         </div>
     </AuthProvider>
   );

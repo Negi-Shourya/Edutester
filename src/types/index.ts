@@ -156,3 +156,31 @@ export interface Subscription {
   ends_at: string;
   created_at: string;
 }
+
+export interface AdminAffiliate {
+  id: string;
+  name: string;
+  code: string;
+  commission_percent: number;
+  upi_id: string | null;
+  channel_url: string | null;
+  notes: string | null;
+  is_active: boolean;
+  created_at: string;
+  referred_users_count: number;
+  paid_subscriptions_count: number;
+  total_revenue_paise: number;
+  calculated_payout_paise: number;
+}
+
+export interface AdminAffiliateUser {
+  user_id: string;
+  email: string | null;
+  full_name: string | null;
+  referred_at: string;
+  has_purchased: boolean;
+  subscriptions_count: number;
+  total_spent_paise: number;
+  latest_plan_name: string | null;
+  latest_purchase_at: string | null;
+}

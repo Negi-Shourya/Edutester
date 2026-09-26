@@ -9,6 +9,7 @@ import {
   getPendingConsent,
   isBrandNewAccount,
 } from '../lib/consent';
+import { syncPendingReferralToDatabase } from '../lib/referral';
 
 function hasPotentialStoredSession(): boolean {
   if (typeof window === 'undefined') return false;
@@ -76,6 +77,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
         clearAuthFlow();
         setAuthError(null);
         void syncPendingConsentToDatabase();
+        void syncPendingReferralToDatabase();
 
         if (isSignInEvent) {
           void recordUserEntryLog('login');

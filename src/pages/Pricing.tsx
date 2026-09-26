@@ -27,7 +27,7 @@ const faqs = [
     a: 'Yes! Take a free demo test on the real NTA interface plus free trial full papers before subscribing — no payment details needed.',
   },
   { q: 'What payment methods are accepted?', a: 'All debit cards, credit cards, and UPI options are available.' },
-  { q: 'Can I get a refund?', a: 'No, you cannot get a refund once you have purchased a subscription.' },
+  { q: 'Can I get a refund?', a: 'Refund requests must be emailed to us at help@edutester.in within 24 hours of purchase stating a valid and proper reason. After 24 hours from the purchase time, no refund requests will be entertained or initiated.' },
   { q: 'Where can I contact for help?', a: 'You can contact us at help@edutester.in, and we will get back to you within 48 hours.' },
 ];
 

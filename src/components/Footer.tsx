@@ -91,6 +91,7 @@ export default function Footer() {
               <li><Link to="/faq" className="hover:text-white transition-colors">FAQ</Link></li>
               <li><Link to="/terms" className="hover:text-white transition-colors">Terms &amp; Conditions</Link></li>
               <li><Link to="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link></li>
+              <li><Link to="/cookies" className="hover:text-white transition-colors">Cookie Policy</Link></li>
               {showPricing && <li><Link to="/pricing#faq" className="hover:text-white transition-colors">FAQ</Link></li>}
             </ul>
           </div>
@@ -116,6 +117,8 @@ export default function Footer() {
             <Link to="/terms" className="hover:text-gray-300 transition-colors">Terms</Link>
             <span>&middot;</span>
             <Link to="/privacy" className="hover:text-gray-300 transition-colors">Privacy Policy</Link>
+            <span>&middot;</span>
+            <Link to="/cookies" className="hover:text-gray-300 transition-colors">Cookies</Link>
             <span>&middot;</span>
             <Link to="/contact" className="hover:text-gray-300 transition-colors">Contact</Link>
           </div>

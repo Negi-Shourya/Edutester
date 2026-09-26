@@ -93,7 +93,10 @@ export default function Terms() {
             <ul className="list-disc pl-5 space-y-2 mt-2">
               <li>All payments are securely processed in Indian Rupees (INR) via Razorpay, an RBI-authorized payment aggregator.</li>
               <li>Subscription periods start immediately upon successful transaction verification and expire at the end of the selected plan validity.</li>
-              <li>Because digital question banks and test access are provisioned instantly upon payment, subscription purchases are generally non-refundable once activated, unless otherwise required by applicable Indian consumer regulations.</li>
+              <li>Because digital question banks and premium test access are provisioned instantly upon payment, subscription purchases are subject to our strict 24-hour refund window.</li>
+              <li><strong>Refund Request Conditions:</strong> If you face an issue with your subscription, you must write to us at <a href="mailto:help@edutester.in" className="text-primary hover:underline font-medium">help@edutester.in</a> within <strong>24 hours of purchase</strong> stating a clear, valid, and proper reason for the refund request along with your registered email and transaction/order ID.</li>
+              <li><strong>Strict 24-Hour Expiry:</strong> After the 24-hour period from the purchase timestamp has elapsed, no refund requests will be accepted, initiated, or processed under any circumstances.</li>
+              <li>Upon approval of a verified refund request, premium test access will be cancelled immediately, and the refund will be credited back via the original payment method through Razorpay as per standard banking timelines (usually 5–7 working days).</li>
             </ul>
           </section>
 
